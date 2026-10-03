@@ -4199,7 +4199,7 @@
     
   
   
-    <span class="md-status md-status--draft"></span>
+    <span class="md-status md-status--active"></span>
   
 
   
@@ -4234,7 +4234,7 @@
     
   
   
-    <span class="md-status md-status--draft"></span>
+    <span class="md-status md-status--active"></span>
   
 
   
@@ -7578,10 +7578,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-proximo-gate" class="md-nav__link">
+  <a href="#4-exame-funcional" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Próximo gate
+        4. Exame funcional
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-proximo-gate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Próximo gate
       
     </span>
   </a>
@@ -7632,13 +7643,18 @@
 <p>A autoridade normativa de escopo é <code>GKR-UXA-104-PER013014-SCOPE-AUTHORITY-001</code>.</p>
 <div class="highlight"><pre><span></span><code>UXA-104
 → SCOPE ADJUDICATED
-→ FUNCTIONAL EXAM NOT_STARTED
+→ FUNCTIONAL EXAM COMPLETE
+→ FUNCTIONAL CONTRACT ADJUDICATED / NORMATIVE
+→ RECONCILIATION COMPLETE
+→ MATURITY EXAM COMPLETE
+→ MATURITY FINDINGS ADJUDICATED
+→ MATURITY PROMOTIONS MATERIALIZED
 
 TRN-014..017
-→ CONTRACTED / UNCHANGED
+→ LOCALLY VALIDATED
 
 MATURITY PROMOTIONS
-→ 0
+→ 4
 
 PRODUCT ENGINEERING
 → PAUSED / NOT RELEASED
@@ -7653,9 +7669,32 @@ PRODUCT ENGINEERING
 <h2 id="3-limites">3. Limites<a class="headerlink" href="#3-limites" title="Permanent link">&para;</a></h2>
 <p>A abertura desta frente não materializa Masters, não promove transições, não define infraestrutura técnica e não libera Design, protótipo ou Product Engineering.</p>
 <p><code>TRN-001</code> e G2–G5 permanecem fora desta UXA.</p>
-<h2 id="4-proximo-gate">4. Próximo gate<a class="headerlink" href="#4-proximo-gate" title="Permanent link">&para;</a></h2>
-<p>O próximo gate é a autorização do <strong>exame funcional</strong> da UXA-104 dentro do escopo normativamente adjudicado.</p>
-<p>Nenhum exame funcional foi iniciado por esta adjudicação.</p>
+<h2 id="4-exame-funcional">4. Exame funcional<a class="headerlink" href="#4-exame-funcional" title="Permanent link">&para;</a></h2>
+<p>O exame funcional autorizado foi materializado em <code>GKR-UXA-104-PER013014-FUNCTIONAL-EXAM-001</code>.</p>
+<p>A suficiência funcional local de <code>PER-013</code>, <code>PER-014</code> e <code>TRN-014..017</code> foi adjudicada e reconciliada, sem promoção de maturidade.</p>
+<h2 id="5-proximo-gate">5. Próximo gate<a class="headerlink" href="#5-proximo-gate" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>FUNCTIONAL CONTRACT
+→ ADJUDICATED / NORMATIVE
+
+RECONCILIATION
+→ COMPLETE
+
+MATURITY EXAM
+→ COMPLETE
+
+MATURITY ADJUDICATION
+→ COMPLETE
+
+TRN-014..017
+→ LOCALLY VALIDATED
+
+INTEGRALLY VALIDATED
+→ NOT SUPPORTED
+
+PRODUCT ENGINEERING
+→ PAUSED / NOT RELEASED
+</code></pre></div>
+<p>Nenhum avanço adicional é automático.</p>
 
 
 

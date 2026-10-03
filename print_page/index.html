@@ -4205,7 +4205,7 @@
     
   
   
-    <span class="md-status md-status--draft"></span>
+    <span class="md-status md-status--active"></span>
   
 
   
@@ -4240,7 +4240,7 @@
     
   
   
-    <span class="md-status md-status--draft"></span>
+    <span class="md-status md-status--active"></span>
   
 
   
@@ -12098,7 +12098,7 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 <h2 id="index-estado-semantico-sincronizado">Estado semântico sincronizado<a class="headerlink" href="#index-estado-semantico-sincronizado" title="Permanent link">&para;</a></h2>
 <p>A leitura de estado continua subordinada ao <a href="#project-current-state-register">Registro do Estado Atual</a>. Esta superfície preserva somente os marcadores exigidos de sincronização global:</p>
 <div class="highlight"><pre><span></span><code>GKR-STATE-001
-→ 3.50.92 / CURRENT
+→ 3.50.96 / CURRENT
 
 ERA
 → GE-2 — KNOWLEDGE
@@ -12112,9 +12112,21 @@ MARCO FUNCIONAL
 UXA-104
 → SCOPE ADJUDICATED
 → PER-013 / PER-014 + TRN-014..017
-→ FUNCTIONAL EXAM NOT_STARTED
-→ 0 MATURITY PROMOTIONS
+→ FUNCTIONAL EXAM COMPLETE
+→ FUNCTIONAL CONTRACT ADJUDICATED / NORMATIVE
+→ RECONCILIATION COMPLETE
+→ MATURITY EXAM COMPLETE
+→ MATURITY FINDINGS ADJUDICATED
+→ MATURITY PROMOTIONS MATERIALIZED
+→ TRN-014..017 LOCALLY VALIDATED
+→ 4 MATURITY PROMOTIONS
+→ INTEGRALLY VALIDATED NOT SUPPORTED
 → NO AUTOMATIC EXECUTION
+
+PRÓXIMA UXA
+→ UXA-105
+→ NOT_STARTED
+→ NOT_AUTHORIZED
 
 UXA-103
 → SCOPE ADJUDICATED
@@ -12935,8 +12947,8 @@ AUTORIDADES TEMÁTICAS VIGENTES
 <li><strong>Product Engineering:</strong> permanece pausada/não liberada;</li>
 <li><strong>UXA-102 / V5:</strong> <code>TRANSVERSE CONTRACT ADJUDICATED</code>; 76/76 transições examinadas; 0 promoções de maturidade;</li>
 <li><strong>UXA-103:</strong> escopo adjudicado; contrato funcional de <code>TRN-005</code> adjudicado e reconciliado; conclusão de maturidade adjudicada e promoção materializada para <code>LOCALLY VALIDATED</code>; <code>INTEGRALLY VALIDATED</code> não suportado pela evidência corrente;</li>
-<li><strong>UXA-104:</strong> escopo adjudicado por <code>GKR-UXA-104-PER013014-SCOPE-AUTHORITY-001</code> para <code>PER-013/014</code> + <code>TRN-014..017</code>; exame funcional <code>NOT_STARTED</code>; nenhuma promoção de maturidade;</li>
-<li><strong>execução automática seguinte:</strong> nenhuma; o próximo ato depende de autorização humana do exame funcional da UXA-104.</li>
+<li><strong>UXA-104:</strong> escopo adjudicado por <code>GKR-UXA-104-PER013014-SCOPE-AUTHORITY-001</code> para <code>PER-013/014</code> + <code>TRN-014..017</code>; exame funcional <code>COMPLETE</code>; contrato funcional <code>ADJUDICATED / NORMATIVE</code>; reconciliação <code>COMPLETE</code>; maturity exam <code>COMPLETE</code>; achados de maturidade <code>ADJUDICATED</code>; <code>TRN-014..017</code> promovidas para <code>LOCALLY VALIDATED</code>; quatro promoções de maturidade;</li>
+<li><strong>execução automática seguinte:</strong> nenhuma; nenhuma execução automática seguinte é criada pela conclusão da UXA-104.</li>
 </ul>
 <div class="highlight"><pre><span></span><code>DOCUMENTED
 ≠ IMPLEMENTED
@@ -13175,7 +13187,7 @@ UXA-101
 UXA-102 / V5
 → TRANSVERSE CONTRACT ADJUDICATED
 → 76/76 TRANSITIONS EXAMINED
-→ 0 MATURITY PROMOTIONS
+→ 4 MATURITY PROMOTIONS
 → V5-A COMPLETE AT CANDIDATE LEVEL
 → V5-B 76/76 TRANSITIONS EXAMINED
 → V5-C CROSS-RECONCILIATION COMPLETE AT CANDIDATE LEVEL
@@ -14347,7 +14359,7 @@ O/C INTERACTIVE PROTOTYPE
 UXA-102 / V5
 → TRANSVERSE CONTRACT ADJUDICATED
 → 76/76 TRANSITIONS EXAMINED
-→ 0 MATURITY PROMOTIONS
+→ 4 MATURITY PROMOTIONS
 
 UXA-103
 → SCOPE ADJUDICATED / GKR-UXA-103-TRN005-SCOPE-AUTHORITY-001
@@ -14362,8 +14374,14 @@ UXA-103
 UXA-104
 → SCOPE ADJUDICATED / GKR-UXA-104-PER013014-SCOPE-AUTHORITY-001
 → PER-013 / PER-014 + TRN-014..017
-→ FUNCTIONAL EXAM NOT_STARTED
-→ 0 MATURITY PROMOTIONS
+→ FUNCTIONAL EXAM COMPLETE
+→ FUNCTIONAL CONTRACT ADJUDICATED / NORMATIVE
+→ RECONCILIATION COMPLETE
+→ MATURITY EXAM COMPLETE
+→ MATURITY FINDINGS ADJUDICATED
+→ MATURITY PROMOTIONS MATERIALIZED
+→ TRN-014..017 LOCALLY VALIDATED
+→ 4 MATURITY PROMOTIONS
 
 PRODUCT ENGINEERING
 → PAUSED / NOT RELEASED
@@ -14462,7 +14480,7 @@ O/C AUTHENTICATED HIGH-FIDELITY
 UXA-102 / V5
 → TRANSVERSE CONTRACT ADJUDICATED
 → 76/76 TRANSITIONS EXAMINED
-→ 0 MATURITY PROMOTIONS
+→ 4 MATURITY PROMOTIONS
 
 PRODUCT ENGINEERING
 → PAUSED / NOT RELEASED
@@ -14644,7 +14662,7 @@ PRODUCT ENGINEERING
 </code></pre></div>
 <p>A construção ocorre uma superfície por vez. Planejamento não cria página vazia, novo <code>PER-ID</code>, navegação, tela, protótipo ou implementação por inferência.</p></section><section class="print-page" id="roadmap" heading-number="2.3"><h1 id="roadmap-roadmap-arquitetural-frentes-correntes-e-proximos-gates-da-guivos">Roadmap Arquitetural — Frentes Correntes e Próximos Gates da Guivos<a class="headerlink" href="#roadmap-roadmap-arquitetural-frentes-correntes-e-proximos-gates-da-guivos" title="Permanent link">&para;</a></h1>
 <h2 id="roadmap-1-funcao">1. Função<a class="headerlink" href="#roadmap-1-funcao" title="Permanent link">&para;</a></h2>
-<p>Este roadmap traduz <code>GKR-STATE-001 v3.50.92</code> em <strong>frentes governadas de avanço</strong>.</p>
+<p>Este roadmap traduz <code>GKR-STATE-001 v3.50.96</code> em <strong>frentes governadas de avanço</strong>.</p>
 <p>Sua função é declarar frentes correntes, dependências e próximos gates sem transformar possibilidade técnica em execução automática.</p>
 <div class="highlight"><pre><span></span><code>ROADMAP
 → ORIENTA O PRÓXIMO MOVIMENTO LEGÍTIMO
@@ -14665,7 +14683,7 @@ ROADMAP
 <tbody>
 <tr>
 <td>Estado global</td>
-<td><code>GKR-STATE-001 v3.50.92 / CURRENT</code></td>
+<td><code>GKR-STATE-001 v3.50.96 / CURRENT</code></td>
 </tr>
 <tr>
 <td>Era</td>
@@ -14737,7 +14755,7 @@ ROADMAP
 </tr>
 <tr>
 <td>UXA-104</td>
-<td><code>SCOPE ADJUDICATED / PER-013 + PER-014 + TRN-014..017 / FUNCTIONAL EXAM NOT_STARTED</code></td>
+<td><code>FUNCTIONAL CONTRACT ADJUDICATED / RECONCILIATION COMPLETE / MATURITY EXAM COMPLETE / TRN-014..017 LOCALLY VALIDATED / INTEGRAL NOT SUPPORTED</code></td>
 </tr>
 <tr>
 <td>Cognitive Reference Architecture</td>
@@ -15183,8 +15201,14 @@ UXA-103
 UXA-104
 → SCOPE ADJUDICATED
 → PER-013 / PER-014 + TRN-014..017
-→ FUNCTIONAL EXAM NOT_STARTED
-→ NEXT GATE = HUMAN AUTHORIZATION OF FUNCTIONAL EXAM
+→ FUNCTIONAL EXAM COMPLETE
+→ FUNCTIONAL CONTRACT ADJUDICATED / NORMATIVE
+→ RECONCILIATION COMPLETE
+→ MATURITY EXAM COMPLETE
+→ MATURITY FINDINGS ADJUDICATED
+→ MATURITY PROMOTIONS MATERIALIZED
+→ TRN-014..017 LOCALLY VALIDATED
+→ INTEGRALLY VALIDATED NOT SUPPORTED
 
 PRODUCT ENGINEERING
 → PAUSED / NOT RELEASED
@@ -38518,7 +38542,7 @@ PRODUCT ENGINEERING
 → NOT RELEASED BY THIS DOCUMENT
 </code></pre></div></section><section class="print-page" id="experience-architecture-person-journey-per-013-file-capture-review-master" heading-number="11.4.3"><h1 id="experience-architecture-person-journey-per-013-file-capture-review-master-jornada-da-pessoa-per-013-captura-e-revisao-de-arquivo-documento-mestre-de-superficie">Jornada da Pessoa — PER-013 — Captura e Revisão de Arquivo — Documento Mestre de Superfície<a class="headerlink" href="#experience-architecture-person-journey-per-013-file-capture-review-master-jornada-da-pessoa-per-013-captura-e-revisao-de-arquivo-documento-mestre-de-superficie" title="Permanent link">&para;</a></h1>
 <h2 id="experience-architecture-person-journey-per-013-file-capture-review-master-1-proposito">1. Propósito<a class="headerlink" href="#experience-architecture-person-journey-per-013-file-capture-review-master-1-proposito" title="Permanent link">&para;</a></h2>
-<p>Este documento governa a responsabilidade funcional de <strong>capturar e revisar Arquivo</strong> depois que a Pessoa escolhe conscientemente essa modalidade em <code>PER-003</code> e antes do inventário/autorização de <code>PER-005</code>.</p>
+<p>Este documento governa a responsabilidade funcional corrente de <strong>capturar e revisar Arquivo</strong> depois que a Pessoa escolhe conscientemente essa modalidade em <code>PER-003</code> e antes do inventário/autorização de <code>PER-005</code>.</p>
 <p>Ele não define layout, tela final, file picker específico, storage, provedor, formatos concretos, limites numéricos, mecanismo de segurança, OCR, extração técnica ou implementação.</p>
 <div class="highlight"><pre><span></span><code>PER-003 / ARQUIVO
 → TRN-014
@@ -38720,16 +38744,16 @@ SUBSTITUIR
 <p>Essas lacunas não invalidam o contrato funcional e não podem ser preenchidas por invenção.</p>
 <h2 id="experience-architecture-person-journey-per-013-file-capture-review-master-19-estado">19. Estado<a class="headerlink" href="#experience-architecture-person-journey-per-013-file-capture-review-master-19-estado" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>PER-013 FUNCTIONAL RESPONSIBILITY
-→ CONTRACT CANDIDATE
+→ ADJUDICATED / CURRENT
 
 ORIGIN
 → PER-003 / ARQUIVO
 
 INBOUND
-→ TRN-014 / CONTRACTED CANDIDATE
+→ TRN-014 / CONTRACTED / UNCHANGED
 
 OUTBOUND
-→ TRN-015 / CONTRACTED CANDIDATE
+→ TRN-015 / CONTRACTED / UNCHANGED
 
 DESTINATION
 → PER-005
@@ -38750,7 +38774,7 @@ PRODUCT ENGINEERING
 → NOT RELEASED
 </code></pre></div></section><section class="print-page" id="experience-architecture-person-journey-per-014-optional-guided-questions-master" heading-number="11.4.4"><h1 id="experience-architecture-person-journey-per-014-optional-guided-questions-master-jornada-da-pessoa-per-014-perguntas-opcionais-guiadas-documento-mestre-de-superficie">Jornada da Pessoa — PER-014 — Perguntas Opcionais Guiadas — Documento Mestre de Superfície<a class="headerlink" href="#experience-architecture-person-journey-per-014-optional-guided-questions-master-jornada-da-pessoa-per-014-perguntas-opcionais-guiadas-documento-mestre-de-superficie" title="Permanent link">&para;</a></h1>
 <h2 id="experience-architecture-person-journey-per-014-optional-guided-questions-master-1-finalidade">1. Finalidade<a class="headerlink" href="#experience-architecture-person-journey-per-014-optional-guided-questions-master-1-finalidade" title="Permanent link">&para;</a></h2>
-<p>Este documento governa a responsabilidade funcional candidata de Perguntas Opcionais escolhida conscientemente em <code>PER-003</code>.</p>
+<p>Este documento governa a responsabilidade funcional corrente de Perguntas Opcionais escolhida conscientemente em <code>PER-003</code>.</p>
 <p><code>PER-014</code> permite à Pessoa responder, pular, manter em aberto, revisar, corrigir ou remover respostas de um fluxo guiado opcional antes de entregar o conjunto revisado a <code>PER-005 — Inventário e Autorização</code>.</p>
 <div class="highlight"><pre><span></span><code>PER-003 / PERGUNTAS OPCIONAIS
 → TRN-016
@@ -38786,7 +38810,7 @@ CONCLUIR REVISÃO ≠ AUTORIZAR COMPREENSÃO
 <li>entregar respostas revisadas ao inventário sem autorização material implícita.</li>
 </ol>
 <h2 id="experience-architecture-person-journey-per-014-optional-guided-questions-master-4-origem-e-entrada">4. Origem e entrada<a class="headerlink" href="#experience-architecture-person-journey-per-014-optional-guided-questions-master-4-origem-e-entrada" title="Permanent link">&para;</a></h2>
-<p>A origem candidata é <code>TRN-016 — PER-003 → PER-014</code>, após escolha explícita de Perguntas Opcionais.</p>
+<p>A origem corrente é <code>TRN-016 — PER-003 → PER-014</code>, após escolha explícita de Perguntas Opcionais.</p>
 <p>A transição não pode:</p>
 <ul>
 <li>responder automaticamente;</li>
@@ -38969,10 +38993,10 @@ AUTORIZAÇÃO PARA PREPARAR COMPREENSÃO
 </ul>
 <h2 id="experience-architecture-person-journey-per-014-optional-guided-questions-master-20-estado">20. Estado<a class="headerlink" href="#experience-architecture-person-journey-per-014-optional-guided-questions-master-20-estado" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>PER-014
-→ RESPONSABILIDADE FUNCIONAL CANDIDATA
+→ RESPONSABILIDADE FUNCIONAL ADJUDICADA / CURRENT
 
 TRN-016 / TRN-017
-→ CONTRATADAS CANDIDATAS
+→ CONTRACTED / UNCHANGED
 
 PER-004
 → PRESERVADO
