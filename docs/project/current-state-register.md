@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.50.79
+version: 3.50.80
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-10-03
 normative: true
@@ -1678,6 +1678,56 @@ MATURITY PROMOTIONS
 ```
 
 Falha, estado indeterminado, retry, idempotência e reconciliação possuem cobertura semântica suficiente. Permanecem abertas integração ponta a ponta e operacionalização econômica; checkout, cobrança, faturamento, antifraude técnico e deduplicação técnica não são autorizados por esta validação.
+
+## 28.6 P8 — Produtos Especializados e handoffs
+
+A matriz `GPA-SPECIALIZED-JOURNEY-MATRIX-001` possui agora tratamento canônico para `SP-GAP-001..010`.
+
+```text
+SP-GAP-001
+→ JOURNEY → MALL
+→ SEMANTIC CONTRACT CLOSED
+
+SP-GAP-002
+→ JOURNEY → TRAVEL
+→ SEMANTIC CONTRACT CLOSED
+
+SP-GAP-003
+→ MEDIA EMBEDDED VS OWN CONTEXT
+→ CLOSED BY P8 + GPA-005
+
+SP-GAP-004
+→ ORGANIZATION → GUIVOS BUSINESS
+→ SEMANTIC CONTRACT CLOSED
+
+SP-GAP-005
+→ INTELLIGENCE PROVENANCE / EXPLAINABILITY BY SURFACE
+→ SEMANTIC CROSS-SURFACE CONTRACT CLOSED
+→ OPERATIONAL MODEL / SERVING STILL OPEN
+
+SP-GAP-006
+→ ADS × CURRENT UXA MATURITY
+→ CLOSED BY DOCUMENTARY REBASELINE
+
+SP-GAP-007
+→ NATIVE PRODUCT COLUMN IN SURF/TRN
+→ CLOSED AS CURRENT NON-NEED
+
+SP-GAP-008
+→ INTERNAL HANDOFF VS EXTERNAL BOUNDARY
+→ CLOSED BY POLICY P8
+
+SP-GAP-009
+→ BND-002 AS BUSINESS PROXY
+→ CLOSED BY POLICY P8
+
+SP-GAP-010
+→ ORGANIZATION OPPORTUNITY BOOST ENTITLEMENT
+→ CURRENT PLAN MAPPING RECONCILED
+→ NO AUTOMATIC ENTITLEMENT BY CONECTA / ELEVA / TRANSFORMA
+```
+
+Este fechamento não cria `SURF-ID`, `TRN-ID`, implementação, operação, pricing, billing, inventário ou liberação de Engenharia. Materializações granulares e componentes operacionais continuam dependentes de necessidade real e autoridade própria.
 
 ## 29. Gates correntes sem execução automática
 
