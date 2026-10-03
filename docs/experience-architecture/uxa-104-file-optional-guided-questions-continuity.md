@@ -2,11 +2,11 @@
 id: UXA-104
 title: UXA-104 — Continuidade de Arquivo e Perguntas Opcionais
 status: active
-version: 0.2.0
+version: 0.3.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-03
 normative: false
-maturity: functional_exam_complete_candidate_findings
+maturity: functional_contract_adjudicated_reconciled
 depends_on:
   - GKR-UXA-104-PER013014-SCOPE-AUTHORITY-001
   - GKR-STATE-001
@@ -30,7 +30,8 @@ A autoridade normativa de escopo é `GKR-UXA-104-PER013014-SCOPE-AUTHORITY-001`.
 UXA-104
 → SCOPE ADJUDICATED
 → FUNCTIONAL EXAM COMPLETE
-→ FINDINGS CANDIDATE / NOT ADJUDICATED
+→ FUNCTIONAL CONTRACT ADJUDICATED / NORMATIVE
+→ RECONCILIATION COMPLETE
 
 TRN-014..017
 → CONTRACTED / UNCHANGED
@@ -61,22 +62,23 @@ A abertura desta frente não materializa Masters, não promove transições, nã
 
 O exame funcional autorizado foi materializado em `GKR-UXA-104-PER013014-FUNCTIONAL-EXAM-001`.
 
-A convergência candidata é de suficiência funcional local de `PER-013`, `PER-014` e `TRN-014..017`, sem promoção de maturidade.
+A suficiência funcional local de `PER-013`, `PER-014` e `TRN-014..017` foi adjudicada e reconciliada, sem promoção de maturidade.
 
 ## 5. Próximo gate
-
-O próximo gate é a adjudicação humana dos achados do exame funcional.
 
 ```text
 FUNCTIONAL EXAM
 → COMPLETE
 
-FINDINGS
-→ CANDIDATE / NOT ADJUDICATED
+FUNCTIONAL CONTRACT
+→ ADJUDICATED / NORMATIVE
+
+RECONCILIATION
+→ COMPLETE
 
 TRN-014..017
 → CONTRACTED / UNCHANGED
 
 NEXT GOVERNED GATE
-→ ADJUDICATE UXA-104 FUNCTIONAL EXAM FINDINGS
+→ AUTHORIZE UXA-104 MATURITY EXAM
 ```
