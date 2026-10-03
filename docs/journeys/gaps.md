@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-GAPS-001
 title: Lacunas e Continuidades Ausentes
 status: active
-version: 1.0.18
+version: 1.0.19
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-03
 related:
@@ -197,7 +197,10 @@ INTERACTIVE PROTOTYPE
 → NOT_AUTHORIZED
 
 UXA-102 / V5
-→ NOT_STARTED
+→ TRANSVERSE CONTRACT ADJUDICATED
+→ 76/76 TRANSITIONS EXAMINED
+→ G1–G5 REFINED
+→ NO GENERIC V5 GAP REMAINS
 
 PRODUCT ENGINEERING
 → PAUSED / NOT RELEASED
