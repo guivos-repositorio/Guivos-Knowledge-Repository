@@ -2,7 +2,7 @@
 id: GPA-SPECIALIZED-JOURNEY-MATRIX-001
 title: Matriz de Integração dos Produtos Especializados com as Jornadas
 status: consolidated
-version: 2.1.0
+version: 2.1.1
 owner: Guivos
 last_updated: 2026-10-03
 depends_on:
@@ -220,8 +220,8 @@ Não presumir:
 | SP-GAP-005 | proveniência/explicabilidade de Intelligence não uniforme por superfície | evolução transversal |
 | SP-GAP-006 | página Ads ainda precisa refletir completamente a maturidade UXA já atingida | corrigir no rebaseline P8 |
 | SP-GAP-007 | registros SURF/TRN não possuem coluna nativa de produto | usar esta matriz; mudar schema somente se houver necessidade real |
-| SP-GAP-008 | handoff interno vs fronteira externa | governado pela política P8 |
-| SP-GAP-009 | `BND-002` pode ser indevidamente reutilizado como proxy de Business | proibir associação automática |
+| SP-GAP-008 | handoff interno vs fronteira externa | **fechado pela política P8** — `BND-001` reservado à autoridade externa; handoffs internos entre produtos Guivos não usam `BND-001` |
+| SP-GAP-009 | `BND-002` como proxy de Business | **fechado pela política P8** — `BND-002` não é produto, plano ou sinônimo de Business e não prova mudança de produto |
 | SP-GAP-010 | entitlement de Opportunity Boost para planos atuais de Organização não está reconciliado | autoridade econômica futura; não inventar |
 
 ## 12. Princípio de representação
