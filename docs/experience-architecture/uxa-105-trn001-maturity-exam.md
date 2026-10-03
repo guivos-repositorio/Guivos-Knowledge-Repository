@@ -1,12 +1,12 @@
 ---
 id: GKR-UXA-105-TRN001-MATURITY-EXAM-001
 title: UXA-105 — TRN-001 — Exame Específico de Maturidade
-status: draft
-version: 0.1.0
+status: active
+version: 1.0.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-03
-normative: false
-maturity: maturity_exam_complete_candidate
+normative: true
+maturity: maturity_promotion_materialized
 depends_on:
   - GKR-UXA-105-TRN001-SCOPE-EXAM-001
   - GKR-UXA-105-TRN001-FUNCTIONAL-EXAM-001
@@ -33,7 +33,7 @@ TRN-001
 
 O exame avalia se a evidência documental corrente sustenta mudança de maturidade de `PARTIAL` para `LOCALLY VALIDATED`.
 
-Este documento **não adjudica nem materializa promoção de maturidade**. Qualquer promoção exige gate humano próprio posterior.
+A conclusão de maturidade foi adjudicada por gate humano e a promoção foi materializada no Transition Registry. `TRN-001` passa a `LOCALLY VALIDATED`; `INTEGRALLY VALIDATED` permanece não suportado.
 
 ## 2. Estado de entrada
 
@@ -145,29 +145,30 @@ A conclusão analítica é:
 UXA-105 MATURITY EXAM
 → COMPLETE
 
-TRN-001 CURRENT
-→ PARTIAL / UNCHANGED
+HUMAN MATURITY ADJUDICATION
+→ COMPLETE
 
-CANDIDATE ELIGIBILITY
+ADJUDICATED ELIGIBILITY
+→ LOCALLY VALIDATED
+
+TRN-001
 → LOCALLY VALIDATED
 
 INTEGRALLY VALIDATED
 → NOT SUPPORTED BY CURRENT EVIDENCE
 
 MATURITY PROMOTIONS
-→ 0
-
-HUMAN MATURITY ADJUDICATION
-→ PENDING
+→ 1
+→ PARTIAL → LOCALLY VALIDATED
 ```
 
 Conclusão:
 
-> **A evidência corrente sustenta elegibilidade candidata para promover `TRN-001` de `PARTIAL` para `LOCALLY VALIDATED`, mas não sustenta `INTEGRALLY VALIDATED`.**
+> **`TRN-001` está documentalmente adjudicada e promovida de `PARTIAL` para `LOCALLY VALIDATED`, mas não para `INTEGRALLY VALIDATED`.**
 
 ## 8. Efeito sobre G1
 
-Mesmo se a promoção local vier a ser adjudicada em gate posterior:
+Após a promoção local adjudicada:
 
 ```text
 TRN-001
@@ -183,9 +184,9 @@ A maturidade de cada transição permanece individual. A promoção local de `TR
 
 Este exame:
 
-- não altera o Transition Registry;
-- não altera `GKR-JOURNEY-GAPS-001`;
-- não promove `TRN-001`;
+- atualiza o Transition Registry para refletir a promoção adjudicada;
+- atualiza `GKR-JOURNEY-GAPS-001` para remover a lacuna de maturidade local de `TRN-001`;
+- promove `TRN-001` somente até `LOCALLY VALIDATED`;
 - não altera `TRN-002..017`;
 - não comprova implementação;
 - não libera Product Engineering;
