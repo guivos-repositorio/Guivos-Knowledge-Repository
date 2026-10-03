@@ -2,10 +2,11 @@
 id: GKR-JOURNEY-TRANSITION-REGISTRY-001
 title: Registro Granular de Transições
 status: active
-version: 0.29.17
+version: 0.29.18
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-03
 related:
+  - GKR-UX-G5-OPPORTUNITY-BOOST-VALIDATION-001
   - GKR-UX-G4-INTERNAL-OPPORTUNITY-PROCESS-VALIDATION-001
   - GKR-UX-G3-ORGANIZATION-COLLECTIVE-RELATIONSHIP-VALIDATION-001
   - GKR-UX-G2-COLLECTIVE-DISCOVERY-REQUEST-VALIDATION-001
@@ -224,6 +225,20 @@ As lacunas correntes são validação ponta a ponta e maturidade/materializaçã
 | GKR-TRN-304 | COM-002 | PER-201 | parcial | integração orgânico–patrocinado |
 | GKR-TRN-305 | COM-004 | COM-005 | **parcial** | COM-005 validado pela UXA-099; ligação origem→estado residual ainda não examinada ponta a ponta |
 | GKR-TRN-306 | COM-002 | PER-202 | parcial | retorno patrocinado → lista orgânica |
+
+## 7.1 Validação G5 — Opportunity Boost
+
+`GKR-UX-G5-OPPORTUNITY-BOOST-VALIDATION-001` examina `TRN-301..306` sem promoção de maturidade.
+
+```text
+TRN-301/302/304/305/306
+→ PARTIAL / UNCHANGED
+
+TRN-303
+→ LOCALLY VALIDATED / UNCHANGED
+```
+
+As lacunas correntes são integração ponta a ponta e operacionalização econômica. Falha, estado indeterminado, retry, idempotência e reconciliação possuem cobertura semântica suficiente; cobrança, faturamento, antifraude e deduplicação técnica permanecem fora desta autoridade.
 
 ## 8. Planos, cobrança e ciclo de vida
 
