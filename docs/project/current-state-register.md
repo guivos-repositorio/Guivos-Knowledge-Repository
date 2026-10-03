@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.50.74
+version: 3.50.75
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-10-03
 normative: true
@@ -1397,7 +1397,6 @@ Permanecem abertos quando dependentes de realidade, materialização, Design, im
 - publicação real de conteúdo do fundador;
 - execução de Design high-fidelity O/C, já autorizada e liberada para execução externa por `GKR-UX-ORGCOL-AUTH-HIFI-EXEC-001 v1.0.0`, com entrega ainda `NOT_RECEIVED`;
 - protótipo interativo O/C, ainda não autorizado/não liberado;
-- UXA-102/V5;
 - Product Engineering.
 
 ## 26. Regra de atualidade documental
