@@ -2,11 +2,11 @@
 id: GKR-UXA-105-TRN001-SCOPE-EXAM-001
 title: UXA-105 — Exame de Escopo — Continuidade Home Pública → Entrada Protegida
 status: active
-version: 0.1.0
+version: 1.0.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-03
-normative: false
-maturity: scope_exam_complete_candidate_findings
+normative: true
+maturity: scope_adjudicated
 depends_on:
   - GKR-STATE-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
@@ -38,7 +38,7 @@ TRN-001
 → CURRENT MATURITY = PARTIAL
 ```
 
-Este documento **não adjudica o escopo**, não inicia exame funcional, não promove maturidade, não cria nova superfície e não libera Design ou Product Engineering.
+Este documento adjudica o escopo da UXA-105. A adjudicação não inicia exame funcional, não promove maturidade, não cria nova superfície e não libera Design ou Product Engineering.
 
 ## 2. Baseline corrente
 
@@ -143,7 +143,7 @@ Um exame funcional posterior, se autorizado, deverá verificar:
 11. acessibilidade e linguagem;
 12. preservação de `TRN-002` e das autoridades downstream.
 
-## 9. Resultado do scope exam
+## 9. Resultado adjudicado
 
 A convergência analítica é:
 
@@ -151,13 +151,13 @@ A convergência analítica é:
 UXA-105 SCOPE EXAM
 → COMPLETE
 
-CANDIDATE SCOPE
+SCOPE ADJUDICATION
+→ COMPLETE
+
+ADJUDICATED SCOPE
 → TRN-001 ONLY
 → PER-001 → PER-002
 → PUBLIC → PROTECTED CONTINUITY
-
-SCOPE FINDINGS
-→ CANDIDATE / NOT ADJUDICATED
 
 NEW SURFACE
 → NONE REQUIRED
@@ -175,13 +175,16 @@ PRODUCT ENGINEERING
 ## 10. Próximo gate
 
 ```text
-ADJUDICATE UXA-105 SCOPE?
+UXA-105
+→ SCOPE ADJUDICATED / NORMATIVE
 
-IF YES
-→ MATERIALIZE NORMATIVE SCOPE AUTHORITY
-→ KEEP TRN-001 PARTIAL / UNCHANGED
-→ NEXT SEPARATE GATE = AUTHORIZE FUNCTIONAL EXAM
+TRN-001
+→ PARTIAL / UNCHANGED
 
-IF NO
-→ REOPEN SCOPE FINDINGS
+FUNCTIONAL EXAM
+→ NOT_STARTED
+→ NOT_AUTHORIZED
+
+NEXT GOVERNED GATE
+→ AUTHORIZE UXA-105 FUNCTIONAL EXAM
 ```
