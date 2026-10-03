@@ -2,9 +2,9 @@
 id: GKR-PLANS-ORGANIZATION-001
 title: Planos — Organizações
 status: active
-version: 1.1.0
+version: 1.2.0
 owner: Guivos
-last_updated: 2026-09-20
+last_updated: 2026-10-03
 normative: false
 depends_on:
   - GEM-004-A1
@@ -22,6 +22,20 @@ Organização é um **tipo de participante do ecossistema**. Guivos Business é 
 | **Conecta** | R$ 299,00 | R$ 2.990,00 | presença institucional e conexão estruturada |
 | **Eleva** | R$ 799,00 | R$ 7.990,00 | operação recorrente, coordenação e analytics |
 | **Transforma** | a partir de R$ 1.990,00 | contrato anual | operação institucional complexa e dimensionada |
+
+## Opportunity Boost
+
+Os planos atuais de Organização não concedem entitlement automático de Opportunity Boost.
+
+| Plano | Entitlement automático | Verba de Boost incluída |
+|---|---|---|
+| Conecta | não | não |
+| Eleva | não | não |
+| Transforma | não por padrão | não por padrão |
+
+O Opportunity Boost permanece objeto econômico separado do plano institucional e é governado por `GKR-ORG-OPPORTUNITY-BOOST-ENTITLEMENT-001`.
+
+Contrato específico pode futuramente conceder capacidade própria somente de forma expressa. O nome do plano, o preço ou a escala não bastam para inferir entitlement, verba, desconto, inventário ou autorização de cobrança.
 
 ## Organização Conecta
 

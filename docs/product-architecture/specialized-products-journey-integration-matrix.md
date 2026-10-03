@@ -2,7 +2,7 @@
 id: GPA-SPECIALIZED-JOURNEY-MATRIX-001
 title: Matriz de Integração dos Produtos Especializados com as Jornadas
 status: consolidated
-version: 2.1.5
+version: 2.1.6
 owner: Guivos
 last_updated: 2026-10-03
 depends_on:
@@ -10,6 +10,7 @@ depends_on:
   - GLPA-001
   - GEM-004-PLAN-TAXONOMY-AUTHORITY-001
 related:
+  - GKR-ORG-OPPORTUNITY-BOOST-ENTITLEMENT-001
   - GKR-INTELLIGENCE-SURFACE-PROVENANCE-EXPLAINABILITY-001
   - GKR-UX-ORGANIZATION-BUSINESS-HANDOFF-CONTRACT-001
   - GKR-UX-JOURNEY-MALL-TRAVEL-HANDOFF-CONTRACT-001
@@ -226,7 +227,7 @@ Não presumir:
 | SP-GAP-007 | coluna nativa de produto em SURF/TRN | **fechado como não necessidade corrente** — esta matriz é a autoridade de associação produto↔jornada; alterar schema dos registries somente mediante necessidade real comprovada |
 | SP-GAP-008 | handoff interno vs fronteira externa | **fechado pela política P8** — `BND-001` reservado à autoridade externa; handoffs internos entre produtos Guivos não usam `BND-001` |
 | SP-GAP-009 | `BND-002` como proxy de Business | **fechado pela política P8** — `BND-002` não é produto, plano ou sinônimo de Business e não prova mudança de produto |
-| SP-GAP-010 | entitlement de Opportunity Boost para planos atuais de Organização não está reconciliado | autoridade econômica futura; não inventar |
+| SP-GAP-010 | entitlement de Opportunity Boost para planos atuais de Organização | **fechado no mapeamento corrente** por `GKR-ORG-OPPORTUNITY-BOOST-ENTITLEMENT-001` — nenhum entitlement automático por `Conecta/Eleva/Transforma`; compra Ads separada salvo autoridade contratual explícita |
 
 ## 12. Princípio de representação
 
