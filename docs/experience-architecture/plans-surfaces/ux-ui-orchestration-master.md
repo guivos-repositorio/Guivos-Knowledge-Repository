@@ -2,7 +2,7 @@
 id: GKR-UX-PLANS-ORCHESTRATION-001
 title: Planos — Superfícies e Fluxos — Documento Mestre de Orquestração UX/UI
 status: active
-version: 0.4.0
+version: 0.5.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-03
 normative: false
@@ -159,6 +159,42 @@ Estados possíveis:
 - **incluído conforme contrato** → respeitar o dimensionamento contratual aplicável.
 
 Essa matriz deve ser consumida como regra econômica, não como prescrição visual.
+
+### 8.4 Quadro econômico mínimo da superfície
+
+A experiência de composição Business deve ter acesso explícito aos componentes abaixo:
+
+| Componente | Regra econômica corrente |
+|---|---|
+| **Oferta Business** | obrigatória; taxa de ativação = R$ 0,00 |
+| **Start** | R$ 299/mês · R$ 2.990/ano |
+| **Growth** | R$ 799/mês · R$ 7.990/ano |
+| **Scale** | a partir de R$ 1.990/mês · anual dimensionado |
+| **Enterprise** | sob consulta |
+| **População** | progressiva por faixa; 1–50 incluídos |
+| **Journey custeado** | cobrança por acesso Plus/Pro financiado |
+| **Capacidade incluída no tier** | R$ 0,00 adicional |
+| **Capacidade não incluída** | preço mensal/anual governado |
+| **Self-service** | R$ 0,00 |
+| **Orçamento de incentivo** | separado da assinatura |
+
+Exemplo mínimo de leitura:
+
+```text
+START
++ 120 PESSOAS
++ PROGRAMAS DE INCENTIVO
++ SELF-SERVICE
+
+R$ 299,00
++ 70 × R$ 1,49
++ R$ 0,00 DE ATIVAÇÃO
++ R$ 0,00 DE SELF-SERVICE
+=
+R$ 403,30/MÊS
+```
+
+O orçamento destinado às recompensas do programa não integra esse total recorrente.
 
 ## 9. Estados transversais
 
