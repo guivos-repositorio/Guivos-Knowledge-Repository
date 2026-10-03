@@ -1,12 +1,12 @@
 ---
 id: GKR-UX-PER014-MASTER-001
 title: Jornada da Pessoa — PER-014 — Perguntas Opcionais Guiadas — Documento Mestre de Superfície
-status: draft
-version: 0.1.0
+status: active
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-26
 normative: false
-maturity: functional_contract_candidate
+maturity: current_surface_design_definition
 depends_on:
   - GKR-JOURNEY-PERSON-FUNCTIONAL-COMPLETENESS-001
   - GKR-SURF-PER-003
@@ -23,7 +23,7 @@ related:
 
 ## 1. Finalidade
 
-Este documento governa a responsabilidade funcional candidata de Perguntas Opcionais escolhida conscientemente em `PER-003`.
+Este documento governa a responsabilidade funcional corrente de Perguntas Opcionais escolhida conscientemente em `PER-003`.
 
 `PER-014` permite à Pessoa responder, pular, manter em aberto, revisar, corrigir ou remover respostas de um fluxo guiado opcional antes de entregar o conjunto revisado a `PER-005 — Inventário e Autorização`.
 
@@ -70,7 +70,7 @@ A Pessoa deve conseguir:
 
 ## 4. Origem e entrada
 
-A origem candidata é `TRN-016 — PER-003 → PER-014`, após escolha explícita de Perguntas Opcionais.
+A origem corrente é `TRN-016 — PER-003 → PER-014`, após escolha explícita de Perguntas Opcionais.
 
 A transição não pode:
 
@@ -296,10 +296,10 @@ Permanecem fora deste contrato:
 
 ```text
 PER-014
-→ RESPONSABILIDADE FUNCIONAL CANDIDATA
+→ RESPONSABILIDADE FUNCIONAL ADJUDICADA / CURRENT
 
 TRN-016 / TRN-017
-→ CONTRATADAS CANDIDATAS
+→ CONTRACTED / UNCHANGED
 
 PER-004
 → PRESERVADO

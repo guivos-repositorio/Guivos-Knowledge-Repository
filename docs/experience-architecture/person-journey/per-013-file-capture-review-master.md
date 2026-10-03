@@ -1,12 +1,12 @@
 ---
 id: GKR-UX-PER013-MASTER-001
 title: Jornada da Pessoa — PER-013 — Captura e Revisão de Arquivo — Documento Mestre de Superfície
-status: draft
-version: 0.1.0
+status: active
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-26
 normative: false
-maturity: functional_contract_candidate
+maturity: current_surface_design_definition
 depends_on:
   - GKR-JOURNEY-PERSON-FUNCTIONAL-COMPLETENESS-001
   - GKR-SURF-PER-003
@@ -22,7 +22,7 @@ related:
 
 ## 1. Propósito
 
-Este documento governa a responsabilidade funcional de **capturar e revisar Arquivo** depois que a Pessoa escolhe conscientemente essa modalidade em `PER-003` e antes do inventário/autorização de `PER-005`.
+Este documento governa a responsabilidade funcional corrente de **capturar e revisar Arquivo** depois que a Pessoa escolhe conscientemente essa modalidade em `PER-003` e antes do inventário/autorização de `PER-005`.
 
 Ele não define layout, tela final, file picker específico, storage, provedor, formatos concretos, limites numéricos, mecanismo de segurança, OCR, extração técnica ou implementação.
 
@@ -288,16 +288,16 @@ Essas lacunas não invalidam o contrato funcional e não podem ser preenchidas p
 
 ```text
 PER-013 FUNCTIONAL RESPONSIBILITY
-→ CONTRACT CANDIDATE
+→ ADJUDICATED / CURRENT
 
 ORIGIN
 → PER-003 / ARQUIVO
 
 INBOUND
-→ TRN-014 / CONTRACTED CANDIDATE
+→ TRN-014 / CONTRACTED / UNCHANGED
 
 OUTBOUND
-→ TRN-015 / CONTRACTED CANDIDATE
+→ TRN-015 / CONTRACTED / UNCHANGED
 
 DESTINATION
 → PER-005
