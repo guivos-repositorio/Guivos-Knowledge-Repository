@@ -2,11 +2,11 @@
 id: UXA-103
 title: UXA-103 — TRN-005 — Resultado Indeterminado, Reconciliação e Retry
 status: active
-version: 0.3.0
+version: 0.4.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-03
 normative: false
-maturity: functional_contract_adjudicated
+maturity: functional_contract_adjudicated_reconciled
 depends_on:
   - UXA-102
   - GKR-UXA-103-TRN005-SCOPE-AUTHORITY-001
@@ -34,7 +34,9 @@ UXA-103
 → SCOPE ADJUDICATED
 → FUNCTIONAL EXAM COMPLETE
 → FUNCTIONAL CONTRACT ADJUDICATED / NORMATIVE
+→ PER-005 / PER-006 / TRANSITION REGISTRY RECONCILED
 → TRN-005 PARTIAL / UNCHANGED
+→ MATURITY GATE PENDING
 → MATURITY PROMOTIONS 0
 ```
 
@@ -59,6 +61,6 @@ Esta abertura não cria superfície, `PER-ID`, `TRN-ID` ou `SURF-ID`, não defin
 
 O exame funcional foi concluído e o contrato foi adjudicado por `GKR-UXA-103-TRN005-FUNCTIONAL-EXAM-001`.
 
-O próximo gate é reconciliar `PER-005`, `PER-006` e o Transition Registry com a autoridade adjudicada. `TRN-005` permanece parcial até ato próprio de maturidade.
+`PER-005`, `PER-006` e o Transition Registry estão reconciliados com a autoridade adjudicada. O próximo gate é o exame específico de maturidade de `TRN-005`; nenhuma promoção é presumida.
 
 Nenhuma promoção de maturidade ocorre por esta abertura.
