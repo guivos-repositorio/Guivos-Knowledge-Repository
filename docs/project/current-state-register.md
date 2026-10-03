@@ -120,8 +120,8 @@ Estado executivo vigente:
 - **Product Engineering:** permanece pausada/não liberada;
 - **UXA-102 / V5:** `TRANSVERSE CONTRACT ADJUDICATED`; 76/76 transições examinadas; 0 promoções de maturidade;
 - **UXA-103:** escopo adjudicado; contrato funcional de `TRN-005` adjudicado e reconciliado; conclusão de maturidade adjudicada e promoção materializada para `LOCALLY VALIDATED`; `INTEGRALLY VALIDATED` não suportado pela evidência corrente;
-- **UXA-104:** escopo adjudicado por `GKR-UXA-104-PER013014-SCOPE-AUTHORITY-001` para `PER-013/014` + `TRN-014..017`; exame funcional `NOT_STARTED`; nenhuma promoção de maturidade;
-- **execução automática seguinte:** nenhuma; o próximo ato depende de autorização humana do exame funcional da UXA-104.
+- **UXA-104:** escopo adjudicado por `GKR-UXA-104-PER013014-SCOPE-AUTHORITY-001` para `PER-013/014` + `TRN-014..017`; exame funcional `COMPLETE`; achados `CANDIDATE / NOT ADJUDICATED`; nenhuma promoção de maturidade;
+- **execução automática seguinte:** nenhuma; o próximo ato depende da adjudicação humana dos achados do exame funcional da UXA-104.
 
 ```text
 DOCUMENTED
@@ -1776,7 +1776,9 @@ UXA-103
 UXA-104
 → SCOPE ADJUDICATED / GKR-UXA-104-PER013014-SCOPE-AUTHORITY-001
 → PER-013 / PER-014 + TRN-014..017
-→ FUNCTIONAL EXAM NOT_STARTED
+→ FUNCTIONAL EXAM COMPLETE
+→ FINDINGS CANDIDATE / NOT ADJUDICATED
+→ TRN-014..017 CONTRACTED / UNCHANGED
 → 0 MATURITY PROMOTIONS
 
 PRODUCT ENGINEERING
