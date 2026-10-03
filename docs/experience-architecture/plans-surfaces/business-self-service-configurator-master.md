@@ -2,7 +2,7 @@
 id: GKR-UX-PLANS-BUSINESS-CONFIGURATOR-001
 title: Planos — Guivos Business — Configurador e Calculadora Self-service — Documento Mestre
 status: active
-version: 0.4.0
+version: 0.5.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-03
 normative: false
@@ -72,12 +72,16 @@ A composição deve conseguir receber, conforme aplicável:
 ## 4. Modelo de composição
 
 ```text
+CONFIGURAÇÃO VÁLIDA
+=
+OFERTA BUSINESS OBRIGATÓRIA
++ TIER DE CAPACIDADE
+
 ASSINATURA RECORRENTE / CONTRATUAL
 =
-PLANO-BASE
+TIER DE CAPACIDADE
 + COMPONENTE DE POPULAÇÃO / ESCALA
-+ COMPONENTE DE OFERTA
-+ ACESSOS JOURNEY CUSTEADOS
++ ACESSOS JOURNEY CUSTEADOS, SE APLICÁVEL
 + CAPACIDADES ADICIONAIS
 + SERVIÇOS ADICIONAIS
 
@@ -93,11 +97,11 @@ O orçamento de incentivo deve ser exibido separadamente e nunca mascarado como 
 A calculadora deve trabalhar com uma tabela econômica versionada e não com números hardcoded pela interface.
 
 ```text
-BASE(periodicidade, plano)
+REQUIRE_BUSINESS_OFFER(oferta)
++
+BASE(periodicidade, tier)
 +
 POPULATION_RATE(periodicidade, faixa_autorizada) × base_precificável
-+
-OFFER_RATE(periodicidade, oferta_autorizada)
 +
 JOURNEY_ACCESS_RATE(periodicidade) × acessos
 +
@@ -118,7 +122,7 @@ A calculadora deve aplicar cobrança progressiva por faixa e exibir separadament
 
 ## 7. Produtos e ofertas
 
-O configurador deve mostrar separadamente o impacto econômico de Programas de Incentivo, Journey custeado e combinação de ambos.
+O configurador deve exigir pelo menos uma oferta Business. Programas de Incentivo, Journey custeado e a combinação de ambos possuem taxa de ativação igual a R$ 0,00; o impacto econômico decorre do tier, da escala, dos acessos Journey e dos demais componentes aplicáveis.
 
 As taxas de Programas de Incentivo, Journey custeado e composição conjunta são governadas pela autoridade econômica vigente. Itens futuros não formalizados continuam sem cifra.
 
@@ -142,9 +146,9 @@ A interface deve consumir a autoridade econômica, não duplicar lógica hardcod
 
 | Oferta | Mensal | Anual |
 |---|---:|---:|
-| Incentivos | R$ 199,00 | R$ 1.990,00 |
-| Journey custeado | R$ 99,00 | R$ 990,00 |
-| Incentivos + Journey | R$ 249,00 | R$ 2.490,00 |
+| Incentivos | R$ 0,00 | R$ 0,00 |
+| Journey custeado | R$ 0,00 | R$ 0,00 |
+| Incentivos + Journey | R$ 0,00 | R$ 0,00 |
 
 ### Serviços
 
@@ -213,7 +217,7 @@ A interface deve exibir a capacidade incluída com valor adicional zero, e não 
 
 ## 8. Resultado
 
-Quando todos os componentes necessários possuírem preço vigente, o resultado deve mostrar plano-base, população/escala, oferta(s), acessos Journey, adicionais, serviços, subtotal recorrente, periodicidade, total recorrente, orçamento de incentivo em linha separada e itens sob consulta.
+Quando todos os componentes necessários possuírem preço vigente, o resultado deve mostrar oferta Business obrigatória, tier de capacidade, população/escala, taxa de ativação da oferta igual a zero, acessos Journey, adicionais, serviços, subtotal recorrente, periodicidade, total recorrente, orçamento de incentivo em linha separada e itens sob consulta.
 
 ## 9. Configuração parcialmente calculável
 
@@ -240,7 +244,7 @@ A interface pode mostrar a parcela conhecida e indicar claramente o que falta pa
 
 ## 10. Enquadramento de plano
 
-O plano compatível deve ser determinado pela maior capacidade exigida pela configuração e pelos entitlements vigentes.
+O tier compatível deve ser determinado depois da seleção da oferta e pela maior capacidade exigida pela configuração e pelos entitlements vigentes. Sem oferta Business selecionada, a configuração não é contratável.
 
 A calculadora não pode elevar plano com base apenas em maximização de receita.
 
