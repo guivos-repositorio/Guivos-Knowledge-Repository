@@ -2,13 +2,14 @@
 id: GPA-006
 title: Guivos Intelligence
 status: consolidated
-version: 2.0.3
+version: 2.0.4
 owner: Guivos
 last_updated: 2026-10-03
 related_models:
   - GAI-001
   - GAI-002
 related:
+  - GKR-INTELLIGENCE-OPERATIONALIZATION-AUTHORITY-001
   - GKR-INTELLIGENCE-SURFACE-PROVENANCE-EXPLAINABILITY-001
   - GIA-000
   - ADR-007
@@ -1434,10 +1435,11 @@ Continuam abertos, sob autoridades próprias:
 - modelo físico de dados;
 - ontologia lógica completa;
 - ontologia física;
-- modelo operacional de proveniência;
-- contrato operacional de inferência, confiança e expiração;
-- thresholds de proteção populacional;
-- contrato operacional de explicabilidade;
+- contrato mínimo de operacionalização — adjudicado por `GKR-INTELLIGENCE-OPERATIONALIZATION-AUTHORITY-001`;
+- modelo físico/operacional de proveniência;
+- contrato operacional específico de inferência, confiança e expiração;
+- thresholds numéricos de proteção populacional;
+- mecanismos operacionais específicos de explicabilidade;
 - governança de benchmarks;
 - níveis de evidência causal;
 - aprendizado operacional;
