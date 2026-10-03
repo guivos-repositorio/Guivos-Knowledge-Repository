@@ -2,7 +2,7 @@
 id: GKR-PLANS-BUSINESS-001
 title: Planos — Guivos Business
 status: active
-version: 2.0.0
+version: 2.0.1
 owner: Guivos
 last_updated: 2026-10-03
 normative: false
@@ -18,6 +18,24 @@ depends_on:
 # Planos — Guivos Business
 
 Guivos Business é um **produto especializado B2B**. Seus planos são independentes dos planos do participante Organização.
+
+## Estado econômico corrente
+
+```text
+MODELO
+→ OFFER-FIRST
+
+OFERTA BUSINESS
+→ OBRIGATÓRIA
+→ PROGRAMAS DE INCENTIVO E/OU JOURNEY CUSTEADO
+→ TAXA DE ATIVAÇÃO = R$ 0,00
+
+START / GROWTH / SCALE / ENTERPRISE
+→ TIERS DE CAPACIDADE DA PLATAFORMA
+→ NÃO SÃO OFERTAS AUTÔNOMAS
+```
+
+A composição abaixo é a referência comercial corrente desta página.
 
 ## Resumo
 
