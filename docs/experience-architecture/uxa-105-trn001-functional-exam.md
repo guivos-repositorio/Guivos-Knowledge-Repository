@@ -318,19 +318,25 @@ Esta conclusão:
 - não declara G1 integralmente validado;
 - não libera Product Engineering.
 
-## 15. Próximo gate
+## 15. Estado downstream corrente
+
+O contrato funcional foi adjudicado sem promover maturidade por si só. A frente de maturidade posterior foi concluída por gate próprio:
 
 ```text
 UXA-105 FUNCTIONAL CONTRACT
 → ADJUDICATED / NORMATIVE
 
+MATURITY EXAM
+→ COMPLETE
+
+MATURITY ADJUDICATION
+→ COMPLETE
+
 TRN-001
-→ FUNCTIONALLY SUFFICIENT / ADJUDICATED
-→ PARTIAL / UNCHANGED
+→ LOCALLY VALIDATED
+→ PARTIAL → LOCALLY VALIDATED
+→ INTEGRALLY VALIDATED NOT SUPPORTED
 
-MATURITY PROMOTIONS
-→ 0
-
-NEXT GOVERNED GATE
-→ AUTHORIZE UXA-105 MATURITY EXAM
+PRODUCT ENGINEERING
+→ PAUSED / NOT RELEASED
 ```
