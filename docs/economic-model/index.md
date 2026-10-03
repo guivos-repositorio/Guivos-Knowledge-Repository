@@ -2,9 +2,9 @@
 id: GEM-000
 title: Guivos Economic Model
 status: active
-version: 1.3.2
+version: 1.3.3
 owner: Guivos
-last_updated: 2026-09-24
+last_updated: 2026-10-03
 related:
   - GEM-001
   - GEM-002
@@ -12,6 +12,7 @@ related:
   - GEM-004
   - GEM-004-A1
   - GEM-004-A2
+  - GEM-004-BUSINESS-VARIABLE-PRICING-AUTHORITY-001
   - GEM-004-PLAN-TAXONOMY-AUTHORITY-001
   - GEM-005
   - GEM-006
@@ -46,6 +47,7 @@ Autoridades principais:
 
 - [Autoridade Conceitual de Taxonomia, Função e Leitura dos Planos](gem-004-plan-taxonomy-conceptual-authority.md);
 - [Catálogo Comercial Candidato de Planos, Benefícios e Preços](gem-004-a1-commercial-plans-pricing-catalog.md);
+- [Guivos Business — Autoridade de Pricing Variável para Configurador](gem-004-business-variable-pricing-authority.md);
 - [Política Comercial de Oferta, Upgrade, Downgrade e Cancelamento](gem-004-a2-commercial-offer-upgrade-and-lifecycle-policy.md);
 - [Premissas de Precificação e Validação Comercial](gem-010-a1-pricing-assumptions-and-validation.md);
 - [Opportunity Boost — Contrato Econômico e entre Produtos](gem-007-a1-opportunity-boost-economic-and-product-contract.md);
