@@ -2,13 +2,14 @@
 id: GKR-UX-EVALUATION-REPUTATION-AUTHORITY-001
 title: Avaliação e Reputação — Autoridade Canônica
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-03
 normative: true
 depends_on:
   - UXA-057
 related:
+  - GKR-UX-EVALUATION-REPUTATION-SURFACE-RESPONSIBILITY-ADJUDICATION-001
   - GKR-JOURNEY-PERSON-FUNCTIONAL-COMPLETENESS-001
   - GKR-UX-EVALUATION-REPUTATION-HUMAN-ADJUDICATION-DOSSIER-001
   - GKR-UX-EVALUATION-REPUTATION-PERSON-SURFACE-PARTITION-001
@@ -267,7 +268,7 @@ Publicação ampla depende de autoridade especializada, especialmente por poder 
 
 ## 14. Autoridade de superfície
 
-Este documento resolve a autoridade semântica do domínio, mas **não transforma uma superfície em autoridade canônica de R1**.
+Este documento resolve a autoridade semântica do domínio. A adjudicação corrente das responsabilidades de superfície está em `GKR-UX-EVALUATION-REPUTATION-SURFACE-RESPONSIBILITY-ADJUDICATION-001`; ela adjudica R-A..R-D sem transformar qualquer superfície existente em autoridade canônica de R1 por analogia.
 
 Em especial:
 

@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-GAPS-001
 title: Lacunas e Continuidades Ausentes
 status: active
-version: 1.0.19
+version: 1.0.20
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-03
 related:
@@ -65,11 +65,11 @@ A autoridade semântica de Avaliação e Reputação passa a ser `GKR-UX-EVALUAT
 Lacunas correntes:
 
 - **entrada contextual para avaliar**: `PER-108` e `PER-203` podem ser origens candidatas somente mediante extensão explícita de seus contratos; outros objetos exigem origem comprovada;
-- **registro protegido da avaliação**: responsabilidade reconhecida, porém sem `GKR-SURF-*` adjudicada;
-- **continuidade da autora / “Minhas Avaliações”**: responsabilidade reconhecida, porém sem superfície adjudicada; `PER-009` é apenas possível ponto administrativo de acesso e não autoridade canônica;
-- **exibição pública contextual**: `PER-103` e `PER-203` podem receber integração somente após extensão explícita; Organização, atividade, curso/programa e relação institucional não possuem, por esta frente, detalhe público comprovado;
-- **resposta e contestação do responsável**: `COL-002` e `ORG-001` são apenas entradas administrativas candidatas até extensão expressa e comprovação de mandato;
-- **denúncia, moderação e recurso**: responsabilidades reconhecidas, sem superfície especializada adjudicada;
+- **registro protegido da avaliação (R-A)**: responsabilidade adjudicada por `GKR-UX-EVALUATION-REPUTATION-SURFACE-RESPONSIBILITY-ADJUDICATION-001`; materialização física/`GKR-SURF-*` ainda não criada;
+- **continuidade da autora / “Minhas Avaliações” (R-B)**: responsabilidade adjudicada; `PER-009` permanece apenas possível ponto administrativo de acesso mediante extensão expressa e não autoridade canônica;
+- **exibição pública contextual**: continua dependente de extensão explícita por objeto; `PER-103` e `PER-203` não recebem publicação por analogia, e Organização, atividade, curso/programa e relação institucional continuam sem detalhe público presumido;
+- **resposta e contestação do responsável (R-C)**: responsabilidade adjudicada; `COL-002` e `ORG-001` permanecem apenas possíveis entradas administrativas mediante extensão expressa e mandato comprovado;
+- **denúncia, moderação e recurso (R-D)**: responsabilidade adjudicada como governança especializada; materialização física, política operacional e instâncias concretas permanecem abertas;
 - **relação Organização↔Coletivo**: avaliação reputacional permanece separada de `ORG-005/COL-008` e de `UXA-019`; negociação bilateral não autoriza publicação reputacional;
 - **handoffs UXA-057**: nenhum novo `GKR-TRN-*` é criado enquanto origem, destino, autoridade, retorno, falha e idempotência não estiverem comprovados.
 
