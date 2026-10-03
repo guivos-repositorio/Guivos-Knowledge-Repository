@@ -2,12 +2,13 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.50.78
+version: 3.50.79
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-10-03
 normative: true
 maturity: current_truth_gia_cog_001_active_normative
 related:
+  - GKR-ORG-OPPORTUNITY-BOOST-ENTITLEMENT-001
   - GKR-INTELLIGENCE-SURFACE-PROVENANCE-EXPLAINABILITY-001
   - GKR-UX-ORGANIZATION-BUSINESS-HANDOFF-CONTRACT-001
   - GKR-UX-JOURNEY-MALL-TRAVEL-HANDOFF-CONTRACT-001
@@ -1394,7 +1395,7 @@ Permanecem abertos quando dependentes de realidade, materialização, Design, im
 - materialização das responsabilidades de Avaliação e Reputação ainda sem superfície adjudicada (registro protegido, continuidade da autora, resposta/contestação, moderação/recurso e integrações públicas específicas);
 - arquitetura técnica final de analytics/Intelligence Business;
 - regras econômicas restantes de Pontos;
-- operação Ads real, pricing, inventário e mensuração;
+- operação Ads real, pricing, inventário e mensuração; o entitlement de Opportunity Boost para planos atuais de Organização já está reconciliado sem benefício automático por plano;
 - emissão das GRUs das aplicações das assinaturas;
 - evidência de atividade efetiva para AIaaS se incluído;
 - implantação real do perfil pessoal do fundador;
