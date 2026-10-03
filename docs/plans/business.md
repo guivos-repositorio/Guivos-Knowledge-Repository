@@ -2,7 +2,7 @@
 id: GKR-PLANS-BUSINESS-001
 title: Planos — Guivos Business
 status: active
-version: 1.8.0
+version: 2.0.0
 owner: Guivos
 last_updated: 2026-10-03
 normative: false
@@ -30,7 +30,7 @@ Guivos Business é um **produto especializado B2B**. Seus planos são independen
 
 ## Quadro direto de contratação
 
-A contratação do Guivos Business deve ser lida pela empresa como uma composição única, formada pelo plano-base e pelos componentes aplicáveis à configuração escolhida.
+A contratação do Guivos Business parte primeiro da **oferta que a empresa quer operar**. Pelo menos uma oferta — Programas de Incentivo, Journey custeado ou ambas — é obrigatória. Start, Growth, Scale e Enterprise são tiers de capacidade da plataforma e não são contratáveis isoladamente.
 
 ### 1. Plano-base
 
@@ -54,13 +54,28 @@ A contratação do Guivos Business deve ser lida pela empresa como uma composiç
 
 A cobrança da população é **progressiva por faixa**, e não pela aplicação de uma única tarifa sobre toda a população.
 
-### 3. Oferta contratada
+### 3. Oferta contratada — obrigatória
 
-| Oferta | Mensal | Anual |
+| Oferta | Taxa mensal de ativação | Taxa anual de ativação |
 |---|---:|---:|
-| **Programas de Incentivo** | R$ 199,00 | R$ 1.990,00 |
-| **Journey custeado** | R$ 99,00 | R$ 990,00 |
-| **Incentivos + Journey** | R$ 249,00 | R$ 2.490,00 |
+| **Programas de Incentivo** | **R$ 0,00** | **R$ 0,00** |
+| **Journey custeado** | **R$ 0,00** | **R$ 0,00** |
+| **Incentivos + Journey** | **R$ 0,00** | **R$ 0,00** |
+
+A oferta define **o que a empresa está contratando para operar**. O tier define **quanta capacidade da plataforma** sustenta essa operação.
+
+```text
+SEM INCENTIVOS
+E
+SEM JOURNEY CUSTEADO
+→ NÃO EXISTE CONTRATAÇÃO BUSINESS ATIVA
+
+OFERTA BUSINESS
+→ OBRIGATÓRIA
+→ TAXA DE ATIVAÇÃO = R$ 0,00
+```
+
+Programas de Incentivo continuam podendo exigir orçamento pré-pago separado. Journey custeado continua sendo cobrado pelos acessos financiados.
 
 ### 4. Acessos Journey custeados
 
@@ -141,13 +156,17 @@ A inclusão de uma capacidade no tier não significa que ela seja gratuita unive
 ### 7. Fórmula da contratação
 
 ```text
+CONTRATAÇÃO BUSINESS VÁLIDA
+=
+OFERTA BUSINESS OBRIGATÓRIA
++ TIER DE CAPACIDADE
+
 ASSINATURA RECORRENTE / CONTRATUAL
 =
-PLANO-BASE
+TIER DE CAPACIDADE
 + POPULAÇÃO / ESCALA
-+ OFERTA
-+ ACESSOS JOURNEY CUSTEADOS
-+ CAPACIDADES ADICIONAIS NÃO INCLUÍDAS NO PLANO
++ ACESSOS JOURNEY CUSTEADOS, SE APLICÁVEL
++ CAPACIDADES ADICIONAIS NÃO INCLUÍDAS NO TIER
 + SERVIÇOS ADICIONAIS
 ```
 
@@ -174,11 +193,11 @@ START
 | Plano Start | fixo | R$ 299,00 |
 | 1–50 pessoas | incluído | R$ 0,00 |
 | 51–120 pessoas | 70 × R$ 1,49 | R$ 104,30 |
-| Programas de Incentivo | fixo | R$ 199,00 |
+| Programas de Incentivo | oferta selecionada · taxa de ativação | R$ 0,00 |
 | Self-service | incluído | R$ 0,00 |
-| **Total recorrente** |  | **R$ 602,30/mês** |
+| **Total recorrente** |  | **R$ 403,30/mês** |
 
-O orçamento destinado às recompensas do programa é informado separadamente pela empresa e não integra os R$ 602,30 da assinatura.
+O orçamento destinado às recompensas do programa é informado separadamente pela empresa e não integra os R$ 403,30 da assinatura.
 
 ## Periodicidade
 
@@ -578,7 +597,7 @@ Os **entitlements quantitativos que não estejam definidos** permanecem sujeitos
 
 ## O que a empresa pode contratar
 
-O plano não determina sozinho qual oferta será utilizada. A empresa pode contratar:
+O tier não constitui contratação Business sozinho. A empresa deve contratar pelo menos uma destas ofertas:
 
 - Programas de Incentivo;
 - acessos Guivos Journey custeados;
@@ -587,11 +606,12 @@ O plano não determina sozinho qual oferta será utilizada. A empresa pode contr
 A arquitetura econômica separa:
 
 ```text
-PLANO-BASE
+OFERTA BUSINESS OBRIGATÓRIA
+→ DEFINE O OBJETO DA CONTRATAÇÃO
+
+TIER DE CAPACIDADE
 +
 POPULAÇÃO / ESCALA
-+
-OFERTA(S)
 +
 ACESSOS JOURNEY CUSTEADOS
 +
