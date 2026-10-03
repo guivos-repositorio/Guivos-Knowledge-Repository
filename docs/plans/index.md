@@ -2,7 +2,7 @@
 id: GKR-PLANS-INDEX-001
 title: Planos — Visão Geral
 status: active
-version: 1.4.0
+version: 1.5.0
 owner: Guivos
 last_updated: 2026-10-03
 normative: false
@@ -75,7 +75,7 @@ Planos do produto especializado B2B **Guivos Business**. Eles são independentes
 
 O modelo de implementação/operação é independente do plano: a complexidade da configuração determina o nível de acompanhamento.
 
-A composição econômica do Business está adjudicada e inclui plano-base, população elegível por faixas progressivas, oferta contratada, acessos Journey Plus/Pro custeados, capacidades adicionais, matriz de inclusões por tier, serviços adicionais e orçamento pré-pago de incentivo separado da assinatura.
+A composição econômica do Business é **offer-first**: a empresa precisa contratar Programas de Incentivo, Journey custeado ou ambas. Start, Growth, Scale e Enterprise são tiers de capacidade e não constituem contratação Business isoladamente. A seleção da oferta tem taxa de ativação igual a R$ 0,00.
 
 Quando uma capacidade já estiver incluída no tier, seu valor adicional é **R$ 0,00**. Quando não estiver incluída e for elegível como add-on, aplica-se o valor mensal/anual da autoridade econômica vigente.
 

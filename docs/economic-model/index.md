@@ -2,7 +2,7 @@
 id: GEM-000
 title: Guivos Economic Model
 status: active
-version: 1.3.3
+version: 1.3.4
 owner: Guivos
 last_updated: 2026-10-03
 related:
@@ -39,7 +39,7 @@ O Guivos Economic Model é o domínio responsável por descrever como a Guivos s
 
 `Commercial plan baseline and Opportunity Boost candidate baseline documentarily defined — validation and calibration pending`.
 
-O domínio é governado por `GEM-001` a `GEM-010`. A baseline corrente define planos, benefícios, limites e preços de referência para Pessoas, Coletivos e Organizações e, separadamente, para o produto especializado Guivos Business; o Opportunity Boost permanece mecanismo publicitário candidato.
+O domínio é governado por `GEM-001` a `GEM-010`. Para Guivos Business, a autoridade econômica corrente adota modelo **offer-first**: pelo menos uma oferta Business é obrigatória, a taxa de ativação da oferta é R$ 0,00 e Start/Growth/Scale/Enterprise funcionam como tiers de capacidade da plataforma. A baseline corrente define planos, benefícios, limites e preços de referência para Pessoas, Coletivos e Organizações e, separadamente, para o produto especializado Guivos Business; o Opportunity Boost permanece mecanismo publicitário candidato.
 
 O estado vigente não aprova oferta pública, campanha real, cobrança, orçamento, projeção oficial, contabilização, valuation ou operação.
 
