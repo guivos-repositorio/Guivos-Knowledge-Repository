@@ -2,7 +2,7 @@
 id: GKR-TRADEMARK-BRAZIL-SIGNATURE-FILING-AUTH-001
 title: Brazil Signature Filing Authorization Package — Guivos
 status: active
-version: 1.3.0
+version: 1.4.0
 owner: Guivos
 last_updated: 2026-10-03
 depends_on:
@@ -16,6 +16,7 @@ related:
   - GKR-GLOBAL-INTEGRITY-POST300-001
   - GKR-TRADEMARK-HUMAN-FILING-AUTHORIZATION-001
   - GKR-TRADEMARK-GRU-SCENARIO-PREFLIGHT-001
+  - GKR-TRADEMARK-AUTHENTICATED-GRU-ISSUANCE-HANDOFF-001
 normative: true
 ---
 
@@ -384,7 +385,7 @@ Não integra esta autorização:
 
 ## 15. Próximo gate
 
-O gate **Human Filing Authorization** foi concedido por `GKR-TRADEMARK-HUMAN-FILING-AUTHORIZATION-001`. `GKR-TRADEMARK-GRU-SCENARIO-PREFLIGHT-001` revalidou a baseline pública vigente; o cenário operacional ainda depende da checagem autenticada do INPI. O próximo gate é **Authenticated GRU Issuance**.
+O gate **Human Filing Authorization** foi concedido por `GKR-TRADEMARK-HUMAN-FILING-AUTHORIZATION-001`. `GKR-TRADEMARK-GRU-SCENARIO-PREFLIGHT-001` revalidou a baseline pública vigente. `GKR-TRADEMARK-AUTHENTICATED-GRU-ISSUANCE-HANDOFF-001` prepara a execução autenticada, mas nenhuma GRU é declarada emitida até existir seu número real.
 
 A autorização humana concedida cobre o avanço dos quatro pedidos. A execução financeira permanece condicionada à confirmação do cenário efetivo no sistema. O executor deve preservar:
 
