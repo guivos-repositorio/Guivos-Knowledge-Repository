@@ -2,13 +2,14 @@
 id: GPA-006
 title: Guivos Intelligence
 status: consolidated
-version: 2.0.2
+version: 2.0.3
 owner: Guivos
-last_updated: 2026-09-25
+last_updated: 2026-10-03
 related_models:
   - GAI-001
   - GAI-002
 related:
+  - GKR-INTELLIGENCE-SURFACE-PROVENANCE-EXPLAINABILITY-001
   - GIA-000
   - ADR-007
   - GEA-GRAPH-REFERENCE-001
