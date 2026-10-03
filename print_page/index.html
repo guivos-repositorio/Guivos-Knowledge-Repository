@@ -11390,7 +11390,7 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 <h2 id="index-estado-semantico-sincronizado">Estado semântico sincronizado<a class="headerlink" href="#index-estado-semantico-sincronizado" title="Permanent link">&para;</a></h2>
 <p>A leitura de estado continua subordinada ao <a href="#project-current-state-register">Registro do Estado Atual</a>. Esta superfície preserva somente os marcadores exigidos de sincronização global:</p>
 <div class="highlight"><pre><span></span><code>GKR-STATE-001
-→ 3.50.83 / CURRENT
+→ 3.50.84 / CURRENT
 
 ERA
 → GE-2 — KNOWLEDGE
@@ -11399,10 +11399,12 @@ MARCO FUNCIONAL
 → M7.88
 
 ÚLTIMA UXA FUNCIONAL NUMERADA
-→ UXA-102
+→ UXA-103
 
-PRÓXIMA UXA
-→ UXA-103 / NOT_STARTED
+UXA-103
+→ SCOPE ADJUDICATED
+→ FUNCTIONAL EXAM NOT_STARTED
+→ TRN-005 PARTIAL / UNCHANGED
 
 GIA-COG-001
 → v0.1.2 / ACTIVE / NORMATIVE
@@ -12211,7 +12213,8 @@ AUTORIDADES TEMÁTICAS VIGENTES
 <li><strong>Research / mercado:</strong> método documental não equivale a pesquisa aplicada, PMF, disposição a pagar, retenção, impacto ou causalidade comprovados;</li>
 <li><strong>Product Engineering:</strong> permanece pausada/não liberada;</li>
 <li><strong>UXA-102 / V5:</strong> <code>TRANSVERSE CONTRACT ADJUDICATED</code>; 76/76 transições examinadas; 0 promoções de maturidade;</li>
-<li><strong>execução automática seguinte:</strong> nenhuma.</li>
+<li><strong>UXA-103:</strong> escopo adjudicado exclusivamente para exame funcional de <code>TRN-005</code>; exame ainda <code>NOT_STARTED</code>; <code>TRN-005</code> permanece <code>PARTIAL</code>;</li>
+<li><strong>execução automática seguinte:</strong> nenhuma fora do gate governado da UXA-103.</li>
 </ul>
 <div class="highlight"><pre><span></span><code>DOCUMENTED
 ≠ IMPLEMENTED
@@ -13624,6 +13627,12 @@ UXA-102 / V5
 → 76/76 TRANSITIONS EXAMINED
 → 0 MATURITY PROMOTIONS
 
+UXA-103
+→ SCOPE ADJUDICATED / GKR-UXA-103-TRN005-SCOPE-AUTHORITY-001
+→ FUNCTIONAL EXAM NOT_STARTED
+→ TRN-005 PARTIAL / UNCHANGED
+→ 0 MATURITY PROMOTIONS
+
 PRODUCT ENGINEERING
 → PAUSED / NOT RELEASED
 
@@ -13903,7 +13912,7 @@ PRODUCT ENGINEERING
 </code></pre></div>
 <p>A construção ocorre uma superfície por vez. Planejamento não cria página vazia, novo <code>PER-ID</code>, navegação, tela, protótipo ou implementação por inferência.</p></section><section class="print-page" id="roadmap" heading-number="2.3"><h1 id="roadmap-roadmap-arquitetural-frentes-correntes-e-proximos-gates-da-guivos">Roadmap Arquitetural — Frentes Correntes e Próximos Gates da Guivos<a class="headerlink" href="#roadmap-roadmap-arquitetural-frentes-correntes-e-proximos-gates-da-guivos" title="Permanent link">&para;</a></h1>
 <h2 id="roadmap-1-funcao">1. Função<a class="headerlink" href="#roadmap-1-funcao" title="Permanent link">&para;</a></h2>
-<p>Este roadmap traduz <code>GKR-STATE-001 v3.50.83</code> em <strong>frentes governadas de avanço</strong>.</p>
+<p>Este roadmap traduz <code>GKR-STATE-001 v3.50.84</code> em <strong>frentes governadas de avanço</strong>.</p>
 <p>Sua função é declarar frentes correntes, dependências e próximos gates sem transformar possibilidade técnica em execução automática.</p>
 <div class="highlight"><pre><span></span><code>ROADMAP
 → ORIENTA O PRÓXIMO MOVIMENTO LEGÍTIMO
@@ -13924,7 +13933,7 @@ ROADMAP
 <tbody>
 <tr>
 <td>Estado global</td>
-<td><code>GKR-STATE-001 v3.50.83 / CURRENT</code></td>
+<td><code>GKR-STATE-001 v3.50.84 / CURRENT</code></td>
 </tr>
 <tr>
 <td>Era</td>
@@ -13936,7 +13945,7 @@ ROADMAP
 </tr>
 <tr>
 <td>Última UXA numerada</td>
-<td><code>UXA-102</code></td>
+<td><code>UXA-103</code></td>
 </tr>
 <tr>
 <td>Homes públicas</td>
@@ -13991,8 +14000,8 @@ ROADMAP
 <td><code>ADJUDICADA / MATERIALIZADA EM MAIN</code></td>
 </tr>
 <tr>
-<td>Próxima UXA</td>
-<td><code>UXA-103 / NOT_STARTED</code></td>
+<td>UXA-103</td>
+<td><code>SCOPE ADJUDICATED / FUNCTIONAL EXAM NOT_STARTED / TRN-005 PARTIAL</code></td>
 </tr>
 <tr>
 <td>Cognitive Reference Architecture</td>
@@ -14237,13 +14246,15 @@ DOCUMENTATION COLLECTION
 UXA-102 / V5
 → ADJUDICADA / MATERIALIZADA EM MAIN
 
-PRÓXIMA UXA
-→ UXA-103 / NOT_STARTED
+UXA-103
+→ SCOPE ADJUDICATED
+→ FUNCTIONAL EXAM NOT_STARTED
+→ TRN-005 PARTIAL / UNCHANGED
 
 PRODUCT ENGINEERING
 → PAUSED / NOT RELEASED
 </code></pre></div>
-<p>A coleção documental planejada de superfícies da Jornada da Pessoa está completa em <code>26 / 26</code>; lacunas técnicas e transacionais permanecem governadas separadamente. Materialização visual, teste real, implementação ou início de <code>UXA-103</code> dependem de atos próprios.</p>
+<p>A coleção documental planejada de superfícies da Jornada da Pessoa está completa em <code>26 / 26</code>; lacunas técnicas e transacionais permanecem governadas separadamente. A UXA-103 possui apenas escopo adjudicado para o exame funcional de <code>TRN-005</code>; o exame ainda não foi iniciado. Materialização visual, teste real e implementação dependem de atos próprios.</p>
 <h2 id="roadmap-8-guivos-business">8. Guivos Business<a class="headerlink" href="#roadmap-8-guivos-business" title="Permanent link">&para;</a></h2>
 <p><code>GPA-004 v1.7.5</code> governa a arquitetura funcional do Guivos Business.</p>
 <div class="highlight"><pre><span></span><code>BUSINESS
@@ -14418,8 +14429,10 @@ O/C INTERACTIVE PROTOTYPE
 UXA-102 / V5
 → ADJUDICADA / MATERIALIZADA EM MAIN
 
-PRÓXIMA UXA
-→ UXA-103 / NOT_STARTED
+UXA-103
+→ SCOPE ADJUDICATED
+→ FUNCTIONAL EXAM NOT_STARTED
+→ TRN-005 PARTIAL / UNCHANGED
 
 PRODUCT ENGINEERING
 → PAUSED / NOT RELEASED
