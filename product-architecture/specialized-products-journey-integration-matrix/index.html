@@ -7621,10 +7621,12 @@ Journey / Mall / Travel / Business / Media / Intelligence / Ads
 <li><code>TRN-305</code>: campanha → estado residual, parcial embora os estados residuais estejam validados.</li>
 </ul>
 <h3 id="63-journey-mall">6.3 Journey → Mall<a class="headerlink" href="#63-journey-mall" title="Permanent link">&para;</a></h3>
-<p>Previsto arquiteturalmente, sem contrato <code>SURF/TRN</code> dedicado suficiente.</p>
-<p>Não usar <code>BND-001</code> se Mall continuar sob autoridade Guivos. Não inventar checkout, carrinho, pedido, pagamento ou retorno.</p>
+<p>Contrato semântico canônico definido por <code>GKR-UX-JOURNEY-MALL-TRAVEL-HANDOFF-CONTRACT-001</code>.</p>
+<p>O handoff é interno quando a responsabilidade dominante muda de Journey para Mall sob autoridade Guivos. Não há <code>SURF/TRN</code> dedicado criado por esse contrato.</p>
+<p>Não usar <code>BND-001</code> se Mall continuar sob autoridade Guivos. Não inventar checkout, carrinho, pedido, pagamento ou retorno materializado.</p>
 <h3 id="64-journey-travel">6.4 Journey → Travel<a class="headerlink" href="#64-journey-travel" title="Permanent link">&para;</a></h3>
-<p>Previsto arquiteturalmente, sem contrato <code>SURF/TRN</code> dedicado suficiente.</p>
+<p>Contrato semântico canônico definido por <code>GKR-UX-JOURNEY-MALL-TRAVEL-HANDOFF-CONTRACT-001</code>.</p>
+<p>O handoff é interno quando a responsabilidade dominante muda de Journey para Travel sob autoridade Guivos. Não há <code>SURF/TRN</code> dedicado criado por esse contrato.</p>
 <p>Não usar <code>BND-001</code> se Travel continuar sob autoridade Guivos. Reserva externa de terceiro poderá possuir fronteira própria somente quando a autoridade correspondente for definida.</p>
 <h3 id="65-journeyorganizacao-guivos-business">6.5 Journey/Organização → Guivos Business<a class="headerlink" href="#65-journeyorganizacao-guivos-business" title="Permanent link">&para;</a></h3>
 <p>Não existe na baseline atual um handoff canônico suficiente que prove quando uma Organização deixa uma capacidade institucional comum e inicia uma experiência de Guivos Business contratado.</p>
@@ -7691,13 +7693,13 @@ Journey / Mall / Travel / Business / Media / Intelligence / Ads
 <tbody>
 <tr>
 <td>SP-GAP-001</td>
-<td>Journey → Mall sem contrato canônico de handoff</td>
-<td>futura UXA específica</td>
+<td>Journey → Mall</td>
+<td><strong>contrato semântico fechado</strong> por <code>GKR-UX-JOURNEY-MALL-TRAVEL-HANDOFF-CONTRACT-001</code>; materialização <code>SURF/TRN</code> somente mediante necessidade real</td>
 </tr>
 <tr>
 <td>SP-GAP-002</td>
-<td>Journey → Travel sem contrato canônico de handoff</td>
-<td>futura UXA específica</td>
+<td>Journey → Travel</td>
+<td><strong>contrato semântico fechado</strong> por <code>GKR-UX-JOURNEY-MALL-TRAVEL-HANDOFF-CONTRACT-001</code>; materialização <code>SURF/TRN</code> somente mediante necessidade real</td>
 </tr>
 <tr>
 <td>SP-GAP-003</td>
@@ -7727,12 +7729,12 @@ Journey / Mall / Travel / Business / Media / Intelligence / Ads
 <tr>
 <td>SP-GAP-008</td>
 <td>handoff interno vs fronteira externa</td>
-<td>governado pela política P8</td>
+<td><strong>fechado pela política P8</strong> — <code>BND-001</code> reservado à autoridade externa; handoffs internos entre produtos Guivos não usam <code>BND-001</code></td>
 </tr>
 <tr>
 <td>SP-GAP-009</td>
-<td><code>BND-002</code> pode ser indevidamente reutilizado como proxy de Business</td>
-<td>proibir associação automática</td>
+<td><code>BND-002</code> como proxy de Business</td>
+<td><strong>fechado pela política P8</strong> — <code>BND-002</code> não é produto, plano ou sinônimo de Business e não prova mudança de produto</td>
 </tr>
 <tr>
 <td>SP-GAP-010</td>
