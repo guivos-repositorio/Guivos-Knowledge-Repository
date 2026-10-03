@@ -2,7 +2,7 @@
 id: GEM-004-BUSINESS-VARIABLE-PRICING-AUTHORITY-001
 title: Guivos Business — Autoridade de Pricing Variável para Configurador
 status: active
-version: 1.0.0
+version: 1.0.1
 owner: Guivos Economic Model
 last_updated: 2026-10-03
 normative: true
@@ -379,23 +379,3 @@ Esta autoridade econômica está congelada para consumo documental. Próximos at
 - contrato/termos;
 - oferta pública;
 - validação de disposição a pagar e unit economics.
-
-
-## 14. Entitlements por tier e proteção contra dupla cobrança
-
-```text
-BUSINESS VARIABLE PRICING TABLE
-→ MATERIALIZED AS CANDIDATE
-→ NOT ADJUDICATED
-→ NOT NORMATIVE
-
-FULL NUMERIC CONFIGURATOR
-→ ECONOMICALLY SPECIFIABLE
-→ NOT YET RELEASED
-
-PUBLIC OFFER
-→ NOT AUTHORIZED
-
-CHARGING
-→ NOT AUTHORIZED
-```
