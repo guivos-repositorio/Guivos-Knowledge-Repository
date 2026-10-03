@@ -2,7 +2,7 @@
 id: GKR-UX-PER005-MASTER-001
 title: Jornada da Pessoa — PER-005 — Inventário e Autorização — Documento Mestre de Superfície
 status: active
-version: 0.1.2
+version: 0.1.3
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-03
 normative: false
@@ -40,7 +40,7 @@ Este documento não cria tela, layout, wireframe, UI, protótipo, sistema visual
 PER-004 — EXPRESSÃO POR TEXTO OU VOZ
 → TRN-004 / LOCALMENTE VALIDADA
 → PER-005 — INVENTÁRIO E AUTORIZAÇÃO
-→ TRN-005 / PARCIAL
+→ TRN-005 / LOCALLY VALIDATED
 → PER-006 — PROCESSAMENTO VISÍVEL
 ```
 
@@ -310,12 +310,12 @@ Nenhum dado adicional pode ser inferido como autorizado apenas porque está disp
 
 ## 17. Handoff para PER-006
 
-`TRN-005 — PER-005 → PER-006` permanece parcial.
+`TRN-005 — PER-005 → PER-006` é **localmente validada** após a adjudicação de maturidade da UXA-103.
 
 ```text
 INVENTÁRIO REVISADO
 → AUTORIZAÇÃO ESPECÍFICA
-→ TRN-005 / PARCIAL
+→ TRN-005 / LOCALLY VALIDATED
 → PER-006 — PROCESSAMENTO VISÍVEL
 ```
 
@@ -460,7 +460,7 @@ Uma futura solução visual de `PER-005` é aceitável quando:
 12. itens alterados materialmente exigem nova revisão aplicável;
 13. informação de terceiros não é tratada como automaticamente autorizada;
 14. `TRN-004` permanece localmente validada;
-15. `TRN-005` permanece parcial;
+15. `TRN-005` está localmente validada;
 16. nenhuma nova superfície é criada;
 17. Product Engineering permanece não liberado.
 
@@ -521,7 +521,7 @@ PERSONALIZATION
 → BLOCKED
 
 TRN-005
-→ PARTIAL / UNCHANGED
+→ LOCALLY VALIDATED
 
 NEXT DOCUMENTATION TARGET
 → PER-006 — PROCESSAMENTO VISÍVEL
