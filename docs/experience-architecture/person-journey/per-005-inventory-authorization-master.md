@@ -2,9 +2,9 @@
 id: GKR-UX-PER005-MASTER-001
 title: Jornada da Pessoa — PER-005 — Inventário e Autorização — Documento Mestre de Superfície
 status: active
-version: 0.1.0
+version: 0.1.1
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-25
+last_updated: 2026-10-03
 normative: false
 maturity: current_surface_design_definition
 depends_on:
@@ -37,7 +37,7 @@ Este documento não cria tela, layout, wireframe, UI, protótipo, sistema visual
 
 ```text
 PER-004 — EXPRESSÃO POR TEXTO OU VOZ
-→ TRN-004 / PARCIAL
+→ TRN-004 / LOCALMENTE VALIDADA
 → PER-005 — INVENTÁRIO E AUTORIZAÇÃO
 → TRN-005 / PARCIAL
 → PER-006 — PROCESSAMENTO VISÍVEL
@@ -69,7 +69,7 @@ Ela não governa:
 
 ## 3. Entrada legítima
 
-A entrada corrente ocorre por `TRN-004 — PER-004 → PER-005`, que permanece parcial.
+A entrada corrente ocorre por `TRN-004 — PER-004 → PER-005`, **localmente validada** por `GKR-UX-G1-ENTRY-EXPRESSION-INVENTORY-VALIDATION-001`.
 
 O contrato corrente de `PER-004` permite entregar, quando aplicável:
 
@@ -89,7 +89,7 @@ INVENTÁRIO PRONTO
 ≠ AUTORIZADO PARA PROCESSAR
 ```
 
-A parcialidade de `TRN-004` não é promovida por este Master.
+A maturidade local de `TRN-004` é herdada da autoridade G1; este Master não a amplia para validação integral.
 
 ## 4. Job da Pessoa
 
@@ -454,7 +454,7 @@ Uma futura solução visual de `PER-005` é aceitável quando:
 11. remoção/limitação não é confundida com exclusão técnica;
 12. itens alterados materialmente exigem nova revisão aplicável;
 13. informação de terceiros não é tratada como automaticamente autorizada;
-14. `TRN-004` permanece parcial;
+14. `TRN-004` permanece localmente validada;
 15. `TRN-005` permanece parcial;
 16. nenhuma nova superfície é criada;
 17. Product Engineering permanece não liberado.
@@ -478,7 +478,7 @@ Este Documento Mestre não:
 - libera persistência;
 - libera personalização;
 - promove Arquivo ou Perguntas Opcionais além dos contratos candidatos `PER-013` e `PER-014`;
-- altera maturidade de `TRN-004` ou `TRN-005`;
+- amplia a maturidade de `TRN-004` ou promove `TRN-005`;
 - cria `PER-006`;
 - inicia Product Engineering.
 
@@ -489,7 +489,7 @@ PER-005 MASTER
 → CURRENT DESIGN DEFINITION
 
 ENTRY
-→ TRN-004 / PARTIAL
+→ TRN-004 / LOCALLY VALIDATED
 
 JOB
 → REVIEW + AUTHORIZE
