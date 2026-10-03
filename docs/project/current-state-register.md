@@ -2,12 +2,13 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.50.77
+version: 3.50.78
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-10-03
 normative: true
 maturity: current_truth_gia_cog_001_active_normative
 related:
+  - GKR-INTELLIGENCE-SURFACE-PROVENANCE-EXPLAINABILITY-001
   - GKR-UX-ORGANIZATION-BUSINESS-HANDOFF-CONTRACT-001
   - GKR-UX-JOURNEY-MALL-TRAVEL-HANDOFF-CONTRACT-001
   - GKR-TRADEMARK-AUTHENTICATED-GRU-ISSUANCE-HANDOFF-001
@@ -1380,7 +1381,7 @@ Permanecem abertos quando dependentes de realidade, materialização, Design, im
 - PMF e disposição a pagar;
 - POC/provisionamento/produção Neo4j;
 - GraphRAG/GDS/Power BI em produção;
-- modelo físico/ontologia/serving/MLOps final do Intelligence;
+- modelo físico/ontologia/serving/MLOps final do Intelligence; proveniência/explicabilidade possuem envelope semântico transversal fechado, mas modelo operacional e serving técnico permanecem abertos;
 - `GIA-COG-002..008` somente mediante necessidade material e autorização própria;
 - constituição jurídica de eventual veículo social;
 - superfícies legais e controles de privacidade em produção;
