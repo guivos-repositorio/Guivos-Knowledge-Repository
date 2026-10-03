@@ -2,10 +2,11 @@
 id: GKR-JOURNEY-TRANSITION-REGISTRY-001
 title: Registro Granular de Transições
 status: active
-version: 0.29.14
+version: 0.29.15
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-03
 related:
+  - GKR-UX-G2-COLLECTIVE-DISCOVERY-REQUEST-VALIDATION-001
   - GKR-UX-G1-ENTRY-EXPRESSION-INVENTORY-VALIDATION-001
   - GKR-UXA-102-V5-AUTHORITY-001
   - UXA-089
@@ -115,6 +116,23 @@ O modelo corrente não registra handoffs diretos `PER-010 ↔ PER-011`, `PER-011
 | GKR-TRN-112 | COL-002 | COL-003 | responsável | abrir fila especializada preservando escopo | GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001 + UXA-089/090 | **integralmente validada** | — |
 | GKR-TRN-113 | COL-004 | COL-005 | responsável | comunicar a participantes autorizados | GKR-UX-COL-OFFICIAL-COMMUNICATION-MASTER-001 + GKR-UX-COMMUNICATIONS-NOTIFICATIONS-001 + GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001 + GKR-UX-ORGCOL-AUTH-STATE-MAP-001 | contratada | operação interna não materializada |
 | GKR-TRN-114 | COL-003 | COL-004 | responsável | continuar operacionalmente para gestão do mesmo vínculo já formado pela aprovação | GKR-UX-COL-REQUEST-MANAGEMENT-MASTER-001 + GKR-UX-COL-PARTICIPANTS-LINKS-MASTER-001 + UXA-092 | contratada | persistência técnica do vínculo e materialização dedicada de COL-004 não comprovadas |
+
+## 5.1 Validação G2 — descoberta e solicitação de Coletivo
+
+`GKR-UX-G2-COLLECTIVE-DISCOVERY-REQUEST-VALIDATION-001` examina `TRN-101/102/103/104/114` sem promoção de maturidade.
+
+```text
+TRN-101
+→ LOCALLY VALIDATED / UNCHANGED
+
+TRN-102/103/104
+→ PARTIAL / UNCHANGED
+
+TRN-114
+→ CONTRACTED / UNCHANGED
+```
+
+A lacuna corrente deixa de ser erro/retorno genérico e passa a ser validação ponta a ponta/materialização específica.
 
 ## 6. Organização, oportunidades e relações bilaterais
 
