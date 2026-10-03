@@ -2,12 +2,13 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.50.68
+version: 3.50.69
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-10-03
 normative: true
 maturity: current_truth_gia_cog_001_active_normative
 related:
+  - GKR-UX-G3-ORGANIZATION-COLLECTIVE-RELATIONSHIP-VALIDATION-001
   - GKR-UX-G2-COLLECTIVE-DISCOVERY-REQUEST-VALIDATION-001
   - GKR-UX-G1-ENTRY-EXPRESSION-INVENTORY-VALIDATION-001
   - GKR-UXA-102-V5-AUTHORITY-001
@@ -1594,6 +1595,26 @@ MATURITY PROMOTIONS
 ```
 
 A decisão preserva explicitamente as autoridades correntes: cobertura semântica de erro, retorno, estado indeterminado e idempotência não equivale a validação ponta a ponta.
+
+## 28.3 G3 — Organização e relação Organização–Coletivo
+
+`GKR-UX-G3-ORGANIZATION-COLLECTIVE-RELATIONSHIP-VALIDATION-001` conclui o exame específico da terceira família deixada pela UXA-102/V5.
+
+```text
+TRN-201
+→ PARTIAL / UNCHANGED
+
+TRN-202
+→ LOCALLY VALIDATED / UNCHANGED
+
+TRN-206..209
+→ CONTRACTED / UNCHANGED
+
+MATURITY PROMOTIONS
+→ 0
+```
+
+A decisão reconhece que concorrência, versão, retorno, resultado indeterminado e idempotência já estão semanticamente cobertos pelas autoridades correntes. O que permanece aberto é validação ponta a ponta/materialização.
 
 ## 29. Gates correntes sem execução automática
 

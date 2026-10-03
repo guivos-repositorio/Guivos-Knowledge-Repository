@@ -2,10 +2,11 @@
 id: GKR-JOURNEY-TRANSITION-REGISTRY-001
 title: Registro Granular de Transições
 status: active
-version: 0.29.15
+version: 0.29.16
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-03
 related:
+  - GKR-UX-G3-ORGANIZATION-COLLECTIVE-RELATIONSHIP-VALIDATION-001
   - GKR-UX-G2-COLLECTIVE-DISCOVERY-REQUEST-VALIDATION-001
   - GKR-UX-G1-ENTRY-EXPRESSION-INVENTORY-VALIDATION-001
   - GKR-UXA-102-V5-AUTHORITY-001
@@ -178,6 +179,23 @@ Regras:
 - a saída não confirma inscrição, reserva, compra, contratação ou evolução;
 - retorno não presume resultado externo;
 - dados/inferências da jornada não acompanham a saída sem finalidade e autorização adequadas.
+
+## 6.1 Validação G3 — Organização e relação O↔C
+
+`GKR-UX-G3-ORGANIZATION-COLLECTIVE-RELATIONSHIP-VALIDATION-001` examina `TRN-201/202/206..209` sem promoção de maturidade.
+
+```text
+TRN-201
+→ PARTIAL / UNCHANGED
+
+TRN-202
+→ LOCALLY VALIDATED / UNCHANGED
+
+TRN-206..209
+→ CONTRACTED / UNCHANGED
+```
+
+As lacunas correntes são de validação ponta a ponta/materialização específica; concorrência, retorno, estado indeterminado e idempotência possuem cobertura semântica suficiente.
 
 ## 7. Opportunity Boost
 
