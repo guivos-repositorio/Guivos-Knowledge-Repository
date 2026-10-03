@@ -45,7 +45,7 @@ related:
 
 ## 1. Função
 
-Este roadmap traduz `GKR-STATE-001 v3.51.00` em **frentes governadas de avanço**.
+Este roadmap traduz `GKR-STATE-001 v3.51.01` em **frentes governadas de avanço**.
 
 Sua função é declarar frentes correntes, dependências e próximos gates sem transformar possibilidade técnica em execução automática.
 
@@ -63,7 +63,7 @@ ROADMAP
 
 | Frente | Estado vigente |
 |---|---|
-| Estado global | `GKR-STATE-001 v3.51.00 / CURRENT` |
+| Estado global | `GKR-STATE-001 v3.51.01 / CURRENT` |
 | Era | `GE-2 — KNOWLEDGE` |
 | Marco funcional | `M7.88` |
 | Última UXA numerada | `UXA-105` |
@@ -82,7 +82,7 @@ ROADMAP
 | UXA-102 / V5 | `ADJUDICADA / MATERIALIZADA EM MAIN` |
 | UXA-103 | `FUNCTIONAL CONTRACT ADJUDICATED / RECONCILIATION COMPLETE / TRN-005 LOCALLY VALIDATED / INTEGRAL NOT SUPPORTED` |
 | UXA-104 | `FUNCTIONAL CONTRACT ADJUDICATED / RECONCILIATION COMPLETE / MATURITY EXAM COMPLETE / TRN-014..017 LOCALLY VALIDATED / INTEGRAL NOT SUPPORTED` |
-| UXA-105 | `SCOPE ADJUDICATED / FUNCTIONAL EXAM COMPLETE / FINDINGS CANDIDATE / TRN-001 FUNCTIONALLY SUFFICIENT / ADJUDICATED / TRN-001 PARTIAL` |
+| UXA-105 | `SCOPE ADJUDICATED / FUNCTIONAL CONTRACT ADJUDICATED / MATURITY EXAM COMPLETE / CANDIDATE ELIGIBILITY LOCALLY VALIDATED / TRN-001 PARTIAL / 0 PROMOTIONS` |
 | Cognitive Reference Architecture | `GIA-COG-001 v0.1.2 / ACTIVE / NORMATIVE` |
 | `GIA-COG-002..008` | `RESERVED / NOT MATERIALIZED` |
 | Product Engineering | `PAUSED / NOT RELEASED` |
