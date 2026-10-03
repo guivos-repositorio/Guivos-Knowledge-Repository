@@ -2,11 +2,11 @@
 id: GKR-UXA-104-PER013014-MATURITY-EXAM-001
 title: UXA-104 — Exame Específico de Maturidade — TRN-014..017
 status: active
-version: 0.1.0
+version: 1.0.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-03
-normative: false
-maturity: maturity_exam_complete_candidate_findings
+normative: true
+maturity: maturity_promotion_materialized
 depends_on:
   - UXA-104
   - GKR-UXA-104-PER013014-FUNCTIONAL-EXAM-001
@@ -32,7 +32,7 @@ Este documento examina exclusivamente a maturidade documental de:
 
 após a adjudicação e reconciliação do contrato funcional da UXA-104.
 
-O exame não altera maturidade por si só.
+A conclusão de maturidade foi adjudicada e a promoção foi materializada por ato humano governado.
 
 ## 2. Critério do Registry
 
@@ -56,11 +56,11 @@ O Transition Registry distingue:
 | idempotência | repetição não deve duplicar captura silenciosamente | FECHADA NO LIMITE FUNCIONAL |
 | ponta a ponta integral | cadeia G1 completa ainda não comprovada | NÃO COMPROVADA |
 
-Conclusão candidata:
+Conclusão adjudicada:
 
 ```text
 TRN-014
-→ ELIGIBLE CANDIDATE FOR LOCALLY VALIDATED
+→ LOCALLY VALIDATED / ADJUDICATED
 → INTEGRALLY VALIDATED NOT SUPPORTED
 ```
 
@@ -78,11 +78,11 @@ TRN-014
 | duplicação | duplicação silenciosa não suportada | FECHADA NO LIMITE FUNCIONAL |
 | ponta a ponta integral | cadeia G1 completa ainda não comprovada | NÃO COMPROVADA |
 
-Conclusão candidata:
+Conclusão adjudicada:
 
 ```text
 TRN-015
-→ ELIGIBLE CANDIDATE FOR LOCALLY VALIDATED
+→ LOCALLY VALIDATED / ADJUDICATED
 → INTEGRALLY VALIDATED NOT SUPPORTED
 ```
 
@@ -100,11 +100,11 @@ TRN-015
 | idempotência | retomada não restaura/inventa resposta removida | FECHADA NO LIMITE FUNCIONAL |
 | ponta a ponta integral | cadeia G1 completa ainda não comprovada | NÃO COMPROVADA |
 
-Conclusão candidata:
+Conclusão adjudicada:
 
 ```text
 TRN-016
-→ ELIGIBLE CANDIDATE FOR LOCALLY VALIDATED
+→ LOCALLY VALIDATED / ADJUDICATED
 → INTEGRALLY VALIDATED NOT SUPPORTED
 ```
 
@@ -122,11 +122,11 @@ TRN-016
 | duplicação | repetição não deve duplicar resposta ou efeito silenciosamente | FECHADA NO LIMITE FUNCIONAL |
 | ponta a ponta integral | cadeia G1 completa ainda não comprovada | NÃO COMPROVADA |
 
-Conclusão candidata:
+Conclusão adjudicada:
 
 ```text
 TRN-017
-→ ELIGIBLE CANDIDATE FOR LOCALLY VALIDATED
+→ LOCALLY VALIDATED / ADJUDICATED
 → INTEGRALLY VALIDATED NOT SUPPORTED
 ```
 
@@ -140,32 +140,33 @@ Não permanece lacuna funcional local conhecida que, por si só, exija manter as
 
 Entretanto, a evidência não comprova validação integral ponta a ponta da família G1. `TRN-001` permanece `PARTIAL` e a cadeia completa continua heterogênea.
 
-## 8. Conclusão candidata
+## 8. Conclusão adjudicada
 
 ```text
 MATURITY EXAM
 → COMPLETE
 
-FINDINGS
-→ CANDIDATE / NOT ADJUDICATED
+HUMAN ADJUDICATION
+→ COMPLETE
 
 TRN-014
-→ CANDIDATE: LOCALLY VALIDATED
+→ LOCALLY VALIDATED
 
 TRN-015
-→ CANDIDATE: LOCALLY VALIDATED
+→ LOCALLY VALIDATED
 
 TRN-016
-→ CANDIDATE: LOCALLY VALIDATED
+→ LOCALLY VALIDATED
 
 TRN-017
-→ CANDIDATE: LOCALLY VALIDATED
+→ LOCALLY VALIDATED
 
 INTEGRALLY VALIDATED
 → NOT SUPPORTED BY CURRENT EVIDENCE
 
 MATURITY PROMOTIONS
-→ 0
+→ 4
+→ CONTRACTED → LOCALLY VALIDATED
 ```
 
 ## 9. Limites
@@ -182,14 +183,17 @@ Este exame:
 
 ## 10. Próximo gate
 
+As promoções adjudicadas foram materializadas:
+
 ```text
-ADJUDICATE UXA-104 MATURITY EXAM FINDINGS?
+TRN-014..017
+→ CONTRACTED → LOCALLY VALIDATED
 
-IF YES
-→ PROMOTE TRN-014..017
-   CONTRACTED → LOCALLY VALIDATED
+INTEGRALLY VALIDATED
+→ NOT SUPPORTED
 
-IF NO
-→ KEEP CONTRACTED
-→ REOPEN MATURITY FINDINGS
+PRODUCT ENGINEERING
+→ PAUSED / NOT RELEASED
 ```
+
+Qualquer avanço além de `LOCALLY VALIDATED` exige novo exame e gate próprio.
