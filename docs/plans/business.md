@@ -2,7 +2,7 @@
 id: GKR-PLANS-BUSINESS-001
 title: Planos — Guivos Business
 status: active
-version: 1.6.0
+version: 1.8.0
 owner: Guivos
 last_updated: 2026-10-03
 normative: false
@@ -27,6 +27,158 @@ Guivos Business é um **produto especializado B2B**. Seus planos são independen
 | **Growth** | R$ 799,00 | R$ 7.990,00 | acompanhar e compreender |
 | **Scale** | a partir de R$ 1.990,00 | dimensionado | interpretar e integrar |
 | **Enterprise** | sob consulta | sob consulta | governar em alta complexidade e escala |
+
+## Quadro direto de contratação
+
+A contratação do Guivos Business deve ser lida pela empresa como uma composição única, formada pelo plano-base e pelos componentes aplicáveis à configuração escolhida.
+
+### 1. Plano-base
+
+| Plano | Mensal | Anual | Direção |
+|---|---:|---:|---|
+| **Start** | R$ 299,00 | R$ 2.990,00 | operar |
+| **Growth** | R$ 799,00 | R$ 7.990,00 | acompanhar e compreender |
+| **Scale** | a partir de R$ 1.990,00 | dimensionado | interpretar e integrar em escala |
+| **Enterprise** | sob consulta | sob consulta | governar alta complexidade e escala |
+
+### 2. População elegível / escala
+
+| População elegível | Mensal por pessoa na faixa | Anual por pessoa na faixa |
+|---|---:|---:|
+| **1–50** | incluído | incluído |
+| **51–250** | R$ 1,49 | R$ 14,90 |
+| **251–1.000** | R$ 0,99 | R$ 9,90 |
+| **1.001–5.000** | R$ 0,69 | R$ 6,90 |
+| **5.001–20.000** | R$ 0,49 | R$ 4,90 |
+| **acima de 20.000** | dimensionado | dimensionado |
+
+A cobrança da população é **progressiva por faixa**, e não pela aplicação de uma única tarifa sobre toda a população.
+
+### 3. Oferta contratada
+
+| Oferta | Mensal | Anual |
+|---|---:|---:|
+| **Programas de Incentivo** | R$ 199,00 | R$ 1.990,00 |
+| **Journey custeado** | R$ 99,00 | R$ 990,00 |
+| **Incentivos + Journey** | R$ 249,00 | R$ 2.490,00 |
+
+### 4. Acessos Journey custeados
+
+#### Journey Plus
+
+| Quantidade | Mensal por acesso | Anual por acesso |
+|---|---:|---:|
+| **1–99** | R$ 19,90 | R$ 199,00 |
+| **100–499** | R$ 17,90 | R$ 179,00 |
+| **500–1.999** | R$ 15,90 | R$ 159,00 |
+| **2.000+** | R$ 13,90 | R$ 139,00 |
+
+#### Journey Pro
+
+| Quantidade | Mensal por acesso | Anual por acesso |
+|---|---:|---:|
+| **1–99** | R$ 39,90 | R$ 399,00 |
+| **100–499** | R$ 35,90 | R$ 359,00 |
+| **500–1.999** | R$ 31,90 | R$ 319,00 |
+| **2.000+** | R$ 27,90 | R$ 279,00 |
+
+### 5. Capacidades adicionais
+
+| Capacidade | Mensal | Anual |
+|---|---:|---:|
+| **Intelligence avançado** | R$ 299,00 | R$ 2.990,00 |
+| **Exportações automatizadas / Power BI** | R$ 249,00 | R$ 2.490,00 |
+| **API Business** | R$ 399,00 | R$ 3.990,00 |
+| **SSO / SAML** | R$ 299,00 | R$ 2.990,00 |
+| **Governança / auditoria avançadas** | R$ 249,00 | R$ 2.490,00 |
+| **Integração dedicada** | R$ 490,00 | R$ 4.900,00 |
+
+#### Matriz de inclusões e contratação por tier
+
+A matriz abaixo governa simultaneamente **o que já está incluído no plano** e **quanto custa contratar a capacidade quando ela não está incluída**.
+
+| Capacidade | Start | Growth | Scale | Enterprise |
+|---|---|---|---|---|
+| **Intelligence avançado** | R$ 299/mês · R$ 2.990/ano | **incluído — R$ 0 adicional** | **incluído — R$ 0 adicional** | **incluído — R$ 0 adicional** |
+| **Exportações automatizadas / Power BI** | R$ 249/mês · R$ 2.490/ano | R$ 249/mês · R$ 2.490/ano | **incluído — R$ 0 adicional** | **incluído — R$ 0 adicional** |
+| **API Business** | R$ 399/mês · R$ 3.990/ano | R$ 399/mês · R$ 3.990/ano | **incluído — R$ 0 adicional** | **incluído — R$ 0 adicional** |
+| **SSO / SAML** | R$ 299/mês · R$ 2.990/ano | R$ 299/mês · R$ 2.990/ano | **incluído — R$ 0 adicional** | **incluído — R$ 0 adicional** |
+| **Governança / auditoria avançadas** | R$ 249/mês · R$ 2.490/ano | **incluído — R$ 0 adicional** | **incluído — R$ 0 adicional** | **incluído — R$ 0 adicional** |
+| **1 integração dedicada** | R$ 490/mês · R$ 4.900/ano | R$ 490/mês · R$ 4.900/ano | **1 incluída — R$ 0 adicional** | **incluída conforme contrato** |
+| **Integração dedicada adicional** | R$ 490/mês · R$ 4.900/ano por integração | R$ 490/mês · R$ 4.900/ano por integração | R$ 490/mês · R$ 4.900/ano por integração além da 1ª incluída | dimensionado conforme contrato |
+
+Regras:
+
+```text
+INCLUÍDO NO TIER
+→ R$ 0,00 ADICIONAL
+
+NÃO INCLUÍDO + ELEGÍVEL COMO ADD-ON
+→ APLICAR VALOR DA CAPACIDADE
+
+INTEGRAÇÃO DEDICADA
+→ R$ 490/MÊS
+→ R$ 4.900/ANO
+→ POR INTEGRAÇÃO COBRÁVEL
+
+ENTERPRISE
+→ PREVALECE DIMENSIONAMENTO CONTRATUAL
+```
+
+A inclusão de uma capacidade no tier não significa que ela seja gratuita universalmente; significa que seu preço já está absorvido pelo plano-base contratado.
+
+
+### 6. Serviços adicionais
+
+| Serviço | Mensal | Anual |
+|---|---:|---:|
+| **Self-service** | R$ 0,00 | R$ 0,00 |
+| **Suporte ampliado** | R$ 299,00 | R$ 2.990,00 |
+| **Operação gerenciada** | R$ 990,00 | R$ 9.900,00 |
+| **Gestão dedicada / SLA ampliado** | R$ 1.990,00 | R$ 19.900,00 |
+| **Implantação customizada** | sob consulta | sob consulta |
+
+### 7. Fórmula da contratação
+
+```text
+ASSINATURA RECORRENTE / CONTRATUAL
+=
+PLANO-BASE
++ POPULAÇÃO / ESCALA
++ OFERTA
++ ACESSOS JOURNEY CUSTEADOS
++ CAPACIDADES ADICIONAIS NÃO INCLUÍDAS NO PLANO
++ SERVIÇOS ADICIONAIS
+```
+
+Separadamente:
+
+```text
+ORÇAMENTO PRÉ-PAGO DE INCENTIVO
+=
+RECURSO OPERACIONAL DEFINIDO PELA EMPRESA
+≠ ASSINATURA
+```
+
+### 8. Exemplo rápido
+
+```text
+START
++ 120 PESSOAS ELEGÍVEIS
++ PROGRAMAS DE INCENTIVO
++ SELF-SERVICE
+```
+
+| Parcela | Cálculo | Valor mensal |
+|---|---:|---:|
+| Plano Start | fixo | R$ 299,00 |
+| 1–50 pessoas | incluído | R$ 0,00 |
+| 51–120 pessoas | 70 × R$ 1,49 | R$ 104,30 |
+| Programas de Incentivo | fixo | R$ 199,00 |
+| Self-service | incluído | R$ 0,00 |
+| **Total recorrente** |  | **R$ 602,30/mês** |
+
+O orçamento destinado às recompensas do programa é informado separadamente pela empresa e não integra os R$ 602,30 da assinatura.
 
 ## Periodicidade
 

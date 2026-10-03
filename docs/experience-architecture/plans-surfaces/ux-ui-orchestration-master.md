@@ -2,7 +2,7 @@
 id: GKR-UX-PLANS-ORCHESTRATION-001
 title: Planos — Superfícies e Fluxos — Documento Mestre de Orquestração UX/UI
 status: active
-version: 0.2.0
+version: 0.3.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-03
 normative: false
@@ -120,8 +120,8 @@ O resumo da composição deve distinguir:
 - população/escala e faixas aplicadas;
 - oferta contratada;
 - Journey Plus/Pro custeado e quantidade;
-- add-ons efetivamente cobrados;
-- capacidades incluídas sem cobrança adicional;
+- add-ons efetivamente cobrados, com valor mensal/anual aplicável;
+- capacidades incluídas no tier, explicitadas com `R$ 0,00 adicional`;
 - serviço adicional;
 - subtotal/total recorrente;
 - orçamento pré-pago de incentivo em linha separada;
@@ -136,6 +136,26 @@ INCLUDED
 INCENTIVE BUDGET
 ≠ SUBSCRIPTION REVENUE
 ```
+
+### 8.3 Matriz de capacidade por tier
+
+Para cada capacidade contratável, a experiência deve mostrar simultaneamente:
+
+```text
+CAPACIDADE
++ STATUS NO TIER
++ VALOR ADICIONAL MENSAL
++ VALOR ADICIONAL ANUAL
+```
+
+Estados possíveis:
+
+- **incluído** → `R$ 0,00 adicional`;
+- **adicional** → usar preço mensal/anual vigente da capacidade;
+- **dimensionado** → não gerar cifra por inferência;
+- **incluído conforme contrato** → respeitar o dimensionamento contratual aplicável.
+
+Essa matriz deve ser consumida como regra econômica, não como prescrição visual.
 
 ## 9. Estados transversais
 

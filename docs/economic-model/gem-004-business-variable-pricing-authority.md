@@ -2,7 +2,7 @@
 id: GEM-004-BUSINESS-VARIABLE-PRICING-AUTHORITY-001
 title: Guivos Business — Autoridade de Pricing Variável para Configurador
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Guivos Economic Model
 last_updated: 2026-10-03
 normative: true
@@ -311,36 +311,40 @@ SERVICE LEVEL
 
 A mesma unidade econômica não pode ser faturada duas vezes sob rótulos diferentes.
 
-### 14.1 Inclusões mínimas por plano
+### Matriz de inclusões e contratação por tier
 
-A regra de entitlement para as capacidades adicionais desta autoridade é:
+A matriz abaixo governa simultaneamente **o que já está incluído no plano** e **quanto custa contratar a capacidade quando ela não está incluída**.
 
 | Capacidade | Start | Growth | Scale | Enterprise |
 |---|---|---|---|---|
-| Intelligence avançado | adicional | **incluído** | **incluído** | **incluído** |
-| Exportações automatizadas / Power BI | adicional | adicional | **incluído** | **incluído** |
-| API Business | adicional | adicional | **incluído** | **incluído** |
-| SSO / SAML | adicional | adicional | **incluído** | **incluído** |
-| Governança e trilha de auditoria avançadas | adicional | **incluído** | **incluído** | **incluído** |
-| 1 integração dedicada | adicional | adicional | **incluída** | **incluída conforme contrato** |
-| Integrações dedicadas adicionais | adicional | adicional | R$ 490/mês por integração adicional | dimensionado conforme contrato |
+| **Intelligence avançado** | R$ 299/mês · R$ 2.990/ano | **incluído — R$ 0 adicional** | **incluído — R$ 0 adicional** | **incluído — R$ 0 adicional** |
+| **Exportações automatizadas / Power BI** | R$ 249/mês · R$ 2.490/ano | R$ 249/mês · R$ 2.490/ano | **incluído — R$ 0 adicional** | **incluído — R$ 0 adicional** |
+| **API Business** | R$ 399/mês · R$ 3.990/ano | R$ 399/mês · R$ 3.990/ano | **incluído — R$ 0 adicional** | **incluído — R$ 0 adicional** |
+| **SSO / SAML** | R$ 299/mês · R$ 2.990/ano | R$ 299/mês · R$ 2.990/ano | **incluído — R$ 0 adicional** | **incluído — R$ 0 adicional** |
+| **Governança / auditoria avançadas** | R$ 249/mês · R$ 2.490/ano | **incluído — R$ 0 adicional** | **incluído — R$ 0 adicional** | **incluído — R$ 0 adicional** |
+| **1 integração dedicada** | R$ 490/mês · R$ 4.900/ano | R$ 490/mês · R$ 4.900/ano | **1 incluída — R$ 0 adicional** | **incluída conforme contrato** |
+| **Integração dedicada adicional** | R$ 490/mês · R$ 4.900/ano por integração | R$ 490/mês · R$ 4.900/ano por integração | R$ 490/mês · R$ 4.900/ano por integração além da 1ª incluída | dimensionado conforme contrato |
 
-Regras obrigatórias:
+Regras:
 
 ```text
-CAPACIDADE INCLUÍDA NO TIER
-→ ADD-ON = R$ 0,00
+INCLUÍDO NO TIER
+→ R$ 0,00 ADICIONAL
 
-CAPACIDADE NÃO INCLUÍDA
-→ PODE SER ADD-ON, SE TECNICAMENTE/COMERCIALMENTE ELEGÍVEL
+NÃO INCLUÍDO + ELEGÍVEL COMO ADD-ON
+→ APLICAR VALOR DA CAPACIDADE
 
-ENTITLEMENT DE PLANO
-≠ SERVIÇO OPERACIONAL
+INTEGRAÇÃO DEDICADA
+→ R$ 490/MÊS
+→ R$ 4.900/ANO
+→ POR INTEGRAÇÃO COBRÁVEL
 
 ENTERPRISE
-→ CAPACIDADES DIMENSIONADAS NO CONTRATO
-→ NÃO AUTORIZA DUPLA COBRANÇA
+→ PREVALECE DIMENSIONAMENTO CONTRATUAL
 ```
+
+A inclusão de uma capacidade no tier não significa que ela seja gratuita universalmente; significa que seu preço já está absorvido pelo plano-base contratado.
+
 
 ### 14.2 Serviços
 
@@ -379,23 +383,3 @@ Esta autoridade econômica está congelada para consumo documental. Próximos at
 - contrato/termos;
 - oferta pública;
 - validação de disposição a pagar e unit economics.
-
-
-## 14. Entitlements por tier e proteção contra dupla cobrança
-
-```text
-BUSINESS VARIABLE PRICING TABLE
-→ MATERIALIZED AS CANDIDATE
-→ NOT ADJUDICATED
-→ NOT NORMATIVE
-
-FULL NUMERIC CONFIGURATOR
-→ ECONOMICALLY SPECIFIABLE
-→ NOT YET RELEASED
-
-PUBLIC OFFER
-→ NOT AUTHORIZED
-
-CHARGING
-→ NOT AUTHORIZED
-```

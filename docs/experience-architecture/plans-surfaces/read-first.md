@@ -2,7 +2,7 @@
 id: GKR-UX-PLANS-READ-FIRST-001
 title: Planos — Superfícies e Fluxos — Leia Primeiro
 status: active
-version: 0.2.0
+version: 0.3.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-03
 normative: false
@@ -118,7 +118,7 @@ Design, IA e Engenharia não podem inventar ou substituir a autoridade vigente d
 
 Business possui configurador Self-service próprio. Ele deve permitir selecionar oferta, população/escala, acessos, capacidades, periodicidade e serviços aplicáveis e então **calcular somente o que estiver amparado por uma tabela econômica vigente**.
 
-Os preços variáveis do Business estão adjudicados em `GEM-004-BUSINESS-VARIABLE-PRICING-AUTHORITY-001`. O configurador pode calcular os componentes tabelados e deve indicar `dimensionado` ou `sob consulta` somente onde a própria autoridade assim determinar.
+Os preços variáveis do Business estão adjudicados em `GEM-004-BUSINESS-VARIABLE-PRICING-AUTHORITY-001`. O configurador pode calcular os componentes tabelados, deve consumir a **matriz de inclusões por tier** e deve indicar `dimensionado` ou `sob consulta` somente onde a própria autoridade assim determinar. Capacidades incluídas aparecem com `R$ 0,00 adicional`; capacidades elegíveis como add-on usam o valor mensal/anual governado.
 
 ## 10. Estado
 
@@ -135,6 +135,8 @@ VARIABLE BUSINESS PRICING
 
 BUSINESS TIER ENTITLEMENTS
 → ADJUDICATED
+→ MATRIX EXPLICIT
+→ ADD-ON PRICES EXPLICIT
 → DOUBLE CHARGING PROHIBITED
 
 PRODUCT ENGINEERING

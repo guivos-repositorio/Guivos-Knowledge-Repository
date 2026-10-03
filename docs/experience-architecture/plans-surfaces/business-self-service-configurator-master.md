@@ -2,7 +2,7 @@
 id: GKR-UX-PLANS-BUSINESS-CONFIGURATOR-001
 title: Planos — Guivos Business — Configurador e Calculadora Self-service — Documento Mestre
 status: active
-version: 0.3.0
+version: 0.4.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-03
 normative: false
@@ -158,26 +158,57 @@ A interface deve consumir a autoridade econômica, não duplicar lógica hardcod
 
 Os preços por acesso Journey e add-ons devem igualmente vir da autoridade econômica vigente.
 
-## 7.2 Proteção por entitlement
+## 7.2 Matriz calculável de capacidade por tier
 
-Antes de incluir qualquer add-on no cálculo, o configurador deve consultar se a capacidade já faz parte do tier.
+A superfície deve consumir a seguinte matriz comercial:
+
+A matriz abaixo governa simultaneamente **o que já está incluído no plano** e **quanto custa contratar a capacidade quando ela não está incluída**.
+
+| Capacidade | Start | Growth | Scale | Enterprise |
+|---|---|---|---|---|
+| **Intelligence avançado** | R$ 299/mês · R$ 2.990/ano | **incluído — R$ 0 adicional** | **incluído — R$ 0 adicional** | **incluído — R$ 0 adicional** |
+| **Exportações automatizadas / Power BI** | R$ 249/mês · R$ 2.490/ano | R$ 249/mês · R$ 2.490/ano | **incluído — R$ 0 adicional** | **incluído — R$ 0 adicional** |
+| **API Business** | R$ 399/mês · R$ 3.990/ano | R$ 399/mês · R$ 3.990/ano | **incluído — R$ 0 adicional** | **incluído — R$ 0 adicional** |
+| **SSO / SAML** | R$ 299/mês · R$ 2.990/ano | R$ 299/mês · R$ 2.990/ano | **incluído — R$ 0 adicional** | **incluído — R$ 0 adicional** |
+| **Governança / auditoria avançadas** | R$ 249/mês · R$ 2.490/ano | **incluído — R$ 0 adicional** | **incluído — R$ 0 adicional** | **incluído — R$ 0 adicional** |
+| **1 integração dedicada** | R$ 490/mês · R$ 4.900/ano | R$ 490/mês · R$ 4.900/ano | **1 incluída — R$ 0 adicional** | **incluída conforme contrato** |
+| **Integração dedicada adicional** | R$ 490/mês · R$ 4.900/ano por integração | R$ 490/mês · R$ 4.900/ano por integração | R$ 490/mês · R$ 4.900/ano por integração além da 1ª incluída | dimensionado conforme contrato |
+
+Regras:
 
 ```text
-IF CAPABILITY ∈ PLAN_ENTITLEMENTS
-→ ADDON_VALUE = 0
+INCLUÍDO NO TIER
+→ R$ 0,00 ADICIONAL
 
-ELSE IF CAPABILITY ELIGIBLE_AS_ADDON
-→ APPLY AUTHORIZED ADDON RATE
+NÃO INCLUÍDO + ELEGÍVEL COMO ADD-ON
+→ APLICAR VALOR DA CAPACIDADE
 
-ELSE
-→ REQUIRE HIGHER PLAN OR DIMENSIONING
+INTEGRAÇÃO DEDICADA
+→ R$ 490/MÊS
+→ R$ 4.900/ANO
+→ POR INTEGRAÇÃO COBRÁVEL
+
+ENTERPRISE
+→ PREVALECE DIMENSIONAMENTO CONTRATUAL
 ```
 
-Exemplos correntes:
+A inclusão de uma capacidade no tier não significa que ela seja gratuita universalmente; significa que seu preço já está absorvido pelo plano-base contratado.
 
-- Growth já inclui Intelligence avançado e governança/auditoria avançadas;
-- Scale já inclui Intelligence, Power BI/exportações automatizadas, API, SSO, governança e uma integração dedicada;
-- Enterprise inclui essas capacidades conforme dimensionamento contratual.
+
+### Regra de cálculo
+
+```text
+IF CAPABILITY INCLUDED IN PLAN
+→ CAPABILITY_CHARGE = 0
+
+ELSE IF CAPABILITY HAS AUTHORIZED ADDON PRICE
+→ CAPABILITY_CHARGE = AUTHORIZED PRICE
+
+ELSE
+→ REQUIRE DIMENSIONING / HIGHER PLAN
+```
+
+A interface deve exibir a capacidade incluída com valor adicional zero, e não ocultá-la como se ela não tivesse valor econômico.
 
 
 ## 8. Resultado
