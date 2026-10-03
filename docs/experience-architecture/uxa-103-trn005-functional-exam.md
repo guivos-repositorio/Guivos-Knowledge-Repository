@@ -1,12 +1,12 @@
 ---
 id: GKR-UXA-103-TRN005-FUNCTIONAL-EXAM-001
 title: UXA-103 — TRN-005 — Exame Funcional de Resultado Indeterminado, Reconciliação e Retry
-status: candidate
-version: 0.1.0
+status: active
+version: 1.0.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-03
-normative: false
-maturity: functional_exam_candidate
+normative: true
+maturity: adjudicated_functional_contract
 depends_on:
   - UXA-103
   - GKR-UXA-103-TRN005-SCOPE-AUTHORITY-001
@@ -28,7 +28,7 @@ Este documento registra o exame funcional governado de `TRN-005 — PER-005 → 
 
 O exame testa se as autoridades correntes fecham, ponta a ponta, resultado indeterminado, reconciliação antes de retry, não duplicação do efeito lógico e recuperação após interrupção.
 
-Este documento é candidato e não promove maturidade por si só.
+Este documento materializa o contrato funcional adjudicado da UXA-103 e não promove maturidade por si só.
 
 ## 2. Baseline examinada
 
@@ -55,7 +55,7 @@ A lacuna de G1 permanece especificamente quando houve tentativa de processamento
 
 > houve tentativa, porém não há evidência suficiente para afirmar sucesso, falha conhecida ou interrupção efetivada.
 
-Conclusão candidata:
+Conclusão adjudicada:
 
 ```text
 NO SUFFICIENT CONFIRMATION
@@ -71,7 +71,7 @@ NO SUFFICIENT CONFIRMATION
 
 A regra transversal `V5-R3` exige reconciliação antes de retry após resultado indeterminado, mas `PER-005/PER-006` ainda não traduzem essa regra para o handoff específico de `TRN-005`.
 
-Conclusão candidata:
+Conclusão adjudicada:
 
 ```text
 TRN-005 INDETERMINATE
@@ -88,7 +88,7 @@ Enquanto a reconciliação estiver pendente, nenhuma nova mutação equivalente 
 
 `PER-005` preserva identificadores dos itens, proveniência, finalidade, revisão e autorização. Isso fornece contexto suficiente para definir semanticamente uma mesma intenção lógica, mas não existe ainda contrato explícito ligando esse conjunto ao retry.
 
-Conclusão candidata:
+Conclusão adjudicada:
 
 A intenção lógica de `TRN-005` é o mesmo conjunto material de:
 
@@ -107,7 +107,7 @@ Mudança material em conteúdo, finalidade ou autorização deixa de ser retry d
 
 `V5-R6` já determina que não duplicar efeito lógico é requisito funcional. Porém o contrato específico de `TRN-005` ainda não diz como interpretar repetição da mesma intenção após estado indeterminado.
 
-Conclusão candidata:
+Conclusão adjudicada:
 
 ```text
 SAME LOGICAL INTENT
@@ -125,7 +125,7 @@ TECHNICAL MECHANISM
 
 Se a Pessoa solicita interrupção, mas não há confirmação suficiente de que o processamento realmente cessou ou de que nenhum efeito concorrente foi concluído, o estado não pode ser apresentado como “processamento interrompido”.
 
-Conclusão candidata:
+Conclusão adjudicada:
 
 - interrupção confirmada → estado conhecido de interrupção;
 - interrupção sem confirmação suficiente → resultado indeterminado;
@@ -137,7 +137,7 @@ Conclusão candidata:
 
 A UXA-102/V5 admite semanticamente “em reconciliação”, mas `PER-006` não o incorpora à experiência específica.
 
-Conclusão candidata:
+Conclusão adjudicada:
 
 Enquanto houver reconciliação:
 
@@ -163,9 +163,9 @@ O estado indeterminado só pode ser encerrado quando a fonte competente permitir
 
 Projeção local, animação, timeout ou ausência de resposta não bastam, isoladamente, como estado canônico.
 
-## 4. Contrato funcional candidato
+## 4. Contrato funcional adjudicado
 
-O exame converge para o seguinte contrato candidato:
+O contrato funcional adjudicado é:
 
 ```text
 PER-005
@@ -206,7 +206,7 @@ SAME LOGICAL INTENT
 
 ## 5. Compatibilidade com as autoridades existentes
 
-O contrato candidato:
+O contrato adjudicado:
 
 - especializa `V5-R2`, `V5-R3`, `V5-R6` e `V5-R9` para `TRN-005`;
 - não cria protocolo técnico;
@@ -221,24 +221,24 @@ O contrato candidato:
 
 | Critério | Resultado do exame |
 |---|---|
-| estado indeterminado explícito | **CONTRATO CANDIDATO DEFINIDO** |
-| reconciliação antes de retry | **CONTRATO CANDIDATO DEFINIDO** |
-| não duplicação do efeito lógico | **CONTRATO CANDIDATO DEFINIDO** |
-| recuperação após interrupção | **CONTRATO CANDIDATO DEFINIDO** |
-| sucesso × falha conhecida × ausência de confirmação | **DISTINÇÃO CANDIDATA DEFINIDA** |
-| continuidade ponta a ponta verificável | **CANDIDATA, AINDA NÃO ADJUDICADA** |
+| estado indeterminado explícito | **ADJUDICADO** |
+| reconciliação antes de retry | **ADJUDICADO** |
+| não duplicação do efeito lógico | **ADJUDICADO** |
+| recuperação após interrupção | **ADJUDICADO** |
+| sucesso × falha conhecida × ausência de confirmação | **ADJUDICADO** |
+| continuidade ponta a ponta verificável | **ADJUDICADA NO LIMITE FUNCIONAL DE UXA-103** |
 
 ## 7. Resultado do exame
 
 ```text
-UXA-103 FUNCTIONAL EXAM
-→ COMPLETED AT CANDIDATE LEVEL
+UXA-103 FUNCTIONAL CONTRACT
+→ ADJUDICATED / NORMATIVE
 
-FUNCTIONAL CONVERGENCE
-→ YES
+FUNCTIONAL EXAM
+→ COMPLETE
 
-ADJUDICATION
-→ PENDING HUMAN GATE
+HUMAN ADJUDICATION
+→ COMPLETE
 
 TRN-005
 → PARTIAL / UNCHANGED
@@ -247,16 +247,12 @@ MATURITY PROMOTIONS
 → 0
 ```
 
-A convergência analítica não equivale à adjudicação.
+A convergência analítica foi submetida a gate humano e o contrato funcional foi adjudicado.
 
 ## 8. Próximo gate
 
-O próximo gate é a adjudicação humana do contrato funcional candidato.
+A autoridade funcional normativa está materializada por este documento.
 
-Somente após essa adjudicação será legítimo:
+O próximo gate é reconciliar `PER-005`, `PER-006` e o Transition Registry com este contrato adjudicado, **sem promover `TRN-005`**.
 
-1. materializar a autoridade normativa específica da UXA-103;
-2. reconciliar `PER-005`, `PER-006` e o Transition Registry;
-3. submeter `TRN-005` a um gate separado de maturidade.
-
-Nenhuma dessas três etapas é executada por este exame.
+Somente depois dessa reconciliação `TRN-005` poderá ser submetida a um gate separado de maturidade.
