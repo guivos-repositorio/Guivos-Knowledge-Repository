@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.50.99
+version: 3.51.00
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-10-03
 normative: true
@@ -125,7 +125,7 @@ Estado executivo vigente:
 - **UXA-103:** escopo adjudicado; contrato funcional de `TRN-005` adjudicado e reconciliado; conclusão de maturidade adjudicada e promoção materializada para `LOCALLY VALIDATED`; `INTEGRALLY VALIDATED` não suportado pela evidência corrente;
 - **UXA-104:** escopo adjudicado por `GKR-UXA-104-PER013014-SCOPE-AUTHORITY-001` para `PER-013/014` + `TRN-014..017`; exame funcional `COMPLETE`; contrato funcional `ADJUDICATED / NORMATIVE`; reconciliação `COMPLETE`; maturity exam `COMPLETE`; achados de maturidade `ADJUDICATED`; `TRN-014..017` promovidas para `LOCALLY VALIDATED`; quatro promoções de maturidade;
 - **UXA-105:** scope exam `COMPLETE`; escopo `ADJUDICATED / NORMATIVE` restrito a `TRN-001 — PER-001 → PER-002`; `TRN-001` permanece `PARTIAL`; nenhuma promoção de maturidade;
-- **execução automática seguinte:** nenhuma; o próximo ato depende da adjudicação humana dos achados do exame funcional da UXA-105.
+- **execução automática seguinte:** nenhuma; o próximo ato depende de autorização humana separada para o exame de maturidade da UXA-105.
 
 ```text
 DOCUMENTED
@@ -1759,10 +1759,10 @@ UXA-105
 → ADJUDICATED SCOPE = TRN-001 ONLY
 → SCOPE ADJUDICATED / NORMATIVE
 → FUNCTIONAL EXAM COMPLETE
-→ FUNCTIONAL FINDINGS CANDIDATE / NOT ADJUDICATED
-→ TRN-001 FUNCTIONALLY SUFFICIENT CANDIDATE
+→ FUNCTIONAL CONTRACT ADJUDICATED / NORMATIVE
+→ TRN-001 FUNCTIONALLY SUFFICIENT / ADJUDICATED
 → TRN-001 PARTIAL / UNCHANGED
-→ NEXT GATE = ADJUDICATE UXA-105 FUNCTIONAL EXAM FINDINGS
+→ NEXT GATE = AUTHORIZE UXA-105 MATURITY EXAM
 
 O/C HIGH-FIDELITY DESIGN
 → AUTHORIZATION GRANTED
