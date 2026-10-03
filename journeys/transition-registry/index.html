@@ -7271,6 +7271,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#41-validacao-local-g1-entrada-expressao-e-inventario" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 Validação local G1 — entrada, expressão e inventário
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#91-autoridade-transversal-uxa-102-v5" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -7446,22 +7457,22 @@
 <td>GKR-TRN-003</td>
 <td>PER-003</td>
 <td>PER-004</td>
-<td>parcial</td>
-<td>integração entrada protegida → expressão guiada ainda parcial</td>
+<td><strong>localmente validada</strong></td>
+<td>GKR-UX-G1-ENTRY-EXPRESSION-INVENTORY-VALIDATION-001 — escolha Texto/Voz → expressão; autoridade, interrupção, falha e ausência de processamento implícito examinadas localmente</td>
 </tr>
 <tr>
 <td>GKR-TRN-004</td>
 <td>PER-004</td>
 <td>PER-005</td>
-<td>parcial</td>
-<td>integração expressão–inventário</td>
+<td><strong>localmente validada</strong></td>
+<td>GKR-UX-G1-ENTRY-EXPRESSION-INVENTORY-VALIDATION-001 — expressão revisada → inventário sem autorização material implícita; retorno/remoção preservados</td>
 </tr>
 <tr>
 <td>GKR-TRN-005</td>
 <td>PER-005</td>
 <td>PER-006</td>
-<td>parcial</td>
-<td>integração inventário autorizado → processamento visível ainda parcial; referências visuais paralelas não são autoridade corrente</td>
+<td><strong>localmente validada</strong></td>
+<td>GKR-UX-G1-ENTRY-EXPRESSION-INVENTORY-VALIDATION-001 — autorização específica registrada → processamento visível; falha de registro bloqueia processamento; interrupção/falha governadas localmente</td>
 </tr>
 <tr>
 <td>GKR-TRN-006</td>
@@ -8163,6 +8174,20 @@ Guivos Business: Start · Growth · Scale · Enterprise (produto separado; sem t
 <li>não transforma <code>BND-002</code> em checkout;</li>
 <li>não promove <code>TRN-416</code> ou <code>TRN-426</code>;</li>
 <li>não cria fluxo de Guivos Business.</li>
+</ul>
+<h2 id="41-validacao-local-g1-entrada-expressao-e-inventario">4.1 Validação local G1 — entrada, expressão e inventário<a class="headerlink" href="#41-validacao-local-g1-entrada-expressao-e-inventario" title="Permanent link">&para;</a></h2>
+<p><code>GKR-UX-G1-ENTRY-EXPRESSION-INVENTORY-VALIDATION-001</code> valida localmente três handoffs sem fechar a cadeia ponta a ponta:</p>
+<div class="highlight"><pre><span></span><code>TRN-003
+TRN-004
+TRN-005
+→ LOCALLY VALIDATED
+</code></pre></div>
+<p>Preservações:</p>
+<ul>
+<li><code>TRN-001</code> permanece parcial;</li>
+<li><code>TRN-002</code> e <code>TRN-006</code> permanecem localmente validadas;</li>
+<li><code>TRN-014..017</code> permanecem contratadas enquanto <code>PER-013/014</code> forem contratos candidatos;</li>
+<li>nenhuma implementação, persistência técnica ou Product Engineering é comprovada por esta validação.</li>
 </ul>
 <h2 id="91-autoridade-transversal-uxa-102-v5">9.1 Autoridade transversal UXA-102 / V5<a class="headerlink" href="#91-autoridade-transversal-uxa-102-v5" title="Permanent link">&para;</a></h2>
 <p><code>GKR-UXA-102-V5-AUTHORITY-001</code> governa transversalmente tentativa, falha conhecida, resultado indeterminado, retorno, replay, retry, estado stale e revalidação de autoridade.</p>

@@ -13464,6 +13464,26 @@ STATE MAP DEFINED
 ≠ GKR-SURF-* PROMOTED BY INFERENCE
 ≠ MATERIALIZED NAVIGATION
 </code></pre></div>
+<h2 id="project-current-state-register-281-g1-entrada-expressao-e-inventario">28.1 G1 — entrada, expressão e inventário<a class="headerlink" href="#project-current-state-register-281-g1-entrada-expressao-e-inventario" title="Permanent link">&para;</a></h2>
+<p><code>GKR-UX-G1-ENTRY-EXPRESSION-INVENTORY-VALIDATION-001</code> conclui validação local limitada da primeira cadeia da Journey:</p>
+<div class="highlight"><pre><span></span><code>TRN-001
+→ PARTIAL
+
+TRN-002
+→ LOCALLY VALIDATED / UNCHANGED
+
+TRN-003
+TRN-004
+TRN-005
+→ LOCALLY VALIDATED
+
+TRN-006
+→ LOCALLY VALIDATED / UNCHANGED
+
+TRN-014..017
+→ CONTRACTED / UNCHANGED
+</code></pre></div>
+<p>A promoção local não comprova implementação, persistência técnica ou fechamento ponta a ponta. <code>PER-013/014</code> permanecem contratos candidatos.</p>
 <h2 id="project-current-state-register-29-gates-correntes-sem-execucao-automatica">29. Gates correntes sem execução automática<a class="headerlink" href="#project-current-state-register-29-gates-correntes-sem-execucao-automatica" title="Permanent link">&para;</a></h2>
 <p>Este Registro não define uma fila automática de próximos atos.</p>
 <div class="highlight"><pre><span></span><code>NEXT AUTOMATIC EXECUTION
@@ -13620,19 +13640,19 @@ CURRENT SURFACE MASTERS
 → PER-003 — ESCOLHA DE MODALIDADE
 → VALIDATED CHOICES = TEXT / VOICE / FILE / OPTIONAL GUIDED QUESTIONS
 → COMBINATION = ALLOWED / NOT REQUIRED
-→ TEXT / VOICE CONTINUITY = TRN-003 → PER-004
+→ TEXT / VOICE CONTINUITY = TRN-003 → PER-004 / LOCALLY VALIDATED
 → FILE / OPTIONAL QUESTIONS CONTINUITY = NOT FULLY CONTRACTED
 → GKR-UX-PER004-MASTER-001 v0.1.0
 → PER-004 — EXPRESSÃO POR TEXTO OU VOZ
 → TEXT / VOICE = CURRENT DESIGN DEFINITION
 → TEMPORARY HELP = USER-REQUESTED / OPTIONAL
 → DRAFT PERSISTENCE = NOT INVENTED
-→ TRN-004 → PER-005 = PARTIAL / UNCHANGED
+→ TRN-004 → PER-005 = LOCALLY VALIDATED / G1
 → GKR-UX-PER005-MASTER-001 v0.1.0
 → PER-005 — INVENTÁRIO E AUTORIZAÇÃO
 → REVIEW + SPECIFIC AUTHORIZATION = CURRENT DESIGN DEFINITION
 → PERSISTENCE / PERSONALIZATION = BLOCKED
-→ TRN-005 → PER-006 = PARTIAL / UNCHANGED
+→ TRN-005 → PER-006 = LOCALLY VALIDATED / G1
 → GKR-UX-PER006-MASTER-001 v0.1.0
 → PER-006 — PROCESSAMENTO VISÍVEL
 → VISIBLE / TEMPORARY / INTERRUPTIBLE PROCESSING = CURRENT DESIGN DEFINITION
