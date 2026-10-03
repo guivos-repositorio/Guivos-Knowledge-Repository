@@ -2,9 +2,9 @@
 id: GKR-UX-PER006-MASTER-001
 title: Jornada da Pessoa — PER-006 — Processamento Visível — Documento Mestre de Superfície
 status: active
-version: 0.1.0
+version: 0.1.1
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-25
+last_updated: 2026-10-03
 normative: false
 maturity: current_surface_design_definition
 depends_on:
@@ -15,6 +15,7 @@ depends_on:
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
   - UXA-023
   - UXA-037
+  - GKR-UXA-103-TRN005-FUNCTIONAL-EXAM-001
 related:
   - GKR-UX-PER005-MASTER-001
   - GKR-JOURNEY-PERSON-001
@@ -58,6 +59,8 @@ Ela governa:
 - retorno para revisar conteúdos quando aplicável;
 - saída para exploração sem personalização;
 - falha e recuperação sem continuidade oculta;
+- resultado indeterminado quando não houver confirmação suficiente de sucesso, falha conhecida ou interrupção efetivada;
+- reconciliação antes de retry da mesma intenção lógica quando necessária;
 - handoff governado para `PER-007`.
 
 Ela não governa:
@@ -192,6 +195,8 @@ Ao interromper:
 
 A ação pode exigir confirmação proporcional ao efeito, sem coerção.
 
+Se a Pessoa solicitar interrupção, mas não houver confirmação suficiente de que o processamento cessou ou de que nenhum efeito concorrente foi concluído, a experiência não deve declarar `processamento interrompido`. Esse caso é **resultado indeterminado** e exige reconciliação antes de retry ou nova mutação equivalente.
+
 ## 10. Revisar conteúdos durante o processamento
 
 Quando a Pessoa escolher revisar os conteúdos usados:
@@ -250,6 +255,36 @@ Quando houver falha:
 - repetir processamento não pode expandir autorização;
 - conteúdo não autorizado continua fora.
 
+## 13.1 Resultado indeterminado e reconciliação
+
+Quando houve tentativa de processamento, mas não existe evidência suficiente para afirmar sucesso, falha conhecida ou interrupção confirmada, o estado é **resultado indeterminado**.
+
+```text
+INSUFFICIENT CONFIRMATION
+→ INDETERMINATE
+→ ≠ SUCCESS
+→ ≠ KNOWN FAILURE
+→ ≠ CONFIRMED INTERRUPTION
+```
+
+Enquanto a reconciliação estiver pendente:
+
+- não fabricar conclusão;
+- não fabricar causa específica de falha;
+- não reiniciar silenciosamente a mesma intenção lógica;
+- informar que o estado ainda está sendo confirmado;
+- permitir somente ações não conflitantes compatíveis com a autoridade vigente.
+
+A reconciliação deve distinguir, quando a fonte competente permitir:
+
+1. efeito não ocorreu;
+2. efeito ainda está em andamento;
+3. efeito foi concluído;
+4. falha conhecida foi confirmada;
+5. interrupção foi confirmada.
+
+Somente após essa reconciliação um retry da mesma intenção pode voltar a ser elegível. Se o efeito estiver em andamento, não reiniciar. Se tiver concluído, continuar sem reprocessar. Projeção local, animação, timeout ou ausência de resposta não constituem, isoladamente, estado canônico suficiente.
+
 ## 14. Base insuficiente
 
 Se o processamento não puder formar base suficiente para uma compreensão inicial útil, a experiência não deve pressionar a Pessoa a compartilhar mais.
@@ -294,10 +329,12 @@ O Design deve conseguir acomodar, quando aplicável:
 7. retorno para revisão de conteúdos;
 8. exploração sem personalização;
 9. falha;
-10. ação necessária;
-11. base insuficiente;
-12. compreensão inicial disponível;
-13. estado pronto para `TRN-006`.
+10. resultado indeterminado;
+11. reconciliação em andamento;
+12. ação necessária;
+13. base insuficiente;
+14. compreensão inicial disponível;
+15. estado pronto para `TRN-006`.
 
 ```text
 ESTADOS FUNCIONAIS
