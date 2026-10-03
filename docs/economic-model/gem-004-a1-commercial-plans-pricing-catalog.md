@@ -2,7 +2,7 @@
 id: GEM-004-A1
 title: Catálogo Comercial Candidato de Planos, Benefícios e Preços
 status: active
-version: 0.4.0
+version: 0.5.0
 owner: Guivos Economic Model
 last_updated: 2026-10-03
 parent: GEM-004
@@ -13,6 +13,7 @@ depends_on:
   - GEM-004-CAPABILITY-ALLOCATION-MATRIX-001
   - GEM-004-UPGRADE-DOWNGRADE-CANCELLATION-POLICY-001
 related:
+  - GEM-004-BUSINESS-VARIABLE-PRICING-AUTHORITY-001
   - GEM-004-A2
   - GEM-010-A1
   - GEM-COMMERCIAL-BASELINE-001
@@ -462,16 +463,9 @@ A baseline de preços do Business é própria do produto e não deriva dos preç
 
 ### 8.3 Limites da baseline Business
 
-O pricing acima não congela automaticamente:
+O pricing-base acima é complementado por `GEM-004-BUSINESS-VARIABLE-PRICING-AUTHORITY-001`, que congela para o configurador as faixas de população/escala, taxas de oferta, acessos Journey custeados, capacidades adicionais, serviços adicionais e inclusões mínimas por tier.
 
-- limites quantitativos por capacidade;
-- SLA específico;
-- entitlements contratuais não formalizados;
-- preço por participante ou acesso;
-- orçamento pré-pago de incentivo;
-- preço do Journey custeado pela empresa;
-- serviços adicionais;
-- condições fiscais, jurídicas ou internacionais.
+Continuam não congelados por esta autoridade: condições fiscais, jurídicas ou internacionais, checkout real, gateway, tributação e quaisquer itens expressamente marcados como dimensionados/sob consulta.
 
 Scale e Enterprise dependem de dimensionamento da operação. Enterprise não possui preço fixo único.
 
@@ -510,6 +504,8 @@ Poderá equivaler, conforme contrato, a:
 | Taxa do meio de pagamento | parte definida no fluxo futuro | processamento financeiro |
 
 Este catálogo não define percentual de comissão, taxa de pagamento, política de reembolso, split, antecipação ou tributação da transação.
+
+Para Guivos Business, qualquer capacidade já incluída no tier tem preço adicional igual a zero. A matriz de inclusão é governada pela autoridade de pricing variável.
 
 ## 11. Estados de entitlement
 
