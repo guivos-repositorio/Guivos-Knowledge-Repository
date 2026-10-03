@@ -2,12 +2,13 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.50.73
+version: 3.50.74
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-10-03
 normative: true
 maturity: current_truth_gia_cog_001_active_normative
 related:
+  - GKR-TRADEMARK-AUTHENTICATED-GRU-ISSUANCE-HANDOFF-001
   - GKR-TRADEMARK-GRU-SCENARIO-PREFLIGHT-001
   - GKR-TRADEMARK-HUMAN-FILING-AUTHORIZATION-001
   - GKR-UX-G5-OPPORTUNITY-BOOST-VALIDATION-001
@@ -1031,7 +1032,11 @@ GRU Scenario Preflight: **COMPLETE** por `GKR-TRADEMARK-GRU-SCENARIO-PREFLIGHT-0
 
 Baseline pública revalidada: código 389 = R$ 880,00 por classe / R$ 440,00 com desconto elegível; pacote de quatro pedidos = R$ 3.520,00 ou R$ 1.760,00. O desconto e a executabilidade da rota 389 ainda dependem da checagem autenticada do INPI.
 
-Próximo gate operacional: **Authenticated GRU Issuance**.
+Authenticated GRU Issuance Handoff: **READY** por `GKR-TRADEMARK-AUTHENTICATED-GRU-ISSUANCE-HANDOFF-001`.
+
+A execução depende de sessão autenticada do INPI. Nenhuma GRU é canônica como emitida antes do retorno de seu número real.
+
+Próximo evento material: **First Real GRU Number Received**.
 
 ```text
 FILE DECISION
