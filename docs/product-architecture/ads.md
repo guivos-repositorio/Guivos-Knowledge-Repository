@@ -2,15 +2,22 @@
 id: GPA-007
 title: Guivos Ads
 status: consolidated
-version: 1.3.0
+version: 1.4.0
 owner: Guivos
-last_updated: 2026-08-14
+last_updated: 2026-10-03
 related:
   - GLPA-001
   - GKR-UX-HOME-ADS-MASTER-001
   - GEM-007-ADS-ECONOMIC-ROLE-001
   - GEM-007-A1
   - UXA-038
+  - GKR-UX-G5-OPPORTUNITY-BOOST-VALIDATION-001
+  - UXA-099
+  - UXA-049
+  - UXA-047
+  - UXA-045
+  - UXA-043
+  - UXA-041
   - GEM-010-A2
   - GPA-001
   - GPA-002
@@ -285,6 +292,43 @@ oportunidade aprovada e ativa
 
 Opportunity Boost é um mecanismo do Ads e não deve ser confundido com a identidade integral do produto.
 
+## Maturidade funcional corrente do Opportunity Boost
+
+A cadeia documental corrente do Opportunity Boost é governada por `UXA-038`, `UXA-041`, `UXA-043`, `UXA-045`, `UXA-047`, `UXA-049`, `UXA-099` e pela validação G5 `GKR-UX-G5-OPPORTUNITY-BOOST-VALIDATION-001`.
+
+Estado preservado no Transition Registry:
+
+```text
+TRN-301
+→ PARTIAL
+
+TRN-302
+→ PARTIAL
+
+TRN-303
+→ LOCALLY VALIDATED
+
+TRN-304
+→ PARTIAL
+
+TRN-305
+→ PARTIAL
+
+TRN-306
+→ PARTIAL
+```
+
+A maturidade funcional atingida não autoriza inferir:
+
+- operação comercial real;
+- pricing final;
+- inventário operacional;
+- cobrança ou faturamento;
+- algoritmo de entrega;
+- antifraude técnico;
+- deduplicação técnica;
+- implementação.
+
 ## Home Pública do Guivos Ads
 
 A arquitetura estratégica, comercial, narrativa e funcional da Home Pública do produto é governada por `GKR-UX-HOME-ADS-MASTER-001` — **Home Pública — Guivos Ads — Documento Mestre**.
@@ -339,4 +383,4 @@ O produto não poderá:
 
 ## Estado
 
-`home_architecture_converged — public Ads Home concept and smart commercial qualification defined; commercial validation, final pricing, inventory operation, design and implementation remain pending`.
+`product_reconciled_with_current_opportunity_boost_maturity — Ads product authority reflects the current UXA chain and G5 transition states; commercial validation, final pricing, inventory operation and implementation remain pending`.
