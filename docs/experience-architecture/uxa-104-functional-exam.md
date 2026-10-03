@@ -2,11 +2,11 @@
 id: GKR-UXA-104-PER013014-FUNCTIONAL-EXAM-001
 title: UXA-104 — Exame Funcional — Continuidade de Arquivo e Perguntas Opcionais
 status: active
-version: 0.1.0
+version: 1.0.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-03
-normative: false
-maturity: functional_exam_complete_candidate_findings
+normative: true
+maturity: adjudicated_functional_contract
 depends_on:
   - UXA-104
   - GKR-UXA-104-PER013014-SCOPE-AUTHORITY-001
@@ -38,7 +38,7 @@ O exame cobre exclusivamente:
 - ausência de autorização material implícita;
 - critérios verificáveis para eventual exame posterior de maturidade.
 
-Este documento registra **achados candidatos**. Ele não adjudica contrato funcional, não promove maturidade e não libera implementação.
+Este documento materializa o **contrato funcional adjudicado** da UXA-104. Ele não promove maturidade e não libera implementação.
 
 ## 2. Pergunta do exame
 
@@ -48,14 +48,14 @@ A pergunta central é:
 
 ## 3. Resultado sintético
 
-A convergência analítica é:
+A conclusão adjudicada é:
 
 ```text
 PER-013
-→ FUNCTIONALLY SUFFICIENT CANDIDATE
+→ FUNCTIONALLY SUFFICIENT / ADJUDICATED
 
 PER-014
-→ FUNCTIONALLY SUFFICIENT CANDIDATE
+→ FUNCTIONALLY SUFFICIENT / ADJUDICATED
 
 TRN-014..017
 → FUNCTIONALLY EXAMINED
@@ -68,13 +68,13 @@ MATURITY PROMOTIONS
 → 0
 ```
 
-A lacuna corrente deixa de ser descoberta de regra funcional ausente e passa a ser adjudicação/materialização das responsabilidades candidatas e, somente depois, eventual exame separado de maturidade.
+A lacuna funcional foi fechada no limite documental da UXA-104. `PER-013` e `PER-014` passam a responsabilidades funcionais correntes reconciliadas; eventual promoção de `TRN-014..017` permanece dependente de exame separado de maturidade.
 
 ## 4. Exame de PER-013 — Arquivo
 
 ### 4.1 Entrada consciente
 
-**Suficiência candidata: SIM.**
+**Suficiência adjudicada: SIM.**
 
 A autoridade atual fecha que:
 
@@ -87,7 +87,7 @@ A autoridade atual fecha que:
 
 ### 4.2 Finalidade antes da captura
 
-**Suficiência candidata: SIM.**
+**Suficiência adjudicada: SIM.**
 
 Antes da captura material, a Pessoa deve compreender finalidade, ação necessária, proteção de terceiros, limites de disponibilidade técnica e distinção entre origem e extração.
 
@@ -95,7 +95,7 @@ Não há necessidade de inventar formatos, tamanhos ou limites sem autoridade t�
 
 ### 4.3 Revisão, remoção e substituição
 
-**Suficiência candidata: SIM.**
+**Suficiência adjudicada: SIM.**
 
 O contrato já exige:
 
@@ -109,7 +109,7 @@ O contrato já exige:
 
 ### 4.4 Falha e recuperação
 
-**Suficiência candidata: SIM NO LIMITE FUNCIONAL.**
+**Suficiência adjudicada: SIM NO LIMITE FUNCIONAL.**
 
 Estão cobertos:
 
@@ -126,7 +126,7 @@ O mecanismo técnico de idempotência permanece fora do escopo, corretamente.
 
 ### 4.5 Handoff para PER-005
 
-**Suficiência candidata: SIM.**
+**Suficiência adjudicada: SIM.**
 
 `TRN-015` entrega somente conteúdo revisado e representações legitimamente produzidas, preservando:
 
@@ -143,7 +143,7 @@ O mecanismo técnico de idempotência permanece fora do escopo, corretamente.
 
 ### 5.1 Voluntariedade
 
-**Suficiência candidata: SIM.**
+**Suficiência adjudicada: SIM.**
 
 A autoridade atual diferencia corretamente:
 
@@ -166,13 +166,13 @@ AUSÊNCIA
 
 ### 5.2 Finalidade e minimização
 
-**Suficiência candidata: SIM.**
+**Suficiência adjudicada: SIM.**
 
 Cada pergunta exige finalidade compreensível e proporcional. O contrato proíbe cadastro obrigatório disfarçado, curiosidade analítica sem necessidade e coleta sensível apenas por conveniência.
 
 ### 5.3 Revisão e correção
 
-**Suficiência candidata: SIM.**
+**Suficiência adjudicada: SIM.**
 
 A Pessoa pode:
 
@@ -188,7 +188,7 @@ Ausência de resposta não pode ser convertida em avaliação negativa.
 
 ### 5.4 Falha e retomada
 
-**Suficiência candidata: SIM NO LIMITE FUNCIONAL.**
+**Suficiência adjudicada: SIM NO LIMITE FUNCIONAL.**
 
 Falha de carregar, registrar, corrigir, remover, perda de conexão e estado indeterminado estão cobertos.
 
@@ -196,7 +196,7 @@ Retomada não pode inventar resposta, restaurar conteúdo removido ou alterar `n
 
 ### 5.5 Handoff para PER-005
 
-**Suficiência candidata: SIM.**
+**Suficiência adjudicada: SIM.**
 
 `TRN-017` entrega somente o conjunto revisado, preservando proveniência, pulos/aberturas relevantes, remoções e ausência de autorização material.
 
@@ -204,7 +204,7 @@ Retomada não pode inventar resposta, restaurar conteúdo removido ou alterar `n
 
 `TRN-014 — PER-003 → PER-013`
 
-| Dimensão | Resultado candidato |
+| Dimensão | Resultado adjudicado |
 |---|---|
 | origem | suficiente |
 | destino | suficiente |
@@ -220,7 +220,7 @@ Conclusão:
 
 ```text
 TRN-014
-→ FUNCTIONALLY SUFFICIENT CANDIDATE
+→ FUNCTIONALLY SUFFICIENT / ADJUDICATED
 → MATURITY UNCHANGED
 → CONTRACTED
 ```
@@ -229,7 +229,7 @@ TRN-014
 
 `TRN-015 — PER-013 → PER-005`
 
-| Dimensão | Resultado candidato |
+| Dimensão | Resultado adjudicado |
 |---|---|
 | conteúdo revisado | suficiente |
 | proveniência | suficiente |
@@ -244,7 +244,7 @@ Conclusão:
 
 ```text
 TRN-015
-→ FUNCTIONALLY SUFFICIENT CANDIDATE
+→ FUNCTIONALLY SUFFICIENT / ADJUDICATED
 → MATURITY UNCHANGED
 → CONTRACTED
 ```
@@ -253,7 +253,7 @@ TRN-015
 
 `TRN-016 — PER-003 → PER-014`
 
-| Dimensão | Resultado candidato |
+| Dimensão | Resultado adjudicado |
 |---|---|
 | escolha consciente | suficiente |
 | opcionalidade | suficiente |
@@ -267,7 +267,7 @@ Conclusão:
 
 ```text
 TRN-016
-→ FUNCTIONALLY SUFFICIENT CANDIDATE
+→ FUNCTIONALLY SUFFICIENT / ADJUDICATED
 → MATURITY UNCHANGED
 → CONTRACTED
 ```
@@ -276,7 +276,7 @@ TRN-016
 
 `TRN-017 — PER-014 → PER-005`
 
-| Dimensão | Resultado candidato |
+| Dimensão | Resultado adjudicado |
 |---|---|
 | respostas revisadas | suficiente |
 | proveniência | suficiente |
@@ -291,7 +291,7 @@ Conclusão:
 
 ```text
 TRN-017
-→ FUNCTIONALLY SUFFICIENT CANDIDATE
+→ FUNCTIONALLY SUFFICIENT / ADJUDICATED
 → MATURITY UNCHANGED
 → CONTRACTED
 ```
@@ -365,14 +365,13 @@ UXA-104 FUNCTIONAL EXAM
 → COMPLETE
 
 FINDINGS
-→ CANDIDATE
-→ NOT ADJUDICATED
+→ ADJUDICATED / NORMATIVE
 
 PER-013 / PER-014
-→ FUNCTIONALLY SUFFICIENT CANDIDATES
+→ FUNCTIONALLY SUFFICIENT / ADJUDICATEDS
 
 TRN-014..017
-→ FUNCTIONALLY SUFFICIENT CANDIDATES
+→ FUNCTIONALLY SUFFICIENT / ADJUDICATEDS
 → CONTRACTED / UNCHANGED
 
 NEW FUNCTIONAL GAP
@@ -387,16 +386,23 @@ PRODUCT ENGINEERING
 
 ## 14. Próximo gate
 
-O próximo gate humano é:
+O contrato funcional está adjudicado e reconciliado nas autoridades correntes.
 
 ```text
-ADJUDICATE UXA-104 FUNCTIONAL EXAM FINDINGS?
+FUNCTIONAL CONTRACT
+→ ADJUDICATED / NORMATIVE
 
-IF YES
-→ MATERIALIZE FUNCTIONAL AUTHORITY / RECONCILE CURRENT AUTHORITIES
-→ KEEP TRN-014..017 UNCHANGED
-→ ONLY THEN CONSIDER SEPARATE MATURITY EXAM
+PER-013 / PER-014
+→ RECONCILED / CURRENT
 
-IF NO
-→ REOPEN FUNCTIONAL FINDINGS
+TRN-014..017
+→ CONTRACTED / UNCHANGED
+
+MATURITY PROMOTIONS
+→ 0
+
+NEXT GOVERNED GATE
+→ AUTHORIZE UXA-104 MATURITY EXAM
 ```
+
+Somente um gate separado de maturidade poderá avaliar eventual promoção de `TRN-014..017`.
