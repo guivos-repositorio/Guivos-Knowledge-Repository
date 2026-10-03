@@ -2,14 +2,15 @@
 id: GPA-SPECIALIZED-JOURNEY-MATRIX-001
 title: Matriz de Integração dos Produtos Especializados com as Jornadas
 status: consolidated
-version: 2.0.0
+version: 2.1.0
 owner: Guivos
-last_updated: 2026-08-08
+last_updated: 2026-10-03
 depends_on:
   - GPA-000
   - GLPA-001
   - GEM-004-PLAN-TAXONOMY-AUTHORITY-001
 related:
+  - GKR-UX-JOURNEY-MALL-TRAVEL-HANDOFF-CONTRACT-001
   - GPA-001
   - GPA-002
   - GPA-003
@@ -126,13 +127,17 @@ Esse handoff é **Organização como participante/publicador → Journey**, não
 
 ### 6.3 Journey → Mall
 
-Previsto arquiteturalmente, sem contrato `SURF/TRN` dedicado suficiente.
+Contrato semântico canônico definido por `GKR-UX-JOURNEY-MALL-TRAVEL-HANDOFF-CONTRACT-001`.
 
-Não usar `BND-001` se Mall continuar sob autoridade Guivos. Não inventar checkout, carrinho, pedido, pagamento ou retorno.
+O handoff é interno quando a responsabilidade dominante muda de Journey para Mall sob autoridade Guivos. Não há `SURF/TRN` dedicado criado por esse contrato.
+
+Não usar `BND-001` se Mall continuar sob autoridade Guivos. Não inventar checkout, carrinho, pedido, pagamento ou retorno materializado.
 
 ### 6.4 Journey → Travel
 
-Previsto arquiteturalmente, sem contrato `SURF/TRN` dedicado suficiente.
+Contrato semântico canônico definido por `GKR-UX-JOURNEY-MALL-TRAVEL-HANDOFF-CONTRACT-001`.
+
+O handoff é interno quando a responsabilidade dominante muda de Journey para Travel sob autoridade Guivos. Não há `SURF/TRN` dedicado criado por esse contrato.
 
 Não usar `BND-001` se Travel continuar sob autoridade Guivos. Reserva externa de terceiro poderá possuir fronteira própria somente quando a autoridade correspondente for definida.
 
@@ -208,8 +213,8 @@ Não presumir:
 
 | Gap | Descrição | Prioridade arquitetural |
 |---|---|---|
-| SP-GAP-001 | Journey → Mall sem contrato canônico de handoff | futura UXA específica |
-| SP-GAP-002 | Journey → Travel sem contrato canônico de handoff | futura UXA específica |
+| SP-GAP-001 | Journey → Mall | **contrato semântico fechado** por `GKR-UX-JOURNEY-MALL-TRAVEL-HANDOFF-CONTRACT-001`; materialização `SURF/TRN` somente mediante necessidade real |
+| SP-GAP-002 | Journey → Travel | **contrato semântico fechado** por `GKR-UX-JOURNEY-MALL-TRAVEL-HANDOFF-CONTRACT-001`; materialização `SURF/TRN` somente mediante necessidade real |
 | SP-GAP-003 | Media embutido vs contexto editorial próprio | política de representação antes de materialização |
 | SP-GAP-004 | Guivos Business sem handoff próprio claramente separado da jornada de Organização | **alta; evitar regressão Organização=Business** |
 | SP-GAP-005 | proveniência/explicabilidade de Intelligence não uniforme por superfície | evolução transversal |
