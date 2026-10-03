@@ -2,12 +2,13 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.50.71
+version: 3.50.72
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-10-03
 normative: true
 maturity: current_truth_gia_cog_001_active_normative
 related:
+  - GKR-TRADEMARK-HUMAN-FILING-AUTHORIZATION-001
   - GKR-UX-G5-OPPORTUNITY-BOOST-VALIDATION-001
   - GKR-UX-G4-INTERNAL-OPPORTUNITY-PROCESS-VALIDATION-001
   - GKR-UX-G3-ORGANIZATION-COLLECTIVE-RELATIONSHIP-VALIDATION-001
@@ -1016,18 +1017,23 @@ Estado de execução:
 
 ```text
 authorization_package_prepared = true
-filing_authorized = false
+filing_authorized = true
 GRU_issued = false
 GRU_paid = false
 signature_filed = false
 signature_registered = false
 ```
 
-Próximo gate: **Human Filing Authorization**.
+Human Filing Authorization: **GRANTED** por `GKR-TRADEMARK-HUMAN-FILING-AUTHORIZATION-001`.
+
+Próximo gate operacional: **GRU Scenario Confirmation + Issuance**.
 
 ```text
-FILE
-≠ FILING_AUTHORIZED
+FILE DECISION
+≠ FILING AUTHORIZATION BY ITSELF
+
+CURRENT CASE
+→ FILING AUTHORIZATION = GRANTED
 
 CLEAR
 ≠ REGISTRO
@@ -1375,7 +1381,7 @@ Permanecem abertos quando dependentes de realidade, materialização, Design, im
 - arquitetura técnica final de analytics/Intelligence Business;
 - regras econômicas restantes de Pontos;
 - operação Ads real, pricing, inventário e mensuração;
-- Human Filing Authorization das aplicações das assinaturas;
+- emissão das GRUs das aplicações das assinaturas;
 - evidência de atividade efetiva para AIaaS se incluído;
 - implantação real do perfil pessoal do fundador;
 - publicação real de conteúdo do fundador;

@@ -2,9 +2,9 @@
 id: GKR-TRADEMARK-BRAZIL-SIGNATURE-FILING-AUTH-001
 title: Brazil Signature Filing Authorization Package — Guivos
 status: active
-version: 1.1.0
+version: 1.2.0
 owner: Guivos
-last_updated: 2026-08-21
+last_updated: 2026-10-03
 depends_on:
   - GKR-TRADEMARK-SIGNATURE-FILING-DECISION-001
   - GKR-TRADEMARK-FILING-PREFLIGHT-001
@@ -14,6 +14,7 @@ related:
   - GKR-TRADEMARK-FILING-SCOPE-001
   - GKR-BRAND-DIGITAL-ASSETS-INDEX-001
   - GKR-GLOBAL-INTEGRITY-POST300-001
+  - GKR-TRADEMARK-HUMAN-FILING-AUTHORIZATION-001
 normative: true
 ---
 
@@ -38,7 +39,7 @@ Ele fecha, antes de qualquer protocolo:
 - gates de execução por item;
 - checklist dos quatro pedidos.
 
-Este documento **não autoriza protocolo, não gera GRU, não paga taxa e não declara pedido depositado**.
+Este pacote, isoladamente, **não autorizava protocolo, não gera GRU, não paga taxa e não declara pedido depositado**. A autorização humana posterior está registrada em `GKR-TRADEMARK-HUMAN-FILING-AUTHORIZATION-001`.
 
 ```text
 AUTHORIZATION PACKAGE PREPARED
@@ -340,16 +341,16 @@ Antes de cada protocolo confirmar:
 - [ ] comprovante da GRU arquivado após pagamento;
 - [ ] recibo/protocolo arquivado após envio.
 
-## 13. Matriz pronta para autorização
+## 13. Matriz autorizada para filing
 
 | # | Sinal | Classe | Apresentação | Rota preferida | Estado |
 |---|---|---:|---|---|---|
-| 1 | `Possibility, lived.` | 35 | Nominativa | 389 | `READY_FOR_AUTHORIZATION` |
-| 2 | `Possibility, lived.` | 42 | Nominativa | 389 | `READY_FOR_AUTHORIZATION_WITH_ITEM_GATE` |
-| 3 | `Possibilidade, vivida.` | 35 | Nominativa | 389 | `READY_FOR_AUTHORIZATION` |
-| 4 | `Possibilidade, vivida.` | 42 | Nominativa | 389 | `READY_FOR_AUTHORIZATION_WITH_ITEM_GATE` |
+| 1 | `Possibility, lived.` | 35 | Nominativa | 389 | `AUTHORIZED_TO_FILE` |
+| 2 | `Possibility, lived.` | 42 | Nominativa | 389 | `AUTHORIZED_TO_FILE_WITH_ITEM_GATE` |
+| 3 | `Possibilidade, vivida.` | 35 | Nominativa | 389 | `AUTHORIZED_TO_FILE` |
+| 4 | `Possibilidade, vivida.` | 42 | Nominativa | 389 | `AUTHORIZED_TO_FILE_WITH_ITEM_GATE` |
 
-`READY_FOR_AUTHORIZATION_WITH_ITEM_GATE` significa que a aplicação de classe 42 está pronta para decisão humana, mas o item AIaaS somente poderá integrar a especificação se a evidência factual exigida estiver presente. Sem ela, a aplicação continua autorizável com SaaS/PaaS.
+`AUTHORIZED_TO_FILE_WITH_ITEM_GATE` significa que a aplicação de classe 42 está autorizada para filing, mas o item AIaaS somente poderá integrar a especificação se a evidência factual exigida estiver presente. Sem ela, o filing da classe 42 prossegue com os itens sustentados de SaaS/PaaS, omitindo AIaaS.
 
 Estado agregado:
 
@@ -361,7 +362,7 @@ preferred_route = INPI_389
 AIaaS_execution_gate = EVIDENCE_REQUIRED
 preferred_total_if_discount_confirmed = R$ 1.760,00
 maximum_total_on_389_without_discount = R$ 3.520,00
-filing_authorized = false
+filing_authorized = true
 filed = false
 registered = false
 ```
@@ -382,15 +383,15 @@ Não integra esta autorização:
 
 ## 15. Próximo gate
 
-O próximo gate é **Human Filing Authorization**.
+O gate **Human Filing Authorization** foi concedido por `GKR-TRADEMARK-HUMAN-FILING-AUTHORIZATION-001`. O próximo gate operacional é **GRU Scenario Confirmation + Issuance**.
 
-Uma autorização válida deverá declarar explicitamente que está autorizando:
+A autorização humana concedida cobre o avanço dos quatro pedidos. A execução financeira permanece condicionada à confirmação do cenário efetivo no sistema. O executor deve preservar:
 
 1. os quatro pedidos acima;
-2. emissão e pagamento das GRUs;
-3. protocolo no INPI;
-4. o teto financeiro aplicável ao cenário confirmado no sistema;
-5. para as classes 42, se AIaaS está incluído com evidência suficiente ou omitido.
+2. emissão das GRUs após confirmação do cenário;
+3. pagamento somente dentro do teto do cenário confirmado;
+4. protocolo no INPI após os gates operacionais aplicáveis;
+5. para as classes 42, AIaaS incluído somente com evidência suficiente; sem evidência, omitir.
 
 Antes de qualquer pagamento, o executor deverá informar qual cenário foi confirmado:
 
@@ -402,6 +403,8 @@ B = código 389 sem desconto   → R$ 3.520,00
 Se a rota mudar para código 394, não executar sem nova autorização.
 
 ```text
-READY_FOR_AUTHORIZATION
-≠ FILING_AUTHORIZED
+FILING_AUTHORIZED
+≠ GRU_ISSUED
+≠ GRU_PAID
+≠ APPLICATION_FILED
 ```
