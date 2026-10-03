@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.50.94
+version: 3.50.95
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-10-03
 normative: true
@@ -26,6 +26,7 @@ related:
   - GKR-UXA-103-TRN005-SCOPE-AUTHORITY-001
   - GKR-UXA-104-PER013014-SCOPE-AUTHORITY-001
   - GKR-UXA-104-PER013014-FUNCTIONAL-EXAM-001
+  - GKR-UXA-104-PER013014-MATURITY-EXAM-001
   - UXA-104
   - UXA-103
   - GKR-UXA-102-V5-AUTHORITY-001
@@ -120,8 +121,8 @@ Estado executivo vigente:
 - **Product Engineering:** permanece pausada/não liberada;
 - **UXA-102 / V5:** `TRANSVERSE CONTRACT ADJUDICATED`; 76/76 transições examinadas; 0 promoções de maturidade;
 - **UXA-103:** escopo adjudicado; contrato funcional de `TRN-005` adjudicado e reconciliado; conclusão de maturidade adjudicada e promoção materializada para `LOCALLY VALIDATED`; `INTEGRALLY VALIDATED` não suportado pela evidência corrente;
-- **UXA-104:** escopo adjudicado por `GKR-UXA-104-PER013014-SCOPE-AUTHORITY-001` para `PER-013/014` + `TRN-014..017`; exame funcional `COMPLETE`; contrato funcional `ADJUDICATED / NORMATIVE`; reconciliação `COMPLETE`; nenhuma promoção de maturidade;
-- **execução automática seguinte:** nenhuma; o próximo ato depende de autorização humana para o exame de maturidade da UXA-104.
+- **UXA-104:** escopo adjudicado por `GKR-UXA-104-PER013014-SCOPE-AUTHORITY-001` para `PER-013/014` + `TRN-014..017`; exame funcional `COMPLETE`; contrato funcional `ADJUDICATED / NORMATIVE`; reconciliação `COMPLETE`; maturity exam `COMPLETE`; achados de maturidade `CANDIDATE / NOT ADJUDICATED`; nenhuma promoção de maturidade;
+- **execução automática seguinte:** nenhuma; o próximo ato depende da adjudicação humana dos achados do exame de maturidade da UXA-104.
 
 ```text
 DOCUMENTED
@@ -1779,6 +1780,8 @@ UXA-104
 → FUNCTIONAL EXAM COMPLETE
 → FUNCTIONAL CONTRACT ADJUDICATED / NORMATIVE
 → RECONCILIATION COMPLETE
+→ MATURITY EXAM COMPLETE
+→ MATURITY FINDINGS CANDIDATE / NOT ADJUDICATED
 → TRN-014..017 CONTRACTED / UNCHANGED
 → 0 MATURITY PROMOTIONS
 
