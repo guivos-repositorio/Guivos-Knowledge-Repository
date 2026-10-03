@@ -1,14 +1,20 @@
 ---
 id: GEM-005-POINTS-CREDITS-POLICY-001
 title: Política Conceitual de Pontos e Créditos
-status: draft
-version: 0.1.0
+status: superseded
+version: 0.2.0
 owner: Guivos Economic Model
-last_updated: 2026-07-21
+last_updated: 2026-10-03
 parent: GEM-005
+related:
+  - GKR-POINTS-ECONOMIC-AUTHORITY-001
 ---
 
 # Política Conceitual de Pontos e Créditos
+
+> **Estado pós-adjudicação — 03/10/2026**
+>
+> Este documento permanece como proveniência conceitual. Os defaults econômicos correntes de Pontos Guivos são governados por `GKR-POINTS-ECONOMIC-AUTHORITY-001`.
 
 ## 1. Objetivo
 
