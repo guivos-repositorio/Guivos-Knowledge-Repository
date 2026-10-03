@@ -1593,7 +1593,7 @@ STATE MAP DEFINED
 
 ```text
 TRN-001
-→ PARTIAL
+→ LOCALLY VALIDATED
 
 TRN-002
 → LOCALLY VALIDATED / UNCHANGED
@@ -1609,10 +1609,10 @@ TRN-006
 → LOCALLY VALIDATED / UNCHANGED
 
 TRN-014..017
-→ CONTRACTED / UNCHANGED
+→ LOCALLY VALIDATED
 ```
 
-A promoção local não comprova implementação, persistência técnica ou fechamento ponta a ponta integral. `TRN-005` está localmente validada após fechamento de resultado indeterminado/reconciliação/retry pela UXA-103; `PER-013/014` permanecem contratos candidatos.
+A maturidade local não comprova implementação, persistência técnica ou fechamento ponta a ponta integral. `TRN-001` está localmente validada após UXA-105; `TRN-005` após UXA-103; `TRN-014..017` após UXA-104. A cadeia G1 completa permanece não integralmente validada.
 
 ## 28.2 G2 — descoberta e solicitação de Coletivo
 
@@ -1761,9 +1761,13 @@ UXA-105
 → SCOPE ADJUDICATED / NORMATIVE
 → FUNCTIONAL EXAM COMPLETE
 → FUNCTIONAL CONTRACT ADJUDICATED / NORMATIVE
+→ MATURITY EXAM COMPLETE
+→ MATURITY ADJUDICATION COMPLETE
 → TRN-001 FUNCTIONALLY SUFFICIENT / ADJUDICATED
-→ TRN-001 PARTIAL / UNCHANGED
-→ NEXT GATE = AUTHORIZE UXA-105 MATURITY EXAM
+→ TRN-001 LOCALLY VALIDATED
+→ 1 MATURITY PROMOTION
+→ INTEGRALLY VALIDATED NOT SUPPORTED
+→ G1 COMPLETE CHAIN NOT INTEGRALLY VALIDATED
 
 O/C HIGH-FIDELITY DESIGN
 → AUTHORIZATION GRANTED
