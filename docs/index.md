@@ -18,7 +18,7 @@ A leitura de estado continua subordinada ao [Registro do Estado Atual](project/c
 
 ```text
 GKR-STATE-001
-→ 3.50.90 / CURRENT
+→ 3.50.91 / CURRENT
 
 ERA
 → GE-2 — KNOWLEDGE
@@ -28,6 +28,12 @@ MARCO FUNCIONAL
 
 ÚLTIMA UXA FUNCIONAL NUMERADA
 → UXA-103
+
+PRÓXIMA UXA
+→ UXA-104
+→ NOT_STARTED
+→ NOT AUTHORIZED
+→ NO AUTOMATIC EXECUTION
 
 UXA-103
 → SCOPE ADJUDICATED
