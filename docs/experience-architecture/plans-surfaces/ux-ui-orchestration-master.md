@@ -2,7 +2,7 @@
 id: GKR-UX-PLANS-ORCHESTRATION-001
 title: Planos — Superfícies e Fluxos — Documento Mestre de Orquestração UX/UI
 status: active
-version: 0.3.0
+version: 0.4.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-03
 normative: false
@@ -79,10 +79,13 @@ Comparar, alternar periodicidade, abrir detalhes ou selecionar temporariamente u
 Guivos Business acrescenta uma etapa de composição:
 
 ```text
-PLANO-BASE
+OFERTA BUSINESS OBRIGATÓRIA
+→ DEFINE O OBJETO DA CONTRATAÇÃO
+→ TAXA DE ATIVAÇÃO = R$ 0,00
+
+TIER DE CAPACIDADE
 + POPULAÇÃO / ESCALA
-+ OFERTA(S)
-+ ACESSOS JOURNEY CUSTEADOS
++ ACESSOS JOURNEY CUSTEADOS, SE APLICÁVEL
 + CAPACIDADES ADICIONAIS NÃO INCLUÍDAS NO TIER
 + SERVIÇOS ADICIONAIS
 = VALOR RECORRENTE CONTRATUAL
@@ -97,12 +100,12 @@ ORÇAMENTO DE INCENTIVO
 A experiência Business deve permitir, sem prescrever layout:
 
 ```text
-1. ESCOLHER PERIODICIDADE
-2. INFORMAR POPULAÇÃO ELEGÍVEL
-3. ESCOLHER OFERTA
+1. ESCOLHER OFERTA BUSINESS OBRIGATÓRIA
+2. ESCOLHER PERIODICIDADE
+3. INFORMAR POPULAÇÃO ELEGÍVEL
 4. INFORMAR ACESSOS JOURNEY, SE APLICÁVEL
 5. IDENTIFICAR CAPACIDADES NECESSÁRIAS
-6. ENQUADRAR PLANO COMPATÍVEL
+6. ENQUADRAR TIER COMPATÍVEL
 7. ZERAR ADD-ONS JÁ INCLUÍDOS NO TIER
 8. ESCOLHER SERVIÇO ADICIONAL, SE NECESSÁRIO
 9. INFORMAR ORÇAMENTO DE INCENTIVO SEPARADO
@@ -116,9 +119,9 @@ A ordem pode ser reorganizada visualmente, mas a semântica de cálculo e a prot
 
 O resumo da composição deve distinguir:
 
-- plano-base;
+- oferta Business contratada e taxa de ativação `R$ 0,00`;
+- tier de capacidade;
 - população/escala e faixas aplicadas;
-- oferta contratada;
 - Journey Plus/Pro custeado e quantidade;
 - add-ons efetivamente cobrados, com valor mensal/anual aplicável;
 - capacidades incluídas no tier, explicitadas com `R$ 0,00 adicional`;

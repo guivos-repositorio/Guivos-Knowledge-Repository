@@ -2,7 +2,7 @@
 id: GKR-PLANS-BUSINESS-001
 title: Planos — Guivos Business
 status: active
-version: 1.8.0
+version: 2.0.0
 owner: Guivos
 last_updated: 2026-10-03
 normative: false
@@ -30,7 +30,7 @@ Guivos Business é um **produto especializado B2B**. Seus planos são independen
 
 ## Quadro direto de contratação
 
-A contratação do Guivos Business deve ser lida pela empresa como uma composição única, formada pelo plano-base e pelos componentes aplicáveis à configuração escolhida.
+A contratação do Guivos Business parte primeiro da **oferta que a empresa quer operar**. Pelo menos uma oferta — Programas de Incentivo, Journey custeado ou ambas — é obrigatória. Start, Growth, Scale e Enterprise são tiers de capacidade da plataforma e não são contratáveis isoladamente.
 
 ### 1. Plano-base
 
@@ -54,13 +54,28 @@ A contratação do Guivos Business deve ser lida pela empresa como uma composiç
 
 A cobrança da população é **progressiva por faixa**, e não pela aplicação de uma única tarifa sobre toda a população.
 
-### 3. Oferta contratada
+### 3. Oferta contratada — obrigatória
 
-| Oferta | Mensal | Anual |
+| Oferta | Taxa mensal de ativação | Taxa anual de ativação |
 |---|---:|---:|
-| **Programas de Incentivo** | R$ 199,00 | R$ 1.990,00 |
-| **Journey custeado** | R$ 99,00 | R$ 990,00 |
-| **Incentivos + Journey** | R$ 249,00 | R$ 2.490,00 |
+| **Programas de Incentivo** | **R$ 0,00** | **R$ 0,00** |
+| **Journey custeado** | **R$ 0,00** | **R$ 0,00** |
+| **Incentivos + Journey** | **R$ 0,00** | **R$ 0,00** |
+
+A oferta define **o que a empresa está contratando para operar**. O tier define **quanta capacidade da plataforma** sustenta essa operação.
+
+```text
+SEM INCENTIVOS
+E
+SEM JOURNEY CUSTEADO
+→ NÃO EXISTE CONTRATAÇÃO BUSINESS ATIVA
+
+OFERTA BUSINESS
+→ OBRIGATÓRIA
+→ TAXA DE ATIVAÇÃO = R$ 0,00
+```
+
+Programas de Incentivo continuam podendo exigir orçamento pré-pago separado. Journey custeado continua sendo cobrado pelos acessos financiados.
 
 ### 4. Acessos Journey custeados
 
@@ -141,13 +156,17 @@ A inclusão de uma capacidade no tier não significa que ela seja gratuita unive
 ### 7. Fórmula da contratação
 
 ```text
+CONTRATAÇÃO BUSINESS VÁLIDA
+=
+OFERTA BUSINESS OBRIGATÓRIA
++ TIER DE CAPACIDADE
+
 ASSINATURA RECORRENTE / CONTRATUAL
 =
-PLANO-BASE
+TIER DE CAPACIDADE
 + POPULAÇÃO / ESCALA
-+ OFERTA
-+ ACESSOS JOURNEY CUSTEADOS
-+ CAPACIDADES ADICIONAIS NÃO INCLUÍDAS NO PLANO
++ ACESSOS JOURNEY CUSTEADOS, SE APLICÁVEL
++ CAPACIDADES ADICIONAIS NÃO INCLUÍDAS NO TIER
 + SERVIÇOS ADICIONAIS
 ```
 
@@ -174,11 +193,11 @@ START
 | Plano Start | fixo | R$ 299,00 |
 | 1–50 pessoas | incluído | R$ 0,00 |
 | 51–120 pessoas | 70 × R$ 1,49 | R$ 104,30 |
-| Programas de Incentivo | fixo | R$ 199,00 |
+| Programas de Incentivo | oferta selecionada · taxa de ativação | R$ 0,00 |
 | Self-service | incluído | R$ 0,00 |
-| **Total recorrente** |  | **R$ 602,30/mês** |
+| **Total recorrente** |  | **R$ 403,30/mês** |
 
-O orçamento destinado às recompensas do programa é informado separadamente pela empresa e não integra os R$ 602,30 da assinatura.
+O orçamento destinado às recompensas do programa é informado separadamente pela empresa e não integra os R$ 403,30 da assinatura.
 
 ## Periodicidade
 
@@ -245,13 +264,13 @@ A lógica de referência é:
 ```text
 NECESSIDADE DA EMPRESA
 ↓
-OFERTA(S) A UTILIZAR
+OFERTA BUSINESS OBRIGATÓRIA
 ↓
 ESCALA / PARTICIPANTES / ACESSOS
 ↓
 CAPACIDADES NECESSÁRIAS
 ↓
-PLANO COMPATÍVEL
+TIER COMPATÍVEL
 ↓
 COMPOSIÇÃO DO VALOR
 ↓
@@ -264,7 +283,7 @@ CONFIGURAÇÃO E OPERAÇÃO
 
 | Etapa | O que a empresa define ou seleciona | O que isso representa | Pode alterar o plano? | Pode alterar o valor? |
 |---|---|---|---|---|
-| **1. Oferta** | Programas de Incentivo, Guivos Journey custeado ou ambas as ofertas | o que a empresa pretende utilizar | não determina sozinho o plano | sim, conforme a composição econômica aplicável |
+| **1. Oferta** | Programas de Incentivo, Guivos Journey custeado ou ambas as ofertas | o objeto primário da contratação Business | pode influenciar o tier necessário | **não por taxa de ativação**; pode alterar valor por acessos Journey, escala ou capacidade requerida |
 | **2. Escala** | participantes, acessos e demais volumes comercialmente formalizados | quanto da capacidade será utilizada | sim, quando a escala ultrapassar a capacidade do plano | sim |
 | **3. Intelligence** | profundidade analítica e capacidades aplicáveis | quanto de compreensão/analytics a configuração exige | sim, conforme os entitlements vigentes | sim, quando houver capacidade comercializada separadamente |
 | **4. Integrações e eventos** | integrações necessárias para receber/enviar eventos ou dados autorizados | complexidade de conexão com outros sistemas | sim | sim, quando aplicável |
@@ -318,9 +337,9 @@ A composição econômica deve ser apresentada separadamente:
 
 | Componente | Função econômica | Integra a assinatura-base? |
 |---|---|---|
-| **Plano Business** | capacidade-base contratada | sim |
+| **Tier Business** | capacidade da plataforma necessária para operar a oferta selecionada | sim |
 | **Escala / participantes / acessos** | volume da operação, quando precificado separadamente | conforme regra comercial |
-| **Ofertas contratadas** | Programas de Incentivo e/ou Journey custeado | conforme regra comercial |
+| **Oferta Business obrigatória** | Programas de Incentivo e/ou Journey custeado | **taxa de ativação R$ 0,00**; define o objeto da contratação |
 | **Acessos Journey custeados** | acesso ao Journey pago pela empresa | relação econômica própria |
 | **Intelligence avançado / exportações / API / integrações** | capacidades adicionais, quando comercializadas separadamente | somente quando o entitlement do plano não as incluir |
 | **Serviços adicionais** | suporte adicional ou operação gerenciada contratada | não necessariamente |
@@ -363,10 +382,12 @@ Self-service significa que, além de **montar, compreender, comparar e contratar
 A contratação Self-service deve suportar uma calculadora baseada em composição versionada:
 
 ```text
-PLANO-BASE
+OFERTA BUSINESS OBRIGATÓRIA
+→ TAXA DE ATIVAÇÃO = R$ 0,00
+
+TIER DE CAPACIDADE
 + POPULAÇÃO / ESCALA
-+ OFERTA(S)
-+ ACESSOS JOURNEY CUSTEADOS
++ ACESSOS JOURNEY CUSTEADOS, SE APLICÁVEL
 + CAPACIDADES ADICIONAIS
 + SERVIÇOS ADICIONAIS
 = VALOR RECORRENTE CONTRATUAL, QUANDO PRECIFICÁVEL
@@ -375,143 +396,32 @@ ORÇAMENTO PRÉ-PAGO DE INCENTIVO
 = RECURSO OPERACIONAL SEPARADO
 ```
 
-A calculadora deve receber, no mínimo, periodicidade, população/escala, oferta(s) e volumes aplicáveis.
+A calculadora deve exigir, no mínimo, oferta Business, periodicidade, população/escala e volumes aplicáveis. Sem oferta Business, a composição permanece inválida para contratação.
 
-**Estado econômico atual:** a tabela variável foi adjudicada em `GEM-004-BUSINESS-VARIABLE-PRICING-AUTHORITY-001`. O configurador possui autoridade numérica para população/escala, ofertas, acessos Journey, capacidades adicionais e serviços adicionais, respeitando os entitlements por tier e mantendo Scale/Enterprise dimensionados quando aplicável.
+**Estado econômico atual:** a tabela variável foi adjudicada em `GEM-004-BUSINESS-VARIABLE-PRICING-AUTHORITY-001`. A oferta é obrigatória e sua taxa de ativação é R$ 0,00. O configurador possui autoridade numérica para tier, população/escala, acessos Journey, capacidades adicionais e serviços adicionais, respeitando os entitlements e mantendo Scale/Enterprise dimensionados quando aplicável.
 
 O contrato de experiência detalhado está em `GKR-UX-PLANS-BUSINESS-CONFIGURATOR-001`.
 
 
-## Tabela de composição econômica vigente
+## Regra econômica vigente
 
-A contratação Business usa a seguinte composição:
-
-```text
-ASSINATURA RECORRENTE / CONTRATUAL
-=
-PLANO-BASE
-+ COMPONENTE DE POPULAÇÃO / ESCALA
-+ COMPONENTE DE OFERTA
-+ ACESSOS JOURNEY CUSTEADOS
-+ CAPACIDADES ADICIONAIS
-+ SERVIÇOS ADICIONAIS
-
-RECURSO OPERACIONAL SEPARADO
-=
-ORÇAMENTO PRÉ-PAGO DE INCENTIVO
-```
-
-### População / escala
-
-A base precificável é a **população elegível para a configuração contratada**. A cobrança é progressiva por faixa.
-
-| População elegível | Mensal por pessoa na faixa | Anual por pessoa na faixa |
-|---|---:|---:|
-| 1–50 | incluído | incluído |
-| 51–250 | R$ 1,49 | R$ 14,90 |
-| 251–1.000 | R$ 0,99 | R$ 9,90 |
-| 1.001–5.000 | R$ 0,69 | R$ 6,90 |
-| 5.001–20.000 | R$ 0,49 | R$ 4,90 |
-| acima de 20.000 | dimensionado | dimensionado |
+A tabela detalhada apresentada no **Quadro direto de contratação** é a referência de leitura desta página.
 
 ```text
-POPULATION_COMPONENT
-=
-SOMA DAS PESSOAS EM CADA FAIXA × TARIFA DA FAIXA
+OFERTA BUSINESS
+→ OBRIGATÓRIA
+→ PROGRAMAS DE INCENTIVO E/OU JOURNEY CUSTEADO
+→ TAXA DE ATIVAÇÃO = R$ 0,00
+
+TIER
+→ START / GROWTH / SCALE / ENTERPRISE
+→ CAPACIDADE DA PLATAFORMA
+
+SEM OFERTA BUSINESS
+→ SEM CONTRATAÇÃO BUSINESS ATIVA
 ```
 
-A cobrança progressiva evita salto integral de preço quando a população cruza uma faixa.
-
-### Oferta Business
-
-| Oferta | Mensal | Anual |
-|---|---:|---:|
-| **Programas de Incentivo** | R$ 199,00 | R$ 1.990,00 |
-| **Journey custeado** | R$ 99,00 | R$ 990,00 |
-| **Incentivos + Journey** | R$ 249,00 | R$ 2.490,00 |
-
-A taxa de Programas de Incentivo habilita a operação do programa. O orçamento destinado às recompensas permanece separado.
-
-A taxa de Journey custeado habilita a gestão empresarial dos acessos; os acessos financiados são cobrados separadamente.
-
-### Acessos Journey Plus custeados
-
-| Quantidade | Mensal por acesso | Anual por acesso |
-|---|---:|---:|
-| 1–99 | R$ 19,90 | R$ 199,00 |
-| 100–499 | R$ 17,90 | R$ 179,00 |
-| 500–1.999 | R$ 15,90 | R$ 159,00 |
-| 2.000+ | R$ 13,90 | R$ 139,00 |
-
-### Acessos Journey Pro custeados
-
-| Quantidade | Mensal por acesso | Anual por acesso |
-|---|---:|---:|
-| 1–99 | R$ 39,90 | R$ 399,00 |
-| 100–499 | R$ 35,90 | R$ 359,00 |
-| 500–1.999 | R$ 31,90 | R$ 319,00 |
-| 2.000+ | R$ 27,90 | R$ 279,00 |
-
-A faixa de Journey é determinada pela quantidade total de acessos custeados daquela modalidade no contrato.
-
-### Capacidades adicionais
-
-Uma capacidade só gera add-on quando **não estiver incluída no tier contratado**.
-
-| Capacidade | Mensal | Anual |
-|---|---:|---:|
-| **Intelligence avançado** | R$ 299,00 | R$ 2.990,00 |
-| **Exportações automatizadas / Power BI** | R$ 249,00 | R$ 2.490,00 |
-| **API Business** | R$ 399,00 | R$ 3.990,00 |
-| **SSO / SAML** | R$ 299,00 | R$ 2.990,00 |
-| **Governança e trilha de auditoria avançadas** | R$ 249,00 | R$ 2.490,00 |
-| **Integração dedicada adicional** | R$ 490,00 | R$ 4.900,00 |
-
-### Inclusões mínimas por tier
-
-| Capacidade | Start | Growth | Scale | Enterprise |
-|---|---|---|---|---|
-| Intelligence avançado | adicional | incluído | incluído | incluído |
-| Exportações automatizadas / Power BI | adicional | adicional | incluído | incluído |
-| API Business | adicional | adicional | incluído | incluído |
-| SSO / SAML | adicional | adicional | incluído | incluído |
-| Governança / auditoria avançadas | adicional | incluído | incluído | incluído |
-| 1 integração dedicada | adicional | adicional | incluída | incluída conforme contrato |
-| Integrações dedicadas adicionais | adicional | adicional | R$ 490/mês por integração | dimensionado |
-
-```text
-CAPACIDADE INCLUÍDA NO TIER
-→ ADD-ON = R$ 0,00
-```
-
-### Serviços adicionais
-
-| Serviço | Mensal | Anual |
-|---|---:|---:|
-| **Self-service** | R$ 0,00 | R$ 0,00 |
-| **Suporte ampliado** | R$ 299,00 | R$ 2.990,00 |
-| **Operação gerenciada** | R$ 990,00 | R$ 9.900,00 |
-| **Gestão dedicada / SLA ampliado** | R$ 1.990,00 | R$ 19.900,00 |
-| **Projeto de implantação customizada** | sob consulta | sob consulta |
-
-Serviço adicional não define automaticamente o plano-base e não deve ser cobrado separadamente quando estiver expressamente incorporado ao contrato.
-
-### Orçamento pré-pago de incentivo
-
-| Item | Regra |
-|---|---|
-| Valor | definido pela empresa |
-| Integra a assinatura recorrente | não |
-| Impacto na assinatura | R$ 0,00 |
-| Natureza | recurso operacional pré-pago |
-| Uso | conforme regras do programa e saldo disponível |
-
-```text
-INCENTIVE PROGRAM FEE
-≠ INCENTIVE BUDGET
-```
-
-Nenhum markup, spread, taxa de resgate ou expiração econômica é criado por esta tabela.
+O valor recorrente deriva do tier, população/escala, acessos Journey quando aplicáveis, capacidades adicionais não incluídas e serviços adicionais. O orçamento de incentivo permanece recurso operacional separado.
 
 ## Start
 
@@ -578,7 +488,7 @@ Os **entitlements quantitativos que não estejam definidos** permanecem sujeitos
 
 ## O que a empresa pode contratar
 
-O plano não determina sozinho qual oferta será utilizada. A empresa pode contratar:
+O tier não constitui contratação Business sozinho. A empresa deve contratar pelo menos uma destas ofertas:
 
 - Programas de Incentivo;
 - acessos Guivos Journey custeados;
@@ -587,11 +497,12 @@ O plano não determina sozinho qual oferta será utilizada. A empresa pode contr
 A arquitetura econômica separa:
 
 ```text
-PLANO-BASE
+OFERTA BUSINESS OBRIGATÓRIA
+→ DEFINE O OBJETO DA CONTRATAÇÃO
+
+TIER DE CAPACIDADE
 +
 POPULAÇÃO / ESCALA
-+
-OFERTA(S)
 +
 ACESSOS JOURNEY CUSTEADOS
 +

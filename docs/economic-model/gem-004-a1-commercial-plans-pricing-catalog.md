@@ -2,7 +2,7 @@
 id: GEM-004-A1
 title: Catálogo Comercial Candidato de Planos, Benefícios e Preços
 status: active
-version: 0.5.0
+version: 0.6.0
 owner: Guivos Economic Model
 last_updated: 2026-10-03
 parent: GEM-004
@@ -454,6 +454,8 @@ Organização Transforma ≠ Guivos Business Scale ou Enterprise
 
 A baseline de preços do Business é própria do produto e não deriva dos preços de Organização.
 
+Uma contratação Business exige pelo menos uma oferta ativa — Programas de Incentivo, Journey custeado ou ambas. Start, Growth, Scale e Enterprise são tiers de capacidade da plataforma e não constituem, isoladamente, uma oferta Business autônoma. A seleção da oferta não gera taxa recorrente separada de ativação.
+
 ### 8.2 Leitura por plano
 
 - **Start** — operar;
@@ -463,7 +465,7 @@ A baseline de preços do Business é própria do produto e não deriva dos preç
 
 ### 8.3 Limites da baseline Business
 
-O pricing-base acima é complementado por `GEM-004-BUSINESS-VARIABLE-PRICING-AUTHORITY-001`, que congela para o configurador as faixas de população/escala, taxas de oferta, acessos Journey custeados, capacidades adicionais, serviços adicionais e inclusões mínimas por tier.
+O pricing-base acima é complementado por `GEM-004-BUSINESS-VARIABLE-PRICING-AUTHORITY-001`, que congela para o configurador as faixas de população/escala, oferta Business obrigatória sem taxa de ativação, acessos Journey custeados, capacidades adicionais, serviços adicionais e inclusões mínimas por tier.
 
 Continuam não congelados por esta autoridade: condições fiscais, jurídicas ou internacionais, checkout real, gateway, tributação e quaisquer itens expressamente marcados como dimensionados/sob consulta.
 

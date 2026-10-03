@@ -2,7 +2,7 @@
 id: GEM-004-BUSINESS-VARIABLE-PRICING-AUTHORITY-001
 title: Guivos Business — Autoridade de Pricing Variável para Configurador
 status: active
-version: 1.1.0
+version: 2.0.0
 owner: Guivos Economic Model
 last_updated: 2026-10-03
 normative: true
@@ -26,12 +26,16 @@ Este documento estabelece a tabela econômica vigente para tornar numericamente 
 A composição permanece:
 
 ```text
+CONTRATAÇÃO BUSINESS VÁLIDA
+=
+OFERTA BUSINESS OBRIGATÓRIA
++ TIER DE CAPACIDADE
+
 ASSINATURA RECORRENTE / CONTRATUAL
 =
-PLANO-BASE
+PLANO / TIER DE CAPACIDADE
 + COMPONENTE DE POPULAÇÃO / ESCALA
-+ COMPONENTE DE OFERTA
-+ ACESSOS JOURNEY CUSTEADOS
++ ACESSOS JOURNEY CUSTEADOS, SE APLICÁVEL
 + CAPACIDADES ADICIONAIS
 + SERVIÇOS ADICIONAIS
 
@@ -44,15 +48,17 @@ Os valores abaixo foram **adjudicados como autoridade econômica interna do conf
 
 ## 2. Princípios econômicos
 
-1. o plano-base remunera a camada de capacidade do produto;
-2. população/escala remunera volume elegível crescente com preço marginal decrescente;
-3. oferta remunera a ativação funcional de Incentivos, Journey custeado ou ambos;
-4. Journey custeado é precificado por acesso efetivamente financiado;
-5. add-ons só são cobrados quando a capacidade não estiver incluída no entitlement do plano;
-6. serviços adicionais remuneram participação humana/operacional acima do Self-service;
-7. orçamento de incentivo é recurso operacional do cliente e não se mistura à assinatura;
-8. o anual usa, como regra adjudicada, aproximadamente 10 mensalidades para componentes tabelados;
-9. Scale e Enterprise podem substituir partes da tabela por condições dimensionadas quando a configuração ultrapassar o Self-service elegível.
+1. a **oferta Business contratada** é o objeto econômico primário da contratação;
+2. não existe contratação Business ativa sem pelo menos uma oferta: Programas de Incentivo, Journey custeado ou ambas;
+3. o plano/tier remunera a camada de capacidade da plataforma necessária para operar a oferta selecionada;
+4. a seleção da oferta **não gera taxa recorrente adicional de ativação**;
+5. população/escala remunera volume elegível crescente com preço marginal decrescente;
+6. Journey custeado é precificado por acesso efetivamente financiado;
+7. add-ons só são cobrados quando a capacidade não estiver incluída no entitlement do plano;
+8. serviços adicionais remuneram participação humana/operacional acima do Self-service;
+9. orçamento de incentivo é recurso operacional do cliente e não se mistura à assinatura;
+10. o anual usa, como regra adjudicada, aproximadamente 10 mensalidades para componentes tabelados;
+11. Scale e Enterprise podem substituir partes da tabela por condições dimensionadas quando a configuração ultrapassar o Self-service elegível.
 
 ## 3. Plano-base
 
@@ -63,7 +69,7 @@ Os valores abaixo foram **adjudicados como autoridade econômica interna do conf
 | **Scale** | a partir de R$ 1.990,00 | dimensionado | referência mínima vigente |
 | **Enterprise** | sob consulta | sob consulta | dimensionamento obrigatório |
 
-A tabela variável não altera os preços-base já registrados.
+Os valores do tier continuam sendo a remuneração da capacidade da plataforma, mas **o tier não é contratável isoladamente**. Uma contratação Business válida exige pelo menos uma oferta Business selecionada.
 
 ## 4. Componente de população / escala
 
@@ -92,15 +98,30 @@ SOMA DAS PESSOAS EM CADA FAIXA × TARIFA DA FAIXA
 
 A cobrança progressiva evita salto artificial ao mudar de faixa.
 
-## 5. Componente de oferta
+## 5. Oferta Business obrigatória — sem taxa de ativação
 
-| Oferta Business | Mensal | Anual | Observação |
+A oferta é o objeto econômico primário da contratação Business. Pelo menos uma oferta deve estar selecionada para que exista uma contratação Business válida.
+
+| Oferta Business | Taxa mensal de ativação | Taxa anual de ativação | Regra |
 |---|---:|---:|---|
-| **Programas de Incentivo** | R$ 199,00 | R$ 1.990,00 | habilita operação de programas; orçamento de recompensa continua separado |
-| **Journey custeado** | R$ 99,00 | R$ 990,00 | habilita gestão empresarial dos acessos; licenças são cobradas separadamente |
-| **Incentivos + Journey** | R$ 249,00 | R$ 2.490,00 | composição conjunta; substitui a soma das duas taxas de oferta |
+| **Programas de Incentivo** | **R$ 0,00** | **R$ 0,00** | operado dentro do tier contratado; orçamento de incentivo continua separado |
+| **Journey custeado** | **R$ 0,00** | **R$ 0,00** | operado dentro do tier contratado; acessos financiados são cobrados separadamente |
+| **Incentivos + Journey** | **R$ 0,00** | **R$ 0,00** | combinação permitida sem taxa adicional de habilitação |
 
-A seleção de oferta não muda por si só o plano-base. O plano continua determinado pela maior capacidade necessária da configuração.
+```text
+SEM OFERTA BUSINESS
+→ SEM CONTRATAÇÃO BUSINESS ATIVA
+
+OFERTA SELECIONADA
+→ DETERMINA O OBJETO DA CONTRATAÇÃO
+→ NÃO ADICIONA TAXA DE ATIVAÇÃO
+
+TIER
+→ REMUNERA CAPACIDADE DA PLATAFORMA
+→ NÃO É OFERTA AUTÔNOMA
+```
+
+A seleção da oferta pode influenciar o tier necessário conforme capacidades, escala e requisitos, mas não adiciona uma segunda assinatura pela simples habilitação da oferta.
 
 ## 6. Acessos Journey custeados
 
@@ -205,13 +226,15 @@ A regra não se aplica automaticamente a itens “dimensionados” ou “sob con
 ## 11. Fórmula calculável adjudicada
 
 ```text
+VALID_CONFIGURATION
+=
+REQUIRED_BUSINESS_OFFER(offer)
+
 RECURRING_TOTAL
 =
 BASE(plan, periodicity)
 +
 PROGRESSIVE_POPULATION(population, periodicity)
-+
-OFFER_RATE(offer, periodicity)
 +
 JOURNEY_PLUS_RATE(volume, periodicity) × plus_accesses
 +
@@ -254,8 +277,8 @@ Cálculo mensal:
 - plano-base: R$ 299,00;
 - primeiros 50 elegíveis: incluídos;
 - 70 × R$ 1,49 = R$ 104,30;
-- oferta Incentivos: R$ 199,00;
-- total recorrente adjudicado: **R$ 602,30/mês**;
+- Programas de Incentivo: oferta obrigatória selecionada, **R$ 0,00 de taxa de ativação**;
+- total recorrente adjudicado: **R$ 403,30/mês**;
 - orçamento de incentivo: separado.
 
 ### Exemplo B — operação com Journey custeado
@@ -273,9 +296,9 @@ Cálculo mensal:
 - plano-base: R$ 799,00;
 - faixa 51–250: 200 × R$ 1,49 = R$ 298,00;
 - faixa 251–300: 50 × R$ 0,99 = R$ 49,50;
-- oferta Journey: R$ 99,00;
+- Journey custeado: oferta obrigatória selecionada, **R$ 0,00 de taxa de ativação**;
 - 100 acessos Plus × R$ 17,90 = R$ 1.790,00;
-- total recorrente adjudicado: **R$ 3.035,50/mês**.
+- total recorrente adjudicado: **R$ 2.936,50/mês**.
 
 ### Exemplo C — composição ampliada
 
@@ -299,8 +322,15 @@ PLAN ENTITLEMENT INCLUDED
 POPULATION ELIGIBLE
 ≠ JOURNEY FUNDED ACCESS
 
-OFFER ENABLEMENT
-≠ JOURNEY LICENSE
+BUSINESS OFFER SELECTION
+→ REQUIRED
+→ ACTIVATION FEE = ZERO
+
+TIER PRICE
+≠ OFFER ACTIVATION FEE
+
+JOURNEY ACCESS FEE
+≠ OFFER ACTIVATION FEE
 
 INCENTIVE PROGRAM FEE
 ≠ INCENTIVE BUDGET
