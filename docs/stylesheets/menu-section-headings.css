@@ -1,0 +1,49 @@
+/* Guivos Knowledge Repository — primary navigation section/group headings
+   Dark orange derived from the supplied visual reference: #CF4A00.
+   Scope intentionally limited to section and nested-group headings. */
+
+.md-nav--primary .md-nav__item--section > .md-nav__link,
+.md-nav--primary .md-nav__item--nested > .md-nav__link {
+  color: #cf4a00;
+  font-weight: 700;
+}
+
+.md-nav--primary .md-nav__item--section > .md-nav__link:hover,
+.md-nav--primary .md-nav__item--section > .md-nav__link:focus,
+.md-nav--primary .md-nav__item--nested > .md-nav__link:hover,
+.md-nav--primary .md-nav__item--nested > .md-nav__link:focus {
+  color: #cf4a00;
+}
+
+
+/* Jornada da Pessoa — Superfícies e Fluxos
+   Verde vivo inspirado na referência fornecida, ajustado para legibilidade.
+   O Material for MkDocs renderiza o título de primeiro nível como section;
+   nested permanece como fallback defensivo. */
+.md-nav--primary .md-nav__item--section:has(.md-nav__link[href*="person-journey/read-first"]) > .md-nav__link,
+.md-nav--primary .md-nav__item--section:has(.md-nav__link[href*="person-journey/read-first"]) .md-nav__item--nested > .md-nav__link {
+  color: #008a00;
+}
+
+.md-nav--primary .md-nav__item--section:has(.md-nav__link[href*="person-journey/read-first"]) > .md-nav__link:hover,
+.md-nav--primary .md-nav__item--section:has(.md-nav__link[href*="person-journey/read-first"]) > .md-nav__link:focus,
+.md-nav--primary .md-nav__item--section:has(.md-nav__link[href*="person-journey/read-first"]) .md-nav__item--nested > .md-nav__link:hover,
+.md-nav--primary .md-nav__item--section:has(.md-nav__link[href*="person-journey/read-first"]) .md-nav__item--nested > .md-nav__link:focus {
+  color: #008a00;
+}
+
+
+/* Jornada de Organizações e Coletivos — Superfícies e Fluxos
+   Roxo fornecido como referência visual: #8C00FF.
+   O seletor ancora a regra no Leia Primeiro exclusivo desta coleção. */
+.md-nav--primary .md-nav__item--section:has(.md-nav__link[href*="organizations-collectives-journey/read-first"]) > .md-nav__link,
+.md-nav--primary .md-nav__item--section:has(.md-nav__link[href*="organizations-collectives-journey/read-first"]) .md-nav__item--nested > .md-nav__link {
+  color: #8c00ff;
+}
+
+.md-nav--primary .md-nav__item--section:has(.md-nav__link[href*="organizations-collectives-journey/read-first"]) > .md-nav__link:hover,
+.md-nav--primary .md-nav__item--section:has(.md-nav__link[href*="organizations-collectives-journey/read-first"]) > .md-nav__link:focus,
+.md-nav--primary .md-nav__item--section:has(.md-nav__link[href*="organizations-collectives-journey/read-first"]) .md-nav__item--nested > .md-nav__link:hover,
+.md-nav--primary .md-nav__item--section:has(.md-nav__link[href*="organizations-collectives-journey/read-first"]) .md-nav__item--nested > .md-nav__link:focus {
+  color: #8c00ff;
+}

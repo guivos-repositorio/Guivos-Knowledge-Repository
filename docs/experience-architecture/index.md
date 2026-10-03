@@ -1,0 +1,273 @@
+---
+id: UXA-000
+title: Arquitetura da Experiência da Guivos
+status: active
+version: 1.24.25
+owner: Arquitetura da Experiência da Guivos
+last_updated: 2026-09-25
+related:
+  - GKR-UX-HOMES-DESIGN-DELIVERY-001
+  - GKR-UX-HOMES-DESIGN-HANDOFF-001
+  - GKR-UX-HOMES-GENINPUT-001
+  - GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
+  - GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001
+  - GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001
+  - GKR-JOURNEYS-001
+  - GKR-JOURNEY-BUSINESS-001
+  - GKR-JOURNEY-SCREEN-CATALOG-001
+  - GKR-JOURNEY-SURFACE-REGISTRY-001
+  - GKR-JOURNEY-TRANSITION-REGISTRY-001
+  - GKR-UX-PERSON-JOURNEY-READ-FIRST-001
+  - GKR-UX-PERSON-JOURNEY-FLOW-001
+  - GKR-UX-PER002-MASTER-001
+  - GKR-UX-PER003-MASTER-001
+  - GKR-UX-PER004-MASTER-001
+  - GKR-UX-PER005-MASTER-001
+  - GKR-UX-PER006-MASTER-001
+  - GKR-UX-ORGCOL-AUTH-JOBS-001
+  - GKR-UX-ORGCOL-AUTH-IA-001
+  - GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001
+  - GKR-UX-ORGCOL-AUTH-STATE-MAP-001
+  - GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001
+  - GKR-UX-ORGCOL-AUTH-NAV-MAT-001
+  - GKR-UX-ORGCOL-AUTH-WIREFRAME-DELIVERY-001
+  - GKR-UX-ORGCOL-AUTH-WIREFRAME-VALIDATION-001
+  - GKR-UX-ORGCOL-AUTH-HIFI-ELIGIBILITY-001
+  - GKR-UX-ORGCOL-AUTH-HIFI-AUTH-001
+  - GKR-UX-ORGCOL-AUTH-HIFI-EXEC-001
+normative: false
+---
+
+# Arquitetura da Experiência da Guivos
+
+## 1. Finalidade
+
+Esta seção reúne somente as autoridades correntes necessárias para compreender, criar, prototipar e validar a experiência da Guivos.
+
+```text
+CURRENT MAIN
+→ PRIMARY SOURCE OF TRUTH
+
+CURRENT AUTHORITIES
+→ DESIGN INPUT
+→ AI INPUT WHEN APPLICABLE
+```
+
+## 2. Homes públicas — conjunto corrente
+
+A fonte de entrada é o [Manifesto Canônico de Entrega para Design](public-homes-design-delivery-manifest.md).
+
+Autoridades universais de Design:
+
+- [Handoff Canônico](public-homes-design-handoff.md);
+- [Prontidão de Produção de Design](public-homes-design-production-readiness-and-figma-contract.md);
+- [Fluxo Operacional](public-homes-design-delivery-operational-flow.md);
+- [Design Production Release](public-homes-design-production-release.md).
+
+Autoridade condicional de IA:
+
+- [Source Lock e Contrato de Consumo](public-homes-generative-source-lock-and-prompt-template.md) — somente quando a designer optar por usar IA ou ferramenta generativa.
+
+Roteadores **Leia Primeiro por Home** — não normativos:
+
+- [Pessoa](read-first/public-home-person-read-first.md);
+- [Organizações e Coletivos](read-first/public-home-organizations-collectives-read-first.md);
+- [Mall](read-first/public-home-mall-read-first.md);
+- [Travel](read-first/public-home-travel-read-first.md);
+- [Media](read-first/public-home-media-read-first.md);
+- [Ads](read-first/public-home-ads-read-first.md);
+- [Business](read-first/public-home-business-read-first.md);
+- [Intelligence](read-first/public-home-intelligence-read-first.md).
+
+Masters correntes:
+
+- [Pessoa](public-home-master-document.md);
+- [Organizações e Coletivos](public-home-organizations-collectives-master-document.md);
+- [Mall](public-home-mall-master-document.md);
+- [Travel](public-home-travel-master-document.md);
+- [Media](public-home-media-master-document.md);
+- [Ads](public-home-ads-master-document.md);
+- [Business](public-home-business-master-document.md);
+- [Intelligence](public-home-intelligence-master-document.md).
+
+Os oito Masters incluem os quadros de consulta rápida dos 83 movimentos. Esses quadros resumem significado e função; não substituem os contratos detalhados.
+
+## 3. Journey — continuidade após as Homes
+
+Para prototipação que atravesse uma Home e entre em experiência autenticada, usar:
+
+- [Jornadas Integradas](../journeys/index.md);
+- [Jornada da Pessoa](../journeys/person.md);
+- [Jornada do Coletivo](../journeys/collective.md);
+- [Jornada da Organização](../journeys/organization.md);
+- [Experiência Integrada do Guivos Business](../journeys/business.md);
+- [Catálogo Integrado de Telas](../journeys/screen-catalog.md);
+- [Registro de Superfícies e Estados](../journeys/surface-registry.md);
+- [Registro de Transições](../journeys/transition-registry.md).
+
+### 3.1 Jornada da Pessoa — documentação por superfície
+
+A Jornada da Pessoa possui uma camada própria de documentação para Design e IA, sem materialização visual canônica:
+
+- [Leia Primeiro](person-journey/read-first.md);
+- [Fluxo Completo de Superfícies](person-journey/flow-map.md);
+- [PER-002 — Entrada Protegida — Documento Mestre](person-journey/per-002-protected-entry-master.md);
+- [PER-003 — Escolha de Modalidade — Documento Mestre](person-journey/per-003-modality-selection-master.md);
+- [PER-004 — Expressão por Texto ou Voz — Documento Mestre](person-journey/per-004-text-voice-expression-master.md);
+- [PER-005 — Inventário e Autorização — Documento Mestre](person-journey/per-005-inventory-authorization-master.md);
+- [PER-006 — Processamento Visível — Documento Mestre](person-journey/per-006-visible-processing-master.md).
+- [PER-007 — Compreensão Inicial Revisável — Documento Mestre](person-journey/per-007-initial-understanding-review-master.md).
+- [PER-008 — Hoje — Documento Mestre](person-journey/per-008-today-master.md).
+- [PER-010 — Meus Objetivos — Documento Mestre](person-journey/per-010-objectives-master.md).
+- [PER-011 — Meus Próximos Passos — Documento Mestre](person-journey/per-011-next-steps-master.md).
+- [PER-012 — Minha Evolução — Documento Mestre](person-journey/per-012-evolution-master.md).
+- [PER-201 — Mapa de Oportunidades — Documento Mestre](person-journey/per-201-opportunity-map-master.md).
+- [PER-202 — Lista de Oportunidades — Documento Mestre](person-journey/per-202-opportunity-list-master.md).
+- [PER-203 — Detalhe de Oportunidade — Documento Mestre](person-journey/per-203-opportunity-detail-master.md).
+- [PER-101 — Explorar Coletivos — Documento Mestre](person-journey/per-101-explore-collectives-master.md).
+- [PER-102 — Resultados de Busca de Coletivos — Documento Mestre](person-journey/per-102-collective-search-results-master.md).
+- [PER-103 — Perfil Público do Coletivo — Documento Mestre](person-journey/per-103-collective-public-profile-master.md).
+- [PER-104 — Revisão e Solicitação — Documento Mestre](person-journey/per-104-review-and-request-master.md).
+- [PER-105 — Solicitação Pendente — Documento Mestre](person-journey/per-105-pending-request-master.md).
+- [PER-106 — Meus Coletivos — Documento Mestre](person-journey/per-106-my-collectives-master.md).
+- [PER-107 — Central de Atualizações — Documento Mestre](person-journey/per-107-updates-center-master.md).
+- [PER-108 — Início do Participante — Documento Mestre](person-journey/per-108-participant-home-master.md).
+- [PER-009 — Conta / Configurações — Documento Mestre](person-journey/per-009-account-settings-master.md).
+- [PER-301 — Planos e Comparação — Documento Mestre](person-journey/per-301-plans-comparison-master.md).
+- [PER-302 — Revisão de Contratação — Documento Mestre](person-journey/per-302-contract-review-master.md).
+- [PER-303 — Downgrade e Cancelamento — Documento Mestre](person-journey/per-303-downgrade-cancellation-master.md).
+- [PER-304 — Resultado e Recuperação de Plano/Cobrança — Documento Mestre](person-journey/per-304-plan-billing-result-recovery-master.md).
+
+A coleção parte de `PER-002`, porque `PER-001` já é governada pelo Documento Mestre da Home Pública — Pessoa. As superfícies seguintes entram progressivamente, uma a uma, somente após construção e validação documental.
+
+### 3.2 Contextos principais de experiência
+
+Para leitura de Experience/Journey, usar quatro contextos principais:
+
+```text
+PESSOA
+COLETIVO
+ORGANIZAÇÃO
+BUSINESS
+```
+
+A ontologia estrutural continua distinta:
+
+```text
+PESSOA / COLETIVO / ORGANIZAÇÃO
+→ PARTICIPANTES E CONTEXTOS DE EXPERIÊNCIA
+
+GUIVOS BUSINESS
+→ PRODUTO ESPECIALIZADO B2B
+→ CONTEXTO PRÓPRIO DE EXPERIÊNCIA
+→ NÃO É PARTICIPANTE ESTRUTURAL
+```
+
+Não criar um quinto contexto chamado `Comercial`.
+
+```text
+COM-*
+→ IDS LEGADOS DE ADS / OPPORTUNITY BOOST
+
+BND-*
+→ FRONTEIRAS DOCUMENTAIS
+
+ADS / OPPORTUNITY BOOST / BND-*
+→ RECORTES AUXILIARES
+→ NÃO SUBSTITUEM BUSINESS
+```
+
+## 4. Organização e Coletivo autenticados
+
+A cadeia corrente é:
+
+```text
+JOBS / AUTORIDADE
+→ INFORMATION ARCHITECTURE
+→ SURFACE MAP
+→ STATE MAP
+→ PRIORITY FLOWS
+→ NAVIGATION MATERIALIZATION
+→ LOW-FIDELITY DELIVERY
+→ LOW-FIDELITY VALIDATION
+→ HIGH-FIDELITY ELIGIBILITY
+→ HIGH-FIDELITY AUTHORIZATION
+→ HIGH-FIDELITY EXECUTION RELEASE
+```
+
+Essas autoridades governam significado, estados, transições e limites. Elas não impõem identidade visual final.
+
+## 5. Fronteira Design × GKR
+
+```text
+GKR
+→ significado
+→ função
+→ narrativa
+→ atores e autoridade
+→ estados e transições
+→ evidência e limites
+
+DESIGNER
+→ tipografia
+→ paleta
+→ imagens
+→ ilustração
+→ grid
+→ composição
+→ componentes
+→ motion
+→ direção visual
+
+AI
+→ OPTIONAL / DESIGNER-CONTROLLED
+```
+
+## 6. Regra de consumo
+
+Não carregar o corpus inteiro por padrão.
+
+Para cada Home:
+
+```text
+4 UNIVERSAL DESIGN AUTHORITIES
++
+HOME READ-FIRST
++
+HOME MASTER
++
+HOME-SPECIFIC CURRENT AUTHORITIES
++
+OPTIONAL AI AUTHORITY ONLY WHEN AI IS USED
++
+JOURNEY ONLY WHEN THE SOLUTION CROSSES INTO AUTHENTICATED EXPERIENCE
+```
+
+Qualquer arquivo fora desse conjunto só deve ser consultado quando uma dúvida concreta exigir autoridade adicional corrente.
+
+## 7. Estado
+
+```text
+PUBLIC HOMES
+→ READY FOR DESIGN
+
+DESIGNER
+→ CREATIVE AUTHOR
+
+AI
+→ OPTIONAL
+
+SNAPSHOT REQUIREMENT
+→ NONE
+
+O/C HIGH-FIDELITY DESIGN
+→ AUTHORIZATION GRANTED
+→ EXECUTION RELEASE ISSUED
+→ EXTERNAL DELIVERY NOT_RECEIVED
+
+INTERACTIVE PROTOTYPE
+→ NOT_AUTHORIZED
+
+PRODUCT ENGINEERING
+→ SEPARATE / NOT RELEASED BY THIS INDEX
+```

@@ -1,0 +1,257 @@
+---
+id: GKR-UX-HOMES-DESIGN-DELIVERY-FLOW-001
+title: Homes Públicas — Fluxo Operacional de Uso do Pacote de Design
+status: active
+version: 3.1.4
+owner: Experience Architecture
+last_updated: 2026-09-25
+parent: GKR-UX-HOMES-DESIGN-DELIVERY-001
+depends_on:
+  - GKR-UX-HOMES-DESIGN-DELIVERY-001
+  - GKR-UX-HOMES-DESIGN-HANDOFF-001
+  - GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
+related:
+  - GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001
+normative: false
+maturity: designer_first_ai_optional_main_canonical_first_class
+---
+
+# Homes Públicas — Fluxo Operacional de Uso do Pacote de Design
+
+## 1. Finalidade
+
+Este fluxo governa **como a designer consome as fontes do GKR** antes e durante a criação das oito Homes.
+
+Ele não prescreve ferramenta criativa específica e não exige IA, geração automática, wireframe prévio ou direção visual pré-selecionada.
+
+```text
+SOURCE OF TRUTH
+→ GKR
+
+CREATIVE AUTHOR
+→ DESIGNER
+
+AI
+→ OPTIONAL
+
+DESIGN TOOL
+→ DESIGNER CHOICE
+```
+
+## 2. Gate de início
+
+A produção criativa pode começar quando:
+
+- o Manifesto corrente identifica o conjunto autorizado;
+- Master e autoridades específicas da Home pertencem ao mesmo conjunto canônico corrente;
+- não existe contradição material ou conflito de autoridade não resolvido no conjunto corrente;
+- o Design Production Release está `GRANTED`.
+
+```text
+SNAPSHOT
+→ NOT REQUIRED
+
+CURRENT MAIN
+→ FIRST-CLASS SOURCE
+
+NON-CURRENT / SUPERSEDED INPUT
+→ DO NOT LOAD
+```
+
+## 3. Isolamento de contexto
+
+Trabalhar uma Home por vez.
+
+Para cada Home, carregar apenas:
+
+```text
+UNIVERSAL DESIGN AUTHORITIES
++
+HOME MASTER
++
+HOME-SPECIFIC AUTHORITIES
++
+HOME READ-FIRST / SOURCE LOCK
+→ ONLY WHEN APPLICABLE OR WHEN AI IS USED
+```
+
+Não misturar documentos específicos de Homes diferentes por conveniência.
+
+## 4. Fase A — compreensão humana obrigatória
+
+A designer deve compreender primeiro:
+
+1. papel da Home;
+2. tese;
+3. pergunta-mãe;
+4. narrativa;
+5. regiões/movimentos;
+6. Header, navegação, launcher e CTAs quando aplicáveis;
+7. estados e comportamentos relevantes;
+8. participantes e produtos;
+9. prova/evidência;
+10. dados reais necessários;
+11. questões abertas;
+12. inferências proibidas;
+13. limites de produto;
+14. liberdade criativa.
+
+A designer deve trabalhar diretamente a partir das autoridades correntes definidas para a Home.
+
+## 5. Fase B — criação da designer
+
+A criação é externa ao GKR.
+
+A designer possui liberdade para decidir:
+
+- processo;
+- sketches;
+- referências;
+- ferramenta;
+- ordem de exploração;
+- tipografia;
+- cor;
+- imagem;
+- composição;
+- grid;
+- motion;
+- iconografia;
+- componentes;
+- atmosfera;
+- comportamento responsivo;
+- alternativas de direção visual.
+
+```text
+DESIGNER
+→ MAY CREATE MANUALLY
+
+DESIGNER
+→ MAY USE AI
+
+AI USE
+→ OPTIONAL
+→ NOT A GATE
+→ NOT A REQUIREMENT
+```
+
+O GKR não cria uma alternativa visual para ser seguida.
+
+## 6. Fase C — uso opcional de IA
+
+Quando a designer optar por IA:
+
+1. usar o guia tool-neutral da Home;
+2. carregar somente as fontes autorizadas;
+3. preservar `CANONICAL`;
+4. tratar liberdade visual como `DESIGN_CREATIVE`;
+5. tratar copy ainda não congelada como `CONTENT_CANDIDATE`;
+6. tratar propostas de layout/estética como `DESIGN_HYPOTHESIS`;
+7. usar `PROTOTYPE_PLACEHOLDER` apenas quando explicitamente provisório;
+8. não inventar `REAL_DATA_REQUIRED`;
+9. preservar `OPEN_QUESTION`;
+10. nunca ultrapassar `PROHIBITED_INFERENCE`.
+
+A saída de IA não cria autoridade.
+
+## 7. Fase D — verificação da designer
+
+Antes de apresentar uma Home para revisão:
+
+- conferir aderência ao Master;
+- conferir que nenhuma decisão visual redefiniu produto;
+- conferir que não há dado inventado;
+- conferir que claims têm suporte;
+- conferir responsividade;
+- conferir acessibilidade;
+- conferir fallback/reduced motion quando aplicável;
+- conferir Header/CTA/navegação;
+- conferir distinção participante × produto;
+- conferir estados/fallbacks quando aplicáveis;
+- conferir questões abertas;
+- registrar placeholders ainda existentes.
+
+## 8. Fase E — revisão humana
+
+A Guivos revisa o resultado contra as fontes vigentes.
+
+A revisão humana avalia significado e aderência, não substitui autoria criativa da designer.
+
+Resultados possíveis:
+
+```text
+APPROVED
+→ direction accepted
+
+ADJUST
+→ targeted changes required
+
+REJECT
+→ semantic/functional/creative direction must be revisited
+```
+
+A aprovação pode ocorrer sobre Design produzido manualmente, com IA ou por combinação dos dois.
+
+## 9. Fase F — entrega final de Design
+
+A designer é responsável por produzir e organizar os artefatos finais de Design nas ferramentas definidas pela própria execução contratual. O GKR não determina, cria, edita nem governa arquivos de Design e não exige ferramenta específica, etapa intermediária gerativa ou materialização visual pelo repositório.
+
+A entrega deve preservar:
+
+- arquivos editáveis;
+- assets;
+- fontes/licenças;
+- componentes necessários;
+- estados relevantes;
+- desktop/mobile quando aplicável;
+- documentação suficiente para continuidade;
+- controle/acesso da Guivos aos ativos contratados.
+
+```text
+FINAL DESIGN ACCEPTED
+≠ IMPLEMENTATION RELEASE
+```
+
+## 10. Mudança semântica durante o Design
+
+Se uma autoridade do GKR mudar materialmente:
+
+```text
+AFFECTED HOME
+→ STOP SEMANTIC DEPENDENT WORK
+→ RECONCILE SOURCE PACKAGE
+→ REISSUE IF MATERIAL
+```
+
+Mudanças puramente criativas da designer, sem alteração de contrato, não exigem mudança no GKR.
+
+## 11. Estado
+
+```text
+FLOW
+→ DESIGNER-FIRST
+→ AI-OPTIONAL
+→ TOOL-NEUTRAL
+
+SOURCE OF TRUTH
+→ CURRENT MAIN
+
+AUTHORIZED SOURCE SET
+→ CURRENT MANIFEST
+
+SNAPSHOT REQUIREMENT
+→ NONE
+
+NON-CURRENT / SUPERSEDED INPUT
+→ EXCLUDED
+
+GKR-CREATED FIGMA
+→ NONE
+
+DESIGN PRODUCTION RELEASE
+→ GRANTED
+
+PRODUCT ENGINEERING
+→ NOT RELEASED
+```
+
+Design pode iniciar diretamente a partir do conjunto canônico corrente. Snapshot externo é opcional e só existe quando houver necessidade real de congelamento ou transporte.

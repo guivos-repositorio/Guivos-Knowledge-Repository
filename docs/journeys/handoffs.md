@@ -1,0 +1,196 @@
+---
+id: GKR-JOURNEY-HANDOFFS-001
+title: Handoffs entre Participantes
+status: active
+version: 1.0.5
+owner: Arquitetura da Experiência da Guivos
+last_updated: 2026-10-03
+related:
+  - GKR-UX-ORGANIZATION-BUSINESS-HANDOFF-CONTRACT-001
+  - GKR-UX-JOURNEY-MALL-TRAVEL-HANDOFF-CONTRACT-001
+  - GKR-JOURNEY-PERSON-001
+  - GKR-JOURNEY-COLLECTIVE-001
+  - GKR-JOURNEY-ORGANIZATION-001
+  - GKR-JOURNEY-BUSINESS-001
+  - GKR-JOURNEY-SURFACE-REGISTRY-001
+  - GKR-JOURNEY-TRANSITION-REGISTRY-001
+  - GKR-UX-ORGCOL-AUTH-PRIORITY-FLOWS-001
+normative: false
+---
+
+# Handoffs entre Participantes
+
+## 1. Finalidade
+
+Esta vista resume transferências correntes de contexto, decisão ou autoridade entre participantes e superfícies.
+
+A maturidade oficial de cada transição pertence ao `GKR-JOURNEY-TRANSITION-REGISTRY-001`. Esta página não mantém a cronologia de validações UXA como fonte operacional.
+
+## 2. Pessoa → Coletivo → Pessoa
+
+| Transição | Origem → destino | Papel do handoff | Estado corrente |
+|---|---|---|---|
+| `GKR-TRN-104` | PER-104 → PER-105 | enviar solicitação autorizada | **parcial** |
+| `GKR-TRN-105` | PER-105 → COL-003 | disponibilizar a mesma solicitação ao responsável | **integralmente validada** |
+| `GKR-TRN-106` | COL-003 → PER-105 | solicitar informação adicional sem aprovar | **integralmente validada** |
+| `GKR-TRN-107` | PER-105 → COL-003 | responder à mesma finalidade sem duplicação | **integralmente validada** |
+| `GKR-TRN-108` | COL-003 → PER-106 | aprovação forma vínculo e apresenta continuidade | **integralmente validada** |
+| `GKR-TRN-109` | COL-003 → PER-105 | recusar solicitação | **integralmente validada** |
+| `GKR-TRN-110` | PER-106 → PER-107 | abrir Atualizações sem alterar vínculo/leitura por navegação | **integralmente validada** |
+| `GKR-TRN-111` | PER-107 → PER-108 | abrir início do mesmo Coletivo com permissão revalidada | **integralmente validada** |
+| `GKR-TRN-112` | COL-002 → COL-003 | responsável abre gestão especializada de solicitações | **integralmente validada** |
+
+A continuidade não autoriza inferir que toda a Jornada de participação esteja integralmente fechada: `TRN-104` permanece parcial e outras transições do domínio preservam seus próprios estados.
+
+## 3. Proteções do handoff Pessoa ↔ Coletivo
+
+Os handoffs validados preservam:
+
+- identidade lógica da solicitação e do vínculo;
+- autoridade proporcional ao papel;
+- revalidação de vínculo e permissão antes de ações substantivas;
+- separação entre leitura, presença, vínculo e autoridade;
+- interrupção segura;
+- retorno neutro;
+- idempotência;
+- prevalência do estado canônico mais recente.
+
+```text
+HISTÓRICO DE VÍNCULO
+≠ AUTORIZAÇÃO ATUAL
+
+NAVEGAR
+≠ APROVAR
+≠ PARTICIPAR
+≠ ALTERAR LEITURA
+```
+
+## 4. Organização → Pessoa — oportunidade e fronteira externa
+
+A publicação e descoberta de oportunidade chegam ao Detalhe por transições correntes validadas.
+
+O handoff de autoridade relevante é:
+
+```text
+PER-203 — DETALHE
+→ REVISÃO CONSCIENTE
+→ GKR-TRN-205
+→ BND-001 — FRONTEIRA EXTERNA
+→ TERCEIRO
+```
+
+`GKR-TRN-205` está **integralmente validada até a fronteira de autoridade Guivos**.
+
+Antes da transferência, a experiência deve preservar destino, responsável, dados/contexto envolvidos, limites, revalidação e possibilidade de cancelamento.
+
+Depois da transferência consciente, o processo do terceiro não passa a ser autoridade ou responsabilidade da Guivos.
+
+## 5. Organização ↔ Coletivo
+
+As relações institucionais possuem contratos funcionais, mas a continuidade bilateral ainda não está fechada como experiência ponta a ponta.
+
+Estado corrente das transições principais:
+
+| Transição | Origem → destino | Estado |
+|---|---|---|
+| `GKR-TRN-206` | ORG-004 → COL-008 | **contratada** |
+| `GKR-TRN-207` | COL-008 → ORG-005 | **contratada** |
+| `GKR-TRN-208` | ORG-005 → ORG-006 | **contratada** |
+| `GKR-TRN-209` | ORG-006 → ORG-006 | **contratada** |
+
+A existência da relação funcional não autoriza inventar superfícies bilaterais, estados operacionais ou efeitos ainda ausentes.
+
+## 6. Handoffs internos para produtos especializados
+
+Journey → Mall e Journey → Travel possuem contrato semântico canônico em `GKR-UX-JOURNEY-MALL-TRAVEL-HANDOFF-CONTRACT-001`.
+
+```text
+JOURNEY → MALL
+→ CONTRACTED INTERNAL HANDOFF
+
+JOURNEY → TRAVEL
+→ CONTRACTED INTERNAL HANDOFF
+
+DEDICATED SURF/TRN
+→ NOT CREATED
+
+BND-001
+→ NOT APPLICABLE WHILE AUTHORITY REMAINS GUIVOS
+```
+
+A referência a produto, serviço, oferta ou viagem dentro do Journey não constitui, por si só, handoff. A passagem exige mudança real da responsabilidade dominante e ação afirmativa/consciente quando aplicável.
+
+A materialização granular deverá ocorrer somente se uma necessidade real de navegação, dados, consequência, recuperação ou autoridade exigir contrato próprio.
+
+## 7. Business e esta vista de handoffs
+
+Business é um dos quatro contextos correntes de experiência, mas **não é participante estrutural** e não deve receber um handoff fictício apenas para aparecer nesta vista.
+
+A continuidade Business corrente é de produto:
+
+```text
+HOME BUSINESS
+→ OFERTA(S)
+→ PLANOS / CAPACIDADE
+→ CONFIGURADOR
+→ CONTRATAÇÃO ONLINE
+→ IMPLEMENTAÇÃO / OPERAÇÃO
+```
+
+Ela é governada por `GKR-JOURNEY-BUSINESS-001` e pelas autoridades Business.
+
+Consequentemente:
+
+```text
+AUSÊNCIA DE HANDOFF BUSINESS NESTA PÁGINA
+≠ AUSÊNCIA DE CONTEXTO BUSINESS
+
+BUSINESS
+≠ PARTICIPANTE ESTRUTURAL
+
+BUSINESS
+≠ ORG-*
+≠ COM-*
+≠ BND-002
+```
+
+Novos handoffs Business somente deverão existir quando uma transferência real de contexto/autoridade exigir contrato granular próprio.
+
+## 8. Organização → Guivos Business
+
+`GKR-UX-ORGANIZATION-BUSINESS-HANDOFF-CONTRACT-001` fecha semanticamente a passagem da jornada institucional para o produto especializado Business.
+
+```text
+ORGANIZAÇÃO
+→ PARTICIPANTE ESTRUTURAL
+
+GUIVOS BUSINESS
+→ PRODUTO ESPECIALIZADO B2B
+
+ORGANIZAÇÃO → BUSINESS
+→ CONTRACTED INTERNAL HANDOFF
+
+DEDICATED SURF/TRN
+→ NOT CREATED
+
+BND-002
+→ DOES NOT PROVE BUSINESS ENTRY
+```
+
+A materialização granular somente deverá existir se uma necessidade real de navegação, dados, consequência, recuperação ou autoridade justificar contrato próprio.
+
+## 9. Regra de leitura
+
+```text
+HANDOFF VIEW
+→ CURRENT SYNTHESIS
+
+TRANSITION REGISTRY
+→ MATURITY AUTHORITY
+
+SURFACE REGISTRY
+→ STATE / OWNERSHIP AUTHORITY
+
+IMPLEMENTATION
+→ NOT INFERRED
+```

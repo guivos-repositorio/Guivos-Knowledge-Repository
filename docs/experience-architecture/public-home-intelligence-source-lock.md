@@ -1,0 +1,558 @@
+---
+id: GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001
+title: Source Lock — Home Pública — Guivos Intelligence
+status: active
+version: 1.1.16
+owner: Experience Architecture
+last_updated: 2026-09-25
+parent: GKR-UX-HOME-INTELLIGENCE-MASTER-001
+depends_on:
+  - GKR-UX-HOME-INTELLIGENCE-MASTER-001
+  - GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001
+  - GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001
+  - GPA-006
+  - GKR-UX-HOMES-OUTCOME-001
+  - GKR-STATE-001
+normative: true
+---
+
+# Source Lock — Home Pública — Guivos Intelligence
+
+## 1. Finalidade
+
+Este documento é o **Source Lock vigente da Home Pública do Guivos Intelligence v1**. Ele congela a arquitetura narrativa em onze movimentos, o Documento Mestre, a copy pública de referência e as demais fontes autorizadas para produção externa de Design.
+
+Seu papel é:
+
+- congelar as fontes vigentes que governam a produção externa de Design da Home Intelligence e as futuras etapas autorizadas;
+- fixar a copy pública de referência e impedir interpretações incompatíveis com as autoridades vigentes;
+- registrar as invariantes que não podem ser reinterpretadas por Design, UX, UI, ferramentas generativas ou implementação futura;
+- separar claramente o que está congelado do que continua aberto;
+- impedir que lacunas visuais, tecnológicas ou operacionais sejam preenchidas por inferência.
+
+Este Source Lock **não é** o ato que concede Design Release; o release comum vigente já está `GRANTED` para produção externa pela designer. O Source Lock também não é wireframe, UI, protótipo, ferramenta generativa, especificação técnica, prova de implementação, prova de performance ou autorização de publicação.
+
+Regra:
+
+> **Source Lock congela a fonte. O Design externo é regido pelo release comum vigente; implementação e publicação permanecem gates separados.**
+
+## 2. Estado corrente do Source Lock
+
+```text
+HOME
+Guivos Intelligence
+
+STATE
+→ ACTIVE / NORMATIVE
+
+SOURCE OF TRUTH
+→ CURRENT MAIN
+
+DESIGN REGIME
+→ DESIGNER-FIRST
+→ AI OPTIONAL
+→ SNAPSHOT NOT REQUIRED
+
+DOCUMENTO MESTRE
+GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.14
+
+ARQUITETURA NARRATIVA
+GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.6
+
+PRODUCT SOURCE LOCK
+GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.3
+
+ARQUITETURA DE PRODUTO
+GPA-006 v2.0.2
+
+HISTORICAL ORIGIN / DEPLOYMENT CHECKPOINT
+→ GIT PROVENANCE ONLY
+→ NOT OPERATIONAL INPUT
+```
+
+Objetivo do lock:
+
+> preservar uma fonte pública única, coerente e auditável para a produção externa vigente de Design da Home Intelligence, sem reabrir decisões já validadas nem antecipar tecnologia ou operação ainda não comprovadas.
+
+## 3. Pacote de fontes autorizado
+
+Para a produção externa de Design da Home Intelligence, o pacote específico de autoridade deve ser restrito a:
+
+1. `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001` — este Source Lock;
+2. `GKR-UX-HOME-INTELLIGENCE-MASTER-001` v0.2.14 — `docs/experience-architecture/public-home-intelligence-master-document.md`;
+3. `GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001` v0.2.6 — `docs/experience-architecture/public-home-intelligence-conceptual-architecture.md`;
+4. `GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001` v1.0.3 — `docs/product-architecture/intelligence-product-source-lock.md`;
+5. `GPA-006` v2.0.2 — `docs/product-architecture/intelligence.md`;
+6. `GKR-UX-HOMES-OUTCOME-001` v1.0.0 — princípio transversal de resultado das Homes.
+
+Não adicionar automaticamente:
+
+- versões `0.1.0`, `0.2.0`, `1.1.0` ou outras formulações supersedidas;
+- rascunhos de conversa;
+- checkpoints históricos;
+- outras Homes;
+- benchmarks externos;
+- documentos de pricing;
+- materiais de Neo4j, GraphRAG, Power BI, Guivos.ai ou IA não requeridos para resolver dúvida concreta;
+- telas internas;
+- documentos de implementação.
+
+Qualquer ampliação do pacote exige dúvida específica e decisão deliberada.
+
+## 4. Ordem de autoridade
+
+Quando houver dúvida futura, aplicar:
+
+```text
+NÍVEL 0
+GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001
+→ governa o que está congelado para materialização
+
+NÍVEL 1
+GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.14
+→ governa narrativa pública, copy de referência e fronteiras da Home
+
+NÍVEL 2
+GKR-UX-HOME-INTELLIGENCE-NARRATIVE-001 v0.2.6
+→ governa função, ordem e separação dos onze movimentos
+
+NÍVEL 3
+GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001 v1.0.3
+→ governa a tradução pública permitida da autoridade do produto
+
+NÍVEL 4
+GPA-006 v2.0.2
+→ governa identidade, unidade de valor, responsabilidades e autoridade do produto
+
+TRANSVERSAL
+GKR-UX-HOMES-OUTCOME-001 v1.0.0
+→ governa resultado antes de feature
+
+HISTÓRICO
+→ explica como decisões foram construídas
+→ não substitui o estado vigente
+```
+
+Se uma formulação histórica divergir da versão vigente do Documento Mestre ou deste Source Lock, prevalece o estado vigente salvo nova decisão explicitamente governada.
+
+## 5. Centro semântico congelado e copy de referência
+
+Unidade de valor:
+
+> **compreensão útil e contextualizada.**
+
+Ideia-mãe:
+
+> **Compreender melhor amplia o que você consegue perceber.**
+
+Pergunta-mãe de referência:
+
+> **O que se torna possível quando você compreende melhor o que está acontecendo?**
+
+A formulação da pergunta-mãe pode receber refinamento microeditorial pela designer, desde que preserve significado, autoridade, fronteira e o contrato `COMPREENDER ≠ DECIDIR`.
+
+Expressão de apoio inicial:
+
+> **Entenda melhor o que está acontecendo. Amplie o que você consegue perceber.**
+
+Expressão de autonomia:
+
+> **Veja mais antes de decidir.**
+
+Fechamento aspiracional:
+
+> **Perceba antes o que começa a mudar. Enxergue além do que já está evidente.**
+
+Complemento de fechamento:
+
+> **Novas possibilidades podem se tornar mais visíveis.**
+
+Contrato superior:
+
+```text
+INFORMAÇÃO ≠ COMPREENSÃO
+COMPREENDER ≠ DECIDIR
+```
+
+## 6. Regra editorial congelada
+
+> **Primeiro mostre o que a pessoa consegue enxergar. Depois explique como o Intelligence torna isso possível.**
+
+Consequentemente:
+
+```text
+RESULTADO
+ANTES DO
+MECANISMO
+
+LINGUAGEM COMPREENSÍVEL
+ANTES DA
+TERMINOLOGIA ANALÍTICA
+```
+
+Termos como contexto, evidência, padrão, tendência, movimento, inferência e relação podem ser utilizados quando ajudarem a compreensão, mas não devem ser requisito para compreender o benefício.
+
+## 7. Arquitetura pública congelada — 11 movimentos
+
+```text
+01 — POSSIBILIDADE
+O que se torna possível quando você compreende melhor o que está acontecendo?
+
+02 — NECESSIDADE
+Ter mais informação não significa entender melhor.
+
+03 — VALOR PRÓPRIO
+Entenda o que informações isoladas não conseguem mostrar.
+
+04 — RESULTADOS
+Veja o que está conectado.
+Perceba o que se repete.
+Entenda o que está mudando.
+Veja o que começa a ganhar força.
+
+05 — MATERIALIZAÇÃO
+Veja o que você não enxergaria olhando cada informação separadamente.
+
+06 — FORMAÇÃO DA COMPREENSÃO
+Informações fazem mais sentido quando você consegue enxergar o contexto ao redor delas.
+
+07 — APLICAÇÃO
+Onde essa compreensão pode ser útil na prática?
+
+08 — CONFIANÇA
+Não veja apenas a conclusão. Entenda de onde ela veio.
+
+09 — AUTONOMIA
+Veja mais antes de decidir.
+
+10 — INTELIGÊNCIA CONECTADA
+Uma informação pode mostrar mais quando você entende com o que ela se relaciona.
+
+11 — HORIZONTE AMPLIADO
+Perceba antes o que começa a mudar. Enxergue além do que já está evidente.
+```
+
+Os onze movimentos são funções semânticas, não obrigação de onze blocos visuais equivalentes.
+
+Congelar também:
+
+```text
+M03
+→ DEFINE POR QUE INTELLIGENCE EXISTE
+
+M10
+→ APROFUNDA POR QUE AS RELAÇÕES IMPORTAM
+
+M04
+→ MOSTRA OS RESULTADOS
+
+M05
+→ DEMONSTRA OS RESULTADOS
+```
+
+A materialização de Design pode agrupar movimentos, desde que preserve significado, sequência de compreensão e capacidade de reconhecimento de cada função.
+
+## 8. Copy pública congelada semanticamente
+
+### Movimento 02
+
+> **O que faz diferença é conseguir juntar informações que estão espalhadas e entender o que elas mostram quando vistas em conjunto.**
+
+### Movimento 03
+
+> **Guivos Intelligence conecta informações que, separadas, mostram apenas parte da história — ajudando você a perceber relações, padrões e mudanças que antes poderiam passar despercebidos.**
+
+> **Veja como as informações se conectam. Perceba o que se repete. Entenda o que está mudando.**
+
+### Movimento 05
+
+> **Perceba quando algo que parecia isolado começa a se repetir e ganhar força.**
+
+> **Vá além do número. Entenda o que ele pode estar mostrando.**
+
+> **Entenda de onde uma conclusão veio — e até onde ela pode ir.**
+
+### Movimento 06
+
+> **Guivos Intelligence observa informações em conjunto, considera o contexto em que elas existem e busca relações que ajudem você a interpretá-las melhor.**
+
+### Movimento 08
+
+Sequência pública de referência:
+
+```text
+O que foi observado?
+O que mudou?
+Quais informações foram consideradas?
+Como elas podem estar relacionadas?
+O que é fato?
+O que é interpretação?
+Até onde essa leitura pode ir?
+```
+
+### Movimento 09
+
+> **Guivos Intelligence pode mostrar relações, comparar informações e explicar leituras. A decisão continua com você — ou com quem tem autoridade para tomá-la.**
+
+### Movimento 10
+
+> **Guivos Intelligence não olha apenas informações isoladas. Ele considera como acontecimentos, contextos e informações podem estar relacionados para construir uma leitura mais completa.**
+
+### Movimento 11
+
+> **Ao perceber relações, repetições e mudanças com mais contexto, você pode reconhecer sinais mais cedo e ampliar o que consegue considerar.**
+
+As formulações podem receber ajustes microeditoriais no Design posterior somente quando preservarem exatamente seu significado, autoridade e claim.
+
+## 9. CTAs de referência governada
+
+CTA principal:
+
+> **Veja o que suas informações podem mostrar**
+
+CTA secundário:
+
+> **Conheça o Guivos Intelligence**
+
+As formulações dos CTAs podem receber refinamento microeditorial pela designer. O que permanece congelado é sua **intenção semântica e limite de claim**, não a redação literal.
+
+Os CTAs não podem prometer:
+
+- futuro conhecido;
+- resposta certa;
+- decisão certa;
+- diagnóstico;
+- certeza;
+- resultado empresarial comprovado.
+
+## 10. Duas frentes — um único Intelligence
+
+### Pessoa / Journey
+
+Direção pública congelada:
+
+> **Entenda melhor por que determinadas informações, recomendações ou possibilidades podem aparecer em determinado contexto.**
+
+```text
+INTELLIGENCE
+→ produz compreensão
+
+JOURNEY
+→ governa a experiência
+
+PESSOA
+→ escolhe
+```
+
+### Business / população
+
+Direção pública congelada:
+
+> **Compreenda padrões, mudanças e movimentos em populações de forma agregada e protegida.**
+
+```text
+INTELLIGENCE
+→ produz leitura populacional
+
+BUSINESS
+→ governa a relação empresarial
+
+EMPRESA
+→ decide
+```
+
+Invariante:
+
+> **A Empresa não recebe Intelligence individual por funcionário nem acesso à intimidade individual da Journey.**
+
+## 11. Direção visual permitida
+
+A materialização de Design pode demonstrar:
+
+- conexões;
+- repetições;
+- mudanças;
+- comparação temporal;
+- distribuição;
+- relações;
+- sinais ganhando força;
+- contexto de um indicador;
+- origem de uma leitura;
+- incerteza;
+- limite de uma interpretação.
+
+Podem ser explorados conceitualmente:
+
+- KPIs;
+- indicadores;
+- mini gráficos;
+- séries temporais;
+- comparações;
+- cards analíticos;
+- redes e relações;
+- fluxos;
+- before/after;
+- exemplos analíticos;
+- escadas de interpretação.
+
+Guardrails:
+
+```text
+VISUAL ANALÍTICO ≠ DASHBOARD COMO PRODUTO
+EXEMPLO CONCEITUAL ≠ DADO OPERACIONAL REAL
+VISUAL EXPLICATIVO ≠ WIREFRAME CANÔNICO
+```
+
+Quando não houver dados reais validados, usar exemplos explicitamente rotulados como conceituais.
+
+## 12. Graph, IA e tecnologia
+
+Não existe seção obrigatória congelada de IA, Graph, Neo4j, GraphRAG, Power BI ou Guivos.ai.
+
+Regra:
+
+> **Tecnologias podem aparecer para explicar como determinadas capacidades podem ser realizadas, mas nunca como definição principal do Guivos Intelligence.**
+
+```text
+GUIVOS INTELLIGENCE
+≠ IA
+≠ LLM
+≠ DASHBOARD
+≠ POWER BI
+≠ GRAFO GLOBAL
+≠ NEO4J
+≠ GRAPHRAG
+≠ API
+≠ RELATÓRIO
+```
+
+Ordem correta:
+
+```text
+NECESSIDADE
+→ CAPACIDADE
+→ ENTREGA
+→ RESULTADO
+→ MECANISMO
+→ TECNOLOGIA
+```
+
+> **A tecnologia amplia a capacidade do Intelligence. Não amplia sua autoridade.**
+
+## 13. Claims proibidos
+
+Não afirmar como vigente ou comprovado que Guivos Intelligence:
+
+- prevê o futuro;
+- sabe o que vai acontecer;
+- garante decisões melhores;
+- encontra a decisão certa;
+- determina causalidade automaticamente;
+- diagnostica pessoas;
+- cria score humano de evolução;
+- revela Journey individual à Empresa;
+- comprova aumento de produtividade;
+- comprova redução de risco;
+- comprova melhoria de performance;
+- possui Neo4j operacional em escala sem evidência vigente;
+- possui GraphRAG/GDS operacional sem evidência vigente;
+- possui Power BI integrado sem evidência vigente;
+- possui Guivos.ai operacional sem evidência vigente;
+- possui métricas, benchmarks ou casos reais não formalizados.
+
+## 14. Guardrails congelados
+
+```text
+INFORMAÇÃO ≠ COMPREENSÃO
+COMPREENDER ≠ DECIDIR
+INTELLIGENCE ≠ JOURNEY
+INTELLIGENCE ≠ BUSINESS
+CONHECER ≠ UTILIZAR ≠ COMPARTILHAR
+DECLARADO ≠ OBSERVADO ≠ INFERIDO ≠ PREDITO
+PERSONALIZAR ≠ EXPOR
+CORRELAÇÃO ≠ CAUSALIDADE
+RELAÇÃO ≠ CAUSA
+PADRÃO ≠ CAUSA
+MOVIMENTO ≠ DIAGNÓSTICO
+SINAL ≠ CERTEZA
+TENDÊNCIA ≠ DESTINO
+INFERÊNCIA ≠ FATO
+MAIS DADOS ≠ MELHOR INTELLIGENCE
+TECNOLOGIA ≠ PRODUTO
+RESULTADO ESPERADO ≠ RESULTADO COMPROVADO
+PERCEBER ANTES ≠ PREVER O FUTURO
+POSSIBILIDADE ≠ RESULTADO GARANTIDO
+RECOMENDAÇÃO ≠ ORDEM
+```
+
+Privacidade e autoridade permanecem vinculadas às autoridades superiores do produto.
+
+## 15. O que permanece aberto para Design
+
+O Source Lock não congela:
+
+- número físico de seções;
+- composição e grid;
+- agrupamento visual dos movimentos;
+- tipografia;
+- fotografia, ilustração ou mídia;
+- iconografia;
+- motion;
+- comportamento responsivo;
+- geometria dos gráficos;
+- layout de cards e KPIs;
+- presença ou ausência de demonstração tecnológica, desde que subordinada;
+- microcopy que não altere significado;
+- ordem interna de exemplos dentro de um mesmo movimento.
+
+Essas liberdades são exercidas pela designer dentro do regime comum designer-first. O Source Lock define limites semânticos; não define forma visual.
+
+## 16. Limites procedimentais deste Source Lock
+
+Este Source Lock não concede, por si só, autoridade para:
+
+- implementação front-end ou back-end;
+- Product Engineering;
+- publicação comercial;
+- Marketing/GTM;
+- pricing;
+- novos claims;
+- promoção silenciosa de maturidade técnica;
+- alteração de `GKR-STATE-001` ou Roadmap sem sincronização transversal autorizada.
+
+O início da fase externa de Design é governado pelas autoridades comuns posteriores. No regime corrente, `DESIGN PRODUCTION RELEASE = GRANTED`, a designer é a autora criativa e IA é opcional.
+
+## 17. Contexto procedimental corrente
+
+O Handoff específico e as autoridades comuns devem preservar:
+
+- o pacote de fontes deste Source Lock;
+- a arquitetura em onze movimentos;
+- a copy pública vigente;
+- a intenção semântica dos CTAs e seus limites de claim;
+- as duas frentes e suas autoridades;
+- `M03 ≠ M10`;
+- `M04 ≠ M05`;
+- papel subordinado de Graph/IA;
+- exemplos analíticos como demonstração, não prova;
+- todos os guardrails de privacidade, causalidade, previsão e autonomia.
+
+```text
+GKR-UX-HOMES-DESIGN-HANDOFF-001
+→ DESIGNER-FIRST
+
+GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001
+→ DESIGN PRODUCTION RELEASE = GRANTED
+
+AI
+→ OPTIONAL / DESIGNER-CONTROLLED
+
+GKR-CREATED DESIGN / FIGMA
+→ NONE
+
+CURRENT SOURCE RESOLUTION
+→ CURRENT MAIN + CURRENT MANIFEST
+→ SNAPSHOT / CANDIDATE NOT REQUIRED
+```
+
+Nenhuma etapa documental autoriza Product Engineering automaticamente.
