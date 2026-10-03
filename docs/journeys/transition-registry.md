@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-TRANSITION-REGISTRY-001
 title: Registro Granular de Transições
 status: active
-version: 0.29.11
+version: 0.29.12
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-28
+last_updated: 2026-10-03
 related:
   - UXA-089
   - UXA-090
@@ -19,6 +19,7 @@ related:
   - GKR-PLANS-ORGANIZATION-001
   - GEM-004-PLAN-TAXONOMY-AUTHORITY-001
   - UXA-101
+  - UXA-102
   - GKR-UX-D5-C1-001
   - GKR-UX-D5-C4B-001
   - GEM-004-PLAN-TAXONOMY-AUTHORITY-001
@@ -38,7 +39,7 @@ normative: false
 
 Este registro atribui identificadores estáveis às transições correntes das Jornadas Integradas. A maturidade declarada em cada linha é o estado operativo a ser usado por Design e prototipação.
 
-A contagem corrente é de **72 transições**. `TRN-212` formaliza a entrada consciente da Pessoa no processo interno de manifestação de interesse ou inscrição; `TRN-213` formaliza o handoff bilateral inicial autorizado para a Organização; `TRN-214` formaliza o acesso institucional contextual da oportunidade ativa à gestão desses objetos; `TRN-215` e `TRN-216` formalizam as duas direções materiais da continuidade bilateral pós-envio.
+A contagem corrente é de **76 transições**. `TRN-212` formaliza a entrada consciente da Pessoa no processo interno de manifestação de interesse ou inscrição; `TRN-213` formaliza o handoff bilateral inicial autorizado para a Organização; `TRN-214` formaliza o acesso institucional contextual da oportunidade ativa à gestão desses objetos; `TRN-215` e `TRN-216` formalizam as duas direções materiais da continuidade bilateral pós-envio.
 
 ## 2. Convenções de estado
 
@@ -57,12 +58,12 @@ Validação integral documental não comprova implementação técnica nem esten
 
 | Família | Quantidade |
 |---|---:|
-| jornada pessoal | 13 |
+| jornada pessoal | 17 |
 | Pessoa em Coletivos e operação do responsável | 14 |
 | Organização, oportunidades e relações bilaterais | 16 |
 | Opportunity Boost | 6 |
 | Planos, cobrança e ciclo de vida | 23 |
-| **Total** | **72** |
+| **Total** | **76** |
 
 ## 4. Jornada pessoal
 
