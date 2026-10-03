@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.50.89
+version: 3.50.90
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-10-03
 normative: true
@@ -116,7 +116,7 @@ Estado executivo vigente:
 - **Research / mercado:** método documental não equivale a pesquisa aplicada, PMF, disposição a pagar, retenção, impacto ou causalidade comprovados;
 - **Product Engineering:** permanece pausada/não liberada;
 - **UXA-102 / V5:** `TRANSVERSE CONTRACT ADJUDICATED`; 76/76 transições examinadas; 0 promoções de maturidade;
-- **UXA-103:** escopo adjudicado; contrato funcional de `TRN-005` adjudicado e reconciliado; conclusão de maturidade adjudicada para promoção a `LOCALLY VALIDATED`, não `INTEGRALLY VALIDATED`; materialização da promoção ainda pendente; `TRN-005` permanece `PARTIAL`;
+- **UXA-103:** escopo adjudicado; contrato funcional de `TRN-005` adjudicado e reconciliado; conclusão de maturidade adjudicada e promoção materializada para `LOCALLY VALIDATED`; `INTEGRALLY VALIDATED` não suportado pela evidência corrente;
 - **execução automática seguinte:** nenhuma fora do gate governado da UXA-103.
 
 ```text
@@ -1594,7 +1594,7 @@ TRN-004
 → LOCALLY VALIDATED
 
 TRN-005
-→ PARTIAL / UNCHANGED
+→ LOCALLY VALIDATED
 
 TRN-006
 → LOCALLY VALIDATED / UNCHANGED
@@ -1603,7 +1603,7 @@ TRN-014..017
 → CONTRACTED / UNCHANGED
 ```
 
-A promoção local não comprova implementação, persistência técnica ou fechamento ponta a ponta. `TRN-005` permanece parcial por resultado indeterminado/reconciliação/retry não fechados; `PER-013/014` permanecem contratos candidatos.
+A promoção local não comprova implementação, persistência técnica ou fechamento ponta a ponta integral. `TRN-005` está localmente validada após fechamento de resultado indeterminado/reconciliação/retry pela UXA-103; `PER-013/014` permanecem contratos candidatos.
 
 ## 28.2 G2 — descoberta e solicitação de Coletivo
 
@@ -1762,8 +1762,8 @@ UXA-102 / V5
 UXA-103
 → SCOPE ADJUDICATED / GKR-UXA-103-TRN005-SCOPE-AUTHORITY-001
 → FUNCTIONAL EXAM NOT_STARTED
-→ TRN-005 PARTIAL / UNCHANGED
-→ 0 MATURITY PROMOTIONS
+→ TRN-005 LOCALLY VALIDATED
+→ 1 MATURITY PROMOTION
 
 PRODUCT ENGINEERING
 → PAUSED / NOT RELEASED
@@ -1927,11 +1927,11 @@ CURRENT SURFACE MASTERS
 → TEMPORARY HELP = USER-REQUESTED / OPTIONAL
 → DRAFT PERSISTENCE = NOT INVENTED
 → TRN-004 → PER-005 = LOCALLY VALIDATED / G1
-→ GKR-UX-PER005-MASTER-001 v0.1.1
+→ GKR-UX-PER005-MASTER-001 v0.1.3
 → PER-005 — INVENTÁRIO E AUTORIZAÇÃO
 → REVIEW + SPECIFIC AUTHORIZATION = CURRENT DESIGN DEFINITION
 → PERSISTENCE / PERSONALIZATION = BLOCKED
-→ TRN-005 → PER-006 = PARTIAL / G1 + UXA-102/V5
+→ TRN-005 → PER-006 = LOCALLY VALIDATED / G1 + UXA-102/V5 + UXA-103
 → GKR-UX-PER006-MASTER-001 v0.1.0
 → PER-006 — PROCESSAMENTO VISÍVEL
 → VISIBLE / TEMPORARY / INTERRUPTIBLE PROCESSING = CURRENT DESIGN DEFINITION
