@@ -2,7 +2,7 @@
 id: GPA-SPECIALIZED-JOURNEY-MATRIX-001
 title: Matriz de Integração dos Produtos Especializados com as Jornadas
 status: consolidated
-version: 2.1.1
+version: 2.1.2
 owner: Guivos
 last_updated: 2026-10-03
 depends_on:
@@ -215,10 +215,10 @@ Não presumir:
 |---|---|---|
 | SP-GAP-001 | Journey → Mall | **contrato semântico fechado** por `GKR-UX-JOURNEY-MALL-TRAVEL-HANDOFF-CONTRACT-001`; materialização `SURF/TRN` somente mediante necessidade real |
 | SP-GAP-002 | Journey → Travel | **contrato semântico fechado** por `GKR-UX-JOURNEY-MALL-TRAVEL-HANDOFF-CONTRACT-001`; materialização `SURF/TRN` somente mediante necessidade real |
-| SP-GAP-003 | Media embutido vs contexto editorial próprio | política de representação antes de materialização |
+| SP-GAP-003 | Media embutido vs contexto editorial próprio | **fechado por P8 + GPA-005** — Media pode permanecer embutido quando a decisão principal continua na superfície anfitriã; contexto Media próprio exige responsabilidade editorial dominante |
 | SP-GAP-004 | Guivos Business sem handoff próprio claramente separado da jornada de Organização | **alta; evitar regressão Organização=Business** |
 | SP-GAP-005 | proveniência/explicabilidade de Intelligence não uniforme por superfície | evolução transversal |
-| SP-GAP-006 | página Ads ainda precisa refletir completamente a maturidade UXA já atingida | corrigir no rebaseline P8 |
+| SP-GAP-006 | página Ads × maturidade UXA | **fechado por rebaseline documental** — GPA-007 reconciliado com UXA-041/043/045/047/049/099 e G5, sem promover transições nem operação |
 | SP-GAP-007 | registros SURF/TRN não possuem coluna nativa de produto | usar esta matriz; mudar schema somente se houver necessidade real |
 | SP-GAP-008 | handoff interno vs fronteira externa | **fechado pela política P8** — `BND-001` reservado à autoridade externa; handoffs internos entre produtos Guivos não usam `BND-001` |
 | SP-GAP-009 | `BND-002` como proxy de Business | **fechado pela política P8** — `BND-002` não é produto, plano ou sinônimo de Business e não prova mudança de produto |
