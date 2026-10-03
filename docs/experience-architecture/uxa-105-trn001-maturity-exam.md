@@ -193,17 +193,27 @@ Este exame:
 - não autoriza Design, protótipo ou execução técnica;
 - não declara G1 integralmente validada.
 
-## 10. Próximo gate
+## 10. Estado após adjudicação
 
 ```text
 MATURITY EXAM
 → COMPLETE
 
-CANDIDATE ELIGIBILITY
-→ PARTIAL → LOCALLY VALIDATED
+MATURITY ADJUDICATION
+→ COMPLETE
 
-NEXT GOVERNED GATE
-→ AUTHORIZE UXA-105 MATURITY ADJUDICATION
+TRN-001
+→ PARTIAL → LOCALLY VALIDATED
+→ PROMOTION MATERIALIZED
+
+INTEGRALLY VALIDATED
+→ NOT SUPPORTED
+
+G1 COMPLETE CHAIN
+→ NOT INTEGRALLY VALIDATED
+
+PRODUCT ENGINEERING
+→ PAUSED / NOT RELEASED
 ```
 
-Somente a adjudicação humana posterior poderá autorizar a promoção material no Transition Registry e nas autoridades de estado.
+Qualquer avanço além de `LOCALLY VALIDATED` exige novo exame e gate próprio.
