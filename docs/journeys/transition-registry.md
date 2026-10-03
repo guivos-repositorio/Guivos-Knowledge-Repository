@@ -2,10 +2,11 @@
 id: GKR-JOURNEY-TRANSITION-REGISTRY-001
 title: Registro Granular de Transições
 status: active
-version: 0.29.13
+version: 0.29.14
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-03
 related:
+  - GKR-UX-G1-ENTRY-EXPRESSION-INVENTORY-VALIDATION-001
   - GKR-UXA-102-V5-AUTHORITY-001
   - UXA-089
   - UXA-090
@@ -72,9 +73,9 @@ Validação integral documental não comprova implementação técnica nem esten
 |---|---|---|---|---|
 | GKR-TRN-001 | PER-001 | PER-002 | parcial | continuidade entre pacotes |
 | GKR-TRN-002 | PER-002 | PER-003 | localmente validada | UXA-035 + contratos correntes de entrada protegida |
-| GKR-TRN-003 | PER-003 | PER-004 | parcial | integração entrada protegida → expressão guiada ainda parcial |
-| GKR-TRN-004 | PER-004 | PER-005 | parcial | integração expressão–inventário |
-| GKR-TRN-005 | PER-005 | PER-006 | parcial | integração inventário autorizado → processamento visível ainda parcial; referências visuais paralelas não são autoridade corrente |
+| GKR-TRN-003 | PER-003 | PER-004 | **localmente validada** | GKR-UX-G1-ENTRY-EXPRESSION-INVENTORY-VALIDATION-001 — escolha Texto/Voz → expressão; autoridade, interrupção, falha e ausência de processamento implícito examinadas localmente |
+| GKR-TRN-004 | PER-004 | PER-005 | **localmente validada** | GKR-UX-G1-ENTRY-EXPRESSION-INVENTORY-VALIDATION-001 — expressão revisada → inventário sem autorização material implícita; retorno/remoção preservados |
+| GKR-TRN-005 | PER-005 | PER-006 | **localmente validada** | GKR-UX-G1-ENTRY-EXPRESSION-INVENTORY-VALIDATION-001 — autorização específica registrada → processamento visível; falha de registro bloqueia processamento; interrupção/falha governadas localmente |
 | GKR-TRN-006 | PER-006 | PER-007 | localmente validada | UXA-037 |
 | GKR-TRN-014 | PER-003 | PER-013 | contratada | escolha consciente de Arquivo → responsabilidade de captura/revisão; upload não é iniciado pela escolha e não existe autorização material |
 | GKR-TRN-015 | PER-013 | PER-005 | contratada | conteúdo de arquivo revisado → inventário/autorização; origem/derivados/remoções preservados e autorização material ainda ausente |
@@ -278,6 +279,24 @@ A correção semântica preservada:
 - não transforma `BND-002` em checkout;
 - não promove `TRN-416` ou `TRN-426`;
 - não cria fluxo de Guivos Business.
+
+## 4.1 Validação local G1 — entrada, expressão e inventário
+
+`GKR-UX-G1-ENTRY-EXPRESSION-INVENTORY-VALIDATION-001` valida localmente três handoffs sem fechar a cadeia ponta a ponta:
+
+```text
+TRN-003
+TRN-004
+TRN-005
+→ LOCALLY VALIDATED
+```
+
+Preservações:
+
+- `TRN-001` permanece parcial;
+- `TRN-002` e `TRN-006` permanecem localmente validadas;
+- `TRN-014..017` permanecem contratadas enquanto `PER-013/014` forem contratos candidatos;
+- nenhuma implementação, persistência técnica ou Product Engineering é comprovada por esta validação.
 
 ## 9.1 Autoridade transversal UXA-102 / V5
 
