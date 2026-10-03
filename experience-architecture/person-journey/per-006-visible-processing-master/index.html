@@ -4107,6 +4107,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#131-resultado-indeterminado-e-reconciliacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.1 Resultado indeterminado e reconciliação
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#14-base-insuficiente" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -7596,6 +7607,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#131-resultado-indeterminado-e-reconciliacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.1 Resultado indeterminado e reconciliação
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#14-base-insuficiente" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -7782,7 +7804,7 @@
 <p>A superfície existe para tornar o processamento material <strong>visível, temporário, interrompível e compreensível</strong>, sem simular compreensão instantânea, sem expor raciocínio interno detalhado e sem transformar processamento em persistência ou personalização.</p>
 <p>Este documento não cria tela, layout, wireframe, UI, protótipo, sistema visual ou implementação.</p>
 <div class="highlight"><pre><span></span><code>PER-005 — INVENTÁRIO E AUTORIZAÇÃO
-→ TRN-005 / PARCIAL
+→ TRN-005 / LOCALLY VALIDATED
 → PER-006 — PROCESSAMENTO VISÍVEL
 → TRN-006 / LOCALMENTE VALIDADA
 → PER-007 — COMPREENSÃO INICIAL REVISÁVEL
@@ -7800,6 +7822,8 @@
 <li>retorno para revisar conteúdos quando aplicável;</li>
 <li>saída para exploração sem personalização;</li>
 <li>falha e recuperação sem continuidade oculta;</li>
+<li>resultado indeterminado quando não houver confirmação suficiente de sucesso, falha conhecida ou interrupção efetivada;</li>
+<li>reconciliação antes de retry da mesma intenção lógica quando necessária;</li>
 <li>handoff governado para <code>PER-007</code>.</li>
 </ul>
 <p>Ela não governa:</p>
@@ -7813,7 +7837,7 @@
 <li>armazenamento, retenção ou política jurídica final.</li>
 </ul>
 <h2 id="3-entrada-legitima">3. Entrada legítima<a class="headerlink" href="#3-entrada-legitima" title="Permanent link">&para;</a></h2>
-<p>A entrada corrente ocorre por <code>TRN-005 — PER-005 → PER-006</code>, que permanece parcial.</p>
+<p>A entrada corrente ocorre por <code>TRN-005 — PER-005 → PER-006</code>, <strong>localmente validada</strong> após a adjudicação de maturidade da UXA-103.</p>
 <p>A entrada exige, no limite funcional corrente:</p>
 <ul>
 <li>inventário revisado;</li>
@@ -7828,7 +7852,7 @@
 AUTORIZADO
 → SOMENTE PARA A FINALIDADE DECLARADA
 </code></pre></div>
-<p>Este Master não promove <code>TRN-005</code>.</p>
+<p>Este Master consome a maturidade corrente de <code>TRN-005</code>; a promoção foi decidida por gate próprio da UXA-103 e não por este Master.</p>
 <h2 id="4-job-da-pessoa">4. Job da Pessoa<a class="headerlink" href="#4-job-da-pessoa" title="Permanent link">&para;</a></h2>
 <p>Durante o processamento, a Pessoa precisa conseguir compreender:</p>
 <ol>
@@ -7913,6 +7937,7 @@ EXPLICABILIDADE
 <li>nenhuma persistência ou personalização é criada por consequência.</li>
 </ul>
 <p>A ação pode exigir confirmação proporcional ao efeito, sem coerção.</p>
+<p>Se a Pessoa solicitar interrupção, mas não houver confirmação suficiente de que o processamento cessou ou de que nenhum efeito concorrente foi concluído, a experiência não deve declarar <code>processamento interrompido</code>. Esse caso é <strong>resultado indeterminado</strong> e exige reconciliação antes de retry ou nova mutação equivalente.</p>
 <h2 id="10-revisar-conteudos-durante-o-processamento">10. Revisar conteúdos durante o processamento<a class="headerlink" href="#10-revisar-conteudos-durante-o-processamento" title="Permanent link">&para;</a></h2>
 <p>Quando a Pessoa escolher revisar os conteúdos usados:</p>
 <div class="highlight"><pre><span></span><code>REVISAR CONTEÚDOS
@@ -7958,6 +7983,31 @@ EXPLICABILIDADE
 <li>repetir processamento não pode expandir autorização;</li>
 <li>conteúdo não autorizado continua fora.</li>
 </ul>
+<h2 id="131-resultado-indeterminado-e-reconciliacao">13.1 Resultado indeterminado e reconciliação<a class="headerlink" href="#131-resultado-indeterminado-e-reconciliacao" title="Permanent link">&para;</a></h2>
+<p>Quando houve tentativa de processamento, mas não existe evidência suficiente para afirmar sucesso, falha conhecida ou interrupção confirmada, o estado é <strong>resultado indeterminado</strong>.</p>
+<div class="highlight"><pre><span></span><code>INSUFFICIENT CONFIRMATION
+→ INDETERMINATE
+→ ≠ SUCCESS
+→ ≠ KNOWN FAILURE
+→ ≠ CONFIRMED INTERRUPTION
+</code></pre></div>
+<p>Enquanto a reconciliação estiver pendente:</p>
+<ul>
+<li>não fabricar conclusão;</li>
+<li>não fabricar causa específica de falha;</li>
+<li>não reiniciar silenciosamente a mesma intenção lógica;</li>
+<li>informar que o estado ainda está sendo confirmado;</li>
+<li>permitir somente ações não conflitantes compatíveis com a autoridade vigente.</li>
+</ul>
+<p>A reconciliação deve distinguir, quando a fonte competente permitir:</p>
+<ol>
+<li>efeito não ocorreu;</li>
+<li>efeito ainda está em andamento;</li>
+<li>efeito foi concluído;</li>
+<li>falha conhecida foi confirmada;</li>
+<li>interrupção foi confirmada.</li>
+</ol>
+<p>Somente após essa reconciliação um retry da mesma intenção pode voltar a ser elegível. Se o efeito estiver em andamento, não reiniciar. Se tiver concluído, continuar sem reprocessar. Projeção local, animação, timeout ou ausência de resposta não constituem, isoladamente, estado canônico suficiente.</p>
 <h2 id="14-base-insuficiente">14. Base insuficiente<a class="headerlink" href="#14-base-insuficiente" title="Permanent link">&para;</a></h2>
 <p>Se o processamento não puder formar base suficiente para uma compreensão inicial útil, a experiência não deve pressionar a Pessoa a compartilhar mais.</p>
 <p>A continuidade pode oferecer, quando legitimamente aplicável:</p>
@@ -7996,6 +8046,8 @@ EXPLICABILIDADE
 <li>retorno para revisão de conteúdos;</li>
 <li>exploração sem personalização;</li>
 <li>falha;</li>
+<li>resultado indeterminado;</li>
+<li>reconciliação em andamento;</li>
 <li>ação necessária;</li>
 <li>base insuficiente;</li>
 <li>compreensão inicial disponível;</li>
@@ -8153,7 +8205,7 @@ EXPLICABILIDADE
 <li>base insuficiente não pressiona exposição adicional;</li>
 <li>processamento não equivale a persistência;</li>
 <li>processamento não equivale a personalização;</li>
-<li><code>TRN-005</code> permanece parcial;</li>
+<li><code>TRN-005</code> está localmente validada;</li>
 <li><code>TRN-006</code> permanece localmente validada;</li>
 <li>nenhuma nova superfície é criada;</li>
 <li>Product Engineering permanece não liberado.</li>
@@ -8186,7 +8238,7 @@ EXPLICABILIDADE
 → CURRENT DESIGN DEFINITION
 
 ENTRY
-→ TRN-005 / PARTIAL
+→ TRN-005 / LOCALLY VALIDATED
 
 JOB
 → VISIBLE + TEMPORARY + INTERRUPTIBLE PROCESSING

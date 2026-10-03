@@ -7326,6 +7326,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#90-autoridade-especifica-uxa-103-trn-005" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.0 Autoridade específica UXA-103 / TRN-005
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#91-autoridade-transversal-uxa-102-v5" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -7515,8 +7526,8 @@
 <td>GKR-TRN-005</td>
 <td>PER-005</td>
 <td>PER-006</td>
-<td><strong>parcial</strong></td>
-<td>GKR-UX-G1-ENTRY-EXPRESSION-INVENTORY-VALIDATION-001 + UXA-102/V5 — autorização e falha conhecida estão governadas, mas resultado indeterminado, reconciliação antes de retry e não duplicação ponta a ponta permanecem sem fechamento suficiente</td>
+<td><strong>localmente validada</strong></td>
+<td>GKR-UX-G1-ENTRY-EXPRESSION-INVENTORY-VALIDATION-001 + GKR-UXA-102-V5-AUTHORITY-001 + GKR-UXA-103-TRN005-FUNCTIONAL-EXAM-001 + GKR-UXA-103-TRN005-MATURITY-EXAM-001 — contrato funcional adjudicado/reconciliado e maturidade promovida por gate humano; validação integral ponta a ponta não comprovada</td>
 </tr>
 <tr>
 <td>GKR-TRN-006</td>
@@ -8270,16 +8281,26 @@ TRN-004
 → LOCALLY VALIDATED
 
 TRN-005
-→ PARTIAL / UNCHANGED
+→ LOCALLY VALIDATED
 </code></pre></div>
 <p>Preservações:</p>
 <ul>
 <li><code>TRN-001</code> permanece parcial;</li>
 <li><code>TRN-002</code> e <code>TRN-006</code> permanecem localmente validadas;</li>
-<li><code>TRN-005</code> permanece parcial por resultado indeterminado/reconciliação/retry ainda não fechados ponta a ponta;</li>
+<li><code>TRN-005</code> está localmente validada após adjudicação específica de maturidade da UXA-103; a evidência não sustenta promoção para integralmente validada;</li>
 <li><code>TRN-014..017</code> permanecem contratadas enquanto <code>PER-013/014</code> forem contratos candidatos;</li>
 <li>nenhuma implementação, persistência técnica ou Product Engineering é comprovada por esta validação.</li>
 </ul>
+<h2 id="90-autoridade-especifica-uxa-103-trn-005">9.0 Autoridade específica UXA-103 / TRN-005<a class="headerlink" href="#90-autoridade-especifica-uxa-103-trn-005" title="Permanent link">&para;</a></h2>
+<p><code>GKR-UXA-103-TRN005-FUNCTIONAL-EXAM-001</code> especializa a cobertura transversal V5 para <code>TRN-005</code> e governa resultado indeterminado, reconciliação antes de retry, identidade lógica da intenção, interrupção sem confirmação suficiente e não duplicação do efeito lógico.</p>
+<p>A autoridade está reconciliada com <code>PER-005</code> e <code>PER-006</code>; a promoção adjudicada de <code>TRN-005</code> para <strong>localmente validada</strong> foi materializada por gate próprio de maturidade.</p>
+<div class="highlight"><pre><span></span><code>UXA-103 FUNCTIONAL CONTRACT
+→ ADJUDICATED / RECONCILED
+
+TRN-005
+→ LOCALLY VALIDATED
+→ INTEGRALLY VALIDATED NOT SUPPORTED
+</code></pre></div>
 <h2 id="91-autoridade-transversal-uxa-102-v5">9.1 Autoridade transversal UXA-102 / V5<a class="headerlink" href="#91-autoridade-transversal-uxa-102-v5" title="Permanent link">&para;</a></h2>
 <p><code>GKR-UXA-102-V5-AUTHORITY-001</code> governa transversalmente tentativa, falha conhecida, resultado indeterminado, retorno, replay, retry, estado stale e revalidação de autoridade.</p>
 <p>A cobertura V5 não altera os estados deste Registry.</p>

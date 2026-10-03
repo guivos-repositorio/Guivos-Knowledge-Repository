@@ -23,7 +23,7 @@
     
     
       
-        <title>UXA-103 — TRN-005 — Resultado Indeterminado, Reconciliação e Retry - Guivos Knowledge Repository</title>
+        <title>UXA-103 — TRN-005 — Exame Funcional de Resultado Indeterminado, Reconciliação e Retry - Guivos Knowledge Repository</title>
       
     
     
@@ -130,7 +130,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#uxa-103-trn-005-resultado-indeterminado-reconciliacao-e-retry" class="md-skip">
+        <a href="#uxa-103-trn-005-exame-funcional-de-resultado-indeterminado-reconciliacao-e-retry" class="md-skip">
           Pular para conteúdo
         </a>
       
@@ -166,7 +166,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              UXA-103 — TRN-005 — Resultado Indeterminado, Reconciliação e Retry
+              UXA-103 — TRN-005 — Exame Funcional de Resultado Indeterminado, Reconciliação e Retry
             
           </span>
         </div>
@@ -7105,10 +7105,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-estado" class="md-nav__link">
+  <a href="#1-finalidade" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Estado
+        1. Finalidade
       
     </span>
   </a>
@@ -7116,10 +7116,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-escopo" class="md-nav__link">
+  <a href="#2-baseline-examinada" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Escopo
+        2. Baseline examinada
       
     </span>
   </a>
@@ -7127,10 +7127,104 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-limites" class="md-nav__link">
+  <a href="#3-resultado-por-dimensao" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Limites
+        3. Resultado por dimensão
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Resultado por dimensão">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-resultado-indeterminado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Resultado indeterminado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-reconciliacao-antes-de-retry" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Reconciliação antes de retry
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-identidade-logica-da-intencao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 Identidade lógica da intenção
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-nao-duplicacao-do-efeito-logico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 Não duplicação do efeito lógico
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-interrupcao-conhecida-versus-interrupcao-indeterminada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5 Interrupção conhecida versus interrupção indeterminada
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#36-estado-durante-reconciliacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.6 Estado durante reconciliação
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#37-evidencia-suficiente-para-sair-do-indeterminado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.7 Evidência suficiente para sair do indeterminado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-contrato-funcional-adjudicado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Contrato funcional adjudicado
       
     </span>
   </a>
@@ -7138,10 +7232,43 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-proximo-gate" class="md-nav__link">
+  <a href="#5-compatibilidade-com-as-autoridades-existentes" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Próximo gate
+        5. Compatibilidade com as autoridades existentes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-avaliacao-dos-criterios-da-autoridade-de-escopo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Avaliação dos critérios da autoridade de escopo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-resultado-do-exame" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Resultado do exame
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-proximo-gate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Próximo gate
       
     </span>
   </a>
@@ -7178,7 +7305,7 @@
 
 
   
-    <a href="https://github.com/guivos-repositorio/Guivos-Knowledge-Repository/edit/main/docs/experience-architecture/uxa-103-trn005-indeterminate-reconciliation-retry.md" title="Editar esta página" class="md-content__button md-icon" rel="edit">
+    <a href="https://github.com/guivos-repositorio/Guivos-Knowledge-Repository/edit/main/docs/experience-architecture/uxa-103-trn005-functional-exam.md" title="Editar esta página" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -7186,39 +7313,210 @@
   
 
 
-<h1 id="uxa-103-trn-005-resultado-indeterminado-reconciliacao-e-retry">UXA-103 — TRN-005 — Resultado Indeterminado, Reconciliação e Retry<a class="headerlink" href="#uxa-103-trn-005-resultado-indeterminado-reconciliacao-e-retry" title="Permanent link">&para;</a></h1>
-<h2 id="1-estado">1. Estado<a class="headerlink" href="#1-estado" title="Permanent link">&para;</a></h2>
-<p>Esta frente numerada existe para dar identidade canônica à UXA-103 após a adjudicação humana de seu escopo.</p>
-<p>A autoridade normativa de escopo é <code>GKR-UXA-103-TRN005-SCOPE-AUTHORITY-001</code>.</p>
-<div class="highlight"><pre><span></span><code>UXA-103
-→ SCOPE ADJUDICATED
-→ FUNCTIONAL EXAM COMPLETE
-→ FUNCTIONAL CONTRACT ADJUDICATED / NORMATIVE
-→ PER-005 / PER-006 / TRANSITION REGISTRY RECONCILED
-→ TRN-005 LOCALLY VALIDATED
-→ MATURITY EXAM COMPLETE
-→ ADJUDICATED ELIGIBILITY LOCALLY VALIDATED
-→ PROMOTION MATERIALIZED
-→ MATURITY PROMOTIONS 1
-</code></pre></div>
-<h2 id="2-escopo">2. Escopo<a class="headerlink" href="#2-escopo" title="Permanent link">&para;</a></h2>
-<p>A UXA-103 examinará exclusivamente <code>TRN-005 — PER-005 → PER-006</code> quanto a:</p>
+<h1 id="uxa-103-trn-005-exame-funcional-de-resultado-indeterminado-reconciliacao-e-retry">UXA-103 — TRN-005 — Exame Funcional de Resultado Indeterminado, Reconciliação e Retry<a class="headerlink" href="#uxa-103-trn-005-exame-funcional-de-resultado-indeterminado-reconciliacao-e-retry" title="Permanent link">&para;</a></h1>
+<h2 id="1-finalidade">1. Finalidade<a class="headerlink" href="#1-finalidade" title="Permanent link">&para;</a></h2>
+<p>Este documento registra o exame funcional governado de <code>TRN-005 — PER-005 → PER-006</code> dentro do escopo adjudicado da UXA-103.</p>
+<p>O exame testa se as autoridades correntes fecham, ponta a ponta, resultado indeterminado, reconciliação antes de retry, não duplicação do efeito lógico e recuperação após interrupção.</p>
+<p>Este documento materializa o contrato funcional adjudicado da UXA-103 e não promove maturidade por si só.</p>
+<h2 id="2-baseline-examinada">2. Baseline examinada<a class="headerlink" href="#2-baseline-examinada" title="Permanent link">&para;</a></h2>
+<p>A baseline corrente já fecha:</p>
 <ul>
-<li>resultado indeterminado;</li>
-<li>reconciliação antes de retry;</li>
-<li>identidade lógica da tentativa;</li>
-<li>não duplicação do efeito lógico;</li>
-<li>recuperação após interrupção;</li>
-<li>critérios verificáveis para eventual reexame de maturidade.</li>
+<li>inventário revisado e autorização específica antes do processamento;</li>
+<li>exclusão de itens não autorizados;</li>
+<li>início visível de processamento;</li>
+<li>interrupção voluntária com efeito conhecido;</li>
+<li>descarte de resultado parcial quando a interrupção é confirmada;</li>
+<li>falha conhecida sem simulação de sucesso;</li>
+<li>ausência de continuidade silenciosa em background;</li>
+<li>distinção entre processamento, persistência e personalização.</li>
 </ul>
-<h2 id="3-limites">3. Limites<a class="headerlink" href="#3-limites" title="Permanent link">&para;</a></h2>
-<p>Esta abertura não cria superfície, <code>PER-ID</code>, <code>TRN-ID</code> ou <code>SURF-ID</code>, não define mecanismo técnico de idempotência, não inicia implementação e não libera Product Engineering.</p>
-<p><code>PER-013/014</code>, <code>TRN-014..017</code> e os gaps G2–G5 permanecem fora desta UXA.</p>
-<h2 id="4-proximo-gate">4. Próximo gate<a class="headerlink" href="#4-proximo-gate" title="Permanent link">&para;</a></h2>
-<p>O exame funcional foi concluído e o contrato foi adjudicado por <code>GKR-UXA-103-TRN005-FUNCTIONAL-EXAM-001</code>.</p>
-<p><code>PER-005</code>, <code>PER-006</code> e o Transition Registry estão reconciliados com a autoridade adjudicada. O exame específico de maturidade foi concluído em nível candidato por <code>GKR-UXA-103-TRN005-MATURITY-EXAM-001</code>.</p>
-<p>A conclusão de maturidade foi adjudicada e a promoção para <code>LOCALLY VALIDATED</code> foi materializada. <code>INTEGRALLY VALIDATED</code> permanece não suportado pela evidência corrente.</p>
-<p>Nenhuma promoção de maturidade ocorre por esta abertura.</p>
+<p>A lacuna de G1 permanece especificamente quando houve tentativa de processamento, mas não existe confirmação suficiente de qual efeito ocorreu.</p>
+<h2 id="3-resultado-por-dimensao">3. Resultado por dimensão<a class="headerlink" href="#3-resultado-por-dimensao" title="Permanent link">&para;</a></h2>
+<h3 id="31-resultado-indeterminado">3.1 Resultado indeterminado<a class="headerlink" href="#31-resultado-indeterminado" title="Permanent link">&para;</a></h3>
+<p><strong>Baseline atual: insuficiente.</strong></p>
+<p><code>PER-006</code> possui estados de processamento, interrupção e falha, mas não contém condição funcional explícita para:</p>
+<blockquote>
+<p>houve tentativa, porém não há evidência suficiente para afirmar sucesso, falha conhecida ou interrupção efetivada.</p>
+</blockquote>
+<p>Conclusão adjudicada:</p>
+<div class="highlight"><pre><span></span><code>NO SUFFICIENT CONFIRMATION
+→ INDETERMINATE
+→ ≠ SUCCESS
+→ ≠ KNOWN FAILURE
+→ ≠ CONFIRMED INTERRUPTION
+</code></pre></div>
+<h3 id="32-reconciliacao-antes-de-retry">3.2 Reconciliação antes de retry<a class="headerlink" href="#32-reconciliacao-antes-de-retry" title="Permanent link">&para;</a></h3>
+<p><strong>Baseline atual: insuficiente localmente.</strong></p>
+<p>A regra transversal <code>V5-R3</code> exige reconciliação antes de retry após resultado indeterminado, mas <code>PER-005/PER-006</code> ainda não traduzem essa regra para o handoff específico de <code>TRN-005</code>.</p>
+<p>Conclusão adjudicada:</p>
+<div class="highlight"><pre><span></span><code>TRN-005 INDETERMINATE
+→ RECONCILE CURRENT EFFECT
+→ ONLY THEN
+→ RETRY OR CONTINUE
+</code></pre></div>
+<p>Enquanto a reconciliação estiver pendente, nenhuma nova mutação equivalente deve ser disparada.</p>
+<h3 id="33-identidade-logica-da-intencao">3.3 Identidade lógica da intenção<a class="headerlink" href="#33-identidade-logica-da-intencao" title="Permanent link">&para;</a></h3>
+<p><strong>Baseline atual: parcialmente suficiente.</strong></p>
+<p><code>PER-005</code> preserva identificadores dos itens, proveniência, finalidade, revisão e autorização. Isso fornece contexto suficiente para definir semanticamente uma mesma intenção lógica, mas não existe ainda contrato explícito ligando esse conjunto ao retry.</p>
+<p>Conclusão adjudicada:</p>
+<p>A intenção lógica de <code>TRN-005</code> é o mesmo conjunto material de:</p>
+<ul>
+<li>conteúdo revisado;</li>
+<li>recorte autorizado;</li>
+<li>finalidade autorizada;</li>
+<li>decisão de autorização aplicável.</li>
+</ul>
+<p>A identidade é funcional, não um token técnico.</p>
+<p>Mudança material em conteúdo, finalidade ou autorização deixa de ser retry da mesma intenção e exige novo gate de revisão/autorização em <code>PER-005</code>.</p>
+<h3 id="34-nao-duplicacao-do-efeito-logico">3.4 Não duplicação do efeito lógico<a class="headerlink" href="#34-nao-duplicacao-do-efeito-logico" title="Permanent link">&para;</a></h3>
+<p><strong>Baseline atual: requisito transversal existente, fechamento específico ausente.</strong></p>
+<p><code>V5-R6</code> já determina que não duplicar efeito lógico é requisito funcional. Porém o contrato específico de <code>TRN-005</code> ainda não diz como interpretar repetição da mesma intenção após estado indeterminado.</p>
+<p>Conclusão adjudicada:</p>
+<div class="highlight"><pre><span></span><code>SAME LOGICAL INTENT
+→ MUST NOT CREATE SILENT DUPLICATE PROCESSING EFFECT
+
+TECHNICAL MECHANISM
+→ ENGINEERING DECISION LATER
+</code></pre></div>
+<h3 id="35-interrupcao-conhecida-versus-interrupcao-indeterminada">3.5 Interrupção conhecida versus interrupção indeterminada<a class="headerlink" href="#35-interrupcao-conhecida-versus-interrupcao-indeterminada" title="Permanent link">&para;</a></h3>
+<p><strong>Baseline atual: precisa de distinção adicional.</strong></p>
+<p><code>PER-006</code> governa corretamente a interrupção quando o encerramento e o descarte do resultado parcial são conhecidos.</p>
+<p>Se a Pessoa solicita interrupção, mas não há confirmação suficiente de que o processamento realmente cessou ou de que nenhum efeito concorrente foi concluído, o estado não pode ser apresentado como “processamento interrompido”.</p>
+<p>Conclusão adjudicada:</p>
+<ul>
+<li>interrupção confirmada → estado conhecido de interrupção;</li>
+<li>interrupção sem confirmação suficiente → resultado indeterminado;</li>
+<li>resultado indeterminado → reconciliação antes de retry ou nova mutação.</li>
+</ul>
+<h3 id="36-estado-durante-reconciliacao">3.6 Estado durante reconciliação<a class="headerlink" href="#36-estado-durante-reconciliacao" title="Permanent link">&para;</a></h3>
+<p><strong>Baseline atual: ausente localmente.</strong></p>
+<p>A UXA-102/V5 admite semanticamente “em reconciliação”, mas <code>PER-006</code> não o incorpora à experiência específica.</p>
+<p>Conclusão adjudicada:</p>
+<p>Enquanto houver reconciliação:</p>
+<ul>
+<li>não fabricar conclusão;</li>
+<li>não fabricar falha específica;</li>
+<li>não disparar retry mutante equivalente;</li>
+<li>manter a Pessoa informada de que o estado ainda está sendo confirmado;</li>
+<li>permitir somente ações não conflitantes compatíveis com a autoridade corrente.</li>
+</ul>
+<p>Isso não cria novo <code>PER-ID</code> nem obriga uma tela própria.</p>
+<h3 id="37-evidencia-suficiente-para-sair-do-indeterminado">3.7 Evidência suficiente para sair do indeterminado<a class="headerlink" href="#37-evidencia-suficiente-para-sair-do-indeterminado" title="Permanent link">&para;</a></h3>
+<p>Conclusão candidata:</p>
+<p>O estado indeterminado só pode ser encerrado quando a fonte competente permitir afirmar uma das condições:</p>
+<ol>
+<li><strong>efeito não ocorreu</strong> → retry pode voltar a ser elegível, sujeito à autoridade vigente;</li>
+<li><strong>efeito está em andamento</strong> → representar o processamento corrente sem reiniciar a mesma intenção;</li>
+<li><strong>efeito concluiu</strong> → seguir a continuidade legítima sem repetir processamento;</li>
+<li><strong>falha conhecida confirmada</strong> → apresentar falha comprovável e ações aplicáveis;</li>
+<li><strong>interrupção confirmada</strong> → aplicar o contrato de interrupção já existente.</li>
+</ol>
+<p>Projeção local, animação, timeout ou ausência de resposta não bastam, isoladamente, como estado canônico.</p>
+<h2 id="4-contrato-funcional-adjudicado">4. Contrato funcional adjudicado<a class="headerlink" href="#4-contrato-funcional-adjudicado" title="Permanent link">&para;</a></h2>
+<p>O contrato funcional adjudicado é:</p>
+<div class="highlight"><pre><span></span><code>PER-005
+→ REVIEWED + SPECIFICALLY AUTHORIZED LOGICAL INTENT
+→ TRN-005
+
+TRN-005
+→ ATTEMPT
+
+CONFIRMED PROCESSING
+→ PER-006 CURRENT PROCESSING
+
+KNOWN FAILURE
+→ KNOWN FAILURE CONTRACT
+
+CONFIRMED INTERRUPTION
+→ INTERRUPTION CONTRACT
+
+INSUFFICIENT CONFIRMATION
+→ INDETERMINATE
+→ RECONCILE BEFORE RETRY
+
+RECONCILIATION
+→ EFFECT NOT OCCURRED
+   → SAFE RETRY MAY BECOME ELIGIBLE
+→ EFFECT IN PROGRESS
+   → DO NOT RESTART
+→ EFFECT COMPLETED
+   → CONTINUE WITHOUT REPROCESSING
+→ KNOWN FAILURE
+   → FAILURE CONTRACT
+→ CONFIRMED INTERRUPTION
+   → INTERRUPTION CONTRACT
+
+SAME LOGICAL INTENT
+→ NO SILENT DUPLICATE EFFECT
+</code></pre></div>
+<h2 id="5-compatibilidade-com-as-autoridades-existentes">5. Compatibilidade com as autoridades existentes<a class="headerlink" href="#5-compatibilidade-com-as-autoridades-existentes" title="Permanent link">&para;</a></h2>
+<p>O contrato adjudicado:</p>
+<ul>
+<li>especializa <code>V5-R2</code>, <code>V5-R3</code>, <code>V5-R6</code> e <code>V5-R9</code> para <code>TRN-005</code>;</li>
+<li>não cria protocolo técnico;</li>
+<li>não define idempotency key;</li>
+<li>não seleciona banco, fila, lock ou mecanismo de concorrência;</li>
+<li>não amplia finalidade ou autorização;</li>
+<li>não altera <code>PER-013/014</code>;</li>
+<li>não toca G2–G5;</li>
+<li>não cria superfície ou transição nova.</li>
+</ul>
+<h2 id="6-avaliacao-dos-criterios-da-autoridade-de-escopo">6. Avaliação dos critérios da autoridade de escopo<a class="headerlink" href="#6-avaliacao-dos-criterios-da-autoridade-de-escopo" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Critério</th>
+<th>Resultado do exame</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>estado indeterminado explícito</td>
+<td><strong>ADJUDICADO</strong></td>
+</tr>
+<tr>
+<td>reconciliação antes de retry</td>
+<td><strong>ADJUDICADO</strong></td>
+</tr>
+<tr>
+<td>não duplicação do efeito lógico</td>
+<td><strong>ADJUDICADO</strong></td>
+</tr>
+<tr>
+<td>recuperação após interrupção</td>
+<td><strong>ADJUDICADO</strong></td>
+</tr>
+<tr>
+<td>sucesso × falha conhecida × ausência de confirmação</td>
+<td><strong>ADJUDICADO</strong></td>
+</tr>
+<tr>
+<td>continuidade ponta a ponta verificável</td>
+<td><strong>ADJUDICADA NO LIMITE FUNCIONAL DE UXA-103</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="7-resultado-do-exame">7. Resultado do exame<a class="headerlink" href="#7-resultado-do-exame" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>UXA-103 FUNCTIONAL CONTRACT
+→ ADJUDICATED / NORMATIVE
+
+FUNCTIONAL EXAM
+→ COMPLETE
+
+HUMAN ADJUDICATION
+→ COMPLETE
+
+TRN-005
+→ PARTIAL / UNCHANGED
+
+MATURITY PROMOTIONS
+→ 0
+</code></pre></div>
+<p>A convergência analítica foi submetida a gate humano e o contrato funcional foi adjudicado.</p>
+<h2 id="8-proximo-gate">8. Próximo gate<a class="headerlink" href="#8-proximo-gate" title="Permanent link">&para;</a></h2>
+<p>A autoridade funcional normativa está materializada por este documento.</p>
+<p>O próximo gate é reconciliar <code>PER-005</code>, <code>PER-006</code> e o Transition Registry com este contrato adjudicado, <strong>sem promover <code>TRN-005</code></strong>.</p>
+<p>Somente depois dessa reconciliação <code>TRN-005</code> poderá ser submetida a um gate separado de maturidade.</p>
 
 
 

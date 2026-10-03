@@ -7784,7 +7784,7 @@
 <div class="highlight"><pre><span></span><code>PER-004 — EXPRESSÃO POR TEXTO OU VOZ
 → TRN-004 / LOCALMENTE VALIDADA
 → PER-005 — INVENTÁRIO E AUTORIZAÇÃO
-→ TRN-005 / PARCIAL
+→ TRN-005 / LOCALLY VALIDATED
 → PER-006 — PROCESSAMENTO VISÍVEL
 </code></pre></div>
 <h2 id="2-papel-na-jornada">2. Papel na Jornada<a class="headerlink" href="#2-papel-na-jornada" title="Permanent link">&para;</a></h2>
@@ -8032,14 +8032,16 @@ PERGUNTAS OPCIONAIS → PER-014 / CONTRATO CANDIDATO
 <li>autorização registrada;</li>
 <li>itens não autorizados fora do conjunto de processamento.</li>
 </ul>
+<p>Para <code>TRN-005</code>, esse conjunto compõe a <strong>identidade lógica da intenção</strong> quando conteúdo revisado, recorte autorizado, finalidade autorizada e decisão de autorização permanecem materialmente os mesmos. Mudança material em qualquer desses elementos exige novo gate de revisão/autorização e não deve ser tratada como retry da mesma intenção.</p>
 <p>Nenhum dado adicional pode ser inferido como autorizado apenas porque está disponível tecnicamente.</p>
 <h2 id="17-handoff-para-per-006">17. Handoff para PER-006<a class="headerlink" href="#17-handoff-para-per-006" title="Permanent link">&para;</a></h2>
-<p><code>TRN-005 — PER-005 → PER-006</code> permanece parcial.</p>
+<p><code>TRN-005 — PER-005 → PER-006</code> é <strong>localmente validada</strong> após a adjudicação de maturidade da UXA-103.</p>
 <div class="highlight"><pre><span></span><code>INVENTÁRIO REVISADO
 → AUTORIZAÇÃO ESPECÍFICA
-→ TRN-005 / PARCIAL
+→ TRN-005 / LOCALLY VALIDATED
 → PER-006 — PROCESSAMENTO VISÍVEL
 </code></pre></div>
+<p>A passagem preserva o contrato adjudicado de <code>GKR-UXA-103-TRN005-FUNCTIONAL-EXAM-001</code>: se uma tentativa anterior da mesma intenção lógica tiver resultado indeterminado, nova mutação equivalente depende de reconciliação suficiente do efeito anterior. A mesma intenção não pode produzir efeito lógico duplicado silencioso.</p>
 <p>A passagem não autoriza:</p>
 <ul>
 <li>persistência da compreensão;</li>
@@ -8169,7 +8171,7 @@ PERGUNTAS OPCIONAIS → PER-014 / CONTRATO CANDIDATO
 <li>itens alterados materialmente exigem nova revisão aplicável;</li>
 <li>informação de terceiros não é tratada como automaticamente autorizada;</li>
 <li><code>TRN-004</code> permanece localmente validada;</li>
-<li><code>TRN-005</code> permanece parcial;</li>
+<li><code>TRN-005</code> está localmente validada;</li>
 <li>nenhuma nova superfície é criada;</li>
 <li>Product Engineering permanece não liberado.</li>
 </ol>
@@ -8227,7 +8229,7 @@ PERSONALIZATION
 → BLOCKED
 
 TRN-005
-→ PARTIAL / UNCHANGED
+→ LOCALLY VALIDATED
 
 NEXT DOCUMENTATION TARGET
 → PER-006 — PROCESSAMENTO VISÍVEL

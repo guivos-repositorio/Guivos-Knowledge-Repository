@@ -7568,10 +7568,9 @@ PARTIAL
 </ul>
 <h3 id="73-decisao">7.3 Decisão<a class="headerlink" href="#73-decisao" title="Permanent link">&para;</a></h3>
 <p>O handoff possui contrato local suficiente de autorização, dados, início de efeito, interrupção e falha conhecida.</p>
-<p>Porém, <code>UXA-102/V5</code> mantém uma lacuna material específica: quando o processamento é interrompido sem confirmação do resultado, o contrato corrente ainda não fecha a reconciliação do estado indeterminado antes de retry, nem demonstra não duplicação ponta a ponta.</p>
-<p>Por isso, este ato <strong>não promove <code>TRN-005</code></strong>. A transição permanece parcial até existir autoridade específica que feche resultado indeterminado, reconciliação e retry sem efeito duplicado.</p>
+<p>A lacuna material identificada por este ato foi posteriormente fechada pela UXA-103, que adjudicou resultado indeterminado, reconciliação antes de retry, identidade lógica e não duplicação do efeito. Após reconciliação documental e gate humano específico de maturidade, <code>TRN-005</code> foi promovida para <strong>localmente validada</strong>. A evidência corrente não sustenta validação integral ponta a ponta.</p>
 <div class="highlight"><pre><span></span><code>TRN-005
-→ PARTIAL / UNCHANGED
+→ LOCALLY VALIDATED
 </code></pre></div>
 <h2 id="8-trn-006-per-006-per-007">8. TRN-006 — PER-006 → PER-007<a class="headerlink" href="#8-trn-006-per-006-per-007" title="Permanent link">&para;</a></h2>
 <p>Estado preservado: <strong>localmente validada</strong>.</p>
@@ -7658,7 +7657,7 @@ TRN-015
 <tr>
 <td>TRN-005</td>
 <td>parcial</td>
-<td>parcial</td>
+<td><strong>localmente validada</strong></td>
 </tr>
 <tr>
 <td>TRN-006</td>
@@ -7688,14 +7687,14 @@ TRN-015
 </tbody>
 </table>
 <div class="highlight"><pre><span></span><code>PROMOTIONS
-→ 2
+→ 3
 
 TRN-003
 TRN-004
 → LOCALLY VALIDATED
 
 TRN-005
-→ PARTIAL / UNCHANGED
+→ LOCALLY VALIDATED
 
 INTEGRALLY VALIDATED
 → 0 NEW
@@ -7706,7 +7705,7 @@ INTEGRALLY VALIDATED
 <ol>
 <li><code>TRN-001</code> — integração ponta a ponta Home → Entrada Protegida;</li>
 <li><code>TRN-002/003/004/006</code> — implementação/persistência técnica não comprovadas quando aplicável, sem impedir os estados locais já validados;</li>
-<li><code>TRN-005</code> — resultado indeterminado, reconciliação antes de retry e não duplicação ponta a ponta ainda não fechados;</li>
+<li><code>TRN-005</code> — resultado indeterminado, reconciliação antes de retry e não duplicação fechados pela UXA-103; maturidade corrente = localmente validada, sem prova integral ponta a ponta;</li>
 <li><code>TRN-014..017</code> — dependência de adjudicação/materialização de <code>PER-013/014</code>;</li>
 <li>autorização material e processamento continuam subordinados aos gates já definidos.</li>
 </ol>
@@ -7731,7 +7730,7 @@ TRN-003/004
 → LOCALLY VALIDATED
 
 TRN-005
-→ PARTIAL / UNCHANGED
+→ LOCALLY VALIDATED
 
 TRN-001
 → PARTIAL
