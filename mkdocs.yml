@@ -164,6 +164,13 @@ nav:
           - Completude Funcional: experience-architecture/person-journey/functional-completeness-authority.md
           - Manifestação de Interesse e Inscrição Interna: experience-architecture/person-journey/internal-opportunity-application-functional-contract.md
 
+      - Avaliação e Reputação:
+          - Visão Geral: experience-architecture/person-journey/evaluation-reputation/index.md
+          - Avaliar uma Experiência: experience-architecture/person-journey/evaluation-reputation/evaluate-experience.md
+          - Minhas Avaliações: experience-architecture/person-journey/evaluation-reputation/my-evaluations.md
+          - Reputação Contextual: experience-architecture/person-journey/evaluation-reputation/contextual-reputation.md
+          - Proteção e Governança: experience-architecture/person-journey/evaluation-reputation/protection-governance.md
+
       - Documentos Mestres por Superfície:
           - Entrada Protegida: experience-architecture/person-journey/per-002-protected-entry-master.md
           - Escolha de Modalidade: experience-architecture/person-journey/per-003-modality-selection-master.md
