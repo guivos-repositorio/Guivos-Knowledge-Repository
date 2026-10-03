@@ -2,7 +2,7 @@
 id: GKR-PLANS-BUSINESS-001
 title: Planos — Guivos Business
 status: active
-version: 1.7.0
+version: 1.8.0
 owner: Guivos
 last_updated: 2026-10-03
 normative: false
@@ -91,9 +91,42 @@ A cobrança da população é **progressiva por faixa**, e não pela aplicação
 | **API Business** | R$ 399,00 | R$ 3.990,00 |
 | **SSO / SAML** | R$ 299,00 | R$ 2.990,00 |
 | **Governança / auditoria avançadas** | R$ 249,00 | R$ 2.490,00 |
-| **Integração dedicada adicional** | R$ 490,00 | R$ 4.900,00 |
+| **Integração dedicada** | R$ 490,00 | R$ 4.900,00 |
 
-Uma capacidade já incluída no plano tem valor adicional igual a **R$ 0,00**.
+#### Matriz de inclusões e contratação por tier
+
+A matriz abaixo governa simultaneamente **o que já está incluído no plano** e **quanto custa contratar a capacidade quando ela não está incluída**.
+
+| Capacidade | Start | Growth | Scale | Enterprise |
+|---|---|---|---|---|
+| **Intelligence avançado** | R$ 299/mês · R$ 2.990/ano | **incluído — R$ 0 adicional** | **incluído — R$ 0 adicional** | **incluído — R$ 0 adicional** |
+| **Exportações automatizadas / Power BI** | R$ 249/mês · R$ 2.490/ano | R$ 249/mês · R$ 2.490/ano | **incluído — R$ 0 adicional** | **incluído — R$ 0 adicional** |
+| **API Business** | R$ 399/mês · R$ 3.990/ano | R$ 399/mês · R$ 3.990/ano | **incluído — R$ 0 adicional** | **incluído — R$ 0 adicional** |
+| **SSO / SAML** | R$ 299/mês · R$ 2.990/ano | R$ 299/mês · R$ 2.990/ano | **incluído — R$ 0 adicional** | **incluído — R$ 0 adicional** |
+| **Governança / auditoria avançadas** | R$ 249/mês · R$ 2.490/ano | **incluído — R$ 0 adicional** | **incluído — R$ 0 adicional** | **incluído — R$ 0 adicional** |
+| **1 integração dedicada** | R$ 490/mês · R$ 4.900/ano | R$ 490/mês · R$ 4.900/ano | **1 incluída — R$ 0 adicional** | **incluída conforme contrato** |
+| **Integração dedicada adicional** | R$ 490/mês · R$ 4.900/ano por integração | R$ 490/mês · R$ 4.900/ano por integração | R$ 490/mês · R$ 4.900/ano por integração além da 1ª incluída | dimensionado conforme contrato |
+
+Regras:
+
+```text
+INCLUÍDO NO TIER
+→ R$ 0,00 ADICIONAL
+
+NÃO INCLUÍDO + ELEGÍVEL COMO ADD-ON
+→ APLICAR VALOR DA CAPACIDADE
+
+INTEGRAÇÃO DEDICADA
+→ R$ 490/MÊS
+→ R$ 4.900/ANO
+→ POR INTEGRAÇÃO COBRÁVEL
+
+ENTERPRISE
+→ PREVALECE DIMENSIONAMENTO CONTRATUAL
+```
+
+A inclusão de uma capacidade no tier não significa que ela seja gratuita universalmente; significa que seu preço já está absorvido pelo plano-base contratado.
+
 
 ### 6. Serviços adicionais
 
