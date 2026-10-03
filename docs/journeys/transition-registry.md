@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-TRANSITION-REGISTRY-001
 title: Registro Granular de Transições
 status: active
-version: 0.29.21
+version: 0.29.22
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-03
 related:
@@ -82,10 +82,10 @@ Validação integral documental não comprova implementação técnica nem esten
 | GKR-TRN-004 | PER-004 | PER-005 | **localmente validada** | GKR-UX-G1-ENTRY-EXPRESSION-INVENTORY-VALIDATION-001 — expressão revisada → inventário sem autorização material implícita; retorno/remoção preservados |
 | GKR-TRN-005 | PER-005 | PER-006 | **localmente validada** | GKR-UX-G1-ENTRY-EXPRESSION-INVENTORY-VALIDATION-001 + GKR-UXA-102-V5-AUTHORITY-001 + GKR-UXA-103-TRN005-FUNCTIONAL-EXAM-001 + GKR-UXA-103-TRN005-MATURITY-EXAM-001 — contrato funcional adjudicado/reconciliado e maturidade promovida por gate humano; validação integral ponta a ponta não comprovada |
 | GKR-TRN-006 | PER-006 | PER-007 | localmente validada | UXA-037 |
-| GKR-TRN-014 | PER-003 | PER-013 | contratada | escolha consciente de Arquivo → responsabilidade de captura/revisão; upload não é iniciado pela escolha e não existe autorização material |
-| GKR-TRN-015 | PER-013 | PER-005 | contratada | conteúdo de arquivo revisado → inventário/autorização; origem/derivados/remoções preservados e autorização material ainda ausente |
-| GKR-TRN-016 | PER-003 | PER-014 | contratada | escolha consciente de Perguntas Opcionais → fluxo guiado; nenhuma resposta é obrigatória ou presumida |
-| GKR-TRN-017 | PER-014 | PER-005 | contratada | respostas opcionais revisadas → inventário/autorização; pulos/aberturas/remoções preservados quando aplicável e autorização material ainda ausente |
+| GKR-TRN-014 | PER-003 | PER-013 | contratada | UXA-104 — contrato funcional adjudicado; escolha consciente de Arquivo → captura/revisão, sem upload automático ou autorização material; maturidade não promovida |
+| GKR-TRN-015 | PER-013 | PER-005 | contratada | UXA-104 — contrato funcional adjudicado; conteúdo revisado → inventário/autorização com origem/derivados/remoções preservados; maturidade não promovida |
+| GKR-TRN-016 | PER-003 | PER-014 | contratada | UXA-104 — contrato funcional adjudicado; escolha consciente de Perguntas Opcionais → fluxo voluntário, sem resposta obrigatória ou presumida; maturidade não promovida |
+| GKR-TRN-017 | PER-014 | PER-005 | contratada | UXA-104 — contrato funcional adjudicado; respostas revisadas → inventário/autorização com pulos/aberturas/remoções preservados; maturidade não promovida |
 | GKR-TRN-007 | PER-007 | PER-008 | **integralmente validada** | UXA-097 |
 | GKR-TRN-008 | PER-008 | PER-010 | **integralmente validada** | GKR-UX-D5-C4B-001 — Hoje recorrente → acesso a Objetivos; contexto mínimo, revalidação, retorno, interrupção, concorrência e idempotência examinados |
 | GKR-TRN-009 | PER-010 | PER-008 | **integralmente validada** | GKR-UX-D5-C4B-001 — retorno `‹ Hoje` neutro; não salva edição incompleta, não altera prioridade/progresso e reconsulta estado canônico |
