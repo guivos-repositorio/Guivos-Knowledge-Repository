@@ -2,12 +2,13 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.50.70
+version: 3.50.71
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-10-03
 normative: true
 maturity: current_truth_gia_cog_001_active_normative
 related:
+  - GKR-UX-G5-OPPORTUNITY-BOOST-VALIDATION-001
   - GKR-UX-G4-INTERNAL-OPPORTUNITY-PROCESS-VALIDATION-001
   - GKR-UX-G3-ORGANIZATION-COLLECTIVE-RELATIONSHIP-VALIDATION-001
   - GKR-UX-G2-COLLECTIVE-DISCOVERY-REQUEST-VALIDATION-001
@@ -1636,6 +1637,27 @@ MATURITY PROMOTIONS
 ```
 
 Falha, estado indeterminado, retry, idempotência e retornos contextuais possuem cobertura semântica suficiente. Permanecem abertas validação ponta a ponta e maturidade/materialização de `PER-204/ORG-008`.
+
+## 28.5 G5 — Opportunity Boost
+
+`GKR-UX-G5-OPPORTUNITY-BOOST-VALIDATION-001` conclui o exame específico da quinta família deixada pela UXA-102/V5.
+
+```text
+TRN-301
+TRN-302
+TRN-304
+TRN-305
+TRN-306
+→ PARTIAL / UNCHANGED
+
+TRN-303
+→ LOCALLY VALIDATED / UNCHANGED
+
+MATURITY PROMOTIONS
+→ 0
+```
+
+Falha, estado indeterminado, retry, idempotência e reconciliação possuem cobertura semântica suficiente. Permanecem abertas integração ponta a ponta e operacionalização econômica; checkout, cobrança, faturamento, antifraude técnico e deduplicação técnica não são autorizados por esta validação.
 
 ## 29. Gates correntes sem execução automática
 
