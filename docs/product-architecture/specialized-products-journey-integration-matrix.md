@@ -2,7 +2,7 @@
 id: GPA-SPECIALIZED-JOURNEY-MATRIX-001
 title: Matriz de Integração dos Produtos Especializados com as Jornadas
 status: consolidated
-version: 2.1.4
+version: 2.1.5
 owner: Guivos
 last_updated: 2026-10-03
 depends_on:
@@ -10,6 +10,7 @@ depends_on:
   - GLPA-001
   - GEM-004-PLAN-TAXONOMY-AUTHORITY-001
 related:
+  - GKR-INTELLIGENCE-SURFACE-PROVENANCE-EXPLAINABILITY-001
   - GKR-UX-ORGANIZATION-BUSINESS-HANDOFF-CONTRACT-001
   - GKR-UX-JOURNEY-MALL-TRAVEL-HANDOFF-CONTRACT-001
   - GPA-001
@@ -220,7 +221,7 @@ Não presumir:
 | SP-GAP-002 | Journey → Travel | **contrato semântico fechado** por `GKR-UX-JOURNEY-MALL-TRAVEL-HANDOFF-CONTRACT-001`; materialização `SURF/TRN` somente mediante necessidade real |
 | SP-GAP-003 | Media embutido vs contexto editorial próprio | **fechado por P8 + GPA-005** — Media pode permanecer embutido quando a decisão principal continua na superfície anfitriã; contexto Media próprio exige responsabilidade editorial dominante |
 | SP-GAP-004 | Organização → Guivos Business | **contrato semântico fechado** por `GKR-UX-ORGANIZATION-BUSINESS-HANDOFF-CONTRACT-001`; materialização `SURF/TRN` somente mediante necessidade real |
-| SP-GAP-005 | proveniência/explicabilidade de Intelligence não uniforme por superfície | evolução transversal |
+| SP-GAP-005 | proveniência/explicabilidade de Intelligence por superfície | **contrato semântico transversal fechado** por `GKR-INTELLIGENCE-SURFACE-PROVENANCE-EXPLAINABILITY-001`; modelo operacional, serving e implementação permanecem abertos |
 | SP-GAP-006 | página Ads × maturidade UXA | **fechado por rebaseline documental** — GPA-007 reconciliado com UXA-041/043/045/047/049/099 e G5, sem promover transições nem operação |
 | SP-GAP-007 | coluna nativa de produto em SURF/TRN | **fechado como não necessidade corrente** — esta matriz é a autoridade de associação produto↔jornada; alterar schema dos registries somente mediante necessidade real comprovada |
 | SP-GAP-008 | handoff interno vs fronteira externa | **fechado pela política P8** — `BND-001` reservado à autoridade externa; handoffs internos entre produtos Guivos não usam `BND-001` |
