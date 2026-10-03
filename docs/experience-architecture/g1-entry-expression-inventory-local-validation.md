@@ -223,13 +223,11 @@ Falha ao registrar decisão bloqueia processamento.
 
 O handoff possui contrato local suficiente de autorização, dados, início de efeito, interrupção e falha conhecida.
 
-Porém, `UXA-102/V5` mantém uma lacuna material específica: quando o processamento é interrompido sem confirmação do resultado, o contrato corrente ainda não fecha a reconciliação do estado indeterminado antes de retry, nem demonstra não duplicação ponta a ponta.
-
-Por isso, este ato **não promove `TRN-005`**. A transição permanece parcial até existir autoridade específica que feche resultado indeterminado, reconciliação e retry sem efeito duplicado.
+A lacuna material identificada por este ato foi posteriormente fechada pela UXA-103, que adjudicou resultado indeterminado, reconciliação antes de retry, identidade lógica e não duplicação do efeito. Após reconciliação documental e gate humano específico de maturidade, `TRN-005` foi promovida para **localmente validada**. A evidência corrente não sustenta validação integral ponta a ponta.
 
 ```text
 TRN-005
-→ PARTIAL / UNCHANGED
+→ LOCALLY VALIDATED
 ```
 
 ## 8. TRN-006 — PER-006 → PER-007
@@ -311,7 +309,7 @@ Logo, `TRN-016/017` não são promovidas.
 | TRN-002 | localmente validada | localmente validada |
 | TRN-003 | parcial | **localmente validada** |
 | TRN-004 | parcial | **localmente validada** |
-| TRN-005 | parcial | parcial |
+| TRN-005 | parcial | **localmente validada** |
 | TRN-006 | localmente validada | localmente validada |
 | TRN-014 | contratada | contratada |
 | TRN-015 | contratada | contratada |
@@ -320,14 +318,14 @@ Logo, `TRN-016/017` não são promovidas.
 
 ```text
 PROMOTIONS
-→ 2
+→ 3
 
 TRN-003
 TRN-004
 → LOCALLY VALIDATED
 
 TRN-005
-→ PARTIAL / UNCHANGED
+→ LOCALLY VALIDATED
 
 INTEGRALLY VALIDATED
 → 0 NEW
@@ -341,7 +339,7 @@ Permanecem:
 
 1. `TRN-001` — integração ponta a ponta Home → Entrada Protegida;
 2. `TRN-002/003/004/006` — implementação/persistência técnica não comprovadas quando aplicável, sem impedir os estados locais já validados;
-3. `TRN-005` — resultado indeterminado, reconciliação antes de retry e não duplicação ponta a ponta ainda não fechados;
+3. `TRN-005` — resultado indeterminado, reconciliação antes de retry e não duplicação fechados pela UXA-103; maturidade corrente = localmente validada, sem prova integral ponta a ponta;
 4. `TRN-014..017` — dependência de adjudicação/materialização de `PER-013/014`;
 5. autorização material e processamento continuam subordinados aos gates já definidos.
 
@@ -369,7 +367,7 @@ TRN-003/004
 → LOCALLY VALIDATED
 
 TRN-005
-→ PARTIAL / UNCHANGED
+→ LOCALLY VALIDATED
 
 TRN-001
 → PARTIAL

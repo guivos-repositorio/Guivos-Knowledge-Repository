@@ -2,14 +2,15 @@
 id: UXA-103
 title: UXA-103 — TRN-005 — Resultado Indeterminado, Reconciliação e Retry
 status: active
-version: 0.1.0
+version: 0.7.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-03
 normative: false
-maturity: scope_adjudicated_functional_exam_not_started
+maturity: maturity_promotion_materialized
 depends_on:
   - UXA-102
   - GKR-UXA-103-TRN005-SCOPE-AUTHORITY-001
+  - GKR-UXA-103-TRN005-FUNCTIONAL-EXAM-001
 related:
   - GKR-UXA-102-V5-AUTHORITY-001
   - GKR-UX-G1-ENTRY-EXPRESSION-INVENTORY-VALIDATION-001
@@ -31,9 +32,14 @@ A autoridade normativa de escopo é `GKR-UXA-103-TRN005-SCOPE-AUTHORITY-001`.
 ```text
 UXA-103
 → SCOPE ADJUDICATED
-→ FUNCTIONAL EXAM NOT_STARTED
-→ TRN-005 PARTIAL / UNCHANGED
-→ MATURITY PROMOTIONS 0
+→ FUNCTIONAL EXAM COMPLETE
+→ FUNCTIONAL CONTRACT ADJUDICATED / NORMATIVE
+→ PER-005 / PER-006 / TRANSITION REGISTRY RECONCILED
+→ TRN-005 LOCALLY VALIDATED
+→ MATURITY EXAM COMPLETE
+→ ADJUDICATED ELIGIBILITY LOCALLY VALIDATED
+→ PROMOTION MATERIALIZED
+→ MATURITY PROMOTIONS 1
 ```
 
 ## 2. Escopo
@@ -55,6 +61,10 @@ Esta abertura não cria superfície, `PER-ID`, `TRN-ID` ou `SURF-ID`, não defin
 
 ## 4. Próximo gate
 
-O próximo gate é o exame funcional de `TRN-005` dentro da autoridade de escopo adjudicada.
+O exame funcional foi concluído e o contrato foi adjudicado por `GKR-UXA-103-TRN005-FUNCTIONAL-EXAM-001`.
+
+`PER-005`, `PER-006` e o Transition Registry estão reconciliados com a autoridade adjudicada. O exame específico de maturidade foi concluído em nível candidato por `GKR-UXA-103-TRN005-MATURITY-EXAM-001`.
+
+A conclusão de maturidade foi adjudicada e a promoção para `LOCALLY VALIDATED` foi materializada. `INTEGRALLY VALIDATED` permanece não suportado pela evidência corrente.
 
 Nenhuma promoção de maturidade ocorre por esta abertura.
