@@ -2,7 +2,7 @@
 id: GKR-UX-PLANS-READ-FIRST-001
 title: Planos — Superfícies e Fluxos — Leia Primeiro
 status: active
-version: 0.3.0
+version: 0.4.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-03
 normative: false
@@ -116,9 +116,9 @@ Design, IA e Engenharia não podem inventar ou substituir a autoridade vigente d
 
 ## 9. Guivos Business
 
-Business possui configurador Self-service próprio. Ele deve permitir selecionar oferta, população/escala, acessos, capacidades, periodicidade e serviços aplicáveis e então **calcular somente o que estiver amparado por uma tabela econômica vigente**.
+Business possui configurador Self-service próprio. Ele deve exigir uma **oferta Business obrigatória** antes de concluir a composição. Sem Programas de Incentivo, Journey custeado ou ambas, não existe contratação Business ativa. Depois da oferta, a experiência enquadra tier, população/escala, acessos, capacidades, periodicidade e serviços aplicáveis.
 
-Os preços variáveis do Business estão adjudicados em `GEM-004-BUSINESS-VARIABLE-PRICING-AUTHORITY-001`. O configurador pode calcular os componentes tabelados, deve consumir a **matriz de inclusões por tier** e deve indicar `dimensionado` ou `sob consulta` somente onde a própria autoridade assim determinar. Capacidades incluídas aparecem com `R$ 0,00 adicional`; capacidades elegíveis como add-on usam o valor mensal/anual governado.
+Os preços variáveis do Business estão adjudicados em `GEM-004-BUSINESS-VARIABLE-PRICING-AUTHORITY-001`. A oferta obrigatória possui **taxa de ativação igual a R$ 0,00**; o tier remunera a capacidade da plataforma. O configurador calcula população/escala, acessos Journey, add-ons e serviços, consome a **matriz de inclusões por tier** e indica `dimensionado` ou `sob consulta` somente onde a autoridade assim determinar.
 
 ## 10. Estado
 
@@ -131,6 +131,9 @@ VISUAL BASELINE
 
 VARIABLE BUSINESS PRICING
 → ADJUDICATED / NORMATIVE
+→ OFFER-FIRST MODEL
+→ BUSINESS OFFER REQUIRED
+→ OFFER ACTIVATION FEE = R$ 0,00
 → NUMERIC RATES AVAILABLE FOR CONFIGURATOR
 
 BUSINESS TIER ENTITLEMENTS
