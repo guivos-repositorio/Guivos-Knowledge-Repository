@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.50.92
+version: 3.50.93
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-10-03
 normative: true
@@ -25,6 +25,7 @@ related:
   - GKR-UXA-103-TRN005-FUNCTIONAL-EXAM-001
   - GKR-UXA-103-TRN005-SCOPE-AUTHORITY-001
   - GKR-UXA-104-PER013014-SCOPE-AUTHORITY-001
+  - GKR-UXA-104-PER013014-FUNCTIONAL-EXAM-001
   - UXA-104
   - UXA-103
   - GKR-UXA-102-V5-AUTHORITY-001
