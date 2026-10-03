@@ -2,9 +2,9 @@
 id: GKR-UX-PERSON-JOURNEY-FLOW-001
 title: Jornada da Pessoa — Mapa Completo de Superfícies para Design
 status: active
-version: 0.1.22
+version: 0.1.23
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-28
+last_updated: 2026-10-03
 normative: false
 maturity: current_documentation_sequence
 depends_on:
@@ -65,12 +65,12 @@ Estado corrente das transições:
 |---|---|---|
 | `TRN-001` | PER-001 → PER-002 | parcial |
 | `TRN-002` | PER-002 → PER-003 | localmente validada |
-| `TRN-003` | PER-003 → PER-004 | parcial |
+| `TRN-003` | PER-003 → PER-004 | localmente validada |
 | `TRN-014` | PER-003 → PER-013 | contratada — candidato Arquivo |
 | `TRN-015` | PER-013 → PER-005 | contratada — candidato Arquivo |
 | `TRN-016` | PER-003 → PER-014 | contratada — candidato Perguntas Opcionais |
 | `TRN-017` | PER-014 → PER-005 | contratada — candidato Perguntas Opcionais |
-| `TRN-004` | PER-004 → PER-005 | parcial |
+| `TRN-004` | PER-004 → PER-005 | localmente validada |
 | `TRN-005` | PER-005 → PER-006 | parcial |
 | `TRN-006` | PER-006 → PER-007 | localmente validada |
 | `TRN-007` | PER-007 → PER-008 | integralmente validada |
