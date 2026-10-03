@@ -8330,12 +8330,16 @@
 <li>orçamento pré-pago de incentivo, quando aplicável.</li>
 </ul>
 <h2 id="4-modelo-de-composicao">4. Modelo de composição<a class="headerlink" href="#4-modelo-de-composicao" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>ASSINATURA RECORRENTE / CONTRATUAL
+<div class="highlight"><pre><span></span><code>CONFIGURAÇÃO VÁLIDA
 =
-PLANO-BASE
+OFERTA BUSINESS OBRIGATÓRIA
++ TIER DE CAPACIDADE
+
+ASSINATURA RECORRENTE / CONTRATUAL
+=
+TIER DE CAPACIDADE
 + COMPONENTE DE POPULAÇÃO / ESCALA
-+ COMPONENTE DE OFERTA
-+ ACESSOS JOURNEY CUSTEADOS
++ ACESSOS JOURNEY CUSTEADOS, SE APLICÁVEL
 + CAPACIDADES ADICIONAIS
 + SERVIÇOS ADICIONAIS
 
@@ -8346,11 +8350,11 @@ ORÇAMENTO PRÉ-PAGO DE INCENTIVO
 <p>O orçamento de incentivo deve ser exibido separadamente e nunca mascarado como assinatura.</p>
 <h2 id="5-regra-da-calculadora">5. Regra da calculadora<a class="headerlink" href="#5-regra-da-calculadora" title="Permanent link">&para;</a></h2>
 <p>A calculadora deve trabalhar com uma tabela econômica versionada e não com números hardcoded pela interface.</p>
-<div class="highlight"><pre><span></span><code>BASE(periodicidade, plano)
+<div class="highlight"><pre><span></span><code>REQUIRE_BUSINESS_OFFER(oferta)
++
+BASE(periodicidade, tier)
 +
 POPULATION_RATE(periodicidade, faixa_autorizada) × base_precificável
-+
-OFFER_RATE(periodicidade, oferta_autorizada)
 +
 JOURNEY_ACCESS_RATE(periodicidade) × acessos
 +
@@ -8365,7 +8369,7 @@ VALOR RECORRENTE CALCULÁVEL
 <p>O modelo usa as faixas e tarifas populacionais adjudicadas em <code>GEM-004-BUSINESS-VARIABLE-PRICING-AUTHORITY-001</code>.</p>
 <p>A calculadora deve aplicar cobrança progressiva por faixa e exibir separadamente cada parcela. Acima de 20.000 elegíveis ou quando Scale/Enterprise exigir dimensionamento, deve exibir o componente como dimensionado em vez de inventar valor.</p>
 <h2 id="7-produtos-e-ofertas">7. Produtos e ofertas<a class="headerlink" href="#7-produtos-e-ofertas" title="Permanent link">&para;</a></h2>
-<p>O configurador deve mostrar separadamente o impacto econômico de Programas de Incentivo, Journey custeado e combinação de ambos.</p>
+<p>O configurador deve exigir pelo menos uma oferta Business. Programas de Incentivo, Journey custeado e a combinação de ambos possuem taxa de ativação igual a R$ 0,00; o impacto econômico decorre do tier, da escala, dos acessos Journey e dos demais componentes aplicáveis.</p>
 <p>As taxas de Programas de Incentivo, Journey custeado e composição conjunta são governadas pela autoridade econômica vigente. Itens futuros não formalizados continuam sem cifra.</p>
 <h2 id="71-tabela-de-referencia-para-consumo-da-superficie">7.1 Tabela de referência para consumo da superfície<a class="headerlink" href="#71-tabela-de-referencia-para-consumo-da-superficie" title="Permanent link">&para;</a></h2>
 <p>A interface deve consumir a autoridade econômica, não duplicar lógica hardcoded. Para legibilidade funcional, os principais valores vigentes são:</p>
@@ -8423,18 +8427,18 @@ VALOR RECORRENTE CALCULÁVEL
 <tbody>
 <tr>
 <td>Incentivos</td>
-<td style="text-align: right;">R$ 199,00</td>
-<td style="text-align: right;">R$ 1.990,00</td>
+<td style="text-align: right;">R$ 0,00</td>
+<td style="text-align: right;">R$ 0,00</td>
 </tr>
 <tr>
 <td>Journey custeado</td>
-<td style="text-align: right;">R$ 99,00</td>
-<td style="text-align: right;">R$ 990,00</td>
+<td style="text-align: right;">R$ 0,00</td>
+<td style="text-align: right;">R$ 0,00</td>
 </tr>
 <tr>
 <td>Incentivos + Journey</td>
-<td style="text-align: right;">R$ 249,00</td>
-<td style="text-align: right;">R$ 2.490,00</td>
+<td style="text-align: right;">R$ 0,00</td>
+<td style="text-align: right;">R$ 0,00</td>
 </tr>
 </tbody>
 </table>
@@ -8569,7 +8573,7 @@ ELSE
 </code></pre></div>
 <p>A interface deve exibir a capacidade incluída com valor adicional zero, e não ocultá-la como se ela não tivesse valor econômico.</p>
 <h2 id="8-resultado">8. Resultado<a class="headerlink" href="#8-resultado" title="Permanent link">&para;</a></h2>
-<p>Quando todos os componentes necessários possuírem preço vigente, o resultado deve mostrar plano-base, população/escala, oferta(s), acessos Journey, adicionais, serviços, subtotal recorrente, periodicidade, total recorrente, orçamento de incentivo em linha separada e itens sob consulta.</p>
+<p>Quando todos os componentes necessários possuírem preço vigente, o resultado deve mostrar oferta Business obrigatória, tier de capacidade, população/escala, taxa de ativação da oferta igual a zero, acessos Journey, adicionais, serviços, subtotal recorrente, periodicidade, total recorrente, orçamento de incentivo em linha separada e itens sob consulta.</p>
 <h2 id="9-configuracao-parcialmente-calculavel">9. Configuração parcialmente calculável<a class="headerlink" href="#9-configuracao-parcialmente-calculavel" title="Permanent link">&para;</a></h2>
 <p>Uma composição pode ser parcialmente calculável.</p>
 <div class="highlight"><pre><span></span><code>SCALE / ENTERPRISE
@@ -8589,7 +8593,7 @@ TOTAL
 </code></pre></div>
 <p>A interface pode mostrar a parcela conhecida e indicar claramente o que falta para o total.</p>
 <h2 id="10-enquadramento-de-plano">10. Enquadramento de plano<a class="headerlink" href="#10-enquadramento-de-plano" title="Permanent link">&para;</a></h2>
-<p>O plano compatível deve ser determinado pela maior capacidade exigida pela configuração e pelos entitlements vigentes.</p>
+<p>O tier compatível deve ser determinado depois da seleção da oferta e pela maior capacidade exigida pela configuração e pelos entitlements vigentes. Sem oferta Business selecionada, a configuração não é contratável.</p>
 <p>A calculadora não pode elevar plano com base apenas em maximização de receita.</p>
 <h2 id="11-self-service">11. Self-service<a class="headerlink" href="#11-self-service" title="Permanent link">&para;</a></h2>
 <p>Self-service significa que a empresa consegue preencher, compreender, comparar, revisar, calcular quando possível, contratar online quando a composição estiver comercialmente apta e seguir para configuração/operação com autonomia quando elegível.</p>

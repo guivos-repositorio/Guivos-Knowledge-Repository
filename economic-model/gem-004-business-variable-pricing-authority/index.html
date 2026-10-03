@@ -7606,10 +7606,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-componente-de-oferta" class="md-nav__link">
+  <a href="#5-oferta-business-obrigatoria-sem-taxa-de-ativacao" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5. Componente de oferta
+        5. Oferta Business obrigatória — sem taxa de ativação
       
     </span>
   </a>
@@ -7863,12 +7863,16 @@
 <h2 id="1-finalidade">1. Finalidade<a class="headerlink" href="#1-finalidade" title="Permanent link">&para;</a></h2>
 <p>Este documento estabelece a tabela econômica vigente para tornar numericamente calculável a composição Self-service do Guivos Business.</p>
 <p>A composição permanece:</p>
-<div class="highlight"><pre><span></span><code>ASSINATURA RECORRENTE / CONTRATUAL
+<div class="highlight"><pre><span></span><code>CONTRATAÇÃO BUSINESS VÁLIDA
 =
-PLANO-BASE
+OFERTA BUSINESS OBRIGATÓRIA
++ TIER DE CAPACIDADE
+
+ASSINATURA RECORRENTE / CONTRATUAL
+=
+PLANO / TIER DE CAPACIDADE
 + COMPONENTE DE POPULAÇÃO / ESCALA
-+ COMPONENTE DE OFERTA
-+ ACESSOS JOURNEY CUSTEADOS
++ ACESSOS JOURNEY CUSTEADOS, SE APLICÁVEL
 + CAPACIDADES ADICIONAIS
 + SERVIÇOS ADICIONAIS
 
@@ -7879,9 +7883,11 @@ ORÇAMENTO PRÉ-PAGO DE INCENTIVO
 <p>Os valores abaixo foram <strong>adjudicados como autoridade econômica interna do configurador</strong>. Eles não constituem, por si, oferta pública, autorização de cobrança, condição fiscal ou liberação de implementação.</p>
 <h2 id="2-principios-economicos">2. Princípios econômicos<a class="headerlink" href="#2-principios-economicos" title="Permanent link">&para;</a></h2>
 <ol>
-<li>o plano-base remunera a camada de capacidade do produto;</li>
+<li>a <strong>oferta Business contratada</strong> é o objeto econômico primário da contratação;</li>
+<li>não existe contratação Business ativa sem pelo menos uma oferta: Programas de Incentivo, Journey custeado ou ambas;</li>
+<li>o plano/tier remunera a camada de capacidade da plataforma necessária para operar a oferta selecionada;</li>
+<li>a seleção da oferta <strong>não gera taxa recorrente adicional de ativação</strong>;</li>
 <li>população/escala remunera volume elegível crescente com preço marginal decrescente;</li>
-<li>oferta remunera a ativação funcional de Incentivos, Journey custeado ou ambos;</li>
 <li>Journey custeado é precificado por acesso efetivamente financiado;</li>
 <li>add-ons só são cobrados quando a capacidade não estiver incluída no entitlement do plano;</li>
 <li>serviços adicionais remuneram participação humana/operacional acima do Self-service;</li>
@@ -7926,7 +7932,7 @@ ORÇAMENTO PRÉ-PAGO DE INCENTIVO
 </tr>
 </tbody>
 </table>
-<p>A tabela variável não altera os preços-base já registrados.</p>
+<p>Os valores do tier continuam sendo a remuneração da capacidade da plataforma, mas <strong>o tier não é contratável isoladamente</strong>. Uma contratação Business válida exige pelo menos uma oferta Business selecionada.</p>
 <h2 id="4-componente-de-populacao-escala">4. Componente de população / escala<a class="headerlink" href="#4-componente-de-populacao-escala" title="Permanent link">&para;</a></h2>
 <h3 id="41-base-precificavel">4.1 Base precificável<a class="headerlink" href="#41-base-precificavel" title="Permanent link">&para;</a></h3>
 <p>A base precificável adjudicada é a <strong>população elegível para a configuração contratada</strong>, não necessariamente toda a folha da empresa.</p>
@@ -7978,38 +7984,50 @@ ORÇAMENTO PRÉ-PAGO DE INCENTIVO
 SOMA DAS PESSOAS EM CADA FAIXA × TARIFA DA FAIXA
 </code></pre></div>
 <p>A cobrança progressiva evita salto artificial ao mudar de faixa.</p>
-<h2 id="5-componente-de-oferta">5. Componente de oferta<a class="headerlink" href="#5-componente-de-oferta" title="Permanent link">&para;</a></h2>
+<h2 id="5-oferta-business-obrigatoria-sem-taxa-de-ativacao">5. Oferta Business obrigatória — sem taxa de ativação<a class="headerlink" href="#5-oferta-business-obrigatoria-sem-taxa-de-ativacao" title="Permanent link">&para;</a></h2>
+<p>A oferta é o objeto econômico primário da contratação Business. Pelo menos uma oferta deve estar selecionada para que exista uma contratação Business válida.</p>
 <table>
 <thead>
 <tr>
 <th>Oferta Business</th>
-<th style="text-align: right;">Mensal</th>
-<th style="text-align: right;">Anual</th>
-<th>Observação</th>
+<th style="text-align: right;">Taxa mensal de ativação</th>
+<th style="text-align: right;">Taxa anual de ativação</th>
+<th>Regra</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><strong>Programas de Incentivo</strong></td>
-<td style="text-align: right;">R$ 199,00</td>
-<td style="text-align: right;">R$ 1.990,00</td>
-<td>habilita operação de programas; orçamento de recompensa continua separado</td>
+<td style="text-align: right;"><strong>R$ 0,00</strong></td>
+<td style="text-align: right;"><strong>R$ 0,00</strong></td>
+<td>operado dentro do tier contratado; orçamento de incentivo continua separado</td>
 </tr>
 <tr>
 <td><strong>Journey custeado</strong></td>
-<td style="text-align: right;">R$ 99,00</td>
-<td style="text-align: right;">R$ 990,00</td>
-<td>habilita gestão empresarial dos acessos; licenças são cobradas separadamente</td>
+<td style="text-align: right;"><strong>R$ 0,00</strong></td>
+<td style="text-align: right;"><strong>R$ 0,00</strong></td>
+<td>operado dentro do tier contratado; acessos financiados são cobrados separadamente</td>
 </tr>
 <tr>
 <td><strong>Incentivos + Journey</strong></td>
-<td style="text-align: right;">R$ 249,00</td>
-<td style="text-align: right;">R$ 2.490,00</td>
-<td>composição conjunta; substitui a soma das duas taxas de oferta</td>
+<td style="text-align: right;"><strong>R$ 0,00</strong></td>
+<td style="text-align: right;"><strong>R$ 0,00</strong></td>
+<td>combinação permitida sem taxa adicional de habilitação</td>
 </tr>
 </tbody>
 </table>
-<p>A seleção de oferta não muda por si só o plano-base. O plano continua determinado pela maior capacidade necessária da configuração.</p>
+<div class="highlight"><pre><span></span><code>SEM OFERTA BUSINESS
+→ SEM CONTRATAÇÃO BUSINESS ATIVA
+
+OFERTA SELECIONADA
+→ DETERMINA O OBJETO DA CONTRATAÇÃO
+→ NÃO ADICIONA TAXA DE ATIVAÇÃO
+
+TIER
+→ REMUNERA CAPACIDADE DA PLATAFORMA
+→ NÃO É OFERTA AUTÔNOMA
+</code></pre></div>
+<p>A seleção da oferta pode influenciar o tier necessário conforme capacidades, escala e requisitos, mas não adiciona uma segunda assinatura pela simples habilitação da oferta.</p>
 <h2 id="6-acessos-journey-custeados">6. Acessos Journey custeados<a class="headerlink" href="#6-acessos-journey-custeados" title="Permanent link">&para;</a></h2>
 <h3 id="61-journey-plus-custeado">6.1 Journey Plus custeado<a class="headerlink" href="#61-journey-plus-custeado" title="Permanent link">&para;</a></h3>
 <table>
@@ -8227,13 +8245,15 @@ ACESSOS PRO × RATE_PRO
 <p>Isso preserva a lógica comercial já usada nos planos Start/Growth e nos planos de Pessoa.</p>
 <p>A regra não se aplica automaticamente a itens “dimensionados” ou “sob consulta”.</p>
 <h2 id="11-formula-calculavel-adjudicada">11. Fórmula calculável adjudicada<a class="headerlink" href="#11-formula-calculavel-adjudicada" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>RECURRING_TOTAL
+<div class="highlight"><pre><span></span><code>VALID_CONFIGURATION
+=
+REQUIRED_BUSINESS_OFFER(offer)
+
+RECURRING_TOTAL
 =
 BASE(plan, periodicity)
 +
 PROGRESSIVE_POPULATION(population, periodicity)
-+
-OFFER_RATE(offer, periodicity)
 +
 JOURNEY_PLUS_RATE(volume, periodicity) × plus_accesses
 +
@@ -8267,8 +8287,8 @@ SERVIÇO = SELF-SERVICE
 <li>plano-base: R$ 299,00;</li>
 <li>primeiros 50 elegíveis: incluídos;</li>
 <li>70 × R$ 1,49 = R$ 104,30;</li>
-<li>oferta Incentivos: R$ 199,00;</li>
-<li>total recorrente adjudicado: <strong>R$ 602,30/mês</strong>;</li>
+<li>Programas de Incentivo: oferta obrigatória selecionada, <strong>R$ 0,00 de taxa de ativação</strong>;</li>
+<li>total recorrente adjudicado: <strong>R$ 403,30/mês</strong>;</li>
 <li>orçamento de incentivo: separado.</li>
 </ul>
 <h3 id="exemplo-b-operacao-com-journey-custeado">Exemplo B — operação com Journey custeado<a class="headerlink" href="#exemplo-b-operacao-com-journey-custeado" title="Permanent link">&para;</a></h3>
@@ -8283,9 +8303,9 @@ SERVIÇO = SELF-SERVICE
 <li>plano-base: R$ 799,00;</li>
 <li>faixa 51–250: 200 × R$ 1,49 = R$ 298,00;</li>
 <li>faixa 251–300: 50 × R$ 0,99 = R$ 49,50;</li>
-<li>oferta Journey: R$ 99,00;</li>
+<li>Journey custeado: oferta obrigatória selecionada, <strong>R$ 0,00 de taxa de ativação</strong>;</li>
 <li>100 acessos Plus × R$ 17,90 = R$ 1.790,00;</li>
-<li>total recorrente adjudicado: <strong>R$ 3.035,50/mês</strong>.</li>
+<li>total recorrente adjudicado: <strong>R$ 2.936,50/mês</strong>.</li>
 </ul>
 <h3 id="exemplo-c-composicao-ampliada">Exemplo C — composição ampliada<a class="headerlink" href="#exemplo-c-composicao-ampliada" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>SCALE
@@ -8303,8 +8323,15 @@ SERVIÇO = OPERAÇÃO GERENCIADA
 POPULATION ELIGIBLE
 ≠ JOURNEY FUNDED ACCESS
 
-OFFER ENABLEMENT
-≠ JOURNEY LICENSE
+BUSINESS OFFER SELECTION
+→ REQUIRED
+→ ACTIVATION FEE = ZERO
+
+TIER PRICE
+≠ OFFER ACTIVATION FEE
+
+JOURNEY ACCESS FEE
+≠ OFFER ACTIVATION FEE
 
 INCENTIVE PROGRAM FEE
 ≠ INCENTIVE BUDGET

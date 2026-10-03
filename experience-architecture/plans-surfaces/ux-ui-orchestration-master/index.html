@@ -8006,10 +8006,13 @@ DECISÃO
 <p>Comparar, alternar periodicidade, abrir detalhes ou selecionar temporariamente um plano para leitura não equivale a contratar.</p>
 <h2 id="8-business">8. Business<a class="headerlink" href="#8-business" title="Permanent link">&para;</a></h2>
 <p>Guivos Business acrescenta uma etapa de composição:</p>
-<div class="highlight"><pre><span></span><code>PLANO-BASE
+<div class="highlight"><pre><span></span><code>OFERTA BUSINESS OBRIGATÓRIA
+→ DEFINE O OBJETO DA CONTRATAÇÃO
+→ TAXA DE ATIVAÇÃO = R$ 0,00
+
+TIER DE CAPACIDADE
 + POPULAÇÃO / ESCALA
-+ OFERTA(S)
-+ ACESSOS JOURNEY CUSTEADOS
++ ACESSOS JOURNEY CUSTEADOS, SE APLICÁVEL
 + CAPACIDADES ADICIONAIS NÃO INCLUÍDAS NO TIER
 + SERVIÇOS ADICIONAIS
 = VALOR RECORRENTE CONTRATUAL
@@ -8019,12 +8022,12 @@ ORÇAMENTO DE INCENTIVO
 </code></pre></div>
 <h3 id="81-ordem-funcional-recomendada-do-configurador">8.1 Ordem funcional recomendada do configurador<a class="headerlink" href="#81-ordem-funcional-recomendada-do-configurador" title="Permanent link">&para;</a></h3>
 <p>A experiência Business deve permitir, sem prescrever layout:</p>
-<div class="highlight"><pre><span></span><code>1. ESCOLHER PERIODICIDADE
-2. INFORMAR POPULAÇÃO ELEGÍVEL
-3. ESCOLHER OFERTA
+<div class="highlight"><pre><span></span><code>1. ESCOLHER OFERTA BUSINESS OBRIGATÓRIA
+2. ESCOLHER PERIODICIDADE
+3. INFORMAR POPULAÇÃO ELEGÍVEL
 4. INFORMAR ACESSOS JOURNEY, SE APLICÁVEL
 5. IDENTIFICAR CAPACIDADES NECESSÁRIAS
-6. ENQUADRAR PLANO COMPATÍVEL
+6. ENQUADRAR TIER COMPATÍVEL
 7. ZERAR ADD-ONS JÁ INCLUÍDOS NO TIER
 8. ESCOLHER SERVIÇO ADICIONAL, SE NECESSÁRIO
 9. INFORMAR ORÇAMENTO DE INCENTIVO SEPARADO
@@ -8035,9 +8038,9 @@ ORÇAMENTO DE INCENTIVO
 <h3 id="82-informacao-minima-do-resultado-business">8.2 Informação mínima do resultado Business<a class="headerlink" href="#82-informacao-minima-do-resultado-business" title="Permanent link">&para;</a></h3>
 <p>O resumo da composição deve distinguir:</p>
 <ul>
-<li>plano-base;</li>
+<li>oferta Business contratada e taxa de ativação <code>R$ 0,00</code>;</li>
+<li>tier de capacidade;</li>
 <li>população/escala e faixas aplicadas;</li>
-<li>oferta contratada;</li>
 <li>Journey Plus/Pro custeado e quantidade;</li>
 <li>add-ons efetivamente cobrados, com valor mensal/anual aplicável;</li>
 <li>capacidades incluídas no tier, explicitadas com <code>R$ 0,00 adicional</code>;</li>
