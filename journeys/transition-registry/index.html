@@ -7232,6 +7232,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#71-validacao-g5-opportunity-boost" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 Validação G5 — Opportunity Boost
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#8-planos-cobranca-e-ciclo-de-vida" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -7992,6 +8003,15 @@ ORG-008 → ORG-003
 </tr>
 </tbody>
 </table>
+<h2 id="71-validacao-g5-opportunity-boost">7.1 Validação G5 — Opportunity Boost<a class="headerlink" href="#71-validacao-g5-opportunity-boost" title="Permanent link">&para;</a></h2>
+<p><code>GKR-UX-G5-OPPORTUNITY-BOOST-VALIDATION-001</code> examina <code>TRN-301..306</code> sem promoção de maturidade.</p>
+<div class="highlight"><pre><span></span><code>TRN-301/302/304/305/306
+→ PARTIAL / UNCHANGED
+
+TRN-303
+→ LOCALLY VALIDATED / UNCHANGED
+</code></pre></div>
+<p>As lacunas correntes são integração ponta a ponta e operacionalização econômica. Falha, estado indeterminado, retry, idempotência e reconciliação possuem cobertura semântica suficiente; cobrança, faturamento, antifraude e deduplicação técnica permanecem fora desta autoridade.</p>
 <h2 id="8-planos-cobranca-e-ciclo-de-vida">8. Planos, cobrança e ciclo de vida<a class="headerlink" href="#8-planos-cobranca-e-ciclo-de-vida" title="Permanent link">&para;</a></h2>
 <p>A taxonomia vigente para leitura das superfícies é:</p>
 <div class="highlight"><pre><span></span><code>Pessoa: Free · Plus · Pro
