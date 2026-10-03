@@ -2,7 +2,7 @@
 id: GKR-UX-PLANS-READ-FIRST-001
 title: Planos — Superfícies e Fluxos — Leia Primeiro
 status: active
-version: 0.1.0
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-03
 normative: false
@@ -10,6 +10,7 @@ depends_on:
   - GKR-PLANS-INDEX-001
   - GEM-004-A1
   - GEM-004-PLAN-TAXONOMY-AUTHORITY-001
+  - GEM-004-BUSINESS-VARIABLE-PRICING-AUTHORITY-001
 ---
 
 # Planos — Superfícies e Fluxos — Leia Primeiro
@@ -97,7 +98,7 @@ A coleção não impõe grid, card, tabela, cores, tipografia, ordem visual ríg
 
 ## 8. Proibição de invenção comercial
 
-Design, IA e Engenharia não podem inventar:
+Design, IA e Engenharia não podem inventar ou substituir a autoridade vigente de:
 
 - preço;
 - desconto;
@@ -117,7 +118,7 @@ Design, IA e Engenharia não podem inventar:
 
 Business possui configurador Self-service próprio. Ele deve permitir selecionar oferta, população/escala, acessos, capacidades, periodicidade e serviços aplicáveis e então **calcular somente o que estiver amparado por uma tabela econômica vigente**.
 
-Enquanto preço por população, acesso ou produto não estiver adjudicado, o configurador pode estruturar a composição, mas não fabricar valor numérico.
+Os preços variáveis do Business estão adjudicados em `GEM-004-BUSINESS-VARIABLE-PRICING-AUTHORITY-001`. O configurador pode calcular os componentes tabelados e deve indicar `dimensionado` ou `sob consulta` somente onde a própria autoridade assim determinar.
 
 ## 10. Estado
 
@@ -129,8 +130,12 @@ VISUAL BASELINE
 → NOT IMPOSED
 
 VARIABLE BUSINESS PRICING
-→ STRUCTURE DEFINED
-→ NUMERIC RATES REQUIRE ECONOMIC AUTHORITY
+→ ADJUDICATED / NORMATIVE
+→ NUMERIC RATES AVAILABLE FOR CONFIGURATOR
+
+BUSINESS TIER ENTITLEMENTS
+→ ADJUDICATED
+→ DOUBLE CHARGING PROHIBITED
 
 PRODUCT ENGINEERING
 → NOT RELEASED BY THIS COLLECTION
