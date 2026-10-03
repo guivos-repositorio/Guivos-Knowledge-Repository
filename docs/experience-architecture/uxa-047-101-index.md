@@ -1,14 +1,15 @@
 ---
 id: GKR-UXA-047-101-INDEX-001
-title: Índice Corrente das Frentes UXA-047 a UXA-103
+title: Índice Corrente das Frentes UXA-047 a UXA-104
 status: active
-version: 3.54.65
+version: 3.54.66
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-10-03
 depends_on:
   - GKR-STATE-001
   - UXA-102
   - UXA-103
+  - UXA-104
 related:
   - M7.88
   - GKR-JOURNEYS-001
@@ -21,7 +22,7 @@ related:
 normative: false
 ---
 
-# Índice Corrente das Frentes UXA-047 a UXA-103
+# Índice Corrente das Frentes UXA-047 a UXA-104
 
 ## 1. Finalidade
 
@@ -29,19 +30,20 @@ Este índice existe somente para descoberta das frentes UXA numeradas que ainda 
 
 ```text
 GKR-STATE-001
-→ 3.50.91 / CURRENT
+→ 3.50.92 / CURRENT
 
 MARCO FUNCIONAL
 → M7.88
 
 ÚLTIMA UXA FUNCIONAL NUMERADA
-→ UXA-103
-
-PRÓXIMA UXA
 → UXA-104
-→ NOT_STARTED
-→ NOT AUTHORIZED
-→ NO AUTOMATIC EXECUTION
+
+UXA-104
+→ [Continuidade de Arquivo e Perguntas Opcionais](uxa-104-file-optional-guided-questions-continuity.md)
+→ [Autoridade Normativa de Escopo](uxa-104-scope-authority.md)
+→ SCOPE ADJUDICATED
+→ FUNCTIONAL EXAM NOT_STARTED
+→ 0 MATURITY PROMOTIONS
 
 UXA-103
 → SCOPE ADJUDICATED
@@ -167,6 +169,14 @@ UXA-103
 → ADJUDICATED ELIGIBILITY LOCALLY VALIDATED
 → PROMOTION MATERIALIZED
 → INTEGRALLY VALIDATED NOT SUPPORTED
+
+UXA-104
+→ [Continuidade de Arquivo e Perguntas Opcionais](uxa-104-file-optional-guided-questions-continuity.md)
+→ [Autoridade Normativa de Escopo](uxa-104-scope-authority.md)
+→ [Descoberta de Escopo](scope-discovery-uxa104.md)
+→ SCOPE ADJUDICATED
+→ FUNCTIONAL EXAM NOT_STARTED
+→ 0 MATURITY PROMOTIONS
 
 PRODUCT ENGINEERING
 → PAUSED / NOT RELEASED
