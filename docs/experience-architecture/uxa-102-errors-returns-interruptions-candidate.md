@@ -1,7 +1,7 @@
 ---
 id: UXA-102
 title: UXA-102 / V5 — Erros, Retornos e Interrupções — Escopo Candidato
-status: draft
+status: superseded
 version: 0.1.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-03
@@ -17,6 +17,11 @@ related:
 ---
 
 # UXA-102 / V5 — Erros, Retornos e Interrupções — Escopo Candidato
+
+> **Estado pós-adjudicação — 03/10/2026**
+>
+> Este documento permanece como proveniência analítica não normativa da UXA-102/V5. A autoridade corrente é `GKR-UXA-102-V5-AUTHORITY-001`. Em caso de divergência, prevalece a autoridade adjudicada.
+
 
 ## 1. Estado desta abertura
 
