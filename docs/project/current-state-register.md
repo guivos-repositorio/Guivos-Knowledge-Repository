@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.50.88
+version: 3.50.89
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-10-03
 normative: true
@@ -116,7 +116,7 @@ Estado executivo vigente:
 - **Research / mercado:** método documental não equivale a pesquisa aplicada, PMF, disposição a pagar, retenção, impacto ou causalidade comprovados;
 - **Product Engineering:** permanece pausada/não liberada;
 - **UXA-102 / V5:** `TRANSVERSE CONTRACT ADJUDICATED`; 76/76 transições examinadas; 0 promoções de maturidade;
-- **UXA-103:** escopo adjudicado; contrato funcional de `TRN-005` adjudicado e reconciliado; exame específico de maturidade concluído em nível candidato com elegibilidade para `LOCALLY VALIDATED`, não `INTEGRALLY VALIDATED`; adjudicação humana pendente; `TRN-005` permanece `PARTIAL`;
+- **UXA-103:** escopo adjudicado; contrato funcional de `TRN-005` adjudicado e reconciliado; conclusão de maturidade adjudicada para promoção a `LOCALLY VALIDATED`, não `INTEGRALLY VALIDATED`; materialização da promoção ainda pendente; `TRN-005` permanece `PARTIAL`;
 - **execução automática seguinte:** nenhuma fora do gate governado da UXA-103.
 
 ```text
