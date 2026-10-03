@@ -4,7 +4,7 @@ title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
 version: 3.50.61
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-09-25
+last_updated: 2026-10-03
 normative: true
 maturity: current_truth_gia_cog_001_active_normative
 related:
@@ -1310,6 +1310,36 @@ MÉTODO DEFINIDO
 ≠ PMF
 ```
 
+## 24.1 Avaliação e Reputação — estado pós-adjudicação UXA-057
+
+A adjudicação substantiva de UXA-057 está concluída no plano semântico e sua autoridade corrente é:
+
+```text
+GKR-UX-EVALUATION-REPUTATION-AUTHORITY-001
+→ ACTIVE / NORMATIVE
+→ AUTORIDADE CANÔNICA DO DOMÍNIO
+```
+
+Estado corrente:
+
+- experiência real e delimitada precede reputação;
+- avaliação privada autoritativa e objeto público permanecem separados;
+- reputação é contextual, sem nota universal de Pessoa, Organização ou Coletivo;
+- identidade interna, visibilidade pública e comentário possuem escopos próprios;
+- resposta, contestação, denúncia, moderação e recurso são competências distintas;
+- `PER-009` não é autoridade canônica de avaliações e somente pode funcionar como ponto administrativo de acesso mediante extensão expressa;
+- documentos candidatos anteriores de UXA-057 permanecem `superseded / normative:false`;
+- a documentação de consumo está organizada no MENU da Jornada da Pessoa sob **Avaliação e Reputação**;
+- Surface Registry e Transition Registry não recebem novos IDs por esta adjudicação.
+
+```text
+UXA-057 SEMANTIC ADJUDICATION COMPLETE
+≠ SURFACE MATERIALIZATION COMPLETE
+≠ TRANSITION MATERIALIZATION COMPLETE
+≠ DESIGN RELEASE
+≠ PRODUCT ENGINEERING RELEASE
+```
+
 ## 25. Dívidas e gates reais ainda abertos
 
 Permanecem abertos quando dependentes de realidade, materialização, Design, implementação, operação ou autoridade própria:
@@ -1327,6 +1357,7 @@ Permanecem abertos quando dependentes de realidade, materialização, Design, im
 - cobrança real e gateway;
 - handoffs Journey → Mall e Journey → Travel;
 - materialização de `PER-009` somente se necessária;
+- materialização das responsabilidades de Avaliação e Reputação ainda sem superfície adjudicada (registro protegido, continuidade da autora, resposta/contestação, moderação/recurso e integrações públicas específicas);
 - arquitetura técnica final de analytics/Intelligence Business;
 - regras econômicas restantes de Pontos;
 - operação Ads real, pricing, inventário e mensuração;
