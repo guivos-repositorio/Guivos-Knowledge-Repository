@@ -2,11 +2,11 @@
 id: GKR-UXA-103-TRN005-MATURITY-EXAM-001
 title: UXA-103 — TRN-005 — Exame Específico de Maturidade
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-03
 normative: true
-maturity: maturity_conclusion_adjudicated
+maturity: maturity_promotion_materialized
 depends_on:
   - UXA-103
   - GKR-UXA-103-TRN005-FUNCTIONAL-EXAM-001
@@ -25,7 +25,7 @@ related:
 
 Este documento examina exclusivamente a maturidade documental de `TRN-005 — PER-005 → PER-006` após a adjudicação e reconciliação do contrato funcional da UXA-103.
 
-O exame não promove a transição. A maturidade corrente permanece `PARTIAL` até ato próprio de materialização da promoção.
+A conclusão de maturidade foi adjudicada e a promoção foi materializada por ato próprio. A maturidade corrente de `TRN-005` é `LOCALLY VALIDATED`.
 
 ## 2. Critério do Registry
 
@@ -61,7 +61,7 @@ Entretanto, a evidência disponível não comprova a ligação como cadeia integ
 
 ```text
 TRN-005 CURRENT
-→ PARTIAL / UNCHANGED
+→ LOCALLY VALIDATED
 
 MATURITY EXAM
 → COMPLETE
@@ -76,8 +76,8 @@ INTEGRALLY VALIDATED
 → NOT SUPPORTED BY CURRENT EVIDENCE
 
 PROMOTION
-→ 0
-→ MATERIALIZATION PENDING
+→ MATERIALIZED
+→ PARTIAL → LOCALLY VALIDATED
 ```
 
 A conclusão adjudicada é:
@@ -92,17 +92,17 @@ Esta conclusão:
 - não comprova persistência técnica;
 - não escolhe mecanismo técnico de idempotência;
 - não libera Product Engineering;
-- não promove `TRN-005`;
+- não promove `TRN-005` além de `LOCALLY VALIDATED`;
 - não altera `TRN-001`, `TRN-002`, `TRN-003`, `TRN-004`, `TRN-006` ou `TRN-014..017`;
 - não transforma a família G1 em cadeia integralmente validada.
 
 ## 7. Próximo gate
 
-O próximo gate é a materialização governada da promoção adjudicada:
+A promoção adjudicada foi materializada:
 
 ```text
 PARTIAL
 → LOCALLY VALIDATED
 ```
 
-Essa materialização deverá atualizar o Transition Registry e as superfícies de estado correspondentes, sem ampliar o escopo para `INTEGRALLY VALIDATED`.
+`INTEGRALLY VALIDATED` permanece não suportado pela evidência corrente e exigiria novo exame/gate próprio.
