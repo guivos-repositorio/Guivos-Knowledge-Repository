@@ -13005,15 +13005,19 @@ Possibilidade, vivida.
 </code></pre></div>
 <p>Estado de execução:</p>
 <div class="highlight"><pre><span></span><code>authorization_package_prepared = true
-filing_authorized = false
+filing_authorized = true
 GRU_issued = false
 GRU_paid = false
 signature_filed = false
 signature_registered = false
 </code></pre></div>
-<p>Próximo gate: <strong>Human Filing Authorization</strong>.</p>
-<div class="highlight"><pre><span></span><code>FILE
-≠ FILING_AUTHORIZED
+<p>Human Filing Authorization: <strong>GRANTED</strong> por <code>GKR-TRADEMARK-HUMAN-FILING-AUTHORIZATION-001</code>.</p>
+<p>Próximo gate operacional: <strong>GRU Scenario Confirmation + Issuance</strong>.</p>
+<div class="highlight"><pre><span></span><code>FILE DECISION
+≠ FILING AUTHORIZATION BY ITSELF
+
+CURRENT CASE
+→ FILING AUTHORIZATION = GRANTED
 
 CLEAR
 ≠ REGISTRO
@@ -13300,7 +13304,7 @@ PROTOTYPE AUTHORIZATION
 <li>arquitetura técnica final de analytics/Intelligence Business;</li>
 <li>regras econômicas restantes de Pontos;</li>
 <li>operação Ads real, pricing, inventário e mensuração;</li>
-<li>Human Filing Authorization das aplicações das assinaturas;</li>
+<li>emissão das GRUs das aplicações das assinaturas;</li>
 <li>evidência de atividade efetiva para AIaaS se incluído;</li>
 <li>implantação real do perfil pessoal do fundador;</li>
 <li>publicação real de conteúdo do fundador;</li>
@@ -58034,7 +58038,7 @@ DECISÃO CANÔNICA
 <li>gates de execução por item;</li>
 <li>checklist dos quatro pedidos.</li>
 </ul>
-<p>Este documento <strong>não autoriza protocolo, não gera GRU, não paga taxa e não declara pedido depositado</strong>.</p>
+<p>Este pacote, isoladamente, <strong>não autorizava protocolo, não gera GRU, não paga taxa e não declara pedido depositado</strong>. A autorização humana posterior está registrada em <code>GKR-TRADEMARK-HUMAN-FILING-AUTHORIZATION-001</code>.</p>
 <div class="highlight"><pre><span></span><code>AUTHORIZATION PACKAGE PREPARED
 ≠ FILING AUTHORIZED
 ≠ GRU ISSUED
@@ -58263,7 +58267,7 @@ custo total = R$ 3.520,00
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> comprovante da GRU arquivado após pagamento;</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> recibo/protocolo arquivado após envio.</li>
 </ul>
-<h2 id="governance-framework-trademark-brazil-signature-filing-authorization-package-13-matriz-pronta-para-autorizacao">13. Matriz pronta para autorização<a class="headerlink" href="#governance-framework-trademark-brazil-signature-filing-authorization-package-13-matriz-pronta-para-autorizacao" title="Permanent link">&para;</a></h2>
+<h2 id="governance-framework-trademark-brazil-signature-filing-authorization-package-13-matriz-autorizada-para-filing">13. Matriz autorizada para filing<a class="headerlink" href="#governance-framework-trademark-brazil-signature-filing-authorization-package-13-matriz-autorizada-para-filing" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
@@ -58282,7 +58286,7 @@ custo total = R$ 3.520,00
 <td style="text-align: right;">35</td>
 <td>Nominativa</td>
 <td>389</td>
-<td><code>READY_FOR_AUTHORIZATION</code></td>
+<td><code>AUTHORIZED_TO_FILE</code></td>
 </tr>
 <tr>
 <td>2</td>
@@ -58290,7 +58294,7 @@ custo total = R$ 3.520,00
 <td style="text-align: right;">42</td>
 <td>Nominativa</td>
 <td>389</td>
-<td><code>READY_FOR_AUTHORIZATION_WITH_ITEM_GATE</code></td>
+<td><code>AUTHORIZED_TO_FILE_WITH_ITEM_GATE</code></td>
 </tr>
 <tr>
 <td>3</td>
@@ -58298,7 +58302,7 @@ custo total = R$ 3.520,00
 <td style="text-align: right;">35</td>
 <td>Nominativa</td>
 <td>389</td>
-<td><code>READY_FOR_AUTHORIZATION</code></td>
+<td><code>AUTHORIZED_TO_FILE</code></td>
 </tr>
 <tr>
 <td>4</td>
@@ -58306,11 +58310,11 @@ custo total = R$ 3.520,00
 <td style="text-align: right;">42</td>
 <td>Nominativa</td>
 <td>389</td>
-<td><code>READY_FOR_AUTHORIZATION_WITH_ITEM_GATE</code></td>
+<td><code>AUTHORIZED_TO_FILE_WITH_ITEM_GATE</code></td>
 </tr>
 </tbody>
 </table>
-<p><code>READY_FOR_AUTHORIZATION_WITH_ITEM_GATE</code> significa que a aplicação de classe 42 está pronta para decisão humana, mas o item AIaaS somente poderá integrar a especificação se a evidência factual exigida estiver presente. Sem ela, a aplicação continua autorizável com SaaS/PaaS.</p>
+<p><code>AUTHORIZED_TO_FILE_WITH_ITEM_GATE</code> significa que a aplicação de classe 42 está autorizada para filing, mas o item AIaaS somente poderá integrar a especificação se a evidência factual exigida estiver presente. Sem ela, o filing da classe 42 prossegue com os itens sustentados de SaaS/PaaS, omitindo AIaaS.</p>
 <p>Estado agregado:</p>
 <div class="highlight"><pre><span></span><code>signature_clearance = CLEAR
 signature_filing_decision = FILE
@@ -58319,7 +58323,7 @@ preferred_route = INPI_389
 AIaaS_execution_gate = EVIDENCE_REQUIRED
 preferred_total_if_discount_confirmed = R$ 1.760,00
 maximum_total_on_389_without_discount = R$ 3.520,00
-filing_authorized = false
+filing_authorized = true
 filed = false
 registered = false
 </code></pre></div>
@@ -58337,22 +58341,24 @@ registered = false
 <li>oposições, recursos ou manifestações futuras.</li>
 </ul>
 <h2 id="governance-framework-trademark-brazil-signature-filing-authorization-package-15-proximo-gate">15. Próximo gate<a class="headerlink" href="#governance-framework-trademark-brazil-signature-filing-authorization-package-15-proximo-gate" title="Permanent link">&para;</a></h2>
-<p>O próximo gate é <strong>Human Filing Authorization</strong>.</p>
-<p>Uma autorização válida deverá declarar explicitamente que está autorizando:</p>
+<p>O gate <strong>Human Filing Authorization</strong> foi concedido por <code>GKR-TRADEMARK-HUMAN-FILING-AUTHORIZATION-001</code>. O próximo gate operacional é <strong>GRU Scenario Confirmation + Issuance</strong>.</p>
+<p>A autorização humana concedida cobre o avanço dos quatro pedidos. A execução financeira permanece condicionada à confirmação do cenário efetivo no sistema. O executor deve preservar:</p>
 <ol>
 <li>os quatro pedidos acima;</li>
-<li>emissão e pagamento das GRUs;</li>
-<li>protocolo no INPI;</li>
-<li>o teto financeiro aplicável ao cenário confirmado no sistema;</li>
-<li>para as classes 42, se AIaaS está incluído com evidência suficiente ou omitido.</li>
+<li>emissão das GRUs após confirmação do cenário;</li>
+<li>pagamento somente dentro do teto do cenário confirmado;</li>
+<li>protocolo no INPI após os gates operacionais aplicáveis;</li>
+<li>para as classes 42, AIaaS incluído somente com evidência suficiente; sem evidência, omitir.</li>
 </ol>
 <p>Antes de qualquer pagamento, o executor deverá informar qual cenário foi confirmado:</p>
 <div class="highlight"><pre><span></span><code>A = código 389 + desconto 50% → R$ 1.760,00
 B = código 389 sem desconto   → R$ 3.520,00
 </code></pre></div>
 <p>Se a rota mudar para código 394, não executar sem nova autorização.</p>
-<div class="highlight"><pre><span></span><code>READY_FOR_AUTHORIZATION
-≠ FILING_AUTHORIZED
+<div class="highlight"><pre><span></span><code>FILING_AUTHORIZED
+≠ GRU_ISSUED
+≠ GRU_PAID
+≠ APPLICATION_FILED
 </code></pre></div></section></section>
                     <section class='print-page md-section' id='section-14' heading-number='14'>
                         <h1>GTM, Expansão e Presença Pública<a class='headerlink' href='#section-14' title='Permanent link'></a>

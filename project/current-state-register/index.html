@@ -9196,15 +9196,19 @@ Possibilidade, vivida.
 </code></pre></div>
 <p>Estado de execução:</p>
 <div class="highlight"><pre><span></span><code>authorization_package_prepared = true
-filing_authorized = false
+filing_authorized = true
 GRU_issued = false
 GRU_paid = false
 signature_filed = false
 signature_registered = false
 </code></pre></div>
-<p>Próximo gate: <strong>Human Filing Authorization</strong>.</p>
-<div class="highlight"><pre><span></span><code>FILE
-≠ FILING_AUTHORIZED
+<p>Human Filing Authorization: <strong>GRANTED</strong> por <code>GKR-TRADEMARK-HUMAN-FILING-AUTHORIZATION-001</code>.</p>
+<p>Próximo gate operacional: <strong>GRU Scenario Confirmation + Issuance</strong>.</p>
+<div class="highlight"><pre><span></span><code>FILE DECISION
+≠ FILING AUTHORIZATION BY ITSELF
+
+CURRENT CASE
+→ FILING AUTHORIZATION = GRANTED
 
 CLEAR
 ≠ REGISTRO
@@ -9491,7 +9495,7 @@ PROTOTYPE AUTHORIZATION
 <li>arquitetura técnica final de analytics/Intelligence Business;</li>
 <li>regras econômicas restantes de Pontos;</li>
 <li>operação Ads real, pricing, inventário e mensuração;</li>
-<li>Human Filing Authorization das aplicações das assinaturas;</li>
+<li>emissão das GRUs das aplicações das assinaturas;</li>
 <li>evidência de atividade efetiva para AIaaS se incluído;</li>
 <li>implantação real do perfil pessoal do fundador;</li>
 <li>publicação real de conteúdo do fundador;</li>
