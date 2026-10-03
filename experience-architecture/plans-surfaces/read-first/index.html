@@ -1623,7 +1623,7 @@
   <span class="md-ellipsis">
     
   
-    Guivos Business — Start, Growth, Scale e Enterprise
+    Guivos Business — Planos, Pricing e Matriz por Tier
   
 
     
@@ -2223,7 +2223,7 @@
   <span class="md-ellipsis">
     
   
-    Guivos Business — Configurador e Calculadora Self-service
+    Guivos Business — Configurador, Pricing e Matriz por Tier
   
 
     
@@ -7945,7 +7945,7 @@ COMPOSIÇÃO VISUAL
 </ul>
 <h2 id="9-guivos-business">9. Guivos Business<a class="headerlink" href="#9-guivos-business" title="Permanent link">&para;</a></h2>
 <p>Business possui configurador Self-service próprio. Ele deve permitir selecionar oferta, população/escala, acessos, capacidades, periodicidade e serviços aplicáveis e então <strong>calcular somente o que estiver amparado por uma tabela econômica vigente</strong>.</p>
-<p>Os preços variáveis do Business estão adjudicados em <code>GEM-004-BUSINESS-VARIABLE-PRICING-AUTHORITY-001</code>. O configurador pode calcular os componentes tabelados e deve indicar <code>dimensionado</code> ou <code>sob consulta</code> somente onde a própria autoridade assim determinar.</p>
+<p>Os preços variáveis do Business estão adjudicados em <code>GEM-004-BUSINESS-VARIABLE-PRICING-AUTHORITY-001</code>. O configurador pode calcular os componentes tabelados, deve consumir a <strong>matriz de inclusões por tier</strong> e deve indicar <code>dimensionado</code> ou <code>sob consulta</code> somente onde a própria autoridade assim determinar. Capacidades incluídas aparecem com <code>R$ 0,00 adicional</code>; capacidades elegíveis como add-on usam o valor mensal/anual governado.</p>
 <h2 id="10-estado">10. Estado<a class="headerlink" href="#10-estado" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>PLANS SURFACES COLLECTION
 → DOCUMENTED
@@ -7959,6 +7959,8 @@ VARIABLE BUSINESS PRICING
 
 BUSINESS TIER ENTITLEMENTS
 → ADJUDICATED
+→ MATRIX EXPLICIT
+→ ADD-ON PRICES EXPLICIT
 → DOUBLE CHARGING PROHIBITED
 
 PRODUCT ENGINEERING
