@@ -2,12 +2,13 @@
 id: GKR-JOURNEY-PERSON-FUNCTIONAL-COMPLETENESS-001
 title: Jornada da Pessoa — Autoridade de Completude Funcional
 status: active
-version: 0.2.0
+version: 0.3.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-27
+last_updated: 2026-10-03
 normative: true
 maturity: functional_completeness_authority
 depends_on:
+  - GKR-UX-EVALUATION-REPUTATION-AUTHORITY-001
   - GKR-JOURNEY-PERSON-001
   - GKR-JOURNEY-SURFACE-DETAIL-PERSON-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
@@ -343,3 +344,19 @@ NEW VISUAL SURFACES
 PRODUCT ENGINEERING
 → NOT RELEASED
 ```
+
+## Avaliação e Reputação — autoridade de domínio
+
+A adjudicação de UXA-057 resolve a autoridade semântica de avaliação e reputação em `GKR-UX-EVALUATION-REPUTATION-AUTHORITY-001`.
+
+```text
+AUTORIDADE CANÔNICA DE R1 / P1
+→ CONTRATO DO DOMÍNIO DE AVALIAÇÃO E REPUTAÇÃO
+
+PER-009
+→ POSSÍVEL PONTO ADMINISTRATIVO DE ACESSO
+→ NÃO É AUTORIDADE CANÔNICA
+```
+
+A continuidade funcional de avaliações pode exigir materialização futura de entrada, registro, consulta, publicação, resposta ou governança. A existência dessa necessidade não cria automaticamente nova superfície ou transição. Deve-se aplicar a ordem de adjudicação desta autoridade: estado/controle existente → expansão legítima → transição real → nova superfície somente se houver job e lifecycle próprios que não caibam nas responsabilidades vigentes.
+
