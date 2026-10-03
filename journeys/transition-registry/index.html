@@ -7515,8 +7515,8 @@
 <td>GKR-TRN-005</td>
 <td>PER-005</td>
 <td>PER-006</td>
-<td><strong>localmente validada</strong></td>
-<td>GKR-UX-G1-ENTRY-EXPRESSION-INVENTORY-VALIDATION-001 — autorização específica registrada → processamento visível; falha de registro bloqueia processamento; interrupção/falha governadas localmente</td>
+<td><strong>parcial</strong></td>
+<td>GKR-UX-G1-ENTRY-EXPRESSION-INVENTORY-VALIDATION-001 + UXA-102/V5 — autorização e falha conhecida estão governadas, mas resultado indeterminado, reconciliação antes de retry e não duplicação ponta a ponta permanecem sem fechamento suficiente</td>
 </tr>
 <tr>
 <td>GKR-TRN-006</td>
@@ -8264,16 +8264,19 @@ Guivos Business: Start · Growth · Scale · Enterprise (produto separado; sem t
 <li>não cria fluxo de Guivos Business.</li>
 </ul>
 <h2 id="41-validacao-local-g1-entrada-expressao-e-inventario">4.1 Validação local G1 — entrada, expressão e inventário<a class="headerlink" href="#41-validacao-local-g1-entrada-expressao-e-inventario" title="Permanent link">&para;</a></h2>
-<p><code>GKR-UX-G1-ENTRY-EXPRESSION-INVENTORY-VALIDATION-001</code> valida localmente três handoffs sem fechar a cadeia ponta a ponta:</p>
+<p><code>GKR-UX-G1-ENTRY-EXPRESSION-INVENTORY-VALIDATION-001</code> valida localmente dois handoffs sem fechar a cadeia ponta a ponta:</p>
 <div class="highlight"><pre><span></span><code>TRN-003
 TRN-004
-TRN-005
 → LOCALLY VALIDATED
+
+TRN-005
+→ PARTIAL / UNCHANGED
 </code></pre></div>
 <p>Preservações:</p>
 <ul>
 <li><code>TRN-001</code> permanece parcial;</li>
 <li><code>TRN-002</code> e <code>TRN-006</code> permanecem localmente validadas;</li>
+<li><code>TRN-005</code> permanece parcial por resultado indeterminado/reconciliação/retry ainda não fechados ponta a ponta;</li>
 <li><code>TRN-014..017</code> permanecem contratadas enquanto <code>PER-013/014</code> forem contratos candidatos;</li>
 <li>nenhuma implementação, persistência técnica ou Product Engineering é comprovada por esta validação.</li>
 </ul>

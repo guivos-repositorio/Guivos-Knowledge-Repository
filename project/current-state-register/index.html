@@ -9696,8 +9696,10 @@ TRN-002
 
 TRN-003
 TRN-004
-TRN-005
 → LOCALLY VALIDATED
+
+TRN-005
+→ PARTIAL / UNCHANGED
 
 TRN-006
 → LOCALLY VALIDATED / UNCHANGED
@@ -9705,7 +9707,7 @@ TRN-006
 TRN-014..017
 → CONTRACTED / UNCHANGED
 </code></pre></div>
-<p>A promoção local não comprova implementação, persistência técnica ou fechamento ponta a ponta. <code>PER-013/014</code> permanecem contratos candidatos.</p>
+<p>A promoção local não comprova implementação, persistência técnica ou fechamento ponta a ponta. <code>TRN-005</code> permanece parcial por resultado indeterminado/reconciliação/retry não fechados; <code>PER-013/014</code> permanecem contratos candidatos.</p>
 <h2 id="282-g2-descoberta-e-solicitacao-de-coletivo">28.2 G2 — descoberta e solicitação de Coletivo<a class="headerlink" href="#282-g2-descoberta-e-solicitacao-de-coletivo" title="Permanent link">&para;</a></h2>
 <p><code>GKR-UX-G2-COLLECTIVE-DISCOVERY-REQUEST-VALIDATION-001</code> conclui o exame específico da segunda família deixada pela UXA-102/V5.</p>
 <div class="highlight"><pre><span></span><code>TRN-101
@@ -9961,28 +9963,28 @@ SURFACE MASTERS TO BUILD AFTER THE HOME
 
 CURRENT FOUNDATION
 → GKR-UX-PERSON-JOURNEY-READ-FIRST-001 v0.1.19
-→ GKR-UX-PERSON-JOURNEY-FLOW-001 v0.1.20
+→ GKR-UX-PERSON-JOURNEY-FLOW-001 v0.1.23
 
 CURRENT SURFACE MASTERS
 → GKR-UX-PER002-MASTER-001 v0.1.0
 → PER-002 — ENTRADA PROTEGIDA
-→ GKR-UX-PER003-MASTER-001 v0.1.1
+→ GKR-UX-PER003-MASTER-001 v0.1.2
 → PER-003 — ESCOLHA DE MODALIDADE
 → VALIDATED CHOICES = TEXT / VOICE / FILE / OPTIONAL GUIDED QUESTIONS
 → COMBINATION = ALLOWED / NOT REQUIRED
 → TEXT / VOICE CONTINUITY = TRN-003 → PER-004 / LOCALLY VALIDATED
 → FILE / OPTIONAL QUESTIONS CONTINUITY = NOT FULLY CONTRACTED
-→ GKR-UX-PER004-MASTER-001 v0.1.0
+→ GKR-UX-PER004-MASTER-001 v0.1.1
 → PER-004 — EXPRESSÃO POR TEXTO OU VOZ
 → TEXT / VOICE = CURRENT DESIGN DEFINITION
 → TEMPORARY HELP = USER-REQUESTED / OPTIONAL
 → DRAFT PERSISTENCE = NOT INVENTED
 → TRN-004 → PER-005 = LOCALLY VALIDATED / G1
-→ GKR-UX-PER005-MASTER-001 v0.1.0
+→ GKR-UX-PER005-MASTER-001 v0.1.1
 → PER-005 — INVENTÁRIO E AUTORIZAÇÃO
 → REVIEW + SPECIFIC AUTHORIZATION = CURRENT DESIGN DEFINITION
 → PERSISTENCE / PERSONALIZATION = BLOCKED
-→ TRN-005 → PER-006 = LOCALLY VALIDATED / G1
+→ TRN-005 → PER-006 = PARTIAL / G1 + UXA-102/V5
 → GKR-UX-PER006-MASTER-001 v0.1.0
 → PER-006 — PROCESSAMENTO VISÍVEL
 → VISIBLE / TEMPORARY / INTERRUPTIBLE PROCESSING = CURRENT DESIGN DEFINITION

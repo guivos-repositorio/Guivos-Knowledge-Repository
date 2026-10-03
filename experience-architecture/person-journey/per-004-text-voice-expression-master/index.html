@@ -8004,7 +8004,7 @@
 <li>execução downstream da modalidade “Perguntas Opcionais” de <code>PER-003</code>.</li>
 </ul>
 <h2 id="3-entrada-legitima">3. Entrada legítima<a class="headerlink" href="#3-entrada-legitima" title="Permanent link">&para;</a></h2>
-<p>A entrada corrente em <code>PER-004</code> ocorre por <code>TRN-003</code>, em estado parcial.</p>
+<p>A entrada corrente em <code>PER-004</code> ocorre por <code>TRN-003</code>, em estado <strong>localmente validado</strong> por <code>GKR-UX-G1-ENTRY-EXPRESSION-INVENTORY-VALIDATION-001</code>.</p>
 <p>A continuidade contratada é clara para:</p>
 <div class="highlight"><pre><span></span><code>PER-003 / TEXTO
 → TRN-003
@@ -8335,7 +8335,7 @@ CONTINUAR
 </ol>
 <p>Nenhuma ação implica aceitação silenciosa da organização sugerida.</p>
 <h2 id="20-handoff-para-per-005">20. Handoff para PER-005<a class="headerlink" href="#20-handoff-para-per-005" title="Permanent link">&para;</a></h2>
-<p><code>TRN-004 — PER-004 → PER-005</code> permanece parcial.</p>
+<p><code>TRN-004 — PER-004 → PER-005</code> está <strong>localmente validada</strong> por <code>GKR-UX-G1-ENTRY-EXPRESSION-INVENTORY-VALIDATION-001</code>.</p>
 <p>O handoff deve preservar, quando aplicável:</p>
 <ul>
 <li>conteúdos de origem revisados;</li>
@@ -8618,10 +8618,10 @@ DRAFT PERSISTENCE
 → NOT INVENTED
 
 TRN-003
-→ PARTIAL / UNCHANGED
+→ LOCALLY VALIDATED / G1
 
 TRN-004
-→ PARTIAL / UNCHANGED
+→ LOCALLY VALIDATED / G1
 
 NEXT DOCUMENTATION TARGET
 → PER-005 — INVENTÁRIO E AUTORIZAÇÃO

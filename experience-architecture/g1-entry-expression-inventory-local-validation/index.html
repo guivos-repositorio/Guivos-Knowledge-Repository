@@ -7567,11 +7567,11 @@ PARTIAL
 <li>ausência de continuidade silenciosa em background.</li>
 </ul>
 <h3 id="73-decisao">7.3 Decisão<a class="headerlink" href="#73-decisao" title="Permanent link">&para;</a></h3>
-<p>O handoff possui contrato local suficiente de autorização, dados, efeito, interrupção e falha.</p>
-<p>Persistência técnica e implementação continuam não comprovadas; portanto, não cabe validação integral.</p>
+<p>O handoff possui contrato local suficiente de autorização, dados, início de efeito, interrupção e falha conhecida.</p>
+<p>Porém, <code>UXA-102/V5</code> mantém uma lacuna material específica: quando o processamento é interrompido sem confirmação do resultado, o contrato corrente ainda não fecha a reconciliação do estado indeterminado antes de retry, nem demonstra não duplicação ponta a ponta.</p>
+<p>Por isso, este ato <strong>não promove <code>TRN-005</code></strong>. A transição permanece parcial até existir autoridade específica que feche resultado indeterminado, reconciliação e retry sem efeito duplicado.</p>
 <div class="highlight"><pre><span></span><code>TRN-005
-PARTIAL
-→ LOCALLY VALIDATED
+→ PARTIAL / UNCHANGED
 </code></pre></div>
 <h2 id="8-trn-006-per-006-per-007">8. TRN-006 — PER-006 → PER-007<a class="headerlink" href="#8-trn-006-per-006-per-007" title="Permanent link">&para;</a></h2>
 <p>Estado preservado: <strong>localmente validada</strong>.</p>
@@ -7658,7 +7658,7 @@ TRN-015
 <tr>
 <td>TRN-005</td>
 <td>parcial</td>
-<td><strong>localmente validada</strong></td>
+<td>parcial</td>
 </tr>
 <tr>
 <td>TRN-006</td>
@@ -7688,12 +7688,14 @@ TRN-015
 </tbody>
 </table>
 <div class="highlight"><pre><span></span><code>PROMOTIONS
-→ 3
+→ 2
 
 TRN-003
 TRN-004
-TRN-005
 → LOCALLY VALIDATED
+
+TRN-005
+→ PARTIAL / UNCHANGED
 
 INTEGRALLY VALIDATED
 → 0 NEW
@@ -7703,7 +7705,8 @@ INTEGRALLY VALIDATED
 <p>Permanecem:</p>
 <ol>
 <li><code>TRN-001</code> — integração ponta a ponta Home → Entrada Protegida;</li>
-<li><code>TRN-002..006</code> — implementação/persistência técnica não comprovadas quando aplicável, sem impedir os estados locais já validados;</li>
+<li><code>TRN-002/003/004/006</code> — implementação/persistência técnica não comprovadas quando aplicável, sem impedir os estados locais já validados;</li>
+<li><code>TRN-005</code> — resultado indeterminado, reconciliação antes de retry e não duplicação ponta a ponta ainda não fechados;</li>
 <li><code>TRN-014..017</code> — dependência de adjudicação/materialização de <code>PER-013/014</code>;</li>
 <li>autorização material e processamento continuam subordinados aos gates já definidos.</li>
 </ol>
@@ -7724,8 +7727,11 @@ INTEGRALLY VALIDATED
 <div class="highlight"><pre><span></span><code>G1 VALIDATION
 → COMPLETE
 
-TRN-003/004/005
+TRN-003/004
 → LOCALLY VALIDATED
+
+TRN-005
+→ PARTIAL / UNCHANGED
 
 TRN-001
 → PARTIAL
