@@ -2,7 +2,7 @@
 id: GKR-UX-PER005-MASTER-001
 title: Jornada da Pessoa — PER-005 — Inventário e Autorização — Documento Mestre de Superfície
 status: active
-version: 0.1.1
+version: 0.1.2
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-03
 normative: false
@@ -15,6 +15,7 @@ depends_on:
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
   - UXA-023
   - UXA-035
+  - GKR-UXA-103-TRN005-FUNCTIONAL-EXAM-001
 related:
   - GKR-UX-PER004-MASTER-001
   - GKR-JOURNEY-PERSON-001
@@ -303,6 +304,8 @@ O estado deve preservar, quando aplicável:
 - autorização registrada;
 - itens não autorizados fora do conjunto de processamento.
 
+Para `TRN-005`, esse conjunto compõe a **identidade lógica da intenção** quando conteúdo revisado, recorte autorizado, finalidade autorizada e decisão de autorização permanecem materialmente os mesmos. Mudança material em qualquer desses elementos exige novo gate de revisão/autorização e não deve ser tratada como retry da mesma intenção.
+
 Nenhum dado adicional pode ser inferido como autorizado apenas porque está disponível tecnicamente.
 
 ## 17. Handoff para PER-006
@@ -315,6 +318,8 @@ INVENTÁRIO REVISADO
 → TRN-005 / PARCIAL
 → PER-006 — PROCESSAMENTO VISÍVEL
 ```
+
+A passagem preserva o contrato adjudicado de `GKR-UXA-103-TRN005-FUNCTIONAL-EXAM-001`: se uma tentativa anterior da mesma intenção lógica tiver resultado indeterminado, nova mutação equivalente depende de reconciliação suficiente do efeito anterior. A mesma intenção não pode produzir efeito lógico duplicado silencioso.
 
 A passagem não autoriza:
 
