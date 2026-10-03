@@ -21,7 +21,7 @@ related:
 
 Registrar a autorização humana explícita para avançar do estado `READY_FOR_AUTHORIZATION` para a execução operacional de depósito das assinaturas institucionais da Guivos no Brasil.
 
-Esta autorização cobre protocolo e gasto correspondente, mas não declara GRU emitida, GRU paga, pedido depositado ou registro concedido.
+Esta autorização cobre o avanço para protocolo e a assunção do gasto correspondente dentro da rota autorizada, mas a execução do pagamento permanece condicionada à confirmação prévia do cenário financeiro aplicável no sistema e do respectivo teto. Ela não declara GRU emitida, GRU paga, pedido depositado ou registro concedido.
 
 ## 2. Pedidos autorizados
 
@@ -63,11 +63,12 @@ signature_registered = false
 1. confirmar titularidade/cadastro vigente no e-INPI;
 2. confirmar especificações finais de classe 35 e 42;
 3. aplicar o gate AIaaS às classes 42;
-4. emitir as GRUs correspondentes;
-5. pagar as GRUs;
-6. protocolar os quatro pedidos;
-7. arquivar comprovantes e números de processo;
-8. reconciliar o GKR com a evidência registral.
+4. confirmar no sistema o cenário financeiro efetivo e o teto aplicável;
+5. emitir as GRUs correspondentes;
+6. pagar as GRUs;
+7. protocolar os quatro pedidos;
+8. arquivar comprovantes e números de processo;
+9. reconciliar o GKR com a evidência registral.
 
 Cada ato externo deve ser registrado somente após evidência de execução.
 
@@ -111,5 +112,5 @@ AIaaS
 → CONDITIONAL ITEM GATE PRESERVED
 
 NEXT EXECUTION GATE
-→ GRU ISSUANCE
+→ GRU SCENARIO CONFIRMATION + ISSUANCE
 ```
