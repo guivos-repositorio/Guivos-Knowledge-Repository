@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.50.95
+version: 3.50.96
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-10-03
 normative: true
@@ -121,8 +121,8 @@ Estado executivo vigente:
 - **Product Engineering:** permanece pausada/não liberada;
 - **UXA-102 / V5:** `TRANSVERSE CONTRACT ADJUDICATED`; 76/76 transições examinadas; 0 promoções de maturidade;
 - **UXA-103:** escopo adjudicado; contrato funcional de `TRN-005` adjudicado e reconciliado; conclusão de maturidade adjudicada e promoção materializada para `LOCALLY VALIDATED`; `INTEGRALLY VALIDATED` não suportado pela evidência corrente;
-- **UXA-104:** escopo adjudicado por `GKR-UXA-104-PER013014-SCOPE-AUTHORITY-001` para `PER-013/014` + `TRN-014..017`; exame funcional `COMPLETE`; contrato funcional `ADJUDICATED / NORMATIVE`; reconciliação `COMPLETE`; maturity exam `COMPLETE`; achados de maturidade `CANDIDATE / NOT ADJUDICATED`; nenhuma promoção de maturidade;
-- **execução automática seguinte:** nenhuma; o próximo ato depende da adjudicação humana dos achados do exame de maturidade da UXA-104.
+- **UXA-104:** escopo adjudicado por `GKR-UXA-104-PER013014-SCOPE-AUTHORITY-001` para `PER-013/014` + `TRN-014..017`; exame funcional `COMPLETE`; contrato funcional `ADJUDICATED / NORMATIVE`; reconciliação `COMPLETE`; maturity exam `COMPLETE`; achados de maturidade `ADJUDICATED`; `TRN-014..017` promovidas para `LOCALLY VALIDATED`; quatro promoções de maturidade;
+- **execução automática seguinte:** nenhuma; nenhuma execução automática seguinte é criada pela conclusão da UXA-104.
 
 ```text
 DOCUMENTED
@@ -396,7 +396,7 @@ UXA-101
 UXA-102 / V5
 → TRANSVERSE CONTRACT ADJUDICATED
 → 76/76 TRANSITIONS EXAMINED
-→ 0 MATURITY PROMOTIONS
+→ 4 MATURITY PROMOTIONS
 → V5-A COMPLETE AT CANDIDATE LEVEL
 → V5-B 76/76 TRANSITIONS EXAMINED
 → V5-C CROSS-RECONCILIATION COMPLETE AT CANDIDATE LEVEL
@@ -1762,7 +1762,7 @@ O/C INTERACTIVE PROTOTYPE
 UXA-102 / V5
 → TRANSVERSE CONTRACT ADJUDICATED
 → 76/76 TRANSITIONS EXAMINED
-→ 0 MATURITY PROMOTIONS
+→ 4 MATURITY PROMOTIONS
 
 UXA-103
 → SCOPE ADJUDICATED / GKR-UXA-103-TRN005-SCOPE-AUTHORITY-001
@@ -1781,9 +1781,10 @@ UXA-104
 → FUNCTIONAL CONTRACT ADJUDICATED / NORMATIVE
 → RECONCILIATION COMPLETE
 → MATURITY EXAM COMPLETE
-→ MATURITY FINDINGS CANDIDATE / NOT ADJUDICATED
-→ TRN-014..017 CONTRACTED / UNCHANGED
-→ 0 MATURITY PROMOTIONS
+→ MATURITY FINDINGS ADJUDICATED
+→ MATURITY PROMOTIONS MATERIALIZED
+→ TRN-014..017 LOCALLY VALIDATED
+→ 4 MATURITY PROMOTIONS
 
 PRODUCT ENGINEERING
 → PAUSED / NOT RELEASED
@@ -1890,7 +1891,7 @@ O/C AUTHENTICATED HIGH-FIDELITY
 UXA-102 / V5
 → TRANSVERSE CONTRACT ADJUDICATED
 → 76/76 TRANSITIONS EXAMINED
-→ 0 MATURITY PROMOTIONS
+→ 4 MATURITY PROMOTIONS
 
 PRODUCT ENGINEERING
 → PAUSED / NOT RELEASED
