@@ -2,9 +2,9 @@
 id: ROADMAP-13.48.7
 title: Roadmap Arquitetural — Frentes Correntes e Próximos Gates da Guivos
 status: active
-version: 13.48.49
+version: 13.48.50
 owner: Guivos
-last_updated: 2026-09-25
+last_updated: 2026-10-03
 normative: true
 related:
   - GKR-STATE-001
@@ -79,7 +79,8 @@ ROADMAP
 | O/C high-fidelity | `AUTHORIZATION GRANTED / EXECUTION RELEASE ISSUED / DELIVERY NOT_RECEIVED` |
 | O/C protótipo interativo | `NOT_AUTHORIZED` |
 | PER-002 | referência interativa pós-review validada |
-| UXA-102 / V5 | `NOT_STARTED` |
+| UXA-102 / V5 | `ADJUDICADA / MATERIALIZADA EM MAIN` |
+| Próxima UXA | `UXA-103 / NOT_STARTED` |
 | Cognitive Reference Architecture | `GIA-COG-001 v0.1.2 / ACTIVE / NORMATIVE` |
 | `GIA-COG-002..008` | `RESERVED / NOT MATERIALIZED` |
 | Product Engineering | `PAUSED / NOT RELEASED` |
@@ -333,13 +334,16 @@ DOCUMENTATION COLLECTION
 → NO NEXT PER SURFACE TARGET
 
 UXA-102 / V5
-→ NOT_STARTED
+→ ADJUDICADA / MATERIALIZADA EM MAIN
+
+PRÓXIMA UXA
+→ UXA-103 / NOT_STARTED
 
 PRODUCT ENGINEERING
 → PAUSED / NOT RELEASED
 ```
 
-A coleção documental planejada de superfícies da Jornada da Pessoa está completa em `26 / 26`; lacunas técnicas e transacionais permanecem governadas separadamente. Materialização visual, teste real, implementação ou avanço de `UXA-102/V5` dependem de atos próprios.
+A coleção documental planejada de superfícies da Jornada da Pessoa está completa em `26 / 26`; lacunas técnicas e transacionais permanecem governadas separadamente. Materialização visual, teste real, implementação ou início de `UXA-103` dependem de atos próprios.
 
 ## 8. Guivos Business
 
@@ -554,7 +558,10 @@ O/C INTERACTIVE PROTOTYPE
 → NOT_AUTHORIZED
 
 UXA-102 / V5
-→ NOT_STARTED
+→ ADJUDICADA / MATERIALIZADA EM MAIN
+
+PRÓXIMA UXA
+→ UXA-103 / NOT_STARTED
 
 PRODUCT ENGINEERING
 → PAUSED / NOT RELEASED
