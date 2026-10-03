@@ -2,7 +2,7 @@
 id: GKR-UX-PLANS-ORCHESTRATION-001
 title: Planos — Superfícies e Fluxos — Documento Mestre de Orquestração UX/UI
 status: active
-version: 0.1.0
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-03
 normative: false
@@ -10,6 +10,7 @@ depends_on:
   - GKR-UX-PLANS-READ-FIRST-001
   - GKR-PLANS-INDEX-001
   - GEM-004-A1
+  - GEM-004-BUSINESS-VARIABLE-PRICING-AUTHORITY-001
 ---
 
 # Planos — Superfícies e Fluxos — Documento Mestre de Orquestração UX/UI
@@ -82,12 +83,58 @@ PLANO-BASE
 + POPULAÇÃO / ESCALA
 + OFERTA(S)
 + ACESSOS JOURNEY CUSTEADOS
-+ CAPACIDADES ADICIONAIS
-+ IMPLEMENTAÇÃO / OPERAÇÃO
-= VALOR RECORRENTE CONTRATUAL, QUANDO PRECIFICÁVEL
++ CAPACIDADES ADICIONAIS NÃO INCLUÍDAS NO TIER
++ SERVIÇOS ADICIONAIS
+= VALOR RECORRENTE CONTRATUAL
 
 ORÇAMENTO DE INCENTIVO
 = RECURSO OPERACIONAL SEPARADO
+```
+
+
+### 8.1 Ordem funcional recomendada do configurador
+
+A experiência Business deve permitir, sem prescrever layout:
+
+```text
+1. ESCOLHER PERIODICIDADE
+2. INFORMAR POPULAÇÃO ELEGÍVEL
+3. ESCOLHER OFERTA
+4. INFORMAR ACESSOS JOURNEY, SE APLICÁVEL
+5. IDENTIFICAR CAPACIDADES NECESSÁRIAS
+6. ENQUADRAR PLANO COMPATÍVEL
+7. ZERAR ADD-ONS JÁ INCLUÍDOS NO TIER
+8. ESCOLHER SERVIÇO ADICIONAL, SE NECESSÁRIO
+9. INFORMAR ORÇAMENTO DE INCENTIVO SEPARADO
+10. REVISAR COMPOSIÇÃO
+11. EXIBIR TOTAL RECORRENTE + ITENS SEPARADOS / DIMENSIONADOS
+```
+
+A ordem pode ser reorganizada visualmente, mas a semântica de cálculo e a proteção contra dupla cobrança devem permanecer.
+
+### 8.2 Informação mínima do resultado Business
+
+O resumo da composição deve distinguir:
+
+- plano-base;
+- população/escala e faixas aplicadas;
+- oferta contratada;
+- Journey Plus/Pro custeado e quantidade;
+- add-ons efetivamente cobrados;
+- capacidades incluídas sem cobrança adicional;
+- serviço adicional;
+- subtotal/total recorrente;
+- orçamento pré-pago de incentivo em linha separada;
+- itens dimensionados ou sob consulta;
+- periodicidade e condição anual/mensal.
+
+```text
+INCLUDED
+≠ FREE UNIVERSALLY
+≠ ADD-ON CHARGED
+
+INCENTIVE BUDGET
+≠ SUBSCRIPTION REVENUE
 ```
 
 ## 9. Estados transversais
@@ -100,4 +147,4 @@ Diferenças, preços, periodicidade e ações não podem depender apenas de cor,
 
 ## 11. Critérios de aceite
 
-A experiência é aceitável quando as quatro taxonomias permanecem separadas; mensal/anual é explicitamente selecionável; diferenças funcionais são legíveis; valores não são inventados; dimensionamento é distinguido de preço fixo; comparar não produz contratação; Business separa assinatura de orçamento de incentivo; Design mantém liberdade criativa; e Product Engineering não é liberado por este documento.
+A experiência é aceitável quando as quatro taxonomias permanecem separadas; mensal/anual é explicitamente selecionável; diferenças funcionais são legíveis; valores consomem a autoridade econômica vigente; dimensionamento é distinguido de preço fixo; capacidades incluídas não são cobradas novamente; comparar não produz contratação; Business separa assinatura de orçamento de incentivo; Design mantém liberdade criativa; e Product Engineering não é liberado por este documento.
