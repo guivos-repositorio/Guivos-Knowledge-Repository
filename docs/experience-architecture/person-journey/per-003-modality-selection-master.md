@@ -2,9 +2,9 @@
 id: GKR-UX-PER003-MASTER-001
 title: Jornada da Pessoa — PER-003 — Escolha de Modalidade — Documento Mestre de Superfície
 status: active
-version: 0.1.1
+version: 0.1.2
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-25
+last_updated: 2026-10-03
 normative: false
 maturity: current_surface_design_definition
 depends_on:
@@ -51,7 +51,7 @@ PER-003
 
 TRN-003
 → PER-004 — EXPRESSÃO POR TEXTO OU VOZ
-→ CONTINUIDADE PARCIAL
+→ CONTINUIDADE LOCALMENTE VALIDADA
 ```
 
 ## 2. Papel na Jornada
@@ -96,7 +96,7 @@ Portanto, este Master preserva as quatro modalidades validadas e trata `UXA-069`
 
 ## 4. Continuidade conhecida e lacuna explícita
 
-O Transition Registry possui `TRN-003 — PER-003 → PER-004` em estado parcial.
+O Transition Registry possui `TRN-003 — PER-003 → PER-004` em estado **localmente validado** para Texto/Voz por `GKR-UX-G1-ENTRY-EXPRESSION-INVENTORY-VALIDATION-001`.
 
 `PER-004` é definida correntemente como **Expressão por Texto ou Voz**. Não existe, no estado atual, uma superfície downstream separada contratada para executar de ponta a ponta arquivo ou perguntas opcionais.
 
@@ -557,7 +557,7 @@ Uma futura solução visual de `PER-003` é aceitável quando:
 8. combinação pode existir, mas nunca é obrigatória;
 9. a Pessoa consegue voltar ou interromper;
 10. é possível trocar a escolha antes da captura;
-11. o handoff `TRN-003 → PER-004` é preservado como continuidade parcial para texto/voz;
+11. o handoff `TRN-003 → PER-004` é preservado como continuidade localmente validada para texto/voz;
 12. os contratos candidatos de Arquivo (`PER-013`) e Perguntas Opcionais (`PER-014`) são preservados sem ampliação;
 13. nenhuma autorização material é inferida;
 14. nenhuma preferência é inferida sem autoridade;
@@ -607,7 +607,7 @@ TRN-002
 → LOCALLY VALIDATED / UNCHANGED
 
 TRN-003
-→ PARTIAL / UNCHANGED
+→ LOCALLY VALIDATED / G1
 
 TEXT / VOICE CONTINUITY
 → PER-004 — EXPRESSÃO POR TEXTO OU VOZ
