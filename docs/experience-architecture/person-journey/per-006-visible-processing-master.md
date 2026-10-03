@@ -2,7 +2,7 @@
 id: GKR-UX-PER006-MASTER-001
 title: Jornada da Pessoa — PER-006 — Processamento Visível — Documento Mestre de Superfície
 status: active
-version: 0.1.1
+version: 0.1.2
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-03
 normative: false
@@ -38,7 +38,7 @@ Este documento não cria tela, layout, wireframe, UI, protótipo, sistema visual
 
 ```text
 PER-005 — INVENTÁRIO E AUTORIZAÇÃO
-→ TRN-005 / PARCIAL
+→ TRN-005 / LOCALLY VALIDATED
 → PER-006 — PROCESSAMENTO VISÍVEL
 → TRN-006 / LOCALMENTE VALIDADA
 → PER-007 — COMPREENSÃO INICIAL REVISÁVEL
@@ -75,7 +75,7 @@ Ela não governa:
 
 ## 3. Entrada legítima
 
-A entrada corrente ocorre por `TRN-005 — PER-005 → PER-006`, que permanece parcial.
+A entrada corrente ocorre por `TRN-005 — PER-005 → PER-006`, **localmente validada** após a adjudicação de maturidade da UXA-103.
 
 A entrada exige, no limite funcional corrente:
 
@@ -93,7 +93,7 @@ AUTORIZADO
 → SOMENTE PARA A FINALIDADE DECLARADA
 ```
 
-Este Master não promove `TRN-005`.
+Este Master consome a maturidade corrente de `TRN-005`; a promoção foi decidida por gate próprio da UXA-103 e não por este Master.
 
 ## 4. Job da Pessoa
 
@@ -508,7 +508,7 @@ Uma futura solução visual de `PER-006` é aceitável quando:
 14. base insuficiente não pressiona exposição adicional;
 15. processamento não equivale a persistência;
 16. processamento não equivale a personalização;
-17. `TRN-005` permanece parcial;
+17. `TRN-005` está localmente validada;
 18. `TRN-006` permanece localmente validada;
 19. nenhuma nova superfície é criada;
 20. Product Engineering permanece não liberado.
@@ -544,7 +544,7 @@ PER-006 MASTER
 → CURRENT DESIGN DEFINITION
 
 ENTRY
-→ TRN-005 / PARTIAL
+→ TRN-005 / LOCALLY VALIDATED
 
 JOB
 → VISIBLE + TEMPORARY + INTERRUPTIBLE PROCESSING
