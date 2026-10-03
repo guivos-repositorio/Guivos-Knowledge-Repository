@@ -2,12 +2,13 @@
 id: GIA-COG-001
 title: Cognitive Reference Architecture
 status: active
-version: 0.1.2
+version: 0.1.3
 owner: Guivos Intelligence Architecture
-last_updated: 2026-09-25
+last_updated: 2026-10-03
 normative: true
 maturity: conceptual_reference_architecture_active
 related:
+  - GKR-INTELLIGENCE-OPERATIONALIZATION-AUTHORITY-001
   - GPA-006
   - GIA-000
   - GAI-001
@@ -803,6 +804,32 @@ REAL DATA
 
 PROVIDERS / MODELS / STACK
 → NOT SELECTED BY THIS DOCUMENT
+```
+
+## 38.1 Contrato de operacionalização
+
+`GKR-INTELLIGENCE-OPERATIONALIZATION-AUTHORITY-001` adjudica o contrato mínimo que qualquer futura operação de Intelligence deverá satisfazer.
+
+Esse contrato exige, sem selecionar mecanismo:
+
+- finalidade / autoridade / sensibilidade;
+- evidência e proveniência;
+- cognitive assurance;
+- elegibilidade de disclosure;
+- explicabilidade proporcional;
+- serving autorizado;
+- correção, revogação e staleness;
+- evidência operacional.
+
+```text
+OPERATIONALIZATION CONTRACT
+→ ADJUDICATED
+
+PHYSICAL MECHANISMS / THRESHOLDS / PROVIDERS
+→ STILL OPEN
+
+GIA-COG-002..008
+→ RESERVED / NOT MATERIALIZED
 ```
 
 ## 39. Autoridade e limites vigentes
