@@ -2,10 +2,11 @@
 id: GPA-004
 title: Guivos Business
 status: consolidated
-version: 1.7.5
+version: 1.7.6
 owner: Guivos
-last_updated: 2026-09-25
+last_updated: 2026-10-03
 related:
+  - GKR-POINTS-ECONOMIC-AUTHORITY-001
   - GPA-004-FUNCTIONAL-PORTFOLIO-001
   - PAS-001
   - GPA-006
@@ -200,7 +201,7 @@ mais pontos
 mais evolução
 ```
 
-**Não existe, no corpus econômico vigente, valor monetário canônico ou taxa de conversão aprovada entre Pontos Guivos e BRL.** Portanto, esta autoridade não trata uma equivalência Pontos ↔ BRL como regra econômica vigente ou implementável. Qualquer definição futura de valor monetário ou taxa de conversão exige autoridade econômica específica, explícita e vigente.
+**Não existe valor monetário canônico ou taxa de conversão aprovada entre Pontos Guivos e BRL.** `GKR-POINTS-ECONOMIC-AUTHORITY-001` adjudica os defaults econômicos correntes: Pontos não são dinheiro, são não transferíveis e não conversíveis em dinheiro por padrão, e sua compra não está autorizada. Qualquer futura exceção exige autoridade econômica específica.
 
 ### 6.1 Saldo da pessoa
 
@@ -294,7 +295,7 @@ ORÇAMENTO EMPRESARIAL NÃO CONCEDIDO
 → pode admitir transferência ou estorno conforme contrato
 ```
 
-Prazo final, destinação econômica dos pontos expirados, percentuais, taxas administrativas e regras detalhadas de reversão exigem autoridade própria antes de implementação.
+O prazo numérico final, a destinação econômica dos pontos expirados, percentuais, taxas/margens e a política operacional completa de fraude, chargeback, estorno, reversão e liquidação permanecem dependentes de autoridade própria. Os defaults econômicos e guardrails gerais são governados por `GKR-POINTS-ECONOMIC-AUTHORITY-001`.
 
 ## 8. VALOR DE IMPACTO LIBERADO
 
