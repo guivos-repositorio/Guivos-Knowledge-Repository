@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.50.96
+version: 3.50.97
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-10-03
 normative: true
@@ -27,6 +27,7 @@ related:
   - GKR-UXA-104-PER013014-SCOPE-AUTHORITY-001
   - GKR-UXA-104-PER013014-FUNCTIONAL-EXAM-001
   - GKR-UXA-104-PER013014-MATURITY-EXAM-001
+  - GKR-UXA-105-TRN001-SCOPE-EXAM-001
   - UXA-104
   - UXA-103
   - GKR-UXA-102-V5-AUTHORITY-001
@@ -122,7 +123,8 @@ Estado executivo vigente:
 - **UXA-102 / V5:** `TRANSVERSE CONTRACT ADJUDICATED`; 76/76 transições examinadas; 0 promoções de maturidade;
 - **UXA-103:** escopo adjudicado; contrato funcional de `TRN-005` adjudicado e reconciliado; conclusão de maturidade adjudicada e promoção materializada para `LOCALLY VALIDATED`; `INTEGRALLY VALIDATED` não suportado pela evidência corrente;
 - **UXA-104:** escopo adjudicado por `GKR-UXA-104-PER013014-SCOPE-AUTHORITY-001` para `PER-013/014` + `TRN-014..017`; exame funcional `COMPLETE`; contrato funcional `ADJUDICATED / NORMATIVE`; reconciliação `COMPLETE`; maturity exam `COMPLETE`; achados de maturidade `ADJUDICATED`; `TRN-014..017` promovidas para `LOCALLY VALIDATED`; quatro promoções de maturidade;
-- **execução automática seguinte:** nenhuma; nenhuma execução automática seguinte é criada pela conclusão da UXA-104.
+- **UXA-105:** scope exam `COMPLETE`; escopo candidato restrito a `TRN-001 — PER-001 → PER-002`; achados `CANDIDATE / NOT ADJUDICATED`; `TRN-001` permanece `PARTIAL`; nenhuma promoção de maturidade;
+- **execução automática seguinte:** nenhuma; o próximo ato depende da adjudicação humana do escopo candidato da UXA-105.
 
 ```text
 DOCUMENTED
@@ -1750,6 +1752,13 @@ Este Registro não define uma fila automática de próximos atos.
 ```text
 NEXT AUTOMATIC EXECUTION
 → NONE
+
+UXA-105
+→ SCOPE EXAM COMPLETE
+→ CANDIDATE SCOPE = TRN-001 ONLY
+→ SCOPE FINDINGS CANDIDATE / NOT ADJUDICATED
+→ TRN-001 PARTIAL / UNCHANGED
+→ NEXT GATE = HUMAN SCOPE ADJUDICATION
 
 O/C HIGH-FIDELITY DESIGN
 → AUTHORIZATION GRANTED
