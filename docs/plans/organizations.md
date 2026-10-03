@@ -2,7 +2,7 @@
 id: GKR-PLANS-ORGANIZATION-001
 title: Planos — Organizações
 status: active
-version: 1.2.0
+version: 1.3.0
 owner: Guivos
 last_updated: 2026-10-03
 normative: false
@@ -21,7 +21,11 @@ Organização é um **tipo de participante do ecossistema**. Guivos Business é 
 |---|---:|---:|---|
 | **Conecta** | R$ 299,00 | R$ 2.990,00 | presença institucional e conexão estruturada |
 | **Eleva** | R$ 799,00 | R$ 7.990,00 | operação recorrente, coordenação e analytics |
-| **Transforma** | a partir de R$ 1.990,00 | contrato anual | operação institucional complexa e dimensionada |
+| **Transforma** | a partir de R$ 1.990,00 | dimensionado | operação institucional complexa e dimensionada |
+
+## Periodicidade
+
+Conecta, Eleva e Transforma admitem contratação **Mensal** ou **Anual**. Em Transforma, a referência mensal mínima permanece vigente e o valor anual final depende de dimensionamento.
 
 ## Opportunity Boost
 
@@ -77,7 +81,7 @@ Contrato específico pode futuramente conceder capacidade própria somente de fo
 
 ## Organização Transforma
 
-**Preço:** a partir de R$ 1.990,00/mês · contrato anual
+**Preço:** a partir de R$ 1.990,00/mês · anual dimensionado
 **Finalidade:** operações institucionais complexas, múltiplas unidades, programas e dimensionamento assistido.
 
 ### Inclui

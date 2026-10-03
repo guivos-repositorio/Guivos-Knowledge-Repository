@@ -2,9 +2,9 @@
 id: GKR-PLANS-BUSINESS-001
 title: Planos — Guivos Business
 status: active
-version: 1.3.1
+version: 1.4.0
 owner: Guivos
-last_updated: 2026-09-23
+last_updated: 2026-10-03
 normative: false
 depends_on:
   - GPA-004
@@ -24,8 +24,18 @@ Guivos Business é um **produto especializado B2B**. Seus planos são independen
 |---|---:|---:|---|
 | **Start** | R$ 299,00 | R$ 2.990,00 | operar |
 | **Growth** | R$ 799,00 | R$ 7.990,00 | acompanhar e compreender |
-| **Scale** | a partir de R$ 1.990,00 | contrato anual | interpretar e integrar |
-| **Enterprise** | sob consulta | contrato anual | governar em alta complexidade e escala |
+| **Scale** | a partir de R$ 1.990,00 | dimensionado | interpretar e integrar |
+| **Enterprise** | sob consulta | sob consulta | governar em alta complexidade e escala |
+
+## Periodicidade
+
+Start, Growth, Scale e Enterprise admitem escolha entre **contratação Mensal** e **contratação Anual**.
+
+- Start e Growth possuem valores mensais e anuais numericamente definidos na baseline vigente.
+- Scale preserva referência mensal mínima e exige dimensionamento para o valor anual final.
+- Enterprise exige dimensionamento em ambas as periodicidades.
+
+Disponibilidade mensal/anual não autoriza derivar valores ainda não formalizados.
 
 ## Contratação e modelo de implementação/operação
 
@@ -195,6 +205,29 @@ No caminho Self-service, a leitura correta não é um catálogo solto de serviç
 
 Self-service significa que, além de **montar, compreender, comparar e contratar a composição digitalmente**, a empresa consegue seguir para a implementação/operação com autonomia quando a configuração for elegível. Configurações com suporte ou operação gerenciada continuam sendo contratadas online; o que muda é a participação da Guivos depois da contratação.
 
+## Calculadora e pricing variável
+
+A contratação Self-service deve suportar uma calculadora baseada em composição versionada:
+
+```text
+PLANO-BASE
++ POPULAÇÃO / ESCALA
++ OFERTA(S)
++ ACESSOS JOURNEY CUSTEADOS
++ CAPACIDADES ADICIONAIS
++ SERVIÇOS ADICIONAIS
+= VALOR RECORRENTE CONTRATUAL, QUANDO PRECIFICÁVEL
+
+ORÇAMENTO PRÉ-PAGO DE INCENTIVO
+= RECURSO OPERACIONAL SEPARADO
+```
+
+A calculadora deve receber, no mínimo, periodicidade, população/escala, oferta(s) e volumes aplicáveis.
+
+**Estado econômico atual:** a arquitetura suporta preço por população/faixa, por acesso e por produto/componente, porém os thresholds e valores variáveis ainda exigem autoridade econômica específica. Até essa adjudicação, a calculadora pode mostrar parcelas fixas conhecidas e itens sujeitos a dimensionamento, mas não pode fabricar um total final.
+
+O contrato de experiência detalhado está em `GKR-UX-PLANS-BUSINESS-CONFIGURATOR-001`.
+
 ## Start
 
 **Preço:** R$ 299,00/mês · R$ 2.990,00/ano
@@ -219,7 +252,7 @@ Self-service significa que, além de **montar, compreender, comparar e contratar
 
 ## Scale
 
-**Preço:** a partir de R$ 1.990,00/mês · contrato anual
+**Preço:** a partir de R$ 1.990,00/mês · anual dimensionado
 **Função:** atender operações amplas, multiunidade e integradas.
 
 ### Leitura
@@ -232,7 +265,7 @@ O valor mensal é referência mínima e não substitui o dimensionamento comerci
 
 ## Enterprise
 
-**Preço:** sob consulta · contrato anual
+**Preço:** sob consulta na contratação mensal · sob consulta na contratação anual
 **Função:** adaptar o produto a contextos empresariais de alta complexidade.
 
 ### Leitura

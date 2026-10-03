@@ -2,9 +2,9 @@
 id: GKR-PLANS-INDEX-001
 title: Planos — Visão Geral
 status: active
-version: 1.2.1
+version: 1.3.0
 owner: Guivos
-last_updated: 2026-09-23
+last_updated: 2026-10-03
 normative: false
 depends_on:
   - GEM-004-PLAN-TAXONOMY-AUTHORITY-001
@@ -41,7 +41,7 @@ Planos para presença, mobilização, programas recorrentes e operação em rede
 | **Livre** | R$ 0,00 | R$ 0,00 | presença e mobilização inicial |
 | **Mobiliza** | R$ 89,90 | R$ 899,00 | operação recorrente e monetização |
 | **Impacta** | R$ 249,90 | R$ 2.499,00 | programas estruturados e mensuração ampliada |
-| **Rede** | sob consulta | contrato anual | operação multiunidade e capacidade dimensionada |
+| **Rede** | sob consulta | sob consulta | operação multiunidade e capacidade dimensionada |
 
 [Ver detalhes dos planos de Coletivos](collectives.md)
 
@@ -53,7 +53,7 @@ Planos do participante institucional **Organização** dentro do ecossistema.
 |---|---:|---:|---|
 | **Conecta** | R$ 299,00 | R$ 2.990,00 | presença institucional e conexão estruturada |
 | **Eleva** | R$ 799,00 | R$ 7.990,00 | maior recorrência, coordenação e analytics |
-| **Transforma** | a partir de R$ 1.990,00 | contrato anual | operação institucional complexa e dimensionada |
+| **Transforma** | a partir de R$ 1.990,00 | dimensionado | operação institucional complexa e dimensionada |
 
 [Ver detalhes dos planos de Organizações](organizations.md)
 
@@ -65,8 +65,8 @@ Planos do produto especializado B2B **Guivos Business**. Eles são independentes
 |---|---:|---:|---|
 | **Start** | R$ 299,00 | R$ 2.990,00 | operar |
 | **Growth** | R$ 799,00 | R$ 7.990,00 | acompanhar e compreender |
-| **Scale** | a partir de R$ 1.990,00 | contrato anual | interpretar e integrar em escala |
-| **Enterprise** | sob consulta | contrato anual | governança e operação de alta complexidade |
+| **Scale** | a partir de R$ 1.990,00 | dimensionado | interpretar e integrar em escala |
+| **Enterprise** | sob consulta | sob consulta | governança e operação de alta complexidade |
 
 **Contratação:** online.
 
@@ -75,6 +75,12 @@ Planos do produto especializado B2B **Guivos Business**. Eles são independentes
 O modelo de implementação/operação é independente do plano: a complexidade da configuração determina o nível de acompanhamento.
 
 [Ver detalhes dos planos do Guivos Business](business.md)
+
+## Periodicidade de contratação
+
+Todos os planos pagos admitem escolha entre **contratação mensal** e **contratação anual**.
+
+Quando uma das periodicidades não possuir valor numérico congelado, a leitura correta é **dimensionado** ou **sob consulta**. A disponibilidade da periodicidade não autoriza derivar preço por multiplicação, desconto ou interpolação.
 
 ## Como ler os preços
 

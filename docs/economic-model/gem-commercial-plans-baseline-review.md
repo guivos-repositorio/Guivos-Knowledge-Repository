@@ -132,7 +132,7 @@ O pricing de Business é governado como baseline própria do produto. Valores ev
 | Coletivo Livre | R$ 0,00 | R$ 0,00 |
 | Coletivo Mobiliza | R$ 89,90 | R$ 899,00 |
 | Coletivo Impacta | R$ 249,90 | R$ 2.499,00 |
-| Coletivo Rede | sob consulta | contrato anual |
+| Coletivo Rede | sob consulta | sob consulta |
 
 ### 6.3 Organizações
 
@@ -140,7 +140,7 @@ O pricing de Business é governado como baseline própria do produto. Valores ev
 |---|---:|---:|
 | Organização Conecta | R$ 299,00 | R$ 2.990,00 |
 | Organização Eleva | R$ 799,00 | R$ 7.990,00 |
-| Organização Transforma | a partir de R$ 1.990,00 | contrato anual |
+| Organização Transforma | a partir de R$ 1.990,00 | dimensionado |
 
 ### 6.4 Guivos Business
 
@@ -148,8 +148,10 @@ O pricing de Business é governado como baseline própria do produto. Valores ev
 |---|---:|---:|
 | Business Start | R$ 299,00 | R$ 2.990,00 |
 | Business Growth | R$ 799,00 | R$ 7.990,00 |
-| Business Scale | a partir de R$ 1.990,00 | contrato anual |
-| Business Enterprise | sob consulta | contrato anual |
+| Business Scale | a partir de R$ 1.990,00 | dimensionado |
+| Business Enterprise | sob consulta | sob consulta |
+
+Todos os planos pagos admitem contratação mensal ou anual. Quando uma periodicidade estiver marcada como dimensionada ou sob consulta, seu valor não deve ser derivado por inferência.
 
 Os valores compõem a baseline comercial de referência. Eles não constituem, isoladamente, autorização de cobrança ou oferta pública. Scale, Enterprise e demais contextos dimensionados dependem da capacidade contratada e das condições comerciais aplicáveis.
 

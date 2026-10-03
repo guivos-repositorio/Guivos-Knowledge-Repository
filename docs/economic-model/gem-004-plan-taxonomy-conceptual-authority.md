@@ -217,7 +217,7 @@ Esta atualização preserva os preços candidatos já governados **somente onde 
 
 A mudança de nome de um plano não autoriza alteração automática de preço, limite ou entitlement.
 
-Esta autoridade conceitual não cria preços por si só. A baseline comercial própria do Guivos Business é governada por `GEM-004-A1 v0.3.0`, que registra Start, Growth, Scale e Enterprise de forma independente da jornada de Organização.
+Esta autoridade conceitual não cria preços por si só. A baseline comercial própria do Guivos Business é governada por `GEM-004-A1 v0.4.0`, que registra Start, Growth, Scale e Enterprise de forma independente da jornada de Organização.
 
 Nenhum preço de Organização pode ser reutilizado automaticamente como preço Business; quando houver valores iguais, a autoridade econômica deve registrá-los explicitamente em cada contexto.
 
