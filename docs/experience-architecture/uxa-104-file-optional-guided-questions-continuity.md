@@ -2,11 +2,11 @@
 id: UXA-104
 title: UXA-104 — Continuidade de Arquivo e Perguntas Opcionais
 status: active
-version: 0.3.0
+version: 0.4.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-03
 normative: false
-maturity: functional_contract_adjudicated_reconciled
+maturity: maturity_exam_complete_candidate_findings
 depends_on:
   - GKR-UXA-104-PER013014-SCOPE-AUTHORITY-001
   - GKR-STATE-001
@@ -32,6 +32,8 @@ UXA-104
 → FUNCTIONAL EXAM COMPLETE
 → FUNCTIONAL CONTRACT ADJUDICATED / NORMATIVE
 → RECONCILIATION COMPLETE
+→ MATURITY EXAM COMPLETE
+→ MATURITY FINDINGS CANDIDATE / NOT ADJUDICATED
 
 TRN-014..017
 → CONTRACTED / UNCHANGED
@@ -66,19 +68,24 @@ A suficiência funcional local de `PER-013`, `PER-014` e `TRN-014..017` foi adju
 
 ## 5. Próximo gate
 
-```text
-FUNCTIONAL EXAM
-→ COMPLETE
+O exame específico de maturidade foi materializado em `GKR-UXA-104-PER013014-MATURITY-EXAM-001`.
 
+```text
 FUNCTIONAL CONTRACT
 → ADJUDICATED / NORMATIVE
 
 RECONCILIATION
 → COMPLETE
 
+MATURITY EXAM
+→ COMPLETE
+
+MATURITY FINDINGS
+→ CANDIDATE / NOT ADJUDICATED
+
 TRN-014..017
 → CONTRACTED / UNCHANGED
 
 NEXT GOVERNED GATE
-→ AUTHORIZE UXA-104 MATURITY EXAM
+→ ADJUDICATE UXA-104 MATURITY EXAM FINDINGS
 ```
