@@ -2,9 +2,9 @@
 id: GKR-PLANS-COLLECTIVE-001
 title: Planos — Coletivos
 status: active
-version: 1.1.0
+version: 1.2.0
 owner: Guivos
-last_updated: 2026-09-20
+last_updated: 2026-10-03
 normative: false
 depends_on:
   - GEM-004-A1
@@ -20,7 +20,7 @@ depends_on:
 | **Livre** | R$ 0,00 | R$ 0,00 | presença e mobilização inicial |
 | **Mobiliza** | R$ 89,90 | R$ 899,00 | operação recorrente e monetização |
 | **Impacta** | R$ 249,90 | R$ 2.499,00 | programas estruturados, parceiros e impacto evidenciado |
-| **Rede** | sob consulta | contrato anual | redes, múltiplos núcleos e capacidade dimensionada |
+| **Rede** | sob consulta | sob consulta | redes, múltiplos núcleos e capacidade dimensionada |
 
 ## Coletivo Livre
 
@@ -97,7 +97,7 @@ Volume acima da capacidade exige Coletivo Rede ou dimensionamento específico.
 
 ## Coletivo Rede
 
-**Preço:** sob consulta · contrato anual
+**Preço:** sob consulta na contratação mensal · sob consulta na contratação anual
 **Finalidade:** atender redes, fundações, movimentos e operações multiunidade de maior complexidade.
 
 ### Inclui
@@ -135,6 +135,10 @@ A capacidade é dimensionada por contrato e permanece sujeita a uso justo, segur
 ## Regra de cotas
 
 Criar/publicar, duplicar, republicar, criar nova edição ou alterar substancialmente o objeto consome cota. Correções de texto, horário/local, cancelamento, redução de vagas e informações de acessibilidade/segurança não criam nova unidade.
+
+## Periodicidade
+
+Livre permanece gratuito. Mobiliza, Impacta e Rede admitem seleção **Mensal** ou **Anual**. No caso de Rede, ambas as periodicidades dependem de dimensionamento e não possuem cifra fixa única nesta baseline.
 
 ## Estado comercial
 
