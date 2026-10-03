@@ -2,12 +2,13 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.50.67
+version: 3.50.68
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-10-03
 normative: true
 maturity: current_truth_gia_cog_001_active_normative
 related:
+  - GKR-UX-G2-COLLECTIVE-DISCOVERY-REQUEST-VALIDATION-001
   - GKR-UX-G1-ENTRY-EXPRESSION-INVENTORY-VALIDATION-001
   - GKR-UXA-102-V5-AUTHORITY-001
   - UXA-102
@@ -1571,6 +1572,28 @@ TRN-014..017
 ```
 
 A promoção local não comprova implementação, persistência técnica ou fechamento ponta a ponta. `PER-013/014` permanecem contratos candidatos.
+
+## 28.2 G2 — descoberta e solicitação de Coletivo
+
+`GKR-UX-G2-COLLECTIVE-DISCOVERY-REQUEST-VALIDATION-001` conclui o exame específico da segunda família deixada pela UXA-102/V5.
+
+```text
+TRN-101
+→ LOCALLY VALIDATED / UNCHANGED
+
+TRN-102
+TRN-103
+TRN-104
+→ PARTIAL / UNCHANGED
+
+TRN-114
+→ CONTRACTED / UNCHANGED
+
+MATURITY PROMOTIONS
+→ 0
+```
+
+A decisão preserva explicitamente as autoridades correntes: cobertura semântica de erro, retorno, estado indeterminado e idempotência não equivale a validação ponta a ponta.
 
 ## 29. Gates correntes sem execução automática
 
