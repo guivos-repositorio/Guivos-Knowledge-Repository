@@ -2,12 +2,14 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.50.62
+version: 3.50.65
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-10-03
 normative: true
 maturity: current_truth_gia_cog_001_active_normative
 related:
+  - GKR-UXA-102-V5-AUTHORITY-001
+  - UXA-102
   - GKR-UX-EVALUATION-REPUTATION-AUTHORITY-001
   - GKR-UX-HOMES-DESIGN-PRODUCTION-READINESS-001
   - GKR-UX-HOMES-DESIGN-PRODUCTION-RELEASE-001
@@ -96,7 +98,7 @@ Estado executivo vigente:
 - **Guivos Intelligence:** arquitetura conceitual/de referência corrente preservada; implementação física, dados reais e produção não autorizados por maturidade documental;
 - **Research / mercado:** método documental não equivale a pesquisa aplicada, PMF, disposição a pagar, retenção, impacto ou causalidade comprovados;
 - **Product Engineering:** permanece pausada/não liberada;
-- **UXA-102 / V5:** `NOT_STARTED`;
+- **UXA-102 / V5:** `STARTED / SCOPE_CANDIDATE`; baseline reconciliada em 76 transições;
 - **execução automática seguinte:** nenhuma.
 
 ```text
@@ -366,10 +368,16 @@ M7.88
 → vigente
 
 UXA-101
-→ última UXA funcional numerada
+→ última UXA funcional concluída
 
 UXA-102 / V5
-→ NOT_STARTED
+→ TRANSVERSE CONTRACT ADJUDICATED
+→ 76/76 TRANSITIONS EXAMINED
+→ 0 MATURITY PROMOTIONS
+→ V5-A COMPLETE AT CANDIDATE LEVEL
+→ V5-B 76/76 TRANSITIONS EXAMINED
+→ V5-C CROSS-RECONCILIATION COMPLETE AT CANDIDATE LEVEL
+→ ADJUDICATION PENDING
 ```
 
 Responsabilidades centrais autenticadas já reconhecidas incluem:
@@ -1555,7 +1563,9 @@ O/C INTERACTIVE PROTOTYPE
 → NOT_AUTHORIZED
 
 UXA-102 / V5
-→ NOT_STARTED
+→ TRANSVERSE CONTRACT ADJUDICATED
+→ 76/76 TRANSITIONS EXAMINED
+→ 0 MATURITY PROMOTIONS
 
 PRODUCT ENGINEERING
 → PAUSED / NOT RELEASED
@@ -1660,7 +1670,9 @@ O/C AUTHENTICATED HIGH-FIDELITY
 → HIGH-FIDELITY VALIDATION NOT_STARTED
 
 UXA-102 / V5
-→ NOT_STARTED
+→ TRANSVERSE CONTRACT ADJUDICATED
+→ 76/76 TRANSITIONS EXAMINED
+→ 0 MATURITY PROMOTIONS
 
 PRODUCT ENGINEERING
 → PAUSED / NOT RELEASED

@@ -2,10 +2,11 @@
 id: GKR-JOURNEY-TRANSITION-REGISTRY-001
 title: Registro Granular de Transições
 status: active
-version: 0.29.11
+version: 0.29.13
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-28
+last_updated: 2026-10-03
 related:
+  - GKR-UXA-102-V5-AUTHORITY-001
   - UXA-089
   - UXA-090
   - UXA-092
@@ -19,6 +20,7 @@ related:
   - GKR-PLANS-ORGANIZATION-001
   - GEM-004-PLAN-TAXONOMY-AUTHORITY-001
   - UXA-101
+  - UXA-102
   - GKR-UX-D5-C1-001
   - GKR-UX-D5-C4B-001
   - GEM-004-PLAN-TAXONOMY-AUTHORITY-001
@@ -38,7 +40,7 @@ normative: false
 
 Este registro atribui identificadores estáveis às transições correntes das Jornadas Integradas. A maturidade declarada em cada linha é o estado operativo a ser usado por Design e prototipação.
 
-A contagem corrente é de **72 transições**. `TRN-212` formaliza a entrada consciente da Pessoa no processo interno de manifestação de interesse ou inscrição; `TRN-213` formaliza o handoff bilateral inicial autorizado para a Organização; `TRN-214` formaliza o acesso institucional contextual da oportunidade ativa à gestão desses objetos; `TRN-215` e `TRN-216` formalizam as duas direções materiais da continuidade bilateral pós-envio.
+A contagem corrente é de **76 transições**. `TRN-212` formaliza a entrada consciente da Pessoa no processo interno de manifestação de interesse ou inscrição; `TRN-213` formaliza o handoff bilateral inicial autorizado para a Organização; `TRN-214` formaliza o acesso institucional contextual da oportunidade ativa à gestão desses objetos; `TRN-215` e `TRN-216` formalizam as duas direções materiais da continuidade bilateral pós-envio.
 
 ## 2. Convenções de estado
 
@@ -57,12 +59,12 @@ Validação integral documental não comprova implementação técnica nem esten
 
 | Família | Quantidade |
 |---|---:|
-| jornada pessoal | 13 |
+| jornada pessoal | 17 |
 | Pessoa em Coletivos e operação do responsável | 14 |
 | Organização, oportunidades e relações bilaterais | 16 |
 | Opportunity Boost | 6 |
 | Planos, cobrança e ciclo de vida | 23 |
-| **Total** | **72** |
+| **Total** | **76** |
 
 ## 4. Jornada pessoal
 
@@ -277,9 +279,20 @@ A correção semântica preservada:
 - não promove `TRN-416` ou `TRN-426`;
 - não cria fluxo de Guivos Business.
 
+## 9.1 Autoridade transversal UXA-102 / V5
+
+`GKR-UXA-102-V5-AUTHORITY-001` governa transversalmente tentativa, falha conhecida, resultado indeterminado, retorno, replay, retry, estado stale e revalidação de autoridade.
+
+A cobertura V5 não altera os estados deste Registry.
+
+```text
+V5 COVERAGE
+≠ MATURITY PROMOTION
+```
+
 ## 10. Preservações de maturidade
 
-- transições totais correntes são **72**, incluindo `TRN-114` como continuidade operacional pós-aprovação contratada e `TRN-212`, `TRN-213`, `TRN-214`, `TRN-215` e `TRN-216` como contratadas;
+- transições totais correntes são **76**, incluindo `TRN-114` como continuidade operacional pós-aprovação contratada e `TRN-212`, `TRN-213`, `TRN-214`, `TRN-215` e `TRN-216` como contratadas;
 - `TRN-008..013` estão **integralmente validadas** no limite documental;
 - `TRN-406/407` ficam **contratadas** até materialização suficiente de `PER-009`;
 - `TRN-417/418` e `TRN-427/428` ficam **integralmente validadas** no limite documental de navegação administrativa;

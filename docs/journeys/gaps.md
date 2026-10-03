@@ -2,10 +2,11 @@
 id: GKR-JOURNEY-GAPS-001
 title: Lacunas e Continuidades Ausentes
 status: active
-version: 1.0.12
+version: 1.0.13
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-03
 related:
+  - GKR-UXA-102-V5-AUTHORITY-001
   - GKR-UX-EVALUATION-REPUTATION-AUTHORITY-001
   - GKR-JOURNEY-PERSON-001
   - GKR-JOURNEY-COLLECTIVE-001
@@ -74,6 +75,31 @@ AUTORIDADE DE DOMÍNIO RESOLVIDA
 ≠ DESIGN LIBERADO
 ≠ ENGENHARIA LIBERADA
 ```
+
+## 2.2 UXA-102 / V5 — lacunas pós-adjudicação transversal
+
+A autoridade transversal corrente é `GKR-UXA-102-V5-AUTHORITY-001`.
+
+O exame de V5 não promove maturidade e não cria transições. Permanecem abertas cinco famílias de lacuna:
+
+1. **G1 — primeira entrada, expressão e inventário**: `TRN-001..006` e `TRN-014..017` preservam lacunas de continuidade/autorização material e processamento ponta a ponta;
+2. **G2 — descoberta e solicitação de Coletivo**: `TRN-101..104` e `TRN-114` ainda não possuem fechamento transversal equivalente ao downstream já governado;
+3. **G3 — Organização e relação O↔C**: `TRN-201/202/206..209` permanecem parciais/contratadas quanto a continuidade, concorrência, confirmação e retry;
+4. **G4 — processo interno de oportunidade**: `TRN-212` e `TRN-214` mantêm responsabilidades existentes, sem criação de retorno dedicado por simetria;
+5. **G5 — Opportunity Boost**: `TRN-301..306` preservam integração/economia ainda parciais, sem autorização para inventar mecanismo de cobrança, mensuração ou deduplicação.
+
+Regras transversais adjudicadas aplicam-se onde cabível:
+
+```text
+ATTEMPT ≠ SUCCESS
+UNKNOWN ≠ FAILURE
+RETURN ≠ ROLLBACK
+RETRY → RECONCILE FIRST WHEN NEEDED
+STALE CLIENT ≠ CANONICAL AUTHORITY
+BOUNDARY ≠ EXTERNAL RESULT CONFIRMED
+```
+
+Essas regras não convertem gap em transição validada.
 
 ## 3. Oportunidades e fronteiras externas
 
