@@ -2,9 +2,9 @@
 id: GEM-004-A1
 title: Catálogo Comercial Candidato de Planos, Benefícios e Preços
 status: active
-version: 0.3.0
+version: 0.4.0
 owner: Guivos Economic Model
-last_updated: 2026-09-20
+last_updated: 2026-10-03
 parent: GEM-004
 depends_on:
   - GEM-004
@@ -28,7 +28,7 @@ Este catálogo consolida a baseline comercial de referência dos planos destinad
 
 A baseline define nomes comerciais candidatos, preços de referência, benefícios, limites, condições de acesso financiado e separações econômicas necessárias para validação.
 
-A versão 0.3.0 preserva a separação entre Organização e Guivos Business e reconcilia a baseline de pricing do Business já registrada historicamente. Pessoa usa `Free · Plus · Pro`, Coletivo usa `Livre · Mobiliza · Impacta · Rede`, Organização usa `Conecta · Eleva · Transforma` e Guivos Business usa `Start · Growth · Scale · Enterprise`. A igualdade eventual de valores entre degraus de Organização e Business não cria equivalência funcional, econômica ou contratual entre as duas estruturas.
+A versão 0.4.0 preserva a separação entre Organização e Guivos Business e reconcilia a baseline de pricing do Business já registrada historicamente. Pessoa usa `Free · Plus · Pro`, Coletivo usa `Livre · Mobiliza · Impacta · Rede`, Organização usa `Conecta · Eleva · Transforma` e Guivos Business usa `Start · Growth · Scale · Enterprise`. A igualdade eventual de valores entre degraus de Organização e Business não cria equivalência funcional, econômica ou contratual entre as duas estruturas.
 
 Ela não constitui oferta pública, autorização de cobrança, tabela fiscal, contrato definitivo, promessa de capacidade infinita ou evidência de disposição a pagar.
 
@@ -49,10 +49,11 @@ Nenhum plano poderá entrar em produção somente porque consta neste catálogo.
 
 - moeda-base inicial: real brasileiro — BRL;
 - mercado inicial de referência: Brasil;
+- todo plano pago admite escolha entre contratação mensal e contratação anual;
 - cobrança mensal: recorrente, quando contratada;
-- cobrança anual: pagamento antecipado correspondente aproximadamente a dez mensalidades;
-- preços anuais representam desconto candidato equivalente a cerca de dois meses;
-- preços sob consulta exigem contrato anual e capacidade dimensionada;
+- cobrança anual: pagamento antecipado conforme o valor anual vigente;
+- quando os valores mensal e anual forem ambos numericamente definidos, a diferença entre eles pode representar desconto candidato;
+- preços sob consulta ou dimensionados podem existir tanto na periodicidade mensal quanto na anual e exigem capacidade dimensionada;
 - impostos, taxas de processamento, comissões transacionais e condições regionais permanecem sujeitos a validação especializada;
 - nenhuma conversão automática de trial integra esta baseline;
 - valores poderão ser alterados antes de qualquer oferta pública mediante decisão governada.
@@ -191,7 +192,7 @@ Oferecer maior profundidade analítica, integração autorizada, relatórios e a
 | Capacidade | Coletivo Livre | Coletivo Mobiliza | Coletivo Impacta | Coletivo Rede |
 |---|---:|---:|---:|---:|
 | Preço mensal candidato | R$ 0,00 | R$ 89,90 | R$ 249,90 | sob consulta |
-| Preço anual candidato | R$ 0,00 | R$ 899,00 | R$ 2.499,00 | contrato anual |
+| Preço anual candidato | R$ 0,00 | R$ 899,00 | R$ 2.499,00 | sob consulta |
 | Atividades por mês | 1 gratuita | 4 | 15 | sem limite fixo contratado |
 | Oportunidades por mês | 1 gratuita | 4 | 15 | sem limite fixo contratado |
 | Publicações simultaneamente ativas | 2 | 6 | 20 | sem limite fixo contratado |
@@ -349,7 +350,7 @@ A exclusão e recriação da mesma oferta não reiniciará a cota.
 | Capacidade | Organização Conecta | Organização Eleva | Organização Transforma |
 |---|---:|---:|---:|
 | Preço mensal candidato | R$ 299,00 | R$ 799,00 | a partir de R$ 1.990,00 |
-| Preço anual candidato | R$ 2.990,00 | R$ 7.990,00 | contrato anual |
+| Preço anual candidato | R$ 2.990,00 | R$ 7.990,00 | dimensionado |
 | Novas oportunidades ou programas por mês | 10 | 50 | capacidade contratada |
 | Publicações simultaneamente ativas | 15 | 75 | capacidade contratada |
 | Administradores | 3 | 10 | conforme contrato |
@@ -447,8 +448,8 @@ Organização Transforma ≠ Guivos Business Scale ou Enterprise
 |---|---:|---:|---|
 | Business Start | R$ 299,00 | R$ 2.990,00 | referência fixa da baseline |
 | Business Growth | R$ 799,00 | R$ 7.990,00 | referência fixa da baseline |
-| Business Scale | a partir de R$ 1.990,00 | contrato anual | dimensionamento obrigatório |
-| Business Enterprise | sob consulta | contrato anual | dimensionamento personalizado |
+| Business Scale | a partir de R$ 1.990,00 | dimensionado | dimensionamento obrigatório |
+| Business Enterprise | sob consulta | sob consulta | dimensionamento personalizado |
 
 A baseline de preços do Business é própria do produto e não deriva dos preços de Organização.
 
@@ -473,6 +474,8 @@ O pricing acima não congela automaticamente:
 - condições fiscais, jurídicas ou internacionais.
 
 Scale e Enterprise dependem de dimensionamento da operação. Enterprise não possui preço fixo único.
+
+Todos os tiers pagos do Business admitem contratação mensal ou anual. A existência das duas periodicidades não autoriza derivar valores ainda não congelados.
 
 ## 9. Acesso financiado e patrocinado
 
