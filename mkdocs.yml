@@ -112,6 +112,20 @@ nav:
       - Organizações — Conecta, Eleva e Transforma: plans/organizations.md
       - Guivos Business — Start, Growth, Scale e Enterprise: plans/business.md
 
+
+  - Planos — Superfícies e Fluxos:
+      - Comece por aqui:
+          - Leia Primeiro: experience-architecture/plans-surfaces/read-first.md
+
+      - Orquestração:
+          - Documento Mestre de Orquestração UX/UI: experience-architecture/plans-surfaces/ux-ui-orchestration-master.md
+
+      - Documentos Mestres por Contexto:
+          - Pessoa — Planos e Comparação: experience-architecture/plans-surfaces/person-plans-surface-master.md
+          - Coletivos — Planos e Comparação: experience-architecture/plans-surfaces/collective-plans-surface-master.md
+          - Organizações — Planos e Comparação: experience-architecture/plans-surfaces/organization-plans-surface-master.md
+          - Guivos Business — Configurador e Calculadora Self-service: experience-architecture/plans-surfaces/business-self-service-configurator-master.md
+
   - Experiência e Journey:
       - Arquitetura da Experiência: experience-architecture/index.md
 
