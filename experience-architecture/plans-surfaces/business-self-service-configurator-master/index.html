@@ -2264,6 +2264,67 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#71-tabela-de-referencia-para-consumo-da-superficie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 Tabela de referência para consumo da superfície
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.1 Tabela de referência para consumo da superfície">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#populacao-escala" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        População / escala
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ofertas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ofertas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#servicos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Serviços
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#72-protecao-por-entitlement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 Proteção por entitlement
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#8-resultado" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2341,10 +2402,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#15-gate-economico-pendente" class="md-nav__link">
+  <a href="#15-autoridade-economica-corrente" class="md-nav__link">
     <span class="md-ellipsis">
       
-        15. Gate econômico pendente
+        15. Autoridade econômica corrente
       
     </span>
   </a>
@@ -7971,6 +8032,67 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#71-tabela-de-referencia-para-consumo-da-superficie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 Tabela de referência para consumo da superfície
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.1 Tabela de referência para consumo da superfície">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#populacao-escala" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        População / escala
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ofertas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ofertas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#servicos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Serviços
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#72-protecao-por-entitlement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 Proteção por entitlement
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#8-resultado" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -8048,10 +8170,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#15-gate-economico-pendente" class="md-nav__link">
+  <a href="#15-autoridade-economica-corrente" class="md-nav__link">
     <span class="md-ellipsis">
       
-        15. Gate econômico pendente
+        15. Autoridade econômica corrente
       
     </span>
   </a>
@@ -8206,33 +8328,155 @@ VALOR RECORRENTE CALCULÁVEL
 </code></pre></div>
 <p>Cada termo só pode produzir número quando houver autoridade econômica correspondente.</p>
 <h2 id="6-preco-por-populacao">6. Preço por população<a class="headerlink" href="#6-preco-por-populacao" title="Permanent link">&para;</a></h2>
-<p>O modelo deve suportar preço por população/faixa populacional, porém os <strong>thresholds e valores por pessoa/faixa ainda não estão congelados no GKR</strong>.</p>
-<p>Até que a autoridade econômica seja adjudicada:</p>
-<ul>
-<li>não criar faixas como 1–50, 51–200 ou similares por inferência;</li>
-<li>não criar R$/pessoa;</li>
-<li>não extrapolar valores de Start/Growth/Scale/Enterprise;</li>
-<li>não usar benchmark externo como preço Guivos;</li>
-<li>apresentar “valor variável sujeito a dimensionamento” quando necessário.</li>
-</ul>
+<p>O modelo usa as faixas e tarifas populacionais adjudicadas em <code>GEM-004-BUSINESS-VARIABLE-PRICING-AUTHORITY-001</code>.</p>
+<p>A calculadora deve aplicar cobrança progressiva por faixa e exibir separadamente cada parcela. Acima de 20.000 elegíveis ou quando Scale/Enterprise exigir dimensionamento, deve exibir o componente como dimensionado em vez de inventar valor.</p>
 <h2 id="7-produtos-e-ofertas">7. Produtos e ofertas<a class="headerlink" href="#7-produtos-e-ofertas" title="Permanent link">&para;</a></h2>
 <p>O configurador deve mostrar separadamente o impacto econômico de Programas de Incentivo, Journey custeado e combinação de ambos.</p>
-<p>Se uma oferta não possuir preço próprio formalizado, a interface deve registrá-la na composição sem gerar cifra inventada.</p>
+<p>As taxas de Programas de Incentivo, Journey custeado e composição conjunta são governadas pela autoridade econômica vigente. Itens futuros não formalizados continuam sem cifra.</p>
+<h2 id="71-tabela-de-referencia-para-consumo-da-superficie">7.1 Tabela de referência para consumo da superfície<a class="headerlink" href="#71-tabela-de-referencia-para-consumo-da-superficie" title="Permanent link">&para;</a></h2>
+<p>A interface deve consumir a autoridade econômica, não duplicar lógica hardcoded. Para legibilidade funcional, os principais valores vigentes são:</p>
+<h3 id="populacao-escala">População / escala<a class="headerlink" href="#populacao-escala" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Faixa</th>
+<th style="text-align: right;">Mensal por pessoa</th>
+<th style="text-align: right;">Anual por pessoa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1–50</td>
+<td style="text-align: right;">incluído</td>
+<td style="text-align: right;">incluído</td>
+</tr>
+<tr>
+<td>51–250</td>
+<td style="text-align: right;">R$ 1,49</td>
+<td style="text-align: right;">R$ 14,90</td>
+</tr>
+<tr>
+<td>251–1.000</td>
+<td style="text-align: right;">R$ 0,99</td>
+<td style="text-align: right;">R$ 9,90</td>
+</tr>
+<tr>
+<td>1.001–5.000</td>
+<td style="text-align: right;">R$ 0,69</td>
+<td style="text-align: right;">R$ 6,90</td>
+</tr>
+<tr>
+<td>5.001–20.000</td>
+<td style="text-align: right;">R$ 0,49</td>
+<td style="text-align: right;">R$ 4,90</td>
+</tr>
+<tr>
+<td>20.000+</td>
+<td style="text-align: right;">dimensionado</td>
+<td style="text-align: right;">dimensionado</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ofertas">Ofertas<a class="headerlink" href="#ofertas" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Oferta</th>
+<th style="text-align: right;">Mensal</th>
+<th style="text-align: right;">Anual</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Incentivos</td>
+<td style="text-align: right;">R$ 199,00</td>
+<td style="text-align: right;">R$ 1.990,00</td>
+</tr>
+<tr>
+<td>Journey custeado</td>
+<td style="text-align: right;">R$ 99,00</td>
+<td style="text-align: right;">R$ 990,00</td>
+</tr>
+<tr>
+<td>Incentivos + Journey</td>
+<td style="text-align: right;">R$ 249,00</td>
+<td style="text-align: right;">R$ 2.490,00</td>
+</tr>
+</tbody>
+</table>
+<h3 id="servicos">Serviços<a class="headerlink" href="#servicos" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Serviço</th>
+<th style="text-align: right;">Mensal</th>
+<th style="text-align: right;">Anual</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Self-service</td>
+<td style="text-align: right;">R$ 0,00</td>
+<td style="text-align: right;">R$ 0,00</td>
+</tr>
+<tr>
+<td>Suporte ampliado</td>
+<td style="text-align: right;">R$ 299,00</td>
+<td style="text-align: right;">R$ 2.990,00</td>
+</tr>
+<tr>
+<td>Operação gerenciada</td>
+<td style="text-align: right;">R$ 990,00</td>
+<td style="text-align: right;">R$ 9.900,00</td>
+</tr>
+<tr>
+<td>Gestão dedicada / SLA ampliado</td>
+<td style="text-align: right;">R$ 1.990,00</td>
+<td style="text-align: right;">R$ 19.900,00</td>
+</tr>
+<tr>
+<td>Implantação customizada</td>
+<td style="text-align: right;">sob consulta</td>
+<td style="text-align: right;">sob consulta</td>
+</tr>
+</tbody>
+</table>
+<p>Os preços por acesso Journey e add-ons devem igualmente vir da autoridade econômica vigente.</p>
+<h2 id="72-protecao-por-entitlement">7.2 Proteção por entitlement<a class="headerlink" href="#72-protecao-por-entitlement" title="Permanent link">&para;</a></h2>
+<p>Antes de incluir qualquer add-on no cálculo, o configurador deve consultar se a capacidade já faz parte do tier.</p>
+<div class="highlight"><pre><span></span><code>IF CAPABILITY ∈ PLAN_ENTITLEMENTS
+→ ADDON_VALUE = 0
+
+ELSE IF CAPABILITY ELIGIBLE_AS_ADDON
+→ APPLY AUTHORIZED ADDON RATE
+
+ELSE
+→ REQUIRE HIGHER PLAN OR DIMENSIONING
+</code></pre></div>
+<p>Exemplos correntes:</p>
+<ul>
+<li>Growth já inclui Intelligence avançado e governança/auditoria avançadas;</li>
+<li>Scale já inclui Intelligence, Power BI/exportações automatizadas, API, SSO, governança e uma integração dedicada;</li>
+<li>Enterprise inclui essas capacidades conforme dimensionamento contratual.</li>
+</ul>
 <h2 id="8-resultado">8. Resultado<a class="headerlink" href="#8-resultado" title="Permanent link">&para;</a></h2>
 <p>Quando todos os componentes necessários possuírem preço vigente, o resultado deve mostrar plano-base, população/escala, oferta(s), acessos Journey, adicionais, serviços, subtotal recorrente, periodicidade, total recorrente, orçamento de incentivo em linha separada e itens sob consulta.</p>
 <h2 id="9-configuracao-parcialmente-calculavel">9. Configuração parcialmente calculável<a class="headerlink" href="#9-configuracao-parcialmente-calculavel" title="Permanent link">&para;</a></h2>
 <p>Uma composição pode ser parcialmente calculável.</p>
-<div class="highlight"><pre><span></span><code>START ANUAL
-→ R$ 2.990,00
+<div class="highlight"><pre><span></span><code>SCALE / ENTERPRISE
+→ BASE OU COMPONENTE PODE EXIGIR DIMENSIONAMENTO
 
-POPULAÇÃO
-→ PREÇO VARIÁVEL AINDA NÃO ADJUDICADO
+POPULAÇÃO ATÉ 20.000
+→ TAXAS TABELADAS DISPONÍVEIS
 
 JOURNEY CUSTEADO
-→ PREÇO POR ACESSO AINDA NÃO ADJUDICADO
+→ TAXAS PLUS / PRO TABELADAS DISPONÍVEIS
 
-TOTAL FINAL
-→ NÃO CALCULAR POR INFERÊNCIA
+ITEM SOB CONSULTA
+→ NÃO INVENTAR VALOR
+
+TOTAL
+→ CALCULAR SOMENTE PARCELAS NUMÉRICAS VIGENTES
 </code></pre></div>
 <p>A interface pode mostrar a parcela conhecida e indicar claramente o que falta para o total.</p>
 <h2 id="10-enquadramento-de-plano">10. Enquadramento de plano<a class="headerlink" href="#10-enquadramento-de-plano" title="Permanent link">&para;</a></h2>
@@ -8256,17 +8500,20 @@ TOTAL FINAL
 <h2 id="13-autonomia-e-transparencia">13. Autonomia e transparência<a class="headerlink" href="#13-autonomia-e-transparencia" title="Permanent link">&para;</a></h2>
 <p>A superfície deve explicar <strong>por que</strong> um componente altera o valor. Não deve esconder taxa variável dentro de um total opaco.</p>
 <h2 id="14-criterios-de-aceite">14. Critérios de aceite<a class="headerlink" href="#14-criterios-de-aceite" title="Permanent link">&para;</a></h2>
-<p>O configurador é aceitável quando Start/Growth/Scale/Enterprise permanecem intactos; Mensal/Anual é selecionável; população e ofertas podem compor a contratação; valores variáveis dependem de autoridade; orçamento de incentivo fica separado; total não é inventado; Self-service não vira plano; Organização não é confundida com Business; Design mantém liberdade criativa; e Product Engineering não é liberado por este Master.</p>
-<h2 id="15-gate-economico-pendente">15. Gate econômico pendente<a class="headerlink" href="#15-gate-economico-pendente" title="Permanent link">&para;</a></h2>
-<p>Para transformar a calculadora em cálculo integralmente numérico, é necessária autoridade específica para faixas populacionais, preço por população/faixa, preço de Programas de Incentivo quando separado, preço de Journey custeado por acesso, add-ons, integrações/API quando precificadas separadamente, suporte/gerenciado quando houver cobrança adicional e regra anual de cada componente variável.</p>
-<div class="highlight"><pre><span></span><code>CALCULATOR EXPERIENCE CONTRACT
-→ DEFINED
+<p>O configurador é aceitável quando Start/Growth/Scale/Enterprise permanecem intactos; Mensal/Anual é selecionável; população e ofertas podem compor a contratação; valores variáveis consomem a autoridade econômica vigente; orçamento de incentivo fica separado; total não é inventado; Self-service não vira plano; Organização não é confundida com Business; Design mantém liberdade criativa; e Product Engineering não é liberado por este Master.</p>
+<h2 id="15-autoridade-economica-corrente">15. Autoridade econômica corrente<a class="headerlink" href="#15-autoridade-economica-corrente" title="Permanent link">&para;</a></h2>
+<p>A tabela econômica corrente é <code>GEM-004-BUSINESS-VARIABLE-PRICING-AUTHORITY-001</code>, que governa faixas populacionais, ofertas, acessos Journey, add-ons, serviços e regra anual dos componentes tabelados. O configurador deve também consumir a matriz de inclusões por tier para impedir dupla cobrança.</p>
+<div class="highlight"><pre><span></span><code>ECONOMIC AUTHORITY
+→ ADJUDICATED / NORMATIVE
 
-VARIABLE RATE TABLE
-→ NOT YET ADJUDICATED
+FULL NUMERIC CONFIGURATOR
+→ ECONOMICALLY SPECIFIABLE
 
-NUMERIC TOTAL FOR VARIABLE CONFIGURATION
-→ BLOCKED UNTIL RATE AUTHORITY
+IMPLEMENTATION
+→ NOT RELEASED
+
+PUBLIC OFFER / CHARGING
+→ NOT AUTHORIZED
 </code></pre></div>
 
 

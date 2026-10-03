@@ -7927,7 +7927,7 @@ COMPOSIÇÃO VISUAL
 <h2 id="7-liberdade-de-design">7. Liberdade de Design<a class="headerlink" href="#7-liberdade-de-design" title="Permanent link">&para;</a></h2>
 <p>A coleção não impõe grid, card, tabela, cores, tipografia, ordem visual rígida, motion ou componente específico. O Design deve preservar significado, legibilidade, acessibilidade e autonomia de decisão.</p>
 <h2 id="8-proibicao-de-invencao-comercial">8. Proibição de invenção comercial<a class="headerlink" href="#8-proibicao-de-invencao-comercial" title="Permanent link">&para;</a></h2>
-<p>Design, IA e Engenharia não podem inventar:</p>
+<p>Design, IA e Engenharia não podem inventar ou substituir a autoridade vigente de:</p>
 <ul>
 <li>preço;</li>
 <li>desconto;</li>
@@ -7945,7 +7945,7 @@ COMPOSIÇÃO VISUAL
 </ul>
 <h2 id="9-guivos-business">9. Guivos Business<a class="headerlink" href="#9-guivos-business" title="Permanent link">&para;</a></h2>
 <p>Business possui configurador Self-service próprio. Ele deve permitir selecionar oferta, população/escala, acessos, capacidades, periodicidade e serviços aplicáveis e então <strong>calcular somente o que estiver amparado por uma tabela econômica vigente</strong>.</p>
-<p>Enquanto preço por população, acesso ou produto não estiver adjudicado, o configurador pode estruturar a composição, mas não fabricar valor numérico.</p>
+<p>Os preços variáveis do Business estão adjudicados em <code>GEM-004-BUSINESS-VARIABLE-PRICING-AUTHORITY-001</code>. O configurador pode calcular os componentes tabelados e deve indicar <code>dimensionado</code> ou <code>sob consulta</code> somente onde a própria autoridade assim determinar.</p>
 <h2 id="10-estado">10. Estado<a class="headerlink" href="#10-estado" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>PLANS SURFACES COLLECTION
 → DOCUMENTED
@@ -7954,8 +7954,12 @@ VISUAL BASELINE
 → NOT IMPOSED
 
 VARIABLE BUSINESS PRICING
-→ STRUCTURE DEFINED
-→ NUMERIC RATES REQUIRE ECONOMIC AUTHORITY
+→ ADJUDICATED / NORMATIVE
+→ NUMERIC RATES AVAILABLE FOR CONFIGURATOR
+
+BUSINESS TIER ENTITLEMENTS
+→ ADJUDICATED
+→ DOUBLE CHARGING PROHIBITED
 
 PRODUCT ENGINEERING
 → NOT RELEASED BY THIS COLLECTION
