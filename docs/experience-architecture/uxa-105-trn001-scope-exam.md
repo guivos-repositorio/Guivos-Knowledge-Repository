@@ -2,7 +2,7 @@
 id: GKR-UXA-105-TRN001-SCOPE-EXAM-001
 title: UXA-105 — Exame de Escopo — Continuidade Home Pública → Entrada Protegida
 status: active
-version: 1.1.0
+version: 1.2.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-03
 normative: true
@@ -192,5 +192,5 @@ TRN-001
 → PARTIAL / UNCHANGED
 
 NEXT GOVERNED GATE
-→ ADJUDICATE UXA-105 FUNCTIONAL EXAM FINDINGS
+→ AUTHORIZE UXA-105 MATURITY EXAM
 ```
