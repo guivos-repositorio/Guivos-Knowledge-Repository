@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-TRANSITION-REGISTRY-001
 title: Registro Granular de Transições
 status: active
-version: 0.29.20
+version: 0.29.21
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-03
 related:
@@ -80,7 +80,7 @@ Validação integral documental não comprova implementação técnica nem esten
 | GKR-TRN-002 | PER-002 | PER-003 | localmente validada | UXA-035 + contratos correntes de entrada protegida |
 | GKR-TRN-003 | PER-003 | PER-004 | **localmente validada** | GKR-UX-G1-ENTRY-EXPRESSION-INVENTORY-VALIDATION-001 — escolha Texto/Voz → expressão; autoridade, interrupção, falha e ausência de processamento implícito examinadas localmente |
 | GKR-TRN-004 | PER-004 | PER-005 | **localmente validada** | GKR-UX-G1-ENTRY-EXPRESSION-INVENTORY-VALIDATION-001 — expressão revisada → inventário sem autorização material implícita; retorno/remoção preservados |
-| GKR-TRN-005 | PER-005 | PER-006 | **parcial** | GKR-UX-G1-ENTRY-EXPRESSION-INVENTORY-VALIDATION-001 + GKR-UXA-102-V5-AUTHORITY-001 + GKR-UXA-103-TRN005-FUNCTIONAL-EXAM-001 — contrato funcional de resultado indeterminado, reconciliação antes de retry, identidade lógica e não duplicação adjudicado e reconciliado documentalmente; maturidade permanece parcial até gate próprio |
+| GKR-TRN-005 | PER-005 | PER-006 | **localmente validada** | GKR-UX-G1-ENTRY-EXPRESSION-INVENTORY-VALIDATION-001 + GKR-UXA-102-V5-AUTHORITY-001 + GKR-UXA-103-TRN005-FUNCTIONAL-EXAM-001 + GKR-UXA-103-TRN005-MATURITY-EXAM-001 — contrato funcional adjudicado/reconciliado e maturidade promovida por gate humano; validação integral ponta a ponta não comprovada |
 | GKR-TRN-006 | PER-006 | PER-007 | localmente validada | UXA-037 |
 | GKR-TRN-014 | PER-003 | PER-013 | contratada | escolha consciente de Arquivo → responsabilidade de captura/revisão; upload não é iniciado pela escolha e não existe autorização material |
 | GKR-TRN-015 | PER-013 | PER-005 | contratada | conteúdo de arquivo revisado → inventário/autorização; origem/derivados/remoções preservados e autorização material ainda ausente |
@@ -359,14 +359,14 @@ TRN-004
 → LOCALLY VALIDATED
 
 TRN-005
-→ PARTIAL / UNCHANGED
+→ LOCALLY VALIDATED
 ```
 
 Preservações:
 
 - `TRN-001` permanece parcial;
 - `TRN-002` e `TRN-006` permanecem localmente validadas;
-- `TRN-005` permanece parcial por decisão de governança de maturidade: o contrato funcional de resultado indeterminado/reconciliação/retry está adjudicado e reconciliado documentalmente pela UXA-103, mas nenhuma promoção ocorre sem gate próprio;
+- `TRN-005` está localmente validada após adjudicação específica de maturidade da UXA-103; a evidência não sustenta promoção para integralmente validada;
 - `TRN-014..017` permanecem contratadas enquanto `PER-013/014` forem contratos candidatos;
 - nenhuma implementação, persistência técnica ou Product Engineering é comprovada por esta validação.
 
@@ -374,15 +374,15 @@ Preservações:
 
 `GKR-UXA-103-TRN005-FUNCTIONAL-EXAM-001` especializa a cobertura transversal V5 para `TRN-005` e governa resultado indeterminado, reconciliação antes de retry, identidade lógica da intenção, interrupção sem confirmação suficiente e não duplicação do efeito lógico.
 
-A autoridade está reconciliada com `PER-005` e `PER-006`, mas esta atualização documental **não promove `TRN-005`**.
+A autoridade está reconciliada com `PER-005` e `PER-006`; a promoção adjudicada de `TRN-005` para **localmente validada** foi materializada por gate próprio de maturidade.
 
 ```text
 UXA-103 FUNCTIONAL CONTRACT
 → ADJUDICATED / RECONCILED
 
 TRN-005
-→ PARTIAL / UNCHANGED
-→ MATURITY GATE PENDING
+→ LOCALLY VALIDATED
+→ INTEGRALLY VALIDATED NOT SUPPORTED
 ```
 
 ## 9.1 Autoridade transversal UXA-102 / V5
