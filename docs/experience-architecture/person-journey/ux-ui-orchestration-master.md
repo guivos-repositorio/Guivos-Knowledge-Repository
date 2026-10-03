@@ -2,9 +2,9 @@
 id: GKR-UX-PERSON-JOURNEY-ORCHESTRATION-001
 title: Jornada da Pessoa — Documento Mestre de Orquestração UX/UI
 status: active
-version: 0.3.0
+version: 0.4.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-27
+last_updated: 2026-10-03
 normative: true
 maturity: ux_orchestration_authority
 depends_on:
@@ -505,6 +505,33 @@ SAIR DO COLETIVO
 ≠ SAIR DA GUIVOS
 ≠ CANCELAR PLANO
 ```
+
+## 17.1 Avaliação e Reputação
+
+Avaliação e reputação constituem responsabilidade transversal governada por `GKR-UX-EVALUATION-REPUTATION-AUTHORITY-001`.
+
+A orquestração deve preservar:
+
+```text
+EXPERIÊNCIA ELEGÍVEL
+→ REGISTRO PROTEGIDO
+→ CONTINUIDADE PRIVADA AUTORITATIVA
+→ PUBLICAÇÃO SOMENTE QUANDO AUTORIZADA
+→ REPUTAÇÃO CONTEXTUAL
+```
+
+Regras de orquestração:
+
+- avaliação não nasce de simples visualização, interesse ou vínculo;
+- envio não equivale a publicação;
+- reputação não equivale a nota universal;
+- identidade interna e apresentação pública permanecem separadas;
+- alteração material não reescreve silenciosamente experiência histórica;
+- resposta, contestação, denúncia, moderação e recurso são competências distintas;
+- ausência de superfície comprovada deve permanecer lacuna, não justificar novo `PER-ID` por conveniência;
+- `PER-009` pode, quando expressamente integrado, oferecer entrada administrativa para continuidade, mas não absorve a autoridade do domínio.
+
+A materialização visual futura deve partir dos documentos de consumo de Avaliação e Reputação e preservar liberdade criativa dentro dessas autoridades.
 
 ## 18. Conta, dados e direitos
 
