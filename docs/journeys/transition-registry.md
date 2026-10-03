@@ -292,7 +292,7 @@ V5 COVERAGE
 
 ## 10. Preservações de maturidade
 
-- transições totais correntes são **72**, incluindo `TRN-114` como continuidade operacional pós-aprovação contratada e `TRN-212`, `TRN-213`, `TRN-214`, `TRN-215` e `TRN-216` como contratadas;
+- transições totais correntes são **76**, incluindo `TRN-114` como continuidade operacional pós-aprovação contratada e `TRN-212`, `TRN-213`, `TRN-214`, `TRN-215` e `TRN-216` como contratadas;
 - `TRN-008..013` estão **integralmente validadas** no limite documental;
 - `TRN-406/407` ficam **contratadas** até materialização suficiente de `PER-009`;
 - `TRN-417/418` e `TRN-427/428` ficam **integralmente validadas** no limite documental de navegação administrativa;
