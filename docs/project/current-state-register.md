@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.50.83
+version: 3.50.84
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-10-03
 normative: true
@@ -22,6 +22,8 @@ related:
   - GKR-UX-G3-ORGANIZATION-COLLECTIVE-RELATIONSHIP-VALIDATION-001
   - GKR-UX-G2-COLLECTIVE-DISCOVERY-REQUEST-VALIDATION-001
   - GKR-UX-G1-ENTRY-EXPRESSION-INVENTORY-VALIDATION-001
+  - GKR-UXA-103-TRN005-SCOPE-AUTHORITY-001
+  - UXA-103
   - GKR-UXA-102-V5-AUTHORITY-001
   - UXA-102
   - GKR-UX-EVALUATION-REPUTATION-AUTHORITY-001
@@ -113,7 +115,8 @@ Estado executivo vigente:
 - **Research / mercado:** método documental não equivale a pesquisa aplicada, PMF, disposição a pagar, retenção, impacto ou causalidade comprovados;
 - **Product Engineering:** permanece pausada/não liberada;
 - **UXA-102 / V5:** `TRANSVERSE CONTRACT ADJUDICATED`; 76/76 transições examinadas; 0 promoções de maturidade;
-- **execução automática seguinte:** nenhuma.
+- **UXA-103:** escopo adjudicado exclusivamente para exame funcional de `TRN-005`; exame ainda `NOT_STARTED`; `TRN-005` permanece `PARTIAL`;
+- **execução automática seguinte:** nenhuma fora do gate governado da UXA-103.
 
 ```text
 DOCUMENTED
@@ -1753,6 +1756,12 @@ O/C INTERACTIVE PROTOTYPE
 UXA-102 / V5
 → TRANSVERSE CONTRACT ADJUDICATED
 → 76/76 TRANSITIONS EXAMINED
+→ 0 MATURITY PROMOTIONS
+
+UXA-103
+→ SCOPE ADJUDICATED / GKR-UXA-103-TRN005-SCOPE-AUTHORITY-001
+→ FUNCTIONAL EXAM NOT_STARTED
+→ TRN-005 PARTIAL / UNCHANGED
 → 0 MATURITY PROMOTIONS
 
 PRODUCT ENGINEERING

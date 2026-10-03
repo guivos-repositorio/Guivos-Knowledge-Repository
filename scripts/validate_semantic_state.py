@@ -75,6 +75,10 @@ def main() -> int:
     related = [int(v) for v in re.findall(r"(?m)^\s*-\s*UXA-(\d{3})\s*$", front)]
     latest = f"UXA-{max(related):03d}" if related else ""
     next_uxa = f"UXA-{max(related)+1:03d}" if related else ""
+    current_uxa_open = bool(latest and re.search(
+        rf"(?s){re.escape(latest)}.*?FUNCTIONAL EXAM NOT_STARTED",
+        state_text,
+    ))
     if not related:
         errors.append("nenhuma frente UXA no front matter")
 
@@ -86,7 +90,10 @@ def main() -> int:
             errors.append(str(exc))
 
     for name, text in surfaces.items():
-        for expected, label in ((version, "versão"), (milestone, "marco"), (latest, "última UXA"), (next_uxa, "próxima UXA")):
+        expectations = [(version, "versão"), (milestone, "marco"), (latest, "última UXA")]
+        if not current_uxa_open:
+            expectations.append((next_uxa, "próxima UXA"))
+        for expected, label in expectations:
             if expected and expected not in text:
                 errors.append(f"{name} não declara {label} {expected}")
         if latest and f"{latest}, não iniciada" in text:
@@ -239,13 +246,20 @@ def main() -> int:
                 f"UXA-{child:03d} -> UXA-{parent:03d}"
             )
 
-    for number in range(47, 102):
+    for number in range(47, 104):
         if number in removed_after_absorption:
             continue
         path = artifacts.get(number)
         if path is None:
             errors.append(f"artefato UXA-{number:03d} ausente")
-        elif path.name not in index_text:
+            continue
+        try:
+            artifact_front = fm(read(path))
+            artifact_status = scalar(artifact_front, "status")
+        except ValueError as exc:
+            errors.append(f"UXA-{number:03d}: {exc}")
+            continue
+        if artifact_status != "superseded" and path.name not in index_text:
             errors.append(f"artefato UXA-{number:03d} não indexado: {path.name}")
 
     for path in CONTROL_PATHS:
