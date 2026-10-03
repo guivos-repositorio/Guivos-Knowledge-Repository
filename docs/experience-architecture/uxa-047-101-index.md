@@ -2,7 +2,7 @@
 id: GKR-UXA-047-101-INDEX-001
 title: Índice Corrente das Frentes UXA-047 a UXA-103
 status: active
-version: 3.54.59
+version: 3.54.60
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-10-03
 depends_on:
@@ -29,7 +29,7 @@ Este índice existe somente para descoberta das frentes UXA numeradas que ainda 
 
 ```text
 GKR-STATE-001
-→ 3.50.85 / CURRENT
+→ 3.50.86 / CURRENT
 
 MARCO FUNCIONAL
 → M7.88
@@ -39,9 +39,9 @@ MARCO FUNCIONAL
 
 UXA-103
 → SCOPE ADJUDICATED
-→ FUNCTIONAL EXAM COMPLETED AT CANDIDATE LEVEL
-→ FUNCTIONAL CONVERGENCE YES
-→ ADJUDICATION PENDING
+→ FUNCTIONAL EXAM COMPLETE
+→ FUNCTIONAL CONTRACT ADJUDICATED / NORMATIVE
+→ RECONCILIATION PENDING
 → TRN-005 PARTIAL / UNCHANGED
 
 HISTÓRICO DE AUDITORIAS / SNAPSHOTS / BASELINES / PRODUTORES ABSORVIDOS
@@ -149,10 +149,10 @@ UXA-102 / V5
 
 UXA-103
 → [TRN-005 — Resultado Indeterminado, Reconciliação e Retry](uxa-103-trn005-indeterminate-reconciliation-retry.md)
-→ [Exame Funcional Candidato](uxa-103-trn005-functional-exam.md)
+→ [Contrato Funcional Adjudicado](uxa-103-trn005-functional-exam.md)
 → SCOPE ADJUDICATED
-→ FUNCTIONAL EXAM COMPLETED AT CANDIDATE LEVEL
-→ ADJUDICATION PENDING
+→ FUNCTIONAL CONTRACT ADJUDICATED / NORMATIVE
+→ RECONCILIATION PENDING
 
 PRODUCT ENGINEERING
 → PAUSED / NOT RELEASED
