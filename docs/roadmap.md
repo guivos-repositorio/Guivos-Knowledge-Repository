@@ -2,7 +2,7 @@
 id: ROADMAP-13.48.7
 title: Roadmap Arquitetural — Frentes Correntes e Próximos Gates da Guivos
 status: active
-version: 13.48.60
+version: 13.48.61
 owner: Guivos
 last_updated: 2026-10-03
 normative: true
@@ -45,7 +45,7 @@ related:
 
 ## 1. Função
 
-Este roadmap traduz `GKR-STATE-001 v3.50.92` em **frentes governadas de avanço**.
+Este roadmap traduz `GKR-STATE-001 v3.50.93` em **frentes governadas de avanço**.
 
 Sua função é declarar frentes correntes, dependências e próximos gates sem transformar possibilidade técnica em execução automática.
 
@@ -63,7 +63,7 @@ ROADMAP
 
 | Frente | Estado vigente |
 |---|---|
-| Estado global | `GKR-STATE-001 v3.50.92 / CURRENT` |
+| Estado global | `GKR-STATE-001 v3.50.93 / CURRENT` |
 | Era | `GE-2 — KNOWLEDGE` |
 | Marco funcional | `M7.88` |
 | Última UXA numerada | `UXA-104` |
@@ -81,7 +81,7 @@ ROADMAP
 | PER-002 | referência interativa pós-review validada |
 | UXA-102 / V5 | `ADJUDICADA / MATERIALIZADA EM MAIN` |
 | UXA-103 | `FUNCTIONAL CONTRACT ADJUDICATED / RECONCILIATION COMPLETE / TRN-005 LOCALLY VALIDATED / INTEGRAL NOT SUPPORTED` |
-| UXA-104 | `SCOPE ADJUDICATED / PER-013 + PER-014 + TRN-014..017 / FUNCTIONAL EXAM NOT_STARTED` |
+| UXA-104 | `SCOPE ADJUDICATED / FUNCTIONAL EXAM COMPLETE / FINDINGS CANDIDATE / TRN-014..017 CONTRACTED` |
 | Cognitive Reference Architecture | `GIA-COG-001 v0.1.2 / ACTIVE / NORMATIVE` |
 | `GIA-COG-002..008` | `RESERVED / NOT MATERIALIZED` |
 | Product Engineering | `PAUSED / NOT RELEASED` |
@@ -581,8 +581,10 @@ UXA-103
 UXA-104
 → SCOPE ADJUDICATED
 → PER-013 / PER-014 + TRN-014..017
-→ FUNCTIONAL EXAM NOT_STARTED
-→ NEXT GATE = HUMAN AUTHORIZATION OF FUNCTIONAL EXAM
+→ FUNCTIONAL EXAM COMPLETE
+→ FINDINGS CANDIDATE / NOT ADJUDICATED
+→ TRN-014..017 CONTRACTED / UNCHANGED
+→ NEXT GATE = HUMAN ADJUDICATION OF FUNCTIONAL EXAM FINDINGS
 
 PRODUCT ENGINEERING
 → PAUSED / NOT RELEASED
