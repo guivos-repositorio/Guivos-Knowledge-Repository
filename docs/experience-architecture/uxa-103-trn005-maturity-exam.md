@@ -1,12 +1,12 @@
 ---
 id: GKR-UXA-103-TRN005-MATURITY-EXAM-001
 title: UXA-103 — TRN-005 — Exame Específico de Maturidade
-status: candidate
-version: 0.1.0
+status: active
+version: 1.0.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-03
-normative: false
-maturity: maturity_exam_candidate
+normative: true
+maturity: maturity_conclusion_adjudicated
 depends_on:
   - UXA-103
   - GKR-UXA-103-TRN005-FUNCTIONAL-EXAM-001
@@ -25,7 +25,7 @@ related:
 
 Este documento examina exclusivamente a maturidade documental de `TRN-005 — PER-005 → PER-006` após a adjudicação e reconciliação do contrato funcional da UXA-103.
 
-O exame não promove a transição. A maturidade corrente permanece `PARTIAL` até gate humano próprio.
+O exame não promove a transição. A maturidade corrente permanece `PARTIAL` até ato próprio de materialização da promoção.
 
 ## 2. Critério do Registry
 
@@ -57,16 +57,19 @@ Não permanece lacuna funcional local conhecida que, por si só, exija manter `T
 
 Entretanto, a evidência disponível não comprova a ligação como cadeia integral ponta a ponta no sentido mais forte do Registry. O retorno está governado dentro do pacote, mas não como continuidade autônoma integralmente validada; a família G1 também permanece composta por maturidades heterogêneas.
 
-## 5. Conclusão candidata
+## 5. Conclusão adjudicada
 
 ```text
 TRN-005 CURRENT
 → PARTIAL / UNCHANGED
 
 MATURITY EXAM
-→ COMPLETE AT CANDIDATE LEVEL
+→ COMPLETE
 
-CANDIDATE ELIGIBILITY
+HUMAN ADJUDICATION
+→ COMPLETE
+
+ADJUDICATED ELIGIBILITY
 → LOCALLY VALIDATED
 
 INTEGRALLY VALIDATED
@@ -74,12 +77,12 @@ INTEGRALLY VALIDATED
 
 PROMOTION
 → 0
-→ PENDING HUMAN GATE
+→ MATERIALIZATION PENDING
 ```
 
-A conclusão candidata é, portanto:
+A conclusão adjudicada é:
 
-> **`TRN-005` está documentalmente elegível para promoção de `PARTIAL` para `LOCALLY VALIDATED`, mas não para `INTEGRALLY VALIDATED`.**
+> **`TRN-005` está documentalmente elegível e adjudicado para promoção de `PARTIAL` para `LOCALLY VALIDATED`, mas não para `INTEGRALLY VALIDATED`.**
 
 ## 6. Limites
 
@@ -95,11 +98,11 @@ Esta conclusão:
 
 ## 7. Próximo gate
 
-O próximo gate é a adjudicação humana da conclusão de maturidade candidata:
+O próximo gate é a materialização governada da promoção adjudicada:
 
 ```text
 PARTIAL
 → LOCALLY VALIDATED
 ```
 
-Somente após esse gate a promoção poderá ser materializada no Transition Registry e nas superfícies de estado correspondentes.
+Essa materialização deverá atualizar o Transition Registry e as superfícies de estado correspondentes, sem ampliar o escopo para `INTEGRALLY VALIDATED`.
