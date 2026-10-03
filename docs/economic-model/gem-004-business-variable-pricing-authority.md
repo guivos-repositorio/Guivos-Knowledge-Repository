@@ -371,7 +371,7 @@ CHARGING
 
 ## 16. Próximo gate
 
-A autoridade econômica está congelada para consumo documental. Próximos atos exigem gates próprios para:
+Esta autoridade econômica está congelada para consumo documental. Próximos atos exigem gates próprios para:
 
 - implementação do configurador;
 - checkout/cobrança;
