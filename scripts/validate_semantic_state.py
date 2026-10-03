@@ -239,7 +239,7 @@ def main() -> int:
                 f"UXA-{child:03d} -> UXA-{parent:03d}"
             )
 
-    for number in range(47, 102):
+    for number in range(47, 104):
         if number in removed_after_absorption:
             continue
         path = artifacts.get(number)
