@@ -1026,7 +1026,7 @@ signature_registered = false
 
 Human Filing Authorization: **GRANTED** por `GKR-TRADEMARK-HUMAN-FILING-AUTHORIZATION-001`.
 
-Próximo gate operacional: **GRU Issuance**.
+Próximo gate operacional: **GRU Scenario Confirmation + Issuance**.
 
 ```text
 FILE
