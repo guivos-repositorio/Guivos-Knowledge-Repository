@@ -2,10 +2,11 @@
 id: GKR-JOURNEY-TRANSITION-REGISTRY-001
 title: Registro Granular de Transições
 status: active
-version: 0.29.12
+version: 0.29.13
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-03
 related:
+  - GKR-UXA-102-V5-AUTHORITY-001
   - UXA-089
   - UXA-090
   - UXA-092
@@ -277,6 +278,17 @@ A correção semântica preservada:
 - não transforma `BND-002` em checkout;
 - não promove `TRN-416` ou `TRN-426`;
 - não cria fluxo de Guivos Business.
+
+## 9.1 Autoridade transversal UXA-102 / V5
+
+`GKR-UXA-102-V5-AUTHORITY-001` governa transversalmente tentativa, falha conhecida, resultado indeterminado, retorno, replay, retry, estado stale e revalidação de autoridade.
+
+A cobertura V5 não altera os estados deste Registry.
+
+```text
+V5 COVERAGE
+≠ MATURITY PROMOTION
+```
 
 ## 10. Preservações de maturidade
 
