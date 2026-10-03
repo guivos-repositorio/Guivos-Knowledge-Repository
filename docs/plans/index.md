@@ -2,13 +2,14 @@
 id: GKR-PLANS-INDEX-001
 title: Planos — Visão Geral
 status: active
-version: 1.3.0
+version: 1.4.0
 owner: Guivos
 last_updated: 2026-10-03
 normative: false
 depends_on:
   - GEM-004-PLAN-TAXONOMY-AUTHORITY-001
   - GEM-004-A1
+  - GEM-004-BUSINESS-VARIABLE-PRICING-AUTHORITY-001
   - GEM-COMMERCIAL-BASELINE-001
   - GPA-004
   - GPA-004-FUNCTIONAL-PORTFOLIO-001
@@ -74,7 +75,11 @@ Planos do produto especializado B2B **Guivos Business**. Eles são independentes
 
 O modelo de implementação/operação é independente do plano: a complexidade da configuração determina o nível de acompanhamento.
 
-[Ver detalhes dos planos do Guivos Business](business.md)
+A composição econômica do Business está adjudicada e inclui plano-base, população elegível por faixas progressivas, oferta contratada, acessos Journey Plus/Pro custeados, capacidades adicionais, matriz de inclusões por tier, serviços adicionais e orçamento pré-pago de incentivo separado da assinatura.
+
+Quando uma capacidade já estiver incluída no tier, seu valor adicional é **R$ 0,00**. Quando não estiver incluída e for elegível como add-on, aplica-se o valor mensal/anual da autoridade econômica vigente.
+
+[Ver planos, pricing e matriz por tier do Guivos Business](business.md)
 
 ## Periodicidade de contratação
 
@@ -120,5 +125,6 @@ Organização Transforma ≠ Business Scale ou Enterprise
 
 - `GEM-004-PLAN-TAXONOMY-AUTHORITY-001` — nomes, função e leitura conceitual;
 - `GEM-004-A1` — preços, benefícios e limites de referência;
+- `GEM-004-BUSINESS-VARIABLE-PRICING-AUTHORITY-001` — pricing variável, capacidades adicionais e matriz de inclusões por tier do Guivos Business;
 - `GEM-COMMERCIAL-BASELINE-001` — revisão da baseline comercial;
 - `GPA-004` e `GPA-004-FUNCTIONAL-PORTFOLIO-001` — Guivos Business.
