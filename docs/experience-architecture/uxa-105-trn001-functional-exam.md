@@ -2,11 +2,11 @@
 id: GKR-UXA-105-TRN001-FUNCTIONAL-EXAM-001
 title: UXA-105 — TRN-001 — Exame Funcional da Continuidade Home Pública → Entrada Protegida
 status: active
-version: 0.1.0
+version: 1.0.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-03
-normative: false
-maturity: functional_exam_complete_candidate_findings
+normative: true
+maturity: adjudicated_functional_contract
 depends_on:
   - GKR-UXA-105-TRN001-SCOPE-EXAM-001
   - GKR-UX-HOME-MASTER-001
@@ -35,7 +35,7 @@ TRN-001
 → PER-002 — ENTRADA PROTEGIDA
 ```
 
-O exame testa suficiência funcional local. Ele não adjudica seus próprios achados, não promove maturidade e não transforma validação documental em implementação.
+O exame funcional foi adjudicado como contrato normativo. A adjudicação não promove maturidade e não transforma validação documental em implementação.
 
 ## 2. Autoridades examinadas
 
@@ -262,7 +262,7 @@ TRN-001
 ≠ PERSONALIZAÇÃO
 ```
 
-## 13. Conclusão funcional candidata
+## 13. Conclusão funcional adjudicada
 
 O motivo histórico de `TRN-001` permanecer `PARTIAL` era a continuidade entre os pacotes público e protegido não estar examinada como conjunto.
 
@@ -288,13 +288,13 @@ UXA-105 FUNCTIONAL EXAM
 → COMPLETE
 
 TRN-001
-→ FUNCTIONALLY SUFFICIENT CANDIDATE
+→ FUNCTIONALLY SUFFICIENT / ADJUDICATED
 
 NEW FUNCTIONAL RULE REQUIRED
 → NONE IDENTIFIED
 
 FUNCTIONAL FINDINGS
-→ CANDIDATE / NOT ADJUDICATED
+→ ADJUDICATED / NORMATIVE
 
 CURRENT MATURITY
 → PARTIAL / UNCHANGED
@@ -321,13 +321,16 @@ Esta conclusão:
 ## 15. Próximo gate
 
 ```text
-ADJUDICATE UXA-105 FUNCTIONAL EXAM FINDINGS?
+UXA-105 FUNCTIONAL CONTRACT
+→ ADJUDICATED / NORMATIVE
 
-IF YES
-→ MATERIALIZE ADJUDICATED FUNCTIONAL CONTRACT
-→ KEEP TRN-001 PARTIAL / UNCHANGED
-→ NEXT SEPARATE GATE = AUTHORIZE MATURITY EXAM
+TRN-001
+→ FUNCTIONALLY SUFFICIENT / ADJUDICATED
+→ PARTIAL / UNCHANGED
 
-IF NO
-→ REOPEN FUNCTIONAL FINDINGS
+MATURITY PROMOTIONS
+→ 0
+
+NEXT GOVERNED GATE
+→ AUTHORIZE UXA-105 MATURITY EXAM
 ```
