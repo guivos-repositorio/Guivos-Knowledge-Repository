@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.50.65
+version: 3.50.66
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-10-03
 normative: true
@@ -98,7 +98,7 @@ Estado executivo vigente:
 - **Guivos Intelligence:** arquitetura conceitual/de referência corrente preservada; implementação física, dados reais e produção não autorizados por maturidade documental;
 - **Research / mercado:** método documental não equivale a pesquisa aplicada, PMF, disposição a pagar, retenção, impacto ou causalidade comprovados;
 - **Product Engineering:** permanece pausada/não liberada;
-- **UXA-102 / V5:** `STARTED / SCOPE_CANDIDATE`; baseline reconciliada em 76 transições;
+- **UXA-102 / V5:** `TRANSVERSE CONTRACT ADJUDICATED`; 76/76 transições examinadas; 0 promoções de maturidade;
 - **execução automática seguinte:** nenhuma.
 
 ```text
