@@ -2,7 +2,7 @@
 id: ROADMAP-13.48.7
 title: Roadmap Arquitetural — Frentes Correntes e Próximos Gates da Guivos
 status: active
-version: 13.48.57
+version: 13.48.58
 owner: Guivos
 last_updated: 2026-10-03
 normative: true
@@ -45,7 +45,7 @@ related:
 
 ## 1. Função
 
-Este roadmap traduz `GKR-STATE-001 v3.50.89` em **frentes governadas de avanço**.
+Este roadmap traduz `GKR-STATE-001 v3.50.90` em **frentes governadas de avanço**.
 
 Sua função é declarar frentes correntes, dependências e próximos gates sem transformar possibilidade técnica em execução automática.
 
@@ -63,7 +63,7 @@ ROADMAP
 
 | Frente | Estado vigente |
 |---|---|
-| Estado global | `GKR-STATE-001 v3.50.89 / CURRENT` |
+| Estado global | `GKR-STATE-001 v3.50.90 / CURRENT` |
 | Era | `GE-2 — KNOWLEDGE` |
 | Marco funcional | `M7.88` |
 | Última UXA numerada | `UXA-103` |
@@ -80,7 +80,7 @@ ROADMAP
 | O/C protótipo interativo | `NOT_AUTHORIZED` |
 | PER-002 | referência interativa pós-review validada |
 | UXA-102 / V5 | `ADJUDICADA / MATERIALIZADA EM MAIN` |
-| UXA-103 | `FUNCTIONAL CONTRACT ADJUDICATED / RECONCILIATION COMPLETE / MATURITY CONCLUSION ADJUDICATED: LOCALLY VALIDATED / MATERIALIZATION PENDING / TRN-005 PARTIAL` |
+| UXA-103 | `FUNCTIONAL CONTRACT ADJUDICATED / RECONCILIATION COMPLETE / TRN-005 LOCALLY VALIDATED / INTEGRAL NOT SUPPORTED` |
 | Cognitive Reference Architecture | `GIA-COG-001 v0.1.2 / ACTIVE / NORMATIVE` |
 | `GIA-COG-002..008` | `RESERVED / NOT MATERIALIZED` |
 | Product Engineering | `PAUSED / NOT RELEASED` |
@@ -257,14 +257,14 @@ PER-004
 → TRN-004 → PER-005 = LOCALLY VALIDATED
 
 PER-005
-→ GKR-UX-PER005-MASTER-001 v0.1.1
+→ GKR-UX-PER005-MASTER-001 v0.1.3
 → CURRENT DESIGN DEFINITION
 → INVENTORY + REVIEW + SPECIFIC AUTHORIZATION
 → PERSISTENCE / PERSONALIZATION = BLOCKED
-→ TRN-005 → PER-006 = PARTIAL
+→ TRN-005 → PER-006 = LOCALLY VALIDATED
 
 PER-006
-→ GKR-UX-PER006-MASTER-001 v0.1.0
+→ GKR-UX-PER006-MASTER-001 v0.1.2
 → CURRENT DESIGN DEFINITION
 → VISIBLE + TEMPORARY + INTERRUPTIBLE PROCESSING
 → TRN-006 → PER-007 = LOCALLY VALIDATED
@@ -341,16 +341,17 @@ UXA-103
 → FUNCTIONAL EXAM COMPLETE
 → FUNCTIONAL CONTRACT ADJUDICATED / NORMATIVE
 → RECONCILIATION COMPLETE
-→ TRN-005 PARTIAL / UNCHANGED
+→ TRN-005 LOCALLY VALIDATED
 → MATURITY EXAM COMPLETE
 → ADJUDICATED ELIGIBILITY LOCALLY VALIDATED
-→ PROMOTION MATERIALIZATION PENDING
+→ PROMOTION MATERIALIZED
+→ INTEGRALLY VALIDATED NOT SUPPORTED
 
 PRODUCT ENGINEERING
 → PAUSED / NOT RELEASED
 ```
 
-A coleção documental planejada de superfícies da Jornada da Pessoa está completa em `26 / 26`; lacunas técnicas e transacionais permanecem governadas separadamente. A UXA-103 possui apenas escopo adjudicado para o exame funcional de `TRN-005`; o exame ainda não foi iniciado. Materialização visual, teste real e implementação dependem de atos próprios.
+A coleção documental planejada de superfícies da Jornada da Pessoa está completa em `26 / 26`; lacunas técnicas e transacionais permanecem governadas separadamente. A UXA-103 concluiu contrato funcional, reconciliação e gate de maturidade de `TRN-005`, agora `LOCALLY VALIDATED`; validação integral, materialização visual, teste real e implementação dependem de atos próprios.
 
 ## 8. Guivos Business
 
@@ -570,7 +571,7 @@ UXA-102 / V5
 UXA-103
 → SCOPE ADJUDICATED
 → FUNCTIONAL EXAM NOT_STARTED
-→ TRN-005 PARTIAL / UNCHANGED
+→ TRN-005 LOCALLY VALIDATED
 
 PRODUCT ENGINEERING
 → PAUSED / NOT RELEASED
