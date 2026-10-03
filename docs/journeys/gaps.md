@@ -2,10 +2,11 @@
 id: GKR-JOURNEY-GAPS-001
 title: Lacunas e Continuidades Ausentes
 status: active
-version: 1.0.16
+version: 1.0.17
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-03
 related:
+  - GKR-UX-G4-INTERNAL-OPPORTUNITY-PROCESS-VALIDATION-001
   - GKR-UX-G3-ORGANIZATION-COLLECTIVE-RELATIONSHIP-VALIDATION-001
   - GKR-UX-G2-COLLECTIVE-DISCOVERY-REQUEST-VALIDATION-001
   - GKR-UX-G1-ENTRY-EXPRESSION-INVENTORY-VALIDATION-001
@@ -88,7 +89,7 @@ O exame de V5 não promove maturidade e não cria transições. Permanecem abert
 1. **G1 — primeira entrada, expressão e inventário**: refinada por `GKR-UX-G1-ENTRY-EXPRESSION-INVENTORY-VALIDATION-001`; `TRN-003/004/005` passam a localmente validadas, enquanto `TRN-001` permanece parcial e `TRN-014..017` permanecem contratadas até adjudicação/materialização de `PER-013/014`; a cadeia completa ainda não é integralmente validada;
 2. **G2 — descoberta e solicitação de Coletivo**: refinada por `GKR-UX-G2-COLLECTIVE-DISCOVERY-REQUEST-VALIDATION-001`; erro/retorno/idempotência deixam de ser lacuna genérica, mas `TRN-102/103/104` permanecem `partial` por ausência de validação ponta a ponta e `TRN-114` permanece `contracted` até maturidade/materialização de `COL-003/004`; `TRN-101` permanece localmente validada;
 3. **G3 — Organização e relação O↔C**: refinada por `GKR-UX-G3-ORGANIZATION-COLLECTIVE-RELATIONSHIP-VALIDATION-001`; concorrência, retorno, estado indeterminado e idempotência deixam de ser lacuna genérica; `TRN-201` permanece `partial`, `TRN-202` permanece localmente validada e `TRN-206..209` permanecem `contracted` por ausência de validação ponta a ponta/materialização das autoridades bilaterais;
-4. **G4 — processo interno de oportunidade**: `TRN-212` e `TRN-214` mantêm responsabilidades existentes, sem criação de retorno dedicado por simetria;
+4. **G4 — processo interno de oportunidade**: refinada por `GKR-UX-G4-INTERNAL-OPPORTUNITY-PROCESS-VALIDATION-001`; `TRN-212` e `TRN-214` permanecem `contracted`, retornos `PER-204 → PER-203` e `ORG-008 → ORG-003` permanecem contextuais sem IDs dedicados, e as lacunas correntes são validação ponta a ponta + maturidade/materialização dos contratos de `PER-204/ORG-008`;
 5. **G5 — Opportunity Boost**: `TRN-301..306` preservam integração/economia ainda parciais, sem autorização para inventar mecanismo de cobrança, mensuração ou deduplicação.
 
 Regras transversais adjudicadas aplicam-se onde cabível:

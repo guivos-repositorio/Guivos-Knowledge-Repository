@@ -2,10 +2,11 @@
 id: GKR-JOURNEY-TRANSITION-REGISTRY-001
 title: Registro Granular de Transições
 status: active
-version: 0.29.16
+version: 0.29.17
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-03
 related:
+  - GKR-UX-G4-INTERNAL-OPPORTUNITY-PROCESS-VALIDATION-001
   - GKR-UX-G3-ORGANIZATION-COLLECTIVE-RELATIONSHIP-VALIDATION-001
   - GKR-UX-G2-COLLECTIVE-DISCOVERY-REQUEST-VALIDATION-001
   - GKR-UX-G1-ENTRY-EXPRESSION-INVENTORY-VALIDATION-001
@@ -196,6 +197,22 @@ TRN-206..209
 ```
 
 As lacunas correntes são de validação ponta a ponta/materialização específica; concorrência, retorno, estado indeterminado e idempotência possuem cobertura semântica suficiente.
+
+## 6.2 Validação G4 — processo interno de oportunidade
+
+`GKR-UX-G4-INTERNAL-OPPORTUNITY-PROCESS-VALIDATION-001` examina `TRN-212` e `TRN-214` sem promoção de maturidade.
+
+```text
+TRN-212
+TRN-214
+→ CONTRACTED / UNCHANGED
+
+PER-204 → PER-203
+ORG-008 → ORG-003
+→ CONTEXTUAL RETURNS / NO DEDICATED TRN-ID
+```
+
+As lacunas correntes são validação ponta a ponta e maturidade/materialização específica de `PER-204/ORG-008`; falha, indeterminação, retry e idempotência possuem cobertura semântica suficiente.
 
 ## 7. Opportunity Boost
 
