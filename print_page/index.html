@@ -11390,7 +11390,7 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 <h2 id="index-estado-semantico-sincronizado">Estado semântico sincronizado<a class="headerlink" href="#index-estado-semantico-sincronizado" title="Permanent link">&para;</a></h2>
 <p>A leitura de estado continua subordinada ao <a href="#project-current-state-register">Registro do Estado Atual</a>. Esta superfície preserva somente os marcadores exigidos de sincronização global:</p>
 <div class="highlight"><pre><span></span><code>GKR-STATE-001
-→ 3.50.91 / CURRENT
+→ 3.50.92 / CURRENT
 
 ERA
 → GE-2 — KNOWLEDGE
@@ -11399,12 +11399,13 @@ MARCO FUNCIONAL
 → M7.88
 
 ÚLTIMA UXA FUNCIONAL NUMERADA
-→ UXA-103
-
-PRÓXIMA UXA
 → UXA-104
-→ NOT_STARTED
-→ NOT AUTHORIZED
+
+UXA-104
+→ SCOPE ADJUDICATED
+→ PER-013 / PER-014 + TRN-014..017
+→ FUNCTIONAL EXAM NOT_STARTED
+→ 0 MATURITY PROMOTIONS
 → NO AUTOMATIC EXECUTION
 
 UXA-103
@@ -12226,7 +12227,8 @@ AUTORIDADES TEMÁTICAS VIGENTES
 <li><strong>Product Engineering:</strong> permanece pausada/não liberada;</li>
 <li><strong>UXA-102 / V5:</strong> <code>TRANSVERSE CONTRACT ADJUDICATED</code>; 76/76 transições examinadas; 0 promoções de maturidade;</li>
 <li><strong>UXA-103:</strong> escopo adjudicado; contrato funcional de <code>TRN-005</code> adjudicado e reconciliado; conclusão de maturidade adjudicada e promoção materializada para <code>LOCALLY VALIDATED</code>; <code>INTEGRALLY VALIDATED</code> não suportado pela evidência corrente;</li>
-<li><strong>execução automática seguinte:</strong> nenhuma fora do gate governado da UXA-103.</li>
+<li><strong>UXA-104:</strong> escopo adjudicado por <code>GKR-UXA-104-PER013014-SCOPE-AUTHORITY-001</code> para <code>PER-013/014</code> + <code>TRN-014..017</code>; exame funcional <code>NOT_STARTED</code>; nenhuma promoção de maturidade;</li>
+<li><strong>execução automática seguinte:</strong> nenhuma; o próximo ato depende de autorização humana do exame funcional da UXA-104.</li>
 </ul>
 <div class="highlight"><pre><span></span><code>DOCUMENTED
 ≠ IMPLEMENTED
@@ -13649,6 +13651,12 @@ UXA-103
 → 1 MATURITY PROMOTION
 → INTEGRALLY VALIDATED NOT SUPPORTED
 
+UXA-104
+→ SCOPE ADJUDICATED / GKR-UXA-104-PER013014-SCOPE-AUTHORITY-001
+→ PER-013 / PER-014 + TRN-014..017
+→ FUNCTIONAL EXAM NOT_STARTED
+→ 0 MATURITY PROMOTIONS
+
 PRODUCT ENGINEERING
 → PAUSED / NOT RELEASED
 
@@ -13928,7 +13936,7 @@ PRODUCT ENGINEERING
 </code></pre></div>
 <p>A construção ocorre uma superfície por vez. Planejamento não cria página vazia, novo <code>PER-ID</code>, navegação, tela, protótipo ou implementação por inferência.</p></section><section class="print-page" id="roadmap" heading-number="2.3"><h1 id="roadmap-roadmap-arquitetural-frentes-correntes-e-proximos-gates-da-guivos">Roadmap Arquitetural — Frentes Correntes e Próximos Gates da Guivos<a class="headerlink" href="#roadmap-roadmap-arquitetural-frentes-correntes-e-proximos-gates-da-guivos" title="Permanent link">&para;</a></h1>
 <h2 id="roadmap-1-funcao">1. Função<a class="headerlink" href="#roadmap-1-funcao" title="Permanent link">&para;</a></h2>
-<p>Este roadmap traduz <code>GKR-STATE-001 v3.50.91</code> em <strong>frentes governadas de avanço</strong>.</p>
+<p>Este roadmap traduz <code>GKR-STATE-001 v3.50.92</code> em <strong>frentes governadas de avanço</strong>.</p>
 <p>Sua função é declarar frentes correntes, dependências e próximos gates sem transformar possibilidade técnica em execução automática.</p>
 <div class="highlight"><pre><span></span><code>ROADMAP
 → ORIENTA O PRÓXIMO MOVIMENTO LEGÍTIMO
@@ -13949,7 +13957,7 @@ ROADMAP
 <tbody>
 <tr>
 <td>Estado global</td>
-<td><code>GKR-STATE-001 v3.50.91 / CURRENT</code></td>
+<td><code>GKR-STATE-001 v3.50.92 / CURRENT</code></td>
 </tr>
 <tr>
 <td>Era</td>
@@ -13961,7 +13969,7 @@ ROADMAP
 </tr>
 <tr>
 <td>Última UXA numerada</td>
-<td><code>UXA-103</code></td>
+<td><code>UXA-104</code></td>
 </tr>
 <tr>
 <td>Homes públicas</td>
@@ -14018,6 +14026,10 @@ ROADMAP
 <tr>
 <td>UXA-103</td>
 <td><code>FUNCTIONAL CONTRACT ADJUDICATED / RECONCILIATION COMPLETE / TRN-005 LOCALLY VALIDATED / INTEGRAL NOT SUPPORTED</code></td>
+</tr>
+<tr>
+<td>UXA-104</td>
+<td><code>SCOPE ADJUDICATED / PER-013 + PER-014 + TRN-014..017 / FUNCTIONAL EXAM NOT_STARTED</code></td>
 </tr>
 <tr>
 <td>Cognitive Reference Architecture</td>
@@ -14459,6 +14471,12 @@ UXA-103
 → MATURITY EXAM COMPLETE
 → TRN-005 LOCALLY VALIDATED
 → INTEGRALLY VALIDATED NOT SUPPORTED
+
+UXA-104
+→ SCOPE ADJUDICATED
+→ PER-013 / PER-014 + TRN-014..017
+→ FUNCTIONAL EXAM NOT_STARTED
+→ NEXT GATE = HUMAN AUTHORIZATION OF FUNCTIONAL EXAM
 
 PRODUCT ENGINEERING
 → PAUSED / NOT RELEASED
