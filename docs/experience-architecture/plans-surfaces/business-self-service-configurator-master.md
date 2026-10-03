@@ -2,7 +2,7 @@
 id: GKR-UX-PLANS-BUSINESS-CONFIGURATOR-001
 title: Planos — Guivos Business — Configurador e Calculadora Self-service — Documento Mestre
 status: active
-version: 0.1.0
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-03
 normative: false
@@ -10,6 +10,7 @@ depends_on:
   - GKR-PLANS-BUSINESS-001
   - GPA-004-FUNCTIONAL-PORTFOLIO-001
   - GEM-004-A1
+  - GEM-004-BUSINESS-VARIABLE-PRICING-AUTHORITY-001
 ---
 
 # Planos — Guivos Business — Configurador e Calculadora Self-service — Documento Mestre
@@ -111,21 +112,15 @@ Cada termo só pode produzir número quando houver autoridade econômica corresp
 
 ## 6. Preço por população
 
-O modelo deve suportar preço por população/faixa populacional, porém os **thresholds e valores por pessoa/faixa ainda não estão congelados no GKR**.
+O modelo usa as faixas e tarifas populacionais adjudicadas em `GEM-004-BUSINESS-VARIABLE-PRICING-AUTHORITY-001`.
 
-Até que a autoridade econômica seja adjudicada:
-
-- não criar faixas como 1–50, 51–200 ou similares por inferência;
-- não criar R$/pessoa;
-- não extrapolar valores de Start/Growth/Scale/Enterprise;
-- não usar benchmark externo como preço Guivos;
-- apresentar “valor variável sujeito a dimensionamento” quando necessário.
+A calculadora deve aplicar cobrança progressiva por faixa e exibir separadamente cada parcela. Acima de 20.000 elegíveis ou quando Scale/Enterprise exigir dimensionamento, deve exibir o componente como dimensionado em vez de inventar valor.
 
 ## 7. Produtos e ofertas
 
 O configurador deve mostrar separadamente o impacto econômico de Programas de Incentivo, Journey custeado e combinação de ambos.
 
-Se uma oferta não possuir preço próprio formalizado, a interface deve registrá-la na composição sem gerar cifra inventada.
+As taxas de Programas de Incentivo, Journey custeado e composição conjunta são governadas pela autoridade econômica vigente. Itens futuros não formalizados continuam sem cifra.
 
 ## 8. Resultado
 
@@ -183,17 +178,20 @@ A superfície deve explicar **por que** um componente altera o valor. Não deve 
 
 O configurador é aceitável quando Start/Growth/Scale/Enterprise permanecem intactos; Mensal/Anual é selecionável; população e ofertas podem compor a contratação; valores variáveis dependem de autoridade; orçamento de incentivo fica separado; total não é inventado; Self-service não vira plano; Organização não é confundida com Business; Design mantém liberdade criativa; e Product Engineering não é liberado por este Master.
 
-## 15. Gate econômico pendente
+## 15. Autoridade econômica corrente
 
-Para transformar a calculadora em cálculo integralmente numérico, é necessária autoridade específica para faixas populacionais, preço por população/faixa, preço de Programas de Incentivo quando separado, preço de Journey custeado por acesso, add-ons, integrações/API quando precificadas separadamente, suporte/gerenciado quando houver cobrança adicional e regra anual de cada componente variável.
+A tabela econômica corrente é `GEM-004-BUSINESS-VARIABLE-PRICING-AUTHORITY-001`, que governa faixas populacionais, ofertas, acessos Journey, add-ons, serviços e regra anual dos componentes tabelados. O configurador deve também consumir a matriz de inclusões por tier para impedir dupla cobrança.
 
 ```text
-CALCULATOR EXPERIENCE CONTRACT
-→ DEFINED
+ECONOMIC AUTHORITY
+→ ADJUDICATED / NORMATIVE
 
-VARIABLE RATE TABLE
-→ NOT YET ADJUDICATED
+FULL NUMERIC CONFIGURATOR
+→ ECONOMICALLY SPECIFIABLE
 
-NUMERIC TOTAL FOR VARIABLE CONFIGURATION
-→ BLOCKED UNTIL RATE AUTHORITY
+IMPLEMENTATION
+→ NOT RELEASED
+
+PUBLIC OFFER / CHARGING
+→ NOT AUTHORIZED
 ```
