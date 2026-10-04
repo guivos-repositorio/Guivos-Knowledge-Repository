@@ -2,7 +2,7 @@
 id: GKR-PLANS-BUSINESS-001
 title: Planos — Guivos Business
 status: active
-version: 2.2.0
+version: 2.3.0
 owner: Guivos
 last_updated: 2026-10-03
 normative: false
@@ -237,15 +237,40 @@ ENTERPRISE
 A inclusão de uma capacidade no tier não significa que ela seja gratuita universalmente; significa que seu preço já está absorvido pelo tier de capacidade contratado.
 
 
-### 5. Serviços adicionais
+### 5. Modelo de implementação / operação e serviços pagos
 
-| Serviço | Mensal | Anual |
+O modelo de implementação/operação é definido **depois do tier resultante**.
+
+```text
+TIER RESULTANTE
+↓
+MODELO DE IMPLEMENTAÇÃO / OPERAÇÃO
+→ SELF-SERVICE
+→ COM APOIO DO SUPORTE
+→ GERENCIADO
+```
+
+`Self-service` não é um serviço adicional tarifado; é a modalidade de implementação/operação com autonomia da empresa.
+
+Quando houver serviço pago adicional:
+
+| Serviço pago adicional | Mensal | Anual |
 |---|---:|---:|
-| **Self-service** | R$ 0,00 | R$ 0,00 |
 | **Suporte ampliado** | R$ 299,00 | R$ 2.990,00 |
 | **Operação gerenciada** | R$ 990,00 | R$ 9.900,00 |
 | **Gestão dedicada / SLA ampliado** | R$ 1.990,00 | R$ 19.900,00 |
 | **Implantação customizada** | sob consulta | sob consulta |
+
+Regra:
+
+```text
+MODELO OPERACIONAL
+≠ DETERMINANTE AUTOMÁTICO DO TIER
+
+SERVIÇO PAGO ADICIONAL
+→ PODE ALTERAR O VALOR CONTRATUAL FINAL
+→ NÃO ALTERA O TIER POR SI SÓ
+```
 
 ### 6. Fórmula da contratação
 
@@ -255,13 +280,21 @@ CONTRATAÇÃO BUSINESS VÁLIDA
 OFERTA BUSINESS OBRIGATÓRIA
 + TIER DE CAPACIDADE
 
-ASSINATURA RECORRENTE / CONTRATUAL
+VALOR RECORRENTE DE PLATAFORMA
 =
 TIER DE CAPACIDADE
 + POPULAÇÃO / ESCALA
 + ACESSOS JOURNEY CUSTEADOS, SE APLICÁVEL
 + CAPACIDADES ADICIONAIS NÃO INCLUÍDAS NO TIER
-+ SERVIÇOS ADICIONAIS
+```
+
+Depois do enquadramento:
+
+```text
+VALOR CONTRATUAL FINAL
+=
+VALOR RECORRENTE DE PLATAFORMA
++ SERVIÇOS PAGOS ADICIONAIS, SE CONTRATADOS
 ```
 
 Separadamente:
