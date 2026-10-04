@@ -2,7 +2,7 @@
 id: ROADMAP-13.48.7
 title: Roadmap Arquitetural — Frentes Correntes e Próximos Gates da Guivos
 status: active
-version: 13.48.73
+version: 13.48.74
 owner: Guivos
 last_updated: 2026-10-03
 normative: true
@@ -45,7 +45,7 @@ related:
 
 ## 1. Função
 
-Este roadmap traduz `GKR-STATE-001 v3.51.06` em **frentes governadas de avanço**.
+Este roadmap traduz `GKR-STATE-001 v3.51.07` em **frentes governadas de avanço**.
 
 Sua função é declarar frentes correntes, dependências e próximos gates sem transformar possibilidade técnica em execução automática.
 
@@ -552,9 +552,11 @@ UXA-106
 → FUNCTIONAL EXAM COMPLETE
 → FUNCTIONAL CONTRACT ADJUDICATED / NORMATIVE
 → TRN-102 / TRN-103 / TRN-104 FUNCTIONALLY SUFFICIENT / ADJUDICATED
-→ MATURITY UNCHANGED
-→ MATURITY EXAM NOT_STARTED
-→ MATURITY EXAM NOT_AUTHORIZED
+→ MATURITY EXAM COMPLETE
+→ TRN-102 / TRN-103 / TRN-104 ELIGIBLE CANDIDATES FOR LOCALLY VALIDATED
+→ MATURITY ADJUDICATION NOT_STARTED
+→ MATURITY ADJUDICATION NOT_AUTHORIZED
+→ MATURITY PROMOTIONS = 0 MATERIALIZED
 
 EXPERIENCE / JOURNEY CURRENT-ONLY CONSOLIDATION
 → COMPLETED
