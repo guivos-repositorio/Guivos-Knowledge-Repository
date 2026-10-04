@@ -2,7 +2,7 @@
 id: GKR-UX-PLANS-ORCHESTRATION-001
 title: Planos — Superfícies e Fluxos — Documento Mestre de Orquestração UX/UI
 status: active
-version: 0.7.0
+version: 0.8.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-03
 normative: false
@@ -87,8 +87,13 @@ TIER DE CAPACIDADE
 + POPULAÇÃO / ESCALA
 + ACESSOS JOURNEY CUSTEADOS, SE APLICÁVEL
 + CAPACIDADES ADICIONAIS NÃO INCLUÍDAS NO TIER
-+ SERVIÇOS ADICIONAIS
-= VALOR RECORRENTE CONTRATUAL
+= VALOR RECORRENTE DE PLATAFORMA
+
+DEPOIS
+
+VALOR RECORRENTE DE PLATAFORMA
++ SERVIÇOS PAGOS ADICIONAIS, SE CONTRATADOS
+= VALOR CONTRATUAL FINAL
 
 ORÇAMENTO DE INCENTIVO
 = RECURSO OPERACIONAL SEPARADO
@@ -131,8 +136,10 @@ O resumo da composição deve distinguir:
 - Journey Plus/Pro custeado e quantidade;
 - add-ons efetivamente cobrados, com valor mensal/anual aplicável;
 - capacidades incluídas no tier, explicitadas com `R$ 0,00 adicional`;
-- serviço adicional;
-- subtotal/total recorrente;
+- modelo de implementação/operação definido depois do tier;
+- serviço pago adicional, se contratado;
+- valor recorrente de plataforma;
+- valor contratual final;
 - orçamento pré-pago de incentivo em linha separada;
 - itens dimensionados ou sob consulta;
 - periodicidade e condição anual/mensal.
@@ -260,4 +267,4 @@ Diferenças, preços, periodicidade e ações não podem depender apenas de cor,
 
 ## 11. Critérios de aceite
 
-A experiência é aceitável quando as quatro taxonomias permanecem separadas; mensal/anual é explicitamente selecionável; diferenças funcionais são legíveis; valores consomem a autoridade econômica vigente; dimensionamento é distinguido de preço fixo; capacidades incluídas não são cobradas novamente; comparar não produz contratação; Business separa assinatura de orçamento de incentivo; Design mantém liberdade criativa; e Product Engineering não é liberado por este documento.
+A experiência é aceitável quando as quatro taxonomias permanecem separadas; mensal/anual é explicitamente selecionável; diferenças funcionais são legíveis; valores consomem a autoridade econômica vigente; dimensionamento é distinguido de preço fixo; capacidades incluídas não são cobradas novamente; comparar não produz contratação; Business separa valor recorrente de plataforma, serviços pagos adicionais e orçamento de incentivo; Design mantém liberdade criativa; e Product Engineering não é liberado por este documento.
