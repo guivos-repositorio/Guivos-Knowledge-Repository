@@ -19,7 +19,7 @@ A leitura de estado continua subordinada ao [Registro do Estado Atual](docs/proj
 
 ```text
 GKR-STATE-001
-→ 3.51.02 / CURRENT
+→ 3.51.07 / CURRENT
 
 ERA
 → GE-2 — KNOWLEDGE
@@ -345,3 +345,8 @@ O/C SURFACE MAP + STATE MAP + PRIORITY FLOWS DEFINED ≠ MATERIALIZED NAVIGATION
 ```
 
 Para qualquer afirmação de estado, prevalece o [Registro do Estado Atual](docs/project/current-state-register.md).
+
+PRÓXIMA UXA
+→ UXA-107
+→ NOT_STARTED
+→ NOT_AUTHORIZED

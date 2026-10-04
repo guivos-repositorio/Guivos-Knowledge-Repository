@@ -1,8 +1,8 @@
 ---
 id: GKR-UXA-047-101-INDEX-001
-title: Índice Corrente das Frentes UXA-047 a UXA-105
+title: Índice Corrente das Frentes UXA-047 a UXA-106
 status: active
-version: 3.54.76
+version: 3.54.81
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-10-03
 depends_on:
@@ -11,6 +11,10 @@ depends_on:
   - UXA-103
   - UXA-104
   - UXA-105
+  - UXA-106
+  - GKR-UXA-106-G2-SCOPE-AUTHORITY-001
+  - GKR-UXA-106-G2-FUNCTIONAL-EXAM-001
+  - GKR-UXA-106-G2-MATURITY-EXAM-001
 related:
   - M7.88
   - GKR-JOURNEYS-001
@@ -23,7 +27,7 @@ related:
 normative: false
 ---
 
-# Índice Corrente das Frentes UXA-047 a UXA-105
+# Índice Corrente das Frentes UXA-047 a UXA-106
 
 ## 1. Finalidade
 
@@ -31,16 +35,35 @@ Este índice existe somente para descoberta das frentes UXA numeradas que ainda 
 
 ```text
 GKR-STATE-001
-→ 3.51.02 / CURRENT
+→ 3.51.07 / CURRENT
 
 MARCO FUNCIONAL
 → M7.88
 
 ÚLTIMA UXA FUNCIONAL NUMERADA
-→ UXA-105
+→ UXA-106
+
+UXA-106
+→ [Descoberta de Escopo](uxa-106-scope-discovery.md)
+→ [Autoridade Normativa de Escopo](uxa-106-g2-scope-authority.md)
+→ SCOPE DISCOVERY COMPLETE
+→ SCOPE ADJUDICATED / NORMATIVE
+→ ADJUDICATED SCOPE = TRN-102 / TRN-103 / TRN-104
+→ G2 CORE CONTINUITY
+→ TRN-114 OUTSIDE SCOPE / CONTRACTED
+→ [Exame Funcional — conclusão analítica](uxa-106-g2-functional-exam.md)
+→ FUNCTIONAL EXAM COMPLETE
+→ FUNCTIONAL CONTRACT ADJUDICATED / NORMATIVE
+→ TRN-102/103/104 FUNCTIONALLY SUFFICIENT / ADJUDICATED
+→ [Exame de Maturidade — conclusão analítica](uxa-106-g2-maturity-exam.md)
+→ MATURITY EXAM COMPLETE
+→ TRN-102/103/104 ELIGIBLE CANDIDATES FOR LOCALLY VALIDATED
+→ MATURITY ADJUDICATION NOT_STARTED
+→ MATURITY ADJUDICATION NOT_AUTHORIZED
+→ MATURITY PROMOTIONS = 0 MATERIALIZED
 
 PRÓXIMA UXA
-→ UXA-106
+→ UXA-107
 → NOT_STARTED
 → NOT_AUTHORIZED
 
