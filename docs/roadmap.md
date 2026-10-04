@@ -2,7 +2,7 @@
 id: ROADMAP-13.48.7
 title: Roadmap Arquitetural — Frentes Correntes e Próximos Gates da Guivos
 status: active
-version: 13.48.74
+version: 13.48.75
 owner: Guivos
 last_updated: 2026-10-04
 normative: true
@@ -45,7 +45,7 @@ related:
 
 ## 1. Função
 
-Este roadmap traduz `GKR-STATE-001 v3.51.07` em **frentes governadas de avanço**.
+Este roadmap traduz `GKR-STATE-001 v3.51.08` em **frentes governadas de avanço**.
 
 Sua função é declarar frentes correntes, dependências e próximos gates sem transformar possibilidade técnica em execução automática.
 
@@ -63,7 +63,7 @@ ROADMAP
 
 | Frente | Estado vigente |
 |---|---|
-| Estado global | `GKR-STATE-001 v3.51.07 / CURRENT` |
+| Estado global | `GKR-STATE-001 v3.51.08 / CURRENT` |
 | Era | `GE-2 — KNOWLEDGE` |
 | Marco funcional | `M7.88` |
 | Última UXA numerada | `UXA-106` |
@@ -83,7 +83,7 @@ ROADMAP
 | UXA-103 | `FUNCTIONAL CONTRACT ADJUDICATED / RECONCILIATION COMPLETE / TRN-005 LOCALLY VALIDATED / INTEGRAL NOT SUPPORTED` |
 | UXA-104 | `FUNCTIONAL CONTRACT ADJUDICATED / RECONCILIATION COMPLETE / MATURITY EXAM COMPLETE / TRN-014..017 LOCALLY VALIDATED / INTEGRAL NOT SUPPORTED` |
 | UXA-105 | `SCOPE + FUNCTIONAL CONTRACT ADJUDICATED / MATURITY EXAM + ADJUDICATION COMPLETE / TRN-001 LOCALLY VALIDATED / 1 PROMOTION / INTEGRAL NOT SUPPORTED` |
-| UXA-106 | `FUNCTIONAL CONTRACT ADJUDICATED / MATURITY EXAM COMPLETE / TRN-102/103/104 ELIGIBLE CANDIDATE → LOCALLY VALIDATED / HUMAN MATURITY ADJUDICATION PENDING / 0 PROMOTIONS` |
+| UXA-106 | `FUNCTIONAL CONTRACT ADJUDICATED / MATURITY EXAM COMPLETE / MATURITY FINDINGS ADJUDICATED / TRN-102/103/104 ELIGIBLE → LOCALLY VALIDATED / PROMOTION MATERIALIZATION PENDING / 0 MATERIALIZED PROMOTIONS` |
 | Cognitive Reference Architecture | `GIA-COG-001 v0.1.2 / ACTIVE / NORMATIVE` |
 | `GIA-COG-002..008` | `RESERVED / NOT MATERIALIZED` |
 | Product Engineering | `PAUSED / NOT RELEASED` |
@@ -357,10 +357,11 @@ UXA-106
 → FUNCTIONAL CONTRACT ADJUDICATED / NORMATIVE
 → FUNCTIONALLY SUFFICIENT / ADJUDICATED
 → MATURITY EXAM COMPLETE
-→ TRN-102 / TRN-103 / TRN-104 ELIGIBLE CANDIDATE = LOCALLY VALIDATED
-→ HUMAN MATURITY ADJUDICATION PENDING
+→ MATURITY FINDINGS ADJUDICATED
+→ TRN-102 / TRN-103 / TRN-104 ADJUDICATED ELIGIBILITY = LOCALLY VALIDATED
+→ PROMOTION MATERIALIZATION PENDING
 → MATURITY = PARTIAL / UNCHANGED
-→ MATURITY PROMOTIONS = 0
+→ MATURITY PROMOTIONS MATERIALIZED = 0
 
 PRODUCT ENGINEERING
 → PAUSED / NOT RELEASED
@@ -616,7 +617,7 @@ SNAPSHOT
 
 UXA-105 concluiu escopo, contrato funcional, maturity exam e adjudicação; `TRN-001` está `LOCALLY VALIDATED`. A cadeia G1 completa continua sem validação integral.
 
-UXA-106 concluiu o maturity exam de `TRN-102/103/104`; as três transições são candidatas elegíveis a `LOCALLY VALIDATED`, com adjudicação humana de maturidade ainda pendente. A maturidade corrente permanece `PARTIAL` e não houve promoção.
+UXA-106 concluiu o maturity exam e a adjudicação humana dos achados de `TRN-102/103/104`; as três transições têm elegibilidade adjudicada para `LOCALLY VALIDATED`, mas a materialização ainda está pendente. A maturidade operativa permanece `PARTIAL` e não houve promoção materializada.
 
 Cada avanço depende da autoridade temática vigente e do gate específico aplicável.
 
