@@ -406,9 +406,9 @@ Enterprise = atendimento humano obrigatório
 
 Uma configuração Scale pode ser suficientemente padronizada para operar em Self-service. Uma configuração Growth pode exigir apoio por integração, governança ou outra complexidade específica.
 
-## Como funciona o Self-service dentro da contratação online
+## Como funciona o modelo de implementação/operação depois do tier
 
-Self-service é um **modelo de implementação/operação dentro da contratação online do Guivos Business**. A composição e a contratação permanecem digitais também quando a implementação posterior exigir suporte ou operação gerenciada. Self-service não é um quinto plano, não é uma oferta separada e não significa que tudo esteja incluído na assinatura-base.
+O modelo de implementação/operação é definido **depois** que oferta, escala, capacidades, integrações e governança/segurança determinam o tier compatível. Self-service, suporte e gerenciado não são tiers e não determinam o tier por si só.
 
 A lógica de referência é:
 
@@ -419,18 +419,24 @@ OFERTA BUSINESS OBRIGATÓRIA
 ↓
 ESCALA / PARTICIPANTES / ACESSOS
 ↓
-CAPACIDADES NECESSÁRIAS
+CAPACIDADES
+↓
+INTEGRAÇÕES
+↓
+GOVERNANÇA / SEGURANÇA
 ↓
 TIER COMPATÍVEL
 ↓
-COMPOSIÇÃO DO VALOR
+VALOR RECORRENTE DE PLATAFORMA
 ↓
-CONTRATAÇÃO ONLINE
+DEPOIS: MODELO DE IMPLEMENTAÇÃO / OPERAÇÃO
 ↓
-CONFIGURAÇÃO E OPERAÇÃO
+SELF-SERVICE / SUPORTE / GERENCIADO
+↓
+SE HOUVER SERVIÇO PAGO → VALOR CONTRATUAL FINAL
 ```
 
-### Quadro de composição Self-service
+### Quadro de composição da contratação
 
 | Etapa | O que a empresa define ou seleciona | O que isso representa | Pode alterar o plano? | Pode alterar o valor? |
 |---|---|---|---|---|
@@ -439,8 +445,8 @@ CONFIGURAÇÃO E OPERAÇÃO
 | **3. Intelligence** | profundidade analítica e capacidades aplicáveis | quanto de compreensão/analytics a configuração exige | sim, conforme os entitlements vigentes | sim, quando houver capacidade comercializada separadamente |
 | **4. Integrações e eventos** | integrações necessárias para receber/enviar eventos ou dados autorizados | complexidade de conexão com outros sistemas | sim | sim, quando aplicável |
 | **5. Governança** | requisitos de gestão, controle e governança compatíveis com a operação | complexidade administrativa e de controle | sim | pode alterar, conforme a configuração |
-| **6. Nível de serviço contratual** | capacidades de serviço previstas no plano/contrato | nível de atendimento e compromisso contratual | pode exigir plano superior | pode alterar |
-| **7. Implementação/operação** | Self-service, apoio do suporte ou gerenciado | quanto a Guivos participa da implantação/operação | **não define o plano por si só** | sim, se houver serviço adicional contratado |
+| **6. Tier resultante** | resultado de oferta + escala + capacidades + integrações + governança/segurança | capacidade da plataforma necessária | — | define a base recorrente da plataforma |
+| **7. Implementação/operação** | Self-service, apoio do suporte ou gerenciado | como a empresa implementa/opera depois do tier | **não** | somente se houver serviço pago adicional |
 | **8. Orçamento de incentivo** | valor que a empresa decide disponibilizar para concessões | recurso operacional pré-pago do programa | **não** | sim, mas fica separado da assinatura |
 | **9. Acessos Journey custeados** | quantidade e condição dos acessos elegíveis contratados | custeio empresarial do Journey existente | pode afetar escala/capacidade | sim; possui relação econômica própria |
 
