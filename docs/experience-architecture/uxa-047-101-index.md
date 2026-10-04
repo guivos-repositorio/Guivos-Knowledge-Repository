@@ -2,7 +2,7 @@
 id: GKR-UXA-047-101-INDEX-001
 title: Índice Corrente das Frentes UXA-047 a UXA-106
 status: active
-version: 3.54.80
+version: 3.54.81
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-10-04
 depends_on:
@@ -32,7 +32,7 @@ Este índice existe somente para descoberta das frentes UXA numeradas que ainda 
 
 ```text
 GKR-STATE-001
-→ 3.51.06 / CURRENT
+→ 3.51.07 / CURRENT
 
 MARCO FUNCIONAL
 → M7.88
@@ -83,6 +83,7 @@ UXA-105
 UXA-106
 → [Exame de Escopo — Continuidade G2](uxa-106-g2-scope-exam.md)
 → [Exame Funcional — Continuidade G2](uxa-106-g2-functional-exam.md)
+→ [Exame de Maturidade — TRN-102/103/104](uxa-106-g2-maturity-exam.md)
 → SCOPE EXAM COMPLETE
 → ADJUDICATED SCOPE = TRN-102 / TRN-103 / TRN-104
 → PER-102 → PER-103 → PER-104 → PER-105
@@ -91,6 +92,9 @@ UXA-106
 → FUNCTIONAL EXAM COMPLETE
 → FUNCTIONAL CONTRACT ADJUDICATED / NORMATIVE
 → TRN-102 / TRN-103 / TRN-104 FUNCTIONALLY SUFFICIENT / ADJUDICATED
+→ MATURITY EXAM COMPLETE
+→ TRN-102 / TRN-103 / TRN-104 ELIGIBLE CANDIDATE = LOCALLY VALIDATED
+→ HUMAN MATURITY ADJUDICATION PENDING
 → TRN-102 / TRN-103 / TRN-104 PARTIAL / UNCHANGED
 → MATURITY PROMOTIONS = 0
 → PRODUCT ENGINEERING NOT RELEASED
