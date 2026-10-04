@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.51.08
+version: 3.51.09
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-10-04
 normative: true
@@ -131,8 +131,8 @@ Estado executivo vigente:
 - **UXA-103:** escopo adjudicado; contrato funcional de `TRN-005` adjudicado e reconciliado; conclusão de maturidade adjudicada e promoção materializada para `LOCALLY VALIDATED`; `INTEGRALLY VALIDATED` não suportado pela evidência corrente;
 - **UXA-104:** escopo adjudicado por `GKR-UXA-104-PER013014-SCOPE-AUTHORITY-001` para `PER-013/014` + `TRN-014..017`; exame funcional `COMPLETE`; contrato funcional `ADJUDICATED / NORMATIVE`; reconciliação `COMPLETE`; maturity exam `COMPLETE`; achados de maturidade `ADJUDICATED`; `TRN-014..017` promovidas para `LOCALLY VALIDATED`; quatro promoções de maturidade;
 - **UXA-105:** scope exam `COMPLETE`; escopo `ADJUDICATED / NORMATIVE` restrito a `TRN-001 — PER-001 → PER-002`; contrato funcional adjudicado; maturity exam `COMPLETE`; adjudicação de maturidade `COMPLETE`; `TRN-001` promovida de `PARTIAL` para `LOCALLY VALIDATED`; `INTEGRALLY VALIDATED` não suportado; uma promoção de maturidade;
-- **UXA-106:** scope exam `COMPLETE`; escopo `ADJUDICATED / NORMATIVE` restrito a `TRN-102/103/104 — PER-102 → PER-103 → PER-104 → PER-105`; exame funcional `COMPLETE`; contrato funcional `ADJUDICATED / NORMATIVE`; maturity exam `COMPLETE`; achados de maturidade `ADJUDICATED`; `TRN-102/103/104` têm elegibilidade adjudicada para `LOCALLY VALIDATED`; materialização da promoção `PENDING`; maturidade operativa permanece `PARTIAL`; zero promoções materializadas;
-- **execução automática seguinte:** nenhuma; o próximo gate da UXA-106 é materialização das promoções adjudicadas, mediante autorização humana separada.
+- **UXA-106:** scope exam `COMPLETE`; escopo `ADJUDICATED / NORMATIVE` restrito a `TRN-102/103/104 — PER-102 → PER-103 → PER-104 → PER-105`; exame funcional `COMPLETE`; contrato funcional `ADJUDICATED / NORMATIVE`; maturity exam `COMPLETE`; achados de maturidade `ADJUDICATED`; `TRN-102/103/104` promovidas para `LOCALLY VALIDATED`; três promoções materializadas; `INTEGRALLY VALIDATED` não suportado;
+- **execução automática seguinte:** nenhuma; UXA-106 concluiu a materialização das promoções. Qualquer avanço além de `LOCALLY VALIDATED` exige novo gate.
 
 ```text
 DOCUMENTED
@@ -1631,7 +1631,7 @@ TRN-101
 TRN-102
 TRN-103
 TRN-104
-→ PARTIAL / UNCHANGED
+→ LOCALLY VALIDATED
 
 TRN-114
 → CONTRACTED / UNCHANGED
@@ -1772,10 +1772,10 @@ UXA-106
 → TRN-102 / TRN-103 / TRN-104 FUNCTIONALLY SUFFICIENT / ADJUDICATED
 → MATURITY EXAM COMPLETE
 → MATURITY FINDINGS ADJUDICATED
-→ TRN-102 / TRN-103 / TRN-104 ADJUDICATED ELIGIBILITY = LOCALLY VALIDATED
-→ PROMOTION MATERIALIZATION PENDING
-→ TRN-102 / TRN-103 / TRN-104 PARTIAL / UNCHANGED
-→ MATURITY PROMOTIONS MATERIALIZED = 0
+→ TRN-102 / TRN-103 / TRN-104 LOCALLY VALIDATED
+→ PROMOTION MATERIALIZATION COMPLETE
+→ MATURITY PROMOTIONS MATERIALIZED = 3
+→ INTEGRALLY VALIDATED NOT SUPPORTED
 → PRODUCT ENGINEERING PAUSED / NOT RELEASED
 
 UXA-105
@@ -2042,23 +2042,23 @@ PER-102
 → GKR-UX-PER102-MASTER-001 v0.1.1 / CURRENT
 → RESULTADOS DE BUSCA DE COLETIVOS
 → TRN-101 preservada como locally validated
-→ TRN-102 preservada como partial
+→ TRN-102 = LOCALLY VALIDATED / UXA-106
 
 PER-103
 → GKR-UX-PER103-MASTER-001 v0.2.0 / CURRENT
 → PERFIL PÚBLICO DO COLETIVO
-→ TRN-102 preservada como partial
-→ TRN-103 preservada como partial
+→ TRN-102 = LOCALLY VALIDATED / UXA-106
+→ TRN-103 = LOCALLY VALIDATED / UXA-106
 
 PER-104
 → GKR-UX-PER104-MASTER-001 v0.2.0 / CURRENT
 → REVISÃO E SOLICITAÇÃO
-→ TRN-103 / TRN-104 preservadas como partial
+→ TRN-103 / TRN-104 = LOCALLY VALIDATED / UXA-106
 
 PER-105
 → GKR-UX-PER105-MASTER-001 v0.1.0 / CURRENT
 → SOLICITAÇÃO PENDENTE
-→ TRN-104 preservada como partial
+→ TRN-104 = LOCALLY VALIDATED / UXA-106
 → TRN-105 / TRN-106 / TRN-107 / TRN-108 / TRN-109 = INTEGRALLY VALIDATED / UNCHANGED
 
 PER-106
