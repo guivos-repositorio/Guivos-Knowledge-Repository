@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-GAPS-001
 title: Lacunas e Continuidades Ausentes
 status: active
-version: 1.0.29
+version: 1.0.30
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-04
 related:
@@ -93,7 +93,7 @@ A autoridade transversal corrente é `GKR-UXA-102-V5-AUTHORITY-001`.
 O exame de V5 não promove maturidade e não cria transições. Permanecem abertas cinco famílias de lacuna:
 
 1. **G1 — primeira entrada, expressão e inventário**: refinada por `GKR-UX-G1-ENTRY-EXPRESSION-INVENTORY-VALIDATION-001`, UXA-103, UXA-104 e UXA-105; `TRN-001`, `TRN-003/004/005` e `TRN-014..017` estão localmente validadas; a lacuna local de continuidade público → protegido foi fechada por UXA-105; a cadeia completa, porém, **continua não integralmente validada**;
-2. **G2 — descoberta e solicitação de Coletivo**: refinada por `GKR-UX-G2-COLLECTIVE-DISCOVERY-REQUEST-VALIDATION-001`; UXA-106 concluiu o maturity exam de `TRN-102/103/104`; as três transições são candidatas elegíveis a `LOCALLY VALIDATED`, com adjudicação humana ainda pendente e maturidade corrente preservada como `partial` e `TRN-114` permanece `contracted` até maturidade/materialização de `COL-003/004`; `TRN-101` permanece localmente validada;
+2. **G2 — descoberta e solicitação de Coletivo**: refinada por `GKR-UX-G2-COLLECTIVE-DISCOVERY-REQUEST-VALIDATION-001`; UXA-106 concluiu o maturity exam e adjudicou a elegibilidade de `TRN-102/103/104` para `LOCALLY VALIDATED`; a materialização das promoções permanece pendente e a maturidade operativa corrente continua `partial` e `TRN-114` permanece `contracted` até maturidade/materialização de `COL-003/004`; `TRN-101` permanece localmente validada;
 3. **G3 — Organização e relação O↔C**: refinada por `GKR-UX-G3-ORGANIZATION-COLLECTIVE-RELATIONSHIP-VALIDATION-001`; concorrência, retorno, estado indeterminado e idempotência deixam de ser lacuna genérica; `TRN-201` permanece `partial`, `TRN-202` permanece localmente validada e `TRN-206..209` permanecem `contracted` por ausência de validação ponta a ponta/materialização das autoridades bilaterais;
 4. **G4 — processo interno de oportunidade**: refinada por `GKR-UX-G4-INTERNAL-OPPORTUNITY-PROCESS-VALIDATION-001`; `TRN-212` e `TRN-214` permanecem `contracted`, retornos `PER-204 → PER-203` e `ORG-008 → ORG-003` permanecem contextuais sem IDs dedicados, e as lacunas correntes são validação ponta a ponta + maturidade/materialização dos contratos de `PER-204/ORG-008`;
 5. **G5 — Opportunity Boost**: refinada por `GKR-UX-G5-OPPORTUNITY-BOOST-VALIDATION-001`; falha, estado indeterminado, retry e idempotência deixam de ser lacuna genérica; `TRN-301/302/304/305/306` permanecem `partial`, `TRN-303` permanece localmente validada, e continuam abertas integração ponta a ponta + operacionalização econômica sem autorização para inventar cobrança, mensuração ou deduplicação técnica.
