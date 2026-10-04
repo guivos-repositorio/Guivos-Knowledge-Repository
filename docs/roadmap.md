@@ -2,7 +2,7 @@
 id: ROADMAP-13.48.7
 title: Roadmap Arquitetural — Frentes Correntes e Próximos Gates da Guivos
 status: active
-version: 13.48.64
+version: 13.48.69
 owner: Guivos
 last_updated: 2026-10-03
 normative: true
@@ -45,7 +45,7 @@ related:
 
 ## 1. Função
 
-Este roadmap traduz `GKR-STATE-001 v3.50.96` em **frentes governadas de avanço**.
+Este roadmap traduz `GKR-STATE-001 v3.51.02` em **frentes governadas de avanço**.
 
 Sua função é declarar frentes correntes, dependências e próximos gates sem transformar possibilidade técnica em execução automática.
 
@@ -63,10 +63,10 @@ ROADMAP
 
 | Frente | Estado vigente |
 |---|---|
-| Estado global | `GKR-STATE-001 v3.50.96 / CURRENT` |
+| Estado global | `GKR-STATE-001 v3.51.02 / CURRENT` |
 | Era | `GE-2 — KNOWLEDGE` |
 | Marco funcional | `M7.88` |
-| Última UXA numerada | `UXA-104` |
+| Última UXA numerada | `UXA-105` |
 | Homes públicas | `8 / 8 READY FOR EXTERNAL DESIGN` |
 | Manifesto de Design | `GKR-UX-HOMES-DESIGN-DELIVERY-001 v7.0.50` |
 | Read-First das Homes | `8 / 8 CURRENT / NON-NORMATIVE` |
@@ -82,6 +82,7 @@ ROADMAP
 | UXA-102 / V5 | `ADJUDICADA / MATERIALIZADA EM MAIN` |
 | UXA-103 | `FUNCTIONAL CONTRACT ADJUDICATED / RECONCILIATION COMPLETE / TRN-005 LOCALLY VALIDATED / INTEGRAL NOT SUPPORTED` |
 | UXA-104 | `FUNCTIONAL CONTRACT ADJUDICATED / RECONCILIATION COMPLETE / MATURITY EXAM COMPLETE / TRN-014..017 LOCALLY VALIDATED / INTEGRAL NOT SUPPORTED` |
+| UXA-105 | `SCOPE + FUNCTIONAL CONTRACT ADJUDICATED / MATURITY EXAM + ADJUDICATION COMPLETE / TRN-001 LOCALLY VALIDATED / 1 PROMOTION / INTEGRAL NOT SUPPORTED` |
 | Cognitive Reference Architecture | `GIA-COG-001 v0.1.2 / ACTIVE / NORMATIVE` |
 | `GIA-COG-002..008` | `RESERVED / NOT MATERIALIZED` |
 | Product Engineering | `PAUSED / NOT RELEASED` |
@@ -599,6 +600,8 @@ REAL MARKET EVIDENCE
 SNAPSHOT
 → NOT REQUIRED BY DEFAULT
 ```
+
+UXA-105 concluiu escopo, contrato funcional, maturity exam e adjudicação; `TRN-001` está `LOCALLY VALIDATED`. A cadeia G1 completa continua sem validação integral.
 
 Cada avanço depende da autoridade temática vigente e do gate específico aplicável.
 

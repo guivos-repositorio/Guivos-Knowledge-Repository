@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.50.96
+version: 3.51.02
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-10-03
 normative: true
@@ -27,6 +27,10 @@ related:
   - GKR-UXA-104-PER013014-SCOPE-AUTHORITY-001
   - GKR-UXA-104-PER013014-FUNCTIONAL-EXAM-001
   - GKR-UXA-104-PER013014-MATURITY-EXAM-001
+  - GKR-UXA-105-TRN001-SCOPE-EXAM-001
+  - GKR-UXA-105-TRN001-FUNCTIONAL-EXAM-001
+  - GKR-UXA-105-TRN001-MATURITY-EXAM-001
+  - UXA-105
   - UXA-104
   - UXA-103
   - GKR-UXA-102-V5-AUTHORITY-001
@@ -122,7 +126,8 @@ Estado executivo vigente:
 - **UXA-102 / V5:** `TRANSVERSE CONTRACT ADJUDICATED`; 76/76 transições examinadas; 0 promoções de maturidade;
 - **UXA-103:** escopo adjudicado; contrato funcional de `TRN-005` adjudicado e reconciliado; conclusão de maturidade adjudicada e promoção materializada para `LOCALLY VALIDATED`; `INTEGRALLY VALIDATED` não suportado pela evidência corrente;
 - **UXA-104:** escopo adjudicado por `GKR-UXA-104-PER013014-SCOPE-AUTHORITY-001` para `PER-013/014` + `TRN-014..017`; exame funcional `COMPLETE`; contrato funcional `ADJUDICATED / NORMATIVE`; reconciliação `COMPLETE`; maturity exam `COMPLETE`; achados de maturidade `ADJUDICATED`; `TRN-014..017` promovidas para `LOCALLY VALIDATED`; quatro promoções de maturidade;
-- **execução automática seguinte:** nenhuma; nenhuma execução automática seguinte é criada pela conclusão da UXA-104.
+- **UXA-105:** scope exam `COMPLETE`; escopo `ADJUDICATED / NORMATIVE` restrito a `TRN-001 — PER-001 → PER-002`; contrato funcional adjudicado; maturity exam `COMPLETE`; adjudicação de maturidade `COMPLETE`; `TRN-001` promovida de `PARTIAL` para `LOCALLY VALIDATED`; `INTEGRALLY VALIDATED` não suportado; uma promoção de maturidade;
+- **execução automática seguinte:** nenhuma; qualquer avanço além de `LOCALLY VALIDATED` exige novo gate próprio.
 
 ```text
 DOCUMENTED
@@ -1589,7 +1594,7 @@ STATE MAP DEFINED
 
 ```text
 TRN-001
-→ PARTIAL
+→ LOCALLY VALIDATED
 
 TRN-002
 → LOCALLY VALIDATED / UNCHANGED
@@ -1605,10 +1610,10 @@ TRN-006
 → LOCALLY VALIDATED / UNCHANGED
 
 TRN-014..017
-→ CONTRACTED / UNCHANGED
+→ LOCALLY VALIDATED
 ```
 
-A promoção local não comprova implementação, persistência técnica ou fechamento ponta a ponta integral. `TRN-005` está localmente validada após fechamento de resultado indeterminado/reconciliação/retry pela UXA-103; `PER-013/014` permanecem contratos candidatos.
+A maturidade local não comprova implementação, persistência técnica ou fechamento ponta a ponta integral. `TRN-001` está localmente validada após UXA-105; `TRN-005` após UXA-103; `TRN-014..017` após UXA-104. A cadeia G1 completa permanece não integralmente validada.
 
 ## 28.2 G2 — descoberta e solicitação de Coletivo
 
@@ -1750,6 +1755,20 @@ Este Registro não define uma fila automática de próximos atos.
 ```text
 NEXT AUTOMATIC EXECUTION
 → NONE
+
+UXA-105
+→ SCOPE EXAM COMPLETE
+→ ADJUDICATED SCOPE = TRN-001 ONLY
+→ SCOPE ADJUDICATED / NORMATIVE
+→ FUNCTIONAL EXAM COMPLETE
+→ FUNCTIONAL CONTRACT ADJUDICATED / NORMATIVE
+→ MATURITY EXAM COMPLETE
+→ MATURITY ADJUDICATION COMPLETE
+→ TRN-001 FUNCTIONALLY SUFFICIENT / ADJUDICATED
+→ TRN-001 LOCALLY VALIDATED
+→ 1 MATURITY PROMOTION
+→ INTEGRALLY VALIDATED NOT SUPPORTED
+→ G1 COMPLETE CHAIN NOT INTEGRALLY VALIDATED
 
 O/C HIGH-FIDELITY DESIGN
 → AUTHORIZATION GRANTED
