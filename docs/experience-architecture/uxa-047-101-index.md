@@ -35,7 +35,7 @@ Este índice existe somente para descoberta das frentes UXA numeradas que ainda 
 
 ```text
 GKR-STATE-001
-→ 3.51.06 / CURRENT
+→ 3.51.07 / CURRENT
 
 MARCO FUNCIONAL
 → M7.88
