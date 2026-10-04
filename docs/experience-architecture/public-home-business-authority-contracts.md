@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-BUSINESS-AUTHORITY-001
 title: Contratos de Autoridade — Home Pública — Guivos Business
 status: active
-version: 1.0.10
+version: 1.0.11
 owner: Experience Architecture
 last_updated: 2026-09-23
 parent: GPA-004
@@ -340,7 +340,7 @@ ENTERPRISE
 → governar em alta complexidade e escala
 ```
 
-Planos governam capacidade, escala, Intelligence, integração, governança e nível de serviço conforme contrato.
+Planos governam capacidade, escala, Intelligence, integração, governança e segurança conforme contrato. O modelo de implementação/operação e eventuais serviços pagos adicionais são definidos depois do tier e não determinam o tier por si só.
 
 Planos não governam mérito, evolução moral, qualidade da empresa ou impacto humano.
 
