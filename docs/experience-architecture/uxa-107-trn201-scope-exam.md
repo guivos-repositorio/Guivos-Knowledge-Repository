@@ -2,11 +2,11 @@
 id: GKR-UXA-107-TRN201-SCOPE-EXAM-001
 title: UXA-107 — TRN-201 — Exame de Escopo da Continuidade Institucional
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-04
-normative: false
-maturity: scope_exam_complete_pending_adjudication
+normative: true
+maturity: scope_adjudicated
 depends_on:
   - GKR-UX-G3-ORGANIZATION-COLLECTIVE-RELATIONSHIP-VALIDATION-001
   - GKR-UX-ORGCOL-OVERVIEW-MASTER-001
@@ -152,15 +152,16 @@ A evidência corrente é suficiente para delimitar TRN-201 como unidade autônom
 UXA-107 SCOPE EXAM
 → COMPLETE
 
-CANDIDATE SCOPE
+ADJUDICATED SCOPE
 → TRN-201 ONLY
 → ORG-001 → ORG-002
 
 SCOPE SUFFICIENCY
-→ SUFFICIENT CANDIDATE
+→ SUFFICIENT / ADJUDICATED
 
 SCOPE ADJUDICATION
-→ PENDING HUMAN GATE
+→ COMPLETE
+→ ADJUDICATED / NORMATIVE
 
 FUNCTIONAL EXAM
 → NOT_STARTED
@@ -184,11 +185,13 @@ PRODUCT ENGINEERING
 
 ## 9. Próximo gate
 
-O próximo gate, se autorizado, é exclusivamente a adjudicação humana do escopo candidato:
+O escopo foi adjudicado normativamente:
 
 ~~~text
 TRN-201 ONLY
 → ORG-001 → ORG-002
 ~~~
+
+O próximo gate, se autorizado separadamente, é exclusivamente o Functional Exam da UXA-107 dentro desse recorte.
 
 A adjudicação de escopo não autoriza automaticamente exame funcional, maturity exam, promoção de maturidade, Design, protótipo ou Product Engineering.
