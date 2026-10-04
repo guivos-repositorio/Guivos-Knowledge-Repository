@@ -838,12 +838,12 @@ O consumo corrente da Home Business é resolvido pelo Manifesto canônico vigent
 Usar:
 
 1. `GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.7.10` como autoridade comum de handoff;
-2. este Source Lock `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.27`;
-3. `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.8`;
-4. `GKR-UX-HOME-BUSINESS-CONVERSION-002 v1.0.2`;
-5. `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.10`;
-6. `GPA-004 v1.7.4`;
-7. `GKR-PLANS-BUSINESS-001 v1.3.1` — planos, preços de referência e composição Self-service corrente.
+2. este Source Lock `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.28`;
+3. `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.10`;
+4. `GKR-UX-HOME-BUSINESS-CONVERSION-002 v1.0.3`;
+5. `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.11`;
+6. `GPA-004 v1.7.7`;
+7. `GKR-PLANS-BUSINESS-001 v2.3.2` — planos, preços de referência e composição Business corrente.
 
 ```text
 SOURCE OF TRUTH
