@@ -2,7 +2,7 @@
 id: ROADMAP-13.48.7
 title: Roadmap Arquitetural — Frentes Correntes e Próximos Gates da Guivos
 status: active
-version: 13.48.71
+version: 13.48.73
 owner: Guivos
 last_updated: 2026-10-04
 normative: true
@@ -45,7 +45,7 @@ related:
 
 ## 1. Função
 
-Este roadmap traduz `GKR-STATE-001 v3.51.03` em **frentes governadas de avanço**.
+Este roadmap traduz `GKR-STATE-001 v3.51.06` em **frentes governadas de avanço**.
 
 Sua função é declarar frentes correntes, dependências e próximos gates sem transformar possibilidade técnica em execução automática.
 
@@ -63,7 +63,7 @@ ROADMAP
 
 | Frente | Estado vigente |
 |---|---|
-| Estado global | `GKR-STATE-001 v3.51.03 / CURRENT` |
+| Estado global | `GKR-STATE-001 v3.51.06 / CURRENT` |
 | Era | `GE-2 — KNOWLEDGE` |
 | Marco funcional | `M7.88` |
 | Última UXA numerada | `UXA-106` |
@@ -83,7 +83,7 @@ ROADMAP
 | UXA-103 | `FUNCTIONAL CONTRACT ADJUDICATED / RECONCILIATION COMPLETE / TRN-005 LOCALLY VALIDATED / INTEGRAL NOT SUPPORTED` |
 | UXA-104 | `FUNCTIONAL CONTRACT ADJUDICATED / RECONCILIATION COMPLETE / MATURITY EXAM COMPLETE / TRN-014..017 LOCALLY VALIDATED / INTEGRAL NOT SUPPORTED` |
 | UXA-105 | `SCOPE + FUNCTIONAL CONTRACT ADJUDICATED / MATURITY EXAM + ADJUDICATION COMPLETE / TRN-001 LOCALLY VALIDATED / 1 PROMOTION / INTEGRAL NOT SUPPORTED` |
-| UXA-106 | `SCOPE EXAM COMPLETE / SCOPE ADJUDICATED + NORMATIVE = TRN-102/103/104 / FUNCTIONAL EXAM NOT AUTHORIZED / 0 PROMOTIONS` |
+| UXA-106 | `SCOPE ADJUDICATED = TRN-102/103/104 / FUNCTIONAL EXAM COMPLETE / FUNCTIONAL CONTRACT ADJUDICATED + NORMATIVE / MATURITY PARTIAL / 0 PROMOTIONS` |
 | Cognitive Reference Architecture | `GIA-COG-001 v0.1.2 / ACTIVE / NORMATIVE` |
 | `GIA-COG-002..008` | `RESERVED / NOT MATERIALIZED` |
 | Product Engineering | `PAUSED / NOT RELEASED` |
@@ -350,6 +350,15 @@ UXA-103
 → PROMOTION MATERIALIZED
 → INTEGRALLY VALIDATED NOT SUPPORTED
 
+UXA-106
+→ SCOPE ADJUDICATED / NORMATIVE
+→ TRN-102 / TRN-103 / TRN-104
+→ FUNCTIONAL EXAM COMPLETE
+→ FUNCTIONAL CONTRACT ADJUDICATED / NORMATIVE
+→ FUNCTIONALLY SUFFICIENT / ADJUDICATED
+→ MATURITY = PARTIAL / UNCHANGED
+→ MATURITY PROMOTIONS = 0
+
 PRODUCT ENGINEERING
 → PAUSED / NOT RELEASED
 ```
@@ -604,7 +613,7 @@ SNAPSHOT
 
 UXA-105 concluiu escopo, contrato funcional, maturity exam e adjudicação; `TRN-001` está `LOCALLY VALIDATED`. A cadeia G1 completa continua sem validação integral.
 
-UXA-106 concluiu o exame e a adjudicação normativa do escopo `TRN-102/103/104`; o exame funcional permanece não iniciado e não autorizado, sem promoção de maturidade.
+UXA-106 concluiu o exame funcional e a adjudicação normativa do contrato de `TRN-102/103/104`; as três transições são `FUNCTIONALLY SUFFICIENT / ADJUDICATED`, permanecem `PARTIAL` e não houve promoção de maturidade.
 
 Cada avanço depende da autoridade temática vigente e do gate específico aplicável.
 
