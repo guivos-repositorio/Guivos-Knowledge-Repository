@@ -39,6 +39,11 @@ MARCO FUNCIONAL
 ÚLTIMA UXA FUNCIONAL NUMERADA
 → UXA-105
 
+PRÓXIMA UXA
+→ UXA-106
+→ NOT_STARTED
+→ NOT_AUTHORIZED
+
 UXA-104
 → [Continuidade de Arquivo e Perguntas Opcionais](uxa-104-file-optional-guided-questions-continuity.md)
 → [Autoridade Normativa de Escopo](uxa-104-scope-authority.md)
