@@ -2,7 +2,7 @@
 id: GKR-UX-PLANS-BUSINESS-CONFIGURATOR-001
 title: Planos — Guivos Business — Configurador, Capacidades e Pricing — Documento Mestre
 status: active
-version: 0.8.0
+version: 0.8.1
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-03
 normative: false
@@ -159,7 +159,7 @@ VALOR RECORRENTE DE PLATAFORMA CALCULÁVEL
 
 DEPOIS
 +
-SERVICE_RATE(periodicidade, modelo_operacional), SE HOUVER SERVIÇO ADICIONAL CONTRATADO
+PAID_ADDITIONAL_SERVICE_RATE(periodicidade, serviço_contratado), SE HOUVER SERVIÇO PAGO ADICIONAL CONTRATADO
 =
 VALOR CONTRATUAL FINAL
 ```
