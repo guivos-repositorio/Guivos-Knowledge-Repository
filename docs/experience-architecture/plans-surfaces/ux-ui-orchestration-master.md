@@ -2,7 +2,7 @@
 id: GKR-UX-PLANS-ORCHESTRATION-001
 title: Planos — Superfícies e Fluxos — Documento Mestre de Orquestração UX/UI
 status: active
-version: 0.4.0
+version: 0.7.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-03
 normative: false
@@ -102,15 +102,21 @@ A experiência Business deve permitir, sem prescrever layout:
 ```text
 1. ESCOLHER OFERTA BUSINESS OBRIGATÓRIA
 2. ESCOLHER PERIODICIDADE
-3. INFORMAR POPULAÇÃO ELEGÍVEL
+3. INFORMAR POPULAÇÃO ELEGÍVEL / ESCALA
 4. INFORMAR ACESSOS JOURNEY, SE APLICÁVEL
-5. IDENTIFICAR CAPACIDADES NECESSÁRIAS
-6. ENQUADRAR TIER COMPATÍVEL
-7. ZERAR ADD-ONS JÁ INCLUÍDOS NO TIER
-8. ESCOLHER SERVIÇO ADICIONAL, SE NECESSÁRIO
-9. INFORMAR ORÇAMENTO DE INCENTIVO SEPARADO
-10. REVISAR COMPOSIÇÃO
-11. EXIBIR TOTAL RECORRENTE + ITENS SEPARADOS / DIMENSIONADOS
+5. SELECIONAR CAPACIDADES — INCLUIR / NÃO INCLUIR
+6. SELECIONAR INTEGRAÇÕES — INCLUIR / NÃO INCLUIR
+7. INFORMAR REQUISITOS DE GOVERNANÇA / SEGURANÇA
+8. ENQUADRAR E EXPLICAR O TIER COMPATÍVEL
+9. ZERAR CAPACIDADES JÁ INCLUÍDAS NO TIER
+10. PRECIFICAR ADD-ONS E ITENS DIMENSIONADOS
+11. INFORMAR ORÇAMENTO DE INCENTIVO SEPARADO
+12. REVISAR COMPOSIÇÃO
+13. EXIBIR TOTAL RECORRENTE + ITENS SEPARADOS / DIMENSIONADOS
+14. DEPOIS DEFINIR MODELO DE IMPLEMENTAÇÃO / OPERAÇÃO
+    → SELF-SERVICE
+    → SUPORTE
+    → GERENCIADO
 ```
 
 A ordem pode ser reorganizada visualmente, mas a semântica de cálculo e a proteção contra dupla cobrança devem permanecer.
@@ -159,6 +165,90 @@ Estados possíveis:
 - **incluído conforme contrato** → respeitar o dimensionamento contratual aplicável.
 
 Essa matriz deve ser consumida como regra econômica, não como prescrição visual.
+
+### 8.3.1 Seleção explícita de capacidades
+
+Toda capacidade governada deve permanecer visível na superfície e oferecer escolha explícita:
+
+| Capacidade | Decisão da empresa | Estado econômico possível |
+|---|---|---|
+| Intelligence avançado | Incluir / Não incluir | incluído no tier ou add-on |
+| Exportações automatizadas / Power BI | Incluir / Não incluir | incluído no tier ou add-on |
+| API Business | Incluir / Não incluir | incluído no tier ou add-on |
+| SSO / SAML | Incluir / Não incluir | incluído no tier ou add-on |
+| Governança / auditoria avançadas | Incluir / Não incluir | incluído no tier ou add-on |
+| Integração dedicada | Incluir / Não incluir | incluída, add-on ou dimensionada |
+| Integrações adicionais | Incluir / Não incluir | add-on ou dimensionadas |
+
+```text
+ESCOLHA DA CAPACIDADE
+≠ COBRANÇA DA CAPACIDADE
+```
+
+Uma capacidade selecionada pode resultar em valor adicional zero, add-on, reenquadramento em tier superior ou dimensionamento.
+
+### 8.4 Quadro econômico mínimo da superfície
+
+A experiência de composição Business deve ter acesso explícito aos componentes abaixo:
+
+| Componente | Regra econômica corrente |
+|---|---|
+| **Oferta Business** | obrigatória; taxa de ativação = R$ 0,00 |
+| **Start** | R$ 299/mês · R$ 2.990/ano |
+| **Growth** | R$ 799/mês · R$ 7.990/ano |
+| **Scale** | a partir de R$ 1.990/mês · anual dimensionado |
+| **Enterprise** | sob consulta |
+| **População** | progressiva por faixa; 1–50 incluídos |
+| **Journey custeado** | cobrança por acesso Plus/Pro financiado |
+| **Capacidade incluída no tier** | R$ 0,00 adicional |
+| **Capacidade não incluída** | preço mensal/anual governado |
+| **Orçamento de incentivo** | separado da assinatura |
+
+Exemplo mínimo de leitura:
+
+```text
+EMPRESA ESCOLHE
+→ PROGRAMAS DE INCENTIVO
+
+CONFIGURA
+→ 120 PESSOAS
+→ SEM INTEGRAÇÃO ADICIONAL
+→ GOVERNANÇA / SEGURANÇA PADRÃO
+
+ENQUADRAMENTO
+→ START
+
+COMPOSIÇÃO RECORRENTE
+→ TIER START = R$ 299,00
+→ 1–50 = R$ 0,00
+→ 51–120 = 70 × R$ 1,49 = R$ 104,30
+→ TOTAL = R$ 403,30/MÊS
+```
+
+A oferta não deve aparecer como parcela financeira artificial de R$ 0,00 no subtotal. Ela é o objeto contratado. O orçamento destinado às recompensas do programa não integra esse total recorrente. O modelo de implementação/operação é definido depois do enquadramento do tier.
+
+### 8.5 Progressão funcional dos tiers
+
+A experiência deve tornar legível **por que** uma configuração sobe de tier.
+
+| Tier | Direção | O que muda na prática |
+|---|---|---|
+| **Start** | operar | núcleo necessário para executar a oferta contratada |
+| **Growth** | acompanhar e compreender | adiciona profundidade de Intelligence e governança |
+| **Scale** | interpretar e integrar | adiciona capacidades de integração, API, SSO, exportações e operação em escala |
+| **Enterprise** | governar alta complexidade e escala | dimensiona segurança, governança, integrações, capacidade e condições contratuais específicas |
+
+A interface deve explicar o motivo do enquadramento:
+
+```text
+TIER RESULTANTE
+→ EXPLICÁVEL
+
+SUBIR DE TIER
+→ CONSEQUÊNCIA DE CAPACIDADE NECESSÁRIA
+→ NÃO PRESSÃO COMERCIAL
+→ NÃO MAXIMIZAÇÃO DE RECEITA
+```
 
 ## 9. Estados transversais
 

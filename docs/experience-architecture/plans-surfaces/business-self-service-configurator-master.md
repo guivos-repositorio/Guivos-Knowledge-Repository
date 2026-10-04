@@ -2,7 +2,7 @@
 id: GKR-UX-PLANS-BUSINESS-CONFIGURATOR-001
 title: Planos — Guivos Business — Configurador e Calculadora Self-service — Documento Mestre
 status: active
-version: 0.5.0
+version: 0.7.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-03
 normative: false
@@ -21,7 +21,7 @@ Definir a experiência pela qual uma empresa pode **compreender, configurar, est
 
 O configurador é uma experiência de composição. Ele não é um quinto plano.
 
-## 2. Planos-base
+## 2. Tiers de capacidade resultantes
 
 | Plano | Mensal | Anual | Direção |
 |---|---:|---:|---|
@@ -31,6 +31,29 @@ O configurador é uma experiência de composição. Ele não é um quinto plano.
 | **Enterprise** | sob consulta | sob consulta | governar alta complexidade e escala |
 
 Todos admitem seleção Mensal ou Anual. Quando o valor não estiver numericamente congelado, a calculadora não deve inventá-lo.
+
+### 2.1 Como o tier é determinado
+
+```text
+OFERTA ESCOLHIDA
++
+ESCALA
++
+CAPACIDADES
++
+INTEGRAÇÕES
++
+GOVERNANÇA / SEGURANÇA
+↓
+TIER COMPATÍVEL
+
+DEPOIS
+→ MODELO DE IMPLEMENTAÇÃO / OPERAÇÃO
+→ SELF-SERVICE / SUPORTE / GERENCIADO
+```
+
+A empresa não precisa escolher Start, Growth, Scale ou Enterprise antes de informar sua necessidade. O configurador deve **enquadrar e explicar** o tier compatível.
+
 
 ## 3. Dados de preenchimento
 
@@ -52,13 +75,32 @@ A composição deve conseguir receber, conforme aplicável:
 
 ### Capacidades
 
-- profundidade de Intelligence;
-- integrações;
-- API/exportações;
-- governança;
-- necessidades de segurança e controle;
-- nível de serviço;
-- implementação/operação: Self-service, apoio do suporte ou gerenciado.
+A superfície deve listar **todas as capacidades governadas**, cada uma com decisão explícita **Incluir / Não incluir**:
+
+- Intelligence avançado;
+- Exportações automatizadas / Power BI;
+- API Business;
+- SSO / SAML;
+- Governança / auditoria avançadas;
+- Integração dedicada;
+- Integrações dedicadas adicionais.
+
+Para cada capacidade selecionada, a interface deve mostrar se ela já está incluída no tier resultante, gera add-on, exige reenquadramento ou exige dimensionamento.
+
+### Governança / segurança
+
+- requisitos de governança;
+- auditoria;
+- autenticação corporativa;
+- segurança e controle aplicáveis.
+
+### Modelo de implementação / operação — etapa posterior
+
+Somente depois do tier resultante:
+
+- Self-service;
+- apoio do suporte;
+- gerenciado.
 
 ### Periodicidade
 
@@ -106,10 +148,14 @@ POPULATION_RATE(periodicidade, faixa_autorizada) × base_precificável
 JOURNEY_ACCESS_RATE(periodicidade) × acessos
 +
 ADDONS(periodicidade)
-+
-SERVICE_RATE(periodicidade, modelo_operacional)
 =
-VALOR RECORRENTE CALCULÁVEL
+VALOR RECORRENTE DE PLATAFORMA CALCULÁVEL
+
+DEPOIS
++
+SERVICE_RATE(periodicidade, modelo_operacional), SE HOUVER SERVIÇO ADICIONAL CONTRATADO
+=
+VALOR CONTRATUAL FINAL
 ```
 
 Cada termo só pode produzir número quando houver autoridade econômica correspondente.
@@ -196,7 +242,7 @@ ENTERPRISE
 → PREVALECE DIMENSIONAMENTO CONTRATUAL
 ```
 
-A inclusão de uma capacidade no tier não significa que ela seja gratuita universalmente; significa que seu preço já está absorvido pelo plano-base contratado.
+A inclusão de uma capacidade no tier não significa que ela seja gratuita universalmente; significa que seu preço já está absorvido pelo tier de capacidade resultante.
 
 
 ### Regra de cálculo
@@ -215,9 +261,45 @@ ELSE
 A interface deve exibir a capacidade incluída com valor adicional zero, e não ocultá-la como se ela não tivesse valor econômico.
 
 
+## 7.3 Progressão de capacidade por tier
+
+| Dimensão | **Start** | **Growth** | **Scale** | **Enterprise** |
+|---|---|---|---|---|
+| **Direção** | Operar | Acompanhar e compreender | Interpretar e integrar | Governar alta complexidade e escala |
+| **Intelligence avançado** | adicional | incluído | incluído | incluído |
+| **Governança / auditoria avançadas** | adicional | incluído | incluído | incluído |
+| **Exportações / Power BI** | adicional | adicional | incluído | incluído |
+| **API Business** | adicional | adicional | incluído | incluído |
+| **SSO / SAML** | adicional | adicional | incluído | incluído |
+| **1 integração dedicada** | adicional | adicional | 1 incluída | conforme contrato |
+
+A superfície deve explicar a progressão como mudança de capacidade, e não apenas como diferença de preço.
+
+## 7.4 Regra universal de incluir / não incluir
+
+A superfície de capacidades não deve presumir que a empresa deseja determinada capacidade apenas porque ela está disponível ou incluída em um tier.
+
+Cada capacidade deve possuir:
+
+```text
+INCLUIR
+OU
+NÃO INCLUIR
+```
+
+| Escolha | Condição | Efeito |
+|---|---|---|
+| Não incluir | qualquer tier | capacidade não compõe a configuração |
+| Incluir | já incluída no tier | valor adicional zero |
+| Incluir | não incluída + preço autorizado | add-on |
+| Incluir | exige tier superior | reenquadrar e explicar |
+| Incluir | exige dimensionamento | marcar como dimensionado / sob consulta |
+
+Essa regra vale inclusive para capacidades que um tier superior oferece sem valor adicional. **Disponibilidade não equivale a seleção automática.**
+
 ## 8. Resultado
 
-Quando todos os componentes necessários possuírem preço vigente, o resultado deve mostrar oferta Business obrigatória, tier de capacidade, população/escala, taxa de ativação da oferta igual a zero, acessos Journey, adicionais, serviços, subtotal recorrente, periodicidade, total recorrente, orçamento de incentivo em linha separada e itens sob consulta.
+Quando todos os componentes necessários possuírem preço vigente, o resultado deve mostrar primeiro a oferta Business escolhida e a configuração informada; depois, o tier resultante e a justificativa do enquadramento; por fim, população/escala, acessos Journey, adicionais, serviços, subtotal recorrente, periodicidade, total recorrente, orçamento de incentivo em linha separada e itens sob consulta. A oferta não deve ser apresentada como parcela financeira artificial de R$ 0,00.
 
 ## 9. Configuração parcialmente calculável
 
