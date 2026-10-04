@@ -2,7 +2,7 @@
 id: GKR-UX-PLANS-READ-FIRST-001
 title: Planos — Superfícies e Fluxos — Leia Primeiro
 status: active
-version: 0.5.0
+version: 0.6.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-03
 normative: false
@@ -140,6 +140,45 @@ TIER DE CAPACIDADE
 + CAPACIDADES ADICIONAIS NÃO INCLUÍDAS NO TIER
 + SERVIÇOS ADICIONAIS
 ```
+
+### Ordem semântica da contratação Business
+
+```text
+1. ESCOLHER O QUE QUER CONTRATAR
+   → INCENTIVOS
+   → JOURNEY
+   → OU AMBOS
+
+2. INFORMAR A CONFIGURAÇÃO
+   → ESCALA
+   → CAPACIDADES
+   → INTEGRAÇÕES
+   → GOVERNANÇA
+   → SERVIÇO
+
+3. ENQUADRAR O TIER COMPATÍVEL
+   → START
+   → GROWTH
+   → SCALE
+   → ENTERPRISE
+
+4. CALCULAR A COMPOSIÇÃO ECONÔMICA
+```
+
+O tier deve ser apresentado como **resultado explicável da configuração**, e não como uma escolha abstrata anterior à necessidade.
+
+### Diferença de valor entre tiers
+
+| Dimensão | **Start** | **Growth** | **Scale** | **Enterprise** |
+|---|---|---|---|---|
+| **Direção** | Operar | Acompanhar e compreender | Interpretar e integrar | Governar alta complexidade e escala |
+| **Operacionalização** | núcleo para colocar a oferta em operação | adiciona Intelligence e governança ampliadas | adiciona integração, API, SSO, exportações e maior escala | dimensiona capacidades, segurança, governança, integrações e contrato |
+| **Intelligence avançado** | adicional | incluído | incluído | incluído |
+| **Governança avançada** | adicional | incluído | incluído | incluído |
+| **Power BI / exportações** | adicional | adicional | incluído | incluído |
+| **API Business** | adicional | adicional | incluído | incluído |
+| **SSO / SAML** | adicional | adicional | incluído | incluído |
+| **1 integração dedicada** | adicional | adicional | 1 incluída | conforme contrato |
 
 ### Tiers de capacidade
 
