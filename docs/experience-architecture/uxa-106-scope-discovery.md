@@ -2,11 +2,11 @@
 id: GKR-UXA-106-SCOPE-DISCOVERY-001
 title: UXA-106 — Descoberta de Escopo
 status: active
-version: 0.1.0
+version: 1.0.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-04
 normative: false
-maturity: scope_discovery_in_progress
+maturity: scope_adjudicated
 depends_on:
   - GKR-STATE-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
@@ -18,6 +18,7 @@ related:
   - GKR-UX-G3-ORGANIZATION-COLLECTIVE-RELATIONSHIP-VALIDATION-001
   - GKR-UX-G4-INTERNAL-OPPORTUNITY-PROCESS-VALIDATION-001
   - GKR-UX-G5-OPPORTUNITY-BOOST-VALIDATION-001
+  - GKR-UXA-106-G2-SCOPE-AUTHORITY-001
 ---
 
 # UXA-106 — Descoberta de Escopo
@@ -28,9 +29,9 @@ Este documento abre a UXA-106 exclusivamente no estágio de descoberta de escopo
 
 ```text
 UXA-106
-→ STARTED
-→ SCOPE DISCOVERY IN_PROGRESS
-→ SCOPE NOT ADJUDICATED
+→ SCOPE DISCOVERY COMPLETE
+→ SCOPE ADJUDICATED
+→ AUTHORITY = GKR-UXA-106-G2-SCOPE-AUTHORITY-001
 
 FUNCTIONAL EXAM
 → NOT_STARTED
@@ -95,24 +96,23 @@ Estado corrente:
 
 ```text
 CURRENT RESULT
-→ NO SCOPE ADJUDICATED
+→ SCOPE ADJUDICATED
 
 G2
-→ CANDIDATE
+→ SELECTED
+→ TRN-102 / TRN-103 / TRN-104
+
+TRN-114
+→ OUTSIDE ADJUDICATED SCOPE
+→ REMAINS CONTRACTED
 
 G3
-→ CANDIDATE
-
 G4
-→ CANDIDATE
-
 G5
-→ CANDIDATE
+→ OUTSIDE UXA-106 SCOPE
 ```
 
-Nenhum candidato é promovido automaticamente a escopo da UXA-106 por este documento.
-
-A seleção exige gate humano separado.
+A convergência foi adjudicada humanamente em favor do núcleo G2 `TRN-102/103/104`. A autoridade normativa é `GKR-UXA-106-G2-SCOPE-AUTHORITY-001`.
 
 ## 5. Limites
 
@@ -131,13 +131,11 @@ Este artefato:
 
 ```text
 NEXT GOVERNED GATE
-→ ADJUDICATE UXA-106 SCOPE
+→ AUTHORIZE UXA-106 FUNCTIONAL EXAM
 
-CURRENT CANDIDATES
+ADJUDICATED SCOPE
 → G2
-→ G3
-→ G4
-→ G5
+→ TRN-102 / TRN-103 / TRN-104
 ```
 
-Até adjudicação explícita, o exame funcional permanece `NOT_STARTED / NOT_AUTHORIZED`.
+O exame funcional permanece `NOT_STARTED / NOT_AUTHORIZED` até autorização humana própria.
