@@ -2,7 +2,7 @@
 id: GEM-004-BUSINESS-VARIABLE-PRICING-AUTHORITY-001
 title: Guivos Business — Autoridade de Pricing Variável para Configurador
 status: active
-version: 2.0.0
+version: 2.1.0
 owner: Guivos Economic Model
 last_updated: 2026-10-03
 normative: true
@@ -21,7 +21,7 @@ related:
 
 ## 1. Finalidade
 
-Este documento estabelece a tabela econômica vigente para tornar numericamente calculável a composição Self-service do Guivos Business.
+Este documento estabelece a tabela econômica vigente para tornar numericamente calculável a composição do Guivos Business, separando valor recorrente de plataforma, serviços pagos adicionais e recursos operacionais separados.
 
 A composição permanece:
 
@@ -55,10 +55,10 @@ Os valores abaixo foram **adjudicados como autoridade econômica interna do conf
 5. população/escala remunera volume elegível crescente com preço marginal decrescente;
 6. Journey custeado é precificado por acesso efetivamente financiado;
 7. add-ons só são cobrados quando a capacidade não estiver incluída no entitlement do plano;
-8. serviços adicionais remuneram participação humana/operacional acima do Self-service;
+8. serviços pagos adicionais remuneram participação humana/operacional contratada depois do tier e não determinam o tier por si só;
 9. orçamento de incentivo é recurso operacional do cliente e não se mistura à assinatura;
 10. o anual usa, como regra adjudicada, aproximadamente 10 mensalidades para componentes tabelados;
-11. Scale e Enterprise podem substituir partes da tabela por condições dimensionadas quando a configuração ultrapassar o Self-service elegível.
+11. Scale e Enterprise podem substituir partes da tabela por condições dimensionadas quando a configuração exigir dimensionamento conforme os entitlements vigentes; o modelo de implementação/operação não determina esse enquadramento por si só.
 
 ## 3. Plano-base
 
@@ -174,13 +174,12 @@ Regras:
 - se o plano já incluir a capacidade, seu preço adicional é R$ 0,00;
 - integração customizada com projeto específico pode exigir setup separado e dimensionamento.
 
-## 8. Serviços adicionais
+## 8. Modelo de implementação/operação e serviços pagos adicionais
 
-Self-service permanece a operação padrão sem taxa adicional de serviço.
+O modelo de implementação/operação é definido somente depois do tier resultante. `Self-service` é uma modalidade operacional com autonomia e **não é um serviço adicional tarifado**.
 
-| Modelo / serviço adicional | Mensal | Anual | Regra |
+| Serviço pago adicional | Mensal | Anual | Regra |
 |---|---:|---:|---|
-| **Self-service** | R$ 0,00 | R$ 0,00 | operação autônoma |
 | **Suporte ampliado** | R$ 299,00 | R$ 2.990,00 | acompanhamento acima do suporte padrão do plano |
 | **Operação gerenciada** | R$ 990,00 | R$ 9.900,00 | participação operacional recorrente da Guivos |
 | **Gestão dedicada / SLA ampliado** | R$ 1.990,00 | R$ 19.900,00 | atendimento dedicado e governança ampliada |
@@ -230,7 +229,7 @@ VALID_CONFIGURATION
 =
 REQUIRED_BUSINESS_OFFER(offer)
 
-RECURRING_TOTAL
+PLATFORM_RECURRING_VALUE
 =
 BASE(plan, periodicity)
 +
@@ -241,8 +240,12 @@ JOURNEY_PLUS_RATE(volume, periodicity) × plus_accesses
 JOURNEY_PRO_RATE(volume, periodicity) × pro_accesses
 +
 SUM(ADDONS_NOT_INCLUDED_IN_PLAN)
+
+FINAL_CONTRACT_VALUE
+=
+PLATFORM_RECURRING_VALUE
 +
-SERVICE_RATE(service_model, periodicity)
+SUM(PAID_ADDITIONAL_SERVICES, IF CONTRACTED)
 ```
 
 Separadamente:
@@ -250,7 +253,7 @@ Separadamente:
 ```text
 CONTRACT_CHECKOUT_TOTAL
 =
-RECURRING_TOTAL
+FINAL_CONTRACT_VALUE
 +
 INCENTIVE_BUDGET_PREPAID
 +
@@ -269,7 +272,7 @@ POPULAÇÃO ELEGÍVEL = 120
 OFERTA = INCENTIVOS
 JOURNEY = 0
 ADD-ONS = 0
-SERVIÇO = SELF-SERVICE
+MODELO DE IMPLEMENTAÇÃO / OPERAÇÃO = SELF-SERVICE
 ```
 
 Cálculo mensal:
@@ -288,7 +291,7 @@ GROWTH
 POPULAÇÃO ELEGÍVEL = 300
 OFERTA = JOURNEY
 JOURNEY PLUS = 100 ACESSOS
-SERVIÇO = SELF-SERVICE
+MODELO DE IMPLEMENTAÇÃO / OPERAÇÃO = SELF-SERVICE
 ```
 
 Cálculo mensal:
