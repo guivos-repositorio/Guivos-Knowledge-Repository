@@ -2,7 +2,7 @@
 id: GKR-UX-PLANS-ORCHESTRATION-001
 title: Planos — Superfícies e Fluxos — Documento Mestre de Orquestração UX/UI
 status: active
-version: 0.5.0
+version: 0.6.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-03
 normative: false
@@ -181,20 +181,49 @@ A experiência de composição Business deve ter acesso explícito aos component
 Exemplo mínimo de leitura:
 
 ```text
-START
-+ 120 PESSOAS
-+ PROGRAMAS DE INCENTIVO
-+ SELF-SERVICE
+EMPRESA ESCOLHE
+→ PROGRAMAS DE INCENTIVO
 
-R$ 299,00
-+ 70 × R$ 1,49
-+ R$ 0,00 DE ATIVAÇÃO
-+ R$ 0,00 DE SELF-SERVICE
-=
-R$ 403,30/MÊS
+CONFIGURA
+→ 120 PESSOAS
+→ SELF-SERVICE
+→ SEM INTEGRAÇÃO ADICIONAL
+
+ENQUADRAMENTO
+→ START
+
+COMPOSIÇÃO RECORRENTE
+→ TIER START = R$ 299,00
+→ 1–50 = R$ 0,00
+→ 51–120 = 70 × R$ 1,49 = R$ 104,30
+→ SELF-SERVICE = R$ 0,00
+→ TOTAL = R$ 403,30/MÊS
 ```
 
-O orçamento destinado às recompensas do programa não integra esse total recorrente.
+A oferta não deve aparecer como parcela financeira artificial de R$ 0,00 no subtotal. Ela é o objeto contratado. O orçamento destinado às recompensas do programa não integra esse total recorrente.
+
+### 8.5 Progressão funcional dos tiers
+
+A experiência deve tornar legível **por que** uma configuração sobe de tier.
+
+| Tier | Direção | O que muda na prática |
+|---|---|---|
+| **Start** | operar | núcleo necessário para executar a oferta contratada |
+| **Growth** | acompanhar e compreender | adiciona profundidade de Intelligence e governança |
+| **Scale** | interpretar e integrar | adiciona capacidades de integração, API, SSO, exportações e operação em escala |
+| **Enterprise** | governar alta complexidade e escala | dimensiona segurança, governança, integrações, capacidade e condições contratuais específicas |
+
+A interface deve explicar o motivo do enquadramento:
+
+```text
+TIER RESULTANTE
+→ EXPLICÁVEL
+
+SUBIR DE TIER
+→ CONSEQUÊNCIA DE CAPACIDADE NECESSÁRIA
+→ NÃO PRESSÃO COMERCIAL
+→ NÃO MAXIMIZAÇÃO DE RECEITA
+```
 
 ## 9. Estados transversais
 
