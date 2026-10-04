@@ -2,7 +2,7 @@
 id: GKR-UX-PLANS-READ-FIRST-001
 title: Planos — Superfícies e Fluxos — Leia Primeiro
 status: active
-version: 0.7.0
+version: 0.8.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-03
 normative: false
@@ -116,9 +116,9 @@ Design, IA e Engenharia não podem inventar ou substituir a autoridade vigente d
 
 ## 9. Guivos Business
 
-Business possui configurador Self-service próprio. Ele deve exigir uma **oferta Business obrigatória** antes de concluir a composição. Sem Programas de Incentivo, Journey custeado ou ambas, não existe contratação Business ativa. Depois da oferta, a experiência enquadra tier, população/escala, acessos, capacidades, periodicidade e serviços aplicáveis.
+Business possui um **configurador de composição e pricing**. Ele deve exigir uma oferta Business obrigatória antes de concluir a composição. Sem Programas de Incentivo, Journey custeado ou ambas, não existe contratação Business ativa. Depois da oferta, a experiência recebe escala, acessos, capacidades, integrações e governança/segurança; então enquadra o tier compatível. O modelo de implementação/operação vem depois.
 
-Os preços variáveis do Business estão adjudicados em `GEM-004-BUSINESS-VARIABLE-PRICING-AUTHORITY-001`. A oferta obrigatória possui **taxa de ativação igual a R$ 0,00**; o tier remunera a capacidade da plataforma. O configurador calcula população/escala, acessos Journey, add-ons e serviços, consome a **matriz de inclusões por tier** e indica `dimensionado` ou `sob consulta` somente onde a autoridade assim determinar.
+Os preços variáveis do Business estão adjudicados em `GEM-004-BUSINESS-VARIABLE-PRICING-AUTHORITY-001`. A oferta obrigatória possui **taxa de ativação igual a R$ 0,00**; o tier remunera a capacidade da plataforma. O configurador calcula o valor recorrente de plataforma a partir de tier, população/escala, acessos Journey e capacidades adicionais. Serviços pagos adicionais são considerados somente depois do tier, no valor contratual final.
 
 ## 9.1 Composição econômica Business corrente
 
@@ -132,13 +132,19 @@ OFERTA BUSINESS
 → OBRIGATÓRIA
 → TAXA DE ATIVAÇÃO = R$ 0,00
 
-VALOR RECORRENTE
+VALOR RECORRENTE DE PLATAFORMA
 =
 TIER DE CAPACIDADE
 + POPULAÇÃO / ESCALA
 + ACESSOS JOURNEY CUSTEADOS, SE APLICÁVEL
 + CAPACIDADES ADICIONAIS NÃO INCLUÍDAS NO TIER
-+ SERVIÇOS ADICIONAIS
+
+DEPOIS
+
+VALOR CONTRATUAL FINAL
+=
+VALOR RECORRENTE DE PLATAFORMA
++ SERVIÇOS PAGOS ADICIONAIS, SE CONTRATADOS
 ```
 
 ### Ordem semântica da contratação Business
