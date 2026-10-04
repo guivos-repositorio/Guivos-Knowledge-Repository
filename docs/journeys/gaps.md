@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-GAPS-001
 title: Lacunas e Continuidades Ausentes
 status: active
-version: 1.0.30
+version: 1.0.31
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-04
 related:
@@ -93,7 +93,7 @@ A autoridade transversal corrente é `GKR-UXA-102-V5-AUTHORITY-001`.
 O exame de V5 não promove maturidade e não cria transições. Permanecem abertas cinco famílias de lacuna:
 
 1. **G1 — primeira entrada, expressão e inventário**: refinada por `GKR-UX-G1-ENTRY-EXPRESSION-INVENTORY-VALIDATION-001`, UXA-103, UXA-104 e UXA-105; `TRN-001`, `TRN-003/004/005` e `TRN-014..017` estão localmente validadas; a lacuna local de continuidade público → protegido foi fechada por UXA-105; a cadeia completa, porém, **continua não integralmente validada**;
-2. **G2 — descoberta e solicitação de Coletivo**: refinada por `GKR-UX-G2-COLLECTIVE-DISCOVERY-REQUEST-VALIDATION-001`; UXA-106 concluiu o maturity exam e adjudicou a elegibilidade de `TRN-102/103/104` para `LOCALLY VALIDATED`; a materialização das promoções permanece pendente e a maturidade operativa corrente continua `partial` e `TRN-114` permanece `contracted` até maturidade/materialização de `COL-003/004`; `TRN-101` permanece localmente validada;
+2. **G2 — descoberta e solicitação de Coletivo**: refinada por `GKR-UX-G2-COLLECTIVE-DISCOVERY-REQUEST-VALIDATION-001`; UXA-106 concluiu o maturity exam, adjudicou e materializou a promoção de `TRN-102/103/104` para `LOCALLY VALIDATED`; a cadeia G2 completa ainda não é integralmente validada e `TRN-114` permanece `contracted` até maturidade/materialização de `COL-003/004`; `TRN-101` permanece localmente validada;
 3. **G3 — Organização e relação O↔C**: refinada por `GKR-UX-G3-ORGANIZATION-COLLECTIVE-RELATIONSHIP-VALIDATION-001`; concorrência, retorno, estado indeterminado e idempotência deixam de ser lacuna genérica; `TRN-201` permanece `partial`, `TRN-202` permanece localmente validada e `TRN-206..209` permanecem `contracted` por ausência de validação ponta a ponta/materialização das autoridades bilaterais;
 4. **G4 — processo interno de oportunidade**: refinada por `GKR-UX-G4-INTERNAL-OPPORTUNITY-PROCESS-VALIDATION-001`; `TRN-212` e `TRN-214` permanecem `contracted`, retornos `PER-204 → PER-203` e `ORG-008 → ORG-003` permanecem contextuais sem IDs dedicados, e as lacunas correntes são validação ponta a ponta + maturidade/materialização dos contratos de `PER-204/ORG-008`;
 5. **G5 — Opportunity Boost**: refinada por `GKR-UX-G5-OPPORTUNITY-BOOST-VALIDATION-001`; falha, estado indeterminado, retry e idempotência deixam de ser lacuna genérica; `TRN-301/302/304/305/306` permanecem `partial`, `TRN-303` permanece localmente validada, e continuam abertas integração ponta a ponta + operacionalização econômica sem autorização para inventar cobrança, mensuração ou deduplicação técnica.
@@ -220,7 +220,7 @@ O fechamento da cadeia principal autenticada **não** significa que todas as cap
 
 Permanecem abertas, conforme os Surface Registries e contratos correntes:
 
-- `TRN-102..104`: descoberta de Coletivo → perfil público → revisão/solicitação → estado pendente — superfícies e contrato funcional existem sob `UXA-056`, mas os handoffs continuam parciais e não foram validados ponta a ponta como conjunto;
+- `TRN-102..104`: estão `LOCALLY VALIDATED` após UXA-106; a lacuna residual de G2 é somente validação integral da cadeia completa e `TRN-114`/materialização de `COL-003/004`, não maturidade local desses três handoffs;
 - `COL-001`: presença pública e entrada coletiva — presença pública governada pelo Master/`UXA-056`, com continuidade autenticada coberta pela arquitetura O/C corrente; a separação final entre presença pública, entrada autenticada e operação interna ainda não está fechada ponta a ponta;
 - `ORG-004..006`: proposta, negociação e relação ativa Organização ↔ Coletivo — contratos/lifecycle definidos sob `UXA-019` + Surface/State Map, com cobertura low-fidelity O↔C em `PASS`; materialização dedicada e continuidade ponta a ponta `TRN-206..209` ainda não estão fechadas;
 - `Organização ↔ Organização`: necessidade conceitual reconhecida por `UXA-014`, mas sem evidência suficiente para adjudicar superfície, lifecycle ou transições próprias; `ORG-004..006` e `UXA-019` permanecem exclusivos de Organização↔Coletivo, e nenhum novo ID deve ser criado por analogia;
