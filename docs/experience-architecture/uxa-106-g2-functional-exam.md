@@ -2,11 +2,11 @@
 id: GKR-UXA-106-G2-FUNCTIONAL-EXAM-001
 title: UXA-106 — G2 Core — Exame Funcional de TRN-102, TRN-103 e TRN-104
 status: active
-version: 0.1.0
+version: 1.0.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-04
-normative: false
-maturity: functional_exam_complete_pending_adjudication
+normative: true
+maturity: adjudicated_functional_contract
 depends_on:
   - GKR-UXA-106-G2-SCOPE-AUTHORITY-001
   - GKR-UX-G2-COLLECTIVE-DISCOVERY-REQUEST-VALIDATION-001
@@ -43,7 +43,7 @@ TRN-104
 → PER-105 — SOLICITAÇÃO PENDENTE
 ```
 
-O exame é analítico e não normativo até adjudicação humana própria.
+O exame funcional foi adjudicado humanamente como contrato normativo. A adjudicação não promove maturidade e não transforma validação documental em implementação.
 
 ## 2. Autoridades examinadas
 
@@ -220,7 +220,7 @@ NEW TRANSITION REQUIRED
 → NONE IDENTIFIED
 
 FUNCTIONAL CONTRACT
-→ NOT ADJUDICATED
+→ ADJUDICATED / NORMATIVE
 
 CURRENT MATURITY
 → PARTIAL / UNCHANGED
@@ -233,7 +233,7 @@ MATURITY PROMOTIONS
 
 Esta conclusão:
 
-- não é autoridade normativa;
+- é autoridade normativa exclusivamente para o contrato funcional adjudicado;
 - não altera o Transition Registry;
 - não promove maturidade;
 - não declara G2 integralmente validado;
@@ -248,11 +248,11 @@ Esta conclusão:
 
 ```text
 NEXT GOVERNED GATE
-→ ADJUDICATE UXA-106 FUNCTIONAL CONTRACT
+→ AUTHORIZE UXA-106 MATURITY EXAM
 
-CURRENT ANALYTICAL FINDING
+ADJUDICATED FUNCTIONAL CONTRACT
 → TRN-102 / TRN-103 / TRN-104
-→ FUNCTIONALLY SUFFICIENT CANDIDATES
+→ FUNCTIONALLY SUFFICIENT / ADJUDICATED
 ```
 
-Somente após adjudicação normativa própria poderá existir exame de maturidade específico.
+O exame de maturidade permanece `NOT_STARTED / NOT_AUTHORIZED` até autorização humana própria.
