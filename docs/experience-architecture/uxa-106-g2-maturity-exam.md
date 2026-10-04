@@ -2,11 +2,11 @@
 id: GKR-UXA-106-G2-MATURITY-EXAM-001
 title: UXA-106 — Exame Específico de Maturidade — TRN-102/103/104
 status: active
-version: 1.1.0
+version: 1.2.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-04
 normative: true
-maturity: maturity_findings_adjudicated_pending_materialization
+maturity: maturity_promotion_materialized
 depends_on:
   - GKR-UXA-106-G2-SCOPE-EXAM-001
   - GKR-UXA-106-G2-FUNCTIONAL-EXAM-001
@@ -94,7 +94,7 @@ Não permanece lacuna funcional local conhecida que, por si só, exija manter `T
 ```text
 TRN-102
 → ADJUDICATED ELIGIBILITY = LOCALLY VALIDATED
-→ PROMOTION MATERIALIZATION PENDING
+→ PROMOTION MATERIALIZED
 → INTEGRALLY VALIDATED NOT SUPPORTED
 ```
 
@@ -120,7 +120,7 @@ Não permanece lacuna funcional local conhecida que, por si só, exija manter `T
 ```text
 TRN-103
 → ADJUDICATED ELIGIBILITY = LOCALLY VALIDATED
-→ PROMOTION MATERIALIZATION PENDING
+→ PROMOTION MATERIALIZED
 → INTEGRALLY VALIDATED NOT SUPPORTED
 ```
 
@@ -148,7 +148,7 @@ Não permanece lacuna funcional local conhecida que, por si só, exija manter `T
 ```text
 TRN-104
 → ADJUDICATED ELIGIBILITY = LOCALLY VALIDATED
-→ PROMOTION MATERIALIZATION PENDING
+→ PROMOTION MATERIALIZED
 → INTEGRALLY VALIDATED NOT SUPPORTED
 ```
 
@@ -177,16 +177,16 @@ UXA-106 MATURITY EXAM
 → COMPLETE
 
 TRN-102
-→ CURRENT = PARTIAL
-→ ELIGIBLE CANDIDATE = LOCALLY VALIDATED
+→ CURRENT = LOCALLY VALIDATED
+→ ADJUDICATED ELIGIBILITY = LOCALLY VALIDATED
 
 TRN-103
-→ CURRENT = PARTIAL
-→ ELIGIBLE CANDIDATE = LOCALLY VALIDATED
+→ CURRENT = LOCALLY VALIDATED
+→ ADJUDICATED ELIGIBILITY = LOCALLY VALIDATED
 
 TRN-104
-→ CURRENT = PARTIAL
-→ ELIGIBLE CANDIDATE = LOCALLY VALIDATED
+→ CURRENT = LOCALLY VALIDATED
+→ ADJUDICATED ELIGIBILITY = LOCALLY VALIDATED
 
 HUMAN MATURITY ADJUDICATION
 → COMPLETE
@@ -200,10 +200,11 @@ INTEGRALLY VALIDATED
 → NOT SUPPORTED
 
 PROMOTION MATERIALIZATION
-→ PENDING
+→ COMPLETE
 
 MATURITY PROMOTIONS MATERIALIZED
-→ 0
+→ 3
+→ PARTIAL → LOCALLY VALIDATED
 
 TRANSITION REGISTRY
 → UNCHANGED
@@ -219,8 +220,8 @@ PRODUCT ENGINEERING
 
 Este exame:
 
-- não promove `TRN-102/103/104`;
-- não altera o Transition Registry;
+- promove `TRN-102/103/104` somente até `LOCALLY VALIDATED` por autorização humana específica;
+- altera o Transition Registry exclusivamente para refletir essas três promoções adjudicadas;
 - não torna G2 integralmente validada;
 - não promove `TRN-114`;
 - não substitui evidência técnica/operacional;
@@ -237,6 +238,6 @@ TRN-104
 → ADJUDICATED ELIGIBILITY = LOCALLY VALIDATED
 ```
 
-O próximo gate, se autorizado separadamente, é exclusivamente a materialização dessas três promoções no Transition Registry e nas autoridades sincronizadas.
+As três promoções adjudicadas foram materializadas no Transition Registry e nas autoridades sincronizadas.
 
-Até essa materialização, a maturidade operativa corrente permanece `PARTIAL`.
+`INTEGRALLY VALIDATED` permanece não suportado e qualquer avanço adicional exige novo exame e gate próprio.
