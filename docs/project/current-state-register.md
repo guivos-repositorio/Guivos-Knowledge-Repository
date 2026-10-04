@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.51.02
+version: 3.51.03
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-10-03
 normative: true
@@ -30,6 +30,8 @@ related:
   - GKR-UXA-105-TRN001-SCOPE-EXAM-001
   - GKR-UXA-105-TRN001-FUNCTIONAL-EXAM-001
   - GKR-UXA-105-TRN001-MATURITY-EXAM-001
+  - GKR-UXA-106-SCOPE-DISCOVERY-001
+  - UXA-106
   - UXA-105
   - UXA-104
   - UXA-103
@@ -1755,6 +1757,16 @@ Este Registro não define uma fila automática de próximos atos.
 ```text
 NEXT AUTOMATIC EXECUTION
 → NONE
+
+UXA-106
+→ STARTED
+→ SCOPE DISCOVERY IN_PROGRESS
+→ SCOPE NOT ADJUDICATED
+→ CANDIDATES = G2 / G3 / G4 / G5
+→ FUNCTIONAL EXAM NOT_STARTED
+→ FUNCTIONAL EXAM NOT_AUTHORIZED
+→ MATURITY EXAM NOT_STARTED
+→ PRODUCT ENGINEERING NOT RELEASED
 
 UXA-105
 → SCOPE EXAM COMPLETE

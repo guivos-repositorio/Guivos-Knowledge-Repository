@@ -1,8 +1,8 @@
 ---
 id: GKR-UXA-047-101-INDEX-001
-title: Índice Corrente das Frentes UXA-047 a UXA-105
+title: Índice Corrente das Frentes UXA-047 a UXA-106
 status: active
-version: 3.54.76
+version: 3.54.77
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-10-03
 depends_on:
@@ -11,6 +11,7 @@ depends_on:
   - UXA-103
   - UXA-104
   - UXA-105
+  - UXA-106
 related:
   - M7.88
   - GKR-JOURNEYS-001
@@ -23,7 +24,7 @@ related:
 normative: false
 ---
 
-# Índice Corrente das Frentes UXA-047 a UXA-105
+# Índice Corrente das Frentes UXA-047 a UXA-106
 
 ## 1. Finalidade
 
@@ -37,12 +38,15 @@ MARCO FUNCIONAL
 → M7.88
 
 ÚLTIMA UXA FUNCIONAL NUMERADA
-→ UXA-105
-
-PRÓXIMA UXA
 → UXA-106
-→ NOT_STARTED
-→ NOT_AUTHORIZED
+
+UXA-106
+→ [Descoberta de Escopo](uxa-106-scope-discovery.md)
+→ STARTED
+→ SCOPE DISCOVERY IN_PROGRESS
+→ SCOPE NOT ADJUDICATED
+→ FUNCTIONAL EXAM NOT_STARTED
+→ FUNCTIONAL EXAM NOT_AUTHORIZED
 
 UXA-104
 → [Continuidade de Arquivo e Perguntas Opcionais](uxa-104-file-optional-guided-questions-continuity.md)
