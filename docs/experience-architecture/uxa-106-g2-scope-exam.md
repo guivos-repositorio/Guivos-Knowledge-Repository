@@ -2,7 +2,7 @@
 id: GKR-UXA-106-G2-SCOPE-EXAM-001
 title: UXA-106 — Exame de Escopo — Continuidade G2 da Descoberta ao Estado Pendente
 status: active
-version: 1.1.0
+version: 1.1.1
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-04
 normative: true
@@ -185,9 +185,9 @@ Esta adjudicação:
 - torna este documento normativo somente para o escopo da UXA-106;
 - adjudica exclusivamente o recorte `TRN-102/103/104`;
 - não adjudica contrato funcional;
-- altera o Transition Registry;
-- promove maturidade;
-- valida a cadeia G2 ponta a ponta;
-- libera Design, protótipo ou Product Engineering.
+- não altera o Transition Registry;
+- não promove maturidade;
+- não valida a cadeia G2 ponta a ponta;
+- não libera Design, protótipo ou Product Engineering.
 
 O próximo gate, se autorizado separadamente, é o exame funcional da UXA-106 dentro do escopo adjudicado. Nenhum exame funcional é iniciado por esta adjudicação.
