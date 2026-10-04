@@ -2,11 +2,11 @@
 id: GKR-UXA-106-G2-SCOPE-EXAM-001
 title: UXA-106 — Exame de Escopo — Continuidade G2 da Descoberta ao Estado Pendente
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-04
-normative: false
-maturity: scope_exam_complete_pending_adjudication
+normative: true
+maturity: scope_adjudicated
 depends_on:
   - GKR-STATE-001
   - GKR-UX-G2-COLLECTIVE-DISCOVERY-REQUEST-VALIDATION-001
@@ -89,9 +89,9 @@ O recorte é funcionalmente examinável porque:
 6. `TRN-114` possui dependência distinta de maturidade/materialização de `COL-003/004`;
 7. o recorte pode ser examinado documentalmente sem implementação ou protótipo.
 
-## 5. Escopo candidato confirmado pelo exame
+## 5. Escopo adjudicado
 
-O exame encontra um recorte coerente composto exclusivamente por:
+A adjudicação humana confirma como escopo normativo da UXA-106 exclusivamente:
 
 - `TRN-102 — PER-102 → PER-103`;
 - `TRN-103 — PER-103 → PER-104`;
@@ -122,9 +122,9 @@ Permanecem fora da UXA-106 neste gate:
 - promoção automática de `TRN-102/103/104`;
 - declaração de G2 integralmente validada.
 
-## 7. Critérios candidatos para eventual exame funcional
+## 7. Critérios adjudicados para eventual exame funcional
 
-Se houver adjudicação humana posterior do escopo, um exame funcional separado deverá verificar, no mínimo:
+Se houver autorização humana posterior para o exame funcional, esse exame separado deverá verificar, no mínimo:
 
 1. identidade do mesmo Coletivo entre resultado e Perfil Público;
 2. proveniência/contexto suficiente para retorno;
@@ -153,10 +153,11 @@ CANDIDATE SCOPE
 → G2 DISCOVERY → PUBLIC PROFILE → REVIEW → PENDING
 
 SCOPE DELIMITATION
-→ SUFFICIENT FOR HUMAN ADJUDICATION
+→ COMPLETE
 
 SCOPE ADJUDICATION
-→ PENDING
+→ COMPLETE
+→ ADJUDICATED / NORMATIVE
 
 FUNCTIONAL EXAM
 → NOT_STARTED
@@ -179,14 +180,14 @@ PRODUCT ENGINEERING
 
 ## 9. Limites do resultado
 
-Este exame não:
+Esta adjudicação:
 
-- torna o documento normativo;
-- adjudica o escopo;
-- adjudica contrato funcional;
+- torna este documento normativo somente para o escopo da UXA-106;
+- adjudica exclusivamente o recorte `TRN-102/103/104`;
+- não adjudica contrato funcional;
 - altera o Transition Registry;
 - promove maturidade;
 - valida a cadeia G2 ponta a ponta;
 - libera Design, protótipo ou Product Engineering.
 
-O próximo gate, se autorizado, é exclusivamente a adjudicação humana do escopo candidato.
+O próximo gate, se autorizado separadamente, é o exame funcional da UXA-106 dentro do escopo adjudicado. Nenhum exame funcional é iniciado por esta adjudicação.
