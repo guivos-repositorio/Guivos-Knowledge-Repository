@@ -2,7 +2,7 @@
 id: GKR-UXA-106-G2-SCOPE-AUTHORITY-001
 title: UXA-106 — Autoridade de Escopo — Continuidade de Descoberta e Solicitação de Coletivo
 status: active
-version: 1.0.0
+version: 1.0.1
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-04
 normative: true
@@ -102,9 +102,11 @@ UXA-106
 → ADJUDICATED SCOPE = TRN-102 / TRN-103 / TRN-104
 
 FUNCTIONAL EXAM
-→ NOT_STARTED
-→ NOT_AUTHORIZED
+→ COMPLETE
+
+FUNCTIONAL CONTRACT
+→ NOT ADJUDICATED
 
 NEXT GOVERNED GATE
-→ FUNCTIONAL EXAM AUTHORIZATION
+→ FUNCTIONAL CONTRACT ADJUDICATION
 ```
