@@ -2,7 +2,7 @@
 id: GKR-UX-PLANS-READ-FIRST-001
 title: Planos — Superfícies e Fluxos — Leia Primeiro
 status: active
-version: 0.6.0
+version: 0.7.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-03
 normative: false
@@ -153,8 +153,7 @@ TIER DE CAPACIDADE
    → ESCALA
    → CAPACIDADES
    → INTEGRAÇÕES
-   → GOVERNANÇA
-   → SERVIÇO
+   → GOVERNANÇA / SEGURANÇA
 
 3. ENQUADRAR O TIER COMPATÍVEL
    → START
@@ -163,9 +162,58 @@ TIER DE CAPACIDADE
    → ENTERPRISE
 
 4. CALCULAR A COMPOSIÇÃO ECONÔMICA
+
+5. DEPOIS DEFINIR MODELO DE IMPLEMENTAÇÃO / OPERAÇÃO
+   → SELF-SERVICE
+   → SUPORTE
+   → GERENCIADO
 ```
 
 O tier deve ser apresentado como **resultado explicável da configuração**, e não como uma escolha abstrata anterior à necessidade.
+
+O modelo de implementação/operação é uma decisão posterior e **não participa do enquadramento do tier por si só**.
+
+### Regra de seleção de capacidades
+
+Nas superfícies de capacidades, **todas as capacidades governadas e contratáveis devem ser exibidas** e cada uma deve permitir decisão explícita da empresa:
+
+```text
+CAPACIDADE
+→ INCLUIR
+→ NÃO INCLUIR
+```
+
+A superfície deve mostrar, para cada capacidade:
+
+- nome;
+- finalidade;
+- o que habilita na prática;
+- opção **Incluir**;
+- opção **Não incluir**;
+- status no tier resultante;
+- valor adicional mensal/anual, quando aplicável;
+- indicação de valor adicional zero quando já incluída no tier;
+- indicação `dimensionado` ou `sob consulta` quando não houver cifra autorizada.
+
+```text
+EMPRESA SELECIONA CAPACIDADE
+↓
+SISTEMA ENQUADRA TIER
+↓
+SE CAPACIDADE JÁ ESTÁ INCLUÍDA NO TIER
+→ VALOR ADICIONAL ZERO
+
+SE NÃO ESTÁ INCLUÍDA E POSSUI PREÇO AUTORIZADO
+→ COBRAR COMO ADD-ON
+
+SE EXIGE TIER SUPERIOR
+→ REENQUADRAR E EXPLICAR
+
+SE NÃO HÁ PREÇO AUTORIZADO
+→ DIMENSIONAR / SOB CONSULTA
+```
+
+Nenhuma capacidade deve desaparecer da superfície apenas porque está incluída ou não no tier.
 
 ### Diferença de valor entre tiers
 
