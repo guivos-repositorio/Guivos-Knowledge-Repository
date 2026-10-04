@@ -2,8 +2,8 @@
 id: GKR-UX-PER103-MASTER-001
 title: Jornada da Pessoa — PER-103 — Perfil Público do Coletivo — Documento Mestre de Superfície
 status: active
-version: 0.2.0
-last_updated: 2026-09-27
+version: 0.2.1
+last_updated: 2026-10-04
 maturity: current_surface_design_definition
 depends_on:
   - UXA-056
@@ -38,10 +38,10 @@ Ela não é participação, acompanhamento, solicitação enviada, área interna
 ```text
 PER-102 — RESULTADOS DE BUSCA DE COLETIVOS
 → SELECIONAR UM COLETIVO
-→ TRN-102 / PARTIAL
+→ TRN-102 / LOCALLY VALIDATED
 → PER-103 — PERFIL PÚBLICO DO COLETIVO
 → DECIDIR CONSCIENTEMENTE AVANÇAR
-→ TRN-103 / PARTIAL
+→ TRN-103 / LOCALLY VALIDATED
 → PER-104 — REVISÃO E SOLICITAÇÃO
 ```
 
@@ -74,7 +74,7 @@ Pode ser pertinente preservar, quando contratado:
 - natureza da apresentação, inclusive patrocínio quando material;
 - território ou modalidade usados para descoberta, sem convertê-los em atributos pessoais.
 
-`TRN-102` permanece `partial`. Este Master não amplia nem promove a transição.
+`TRN-102` está `LOCALLY VALIDATED` após adjudicação e materialização de maturidade da UXA-106.
 
 ## 5. Identidade e propósito públicos
 
@@ -210,7 +210,7 @@ Nenhuma ação pode ser presumida apenas porque a Pessoa abriu o perfil.
 
 Quando a Pessoa decide iniciar participação e o modelo aplicável exige solicitação/revisão, a continuidade ocorre por `TRN-103` para `PER-104 — Revisão e Solicitação`.
 
-`TRN-103` permanece `partial`.
+`TRN-103` está `LOCALLY VALIDATED` após adjudicação e materialização de maturidade da UXA-106.
 
 O avanço deve ser consciente e não pode enviar solicitação silenciosamente.
 
@@ -341,7 +341,7 @@ IA não pode:
 - enviar solicitação;
 - expor dados protegidos;
 - criar novos `PER-IDs`;
-- promover `TRN-102` ou `TRN-103`;
+- promover `TRN-102` ou `TRN-103` além da maturidade adjudicada;
 - criar transições não contratadas;
 - impor baseline visual;
 - iniciar Product Engineering.
@@ -365,7 +365,7 @@ Uma futura solução visual é funcionalmente aceitável quando:
 13. mantém ações públicas semanticamente distintas;
 14. avanço para PER-104 é consciente;
 15. abrir PER-104 não envia solicitação;
-16. preserva `TRN-102` e `TRN-103` como `partial`;
+16. preserva `TRN-102` e `TRN-103` como `LOCALLY VALIDATED`;
 17. não presume vínculo sensível;
 18. não fabrica informação ausente;
 19. não cria novos `PER-IDs`;
@@ -399,10 +399,10 @@ PER-103 MASTER
 → CURRENT SURFACE DESIGN DEFINITION
 
 TRN-102
-→ PARTIAL / UNCHANGED
+→ LOCALLY VALIDATED
 
 TRN-103
-→ PARTIAL / UNCHANGED
+→ LOCALLY VALIDATED
 
 NEW PER-IDS
 → NONE
