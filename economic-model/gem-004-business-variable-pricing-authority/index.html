@@ -7667,10 +7667,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#8-servicos-adicionais" class="md-nav__link">
+  <a href="#8-modelo-de-implementacaooperacao-e-servicos-pagos-adicionais" class="md-nav__link">
     <span class="md-ellipsis">
       
-        8. Serviços adicionais
+        8. Modelo de implementação/operação e serviços pagos adicionais
       
     </span>
   </a>
@@ -7861,7 +7861,7 @@
 
 <h1 id="guivos-business-autoridade-de-pricing-variavel-para-configurador">Guivos Business — Autoridade de Pricing Variável para Configurador<a class="headerlink" href="#guivos-business-autoridade-de-pricing-variavel-para-configurador" title="Permanent link">&para;</a></h1>
 <h2 id="1-finalidade">1. Finalidade<a class="headerlink" href="#1-finalidade" title="Permanent link">&para;</a></h2>
-<p>Este documento estabelece a tabela econômica vigente para tornar numericamente calculável a composição Self-service do Guivos Business.</p>
+<p>Este documento estabelece a tabela econômica vigente para tornar numericamente calculável a composição do Guivos Business, separando valor recorrente de plataforma, serviços pagos adicionais e recursos operacionais separados.</p>
 <p>A composição permanece:</p>
 <div class="highlight"><pre><span></span><code>CONTRATAÇÃO BUSINESS VÁLIDA
 =
@@ -7890,10 +7890,10 @@ ORÇAMENTO PRÉ-PAGO DE INCENTIVO
 <li>população/escala remunera volume elegível crescente com preço marginal decrescente;</li>
 <li>Journey custeado é precificado por acesso efetivamente financiado;</li>
 <li>add-ons só são cobrados quando a capacidade não estiver incluída no entitlement do plano;</li>
-<li>serviços adicionais remuneram participação humana/operacional acima do Self-service;</li>
+<li>serviços pagos adicionais remuneram participação humana/operacional contratada depois do tier e não determinam o tier por si só;</li>
 <li>orçamento de incentivo é recurso operacional do cliente e não se mistura à assinatura;</li>
 <li>o anual usa, como regra adjudicada, aproximadamente 10 mensalidades para componentes tabelados;</li>
-<li>Scale e Enterprise podem substituir partes da tabela por condições dimensionadas quando a configuração ultrapassar o Self-service elegível.</li>
+<li>Scale e Enterprise podem substituir partes da tabela por condições dimensionadas quando a configuração exigir dimensionamento conforme os entitlements vigentes; o modelo de implementação/operação não determina esse enquadramento por si só.</li>
 </ol>
 <h2 id="3-plano-base">3. Plano-base<a class="headerlink" href="#3-plano-base" title="Permanent link">&para;</a></h2>
 <table>
@@ -8157,24 +8157,18 @@ ACESSOS PRO × RATE_PRO
 <li>se o plano já incluir a capacidade, seu preço adicional é R$ 0,00;</li>
 <li>integração customizada com projeto específico pode exigir setup separado e dimensionamento.</li>
 </ul>
-<h2 id="8-servicos-adicionais">8. Serviços adicionais<a class="headerlink" href="#8-servicos-adicionais" title="Permanent link">&para;</a></h2>
-<p>Self-service permanece a operação padrão sem taxa adicional de serviço.</p>
+<h2 id="8-modelo-de-implementacaooperacao-e-servicos-pagos-adicionais">8. Modelo de implementação/operação e serviços pagos adicionais<a class="headerlink" href="#8-modelo-de-implementacaooperacao-e-servicos-pagos-adicionais" title="Permanent link">&para;</a></h2>
+<p>O modelo de implementação/operação é definido somente depois do tier resultante. <code>Self-service</code> é uma modalidade operacional com autonomia e <strong>não é um serviço adicional tarifado</strong>.</p>
 <table>
 <thead>
 <tr>
-<th>Modelo / serviço adicional</th>
+<th>Serviço pago adicional</th>
 <th style="text-align: right;">Mensal</th>
 <th style="text-align: right;">Anual</th>
 <th>Regra</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td><strong>Self-service</strong></td>
-<td style="text-align: right;">R$ 0,00</td>
-<td style="text-align: right;">R$ 0,00</td>
-<td>operação autônoma</td>
-</tr>
 <tr>
 <td><strong>Suporte ampliado</strong></td>
 <td style="text-align: right;">R$ 299,00</td>
@@ -8249,7 +8243,7 @@ ACESSOS PRO × RATE_PRO
 =
 REQUIRED_BUSINESS_OFFER(offer)
 
-RECURRING_TOTAL
+PLATFORM_RECURRING_VALUE
 =
 BASE(plan, periodicity)
 +
@@ -8260,13 +8254,17 @@ JOURNEY_PLUS_RATE(volume, periodicity) × plus_accesses
 JOURNEY_PRO_RATE(volume, periodicity) × pro_accesses
 +
 SUM(ADDONS_NOT_INCLUDED_IN_PLAN)
+
+FINAL_CONTRACT_VALUE
+=
+PLATFORM_RECURRING_VALUE
 +
-SERVICE_RATE(service_model, periodicity)
+SUM(PAID_ADDITIONAL_SERVICES, IF CONTRACTED)
 </code></pre></div>
 <p>Separadamente:</p>
 <div class="highlight"><pre><span></span><code>CONTRACT_CHECKOUT_TOTAL
 =
-RECURRING_TOTAL
+FINAL_CONTRACT_VALUE
 +
 INCENTIVE_BUDGET_PREPAID
 +
@@ -8280,7 +8278,7 @@ POPULAÇÃO ELEGÍVEL = 120
 OFERTA = INCENTIVOS
 JOURNEY = 0
 ADD-ONS = 0
-SERVIÇO = SELF-SERVICE
+MODELO DE IMPLEMENTAÇÃO / OPERAÇÃO = SELF-SERVICE
 </code></pre></div>
 <p>Cálculo mensal:</p>
 <ul>
@@ -8296,7 +8294,7 @@ SERVIÇO = SELF-SERVICE
 POPULAÇÃO ELEGÍVEL = 300
 OFERTA = JOURNEY
 JOURNEY PLUS = 100 ACESSOS
-SERVIÇO = SELF-SERVICE
+MODELO DE IMPLEMENTAÇÃO / OPERAÇÃO = SELF-SERVICE
 </code></pre></div>
 <p>Cálculo mensal:</p>
 <ul>

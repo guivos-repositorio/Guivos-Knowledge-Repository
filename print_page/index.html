@@ -20509,7 +20509,7 @@ ENTERPRISE
 → governar em alta complexidade e escala
 </code></pre></div>
 <p>Os planos não representam mérito, impacto, prestígio ou nível de evolução da empresa. Não existe progressão moral ou obrigatória entre eles.</p>
-<p>O pricing de referência é governado economicamente por <code>GEM-004-A1 v0.3.0</code>:</p>
+<p>O pricing de referência é governado economicamente por <code>GEM-004-A1 v0.6.0</code>:</p>
 <table>
 <thead>
 <tr>
@@ -20549,7 +20549,7 @@ ENTERPRISE
 
 PLANO BUSINESS
 = até onde vão capacidade, Intelligence,
-  governança, integração e serviço
+  governança, integração, segurança e escala
 
 ESCALA / PARTICIPANTES / ACESSOS
 = dimensão de volume aplicável
@@ -20561,15 +20561,23 @@ SERVIÇOS ADICIONAIS
 = participação operacional da Guivos quando contratada
 </code></pre></div>
 <p>A composição econômica de referência é:</p>
-<div class="highlight"><pre><span></span><code>PLANO BUSINESS
-+
-ESCALA / PARTICIPANTES / ACESSOS
-+
-OFERTAS CONTRATADAS
-+
+<div class="highlight"><pre><span></span><code>VALOR RECORRENTE DE PLATAFORMA
+=
+PLANO BUSINESS
++ ESCALA / PARTICIPANTES / ACESSOS
++ CAPACIDADES ADICIONAIS NÃO INCLUÍDAS
+
+DEPOIS
+
+VALOR CONTRATUAL FINAL
+=
+VALOR RECORRENTE DE PLATAFORMA
++ SERVIÇOS PAGOS ADICIONAIS, QUANDO CONTRATADOS
+
+SEPARADAMENTE
+
 ORÇAMENTO PRÉ-PAGO DE INCENTIVO
-+
-SERVIÇOS ADICIONAIS, QUANDO APLICÁVEIS
+= RECURSO OPERACIONAL
 </code></pre></div>
 <p>O orçamento de incentivo <strong>não é a assinatura do plano Business</strong>. O acesso ao Journey custeado pela empresa possui relação econômica própria e não deve ser presumido como incluído automaticamente em qualquer plano.</p>
 <h3 id="product-architecture-business-121-composicao-self-service-da-contratacao">12.1 Composição Self-service da contratação<a class="headerlink" href="#product-architecture-business-121-composicao-self-service-da-contratacao" title="Permanent link">&para;</a></h3>
@@ -20580,15 +20588,19 @@ ESCALA / PARTICIPANTES / ACESSOS
 +
 CAPACIDADES REQUERIDAS
 +
-MODELO DE IMPLEMENTAÇÃO / OPERAÇÃO
+INTEGRAÇÕES
++
+GOVERNANÇA / SEGURANÇA
 ↓
 CONFIGURAÇÃO
 ↓
 PLANO COMPATÍVEL
 ↓
 COMPOSIÇÃO DO VALOR
+↓
+DEPOIS: MODELO DE IMPLEMENTAÇÃO / OPERAÇÃO
 </code></pre></div>
-<p>A empresa pode selecionar <strong>Programas de Incentivo</strong>, <strong>Journey custeado</strong> ou <strong>ambas as ofertas</strong>. Conforme a configuração aplicável, também entram no dimensionamento escala, Intelligence, integrações, governança e nível de serviço contratual.</p>
+<p>A empresa pode selecionar <strong>Programas de Incentivo</strong>, <strong>Journey custeado</strong> ou <strong>ambas as ofertas</strong>. Conforme a configuração aplicável, também entram no dimensionamento escala, Intelligence, integrações e requisitos de governança/segurança. O modelo de implementação/operação é definido somente depois do tier resultante e não determina o tier por si só.</p>
 <p>A regra de enquadramento é:</p>
 <blockquote>
 <p><strong>O plano contratado deve possuir capacidade suficiente para suportar integralmente os requisitos da configuração escolhida.</strong></p>
@@ -20596,11 +20608,17 @@ COMPOSIÇÃO DO VALOR
 <p>Assim, uma dimensão que exija capacidade superior pode elevar o plano necessário, mesmo que as demais dimensões sejam compatíveis com um degrau inferior.</p>
 <p>Essa regra não congela thresholds quantitativos. Os limites que definem quando determinada escala ou capacidade exige Start, Growth, Scale ou Enterprise dependem dos entitlements comerciais aprovados.</p>
 <p>A composição de valor deve distinguir:</p>
-<div class="highlight"><pre><span></span><code>VALOR RECORRENTE / CONTRATUAL
+<div class="highlight"><pre><span></span><code>VALOR RECORRENTE DE PLATAFORMA
 =
 PLANO BUSINESS
 + COMPONENTES VARIÁVEIS APLICÁVEIS
-+ SERVIÇOS ADICIONAIS, QUANDO CONTRATADOS
+
+DEPOIS
+
+VALOR CONTRATUAL FINAL
+=
+VALOR RECORRENTE DE PLATAFORMA
++ SERVIÇOS PAGOS ADICIONAIS, QUANDO CONTRATADOS
 
 RECURSO OPERACIONAL SEPARADO
 =
@@ -20626,7 +20644,7 @@ MODELO DE IMPLEMENTAÇÃO / OPERAÇÃO
 </ul>
 <p>A síntese governada é:</p>
 <blockquote>
-<p><strong>Self-service quando possível. Suporte quando necessário. Operação gerenciada quando a complexidade exigir.</strong></p>
+<p><strong>Depois do tier, a empresa define o modelo de implementação/operação adequado: Self-service, apoio do suporte ou gerenciado.</strong></p>
 </blockquote>
 <p>O modelo não é rigidamente determinado pelo plano. Uma configuração Scale pode ser padronizada o suficiente para Self-service; uma configuração Growth pode exigir apoio por integração, governança ou outra complexidade específica.</p>
 <p>Os detalhes contratuais e entitlements de serviço continuam sujeitos à formalização comercial aplicável.</p>
@@ -24113,7 +24131,7 @@ ORÇAMENTO DE INCENTIVO
 <p>A empresa contrata online e, depois, a implementação/operação recebe participação mais profunda da Guivos conforme a complexidade e o contrato.</p>
 <p>A síntese vigente é:</p>
 <blockquote>
-<p><strong>Self-service quando possível. Suporte quando necessário. Operação gerenciada quando a complexidade exigir.</strong></p>
+<p><strong>Depois do tier, a empresa define o modelo de implementação/operação adequado: Self-service, apoio do suporte ou gerenciado.</strong></p>
 </blockquote>
 <h3 id="plans-business-relacao-entre-plano-e-modelo-de-operacao">Relação entre plano e modelo de operação<a class="headerlink" href="#plans-business-relacao-entre-plano-e-modelo-de-operacao" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>PLANO
@@ -24123,7 +24141,7 @@ CONTRATAÇÃO
 → online
 
 MODELO DE IMPLEMENTAÇÃO / OPERAÇÃO
-→ definido pela complexidade da configuração
+→ definido depois do tier conforme a necessidade e a elegibilidade operacional da configuração; não altera o tier por si só
 </code></pre></div>
 <p>Não congelar equivalências como:</p>
 <div class="highlight"><pre><span></span><code>Start = Self-service obrigatório
@@ -24341,7 +24359,7 @@ ORÇAMENTO PRÉ-PAGO DE INCENTIVO
 </tr>
 <tr>
 <td><strong>Capacidades da configuração</strong></td>
-<td>escala · Intelligence · integrações · governança · nível de serviço</td>
+<td>escala · Intelligence · integrações · governança / segurança</td>
 </tr>
 <tr>
 <td><strong>Volumes contratados</strong></td>
@@ -25522,7 +25540,7 @@ VALOR RECORRENTE DE PLATAFORMA CALCULÁVEL
 
 DEPOIS
 +
-SERVICE_RATE(periodicidade, modelo_operacional), SE HOUVER SERVIÇO ADICIONAL CONTRATADO
+PAID_ADDITIONAL_SERVICE_RATE(periodicidade, serviço_contratado), SE HOUVER SERVIÇO PAGO ADICIONAL CONTRATADO
 =
 VALOR CONTRATUAL FINAL
 </code></pre></div>
@@ -28751,12 +28769,12 @@ AI
 </ol>
 <h3 id="experience-architecture-read-first-public-home-business-read-first-fontes-especificas-desta-home">Fontes específicas desta Home<a class="headerlink" href="#experience-architecture-read-first-public-home-business-read-first-fontes-especificas-desta-home" title="Permanent link">&para;</a></h3>
 <ol>
-<li><code>GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.27</code> — <code>docs/experience-architecture/public-home-business-source-lock.md</code>;</li>
-<li><code>GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.9</code> — <code>docs/experience-architecture/public-home-business-master-document.md</code>;</li>
-<li><code>GKR-UX-HOME-BUSINESS-CONVERSION-002 v1.0.2</code> — <code>docs/experience-architecture/public-home-business-conversion-authority-v2.md</code>;</li>
-<li><code>GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.10</code> — <code>docs/experience-architecture/public-home-business-authority-contracts.md</code>;</li>
-<li><code>GPA-004 v1.7.4</code> — <code>docs/product-architecture/business.md</code>;</li>
-<li><code>GKR-PLANS-BUSINESS-001 v1.3.1</code> — <code>docs/plans/business.md</code> — planos, preços de referência e composição Self-service corrente;</li>
+<li><code>GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.28</code> — <code>docs/experience-architecture/public-home-business-source-lock.md</code>;</li>
+<li><code>GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.10</code> — <code>docs/experience-architecture/public-home-business-master-document.md</code>;</li>
+<li><code>GKR-UX-HOME-BUSINESS-CONVERSION-002 v1.0.3</code> — <code>docs/experience-architecture/public-home-business-conversion-authority-v2.md</code>;</li>
+<li><code>GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.11</code> — <code>docs/experience-architecture/public-home-business-authority-contracts.md</code>;</li>
+<li><code>GPA-004 v1.7.7</code> — <code>docs/product-architecture/business.md</code>;</li>
+<li><code>GKR-PLANS-BUSINESS-001 v2.3.2</code> — <code>docs/plans/business.md</code> — planos, preços de referência e composição Business corrente;</li>
 </ol>
 <p>Se a designer optar por IA, acrescentar <code>GKR-UX-HOMES-GENINPUT-001</code> e preparar <strong>Source Lock de execução / prompt</strong> somente para essa execução. Esse artefato de execução não substitui nem altera eventual <strong>Source Lock canônico da Home</strong> já listado entre as fontes específicas.</p>
 <h2 id="experience-architecture-read-first-public-home-business-read-first-3-liberdade-criativa">3. Liberdade criativa<a class="headerlink" href="#experience-architecture-read-first-public-home-business-read-first-3-liberdade-criativa" title="Permanent link">&para;</a></h2>
@@ -34685,23 +34703,23 @@ HOME PRÓPRIA DO GUIVOS INTELLIGENCE
 <h2 id="experience-architecture-public-home-business-master-document-20-papel-do-configurador">20. Papel do configurador<a class="headerlink" href="#experience-architecture-public-home-business-master-document-20-papel-do-configurador" title="Permanent link">&para;</a></h2>
 <p>A experiência não é apenas uma calculadora de preço. Ela deve traduzir necessidade empresarial em configuração comercial compreensível.</p>
 <p>Pode considerar, conforme arquitetura comercial futura:</p>
-<div class="highlight"><pre><span></span><code>NÚMERO DE PESSOAS
+<div class="highlight"><pre><span></span><code>OFERTA
 +
-OFERTA
+NÚMERO DE PESSOAS / ESCALA
 +
-PLANO / CAPACIDADE
-+
-TIPO DE OPERAÇÃO
+CAPACIDADES
 +
 INTELLIGENCE
 +
 INTEGRAÇÕES
 +
-GOVERNANÇA
-+
-SERVIÇO
+GOVERNANÇA / SEGURANÇA
 +
 MERCADO
+↓
+TIER COMPATÍVEL
+↓
+DEPOIS: MODELO DE IMPLEMENTAÇÃO / OPERAÇÃO
 </code></pre></div>
 <p>E devolver:</p>
 <div class="highlight"><pre><span></span><code>PLANO / CONFIGURAÇÃO
@@ -34751,11 +34769,6 @@ PRÓXIMO PASSO
 <td>pode elevar capacidade requerida</td>
 </tr>
 <tr>
-<td>Nível de serviço</td>
-<td>entitlement contratual aplicável</td>
-<td>pode exigir capacidade superior</td>
-</tr>
-<tr>
 <td>Implementação/operação</td>
 <td>Self-service, suporte ou gerenciado</td>
 <td>define participação operacional da Guivos, não o plano por si só</td>
@@ -34781,7 +34794,7 @@ PLANO QUE SUPORTA INTEGRALMENTE OS REQUISITOS
 ↓
 VALOR DA CONFIGURAÇÃO
 </code></pre></div>
-<p>O valor deve distinguir a capacidade recorrente da plataforma, componentes variáveis aplicáveis, serviços adicionais e recursos operacionais separados. O orçamento pré-pago de incentivo não deve ser apresentado como assinatura do plano.</p>
+<p>O valor deve distinguir o valor recorrente de plataforma, serviços pagos adicionais contratados depois do tier e recursos operacionais separados. O orçamento pré-pago de incentivo não deve ser apresentado como assinatura do plano.</p>
 <p>Os thresholds exatos entre Start, Growth, Scale e Enterprise permanecem subordinados aos entitlements comerciais aprovados; o Design não deve inventá-los.</p>
 <h2 id="experience-architecture-public-home-business-master-document-21-contratacao">21. Contratação<a class="headerlink" href="#experience-architecture-public-home-business-master-document-21-contratacao" title="Permanent link">&para;</a></h2>
 <p>Regra normativa:</p>
@@ -34819,7 +34832,7 @@ OPERAÇÃO
 <p>A empresa contrata online e, depois, a implementação/operação recebe participação mais profunda da Guivos conforme a complexidade e o contrato.</p>
 <p>Síntese:</p>
 <blockquote>
-<p><strong>Self-service quando possível. Suporte quando necessário. Operação gerenciada quando a complexidade exigir.</strong></p>
+<p><strong>Depois do tier, a empresa define o modelo de implementação/operação adequado: Self-service, apoio do suporte ou gerenciado.</strong></p>
 </blockquote>
 <h2 id="experience-architecture-public-home-business-master-document-23-escala-global">23. Escala global<a class="headerlink" href="#experience-architecture-public-home-business-master-document-23-escala-global" title="Permanent link">&para;</a></h2>
 <p>A Home e o configurador devem nascer preparados conceitualmente para adaptação por mercado, incluindo quando aplicável:</p>
@@ -36073,10 +36086,10 @@ SCALE
 ENTERPRISE
 → governar em alta complexidade e escala
 </code></pre></div>
-<p>O plano governa capacidade, escala, Intelligence, integração, governança e serviço.</p>
+<p>O plano governa capacidade, escala, Intelligence, integração, governança e segurança. O modelo de implementação/operação é definido depois do tier e não o determina por si só.</p>
 <p>O plano <strong>não define sozinho qual oferta a empresa utiliza</strong> e não representa mérito, impacto ou evolução.</p>
-<h2 id="journeys-business-5-composicao-self-service">5. Composição Self-service<a class="headerlink" href="#journeys-business-5-composicao-self-service" title="Permanent link">&para;</a></h2>
-<p>Quando a configuração for elegível para Self-service, a empresa deve poder montar e compreender digitalmente sua contratação.</p>
+<h2 id="journeys-business-5-composicao-business">5. Composição Business<a class="headerlink" href="#journeys-business-5-composicao-business" title="Permanent link">&para;</a></h2>
+<p>A empresa deve poder montar e compreender digitalmente sua contratação. A escolha do modelo de implementação/operação ocorre somente depois do tier resultante.</p>
 <div class="highlight"><pre><span></span><code>NECESSIDADE DA EMPRESA
 ↓
 OFERTA(S)
@@ -36123,10 +36136,6 @@ CONFIGURAÇÃO E OPERAÇÃO
 <td>requisitos de gestão e controle</td>
 </tr>
 <tr>
-<td>Nível de serviço</td>
-<td>entitlement contratual aplicável</td>
-</tr>
-<tr>
 <td>Implementação/operação</td>
 <td>Self-service, suporte ou gerenciado</td>
 </tr>
@@ -36151,8 +36160,6 @@ INTELLIGENCE REQUERIDO
 INTEGRAÇÃO REQUERIDA
 +
 GOVERNANÇA REQUERIDA
-+
-NÍVEL DE SERVIÇO REQUERIDO
 ↓
 PLANO QUE SUPORTA INTEGRALMENTE A CONFIGURAÇÃO
 </code></pre></div>
@@ -36161,16 +36168,25 @@ PLANO QUE SUPORTA INTEGRALMENTE A CONFIGURAÇÃO
 <div class="highlight"><pre><span></span><code>PLANO
 = camada de capacidade
 
-OFERTAS / VOLUMES / SERVIÇOS / ORÇAMENTO
-= composição ao redor dessa camada
+OFERTAS / VOLUMES / CAPACIDADES
+= composição que determina e precifica a camada
+
+MODELO OPERACIONAL / SERVIÇOS PAGOS
+= decisão posterior ao tier
 </code></pre></div>
 <h2 id="journeys-business-7-composicao-economica">7. Composição econômica<a class="headerlink" href="#journeys-business-7-composicao-economica" title="Permanent link">&para;</a></h2>
 <p>A leitura corrente distingue:</p>
-<div class="highlight"><pre><span></span><code>VALOR RECORRENTE / CONTRATUAL
+<div class="highlight"><pre><span></span><code>VALOR RECORRENTE DE PLATAFORMA
 =
 PLANO BUSINESS
 + COMPONENTES VARIÁVEIS APLICÁVEIS
-+ SERVIÇOS ADICIONAIS, QUANDO CONTRATADOS
+
+DEPOIS
+
+VALOR CONTRATUAL FINAL
+=
+VALOR RECORRENTE DE PLATAFORMA
++ SERVIÇOS PAGOS ADICIONAIS, QUANDO CONTRATADOS
 
 RECURSO OPERACIONAL SEPARADO
 =
@@ -36188,7 +36204,7 @@ ORÇAMENTO PRÉ-PAGO DE INCENTIVO
 </ul>
 <p>Síntese:</p>
 <blockquote>
-<p><strong>Self-service quando possível. Suporte quando necessário. Operação gerenciada quando a complexidade exigir.</strong></p>
+<p><strong>Depois do tier, a empresa define o modelo de implementação/operação adequado: Self-service, apoio do suporte ou gerenciado.</strong></p>
 </blockquote>
 <p>O modelo operacional não é rigidamente determinado pelo plano.</p>
 <h2 id="journeys-business-9-relacao-com-pessoa">9. Relação com Pessoa<a class="headerlink" href="#journeys-business-9-relacao-com-pessoa" title="Permanent link">&para;</a></h2>

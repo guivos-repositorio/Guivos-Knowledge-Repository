@@ -8187,11 +8187,11 @@ HISTORICAL ORIGIN / CHECKPOINT
 <p>Para a produção externa de Design da Home Business, o pacote específico de autoridade deve ser restrito a:</p>
 <ol>
 <li><code>GKR-UX-HOME-BUSINESS-SOURCELOCK-001</code> — este Source Lock;</li>
-<li><code>GKR-UX-HOME-BUSINESS-MASTER-001</code> v1.1.8 — <code>docs/experience-architecture/public-home-business-master-document.md</code>;</li>
-<li><code>GKR-UX-HOME-BUSINESS-CONVERSION-002</code> v1.0.2 — <code>docs/experience-architecture/public-home-business-conversion-authority-v2.md</code>;</li>
-<li><code>GKR-UX-HOME-BUSINESS-AUTHORITY-001</code> v1.0.10 — <code>docs/experience-architecture/public-home-business-authority-contracts.md</code>;</li>
-<li><code>GPA-004</code> v1.7.4 — arquitetura funcional vigente do Guivos Business;</li>
-<li><code>GKR-PLANS-BUSINESS-001</code> v1.3.1 — <code>docs/plans/business.md</code> — planos, preços de referência e composição Self-service corrente.</li>
+<li><code>GKR-UX-HOME-BUSINESS-MASTER-001</code> v1.1.10 — <code>docs/experience-architecture/public-home-business-master-document.md</code>;</li>
+<li><code>GKR-UX-HOME-BUSINESS-CONVERSION-002</code> v1.0.3 — <code>docs/experience-architecture/public-home-business-conversion-authority-v2.md</code>;</li>
+<li><code>GKR-UX-HOME-BUSINESS-AUTHORITY-001</code> v1.0.11 — <code>docs/experience-architecture/public-home-business-authority-contracts.md</code>;</li>
+<li><code>GPA-004</code> v1.7.7 — arquitetura funcional vigente do Guivos Business;</li>
+<li><code>GKR-PLANS-BUSINESS-001</code> v2.3.2 — <code>docs/plans/business.md</code> — planos, preços de referência e composição Self-service corrente.</li>
 </ol>
 <p>Não adicionar automaticamente:</p>
 <ul>
@@ -8569,7 +8569,7 @@ Governe em alta complexidade e escala.
 <p><strong>Encontre a configuração adequada para sua empresa, compare as capacidades disponíveis, conheça o valor e contrate online.</strong></p>
 </blockquote>
 <p>O componente deve ser concebido como <strong>configurador comercial</strong>, não apenas calculadora simples.</p>
-<p>A composição Self-service deve preservar as seguintes dimensões, quando aplicáveis e formalizadas:</p>
+<p>A composição Business deve preservar as seguintes dimensões, quando aplicáveis e formalizadas; o modelo de implementação/operação é definido somente depois do tier:</p>
 <table>
 <thead>
 <tr>
@@ -8599,10 +8599,6 @@ Governe em alta complexidade e escala.
 <td>requisitos de gestão e controle</td>
 </tr>
 <tr>
-<td>Nível de serviço</td>
-<td>entitlement contratual aplicável</td>
-</tr>
-<tr>
 <td>Implementação/operação</td>
 <td>Self-service, suporte ou gerenciado</td>
 </tr>
@@ -8624,9 +8620,17 @@ Governe em alta complexidade e escala.
 </code></pre></div>
 <p>O plano não é escolhido apenas pelo preço nem resulta de uma soma arbitrária de módulos. Ele representa a camada de capacidade que comporta a configuração contratada.</p>
 <p>O valor deve ser legível em parcelas distintas:</p>
-<div class="highlight"><pre><span></span><code>PLANO BUSINESS
+<div class="highlight"><pre><span></span><code>VALOR RECORRENTE DE PLATAFORMA
+=
+PLANO BUSINESS
 + COMPONENTES VARIÁVEIS APLICÁVEIS
-+ SERVIÇOS ADICIONAIS, QUANDO CONTRATADOS
+
+DEPOIS
+
+VALOR CONTRATUAL FINAL
+=
+VALOR RECORRENTE DE PLATAFORMA
++ SERVIÇOS PAGOS ADICIONAIS, QUANDO CONTRATADOS
 
 ORÇAMENTO PRÉ-PAGO DE INCENTIVO
 → RECURSO OPERACIONAL SEPARADO
@@ -8675,7 +8679,7 @@ IMPLEMENTAÇÃO
 <p>A empresa contrata online e, depois, a implementação/operação recebe participação mais profunda da Guivos conforme complexidade e contrato.</p>
 <p>Síntese:</p>
 <blockquote>
-<p><strong>Self-service quando possível. Suporte quando necessário. Operação gerenciada quando a complexidade exigir.</strong></p>
+<p><strong>Depois do tier, a empresa define o modelo de implementação/operação adequado: Self-service, apoio do suporte ou gerenciado.</strong></p>
 </blockquote>
 <p>Não converter <code>Com apoio do suporte</code> em etapa comercial obrigatória anterior à compra.</p>
 <h2 id="20-escala-global-congelada-como-principio">20. Escala global congelada como princípio<a class="headerlink" href="#20-escala-global-congelada-como-principio" title="Permanent link">&para;</a></h2>
@@ -8872,12 +8876,12 @@ PRODUCT ENGINEERING
 <p>Usar:</p>
 <ol>
 <li><code>GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.7.10</code> como autoridade comum de handoff;</li>
-<li>este Source Lock <code>GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.27</code>;</li>
-<li><code>GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.8</code>;</li>
-<li><code>GKR-UX-HOME-BUSINESS-CONVERSION-002 v1.0.2</code>;</li>
-<li><code>GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.10</code>;</li>
-<li><code>GPA-004 v1.7.4</code>;</li>
-<li><code>GKR-PLANS-BUSINESS-001 v1.3.1</code> — planos, preços de referência e composição Self-service corrente.</li>
+<li>este Source Lock <code>GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.28</code>;</li>
+<li><code>GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.10</code>;</li>
+<li><code>GKR-UX-HOME-BUSINESS-CONVERSION-002 v1.0.3</code>;</li>
+<li><code>GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.11</code>;</li>
+<li><code>GPA-004 v1.7.7</code>;</li>
+<li><code>GKR-PLANS-BUSINESS-001 v2.3.2</code> — planos, preços de referência e composição Business corrente.</li>
 </ol>
 <div class="highlight"><pre><span></span><code>SOURCE OF TRUTH
 → CURRENT MAIN

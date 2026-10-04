@@ -8675,7 +8675,7 @@ ENTERPRISE
 → governar em alta complexidade e escala
 </code></pre></div>
 <p>Os planos não representam mérito, impacto, prestígio ou nível de evolução da empresa. Não existe progressão moral ou obrigatória entre eles.</p>
-<p>O pricing de referência é governado economicamente por <code>GEM-004-A1 v0.3.0</code>:</p>
+<p>O pricing de referência é governado economicamente por <code>GEM-004-A1 v0.6.0</code>:</p>
 <table>
 <thead>
 <tr>
@@ -8715,7 +8715,7 @@ ENTERPRISE
 
 PLANO BUSINESS
 = até onde vão capacidade, Intelligence,
-  governança, integração e serviço
+  governança, integração, segurança e escala
 
 ESCALA / PARTICIPANTES / ACESSOS
 = dimensão de volume aplicável
@@ -8727,15 +8727,23 @@ SERVIÇOS ADICIONAIS
 = participação operacional da Guivos quando contratada
 </code></pre></div>
 <p>A composição econômica de referência é:</p>
-<div class="highlight"><pre><span></span><code>PLANO BUSINESS
-+
-ESCALA / PARTICIPANTES / ACESSOS
-+
-OFERTAS CONTRATADAS
-+
+<div class="highlight"><pre><span></span><code>VALOR RECORRENTE DE PLATAFORMA
+=
+PLANO BUSINESS
++ ESCALA / PARTICIPANTES / ACESSOS
++ CAPACIDADES ADICIONAIS NÃO INCLUÍDAS
+
+DEPOIS
+
+VALOR CONTRATUAL FINAL
+=
+VALOR RECORRENTE DE PLATAFORMA
++ SERVIÇOS PAGOS ADICIONAIS, QUANDO CONTRATADOS
+
+SEPARADAMENTE
+
 ORÇAMENTO PRÉ-PAGO DE INCENTIVO
-+
-SERVIÇOS ADICIONAIS, QUANDO APLICÁVEIS
+= RECURSO OPERACIONAL
 </code></pre></div>
 <p>O orçamento de incentivo <strong>não é a assinatura do plano Business</strong>. O acesso ao Journey custeado pela empresa possui relação econômica própria e não deve ser presumido como incluído automaticamente em qualquer plano.</p>
 <h3 id="121-composicao-self-service-da-contratacao">12.1 Composição Self-service da contratação<a class="headerlink" href="#121-composicao-self-service-da-contratacao" title="Permanent link">&para;</a></h3>
@@ -8746,15 +8754,19 @@ ESCALA / PARTICIPANTES / ACESSOS
 +
 CAPACIDADES REQUERIDAS
 +
-MODELO DE IMPLEMENTAÇÃO / OPERAÇÃO
+INTEGRAÇÕES
++
+GOVERNANÇA / SEGURANÇA
 ↓
 CONFIGURAÇÃO
 ↓
 PLANO COMPATÍVEL
 ↓
 COMPOSIÇÃO DO VALOR
+↓
+DEPOIS: MODELO DE IMPLEMENTAÇÃO / OPERAÇÃO
 </code></pre></div>
-<p>A empresa pode selecionar <strong>Programas de Incentivo</strong>, <strong>Journey custeado</strong> ou <strong>ambas as ofertas</strong>. Conforme a configuração aplicável, também entram no dimensionamento escala, Intelligence, integrações, governança e nível de serviço contratual.</p>
+<p>A empresa pode selecionar <strong>Programas de Incentivo</strong>, <strong>Journey custeado</strong> ou <strong>ambas as ofertas</strong>. Conforme a configuração aplicável, também entram no dimensionamento escala, Intelligence, integrações e requisitos de governança/segurança. O modelo de implementação/operação é definido somente depois do tier resultante e não determina o tier por si só.</p>
 <p>A regra de enquadramento é:</p>
 <blockquote>
 <p><strong>O plano contratado deve possuir capacidade suficiente para suportar integralmente os requisitos da configuração escolhida.</strong></p>
@@ -8762,11 +8774,17 @@ COMPOSIÇÃO DO VALOR
 <p>Assim, uma dimensão que exija capacidade superior pode elevar o plano necessário, mesmo que as demais dimensões sejam compatíveis com um degrau inferior.</p>
 <p>Essa regra não congela thresholds quantitativos. Os limites que definem quando determinada escala ou capacidade exige Start, Growth, Scale ou Enterprise dependem dos entitlements comerciais aprovados.</p>
 <p>A composição de valor deve distinguir:</p>
-<div class="highlight"><pre><span></span><code>VALOR RECORRENTE / CONTRATUAL
+<div class="highlight"><pre><span></span><code>VALOR RECORRENTE DE PLATAFORMA
 =
 PLANO BUSINESS
 + COMPONENTES VARIÁVEIS APLICÁVEIS
-+ SERVIÇOS ADICIONAIS, QUANDO CONTRATADOS
+
+DEPOIS
+
+VALOR CONTRATUAL FINAL
+=
+VALOR RECORRENTE DE PLATAFORMA
++ SERVIÇOS PAGOS ADICIONAIS, QUANDO CONTRATADOS
 
 RECURSO OPERACIONAL SEPARADO
 =
@@ -8792,7 +8810,7 @@ MODELO DE IMPLEMENTAÇÃO / OPERAÇÃO
 </ul>
 <p>A síntese governada é:</p>
 <blockquote>
-<p><strong>Self-service quando possível. Suporte quando necessário. Operação gerenciada quando a complexidade exigir.</strong></p>
+<p><strong>Depois do tier, a empresa define o modelo de implementação/operação adequado: Self-service, apoio do suporte ou gerenciado.</strong></p>
 </blockquote>
 <p>O modelo não é rigidamente determinado pelo plano. Uma configuração Scale pode ser padronizada o suficiente para Self-service; uma configuração Growth pode exigir apoio por integração, governança ou outra complexidade específica.</p>
 <p>Os detalhes contratuais e entitlements de serviço continuam sujeitos à formalização comercial aplicável.</p>
