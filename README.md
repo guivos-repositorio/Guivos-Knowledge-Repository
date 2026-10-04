@@ -345,3 +345,8 @@ O/C SURFACE MAP + STATE MAP + PRIORITY FLOWS DEFINED ≠ MATERIALIZED NAVIGATION
 ```
 
 Para qualquer afirmação de estado, prevalece o [Registro do Estado Atual](docs/project/current-state-register.md).
+
+PRÓXIMA UXA
+→ UXA-107
+→ NOT_STARTED
+→ NOT_AUTHORIZED
