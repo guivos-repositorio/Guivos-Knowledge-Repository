@@ -56,6 +56,11 @@ UXA-106
 → FUNCTIONAL CONTRACT NOT ADJUDICATED
 → MATURITY UNCHANGED
 
+PRÓXIMA UXA
+→ UXA-107
+→ NOT_STARTED
+→ NOT_AUTHORIZED
+
 UXA-104
 → [Continuidade de Arquivo e Perguntas Opcionais](uxa-104-file-optional-guided-questions-continuity.md)
 → [Autoridade Normativa de Escopo](uxa-104-scope-authority.md)
