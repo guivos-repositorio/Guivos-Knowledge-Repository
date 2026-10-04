@@ -2,7 +2,7 @@
 id: ROADMAP-13.48.7
 title: Roadmap Arquitetural — Frentes Correntes e Próximos Gates da Guivos
 status: active
-version: 13.48.77
+version: 13.48.78
 owner: Guivos
 last_updated: 2026-10-04
 normative: true
@@ -45,7 +45,7 @@ related:
 
 ## 1. Função
 
-Este roadmap traduz `GKR-STATE-001 v3.51.10` em **frentes governadas de avanço**.
+Este roadmap traduz `GKR-STATE-001 v3.51.11` em **frentes governadas de avanço**.
 
 Sua função é declarar frentes correntes, dependências e próximos gates sem transformar possibilidade técnica em execução automática.
 
@@ -63,7 +63,7 @@ ROADMAP
 
 | Frente | Estado vigente |
 |---|---|
-| Estado global | `GKR-STATE-001 v3.51.10 / CURRENT` |
+| Estado global | `GKR-STATE-001 v3.51.11 / CURRENT` |
 | Era | `GE-2 — KNOWLEDGE` |
 | Marco funcional | `M7.88` |
 | Última UXA numerada | `UXA-107` |
@@ -84,7 +84,7 @@ ROADMAP
 | UXA-104 | `FUNCTIONAL CONTRACT ADJUDICATED / RECONCILIATION COMPLETE / MATURITY EXAM COMPLETE / TRN-014..017 LOCALLY VALIDATED / INTEGRAL NOT SUPPORTED` |
 | UXA-105 | `SCOPE + FUNCTIONAL CONTRACT ADJUDICATED / MATURITY EXAM + ADJUDICATION COMPLETE / TRN-001 LOCALLY VALIDATED / 1 PROMOTION / INTEGRAL NOT SUPPORTED` |
 | UXA-106 | `FUNCTIONAL CONTRACT ADJUDICATED / MATURITY EXAM COMPLETE / MATURITY FINDINGS ADJUDICATED / TRN-102/103/104 LOCALLY VALIDATED / 3 PROMOTIONS MATERIALIZED / INTEGRAL NOT SUPPORTED` |
-| UXA-107 | `SCOPE EXAM COMPLETE / CANDIDATE SCOPE = TRN-201 ONLY / SCOPE ADJUDICATION PENDING / FUNCTIONAL EXAM NOT AUTHORIZED / 0 PROMOTIONS` |
+| UXA-107 | `SCOPE EXAM COMPLETE / SCOPE ADJUDICATED + NORMATIVE = TRN-201 ONLY / FUNCTIONAL EXAM NOT AUTHORIZED / TRN-201 PARTIAL / 0 PROMOTIONS` |
 | Cognitive Reference Architecture | `GIA-COG-001 v0.1.2 / ACTIVE / NORMATIVE` |
 | `GIA-COG-002..008` | `RESERVED / NOT MATERIALIZED` |
 | Product Engineering | `PAUSED / NOT RELEASED` |
@@ -368,8 +368,8 @@ UXA-107
 → SCOPE EXAM COMPLETE
 → CANDIDATE SCOPE = TRN-201 ONLY
 → ORG-001 → ORG-002
-→ SCOPE SUFFICIENCY = SUFFICIENT CANDIDATE
-→ SCOPE ADJUDICATION PENDING
+→ SCOPE SUFFICIENCY = SUFFICIENT / ADJUDICATED
+→ SCOPE ADJUDICATED / NORMATIVE
 → FUNCTIONAL EXAM NOT_STARTED / NOT_AUTHORIZED
 → TRN-201 PARTIAL / UNCHANGED
 → MATURITY PROMOTIONS = 0
@@ -630,7 +630,7 @@ UXA-105 concluiu escopo, contrato funcional, maturity exam e adjudicação; `TRN
 
 UXA-106 concluiu o maturity exam, a adjudicação e a materialização das promoções de `TRN-102/103/104`; as três transições estão `LOCALLY VALIDATED`, com três promoções materializadas. `INTEGRALLY VALIDATED` permanece não suportado.
 
-UXA-107 concluiu o Scope Exam de `TRN-201 — ORG-001 → ORG-002`; o recorte é `SUFFICIENT CANDIDATE`, com adjudicação humana de escopo pendente, exame funcional não autorizado e zero promoções.
+UXA-107 concluiu o Scope Exam e a adjudicação normativa do escopo `TRN-201 — ORG-001 → ORG-002`; o exame funcional permanece não iniciado e não autorizado, com `TRN-201` ainda `PARTIAL` e zero promoções.
 
 Cada avanço depende da autoridade temática vigente e do gate específico aplicável.
 
