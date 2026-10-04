@@ -79,7 +79,7 @@ ENTERPRISE
 → Governe em alta complexidade e escala
 ```
 
-Plano governa capacidade, escala, Intelligence, integração, governança e serviço conforme contratos futuros.
+Plano governa capacidade, escala, Intelligence, integração, governança e segurança conforme contratos futuros. Modelo de implementação/operação e serviços pagos adicionais são definidos depois do tier e não o determinam por si só.
 
 Plano não define mérito, qualidade humana, nível de evolução ou valor da empresa.
 
