@@ -2050,6 +2050,39 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#831-selecao-explicita-de-capacidades" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3.1 Seleção explícita de capacidades
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#84-quadro-economico-minimo-da-superficie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4 Quadro econômico mínimo da superfície
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#85-progressao-funcional-dos-tiers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.5 Progressão funcional dos tiers
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -7888,6 +7921,39 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#831-selecao-explicita-de-capacidades" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3.1 Seleção explícita de capacidades
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#84-quadro-economico-minimo-da-superficie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4 Quadro econômico mínimo da superfície
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#85-progressao-funcional-dos-tiers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.5 Progressão funcional dos tiers
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -8024,15 +8090,21 @@ ORÇAMENTO DE INCENTIVO
 <p>A experiência Business deve permitir, sem prescrever layout:</p>
 <div class="highlight"><pre><span></span><code>1. ESCOLHER OFERTA BUSINESS OBRIGATÓRIA
 2. ESCOLHER PERIODICIDADE
-3. INFORMAR POPULAÇÃO ELEGÍVEL
+3. INFORMAR POPULAÇÃO ELEGÍVEL / ESCALA
 4. INFORMAR ACESSOS JOURNEY, SE APLICÁVEL
-5. IDENTIFICAR CAPACIDADES NECESSÁRIAS
-6. ENQUADRAR TIER COMPATÍVEL
-7. ZERAR ADD-ONS JÁ INCLUÍDOS NO TIER
-8. ESCOLHER SERVIÇO ADICIONAL, SE NECESSÁRIO
-9. INFORMAR ORÇAMENTO DE INCENTIVO SEPARADO
-10. REVISAR COMPOSIÇÃO
-11. EXIBIR TOTAL RECORRENTE + ITENS SEPARADOS / DIMENSIONADOS
+5. SELECIONAR CAPACIDADES — INCLUIR / NÃO INCLUIR
+6. SELECIONAR INTEGRAÇÕES — INCLUIR / NÃO INCLUIR
+7. INFORMAR REQUISITOS DE GOVERNANÇA / SEGURANÇA
+8. ENQUADRAR E EXPLICAR O TIER COMPATÍVEL
+9. ZERAR CAPACIDADES JÁ INCLUÍDAS NO TIER
+10. PRECIFICAR ADD-ONS E ITENS DIMENSIONADOS
+11. INFORMAR ORÇAMENTO DE INCENTIVO SEPARADO
+12. REVISAR COMPOSIÇÃO
+13. EXIBIR TOTAL RECORRENTE + ITENS SEPARADOS / DIMENSIONADOS
+14. DEPOIS DEFINIR MODELO DE IMPLEMENTAÇÃO / OPERAÇÃO
+    → SELF-SERVICE
+    → SUPORTE
+    → GERENCIADO
 </code></pre></div>
 <p>A ordem pode ser reorganizada visualmente, mas a semântica de cálculo e a proteção contra dupla cobrança devem permanecer.</p>
 <h3 id="82-informacao-minima-do-resultado-business">8.2 Informação mínima do resultado Business<a class="headerlink" href="#82-informacao-minima-do-resultado-business" title="Permanent link">&para;</a></h3>
@@ -8072,6 +8144,171 @@ INCENTIVE BUDGET
 <li><strong>incluído conforme contrato</strong> → respeitar o dimensionamento contratual aplicável.</li>
 </ul>
 <p>Essa matriz deve ser consumida como regra econômica, não como prescrição visual.</p>
+<h3 id="831-selecao-explicita-de-capacidades">8.3.1 Seleção explícita de capacidades<a class="headerlink" href="#831-selecao-explicita-de-capacidades" title="Permanent link">&para;</a></h3>
+<p>Toda capacidade governada deve permanecer visível na superfície e oferecer escolha explícita:</p>
+<table>
+<thead>
+<tr>
+<th>Capacidade</th>
+<th>Decisão da empresa</th>
+<th>Estado econômico possível</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Intelligence avançado</td>
+<td>Incluir / Não incluir</td>
+<td>incluído no tier ou add-on</td>
+</tr>
+<tr>
+<td>Exportações automatizadas / Power BI</td>
+<td>Incluir / Não incluir</td>
+<td>incluído no tier ou add-on</td>
+</tr>
+<tr>
+<td>API Business</td>
+<td>Incluir / Não incluir</td>
+<td>incluído no tier ou add-on</td>
+</tr>
+<tr>
+<td>SSO / SAML</td>
+<td>Incluir / Não incluir</td>
+<td>incluído no tier ou add-on</td>
+</tr>
+<tr>
+<td>Governança / auditoria avançadas</td>
+<td>Incluir / Não incluir</td>
+<td>incluído no tier ou add-on</td>
+</tr>
+<tr>
+<td>Integração dedicada</td>
+<td>Incluir / Não incluir</td>
+<td>incluída, add-on ou dimensionada</td>
+</tr>
+<tr>
+<td>Integrações adicionais</td>
+<td>Incluir / Não incluir</td>
+<td>add-on ou dimensionadas</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre><span></span><code>ESCOLHA DA CAPACIDADE
+≠ COBRANÇA DA CAPACIDADE
+</code></pre></div>
+<p>Uma capacidade selecionada pode resultar em valor adicional zero, add-on, reenquadramento em tier superior ou dimensionamento.</p>
+<h3 id="84-quadro-economico-minimo-da-superficie">8.4 Quadro econômico mínimo da superfície<a class="headerlink" href="#84-quadro-economico-minimo-da-superficie" title="Permanent link">&para;</a></h3>
+<p>A experiência de composição Business deve ter acesso explícito aos componentes abaixo:</p>
+<table>
+<thead>
+<tr>
+<th>Componente</th>
+<th>Regra econômica corrente</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Oferta Business</strong></td>
+<td>obrigatória; taxa de ativação = R$ 0,00</td>
+</tr>
+<tr>
+<td><strong>Start</strong></td>
+<td>R$ 299/mês · R$ 2.990/ano</td>
+</tr>
+<tr>
+<td><strong>Growth</strong></td>
+<td>R$ 799/mês · R$ 7.990/ano</td>
+</tr>
+<tr>
+<td><strong>Scale</strong></td>
+<td>a partir de R$ 1.990/mês · anual dimensionado</td>
+</tr>
+<tr>
+<td><strong>Enterprise</strong></td>
+<td>sob consulta</td>
+</tr>
+<tr>
+<td><strong>População</strong></td>
+<td>progressiva por faixa; 1–50 incluídos</td>
+</tr>
+<tr>
+<td><strong>Journey custeado</strong></td>
+<td>cobrança por acesso Plus/Pro financiado</td>
+</tr>
+<tr>
+<td><strong>Capacidade incluída no tier</strong></td>
+<td>R$ 0,00 adicional</td>
+</tr>
+<tr>
+<td><strong>Capacidade não incluída</strong></td>
+<td>preço mensal/anual governado</td>
+</tr>
+<tr>
+<td><strong>Orçamento de incentivo</strong></td>
+<td>separado da assinatura</td>
+</tr>
+</tbody>
+</table>
+<p>Exemplo mínimo de leitura:</p>
+<div class="highlight"><pre><span></span><code>EMPRESA ESCOLHE
+→ PROGRAMAS DE INCENTIVO
+
+CONFIGURA
+→ 120 PESSOAS
+→ SEM INTEGRAÇÃO ADICIONAL
+→ GOVERNANÇA / SEGURANÇA PADRÃO
+
+ENQUADRAMENTO
+→ START
+
+COMPOSIÇÃO RECORRENTE
+→ TIER START = R$ 299,00
+→ 1–50 = R$ 0,00
+→ 51–120 = 70 × R$ 1,49 = R$ 104,30
+→ TOTAL = R$ 403,30/MÊS
+</code></pre></div>
+<p>A oferta não deve aparecer como parcela financeira artificial de R$ 0,00 no subtotal. Ela é o objeto contratado. O orçamento destinado às recompensas do programa não integra esse total recorrente. O modelo de implementação/operação é definido depois do enquadramento do tier.</p>
+<h3 id="85-progressao-funcional-dos-tiers">8.5 Progressão funcional dos tiers<a class="headerlink" href="#85-progressao-funcional-dos-tiers" title="Permanent link">&para;</a></h3>
+<p>A experiência deve tornar legível <strong>por que</strong> uma configuração sobe de tier.</p>
+<table>
+<thead>
+<tr>
+<th>Tier</th>
+<th>Direção</th>
+<th>O que muda na prática</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Start</strong></td>
+<td>operar</td>
+<td>núcleo necessário para executar a oferta contratada</td>
+</tr>
+<tr>
+<td><strong>Growth</strong></td>
+<td>acompanhar e compreender</td>
+<td>adiciona profundidade de Intelligence e governança</td>
+</tr>
+<tr>
+<td><strong>Scale</strong></td>
+<td>interpretar e integrar</td>
+<td>adiciona capacidades de integração, API, SSO, exportações e operação em escala</td>
+</tr>
+<tr>
+<td><strong>Enterprise</strong></td>
+<td>governar alta complexidade e escala</td>
+<td>dimensiona segurança, governança, integrações, capacidade e condições contratuais específicas</td>
+</tr>
+</tbody>
+</table>
+<p>A interface deve explicar o motivo do enquadramento:</p>
+<div class="highlight"><pre><span></span><code>TIER RESULTANTE
+→ EXPLICÁVEL
+
+SUBIR DE TIER
+→ CONSEQUÊNCIA DE CAPACIDADE NECESSÁRIA
+→ NÃO PRESSÃO COMERCIAL
+→ NÃO MAXIMIZAÇÃO DE RECEITA
+</code></pre></div>
 <h2 id="9-estados-transversais">9. Estados transversais<a class="headerlink" href="#9-estados-transversais" title="Permanent link">&para;</a></h2>
 <p>Design pode representar, sem criar nova autoridade: carregamento, comparação disponível, preço conhecido, preço dimensionado, periodicidade mensal, periodicidade anual, configuração incompleta, configuração calculável, configuração que exige proposta, erro recuperável e retorno sem alteração.</p>
 <h2 id="10-acessibilidade">10. Acessibilidade<a class="headerlink" href="#10-acessibilidade" title="Permanent link">&para;</a></h2>
