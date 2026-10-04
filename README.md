@@ -19,7 +19,7 @@ A leitura de estado continua subordinada ao [Registro do Estado Atual](docs/proj
 
 ```text
 GKR-STATE-001
-→ 3.51.06 / CURRENT
+→ 3.51.07 / CURRENT
 
 ERA
 → GE-2 — KNOWLEDGE
