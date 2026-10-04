@@ -2,7 +2,7 @@
 id: GKR-UX-PER102-MASTER-001
 title: Jornada da Pessoa — PER-102 — Resultados de Busca de Coletivos — Documento Mestre de Superfície
 status: active
-version: 0.1.1
+version: 0.1.2
 maturity: current_surface_design_definition
 depends_on:
   - UXA-056
@@ -34,7 +34,7 @@ PER-101 — EXPLORAR COLETIVOS
 → TRN-101 / LOCALMENTE VALIDADA
 → PER-102 — RESULTADOS DE BUSCA DE COLETIVOS
 → SELECIONAR UM RESULTADO
-→ TRN-102 / PARTIAL
+→ TRN-102 / LOCALLY VALIDATED
 → PER-103 — PERFIL PÚBLICO DO COLETIVO
 ```
 
@@ -233,7 +233,7 @@ Não pode:
 
 Selecionar um resultado inicia a continuidade para `PER-103 — Perfil Público do Coletivo` por `TRN-102`.
 
-`TRN-102` permanece `partial` e este Master não promove sua maturidade.
+`TRN-102` está `LOCALLY VALIDATED` após adjudicação e materialização de maturidade da UXA-106.
 
 A continuidade pode preservar o contexto necessário para retorno e explicação da origem, sem transferir contexto pessoal desnecessário ao Coletivo.
 
@@ -352,7 +352,7 @@ IA não pode:
 - transformar popularidade em qualidade;
 - criar vínculo por exposição ou seleção;
 - criar novos `PER-IDs`;
-- promover `TRN-102`;
+- promover `TRN-102` além da maturidade adjudicada;
 - definir algoritmo de ranking como autoridade;
 - iniciar Product Engineering.
 
@@ -374,7 +374,7 @@ Uma futura solução visual é funcionalmente aceitável quando:
 12. trata zero-results como estado legítimo;
 13. não preenche zero-results com publicidade disfarçada;
 14. não fabrica Coletivos, disponibilidade ou quantidade;
-15. preserva `TRN-102` em maturidade `partial`;
+15. preserva `TRN-102` em maturidade `LOCALLY VALIDATED`;
 16. seleção não cria vínculo;
 17. protege contexto sensível e identidade da Pessoa;
 18. não cria novos `PER-IDs`;
@@ -411,7 +411,7 @@ TRN-101
 → LOCALLY VALIDATED / UNCHANGED
 
 TRN-102
-→ PARTIAL / UNCHANGED
+→ LOCALLY VALIDATED
 
 NEW PER-IDS
 → NONE
