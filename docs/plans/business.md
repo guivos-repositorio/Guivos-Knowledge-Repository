@@ -465,9 +465,7 @@ INTELLIGENCE REQUERIDO
 +
 INTEGRAÇÃO REQUERIDA
 +
-GOVERNANÇA REQUERIDA
-+
-NÍVEL DE SERVIÇO CONTRATUAL REQUERIDO
+GOVERNANÇA / SEGURANÇA REQUERIDA
 ↓
 TIER COMPATÍVEL
 ```
@@ -499,17 +497,21 @@ A composição econômica deve ser apresentada separadamente:
 | **Oferta Business obrigatória** | Programas de Incentivo e/ou Journey custeado | **taxa de ativação R$ 0,00**; define o objeto da contratação |
 | **Acessos Journey custeados** | acesso ao Journey pago pela empresa | relação econômica própria |
 | **Intelligence avançado / exportações / API / integrações** | capacidades adicionais, quando comercializadas separadamente | somente quando o entitlement do plano não as incluir |
-| **Serviços adicionais** | suporte adicional ou operação gerenciada contratada | não necessariamente |
+| **Serviços pagos adicionais** | suporte ampliado, operação gerenciada ou outro serviço contratado depois do tier | não; somam ao valor contratual final quando aplicável |
 | **Orçamento pré-pago de incentivo** | recursos destinados às concessões do programa | **não**; fica separado da assinatura |
 
 Leitura de referência:
 
 ```text
-VALOR RECORRENTE / CONTRATUAL
+VALOR RECORRENTE DE PLATAFORMA
 =
 TIER BUSINESS
 + COMPONENTES VARIÁVEIS APLICÁVEIS
-+ SERVIÇOS ADICIONAIS, QUANDO CONTRATADOS
+
+VALOR CONTRATUAL FINAL
+=
+VALOR RECORRENTE DE PLATAFORMA
++ SERVIÇOS PAGOS ADICIONAIS, QUANDO CONTRATADOS
 
 RECURSO OPERACIONAL SEPARADO
 =
@@ -528,7 +530,8 @@ No caminho Self-service, a leitura correta não é um catálogo solto de serviç
 | **Ofertas Business** | Programas de Incentivo · Journey custeado · ambas |
 | **Capacidades da configuração** | escala · Intelligence · integrações · governança · nível de serviço |
 | **Volumes contratados** | participantes · acessos · demais volumes formalizados |
-| **Serviços de implantação/operação** | Self-service · suporte adicional · gerenciado |
+| **Modelo de implementação/operação** | Self-service · suporte · gerenciado — definido depois do tier |
+| **Serviços pagos adicionais** | suporte ampliado · operação gerenciada · gestão dedicada / SLA · implantação customizada |
 | **Recursos operacionais** | orçamento pré-pago de incentivo |
 | **Condições comerciais** | periodicidade, mercado, moeda, tributação e demais condições aplicáveis |
 
@@ -546,8 +549,11 @@ TIER DE CAPACIDADE
 + POPULAÇÃO / ESCALA
 + ACESSOS JOURNEY CUSTEADOS, SE APLICÁVEL
 + CAPACIDADES ADICIONAIS
-+ SERVIÇOS ADICIONAIS
-= VALOR RECORRENTE CONTRATUAL, QUANDO PRECIFICÁVEL
+= VALOR RECORRENTE DE PLATAFORMA, QUANDO PRECIFICÁVEL
+
+DEPOIS
++ SERVIÇOS PAGOS ADICIONAIS, SE CONTRATADOS
+= VALOR CONTRATUAL FINAL
 
 ORÇAMENTO PRÉ-PAGO DE INCENTIVO
 = RECURSO OPERACIONAL SEPARADO
@@ -578,7 +584,7 @@ SEM OFERTA BUSINESS
 → SEM CONTRATAÇÃO BUSINESS ATIVA
 ```
 
-O valor recorrente deriva do tier, população/escala, acessos Journey quando aplicáveis, capacidades adicionais não incluídas e serviços adicionais. O orçamento de incentivo permanece recurso operacional separado.
+O valor recorrente de plataforma deriva do tier, população/escala, acessos Journey quando aplicáveis e capacidades adicionais não incluídas. Serviços pagos adicionais entram somente depois do tier e podem elevar o valor contratual final sem redefinir automaticamente o tier. O orçamento de incentivo permanece recurso operacional separado.
 
 ## Start
 
@@ -637,9 +643,9 @@ O plano Business governa a profundidade contratada de:
 - Guivos Intelligence;
 - integrações;
 - governança;
-- nível de serviço.
+- requisitos de governança e segurança.
 
-O nível de serviço não substitui o plano e não constitui uma segunda taxonomia de planos.
+O modelo de implementação/operação e os serviços pagos adicionais não substituem o tier e não constituem uma segunda taxonomia de planos.
 
 Os **entitlements quantitativos que não estejam definidos** permanecem sujeitos à formalização comercial própria. As inclusões mínimas das capacidades adicionais por tier são governadas por `GEM-004-BUSINESS-VARIABLE-PRICING-AUTHORITY-001` e não podem ser cobradas novamente como add-on quando já incluídas.
 
