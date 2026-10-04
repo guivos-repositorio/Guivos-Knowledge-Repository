@@ -8864,7 +8864,8 @@ AUTORIDADES TEMÁTICAS VIGENTES
 <li><strong>UXA-103:</strong> escopo adjudicado; contrato funcional de <code>TRN-005</code> adjudicado e reconciliado; conclusão de maturidade adjudicada e promoção materializada para <code>LOCALLY VALIDATED</code>; <code>INTEGRALLY VALIDATED</code> não suportado pela evidência corrente;</li>
 <li><strong>UXA-104:</strong> escopo adjudicado por <code>GKR-UXA-104-PER013014-SCOPE-AUTHORITY-001</code> para <code>PER-013/014</code> + <code>TRN-014..017</code>; exame funcional <code>COMPLETE</code>; contrato funcional <code>ADJUDICATED / NORMATIVE</code>; reconciliação <code>COMPLETE</code>; maturity exam <code>COMPLETE</code>; achados de maturidade <code>ADJUDICATED</code>; <code>TRN-014..017</code> promovidas para <code>LOCALLY VALIDATED</code>; quatro promoções de maturidade;</li>
 <li><strong>UXA-105:</strong> scope exam <code>COMPLETE</code>; escopo <code>ADJUDICATED / NORMATIVE</code> restrito a <code>TRN-001 — PER-001 → PER-002</code>; contrato funcional adjudicado; maturity exam <code>COMPLETE</code>; adjudicação de maturidade <code>COMPLETE</code>; <code>TRN-001</code> promovida de <code>PARTIAL</code> para <code>LOCALLY VALIDATED</code>; <code>INTEGRALLY VALIDATED</code> não suportado; uma promoção de maturidade;</li>
-<li><strong>execução automática seguinte:</strong> nenhuma; qualquer avanço além de <code>LOCALLY VALIDATED</code> exige novo gate próprio.</li>
+<li><strong>UXA-106:</strong> scope exam <code>COMPLETE</code>; escopo <code>ADJUDICATED / NORMATIVE</code> restrito a <code>TRN-102/103/104 — PER-102 → PER-103 → PER-104 → PER-105</code>; exame funcional <code>NOT_STARTED / NOT_AUTHORIZED</code>; <code>TRN-102/103/104</code> permanecem <code>PARTIAL</code>; zero promoções de maturidade;</li>
+<li><strong>execução automática seguinte:</strong> nenhuma; eventual exame funcional da UXA-106 exige autorização humana separada.</li>
 </ul>
 <div class="highlight"><pre><span></span><code>DOCUMENTED
 ≠ IMPLEMENTED
@@ -10263,6 +10264,17 @@ SP-GAP-010
 <p>Este Registro não define uma fila automática de próximos atos.</p>
 <div class="highlight"><pre><span></span><code>NEXT AUTOMATIC EXECUTION
 → NONE
+
+UXA-106
+→ SCOPE EXAM COMPLETE
+→ ADJUDICATED SCOPE = TRN-102 / TRN-103 / TRN-104
+→ PER-102 → PER-103 → PER-104 → PER-105
+→ SCOPE DELIMITATION COMPLETE
+→ SCOPE ADJUDICATED / NORMATIVE
+→ FUNCTIONAL EXAM NOT_STARTED / NOT_AUTHORIZED
+→ TRN-102 / TRN-103 / TRN-104 PARTIAL / UNCHANGED
+→ MATURITY PROMOTIONS = 0
+→ PRODUCT ENGINEERING PAUSED / NOT RELEASED
 
 UXA-105
 → SCOPE EXAM COMPLETE
