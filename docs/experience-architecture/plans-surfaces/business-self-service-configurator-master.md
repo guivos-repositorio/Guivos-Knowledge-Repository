@@ -1,8 +1,8 @@
 ---
 id: GKR-UX-PLANS-BUSINESS-CONFIGURATOR-001
-title: Planos — Guivos Business — Configurador e Calculadora Self-service — Documento Mestre
+title: Planos — Guivos Business — Configurador, Capacidades e Pricing — Documento Mestre
 status: active
-version: 0.7.0
+version: 0.8.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-03
 normative: false
@@ -13,7 +13,7 @@ depends_on:
   - GEM-004-BUSINESS-VARIABLE-PRICING-AUTHORITY-001
 ---
 
-# Planos — Guivos Business — Configurador e Calculadora Self-service — Documento Mestre
+# Planos — Guivos Business — Configurador, Capacidades e Pricing — Documento Mestre
 
 ## 1. Finalidade
 
@@ -119,13 +119,19 @@ CONFIGURAÇÃO VÁLIDA
 OFERTA BUSINESS OBRIGATÓRIA
 + TIER DE CAPACIDADE
 
-ASSINATURA RECORRENTE / CONTRATUAL
+VALOR RECORRENTE DE PLATAFORMA
 =
 TIER DE CAPACIDADE
 + COMPONENTE DE POPULAÇÃO / ESCALA
 + ACESSOS JOURNEY CUSTEADOS, SE APLICÁVEL
 + CAPACIDADES ADICIONAIS
-+ SERVIÇOS ADICIONAIS
+
+DEPOIS
+
+VALOR CONTRATUAL FINAL
+=
+VALOR RECORRENTE DE PLATAFORMA
++ SERVIÇOS PAGOS ADICIONAIS, SE CONTRATADOS
 
 RECURSO OPERACIONAL SEPARADO
 =
@@ -196,11 +202,18 @@ A interface deve consumir a autoridade econômica, não duplicar lógica hardcod
 | Journey custeado | R$ 0,00 | R$ 0,00 |
 | Incentivos + Journey | R$ 0,00 | R$ 0,00 |
 
-### Serviços
+### Modelo de implementação/operação e serviços pagos
 
-| Serviço | Mensal | Anual |
+O modelo é escolhido depois do tier resultante:
+
+- Self-service;
+- apoio do suporte;
+- gerenciado.
+
+`Self-service` não é um serviço adicional tarifado.
+
+| Serviço pago adicional | Mensal | Anual |
 |---|---:|---:|
-| Self-service | R$ 0,00 | R$ 0,00 |
 | Suporte ampliado | R$ 299,00 | R$ 2.990,00 |
 | Operação gerenciada | R$ 990,00 | R$ 9.900,00 |
 | Gestão dedicada / SLA ampliado | R$ 1.990,00 | R$ 19.900,00 |
@@ -299,7 +312,7 @@ Essa regra vale inclusive para capacidades que um tier superior oferece sem valo
 
 ## 8. Resultado
 
-Quando todos os componentes necessários possuírem preço vigente, o resultado deve mostrar primeiro a oferta Business escolhida e a configuração informada; depois, o tier resultante e a justificativa do enquadramento; por fim, população/escala, acessos Journey, adicionais, serviços, subtotal recorrente, periodicidade, total recorrente, orçamento de incentivo em linha separada e itens sob consulta. A oferta não deve ser apresentada como parcela financeira artificial de R$ 0,00.
+Quando todos os componentes necessários possuírem preço vigente, o resultado deve mostrar primeiro a oferta Business escolhida e a configuração informada; depois, o tier resultante e a justificativa do enquadramento; em seguida, população/escala, acessos Journey e capacidades adicionais que formam o **valor recorrente de plataforma**; somente depois, modelo de implementação/operação e eventual serviço pago adicional que compõe o **valor contratual final**. O orçamento de incentivo permanece em linha separada.
 
 ## 9. Configuração parcialmente calculável
 
@@ -332,9 +345,7 @@ A calculadora não pode elevar plano com base apenas em maximização de receita
 
 ## 11. Self-service
 
-Self-service significa que a empresa consegue preencher, compreender, comparar, revisar, calcular quando possível, contratar online quando a composição estiver comercialmente apta e seguir para configuração/operação com autonomia quando elegível.
-
-Suporte e Gerenciado continuam sendo modelos de implementação/operação, não novos planos.
+Self-service é uma modalidade posterior de implementação/operação na qual a empresa segue com autonomia quando elegível. Suporte e Gerenciado são modalidades alternativas de implementação/operação. Nenhuma delas determina automaticamente Start, Growth, Scale ou Enterprise.
 
 ## 12. Estados
 
