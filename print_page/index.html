@@ -2057,7 +2057,7 @@
   <span class="md-ellipsis">
     
   
-    Guivos Business — Configurador, Pricing e Matriz por Tier
+    Guivos Business — Configurador, Capacidades e Pricing
   
 
     
@@ -8095,7 +8095,7 @@
   <a href="#experience-architecture-plans-surfaces-business-self-service-configurator-master" class="md-nav__link">
     <span class="md-ellipsis">
       
-        8.3.4 Guivos Business — Configurador, Pricing e Matriz por Tier
+        8.3.4 Guivos Business — Configurador, Capacidades e Pricing
       
     </span>
   </a>
@@ -10355,7 +10355,7 @@
   <a href="#experience-architecture-plans-surfaces-business-self-service-configurator-master" class="md-nav__link">
     <span class="md-ellipsis">
       
-        8.3.4 Guivos Business — Configurador, Pricing e Matriz por Tier
+        8.3.4 Guivos Business — Configurador, Capacidades e Pricing
       
     </span>
   </a>
@@ -22750,10 +22750,10 @@ TRN-306
 </tbody>
 </table>
 <p><strong>Contratação:</strong> online.</p>
-<p><strong>Implementação/operação:</strong> <strong>Self-service quando possível</strong>, com apoio do suporte quando necessário e operação gerenciada quando a complexidade exigir.</p>
-<p>O modelo de implementação/operação é independente do plano: a complexidade da configuração determina o nível de acompanhamento.</p>
-<p>A composição econômica do Business é <strong>offer-first</strong>: a empresa precisa contratar Programas de Incentivo, Journey custeado ou ambas. Start, Growth, Scale e Enterprise são tiers de capacidade e não constituem contratação Business isoladamente. A seleção da oferta tem taxa de ativação igual a R$ 0,00.</p>
-<p>Quando uma capacidade já estiver incluída no tier, seu valor adicional é <strong>R$ 0,00</strong>. Quando não estiver incluída e for elegível como add-on, aplica-se o valor mensal/anual da autoridade econômica vigente.</p>
+<p><strong>Implementação/operação:</strong> definida <strong>depois do tier resultante</strong>, entre Self-service, apoio do suporte ou operação gerenciada.</p>
+<p>O modelo de implementação/operação não determina automaticamente o tier. Serviços pagos adicionais, quando contratados, somam-se ao valor recorrente de plataforma para formar o valor contratual final.</p>
+<p>A composição econômica do Business é <strong>offer-first</strong>: a empresa escolhe Programas de Incentivo, Journey custeado ou ambas; depois informa escala, capacidades, integrações e requisitos de governança/segurança. A configuração é então enquadrada no tier compatível. Start, Growth, Scale e Enterprise são tiers de capacidade e não constituem contratação Business isoladamente. A seleção da oferta tem taxa de ativação igual a R$ 0,00.</p>
+<p>Nas superfícies de capacidades, todas as capacidades governadas devem permanecer visíveis com opção <strong>Incluir / Não incluir</strong>. Quando uma capacidade selecionada já estiver incluída no tier, seu valor adicional é <strong>R$ 0,00</strong>; quando não estiver incluída e for elegível como add-on, aplica-se o valor mensal/anual vigente.</p>
 <p><a href="#plans-business">Ver planos, pricing e matriz por tier do Guivos Business</a></p>
 <h2 id="plans-periodicidade-de-contratacao">Periodicidade de contratação<a class="headerlink" href="#plans-periodicidade-de-contratacao" title="Permanent link">&para;</a></h2>
 <p>Todos os planos pagos admitem escolha entre <strong>contratação mensal</strong> e <strong>contratação anual</strong>.</p>
@@ -24541,8 +24541,8 @@ COMPOSIÇÃO VISUAL
 <li>recomendação automática de plano.</li>
 </ul>
 <h2 id="experience-architecture-plans-surfaces-read-first-9-guivos-business">9. Guivos Business<a class="headerlink" href="#experience-architecture-plans-surfaces-read-first-9-guivos-business" title="Permanent link">&para;</a></h2>
-<p>Business possui configurador Self-service próprio. Ele deve exigir uma <strong>oferta Business obrigatória</strong> antes de concluir a composição. Sem Programas de Incentivo, Journey custeado ou ambas, não existe contratação Business ativa. Depois da oferta, a experiência enquadra tier, população/escala, acessos, capacidades, periodicidade e serviços aplicáveis.</p>
-<p>Os preços variáveis do Business estão adjudicados em <code>GEM-004-BUSINESS-VARIABLE-PRICING-AUTHORITY-001</code>. A oferta obrigatória possui <strong>taxa de ativação igual a R$ 0,00</strong>; o tier remunera a capacidade da plataforma. O configurador calcula população/escala, acessos Journey, add-ons e serviços, consome a <strong>matriz de inclusões por tier</strong> e indica <code>dimensionado</code> ou <code>sob consulta</code> somente onde a autoridade assim determinar.</p>
+<p>Business possui um <strong>configurador de composição e pricing</strong>. Ele deve exigir uma oferta Business obrigatória antes de concluir a composição. Sem Programas de Incentivo, Journey custeado ou ambas, não existe contratação Business ativa. Depois da oferta, a experiência recebe escala, acessos, capacidades, integrações e governança/segurança; então enquadra o tier compatível. O modelo de implementação/operação vem depois.</p>
+<p>Os preços variáveis do Business estão adjudicados em <code>GEM-004-BUSINESS-VARIABLE-PRICING-AUTHORITY-001</code>. A oferta obrigatória possui <strong>taxa de ativação igual a R$ 0,00</strong>; o tier remunera a capacidade da plataforma. O configurador calcula o valor recorrente de plataforma a partir de tier, população/escala, acessos Journey e capacidades adicionais. Serviços pagos adicionais são considerados somente depois do tier, no valor contratual final.</p>
 <h2 id="experience-architecture-plans-surfaces-read-first-91-composicao-economica-business-corrente">9.1 Composição econômica Business corrente<a class="headerlink" href="#experience-architecture-plans-surfaces-read-first-91-composicao-economica-business-corrente" title="Permanent link">&para;</a></h2>
 <p>Toda superfície Business deve partir da seguinte verdade econômica:</p>
 <div class="highlight"><pre><span></span><code>SEM OFERTA BUSINESS
@@ -24552,13 +24552,19 @@ OFERTA BUSINESS
 → OBRIGATÓRIA
 → TAXA DE ATIVAÇÃO = R$ 0,00
 
-VALOR RECORRENTE
+VALOR RECORRENTE DE PLATAFORMA
 =
 TIER DE CAPACIDADE
 + POPULAÇÃO / ESCALA
 + ACESSOS JOURNEY CUSTEADOS, SE APLICÁVEL
 + CAPACIDADES ADICIONAIS NÃO INCLUÍDAS NO TIER
-+ SERVIÇOS ADICIONAIS
+
+DEPOIS
+
+VALOR CONTRATUAL FINAL
+=
+VALOR RECORRENTE DE PLATAFORMA
++ SERVIÇOS PAGOS ADICIONAIS, SE CONTRATADOS
 </code></pre></div>
 <h3 id="experience-architecture-plans-surfaces-read-first-ordem-semantica-da-contratacao-business">Ordem semântica da contratação Business<a class="headerlink" href="#experience-architecture-plans-surfaces-read-first-ordem-semantica-da-contratacao-business" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>1. ESCOLHER O QUE QUER CONTRATAR
@@ -24933,8 +24939,13 @@ TIER DE CAPACIDADE
 + POPULAÇÃO / ESCALA
 + ACESSOS JOURNEY CUSTEADOS, SE APLICÁVEL
 + CAPACIDADES ADICIONAIS NÃO INCLUÍDAS NO TIER
-+ SERVIÇOS ADICIONAIS
-= VALOR RECORRENTE CONTRATUAL
+= VALOR RECORRENTE DE PLATAFORMA
+
+DEPOIS
+
+VALOR RECORRENTE DE PLATAFORMA
++ SERVIÇOS PAGOS ADICIONAIS, SE CONTRATADOS
+= VALOR CONTRATUAL FINAL
 
 ORÇAMENTO DE INCENTIVO
 = RECURSO OPERACIONAL SEPARADO
@@ -24969,8 +24980,10 @@ ORÇAMENTO DE INCENTIVO
 <li>Journey Plus/Pro custeado e quantidade;</li>
 <li>add-ons efetivamente cobrados, com valor mensal/anual aplicável;</li>
 <li>capacidades incluídas no tier, explicitadas com <code>R$ 0,00 adicional</code>;</li>
-<li>serviço adicional;</li>
-<li>subtotal/total recorrente;</li>
+<li>modelo de implementação/operação definido depois do tier;</li>
+<li>serviço pago adicional, se contratado;</li>
+<li>valor recorrente de plataforma;</li>
+<li>valor contratual final;</li>
 <li>orçamento pré-pago de incentivo em linha separada;</li>
 <li>itens dimensionados ou sob consulta;</li>
 <li>periodicidade e condição anual/mensal.</li>
@@ -25167,7 +25180,7 @@ SUBIR DE TIER
 <h2 id="experience-architecture-plans-surfaces-ux-ui-orchestration-master-10-acessibilidade">10. Acessibilidade<a class="headerlink" href="#experience-architecture-plans-surfaces-ux-ui-orchestration-master-10-acessibilidade" title="Permanent link">&para;</a></h2>
 <p>Diferenças, preços, periodicidade e ações não podem depender apenas de cor, posição ou ícone. Tabelas e cards precisam preservar leitura linear e tecnologias assistivas.</p>
 <h2 id="experience-architecture-plans-surfaces-ux-ui-orchestration-master-11-criterios-de-aceite">11. Critérios de aceite<a class="headerlink" href="#experience-architecture-plans-surfaces-ux-ui-orchestration-master-11-criterios-de-aceite" title="Permanent link">&para;</a></h2>
-<p>A experiência é aceitável quando as quatro taxonomias permanecem separadas; mensal/anual é explicitamente selecionável; diferenças funcionais são legíveis; valores consomem a autoridade econômica vigente; dimensionamento é distinguido de preço fixo; capacidades incluídas não são cobradas novamente; comparar não produz contratação; Business separa assinatura de orçamento de incentivo; Design mantém liberdade criativa; e Product Engineering não é liberado por este documento.</p></section></section>
+<p>A experiência é aceitável quando as quatro taxonomias permanecem separadas; mensal/anual é explicitamente selecionável; diferenças funcionais são legíveis; valores consomem a autoridade econômica vigente; dimensionamento é distinguido de preço fixo; capacidades incluídas não são cobradas novamente; comparar não produz contratação; Business separa valor recorrente de plataforma, serviços pagos adicionais e orçamento de incentivo; Design mantém liberdade criativa; e Product Engineering não é liberado por este documento.</p></section></section>
                     <section class='print-page md-section' id='section-8-3' heading-number='8.3'>
                         <h1>Documentos Mestres por Contexto<a class='headerlink' href='#section-8-3' title='Permanent link'></a>
                         </h1>
@@ -25314,7 +25327,7 @@ GUIVOS BUSINESS
 </code></pre></div>
 <p>Uma Organização pode se relacionar comercialmente com Guivos Business, mas os planos de Organização não são planos Business.</p>
 <h2 id="experience-architecture-plans-surfaces-organization-plans-surface-master-5-opportunity-boost">5. Opportunity Boost<a class="headerlink" href="#experience-architecture-plans-surfaces-organization-plans-surface-master-5-opportunity-boost" title="Permanent link">&para;</a></h2>
-<p>A superfície não deve apresentar Opportunity Boost como benefício automático de Conecta, Eleva ou Transforma. A autoridade específica continua prevalecendo.</p></section><section class="print-page" id="experience-architecture-plans-surfaces-business-self-service-configurator-master" heading-number="8.3.4"><h1 id="experience-architecture-plans-surfaces-business-self-service-configurator-master-planos-guivos-business-configurador-e-calculadora-self-service-documento-mestre">Planos — Guivos Business — Configurador e Calculadora Self-service — Documento Mestre<a class="headerlink" href="#experience-architecture-plans-surfaces-business-self-service-configurator-master-planos-guivos-business-configurador-e-calculadora-self-service-documento-mestre" title="Permanent link">&para;</a></h1>
+<p>A superfície não deve apresentar Opportunity Boost como benefício automático de Conecta, Eleva ou Transforma. A autoridade específica continua prevalecendo.</p></section><section class="print-page" id="experience-architecture-plans-surfaces-business-self-service-configurator-master" heading-number="8.3.4"><h1 id="experience-architecture-plans-surfaces-business-self-service-configurator-master-planos-guivos-business-configurador-capacidades-e-pricing-documento-mestre">Planos — Guivos Business — Configurador, Capacidades e Pricing — Documento Mestre<a class="headerlink" href="#experience-architecture-plans-surfaces-business-self-service-configurator-master-planos-guivos-business-configurador-capacidades-e-pricing-documento-mestre" title="Permanent link">&para;</a></h1>
 <h2 id="experience-architecture-plans-surfaces-business-self-service-configurator-master-1-finalidade">1. Finalidade<a class="headerlink" href="#experience-architecture-plans-surfaces-business-self-service-configurator-master-1-finalidade" title="Permanent link">&para;</a></h2>
 <p>Definir a experiência pela qual uma empresa pode <strong>compreender, configurar, estimar quando houver autoridade de preço e contratar online</strong> o Guivos Business.</p>
 <p>O configurador é uma experiência de composição. Ele não é um quinto plano.</p>
@@ -25431,13 +25444,19 @@ DEPOIS
 OFERTA BUSINESS OBRIGATÓRIA
 + TIER DE CAPACIDADE
 
-ASSINATURA RECORRENTE / CONTRATUAL
+VALOR RECORRENTE DE PLATAFORMA
 =
 TIER DE CAPACIDADE
 + COMPONENTE DE POPULAÇÃO / ESCALA
 + ACESSOS JOURNEY CUSTEADOS, SE APLICÁVEL
 + CAPACIDADES ADICIONAIS
-+ SERVIÇOS ADICIONAIS
+
+DEPOIS
+
+VALOR CONTRATUAL FINAL
+=
+VALOR RECORRENTE DE PLATAFORMA
++ SERVIÇOS PAGOS ADICIONAIS, SE CONTRATADOS
 
 RECURSO OPERACIONAL SEPARADO
 =
@@ -25542,21 +25561,23 @@ VALOR CONTRATUAL FINAL
 </tr>
 </tbody>
 </table>
-<h3 id="experience-architecture-plans-surfaces-business-self-service-configurator-master-servicos">Serviços<a class="headerlink" href="#experience-architecture-plans-surfaces-business-self-service-configurator-master-servicos" title="Permanent link">&para;</a></h3>
+<h3 id="experience-architecture-plans-surfaces-business-self-service-configurator-master-modelo-de-implementacaooperacao-e-servicos-pagos">Modelo de implementação/operação e serviços pagos<a class="headerlink" href="#experience-architecture-plans-surfaces-business-self-service-configurator-master-modelo-de-implementacaooperacao-e-servicos-pagos" title="Permanent link">&para;</a></h3>
+<p>O modelo é escolhido depois do tier resultante:</p>
+<ul>
+<li>Self-service;</li>
+<li>apoio do suporte;</li>
+<li>gerenciado.</li>
+</ul>
+<p><code>Self-service</code> não é um serviço adicional tarifado.</p>
 <table>
 <thead>
 <tr>
-<th>Serviço</th>
+<th>Serviço pago adicional</th>
 <th style="text-align: right;">Mensal</th>
 <th style="text-align: right;">Anual</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>Self-service</td>
-<td style="text-align: right;">R$ 0,00</td>
-<td style="text-align: right;">R$ 0,00</td>
-</tr>
 <tr>
 <td>Suporte ampliado</td>
 <td style="text-align: right;">R$ 299,00</td>
@@ -25781,7 +25802,7 @@ NÃO INCLUIR
 </table>
 <p>Essa regra vale inclusive para capacidades que um tier superior oferece sem valor adicional. <strong>Disponibilidade não equivale a seleção automática.</strong></p>
 <h2 id="experience-architecture-plans-surfaces-business-self-service-configurator-master-8-resultado">8. Resultado<a class="headerlink" href="#experience-architecture-plans-surfaces-business-self-service-configurator-master-8-resultado" title="Permanent link">&para;</a></h2>
-<p>Quando todos os componentes necessários possuírem preço vigente, o resultado deve mostrar primeiro a oferta Business escolhida e a configuração informada; depois, o tier resultante e a justificativa do enquadramento; por fim, população/escala, acessos Journey, adicionais, serviços, subtotal recorrente, periodicidade, total recorrente, orçamento de incentivo em linha separada e itens sob consulta. A oferta não deve ser apresentada como parcela financeira artificial de R$ 0,00.</p>
+<p>Quando todos os componentes necessários possuírem preço vigente, o resultado deve mostrar primeiro a oferta Business escolhida e a configuração informada; depois, o tier resultante e a justificativa do enquadramento; em seguida, população/escala, acessos Journey e capacidades adicionais que formam o <strong>valor recorrente de plataforma</strong>; somente depois, modelo de implementação/operação e eventual serviço pago adicional que compõe o <strong>valor contratual final</strong>. O orçamento de incentivo permanece em linha separada.</p>
 <h2 id="experience-architecture-plans-surfaces-business-self-service-configurator-master-9-configuracao-parcialmente-calculavel">9. Configuração parcialmente calculável<a class="headerlink" href="#experience-architecture-plans-surfaces-business-self-service-configurator-master-9-configuracao-parcialmente-calculavel" title="Permanent link">&para;</a></h2>
 <p>Uma composição pode ser parcialmente calculável.</p>
 <div class="highlight"><pre><span></span><code>SCALE / ENTERPRISE
@@ -25804,8 +25825,7 @@ TOTAL
 <p>O tier compatível deve ser determinado depois da seleção da oferta e pela maior capacidade exigida pela configuração e pelos entitlements vigentes. Sem oferta Business selecionada, a configuração não é contratável.</p>
 <p>A calculadora não pode elevar plano com base apenas em maximização de receita.</p>
 <h2 id="experience-architecture-plans-surfaces-business-self-service-configurator-master-11-self-service">11. Self-service<a class="headerlink" href="#experience-architecture-plans-surfaces-business-self-service-configurator-master-11-self-service" title="Permanent link">&para;</a></h2>
-<p>Self-service significa que a empresa consegue preencher, compreender, comparar, revisar, calcular quando possível, contratar online quando a composição estiver comercialmente apta e seguir para configuração/operação com autonomia quando elegível.</p>
-<p>Suporte e Gerenciado continuam sendo modelos de implementação/operação, não novos planos.</p>
+<p>Self-service é uma modalidade posterior de implementação/operação na qual a empresa segue com autonomia quando elegível. Suporte e Gerenciado são modalidades alternativas de implementação/operação. Nenhuma delas determina automaticamente Start, Growth, Scale ou Enterprise.</p>
 <h2 id="experience-architecture-plans-surfaces-business-self-service-configurator-master-12-estados">12. Estados<a class="headerlink" href="#experience-architecture-plans-surfaces-business-self-service-configurator-master-12-estados" title="Permanent link">&para;</a></h2>
 <ul>
 <li>composição vazia;</li>

@@ -2317,7 +2317,7 @@
   <span class="md-ellipsis">
     
   
-    Guivos Business — Configurador, Pricing e Matriz por Tier
+    Guivos Business — Configurador, Capacidades e Pricing
   
 
     
@@ -8132,8 +8132,8 @@ COMPOSIÇÃO VISUAL
 <li>recomendação automática de plano.</li>
 </ul>
 <h2 id="9-guivos-business">9. Guivos Business<a class="headerlink" href="#9-guivos-business" title="Permanent link">&para;</a></h2>
-<p>Business possui configurador Self-service próprio. Ele deve exigir uma <strong>oferta Business obrigatória</strong> antes de concluir a composição. Sem Programas de Incentivo, Journey custeado ou ambas, não existe contratação Business ativa. Depois da oferta, a experiência enquadra tier, população/escala, acessos, capacidades, periodicidade e serviços aplicáveis.</p>
-<p>Os preços variáveis do Business estão adjudicados em <code>GEM-004-BUSINESS-VARIABLE-PRICING-AUTHORITY-001</code>. A oferta obrigatória possui <strong>taxa de ativação igual a R$ 0,00</strong>; o tier remunera a capacidade da plataforma. O configurador calcula população/escala, acessos Journey, add-ons e serviços, consome a <strong>matriz de inclusões por tier</strong> e indica <code>dimensionado</code> ou <code>sob consulta</code> somente onde a autoridade assim determinar.</p>
+<p>Business possui um <strong>configurador de composição e pricing</strong>. Ele deve exigir uma oferta Business obrigatória antes de concluir a composição. Sem Programas de Incentivo, Journey custeado ou ambas, não existe contratação Business ativa. Depois da oferta, a experiência recebe escala, acessos, capacidades, integrações e governança/segurança; então enquadra o tier compatível. O modelo de implementação/operação vem depois.</p>
+<p>Os preços variáveis do Business estão adjudicados em <code>GEM-004-BUSINESS-VARIABLE-PRICING-AUTHORITY-001</code>. A oferta obrigatória possui <strong>taxa de ativação igual a R$ 0,00</strong>; o tier remunera a capacidade da plataforma. O configurador calcula o valor recorrente de plataforma a partir de tier, população/escala, acessos Journey e capacidades adicionais. Serviços pagos adicionais são considerados somente depois do tier, no valor contratual final.</p>
 <h2 id="91-composicao-economica-business-corrente">9.1 Composição econômica Business corrente<a class="headerlink" href="#91-composicao-economica-business-corrente" title="Permanent link">&para;</a></h2>
 <p>Toda superfície Business deve partir da seguinte verdade econômica:</p>
 <div class="highlight"><pre><span></span><code>SEM OFERTA BUSINESS
@@ -8143,13 +8143,19 @@ OFERTA BUSINESS
 → OBRIGATÓRIA
 → TAXA DE ATIVAÇÃO = R$ 0,00
 
-VALOR RECORRENTE
+VALOR RECORRENTE DE PLATAFORMA
 =
 TIER DE CAPACIDADE
 + POPULAÇÃO / ESCALA
 + ACESSOS JOURNEY CUSTEADOS, SE APLICÁVEL
 + CAPACIDADES ADICIONAIS NÃO INCLUÍDAS NO TIER
-+ SERVIÇOS ADICIONAIS
+
+DEPOIS
+
+VALOR CONTRATUAL FINAL
+=
+VALOR RECORRENTE DE PLATAFORMA
++ SERVIÇOS PAGOS ADICIONAIS, SE CONTRATADOS
 </code></pre></div>
 <h3 id="ordem-semantica-da-contratacao-business">Ordem semântica da contratação Business<a class="headerlink" href="#ordem-semantica-da-contratacao-business" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>1. ESCOLHER O QUE QUER CONTRATAR
