@@ -2,7 +2,7 @@
 id: GKR-PLANS-BUSINESS-001
 title: Planos — Guivos Business
 status: active
-version: 2.1.0
+version: 2.2.0
 owner: Guivos
 last_updated: 2026-10-03
 normative: false
@@ -120,13 +120,16 @@ EMPRESA ESCOLHE
 
 DEPOIS DEFINE
 → ESCALA
-→ CAPACIDADES
-→ INTEGRAÇÕES
-→ GOVERNANÇA
-→ SERVIÇO
+→ CAPACIDADES — INCLUIR / NÃO INCLUIR
+→ INTEGRAÇÕES — INCLUIR / NÃO INCLUIR
+→ GOVERNANÇA / SEGURANÇA
 
 ENTÃO
 → A CONFIGURAÇÃO É ENQUADRADA NO TIER COMPATÍVEL
+
+DEPOIS
+→ MODELO DE IMPLEMENTAÇÃO / OPERAÇÃO
+→ SELF-SERVICE / SUPORTE / GERENCIADO
 ```
 
 ### 2. População elegível / escala
@@ -172,6 +175,32 @@ A cobrança da população é **progressiva por faixa**, e não pela aplicação
 | **SSO / SAML** | R$ 299,00 | R$ 2.990,00 |
 | **Governança / auditoria avançadas** | R$ 249,00 | R$ 2.490,00 |
 | **Integração dedicada** | R$ 490,00 | R$ 4.900,00 |
+
+#### Regra de escolha das capacidades
+
+Todas as capacidades abaixo devem permanecer disponíveis para decisão explícita da empresa:
+
+```text
+INCLUIR
+OU
+NÃO INCLUIR
+```
+
+A seleção não significa automaticamente cobrança:
+
+```text
+INCLUIR + JÁ INCLUÍDA NO TIER
+→ VALOR ADICIONAL ZERO
+
+INCLUIR + NÃO INCLUÍDA + PREÇO AUTORIZADO
+→ ADD-ON
+
+INCLUIR + EXIGE TIER SUPERIOR
+→ REENQUADRAMENTO EXPLICADO
+
+NÃO INCLUIR
+→ NÃO COMPÕE A CONFIGURAÇÃO
+```
 
 #### Matriz de inclusões e contratação por tier
 
@@ -254,9 +283,13 @@ A leitura começa pela oferta escolhida e só depois apresenta o tier resultante
 |---|---|
 | **O que a empresa quer contratar** | Programas de Incentivo |
 | **População elegível** | 120 pessoas |
-| **Capacidades necessárias** | capacidades-base da configuração |
-| **Integrações adicionais** | nenhuma |
-| **Modelo operacional** | Self-service |
+| **Intelligence avançado** | Não incluir |
+| **Power BI / exportações** | Não incluir |
+| **API Business** | Não incluir |
+| **SSO / SAML** | Não incluir |
+| **Governança / auditoria avançadas** | Não incluir |
+| **Integração dedicada** | Não incluir |
+| **Requisitos de governança / segurança** | padrão |
 | **Tier resultante** | **Start** |
 
 #### Composição recorrente
@@ -266,7 +299,6 @@ A leitura começa pela oferta escolhida e só depois apresenta o tier resultante
 | **Tier Start** | capacidade necessária para a configuração | R$ 299,00 |
 | 1–50 pessoas | incluído | R$ 0,00 |
 | 51–120 pessoas | 70 × R$ 1,49 | R$ 104,30 |
-| Self-service | incluído | R$ 0,00 |
 | **Total recorrente** |  | **R$ 403,30/mês** |
 
 Separadamente:
@@ -283,7 +315,7 @@ ORÇAMENTO DE INCENTIVO
 → SEPARADO DA ASSINATURA
 ```
 
-Programas de Incentivo não aparece como uma “parcela financeira de R$ 0,00”; ele é o **objeto da contratação**. O orçamento destinado às recompensas também permanece fora dos R$ 403,30 da assinatura recorrente.
+Programas de Incentivo não aparece como uma “parcela financeira de R$ 0,00”; ele é o **objeto da contratação**. O orçamento destinado às recompensas também permanece fora dos R$ 403,30 da assinatura recorrente. O modelo de implementação/operação é definido somente depois do tier resultante.
 
 ## Periodicidade
 
