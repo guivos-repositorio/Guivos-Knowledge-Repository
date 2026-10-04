@@ -2,11 +2,11 @@
 id: GKR-UXA-106-G2-MATURITY-EXAM-001
 title: UXA-106 — Exame Específico de Maturidade — TRN-102/103/104
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-04
-normative: false
-maturity: maturity_exam_complete_pending_adjudication
+normative: true
+maturity: maturity_findings_adjudicated_pending_materialization
 depends_on:
   - GKR-UXA-106-G2-SCOPE-EXAM-001
   - GKR-UXA-106-G2-FUNCTIONAL-EXAM-001
@@ -93,8 +93,8 @@ Não permanece lacuna funcional local conhecida que, por si só, exija manter `T
 
 ```text
 TRN-102
-→ ELIGIBLE CANDIDATE = LOCALLY VALIDATED
-→ HUMAN MATURITY ADJUDICATION PENDING
+→ ADJUDICATED ELIGIBILITY = LOCALLY VALIDATED
+→ PROMOTION MATERIALIZATION PENDING
 → INTEGRALLY VALIDATED NOT SUPPORTED
 ```
 
@@ -119,8 +119,8 @@ Não permanece lacuna funcional local conhecida que, por si só, exija manter `T
 
 ```text
 TRN-103
-→ ELIGIBLE CANDIDATE = LOCALLY VALIDATED
-→ HUMAN MATURITY ADJUDICATION PENDING
+→ ADJUDICATED ELIGIBILITY = LOCALLY VALIDATED
+→ PROMOTION MATERIALIZATION PENDING
 → INTEGRALLY VALIDATED NOT SUPPORTED
 ```
 
@@ -147,8 +147,8 @@ Não permanece lacuna funcional local conhecida que, por si só, exija manter `T
 
 ```text
 TRN-104
-→ ELIGIBLE CANDIDATE = LOCALLY VALIDATED
-→ HUMAN MATURITY ADJUDICATION PENDING
+→ ADJUDICATED ELIGIBILITY = LOCALLY VALIDATED
+→ PROMOTION MATERIALIZATION PENDING
 → INTEGRALLY VALIDATED NOT SUPPORTED
 ```
 
@@ -189,12 +189,20 @@ TRN-104
 → ELIGIBLE CANDIDATE = LOCALLY VALIDATED
 
 HUMAN MATURITY ADJUDICATION
-→ PENDING
+→ COMPLETE
+
+ADJUDICATED ELIGIBILITY
+→ TRN-102 = LOCALLY VALIDATED
+→ TRN-103 = LOCALLY VALIDATED
+→ TRN-104 = LOCALLY VALIDATED
 
 INTEGRALLY VALIDATED
 → NOT SUPPORTED
 
-MATURITY PROMOTIONS
+PROMOTION MATERIALIZATION
+→ PENDING
+
+MATURITY PROMOTIONS MATERIALIZED
 → 0
 
 TRANSITION REGISTRY
@@ -220,13 +228,15 @@ Este exame:
 
 ## 10. Próximo gate
 
-O próximo gate, se autorizado, é exclusivamente a adjudicação humana dos achados de maturidade:
+Os achados de maturidade foram adjudicados humanamente.
 
 ```text
 TRN-102
 TRN-103
 TRN-104
-→ PARTIAL → LOCALLY VALIDATED
+→ ADJUDICATED ELIGIBILITY = LOCALLY VALIDATED
 ```
 
-Nenhuma promoção deve ser materializada antes desse gate humano.
+O próximo gate, se autorizado separadamente, é exclusivamente a materialização dessas três promoções no Transition Registry e nas autoridades sincronizadas.
+
+Até essa materialização, a maturidade operativa corrente permanece `PARTIAL`.
