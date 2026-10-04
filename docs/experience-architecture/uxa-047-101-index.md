@@ -2,7 +2,7 @@
 id: GKR-UXA-047-101-INDEX-001
 title: Índice Corrente das Frentes UXA-047 a UXA-107
 status: active
-version: 3.54.84
+version: 3.54.85
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-10-04
 depends_on:
@@ -33,7 +33,7 @@ Este índice existe somente para descoberta das frentes UXA numeradas que ainda 
 
 ```text
 GKR-STATE-001
-→ 3.51.10 / CURRENT
+→ 3.51.11 / CURRENT
 
 MARCO FUNCIONAL
 → M7.88
@@ -46,8 +46,8 @@ UXA-107
 → SCOPE EXAM COMPLETE
 → CANDIDATE SCOPE = TRN-201 ONLY
 → ORG-001 → ORG-002
-→ SCOPE SUFFICIENCY = SUFFICIENT CANDIDATE
-→ SCOPE ADJUDICATION PENDING
+→ SCOPE SUFFICIENCY = SUFFICIENT / ADJUDICATED
+→ SCOPE ADJUDICATED / NORMATIVE
 → FUNCTIONAL EXAM NOT_STARTED / NOT_AUTHORIZED
 → TRN-201 PARTIAL / UNCHANGED
 → MATURITY PROMOTIONS = 0
