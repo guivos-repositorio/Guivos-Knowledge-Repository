@@ -8863,7 +8863,8 @@ AUTORIDADES TEMÁTICAS VIGENTES
 <li><strong>UXA-102 / V5:</strong> <code>TRANSVERSE CONTRACT ADJUDICATED</code>; 76/76 transições examinadas; 0 promoções de maturidade;</li>
 <li><strong>UXA-103:</strong> escopo adjudicado; contrato funcional de <code>TRN-005</code> adjudicado e reconciliado; conclusão de maturidade adjudicada e promoção materializada para <code>LOCALLY VALIDATED</code>; <code>INTEGRALLY VALIDATED</code> não suportado pela evidência corrente;</li>
 <li><strong>UXA-104:</strong> escopo adjudicado por <code>GKR-UXA-104-PER013014-SCOPE-AUTHORITY-001</code> para <code>PER-013/014</code> + <code>TRN-014..017</code>; exame funcional <code>COMPLETE</code>; contrato funcional <code>ADJUDICATED / NORMATIVE</code>; reconciliação <code>COMPLETE</code>; maturity exam <code>COMPLETE</code>; achados de maturidade <code>ADJUDICATED</code>; <code>TRN-014..017</code> promovidas para <code>LOCALLY VALIDATED</code>; quatro promoções de maturidade;</li>
-<li><strong>execução automática seguinte:</strong> nenhuma; nenhuma execução automática seguinte é criada pela conclusão da UXA-104.</li>
+<li><strong>UXA-105:</strong> scope exam <code>COMPLETE</code>; escopo <code>ADJUDICATED / NORMATIVE</code> restrito a <code>TRN-001 — PER-001 → PER-002</code>; contrato funcional adjudicado; maturity exam <code>COMPLETE</code>; adjudicação de maturidade <code>COMPLETE</code>; <code>TRN-001</code> promovida de <code>PARTIAL</code> para <code>LOCALLY VALIDATED</code>; <code>INTEGRALLY VALIDATED</code> não suportado; uma promoção de maturidade;</li>
+<li><strong>execução automática seguinte:</strong> nenhuma; qualquer avanço além de <code>LOCALLY VALIDATED</code> exige novo gate próprio.</li>
 </ul>
 <div class="highlight"><pre><span></span><code>DOCUMENTED
 ≠ IMPLEMENTED
@@ -10131,7 +10132,7 @@ STATE MAP DEFINED
 <h2 id="281-g1-entrada-expressao-e-inventario">28.1 G1 — entrada, expressão e inventário<a class="headerlink" href="#281-g1-entrada-expressao-e-inventario" title="Permanent link">&para;</a></h2>
 <p><code>GKR-UX-G1-ENTRY-EXPRESSION-INVENTORY-VALIDATION-001</code> conclui validação local limitada da primeira cadeia da Journey:</p>
 <div class="highlight"><pre><span></span><code>TRN-001
-→ PARTIAL
+→ LOCALLY VALIDATED
 
 TRN-002
 → LOCALLY VALIDATED / UNCHANGED
@@ -10147,9 +10148,9 @@ TRN-006
 → LOCALLY VALIDATED / UNCHANGED
 
 TRN-014..017
-→ CONTRACTED / UNCHANGED
+→ LOCALLY VALIDATED
 </code></pre></div>
-<p>A promoção local não comprova implementação, persistência técnica ou fechamento ponta a ponta integral. <code>TRN-005</code> está localmente validada após fechamento de resultado indeterminado/reconciliação/retry pela UXA-103; <code>PER-013/014</code> permanecem contratos candidatos.</p>
+<p>A maturidade local não comprova implementação, persistência técnica ou fechamento ponta a ponta integral. <code>TRN-001</code> está localmente validada após UXA-105; <code>TRN-005</code> após UXA-103; <code>TRN-014..017</code> após UXA-104. A cadeia G1 completa permanece não integralmente validada.</p>
 <h2 id="282-g2-descoberta-e-solicitacao-de-coletivo">28.2 G2 — descoberta e solicitação de Coletivo<a class="headerlink" href="#282-g2-descoberta-e-solicitacao-de-coletivo" title="Permanent link">&para;</a></h2>
 <p><code>GKR-UX-G2-COLLECTIVE-DISCOVERY-REQUEST-VALIDATION-001</code> conclui o exame específico da segunda família deixada pela UXA-102/V5.</p>
 <div class="highlight"><pre><span></span><code>TRN-101
@@ -10262,6 +10263,20 @@ SP-GAP-010
 <p>Este Registro não define uma fila automática de próximos atos.</p>
 <div class="highlight"><pre><span></span><code>NEXT AUTOMATIC EXECUTION
 → NONE
+
+UXA-105
+→ SCOPE EXAM COMPLETE
+→ ADJUDICATED SCOPE = TRN-001 ONLY
+→ SCOPE ADJUDICATED / NORMATIVE
+→ FUNCTIONAL EXAM COMPLETE
+→ FUNCTIONAL CONTRACT ADJUDICATED / NORMATIVE
+→ MATURITY EXAM COMPLETE
+→ MATURITY ADJUDICATION COMPLETE
+→ TRN-001 FUNCTIONALLY SUFFICIENT / ADJUDICATED
+→ TRN-001 LOCALLY VALIDATED
+→ 1 MATURITY PROMOTION
+→ INTEGRALLY VALIDATED NOT SUPPORTED
+→ G1 COMPLETE CHAIN NOT INTEGRALLY VALIDATED
 
 O/C HIGH-FIDELITY DESIGN
 → AUTHORIZATION GRANTED
