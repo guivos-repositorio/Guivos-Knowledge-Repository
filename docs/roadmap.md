@@ -2,7 +2,7 @@
 id: ROADMAP-13.48.7
 title: Roadmap Arquitetural — Frentes Correntes e Próximos Gates da Guivos
 status: active
-version: 13.48.70
+version: 13.48.71
 owner: Guivos
 last_updated: 2026-10-04
 normative: true
@@ -83,7 +83,7 @@ ROADMAP
 | UXA-103 | `FUNCTIONAL CONTRACT ADJUDICATED / RECONCILIATION COMPLETE / TRN-005 LOCALLY VALIDATED / INTEGRAL NOT SUPPORTED` |
 | UXA-104 | `FUNCTIONAL CONTRACT ADJUDICATED / RECONCILIATION COMPLETE / MATURITY EXAM COMPLETE / TRN-014..017 LOCALLY VALIDATED / INTEGRAL NOT SUPPORTED` |
 | UXA-105 | `SCOPE + FUNCTIONAL CONTRACT ADJUDICATED / MATURITY EXAM + ADJUDICATION COMPLETE / TRN-001 LOCALLY VALIDATED / 1 PROMOTION / INTEGRAL NOT SUPPORTED` |
-| UXA-106 | `SCOPE EXAM COMPLETE / CANDIDATE = TRN-102/103/104 / HUMAN SCOPE ADJUDICATION PENDING / FUNCTIONAL EXAM NOT AUTHORIZED / 0 PROMOTIONS` |
+| UXA-106 | `SCOPE EXAM COMPLETE / SCOPE ADJUDICATED + NORMATIVE = TRN-102/103/104 / FUNCTIONAL EXAM NOT AUTHORIZED / 0 PROMOTIONS` |
 | Cognitive Reference Architecture | `GIA-COG-001 v0.1.2 / ACTIVE / NORMATIVE` |
 | `GIA-COG-002..008` | `RESERVED / NOT MATERIALIZED` |
 | Product Engineering | `PAUSED / NOT RELEASED` |
@@ -604,7 +604,7 @@ SNAPSHOT
 
 UXA-105 concluiu escopo, contrato funcional, maturity exam e adjudicação; `TRN-001` está `LOCALLY VALIDATED`. A cadeia G1 completa continua sem validação integral.
 
-UXA-106 concluiu somente o exame de escopo candidato de `TRN-102/103/104`; a adjudicação humana do escopo permanece pendente, sem exame funcional ou promoção de maturidade.
+UXA-106 concluiu o exame e a adjudicação normativa do escopo `TRN-102/103/104`; o exame funcional permanece não iniciado e não autorizado, sem promoção de maturidade.
 
 Cada avanço depende da autoridade temática vigente e do gate específico aplicável.
 
