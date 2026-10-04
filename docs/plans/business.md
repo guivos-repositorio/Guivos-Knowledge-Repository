@@ -2,7 +2,7 @@
 id: GKR-PLANS-BUSINESS-001
 title: Planos — Guivos Business
 status: active
-version: 2.3.0
+version: 2.3.1
 owner: Guivos
 last_updated: 2026-10-03
 normative: false
@@ -325,14 +325,43 @@ A leitura começa pela oferta escolhida e só depois apresenta o tier resultante
 | **Requisitos de governança / segurança** | padrão |
 | **Tier resultante** | **Start** |
 
-#### Composição recorrente
+#### Composição recorrente de plataforma
 
 | Parcela econômica | Cálculo | Valor mensal |
 |---|---:|---:|
 | **Tier Start** | capacidade necessária para a configuração | R$ 299,00 |
 | 1–50 pessoas | incluído | R$ 0,00 |
 | 51–120 pessoas | 70 × R$ 1,49 | R$ 104,30 |
-| **Total recorrente** |  | **R$ 403,30/mês** |
+| **Valor recorrente de plataforma** |  | **R$ 403,30/mês** |
+
+#### Escolha posterior de implementação / operação
+
+Depois do tier resultar da configuração, a empresa escolhe como pretende implementar e operar:
+
+| Decisão posterior | Seleção do exemplo | Efeito mensal |
+|---|---|---:|
+| **Modelo de implementação / operação** | **Self-service** | R$ 0,00 adicional |
+| **Serviço pago adicional** | não contratado | R$ 0,00 |
+| **Valor contratual final** | plataforma + serviço pago adicional | **R$ 403,30/mês** |
+
+Neste exemplo:
+
+```text
+TIER RESULTANTE
+→ START
+
+DEPOIS
+→ MODELO DE IMPLEMENTAÇÃO / OPERAÇÃO
+→ SELF-SERVICE
+
+SERVIÇO PAGO ADICIONAL
+→ NÃO CONTRATADO
+
+VALOR CONTRATUAL FINAL
+→ R$ 403,30/MÊS
+```
+
+Se a empresa escolher **Suporte ampliado**, **Operação gerenciada**, **Gestão dedicada / SLA ampliado** ou **Implantação customizada**, o serviço correspondente deve ser somado depois ao valor recorrente de plataforma, sem redefinir automaticamente o tier.
 
 Separadamente:
 
@@ -348,7 +377,7 @@ ORÇAMENTO DE INCENTIVO
 → SEPARADO DA ASSINATURA
 ```
 
-Programas de Incentivo não aparece como uma “parcela financeira de R$ 0,00”; ele é o **objeto da contratação**. O orçamento destinado às recompensas também permanece fora dos R$ 403,30 da assinatura recorrente. O modelo de implementação/operação é definido somente depois do tier resultante.
+Programas de Incentivo não aparece como uma “parcela financeira de R$ 0,00”; ele é o **objeto da contratação**. O orçamento destinado às recompensas também permanece fora do valor recorrente de plataforma e do valor contratual final. O modelo de implementação/operação é definido somente depois do tier resultante.
 
 ## Periodicidade
 
