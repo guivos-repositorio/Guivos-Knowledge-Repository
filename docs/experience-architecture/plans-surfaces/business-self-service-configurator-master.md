@@ -1,8 +1,8 @@
 ---
 id: GKR-UX-PLANS-BUSINESS-CONFIGURATOR-001
-title: Planos — Guivos Business — Configurador e Calculadora Self-service — Documento Mestre
+title: Planos — Guivos Business — Configurador, Capacidades e Pricing — Documento Mestre
 status: active
-version: 0.5.0
+version: 0.8.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-03
 normative: false
@@ -13,7 +13,7 @@ depends_on:
   - GEM-004-BUSINESS-VARIABLE-PRICING-AUTHORITY-001
 ---
 
-# Planos — Guivos Business — Configurador e Calculadora Self-service — Documento Mestre
+# Planos — Guivos Business — Configurador, Capacidades e Pricing — Documento Mestre
 
 ## 1. Finalidade
 
@@ -21,7 +21,7 @@ Definir a experiência pela qual uma empresa pode **compreender, configurar, est
 
 O configurador é uma experiência de composição. Ele não é um quinto plano.
 
-## 2. Planos-base
+## 2. Tiers de capacidade resultantes
 
 | Plano | Mensal | Anual | Direção |
 |---|---:|---:|---|
@@ -31,6 +31,29 @@ O configurador é uma experiência de composição. Ele não é um quinto plano.
 | **Enterprise** | sob consulta | sob consulta | governar alta complexidade e escala |
 
 Todos admitem seleção Mensal ou Anual. Quando o valor não estiver numericamente congelado, a calculadora não deve inventá-lo.
+
+### 2.1 Como o tier é determinado
+
+```text
+OFERTA ESCOLHIDA
++
+ESCALA
++
+CAPACIDADES
++
+INTEGRAÇÕES
++
+GOVERNANÇA / SEGURANÇA
+↓
+TIER COMPATÍVEL
+
+DEPOIS
+→ MODELO DE IMPLEMENTAÇÃO / OPERAÇÃO
+→ SELF-SERVICE / SUPORTE / GERENCIADO
+```
+
+A empresa não precisa escolher Start, Growth, Scale ou Enterprise antes de informar sua necessidade. O configurador deve **enquadrar e explicar** o tier compatível.
+
 
 ## 3. Dados de preenchimento
 
@@ -52,13 +75,32 @@ A composição deve conseguir receber, conforme aplicável:
 
 ### Capacidades
 
-- profundidade de Intelligence;
-- integrações;
-- API/exportações;
-- governança;
-- necessidades de segurança e controle;
-- nível de serviço;
-- implementação/operação: Self-service, apoio do suporte ou gerenciado.
+A superfície deve listar **todas as capacidades governadas**, cada uma com decisão explícita **Incluir / Não incluir**:
+
+- Intelligence avançado;
+- Exportações automatizadas / Power BI;
+- API Business;
+- SSO / SAML;
+- Governança / auditoria avançadas;
+- Integração dedicada;
+- Integrações dedicadas adicionais.
+
+Para cada capacidade selecionada, a interface deve mostrar se ela já está incluída no tier resultante, gera add-on, exige reenquadramento ou exige dimensionamento.
+
+### Governança / segurança
+
+- requisitos de governança;
+- auditoria;
+- autenticação corporativa;
+- segurança e controle aplicáveis.
+
+### Modelo de implementação / operação — etapa posterior
+
+Somente depois do tier resultante:
+
+- Self-service;
+- apoio do suporte;
+- gerenciado.
 
 ### Periodicidade
 
@@ -77,13 +119,19 @@ CONFIGURAÇÃO VÁLIDA
 OFERTA BUSINESS OBRIGATÓRIA
 + TIER DE CAPACIDADE
 
-ASSINATURA RECORRENTE / CONTRATUAL
+VALOR RECORRENTE DE PLATAFORMA
 =
 TIER DE CAPACIDADE
 + COMPONENTE DE POPULAÇÃO / ESCALA
 + ACESSOS JOURNEY CUSTEADOS, SE APLICÁVEL
 + CAPACIDADES ADICIONAIS
-+ SERVIÇOS ADICIONAIS
+
+DEPOIS
+
+VALOR CONTRATUAL FINAL
+=
+VALOR RECORRENTE DE PLATAFORMA
++ SERVIÇOS PAGOS ADICIONAIS, SE CONTRATADOS
 
 RECURSO OPERACIONAL SEPARADO
 =
@@ -106,10 +154,14 @@ POPULATION_RATE(periodicidade, faixa_autorizada) × base_precificável
 JOURNEY_ACCESS_RATE(periodicidade) × acessos
 +
 ADDONS(periodicidade)
-+
-SERVICE_RATE(periodicidade, modelo_operacional)
 =
-VALOR RECORRENTE CALCULÁVEL
+VALOR RECORRENTE DE PLATAFORMA CALCULÁVEL
+
+DEPOIS
++
+SERVICE_RATE(periodicidade, modelo_operacional), SE HOUVER SERVIÇO ADICIONAL CONTRATADO
+=
+VALOR CONTRATUAL FINAL
 ```
 
 Cada termo só pode produzir número quando houver autoridade econômica correspondente.
@@ -150,11 +202,18 @@ A interface deve consumir a autoridade econômica, não duplicar lógica hardcod
 | Journey custeado | R$ 0,00 | R$ 0,00 |
 | Incentivos + Journey | R$ 0,00 | R$ 0,00 |
 
-### Serviços
+### Modelo de implementação/operação e serviços pagos
 
-| Serviço | Mensal | Anual |
+O modelo é escolhido depois do tier resultante:
+
+- Self-service;
+- apoio do suporte;
+- gerenciado.
+
+`Self-service` não é um serviço adicional tarifado.
+
+| Serviço pago adicional | Mensal | Anual |
 |---|---:|---:|
-| Self-service | R$ 0,00 | R$ 0,00 |
 | Suporte ampliado | R$ 299,00 | R$ 2.990,00 |
 | Operação gerenciada | R$ 990,00 | R$ 9.900,00 |
 | Gestão dedicada / SLA ampliado | R$ 1.990,00 | R$ 19.900,00 |
@@ -196,7 +255,7 @@ ENTERPRISE
 → PREVALECE DIMENSIONAMENTO CONTRATUAL
 ```
 
-A inclusão de uma capacidade no tier não significa que ela seja gratuita universalmente; significa que seu preço já está absorvido pelo plano-base contratado.
+A inclusão de uma capacidade no tier não significa que ela seja gratuita universalmente; significa que seu preço já está absorvido pelo tier de capacidade resultante.
 
 
 ### Regra de cálculo
@@ -215,9 +274,45 @@ ELSE
 A interface deve exibir a capacidade incluída com valor adicional zero, e não ocultá-la como se ela não tivesse valor econômico.
 
 
+## 7.3 Progressão de capacidade por tier
+
+| Dimensão | **Start** | **Growth** | **Scale** | **Enterprise** |
+|---|---|---|---|---|
+| **Direção** | Operar | Acompanhar e compreender | Interpretar e integrar | Governar alta complexidade e escala |
+| **Intelligence avançado** | adicional | incluído | incluído | incluído |
+| **Governança / auditoria avançadas** | adicional | incluído | incluído | incluído |
+| **Exportações / Power BI** | adicional | adicional | incluído | incluído |
+| **API Business** | adicional | adicional | incluído | incluído |
+| **SSO / SAML** | adicional | adicional | incluído | incluído |
+| **1 integração dedicada** | adicional | adicional | 1 incluída | conforme contrato |
+
+A superfície deve explicar a progressão como mudança de capacidade, e não apenas como diferença de preço.
+
+## 7.4 Regra universal de incluir / não incluir
+
+A superfície de capacidades não deve presumir que a empresa deseja determinada capacidade apenas porque ela está disponível ou incluída em um tier.
+
+Cada capacidade deve possuir:
+
+```text
+INCLUIR
+OU
+NÃO INCLUIR
+```
+
+| Escolha | Condição | Efeito |
+|---|---|---|
+| Não incluir | qualquer tier | capacidade não compõe a configuração |
+| Incluir | já incluída no tier | valor adicional zero |
+| Incluir | não incluída + preço autorizado | add-on |
+| Incluir | exige tier superior | reenquadrar e explicar |
+| Incluir | exige dimensionamento | marcar como dimensionado / sob consulta |
+
+Essa regra vale inclusive para capacidades que um tier superior oferece sem valor adicional. **Disponibilidade não equivale a seleção automática.**
+
 ## 8. Resultado
 
-Quando todos os componentes necessários possuírem preço vigente, o resultado deve mostrar oferta Business obrigatória, tier de capacidade, população/escala, taxa de ativação da oferta igual a zero, acessos Journey, adicionais, serviços, subtotal recorrente, periodicidade, total recorrente, orçamento de incentivo em linha separada e itens sob consulta.
+Quando todos os componentes necessários possuírem preço vigente, o resultado deve mostrar primeiro a oferta Business escolhida e a configuração informada; depois, o tier resultante e a justificativa do enquadramento; em seguida, população/escala, acessos Journey e capacidades adicionais que formam o **valor recorrente de plataforma**; somente depois, modelo de implementação/operação e eventual serviço pago adicional que compõe o **valor contratual final**. O orçamento de incentivo permanece em linha separada.
 
 ## 9. Configuração parcialmente calculável
 
@@ -250,9 +345,7 @@ A calculadora não pode elevar plano com base apenas em maximização de receita
 
 ## 11. Self-service
 
-Self-service significa que a empresa consegue preencher, compreender, comparar, revisar, calcular quando possível, contratar online quando a composição estiver comercialmente apta e seguir para configuração/operação com autonomia quando elegível.
-
-Suporte e Gerenciado continuam sendo modelos de implementação/operação, não novos planos.
+Self-service é uma modalidade posterior de implementação/operação na qual a empresa segue com autonomia quando elegível. Suporte e Gerenciado são modalidades alternativas de implementação/operação. Nenhuma delas determina automaticamente Start, Growth, Scale ou Enterprise.
 
 ## 12. Estados
 

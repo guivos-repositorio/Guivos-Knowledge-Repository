@@ -2,7 +2,7 @@
 id: GKR-PLANS-BUSINESS-001
 title: Planos — Guivos Business
 status: active
-version: 2.0.0
+version: 2.3.1
 owner: Guivos
 last_updated: 2026-10-03
 normative: false
@@ -19,27 +19,118 @@ depends_on:
 
 Guivos Business é um **produto especializado B2B**. Seus planos são independentes dos planos do participante Organização.
 
-## Resumo
+## Estado econômico corrente
 
-| Plano | Mensal | Anual | Direção funcional |
-|---|---:|---:|---|
-| **Start** | R$ 299,00 | R$ 2.990,00 | operar |
-| **Growth** | R$ 799,00 | R$ 7.990,00 | acompanhar e compreender |
-| **Scale** | a partir de R$ 1.990,00 | dimensionado | interpretar e integrar |
-| **Enterprise** | sob consulta | sob consulta | governar em alta complexidade e escala |
+```text
+MODELO
+→ OFFER-FIRST
+
+OFERTA BUSINESS
+→ OBRIGATÓRIA
+→ PROGRAMAS DE INCENTIVO E/OU JOURNEY CUSTEADO
+→ TAXA DE ATIVAÇÃO = R$ 0,00
+
+START / GROWTH / SCALE / ENTERPRISE
+→ TIERS DE CAPACIDADE DA PLATAFORMA
+→ NÃO SÃO OFERTAS AUTÔNOMAS
+```
+
+A composição abaixo é a referência comercial corrente desta página.
+
+## Como os tiers se diferenciam
+
+A empresa não escolhe o tier como ponto de partida. Ela escolhe **o que quer contratar**, informa escala e necessidades, e a configuração resultante é enquadrada no tier capaz de sustentá-la.
+
+| Dimensão | **Start** | **Growth** | **Scale** | **Enterprise** |
+|---|---|---|---|---|
+| **Direção** | **Operar** | **Acompanhar e compreender** | **Interpretar e integrar** | **Governar alta complexidade e escala** |
+| **Significado** | colocar a oferta Business em operação com capacidade essencial | ampliar leitura, acompanhamento, Intelligence e governança | integrar sistemas, ampliar automação, profundidade analítica e operação em escala | adaptar capacidade, governança, segurança, integrações e condições contratuais a contextos complexos |
+| **Na prática** | executar a configuração contratada com o núcleo necessário | operar + compreender melhor o que acontece + governar com mais profundidade | operar + compreender + integrar + automatizar em maior escala | operar uma configuração dimensionada para exigências específicas e alta complexidade |
+| **Intelligence avançado** | adicional | **incluído** | **incluído** | **incluído** |
+| **Governança / auditoria avançadas** | adicional | **incluído** | **incluído** | **incluído** |
+| **Exportações automatizadas / Power BI** | adicional | adicional | **incluído** | **incluído** |
+| **API Business** | adicional | adicional | **incluído** | **incluído** |
+| **SSO / SAML** | adicional | adicional | **incluído** | **incluído** |
+| **1 integração dedicada** | adicional | adicional | **1 incluída** | incluída conforme contrato |
+| **Integrações adicionais** | adicional | adicional | adicional após a 1ª | dimensionado |
+| **Preço-base** | R$ 299/mês · R$ 2.990/ano | R$ 799/mês · R$ 7.990/ano | a partir de R$ 1.990/mês · anual dimensionado | sob consulta |
+
+Leitura de progressão:
+
+```text
+START
+→ QUERO OPERAR
+
+GROWTH
+→ QUERO OPERAR
+→ + ACOMPANHAR
+→ + COMPREENDER
+→ + GOVERNAR MELHOR
+
+SCALE
+→ QUERO OPERAR
+→ + COMPREENDER
+→ + INTEGRAR
+→ + AUTOMATIZAR EM ESCALA
+
+ENTERPRISE
+→ PRECISO DE ALTA COMPLEXIDADE
+→ + ESCALA
+→ + GOVERNANÇA
+→ + SEGURANÇA
+→ + INTEGRAÇÕES
+→ + CONDIÇÕES CONTRATUAIS ESPECÍFICAS
+```
+
+Regras de interpretação:
+
+```text
+GROWTH
+≠ START COM MAIS USUÁRIOS
+
+SCALE
+≠ GROWTH MAIS CARO
+
+ENTERPRISE
+≠ SCALE GRANDE
+
+CADA TIER
+→ REPRESENTA UMA MUDANÇA REAL DE CAPACIDADE OPERACIONAL
+```
 
 ## Quadro direto de contratação
 
 A contratação do Guivos Business parte primeiro da **oferta que a empresa quer operar**. Pelo menos uma oferta — Programas de Incentivo, Journey custeado ou ambas — é obrigatória. Start, Growth, Scale e Enterprise são tiers de capacidade da plataforma e não são contratáveis isoladamente.
 
-### 1. Plano-base
+### 1. O que a empresa quer contratar
 
-| Plano | Mensal | Anual | Direção |
-|---|---:|---:|---|
-| **Start** | R$ 299,00 | R$ 2.990,00 | operar |
-| **Growth** | R$ 799,00 | R$ 7.990,00 | acompanhar e compreender |
-| **Scale** | a partir de R$ 1.990,00 | dimensionado | interpretar e integrar em escala |
-| **Enterprise** | sob consulta | sob consulta | governar alta complexidade e escala |
+| Oferta | Taxa mensal de ativação | Taxa anual de ativação |
+|---|---:|---:|
+| **Programas de Incentivo** | **R$ 0,00** | **R$ 0,00** |
+| **Journey custeado** | **R$ 0,00** | **R$ 0,00** |
+| **Incentivos + Journey** | **R$ 0,00** | **R$ 0,00** |
+
+A oferta define **o objeto primário da contratação**. Sem oferta Business, não existe contratação Business ativa.
+
+```text
+EMPRESA ESCOLHE
+→ PROGRAMAS DE INCENTIVO
+→ JOURNEY CUSTEADO
+→ OU AMBOS
+
+DEPOIS DEFINE
+→ ESCALA
+→ CAPACIDADES — INCLUIR / NÃO INCLUIR
+→ INTEGRAÇÕES — INCLUIR / NÃO INCLUIR
+→ GOVERNANÇA / SEGURANÇA
+
+ENTÃO
+→ A CONFIGURAÇÃO É ENQUADRADA NO TIER COMPATÍVEL
+
+DEPOIS
+→ MODELO DE IMPLEMENTAÇÃO / OPERAÇÃO
+→ SELF-SERVICE / SUPORTE / GERENCIADO
+```
 
 ### 2. População elegível / escala
 
@@ -54,30 +145,7 @@ A contratação do Guivos Business parte primeiro da **oferta que a empresa quer
 
 A cobrança da população é **progressiva por faixa**, e não pela aplicação de uma única tarifa sobre toda a população.
 
-### 3. Oferta contratada — obrigatória
-
-| Oferta | Taxa mensal de ativação | Taxa anual de ativação |
-|---|---:|---:|
-| **Programas de Incentivo** | **R$ 0,00** | **R$ 0,00** |
-| **Journey custeado** | **R$ 0,00** | **R$ 0,00** |
-| **Incentivos + Journey** | **R$ 0,00** | **R$ 0,00** |
-
-A oferta define **o que a empresa está contratando para operar**. O tier define **quanta capacidade da plataforma** sustenta essa operação.
-
-```text
-SEM INCENTIVOS
-E
-SEM JOURNEY CUSTEADO
-→ NÃO EXISTE CONTRATAÇÃO BUSINESS ATIVA
-
-OFERTA BUSINESS
-→ OBRIGATÓRIA
-→ TAXA DE ATIVAÇÃO = R$ 0,00
-```
-
-Programas de Incentivo continuam podendo exigir orçamento pré-pago separado. Journey custeado continua sendo cobrado pelos acessos financiados.
-
-### 4. Acessos Journey custeados
+### 3. Acessos Journey custeados
 
 #### Journey Plus
 
@@ -97,7 +165,7 @@ Programas de Incentivo continuam podendo exigir orçamento pré-pago separado. J
 | **500–1.999** | R$ 31,90 | R$ 319,00 |
 | **2.000+** | R$ 27,90 | R$ 279,00 |
 
-### 5. Capacidades adicionais
+### 4. Capacidades adicionais
 
 | Capacidade | Mensal | Anual |
 |---|---:|---:|
@@ -107,6 +175,32 @@ Programas de Incentivo continuam podendo exigir orçamento pré-pago separado. J
 | **SSO / SAML** | R$ 299,00 | R$ 2.990,00 |
 | **Governança / auditoria avançadas** | R$ 249,00 | R$ 2.490,00 |
 | **Integração dedicada** | R$ 490,00 | R$ 4.900,00 |
+
+#### Regra de escolha das capacidades
+
+Todas as capacidades abaixo devem permanecer disponíveis para decisão explícita da empresa:
+
+```text
+INCLUIR
+OU
+NÃO INCLUIR
+```
+
+A seleção não significa automaticamente cobrança:
+
+```text
+INCLUIR + JÁ INCLUÍDA NO TIER
+→ VALOR ADICIONAL ZERO
+
+INCLUIR + NÃO INCLUÍDA + PREÇO AUTORIZADO
+→ ADD-ON
+
+INCLUIR + EXIGE TIER SUPERIOR
+→ REENQUADRAMENTO EXPLICADO
+
+NÃO INCLUIR
+→ NÃO COMPÕE A CONFIGURAÇÃO
+```
 
 #### Matriz de inclusões e contratação por tier
 
@@ -140,20 +234,45 @@ ENTERPRISE
 → PREVALECE DIMENSIONAMENTO CONTRATUAL
 ```
 
-A inclusão de uma capacidade no tier não significa que ela seja gratuita universalmente; significa que seu preço já está absorvido pelo plano-base contratado.
+A inclusão de uma capacidade no tier não significa que ela seja gratuita universalmente; significa que seu preço já está absorvido pelo tier de capacidade contratado.
 
 
-### 6. Serviços adicionais
+### 5. Modelo de implementação / operação e serviços pagos
 
-| Serviço | Mensal | Anual |
+O modelo de implementação/operação é definido **depois do tier resultante**.
+
+```text
+TIER RESULTANTE
+↓
+MODELO DE IMPLEMENTAÇÃO / OPERAÇÃO
+→ SELF-SERVICE
+→ COM APOIO DO SUPORTE
+→ GERENCIADO
+```
+
+`Self-service` não é um serviço adicional tarifado; é a modalidade de implementação/operação com autonomia da empresa.
+
+Quando houver serviço pago adicional:
+
+| Serviço pago adicional | Mensal | Anual |
 |---|---:|---:|
-| **Self-service** | R$ 0,00 | R$ 0,00 |
 | **Suporte ampliado** | R$ 299,00 | R$ 2.990,00 |
 | **Operação gerenciada** | R$ 990,00 | R$ 9.900,00 |
 | **Gestão dedicada / SLA ampliado** | R$ 1.990,00 | R$ 19.900,00 |
 | **Implantação customizada** | sob consulta | sob consulta |
 
-### 7. Fórmula da contratação
+Regra:
+
+```text
+MODELO OPERACIONAL
+≠ DETERMINANTE AUTOMÁTICO DO TIER
+
+SERVIÇO PAGO ADICIONAL
+→ PODE ALTERAR O VALOR CONTRATUAL FINAL
+→ NÃO ALTERA O TIER POR SI SÓ
+```
+
+### 6. Fórmula da contratação
 
 ```text
 CONTRATAÇÃO BUSINESS VÁLIDA
@@ -161,13 +280,21 @@ CONTRATAÇÃO BUSINESS VÁLIDA
 OFERTA BUSINESS OBRIGATÓRIA
 + TIER DE CAPACIDADE
 
-ASSINATURA RECORRENTE / CONTRATUAL
+VALOR RECORRENTE DE PLATAFORMA
 =
 TIER DE CAPACIDADE
 + POPULAÇÃO / ESCALA
 + ACESSOS JOURNEY CUSTEADOS, SE APLICÁVEL
 + CAPACIDADES ADICIONAIS NÃO INCLUÍDAS NO TIER
-+ SERVIÇOS ADICIONAIS
+```
+
+Depois do enquadramento:
+
+```text
+VALOR CONTRATUAL FINAL
+=
+VALOR RECORRENTE DE PLATAFORMA
++ SERVIÇOS PAGOS ADICIONAIS, SE CONTRATADOS
 ```
 
 Separadamente:
@@ -179,25 +306,78 @@ RECURSO OPERACIONAL DEFINIDO PELA EMPRESA
 ≠ ASSINATURA
 ```
 
-### 8. Exemplo rápido
+### 7. Exemplo rápido
 
-```text
-START
-+ 120 PESSOAS ELEGÍVEIS
-+ PROGRAMAS DE INCENTIVO
-+ SELF-SERVICE
-```
+A leitura começa pela oferta escolhida e só depois apresenta o tier resultante.
 
-| Parcela | Cálculo | Valor mensal |
+#### Configuração contratada
+
+| Decisão | Seleção |
+|---|---|
+| **O que a empresa quer contratar** | Programas de Incentivo |
+| **População elegível** | 120 pessoas |
+| **Intelligence avançado** | Não incluir |
+| **Power BI / exportações** | Não incluir |
+| **API Business** | Não incluir |
+| **SSO / SAML** | Não incluir |
+| **Governança / auditoria avançadas** | Não incluir |
+| **Integração dedicada** | Não incluir |
+| **Requisitos de governança / segurança** | padrão |
+| **Tier resultante** | **Start** |
+
+#### Composição recorrente de plataforma
+
+| Parcela econômica | Cálculo | Valor mensal |
 |---|---:|---:|
-| Plano Start | fixo | R$ 299,00 |
+| **Tier Start** | capacidade necessária para a configuração | R$ 299,00 |
 | 1–50 pessoas | incluído | R$ 0,00 |
 | 51–120 pessoas | 70 × R$ 1,49 | R$ 104,30 |
-| Programas de Incentivo | oferta selecionada · taxa de ativação | R$ 0,00 |
-| Self-service | incluído | R$ 0,00 |
-| **Total recorrente** |  | **R$ 403,30/mês** |
+| **Valor recorrente de plataforma** |  | **R$ 403,30/mês** |
 
-O orçamento destinado às recompensas do programa é informado separadamente pela empresa e não integra os R$ 403,30 da assinatura.
+#### Escolha posterior de implementação / operação
+
+Depois do tier resultar da configuração, a empresa escolhe como pretende implementar e operar:
+
+| Decisão posterior | Seleção do exemplo | Efeito mensal |
+|---|---|---:|
+| **Modelo de implementação / operação** | **Self-service** | R$ 0,00 adicional |
+| **Serviço pago adicional** | não contratado | R$ 0,00 |
+| **Valor contratual final** | plataforma + serviço pago adicional | **R$ 403,30/mês** |
+
+Neste exemplo:
+
+```text
+TIER RESULTANTE
+→ START
+
+DEPOIS
+→ MODELO DE IMPLEMENTAÇÃO / OPERAÇÃO
+→ SELF-SERVICE
+
+SERVIÇO PAGO ADICIONAL
+→ NÃO CONTRATADO
+
+VALOR CONTRATUAL FINAL
+→ R$ 403,30/MÊS
+```
+
+Se a empresa escolher **Suporte ampliado**, **Operação gerenciada**, **Gestão dedicada / SLA ampliado** ou **Implantação customizada**, o serviço correspondente deve ser somado depois ao valor recorrente de plataforma, sem redefinir automaticamente o tier.
+
+Separadamente:
+
+```text
+OFERTA CONTRATADA
+→ PROGRAMAS DE INCENTIVO
+
+TAXA DE ATIVAÇÃO DA OFERTA
+→ R$ 0,00
+
+ORÇAMENTO DE INCENTIVO
+→ DEFINIDO PELA EMPRESA
+→ SEPARADO DA ASSINATURA
+```
+
+Programas de Incentivo não aparece como uma “parcela financeira de R$ 0,00”; ele é o **objeto da contratação**. O orçamento destinado às recompensas também permanece fora do valor recorrente de plataforma e do valor contratual final. O modelo de implementação/operação é definido somente depois do tier resultante.
 
 ## Periodicidade
 
@@ -255,9 +435,9 @@ Enterprise = atendimento humano obrigatório
 
 Uma configuração Scale pode ser suficientemente padronizada para operar em Self-service. Uma configuração Growth pode exigir apoio por integração, governança ou outra complexidade específica.
 
-## Como funciona o Self-service dentro da contratação online
+## Como funciona o modelo de implementação/operação depois do tier
 
-Self-service é um **modelo de implementação/operação dentro da contratação online do Guivos Business**. A composição e a contratação permanecem digitais também quando a implementação posterior exigir suporte ou operação gerenciada. Self-service não é um quinto plano, não é uma oferta separada e não significa que tudo esteja incluído na assinatura-base.
+O modelo de implementação/operação é definido **depois** que oferta, escala, capacidades, integrações e governança/segurança determinam o tier compatível. Self-service, suporte e gerenciado não são tiers e não determinam o tier por si só.
 
 A lógica de referência é:
 
@@ -268,18 +448,24 @@ OFERTA BUSINESS OBRIGATÓRIA
 ↓
 ESCALA / PARTICIPANTES / ACESSOS
 ↓
-CAPACIDADES NECESSÁRIAS
+CAPACIDADES
+↓
+INTEGRAÇÕES
+↓
+GOVERNANÇA / SEGURANÇA
 ↓
 TIER COMPATÍVEL
 ↓
-COMPOSIÇÃO DO VALOR
+VALOR RECORRENTE DE PLATAFORMA
 ↓
-CONTRATAÇÃO ONLINE
+DEPOIS: MODELO DE IMPLEMENTAÇÃO / OPERAÇÃO
 ↓
-CONFIGURAÇÃO E OPERAÇÃO
+SELF-SERVICE / SUPORTE / GERENCIADO
+↓
+SE HOUVER SERVIÇO PAGO → VALOR CONTRATUAL FINAL
 ```
 
-### Quadro de composição Self-service
+### Quadro de composição da contratação
 
 | Etapa | O que a empresa define ou seleciona | O que isso representa | Pode alterar o plano? | Pode alterar o valor? |
 |---|---|---|---|---|
@@ -288,8 +474,8 @@ CONFIGURAÇÃO E OPERAÇÃO
 | **3. Intelligence** | profundidade analítica e capacidades aplicáveis | quanto de compreensão/analytics a configuração exige | sim, conforme os entitlements vigentes | sim, quando houver capacidade comercializada separadamente |
 | **4. Integrações e eventos** | integrações necessárias para receber/enviar eventos ou dados autorizados | complexidade de conexão com outros sistemas | sim | sim, quando aplicável |
 | **5. Governança** | requisitos de gestão, controle e governança compatíveis com a operação | complexidade administrativa e de controle | sim | pode alterar, conforme a configuração |
-| **6. Nível de serviço contratual** | capacidades de serviço previstas no plano/contrato | nível de atendimento e compromisso contratual | pode exigir plano superior | pode alterar |
-| **7. Implementação/operação** | Self-service, apoio do suporte ou gerenciado | quanto a Guivos participa da implantação/operação | **não define o plano por si só** | sim, se houver serviço adicional contratado |
+| **6. Tier resultante** | resultado de oferta + escala + capacidades + integrações + governança/segurança | capacidade da plataforma necessária | — | define a base recorrente da plataforma |
+| **7. Implementação/operação** | Self-service, apoio do suporte ou gerenciado | como a empresa implementa/opera depois do tier | **não** | somente se houver serviço pago adicional |
 | **8. Orçamento de incentivo** | valor que a empresa decide disponibilizar para concessões | recurso operacional pré-pago do programa | **não** | sim, mas fica separado da assinatura |
 | **9. Acessos Journey custeados** | quantidade e condição dos acessos elegíveis contratados | custeio empresarial do Journey existente | pode afetar escala/capacidade | sim; possui relação econômica própria |
 
@@ -308,11 +494,9 @@ INTELLIGENCE REQUERIDO
 +
 INTEGRAÇÃO REQUERIDA
 +
-GOVERNANÇA REQUERIDA
-+
-NÍVEL DE SERVIÇO CONTRATUAL REQUERIDO
+GOVERNANÇA / SEGURANÇA REQUERIDA
 ↓
-PLANO COMPATÍVEL
+TIER COMPATÍVEL
 ```
 
 Na contratação digital, cada requisito deve ser comparado aos entitlements vigentes. Se uma única dimensão exigir capacidade superior, a configuração precisa ser enquadrada em um plano que suporte essa dimensão.
@@ -342,17 +526,21 @@ A composição econômica deve ser apresentada separadamente:
 | **Oferta Business obrigatória** | Programas de Incentivo e/ou Journey custeado | **taxa de ativação R$ 0,00**; define o objeto da contratação |
 | **Acessos Journey custeados** | acesso ao Journey pago pela empresa | relação econômica própria |
 | **Intelligence avançado / exportações / API / integrações** | capacidades adicionais, quando comercializadas separadamente | somente quando o entitlement do plano não as incluir |
-| **Serviços adicionais** | suporte adicional ou operação gerenciada contratada | não necessariamente |
+| **Serviços pagos adicionais** | suporte ampliado, operação gerenciada ou outro serviço contratado depois do tier | não; somam ao valor contratual final quando aplicável |
 | **Orçamento pré-pago de incentivo** | recursos destinados às concessões do programa | **não**; fica separado da assinatura |
 
 Leitura de referência:
 
 ```text
-VALOR RECORRENTE / CONTRATUAL
+VALOR RECORRENTE DE PLATAFORMA
 =
-PLANO BUSINESS
+TIER BUSINESS
 + COMPONENTES VARIÁVEIS APLICÁVEIS
-+ SERVIÇOS ADICIONAIS, QUANDO CONTRATADOS
+
+VALOR CONTRATUAL FINAL
+=
+VALOR RECORRENTE DE PLATAFORMA
++ SERVIÇOS PAGOS ADICIONAIS, QUANDO CONTRATADOS
 
 RECURSO OPERACIONAL SEPARADO
 =
@@ -367,11 +555,12 @@ No caminho Self-service, a leitura correta não é um catálogo solto de serviç
 
 | Camada | Conteúdo |
 |---|---|
-| **Plano-base** | Start · Growth · Scale · Enterprise |
+| **Tier de capacidade** | Start · Growth · Scale · Enterprise |
 | **Ofertas Business** | Programas de Incentivo · Journey custeado · ambas |
 | **Capacidades da configuração** | escala · Intelligence · integrações · governança · nível de serviço |
 | **Volumes contratados** | participantes · acessos · demais volumes formalizados |
-| **Serviços de implantação/operação** | Self-service · suporte adicional · gerenciado |
+| **Modelo de implementação/operação** | Self-service · suporte · gerenciado — definido depois do tier |
+| **Serviços pagos adicionais** | suporte ampliado · operação gerenciada · gestão dedicada / SLA · implantação customizada |
 | **Recursos operacionais** | orçamento pré-pago de incentivo |
 | **Condições comerciais** | periodicidade, mercado, moeda, tributação e demais condições aplicáveis |
 
@@ -389,8 +578,11 @@ TIER DE CAPACIDADE
 + POPULAÇÃO / ESCALA
 + ACESSOS JOURNEY CUSTEADOS, SE APLICÁVEL
 + CAPACIDADES ADICIONAIS
-+ SERVIÇOS ADICIONAIS
-= VALOR RECORRENTE CONTRATUAL, QUANDO PRECIFICÁVEL
+= VALOR RECORRENTE DE PLATAFORMA, QUANDO PRECIFICÁVEL
+
+DEPOIS
++ SERVIÇOS PAGOS ADICIONAIS, SE CONTRATADOS
+= VALOR CONTRATUAL FINAL
 
 ORÇAMENTO PRÉ-PAGO DE INCENTIVO
 = RECURSO OPERACIONAL SEPARADO
@@ -421,7 +613,7 @@ SEM OFERTA BUSINESS
 → SEM CONTRATAÇÃO BUSINESS ATIVA
 ```
 
-O valor recorrente deriva do tier, população/escala, acessos Journey quando aplicáveis, capacidades adicionais não incluídas e serviços adicionais. O orçamento de incentivo permanece recurso operacional separado.
+O valor recorrente de plataforma deriva do tier, população/escala, acessos Journey quando aplicáveis e capacidades adicionais não incluídas. Serviços pagos adicionais entram somente depois do tier e podem elevar o valor contratual final sem redefinir automaticamente o tier. O orçamento de incentivo permanece recurso operacional separado.
 
 ## Start
 
@@ -480,9 +672,9 @@ O plano Business governa a profundidade contratada de:
 - Guivos Intelligence;
 - integrações;
 - governança;
-- nível de serviço.
+- requisitos de governança e segurança.
 
-O nível de serviço não substitui o plano e não constitui uma segunda taxonomia de planos.
+O modelo de implementação/operação e os serviços pagos adicionais não substituem o tier e não constituem uma segunda taxonomia de planos.
 
 Os **entitlements quantitativos que não estejam definidos** permanecem sujeitos à formalização comercial própria. As inclusões mínimas das capacidades adicionais por tier são governadas por `GEM-004-BUSINESS-VARIABLE-PRICING-AUTHORITY-001` e não podem ser cobradas novamente como add-on quando já incluídas.
 
@@ -507,10 +699,16 @@ POPULAÇÃO / ESCALA
 ACESSOS JOURNEY CUSTEADOS
 +
 CAPACIDADES ADICIONAIS NÃO INCLUÍDAS NO TIER
-+
-SERVIÇOS ADICIONAIS
 =
-ASSINATURA RECORRENTE / CONTRATUAL
+VALOR RECORRENTE DE PLATAFORMA
+
+DEPOIS
+
+VALOR RECORRENTE DE PLATAFORMA
++
+SERVIÇOS PAGOS ADICIONAIS, SE CONTRATADOS
+=
+VALOR CONTRATUAL FINAL
 
 ORÇAMENTO PRÉ-PAGO DE INCENTIVO
 =

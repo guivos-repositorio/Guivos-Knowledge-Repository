@@ -2,7 +2,7 @@
 id: GKR-PLANS-INDEX-001
 title: Planos — Visão Geral
 status: active
-version: 1.5.0
+version: 1.6.0
 owner: Guivos
 last_updated: 2026-10-03
 normative: false
@@ -71,13 +71,13 @@ Planos do produto especializado B2B **Guivos Business**. Eles são independentes
 
 **Contratação:** online.
 
-**Implementação/operação:** **Self-service quando possível**, com apoio do suporte quando necessário e operação gerenciada quando a complexidade exigir.
+**Implementação/operação:** definida **depois do tier resultante**, entre Self-service, apoio do suporte ou operação gerenciada.
 
-O modelo de implementação/operação é independente do plano: a complexidade da configuração determina o nível de acompanhamento.
+O modelo de implementação/operação não determina automaticamente o tier. Serviços pagos adicionais, quando contratados, somam-se ao valor recorrente de plataforma para formar o valor contratual final.
 
-A composição econômica do Business é **offer-first**: a empresa precisa contratar Programas de Incentivo, Journey custeado ou ambas. Start, Growth, Scale e Enterprise são tiers de capacidade e não constituem contratação Business isoladamente. A seleção da oferta tem taxa de ativação igual a R$ 0,00.
+A composição econômica do Business é **offer-first**: a empresa escolhe Programas de Incentivo, Journey custeado ou ambas; depois informa escala, capacidades, integrações e requisitos de governança/segurança. A configuração é então enquadrada no tier compatível. Start, Growth, Scale e Enterprise são tiers de capacidade e não constituem contratação Business isoladamente. A seleção da oferta tem taxa de ativação igual a R$ 0,00.
 
-Quando uma capacidade já estiver incluída no tier, seu valor adicional é **R$ 0,00**. Quando não estiver incluída e for elegível como add-on, aplica-se o valor mensal/anual da autoridade econômica vigente.
+Nas superfícies de capacidades, todas as capacidades governadas devem permanecer visíveis com opção **Incluir / Não incluir**. Quando uma capacidade selecionada já estiver incluída no tier, seu valor adicional é **R$ 0,00**; quando não estiver incluída e for elegível como add-on, aplica-se o valor mensal/anual vigente.
 
 [Ver planos, pricing e matriz por tier do Guivos Business](business.md)
 
