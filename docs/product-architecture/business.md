@@ -2,7 +2,7 @@
 id: GPA-004
 title: Guivos Business
 status: consolidated
-version: 1.7.6
+version: 1.7.7
 owner: Guivos
 last_updated: 2026-10-03
 related:
@@ -434,7 +434,7 @@ ENTERPRISE
 
 Os planos não representam mérito, impacto, prestígio ou nível de evolução da empresa. Não existe progressão moral ou obrigatória entre eles.
 
-O pricing de referência é governado economicamente por `GEM-004-A1 v0.3.0`:
+O pricing de referência é governado economicamente por `GEM-004-A1 v0.6.0`:
 
 | Plano | Mensal | Anual |
 |---|---:|---:|
@@ -455,7 +455,7 @@ OFERTA
 
 PLANO BUSINESS
 = até onde vão capacidade, Intelligence,
-  governança, integração e serviço
+  governança, integração, segurança e escala
 
 ESCALA / PARTICIPANTES / ACESSOS
 = dimensão de volume aplicável
@@ -470,15 +470,23 @@ SERVIÇOS ADICIONAIS
 A composição econômica de referência é:
 
 ```text
+VALOR RECORRENTE DE PLATAFORMA
+=
 PLANO BUSINESS
-+
-ESCALA / PARTICIPANTES / ACESSOS
-+
-OFERTAS CONTRATADAS
-+
++ ESCALA / PARTICIPANTES / ACESSOS
++ CAPACIDADES ADICIONAIS NÃO INCLUÍDAS
+
+DEPOIS
+
+VALOR CONTRATUAL FINAL
+=
+VALOR RECORRENTE DE PLATAFORMA
++ SERVIÇOS PAGOS ADICIONAIS, QUANDO CONTRATADOS
+
+SEPARADAMENTE
+
 ORÇAMENTO PRÉ-PAGO DE INCENTIVO
-+
-SERVIÇOS ADICIONAIS, QUANDO APLICÁVEIS
+= RECURSO OPERACIONAL
 ```
 
 O orçamento de incentivo **não é a assinatura do plano Business**. O acesso ao Journey custeado pela empresa possui relação econômica própria e não deve ser presumido como incluído automaticamente em qualquer plano.
@@ -494,16 +502,20 @@ ESCALA / PARTICIPANTES / ACESSOS
 +
 CAPACIDADES REQUERIDAS
 +
-MODELO DE IMPLEMENTAÇÃO / OPERAÇÃO
+INTEGRAÇÕES
++
+GOVERNANÇA / SEGURANÇA
 ↓
 CONFIGURAÇÃO
 ↓
 PLANO COMPATÍVEL
 ↓
 COMPOSIÇÃO DO VALOR
+↓
+DEPOIS: MODELO DE IMPLEMENTAÇÃO / OPERAÇÃO
 ```
 
-A empresa pode selecionar **Programas de Incentivo**, **Journey custeado** ou **ambas as ofertas**. Conforme a configuração aplicável, também entram no dimensionamento escala, Intelligence, integrações, governança e nível de serviço contratual.
+A empresa pode selecionar **Programas de Incentivo**, **Journey custeado** ou **ambas as ofertas**. Conforme a configuração aplicável, também entram no dimensionamento escala, Intelligence, integrações e requisitos de governança/segurança. O modelo de implementação/operação é definido somente depois do tier resultante e não determina o tier por si só.
 
 A regra de enquadramento é:
 
@@ -516,11 +528,17 @@ Essa regra não congela thresholds quantitativos. Os limites que definem quando 
 A composição de valor deve distinguir:
 
 ```text
-VALOR RECORRENTE / CONTRATUAL
+VALOR RECORRENTE DE PLATAFORMA
 =
 PLANO BUSINESS
 + COMPONENTES VARIÁVEIS APLICÁVEIS
-+ SERVIÇOS ADICIONAIS, QUANDO CONTRATADOS
+
+DEPOIS
+
+VALOR CONTRATUAL FINAL
+=
+VALOR RECORRENTE DE PLATAFORMA
++ SERVIÇOS PAGOS ADICIONAIS, QUANDO CONTRATADOS
 
 RECURSO OPERACIONAL SEPARADO
 =
@@ -552,7 +570,7 @@ Os modelos correntes são:
 
 A síntese governada é:
 
-> **Self-service quando possível. Suporte quando necessário. Operação gerenciada quando a complexidade exigir.**
+> **Depois do tier, a empresa define o modelo de implementação/operação adequado: Self-service, apoio do suporte ou gerenciado.**
 
 O modelo não é rigidamente determinado pelo plano. Uma configuração Scale pode ser padronizada o suficiente para Self-service; uma configuração Growth pode exigir apoio por integração, governança ou outra complexidade específica.
 
