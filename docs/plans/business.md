@@ -2,7 +2,7 @@
 id: GKR-PLANS-BUSINESS-001
 title: Planos — Guivos Business
 status: active
-version: 2.3.1
+version: 2.3.2
 owner: Guivos
 last_updated: 2026-10-03
 normative: false
@@ -411,7 +411,7 @@ A empresa contrata online e, depois, a implementação/operação recebe partici
 
 A síntese vigente é:
 
-> **Self-service quando possível. Suporte quando necessário. Operação gerenciada quando a complexidade exigir.**
+> **Depois do tier, a empresa define o modelo de implementação/operação adequado: Self-service, apoio do suporte ou gerenciado.**
 
 ### Relação entre plano e modelo de operação
 
@@ -423,7 +423,7 @@ CONTRATAÇÃO
 → online
 
 MODELO DE IMPLEMENTAÇÃO / OPERAÇÃO
-→ definido pela complexidade da configuração
+→ definido depois do tier conforme a necessidade e a elegibilidade operacional da configuração; não altera o tier por si só
 ```
 
 Não congelar equivalências como:
@@ -557,7 +557,7 @@ No caminho Self-service, a leitura correta não é um catálogo solto de serviç
 |---|---|
 | **Tier de capacidade** | Start · Growth · Scale · Enterprise |
 | **Ofertas Business** | Programas de Incentivo · Journey custeado · ambas |
-| **Capacidades da configuração** | escala · Intelligence · integrações · governança · nível de serviço |
+| **Capacidades da configuração** | escala · Intelligence · integrações · governança / segurança |
 | **Volumes contratados** | participantes · acessos · demais volumes formalizados |
 | **Modelo de implementação/operação** | Self-service · suporte · gerenciado — definido depois do tier |
 | **Serviços pagos adicionais** | suporte ampliado · operação gerenciada · gestão dedicada / SLA · implantação customizada |
