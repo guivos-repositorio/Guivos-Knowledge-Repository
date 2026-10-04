@@ -2,11 +2,11 @@
 id: GKR-UXA-106-G2-FUNCTIONAL-EXAM-001
 title: UXA-106 — Exame Funcional — Continuidade G2 da Descoberta ao Estado Pendente
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-04
-normative: false
-maturity: functional_exam_complete_pending_adjudication
+normative: true
+maturity: adjudicated_functional_contract
 depends_on:
   - GKR-UXA-106-G2-SCOPE-EXAM-001
   - GKR-UX-G2-COLLECTIVE-DISCOVERY-REQUEST-VALIDATION-001
@@ -255,19 +255,19 @@ UXA-106 FUNCTIONAL EXAM
 → COMPLETE
 
 TRN-102
-→ FUNCTIONALLY SUFFICIENT CANDIDATE
+→ FUNCTIONALLY SUFFICIENT / ADJUDICATED
 
 TRN-103
-→ FUNCTIONALLY SUFFICIENT CANDIDATE
+→ FUNCTIONALLY SUFFICIENT / ADJUDICATED
 
 TRN-104
-→ FUNCTIONALLY SUFFICIENT CANDIDATE
+→ FUNCTIONALLY SUFFICIENT / ADJUDICATED
 
 NEW FUNCTIONAL RULE REQUIRED
 → NO
 
-FUNCTIONAL CONTRACT ADJUDICATION
-→ PENDING HUMAN GATE
+FUNCTIONAL CONTRACT
+→ ADJUDICATED / NORMATIVE
 
 CURRENT MATURITY
 → TRN-102 = PARTIAL
@@ -289,12 +289,14 @@ PRODUCT ENGINEERING
 
 ## 11. Próximo gate
 
-O próximo gate, se autorizado, é exclusivamente a adjudicação humana do contrato funcional examinado.
+O contrato funcional foi adjudicado normativamente sem promover maturidade.
 
-Essa adjudicação, por si só:
+O próximo gate, se autorizado separadamente, é o maturity exam de `TRN-102/103/104`.
+
+A adjudicação funcional:
 
 - não promove maturidade;
 - não altera o Transition Registry;
 - não declara G2 integralmente validada;
-- não autoriza maturity exam;
+- não autoriza automaticamente o maturity exam;
 - não libera Design, protótipo ou Product Engineering.
