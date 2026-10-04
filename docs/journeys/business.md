@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-BUSINESS-001
 title: Experiência Integrada do Guivos Business
 status: active
-version: 1.0.2
+version: 1.0.3
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-25
 related:
@@ -113,13 +113,13 @@ ENTERPRISE
 → governar em alta complexidade e escala
 ```
 
-O plano governa capacidade, escala, Intelligence, integração, governança e serviço.
+O plano governa capacidade, escala, Intelligence, integração, governança e segurança. O modelo de implementação/operação é definido depois do tier e não o determina por si só.
 
 O plano **não define sozinho qual oferta a empresa utiliza** e não representa mérito, impacto ou evolução.
 
-## 5. Composição Self-service
+## 5. Composição Business
 
-Quando a configuração for elegível para Self-service, a empresa deve poder montar e compreender digitalmente sua contratação.
+A empresa deve poder montar e compreender digitalmente sua contratação. A escolha do modelo de implementação/operação ocorre somente depois do tier resultante.
 
 ```text
 NECESSIDADE DA EMPRESA
@@ -148,7 +148,6 @@ Dimensões de composição:
 | Intelligence | profundidade/capacidades aplicáveis |
 | Integrações | eventos e conexões autorizadas |
 | Governança | requisitos de gestão e controle |
-| Nível de serviço | entitlement contratual aplicável |
 | Implementação/operação | Self-service, suporte ou gerenciado |
 | Orçamento de incentivo | recurso operacional pré-pago separado da assinatura |
 | Acessos Journey custeados | relação econômica própria |
@@ -167,8 +166,6 @@ INTELLIGENCE REQUERIDO
 INTEGRAÇÃO REQUERIDA
 +
 GOVERNANÇA REQUERIDA
-+
-NÍVEL DE SERVIÇO REQUERIDO
 ↓
 PLANO QUE SUPORTA INTEGRALMENTE A CONFIGURAÇÃO
 ```
@@ -181,8 +178,11 @@ Isso não transforma Business em uma soma arbitrária de módulos.
 PLANO
 = camada de capacidade
 
-OFERTAS / VOLUMES / SERVIÇOS / ORÇAMENTO
-= composição ao redor dessa camada
+OFERTAS / VOLUMES / CAPACIDADES
+= composição que determina e precifica a camada
+
+MODELO OPERACIONAL / SERVIÇOS PAGOS
+= decisão posterior ao tier
 ```
 
 ## 7. Composição econômica
@@ -190,11 +190,17 @@ OFERTAS / VOLUMES / SERVIÇOS / ORÇAMENTO
 A leitura corrente distingue:
 
 ```text
-VALOR RECORRENTE / CONTRATUAL
+VALOR RECORRENTE DE PLATAFORMA
 =
 PLANO BUSINESS
 + COMPONENTES VARIÁVEIS APLICÁVEIS
-+ SERVIÇOS ADICIONAIS, QUANDO CONTRATADOS
+
+DEPOIS
+
+VALOR CONTRATUAL FINAL
+=
+VALOR RECORRENTE DE PLATAFORMA
++ SERVIÇOS PAGOS ADICIONAIS, QUANDO CONTRATADOS
 
 RECURSO OPERACIONAL SEPARADO
 =
@@ -217,7 +223,7 @@ Os modelos de implementação/operação são:
 
 Síntese:
 
-> **Self-service quando possível. Suporte quando necessário. Operação gerenciada quando a complexidade exigir.**
+> **Depois do tier, a empresa define o modelo de implementação/operação adequado: Self-service, apoio do suporte ou gerenciado.**
 
 O modelo operacional não é rigidamente determinado pelo plano.
 
