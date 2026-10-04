@@ -12098,7 +12098,7 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 <h2 id="index-estado-semantico-sincronizado">Estado semântico sincronizado<a class="headerlink" href="#index-estado-semantico-sincronizado" title="Permanent link">&para;</a></h2>
 <p>A leitura de estado continua subordinada ao <a href="#project-current-state-register">Registro do Estado Atual</a>. Esta superfície preserva somente os marcadores exigidos de sincronização global:</p>
 <div class="highlight"><pre><span></span><code>GKR-STATE-001
-→ 3.51.06 / CURRENT
+→ 3.51.09 / CURRENT
 
 ERA
 → GE-2 — KNOWLEDGE
@@ -12116,8 +12116,12 @@ MARCO FUNCIONAL
 → FUNCTIONAL EXAM COMPLETE
 → FUNCTIONAL CONTRACT ADJUDICATED / NORMATIVE
 → TRN-102 / TRN-103 / TRN-104 FUNCTIONALLY SUFFICIENT / ADJUDICATED
-→ TRN-102 / TRN-103 / TRN-104 PARTIAL / UNCHANGED
-→ MATURITY PROMOTIONS = 0
+→ MATURITY EXAM COMPLETE
+→ MATURITY FINDINGS ADJUDICATED
+→ TRN-102 / TRN-103 / TRN-104 LOCALLY VALIDATED
+→ PROMOTION MATERIALIZATION COMPLETE
+→ MATURITY PROMOTIONS MATERIALIZED = 3
+→ INTEGRALLY VALIDATED NOT SUPPORTED
 → G2 INTEGRALLY VALIDATED NOT CLAIMED
 → PRODUCT ENGINEERING NOT RELEASED
 
@@ -12947,8 +12951,8 @@ AUTORIDADES TEMÁTICAS VIGENTES
 <li><strong>UXA-103:</strong> escopo adjudicado; contrato funcional de <code>TRN-005</code> adjudicado e reconciliado; conclusão de maturidade adjudicada e promoção materializada para <code>LOCALLY VALIDATED</code>; <code>INTEGRALLY VALIDATED</code> não suportado pela evidência corrente;</li>
 <li><strong>UXA-104:</strong> escopo adjudicado por <code>GKR-UXA-104-PER013014-SCOPE-AUTHORITY-001</code> para <code>PER-013/014</code> + <code>TRN-014..017</code>; exame funcional <code>COMPLETE</code>; contrato funcional <code>ADJUDICATED / NORMATIVE</code>; reconciliação <code>COMPLETE</code>; maturity exam <code>COMPLETE</code>; achados de maturidade <code>ADJUDICATED</code>; <code>TRN-014..017</code> promovidas para <code>LOCALLY VALIDATED</code>; quatro promoções de maturidade;</li>
 <li><strong>UXA-105:</strong> scope exam <code>COMPLETE</code>; escopo <code>ADJUDICATED / NORMATIVE</code> restrito a <code>TRN-001 — PER-001 → PER-002</code>; contrato funcional adjudicado; maturity exam <code>COMPLETE</code>; adjudicação de maturidade <code>COMPLETE</code>; <code>TRN-001</code> promovida de <code>PARTIAL</code> para <code>LOCALLY VALIDATED</code>; <code>INTEGRALLY VALIDATED</code> não suportado; uma promoção de maturidade;</li>
-<li><strong>UXA-106:</strong> scope exam <code>COMPLETE</code>; escopo <code>ADJUDICATED / NORMATIVE</code> restrito a <code>TRN-102/103/104 — PER-102 → PER-103 → PER-104 → PER-105</code>; exame funcional <code>COMPLETE</code>; contrato funcional <code>ADJUDICATED / NORMATIVE</code>; <code>TRN-102/103/104</code> = <code>FUNCTIONALLY SUFFICIENT / ADJUDICATED</code>; maturidade permanece <code>PARTIAL</code>; zero promoções;</li>
-<li><strong>execução automática seguinte:</strong> nenhuma; eventual maturity exam da UXA-106 exige autorização humana separada.</li>
+<li><strong>UXA-106:</strong> scope exam <code>COMPLETE</code>; escopo <code>ADJUDICATED / NORMATIVE</code> restrito a <code>TRN-102/103/104 — PER-102 → PER-103 → PER-104 → PER-105</code>; exame funcional <code>COMPLETE</code>; contrato funcional <code>ADJUDICATED / NORMATIVE</code>; maturity exam <code>COMPLETE</code>; achados de maturidade <code>ADJUDICATED</code>; <code>TRN-102/103/104</code> promovidas para <code>LOCALLY VALIDATED</code>; três promoções materializadas; <code>INTEGRALLY VALIDATED</code> não suportado;</li>
+<li><strong>execução automática seguinte:</strong> nenhuma; UXA-106 concluiu a materialização das promoções. Qualquer avanço além de <code>LOCALLY VALIDATED</code> exige novo gate.</li>
 </ul>
 <div class="highlight"><pre><span></span><code>DOCUMENTED
 ≠ IMPLEMENTED
@@ -14243,7 +14247,7 @@ TRN-014..017
 TRN-102
 TRN-103
 TRN-104
-→ PARTIAL / UNCHANGED
+→ LOCALLY VALIDATED
 
 TRN-114
 → CONTRACTED / UNCHANGED
@@ -14357,8 +14361,12 @@ UXA-106
 → FUNCTIONAL EXAM COMPLETE
 → FUNCTIONAL CONTRACT ADJUDICATED / NORMATIVE
 → TRN-102 / TRN-103 / TRN-104 FUNCTIONALLY SUFFICIENT / ADJUDICATED
-→ TRN-102 / TRN-103 / TRN-104 PARTIAL / UNCHANGED
-→ MATURITY PROMOTIONS = 0
+→ MATURITY EXAM COMPLETE
+→ MATURITY FINDINGS ADJUDICATED
+→ TRN-102 / TRN-103 / TRN-104 LOCALLY VALIDATED
+→ PROMOTION MATERIALIZATION COMPLETE
+→ MATURITY PROMOTIONS MATERIALIZED = 3
+→ INTEGRALLY VALIDATED NOT SUPPORTED
 → PRODUCT ENGINEERING PAUSED / NOT RELEASED
 
 UXA-105
@@ -14609,23 +14617,23 @@ PER-102
 → GKR-UX-PER102-MASTER-001 v0.1.1 / CURRENT
 → RESULTADOS DE BUSCA DE COLETIVOS
 → TRN-101 preservada como locally validated
-→ TRN-102 preservada como partial
+→ TRN-102 = LOCALLY VALIDATED / UXA-106
 
 PER-103
 → GKR-UX-PER103-MASTER-001 v0.2.0 / CURRENT
 → PERFIL PÚBLICO DO COLETIVO
-→ TRN-102 preservada como partial
-→ TRN-103 preservada como partial
+→ TRN-102 = LOCALLY VALIDATED / UXA-106
+→ TRN-103 = LOCALLY VALIDATED / UXA-106
 
 PER-104
 → GKR-UX-PER104-MASTER-001 v0.2.0 / CURRENT
 → REVISÃO E SOLICITAÇÃO
-→ TRN-103 / TRN-104 preservadas como partial
+→ TRN-103 / TRN-104 = LOCALLY VALIDATED / UXA-106
 
 PER-105
 → GKR-UX-PER105-MASTER-001 v0.1.0 / CURRENT
 → SOLICITAÇÃO PENDENTE
-→ TRN-104 preservada como partial
+→ TRN-104 = LOCALLY VALIDATED / UXA-106
 → TRN-105 / TRN-106 / TRN-107 / TRN-108 / TRN-109 = INTEGRALLY VALIDATED / UNCHANGED
 
 PER-106
@@ -14689,7 +14697,7 @@ PRODUCT ENGINEERING
 </code></pre></div>
 <p>A construção ocorre uma superfície por vez. Planejamento não cria página vazia, novo <code>PER-ID</code>, navegação, tela, protótipo ou implementação por inferência.</p></section><section class="print-page" id="roadmap" heading-number="2.3"><h1 id="roadmap-roadmap-arquitetural-frentes-correntes-e-proximos-gates-da-guivos">Roadmap Arquitetural — Frentes Correntes e Próximos Gates da Guivos<a class="headerlink" href="#roadmap-roadmap-arquitetural-frentes-correntes-e-proximos-gates-da-guivos" title="Permanent link">&para;</a></h1>
 <h2 id="roadmap-1-funcao">1. Função<a class="headerlink" href="#roadmap-1-funcao" title="Permanent link">&para;</a></h2>
-<p>Este roadmap traduz <code>GKR-STATE-001 v3.51.06</code> em <strong>frentes governadas de avanço</strong>.</p>
+<p>Este roadmap traduz <code>GKR-STATE-001 v3.51.09</code> em <strong>frentes governadas de avanço</strong>.</p>
 <p>Sua função é declarar frentes correntes, dependências e próximos gates sem transformar possibilidade técnica em execução automática.</p>
 <div class="highlight"><pre><span></span><code>ROADMAP
 → ORIENTA O PRÓXIMO MOVIMENTO LEGÍTIMO
@@ -14710,7 +14718,7 @@ ROADMAP
 <tbody>
 <tr>
 <td>Estado global</td>
-<td><code>GKR-STATE-001 v3.51.06 / CURRENT</code></td>
+<td><code>GKR-STATE-001 v3.51.09 / CURRENT</code></td>
 </tr>
 <tr>
 <td>Era</td>
@@ -14790,7 +14798,7 @@ ROADMAP
 </tr>
 <tr>
 <td>UXA-106</td>
-<td><code>SCOPE ADJUDICATED = TRN-102/103/104 / FUNCTIONAL EXAM COMPLETE / FUNCTIONAL CONTRACT ADJUDICATED + NORMATIVE / MATURITY PARTIAL / 0 PROMOTIONS</code></td>
+<td><code>FUNCTIONAL CONTRACT ADJUDICATED / MATURITY EXAM COMPLETE / MATURITY FINDINGS ADJUDICATED / TRN-102/103/104 LOCALLY VALIDATED / 3 PROMOTIONS MATERIALIZED / INTEGRAL NOT SUPPORTED</code></td>
 </tr>
 <tr>
 <td>Cognitive Reference Architecture</td>
@@ -15052,8 +15060,12 @@ UXA-106
 → FUNCTIONAL EXAM COMPLETE
 → FUNCTIONAL CONTRACT ADJUDICATED / NORMATIVE
 → FUNCTIONALLY SUFFICIENT / ADJUDICATED
-→ MATURITY = PARTIAL / UNCHANGED
-→ MATURITY PROMOTIONS = 0
+→ MATURITY EXAM COMPLETE
+→ MATURITY FINDINGS ADJUDICATED
+→ TRN-102 / TRN-103 / TRN-104 LOCALLY VALIDATED
+→ PROMOTION MATERIALIZATION COMPLETE
+→ MATURITY PROMOTIONS MATERIALIZED = 3
+→ INTEGRALLY VALIDATED NOT SUPPORTED
 
 PRODUCT ENGINEERING
 → PAUSED / NOT RELEASED
@@ -15264,7 +15276,7 @@ SNAPSHOT
 → NOT REQUIRED BY DEFAULT
 </code></pre></div>
 <p>UXA-105 concluiu escopo, contrato funcional, maturity exam e adjudicação; <code>TRN-001</code> está <code>LOCALLY VALIDATED</code>. A cadeia G1 completa continua sem validação integral.</p>
-<p>UXA-106 concluiu o exame funcional e a adjudicação normativa do contrato de <code>TRN-102/103/104</code>; as três transições são <code>FUNCTIONALLY SUFFICIENT / ADJUDICATED</code>, permanecem <code>PARTIAL</code> e não houve promoção de maturidade.</p>
+<p>UXA-106 concluiu o maturity exam, a adjudicação e a materialização das promoções de <code>TRN-102/103/104</code>; as três transições estão <code>LOCALLY VALIDATED</code>, com três promoções materializadas. <code>INTEGRALLY VALIDATED</code> permanece não suportado.</p>
 <p>Cada avanço depende da autoridade temática vigente e do gate específico aplicável.</p>
 <h2 id="roadmap-16-escopo-do-roadmap">16. Escopo do Roadmap<a class="headerlink" href="#roadmap-16-escopo-do-roadmap" title="Permanent link">&para;</a></h2>
 <p>O Roadmap contém somente frentes correntes, dependências e próximos gates. O estado detalhado de cada domínio deve ser lido em <code>GKR-STATE-001</code> e na autoridade temática correspondente.</p>
@@ -45840,7 +45852,7 @@ NEXT DOCUMENTATION TARGET
 → TRN-101 / LOCALMENTE VALIDADA
 → PER-102 — RESULTADOS DE BUSCA DE COLETIVOS
 → SELECIONAR UM RESULTADO
-→ TRN-102 / PARTIAL
+→ TRN-102 / LOCALLY VALIDATED
 → PER-103 — PERFIL PÚBLICO DO COLETIVO
 </code></pre></div>
 <p><code>PER-102</code> governa resultados, seus estados e refinamento. <code>PER-103</code> governa a compreensão pública do Coletivo selecionado.</p>
@@ -45994,7 +46006,7 @@ NEXT DOCUMENTATION TARGET
 </ul>
 <h2 id="experience-architecture-person-journey-per-102-collective-search-results-master-15-selecao-de-resultado-e-per-103">15. Seleção de resultado e PER-103<a class="headerlink" href="#experience-architecture-person-journey-per-102-collective-search-results-master-15-selecao-de-resultado-e-per-103" title="Permanent link">&para;</a></h2>
 <p>Selecionar um resultado inicia a continuidade para <code>PER-103 — Perfil Público do Coletivo</code> por <code>TRN-102</code>.</p>
-<p><code>TRN-102</code> permanece <code>partial</code> e este Master não promove sua maturidade.</p>
+<p><code>TRN-102</code> está <code>LOCALLY VALIDATED</code> após adjudicação e materialização de maturidade da UXA-106.</p>
 <p>A continuidade pode preservar o contexto necessário para retorno e explicação da origem, sem transferir contexto pessoal desnecessário ao Coletivo.</p>
 <div class="highlight"><pre><span></span><code>SELECIONAR RESULTADO
 ≠ ACOMPANHAR
@@ -46088,7 +46100,7 @@ NEXT DOCUMENTATION TARGET
 <li>transformar popularidade em qualidade;</li>
 <li>criar vínculo por exposição ou seleção;</li>
 <li>criar novos <code>PER-IDs</code>;</li>
-<li>promover <code>TRN-102</code>;</li>
+<li>promover <code>TRN-102</code> além da maturidade adjudicada;</li>
 <li>definir algoritmo de ranking como autoridade;</li>
 <li>iniciar Product Engineering.</li>
 </ul>
@@ -46109,7 +46121,7 @@ NEXT DOCUMENTATION TARGET
 <li>trata zero-results como estado legítimo;</li>
 <li>não preenche zero-results com publicidade disfarçada;</li>
 <li>não fabrica Coletivos, disponibilidade ou quantidade;</li>
-<li>preserva <code>TRN-102</code> em maturidade <code>partial</code>;</li>
+<li>preserva <code>TRN-102</code> em maturidade <code>LOCALLY VALIDATED</code>;</li>
 <li>seleção não cria vínculo;</li>
 <li>protege contexto sensível e identidade da Pessoa;</li>
 <li>não cria novos <code>PER-IDs</code>;</li>
@@ -46142,7 +46154,7 @@ TRN-101
 → LOCALLY VALIDATED / UNCHANGED
 
 TRN-102
-→ PARTIAL / UNCHANGED
+→ LOCALLY VALIDATED
 
 NEW PER-IDS
 → NONE
@@ -46164,10 +46176,10 @@ NEXT DOCUMENTATION TARGET
 <h2 id="experience-architecture-person-journey-per-103-collective-public-profile-master-2-papel-na-jornada">2. Papel na Jornada<a class="headerlink" href="#experience-architecture-person-journey-per-103-collective-public-profile-master-2-papel-na-jornada" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>PER-102 — RESULTADOS DE BUSCA DE COLETIVOS
 → SELECIONAR UM COLETIVO
-→ TRN-102 / PARTIAL
+→ TRN-102 / LOCALLY VALIDATED
 → PER-103 — PERFIL PÚBLICO DO COLETIVO
 → DECIDIR CONSCIENTEMENTE AVANÇAR
-→ TRN-103 / PARTIAL
+→ TRN-103 / LOCALLY VALIDATED
 → PER-104 — REVISÃO E SOLICITAÇÃO
 </code></pre></div>
 <p><code>PER-103</code> governa compreensão pública antes de vínculo. <code>PER-104</code> governa revisão e solicitação.</p>
@@ -46195,7 +46207,7 @@ NEXT DOCUMENTATION TARGET
 <li>natureza da apresentação, inclusive patrocínio quando material;</li>
 <li>território ou modalidade usados para descoberta, sem convertê-los em atributos pessoais.</li>
 </ul>
-<p><code>TRN-102</code> permanece <code>partial</code>. Este Master não amplia nem promove a transição.</p>
+<p><code>TRN-102</code> está <code>LOCALLY VALIDATED</code> após adjudicação e materialização de maturidade da UXA-106.</p>
 <h2 id="experience-architecture-person-journey-per-103-collective-public-profile-master-5-identidade-e-proposito-publicos">5. Identidade e propósito públicos<a class="headerlink" href="#experience-architecture-person-journey-per-103-collective-public-profile-master-5-identidade-e-proposito-publicos" title="Permanent link">&para;</a></h2>
 <p>O perfil deve permitir compreender, conforme disponibilidade legítima:</p>
 <ul>
@@ -46298,7 +46310,7 @@ NEXT DOCUMENTATION TARGET
 <p>Nenhuma ação pode ser presumida apenas porque a Pessoa abriu o perfil.</p>
 <h2 id="experience-architecture-person-journey-per-103-collective-public-profile-master-14-continuidade-para-per-104">14. Continuidade para PER-104<a class="headerlink" href="#experience-architecture-person-journey-per-103-collective-public-profile-master-14-continuidade-para-per-104" title="Permanent link">&para;</a></h2>
 <p>Quando a Pessoa decide iniciar participação e o modelo aplicável exige solicitação/revisão, a continuidade ocorre por <code>TRN-103</code> para <code>PER-104 — Revisão e Solicitação</code>.</p>
-<p><code>TRN-103</code> permanece <code>partial</code>.</p>
+<p><code>TRN-103</code> está <code>LOCALLY VALIDATED</code> após adjudicação e materialização de maturidade da UXA-106.</p>
 <p>O avanço deve ser consciente e não pode enviar solicitação silenciosamente.</p>
 <div class="highlight"><pre><span></span><code>INICIAR PARTICIPAÇÃO
 → TRN-103 / PARTIAL
@@ -46399,7 +46411,7 @@ ABRIR PER-104
 <li>enviar solicitação;</li>
 <li>expor dados protegidos;</li>
 <li>criar novos <code>PER-IDs</code>;</li>
-<li>promover <code>TRN-102</code> ou <code>TRN-103</code>;</li>
+<li>promover <code>TRN-102</code> ou <code>TRN-103</code> além da maturidade adjudicada;</li>
 <li>criar transições não contratadas;</li>
 <li>impor baseline visual;</li>
 <li>iniciar Product Engineering.</li>
@@ -46422,7 +46434,7 @@ ABRIR PER-104
 <li>mantém ações públicas semanticamente distintas;</li>
 <li>avanço para PER-104 é consciente;</li>
 <li>abrir PER-104 não envia solicitação;</li>
-<li>preserva <code>TRN-102</code> e <code>TRN-103</code> como <code>partial</code>;</li>
+<li>preserva <code>TRN-102</code> e <code>TRN-103</code> como <code>LOCALLY VALIDATED</code>;</li>
 <li>não presume vínculo sensível;</li>
 <li>não fabrica informação ausente;</li>
 <li>não cria novos <code>PER-IDs</code>;</li>
@@ -46452,10 +46464,10 @@ ABRIR PER-104
 → CURRENT SURFACE DESIGN DEFINITION
 
 TRN-102
-→ PARTIAL / UNCHANGED
+→ LOCALLY VALIDATED
 
 TRN-103
-→ PARTIAL / UNCHANGED
+→ LOCALLY VALIDATED
 
 NEW PER-IDS
 → NONE
@@ -46477,12 +46489,12 @@ NEXT DOCUMENTATION TARGET
 <h2 id="experience-architecture-person-journey-per-104-review-and-request-master-2-papel-na-jornada">2. Papel na Jornada<a class="headerlink" href="#experience-architecture-person-journey-per-104-review-and-request-master-2-papel-na-jornada" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>PER-103 — PERFIL PÚBLICO DO COLETIVO
 → DECIDIR CONSCIENTEMENTE INICIAR PARTICIPAÇÃO
-→ TRN-103 / PARTIAL
+→ TRN-103 / LOCALLY VALIDATED
 → PER-104 — REVISÃO E SOLICITAÇÃO
 → REVISAR / EDITAR / CANCELAR / CONFIRMAR
 
 QUANDO HOUVER SOLICITAÇÃO SUJEITA A ANÁLISE
-→ TRN-104 / PARTIAL
+→ TRN-104 / LOCALLY VALIDATED
 → PER-105 — SOLICITAÇÃO PENDENTE
 </code></pre></div>
 <p>Abrir <code>PER-104</code> não envia solicitação e não cria participação.</p>
@@ -46515,7 +46527,7 @@ QUANDO HOUVER SOLICITAÇÃO SUJEITA A ANÁLISE
 <li>contexto mínimo necessário para retorno.</li>
 </ul>
 <p>O handoff não autoriza transferência indiscriminada de histórico de busca, interesses inferidos, contexto sensível da Journey ou dados sem finalidade.</p>
-<p><code>TRN-103</code> permanece <code>partial</code>.</p>
+<p><code>TRN-103</code> está <code>LOCALLY VALIDATED</code> após adjudicação e materialização de maturidade da UXA-106.</p>
 <h2 id="experience-architecture-person-journey-per-104-review-and-request-master-5-modelo-de-entrada">5. Modelo de entrada<a class="headerlink" href="#experience-architecture-person-journey-per-104-review-and-request-master-5-modelo-de-entrada" title="Permanent link">&para;</a></h2>
 <p>A superfície deve tornar compreensível qual modelo governa o ato.</p>
 <h3 id="experience-architecture-person-journey-per-104-review-and-request-master-51-entrada-aberta">5.1 Entrada aberta<a class="headerlink" href="#experience-architecture-person-journey-per-104-review-and-request-master-51-entrada-aberta" title="Permanent link">&para;</a></h3>
@@ -46639,8 +46651,8 @@ ENVIAR SOLICITAÇÃO
 → TRN-104 / PARTIAL
 → PER-105 — SOLICITAÇÃO PENDENTE
 </code></pre></div>
-<p><code>TRN-104</code> permanece <code>partial</code>.</p>
-<p>A criação deste Master não promove maturidade da transição.</p>
+<p><code>TRN-104</code> está <code>LOCALLY VALIDATED</code> após adjudicação e materialização de maturidade da UXA-106.</p>
+<p>A promoção de maturidade decorre exclusivamente do gate próprio da UXA-106, não deste Master.</p>
 <h2 id="experience-architecture-person-journey-per-104-review-and-request-master-14-retorno-edicao-e-abandono">14. Retorno, edição e abandono<a class="headerlink" href="#experience-architecture-person-journey-per-104-review-and-request-master-14-retorno-edicao-e-abandono" title="Permanent link">&para;</a></h2>
 <p>Antes do efeito material, a Pessoa deve poder retornar, editar o que for legitimamente editável ou abandonar o ato.</p>
 <p>Abandono antes do envio:</p>
@@ -46750,7 +46762,7 @@ ENVIAR SOLICITAÇÃO
 <li>ampliar consentimento;</li>
 <li>reutilizar contexto sensível sem autoridade;</li>
 <li>criar novo <code>PER-ID</code>;</li>
-<li>promover <code>TRN-103</code> ou <code>TRN-104</code>;</li>
+<li>promover <code>TRN-103</code> ou <code>TRN-104</code> além da maturidade adjudicada;</li>
 <li>inventar continuidade de entrada aberta ou iniciativa do Coletivo não adjudicada;</li>
 <li>impor baseline visual;</li>
 <li>iniciar Product Engineering.</li>
@@ -46776,8 +46788,8 @@ ENVIAR SOLICITAÇÃO
 <li>privacidade e minimização são preservadas;</li>
 <li>erros não fabricam resultado;</li>
 <li>repetição involuntária não deve produzir múltiplos pedidos lógicos;</li>
-<li><code>TRN-103</code> permanece partial;</li>
-<li><code>TRN-104</code> permanece partial;</li>
+<li><code>TRN-103</code> permanece <code>LOCALLY VALIDATED</code>;</li>
+<li><code>TRN-104</code> permanece <code>LOCALLY VALIDATED</code>;</li>
 <li>estados internos não criam nova superfície;</li>
 <li>acessibilidade não depende de pistas exclusivamente visuais;</li>
 <li>dados sintéticos não se passam por reais;</li>
@@ -46788,7 +46800,7 @@ ENVIAR SOLICITAÇÃO
 <h2 id="experience-architecture-person-journey-per-104-review-and-request-master-25-gaps-preservados">25. Gaps preservados<a class="headerlink" href="#experience-architecture-person-journey-per-104-review-and-request-master-25-gaps-preservados" title="Permanent link">&para;</a></h2>
 <p>Permanecem fora deste Master:</p>
 <ul>
-<li>promoção de <code>TRN-103</code> ou <code>TRN-104</code>;</li>
+<li>promoção de <code>TRN-103</code> ou <code>TRN-104</code> além da maturidade adjudicada;</li>
 <li>definição técnica de idempotência;</li>
 <li>continuidade ponta a ponta de entrada aberta quando não registrada;</li>
 <li>qualquer continuidade de convite/iniciativa do Coletivo sem nova adjudicação canônica;</li>
@@ -46808,10 +46820,10 @@ AI
 → OPTIONAL / DESIGNER-CONTROLLED
 
 TRN-103
-→ PARTIAL / UNCHANGED
+→ LOCALLY VALIDATED
 
 TRN-104
-→ PARTIAL / UNCHANGED
+→ LOCALLY VALIDATED
 
 PRODUCT ENGINEERING
 → NOT RELEASED
@@ -46824,7 +46836,7 @@ PRODUCT ENGINEERING
 <h2 id="experience-architecture-person-journey-per-105-pending-request-master-2-papel-na-journey">2. Papel na Journey<a class="headerlink" href="#experience-architecture-person-journey-per-105-pending-request-master-2-papel-na-journey" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>PER-104 — REVISÃO E SOLICITAÇÃO
 → SOLICITAÇÃO AUTORIZADA ENVIADA
-→ TRN-104 / PARTIAL
+→ TRN-104 / LOCALLY VALIDATED
 → PER-105 — SOLICITAÇÃO PENDENTE
 
 PER-105
@@ -46978,7 +46990,7 @@ VISIBILIDADE
 <p>Produz resultado explícito e proporcional sem pontuação negativa automática ou exposição indevida.</p>
 <p>Estado: <strong>integralmente validada</strong>.</p>
 <h3 id="experience-architecture-person-journey-per-105-pending-request-master-96-trn-104-entrada-em-per-105">9.6 TRN-104 — entrada em PER-105<a class="headerlink" href="#experience-architecture-person-journey-per-105-pending-request-master-96-trn-104-entrada-em-per-105" title="Permanent link">&para;</a></h3>
-<p><code>PER-104 → PER-105</code> permanece <strong>partial</strong>. Este Master não promove <code>TRN-104</code>.</p>
+<p><code>PER-104 → PER-105</code> está <strong>LOCALLY VALIDATED</strong> após adjudicação e materialização de maturidade da UXA-106.</p>
 <h2 id="experience-architecture-person-journey-per-105-pending-request-master-10-acoes-e-controles">10. Ações e controles<a class="headerlink" href="#experience-architecture-person-journey-per-105-pending-request-master-10-acoes-e-controles" title="Permanent link">&para;</a></h2>
 <p>Conforme estado e autoridade, a Pessoa pode:</p>
 <ul>
@@ -47119,7 +47131,7 @@ REABRIR A TELA
 <li>tratar pedido de informação como aprovação;</li>
 <li>tratar recusa como score;</li>
 <li>tratar aprovação como dependente da navegação para <code>PER-106</code>;</li>
-<li>promover <code>TRN-104</code>;</li>
+<li>promover <code>TRN-104</code> além da maturidade adjudicada;</li>
 <li>rebaixar <code>TRN-105..109</code>;</li>
 <li>criar novo <code>PER-ID</code>;</li>
 <li>impor baseline visual;</li>
@@ -47150,7 +47162,7 @@ REABRIR A TELA
 <li><code>TRN-107</code> é preservada como integralmente validada;</li>
 <li><code>TRN-108</code> é preservada como integralmente validada;</li>
 <li><code>TRN-109</code> é preservada como integralmente validada;</li>
-<li><code>TRN-104</code> permanece partial;</li>
+<li><code>TRN-104</code> permanece <code>LOCALLY VALIDATED</code>;</li>
 <li>regra material alterada exige nova revisão antes da ativação;</li>
 <li>erros não fabricam resultado;</li>
 <li>estados internos não criam novos <code>PER-ID</code>s;</li>
@@ -47183,7 +47195,7 @@ MASTER
 → CURRENT
 
 TRN-104
-→ PARTIAL / UNCHANGED
+→ LOCALLY VALIDATED
 
 TRN-105
 → INTEGRALLY VALIDATED / UNCHANGED

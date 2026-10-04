@@ -8864,8 +8864,8 @@ AUTORIDADES TEMÁTICAS VIGENTES
 <li><strong>UXA-103:</strong> escopo adjudicado; contrato funcional de <code>TRN-005</code> adjudicado e reconciliado; conclusão de maturidade adjudicada e promoção materializada para <code>LOCALLY VALIDATED</code>; <code>INTEGRALLY VALIDATED</code> não suportado pela evidência corrente;</li>
 <li><strong>UXA-104:</strong> escopo adjudicado por <code>GKR-UXA-104-PER013014-SCOPE-AUTHORITY-001</code> para <code>PER-013/014</code> + <code>TRN-014..017</code>; exame funcional <code>COMPLETE</code>; contrato funcional <code>ADJUDICATED / NORMATIVE</code>; reconciliação <code>COMPLETE</code>; maturity exam <code>COMPLETE</code>; achados de maturidade <code>ADJUDICATED</code>; <code>TRN-014..017</code> promovidas para <code>LOCALLY VALIDATED</code>; quatro promoções de maturidade;</li>
 <li><strong>UXA-105:</strong> scope exam <code>COMPLETE</code>; escopo <code>ADJUDICATED / NORMATIVE</code> restrito a <code>TRN-001 — PER-001 → PER-002</code>; contrato funcional adjudicado; maturity exam <code>COMPLETE</code>; adjudicação de maturidade <code>COMPLETE</code>; <code>TRN-001</code> promovida de <code>PARTIAL</code> para <code>LOCALLY VALIDATED</code>; <code>INTEGRALLY VALIDATED</code> não suportado; uma promoção de maturidade;</li>
-<li><strong>UXA-106:</strong> scope exam <code>COMPLETE</code>; escopo <code>ADJUDICATED / NORMATIVE</code> restrito a <code>TRN-102/103/104 — PER-102 → PER-103 → PER-104 → PER-105</code>; exame funcional <code>COMPLETE</code>; contrato funcional <code>ADJUDICATED / NORMATIVE</code>; <code>TRN-102/103/104</code> = <code>FUNCTIONALLY SUFFICIENT / ADJUDICATED</code>; maturidade permanece <code>PARTIAL</code>; zero promoções;</li>
-<li><strong>execução automática seguinte:</strong> nenhuma; eventual maturity exam da UXA-106 exige autorização humana separada.</li>
+<li><strong>UXA-106:</strong> scope exam <code>COMPLETE</code>; escopo <code>ADJUDICATED / NORMATIVE</code> restrito a <code>TRN-102/103/104 — PER-102 → PER-103 → PER-104 → PER-105</code>; exame funcional <code>COMPLETE</code>; contrato funcional <code>ADJUDICATED / NORMATIVE</code>; maturity exam <code>COMPLETE</code>; achados de maturidade <code>ADJUDICATED</code>; <code>TRN-102/103/104</code> promovidas para <code>LOCALLY VALIDATED</code>; três promoções materializadas; <code>INTEGRALLY VALIDATED</code> não suportado;</li>
+<li><strong>execução automática seguinte:</strong> nenhuma; UXA-106 concluiu a materialização das promoções. Qualquer avanço além de <code>LOCALLY VALIDATED</code> exige novo gate.</li>
 </ul>
 <div class="highlight"><pre><span></span><code>DOCUMENTED
 ≠ IMPLEMENTED
@@ -10160,7 +10160,7 @@ TRN-014..017
 TRN-102
 TRN-103
 TRN-104
-→ PARTIAL / UNCHANGED
+→ LOCALLY VALIDATED
 
 TRN-114
 → CONTRACTED / UNCHANGED
@@ -10274,8 +10274,12 @@ UXA-106
 → FUNCTIONAL EXAM COMPLETE
 → FUNCTIONAL CONTRACT ADJUDICATED / NORMATIVE
 → TRN-102 / TRN-103 / TRN-104 FUNCTIONALLY SUFFICIENT / ADJUDICATED
-→ TRN-102 / TRN-103 / TRN-104 PARTIAL / UNCHANGED
-→ MATURITY PROMOTIONS = 0
+→ MATURITY EXAM COMPLETE
+→ MATURITY FINDINGS ADJUDICATED
+→ TRN-102 / TRN-103 / TRN-104 LOCALLY VALIDATED
+→ PROMOTION MATERIALIZATION COMPLETE
+→ MATURITY PROMOTIONS MATERIALIZED = 3
+→ INTEGRALLY VALIDATED NOT SUPPORTED
 → PRODUCT ENGINEERING PAUSED / NOT RELEASED
 
 UXA-105
@@ -10526,23 +10530,23 @@ PER-102
 → GKR-UX-PER102-MASTER-001 v0.1.1 / CURRENT
 → RESULTADOS DE BUSCA DE COLETIVOS
 → TRN-101 preservada como locally validated
-→ TRN-102 preservada como partial
+→ TRN-102 = LOCALLY VALIDATED / UXA-106
 
 PER-103
 → GKR-UX-PER103-MASTER-001 v0.2.0 / CURRENT
 → PERFIL PÚBLICO DO COLETIVO
-→ TRN-102 preservada como partial
-→ TRN-103 preservada como partial
+→ TRN-102 = LOCALLY VALIDATED / UXA-106
+→ TRN-103 = LOCALLY VALIDATED / UXA-106
 
 PER-104
 → GKR-UX-PER104-MASTER-001 v0.2.0 / CURRENT
 → REVISÃO E SOLICITAÇÃO
-→ TRN-103 / TRN-104 preservadas como partial
+→ TRN-103 / TRN-104 = LOCALLY VALIDATED / UXA-106
 
 PER-105
 → GKR-UX-PER105-MASTER-001 v0.1.0 / CURRENT
 → SOLICITAÇÃO PENDENTE
-→ TRN-104 preservada como partial
+→ TRN-104 = LOCALLY VALIDATED / UXA-106
 → TRN-105 / TRN-106 / TRN-107 / TRN-108 / TRN-109 = INTEGRALLY VALIDATED / UNCHANGED
 
 PER-106
