@@ -23878,21 +23878,26 @@ ENTERPRISE
 → PREVALECE DIMENSIONAMENTO CONTRATUAL
 </code></pre></div>
 <p>A inclusão de uma capacidade no tier não significa que ela seja gratuita universalmente; significa que seu preço já está absorvido pelo tier de capacidade contratado.</p>
-<h3 id="plans-business-5-servicos-adicionais">5. Serviços adicionais<a class="headerlink" href="#plans-business-5-servicos-adicionais" title="Permanent link">&para;</a></h3>
+<h3 id="plans-business-5-modelo-de-implementacao-operacao-e-servicos-pagos">5. Modelo de implementação / operação e serviços pagos<a class="headerlink" href="#plans-business-5-modelo-de-implementacao-operacao-e-servicos-pagos" title="Permanent link">&para;</a></h3>
+<p>O modelo de implementação/operação é definido <strong>depois do tier resultante</strong>.</p>
+<div class="highlight"><pre><span></span><code>TIER RESULTANTE
+↓
+MODELO DE IMPLEMENTAÇÃO / OPERAÇÃO
+→ SELF-SERVICE
+→ COM APOIO DO SUPORTE
+→ GERENCIADO
+</code></pre></div>
+<p><code>Self-service</code> não é um serviço adicional tarifado; é a modalidade de implementação/operação com autonomia da empresa.</p>
+<p>Quando houver serviço pago adicional:</p>
 <table>
 <thead>
 <tr>
-<th>Serviço</th>
+<th>Serviço pago adicional</th>
 <th style="text-align: right;">Mensal</th>
 <th style="text-align: right;">Anual</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td><strong>Self-service</strong></td>
-<td style="text-align: right;">R$ 0,00</td>
-<td style="text-align: right;">R$ 0,00</td>
-</tr>
 <tr>
 <td><strong>Suporte ampliado</strong></td>
 <td style="text-align: right;">R$ 299,00</td>
@@ -23915,19 +23920,32 @@ ENTERPRISE
 </tr>
 </tbody>
 </table>
+<p>Regra:</p>
+<div class="highlight"><pre><span></span><code>MODELO OPERACIONAL
+≠ DETERMINANTE AUTOMÁTICO DO TIER
+
+SERVIÇO PAGO ADICIONAL
+→ PODE ALTERAR O VALOR CONTRATUAL FINAL
+→ NÃO ALTERA O TIER POR SI SÓ
+</code></pre></div>
 <h3 id="plans-business-6-formula-da-contratacao">6. Fórmula da contratação<a class="headerlink" href="#plans-business-6-formula-da-contratacao" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>CONTRATAÇÃO BUSINESS VÁLIDA
 =
 OFERTA BUSINESS OBRIGATÓRIA
 + TIER DE CAPACIDADE
 
-ASSINATURA RECORRENTE / CONTRATUAL
+VALOR RECORRENTE DE PLATAFORMA
 =
 TIER DE CAPACIDADE
 + POPULAÇÃO / ESCALA
 + ACESSOS JOURNEY CUSTEADOS, SE APLICÁVEL
 + CAPACIDADES ADICIONAIS NÃO INCLUÍDAS NO TIER
-+ SERVIÇOS ADICIONAIS
+</code></pre></div>
+<p>Depois do enquadramento:</p>
+<div class="highlight"><pre><span></span><code>VALOR CONTRATUAL FINAL
+=
+VALOR RECORRENTE DE PLATAFORMA
++ SERVIÇOS PAGOS ADICIONAIS, SE CONTRATADOS
 </code></pre></div>
 <p>Separadamente:</p>
 <div class="highlight"><pre><span></span><code>ORÇAMENTO PRÉ-PAGO DE INCENTIVO
@@ -24069,8 +24087,8 @@ MODELO DE IMPLEMENTAÇÃO / OPERAÇÃO
 Enterprise = atendimento humano obrigatório
 </code></pre></div>
 <p>Uma configuração Scale pode ser suficientemente padronizada para operar em Self-service. Uma configuração Growth pode exigir apoio por integração, governança ou outra complexidade específica.</p>
-<h2 id="plans-business-como-funciona-o-self-service-dentro-da-contratacao-online">Como funciona o Self-service dentro da contratação online<a class="headerlink" href="#plans-business-como-funciona-o-self-service-dentro-da-contratacao-online" title="Permanent link">&para;</a></h2>
-<p>Self-service é um <strong>modelo de implementação/operação dentro da contratação online do Guivos Business</strong>. A composição e a contratação permanecem digitais também quando a implementação posterior exigir suporte ou operação gerenciada. Self-service não é um quinto plano, não é uma oferta separada e não significa que tudo esteja incluído na assinatura-base.</p>
+<h2 id="plans-business-como-funciona-o-modelo-de-implementacaooperacao-depois-do-tier">Como funciona o modelo de implementação/operação depois do tier<a class="headerlink" href="#plans-business-como-funciona-o-modelo-de-implementacaooperacao-depois-do-tier" title="Permanent link">&para;</a></h2>
+<p>O modelo de implementação/operação é definido <strong>depois</strong> que oferta, escala, capacidades, integrações e governança/segurança determinam o tier compatível. Self-service, suporte e gerenciado não são tiers e não determinam o tier por si só.</p>
 <p>A lógica de referência é:</p>
 <div class="highlight"><pre><span></span><code>NECESSIDADE DA EMPRESA
 ↓
@@ -24078,17 +24096,23 @@ OFERTA BUSINESS OBRIGATÓRIA
 ↓
 ESCALA / PARTICIPANTES / ACESSOS
 ↓
-CAPACIDADES NECESSÁRIAS
+CAPACIDADES
+↓
+INTEGRAÇÕES
+↓
+GOVERNANÇA / SEGURANÇA
 ↓
 TIER COMPATÍVEL
 ↓
-COMPOSIÇÃO DO VALOR
+VALOR RECORRENTE DE PLATAFORMA
 ↓
-CONTRATAÇÃO ONLINE
+DEPOIS: MODELO DE IMPLEMENTAÇÃO / OPERAÇÃO
 ↓
-CONFIGURAÇÃO E OPERAÇÃO
+SELF-SERVICE / SUPORTE / GERENCIADO
+↓
+SE HOUVER SERVIÇO PAGO → VALOR CONTRATUAL FINAL
 </code></pre></div>
-<h3 id="plans-business-quadro-de-composicao-self-service">Quadro de composição Self-service<a class="headerlink" href="#plans-business-quadro-de-composicao-self-service" title="Permanent link">&para;</a></h3>
+<h3 id="plans-business-quadro-de-composicao-da-contratacao">Quadro de composição da contratação<a class="headerlink" href="#plans-business-quadro-de-composicao-da-contratacao" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
@@ -24136,18 +24160,18 @@ CONFIGURAÇÃO E OPERAÇÃO
 <td>pode alterar, conforme a configuração</td>
 </tr>
 <tr>
-<td><strong>6. Nível de serviço contratual</strong></td>
-<td>capacidades de serviço previstas no plano/contrato</td>
-<td>nível de atendimento e compromisso contratual</td>
-<td>pode exigir plano superior</td>
-<td>pode alterar</td>
+<td><strong>6. Tier resultante</strong></td>
+<td>resultado de oferta + escala + capacidades + integrações + governança/segurança</td>
+<td>capacidade da plataforma necessária</td>
+<td>—</td>
+<td>define a base recorrente da plataforma</td>
 </tr>
 <tr>
 <td><strong>7. Implementação/operação</strong></td>
 <td>Self-service, apoio do suporte ou gerenciado</td>
-<td>quanto a Guivos participa da implantação/operação</td>
-<td><strong>não define o plano por si só</strong></td>
-<td>sim, se houver serviço adicional contratado</td>
+<td>como a empresa implementa/opera depois do tier</td>
+<td><strong>não</strong></td>
+<td>somente se houver serviço pago adicional</td>
 </tr>
 <tr>
 <td><strong>8. Orçamento de incentivo</strong></td>
@@ -24176,9 +24200,7 @@ INTELLIGENCE REQUERIDO
 +
 INTEGRAÇÃO REQUERIDA
 +
-GOVERNANÇA REQUERIDA
-+
-NÍVEL DE SERVIÇO CONTRATUAL REQUERIDO
+GOVERNANÇA / SEGURANÇA REQUERIDA
 ↓
 TIER COMPATÍVEL
 </code></pre></div>
@@ -24229,9 +24251,9 @@ PLANO
 <td>somente quando o entitlement do plano não as incluir</td>
 </tr>
 <tr>
-<td><strong>Serviços adicionais</strong></td>
-<td>suporte adicional ou operação gerenciada contratada</td>
-<td>não necessariamente</td>
+<td><strong>Serviços pagos adicionais</strong></td>
+<td>suporte ampliado, operação gerenciada ou outro serviço contratado depois do tier</td>
+<td>não; somam ao valor contratual final quando aplicável</td>
 </tr>
 <tr>
 <td><strong>Orçamento pré-pago de incentivo</strong></td>
@@ -24241,11 +24263,15 @@ PLANO
 </tbody>
 </table>
 <p>Leitura de referência:</p>
-<div class="highlight"><pre><span></span><code>VALOR RECORRENTE / CONTRATUAL
+<div class="highlight"><pre><span></span><code>VALOR RECORRENTE DE PLATAFORMA
 =
 TIER BUSINESS
 + COMPONENTES VARIÁVEIS APLICÁVEIS
-+ SERVIÇOS ADICIONAIS, QUANDO CONTRATADOS
+
+VALOR CONTRATUAL FINAL
+=
+VALOR RECORRENTE DE PLATAFORMA
++ SERVIÇOS PAGOS ADICIONAIS, QUANDO CONTRATADOS
 
 RECURSO OPERACIONAL SEPARADO
 =
@@ -24279,8 +24305,12 @@ ORÇAMENTO PRÉ-PAGO DE INCENTIVO
 <td>participantes · acessos · demais volumes formalizados</td>
 </tr>
 <tr>
-<td><strong>Serviços de implantação/operação</strong></td>
-<td>Self-service · suporte adicional · gerenciado</td>
+<td><strong>Modelo de implementação/operação</strong></td>
+<td>Self-service · suporte · gerenciado — definido depois do tier</td>
+</tr>
+<tr>
+<td><strong>Serviços pagos adicionais</strong></td>
+<td>suporte ampliado · operação gerenciada · gestão dedicada / SLA · implantação customizada</td>
 </tr>
 <tr>
 <td><strong>Recursos operacionais</strong></td>
@@ -24302,8 +24332,11 @@ TIER DE CAPACIDADE
 + POPULAÇÃO / ESCALA
 + ACESSOS JOURNEY CUSTEADOS, SE APLICÁVEL
 + CAPACIDADES ADICIONAIS
-+ SERVIÇOS ADICIONAIS
-= VALOR RECORRENTE CONTRATUAL, QUANDO PRECIFICÁVEL
+= VALOR RECORRENTE DE PLATAFORMA, QUANDO PRECIFICÁVEL
+
+DEPOIS
++ SERVIÇOS PAGOS ADICIONAIS, SE CONTRATADOS
+= VALOR CONTRATUAL FINAL
 
 ORÇAMENTO PRÉ-PAGO DE INCENTIVO
 = RECURSO OPERACIONAL SEPARADO
@@ -24325,7 +24358,7 @@ TIER
 SEM OFERTA BUSINESS
 → SEM CONTRATAÇÃO BUSINESS ATIVA
 </code></pre></div>
-<p>O valor recorrente deriva do tier, população/escala, acessos Journey quando aplicáveis, capacidades adicionais não incluídas e serviços adicionais. O orçamento de incentivo permanece recurso operacional separado.</p>
+<p>O valor recorrente de plataforma deriva do tier, população/escala, acessos Journey quando aplicáveis e capacidades adicionais não incluídas. Serviços pagos adicionais entram somente depois do tier e podem elevar o valor contratual final sem redefinir automaticamente o tier. O orçamento de incentivo permanece recurso operacional separado.</p>
 <h2 id="plans-business-start">Start<a class="headerlink" href="#plans-business-start" title="Permanent link">&para;</a></h2>
 <p><strong>Preço:</strong> R$ 299,00/mês · R$ 2.990,00/ano
 <strong>Função:</strong> estabelecer a operação empresarial inicial do produto.</p>
@@ -24372,9 +24405,9 @@ SEM OFERTA BUSINESS
 <li>Guivos Intelligence;</li>
 <li>integrações;</li>
 <li>governança;</li>
-<li>nível de serviço.</li>
+<li>requisitos de governança e segurança.</li>
 </ul>
-<p>O nível de serviço não substitui o plano e não constitui uma segunda taxonomia de planos.</p>
+<p>O modelo de implementação/operação e os serviços pagos adicionais não substituem o tier e não constituem uma segunda taxonomia de planos.</p>
 <p>Os <strong>entitlements quantitativos que não estejam definidos</strong> permanecem sujeitos à formalização comercial própria. As inclusões mínimas das capacidades adicionais por tier são governadas por <code>GEM-004-BUSINESS-VARIABLE-PRICING-AUTHORITY-001</code> e não podem ser cobradas novamente como add-on quando já incluídas.</p>
 <h2 id="plans-business-o-que-a-empresa-pode-contratar">O que a empresa pode contratar<a class="headerlink" href="#plans-business-o-que-a-empresa-pode-contratar" title="Permanent link">&para;</a></h2>
 <p>O tier não constitui contratação Business sozinho. A empresa deve contratar pelo menos uma destas ofertas:</p>
@@ -24394,10 +24427,16 @@ POPULAÇÃO / ESCALA
 ACESSOS JOURNEY CUSTEADOS
 +
 CAPACIDADES ADICIONAIS NÃO INCLUÍDAS NO TIER
-+
-SERVIÇOS ADICIONAIS
 =
-ASSINATURA RECORRENTE / CONTRATUAL
+VALOR RECORRENTE DE PLATAFORMA
+
+DEPOIS
+
+VALOR RECORRENTE DE PLATAFORMA
++
+SERVIÇOS PAGOS ADICIONAIS, SE CONTRATADOS
+=
+VALOR CONTRATUAL FINAL
 
 ORÇAMENTO PRÉ-PAGO DE INCENTIVO
 =
