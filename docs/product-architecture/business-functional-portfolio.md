@@ -2,7 +2,7 @@
 id: GPA-004-FUNCTIONAL-PORTFOLIO-001
 title: Guivos Business — Portfólio Funcional v1
 status: consolidated
-version: 1.1.2
+version: 1.1.3
 owner: Guivos
 last_updated: 2026-09-25
 depends_on:
@@ -387,7 +387,7 @@ A empresa pode contratar:
 - acessos Guivos Journey;
 - ambas as ofertas.
 
-O plano governa profundidade de capacidade, Intelligence, integração, governança, escala e serviço.
+O plano governa profundidade de capacidade, Intelligence, integração, governança, segurança e escala. O modelo de implementação/operação é definido depois do tier e não o determina por si só.
 
 Direção de referência:
 
@@ -398,22 +398,30 @@ SCALE → interpretar e integrar
 ENTERPRISE → governar em alta complexidade/escala
 ```
 
-O pricing de referência é governado por `GEM-004-A1 v0.3.0`: Start R$ 299,00/mês ou R$ 2.990,00/ano; Growth R$ 799,00/mês ou R$ 7.990,00/ano; Scale a partir de R$ 1.990,00/mês com contrato anual; Enterprise sob consulta com contrato anual. Entitlements quantitativos finais permanecem separados do pricing.
+O pricing de referência é governado por `GEM-004-A1 v0.6.0`: Start R$ 299,00/mês ou R$ 2.990,00/ano; Growth R$ 799,00/mês ou R$ 7.990,00/ano; Scale a partir de R$ 1.990,00/mês com contrato anual; Enterprise sob consulta com contrato anual. Entitlements quantitativos finais permanecem separados do pricing.
 
 ## 11. Estrutura econômica do contrato Business
 
 A arquitetura comercial separa:
 
 ```text
+VALOR RECORRENTE DE PLATAFORMA
+=
 PLANO BUSINESS
-+
-ESCALA / PARTICIPANTES / ACESSOS
-+
-OFERTAS CONTRATADAS
-+
++ ESCALA / PARTICIPANTES / ACESSOS
++ CAPACIDADES ADICIONAIS NÃO INCLUÍDAS
+
+DEPOIS
+
+VALOR CONTRATUAL FINAL
+=
+VALOR RECORRENTE DE PLATAFORMA
++ SERVIÇOS PAGOS ADICIONAIS, QUANDO CONTRATADOS
+
+SEPARADAMENTE
+
 ORÇAMENTO PRÉ-PAGO DE INCENTIVO
-+
-SERVIÇOS ADICIONAIS, QUANDO APLICÁVEIS
+= RECURSO OPERACIONAL
 ```
 
 O orçamento pré-pago não é a assinatura do plano Business.
@@ -443,7 +451,7 @@ Os modelos correntes são:
 
 Regra:
 
-> **Self-service quando possível. Suporte quando necessário. Operação gerenciada quando a complexidade exigir.**
+> **Depois do tier, a empresa define o modelo de implementação/operação adequado: Self-service, apoio do suporte ou gerenciado.**
 
 Plano e modelo de operação não são equivalentes. O roteamento depende da complexidade real da configuração.
 

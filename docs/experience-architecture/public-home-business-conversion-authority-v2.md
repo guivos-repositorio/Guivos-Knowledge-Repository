@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-BUSINESS-CONVERSION-002
 title: Autoridade de Conversão Global — Home Pública — Guivos Business — v2
 status: active
-version: 1.0.2
+version: 1.0.3
 owner: Experience Architecture
 last_updated: 2026-09-21
 parent: GKR-UX-HOME-BUSINESS-MASTER-001
@@ -79,7 +79,7 @@ ENTERPRISE
 → Governe em alta complexidade e escala
 ```
 
-Plano governa capacidade, escala, Intelligence, integração, governança e serviço conforme contratos futuros.
+Plano governa capacidade, escala, Intelligence, integração, governança e segurança conforme contratos futuros. Modelo de implementação/operação e serviços pagos adicionais são definidos depois do tier e não o determinam por si só.
 
 Plano não define mérito, qualidade humana, nível de evolução ou valor da empresa.
 
@@ -180,23 +180,23 @@ O Movimento 09 da Home deve funcionar como configurador comercial, e não apenas
 Ele pode considerar, conforme disponibilidade real:
 
 ```text
-NÚMERO DE PESSOAS
-+
 OFERTA CONTRATADA
 +
-CAPACIDADE / PLANO
+NÚMERO DE PESSOAS / ESCALA
 +
-TIPO DE OPERAÇÃO
+CAPACIDADES
 +
 INTELLIGENCE
 +
 INTEGRAÇÕES
 +
-GOVERNANÇA
-+
-SERVIÇO
+GOVERNANÇA / SEGURANÇA
 +
 MERCADO
+↓
+TIER COMPATÍVEL
+↓
+DEPOIS: MODELO DE IMPLEMENTAÇÃO / OPERAÇÃO
 ```
 
 E devolver:
@@ -227,7 +227,7 @@ Supporting copy de referência:
 
 Síntese operacional:
 
-> **Self-service quando possível. Suporte quando necessário. Operação gerenciada quando a complexidade exigir.**
+> **Depois do tier, a empresa define o modelo de implementação/operação adequado: Self-service, apoio do suporte ou gerenciado.**
 
 ## 7. Separação obrigatória
 

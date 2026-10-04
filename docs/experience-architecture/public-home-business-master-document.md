@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-BUSINESS-MASTER-001
 title: Documento Mestre — Home Pública — Guivos Business
 status: active
-version: 1.1.9
+version: 1.1.10
 owner: Experience Architecture
 last_updated: 2026-09-24
 parent: GKR-BUSINESS-HOME-CONTINUITY-002
@@ -476,23 +476,23 @@ A experiência não é apenas uma calculadora de preço. Ela deve traduzir neces
 Pode considerar, conforme arquitetura comercial futura:
 
 ```text
-NÚMERO DE PESSOAS
-+
 OFERTA
 +
-PLANO / CAPACIDADE
+NÚMERO DE PESSOAS / ESCALA
 +
-TIPO DE OPERAÇÃO
+CAPACIDADES
 +
 INTELLIGENCE
 +
 INTEGRAÇÕES
 +
-GOVERNANÇA
-+
-SERVIÇO
+GOVERNANÇA / SEGURANÇA
 +
 MERCADO
+↓
+TIER COMPATÍVEL
+↓
+DEPOIS: MODELO DE IMPLEMENTAÇÃO / OPERAÇÃO
 ```
 
 E devolver:
@@ -520,7 +520,6 @@ O configurador deve permitir compreender como a contratação é montada sem tra
 | Intelligence | profundidade/capacidades aplicáveis | pode elevar a capacidade requerida |
 | Integrações | eventos, conexões e integrações autorizadas | pode elevar complexidade e capacidade requerida |
 | Governança | requisitos de gestão e controle | pode elevar capacidade requerida |
-| Nível de serviço | entitlement contratual aplicável | pode exigir capacidade superior |
 | Implementação/operação | Self-service, suporte ou gerenciado | define participação operacional da Guivos, não o plano por si só |
 | Orçamento de incentivo | recurso pré-pago para concessões | fica separado da assinatura Business |
 | Acessos Journey custeados | acessos pagos pela empresa | possuem relação econômica própria |
@@ -537,7 +536,7 @@ PLANO QUE SUPORTA INTEGRALMENTE OS REQUISITOS
 VALOR DA CONFIGURAÇÃO
 ```
 
-O valor deve distinguir a capacidade recorrente da plataforma, componentes variáveis aplicáveis, serviços adicionais e recursos operacionais separados. O orçamento pré-pago de incentivo não deve ser apresentado como assinatura do plano.
+O valor deve distinguir o valor recorrente de plataforma, serviços pagos adicionais contratados depois do tier e recursos operacionais separados. O orçamento pré-pago de incentivo não deve ser apresentado como assinatura do plano.
 
 Os thresholds exatos entre Start, Growth, Scale e Enterprise permanecem subordinados aos entitlements comerciais aprovados; o Design não deve inventá-los.
 
@@ -591,7 +590,7 @@ A empresa contrata online e, depois, a implementação/operação recebe partici
 
 Síntese:
 
-> **Self-service quando possível. Suporte quando necessário. Operação gerenciada quando a complexidade exigir.**
+> **Depois do tier, a empresa define o modelo de implementação/operação adequado: Self-service, apoio do suporte ou gerenciado.**
 
 ## 23. Escala global
 
