@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-TRANSITION-REGISTRY-001
 title: Registro Granular de Transições
 status: active
-version: 0.29.24
+version: 0.29.25
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-10-03
+last_updated: 2026-10-04
 related:
   - GKR-UX-G5-OPPORTUNITY-BOOST-VALIDATION-001
   - GKR-UX-G4-INTERNAL-OPPORTUNITY-PROCESS-VALIDATION-001
@@ -107,9 +107,9 @@ O modelo corrente não registra handoffs diretos `PER-010 ↔ PER-011`, `PER-011
 | ID | Origem | Destino | Perspectiva | Condição e efeito principal | Evidência | Estado | Lacuna |
 |---|---|---|---|---|---|---|---|
 | GKR-TRN-101 | PER-101 | PER-102 | visitante | pesquisar/filtrar sem criar vínculo | UXA-056 | localmente validada | continuidade entre responsabilidades |
-| GKR-TRN-102 | PER-102 | PER-103 | visitante | abrir Perfil Público | UXA-056 | parcial | ligação ponta a ponta ainda parcial |
-| GKR-TRN-103 | PER-103 | PER-104 | solicitante potencial | iniciar revisão consciente | UXA-056 | parcial | handoff para solicitação |
-| GKR-TRN-104 | PER-104 | PER-105 | solicitante | enviar solicitação autorizada | UXA-056 | parcial | continuidade até estado pendente |
+| GKR-TRN-102 | PER-102 | PER-103 | visitante | abrir Perfil Público | UXA-056 + GKR-UXA-106-G2-FUNCTIONAL-EXAM-001 + GKR-UXA-106-G2-MATURITY-EXAM-001 | **localmente validada** | contrato funcional adjudicado; maturidade promovida por gate humano; validação integral G2 não comprovada |
+| GKR-TRN-103 | PER-103 | PER-104 | solicitante potencial | iniciar revisão consciente | UXA-056 + GKR-UXA-106-G2-FUNCTIONAL-EXAM-001 + GKR-UXA-106-G2-MATURITY-EXAM-001 | **localmente validada** | contrato funcional adjudicado; maturidade promovida por gate humano; validação integral G2 não comprovada |
+| GKR-TRN-104 | PER-104 | PER-105 | solicitante | enviar solicitação autorizada | UXA-056 + GKR-UXA-106-G2-FUNCTIONAL-EXAM-001 + GKR-UXA-106-G2-MATURITY-EXAM-001 | **localmente validada** | contrato funcional adjudicado; maturidade promovida por gate humano; validação integral G2 não comprovada |
 | GKR-TRN-105 | PER-105 | COL-003 | solicitante → responsável | disponibilizar solicitação com mesmo identificador lógico | UXA-056/089/090 | **integralmente validada** | — |
 | GKR-TRN-106 | COL-003 | PER-105 | responsável → solicitante | pedir informação adicional sem aprovar | UXA-056/089/090 | **integralmente validada** | — |
 | GKR-TRN-107 | PER-105 | COL-003 | solicitante → responsável | responder à mesma finalidade sem duplicação | UXA-056/089/090 | **integralmente validada** | — |
@@ -130,7 +130,7 @@ TRN-101
 → LOCALLY VALIDATED / UNCHANGED
 
 TRN-102/103/104
-→ PARTIAL / UNCHANGED
+→ LOCALLY VALIDATED
 
 TRN-114
 → CONTRACTED / UNCHANGED

@@ -2,9 +2,9 @@
 id: GKR-UX-PER105-MASTER-001
 title: Jornada da Pessoa — PER-105 — Solicitação Pendente — Documento Mestre de Superfície
 status: active
-version: 0.1.0
+version: 0.1.1
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-26
+last_updated: 2026-10-04
 normative: false
 maturity: current_surface_design_definition
 depends_on:
@@ -42,7 +42,7 @@ A superfície permite à Pessoa **acompanhar a mesma solicitação lógica depoi
 ```text
 PER-104 — REVISÃO E SOLICITAÇÃO
 → SOLICITAÇÃO AUTORIZADA ENVIADA
-→ TRN-104 / PARTIAL
+→ TRN-104 / LOCALLY VALIDATED
 → PER-105 — SOLICITAÇÃO PENDENTE
 
 PER-105
@@ -251,7 +251,7 @@ Estado: **integralmente validada**.
 
 ### 9.6 TRN-104 — entrada em PER-105
 
-`PER-104 → PER-105` permanece **partial**. Este Master não promove `TRN-104`.
+`PER-104 → PER-105` está **LOCALLY VALIDATED** após adjudicação e materialização de maturidade da UXA-106.
 
 ## 10. Ações e controles
 
@@ -420,7 +420,7 @@ IA não pode:
 - tratar pedido de informação como aprovação;
 - tratar recusa como score;
 - tratar aprovação como dependente da navegação para `PER-106`;
-- promover `TRN-104`;
+- promover `TRN-104` além da maturidade adjudicada;
 - rebaixar `TRN-105..109`;
 - criar novo `PER-ID`;
 - impor baseline visual;
@@ -452,7 +452,7 @@ O consumo de `PER-105` é aceitável quando:
 20. `TRN-107` é preservada como integralmente validada;
 21. `TRN-108` é preservada como integralmente validada;
 22. `TRN-109` é preservada como integralmente validada;
-23. `TRN-104` permanece partial;
+23. `TRN-104` permanece `LOCALLY VALIDATED`;
 24. regra material alterada exige nova revisão antes da ativação;
 25. erros não fabricam resultado;
 26. estados internos não criam novos `PER-ID`s;
@@ -488,7 +488,7 @@ MASTER
 → CURRENT
 
 TRN-104
-→ PARTIAL / UNCHANGED
+→ LOCALLY VALIDATED
 
 TRN-105
 → INTEGRALLY VALIDATED / UNCHANGED

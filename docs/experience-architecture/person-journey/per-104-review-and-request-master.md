@@ -1,11 +1,11 @@
 ---
 id: GKR-UX-PER104-MASTER-001
 title: Jornada da Pessoa — PER-104 — Revisão e Solicitação — Documento Mestre de Superfície
-version: 0.2.0
+version: 0.2.1
 status: active
 maturity: current_surface_design_definition
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-27
+last_updated: 2026-10-04
 depends_on:
   - UXA-056
   - GKR-JOURNEY-SURFACE-DETAIL-PERSON-001
@@ -38,12 +38,12 @@ A superfície existe para que a Pessoa **revise conscientemente o significado do
 ```text
 PER-103 — PERFIL PÚBLICO DO COLETIVO
 → DECIDIR CONSCIENTEMENTE INICIAR PARTICIPAÇÃO
-→ TRN-103 / PARTIAL
+→ TRN-103 / LOCALLY VALIDATED
 → PER-104 — REVISÃO E SOLICITAÇÃO
 → REVISAR / EDITAR / CANCELAR / CONFIRMAR
 
 QUANDO HOUVER SOLICITAÇÃO SUJEITA A ANÁLISE
-→ TRN-104 / PARTIAL
+→ TRN-104 / LOCALLY VALIDATED
 → PER-105 — SOLICITAÇÃO PENDENTE
 ```
 
@@ -82,7 +82,7 @@ Pode ser preservado somente o contexto necessário para revisão, incluindo:
 
 O handoff não autoriza transferência indiscriminada de histórico de busca, interesses inferidos, contexto sensível da Journey ou dados sem finalidade.
 
-`TRN-103` permanece `partial`.
+`TRN-103` está `LOCALLY VALIDATED` após adjudicação e materialização de maturidade da UXA-106.
 
 ## 5. Modelo de entrada
 
@@ -245,9 +245,9 @@ PER-104 — REVISÃO E SOLICITAÇÃO
 → PER-105 — SOLICITAÇÃO PENDENTE
 ```
 
-`TRN-104` permanece `partial`.
+`TRN-104` está `LOCALLY VALIDATED` após adjudicação e materialização de maturidade da UXA-106.
 
-A criação deste Master não promove maturidade da transição.
+A promoção de maturidade decorre exclusivamente do gate próprio da UXA-106, não deste Master.
 
 ## 14. Retorno, edição e abandono
 
@@ -377,7 +377,7 @@ IA pode apoiar exploração e documentação, mas não pode:
 - ampliar consentimento;
 - reutilizar contexto sensível sem autoridade;
 - criar novo `PER-ID`;
-- promover `TRN-103` ou `TRN-104`;
+- promover `TRN-103` ou `TRN-104` além da maturidade adjudicada;
 - inventar continuidade de entrada aberta ou iniciativa do Coletivo não adjudicada;
 - impor baseline visual;
 - iniciar Product Engineering.
@@ -404,8 +404,8 @@ IA pode apoiar exploração e documentação, mas não pode:
 16. privacidade e minimização são preservadas;
 17. erros não fabricam resultado;
 18. repetição involuntária não deve produzir múltiplos pedidos lógicos;
-19. `TRN-103` permanece partial;
-20. `TRN-104` permanece partial;
+19. `TRN-103` permanece `LOCALLY VALIDATED`;
+20. `TRN-104` permanece `LOCALLY VALIDATED`;
 21. estados internos não criam nova superfície;
 22. acessibilidade não depende de pistas exclusivamente visuais;
 23. dados sintéticos não se passam por reais;
@@ -417,7 +417,7 @@ IA pode apoiar exploração e documentação, mas não pode:
 
 Permanecem fora deste Master:
 
-- promoção de `TRN-103` ou `TRN-104`;
+- promoção de `TRN-103` ou `TRN-104` além da maturidade adjudicada;
 - definição técnica de idempotência;
 - continuidade ponta a ponta de entrada aberta quando não registrada;
 - qualquer continuidade de convite/iniciativa do Coletivo sem nova adjudicação canônica;
@@ -439,10 +439,10 @@ AI
 → OPTIONAL / DESIGNER-CONTROLLED
 
 TRN-103
-→ PARTIAL / UNCHANGED
+→ LOCALLY VALIDATED
 
 TRN-104
-→ PARTIAL / UNCHANGED
+→ LOCALLY VALIDATED
 
 PRODUCT ENGINEERING
 → NOT RELEASED
