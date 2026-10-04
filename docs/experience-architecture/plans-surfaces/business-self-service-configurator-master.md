@@ -217,7 +217,7 @@ ENTERPRISE
 → PREVALECE DIMENSIONAMENTO CONTRATUAL
 ```
 
-A inclusão de uma capacidade no tier não significa que ela seja gratuita universalmente; significa que seu preço já está absorvido pelo plano-base contratado.
+A inclusão de uma capacidade no tier não significa que ela seja gratuita universalmente; significa que seu preço já está absorvido pelo tier de capacidade resultante.
 
 
 ### Regra de cálculo
