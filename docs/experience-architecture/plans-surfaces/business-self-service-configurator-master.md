@@ -2,7 +2,7 @@
 id: GKR-UX-PLANS-BUSINESS-CONFIGURATOR-001
 title: Planos — Guivos Business — Configurador e Calculadora Self-service — Documento Mestre
 status: active
-version: 0.5.0
+version: 0.6.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-03
 normative: false
@@ -21,7 +21,7 @@ Definir a experiência pela qual uma empresa pode **compreender, configurar, est
 
 O configurador é uma experiência de composição. Ele não é um quinto plano.
 
-## 2. Planos-base
+## 2. Tiers de capacidade resultantes
 
 | Plano | Mensal | Anual | Direção |
 |---|---:|---:|---|
@@ -31,6 +31,27 @@ O configurador é uma experiência de composição. Ele não é um quinto plano.
 | **Enterprise** | sob consulta | sob consulta | governar alta complexidade e escala |
 
 Todos admitem seleção Mensal ou Anual. Quando o valor não estiver numericamente congelado, a calculadora não deve inventá-lo.
+
+### 2.1 Como o tier é determinado
+
+```text
+OFERTA ESCOLHIDA
++
+ESCALA
++
+CAPACIDADES
++
+INTEGRAÇÕES
++
+GOVERNANÇA
++
+SERVIÇO
+↓
+TIER COMPATÍVEL
+```
+
+A empresa não precisa escolher Start, Growth, Scale ou Enterprise antes de informar sua necessidade. O configurador deve **enquadrar e explicar** o tier compatível.
+
 
 ## 3. Dados de preenchimento
 
@@ -215,9 +236,23 @@ ELSE
 A interface deve exibir a capacidade incluída com valor adicional zero, e não ocultá-la como se ela não tivesse valor econômico.
 
 
+## 7.3 Progressão de capacidade por tier
+
+| Dimensão | **Start** | **Growth** | **Scale** | **Enterprise** |
+|---|---|---|---|---|
+| **Direção** | Operar | Acompanhar e compreender | Interpretar e integrar | Governar alta complexidade e escala |
+| **Intelligence avançado** | adicional | incluído | incluído | incluído |
+| **Governança / auditoria avançadas** | adicional | incluído | incluído | incluído |
+| **Exportações / Power BI** | adicional | adicional | incluído | incluído |
+| **API Business** | adicional | adicional | incluído | incluído |
+| **SSO / SAML** | adicional | adicional | incluído | incluído |
+| **1 integração dedicada** | adicional | adicional | 1 incluída | conforme contrato |
+
+A superfície deve explicar a progressão como mudança de capacidade, e não apenas como diferença de preço.
+
 ## 8. Resultado
 
-Quando todos os componentes necessários possuírem preço vigente, o resultado deve mostrar oferta Business obrigatória, tier de capacidade, população/escala, taxa de ativação da oferta igual a zero, acessos Journey, adicionais, serviços, subtotal recorrente, periodicidade, total recorrente, orçamento de incentivo em linha separada e itens sob consulta.
+Quando todos os componentes necessários possuírem preço vigente, o resultado deve mostrar primeiro a oferta Business escolhida e a configuração informada; depois, o tier resultante e a justificativa do enquadramento; por fim, população/escala, acessos Journey, adicionais, serviços, subtotal recorrente, periodicidade, total recorrente, orçamento de incentivo em linha separada e itens sob consulta. A oferta não deve ser apresentada como parcela financeira artificial de R$ 0,00.
 
 ## 9. Configuração parcialmente calculável
 
