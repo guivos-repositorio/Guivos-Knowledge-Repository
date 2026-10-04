@@ -399,3 +399,8 @@ DOCUMENTAÇÃO
 ```
 
 Para qualquer afirmação de estado, prevalece o [Registro do Estado Atual](project/current-state-register.md).
+
+PRÓXIMA UXA
+→ UXA-107
+→ NOT_STARTED
+→ NOT_AUTHORIZED
