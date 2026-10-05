@@ -2,7 +2,7 @@
 id: ROADMAP-13.48.7
 title: Roadmap Arquitetural — Frentes Correntes e Próximos Gates da Guivos
 status: active
-version: 13.48.79
+version: 13.48.80
 owner: Guivos
 last_updated: 2026-10-04
 normative: true
@@ -45,7 +45,7 @@ related:
 
 ## 1. Função
 
-Este roadmap traduz `GKR-STATE-001 v3.51.12` em **frentes governadas de avanço**.
+Este roadmap traduz `GKR-STATE-001 v3.51.13` em **frentes governadas de avanço**.
 
 Sua função é declarar frentes correntes, dependências e próximos gates sem transformar possibilidade técnica em execução automática.
 
@@ -63,7 +63,7 @@ ROADMAP
 
 | Frente | Estado vigente |
 |---|---|
-| Estado global | `GKR-STATE-001 v3.51.12 / CURRENT` |
+| Estado global | `GKR-STATE-001 v3.51.13 / CURRENT` |
 | Era | `GE-2 — KNOWLEDGE` |
 | Marco funcional | `M7.88` |
 | Última UXA numerada | `UXA-107` |
@@ -84,7 +84,7 @@ ROADMAP
 | UXA-104 | `FUNCTIONAL CONTRACT ADJUDICATED / RECONCILIATION COMPLETE / MATURITY EXAM COMPLETE / TRN-014..017 LOCALLY VALIDATED / INTEGRAL NOT SUPPORTED` |
 | UXA-105 | `SCOPE + FUNCTIONAL CONTRACT ADJUDICATED / MATURITY EXAM + ADJUDICATION COMPLETE / TRN-001 LOCALLY VALIDATED / 1 PROMOTION / INTEGRAL NOT SUPPORTED` |
 | UXA-106 | `FUNCTIONAL CONTRACT ADJUDICATED / MATURITY EXAM COMPLETE / MATURITY FINDINGS ADJUDICATED / TRN-102/103/104 LOCALLY VALIDATED / 3 PROMOTIONS MATERIALIZED / INTEGRAL NOT SUPPORTED` |
-| UXA-107 | `SCOPE ADJUDICATED = TRN-201 ONLY / FUNCTIONAL EXAM COMPLETE / FUNCTIONALLY SUFFICIENT CANDIDATE / FUNCTIONAL CONTRACT ADJUDICATION PENDING / TRN-201 PARTIAL / 0 PROMOTIONS` |
+| UXA-107 | `SCOPE ADJUDICATED = TRN-201 ONLY / FUNCTIONAL EXAM COMPLETE / FUNCTIONAL CONTRACT ADJUDICATED + NORMATIVE / TRN-201 PARTIAL / 0 PROMOTIONS` |
 | Cognitive Reference Architecture | `GIA-COG-001 v0.1.2 / ACTIVE / NORMATIVE` |
 | `GIA-COG-002..008` | `RESERVED / NOT MATERIALIZED` |
 | Product Engineering | `PAUSED / NOT RELEASED` |
@@ -371,8 +371,8 @@ UXA-107
 → SCOPE SUFFICIENCY = SUFFICIENT / ADJUDICATED
 → SCOPE ADJUDICATED / NORMATIVE
 → FUNCTIONAL EXAM COMPLETE
-→ TRN-201 FUNCTIONALLY SUFFICIENT CANDIDATE
-→ FUNCTIONAL CONTRACT ADJUDICATION PENDING
+→ FUNCTIONAL CONTRACT ADJUDICATED / NORMATIVE
+→ TRN-201 FUNCTIONALLY SUFFICIENT / ADJUDICATED
 → TRN-201 PARTIAL / UNCHANGED
 → MATURITY PROMOTIONS = 0
 
@@ -632,7 +632,7 @@ UXA-105 concluiu escopo, contrato funcional, maturity exam e adjudicação; `TRN
 
 UXA-106 concluiu o maturity exam, a adjudicação e a materialização das promoções de `TRN-102/103/104`; as três transições estão `LOCALLY VALIDATED`, com três promoções materializadas. `INTEGRALLY VALIDATED` permanece não suportado.
 
-UXA-107 concluiu o Functional Exam de `TRN-201 — ORG-001 → ORG-002`; a transição converge como `FUNCTIONALLY SUFFICIENT CANDIDATE`, com adjudicação humana do contrato funcional ainda pendente, maturidade `PARTIAL` e zero promoções.
+UXA-107 concluiu o Functional Exam e a adjudicação normativa do contrato de `TRN-201 — ORG-001 → ORG-002`; a transição é `FUNCTIONALLY SUFFICIENT / ADJUDICATED`, permanece `PARTIAL` e não houve promoção de maturidade.
 
 Cada avanço depende da autoridade temática vigente e do gate específico aplicável.
 
