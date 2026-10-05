@@ -2,11 +2,11 @@
 id: GKR-UXA-107-TRN201-FUNCTIONAL-EXAM-001
 title: UXA-107 — TRN-201 — Exame Funcional da Continuidade ORG-001 → ORG-002
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-04
-normative: false
-maturity: functional_exam_complete_pending_adjudication
+normative: true
+maturity: adjudicated_functional_contract
 depends_on:
   - GKR-UXA-107-TRN201-SCOPE-EXAM-001
   - GKR-UX-G3-ORGANIZATION-COLLECTIVE-RELATIONSHIP-VALIDATION-001
@@ -200,13 +200,13 @@ UXA-107 FUNCTIONAL EXAM
 → COMPLETE
 
 TRN-201
-→ FUNCTIONALLY SUFFICIENT CANDIDATE
+→ FUNCTIONALLY SUFFICIENT / ADJUDICATED
 
 NEW FUNCTIONAL RULE REQUIRED
 → NO
 
-FUNCTIONAL CONTRACT ADJUDICATION
-→ PENDING HUMAN GATE
+FUNCTIONAL CONTRACT
+→ ADJUDICATED / NORMATIVE
 
 CURRENT MATURITY
 → TRN-201 = PARTIAL
@@ -226,12 +226,14 @@ PRODUCT ENGINEERING
 
 ## 9. Próximo gate
 
-O próximo gate, se autorizado, é exclusivamente a adjudicação humana do contrato funcional examinado.
+O contrato funcional foi adjudicado normativamente sem promover maturidade.
 
-Essa adjudicação, por si só:
+O próximo gate, se autorizado separadamente, é o maturity exam de TRN-201.
+
+A adjudicação funcional:
 
 - não promove maturidade;
 - não altera o Transition Registry;
-- não autoriza maturity exam;
+- não autoriza automaticamente o maturity exam;
 - não declara G3 integralmente validada;
 - não libera Design, protótipo ou Product Engineering.
