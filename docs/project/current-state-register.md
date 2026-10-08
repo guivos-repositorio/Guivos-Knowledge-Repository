@@ -2,9 +2,9 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.51.13
+version: 3.51.15
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-10-04
+last_updated: 2026-10-08
 normative: true
 maturity: current_truth_gia_cog_001_active_normative
 related:
@@ -29,6 +29,7 @@ related:
   - GKR-UXA-104-PER013014-MATURITY-EXAM-001
   - GKR-UXA-107-TRN201-SCOPE-EXAM-001
   - GKR-UXA-107-TRN201-FUNCTIONAL-EXAM-001
+  - GKR-UXA-107-TRN201-MATURITY-EXAM-001
   - UXA-107
   - GKR-UXA-106-G2-SCOPE-EXAM-001
   - GKR-UXA-106-G2-FUNCTIONAL-EXAM-001
@@ -135,8 +136,8 @@ Estado executivo vigente:
 - **UXA-104:** escopo adjudicado por `GKR-UXA-104-PER013014-SCOPE-AUTHORITY-001` para `PER-013/014` + `TRN-014..017`; exame funcional `COMPLETE`; contrato funcional `ADJUDICATED / NORMATIVE`; reconciliação `COMPLETE`; maturity exam `COMPLETE`; achados de maturidade `ADJUDICATED`; `TRN-014..017` promovidas para `LOCALLY VALIDATED`; quatro promoções de maturidade;
 - **UXA-105:** scope exam `COMPLETE`; escopo `ADJUDICATED / NORMATIVE` restrito a `TRN-001 — PER-001 → PER-002`; contrato funcional adjudicado; maturity exam `COMPLETE`; adjudicação de maturidade `COMPLETE`; `TRN-001` promovida de `PARTIAL` para `LOCALLY VALIDATED`; `INTEGRALLY VALIDATED` não suportado; uma promoção de maturidade;
 - **UXA-106:** scope exam `COMPLETE`; escopo `ADJUDICATED / NORMATIVE` restrito a `TRN-102/103/104 — PER-102 → PER-103 → PER-104 → PER-105`; exame funcional `COMPLETE`; contrato funcional `ADJUDICATED / NORMATIVE`; maturity exam `COMPLETE`; achados de maturidade `ADJUDICATED`; `TRN-102/103/104` promovidas para `LOCALLY VALIDATED`; três promoções materializadas; `INTEGRALLY VALIDATED` não suportado;
-- **UXA-107:** scope exam `COMPLETE`; escopo `ADJUDICATED / NORMATIVE` restrito a `TRN-201 — ORG-001 → ORG-002`; exame funcional `COMPLETE`; contrato funcional `ADJUDICATED / NORMATIVE`; `TRN-201` = `FUNCTIONALLY SUFFICIENT / ADJUDICATED`; maturidade permanece `PARTIAL`; zero promoções;
-- **execução automática seguinte:** nenhuma; eventual maturity exam da UXA-107 exige autorização humana separada.
+- **UXA-107:** scope exam `COMPLETE`; escopo `ADJUDICATED / NORMATIVE` restrito a `TRN-201 — ORG-001 → ORG-002`; exame funcional `COMPLETE`; contrato funcional `ADJUDICATED / NORMATIVE`; maturity exam `COMPLETE`; achados de maturidade `ADJUDICATED`; `TRN-201` = `FUNCTIONALLY SUFFICIENT / ADJUDICATED`; elegibilidade adjudicada para `LOCALLY VALIDATED`; materialização da promoção `PENDING`; maturidade operativa permanece `PARTIAL`; zero promoções materializadas; `INTEGRALLY VALIDATED` não suportado;
+- **execução automática seguinte:** nenhuma; o próximo gate da UXA-107 é a materialização da promoção adjudicada de `TRN-201`, mediante autorização humana separada.
 
 ```text
 DOCUMENTED
@@ -1774,8 +1775,14 @@ UXA-107
 → FUNCTIONAL EXAM COMPLETE
 → FUNCTIONAL CONTRACT ADJUDICATED / NORMATIVE
 → TRN-201 FUNCTIONALLY SUFFICIENT / ADJUDICATED
+→ MATURITY EXAM COMPLETE
+→ MATURITY FINDINGS ADJUDICATED
+→ TRN-201 ADJUDICATED ELIGIBILITY = LOCALLY VALIDATED
+→ PROMOTION MATERIALIZATION PENDING
 → TRN-201 PARTIAL / UNCHANGED
-→ MATURITY PROMOTIONS = 0
+→ MATURITY PROMOTIONS MATERIALIZED = 0
+→ INTEGRALLY VALIDATED NOT SUPPORTED
+→ G3 INTEGRALLY VALIDATED NOT CLAIMED
 → PRODUCT ENGINEERING PAUSED / NOT RELEASED
 
 UXA-106
