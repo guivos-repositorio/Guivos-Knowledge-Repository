@@ -2,9 +2,9 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.51.15
+version: 3.51.17
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-10-08
+last_updated: 2026-10-09
 normative: true
 maturity: current_truth_gia_cog_001_active_normative
 related:
@@ -136,8 +136,8 @@ Estado executivo vigente:
 - **UXA-104:** escopo adjudicado por `GKR-UXA-104-PER013014-SCOPE-AUTHORITY-001` para `PER-013/014` + `TRN-014..017`; exame funcional `COMPLETE`; contrato funcional `ADJUDICATED / NORMATIVE`; reconciliação `COMPLETE`; maturity exam `COMPLETE`; achados de maturidade `ADJUDICATED`; `TRN-014..017` promovidas para `LOCALLY VALIDATED`; quatro promoções de maturidade;
 - **UXA-105:** scope exam `COMPLETE`; escopo `ADJUDICATED / NORMATIVE` restrito a `TRN-001 — PER-001 → PER-002`; contrato funcional adjudicado; maturity exam `COMPLETE`; adjudicação de maturidade `COMPLETE`; `TRN-001` promovida de `PARTIAL` para `LOCALLY VALIDATED`; `INTEGRALLY VALIDATED` não suportado; uma promoção de maturidade;
 - **UXA-106:** scope exam `COMPLETE`; escopo `ADJUDICATED / NORMATIVE` restrito a `TRN-102/103/104 — PER-102 → PER-103 → PER-104 → PER-105`; exame funcional `COMPLETE`; contrato funcional `ADJUDICATED / NORMATIVE`; maturity exam `COMPLETE`; achados de maturidade `ADJUDICATED`; `TRN-102/103/104` promovidas para `LOCALLY VALIDATED`; três promoções materializadas; `INTEGRALLY VALIDATED` não suportado;
-- **UXA-107:** scope exam `COMPLETE`; escopo `ADJUDICATED / NORMATIVE` restrito a `TRN-201 — ORG-001 → ORG-002`; exame funcional `COMPLETE`; contrato funcional `ADJUDICATED / NORMATIVE`; maturity exam `COMPLETE`; achados de maturidade `ADJUDICATED`; `TRN-201` = `FUNCTIONALLY SUFFICIENT / ADJUDICATED`; elegibilidade adjudicada para `LOCALLY VALIDATED`; materialização da promoção `PENDING`; maturidade operativa permanece `PARTIAL`; zero promoções materializadas; `INTEGRALLY VALIDATED` não suportado;
-- **execução automática seguinte:** nenhuma; o próximo gate da UXA-107 é a materialização da promoção adjudicada de `TRN-201`, mediante autorização humana separada.
+- **UXA-107:** scope exam `COMPLETE`; escopo `ADJUDICATED / NORMATIVE` restrito a `TRN-201 — ORG-001 → ORG-002`; exame funcional `COMPLETE`; contrato funcional `ADJUDICATED / NORMATIVE`; maturity exam `COMPLETE`; achados de maturidade `ADJUDICATED`; `TRN-201` = `FUNCTIONALLY SUFFICIENT / ADJUDICATED`; promoção adjudicada e materializada de `PARTIAL` para `LOCALLY VALIDATED`; uma promoção materializada; `INTEGRALLY VALIDATED` não suportado;
+- **execução automática seguinte:** nenhuma; UXA-107 concluiu a materialização da promoção de `TRN-201`. Qualquer avanço adicional exige novo gate.
 
 ```text
 DOCUMENTED
@@ -1649,11 +1649,11 @@ A decisão preserva explicitamente as autoridades correntes: cobertura semântic
 
 ## 28.3 G3 — Organização e relação Organização–Coletivo
 
-`GKR-UX-G3-ORGANIZATION-COLLECTIVE-RELATIONSHIP-VALIDATION-001` conclui o exame específico da terceira família deixada pela UXA-102/V5.
+`GKR-UX-G3-ORGANIZATION-COLLECTIVE-RELATIONSHIP-VALIDATION-001` concluiu o exame inicial da terceira família deixada pela UXA-102/V5 sem promoção. Posteriormente, a UXA-107 fechou a lacuna local de `TRN-201` por exame funcional, maturity exam, adjudicação humana e materialização própria.
 
 ```text
 TRN-201
-→ PARTIAL / UNCHANGED
+→ LOCALLY VALIDATED
 
 TRN-202
 → LOCALLY VALIDATED / UNCHANGED
@@ -1661,8 +1661,12 @@ TRN-202
 TRN-206..209
 → CONTRACTED / UNCHANGED
 
-MATURITY PROMOTIONS
+ORIGINAL G3 MATURITY PROMOTIONS
 → 0
+
+UXA-107 MATURITY PROMOTIONS MATERIALIZED
+→ 1
+→ TRN-201 PARTIAL → LOCALLY VALIDATED
 ```
 
 A decisão reconhece que concorrência, versão, retorno, resultado indeterminado e idempotência já estão semanticamente cobertos pelas autoridades correntes. O que permanece aberto é validação ponta a ponta/materialização.
@@ -1778,9 +1782,10 @@ UXA-107
 → MATURITY EXAM COMPLETE
 → MATURITY FINDINGS ADJUDICATED
 → TRN-201 ADJUDICATED ELIGIBILITY = LOCALLY VALIDATED
-→ PROMOTION MATERIALIZATION PENDING
-→ TRN-201 PARTIAL / UNCHANGED
-→ MATURITY PROMOTIONS MATERIALIZED = 0
+→ PROMOTION MATERIALIZATION COMPLETE
+→ TRN-201 LOCALLY VALIDATED
+→ MATURITY PROMOTIONS MATERIALIZED = 1
+→ PARTIAL → LOCALLY VALIDATED
 → INTEGRALLY VALIDATED NOT SUPPORTED
 → G3 INTEGRALLY VALIDATED NOT CLAIMED
 → PRODUCT ENGINEERING PAUSED / NOT RELEASED

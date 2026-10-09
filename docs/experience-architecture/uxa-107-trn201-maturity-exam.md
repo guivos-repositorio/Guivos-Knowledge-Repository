@@ -2,11 +2,11 @@
 id: GKR-UXA-107-TRN201-MATURITY-EXAM-001
 title: UXA-107 — TRN-201 — Exame de Maturidade da Continuidade ORG-001 → ORG-002
 status: active
-version: 1.1.0
+version: 1.2.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-10-08
+last_updated: 2026-10-09
 normative: true
-maturity: maturity_findings_adjudicated_pending_materialization
+maturity: maturity_promotion_materialized
 depends_on:
   - GKR-UXA-107-TRN201-SCOPE-EXAM-001
   - GKR-UXA-107-TRN201-FUNCTIONAL-EXAM-001
@@ -39,20 +39,17 @@ Este exame não promove maturidade. Ele verifica a elegibilidade documental de `
 
 ```text
 TRN-201
-→ CURRENT = PARTIAL
+→ BASELINE = PARTIAL
 
 MATURITY PROMOTIONS
 → 0
-
-TRANSITION REGISTRY
-→ UNCHANGED
 ```
 
-A razão local corrente registrada no Transition Registry é:
+A razão local registrada antes do exame era:
 
 > **ligação com visão institucional**
 
-A autoridade G3 também preservou `TRN-201` em `PARTIAL` porque a continuidade ponta a ponta entre a Visão Geral institucional e o Cadastro de Oportunidade/Programa ainda não havia sido validada como conjunto.
+A autoridade G3 também havia preservado `TRN-201` em `PARTIAL` porque a continuidade ponta a ponta entre a Visão Geral institucional e o Cadastro de Oportunidade/Programa ainda não havia sido validada como conjunto.
 
 ## 3. Critério do Registry
 
@@ -98,15 +95,15 @@ Não permanece lacuna funcional local conhecida que, por si só, exija manter `T
 
 ```text
 TRN-201
-→ CURRENT = PARTIAL
+→ CURRENT = LOCALLY VALIDATED
 → ADJUDICATED ELIGIBILITY = LOCALLY VALIDATED
-→ PROMOTION MATERIALIZATION PENDING
+→ PROMOTION MATERIALIZED
 → INTEGRALLY VALIDATED NOT SUPPORTED
 ```
 
 ## 6. Limite da evidência
 
-A evidência disponível sustenta elegibilidade **local** de `TRN-201`.
+A evidência disponível sustenta maturidade **local** de `TRN-201`.
 
 Ela não comprova:
 
@@ -125,11 +122,9 @@ Ela não comprova:
 
 `LOCALLY VALIDATED` permanece uma maturidade documental local, não comprovação de implementação ou integração técnica.
 
-## 7. Adjudicação humana dos achados
+## 7. Adjudicação humana e materialização
 
-Os achados de maturidade foram submetidos a gate humano específico.
-
-A adjudicação autorizada estabelece:
+Os achados de maturidade foram adjudicados humanamente e a promoção autorizada foi materializada.
 
 ```text
 HUMAN MATURITY ADJUDICATION
@@ -137,15 +132,11 @@ HUMAN MATURITY ADJUDICATION
 
 TRN-201
 → ADJUDICATED ELIGIBILITY = LOCALLY VALIDATED
-
-CURRENT OPERATIVE MATURITY
-→ PARTIAL / UNCHANGED
+→ CURRENT = LOCALLY VALIDATED
 
 PROMOTION MATERIALIZATION
-→ PENDING
+→ COMPLETE
 ```
-
-A adjudicação de elegibilidade não altera, por si só, a maturidade operativa registrada.
 
 ## 8. Resultado do exame
 
@@ -157,7 +148,7 @@ MATURITY FINDINGS
 → ADJUDICATED
 
 TRN-201
-→ CURRENT = PARTIAL
+→ CURRENT = LOCALLY VALIDATED
 → FUNCTIONALLY SUFFICIENT / ADJUDICATED
 → ADJUDICATED ELIGIBILITY = LOCALLY VALIDATED
 
@@ -165,13 +156,14 @@ INTEGRALLY VALIDATED
 → NOT SUPPORTED
 
 PROMOTION MATERIALIZATION
-→ PENDING
+→ COMPLETE
 
 MATURITY PROMOTIONS MATERIALIZED
-→ 0
+→ 1
+→ PARTIAL → LOCALLY VALIDATED
 
 TRANSITION REGISTRY
-→ UNCHANGED
+→ UPDATED / TRN-201 = LOCALLY VALIDATED
 
 G3 INTEGRALLY VALIDATED
 → NOT CLAIMED
@@ -184,8 +176,8 @@ PRODUCT ENGINEERING
 
 Este ato:
 
-- não promove `TRN-201`;
-- não altera o Transition Registry;
+- promove `TRN-201` exclusivamente de `PARTIAL` para `LOCALLY VALIDATED` conforme gate humano autorizado;
+- altera o Transition Registry exclusivamente para refletir essa promoção adjudicada;
 - não promove `TRN-202`;
 - não altera `TRN-206..209`;
 - não declara G3 integralmente validada;
@@ -194,21 +186,14 @@ Este ato:
 
 ## 10. Próximo gate
 
-Os achados de maturidade estão adjudicados humanamente:
+A promoção adjudicada foi materializada no Transition Registry e nas autoridades sincronizadas.
 
 ```text
 TRN-201
-→ ADJUDICATED ELIGIBILITY = LOCALLY VALIDATED
-```
-
-O próximo gate, se autorizado separadamente, é exclusivamente a **materialização da promoção** de `TRN-201` no Transition Registry e nas autoridades sincronizadas.
-
-Até essa materialização:
-
-```text
-TRN-201
-→ OPERATIVE MATURITY = PARTIAL
+→ OPERATIVE MATURITY = LOCALLY VALIDATED
 
 MATURITY PROMOTIONS MATERIALIZED
-→ 0
+→ 1
 ```
+
+`INTEGRALLY VALIDATED` permanece não suportado. Qualquer avanço adicional exige novo exame e gate próprio.

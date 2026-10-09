@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-TRANSITION-REGISTRY-001
 title: Registro Granular de Transições
 status: active
-version: 0.29.25
+version: 0.29.26
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-10-04
+last_updated: 2026-10-09
 related:
   - GKR-UX-G5-OPPORTUNITY-BOOST-VALIDATION-001
   - GKR-UX-G4-INTERNAL-OPPORTUNITY-PROCESS-VALIDATION-001
@@ -142,7 +142,7 @@ A lacuna corrente deixa de ser erro/retorno genérico e passa a ser validação 
 
 | ID | Origem | Destino | Estado | Evidência / lacuna principal |
 |---|---|---|---|---|
-| GKR-TRN-201 | ORG-001 | ORG-002 | parcial | ligação com visão institucional |
+| GKR-TRN-201 | ORG-001 | ORG-002 | **localmente validada** | GKR-UXA-107-TRN201-FUNCTIONAL-EXAM-001 + GKR-UXA-107-TRN201-MATURITY-EXAM-001 — contrato funcional adjudicado; maturidade promovida por gate humano; validação integral G3 não comprovada |
 | GKR-TRN-202 | ORG-002 | ORG-003 | localmente validada | distribuição entre superfícies |
 | GKR-TRN-203 | ORG-003 | PER-201 | **integralmente validada** | UXA-098 — ativação elegível à descoberta sem garantia de distribuição |
 | GKR-TRN-204 | PER-201 | PER-203 | **integralmente validada** | UXA-098 — Mapa → Detalhe com mesma oportunidade e retorno preservado |
@@ -185,11 +185,11 @@ Regras:
 
 ## 6.1 Validação G3 — Organização e relação O↔C
 
-`GKR-UX-G3-ORGANIZATION-COLLECTIVE-RELATIONSHIP-VALIDATION-001` examina `TRN-201/202/206..209` sem promoção de maturidade.
+`GKR-UX-G3-ORGANIZATION-COLLECTIVE-RELATIONSHIP-VALIDATION-001` examinou `TRN-201/202/206..209` sem promoção de maturidade. Posteriormente, a UXA-107 concluiu exame funcional, maturity exam, adjudicação e materialização própria de `TRN-201`.
 
 ```text
 TRN-201
-→ PARTIAL / UNCHANGED
+→ LOCALLY VALIDATED
 
 TRN-202
 → LOCALLY VALIDATED / UNCHANGED
@@ -198,7 +198,7 @@ TRN-206..209
 → CONTRACTED / UNCHANGED
 ```
 
-As lacunas correntes são de validação ponta a ponta/materialização específica; concorrência, retorno, estado indeterminado e idempotência possuem cobertura semântica suficiente.
+A lacuna local de `TRN-201` foi fechada pela UXA-107 até `LOCALLY VALIDATED`. A cadeia G3 completa permanece sem validação integral; `TRN-206..209` continuam dependentes de validação ponta a ponta/materialização específica. Concorrência, retorno, estado indeterminado e idempotência possuem cobertura semântica suficiente.
 
 ## 6.2 Validação G4 — processo interno de oportunidade
 
