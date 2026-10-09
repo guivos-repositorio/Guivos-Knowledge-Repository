@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.51.17
+version: 3.51.19
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-10-09
 normative: true
@@ -30,6 +30,7 @@ related:
   - GKR-UXA-107-TRN201-SCOPE-EXAM-001
   - GKR-UXA-107-TRN201-FUNCTIONAL-EXAM-001
   - GKR-UXA-107-TRN201-MATURITY-EXAM-001
+  - GKR-UXA-108-G4-SCOPE-EXAM-001
   - UXA-107
   - GKR-UXA-106-G2-SCOPE-EXAM-001
   - GKR-UXA-106-G2-FUNCTIONAL-EXAM-001
@@ -137,7 +138,8 @@ Estado executivo vigente:
 - **UXA-105:** scope exam `COMPLETE`; escopo `ADJUDICATED / NORMATIVE` restrito a `TRN-001 — PER-001 → PER-002`; contrato funcional adjudicado; maturity exam `COMPLETE`; adjudicação de maturidade `COMPLETE`; `TRN-001` promovida de `PARTIAL` para `LOCALLY VALIDATED`; `INTEGRALLY VALIDATED` não suportado; uma promoção de maturidade;
 - **UXA-106:** scope exam `COMPLETE`; escopo `ADJUDICATED / NORMATIVE` restrito a `TRN-102/103/104 — PER-102 → PER-103 → PER-104 → PER-105`; exame funcional `COMPLETE`; contrato funcional `ADJUDICATED / NORMATIVE`; maturity exam `COMPLETE`; achados de maturidade `ADJUDICATED`; `TRN-102/103/104` promovidas para `LOCALLY VALIDATED`; três promoções materializadas; `INTEGRALLY VALIDATED` não suportado;
 - **UXA-107:** scope exam `COMPLETE`; escopo `ADJUDICATED / NORMATIVE` restrito a `TRN-201 — ORG-001 → ORG-002`; exame funcional `COMPLETE`; contrato funcional `ADJUDICATED / NORMATIVE`; maturity exam `COMPLETE`; achados de maturidade `ADJUDICATED`; `TRN-201` = `FUNCTIONALLY SUFFICIENT / ADJUDICATED`; promoção adjudicada e materializada de `PARTIAL` para `LOCALLY VALIDATED`; uma promoção materializada; `INTEGRALLY VALIDATED` não suportado;
-- **execução automática seguinte:** nenhuma; UXA-107 concluiu a materialização da promoção de `TRN-201`. Qualquer avanço adicional exige novo gate.
+- **UXA-108:** scope exam `COMPLETE`; escopo `ADJUDICATED / NORMATIVE` restrito a `TRN-212 + TRN-214`; suficiência `SUFFICIENT / ADJUDICATED`; Functional Exam `NOT_STARTED / NOT_AUTHORIZED`; maturidade de `TRN-212/214` permanece `CONTRACTED`; zero promoções;
+- **execução automática seguinte:** nenhuma; o próximo gate da UXA-108 é o Functional Exam de `TRN-212 + TRN-214`, mediante autorização humana separada.
 
 ```text
 DOCUMENTED
@@ -1769,6 +1771,21 @@ Este Registro não define uma fila automática de próximos atos.
 ```text
 NEXT AUTOMATIC EXECUTION
 → NONE
+
+UXA-108
+→ SCOPE EXAM COMPLETE
+→ ADJUDICATED SCOPE = TRN-212 + TRN-214
+→ PER-203 → PER-204
+→ ORG-003 → ORG-008
+→ SCOPE SUFFICIENCY = SUFFICIENT / ADJUDICATED
+→ SCOPE ADJUDICATION = COMPLETE
+→ ADJUDICATED / NORMATIVE
+→ FUNCTIONAL EXAM = NOT_STARTED / NOT_AUTHORIZED
+→ TRN-212 / TRN-214 = CONTRACTED / UNCHANGED
+→ MATURITY PROMOTIONS = 0
+→ TRANSITION REGISTRY = UNCHANGED
+→ G4 INTEGRALLY VALIDATED = NOT CLAIMED
+→ PRODUCT ENGINEERING PAUSED / NOT RELEASED
 
 UXA-107
 → SCOPE EXAM COMPLETE
