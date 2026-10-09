@@ -376,9 +376,10 @@ UXA-107
 → MATURITY EXAM COMPLETE
 → MATURITY FINDINGS ADJUDICATED
 → TRN-201 ADJUDICATED ELIGIBILITY = LOCALLY VALIDATED
-→ PROMOTION MATERIALIZATION PENDING
-→ TRN-201 PARTIAL / UNCHANGED
-→ MATURITY PROMOTIONS MATERIALIZED = 0
+→ PROMOTION MATERIALIZATION COMPLETE
+→ TRN-201 LOCALLY VALIDATED
+→ MATURITY PROMOTIONS MATERIALIZED = 1
+→ PARTIAL → LOCALLY VALIDATED
 → INTEGRALLY VALIDATED NOT SUPPORTED
 → G3 INTEGRALLY VALIDATED NOT CLAIMED
 
@@ -638,7 +639,7 @@ UXA-105 concluiu escopo, contrato funcional, maturity exam e adjudicação; `TRN
 
 UXA-106 concluiu o maturity exam, a adjudicação e a materialização das promoções de `TRN-102/103/104`; as três transições estão `LOCALLY VALIDATED`, com três promoções materializadas. `INTEGRALLY VALIDATED` permanece não suportado.
 
-UXA-107 concluiu o Maturity Exam e a adjudicação humana dos achados de `TRN-201 — ORG-001 → ORG-002`; a transição possui elegibilidade adjudicada para `LOCALLY VALIDATED`, mas permanece operativamente `PARTIAL` até gate separado de materialização. `INTEGRALLY VALIDATED` não é suportado.
+UXA-107 concluiu o Maturity Exam, a adjudicação humana e a materialização da promoção de `TRN-201 — ORG-001 → ORG-002`; a transição está `LOCALLY VALIDATED`, com uma promoção materializada. `INTEGRALLY VALIDATED` permanece não suportado.
 
 Cada avanço depende da autoridade temática vigente e do gate específico aplicável.
 
