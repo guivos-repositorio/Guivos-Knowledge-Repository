@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual do Guivos Knowledge Repository
 status: active
-version: 3.51.18
+version: 3.51.19
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-10-09
 normative: true
@@ -138,8 +138,8 @@ Estado executivo vigente:
 - **UXA-105:** scope exam `COMPLETE`; escopo `ADJUDICATED / NORMATIVE` restrito a `TRN-001 — PER-001 → PER-002`; contrato funcional adjudicado; maturity exam `COMPLETE`; adjudicação de maturidade `COMPLETE`; `TRN-001` promovida de `PARTIAL` para `LOCALLY VALIDATED`; `INTEGRALLY VALIDATED` não suportado; uma promoção de maturidade;
 - **UXA-106:** scope exam `COMPLETE`; escopo `ADJUDICATED / NORMATIVE` restrito a `TRN-102/103/104 — PER-102 → PER-103 → PER-104 → PER-105`; exame funcional `COMPLETE`; contrato funcional `ADJUDICATED / NORMATIVE`; maturity exam `COMPLETE`; achados de maturidade `ADJUDICATED`; `TRN-102/103/104` promovidas para `LOCALLY VALIDATED`; três promoções materializadas; `INTEGRALLY VALIDATED` não suportado;
 - **UXA-107:** scope exam `COMPLETE`; escopo `ADJUDICATED / NORMATIVE` restrito a `TRN-201 — ORG-001 → ORG-002`; exame funcional `COMPLETE`; contrato funcional `ADJUDICATED / NORMATIVE`; maturity exam `COMPLETE`; achados de maturidade `ADJUDICATED`; `TRN-201` = `FUNCTIONALLY SUFFICIENT / ADJUDICATED`; promoção adjudicada e materializada de `PARTIAL` para `LOCALLY VALIDATED`; uma promoção materializada; `INTEGRALLY VALIDATED` não suportado;
-- **UXA-108:** scope exam `COMPLETE`; escopo candidato `TRN-212 + TRN-214`; suficiência `SUFFICIENT AS CANDIDATE`; adjudicação de escopo `PENDING`; documento ainda `NOT NORMATIVE`; Functional Exam `NOT_STARTED / NOT_AUTHORIZED`; maturidade de `TRN-212/214` permanece `CONTRACTED`; zero promoções;
-- **execução automática seguinte:** nenhuma; o próximo gate é a adjudicação humana do escopo candidato da UXA-108.
+- **UXA-108:** scope exam `COMPLETE`; escopo `ADJUDICATED / NORMATIVE` restrito a `TRN-212 + TRN-214`; suficiência `SUFFICIENT / ADJUDICATED`; Functional Exam `NOT_STARTED / NOT_AUTHORIZED`; maturidade de `TRN-212/214` permanece `CONTRACTED`; zero promoções;
+- **execução automática seguinte:** nenhuma; o próximo gate da UXA-108 é o Functional Exam de `TRN-212 + TRN-214`, mediante autorização humana separada.
 
 ```text
 DOCUMENTED
@@ -1774,12 +1774,12 @@ NEXT AUTOMATIC EXECUTION
 
 UXA-108
 → SCOPE EXAM COMPLETE
-→ CANDIDATE SCOPE = TRN-212 + TRN-214
+→ ADJUDICATED SCOPE = TRN-212 + TRN-214
 → PER-203 → PER-204
 → ORG-003 → ORG-008
-→ SCOPE SUFFICIENCY = SUFFICIENT AS CANDIDATE
-→ SCOPE ADJUDICATION = PENDING
-→ NOT NORMATIVE
+→ SCOPE SUFFICIENCY = SUFFICIENT / ADJUDICATED
+→ SCOPE ADJUDICATION = COMPLETE
+→ ADJUDICATED / NORMATIVE
 → FUNCTIONAL EXAM = NOT_STARTED / NOT_AUTHORIZED
 → TRN-212 / TRN-214 = CONTRACTED / UNCHANGED
 → MATURITY PROMOTIONS = 0
