@@ -1649,7 +1649,7 @@ A decisão preserva explicitamente as autoridades correntes: cobertura semântic
 
 ## 28.3 G3 — Organização e relação Organização–Coletivo
 
-`GKR-UX-G3-ORGANIZATION-COLLECTIVE-RELATIONSHIP-VALIDATION-001` conclui o exame específico da terceira família deixada pela UXA-102/V5.
+`GKR-UX-G3-ORGANIZATION-COLLECTIVE-RELATIONSHIP-VALIDATION-001` concluiu o exame inicial da terceira família deixada pela UXA-102/V5 sem promoção. Posteriormente, a UXA-107 fechou a lacuna local de `TRN-201` por exame funcional, maturity exam, adjudicação humana e materialização própria.
 
 ```text
 TRN-201
