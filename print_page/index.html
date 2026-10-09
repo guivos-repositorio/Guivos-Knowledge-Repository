@@ -12098,7 +12098,7 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 <h2 id="index-estado-semantico-sincronizado">Estado semântico sincronizado<a class="headerlink" href="#index-estado-semantico-sincronizado" title="Permanent link">&para;</a></h2>
 <p>A leitura de estado continua subordinada ao <a href="#project-current-state-register">Registro do Estado Atual</a>. Esta superfície preserva somente os marcadores exigidos de sincronização global:</p>
 <div class="highlight"><pre><span></span><code>GKR-STATE-001
-→ 3.51.13 / CURRENT
+→ 3.51.15 / CURRENT
 
 ERA
 → GE-2 — KNOWLEDGE
@@ -12135,8 +12135,14 @@ MARCO FUNCIONAL
 → FUNCTIONAL EXAM COMPLETE
 → FUNCTIONAL CONTRACT ADJUDICATED / NORMATIVE
 → TRN-201 FUNCTIONALLY SUFFICIENT / ADJUDICATED
+→ MATURITY EXAM COMPLETE
+→ MATURITY FINDINGS ADJUDICATED
+→ TRN-201 ADJUDICATED ELIGIBILITY = LOCALLY VALIDATED
+→ PROMOTION MATERIALIZATION PENDING
 → TRN-201 PARTIAL / UNCHANGED
-→ MATURITY PROMOTIONS = 0
+→ MATURITY PROMOTIONS MATERIALIZED = 0
+→ INTEGRALLY VALIDATED NOT SUPPORTED
+→ G3 INTEGRALLY VALIDATED NOT CLAIMED
 
 PRÓXIMA UXA
 → UXA-108
@@ -12965,8 +12971,8 @@ AUTORIDADES TEMÁTICAS VIGENTES
 <li><strong>UXA-104:</strong> escopo adjudicado por <code>GKR-UXA-104-PER013014-SCOPE-AUTHORITY-001</code> para <code>PER-013/014</code> + <code>TRN-014..017</code>; exame funcional <code>COMPLETE</code>; contrato funcional <code>ADJUDICATED / NORMATIVE</code>; reconciliação <code>COMPLETE</code>; maturity exam <code>COMPLETE</code>; achados de maturidade <code>ADJUDICATED</code>; <code>TRN-014..017</code> promovidas para <code>LOCALLY VALIDATED</code>; quatro promoções de maturidade;</li>
 <li><strong>UXA-105:</strong> scope exam <code>COMPLETE</code>; escopo <code>ADJUDICATED / NORMATIVE</code> restrito a <code>TRN-001 — PER-001 → PER-002</code>; contrato funcional adjudicado; maturity exam <code>COMPLETE</code>; adjudicação de maturidade <code>COMPLETE</code>; <code>TRN-001</code> promovida de <code>PARTIAL</code> para <code>LOCALLY VALIDATED</code>; <code>INTEGRALLY VALIDATED</code> não suportado; uma promoção de maturidade;</li>
 <li><strong>UXA-106:</strong> scope exam <code>COMPLETE</code>; escopo <code>ADJUDICATED / NORMATIVE</code> restrito a <code>TRN-102/103/104 — PER-102 → PER-103 → PER-104 → PER-105</code>; exame funcional <code>COMPLETE</code>; contrato funcional <code>ADJUDICATED / NORMATIVE</code>; maturity exam <code>COMPLETE</code>; achados de maturidade <code>ADJUDICATED</code>; <code>TRN-102/103/104</code> promovidas para <code>LOCALLY VALIDATED</code>; três promoções materializadas; <code>INTEGRALLY VALIDATED</code> não suportado;</li>
-<li><strong>UXA-107:</strong> scope exam <code>COMPLETE</code>; escopo <code>ADJUDICATED / NORMATIVE</code> restrito a <code>TRN-201 — ORG-001 → ORG-002</code>; exame funcional <code>COMPLETE</code>; contrato funcional <code>ADJUDICATED / NORMATIVE</code>; <code>TRN-201</code> = <code>FUNCTIONALLY SUFFICIENT / ADJUDICATED</code>; maturidade permanece <code>PARTIAL</code>; zero promoções;</li>
-<li><strong>execução automática seguinte:</strong> nenhuma; eventual maturity exam da UXA-107 exige autorização humana separada.</li>
+<li><strong>UXA-107:</strong> scope exam <code>COMPLETE</code>; escopo <code>ADJUDICATED / NORMATIVE</code> restrito a <code>TRN-201 — ORG-001 → ORG-002</code>; exame funcional <code>COMPLETE</code>; contrato funcional <code>ADJUDICATED / NORMATIVE</code>; maturity exam <code>COMPLETE</code>; achados de maturidade <code>ADJUDICATED</code>; <code>TRN-201</code> = <code>FUNCTIONALLY SUFFICIENT / ADJUDICATED</code>; elegibilidade adjudicada para <code>LOCALLY VALIDATED</code>; materialização da promoção <code>PENDING</code>; maturidade operativa permanece <code>PARTIAL</code>; zero promoções materializadas; <code>INTEGRALLY VALIDATED</code> não suportado;</li>
+<li><strong>execução automática seguinte:</strong> nenhuma; o próximo gate da UXA-107 é a materialização da promoção adjudicada de <code>TRN-201</code>, mediante autorização humana separada.</li>
 </ul>
 <div class="highlight"><pre><span></span><code>DOCUMENTED
 ≠ IMPLEMENTED
@@ -14375,8 +14381,14 @@ UXA-107
 → FUNCTIONAL EXAM COMPLETE
 → FUNCTIONAL CONTRACT ADJUDICATED / NORMATIVE
 → TRN-201 FUNCTIONALLY SUFFICIENT / ADJUDICATED
+→ MATURITY EXAM COMPLETE
+→ MATURITY FINDINGS ADJUDICATED
+→ TRN-201 ADJUDICATED ELIGIBILITY = LOCALLY VALIDATED
+→ PROMOTION MATERIALIZATION PENDING
 → TRN-201 PARTIAL / UNCHANGED
-→ MATURITY PROMOTIONS = 0
+→ MATURITY PROMOTIONS MATERIALIZED = 0
+→ INTEGRALLY VALIDATED NOT SUPPORTED
+→ G3 INTEGRALLY VALIDATED NOT CLAIMED
 → PRODUCT ENGINEERING PAUSED / NOT RELEASED
 
 UXA-106
@@ -14724,7 +14736,7 @@ PRODUCT ENGINEERING
 </code></pre></div>
 <p>A construção ocorre uma superfície por vez. Planejamento não cria página vazia, novo <code>PER-ID</code>, navegação, tela, protótipo ou implementação por inferência.</p></section><section class="print-page" id="roadmap" heading-number="2.3"><h1 id="roadmap-roadmap-arquitetural-frentes-correntes-e-proximos-gates-da-guivos">Roadmap Arquitetural — Frentes Correntes e Próximos Gates da Guivos<a class="headerlink" href="#roadmap-roadmap-arquitetural-frentes-correntes-e-proximos-gates-da-guivos" title="Permanent link">&para;</a></h1>
 <h2 id="roadmap-1-funcao">1. Função<a class="headerlink" href="#roadmap-1-funcao" title="Permanent link">&para;</a></h2>
-<p>Este roadmap traduz <code>GKR-STATE-001 v3.51.13</code> em <strong>frentes governadas de avanço</strong>.</p>
+<p>Este roadmap traduz <code>GKR-STATE-001 v3.51.15</code> em <strong>frentes governadas de avanço</strong>.</p>
 <p>Sua função é declarar frentes correntes, dependências e próximos gates sem transformar possibilidade técnica em execução automática.</p>
 <div class="highlight"><pre><span></span><code>ROADMAP
 → ORIENTA O PRÓXIMO MOVIMENTO LEGÍTIMO
@@ -14745,7 +14757,7 @@ ROADMAP
 <tbody>
 <tr>
 <td>Estado global</td>
-<td><code>GKR-STATE-001 v3.51.13 / CURRENT</code></td>
+<td><code>GKR-STATE-001 v3.51.15 / CURRENT</code></td>
 </tr>
 <tr>
 <td>Era</td>
@@ -14829,7 +14841,7 @@ ROADMAP
 </tr>
 <tr>
 <td>UXA-107</td>
-<td><code>SCOPE ADJUDICATED = TRN-201 ONLY / FUNCTIONAL EXAM COMPLETE / FUNCTIONAL CONTRACT ADJUDICATED + NORMATIVE / TRN-201 PARTIAL / 0 PROMOTIONS</code></td>
+<td><code>SCOPE + FUNCTIONAL CONTRACT ADJUDICATED / MATURITY EXAM COMPLETE / MATURITY FINDINGS ADJUDICATED / TRN-201 ELIGIBLE FOR LOCALLY VALIDATED / MATERIALIZATION PENDING / TRN-201 PARTIAL / 0 PROMOTIONS MATERIALIZED / INTEGRAL NOT SUPPORTED</code></td>
 </tr>
 <tr>
 <td>Cognitive Reference Architecture</td>
@@ -15107,8 +15119,14 @@ UXA-107
 → FUNCTIONAL EXAM COMPLETE
 → FUNCTIONAL CONTRACT ADJUDICATED / NORMATIVE
 → TRN-201 FUNCTIONALLY SUFFICIENT / ADJUDICATED
+→ MATURITY EXAM COMPLETE
+→ MATURITY FINDINGS ADJUDICATED
+→ TRN-201 ADJUDICATED ELIGIBILITY = LOCALLY VALIDATED
+→ PROMOTION MATERIALIZATION PENDING
 → TRN-201 PARTIAL / UNCHANGED
-→ MATURITY PROMOTIONS = 0
+→ MATURITY PROMOTIONS MATERIALIZED = 0
+→ INTEGRALLY VALIDATED NOT SUPPORTED
+→ G3 INTEGRALLY VALIDATED NOT CLAIMED
 
 PRODUCT ENGINEERING
 → PAUSED / NOT RELEASED
@@ -15320,7 +15338,7 @@ SNAPSHOT
 </code></pre></div>
 <p>UXA-105 concluiu escopo, contrato funcional, maturity exam e adjudicação; <code>TRN-001</code> está <code>LOCALLY VALIDATED</code>. A cadeia G1 completa continua sem validação integral.</p>
 <p>UXA-106 concluiu o maturity exam, a adjudicação e a materialização das promoções de <code>TRN-102/103/104</code>; as três transições estão <code>LOCALLY VALIDATED</code>, com três promoções materializadas. <code>INTEGRALLY VALIDATED</code> permanece não suportado.</p>
-<p>UXA-107 concluiu o Functional Exam e a adjudicação normativa do contrato de <code>TRN-201 — ORG-001 → ORG-002</code>; a transição é <code>FUNCTIONALLY SUFFICIENT / ADJUDICATED</code>, permanece <code>PARTIAL</code> e não houve promoção de maturidade.</p>
+<p>UXA-107 concluiu o Maturity Exam e a adjudicação humana dos achados de <code>TRN-201 — ORG-001 → ORG-002</code>; a transição possui elegibilidade adjudicada para <code>LOCALLY VALIDATED</code>, mas permanece operativamente <code>PARTIAL</code> até gate separado de materialização. <code>INTEGRALLY VALIDATED</code> não é suportado.</p>
 <p>Cada avanço depende da autoridade temática vigente e do gate específico aplicável.</p>
 <h2 id="roadmap-16-escopo-do-roadmap">16. Escopo do Roadmap<a class="headerlink" href="#roadmap-16-escopo-do-roadmap" title="Permanent link">&para;</a></h2>
 <p>O Roadmap contém somente frentes correntes, dependências e próximos gates. O estado detalhado de cada domínio deve ser lido em <code>GKR-STATE-001</code> e na autoridade temática correspondente.</p>
