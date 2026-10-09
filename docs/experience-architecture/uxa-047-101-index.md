@@ -1,8 +1,8 @@
 ---
 id: GKR-UXA-047-101-INDEX-001
-title: Índice Corrente das Frentes UXA-047 a UXA-107
+title: Índice Corrente das Frentes UXA-047 a UXA-108
 status: active
-version: 3.54.91
+version: 3.54.92
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-10-09
 depends_on:
@@ -25,7 +25,7 @@ related:
 normative: false
 ---
 
-# Índice Corrente das Frentes UXA-047 a UXA-107
+# Índice Corrente das Frentes UXA-047 a UXA-108
 
 ## 1. Finalidade
 
@@ -33,7 +33,7 @@ Este índice existe somente para descoberta das frentes UXA numeradas que ainda 
 
 ```text
 GKR-STATE-001
-→ 3.51.17 / CURRENT
+→ 3.51.18 / CURRENT
 
 MARCO FUNCIONAL
 → M7.88
@@ -63,10 +63,20 @@ UXA-107
 → INTEGRALLY VALIDATED NOT SUPPORTED
 → G3 INTEGRALLY VALIDATED NOT CLAIMED
 
-PRÓXIMA UXA
-→ UXA-108
-→ NOT_STARTED
-→ NOT_AUTHORIZED
+UXA-108
+→ [Scope Exam — G4 / TRN-212 + TRN-214](uxa-108-g4-scope-exam.md)
+→ SCOPE EXAM COMPLETE
+→ CANDIDATE SCOPE = TRN-212 + TRN-214
+→ PER-203 → PER-204
+→ ORG-003 → ORG-008
+→ SCOPE SUFFICIENCY = SUFFICIENT AS CANDIDATE
+→ SCOPE ADJUDICATION = PENDING
+→ NOT NORMATIVE
+→ FUNCTIONAL EXAM = NOT_STARTED / NOT_AUTHORIZED
+→ TRN-212 / TRN-214 = CONTRACTED / UNCHANGED
+→ MATURITY PROMOTIONS = 0
+→ TRANSITION REGISTRY = UNCHANGED
+→ G4 INTEGRALLY VALIDATED = NOT CLAIMED
 
 UXA-104
 → [Continuidade de Arquivo e Perguntas Opcionais](uxa-104-file-optional-guided-questions-continuity.md)
