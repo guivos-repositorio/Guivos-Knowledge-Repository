@@ -116,7 +116,7 @@ Essas regras não convertem gap em transição validada.
 
 ## 3. Oportunidades e fronteiras externas
 
-A continuidade publicação → descoberta → Mapa/Lista → Detalhe está governada pelas autoridades correntes. A entrada institucional `ORG-001 → ORG-002` permanece operativamente `partial` em `TRN-201`; a UXA-107 adjudicou sua elegibilidade para `LOCALLY VALIDATED`, e a promoção somente passa a valer após gate separado de materialização.
+A continuidade publicação → descoberta → Mapa/Lista → Detalhe está governada pelas autoridades correntes. A entrada institucional `ORG-001 → ORG-002` está `LOCALLY VALIDATED` em `TRN-201` após a materialização adjudicada pela UXA-107; isso não torna a cadeia G3 integralmente validada.
 
 Permanece fora da autoridade da Guivos:
 
