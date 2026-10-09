@@ -1653,7 +1653,7 @@ A decisão preserva explicitamente as autoridades correntes: cobertura semântic
 
 ```text
 TRN-201
-→ PARTIAL / UNCHANGED
+→ LOCALLY VALIDATED
 
 TRN-202
 → LOCALLY VALIDATED / UNCHANGED
