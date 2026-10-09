@@ -1661,8 +1661,12 @@ TRN-202
 TRN-206..209
 → CONTRACTED / UNCHANGED
 
-MATURITY PROMOTIONS
+ORIGINAL G3 MATURITY PROMOTIONS
 → 0
+
+UXA-107 MATURITY PROMOTIONS MATERIALIZED
+→ 1
+→ TRN-201 PARTIAL → LOCALLY VALIDATED
 ```
 
 A decisão reconhece que concorrência, versão, retorno, resultado indeterminado e idempotência já estão semanticamente cobertos pelas autoridades correntes. O que permanece aberto é validação ponta a ponta/materialização.
