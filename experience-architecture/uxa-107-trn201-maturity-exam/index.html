@@ -7611,10 +7611,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#7-adjudicacao-humana-dos-achados" class="md-nav__link">
+  <a href="#7-adjudicacao-humana-e-materializacao" class="md-nav__link">
     <span class="md-ellipsis">
       
-        7. Adjudicação humana dos achados
+        7. Adjudicação humana e materialização
       
     </span>
   </a>
@@ -7703,19 +7703,16 @@
 <p>Este exame não promove maturidade. Ele verifica a elegibilidade documental de <code>TRN-201</code> para eventual promoção por gate humano separado.</p>
 <h2 id="2-baseline-de-maturidade">2. Baseline de maturidade<a class="headerlink" href="#2-baseline-de-maturidade" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>TRN-201
-→ CURRENT = PARTIAL
+→ BASELINE = PARTIAL
 
 MATURITY PROMOTIONS
 → 0
-
-TRANSITION REGISTRY
-→ UNCHANGED
 </code></pre></div>
-<p>A razão local corrente registrada no Transition Registry é:</p>
+<p>A razão local registrada antes do exame era:</p>
 <blockquote>
 <p><strong>ligação com visão institucional</strong></p>
 </blockquote>
-<p>A autoridade G3 também preservou <code>TRN-201</code> em <code>PARTIAL</code> porque a continuidade ponta a ponta entre a Visão Geral institucional e o Cadastro de Oportunidade/Programa ainda não havia sido validada como conjunto.</p>
+<p>A autoridade G3 também havia preservado <code>TRN-201</code> em <code>PARTIAL</code> porque a continuidade ponta a ponta entre a Visão Geral institucional e o Cadastro de Oportunidade/Programa ainda não havia sido validada como conjunto.</p>
 <h2 id="3-criterio-do-registry">3. Critério do Registry<a class="headerlink" href="#3-criterio-do-registry" title="Permanent link">&para;</a></h2>
 <p>A leitura de maturidade distingue:</p>
 <div class="highlight"><pre><span></span><code>FUNCTIONALLY SUFFICIENT
@@ -7748,13 +7745,13 @@ DOCUMENTARY VALIDATION
 <p>A continuidade <code>ORG-001 → ORG-002</code> foi examinada de forma autônoma, e o contrato funcional foi adjudicado normativamente sem necessidade de nova regra funcional.</p>
 <p>Não permanece lacuna funcional local conhecida que, por si só, exija manter <code>TRN-201</code> em <code>PARTIAL</code>.</p>
 <div class="highlight"><pre><span></span><code>TRN-201
-→ CURRENT = PARTIAL
+→ CURRENT = LOCALLY VALIDATED
 → ADJUDICATED ELIGIBILITY = LOCALLY VALIDATED
-→ PROMOTION MATERIALIZATION PENDING
+→ PROMOTION MATERIALIZED
 → INTEGRALLY VALIDATED NOT SUPPORTED
 </code></pre></div>
 <h2 id="6-limite-da-evidencia">6. Limite da evidência<a class="headerlink" href="#6-limite-da-evidencia" title="Permanent link">&para;</a></h2>
-<p>A evidência disponível sustenta elegibilidade <strong>local</strong> de <code>TRN-201</code>.</p>
+<p>A evidência disponível sustenta maturidade <strong>local</strong> de <code>TRN-201</code>.</p>
 <p>Ela não comprova:</p>
 <ul>
 <li>implementação real;</li>
@@ -7771,22 +7768,18 @@ DOCUMENTARY VALIDATION
 <li>qualquer estado além de <code>LOCALLY VALIDATED</code>.</li>
 </ul>
 <p><code>LOCALLY VALIDATED</code> permanece uma maturidade documental local, não comprovação de implementação ou integração técnica.</p>
-<h2 id="7-adjudicacao-humana-dos-achados">7. Adjudicação humana dos achados<a class="headerlink" href="#7-adjudicacao-humana-dos-achados" title="Permanent link">&para;</a></h2>
-<p>Os achados de maturidade foram submetidos a gate humano específico.</p>
-<p>A adjudicação autorizada estabelece:</p>
+<h2 id="7-adjudicacao-humana-e-materializacao">7. Adjudicação humana e materialização<a class="headerlink" href="#7-adjudicacao-humana-e-materializacao" title="Permanent link">&para;</a></h2>
+<p>Os achados de maturidade foram adjudicados humanamente e a promoção autorizada foi materializada.</p>
 <div class="highlight"><pre><span></span><code>HUMAN MATURITY ADJUDICATION
 → COMPLETE
 
 TRN-201
 → ADJUDICATED ELIGIBILITY = LOCALLY VALIDATED
-
-CURRENT OPERATIVE MATURITY
-→ PARTIAL / UNCHANGED
+→ CURRENT = LOCALLY VALIDATED
 
 PROMOTION MATERIALIZATION
-→ PENDING
+→ COMPLETE
 </code></pre></div>
-<p>A adjudicação de elegibilidade não altera, por si só, a maturidade operativa registrada.</p>
 <h2 id="8-resultado-do-exame">8. Resultado do exame<a class="headerlink" href="#8-resultado-do-exame" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>UXA-107 MATURITY EXAM
 → COMPLETE
@@ -7795,7 +7788,7 @@ MATURITY FINDINGS
 → ADJUDICATED
 
 TRN-201
-→ CURRENT = PARTIAL
+→ CURRENT = LOCALLY VALIDATED
 → FUNCTIONALLY SUFFICIENT / ADJUDICATED
 → ADJUDICATED ELIGIBILITY = LOCALLY VALIDATED
 
@@ -7803,13 +7796,14 @@ INTEGRALLY VALIDATED
 → NOT SUPPORTED
 
 PROMOTION MATERIALIZATION
-→ PENDING
+→ COMPLETE
 
 MATURITY PROMOTIONS MATERIALIZED
-→ 0
+→ 1
+→ PARTIAL → LOCALLY VALIDATED
 
 TRANSITION REGISTRY
-→ UNCHANGED
+→ UPDATED / TRN-201 = LOCALLY VALIDATED
 
 G3 INTEGRALLY VALIDATED
 → NOT CLAIMED
@@ -7820,8 +7814,8 @@ PRODUCT ENGINEERING
 <h2 id="9-nao-inferencias">9. Não inferências<a class="headerlink" href="#9-nao-inferencias" title="Permanent link">&para;</a></h2>
 <p>Este ato:</p>
 <ul>
-<li>não promove <code>TRN-201</code>;</li>
-<li>não altera o Transition Registry;</li>
+<li>promove <code>TRN-201</code> exclusivamente de <code>PARTIAL</code> para <code>LOCALLY VALIDATED</code> conforme gate humano autorizado;</li>
+<li>altera o Transition Registry exclusivamente para refletir essa promoção adjudicada;</li>
 <li>não promove <code>TRN-202</code>;</li>
 <li>não altera <code>TRN-206..209</code>;</li>
 <li>não declara G3 integralmente validada;</li>
@@ -7829,18 +7823,14 @@ PRODUCT ENGINEERING
 <li>não libera Design, protótipo ou Product Engineering.</li>
 </ul>
 <h2 id="10-proximo-gate">10. Próximo gate<a class="headerlink" href="#10-proximo-gate" title="Permanent link">&para;</a></h2>
-<p>Os achados de maturidade estão adjudicados humanamente:</p>
+<p>A promoção adjudicada foi materializada no Transition Registry e nas autoridades sincronizadas.</p>
 <div class="highlight"><pre><span></span><code>TRN-201
-→ ADJUDICATED ELIGIBILITY = LOCALLY VALIDATED
-</code></pre></div>
-<p>O próximo gate, se autorizado separadamente, é exclusivamente a <strong>materialização da promoção</strong> de <code>TRN-201</code> no Transition Registry e nas autoridades sincronizadas.</p>
-<p>Até essa materialização:</p>
-<div class="highlight"><pre><span></span><code>TRN-201
-→ OPERATIVE MATURITY = PARTIAL
+→ OPERATIVE MATURITY = LOCALLY VALIDATED
 
 MATURITY PROMOTIONS MATERIALIZED
-→ 0
+→ 1
 </code></pre></div>
+<p><code>INTEGRALLY VALIDATED</code> permanece não suportado. Qualquer avanço adicional exige novo exame e gate próprio.</p>
 
 
 

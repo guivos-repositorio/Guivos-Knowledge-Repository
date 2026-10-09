@@ -8865,8 +8865,8 @@ AUTORIDADES TEMÁTICAS VIGENTES
 <li><strong>UXA-104:</strong> escopo adjudicado por <code>GKR-UXA-104-PER013014-SCOPE-AUTHORITY-001</code> para <code>PER-013/014</code> + <code>TRN-014..017</code>; exame funcional <code>COMPLETE</code>; contrato funcional <code>ADJUDICATED / NORMATIVE</code>; reconciliação <code>COMPLETE</code>; maturity exam <code>COMPLETE</code>; achados de maturidade <code>ADJUDICATED</code>; <code>TRN-014..017</code> promovidas para <code>LOCALLY VALIDATED</code>; quatro promoções de maturidade;</li>
 <li><strong>UXA-105:</strong> scope exam <code>COMPLETE</code>; escopo <code>ADJUDICATED / NORMATIVE</code> restrito a <code>TRN-001 — PER-001 → PER-002</code>; contrato funcional adjudicado; maturity exam <code>COMPLETE</code>; adjudicação de maturidade <code>COMPLETE</code>; <code>TRN-001</code> promovida de <code>PARTIAL</code> para <code>LOCALLY VALIDATED</code>; <code>INTEGRALLY VALIDATED</code> não suportado; uma promoção de maturidade;</li>
 <li><strong>UXA-106:</strong> scope exam <code>COMPLETE</code>; escopo <code>ADJUDICATED / NORMATIVE</code> restrito a <code>TRN-102/103/104 — PER-102 → PER-103 → PER-104 → PER-105</code>; exame funcional <code>COMPLETE</code>; contrato funcional <code>ADJUDICATED / NORMATIVE</code>; maturity exam <code>COMPLETE</code>; achados de maturidade <code>ADJUDICATED</code>; <code>TRN-102/103/104</code> promovidas para <code>LOCALLY VALIDATED</code>; três promoções materializadas; <code>INTEGRALLY VALIDATED</code> não suportado;</li>
-<li><strong>UXA-107:</strong> scope exam <code>COMPLETE</code>; escopo <code>ADJUDICATED / NORMATIVE</code> restrito a <code>TRN-201 — ORG-001 → ORG-002</code>; exame funcional <code>COMPLETE</code>; contrato funcional <code>ADJUDICATED / NORMATIVE</code>; maturity exam <code>COMPLETE</code>; achados de maturidade <code>ADJUDICATED</code>; <code>TRN-201</code> = <code>FUNCTIONALLY SUFFICIENT / ADJUDICATED</code>; elegibilidade adjudicada para <code>LOCALLY VALIDATED</code>; materialização da promoção <code>PENDING</code>; maturidade operativa permanece <code>PARTIAL</code>; zero promoções materializadas; <code>INTEGRALLY VALIDATED</code> não suportado;</li>
-<li><strong>execução automática seguinte:</strong> nenhuma; o próximo gate da UXA-107 é a materialização da promoção adjudicada de <code>TRN-201</code>, mediante autorização humana separada.</li>
+<li><strong>UXA-107:</strong> scope exam <code>COMPLETE</code>; escopo <code>ADJUDICATED / NORMATIVE</code> restrito a <code>TRN-201 — ORG-001 → ORG-002</code>; exame funcional <code>COMPLETE</code>; contrato funcional <code>ADJUDICATED / NORMATIVE</code>; maturity exam <code>COMPLETE</code>; achados de maturidade <code>ADJUDICATED</code>; <code>TRN-201</code> = <code>FUNCTIONALLY SUFFICIENT / ADJUDICATED</code>; promoção adjudicada e materializada de <code>PARTIAL</code> para <code>LOCALLY VALIDATED</code>; uma promoção materializada; <code>INTEGRALLY VALIDATED</code> não suportado;</li>
+<li><strong>execução automática seguinte:</strong> nenhuma; UXA-107 concluiu a materialização da promoção de <code>TRN-201</code>. Qualquer avanço adicional exige novo gate.</li>
 </ul>
 <div class="highlight"><pre><span></span><code>DOCUMENTED
 ≠ IMPLEMENTED
@@ -10171,9 +10171,9 @@ MATURITY PROMOTIONS
 </code></pre></div>
 <p>A decisão preserva explicitamente as autoridades correntes: cobertura semântica de erro, retorno, estado indeterminado e idempotência não equivale a validação ponta a ponta.</p>
 <h2 id="283-g3-organizacao-e-relacao-organizacaocoletivo">28.3 G3 — Organização e relação Organização–Coletivo<a class="headerlink" href="#283-g3-organizacao-e-relacao-organizacaocoletivo" title="Permanent link">&para;</a></h2>
-<p><code>GKR-UX-G3-ORGANIZATION-COLLECTIVE-RELATIONSHIP-VALIDATION-001</code> conclui o exame específico da terceira família deixada pela UXA-102/V5.</p>
+<p><code>GKR-UX-G3-ORGANIZATION-COLLECTIVE-RELATIONSHIP-VALIDATION-001</code> concluiu o exame inicial da terceira família deixada pela UXA-102/V5 sem promoção. Posteriormente, a UXA-107 fechou a lacuna local de <code>TRN-201</code> por exame funcional, maturity exam, adjudicação humana e materialização própria.</p>
 <div class="highlight"><pre><span></span><code>TRN-201
-→ PARTIAL / UNCHANGED
+→ LOCALLY VALIDATED
 
 TRN-202
 → LOCALLY VALIDATED / UNCHANGED
@@ -10181,8 +10181,12 @@ TRN-202
 TRN-206..209
 → CONTRACTED / UNCHANGED
 
-MATURITY PROMOTIONS
+ORIGINAL G3 MATURITY PROMOTIONS
 → 0
+
+UXA-107 MATURITY PROMOTIONS MATERIALIZED
+→ 1
+→ TRN-201 PARTIAL → LOCALLY VALIDATED
 </code></pre></div>
 <p>A decisão reconhece que concorrência, versão, retorno, resultado indeterminado e idempotência já estão semanticamente cobertos pelas autoridades correntes. O que permanece aberto é validação ponta a ponta/materialização.</p>
 <h2 id="284-g4-processo-interno-de-oportunidade">28.4 G4 — processo interno de oportunidade<a class="headerlink" href="#284-g4-processo-interno-de-oportunidade" title="Permanent link">&para;</a></h2>
@@ -10278,9 +10282,10 @@ UXA-107
 → MATURITY EXAM COMPLETE
 → MATURITY FINDINGS ADJUDICATED
 → TRN-201 ADJUDICATED ELIGIBILITY = LOCALLY VALIDATED
-→ PROMOTION MATERIALIZATION PENDING
-→ TRN-201 PARTIAL / UNCHANGED
-→ MATURITY PROMOTIONS MATERIALIZED = 0
+→ PROMOTION MATERIALIZATION COMPLETE
+→ TRN-201 LOCALLY VALIDATED
+→ MATURITY PROMOTIONS MATERIALIZED = 1
+→ PARTIAL → LOCALLY VALIDATED
 → INTEGRALLY VALIDATED NOT SUPPORTED
 → G3 INTEGRALLY VALIDATED NOT CLAIMED
 → PRODUCT ENGINEERING PAUSED / NOT RELEASED
