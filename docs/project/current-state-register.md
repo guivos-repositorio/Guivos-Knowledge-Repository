@@ -137,7 +137,7 @@ Estado executivo vigente:
 - **UXA-105:** scope exam `COMPLETE`; escopo `ADJUDICATED / NORMATIVE` restrito a `TRN-001 — PER-001 → PER-002`; contrato funcional adjudicado; maturity exam `COMPLETE`; adjudicação de maturidade `COMPLETE`; `TRN-001` promovida de `PARTIAL` para `LOCALLY VALIDATED`; `INTEGRALLY VALIDATED` não suportado; uma promoção de maturidade;
 - **UXA-106:** scope exam `COMPLETE`; escopo `ADJUDICATED / NORMATIVE` restrito a `TRN-102/103/104 — PER-102 → PER-103 → PER-104 → PER-105`; exame funcional `COMPLETE`; contrato funcional `ADJUDICATED / NORMATIVE`; maturity exam `COMPLETE`; achados de maturidade `ADJUDICATED`; `TRN-102/103/104` promovidas para `LOCALLY VALIDATED`; três promoções materializadas; `INTEGRALLY VALIDATED` não suportado;
 - **UXA-107:** scope exam `COMPLETE`; escopo `ADJUDICATED / NORMATIVE` restrito a `TRN-201 — ORG-001 → ORG-002`; exame funcional `COMPLETE`; contrato funcional `ADJUDICATED / NORMATIVE`; maturity exam `COMPLETE`; achados de maturidade `ADJUDICATED`; `TRN-201` = `FUNCTIONALLY SUFFICIENT / ADJUDICATED`; promoção adjudicada e materializada de `PARTIAL` para `LOCALLY VALIDATED`; uma promoção materializada; `INTEGRALLY VALIDATED` não suportado;
-- **execução automática seguinte:** nenhuma; o próximo gate da UXA-107 é a materialização da promoção adjudicada de `TRN-201`, mediante autorização humana separada.
+- **execução automática seguinte:** nenhuma; UXA-107 concluiu a materialização da promoção de `TRN-201`. Qualquer avanço adicional exige novo gate.
 
 ```text
 DOCUMENTED
