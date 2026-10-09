@@ -185,11 +185,11 @@ Regras:
 
 ## 6.1 Validação G3 — Organização e relação O↔C
 
-`GKR-UX-G3-ORGANIZATION-COLLECTIVE-RELATIONSHIP-VALIDATION-001` examina `TRN-201/202/206..209` sem promoção de maturidade.
+`GKR-UX-G3-ORGANIZATION-COLLECTIVE-RELATIONSHIP-VALIDATION-001` examinou `TRN-201/202/206..209` sem promoção de maturidade. Posteriormente, a UXA-107 concluiu exame funcional, maturity exam, adjudicação e materialização própria de `TRN-201`.
 
 ```text
 TRN-201
-→ PARTIAL / UNCHANGED
+→ LOCALLY VALIDATED
 
 TRN-202
 → LOCALLY VALIDATED / UNCHANGED
@@ -198,7 +198,7 @@ TRN-206..209
 → CONTRACTED / UNCHANGED
 ```
 
-As lacunas correntes são de validação ponta a ponta/materialização específica; concorrência, retorno, estado indeterminado e idempotência possuem cobertura semântica suficiente.
+A lacuna local de `TRN-201` foi fechada pela UXA-107 até `LOCALLY VALIDATED`. A cadeia G3 completa permanece sem validação integral; `TRN-206..209` continuam dependentes de validação ponta a ponta/materialização específica. Concorrência, retorno, estado indeterminado e idempotência possuem cobertura semântica suficiente.
 
 ## 6.2 Validação G4 — processo interno de oportunidade
 
