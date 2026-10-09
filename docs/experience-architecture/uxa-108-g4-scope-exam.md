@@ -2,11 +2,11 @@
 id: GKR-UXA-108-G4-SCOPE-EXAM-001
 title: UXA-108 — G4 — Exame de Escopo do Processo Interno de Oportunidade
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-09
-normative: false
-maturity: scope_candidate_pending_adjudication
+normative: true
+maturity: scope_adjudicated
 depends_on:
   - GKR-UX-G4-INTERNAL-OPPORTUNITY-PROCESS-VALIDATION-001
   - GKR-UX-PERSON-INTERNAL-OPPORTUNITY-APPLICATION-CONTRACT-001
@@ -96,10 +96,10 @@ O recorte exige preservar:
 
 ## 5. Escopo candidato
 
-A evidência corrente sustenta como candidato:
+A evidência corrente sustenta e a adjudicação humana confirma:
 
 ```text
-UXA-108 CANDIDATE SCOPE
+UXA-108 ADJUDICATED SCOPE
 
 TRN-212
 → PER-203 → PER-204
@@ -174,11 +174,11 @@ CANDIDATE SCOPE
 → ORG-003 → ORG-008
 
 SCOPE SUFFICIENCY
-→ SUFFICIENT AS CANDIDATE
+→ SUFFICIENT / ADJUDICATED
 
 SCOPE ADJUDICATION
-→ PENDING
-→ NOT NORMATIVE
+→ COMPLETE
+→ ADJUDICATED / NORMATIVE
 
 FUNCTIONAL EXAM
 → NOT_STARTED
@@ -203,22 +203,15 @@ PRODUCT ENGINEERING
 
 ## 9. Próximo gate
 
-O próximo gate é exclusivamente a adjudicação humana do escopo candidato:
+O escopo foi adjudicado normativamente:
 
 ```text
 TRN-212 + TRN-214
-→ CANDIDATE SCOPE
+→ ADJUDICATED SCOPE
+→ PER-203 → PER-204
+→ ORG-003 → ORG-008
 ```
 
-Até essa adjudicação:
+O próximo gate, se autorizado separadamente, é exclusivamente o Functional Exam da UXA-108 dentro desse recorte.
 
-```text
-SCOPE
-→ NOT NORMATIVE
-
-FUNCTIONAL EXAM
-→ NOT AUTHORIZED
-
-MATURITY
-→ UNCHANGED
-```
+A adjudicação de escopo não autoriza automaticamente Functional Exam, maturity exam, promoção de maturidade, Design, protótipo ou Product Engineering.
