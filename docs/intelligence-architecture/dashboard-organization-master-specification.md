@@ -2,9 +2,9 @@
 id: GKR-INTELLIGENCE-DASHBOARD-ORGANIZATION-001
 title: Dashboard Organização — Documento Mestre de Especificação Analítica e Handoff Replit
 status: active
-version: 0.1.1
+version: 0.1.2
 owner: Guivos Intelligence Architecture
-last_updated: 2026-09-12
+last_updated: 2026-10-11
 normative: false
 maturity: governed_pre_implementation_dashboard_master
 depends_on:
@@ -629,3 +629,82 @@ ANNEX D / E / F
 ```
 
 A materialização documental deste master não autoriza dados reais, implementação, produção, ampliação de disclosure ou promoção automática de qualquer KPI além de seu status governado.
+
+---
+
+## 25. Auditoria executiva e reconciliação de necessidades analíticas — v0.1.2
+
+### 25.1 Natureza da auditoria
+
+Esta seção amplia o exame documental das oito famílias existentes, sem substituir os contratos de KPI das seções 8–15. Os indicadores `ORG-KPI-*` existentes permanecem `proposed / NOT_READY`; necessidades adicionais são **candidatas de análise**, sem novos IDs canônicos ou promoção de maturidade.
+
+A Organização é um tipo de participante, não o produto Guivos Business. A leitura institucional limita-se a objetos, relações e populações sob autoridade legítima. Relações institucionais não concedem acesso automático a Journey, interesses, objetivos ou vulnerabilidades de Pessoas.
+
+### 25.2 Matriz executiva de perguntas e evidências
+
+| Perspectiva | Pergunta executiva candidata | Família de referência | Limite / dependência |
+|---|---|---|---|
+| Crescimento institucional | A atuação autorizada cresce em quantidade, alcance e continuidade? | OPP / GEO | separar estoque, novos eventos e atividade; recortes temporais comparáveis |
+| Efetividade de oportunidades | Como evoluem publicação, manifestação, inscrição, participação e conclusão? | OPP / PAR | funil só com eventos, elegibilidade e coortes contratados; não presumir conversão universal |
+| Programas e capacidade | Qual capacidade autorizada é utilizada e onde existem gargalos? | OPP / CAP | plano, entitlement, ciclo e capacidade real não são sinônimos |
+| Relações institucionais | Quais relações bilaterais sustentam colaboração ou dependências? | REL | estados, consentimentos, bilateralidade e escopo de disclosure |
+| Evidências e resultados | Quais entregas e resultados possuem evidência suficiente? | EVD | atividade ≠ resultado ≠ impacto; sem atribuição causal inferida |
+| Sustentabilidade econômica | Quais eventos econômicos elegíveis sustentam a atuação? | ECO | GEM-009 e contrato de domínio; não presumir vendas/receita universais |
+| Cobertura e lacunas | Onde existem territórios e domínios de evolução com oferta institucional insuficiente? | OPP / GEO | demanda observável e autorizada, não desejos privados ou inferência de vulnerabilidade |
+| Confiança analítica | Que leituras estão indisponíveis, atrasadas, suprimidas ou incompletas? | DQ | qualidade, freshness, proveniência e políticas de supressão |
+
+### 25.3 Candidatos a refinamento de indicadores (não canônicos)
+
+| Referência provisória | Leitura candidata | Definição preliminar / contrato pendente |
+|---|---|---|
+| ORG-OPP-C01 | Crescimento de oportunidades válidas | variação entre contagens de objetos elegíveis em períodos comparáveis; deduplicação e estados pendentes |
+| ORG-OPP-C02 | Continuidade de programas | programas com atividade qualificante em janelas consecutivas / programas elegíveis; evento e janela pendentes |
+| ORG-PAR-C01 | Taxa de manifestação para inscrição | inscrições elegíveis atribuíveis / manifestações elegíveis da mesma coorte; correspondência de eventos e denominador pendentes |
+| ORG-PAR-C02 | Taxa de participação efetiva | participações qualificantes / inscrições elegíveis da mesma coorte; estados e cancelamentos pendentes |
+| ORG-PAR-C03 | Conclusão sustentada por evidência | conclusões com evidência suficiente / participações elegíveis; suficiência e período pendentes |
+| ORG-REL-C01 | Relações institucionais ativas | relações bilaterais em estado ativo autorizado no período; ciclo de vida e escopo pendentes |
+| ORG-REL-C02 | Colaborações com entrega evidenciada | relações com entrega elegível comprovada / relações elegíveis; evidência e atribuição pendentes |
+| ORG-EVD-C01 | Cobertura de evidências | compromissos elegíveis com evidência suficiente / compromissos elegíveis; qualidade e regra de suficiência pendentes |
+| ORG-EVD-C02 | Evolução de resultados demonstráveis | comparação de resultados da mesma definição e população; sem inferência causal |
+| ORG-CAP-C01 | Utilização de capacidade | consumo autorizado / capacidade contratualmente disponível no ciclo; entitlement e eventos pendentes |
+| ORG-GEO-C01 | Cobertura territorial de oferta | territórios com oferta válida / territórios-alvo definidos; base territorial pendente |
+| ORG-GEO-C02 | Lacunas de oferta autorizadas | diferenças entre necessidades agregadas legitimamente observáveis e oportunidades elegíveis; finalidade e supressão pendentes |
+| ORG-ECO-C01 | Sustentabilidade econômica por atividade | receitas e custos elegíveis atribuíveis segundo contratos econômicos aplicáveis; GEM-009 pendente |
+| ORG-DQ-C01 | Cobertura de métricas confiáveis | métricas elegíveis com fonte, freshness e proveniência suficientes / métricas esperadas; registry pendente |
+
+Essas referências são marcadores de discussão e **não** integram o namespace canônico `ORG-KPI-<FAMÍLIA>-NNN`. Uma necessidade pode ser apenas dimensão, filtro, composição de KPIs existentes ou leitura qualitativa; a adjudicação deverá evitar duplicidade.
+
+### 25.4 Leituras estratégicas e decisões permitidas
+
+- **Executiva:** acompanhar atuação institucional, capacidade, continuidade e resultados comprovados, com comparação de períodos e qualificação de incerteza.
+- **Gestão de programas:** identificar etapas com perda de continuidade quando os eventos forem comparáveis e autorizados.
+- **Relações e parcerias:** compreender conexões e compromissos da própria Organização, sem ranking universal de reputação ou legitimidade.
+- **Território e domínios de evolução:** localizar possibilidades de expansão a partir de oferta e demanda agregada legitimamente observável; não deduzir desejos individuais.
+- **Intelligence e Graph Analytics:** análises de rede, concentração, conectividade e lacunas são candidatas condicionadas a finalidade, proveniência, autoridade bilateral, supressão e validação; grafo não prova causalidade nem relevância por si só.
+
+O dashboard **apoia compreensão e decisão humana**, não executa decisão automática sobre Pessoas, oportunidades ou relações.
+
+### 25.5 Gates de fechamento da auditoria
+
+| Gate | Requisito | Estado |
+|---|---|---|
+| G-ORG-01 | consumidores, classes funcionais e disclosure por leitura | UNRESOLVED |
+| G-ORG-02 | coortes, estados, eventos, deduplicação, janelas e denominadores | UNRESOLVED |
+| G-ORG-03 | fonte autorizada, qualidade, proveniência e freshness por KPI | SOURCE_PENDING |
+| G-ORG-04 | autoridade bilateral e exposição de relações e agregados | UNRESOLVED |
+| G-ORG-05 | economia e capacidade: GEM-009, planos e entitlements | BLOCKED |
+| G-ORG-06 | candidatos versus KPIs existentes; contratos completos e adjudicação | UNRESOLVED |
+| G-ORG-07 | serving, RBAC, exportação, Design e implementação | NOT_AUTHORIZED |
+
+### 25.6 Estado preservado
+
+```text
+GKR-INTELLIGENCE-DASHBOARD-ORGANIZATION-001
+→ v0.1.2
+→ ANNEX C / PRE-IMPLEMENTATION
+→ 8 KPI FAMILIES PRESERVED
+→ EXISTING KPI IDs PRESERVED
+→ ALL EXISTING KPIs proposed / NOT_READY
+→ EXECUTIVE REFINEMENT CANDIDATES NOT CANONICAL
+→ NO REAL DATA / BUILD / PRIVATE JOURNEY DISCLOSURE AUTHORIZED
+```
