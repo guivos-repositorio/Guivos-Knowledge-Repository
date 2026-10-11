@@ -2,7 +2,7 @@
 id: GKR-INTELLIGENCE-DASHBOARD-KPI-001
 title: Dashboards, KPIs e Analytics — Documento Mestre de Especificação para Construção
 status: active
-version: 0.2.48
+version: 0.2.49
 owner: Guivos Intelligence Architecture
 last_updated: 2026-10-11
 normative: false
@@ -2802,6 +2802,53 @@ P0_OPERATIONAL_ELIGIBILITY_AND_EVENT_AUTHORITY → NOT VERIFIED
 G-XD-01 → UNRESOLVED
 G-XD-03..07 → OPEN
 SIX KPIS → proposed / NOT_READY
+HUMAN AUTHORITY FORMALLY CONFIRMED → 0/13
+HUMAN ADJUDICATIONS → 0/77
+KPI PROMOTIONS → 0
+IMPLEMENTATION AUTHORIZATION → 0
+```
+
+
+---
+
+## 54. G-XD-02 — Confronto P1 com padrões existentes de fonte, qualidade e proveniência
+
+### 54.1 Escopo e controle de inferência
+
+Exame documental dos seis KPIs prioritários do Anexo A após o confronto P0 (seção 53). A presença de padrões, regras transversais ou registros de status não comprova um contrato operacional de dados para qualquer KPI. O resultado é uma matriz de evidência documental e lacuna, sem conferir autoridade de source of truth, SLA, pipeline, testes de qualidade, cálculo ou serving.
+
+### 54.2 Referências verificadas
+
+| Referência | Estado documental | Evidência P1 fornecida | Limite para os seis KPIs |
+|---|---|---|---|
+| `docs/intelligence-architecture/kpi-contract-standard.md` — `GKR-INTELLIGENCE-KPI-CONTRACT-001`, v0.1.0 | active; `normative: false`; padrão pré-implementação | Define campos `source_of_truth`, `freshness_rule`, `quality_checks`, `provenance`, estados `SOURCE_PENDING` e critérios de readiness | Campos-padrão não equivalem a fonte designada, teste executado ou contrato operacional aprovado; `source_pending` exige semântica fechada |
+| `docs/intelligence-architecture/surface-provenance-explainability-contract.md` — `GKR-INTELLIGENCE-SURFACE-PROVENANCE-EXPLAINABILITY-001`, v1.0.0 | active; `normative: true`; contrato transversal semântico | Define envelope mínimo de origem/proveniência e explicabilidade para output consumidor | Não institui mecanismo de serving, armazenamento de lineage nem fonte de verdade por apresentar output |
+| `docs/intelligence-architecture/dashboard-guivos-kpi-registry.md` — `GKR-INTELLIGENCE-DASHBOARD-GUIVOS-KPI-REGISTRY-001`, v0.1.5 | active; `normative: false`; registry pré-implementação | Evidencia os seis IDs, estados `proposed/NOT_READY` e dois contratos individuais existentes | Não certifica origem operacional, disponibilidade, owner ou qualidade dos dados |
+| `docs/intelligence-architecture/dashboard-guivos-master-specification.md` — `GKR-INTELLIGENCE-DASHBOARD-GUIVOS-001`, v0.1.5 | active; `normative: false`; Anexo A | Exige governança de data quality, freshness e source/data contract | Necessidade de DQ e status de fonte não constitui medição ou evidência de implementação |
+| `docs/intelligence-architecture/guv-kpi-pop-001.md` e `guv-kpi-pop-002.md`, v0.1.0 | proposed, `NOT_READY`, contratos individuais | Registram `source_of_truth`, `freshness_rule`, `provenance` como `SOURCE_PENDING`; qualidade ainda não resolvida | Não confirmam tabela, sistema, identificador operacional ou reconciliação |
+
+### 54.3 Resultado individual P1
+
+| KPI | Fonte operacional | Qualidade e reconciliação | Freshness, lineage e versão | Estado governado |
+|---|---|---|---|---|
+| `GUV-KPI-POP-001` | Não verificada; campo `SOURCE_PENDING` | Unicidade, elegibilidade e completude não fechadas | Não verificados | `proposed/NOT_READY` |
+| `GUV-KPI-POP-002` | Não verificada; campo `SOURCE_PENDING` | Evento válido, duplicidade, correções e ausência de dado não fechados | Não verificados | `proposed/NOT_READY` |
+| `GUV-KPI-POP-007` | Não verificada | Qualidade e estado válido de Organização pendentes | Não verificados | `proposed/NOT_READY` |
+| `GUV-KPI-POP-009` | Não verificada | Qualidade e estado válido de Coletivo pendentes | Não verificados | `proposed/NOT_READY` |
+| `GUV-KPI-POP-011` | Não verificadas fontes compatíveis entre três tipos | Denominador, cobertura e comparabilidade pendentes | Não verificados | `proposed/NOT_READY` |
+| `GUV-KPI-OPP-001` | Não verificada | Criação válida, correção e reconciliação pendentes | Não verificados | `proposed/NOT_READY` |
+
+### 54.4 Handoff e fronteira de autoridade
+
+Próximas evidências exigidas por KPI: referência à fonte real e autoridade de dados competente, versão do contrato de extração, mapeamento de entidade/evento, prova de identidade e temporalidade após decisão P0, testes de unicidade/completude/ausência, freshness com referência temporal, lineage/versionamento e restrições de proteção/consumo. A ausência de evidência no exame **não afirma a inexistência de sistemas ou datasets**. Não aceitar exemplos de esquema como fonte, nem converter padrões transversais em autorização operacional. Qualquer promoção demanda gates semânticos, técnicos e humanos independentes.
+
+```text
+G-XD-02 → P1_DOCUMENTARY_STANDARDS_EXAMINED / OPEN
+P1_STANDARD_AND_TRANSVERSE_PROVENANCE_REFERENCES → LOCATED
+P1_OPERATIONAL_SOURCE_CONTRACT_AUTHORITY → NOT VERIFIED
+SIX KPI STATUSES → proposed / NOT_READY
+G-XD-01 → UNRESOLVED
+G-XD-03..07 → OPEN
 HUMAN AUTHORITY FORMALLY CONFIRMED → 0/13
 HUMAN ADJUDICATIONS → 0/77
 KPI PROMOTIONS → 0
