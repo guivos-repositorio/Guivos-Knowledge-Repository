@@ -2,7 +2,7 @@
 id: GKR-INTELLIGENCE-DASHBOARD-KPI-001
 title: Dashboards, KPIs e Analytics — Documento Mestre de Especificação para Construção
 status: active
-version: 0.2.28
+version: 0.2.29
 owner: Guivos Intelligence Architecture
 last_updated: 2026-10-11
 normative: false
@@ -1787,6 +1787,62 @@ A revisão deverá distinguir zero confirmado de desconhecido, ausente, inválid
 As seções 29–33 reúnem 77 dossiês individuais preparados a partir das questões de `XD01-D01..D10` nas seções 17.3–26.3. A cobertura documental completa **não é adjudicação**, não encerra `G-XD-01`, não promove KPIs e não autoriza engenharia, dados reais, publicação de indicadores ou produção. A próxima atividade legítima é revisão humana das evidências, competências e dependências de cada decisão, com registro de autoridade e aprovação expressa.
 
 ```text
+XD01-D01..D10 → DOSSIER_PREPARED / PENDING_HUMAN_ADJUDICATION
+DOSSIERS PREPARED → 77/77
+HUMAN ADJUDICATIONS → 0/77
+G-XD-01 → UNRESOLVED
+G-XD-02..07 → OPEN
+CANONICAL KPI PROMOTIONS → 0
+IMPLEMENTATION AUTHORIZATION → 0
+```
+
+
+---
+
+## 34. G-XD-01 — Registro de revisão humana: evidências e competências de XD01-D01/D02 (sem adjudicação)
+
+### 34.1 Finalidade e regra de autoridade
+
+Este registro inicia a revisão **preparatória** dos 13 dossiês de `XD01-D01-A..F` e `XD01-D02-A..G` (seções 17.3, 18.3 e 29). Transcreve as perguntas e evidências mínimas originais sem substituir contratos de domínio. A coluna de evidência documental é **tarefa de verificação**, não afirmação de que a evidência exista. O estado `NEEDS_EVIDENCE` neste registro indica que a revisão e a confirmação de autoridade ainda não foram realizadas; não é juízo definitivo sobre inexistência da evidência.
+
+### 34.2 Registro individual — XD01-D01
+
+| ID | Decisão/pergunta original | Evidência mínima original | Evidência documental a localizar/verificar | Autoridade competente | Resultado do exame |
+|---|---|---|---|---|---|
+| `XD01-D01-A` | Chave analítica estável e escopo por tipo de participante | Contrato de identidade do domínio, ciclo de vida, unicidade e versionamento | PENDENTE — registrar arquivo, seção, versão e trecho verificável | NÃO IDENTIFICADA / A VALIDAR | NEEDS_EVIDENCE — sem adjudicação |
+| `XD01-D01-B` | Múltiplas contas, perfis ou operadores relacionados a um participante | Política de vinculação, delegação, auditoria e prevenção de fusões indevidas | PENDENTE — registrar arquivo, seção, versão e trecho verificável | NÃO IDENTIFICADA / A VALIDAR | NEEDS_EVIDENCE — sem adjudicação |
+| `XD01-D01-C` | Cardinalidade e simultaneidade de vínculos Pessoa–Coletivo e relações institucionais | Objeto de relação, estados autorizados, validade temporal e chave de contagem | PENDENTE — registrar arquivo, seção, versão e trecho verificável | NÃO IDENTIFICADA / A VALIDAR | NEEDS_EVIDENCE — sem adjudicação |
+| `XD01-D01-D` | Identidade em solicitação, aprovação, vínculo confirmado, papel aceito e saída/reingresso | Fontes dos eventos e estados, reversões, datas efetivas e continuidade de histórico | PENDENTE — registrar arquivo, seção, versão e trecho verificável | NÃO IDENTIFICADA / A VALIDAR | NEEDS_EVIDENCE — sem adjudicação |
+| `XD01-D01-E` | Duplicatas, fusão, separação e correção retroativa de identidades | Autoridade de reconciliação, rastreabilidade, reversibilidade e impactos em séries históricas | PENDENTE — registrar arquivo, seção, versão e trecho verificável | NÃO IDENTIFICADA / A VALIDAR | NEEDS_EVIDENCE — sem adjudicação |
+| `XD01-D01-F` | Identificação transversal entre produtos e participantes | Finalidade, legitimidade do relacionamento, minimização e limites de disclosure | PENDENTE — registrar arquivo, seção, versão e trecho verificável | NÃO IDENTIFICADA / A VALIDAR | NEEDS_EVIDENCE — sem adjudicação |
+
+### 34.3 Registro individual — XD01-D02
+
+| ID | Decisão/pergunta original | Evidência mínima original | Evidência documental a localizar/verificar | Autoridade competente | Resultado do exame |
+|---|---|---|---|---|---|
+| `XD01-D02-A` | Qual entidade/objeto integra o universo elegível e qual é a unidade de análise? | Tipo de participante/objeto, chave legítima e escopo do indicador | PENDENTE — registrar arquivo, seção, versão e trecho verificável | NÃO IDENTIFICADA / A VALIDAR | NEEDS_EVIDENCE — sem adjudicação |
+| `XD01-D02-B` | Quais condições determinam inclusão, exclusão, suspensão ou reingresso? | Contrato de domínio, relação/programa, estados e exceções | PENDENTE — registrar arquivo, seção, versão e trecho verificável | NÃO IDENTIFICADA / A VALIDAR | NEEDS_EVIDENCE — sem adjudicação |
+| `XD01-D02-C` | Quando a elegibilidade começa, termina ou muda retroativamente? | Data efetiva, timezone, janela, histórico e reprocessamento | PENDENTE — registrar arquivo, seção, versão e trecho verificável | NÃO IDENTIFICADA / A VALIDAR | NEEDS_EVIDENCE — sem adjudicação |
+| `XD01-D02-D` | Qual evento qualifica numerador e qual população compõe denominador? | Fonte, taxonomia, coorte, validade, deduplicação e denominador zero | PENDENTE — registrar arquivo, seção, versão e trecho verificável | NÃO IDENTIFICADA / A VALIDAR | NEEDS_EVIDENCE — sem adjudicação |
+| `XD01-D02-E` | Quem pode consumir o resultado e em qual granularidade? | Finalidade, classe de acesso, relação legítima, minimização e política de supressão | PENDENTE — registrar arquivo, seção, versão e trecho verificável | NÃO IDENTIFICADA / A VALIDAR | NEEDS_EVIDENCE — sem adjudicação |
+| `XD01-D02-F` | Como distinguir zero observado, ausência, atraso, insuficiência e supressão? | Contrato de qualidade, completude, freshness e estados `NO_DATA`, `INSUFFICIENT_DATA`, `SOURCE_DELAYED`, `SUPPRESSED_BY_POLICY` | PENDENTE — registrar arquivo, seção, versão e trecho verificável | NÃO IDENTIFICADA / A VALIDAR | NEEDS_EVIDENCE — sem adjudicação |
+| `XD01-D02-G` | Como evitar sobreposição entre contratos, programas, contextos e produtos? | Atribuição, cardinalidade, chaves de vínculo e limites de cruzamento | PENDENTE — registrar arquivo, seção, versão e trecho verificável | NÃO IDENTIFICADA / A VALIDAR | NEEDS_EVIDENCE — sem adjudicação |
+
+### 34.4 Procedimento humano de exame por questão
+
+1. Identificar o KPI/objeto, domínio, consumidor, finalidade e documento mestre aplicável; registrar versão, seção e referência verificável de cada fonte.
+2. Separar evidência documental existente, hipótese, lacuna e contradição. Não converter descrição de UX, protótipo, evento candidato ou tecnologia de grafo em contrato normativo.
+3. Identificar a pessoa ou instância humana competente, **com fundamento de autoridade**, antes de pedir qualquer decisão; não atribuir competência por presunção.
+4. Examinar alternativas e consequências para cardinalidade, coortes, correção retroativa, qualidade, privacidade, consentimento, Journey privada, serving e exportação; consultar dependências `D03..D10` e `G-XD-02..07`.
+5. Registrar separadamente `PENDING_HUMAN_ADJUDICATION`, `NEEDS_EVIDENCE` ou `CONFLICT` quando aplicável. `ADJUDICATED` somente com decisão humana expressa, justificativa, data e referência rastreável de aprovação.
+6. Submeter conflitos ou lacunas à autoridade apropriada. Não executar instrumentação, migração de dados, analytics, KPI, integração ou divulgação como efeito deste registro.
+
+### 34.5 Condições de encaminhamento e estado
+
+A próxima rodada deve verificar as referências de evidência e mapear autoridades para os 13 IDs, **sem alterar o estado para adjudicado** até aprovação humana individual. A completude do dossiê não substitui a suficiência da evidência. A matriz acima não atesta que os 13 exames tenham ocorrido.
+
+```text
+XD01-D01/D02 → REVIEW_REGISTER_PREPARED / NEEDS_EVIDENCE
 XD01-D01..D10 → DOSSIER_PREPARED / PENDING_HUMAN_ADJUDICATION
 DOSSIERS PREPARED → 77/77
 HUMAN ADJUDICATIONS → 0/77
