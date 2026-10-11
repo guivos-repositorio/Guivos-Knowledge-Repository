@@ -2,7 +2,7 @@
 id: GKR-INTELLIGENCE-DASHBOARD-KPI-001
 title: Dashboards, KPIs e Analytics — Documento Mestre de Especificação para Construção
 status: active
-version: 0.2.13
+version: 0.2.14
 owner: Guivos Intelligence Architecture
 last_updated: 2026-10-11
 normative: false
@@ -961,3 +961,57 @@ IMPLEMENTATION AUTHORIZATION → 0
 ```
 
 Esta seção é uma matriz de evidências e perguntas, não adjudicação. `XD01-D03` (eventos e estados por domínio) permanece como próximo exame; `G-XD-02..07` e gates especializados permanecem inalterados.
+
+
+---
+
+## 19. XD01-D03 — Matriz de eventos e estados por domínio (exame, não adjudicação)
+
+### 19.1 Escopo e precedência
+
+Este exame aprofunda somente `XD01-D03` da seção 16.3 e confronta os Documentos Mestres dos Anexos A–E. Os rótulos abaixo são **referências documentais existentes**, não um catálogo novo de eventos técnicos. A autoridade de cada transição, validação, autoria, reversão e divulgação permanece com o domínio especializado. Sem fonte, contrato de evento, estado e adjudicação humana, nenhuma métrica candidata adquire status `defined` ou `approved-equivalent`.
+
+### 19.2 Matriz de evidências e separações semânticas
+
+| Consumidor / fonte documental | Evidências existentes | Distinção obrigatória antes de instrumentação ou KPI |
+|---|---|---|
+| Guivos interno — `dashboard-guivos-master-specification.md` | `GUV-KPI-ENG-001` separa início/conclusão de cadastro; `GUV-KPI-POP-003/005` exigem conjunto aprovado de atividade/ativação; `GUV-KPI-JNY-001/003/004/006/008` referem início de Journey, estados de objetivos/passos e conclusão; família `OPP` diferencia publicação e demais eventos de oportunidade | Cadastro, Pessoa válida, ativação, atividade qualificante, Journey iniciada, oportunidade publicada, inscrição, participação, conclusão e transação não são equivalentes. Escolhas/declarações pessoais permanecem bloqueadas para analytics interno conforme Anexo A |
+| Business — `dashboard-guivos-business-master-specification.md` | `BUS-KPI-PRG-001/002` dependem de estados válidos de programa/campanha; `BUS-KPI-PAR-002/004` distinguem participação válida de evento elegível confirmado; `BUS-KPI-DQ-004` contempla evento rejeitado; `BUS-KPI-JNY-003/004` exigem autorização para agregados | Evento recebido/produzido, validado, rejeitado, participação válida, ativação de acesso custeado e utilização/concessão econômica precisam de contratos e fontes distintos; Business não recebe Journey individual |
+| Organização — `dashboard-organization-master-specification.md` | `ORG-KPI-OPP-001/002` dependem de lifecycle de oportunidade; `ORG-KPI-PAR-002/003/006` distinguem inscrição, participação e cadastro/vínculo operacional; `ORG-KPI-REL-003/005` distinguem proposta, pausa e encerramento; `ORG-KPI-ECO-001/003` dependem de semântica econômica especializada | Manifestação, inscrição, participação, conclusão, cadastro, relação bilateral e transação/venda não formam funil único; `cadastro` não significa automaticamente conta, membro ou participante |
+| Coletivo — `dashboard-collective-master-specification.md` e `collective-participants-links-master.md` | `COL-KPI-PAR-001..006` separam solicitação, solicitação aberta, vínculo ativo, Pessoa distinta, participação e pausa/saída; contrato de superfície registra aprovação diferente de vínculo técnico confirmado e papel aceito | Solicitação não é aprovação; aprovação não é vínculo técnico confirmado; vínculo não é papel aceito; presença não é pertencimento; saída/pausa não equivale a reputação negativa. Voluntariedade e limites de contraparte preservados |
+| Pessoa — `dashboard-person-master-specification.md` | `PER-KPI-CTX-001..003` separam sugestão e confirmação/revisão de `domain_link`; `PER-KPI-OBJ-001/002/004` tratam estado e encerramento de objetivo; `PER-KPI-MOV-001/002/004/005` tratam estados de Próximos Passos e conclusão operacional; `PER-KPI-EVO-002/006` tratam leitura contextual e revisão | Declaração legítima, sugestão, confirmação, objetivo, Próximo Passo, movimento, evidência, conclusão operacional, revisão e mudança reconhecida são conceitos distintos. Inferência não substitui declaração; não criar score universal |
+
+### 19.3 Perguntas de adjudicação e evidência mínima
+
+| Referência | Questão em aberto | Evidência exigida antes de contrato analítico |
+|---|---|---|
+| `XD01-D03-A` | Qual autoridade de domínio define cada tipo de evento e cada estado? | Documento normativo competente, versão, objeto, escopo, dono e finalidade |
+| `XD01-D03-B` | Qual transição é legítima e qual é apenas hipótese de superfície ou indicador? | Máquina de estados ou contrato adjudicado, pré-condições, papel autorizado e relação com objeto |
+| `XD01-D03-C` | O que constitui evento observado, recebido, validado, rejeitado ou confirmado? | Origem, autoria, timestamp de ocorrência/registro, critérios de validação e evidência |
+| `XD01-D03-D` | Como representar cancelamento, reversão, expiração, pausa, saída e reingresso? | Semântica de reversão, data efetiva, trilha de auditoria e impacto histórico |
+| `XD01-D03-E` | Quando estados distintos podem ser usados como numerador ou coorte? | Evento qualificante, elegibilidade, deduplicação, denominador, janela e unidade de contagem por KPI |
+| `XD01-D03-F` | Quais relações de autoria, contraparte, consentimento e disclosure limitam cada evento? | Autoridade de acesso por consumidor, finalidade, sensibilidade, minimização e política de supressão |
+| `XD01-D03-G` | Como reconciliar nomenclaturas semelhantes entre produtos sem declarar equivalência indevida? | Mapeamento explícito de contratos especializados, proveniência e diferenças de ciclo de vida |
+| `XD01-D03-H` | Como tratar estados não mapeados, eventos tardios e fontes indisponíveis? | Política de qualidade, freshness, reprocessamento, `NO_DATA`, `SOURCE_DELAYED`, `INSUFFICIENT_DATA` e `SUPPRESSED_BY_POLICY` |
+
+### 19.4 Não equivalências e encaminhamento
+
+```text
+EVENTO RECEBIDO ≠ EVENTO VALIDADO ≠ PARTICIPAÇÃO QUALIFICANTE
+SOLICITAÇÃO ≠ APROVAÇÃO ≠ VÍNCULO CONFIRMADO ≠ PAPEL ACEITO
+CADASTRO ≠ PESSOA ATIVA ≠ PARTICIPAÇÃO ≠ CONCLUSÃO
+DECLARAÇÃO ≠ INFERÊNCIA ≠ MOVIMENTO ≠ RESULTADO RECONHECIDO
+EVENTO ECONÔMICO ≠ VENDA ≠ TRANSAÇÃO ≠ BENEFÍCIO UTILIZADO
+ESTADO VÁLIDO PARA CÁLCULO ≠ AUTORIZAÇÃO DE DISCLOSURE
+```
+
+A matriz não define novos nomes de eventos oficiais, enumerações técnicas, transições implementáveis, persistência, KPIs canônicos ou permissão de acesso. `XD01-D04` (marcos de entrada, ativação, retorno e saída) é o próximo exame. `G-XD-02..07` e gates especializados permanecem inalterados.
+
+```text
+XD01-D01 → EXAMINED / HUMAN_ADJUDICATION_REQUIRED
+XD01-D02 → EXAMINED / HUMAN_ADJUDICATION_REQUIRED
+XD01-D03 → EXAMINED / HUMAN_ADJUDICATION_REQUIRED
+G-XD-01 → UNRESOLVED
+CANONICAL KPI PROMOTIONS → 0
+IMPLEMENTATION AUTHORIZATION → 0
+```
