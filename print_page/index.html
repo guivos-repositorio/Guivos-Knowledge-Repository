@@ -71591,6 +71591,155 @@ G-XD-01 → UNRESOLVED
 G-XD-02..07 → OPEN
 CANONICAL KPI PROMOTIONS → 0
 IMPLEMENTATION AUTHORIZATION → 0
+</code></pre></div>
+<hr />
+<h2 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-39-g-xd-01-matriz-de-rastreabilidade-de-competencia-e-evidencias-para-xd01-d01-ed02-c">39. G-XD-01 — Matriz de rastreabilidade de competência e evidências para XD01-D01-E/D02-C<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-39-g-xd-01-matriz-de-rastreabilidade-de-competencia-e-evidencias-para-xd01-d01-ed02-c" title="Permanent link">&para;</a></h2>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-391-criterio-de-leitura">39.1 Critério de leitura<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-391-criterio-de-leitura" title="Permanent link">&para;</a></h3>
+<p>A matriz examina <strong>fontes documentais identificadas</strong>, não titulares, designações ou atos de aprovação. O campo <code>owner</code> de um documento, uma descrição de papel funcional, um ADR <code>proposed</code> ou uma responsabilidade de superfície <strong>não comprovam, isoladamente, competência para adjudicar contratos analíticos</strong>. <code>EVIDENCE_PARTIAL</code> indica fundamento contextual; <code>NOT_DEMONSTRATED</code> indica ausência de comprovação nas fontes examinadas, não inexistência no ecossistema.</p>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-392-fontes-e-limites-de-competencia">39.2 Fontes e limites de competência<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-392-fontes-e-limites-de-competencia" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Fonte examinada</th>
+<th>Evidência documental observável</th>
+<th>Limite para adjudicação humana</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>docs/governance-framework/data-privacy-and-consent-governance.md</code> v0.1.0, §§1–7</td>
+<td>Separa finalidade, papéis, bases jurídicas, tratamento, evidência, controle projetado e implementado; exige análise aplicada</td>
+<td><code>owner: Guivos</code> e princípios de privacidade não designam pessoa, instância aprovadora ou poder de autorizar merge de identidade/reprocessamento</td>
+</tr>
+<tr>
+<td><code>docs/product-architecture/adrs/adr-cc-004-acesso-por-finalidade-e-autoridade.md</code> v0.1.0, status <code>proposed</code></td>
+<td>Decisão de acesso contextual considera identidade, papel, autoridade, finalidade, operação, representação, sensibilidade, revogação e consumidor; papel/acesso técnico não equivalem a autoridade</td>
+<td>ADR proposto não é ato de delegação nem prova de autoridade humana para decisões <code>XD01-D01-E</code> ou <code>XD01-D02-C</code></td>
+</tr>
+<tr>
+<td><code>docs/experience-architecture/organizations-collectives-journey/collective-participants-links-master.md</code> v0.1.0, §§1–3, <code>functional_contract_candidate</code></td>
+<td>Distingue solicitação aprovada, vínculo confirmado, papel aceito, representação e administração; preserva limite contextual de Pessoa–Coletivo</td>
+<td>Autoridade para gerir uma superfície de vínculos não concede autoridade para fundir identidades analíticas ou alterar séries de KPI</td>
+</tr>
+<tr>
+<td><code>docs/intelligence-architecture/dashboards-kpis-analytics-master-specification.md</code> §§17.3, 18.3, 28.2, 37–38</td>
+<td>Perguntas originais, evidências mínimas, protocolo de decisão, lacunas e alternativas ainda não selecionadas</td>
+<td>Registro preparatório não contém nomeação verificável, assinatura, ato de delegação ou adjudicação</td>
+</tr>
+</tbody>
+</table>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-393-matriz-de-competencia-por-decisao-sem-designacao-presumida">39.3 Matriz de competência por decisão — sem designação presumida<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-393-matriz-de-competencia-por-decisao-sem-designacao-presumida" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Expediente</th>
+<th>Competência material a demonstrar</th>
+<th>Prova documental ainda necessária</th>
+<th>Resultado da triagem</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>XD01-D01-E</code> — domínio de identidade e relações</td>
+<td>Definir legitimidade, unicidade, reconciliação, reversão e escopo de vínculo por objeto</td>
+<td>Instrumento vigente de competência/delegação, contrato de identidade e regra aprovada de merge/split</td>
+<td><code>NOT_DEMONSTRATED</code></td>
+</tr>
+<tr>
+<td><code>XD01-D01-E</code> — dados/Intelligence</td>
+<td>Avaliar deduplicação, reprocessamento, séries, linhagem e publicação por consumidor</td>
+<td>Instrumento de competência, contrato de KPI, política de versionamento/republicação</td>
+<td><code>NOT_DEMONSTRATED</code></td>
+</tr>
+<tr>
+<td><code>XD01-D01-E</code> — privacidade e disclosure</td>
+<td>Avaliar finalidade, minimização, vínculo transversal, sensibilidade e acesso</td>
+<td>Responsável competente identificado e fundamento verificável para o tratamento específico</td>
+<td><code>NOT_DEMONSTRATED</code></td>
+</tr>
+<tr>
+<td><code>XD01-D02-C</code> — domínio de elegibilidade/programa</td>
+<td>Definir estados, datas efetivas, vigência, suspensão, reingresso e população por KPI</td>
+<td>Instrumento de competência e contrato vigente de elegibilidade por objeto/programa</td>
+<td><code>NOT_DEMONSTRATED</code></td>
+</tr>
+<tr>
+<td><code>XD01-D02-C</code> — dados/Intelligence</td>
+<td>Definir coortes, janelas, timezone, correções, fechamento e republicação</td>
+<td>Instrumento de competência, calendário e política de reprocessamento aprovada</td>
+<td><code>NOT_DEMONSTRATED</code></td>
+</tr>
+<tr>
+<td><code>XD01-D02-C</code> — privacidade e disclosure</td>
+<td>Examinar efeitos de correções e mudança de elegibilidade sobre consumidores e exposição</td>
+<td>Competência documentada e avaliação da finalidade e granularidade de acesso</td>
+<td><code>NOT_DEMONSTRATED</code></td>
+</tr>
+</tbody>
+</table>
+<p>A indicação de <strong>domínios de competência a confirmar</strong> não cria órgão colegiado, fluxo de aprovação obrigatório, signatário, <code>owner</code> de decisão nem autoridade por analogia. Eventual competência conjunta, conflito ou separação de poderes depende de instrumento vigente a localizar e examinar.</p>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-394-checklist-documental-para-futura-submissao-ainda-nao-executada">39.4 Checklist documental para futura submissão, ainda não executada<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-394-checklist-documental-para-futura-submissao-ainda-nao-executada" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Requisito verificável</th>
+<th>XD01-D01-E</th>
+<th>XD01-D02-C</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pergunta original e evidência mínima preservadas</td>
+<td>YES (§17.3)</td>
+<td>YES (§18.3)</td>
+</tr>
+<tr>
+<td>Alternativas e trade-offs preparados</td>
+<td>YES (§38.2)</td>
+<td>YES (§38.3)</td>
+</tr>
+<tr>
+<td>Fontes contextuais examinadas</td>
+<td>PARTIAL</td>
+<td>PARTIAL</td>
+</tr>
+<tr>
+<td>Contrato especializado aprovado</td>
+<td>NOT_DEMONSTRATED</td>
+<td>NOT_DEMONSTRATED</td>
+</tr>
+<tr>
+<td>Autoridade humana e fundamento de competência comprovados</td>
+<td>NO</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>Conflitos/dependências entre domínios resolvidos</td>
+<td>NO</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>Encaminhamento humano efetivamente realizado</td>
+<td>NO</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>Decisão expressa com data e referência de aprovação</td>
+<td>NO</td>
+<td>NO</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Condição para encaminhamento decisório futuro:</strong> localizar o instrumento vigente que defina competência; validar seu escopo e atualidade; reunir evidências específicas por domínio e KPI; registrar consumidores e efeitos sobre privacidade; somente então submeter à instância comprovadamente competente. Nenhum envio, solicitação de aprovação ou adjudicação é declarado por esta matriz.</p>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-395-estado-preservado">39.5 Estado preservado<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-395-estado-preservado" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>XD01-D01-E / XD01-D02-C → AUTHORITY_EVIDENCE_SCREENED / NEEDS_EVIDENCE
+HUMAN REFERRALS SUBMITTED → 0
+HUMAN AUTHORITY CONFIRMED → 0/13
+HUMAN ADJUDICATIONS → 0/77
+G-XD-01 → UNRESOLVED
+G-XD-02..07 → OPEN
+CANONICAL KPI PROMOTIONS → 0
+IMPLEMENTATION AUTHORIZATION → 0
 </code></pre></div></section><section class="print-page" id="intelligence-architecture-dashboard-guivos-business-master-specification" heading-number="16.5"><h1 id="intelligence-architecture-dashboard-guivos-business-master-specification-dashboard-guivos-business-documento-mestre-de-especificacao-analitica-e-handoff-replit">Dashboard Guivos Business — Documento Mestre de Especificação Analítica e Handoff Replit<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-business-master-specification-dashboard-guivos-business-documento-mestre-de-especificacao-analitica-e-handoff-replit" title="Permanent link">&para;</a></h1>
 <h2 id="intelligence-architecture-dashboard-guivos-business-master-specification-1-finalidade">1. Finalidade<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-business-master-specification-1-finalidade" title="Permanent link">&para;</a></h2>
 <p>Este documento é o <strong>Anexo B</strong> de <code>GKR-INTELLIGENCE-DASHBOARD-KPI-001</code> e governa, em nível documental pré-implementação, o <strong>Dashboard Guivos Business</strong>.</p>
