@@ -2,7 +2,7 @@
 id: GKR-INTELLIGENCE-DASHBOARD-KPI-001
 title: Dashboards, KPIs e Analytics — Documento Mestre de Especificação para Construção
 status: active
-version: 0.2.17
+version: 0.2.18
 owner: Guivos Intelligence Architecture
 last_updated: 2026-10-11
 normative: false
@@ -1171,6 +1171,59 @@ Nenhuma fórmula é promovida, nenhum KPI muda de maturidade, e nenhuma implemen
 ```text
 XD01-D01..D05 → EXAMINED / HUMAN_ADJUDICATION_REQUIRED
 XD01-D06 → EXAMINED / HUMAN_ADJUDICATION_REQUIRED
+G-XD-01 → UNRESOLVED
+CANONICAL KPI PROMOTIONS → 0
+IMPLEMENTATION AUTHORIZATION → 0
+```
+
+
+---
+
+## 23. XD01-D07 — Matriz de calendário, timezone, janelas e granularidade (exame, não adjudicação)
+
+### 23.1 Propósito e precedência
+
+Este exame de `XD01-D07` identifica contratos temporais ainda necessários para os cinco Documentos Mestres de dashboards, sem estabelecer fuso oficial, calendário universal, janela KPI, granularidade aprovada ou regra de reprocessamento. A identidade, elegibilidade, taxonomia de eventos, marcos, deduplicação e fórmulas seguem condicionadas aos exames `XD01-D01..D06` e à adjudicação humana.
+
+### 23.2 Evidências e lacunas por consumidor
+
+| Consumidor / referências documentais | Dimensões temporais a distinguir | Lacunas de adjudicação |
+|---|---|---|
+| Guivos interno — `GUV-KPI-POP-001..005`, `GUV-KPI-ENG-006..008`, `GUV-KPI-OPP-011..015` | Cadastro, ativação, atividade, retorno, inscrição, participação, conclusão; coortes e retenção D7/D30/D90 | Evento de início de coorte, janela de observação, calendário de corte, timezone por fonte/consumidor, dados tardios e comparação entre períodos |
+| Business — `BUS-KPI-PAR-001..006`, `BUS-KPI-PRG-001/002`, `BUS-KPI-JNY-002..004` | Vigência contratual, ciclo do programa, elegibilidade, acesso custeado, evento recebido/validado, participação, período de apuração | Tempo efetivo da elegibilidade, atribuição ao programa, data de validação, fechamento/reabertura, fusos das organizações, reprocessamento e limites de disclosure |
+| Organização — `ORG-KPI-OPP-001/002`, `ORG-KPI-PAR-002..004`, `ORG-KPI-REL-001/003/005` | Publicação e vigência de oportunidade, manifestação, inscrição, participação, conclusão, relação bilateral | Janela válida de cada objeto, eventos corrigidos ou expirados, timestamps de origem/registro, fuso de referência e agregação de relações |
+| Coletivo — `COL-KPI-PAR-001..006`, `COL-KPI-ACT-001..003` | Solicitação, confirmação de vínculo, aceitação de papel, sessão, presença, pausa, saída, reingresso | Data efetiva do vínculo, calendário e timezone da atividade, múltiplas sessões no mesmo dia, eventos retroativos, recorrência e voluntariedade |
+| Pessoa — `PER-KPI-CTX-001..003`, `PER-KPI-OBJ-001/002/004`, `PER-KPI-MOV-001..005` | Declaração, confirmação, criação/revisão de objetivo, Próximo Passo, movimento, evidência, reconhecimento | Tempo declarado versus observado, autoria e versão, intervalo do objetivo, alterações retroativas, privacidade e ausência de cronograma obrigatório de evolução |
+
+### 23.3 Questões abertas para adjudicação
+
+| ID | Decisão pendente | Evidência mínima |
+|---|---|---|
+| `XD01-D07-A` | Qual calendário e timezone rege cada fonte, objeto, KPI e consumidor? | Autoridade de domínio, timezone explícito, convenção de calendário e localidade |
+| `XD01-D07-B` | Qual timestamp prevalece para contagem: ocorrência, recebimento, validação, confirmação ou correção? | Taxonomia de evento, proveniência, data efetiva e trilha de auditoria |
+| `XD01-D07-C` | Qual granularidade legítima: evento, sessão, dia, semana, mês, ciclo, contrato ou coorte? | Unidade, finalidade, elegibilidade, cardinalidade e supressão |
+| `XD01-D07-D` | Como delimitar janelas móveis, períodos fechados e coortes D7/D30/D90 sem misturá-los? | Marco de entrada/ativação, instante inicial/final, janela e denominador |
+| `XD01-D07-E` | Como lidar com fusos distintos, horário de verão, fronteiras de dia e virada de período? | Origem, offset/timezone, transformação rastreável e regra de corte |
+| `XD01-D07-F` | Como registrar atraso, reprocessamento, estorno, mudança retroativa e fechamento de período? | Versionamento, histórico, política de correção, freshness e reconciliação |
+| `XD01-D07-G` | Quando séries de diferentes dashboards podem ser comparadas no mesmo período? | Mesmo objeto/unidade, janela, coorte, fuso, granularidade e autorização |
+| `XD01-D07-H` | Como representar dados sem timestamp confiável, janela incompleta ou período suprimido? | Estado de qualidade, não-dado, proveniência, supressão e ausência de inferência |
+
+### 23.4 Restrições e encaminhamento
+
+- Tempo de ocorrência não equivale a tempo de registro ou validação.
+- Dia civil não equivale a janela móvel de 24 horas.
+- Retenção D7/D30/D90 não equivale automaticamente a atividade em dias corridos.
+- Vigência contratual não equivale ao ciclo de uma oportunidade ou programa.
+- Data de presença não equivale à data de vínculo ou de aceitação de papel.
+- Data de declaração pessoal não equivale à data de mudança reconhecida.
+- Reprocessamento não deve criar evento adicional por presunção.
+- Séries com janelas ou fusos diferentes não são automaticamente comparáveis.
+
+Nenhuma regra temporal ou KPI é adjudicada nesta seção. `XD01-D08` (correções retroativas e reprocessamento) permanece o próximo exame. `G-XD-01` segue não resolvido, preservados `G-XD-02..07` e as autoridades especializadas.
+
+```text
+XD01-D01..D06 → EXAMINED / HUMAN_ADJUDICATION_REQUIRED
+XD01-D07 → EXAMINED / HUMAN_ADJUDICATION_REQUIRED
 G-XD-01 → UNRESOLVED
 CANONICAL KPI PROMOTIONS → 0
 IMPLEMENTATION AUTHORIZATION → 0
