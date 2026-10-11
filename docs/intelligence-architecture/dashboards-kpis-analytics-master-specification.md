@@ -2,7 +2,7 @@
 id: GKR-INTELLIGENCE-DASHBOARD-KPI-001
 title: Dashboards, KPIs e Analytics — Documento Mestre de Especificação para Construção
 status: active
-version: 0.2.19
+version: 0.2.20
 owner: Guivos Intelligence Architecture
 last_updated: 2026-10-11
 normative: false
@@ -1277,6 +1277,59 @@ Nenhuma política de reprocessamento, fórmula KPI, regra de retenção ou autor
 ```text
 XD01-D01..D07 → EXAMINED / HUMAN_ADJUDICATION_REQUIRED
 XD01-D08 → EXAMINED / HUMAN_ADJUDICATION_REQUIRED
+G-XD-01 → UNRESOLVED
+CANONICAL KPI PROMOTIONS → 0
+IMPLEMENTATION AUTHORIZATION → 0
+```
+
+
+---
+
+## 25. XD01-D09 — Matriz de ausência de dados, não-dado e supressão (exame, não adjudicação)
+
+### 25.1 Propósito e precedência
+
+Este exame de `XD01-D09` identifica as distinções necessárias entre ausência observada, inexistência confirmada, dado desconhecido, evidência incompleta, dado inválido, janela não encerrada e supressão por privacidade ou autorização. Não define limiares universais de completude, supressão, imputação, publicação ou qualidade. Identidade, população, eventos, marcos, cardinalidade, fórmulas, tempo e reprocessamento permanecem condicionados a `XD01-D01..D08` e à adjudicação humana.
+
+### 25.2 Evidências e lacunas por consumidor
+
+| Consumidor / referências documentais | Situações a distinguir | Lacunas de adjudicação |
+|---|---|---|
+| Guivos interno — `GUV-KPI-POP-001..005`, `GUV-KPI-ENG-006..008`, `GUV-KPI-OPP-011..015` | Nenhum evento confirmado, coorte ainda não madura, origem atrasada, evento sem identidade confiável, contagem suprimida | Universo elegível, freshness, status de coorte, denominador conhecido, limiar autorizado de divulgação e proveniência |
+| Business — `BUS-KPI-PAR-001..006`, `BUS-KPI-PRG-001/002`, `BUS-KPI-JNY-002..004` | Sem participação válida, evidência pendente/rejeitada, população contratual desconhecida, acesso custeado não observado, célula sensível | Contrato de evidência, qualidade, população elegível, privacidade de Journey, supressão e acesso por papel |
+| Organização — `ORG-KPI-OPP-001/002`, `ORG-KPI-PAR-002..004`, `ORG-KPI-REL-001/003/005` | Oportunidade sem manifestações, funil sem etapa confirmada, relação pendente, evento ausente ou inválido, exposição entre contrapartes | Confirmação de zero legítimo, estado de cada etapa, autorização de compartilhamento, qualidade e agregação |
+| Coletivo — `COL-KPI-PAR-001..006`, `COL-KPI-ACT-001..003` | Sem sessão realizada, presença não registrada, vínculo pendente, registro contestado, amostra pequena ou sensível | Confirmação da atividade, distinção ausência/não registro, voluntariedade, privacidade e autorização de divulgação |
+| Pessoa — `PER-KPI-CTX-001..003`, `PER-KPI-OBJ-001/002/004`, `PER-KPI-MOV-001..005` | Pessoa não declarou, objetivo não criado, evidência não compartilhada, movimento não reconhecido, informação privada | Autoria, direito de não declarar, estados de desconhecido, visibilidade pessoal e ausência de inferência de fracasso |
+
+### 25.3 Questões abertas para adjudicação
+
+| ID | Decisão pendente | Evidência mínima |
+|---|---|---|
+| `XD01-D09-A` | Quais estados distintos representam zero confirmado, desconhecido, não aplicável, pendente, inválido e suprimido? | Taxonomia por KPI/objeto, autoridade e proveniência |
+| `XD01-D09-B` | Quando é legítimo apresentar zero, e quando a ausência de evento impede qualquer afirmação? | Cobertura de fonte, universo elegível, janela concluída e completude |
+| `XD01-D09-C` | Como tratar numerador conhecido com denominador zero, ausente, desconhecido ou restrito? | Contrato de fórmula, elegibilidade e estado de não-dado sem taxa fabricada |
+| `XD01-D09-D` | Como representar dados atrasados, parciais, corrigidos, contestados ou em validação? | Freshness, quality, lineage, versão e timestamp de referência |
+| `XD01-D09-E` | Quem autoriza supressão por privacidade, tamanho de célula, papel, consentimento ou contraparte? | Autoridade de disclosure, política de minimização e contexto do consumidor |
+| `XD01-D09-F` | Quais campos e dimensões podem ser exibidos, exportados ou combinados sem reidentificação? | Escopo de acesso, composição de células, exportação e avaliação de risco |
+| `XD01-D09-G` | Quando indicadores podem ser comparados se uma série tem períodos, coortes ou valores suprimidos? | Mesma granularidade, cobertura, elegibilidade, qualidade e autorização |
+| `XD01-D09-H` | Qual comportamento documental/UI diante de não-dado, erro de fonte, indisponibilidade ou informação privada? | Estado explicável, ausência de imputação, mensagens por consumidor e trilha de auditoria |
+
+### 25.4 Restrições e encaminhamento
+
+- Ausência de registro não equivale a zero observado ou a ausência real de participação.
+- Zero confirmado não equivale a denominador zero; taxa com denominador desconhecido não pode ser fabricada.
+- Dado desconhecido, não aplicável, pendente, inválido e suprimido não são estados intercambiáveis.
+- Falta de declaração, objetivo ou evidência pessoal não equivale a fracasso, desinteresse ou falta de evolução.
+- Ausência de presença registrada não equivale automaticamente a falta à atividade.
+- Acesso custeado não equivale a participação; evidência recebida não equivale a evidência validada.
+- Supressão não pode ser contornada por exportação, cruzamento de séries ou granularidade alternativa.
+- Imputação, extrapolação, ranking e score pessoal universal não são autorizados por este exame.
+
+Nenhum limiar de supressão, regra de preenchimento, KPI ou autorização de implementação é adjudicado nesta seção. `XD01-D10` (vinculação entre produtos/participantes, dupla contagem e divulgação) permanece o próximo exame. `G-XD-01` segue não resolvido, preservados `G-XD-02..07` e os documentos especializados.
+
+```text
+XD01-D01..D08 → EXAMINED / HUMAN_ADJUDICATION_REQUIRED
+XD01-D09 → EXAMINED / HUMAN_ADJUDICATION_REQUIRED
 G-XD-01 → UNRESOLVED
 CANONICAL KPI PROMOTIONS → 0
 IMPLEMENTATION AUTHORIZATION → 0
