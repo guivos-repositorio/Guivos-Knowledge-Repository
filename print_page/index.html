@@ -68895,7 +68895,106 @@ ANNEX F — ADS
 <p>Todas as referências <code>XD01-D*</code> são <strong>questões de adjudicação</strong>, não decisões tomadas, contratos canônicos, novos KPIs ou novos eventos oficiais.</p>
 <h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-164-criterios-de-encerramento-do-gate">16.4 Critérios de encerramento do gate<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-164-criterios-de-encerramento-do-gate" title="Permanent link">&para;</a></h3>
 <p>Para cada KPI elegível à adjudicação futura, registrar em autoridade competente: consumidor, finalidade, entidade de contagem, população, elegibilidade, fonte e evento, estados e reversões, chave de deduplicação, fórmula, denominador, timezone, janelas, tratamento de atraso, correções, privacidade e qualidade. A consistência entre dashboards deve ser demonstrada por equivalência contratual explícita, nunca apenas por rótulos idênticos.</p>
-<p><strong>Estado do G-XD-01:</strong> <code>UNRESOLVED / HUMAN_ADJUDICATION_REQUIRED</code>. Os gates G-XD-02..07 e os gates especializados permanecem inalterados. Dados reais, RBAC técnico e implementação Replit continuam não autorizados.</p></section><section class="print-page" id="intelligence-architecture-dashboard-guivos-business-master-specification" heading-number="16.5"><h1 id="intelligence-architecture-dashboard-guivos-business-master-specification-dashboard-guivos-business-documento-mestre-de-especificacao-analitica-e-handoff-replit">Dashboard Guivos Business — Documento Mestre de Especificação Analítica e Handoff Replit<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-business-master-specification-dashboard-guivos-business-documento-mestre-de-especificacao-analitica-e-handoff-replit" title="Permanent link">&para;</a></h1>
+<p><strong>Estado do G-XD-01:</strong> <code>UNRESOLVED / HUMAN_ADJUDICATION_REQUIRED</code>. Os gates G-XD-02..07 e os gates especializados permanecem inalterados. Dados reais, RBAC técnico e implementação Replit continuam não autorizados.</p>
+<h2 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-17-xd01-d01-matriz-de-evidencias-de-identidade-analitica-exame-nao-adjudicacao">17. XD01-D01 — Matriz de evidências de identidade analítica (exame, não adjudicação)<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-17-xd01-d01-matriz-de-evidencias-de-identidade-analitica-exame-nao-adjudicacao" title="Permanent link">&para;</a></h2>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-171-escopo-e-hierarquia">17.1 Escopo e hierarquia<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-171-escopo-e-hierarquia" title="Permanent link">&para;</a></h3>
+<p>Esta matriz aprofunda exclusivamente <code>XD01-D01</code> da seção 16.3. Evidências de documentos de participantes (<code>normative: false</code>) descrevem conceitos, não criam chaves técnicas. O contrato transversal de relações (<code>status: draft; normative: true; maturity: cross_participant_contract_candidate</code>) e o Master de superfície <code>COL-004</code> (<code>status: draft; normative: false</code>) não devem ser promovidos implicitamente a autoridade técnica ou contrato analítico adjudicado. O modelo de domínio de Captura de Contexto (<code>status: draft; normative: true</code>) delimita identidades dos objetos de seu próprio domínio, sem generalizá-las a todos os dashboards.</p>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-172-matriz-de-evidencias-e-consequencias-analiticas-candidatas">17.2 Matriz de evidências e consequências analíticas candidatas<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-172-matriz-de-evidencias-e-consequencias-analiticas-candidatas" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Fonte / autoridade consultada</th>
+<th>Evidência documental</th>
+<th>Consequência analítica a examinar — <strong>não adjudicada</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>GKR-PARTICIPANT-PERSON-001</code> — <code>docs/participants/person.md</code></td>
+<td>Pessoa não é conta, perfil, lead ou conjunto de dados; cadastro e visualização não criam vínculo ou consentimento</td>
+<td>Identidade da Pessoa deve ser distinguida de identidade de autenticação e de eventos de cadastro, exposição ou relação</td>
+</tr>
+<tr>
+<td><code>GKR-PARTICIPANT-ORGANIZATION-001</code> — <code>docs/participants/organization.md</code></td>
+<td>Organização é participante institucional; Guivos Business é produto especializado, não sinônimo de Organização</td>
+<td>Distinguir unidade institucional, tenant/contrato Business, unidade organizacional e usuário operador antes de contar organizações</td>
+</tr>
+<tr>
+<td><code>GKR-PARTICIPANT-COLLECTIVE-001</code> — <code>docs/participants/collective.md</code></td>
+<td>Coletivo não é Pessoa, Organização, lista de contatos ou audiência; participação e vínculos são governados</td>
+<td>Contagem de Coletivos não equivale a quantidade de membros, solicitações ou vínculos</td>
+</tr>
+<tr>
+<td><code>GKR-UX-PARTICIPANT-RELATIONSHIPS-INTERACTIONS-001</code> — <code>docs/experience-architecture/participant-relationships-interactions-visibility-contract.md</code></td>
+<td>Pessoa atua em contextos de Coletivo/Organização somente com papel e autoridade; Pessoa solicita participação e Coletivo avalia; não há lifecycle genérico Coletivo→Pessoa adjudicado</td>
+<td>Separar agente humano, contexto de atuação, solicitação, vínculo, papel e relação; não inferir convite ou associação unilateral</td>
+</tr>
+<tr>
+<td><code>GKR-UX-COL-PARTICIPANTS-LINKS-MASTER-001</code> — <code>docs/experience-architecture/organizations-collectives-journey/collective-participants-links-master.md</code></td>
+<td>Solicitação aprovada ≠ vínculo técnico confirmado ≠ papel aceito; <code>TRN-114</code> é continuidade funcional, não prova de persistência técnica</td>
+<td>Contagens de solicitações aprovadas, vínculos confirmados e papéis aceitos requerem eventos/estados e evidências distintos</td>
+</tr>
+<tr>
+<td><code>PAS-001-CC-UIC-DOMAIN-001</code> — <code>docs/product-architecture/pas-001-captura-de-contexto-domain-model.md</code></td>
+<td>Registro de Captura, sessão e entrada possuem identidades próprias; evento técnico não substitui fato humano</td>
+<td>Não utilizar IDs de sessão/entrada/captura como substitutos universais de Pessoa, vínculo ou progresso da Journey</td>
+</tr>
+<tr>
+<td><code>GKR-INTELLIGENCE-DASHBOARD-KPI-001</code> — seção 5</td>
+<td>Identidade autenticada + contexto + papel + relação legítima + finalidade + sensibilidade + disclosure determinam escopo máximo de leitura</td>
+<td>Uma identidade analítica não confere autorização de leitura; agregações e exportações exigem controle contextual próprio</td>
+</tr>
+</tbody>
+</table>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-173-pendencias-que-exigem-autoridade-e-adjudicacao-humana">17.3 Pendências que exigem autoridade e adjudicação humana<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-173-pendencias-que-exigem-autoridade-e-adjudicacao-humana" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Questão</th>
+<th>Decisão ainda não tomada</th>
+<th>Evidência mínima para decisão futura</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>XD01-D01-A</code></td>
+<td>Chave analítica estável e escopo por tipo de participante</td>
+<td>Contrato de identidade do domínio, ciclo de vida, unicidade e versionamento</td>
+</tr>
+<tr>
+<td><code>XD01-D01-B</code></td>
+<td>Múltiplas contas, perfis ou operadores relacionados a um participante</td>
+<td>Política de vinculação, delegação, auditoria e prevenção de fusões indevidas</td>
+</tr>
+<tr>
+<td><code>XD01-D01-C</code></td>
+<td>Cardinalidade e simultaneidade de vínculos Pessoa–Coletivo e relações institucionais</td>
+<td>Objeto de relação, estados autorizados, validade temporal e chave de contagem</td>
+</tr>
+<tr>
+<td><code>XD01-D01-D</code></td>
+<td>Identidade em solicitação, aprovação, vínculo confirmado, papel aceito e saída/reingresso</td>
+<td>Fontes dos eventos e estados, reversões, datas efetivas e continuidade de histórico</td>
+</tr>
+<tr>
+<td><code>XD01-D01-E</code></td>
+<td>Duplicatas, fusão, separação e correção retroativa de identidades</td>
+<td>Autoridade de reconciliação, rastreabilidade, reversibilidade e impactos em séries históricas</td>
+</tr>
+<tr>
+<td><code>XD01-D01-F</code></td>
+<td>Identificação transversal entre produtos e participantes</td>
+<td>Finalidade, legitimidade do relacionamento, minimização e limites de disclosure</td>
+</tr>
+</tbody>
+</table>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-174-limites-e-encaminhamento">17.4 Limites e encaminhamento<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-174-limites-e-encaminhamento" title="Permanent link">&para;</a></h3>
+<p>A matriz registra <strong>evidência existente versus hipótese de contrato</strong>, sem estabelecer ID técnico, cardinalidade oficial, evento novo, consentimento presumido ou KPI READY. Não é permitido inferir vínculo a partir de cadastro, aprovação a partir de solicitação, vínculo técnico a partir de aprovação, papel a partir de vínculo ou identidade pessoal a partir de sessão técnica. A futura adjudicação deve ocorrer nas autoridades de domínio competentes, com reconciliação por KPI/consumidor (<code>XD01-D02..D10</code>).</p>
+<div class="highlight"><pre><span></span><code>XD01-D01 → EXAMINED / HUMAN_ADJUDICATION_REQUIRED
+G-XD-01 → UNRESOLVED
+CANONICAL KPI PROMOTIONS → 0
+IMPLEMENTATION AUTHORIZATION → 0
+</code></pre></div></section><section class="print-page" id="intelligence-architecture-dashboard-guivos-business-master-specification" heading-number="16.5"><h1 id="intelligence-architecture-dashboard-guivos-business-master-specification-dashboard-guivos-business-documento-mestre-de-especificacao-analitica-e-handoff-replit">Dashboard Guivos Business — Documento Mestre de Especificação Analítica e Handoff Replit<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-business-master-specification-dashboard-guivos-business-documento-mestre-de-especificacao-analitica-e-handoff-replit" title="Permanent link">&para;</a></h1>
 <h2 id="intelligence-architecture-dashboard-guivos-business-master-specification-1-finalidade">1. Finalidade<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-business-master-specification-1-finalidade" title="Permanent link">&para;</a></h2>
 <p>Este documento é o <strong>Anexo B</strong> de <code>GKR-INTELLIGENCE-DASHBOARD-KPI-001</code> e governa, em nível documental pré-implementação, o <strong>Dashboard Guivos Business</strong>.</p>
 <p>Seu objetivo é consolidar, antes de qualquer implementação, o recorte analítico legítimo do produto especializado B2B Guivos Business a partir das autoridades correntes do GKR.</p>
