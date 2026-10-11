@@ -62,6 +62,12 @@ O Ecossistema Guivos está acima de todos os componentes.
 - **Guivos Business, Mall, Travel, Media e Ads** são Service Layers;
 - capacidades comuns pertencem à Platform Layer.
 
+## Ecossistema — navegação de produtos
+
+Os sete produtos especializados possuem uma seção **Ecossistema** própria no MENU principal do GKR, além dos acessos documentais nesta Arquitetura de Produtos. A navegação não redefine a autoridade dos documentos nem transforma propostas em capacidades disponíveis.
+
+[Journey](journey.md) · [Mall](mall.md) · [Travel](travel.md) · [Business](business.md) · [Media](media.md) · [Intelligence](intelligence.md) · [Ads](ads.md)
+
 ## Componentes oficiais
 
 | Componente | Natureza | Responsabilidade principal | Status |
