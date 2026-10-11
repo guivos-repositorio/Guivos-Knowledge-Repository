@@ -13,6 +13,10 @@
       
       
       
+        <link rel="prev" href="../dashboard-guivos-master-specification/">
+      
+      
+        <link rel="next" href="../../adr/ADR-007-neo4j-primary-graph-reference/">
       
       
         
@@ -7069,8 +7073,10 @@
       
   
   
+    
   
   
+  
     
     
     
@@ -7081,11 +7087,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_16" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_16" checked>
         
           
           <label class="md-nav__link" for="__nav_16" id="__nav_16_label" tabindex="">
@@ -7106,7 +7112,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_16_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_16_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_16">
             <span class="md-nav__icon md-icon"></span>
             
@@ -7392,6 +7398,464 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dashboard Pessoa — Documento Mestre
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dashboard Pessoa — Documento Mestre
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-finalidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Finalidade
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-autoridades-de-dominio-e-precedencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Autoridades de domínio e precedência
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-estado-e-boundary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Estado e boundary
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-relacao-com-a-experiencia-autenticada-da-pessoa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Relação com a experiência autenticada da Pessoa
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-areas-analiticas-candidatas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Áreas analíticas candidatas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-classes-funcionais-de-consumo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Classes funcionais de consumo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-vocabulario-de-kpi-e-readiness" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Vocabulário de KPI e readiness
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-proibicao-de-score-humano-global" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Proibição de score humano global
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-familia-ctx-contexto-e-dominios-da-journey" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Família CTX — Contexto e Domínios da Journey
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-familia-obj-objetivos-e-direcoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Família OBJ — Objetivos e Direções
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-familia-mov-proximos-passos-e-movimento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Família MOV — Próximos Passos e Movimento
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-familia-evo-evolucao-e-trajetorias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. Família EVO — Evolução e Trajetórias
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-familia-rel-participacoes-relacoes-e-experiencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13. Família REL — Participações, relações e experiências
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-familia-int-intelligence-graph-e-analytics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14. Família INT — Intelligence, Graph e Analytics
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-familia-cap-planos-e-capacidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15. Família CAP — Planos e capacidade
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16-familia-dq-qualidade-freshness-privacidade-e-governanca" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16. Família DQ — qualidade, freshness, privacidade e governança
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17-historicos-e-eventos-como-dimensao-transversal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17. Históricos e eventos como dimensão transversal
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18-filtros-candidatos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        18. Filtros candidatos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#19-drill-down" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        19. Drill-down
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20-estados-obrigatorios-de-visualizacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20. Estados obrigatórios de visualização
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#21-contratos-logicos-esperados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        21. Contratos lógicos esperados
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#22-privacidade-controle-e-disclosure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        22. Privacidade, controle e disclosure
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#23-orientacao-futura-para-replit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        23. Orientação futura para Replit
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#24-criterios-de-aceite-para-futuro-handoff" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        24. Critérios de aceite para futuro handoff
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#25-itens-explicitamente-bloqueados-nesta-versao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        25. Itens explicitamente bloqueados nesta versão
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#26-estado-final-desta-versao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        26. Estado final desta versão
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#27-auditoria-da-leitura-analitica-pessoal-v013" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        27. Auditoria da leitura analítica pessoal — v0.1.3
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="27. Auditoria da leitura analítica pessoal — v0.1.3">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#271-natureza-e-precedencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        27.1 Natureza e precedência
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#272-perguntas-legitimas-para-a-pessoa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        27.2 Perguntas legítimas para a Pessoa
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#273-refinamentos-candidatos-nao-canonicos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        27.3 Refinamentos candidatos não canônicos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#274-leitura-longitudinal-e-autonomia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        27.4 Leitura longitudinal e autonomia
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#275-gates-ainda-pendentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        27.5 Gates ainda pendentes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#276-estado-desta-atualizacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        27.6 Estado desta atualização
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -7970,6 +8434,89 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#27-auditoria-da-leitura-analitica-pessoal-v013" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        27. Auditoria da leitura analítica pessoal — v0.1.3
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="27. Auditoria da leitura analítica pessoal — v0.1.3">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#271-natureza-e-precedencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        27.1 Natureza e precedência
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#272-perguntas-legitimas-para-a-pessoa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        27.2 Perguntas legítimas para a Pessoa
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#273-refinamentos-candidatos-nao-canonicos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        27.3 Refinamentos candidatos não canônicos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#274-leitura-longitudinal-e-autonomia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        27.4 Leitura longitudinal e autonomia
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#275-gates-ainda-pendentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        27.5 Gates ainda pendentes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#276-estado-desta-atualizacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        27.6 Estado desta atualização
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -8086,7 +8633,7 @@
 <hr />
 <h2 id="3-estado-e-boundary">3. Estado e boundary<a class="headerlink" href="#3-estado-e-boundary" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>GKR-INTELLIGENCE-DASHBOARD-PERSON-001
-→ ACTIVE v0.1.2
+→ ACTIVE v0.1.3
 → PRE-IMPLEMENTATION DASHBOARD MASTER
 
 PESSOA
@@ -9244,6 +9791,206 @@ ANNEX F
 → UNCHANGED / NOT MATERIALIZED BY THIS DOCUMENT
 </code></pre></div>
 <p>A materialização documental deste master não autoriza dados reais, implementação, produção, disclosure adicional a terceiros ou promoção automática de KPI.</p>
+<hr />
+<h2 id="27-auditoria-da-leitura-analitica-pessoal-v013">27. Auditoria da leitura analítica pessoal — v0.1.3<a class="headerlink" href="#27-auditoria-da-leitura-analitica-pessoal-v013" title="Permanent link">&para;</a></h2>
+<h3 id="271-natureza-e-precedencia">27.1 Natureza e precedência<a class="headerlink" href="#271-natureza-e-precedencia" title="Permanent link">&para;</a></h3>
+<p>Esta auditoria complementa o Anexo E sem substituir a Journey, <code>Hoje</code>, <code>Meus Objetivos</code>, <code>Meus Próximos Passos</code> ou <code>Minha Evolução</code>. Preserva <strong>nove áreas analíticas</strong>, <strong>oito famílias KPI</strong> (<code>CTX / OBJ / MOV / EVO / REL / INT / CAP / DQ</code>), todos os IDs e status existentes (<code>proposed / NOT_READY</code>) e as autoridades de domínio citadas nas seções 2–4. Os refinamentos <code>PER-AN-C*</code> abaixo são <strong>candidatos não canônicos</strong>: não constituem novos KPIs, telas, transições ou decisões.</p>
+<h3 id="272-perguntas-legitimas-para-a-pessoa">27.2 Perguntas legítimas para a Pessoa<a class="headerlink" href="#272-perguntas-legitimas-para-a-pessoa" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Eixo</th>
+<th>Pergunta de compreensão candidata</th>
+<th>Limite obrigatório</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Contexto</td>
+<td>Quais domínios e contextos foram legitimamente declarados, confirmados ou revisados por mim?</td>
+<td>não atribuir intenção inferida como declaração</td>
+</tr>
+<tr>
+<td>Objetivos</td>
+<td>Que objetivos decidi manter, alterar, suspender ou concluir?</td>
+<td>decisão e significado pertencem à Pessoa</td>
+</tr>
+<tr>
+<td>Próximos passos</td>
+<td>Quais movimentos propus, aceitei, adiei ou descartei?</td>
+<td>proposto ≠ aceito; passo concluído ≠ evolução</td>
+</tr>
+<tr>
+<td>Trajetória</td>
+<td>Que mudanças, continuidades e evidências estão disponíveis ao longo do tempo?</td>
+<td>mudança ≠ melhora; evidência ≠ causalidade</td>
+</tr>
+<tr>
+<td>Participações</td>
+<td>De quais experiências, Organizações e Coletivos participei segundo registros autorizados?</td>
+<td>não expor dados privados de terceiros</td>
+</tr>
+<tr>
+<td>Oportunidades</td>
+<td>Que possibilidades foram apresentadas, consideradas ou escolhidas por mim?</td>
+<td>não impor caminho ou prioridade; sem funil universal</td>
+</tr>
+<tr>
+<td>Intelligence</td>
+<td>Por que determinada leitura ou sugestão apareceu e como posso contestá-la?</td>
+<td>explicabilidade, natureza, confiança e contestação</td>
+</tr>
+<tr>
+<td>Planos</td>
+<td>Quais capacidades e limites contratuais são pertinentes ao meu acesso?</td>
+<td>não confundir elegibilidade comercial com relevância pessoal</td>
+</tr>
+<tr>
+<td>Governança</td>
+<td>Que informações estão ausentes, atrasadas, em revisão ou protegidas?</td>
+<td>distinguir estados de ausência, incerteza e supressão</td>
+</tr>
+</tbody>
+</table>
+<h3 id="273-refinamentos-candidatos-nao-canonicos">27.3 Refinamentos candidatos não canônicos<a class="headerlink" href="#273-refinamentos-candidatos-nao-canonicos" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Referência</th>
+<th>Refinamento para futura reconciliação</th>
+<th>Dependência/gate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PER-AN-C01</td>
+<td>Histórico de domínios declarados, confirmados e revisados</td>
+<td><code>GKR-UX-D5-A-001</code>, sensibilidade e temporalidade</td>
+</tr>
+<tr>
+<td>PER-AN-C02</td>
+<td>Objetivos por estado decidido pela Pessoa</td>
+<td><code>GKR-UX-D5-C1-001</code>, revisão e autoria</td>
+</tr>
+<tr>
+<td>PER-AN-C03</td>
+<td>Movimentos por estado proposto/aceito/adiado/descartado</td>
+<td>transições autorizadas e semântica de evento</td>
+</tr>
+<tr>
+<td>PER-AN-C04</td>
+<td>Linha temporal de mudanças e continuidades</td>
+<td>evidência, proveniência e ausência de juízo automático</td>
+</tr>
+<tr>
+<td>PER-AN-C05</td>
+<td>Evidências associadas a objetivos e trajetórias</td>
+<td>não presumir resultado nem causalidade</td>
+</tr>
+<tr>
+<td>PER-AN-C06</td>
+<td>Participações e experiências autorizadas</td>
+<td>escopo pessoal, consentimento e contraparte</td>
+</tr>
+<tr>
+<td>PER-AN-C07</td>
+<td>Relações visíveis à Pessoa no Graph</td>
+<td>disclosure bilateral, minimização e explicabilidade</td>
+</tr>
+<tr>
+<td>PER-AN-C08</td>
+<td>Histórico de possibilidades exploradas e escolhidas</td>
+<td><code>UXA-097/098</code>, estados e autonomia; não inferir obrigação</td>
+</tr>
+<tr>
+<td>PER-AN-C09</td>
+<td>Origem e justificativa de sugestões de Intelligence</td>
+<td><code>GAI-001/002</code>, confiança, incerteza e contestação</td>
+</tr>
+<tr>
+<td>PER-AN-C10</td>
+<td>Capacidade e limites do plano vigente</td>
+<td><code>UXA-100</code> e contratos comerciais aplicáveis</td>
+</tr>
+<tr>
+<td>PER-AN-C11</td>
+<td>Qualidade, atualização e proveniência dos dados próprios</td>
+<td>freshness, qualidade, estados de indisponibilidade</td>
+</tr>
+<tr>
+<td>PER-AN-C12</td>
+<td>Revisões e contestações iniciadas pela Pessoa</td>
+<td>trilha de revisão e autoridade sobre significado pessoal</td>
+</tr>
+</tbody>
+</table>
+<p>Os candidatos não implicam que os eventos, fontes ou dados já existam. Devem ser reconciliados com os KPIs existentes antes de qualquer promoção de contrato. Nenhuma referência <code>PER-AN-C*</code> é KPI canônico.</p>
+<h3 id="274-leitura-longitudinal-e-autonomia">27.4 Leitura longitudinal e autonomia<a class="headerlink" href="#274-leitura-longitudinal-e-autonomia" title="Permanent link">&para;</a></h3>
+<p>A leitura temporal deve preservar <strong>declaração versus inferência</strong>, <strong>atividade versus resultado</strong>, <strong>mudança versus melhora</strong> e <strong>correlação versus causalidade</strong>. Não se presume percentual global de evolução, pontuação de vida, ranking de Pessoas ou diagnóstico. Domínios de evolução podem ter níveis distintos de sensibilidade; a Pessoa não perde autonomia por receber uma interpretação de Intelligence. O dashboard deve permitir compreensão e revisão conforme autoridade aplicável, sem se tornar um motor de julgamento pessoal.</p>
+<h3 id="275-gates-ainda-pendentes">27.5 Gates ainda pendentes<a class="headerlink" href="#275-gates-ainda-pendentes" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Gate</th>
+<th>Necessidade</th>
+<th>Estado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>G-PER-01</td>
+<td>reconciliação com Journey e superfícies especializadas</td>
+<td>UNRESOLVED</td>
+</tr>
+<tr>
+<td>G-PER-02</td>
+<td>contratos de eventos, estados e temporalidade</td>
+<td>UNRESOLVED</td>
+</tr>
+<tr>
+<td>G-PER-03</td>
+<td>sensibilidade, consentimento e escopo de disclosure</td>
+<td>UNRESOLVED</td>
+</tr>
+<tr>
+<td>G-PER-04</td>
+<td>relações bilaterais e proteção de terceiros</td>
+<td>UNRESOLVED</td>
+</tr>
+<tr>
+<td>G-PER-05</td>
+<td>evidência, natureza dos outputs, contestação e proveniência</td>
+<td>UNRESOLVED</td>
+</tr>
+<tr>
+<td>G-PER-06</td>
+<td>planos/capacidades e fonte comercial vigente</td>
+<td>UNRESOLVED</td>
+</tr>
+<tr>
+<td>G-PER-07</td>
+<td>reconciliação KPI, qualidade, freshness e serving</td>
+<td>UNRESOLVED</td>
+</tr>
+<tr>
+<td>G-PER-08</td>
+<td>autorização específica de design, dados reais e build</td>
+<td>NOT_AUTHORIZED</td>
+</tr>
+</tbody>
+</table>
+<h3 id="276-estado-desta-atualizacao">27.6 Estado desta atualização<a class="headerlink" href="#276-estado-desta-atualizacao" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>GKR-INTELLIGENCE-DASHBOARD-PERSON-001
+→ v0.1.3 / ANNEX E / PRE-IMPLEMENTATION
+→ 9 ANALYTICAL AREAS / 8 KPI FAMILIES PRESERVED
+→ EXISTING KPI IDS AND STATUSES UNCHANGED
+→ ALL CURRENT KPIs = proposed / NOT_READY
+→ CANDIDATE REFINEMENTS NONCANONICAL
+→ PERSON AUTONOMY AND SPECIALIZED JOURNEY AUTHORITIES PRESERVED
+→ PERSON GLOBAL SCORE / CROSS-PERSON RANKING BLOCKED
+→ THIRD-PARTY PRIVATE DATA NOT DISCLOSED
+→ REAL DATA / TECHNICAL RBAC / REPLIT BUILD NOT AUTHORIZED
+</code></pre></div>
 
 
 
