@@ -71207,6 +71207,122 @@ G-XD-01 → UNRESOLVED
 G-XD-02..07 → OPEN
 CANONICAL KPI PROMOTIONS → 0
 IMPLEMENTATION AUTHORIZATION → 0
+</code></pre></div>
+<hr />
+<h2 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-36-g-xd-01-exame-complementar-de-fontes-especializadas-para-xd01-d01d02">36. G-XD-01 — Exame complementar de fontes especializadas para XD01-D01/D02<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-36-g-xd-01-exame-complementar-de-fontes-especializadas-para-xd01-d01d02" title="Permanent link">&para;</a></h2>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-361-escopo-e-natureza-da-evidencia">36.1 Escopo e natureza da evidência<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-361-escopo-e-natureza-da-evidencia" title="Permanent link">&para;</a></h3>
+<p>Este exame amplia a triagem da seção 35 com quatro documentos especializados do GKR: governança de privacidade <code>GKR-DATA-PRIVACY-CONSENT-001 v0.1.0</code>, <code>ADR-CC-004 v0.1.0</code> (<strong>Proposed</strong>), Master de Participantes e Vínculos do Coletivo <code>GKR-UX-COL-PARTICIPANTS-LINKS-MASTER-001 v0.1.0</code> e Master de Relação Organização–Coletivo. As referências abaixo são <strong>evidências documentais</strong>, não contratos de dados executados ou confirmação de competência humana. <code>ADR-CC-004</code> conserva seu estado proposto. <code>PER-009</code> não é presumido como arquitetura integral de conta nem como autoridade universal.</p>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-362-rastreabilidade-por-decisao-original">36.2 Rastreabilidade por decisão original<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-362-rastreabilidade-por-decisao-original" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Questão</th>
+<th>Evidência especializada rastreável</th>
+<th>Resultado da triagem</th>
+<th>Lacuna que permanece</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>XD01-D01-A</code></td>
+<td><code>docs/product-architecture/adrs/adr-cc-004-acesso-por-finalidade-e-autoridade.md</code> §§ Contexto/Decisão; <code>docs/governance-framework/data-privacy-and-consent-governance.md</code> §§4–5</td>
+<td>PARCIAL</td>
+<td>Acesso contextual e titularidade não especificam chave analítica estável por tipo nem versionamento.</td>
+</tr>
+<tr>
+<td><code>XD01-D01-B</code></td>
+<td><code>docs/product-architecture/adrs/adr-cc-004-acesso-por-finalidade-e-autoridade.md</code> §§ Contexto/Regras; <code>docs/experience-architecture/organizations-collectives-journey/collective-participants-links-master.md</code> §3</td>
+<td>PARCIAL</td>
+<td>Papel/representação separados, mas política de múltiplas contas e delegação não adjudicada.</td>
+</tr>
+<tr>
+<td><code>XD01-D01-C</code></td>
+<td><code>docs/experience-architecture/organizations-collectives-journey/collective-participants-links-master.md</code> §§2–3; <code>docs/experience-architecture/organizations-collectives-journey/organization-collective-relationship-master.md</code> §§1–3</td>
+<td>PARCIAL</td>
+<td>Pessoa–Coletivo e Organização–Coletivo são relações diferentes; cardinalidade simultânea não contratada.</td>
+</tr>
+<tr>
+<td><code>XD01-D01-D</code></td>
+<td><code>docs/experience-architecture/organizations-collectives-journey/collective-participants-links-master.md</code> §§1,4; <code>docs/experience-architecture/organizations-collectives-journey/organization-collective-relationship-master.md</code> §§1–3</td>
+<td>PARCIAL</td>
+<td>Solicitação, vínculo, papel e representação separados; estados e timestamps técnicos não contratados.</td>
+</tr>
+<tr>
+<td><code>XD01-D01-E</code></td>
+<td><code>docs/governance-framework/data-privacy-and-consent-governance.md</code> §4; <code>docs/product-architecture/adrs/adr-cc-004-acesso-por-finalidade-e-autoridade.md</code> §§Decisão/Regras</td>
+<td>LACUNA ESPECÍFICA</td>
+<td>Rastreabilidade e revogação são princípios; falta autoridade de merge/split e política de reconciliação histórica.</td>
+</tr>
+<tr>
+<td><code>XD01-D01-F</code></td>
+<td><code>docs/governance-framework/data-privacy-and-consent-governance.md</code> §§4–7; <code>docs/product-architecture/adrs/adr-cc-004-acesso-por-finalidade-e-autoridade.md</code> §§Decisão/Regras</td>
+<td>PARCIAL</td>
+<td>Finalidade e autorização contextual explícitas; não há permissão transversal geral nem chave autorizada.</td>
+</tr>
+<tr>
+<td><code>XD01-D02-A</code></td>
+<td><code>docs/governance-framework/data-privacy-and-consent-governance.md</code> §§4–5; <code>docs/experience-architecture/organizations-collectives-journey/collective-participants-links-master.md</code> §3</td>
+<td>PARCIAL</td>
+<td>Titular ≠ participante e vínculo é contextual; universo elegível por KPI permanece específico.</td>
+</tr>
+<tr>
+<td><code>XD01-D02-B</code></td>
+<td><code>docs/experience-architecture/organizations-collectives-journey/collective-participants-links-master.md</code> §§1–4; <code>docs/product-architecture/adrs/adr-cc-004-acesso-por-finalidade-e-autoridade.md</code> §§Decisão/Regras</td>
+<td>PARCIAL</td>
+<td>Estados e restrições contextuais existem; critérios de inclusão/exclusão por KPI pendentes.</td>
+</tr>
+<tr>
+<td><code>XD01-D02-C</code></td>
+<td><code>docs/experience-architecture/organizations-collectives-journey/collective-participants-links-master.md</code> §4; <code>docs/product-architecture/adrs/adr-cc-004-acesso-por-finalidade-e-autoridade.md</code> §§Decisão/Regras</td>
+<td>LACUNA ESPECÍFICA</td>
+<td>Revalidação de contexto e revogação não fixam início/fim efetivo da elegibilidade nem reprocessamento.</td>
+</tr>
+<tr>
+<td><code>XD01-D02-D</code></td>
+<td><code>docs/experience-architecture/organizations-collectives-journey/collective-participants-links-master.md</code> §§1–3; <code>docs/governance-framework/data-privacy-and-consent-governance.md</code> §4</td>
+<td>PARCIAL</td>
+<td>Vínculo confirmado distinto de solicitação, mas numerador/denominador requerem fonte e contrato por KPI.</td>
+</tr>
+<tr>
+<td><code>XD01-D02-E</code></td>
+<td><code>docs/product-architecture/adrs/adr-cc-004-acesso-por-finalidade-e-autoridade.md</code> §§Decisão/Regras; <code>docs/governance-framework/data-privacy-and-consent-governance.md</code> §§4–7; <code>docs/experience-architecture/organizations-collectives-journey/collective-participants-links-master.md</code> §3</td>
+<td>PARCIAL</td>
+<td>Acesso condicionado por finalidade, representação e consumidor; granularidade/serving por KPI não adjudicados.</td>
+</tr>
+<tr>
+<td><code>XD01-D02-F</code></td>
+<td><code>docs/governance-framework/data-privacy-and-consent-governance.md</code> §4</td>
+<td>PARCIAL</td>
+<td>Proveniência e estado operacional exigidos; taxonomia de não-dado e cobertura por KPI não demonstradas.</td>
+</tr>
+<tr>
+<td><code>XD01-D02-G</code></td>
+<td><code>docs/experience-architecture/organizations-collectives-journey/collective-participants-links-master.md</code> §2; <code>docs/experience-architecture/organizations-collectives-journey/organization-collective-relationship-master.md</code> §§1–3; <code>docs/governance-framework/data-privacy-and-consent-governance.md</code> §§4–7</td>
+<td>PARCIAL</td>
+<td>Relações de domínios distintos não equivalem; atribuição e deduplicação entre produtos não contratadas.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-363-distincoes-verificadas-e-limites">36.3 Distinções verificadas e limites<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-363-distincoes-verificadas-e-limites" title="Permanent link">&para;</a></h3>
+<ol>
+<li>O documento de privacidade, §§4–7, define atividade de tratamento com finalidade e evidência próprias; titular pessoa natural não equivale a participante; base jurídica não equivale sempre a consentimento. O documento declara não comprovar implementação de controles em produção.</li>
+<li><code>ADR-CC-004</code>, em estado <strong>Proposed</strong>, descreve acesso composto por identidade, papel, autoridade funcional, finalidade, representação, estado, consumidor e revogação; sua existência não comprova política implementada, autorização por KPI ou aprovação de chave transversal.</li>
+<li>O Master do Coletivo, §§1–4, separa solicitação aprovada, vínculo técnico confirmado, papel aceito, representação e administração; distingue vínculo Pessoa–Coletivo da relação Organização–Coletivo.</li>
+<li>O Master de relação Organização–Coletivo preserva identidade lógica, escopo, aprovações e histórico da relação; não atribui identidade pessoal nem autoriza vinculação analítica global.</li>
+</ol>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-364-pendencias-de-autoridade-e-encaminhamento">36.4 Pendências de autoridade e encaminhamento<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-364-pendencias-de-autoridade-e-encaminhamento" title="Permanent link">&para;</a></h3>
+<p><strong>Nenhuma autoridade humana adjudicadora individual foi confirmada</strong> para os 13 IDs. Os documentos descrevem responsabilidades funcionais ou princípios, não nomeiam necessariamente o órgão/pessoa competente para aprovar contratos analíticos específicos. É necessário obter, por questão: (a) contrato de domínio vigente e versão; (b) fonte técnica/proveniência e qualidade; (c) matriz de acesso e finalidade; (d) competência humana expressa; (e) decisão rastreável, se e quando efetivamente emitida.</p>
+<p>As duas lacunas específicas de <code>XD01-D01-E</code> e <code>XD01-D02-C</code> permanecem abertas após o exame. A classificação das outras 11 questões continua <code>PARCIAL</code>: evidência especializada adicional <strong>não satisfaz automaticamente</strong> todos os requisitos de adjudicação.</p>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-365-estado">36.5 Estado<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-365-estado" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>XD01-D01/D02 → SPECIALIZED_SOURCE_EVIDENCE_SCREENED / NEEDS_EVIDENCE
+SOURCE SCREENING → 13/13 (11 PARTIAL; 2 SPECIFIC GAPS)
+HUMAN AUTHORITY CONFIRMED → 0/13
+HUMAN ADJUDICATIONS → 0/77
+XD01-D01..D10 → DOSSIER_PREPARED / PENDING_HUMAN_ADJUDICATION
+G-XD-01 → UNRESOLVED
+G-XD-02..07 → OPEN
+CANONICAL KPI PROMOTIONS → 0
+IMPLEMENTATION AUTHORIZATION → 0
 </code></pre></div></section><section class="print-page" id="intelligence-architecture-dashboard-guivos-business-master-specification" heading-number="16.5"><h1 id="intelligence-architecture-dashboard-guivos-business-master-specification-dashboard-guivos-business-documento-mestre-de-especificacao-analitica-e-handoff-replit">Dashboard Guivos Business — Documento Mestre de Especificação Analítica e Handoff Replit<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-business-master-specification-dashboard-guivos-business-documento-mestre-de-especificacao-analitica-e-handoff-replit" title="Permanent link">&para;</a></h1>
 <h2 id="intelligence-architecture-dashboard-guivos-business-master-specification-1-finalidade">1. Finalidade<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-business-master-specification-1-finalidade" title="Permanent link">&para;</a></h2>
 <p>Este documento é o <strong>Anexo B</strong> de <code>GKR-INTELLIGENCE-DASHBOARD-KPI-001</code> e governa, em nível documental pré-implementação, o <strong>Dashboard Guivos Business</strong>.</p>
