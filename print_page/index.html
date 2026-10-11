@@ -72414,6 +72414,61 @@ G-XD-01 → UNRESOLVED
 G-XD-02..07 → OPEN
 CANONICAL KPI PROMOTIONS → 0
 IMPLEMENTATION AUTHORIZATION → 0
+</code></pre></div>
+<hr />
+<h2 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-47-g-xd-02-exame-documental-transversal-de-fontes-qualidade-e-proveniencia-anexos-ae">47. G-XD-02 — Exame documental transversal de fontes, qualidade e proveniência (Anexos A–E)<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-47-g-xd-02-exame-documental-transversal-de-fontes-qualidade-e-proveniencia-anexos-ae" title="Permanent link">&para;</a></h2>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-471-escopo-e-limites">47.1 Escopo e limites<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-471-escopo-e-limites" title="Permanent link">&para;</a></h3>
+<p>Confronto preparatório dos cinco Documentos Mestres especializados com o gate <code>G-XD-02</code> da seção 15.3. Inventários de KPI e campos <code>source</code> são <strong>candidatos de contratação de dados</strong>, não evidência de fonte operacional, lineage implementado, SLA vigente ou autorização de serving. Os anexos especializados preservam precedência e não sofrem alteração nesta etapa. O Anexo F (Ads) está fora deste confronto de cinco dashboards.</p>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-472-evidencia-individual-e-lacuna-remanescente">47.2 Evidência individual e lacuna remanescente<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-472-evidencia-individual-e-lacuna-remanescente" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Anexo e versão examinada</th>
+<th>Exemplos documentais verificáveis</th>
+<th>Lacunas que impedem conclusão</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A — Guivos interno v0.1.5</td>
+<td><code>GUV-KPI-POP-001/002</code> dependem de participant source, validade e temporalidade; <code>GUV-KPI-POP-003</code> depende de activity event set, janela e source</td>
+<td>Identificador de fonte autorizada, contrato de evento, origem e qualidade, lineage, janela/freshness e política de ausência; escolhas e declarações da Pessoa não autorizadas para analytics interno</td>
+</tr>
+<tr>
+<td>B — Business v0.1.3</td>
+<td><code>BUS-KPI-PRG-001</code> requer lifecycle/state + source; <code>BUS-KPI-PTS-003</code> requer usage source, attribution e disclosure; <code>BUS-KPI-DQ-001/005</code> são candidatos de freshness e proveniência</td>
+<td>Contratos e SLAs de fontes, atribuição econômica, validação de eventos, qualidade e escopo de dados/consumidores sem inferir GEM-009</td>
+</tr>
+<tr>
+<td>C — Organização v0.1.2</td>
+<td><code>ORG-KPI-OPP-001</code> requer lifecycle/state + source; <code>ORG-KPI-EVD-004</code> requer validade de evidências e source; <code>ORG-KPI-DQ-001</code> depende de SLA</td>
+<td>Origem e validação de eventos, ownership de fonte, restrições de finalidade, qualidade/freshness e proteção de terceiros</td>
+</tr>
+<tr>
+<td>D — Coletivo v0.1.2</td>
+<td><code>COL-KPI-ACT-001</code> requer taxonomia/lifecycle/source; <code>COL-KPI-PAR-003/005</code> exigem vínculo e participação válidos; <code>COL-KPI-DQ-001</code> depende de SLA</td>
+<td>Prova legítima de pertencimento e participação, estados e duplicidade, atualização, provenance e escopo de divulgação; inscrições/cadastros continuam BLOCKED sem contrato</td>
+</tr>
+<tr>
+<td>E — Pessoa v0.1.3</td>
+<td><code>PER-KPI-CTX-001/002</code> separam vínculos confirmados de candidatos; <code>PER-KPI-OBJ-006</code> depende de contrato de evidência; <code>PER-KPI-REL-006</code> requer confirmação de fonte externa</td>
+<td>Autoria, confirmação e proveniência contextual da Journey, contrato de evidência, tratamento de fontes externas e proteção de dados privados sem inferência de evolução</td>
+</tr>
+</tbody>
+</table>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-473-matriz-de-verificacao-por-kpi-e-consumidor">47.3 Matriz de verificação por KPI e consumidor<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-473-matriz-de-verificacao-por-kpi-e-consumidor" title="Permanent link">&para;</a></h3>
+<p>Para cada KPI candidato, localizar documentalmente <strong>(1)</strong> ID da fonte e autoridade de domínio; <strong>(2)</strong> objeto, evento e estado válidos; <strong>(3)</strong> finalidade e classe de consumidor; <strong>(4)</strong> origem, autoria e cadeia de transformações; <strong>(5)</strong> versionamento, timestamp, periodicidade e atraso; <strong>(6)</strong> completude, contestação e reconciliação; <strong>(7)</strong> estados distintos de zero confirmado, fonte atrasada, insuficiência e supressão; <strong>(8)</strong> vínculo com o contrato do KPI e evidência datada de aprovação. Ausência de qualquer evidência deve ser registrada especificamente, sem preencher lacunas por aproximação.</p>
+<p>A verificação deve preservar: <code>G-XD-01</code> não resolvido (identidade, população, eventos, denominadores e tempo); <code>G-XD-03/04</code> abertos (serving, privacidade, consentimento e disclosure); <code>G-XD-05/06</code> abertos (registry, economia e planos); e <code>G-XD-07</code> aberto (implementação separada). Um <code>source_pending</code> ou KPI <code>proposed</code> não equivale a contrato aprovado, dado recebido, pipeline ou SLA verificado.</p>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-474-resultado-e-proximo-ponto-de-passagem">47.4 Resultado e próximo ponto de passagem<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-474-resultado-e-proximo-ponto-de-passagem" title="Permanent link">&para;</a></h3>
+<p>O exame transversal identifica dependências documentais e exemplos rastreáveis, <strong>não comprova integralmente os contratos de fonte, qualidade, freshness ou lineage</strong> para qualquer um dos cinco dashboards. A etapa seguinte é uma triagem por fonte/ID de KPI e sua evidência especializada, sem promover readiness. Não se autoriza reprocessamento, uso de dados reais, RBAC técnico, exportação ou build Replit.</p>
+<div class="highlight"><pre><span></span><code>G-XD-02 → DOCUMENTARY_EXAMINATION_PREPARED / OPEN
+ANNEXES A–E → SOURCE_QUALITY_GAPS_MAPPED / NO CONTRACT PROMOTION
+G-XD-01 → UNRESOLVED
+G-XD-03..07 → OPEN
+HUMAN AUTHORITY FORMALLY CONFIRMED → 0/13
+HUMAN ADJUDICATIONS → 0/77
+CANONICAL KPI PROMOTIONS → 0
+IMPLEMENTATION AUTHORIZATION → 0
 </code></pre></div></section><section class="print-page" id="intelligence-architecture-dashboard-guivos-business-master-specification" heading-number="16.5"><h1 id="intelligence-architecture-dashboard-guivos-business-master-specification-dashboard-guivos-business-documento-mestre-de-especificacao-analitica-e-handoff-replit">Dashboard Guivos Business — Documento Mestre de Especificação Analítica e Handoff Replit<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-business-master-specification-dashboard-guivos-business-documento-mestre-de-especificacao-analitica-e-handoff-replit" title="Permanent link">&para;</a></h1>
 <h2 id="intelligence-architecture-dashboard-guivos-business-master-specification-1-finalidade">1. Finalidade<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-business-master-specification-1-finalidade" title="Permanent link">&para;</a></h2>
 <p>Este documento é o <strong>Anexo B</strong> de <code>GKR-INTELLIGENCE-DASHBOARD-KPI-001</code> e governa, em nível documental pré-implementação, o <strong>Dashboard Guivos Business</strong>.</p>
