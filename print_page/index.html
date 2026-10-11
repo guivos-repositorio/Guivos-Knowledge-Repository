@@ -69876,6 +69876,119 @@ XD01-D09 → EXAMINED / HUMAN_ADJUDICATION_REQUIRED
 G-XD-01 → UNRESOLVED
 CANONICAL KPI PROMOTIONS → 0
 IMPLEMENTATION AUTHORIZATION → 0
+</code></pre></div>
+<hr />
+<h2 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-26-xd01-d10-matriz-de-vinculacao-entre-produtosparticipantes-dupla-contagem-e-divulgacao-exame-nao-adjudicacao">26. XD01-D10 — Matriz de vinculação entre produtos/participantes, dupla contagem e divulgação (exame, não adjudicação)<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-26-xd01-d10-matriz-de-vinculacao-entre-produtosparticipantes-dupla-contagem-e-divulgacao-exame-nao-adjudicacao" title="Permanent link">&para;</a></h2>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-261-proposito-e-precedencia">26.1 Propósito e precedência<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-261-proposito-e-precedencia" title="Permanent link">&para;</a></h3>
+<p>Este exame de <code>XD01-D10</code> reúne as lacunas de vinculação analítica entre domínios, identidade de participantes e objetos, deduplicação interproduto e divulgação para consumidores distintos. Não estabelece identificador global universal, grafo analítico automaticamente compartilhável, regra de matching, identidade civil, agregação irrestrita ou permissão transversal. Dependem de adjudicação humana os contratos examinados em <code>XD01-D01..D09</code>, bem como os gates <code>G-XD-02..07</code> e as autoridades especializadas.</p>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-262-evidencias-e-lacunas-por-consumidor">26.2 Evidências e lacunas por consumidor<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-262-evidencias-e-lacunas-por-consumidor" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Consumidor / referências documentais</th>
+<th>Vínculos e contagens a distinguir</th>
+<th>Lacunas de adjudicação</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Guivos interno — <code>GUV-KPI-POP-001..005</code>, <code>GUV-KPI-ENG-006..008</code>, <code>GUV-KPI-OPP-011..015</code></td>
+<td>Pessoa, conta, participação, programa, oportunidade, organização, coletivo, produto e eventos de ativação/retorno</td>
+<td>Identidade analítica autorizada, chaves por domínio, sobreposição, escopo de deduplicação, coortes e visibilidade interna legítima</td>
+</tr>
+<tr>
+<td>Business — <code>BUS-KPI-PAR-001..006</code>, <code>BUS-KPI-PRG-001/002</code>, <code>BUS-KPI-JNY-002..004</code></td>
+<td>Pessoa elegível, contrato, programa, incentivo, acesso Journey custeado, participação/evidência validada</td>
+<td>Isolamento entre clientes e programas, relação contratual, identidade pseudonimizada, vedação de acesso a Journey privado, disclosure e exportação</td>
+</tr>
+<tr>
+<td>Organização — <code>ORG-KPI-OPP-001/002</code>, <code>ORG-KPI-PAR-002..004</code>, <code>ORG-KPI-REL-001/003/005</code></td>
+<td>Organização, oportunidade, manifestação, inscrição, participação, conclusão e relação bilateral</td>
+<td>Cardinalidade por oportunidade e contraparte, vínculos simultâneos, eventos compartilháveis e proibição de inferir dados privados</td>
+</tr>
+<tr>
+<td>Coletivo — <code>COL-KPI-PAR-001..006</code>, <code>COL-KPI-ACT-001..003</code></td>
+<td>Pessoa, solicitação, vínculo confirmado, papel, sessão, presença, atividade, coletivo</td>
+<td>Vínculos múltiplos, deduplicação por sessão/atividade, voluntariedade, papéis e limite de divulgação entre coletivos</td>
+</tr>
+<tr>
+<td>Pessoa — <code>PER-KPI-CTX-001..003</code>, <code>PER-KPI-OBJ-001/002/004</code>, <code>PER-KPI-MOV-001..005</code></td>
+<td>Declaração, objetivo, Próximo Passo, movimento, evidência e relação voluntária com oportunidades/participantes</td>
+<td>Controle e consentimento da pessoa, identidade contextual, limites de ligação externa, não divulgação de objetivos/evolução privados</td>
+</tr>
+</tbody>
+</table>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-263-questoes-abertas-para-adjudicacao">26.3 Questões abertas para adjudicação<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-263-questoes-abertas-para-adjudicacao" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Decisão pendente</th>
+<th>Evidência mínima</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>XD01-D10-A</code></td>
+<td>Quais identidades e relações podem ser ligadas entre produtos, e por qual autoridade?</td>
+<td>Contratos por domínio, finalidade, autorização e chaves contextuais</td>
+</tr>
+<tr>
+<td><code>XD01-D10-B</code></td>
+<td>Como distinguir pessoa, conta, papel, vínculo, organização, coletivo, oportunidade, programa e evento?</td>
+<td>Identidade analítica, cardinalidade, estado de relação e proveniência</td>
+</tr>
+<tr>
+<td><code>XD01-D10-C</code></td>
+<td>Em quais condições uma mesma pessoa ou objeto pode contar uma vez ou várias vezes?</td>
+<td>Unidade do KPI, população, período, domínio, programa e escopo de deduplicação</td>
+</tr>
+<tr>
+<td><code>XD01-D10-D</code></td>
+<td>Como evitar soma indevida entre produtos, clientes, coletivos, programas, oportunidades e períodos?</td>
+<td>Contrato de agregação, chaves de sobreposição, denominador e reconciliação</td>
+</tr>
+<tr>
+<td><code>XD01-D10-E</code></td>
+<td>Quais informações podem ser servidas a cada consumidor sem revelar Journey privado ou contrapartes?</td>
+<td>Permissão, consentimento, minimização, escopo de serving e disclosure</td>
+</tr>
+<tr>
+<td><code>XD01-D10-F</code></td>
+<td>Como prevenir reidentificação por cruzamento, filtros, exportação, séries e pequenas células?</td>
+<td>Política de supressão, análise de combinação, governança de exportação e auditoria</td>
+</tr>
+<tr>
+<td><code>XD01-D10-G</code></td>
+<td>Como tratar mudança de papel, saída/reingresso, merge/split de identidade e correções retroativas entre domínios?</td>
+<td>Histórico, versionamento, temporalidade, deduplicação e revogação</td>
+</tr>
+<tr>
+<td><code>XD01-D10-H</code></td>
+<td>Qual representação usar quando vínculo, permissão, identidade ou cardinalidade forem incertos?</td>
+<td>Estados de não-dado, proveniência, bloqueio de divulgação e ausência de inferência</td>
+</tr>
+</tbody>
+</table>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-264-restricoes-e-encaminhamento">26.4 Restrições e encaminhamento<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-264-restricoes-e-encaminhamento" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Identidade técnica ou chave de grafo não equivale a autorização para compartilhar dados.</li>
+<li>Um participante pode ocupar múltiplos papéis e vínculos sem equivaler a múltiplas pessoas.</li>
+<li>Soma de contagens por programa, oportunidade, coletivo ou produto não equivale automaticamente ao total distinto global.</li>
+<li>Associação com organização ou coletivo não autoriza inferir objetivos, declarações, movimentos ou evolução pessoal.</li>
+<li>Acesso Journey custeado não autoriza a exposição de Journey privado a Business ou outros consumidores.</li>
+<li>Consentimento e finalidade não são herdados automaticamente entre produtos.</li>
+<li>Agregação e pseudonimização não dispensam análise de reidentificação, inclusive em exportações.</li>
+<li>Dúvida de identidade, relação ou permissão deve permanecer explícita, sem matching presumido.</li>
+</ul>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-265-encerramento-do-exame-documental-de-g-xd-01">26.5 Encerramento do exame documental de G-XD-01<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-265-encerramento-do-exame-documental-de-g-xd-01" title="Permanent link">&para;</a></h3>
+<p>Os dez tópicos <code>XD01-D01..D10</code> foram examinados documentalmente, mas <strong>não adjudicados</strong>. O fechamento desta sequência não constitui resolução de <code>G-XD-01</code>: permanecem abertas as decisões <code>XD01-D01-A..F</code>, <code>XD01-D02-A..G</code> e <code>XD01-D03-A..H</code> até <code>XD01-D10-A..H</code>, conforme cada matriz. A próxima etapa é a <strong>reconciliação consolidada de evidências, dependências, conflitos e decisões humanas pendentes</strong>, antes de qualquer adjudicação, promoção KPI, contrato de serving ou implementação. <code>G-XD-02..07</code> permanecem abertos.</p>
+<div class="highlight"><pre><span></span><code>XD01-D01..D09 → EXAMINED / HUMAN_ADJUDICATION_REQUIRED
+XD01-D10 → EXAMINED / HUMAN_ADJUDICATION_REQUIRED
+G-XD-01 → UNRESOLVED
+G-XD-02..07 → OPEN
+CANONICAL KPI PROMOTIONS → 0
+IMPLEMENTATION AUTHORIZATION → 0
 </code></pre></div></section><section class="print-page" id="intelligence-architecture-dashboard-guivos-business-master-specification" heading-number="16.5"><h1 id="intelligence-architecture-dashboard-guivos-business-master-specification-dashboard-guivos-business-documento-mestre-de-especificacao-analitica-e-handoff-replit">Dashboard Guivos Business — Documento Mestre de Especificação Analítica e Handoff Replit<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-business-master-specification-dashboard-guivos-business-documento-mestre-de-especificacao-analitica-e-handoff-replit" title="Permanent link">&para;</a></h1>
 <h2 id="intelligence-architecture-dashboard-guivos-business-master-specification-1-finalidade">1. Finalidade<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-business-master-specification-1-finalidade" title="Permanent link">&para;</a></h2>
 <p>Este documento é o <strong>Anexo B</strong> de <code>GKR-INTELLIGENCE-DASHBOARD-KPI-001</code> e governa, em nível documental pré-implementação, o <strong>Dashboard Guivos Business</strong>.</p>
