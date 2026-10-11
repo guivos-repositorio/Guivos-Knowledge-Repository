@@ -2,7 +2,7 @@
 id: GKR-INTELLIGENCE-DASHBOARD-KPI-001
 title: Dashboards, KPIs e Analytics — Documento Mestre de Especificação para Construção
 status: active
-version: 0.2.35
+version: 0.2.36
 owner: Guivos Intelligence Architecture
 last_updated: 2026-10-11
 normative: false
@@ -2195,6 +2195,57 @@ Este exame amplia a triagem de §39 para instrumentos institucionais e arquitetu
 
 ```text
 XD01-D01-E / XD01-D02-C → INSTITUTIONAL_AUTHORITY_SOURCES_EXAMINED
+FORMAL HUMAN DECISION MANDATE → NOT_DEMONSTRATED
+HUMAN REFERRALS SUBMITTED → 0
+HUMAN AUTHORITY CONFIRMED → 0/13
+HUMAN ADJUDICATIONS → 0/77
+G-XD-01 → UNRESOLVED
+G-XD-02..07 → OPEN
+CANONICAL KPI PROMOTIONS → 0
+IMPLEMENTATION AUTHORIZATION → 0
+```
+
+
+---
+
+## 41. G-XD-01 — Correspondência preliminar de ownership arquitetural dos ativos XD01-D01-E/D02-C
+
+### 41.1 Regra de autoridade
+
+O `ADR-003 — Architectural Ownership` (`accepted` v1.0.0) determina **uma arquitetura proprietária por ativo canônico**, com definição/evolução nesse domínio e referência pelas arquiteturas consumidoras. A matriz inicial do ADR atribui `participante, jornada, oportunidade, experiência e evidência de evolução` à **Ecosystem Architecture**, `dados, analytics, inteligência e modelos de IA` à **Data & Intelligence Architecture**, `produto e portfólio` à **Product Architecture** e `aplicações, APIs, infraestrutura, segurança e implementação técnica` à **Technology Architecture**. Não se admite propriedade conjunta presumida. Esta correspondência é **triagem interpretativa de categorias existentes**, não decisão formal de ownership de novos ativos, nem designação de aprovador humano.
+
+### 41.2 Matriz por ativo e fronteira
+
+| Ativo/objeto sujeito à decisão | Categoria expressa no ADR-003 | Correspondência preliminar e fronteira | Estado da propriedade específica |
+|---|---|---|---|
+| Participante e seu vínculo legítimo com Pessoa, Organização ou Coletivo | Participante → Ecosystem Architecture | Contrato de identidade/participante e vínculo de domínio não pode ser redefinido por KPI consumidor | `CATEGORY_MAPPED / ASSET_CONTRACT_UNVERIFIED` |
+| Identidade analítica, chaves de contagem, deduplicação e lineage | Dados/analytics → Data & Intelligence Architecture | Modelagem analítica referencia identidade do participante; não autoriza fusão da identidade de domínio | `CATEGORY_MAPPED / ASSET_CONTRACT_UNVERIFIED` |
+| Fusão, separação e reversão de identidade (`XD01-D01-E`) | Fronteira participante ↔ analytics | Decisão deve decompor alteração do objeto de domínio e repercussão em chaves/coortes; consumidor não decide alteração do domínio | `CROSS_DOMAIN_BOUNDARY_UNRESOLVED` |
+| Elegibilidade vinculada a programa, relação e estado de participante (`XD01-D02-C`) | Participante/jornada → Ecosystem Architecture; produto → Product Architecture, conforme objeto | Exige identificar se a regra é de vínculo/jornada ou contrato de produto/programa; não atribuir a um único proprietário sem identificar o ativo concreto | `SPECIFIC_OWNER_UNRESOLVED` |
+| População elegível por KPI, coortes, janelas e cálculo | Dados/analytics → Data & Intelligence Architecture | Indicador deve consumir elegibilidade legitimamente definida pelo domínio; cálculo não cria estado de domínio | `CATEGORY_MAPPED / ASSET_CONTRACT_UNVERIFIED` |
+| Política de reprocessamento, série histórica, versão e republicação de KPI | Dados/analytics → Data & Intelligence Architecture | Separar correção de evento de domínio, recomputação analítica e divulgação a consumidor | `CATEGORY_MAPPED / APPROVED_POLICY_UNVERIFIED` |
+| Serviços, APIs, execução e controles técnicos | Aplicações/APIs/segurança → Technology Architecture | Implementação não substitui autoridade sobre contrato funcional nem sobre dado | `CATEGORY_MAPPED / IMPLEMENTATION_NOT_AUTHORIZED` |
+| Regra de aprovação e governança arquitetural | ADRs/políticas/riscos/conformidade → Governance Architecture | Define processo e registra decisão formal; não absorve a propriedade do ativo de domínio ou analítico | `CATEGORY_MAPPED / HUMAN_MANDATE_UNVERIFIED` |
+
+A matriz **não atribui um mesmo ativo a duas arquiteturas**. Quando uma decisão toca duas categorias, exige decompor os ativos, suas dependências e seus respectivos proprietários antes de qualquer promoção. A fronteira de elegibilidade por programa não está resolvida pelo ADR genérico e deve permanecer fora de atribuição canônica específica.
+
+### 41.3 Dependências e evidências ainda exigidas
+
+| Expediente | Contratos e provas necessários para confirmar a correspondência | Limite |
+|---|---|---|
+| `XD01-D01-E` | Identificador e contrato canônico de participante; ownership da identidade de domínio; contrato analítico de chaves e deduplicação; regra aprovada de merge/split/reversão; dependências entre arquiteturas; decisão formal em caso de conflito | Não inferir cross-product linkage nem competência humana do `owner` arquitetural |
+| `XD01-D02-C` | Identificação do ativo de elegibilidade (domínio, produto/programa); estados e datas efetivas; proprietário único por ativo; contrato de KPI/coorte e política de reprocessamento; decisão formal para ownership ambíguo | Não promover retroatividade, republicação ou elegibilidade por mera proximidade com um produto |
+
+**Critério de resolução:** registrar para cada ativo um identificador estável, definição, arquitetura proprietária inequívoca, referência canônica, consumidores, fronteiras de alteração, instrumento formal quando houver disputa e evidência datada de aprovação. Até lá, a matriz é uma hipótese de correspondência de categorias, não adjudicação.
+
+### 41.4 Resultado e estado
+
+O `ADR-003` fornece categorias arquiteturais suficientes para **orientar a triagem**, mas as fontes examinadas **não comprovam contratos específicos, resolução de fronteiras ambíguas ou autoridade humana para as decisões**. Não se cria um novo ADR nem se modifica o ADR-003 nesta etapa.
+
+```text
+XD01 ARCHITECTURAL CATEGORY MAPPING → PRELIMINARY / NON-ADJUDICATED
+XD01-D01-E → CROSS_DOMAIN_BOUNDARY_UNRESOLVED
+XD01-D02-C → SPECIFIC_OWNER_UNRESOLVED
 FORMAL HUMAN DECISION MANDATE → NOT_DEMONSTRATED
 HUMAN REFERRALS SUBMITTED → 0
 HUMAN AUTHORITY CONFIRMED → 0/13
