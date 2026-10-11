@@ -2,7 +2,7 @@
 id: GKR-INTELLIGENCE-DASHBOARD-KPI-001
 title: Dashboards, KPIs e Analytics — Documento Mestre de Especificação para Construção
 status: active
-version: 0.2.14
+version: 0.2.15
 owner: Guivos Intelligence Architecture
 last_updated: 2026-10-11
 normative: false
@@ -1011,6 +1011,61 @@ A matriz não define novos nomes de eventos oficiais, enumerações técnicas, t
 XD01-D01 → EXAMINED / HUMAN_ADJUDICATION_REQUIRED
 XD01-D02 → EXAMINED / HUMAN_ADJUDICATION_REQUIRED
 XD01-D03 → EXAMINED / HUMAN_ADJUDICATION_REQUIRED
+G-XD-01 → UNRESOLVED
+CANONICAL KPI PROMOTIONS → 0
+IMPLEMENTATION AUTHORIZATION → 0
+```
+
+
+---
+
+## 20. XD01-D04 — Matriz de marcos de entrada, ativação, retorno e saída (exame, não adjudicação)
+
+### 20.1 Propósito, fronteiras e precedência
+
+Esta matriz examina exclusivamente `XD01-D04` da seção 16.3, apoiada nos cinco Documentos Mestres de dashboards (Anexos A–E) e nas distinções já examinadas em `XD01-D01..D03`. Os termos *entrada*, *ativação*, *retorno* e *saída* são **categorias de investigação analítica**, não etapas obrigatórias, estados técnicos oficiais ou transições universais da Pessoa, Organização, Coletivo ou Business. Cada marco exige autoridade especializada, evento/estado qualificante, elegibilidade, tempo e finalidade próprios.
+
+### 20.2 Matriz de evidências e lacunas por consumidor
+
+| Consumidor / evidência no Documento Mestre | Entrada e ativação — leitura candidata | Retorno e saída — leitura candidata | Lacuna que impede adjudicação |
+|---|---|---|---|
+| Guivos interno — `GUV-KPI-POP-002/003/004/005/012`, `GUV-KPI-ENG-001/002/006..008` | Criação válida de Pessoa, conclusão de cadastro e ativação por evento autorizado são marcos diferentes; a coorte de retenção exige ativação válida | Inatividade, reativação, retenção D7/D30/D90 e eventual cancelamento/churn não são sinônimos; churn requer contrato próprio | `ACTIVITY_EVENT_SET`, evento de ativação, elegibilidade, coorte, janela, exclusões, retorno qualificante e temporalidade |
+| Business — `BUS-KPI-PRG-001/002`, `BUS-KPI-PAR-001..006`, `BUS-KPI-JNY-002..004`, `BUS-KPI-COM-006/010` | Inclusão legítima em contrato/programa, acesso custeado, ativação de acesso e primeira participação válida são marcos distintos | Participação recorrente, suspensão/encerramento de programa e churn contratual dependem de contratos próprios; saída do programa não significa saída da Guivos | Autoridade contratual, regras de programa, evento de participação, janela, suspensão/reingresso, separação de beneficiário e contrato |
+| Organização — `ORG-KPI-OPP-001/002`, `ORG-KPI-PAR-002..004`, `ORG-KPI-REL-001/003/005` | Oportunidade válida/publicada, manifestação, inscrição, participação e relação institucional não determinam uma ativação universal | Pausa/encerramento de relação e conclusão de compromisso/oportunidade não significam saída institucional ou desativação da Pessoa | Lifecycle por objeto institucional, transições bilaterais, elegibilidade, fonte, reversão e disclosure |
+| Coletivo — `COL-KPI-PAR-001..006`, `COL-KPI-ACT-001..003` | Solicitação, aprovação, vínculo confirmado, papel aceito e presença/participação qualificante devem ser distinguidos | Continuidade, nova participação, pausa, desistência e saída são fatos diferentes; saída não implica julgamento reputacional | Consentimento/voluntariedade, vínculo e papel válidos, confirmação, período, reingresso e privacidade da contraparte |
+| Pessoa — `PER-KPI-CTX-001..003`, `PER-KPI-OBJ-001/002/004`, `PER-KPI-MOV-001..005`, `PER-KPI-REL-001..004` | Declaração legítima, confirmação de domínio, início de objetivo, Próximo Passo pronto e participação não equivalem a ativação pessoal universal | Pausa, revisão, reorientação, conclusão operacional, saída de relação e continuidade da Journey são distintos; não concluir abandono ou fracasso por inatividade | Autoridade da Pessoa, autoria, eventos/estados de cada objeto, tempo, evidência, ausência de dados, consentimento e controle de divulgação |
+
+### 20.3 Perguntas de adjudicação
+
+| Referência | Decisão em aberto | Evidência mínima para decisão futura |
+|---|---|---|
+| `XD01-D04-A` | Qual objeto, relação ou participante tem marco de entrada legitimamente observável? | Autoridade, identidade, evento/estado, data efetiva e condição de elegibilidade |
+| `XD01-D04-B` | O que configura ativação por domínio, produto, KPI e consumidor? | Evento qualificante autorizado, população/coorte, exclusões, janela e fonte |
+| `XD01-D04-C` | Como distinguir primeiro evento, uso recorrente, retenção, retorno e reativação? | Contrato temporal, histórico, janelas de observação, atividade válida e deduplicação |
+| `XD01-D04-D` | Qual a semântica de pausa, inatividade, cancelamento, saída e encerramento? | Lifecycle especializado, evento de reversão, relação afetada e proibição de churn presumido |
+| `XD01-D04-E` | Como tratar reingresso, múltiplos programas, vínculos simultâneos e mudança de papel? | Cardinalidade, identidade legítima, coorte, atribuição, versionamento e histórico |
+| `XD01-D04-F` | Quando um marco pode ser exibido ao consumidor sem expor Journey ou contraparte privada? | Finalidade, autoridade contextual, agregação, minimização, consentimento quando exigido e supressão |
+| `XD01-D04-G` | Como lidar com eventos tardios, marcos desconhecidos, séries incompletas e ausência de observação? | Proveniência, timestamp de ocorrência/registro, freshness, reprocessamento e estados de qualidade |
+| `XD01-D04-H` | Quais marcos são comparáveis entre dashboards sem inferir um funil universal? | Equivalência contratual explícita, mesma unidade/população/janela e divergências documentadas |
+
+### 20.4 Não equivalências e estado
+
+```text
+CADASTRO ≠ ENTRADA EM PROGRAMA ≠ ATIVAÇÃO ≠ PARTICIPAÇÃO
+RETENÇÃO ≠ RECORRÊNCIA ≠ REATIVAÇÃO
+INATIVIDADE ≠ CANCELAMENTO ≠ CHURN ≠ SAÍDA
+PAUSA ≠ DESISTÊNCIA ≠ FRACASSO
+CONCLUSÃO OPERACIONAL ≠ EVOLUÇÃO PESSOAL RECONHECIDA
+SAÍDA DE RELAÇÃO OU PROGRAMA ≠ SAÍDA DA GUIVOS
+```
+
+Não se estabelecem novas máquinas de estados, eventos oficiais, coortes canônicas, tempos de retenção, contratos de churn, métricas aprovadas ou instrumentação. `XD01-D05` (deduplicação e cardinalidade) permanece como próximo exame. Os gates `G-XD-02..07` e todas as autoridades especializadas permanecem inalterados.
+
+```text
+XD01-D01 → EXAMINED / HUMAN_ADJUDICATION_REQUIRED
+XD01-D02 → EXAMINED / HUMAN_ADJUDICATION_REQUIRED
+XD01-D03 → EXAMINED / HUMAN_ADJUDICATION_REQUIRED
+XD01-D04 → EXAMINED / HUMAN_ADJUDICATION_REQUIRED
 G-XD-01 → UNRESOLVED
 CANONICAL KPI PROMOTIONS → 0
 IMPLEMENTATION AUTHORIZATION → 0
