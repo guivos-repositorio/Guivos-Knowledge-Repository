@@ -2,7 +2,7 @@
 id: GKR-INTELLIGENCE-DASHBOARD-KPI-001
 title: Dashboards, KPIs e Analytics — Documento Mestre de Especificação para Construção
 status: active
-version: 0.2.33
+version: 0.2.34
 owner: Guivos Intelligence Architecture
 last_updated: 2026-10-11
 normative: false
@@ -2083,6 +2083,65 @@ O registro futuro de decisão deve atender integralmente aos dez elementos do pr
 XD01-D01-E → HUMAN_REFERRAL_DOSSIER_PREPARED / NEEDS_EVIDENCE
 XD01-D02-C → HUMAN_REFERRAL_DOSSIER_PREPARED / NEEDS_EVIDENCE
 HUMAN_REFERRALS_SUBMITTED → 0
+HUMAN AUTHORITY CONFIRMED → 0/13
+HUMAN ADJUDICATIONS → 0/77
+G-XD-01 → UNRESOLVED
+G-XD-02..07 → OPEN
+CANONICAL KPI PROMOTIONS → 0
+IMPLEMENTATION AUTHORIZATION → 0
+```
+
+
+---
+
+## 39. G-XD-01 — Matriz de rastreabilidade de competência e evidências para XD01-D01-E/D02-C
+
+### 39.1 Critério de leitura
+
+A matriz examina **fontes documentais identificadas**, não titulares, designações ou atos de aprovação. O campo `owner` de um documento, uma descrição de papel funcional, um ADR `proposed` ou uma responsabilidade de superfície **não comprovam, isoladamente, competência para adjudicar contratos analíticos**. `EVIDENCE_PARTIAL` indica fundamento contextual; `NOT_DEMONSTRATED` indica ausência de comprovação nas fontes examinadas, não inexistência no ecossistema.
+
+### 39.2 Fontes e limites de competência
+
+| Fonte examinada | Evidência documental observável | Limite para adjudicação humana |
+|---|---|---|
+| `docs/governance-framework/data-privacy-and-consent-governance.md` v0.1.0, §§1–7 | Separa finalidade, papéis, bases jurídicas, tratamento, evidência, controle projetado e implementado; exige análise aplicada | `owner: Guivos` e princípios de privacidade não designam pessoa, instância aprovadora ou poder de autorizar merge de identidade/reprocessamento |
+| `docs/product-architecture/adrs/adr-cc-004-acesso-por-finalidade-e-autoridade.md` v0.1.0, status `proposed` | Decisão de acesso contextual considera identidade, papel, autoridade, finalidade, operação, representação, sensibilidade, revogação e consumidor; papel/acesso técnico não equivalem a autoridade | ADR proposto não é ato de delegação nem prova de autoridade humana para decisões `XD01-D01-E` ou `XD01-D02-C` |
+| `docs/experience-architecture/organizations-collectives-journey/collective-participants-links-master.md` v0.1.0, §§1–3, `functional_contract_candidate` | Distingue solicitação aprovada, vínculo confirmado, papel aceito, representação e administração; preserva limite contextual de Pessoa–Coletivo | Autoridade para gerir uma superfície de vínculos não concede autoridade para fundir identidades analíticas ou alterar séries de KPI |
+| `docs/intelligence-architecture/dashboards-kpis-analytics-master-specification.md` §§17.3, 18.3, 28.2, 37–38 | Perguntas originais, evidências mínimas, protocolo de decisão, lacunas e alternativas ainda não selecionadas | Registro preparatório não contém nomeação verificável, assinatura, ato de delegação ou adjudicação |
+
+### 39.3 Matriz de competência por decisão — sem designação presumida
+
+| Expediente | Competência material a demonstrar | Prova documental ainda necessária | Resultado da triagem |
+|---|---|---|---|
+| `XD01-D01-E` — domínio de identidade e relações | Definir legitimidade, unicidade, reconciliação, reversão e escopo de vínculo por objeto | Instrumento vigente de competência/delegação, contrato de identidade e regra aprovada de merge/split | `NOT_DEMONSTRATED` |
+| `XD01-D01-E` — dados/Intelligence | Avaliar deduplicação, reprocessamento, séries, linhagem e publicação por consumidor | Instrumento de competência, contrato de KPI, política de versionamento/republicação | `NOT_DEMONSTRATED` |
+| `XD01-D01-E` — privacidade e disclosure | Avaliar finalidade, minimização, vínculo transversal, sensibilidade e acesso | Responsável competente identificado e fundamento verificável para o tratamento específico | `NOT_DEMONSTRATED` |
+| `XD01-D02-C` — domínio de elegibilidade/programa | Definir estados, datas efetivas, vigência, suspensão, reingresso e população por KPI | Instrumento de competência e contrato vigente de elegibilidade por objeto/programa | `NOT_DEMONSTRATED` |
+| `XD01-D02-C` — dados/Intelligence | Definir coortes, janelas, timezone, correções, fechamento e republicação | Instrumento de competência, calendário e política de reprocessamento aprovada | `NOT_DEMONSTRATED` |
+| `XD01-D02-C` — privacidade e disclosure | Examinar efeitos de correções e mudança de elegibilidade sobre consumidores e exposição | Competência documentada e avaliação da finalidade e granularidade de acesso | `NOT_DEMONSTRATED` |
+
+A indicação de **domínios de competência a confirmar** não cria órgão colegiado, fluxo de aprovação obrigatório, signatário, `owner` de decisão nem autoridade por analogia. Eventual competência conjunta, conflito ou separação de poderes depende de instrumento vigente a localizar e examinar.
+
+### 39.4 Checklist documental para futura submissão, ainda não executada
+
+| Requisito verificável | XD01-D01-E | XD01-D02-C |
+|---|---|---|
+| Pergunta original e evidência mínima preservadas | YES (§17.3) | YES (§18.3) |
+| Alternativas e trade-offs preparados | YES (§38.2) | YES (§38.3) |
+| Fontes contextuais examinadas | PARTIAL | PARTIAL |
+| Contrato especializado aprovado | NOT_DEMONSTRATED | NOT_DEMONSTRATED |
+| Autoridade humana e fundamento de competência comprovados | NO | NO |
+| Conflitos/dependências entre domínios resolvidos | NO | NO |
+| Encaminhamento humano efetivamente realizado | NO | NO |
+| Decisão expressa com data e referência de aprovação | NO | NO |
+
+**Condição para encaminhamento decisório futuro:** localizar o instrumento vigente que defina competência; validar seu escopo e atualidade; reunir evidências específicas por domínio e KPI; registrar consumidores e efeitos sobre privacidade; somente então submeter à instância comprovadamente competente. Nenhum envio, solicitação de aprovação ou adjudicação é declarado por esta matriz.
+
+### 39.5 Estado preservado
+
+```text
+XD01-D01-E / XD01-D02-C → AUTHORITY_EVIDENCE_SCREENED / NEEDS_EVIDENCE
+HUMAN REFERRALS SUBMITTED → 0
 HUMAN AUTHORITY CONFIRMED → 0/13
 HUMAN ADJUDICATIONS → 0/77
 G-XD-01 → UNRESOLVED
