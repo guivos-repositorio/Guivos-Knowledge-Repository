@@ -70662,6 +70662,145 @@ G-XD-01 → UNRESOLVED
 G-XD-02..07 → OPEN
 CANONICAL KPI PROMOTIONS → 0
 IMPLEMENTATION AUTHORIZATION → 0
+</code></pre></div>
+<hr />
+<h2 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-32-g-xd-01-dossies-individuais-de-decisao-humana-xd01-d07-e-xd01-d08">32. G-XD-01 — Dossiês individuais de decisão humana: XD01-D07 e XD01-D08<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-32-g-xd-01-dossies-individuais-de-decisao-humana-xd01-d07-e-xd01-d08" title="Permanent link">&para;</a></h2>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-321-escopo-fidelidade-e-autoridade">32.1 Escopo, fidelidade e autoridade<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-321-escopo-fidelidade-e-autoridade" title="Permanent link">&para;</a></h3>
+<p>Esta seção prepara 16 dossiês de adjudicação humana, preservando <strong>integralmente as perguntas e evidências mínimas</strong> das seções 23.3 (<code>XD01-D07-A..H</code>) e 24.3 (<code>XD01-D08-A..H</code>). As dependências adicionais organizam o exame sem constituir decisão, contrato temporal, política de correção, autorização de acesso ou regra implementável. Os cinco Documentos Mestres dos dashboards são evidência contextual, não fonte de adjudicação presumida.</p>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-322-dossies-xd01-d07-calendario-timezone-janelas-e-granularidade">32.2 Dossiês — XD01-D07: calendário, timezone, janelas e granularidade<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-322-dossies-xd01-d07-calendario-timezone-janelas-e-granularidade" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Pergunta/decisão original pendente</th>
+<th>Evidência mínima original</th>
+<th>Dependências para revisão (não adjudicadas)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>XD01-D07-A</code></td>
+<td>Qual calendário e timezone rege cada fonte, objeto, KPI e consumidor?</td>
+<td>Autoridade de domínio, timezone explícito, convenção de calendário e localidade</td>
+<td>Autoridade de domínio, consumidor e fonte; D01/D03</td>
+</tr>
+<tr>
+<td><code>XD01-D07-B</code></td>
+<td>Qual timestamp prevalece para contagem: ocorrência, recebimento, validação, confirmação ou correção?</td>
+<td>Taxonomia de evento, proveniência, data efetiva e trilha de auditoria</td>
+<td>Taxonomia e evento qualificante; D03/D04</td>
+</tr>
+<tr>
+<td><code>XD01-D07-C</code></td>
+<td>Qual granularidade legítima: evento, sessão, dia, semana, mês, ciclo, contrato ou coorte?</td>
+<td>Unidade, finalidade, elegibilidade, cardinalidade e supressão</td>
+<td>Grão, elegibilidade e deduplicação; D02/D05/D06</td>
+</tr>
+<tr>
+<td><code>XD01-D07-D</code></td>
+<td>Como delimitar janelas móveis, períodos fechados e coortes D7/D30/D90 sem misturá-los?</td>
+<td>Marco de entrada/ativação, instante inicial/final, janela e denominador</td>
+<td>Coorte, ativação e denominador; D02/D04/D06</td>
+</tr>
+<tr>
+<td><code>XD01-D07-E</code></td>
+<td>Como lidar com fusos distintos, horário de verão, fronteiras de dia e virada de período?</td>
+<td>Origem, offset/timezone, transformação rastreável e regra de corte</td>
+<td>Proveniência, transformação e auditoria; D08</td>
+</tr>
+<tr>
+<td><code>XD01-D07-F</code></td>
+<td>Como registrar atraso, reprocessamento, estorno, mudança retroativa e fechamento de período?</td>
+<td>Versionamento, histórico, política de correção, freshness e reconciliação</td>
+<td>Correção, fechamento e qualidade; D08/D09</td>
+</tr>
+<tr>
+<td><code>XD01-D07-G</code></td>
+<td>Quando séries de diferentes dashboards podem ser comparadas no mesmo período?</td>
+<td>Mesmo objeto/unidade, janela, coorte, fuso, granularidade e autorização</td>
+<td>Equivalência de grão e disclosure; D05/D06/D10</td>
+</tr>
+<tr>
+<td><code>XD01-D07-H</code></td>
+<td>Como representar dados sem timestamp confiável, janela incompleta ou período suprimido?</td>
+<td>Estado de qualidade, não-dado, proveniência, supressão e ausência de inferência</td>
+<td>Qualidade, atraso e supressão; D09</td>
+</tr>
+</tbody>
+</table>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-323-dossies-xd01-d08-correcoes-retroativas-reprocessamento-e-historico">32.3 Dossiês — XD01-D08: correções retroativas, reprocessamento e histórico<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-323-dossies-xd01-d08-correcoes-retroativas-reprocessamento-e-historico" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Pergunta/decisão original pendente</th>
+<th>Evidência mínima original</th>
+<th>Dependências para revisão (não adjudicadas)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>XD01-D08-A</code></td>
+<td>Quais alterações são novo evento, atualização legítima, correção, cancelamento, estorno ou reversão?</td>
+<td>Taxonomia por domínio, estado anterior/posterior e autoridade</td>
+<td>Eventos, estados e reversão; D03/D04</td>
+</tr>
+<tr>
+<td><code>XD01-D08-B</code></td>
+<td>Quem pode solicitar, validar, executar e auditar uma correção por objeto e consumidor?</td>
+<td>Papéis, permissões, aprovação e trilha de autoria</td>
+<td>Autoridade contextual e trilha de auditoria; G-XD-03</td>
+</tr>
+<tr>
+<td><code>XD01-D08-C</code></td>
+<td>Como representar versão, origem, instante de ocorrência, registro, validação, correção e vigência efetiva?</td>
+<td>Proveniência, lineage, histórico e timestamps auditáveis</td>
+<td>Temporalidade, origem e versionamento; D07/G-XD-02</td>
+</tr>
+<tr>
+<td><code>XD01-D08-D</code></td>
+<td>Qual período, coorte, população e KPI pode ser recalculado após uma alteração tardia?</td>
+<td>Janela, granularidade, denominador, fechamento e política autorizada</td>
+<td>Coorte, janela, fórmula e fechamento; D02/D06/D07</td>
+</tr>
+<tr>
+<td><code>XD01-D08-E</code></td>
+<td>Como impedir dupla contagem ou exclusão indevida em merge/split de identidade, eventos repetidos e reingressos?</td>
+<td>Cardinalidade, vínculo de versões, deduplicação e reconciliação</td>
+<td>Identidade, cardinalidade e histórico; D01/D05</td>
+</tr>
+<tr>
+<td><code>XD01-D08-F</code></td>
+<td>Como distinguir valor publicado anteriormente, valor recalculado e ajuste explícito?</td>
+<td>Versão do indicador, data de referência, histórico de publicação e explicação</td>
+<td>Proveniência e explicabilidade da série; G-XD-02</td>
+</tr>
+<tr>
+<td><code>XD01-D08-G</code></td>
+<td>Como preservar consentimento, minimização e privacidade em correções compartilhadas entre domínios e consumidores?</td>
+<td>Base de autorização, escopo de disclosure, retenção e revogação</td>
+<td>Consentimento, minimização e disclosure; G-XD-03/04</td>
+</tr>
+<tr>
+<td><code>XD01-D08-H</code></td>
+<td>Como tratar origem indisponível, evidência contestada, correção parcial ou reprocessamento falho?</td>
+<td>Estados de qualidade, bloqueio/supressão, auditoria, reversibilidade e não-dado</td>
+<td>Qualidade, exceções e não-dado; D09</td>
+</tr>
+</tbody>
+</table>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-324-ficha-individual-de-decisao-e-verificacoes-cruzadas">32.4 Ficha individual de decisão e verificações cruzadas<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-324-ficha-individual-de-decisao-e-verificacoes-cruzadas" title="Permanent link">&para;</a></h3>
+<p>Cada dossiê requer registro de <strong>ID, pergunta original, evidência mínima original, objeto/KPI, domínio, consumidor, fontes/versionamento, autoridade humana competente, alternativas, timestamp e calendário quando pertinentes, unidade/coorte/janela, dependências, riscos de atraso e correção, privacidade/consentimento/serving/exportação, justificativa, decisão expressa, data, aprovação rastreável e revisão cruzada</strong>. Não preencher decisão nem autoridade por inferência; evidência insuficiente deve manter <code>PENDING_HUMAN_ADJUDICATION</code>, <code>NEEDS_EVIDENCE</code> ou <code>CONFLICT</code>.</p>
+<p>A revisão deve distinguir ocorrência, recebimento, validação, confirmação, correção e vigência efetiva; períodos fechados de janelas móveis; retenção D7/D30/D90 de recorrência e reativação; evento novo de correção, estorno e reversão; valor previamente publicado de valor recalculado e ajuste explícito. Comparações entre dashboards exigem equivalência contratual de objeto, população, unidade, janela, fuso e autorização. Reprocessamento não pode fabricar eventos, apagar trilhas históricas nem ampliar disclosure de Journey privada ou contrapartes. Estados <code>NO_DATA</code>, <code>SOURCE_DELAYED</code>, <code>INSUFFICIENT_DATA</code> e <code>SUPPRESSED_BY_POLICY</code> permanecem distinguíveis.</p>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-325-controle-de-maturidade">32.5 Controle de maturidade<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-325-controle-de-maturidade" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>XD01-D01..D08 → DOSSIER_PREPARED / PENDING_HUMAN_ADJUDICATION
+XD01-D09..D10 → EXAMINED / PENDING_HUMAN_ADJUDICATION
+OPEN HUMAN QUESTIONS → 77
+HUMAN ADJUDICATIONS → 0
+G-XD-01 → UNRESOLVED
+G-XD-02..07 → OPEN
+CANONICAL KPI PROMOTIONS → 0
+IMPLEMENTATION AUTHORIZATION → 0
 </code></pre></div></section><section class="print-page" id="intelligence-architecture-dashboard-guivos-business-master-specification" heading-number="16.5"><h1 id="intelligence-architecture-dashboard-guivos-business-master-specification-dashboard-guivos-business-documento-mestre-de-especificacao-analitica-e-handoff-replit">Dashboard Guivos Business — Documento Mestre de Especificação Analítica e Handoff Replit<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-business-master-specification-dashboard-guivos-business-documento-mestre-de-especificacao-analitica-e-handoff-replit" title="Permanent link">&para;</a></h1>
 <h2 id="intelligence-architecture-dashboard-guivos-business-master-specification-1-finalidade">1. Finalidade<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-business-master-specification-1-finalidade" title="Permanent link">&para;</a></h2>
 <p>Este documento é o <strong>Anexo B</strong> de <code>GKR-INTELLIGENCE-DASHBOARD-KPI-001</code> e governa, em nível documental pré-implementação, o <strong>Dashboard Guivos Business</strong>.</p>
