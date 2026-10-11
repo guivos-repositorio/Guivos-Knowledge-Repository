@@ -2,7 +2,7 @@
 id: GKR-INTELLIGENCE-DASHBOARD-KPI-001
 title: Dashboards, KPIs e Analytics — Documento Mestre de Especificação para Construção
 status: active
-version: 0.2.30
+version: 0.2.31
 owner: Guivos Intelligence Architecture
 last_updated: 2026-10-11
 normative: false
@@ -1890,6 +1890,60 @@ As diferenças entre Pessoa, conta, papel, vínculo, participante elegível, par
 ```text
 XD01-D01/D02 → SOURCE_EVIDENCE_SCREENED / NEEDS_EVIDENCE
 SOURCE SCREENING → 13/13 (11 PARTIAL; 2 GAP)
+HUMAN AUTHORITY CONFIRMED → 0/13
+HUMAN ADJUDICATIONS → 0/77
+XD01-D01..D10 → DOSSIER_PREPARED / PENDING_HUMAN_ADJUDICATION
+G-XD-01 → UNRESOLVED
+G-XD-02..07 → OPEN
+CANONICAL KPI PROMOTIONS → 0
+IMPLEMENTATION AUTHORIZATION → 0
+```
+
+
+---
+
+## 36. G-XD-01 — Exame complementar de fontes especializadas para XD01-D01/D02
+
+### 36.1 Escopo e natureza da evidência
+
+Este exame amplia a triagem da seção 35 com quatro documentos especializados do GKR: governança de privacidade `GKR-DATA-PRIVACY-CONSENT-001 v0.1.0`, `ADR-CC-004 v0.1.0` (**Proposed**), Master de Participantes e Vínculos do Coletivo `GKR-UX-COL-PARTICIPANTS-LINKS-MASTER-001 v0.1.0` e Master de Relação Organização–Coletivo. As referências abaixo são **evidências documentais**, não contratos de dados executados ou confirmação de competência humana. `ADR-CC-004` conserva seu estado proposto. `PER-009` não é presumido como arquitetura integral de conta nem como autoridade universal.
+
+### 36.2 Rastreabilidade por decisão original
+
+| Questão | Evidência especializada rastreável | Resultado da triagem | Lacuna que permanece |
+|---|---|---|---|
+| `XD01-D01-A` | `docs/product-architecture/adrs/adr-cc-004-acesso-por-finalidade-e-autoridade.md` §§ Contexto/Decisão; `docs/governance-framework/data-privacy-and-consent-governance.md` §§4–5 | PARCIAL | Acesso contextual e titularidade não especificam chave analítica estável por tipo nem versionamento. |
+| `XD01-D01-B` | `docs/product-architecture/adrs/adr-cc-004-acesso-por-finalidade-e-autoridade.md` §§ Contexto/Regras; `docs/experience-architecture/organizations-collectives-journey/collective-participants-links-master.md` §3 | PARCIAL | Papel/representação separados, mas política de múltiplas contas e delegação não adjudicada. |
+| `XD01-D01-C` | `docs/experience-architecture/organizations-collectives-journey/collective-participants-links-master.md` §§2–3; `docs/experience-architecture/organizations-collectives-journey/organization-collective-relationship-master.md` §§1–3 | PARCIAL | Pessoa–Coletivo e Organização–Coletivo são relações diferentes; cardinalidade simultânea não contratada. |
+| `XD01-D01-D` | `docs/experience-architecture/organizations-collectives-journey/collective-participants-links-master.md` §§1,4; `docs/experience-architecture/organizations-collectives-journey/organization-collective-relationship-master.md` §§1–3 | PARCIAL | Solicitação, vínculo, papel e representação separados; estados e timestamps técnicos não contratados. |
+| `XD01-D01-E` | `docs/governance-framework/data-privacy-and-consent-governance.md` §4; `docs/product-architecture/adrs/adr-cc-004-acesso-por-finalidade-e-autoridade.md` §§Decisão/Regras | LACUNA ESPECÍFICA | Rastreabilidade e revogação são princípios; falta autoridade de merge/split e política de reconciliação histórica. |
+| `XD01-D01-F` | `docs/governance-framework/data-privacy-and-consent-governance.md` §§4–7; `docs/product-architecture/adrs/adr-cc-004-acesso-por-finalidade-e-autoridade.md` §§Decisão/Regras | PARCIAL | Finalidade e autorização contextual explícitas; não há permissão transversal geral nem chave autorizada. |
+| `XD01-D02-A` | `docs/governance-framework/data-privacy-and-consent-governance.md` §§4–5; `docs/experience-architecture/organizations-collectives-journey/collective-participants-links-master.md` §3 | PARCIAL | Titular ≠ participante e vínculo é contextual; universo elegível por KPI permanece específico. |
+| `XD01-D02-B` | `docs/experience-architecture/organizations-collectives-journey/collective-participants-links-master.md` §§1–4; `docs/product-architecture/adrs/adr-cc-004-acesso-por-finalidade-e-autoridade.md` §§Decisão/Regras | PARCIAL | Estados e restrições contextuais existem; critérios de inclusão/exclusão por KPI pendentes. |
+| `XD01-D02-C` | `docs/experience-architecture/organizations-collectives-journey/collective-participants-links-master.md` §4; `docs/product-architecture/adrs/adr-cc-004-acesso-por-finalidade-e-autoridade.md` §§Decisão/Regras | LACUNA ESPECÍFICA | Revalidação de contexto e revogação não fixam início/fim efetivo da elegibilidade nem reprocessamento. |
+| `XD01-D02-D` | `docs/experience-architecture/organizations-collectives-journey/collective-participants-links-master.md` §§1–3; `docs/governance-framework/data-privacy-and-consent-governance.md` §4 | PARCIAL | Vínculo confirmado distinto de solicitação, mas numerador/denominador requerem fonte e contrato por KPI. |
+| `XD01-D02-E` | `docs/product-architecture/adrs/adr-cc-004-acesso-por-finalidade-e-autoridade.md` §§Decisão/Regras; `docs/governance-framework/data-privacy-and-consent-governance.md` §§4–7; `docs/experience-architecture/organizations-collectives-journey/collective-participants-links-master.md` §3 | PARCIAL | Acesso condicionado por finalidade, representação e consumidor; granularidade/serving por KPI não adjudicados. |
+| `XD01-D02-F` | `docs/governance-framework/data-privacy-and-consent-governance.md` §4 | PARCIAL | Proveniência e estado operacional exigidos; taxonomia de não-dado e cobertura por KPI não demonstradas. |
+| `XD01-D02-G` | `docs/experience-architecture/organizations-collectives-journey/collective-participants-links-master.md` §2; `docs/experience-architecture/organizations-collectives-journey/organization-collective-relationship-master.md` §§1–3; `docs/governance-framework/data-privacy-and-consent-governance.md` §§4–7 | PARCIAL | Relações de domínios distintos não equivalem; atribuição e deduplicação entre produtos não contratadas. |
+
+### 36.3 Distinções verificadas e limites
+
+1. O documento de privacidade, §§4–7, define atividade de tratamento com finalidade e evidência próprias; titular pessoa natural não equivale a participante; base jurídica não equivale sempre a consentimento. O documento declara não comprovar implementação de controles em produção.
+2. `ADR-CC-004`, em estado **Proposed**, descreve acesso composto por identidade, papel, autoridade funcional, finalidade, representação, estado, consumidor e revogação; sua existência não comprova política implementada, autorização por KPI ou aprovação de chave transversal.
+3. O Master do Coletivo, §§1–4, separa solicitação aprovada, vínculo técnico confirmado, papel aceito, representação e administração; distingue vínculo Pessoa–Coletivo da relação Organização–Coletivo.
+4. O Master de relação Organização–Coletivo preserva identidade lógica, escopo, aprovações e histórico da relação; não atribui identidade pessoal nem autoriza vinculação analítica global.
+
+### 36.4 Pendências de autoridade e encaminhamento
+
+**Nenhuma autoridade humana adjudicadora individual foi confirmada** para os 13 IDs. Os documentos descrevem responsabilidades funcionais ou princípios, não nomeiam necessariamente o órgão/pessoa competente para aprovar contratos analíticos específicos. É necessário obter, por questão: (a) contrato de domínio vigente e versão; (b) fonte técnica/proveniência e qualidade; (c) matriz de acesso e finalidade; (d) competência humana expressa; (e) decisão rastreável, se e quando efetivamente emitida.
+
+As duas lacunas específicas de `XD01-D01-E` e `XD01-D02-C` permanecem abertas após o exame. A classificação das outras 11 questões continua `PARCIAL`: evidência especializada adicional **não satisfaz automaticamente** todos os requisitos de adjudicação.
+
+### 36.5 Estado
+
+```text
+XD01-D01/D02 → SPECIALIZED_SOURCE_EVIDENCE_SCREENED / NEEDS_EVIDENCE
+SOURCE SCREENING → 13/13 (11 PARTIAL; 2 SPECIFIC GAPS)
 HUMAN AUTHORITY CONFIRMED → 0/13
 HUMAN ADJUDICATIONS → 0/77
 XD01-D01..D10 → DOSSIER_PREPARED / PENDING_HUMAN_ADJUDICATION
