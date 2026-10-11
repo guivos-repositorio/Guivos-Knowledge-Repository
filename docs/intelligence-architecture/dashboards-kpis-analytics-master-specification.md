@@ -2,7 +2,7 @@
 id: GKR-INTELLIGENCE-DASHBOARD-KPI-001
 title: Dashboards, KPIs e Analytics — Documento Mestre de Especificação para Construção
 status: active
-version: 0.2.44
+version: 0.2.45
 owner: Guivos Intelligence Architecture
 last_updated: 2026-10-11
 normative: false
@@ -2630,6 +2630,45 @@ GUV-KPI-POP-002 → proposed / NOT_READY
 INDIVIDUAL CONTRACT RECORDS → 2 EXISTING / NO CHANGE
 SOURCE, FRESHNESS, PROVENANCE → SOURCE_PENDING IN CONTRACT FIELDS
 SEMANTIC / QUALITY / TIME / DISCLOSURE BLOCKERS → UNRESOLVED
+G-XD-01 → UNRESOLVED
+G-XD-03..07 → OPEN
+HUMAN AUTHORITY FORMALLY CONFIRMED → 0/13
+HUMAN ADJUDICATIONS → 0/77
+CANONICAL KPI PROMOTIONS → 0
+IMPLEMENTATION AUTHORIZATION → 0
+```
+
+
+---
+
+## 50. G-XD-02 — Triagem complementar dos quatro KPIs sem contrato individual do Anexo A
+
+### 50.1 Escopo, fontes e autoridade
+
+Exame documental limitado a `GUV-KPI-POP-007`, `GUV-KPI-POP-009`, `GUV-KPI-POP-011` e `GUV-KPI-OPP-001`. Evidências: Dashboard Guivos master v0.1.5, KPI Registry v0.1.5, reconciliação de status v0.1.1, e seções 48–49 deste master. Nenhum dos quatro possui registro contratual individual materializado no registry verificado. Esta seção não materializa contratos, não decide critérios de validade nem promove KPI.
+
+### 50.2 Matriz de lacunas verificadas
+
+| KPI | Definição candidata existente no Anexo A | Blocker semântico preservado | Prova de fonte/qualidade ainda necessária | Status e readiness |
+|---|---|---|---|---|
+| `GUV-KPI-POP-007` — Organizações cadastradas | Contagem distinta de Organizações válidas | Validade/elegibilidade de Organização | Fonte de domínio, identificador e estado válido, regra de exclusões, autoria, unicidade, referência temporal e lineage | `proposed / NOT_READY` |
+| `GUV-KPI-POP-009` — Coletivos cadastrados | Contagem distinta de Coletivos válidos | Validade/elegibilidade de Coletivo | Fonte e autoridade de Coletivo, critérios de validade, deduplicação, timestamp, qualidade e proveniência | `proposed / NOT_READY` |
+| `GUV-KPI-POP-011` — Mix de participantes | Distribuição Pessoa/Organização/Coletivo no universo aplicável | Denominador, universo e escopo aplicável | Fontes separadas de cada tipo, cardinalidade, bases comparáveis, janela, cobertura, qualidade e autorização do consumidor | `proposed / NOT_READY` |
+| `GUV-KPI-OPP-001` — Oportunidades criadas | Oportunidades válidas criadas no período | Validade/elegibilidade da oportunidade | Fonte de oportunidade, evento de criação, estado válido, reversões, timezone, correções e proveniência | `proposed / NOT_READY` |
+
+### 50.3 Requisitos para eventual materialização, sem decisão
+
+A futura materialização individual exigiria confrontar `metric_id`, finalidade e consumidor, autoridade do objeto, população/unidade, fórmula e deduplicação, fonte/versionamento, janela/freshness, quality/null/zero, disclosure/privacidade, ownership, lineage e condições de aceite. A inclusão destes campos em uma matriz **não constitui aprovação de seus valores**. Não se confunde registro documental individual com fonte operacional, adjudicação de elegibilidade ou `source_pending` como status global.
+
+As dependências de `G-XD-01` (identidade, eventos, população, tempo), `G-XD-03/04` (acesso, privacidade e exportação), `G-XD-05` (KPI Registry), `G-XD-06` quando economicamente pertinente, e `G-XD-07` (Design/Engenharia/dados reais/produção) permanecem abertas. A seção não altera o Anexo A, KPI Registry, contratos individualizados existentes ou decisões históricas.
+
+### 50.4 Checkpoint
+
+```text
+G-XD-02 → ANNEX_A_REMAINING_FOUR_TRIAGED / OPEN
+GUV-KPI-POP-007/009/011 + GUV-KPI-OPP-001 → proposed / NOT_READY
+INDIVIDUAL CONTRACT RECORDS (THESE FOUR) → NOT MATERIALIZED
+SOURCE CONTRACTS OR OPERATIONAL DATA → NOT VERIFIED
 G-XD-01 → UNRESOLVED
 G-XD-03..07 → OPEN
 HUMAN AUTHORITY FORMALLY CONFIRMED → 0/13
