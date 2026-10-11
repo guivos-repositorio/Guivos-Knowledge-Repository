@@ -72549,6 +72549,94 @@ HUMAN AUTHORITY FORMALLY CONFIRMED → 0/13
 HUMAN ADJUDICATIONS → 0/77
 CANONICAL KPI PROMOTIONS → 0
 IMPLEMENTATION AUTHORIZATION → 0
+</code></pre></div>
+<hr />
+<h2 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-49-g-xd-02-confronto-individual-dos-contratos-guv-kpi-pop-001-e-guv-kpi-pop-002">49. G-XD-02 — Confronto individual dos contratos GUV-KPI-POP-001 e GUV-KPI-POP-002<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-49-g-xd-02-confronto-individual-dos-contratos-guv-kpi-pop-001-e-guv-kpi-pop-002" title="Permanent link">&para;</a></h2>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-491-fontes-escopo-e-precedencia">49.1 Fontes, escopo e precedência<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-491-fontes-escopo-e-precedencia" title="Permanent link">&para;</a></h3>
+<p>Exame documental dos registros individuais <code>docs/intelligence-architecture/guv-kpi-pop-001.md</code> e <code>guv-kpi-pop-002.md</code>, ambos v0.1.0, contra o Anexo A v0.1.5, o KPI Registry v0.1.5, o registro de reconciliação v0.1.1 e as seções 47–48 deste master. Não substitui a autoridade do Anexo A e não altera contratos individuais, fontes nem statuses. A expressão <code>SOURCE_PENDING</code> em campos de contrato não promove o <strong>status</strong> do KPI enquanto blockers semânticos persistirem.</p>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-492-evidencias-contrastadas-por-campo">49.2 Evidências contrastadas por campo<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-492-evidencias-contrastadas-por-campo" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Dimensão</th>
+<th><code>GUV-KPI-POP-001</code> — Pessoas cadastradas</th>
+<th><code>GUV-KPI-POP-002</code> — Novas Pessoas</th>
+<th>Conclusão de triagem</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Finalidade</td>
+<td>Tamanho agregado de Pessoas válidas/elegíveis no universo corrente</td>
+<td>Entradas agregadas de Pessoas com criação válida no período</td>
+<td>Identidade e finalidade declaradas, sem liberação de dados reais</td>
+</tr>
+<tr>
+<td>Unidade e cálculo</td>
+<td>Pessoa; distinct count após validade; fórmula e população <code>UNRESOLVED</code></td>
+<td>Pessoa/período; distinct count após elegibilidade; fórmula/população <code>UNRESOLVED</code></td>
+<td>Regra de validade/criação não adjudicada</td>
+</tr>
+<tr>
+<td>Fonte</td>
+<td><code>source_of_truth: SOURCE_PENDING</code> — fonte Pessoa não adjudicada</td>
+<td><code>source_of_truth: SOURCE_PENDING</code></td>
+<td>Fonte operacional/canônica não comprovada</td>
+</tr>
+<tr>
+<td>Temporalidade</td>
+<td><code>time_window</code>, <code>timezone</code>, <code>closing_rule: UNRESOLVED</code>; <code>as_of</code> pendente</td>
+<td><code>time_window</code>, <code>timezone</code>, <code>closing_rule: UNRESOLVED</code>; criação válida e retroatividade pendentes</td>
+<td>Contrato temporal não fechado</td>
+</tr>
+<tr>
+<td>Qualidade</td>
+<td>Checks de unicidade, validade e completude <code>UNRESOLVED</code>; null/zero pendentes</td>
+<td><code>quality_checks</code>, null/zero <code>UNRESOLVED</code>; duplicidade e eventos retroativos confundem a leitura</td>
+<td>Sem regras de qualidade/ausência aprovadas</td>
+</tr>
+<tr>
+<td>Freshness e lineage</td>
+<td>Freshness, provenance e source version <code>SOURCE_PENDING</code></td>
+<td>Mesmos campos <code>SOURCE_PENDING</code></td>
+<td>Sem SLA, cadeia de transformação ou versão de fonte comprovados</td>
+</tr>
+<tr>
+<td>Acesso/disclosure</td>
+<td>Agregado autorizado como classe conceitual; dimensões, thresholds, exportação e supressão <code>UNRESOLVED</code></td>
+<td>Agregado autorizado como classe conceitual; filtros, thresholds, exportação e supressão <code>UNRESOLVED</code></td>
+<td>Sem serving/exportação operacional autorizados</td>
+</tr>
+<tr>
+<td>Responsabilidade</td>
+<td><code>accountable_owner</code>, <code>calculation_owner</code>, <code>domain_contracts</code> <code>UNRESOLVED</code></td>
+<td>Mesmo conjunto <code>UNRESOLVED</code></td>
+<td>Owner documental não demonstra alçada semântica/operacional</td>
+</tr>
+<tr>
+<td>Estado contratual</td>
+<td><code>proposed / NOT_READY</code></td>
+<td><code>proposed / NOT_READY</code></td>
+<td>Sem promoção</td>
+</tr>
+</tbody>
+</table>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-493-dependencias-de-passagem">49.3 Dependências de passagem<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-493-dependencias-de-passagem" title="Permanent link">&para;</a></h3>
+<p>A verificação futura de <code>POP-001</code> exige comprovação da regra de validade/elegibilidade e exclusões da Pessoa, identificador e contrato de fonte, referência temporal <code>as_of</code>, unicidade/qualidade, owners competentes e disclosure autorizado. Para <code>POP-002</code>, exige adicionalmente autoridade para evento de criação válida, data efetiva, período, timezone, atrasos/correções e reconciliação temporal. Em ambos, contratos de fonte, qualidade, lineage e periodicidade requerem evidência material verificável, e não inferência a partir do nome do objeto.</p>
+<p>Dependências <code>G-XD-01</code> (identidade, população, eventos, temporalidade), <code>G-XD-03/04</code> (consumidor, consentimento, privacidade e divulgação), <code>G-XD-05</code> (registry e contrato) e <code>G-XD-07</code> (autorização separada de engenharia) permanecem. Este exame não aprova fonte de dados, pipeline, KPI ou acesso, nem autoriza integração real, RBAC ou build Replit.</p>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-494-estado">49.4 Estado<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-494-estado" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>G-XD-02 → POP001_POP002_CONTRACT_EVIDENCE_EXAMINED / OPEN
+GUV-KPI-POP-001 → proposed / NOT_READY
+GUV-KPI-POP-002 → proposed / NOT_READY
+INDIVIDUAL CONTRACT RECORDS → 2 EXISTING / NO CHANGE
+SOURCE, FRESHNESS, PROVENANCE → SOURCE_PENDING IN CONTRACT FIELDS
+SEMANTIC / QUALITY / TIME / DISCLOSURE BLOCKERS → UNRESOLVED
+G-XD-01 → UNRESOLVED
+G-XD-03..07 → OPEN
+HUMAN AUTHORITY FORMALLY CONFIRMED → 0/13
+HUMAN ADJUDICATIONS → 0/77
+CANONICAL KPI PROMOTIONS → 0
+IMPLEMENTATION AUTHORIZATION → 0
 </code></pre></div></section><section class="print-page" id="intelligence-architecture-dashboard-guivos-business-master-specification" heading-number="16.5"><h1 id="intelligence-architecture-dashboard-guivos-business-master-specification-dashboard-guivos-business-documento-mestre-de-especificacao-analitica-e-handoff-replit">Dashboard Guivos Business — Documento Mestre de Especificação Analítica e Handoff Replit<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-business-master-specification-dashboard-guivos-business-documento-mestre-de-especificacao-analitica-e-handoff-replit" title="Permanent link">&para;</a></h1>
 <h2 id="intelligence-architecture-dashboard-guivos-business-master-specification-1-finalidade">1. Finalidade<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-business-master-specification-1-finalidade" title="Permanent link">&para;</a></h2>
 <p>Este documento é o <strong>Anexo B</strong> de <code>GKR-INTELLIGENCE-DASHBOARD-KPI-001</code> e governa, em nível documental pré-implementação, o <strong>Dashboard Guivos Business</strong>.</p>
