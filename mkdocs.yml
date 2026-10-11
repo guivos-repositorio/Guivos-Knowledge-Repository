@@ -281,6 +281,7 @@ nav:
       - Dashboards, KPIs e Analytics: intelligence-architecture/dashboards-kpis-analytics-master-specification.md
       - Dashboard Guivos Business — Documento Mestre: intelligence-architecture/dashboard-guivos-business-master-specification.md
       - Dashboard Organização — Documento Mestre: intelligence-architecture/dashboard-organization-master-specification.md
+      - Dashboard Coletivo — Documento Mestre: intelligence-architecture/dashboard-collective-master-specification.md
       - Tecnologia de Grafo: adr/ADR-007-neo4j-primary-graph-reference.md
 
   - Governança do GKR:
