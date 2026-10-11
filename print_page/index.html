@@ -70381,6 +70381,148 @@ G-XD-01 → UNRESOLVED
 G-XD-02..07 → OPEN
 CANONICAL KPI PROMOTIONS → 0
 IMPLEMENTATION AUTHORIZATION → 0
+</code></pre></div>
+<hr />
+<h2 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-30-g-xd-01-dossies-individuais-de-decisao-humana-xd01-d03-e-xd01-d04">30. G-XD-01 — Dossiês individuais de decisão humana: XD01-D03 e XD01-D04<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-30-g-xd-01-dossies-individuais-de-decisao-humana-xd01-d03-e-xd01-d04" title="Permanent link">&para;</a></h2>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-301-escopo-fidelidade-e-autoridade">30.1 Escopo, fidelidade e autoridade<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-301-escopo-fidelidade-e-autoridade" title="Permanent link">&para;</a></h3>
+<p>Esta seção prepara 16 dossiês de adjudicação humana, mantendo <strong>integralmente as perguntas e evidências mínimas</strong> das seções 19.3 (<code>XD01-D03-A..H</code>) e 20.3 (<code>XD01-D04-A..H</code>). A coluna de dependências é auxiliar, não substitui as matrizes originais nem cria regra normativa. Os cinco Documentos Mestres dos dashboards são evidência contextual, não autorização de contratos analíticos, máquinas de estados ou instrumentação. Nenhuma autoridade humana é atribuída por presunção.</p>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-302-dossies-xd01-d03-eventos-e-estados-por-dominio">30.2 Dossiês — XD01-D03: eventos e estados por domínio<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-302-dossies-xd01-d03-eventos-e-estados-por-dominio" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Pergunta/decisão original pendente</th>
+<th>Evidência mínima original</th>
+<th>Dependências para revisão (não adjudicadas)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>XD01-D03-A</code></td>
+<td>Qual autoridade de domínio define cada tipo de evento e cada estado?</td>
+<td>Documento normativo competente, versão, objeto, escopo, dono e finalidade</td>
+<td>Autoridade de domínio e precedência; D01</td>
+</tr>
+<tr>
+<td><code>XD01-D03-B</code></td>
+<td>Qual transição é legítima e qual é apenas hipótese de superfície ou indicador?</td>
+<td>Máquina de estados ou contrato adjudicado, pré-condições, papel autorizado e relação com objeto</td>
+<td>Estados e transições; não inferir implementação</td>
+</tr>
+<tr>
+<td><code>XD01-D03-C</code></td>
+<td>O que constitui evento observado, recebido, validado, rejeitado ou confirmado?</td>
+<td>Origem, autoria, timestamp de ocorrência/registro, critérios de validação e evidência</td>
+<td>Proveniência, observação versus validação; D08</td>
+</tr>
+<tr>
+<td><code>XD01-D03-D</code></td>
+<td>Como representar cancelamento, reversão, expiração, pausa, saída e reingresso?</td>
+<td>Semântica de reversão, data efetiva, trilha de auditoria e impacto histórico</td>
+<td>Reversão, tempo e histórico; D04/D08</td>
+</tr>
+<tr>
+<td><code>XD01-D03-E</code></td>
+<td>Quando estados distintos podem ser usados como numerador ou coorte?</td>
+<td>Evento qualificante, elegibilidade, deduplicação, denominador, janela e unidade de contagem por KPI</td>
+<td>Coortes, elegibilidade, deduplicação e fórmula; D02/D05/D06/D07</td>
+</tr>
+<tr>
+<td><code>XD01-D03-F</code></td>
+<td>Quais relações de autoria, contraparte, consentimento e disclosure limitam cada evento?</td>
+<td>Autoridade de acesso por consumidor, finalidade, sensibilidade, minimização e política de supressão</td>
+<td>Privacidade, consentimento, serving e D10</td>
+</tr>
+<tr>
+<td><code>XD01-D03-G</code></td>
+<td>Como reconciliar nomenclaturas semelhantes entre produtos sem declarar equivalência indevida?</td>
+<td>Mapeamento explícito de contratos especializados, proveniência e diferenças de ciclo de vida</td>
+<td>Diferenças entre os cinco dashboards; sem equivalência universal</td>
+</tr>
+<tr>
+<td><code>XD01-D03-H</code></td>
+<td>Como tratar estados não mapeados, eventos tardios e fontes indisponíveis?</td>
+<td>Política de qualidade, freshness, reprocessamento, <code>NO_DATA</code>, <code>SOURCE_DELAYED</code>, <code>INSUFFICIENT_DATA</code> e <code>SUPPRESSED_BY_POLICY</code></td>
+<td>Qualidade, atraso, não-dado e supressão; D08/D09</td>
+</tr>
+</tbody>
+</table>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-303-dossies-xd01-d04-entrada-ativacao-retorno-e-saida">30.3 Dossiês — XD01-D04: entrada, ativação, retorno e saída<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-303-dossies-xd01-d04-entrada-ativacao-retorno-e-saida" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Pergunta/decisão original pendente</th>
+<th>Evidência mínima original</th>
+<th>Dependências para revisão (não adjudicadas)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>XD01-D04-A</code></td>
+<td>Qual objeto, relação ou participante tem marco de entrada legitimamente observável?</td>
+<td>Autoridade, identidade, evento/estado, data efetiva e condição de elegibilidade</td>
+<td>Identidade, elegibilidade e eventos; D01..D03</td>
+</tr>
+<tr>
+<td><code>XD01-D04-B</code></td>
+<td>O que configura ativação por domínio, produto, KPI e consumidor?</td>
+<td>Evento qualificante autorizado, população/coorte, exclusões, janela e fonte</td>
+<td>População e evento qualificante; D02/D03</td>
+</tr>
+<tr>
+<td><code>XD01-D04-C</code></td>
+<td>Como distinguir primeiro evento, uso recorrente, retenção, retorno e reativação?</td>
+<td>Contrato temporal, histórico, janelas de observação, atividade válida e deduplicação</td>
+<td>Tempo, unicidade e reprocessamento; D05/D07/D08</td>
+</tr>
+<tr>
+<td><code>XD01-D04-D</code></td>
+<td>Qual a semântica de pausa, inatividade, cancelamento, saída e encerramento?</td>
+<td>Lifecycle especializado, evento de reversão, relação afetada e proibição de churn presumido</td>
+<td>Lifecycle específico; inatividade não é churn</td>
+</tr>
+<tr>
+<td><code>XD01-D04-E</code></td>
+<td>Como tratar reingresso, múltiplos programas, vínculos simultâneos e mudança de papel?</td>
+<td>Cardinalidade, identidade legítima, coorte, atribuição, versionamento e histórico</td>
+<td>Papéis, vínculos, cardinalidade e histórico; D01/D05/D08</td>
+</tr>
+<tr>
+<td><code>XD01-D04-F</code></td>
+<td>Quando um marco pode ser exibido ao consumidor sem expor Journey ou contraparte privada?</td>
+<td>Finalidade, autoridade contextual, agregação, minimização, consentimento quando exigido e supressão</td>
+<td>Autorização, minimização e supressão; D09/D10</td>
+</tr>
+<tr>
+<td><code>XD01-D04-G</code></td>
+<td>Como lidar com eventos tardios, marcos desconhecidos, séries incompletas e ausência de observação?</td>
+<td>Proveniência, timestamp de ocorrência/registro, freshness, reprocessamento e estados de qualidade</td>
+<td>Proveniência, qualidade e temporalidade; D07..D09</td>
+</tr>
+<tr>
+<td><code>XD01-D04-H</code></td>
+<td>Quais marcos são comparáveis entre dashboards sem inferir um funil universal?</td>
+<td>Equivalência contratual explícita, mesma unidade/população/janela e divergências documentadas</td>
+<td>Grão, população e janela; D02/D05/D06/D07</td>
+</tr>
+</tbody>
+</table>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-304-registro-individual-e-verificacoes-cruzadas">30.4 Registro individual e verificações cruzadas<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-304-registro-individual-e-verificacoes-cruzadas" title="Permanent link">&para;</a></h3>
+<p>Cada dossiê requer, antes de adjudicação, ficha com <strong>ID, texto original, objeto/KPI, domínio, consumidor, fontes/versionamento, autoridade humana e fundamento de competência, evidência verificável, alternativas, dependências, impactos de privacidade/consentimento/serving/exportação, decisão expressa, justificativa, data, aprovação rastreável, revisão cruzada e status</strong>. Sem autoridade ou evidência suficiente, usar <code>PENDING_HUMAN_ADJUDICATION</code>, <code>NEEDS_EVIDENCE</code> ou <code>CONFLICT</code>, sem preencher decisão.</p>
+<p>A revisão humana deverá preservar as distinções entre cadastro e ativação; interesse, inscrição, participação e conclusão; solicitação, aprovação, vínculo confirmado e papel aceito; inclusão em programa, acesso custeado e uso efetivo; declaração, movimento e resultado pessoal. Inatividade não equivale a churn, pausa não equivale a fracasso e saída de programa ou vínculo não equivale a saída da Guivos. Evento válido para cálculo não confere automaticamente direito de disclosure. Comparabilidade entre dashboards exige identidade, unidade, população, janela, finalidade e autoridade compatíveis, não semelhança de nomenclatura.</p>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-305-controle-de-maturidade">30.5 Controle de maturidade<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-305-controle-de-maturidade" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>XD01-D01-A..F → DOSSIER_PREPARED / PENDING_HUMAN_ADJUDICATION
+XD01-D02-A..G → DOSSIER_PREPARED / PENDING_HUMAN_ADJUDICATION
+XD01-D03-A..H → DOSSIER_PREPARED / PENDING_HUMAN_ADJUDICATION
+XD01-D04-A..H → DOSSIER_PREPARED / PENDING_HUMAN_ADJUDICATION
+XD01-D05..D10 → EXAMINED / PENDING_HUMAN_ADJUDICATION
+OPEN HUMAN QUESTIONS → 77
+HUMAN ADJUDICATIONS → 0
+G-XD-01 → UNRESOLVED
+G-XD-02..07 → OPEN
+CANONICAL KPI PROMOTIONS → 0
+IMPLEMENTATION AUTHORIZATION → 0
 </code></pre></div></section><section class="print-page" id="intelligence-architecture-dashboard-guivos-business-master-specification" heading-number="16.5"><h1 id="intelligence-architecture-dashboard-guivos-business-master-specification-dashboard-guivos-business-documento-mestre-de-especificacao-analitica-e-handoff-replit">Dashboard Guivos Business — Documento Mestre de Especificação Analítica e Handoff Replit<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-business-master-specification-dashboard-guivos-business-documento-mestre-de-especificacao-analitica-e-handoff-replit" title="Permanent link">&para;</a></h1>
 <h2 id="intelligence-architecture-dashboard-guivos-business-master-specification-1-finalidade">1. Finalidade<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-business-master-specification-1-finalidade" title="Permanent link">&para;</a></h2>
 <p>Este documento é o <strong>Anexo B</strong> de <code>GKR-INTELLIGENCE-DASHBOARD-KPI-001</code> e governa, em nível documental pré-implementação, o <strong>Dashboard Guivos Business</strong>.</p>
