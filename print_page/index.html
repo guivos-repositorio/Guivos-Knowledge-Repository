@@ -69322,6 +69322,117 @@ XD01-D04 → EXAMINED / HUMAN_ADJUDICATION_REQUIRED
 G-XD-01 → UNRESOLVED
 CANONICAL KPI PROMOTIONS → 0
 IMPLEMENTATION AUTHORIZATION → 0
+</code></pre></div>
+<hr />
+<h2 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-21-xd01-d05-matriz-de-deduplicacao-e-cardinalidade-exame-nao-adjudicacao">21. XD01-D05 — Matriz de deduplicação e cardinalidade (exame, não adjudicação)<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-21-xd01-d05-matriz-de-deduplicacao-e-cardinalidade-exame-nao-adjudicacao" title="Permanent link">&para;</a></h2>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-211-escopo-e-precedencia">21.1 Escopo e precedência<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-211-escopo-e-precedencia" title="Permanent link">&para;</a></h3>
+<p>Este exame de <code>XD01-D05</code> identifica unidades de contagem, cardinalidade e riscos de dupla contagem nos cinco Documentos Mestres de dashboards, sem estabelecer chaves canônicas, algoritmos, contratos KPI ou regras de implementação. As decisões anteriores <code>XD01-D01..D04</code> permanecem dependentes de adjudicação humana.</p>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-212-evidencias-e-lacunas-por-consumidor">21.2 Evidências e lacunas por consumidor<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-212-evidencias-e-lacunas-por-consumidor" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Consumidor</th>
+<th>Unidades distintas a examinar</th>
+<th>Riscos e pendências</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Guivos interno — <code>GUV-KPI-POP-001..005</code>, <code>GUV-KPI-ENG-006..008</code>, <code>GUV-KPI-OPP-011..015</code></td>
+<td>Pessoa válida, conta, ativação, evento, oportunidade, inscrição, participação, conclusão</td>
+<td>Múltiplas contas/papéis, eventos repetidos, participações em vários produtos, coortes, janelas e reprocessamento; falta identidade e grão autorizados</td>
+</tr>
+<tr>
+<td>Business — <code>BUS-KPI-PAR-001..006</code>, <code>BUS-KPI-PRG-001/002</code>, <code>BUS-KPI-JNY-002..004</code></td>
+<td>Contratante, contrato, programa, elegível, acesso custeado, participação, evento validado</td>
+<td>Uma Pessoa em múltiplos programas; elegível não é participante; acesso custeado não é uso; não revelar Journey privada entre patrocinadores</td>
+</tr>
+<tr>
+<td>Organização — <code>ORG-KPI-OPP-001/002</code>, <code>ORG-KPI-PAR-002..004</code>, <code>ORG-KPI-REL-001/003/005</code></td>
+<td>Organização, oportunidade, manifestação, inscrição, participante, conclusão, relação bilateral</td>
+<td>Múltiplas inscrições e relações por Pessoa; a soma de oportunidades não implica total distinto de pessoas; depende da autoridade de cada objeto</td>
+</tr>
+<tr>
+<td>Coletivo — <code>COL-KPI-PAR-001..006</code>, <code>COL-KPI-ACT-001..003</code></td>
+<td>Solicitação, vínculo confirmado, papel aceito, sessão, presença, participação</td>
+<td>Solicitações repetidas, papéis simultâneos, várias presenças, saída e reingresso; presença não é vínculo nem reputação</td>
+</tr>
+<tr>
+<td>Pessoa — <code>PER-KPI-CTX-001..003</code>, <code>PER-KPI-OBJ-001/002/004</code>, <code>PER-KPI-MOV-001..005</code></td>
+<td>Declaração, objetivo, Próximo Passo, movimento, evidência, revisão</td>
+<td>A mesma ação pode servir vários objetivos; revisões não criam resultados adicionais; preservar autoria, privacidade e ausência de escore universal</td>
+</tr>
+</tbody>
+</table>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-213-questoes-abertas-de-adjudicacao">21.3 Questões abertas de adjudicação<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-213-questoes-abertas-de-adjudicacao" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Decisão pendente</th>
+<th>Evidência mínima</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>XD01-D05-A</code></td>
+<td>Unidade de contagem por KPI: entidade, vínculo, evento, sessão, programa, objeto ou transação?</td>
+<td>Contrato de métrica, autoridade e população</td>
+</tr>
+<tr>
+<td><code>XD01-D05-B</code></td>
+<td>Escopo de unicidade: produto, organização, coletivo, contrato, programa, oportunidade, janela ou consumidor?</td>
+<td>Finalidade, escopo e autorização</td>
+</tr>
+<tr>
+<td><code>XD01-D05-C</code></td>
+<td>Duplicata técnica versus nova ocorrência, atualização, correção ou reversão?</td>
+<td>Identificador de origem, estado, timestamps, versionamento</td>
+</tr>
+<tr>
+<td><code>XD01-D05-D</code></td>
+<td>Múltiplas contas, papéis, vínculos, programas e oportunidades simultâneos?</td>
+<td>Cardinalidade, histórico, papel e atribuição</td>
+</tr>
+<tr>
+<td><code>XD01-D05-E</code></td>
+<td>Quando somas dimensionais duplicam pessoas e quando totais distintos são legítimos?</td>
+<td>Grão, sobreposição, população e janela</td>
+</tr>
+<tr>
+<td><code>XD01-D05-F</code></td>
+<td>Saída/reingresso, fusão/divisão, correções retroativas e eventos tardios?</td>
+<td>Autoridade de identidade, tempo efetivo, reconciliação</td>
+</tr>
+<tr>
+<td><code>XD01-D05-G</code></td>
+<td>Deduplicação entre produtos sem expor dados de contrapartes ou Journey privada?</td>
+<td>Finalidade, minimização, consentimento aplicável, supressão</td>
+</tr>
+<tr>
+<td><code>XD01-D05-H</code></td>
+<td>Ausência de chave, relações ambíguas ou cardinalidade desconhecida?</td>
+<td>Qualidade, proveniência, estado de não dado, não fabricar totais</td>
+</tr>
+</tbody>
+</table>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-214-nao-equivalencias-e-estado">21.4 Não equivalências e estado<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-214-nao-equivalencias-e-estado" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Pessoa não equivale a conta, papel ou vínculo.</li>
+<li>Elegível não equivale a participante ou evento.</li>
+<li>Solicitação não equivale a vínculo confirmado ou presença.</li>
+<li>Inscrição não equivale a participação ou conclusão.</li>
+<li>Acesso custeado não equivale a uso efetivo.</li>
+<li>Eventos totais não equivalem a pessoas distintas.</li>
+<li>Soma por programa não equivale a total global deduplicado.</li>
+<li>Revisão de evidência não equivale a novo resultado.</li>
+</ul>
+<p>Nenhuma identidade universal, algoritmo de deduplicação, cardinalidade global, métrica aprovada ou instrumentação é estabelecida. <code>XD01-D06</code> (numerador, denominador e unidade) permanece o próximo exame. <code>G-XD-01</code> permanece não resolvido; <code>G-XD-02..07</code> e as autoridades especializadas permanecem inalterados.</p>
+<div class="highlight"><pre><span></span><code>XD01-D01..D04 → EXAMINED / HUMAN_ADJUDICATION_REQUIRED
+XD01-D05 → EXAMINED / HUMAN_ADJUDICATION_REQUIRED
+G-XD-01 → UNRESOLVED
+CANONICAL KPI PROMOTIONS → 0
+IMPLEMENTATION AUTHORIZATION → 0
 </code></pre></div></section><section class="print-page" id="intelligence-architecture-dashboard-guivos-business-master-specification" heading-number="16.5"><h1 id="intelligence-architecture-dashboard-guivos-business-master-specification-dashboard-guivos-business-documento-mestre-de-especificacao-analitica-e-handoff-replit">Dashboard Guivos Business — Documento Mestre de Especificação Analítica e Handoff Replit<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-business-master-specification-dashboard-guivos-business-documento-mestre-de-especificacao-analitica-e-handoff-replit" title="Permanent link">&para;</a></h1>
 <h2 id="intelligence-architecture-dashboard-guivos-business-master-specification-1-finalidade">1. Finalidade<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-business-master-specification-1-finalidade" title="Permanent link">&para;</a></h2>
 <p>Este documento é o <strong>Anexo B</strong> de <code>GKR-INTELLIGENCE-DASHBOARD-KPI-001</code> e governa, em nível documental pré-implementação, o <strong>Dashboard Guivos Business</strong>.</p>
