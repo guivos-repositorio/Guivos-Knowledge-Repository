@@ -2,7 +2,7 @@
 id: GKR-INTELLIGENCE-DASHBOARD-KPI-001
 title: Dashboards, KPIs e Analytics — Documento Mestre de Especificação para Construção
 status: active
-version: 0.2.31
+version: 0.2.32
 owner: Guivos Intelligence Architecture
 last_updated: 2026-10-11
 normative: false
@@ -1947,6 +1947,62 @@ SOURCE SCREENING → 13/13 (11 PARTIAL; 2 SPECIFIC GAPS)
 HUMAN AUTHORITY CONFIRMED → 0/13
 HUMAN ADJUDICATIONS → 0/77
 XD01-D01..D10 → DOSSIER_PREPARED / PENDING_HUMAN_ADJUDICATION
+G-XD-01 → UNRESOLVED
+G-XD-02..07 → OPEN
+CANONICAL KPI PROMOTIONS → 0
+IMPLEMENTATION AUTHORIZATION → 0
+```
+
+
+---
+
+## 37. G-XD-01 — Exame dirigido das lacunas XD01-D01-E e XD01-D02-C
+
+### 37.1 Escopo e fontes
+
+Este exame aprofunda as duas lacunas específicas preservadas nas seções 35–36, confrontando-as com `XD01-D05` (§21.3), `XD01-D07` (§23.3) e `XD01-D08` (§24.3), além dos contratos funcionais especializados do Journey. Os documentos `docs/product-architecture/pas-001-captura-de-contexto-eventos-integracoes-funcionais.md` (`v1.0.0`, §4675) e `docs/product-architecture/pas-001-eventos-de-vida-ciclo-de-vida.md` (`v1.0.0`, seções sobre estado da informação e entrada no ciclo de vida) são **fontes de princípios e estados do domínio**, não evidência de algoritmo analítico implementado, política de KPI adjudicada ou autorização de tratamento transversal.
+
+### 37.2 XD01-D01-E — Duplicatas, fusão, separação e correção retroativa de identidades
+
+| Dimensão | Evidência documental identificada | Contrato ainda não demonstrado |
+|---|---|---|
+| Origem, autoria e histórico | Captura de Contexto §4675 exige identidade, proveniência, versionamento, imutabilidade histórica, idempotência e correção compensatória | Identificadores analíticos e autoridade para reconciliar entidades distintas |
+| Ambiguidade de associação | Eventos de Vida, ciclo de vida: identificação pode resultar em duplicidade, informação insuficiente ou associação incerta | Critérios de fusão/separação, contestação, reversão e prevenção de falso vínculo |
+| Cardinalidade e contagem | `XD01-D05-C/D/F/H` exige diferenciar duplicata, evento, papel, vínculo, reingresso e ausência de chave | Unidade, escopo de unicidade e política de recomputação de séries |
+| Reprocessamento | `XD01-D08-B/C/E/F/H` exige autoria, versão, histórico e comparação de séries | Quem autoriza correção, quais séries podem mudar e como auditar resultados anteriores |
+| Privacidade | Governança de Privacidade §§4–7 e `ADR-CC-004` proposto exigem finalidade e acesso contextual | Finalidade/base/autorização específicas para linkage entre produtos e consumidores |
+
+**Resultado:** `LACUNA ESPECÍFICA PERSISTENTE / NEEDS_EVIDENCE`. Os princípios de correção e idempotência do Journey não são regra de fusão de identidades, não provam implementação e não autorizam deduplicação global.
+
+### 37.3 XD01-D02-C — Início, término e retroatividade da elegibilidade
+
+| Dimensão | Evidência documental identificada | Contrato ainda não demonstrado |
+|---|---|---|
+| Estados e origem | Eventos de Vida, ciclo de vida, distingue estado do evento e estado da informação; admite reconstrução retroativa como forma de entrada | Marco legítimo de início/fim de elegibilidade por KPI, programa e consumidor |
+| Tempo e janelas | `XD01-D07-A/B/D/E` exige calendário, timezone, timestamp prevalente, coorte e janela | Datas efetivas, corte de período e tratamento de fusos no indicador |
+| Alterações tardias | `XD01-D07-F` e `XD01-D08-C/D/F` exigem histórico, versionamento e distinção entre série original/recalculada | Regra autorizada para reabrir período, recalcular população/coorte e republicar |
+| Saída/reingresso | `XD01-D05-F` exige cardinalidade e reconciliação; Master do Coletivo diferencia vínculo e estado | Elegibilidade após suspensão, cancelamento, reingresso e mudança contratual |
+| Qualidade e disclosure | `XD01-D07-H`, `XD01-D08-G/H` exigem proveniência, não-dado e proteção | Tratamento de janela incompleta, evidência contestada e resultado suprimido |
+
+**Resultado:** `LACUNA ESPECÍFICA PERSISTENTE / NEEDS_EVIDENCE`. Reconstrução retroativa de um Evento de Vida não implica recálculo retroativo de elegibilidade de KPI nem autorização de divulgação.
+
+### 37.4 Pacote mínimo para encaminhamento humano
+
+| Questão | Evidência adicional necessária | Autoridade a identificar, sem atribuição presumida |
+|---|---|---|
+| `XD01-D01-E` | Contrato vigente de identidade e relações; políticas de duplicatas, merge/split, reversão e auditoria; proveniência; testes de cardinalidade e efeitos em séries; limites de acesso | Responsáveis competentes pelos domínios de identidade/relações, dados/Intelligence e privacidade, com fundamento documental de competência |
+| `XD01-D02-C` | Contrato de elegibilidade por KPI e consumidor; calendário/timezone; timestamps; ciclo de programa/vínculo; regras de correção, fechamento, coortes e republicação; tratamento de não-dado | Responsáveis competentes pelos domínios de população/programa, dados/Intelligence e privacidade, com fundamento documental de competência |
+
+Nenhum responsável humano específico é nomeado ou aprovado neste exame. Os contratos devem ser submetidos à autoridade humana pertinente, com alternativas, trade-offs, impacto de privacidade, decisão expressa, data e referência verificável. Enquanto isso, manter `NEEDS_EVIDENCE` e não executar deduplicação, reprocessamento ou publicação.
+
+### 37.5 Estado
+
+```text
+XD01-D01-E → GAP_EXAMINED / NEEDS_EVIDENCE
+XD01-D02-C → GAP_EXAMINED / NEEDS_EVIDENCE
+XD01-D01/D02 → 13/13 SOURCE_SCREENED (11 PARTIAL; 2 SPECIFIC GAPS)
+HUMAN AUTHORITY CONFIRMED → 0/13
+HUMAN ADJUDICATIONS → 0/77
 G-XD-01 → UNRESOLVED
 G-XD-02..07 → OPEN
 CANONICAL KPI PROMOTIONS → 0
