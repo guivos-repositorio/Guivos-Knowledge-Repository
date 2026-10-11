@@ -2,7 +2,7 @@
 id: GKR-INTELLIGENCE-DASHBOARD-KPI-001
 title: Dashboards, KPIs e Analytics — Documento Mestre de Especificação para Construção
 status: active
-version: 0.2.39
+version: 0.2.40
 owner: Guivos Intelligence Architecture
 last_updated: 2026-10-11
 normative: false
@@ -2397,6 +2397,54 @@ Preparar a verificação documental dos instrumentos institucionais aplicáveis 
 PROPOSED HUMAN AUTHORITY (XD01-D01-E / XD01-D02-C) → FOUNDER / EXPLICITLY_PROPOSED
 FORMAL HUMAN MANDATE → PENDING_EVIDENCE
 HUMAN AUTHORITY FORMALLY CONFIRMED → 0/13
+HUMAN REFERRALS SUBMITTED → 0
+HUMAN ADJUDICATIONS → 0/77
+G-XD-01 → UNRESOLVED
+G-XD-02..07 → OPEN
+CANONICAL KPI PROMOTIONS → 0
+IMPLEMENTATION AUTHORIZATION → 0
+```
+
+
+---
+
+## 45. G-XD-01 — Verificação documental do mandato institucional proposto para o fundador
+
+### 45.1 Escopo e método
+
+Exame documental dos instrumentos institucionais existentes no GKR para avaliar se a indicação expressa registrada na seção 44 demonstra competência formal do fundador para adjudicar `XD01-D01-E` (reconciliação de identidades) e `XD01-D02-C` (elegibilidade temporal). `NOT_DEMONSTRATED_IN_EXAMINED_SOURCES` significa apenas ausência de comprovação nas fontes examinadas, não inexistência de instrumento externo.
+
+### 45.2 Confronto com as fontes
+
+| Fonte e estado | Autoridade demonstrada pelo documento | Limite quanto ao mandato do fundador |
+|---|---|---|
+| `docs/adr/ADR-003-architectural-ownership.md` — `accepted` v1.0.0 | Cada ativo canônico tem uma arquitetura proprietária; propriedade incerta demanda decisão formal | Ownership arquitetural não equivale a nomeação individual para adjudicação |
+| `docs/governance-framework/institutional-and-legal-architecture.md` — `proposed` v0.1.0 | Separa entidades, governança, direitos de decisão, competências reservadas e relações institucionais | Não comprova composição societária real, órgão competente, alçada ou delegação ao fundador |
+| `docs/governance-framework/internal-authority-boundary.md` — `proposed` v1.2.0 | Distingue sensibilidade, perfil de autoridade/publicação e finalidade de uso | Autoridade de publicação/documentação não concede competência decisória sobre dados |
+| `docs/governance-framework/operational-and-legal-truth-registry.md` — `proposed` v0.1.0 | Exige evidência verificável; `OT2 approved` requer autoridade aplicável | Não comprova ato de aprovação ou mandato para os expedientes |
+| Seção 44 deste Documento Mestre — registro de manifestação | Fundador explicitamente indicado como autoridade **proposta** para análise e formalização de competência | Manifestação não equivale a mandato vigente nem adjudicação |
+
+### 45.3 Resultado por expediente
+
+| Expediente | Candidato indicado | Competência institucional comprovada | Próxima evidência necessária |
+|---|---|---|---|
+| `XD01-D01-E` | Fundador — `EXPLICITLY_PROPOSED` | `NOT_DEMONSTRATED_IN_EXAMINED_SOURCES` | Instrumento vigente que identifique entidade, órgão/alçada, poderes para política de identidade e correção histórica, limites e eventual delegação |
+| `XD01-D02-C` | Fundador — `EXPLICITLY_PROPOSED` | `NOT_DEMONSTRATED_IN_EXAMINED_SOURCES` | Instrumento vigente que identifique entidade, órgão/alçada, poderes sobre critérios de elegibilidade e efeitos temporais, limites e eventual delegação |
+
+O exame de competência deve ainda identificar os proprietários arquiteturais específicos e eventuais revisões técnicas, de dados e de privacidade exigidas; nenhuma delas é substituída pela indicação do fundador.
+
+### 45.4 Próximo ato dependente de evidência
+
+Solicitar para verificação, **se existentes e aplicáveis**, instrumentos societários ou institucionais vigentes, atos de designação/delegação, políticas de alçada e atas/decisões que demonstrem o direito de decidir essas matérias. Registrar referência, data, vigência, emissor, escopo, limitações e autoridade que validou o instrumento. Não inserir conteúdo sigiloso no repositório público; quando necessário, registrar somente referência sanitizada a evidência sob custódia apropriada.
+
+Sem essa evidência, não registrar autoridade como confirmada, não encaminhar para adjudicação e não selecionar alternativas de mérito.
+
+### 45.5 Estado
+
+```text
+FOUNDER PROPOSAL → EXPLICITLY_PROPOSED
+MANDATE EVIDENCE IN EXAMINED GKR SOURCES → NOT_DEMONSTRATED
+FORMAL HUMAN AUTHORITY CONFIRMED → 0/13
 HUMAN REFERRALS SUBMITTED → 0
 HUMAN ADJUDICATIONS → 0/77
 G-XD-01 → UNRESOLVED
