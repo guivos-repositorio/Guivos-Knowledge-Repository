@@ -2,7 +2,7 @@
 id: GKR-INTELLIGENCE-DASHBOARD-KPI-001
 title: Dashboards, KPIs e Analytics — Documento Mestre de Especificação para Construção
 status: active
-version: 0.2.20
+version: 0.2.21
 owner: Guivos Intelligence Architecture
 last_updated: 2026-10-11
 normative: false
@@ -1331,6 +1331,62 @@ Nenhum limiar de supressão, regra de preenchimento, KPI ou autorização de imp
 XD01-D01..D08 → EXAMINED / HUMAN_ADJUDICATION_REQUIRED
 XD01-D09 → EXAMINED / HUMAN_ADJUDICATION_REQUIRED
 G-XD-01 → UNRESOLVED
+CANONICAL KPI PROMOTIONS → 0
+IMPLEMENTATION AUTHORIZATION → 0
+```
+
+
+---
+
+## 26. XD01-D10 — Matriz de vinculação entre produtos/participantes, dupla contagem e divulgação (exame, não adjudicação)
+
+### 26.1 Propósito e precedência
+
+Este exame de `XD01-D10` reúne as lacunas de vinculação analítica entre domínios, identidade de participantes e objetos, deduplicação interproduto e divulgação para consumidores distintos. Não estabelece identificador global universal, grafo analítico automaticamente compartilhável, regra de matching, identidade civil, agregação irrestrita ou permissão transversal. Dependem de adjudicação humana os contratos examinados em `XD01-D01..D09`, bem como os gates `G-XD-02..07` e as autoridades especializadas.
+
+### 26.2 Evidências e lacunas por consumidor
+
+| Consumidor / referências documentais | Vínculos e contagens a distinguir | Lacunas de adjudicação |
+|---|---|---|
+| Guivos interno — `GUV-KPI-POP-001..005`, `GUV-KPI-ENG-006..008`, `GUV-KPI-OPP-011..015` | Pessoa, conta, participação, programa, oportunidade, organização, coletivo, produto e eventos de ativação/retorno | Identidade analítica autorizada, chaves por domínio, sobreposição, escopo de deduplicação, coortes e visibilidade interna legítima |
+| Business — `BUS-KPI-PAR-001..006`, `BUS-KPI-PRG-001/002`, `BUS-KPI-JNY-002..004` | Pessoa elegível, contrato, programa, incentivo, acesso Journey custeado, participação/evidência validada | Isolamento entre clientes e programas, relação contratual, identidade pseudonimizada, vedação de acesso a Journey privado, disclosure e exportação |
+| Organização — `ORG-KPI-OPP-001/002`, `ORG-KPI-PAR-002..004`, `ORG-KPI-REL-001/003/005` | Organização, oportunidade, manifestação, inscrição, participação, conclusão e relação bilateral | Cardinalidade por oportunidade e contraparte, vínculos simultâneos, eventos compartilháveis e proibição de inferir dados privados |
+| Coletivo — `COL-KPI-PAR-001..006`, `COL-KPI-ACT-001..003` | Pessoa, solicitação, vínculo confirmado, papel, sessão, presença, atividade, coletivo | Vínculos múltiplos, deduplicação por sessão/atividade, voluntariedade, papéis e limite de divulgação entre coletivos |
+| Pessoa — `PER-KPI-CTX-001..003`, `PER-KPI-OBJ-001/002/004`, `PER-KPI-MOV-001..005` | Declaração, objetivo, Próximo Passo, movimento, evidência e relação voluntária com oportunidades/participantes | Controle e consentimento da pessoa, identidade contextual, limites de ligação externa, não divulgação de objetivos/evolução privados |
+
+### 26.3 Questões abertas para adjudicação
+
+| ID | Decisão pendente | Evidência mínima |
+|---|---|---|
+| `XD01-D10-A` | Quais identidades e relações podem ser ligadas entre produtos, e por qual autoridade? | Contratos por domínio, finalidade, autorização e chaves contextuais |
+| `XD01-D10-B` | Como distinguir pessoa, conta, papel, vínculo, organização, coletivo, oportunidade, programa e evento? | Identidade analítica, cardinalidade, estado de relação e proveniência |
+| `XD01-D10-C` | Em quais condições uma mesma pessoa ou objeto pode contar uma vez ou várias vezes? | Unidade do KPI, população, período, domínio, programa e escopo de deduplicação |
+| `XD01-D10-D` | Como evitar soma indevida entre produtos, clientes, coletivos, programas, oportunidades e períodos? | Contrato de agregação, chaves de sobreposição, denominador e reconciliação |
+| `XD01-D10-E` | Quais informações podem ser servidas a cada consumidor sem revelar Journey privado ou contrapartes? | Permissão, consentimento, minimização, escopo de serving e disclosure |
+| `XD01-D10-F` | Como prevenir reidentificação por cruzamento, filtros, exportação, séries e pequenas células? | Política de supressão, análise de combinação, governança de exportação e auditoria |
+| `XD01-D10-G` | Como tratar mudança de papel, saída/reingresso, merge/split de identidade e correções retroativas entre domínios? | Histórico, versionamento, temporalidade, deduplicação e revogação |
+| `XD01-D10-H` | Qual representação usar quando vínculo, permissão, identidade ou cardinalidade forem incertos? | Estados de não-dado, proveniência, bloqueio de divulgação e ausência de inferência |
+
+### 26.4 Restrições e encaminhamento
+
+- Identidade técnica ou chave de grafo não equivale a autorização para compartilhar dados.
+- Um participante pode ocupar múltiplos papéis e vínculos sem equivaler a múltiplas pessoas.
+- Soma de contagens por programa, oportunidade, coletivo ou produto não equivale automaticamente ao total distinto global.
+- Associação com organização ou coletivo não autoriza inferir objetivos, declarações, movimentos ou evolução pessoal.
+- Acesso Journey custeado não autoriza a exposição de Journey privado a Business ou outros consumidores.
+- Consentimento e finalidade não são herdados automaticamente entre produtos.
+- Agregação e pseudonimização não dispensam análise de reidentificação, inclusive em exportações.
+- Dúvida de identidade, relação ou permissão deve permanecer explícita, sem matching presumido.
+
+### 26.5 Encerramento do exame documental de G-XD-01
+
+Os dez tópicos `XD01-D01..D10` foram examinados documentalmente, mas **não adjudicados**. O fechamento desta sequência não constitui resolução de `G-XD-01`: permanecem abertas as decisões `XD01-D01-A..F`, `XD01-D02-A..G` e `XD01-D03-A..H` até `XD01-D10-A..H`, conforme cada matriz. A próxima etapa é a **reconciliação consolidada de evidências, dependências, conflitos e decisões humanas pendentes**, antes de qualquer adjudicação, promoção KPI, contrato de serving ou implementação. `G-XD-02..07` permanecem abertos.
+
+```text
+XD01-D01..D09 → EXAMINED / HUMAN_ADJUDICATION_REQUIRED
+XD01-D10 → EXAMINED / HUMAN_ADJUDICATION_REQUIRED
+G-XD-01 → UNRESOLVED
+G-XD-02..07 → OPEN
 CANONICAL KPI PROMOTIONS → 0
 IMPLEMENTATION AUTHORIZATION → 0
 ```
