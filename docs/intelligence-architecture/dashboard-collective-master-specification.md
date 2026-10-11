@@ -2,9 +2,9 @@
 id: GKR-INTELLIGENCE-DASHBOARD-COLLECTIVE-001
 title: Dashboard Coletivo — Documento Mestre de Especificação Analítica e Handoff Replit
 status: active
-version: 0.1.1
+version: 0.1.2
 owner: Guivos Intelligence Architecture
-last_updated: 2026-09-12
+last_updated: 2026-10-11
 normative: false
 maturity: governed_pre_implementation_dashboard_master
 depends_on:
@@ -788,3 +788,82 @@ ANNEX E / F
 ```
 
 A materialização documental deste master não autoriza dados reais, implementação, produção, ampliação de disclosure, reputação, score/ranking ou promoção automática de qualquer KPI além de seu status governado.
+
+
+---
+
+## 26. Auditoria estratégica e executiva das necessidades analíticas — v0.1.2
+
+### 26.1 Escopo e regra de maturidade
+
+Esta auditoria examina as oito famílias de indicadores existentes sem alterar sua autoridade. Os identificadores `COL-KPI-*` continuam `proposed / NOT_READY`. Os candidatos abaixo são **referências provisórias de refinamento**, não novos KPIs canônicos. Não se presume disponibilidade de fontes, implementação, consentimento ou permissão de acesso.
+
+O Coletivo é um participante com propósito, atividades, governança, relações e autonomia própria. Pertencimento não equivale a representação; participação não é obrigação; popularidade não equivale a contribuição, evolução, legitimidade ou impacto.
+
+### 26.2 Matriz de leitura executiva
+
+| Dimensão | Pergunta de gestão candidata | Família existente | Condição necessária |
+|---|---|---|---|
+| Atuação e continuidade | Como evoluem atividades válidas, recorrência e alcance autorizado? | ACT | eventos, janelas e estados de atividade definidos |
+| Participação voluntária | Qual é a trajetória autorizada entre solicitação, vínculo, presença e continuidade? | PAR | coortes, deduplicação e voluntariedade; não inferir engajamento compulsório |
+| Governança e proteção | Decisões, consultas e demandas de proteção são tratadas dentro das responsabilidades? | GOV | finalidade, acesso por papel e proteção contra retaliação |
+| Relações e colaboração | Quais vínculos institucionais bilaterais geram atividades ou entregas verificáveis? | REL / EVD | autoridade bilateral, evidências e atribuição |
+| Aprendizado e resultados | O que foi realizado e quais aprendizados/resultados podem ser demonstrados? | EVD | evidência suficiente; atividade ≠ resultado ≠ impacto |
+| Capacidade | A capacidade autorizada suporta as atividades pretendidas? | CAP / ACT | entitlement, ciclo, disponibilidade e fontes |
+| Território e áreas de evolução | Onde o Coletivo atua e quais oportunidades de ampliação são legitimamente observáveis? | GEO / ACT | território autorizado, domínios de evolução aplicáveis e proteção de agregados |
+| Confiabilidade | Quais leituras estão incompletas, atrasadas ou suprimidas? | DQ | freshness, proveniência, qualidade e política de disclosure |
+
+### 26.3 Candidatos provisórios de refinamento — não canônicos
+
+| Referência | Leitura candidata | Contrato pendente |
+|---|---|---|
+| COL-ACT-C01 | Continuidade de atividades | atividades com eventos qualificantes em janelas comparáveis; ciclo e eventos pendentes |
+| COL-ACT-C02 | Cobertura de oportunidades do Coletivo | oportunidades válidas por território/domínio elegível; taxonomia e população pendentes |
+| COL-PAR-C01 | Solicitações convertidas em vínculos autorizados | vínculos efetivados / solicitações elegíveis na mesma coorte; estados e desistências pendentes |
+| COL-PAR-C02 | Participação voluntária em atividades | presenças ou participações qualificantes / elegíveis; não pressupor obrigação ou score individual |
+| COL-PAR-C03 | Continuidade de participação agregada | coortes de participação em períodos comparáveis; sem identificação individual no dashboard |
+| COL-GOV-C01 | Tratamento de decisões e consultas | eventos concluídos / eventos elegíveis, segundo estados e prazos próprios; sem exposição de votos privados |
+| COL-GOV-C02 | Demandas de proteção tratadas | casos com desfecho procedimental válido / casos elegíveis; acesso restrito, sem inferir culpabilidade |
+| COL-REL-C01 | Relações bilaterais ativas | vínculos institucionais em estado autorizado; lifecycle e bilateralidade pendentes |
+| COL-REL-C02 | Colaborações com entregas evidenciadas | relações com entrega comprovada / relações elegíveis; evidência e atribuição pendentes |
+| COL-EVD-C01 | Cobertura de evidências de atividades | atividades elegíveis com evidência suficiente / atividades elegíveis; suficiência pendente |
+| COL-EVD-C02 | Aprendizados e resultados sustentados | resultados classificados por natureza de evidência; não confundir relato com causalidade |
+| COL-CAP-C01 | Utilização de capacidade do plano | uso autorizado / capacidade elegível no ciclo; entitlements e fonte pendentes |
+| COL-GEO-C01 | Cobertura territorial autorizada | territórios com atividade elegível / territórios de atuação definidos; supressão pendente |
+| COL-GEO-C02 | Contribuição potencial por domínio de evolução | oferta/atividade do Coletivo associada a domínios aplicáveis; não afirmar evolução individual |
+| COL-DQ-C01 | Cobertura de indicadores confiáveis | leituras com contratos e dados suficientes / leituras esperadas; registry pendente |
+
+Nenhuma referência provisória pode ser consumida como `COL-KPI-*` sem adjudicação do contrato e verificação de duplicidade com indicadores existentes. Um candidato pode ser apenas filtro, dimensão, comparação ou composição, sem demandar novo KPI.
+
+### 26.4 Interpretações e limites estratégicos
+
+- Grupos de atividade física, grupos de oração, iniciativas educacionais e outros movimentos podem **oferecer** experiências relacionadas a áreas de evolução da vida; o dashboard pode analisar atividades e ofertas autorizadas, **não** declarar melhoria de saúde, espiritualidade, educação ou condição pessoal sem evidência e autoridade específicas.
+- Graph Analytics pode apoiar a leitura de conectividade institucional e colaboração autorizada, mas grau de conexão não prova influência, legitimidade ou impacto.
+- Crescimento do número de participantes não é, isoladamente, sucesso do propósito coletivo.
+- Indicadores de moderação, contestação e proteção exigem minimização, segregação por papel, confidencialidade e proteção contra retaliação.
+- Leituras econômicas futuras exigem autoridade própria e composição com `GEM-009`; não se presume receita ou vendas como função universal do Coletivo.
+- `COMPREENDER ≠ DECIDIR`; `CORRELAÇÃO ≠ CAUSALIDADE`. Nenhuma decisão automática sobre Pessoa, pertencimento, sanção ou reputação é autorizada.
+
+### 26.5 Gates pendentes
+
+| Gate | Exigência | Estado |
+|---|---|---|
+| G-COL-01 | consumidores, papéis e disclosure por leitura | UNRESOLVED |
+| G-COL-02 | eventos, coortes, elegibilidade, deduplicação e janelas | UNRESOLVED |
+| G-COL-03 | fontes, freshness, qualidade e proveniência | SOURCE_PENDING |
+| G-COL-04 | governança, proteção, privacidade e autoridade bilateral | UNRESOLVED |
+| G-COL-05 | planos, capacidade e eventual contrato econômico | BLOCKED |
+| G-COL-06 | reconciliação de candidatos, IDs e contratos completos | UNRESOLVED |
+| G-COL-07 | serving, RBAC, exportação, Design e build | NOT_AUTHORIZED |
+
+### 26.6 Estado preservado
+
+```text
+GKR-INTELLIGENCE-DASHBOARD-COLLECTIVE-001
+→ v0.1.2 / ANNEX D / PRE-IMPLEMENTATION
+→ 9 ANALYTICAL AREAS / 8 KPI FAMILIES PRESERVED
+→ EXISTING COL-KPI IDS UNCHANGED
+→ ALL EXISTING KPIs proposed / NOT_READY
+→ CANDIDATES NOT CANONICAL
+→ REPUTATION SCORE / INDIVIDUAL JOURNEY / REAL DATA / REPLIT BUILD NOT AUTHORIZED
+```
