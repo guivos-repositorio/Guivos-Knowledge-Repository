@@ -2,7 +2,7 @@
 id: GKR-INTELLIGENCE-DASHBOARD-KPI-001
 title: Dashboards, KPIs e Analytics — Documento Mestre de Especificação para Construção
 status: active
-version: 0.2.32
+version: 0.2.33
 owner: Guivos Intelligence Architecture
 last_updated: 2026-10-11
 normative: false
@@ -2001,6 +2001,88 @@ Nenhum responsável humano específico é nomeado ou aprovado neste exame. Os co
 XD01-D01-E → GAP_EXAMINED / NEEDS_EVIDENCE
 XD01-D02-C → GAP_EXAMINED / NEEDS_EVIDENCE
 XD01-D01/D02 → 13/13 SOURCE_SCREENED (11 PARTIAL; 2 SPECIFIC GAPS)
+HUMAN AUTHORITY CONFIRMED → 0/13
+HUMAN ADJUDICATIONS → 0/77
+G-XD-01 → UNRESOLVED
+G-XD-02..07 → OPEN
+CANONICAL KPI PROMOTIONS → 0
+IMPLEMENTATION AUTHORIZATION → 0
+```
+
+
+---
+
+## 38. G-XD-01 — Expedientes preparatórios de encaminhamento humano: XD01-D01-E e XD01-D02-C
+
+### 38.1 Regra de competência, evidência e não adjudicação
+
+Estes expedientes organizam o exame futuro de duas questões específicas, mantendo as perguntas e evidências mínimas originais de §17.3 e §18.3, respectivamente. **Não constituem pedido já encaminhado, reunião agendada, autoridade designada, consulta jurídica concluída ou decisão emitida.** Alternativas abaixo são hipóteses de deliberação, não recomendações aprovadas. Nenhuma autoridade humana competente está identificada com fundamento documental suficiente.
+
+O registro futuro de decisão deve atender integralmente aos dez elementos do protocolo §28.2: ID, objeto/KPI, fonte, domínio/consumidor, autoridade e fundamento, alternativas e trade-offs, dependências, privacidade/disclosure, estado, e decisão expressa datada com aprovação verificável quando houver.
+
+### 38.2 Expediente XD01-D01-E — Reconciliação de identidades
+
+**Pergunta original:** Duplicatas, fusão, separação e correção retroativa de identidades.
+
+**Evidência mínima original:** Autoridade de reconciliação, rastreabilidade, reversibilidade e impactos em séries históricas.
+
+| Alternativa a examinar, sem escolha | Benefício potencial | Risco ou custo que exige evidência |
+|---|---|---|
+| A — Preservar identidades analíticas distintas até confirmação explícita de reconciliação por domínio | Reduz falsos vínculos e propagação indevida | Pode manter duplicidades e subcontagens/sobrecontagens em métricas específicas |
+| B — Permitir reconciliação estritamente contextual, mediante prova de vínculo e aprovação competente | Pode melhorar consistência no escopo legítimo | Requer regras de cardinalidade, autorização, auditoria, reversão e limites de finalidade |
+| C — Admitir reconciliação entre domínios somente mediante contratos e aprovações adicionais expressas | Pode apoiar comparabilidade legitimamente autorizada | Risco elevado de linkage indevido, divulgação de Journey privada e propagação entre consumidores |
+| D — Suspender contagem ou publicar estado de não-dado quando identidade/cardinalidade não puder ser estabelecida | Evita fabricar total distinto | Reduz disponibilidade do indicador e requer política de qualidade e transparência |
+
+**Pacote de evidências pendente:** contrato vigente de identidade por participante/objeto; origem e versão de chaves; política de duplicata, merge/split, contestação e reversão; autorização e finalidade por consumidor; trilha de autoria; amostras sintéticas de efeitos em séries; plano de auditoria e controle de acesso. A exigência de exemplos sintéticos **não autoriza uso de dados reais nem implementação**.
+
+**Dependências:** `XD01-D01-A/B/C/D/F`; `XD01-D05-C/D/E/F/G/H`; `XD01-D07-B/F`; `XD01-D08-B/C/D/E/F/G/H`; `G-XD-02/03/04/05/07`.
+
+**Encaminhamento humano ainda não executado:** identificar por documento vigente a autoridade competente de identidade/relações, a de dados/Intelligence e a de privacidade; registrar eventuais competências conjuntas ou conflitos; submeter alternativas somente após a evidência mínima estar disponível. Nenhum cargo ou área genérica equivale, por si, a poder de adjudicar.
+
+**Estado:** `NEEDS_EVIDENCE / PENDING_HUMAN_AUTHORITY_IDENTIFICATION`.
+
+### 38.3 Expediente XD01-D02-C — Vigência e retroatividade da elegibilidade
+
+**Pergunta original:** Quando a elegibilidade começa, termina ou muda retroativamente?
+
+**Evidência mínima original:** Data efetiva, timezone, janela, histórico e reprocessamento.
+
+| Alternativa a examinar, sem escolha | Benefício potencial | Risco ou custo que exige evidência |
+|---|---|---|
+| A — Contar elegibilidade apenas a partir da confirmação registrada | Simplifica rastreio do momento de confirmação | Pode divergir da vigência real e excluir período legitimamente elegível |
+| B — Usar data efetiva autorizada pelo contrato de domínio, preservando registro e validação separados | Pode representar melhor a vigência | Requer fonte confiável, timezone, aprovação e tratamento de retroatividade |
+| C — Permitir recálculo de coortes/períodos fechados sob política expressa e versionamento | Pode corrigir séries historicamente inexatas | Pode alterar KPIs já publicados, denominadores, comparações e acesso |
+| D — Manter série publicada e registrar ajuste versionado, sem substituição silenciosa | Preserva rastreabilidade de publicações anteriores | Exige regra de apresentação, reconciliação e comparabilidade entre versões |
+| E — Não calcular/suprimir quando falta evidência temporal suficiente | Evita precisão artificial | Requer estados de qualidade e critérios de publicação por consumidor |
+
+**Pacote de evidências pendente:** contrato de elegibilidade por KPI e consumidor; eventos/estados do domínio; início e término efetivos; timezone/calendário; vigência de programa/vínculo; saídas, suspensões e reingressos; fechamento de janela/coorte; política de correção e republicação; histórico de publicação; qualidade e disclosure. Não se presume que a reconstrução retroativa de Evento de Vida autorize retroatividade de KPI.
+
+**Dependências:** `XD01-D01`; `XD01-D02-A/B/D/E/F/G`; `XD01-D05-F/H`; `XD01-D07-A/B/D/E/F/G/H`; `XD01-D08-C/D/F/G/H`; `G-XD-02/03/04/05/07`.
+
+**Encaminhamento humano ainda não executado:** identificar por documento vigente a autoridade do domínio que define elegibilidade, a de dados/Intelligence e a de privacidade, e confirmar competências de correção e republicação antes de decidir. Não há pessoa ou órgão confirmado.
+
+**Estado:** `NEEDS_EVIDENCE / PENDING_HUMAN_AUTHORITY_IDENTIFICATION`.
+
+### 38.4 Registro operacional de preparação (sem submissão)
+
+| Campo de controle | XD01-D01-E | XD01-D02-C |
+|---|---|---|
+| Expediente documental | PREPARED | PREPARED |
+| Fonte original | §17.3 | §18.3 |
+| Exame de lacuna | §37.2 | §37.3 |
+| Evidência completa | NOT_DEMONSTRATED | NOT_DEMONSTRATED |
+| Competência humana comprovada | NO | NO |
+| Encaminhamento efetivamente realizado | NO | NO |
+| Alternativa escolhida | NONE | NONE |
+| Adjudicação expressa | NONE | NONE |
+| Efeito sobre KPI/engenharia | NONE | NONE |
+
+### 38.5 Estado de governança
+
+```text
+XD01-D01-E → HUMAN_REFERRAL_DOSSIER_PREPARED / NEEDS_EVIDENCE
+XD01-D02-C → HUMAN_REFERRAL_DOSSIER_PREPARED / NEEDS_EVIDENCE
+HUMAN_REFERRALS_SUBMITTED → 0
 HUMAN AUTHORITY CONFIRMED → 0/13
 HUMAN ADJUDICATIONS → 0/77
 G-XD-01 → UNRESOLVED
