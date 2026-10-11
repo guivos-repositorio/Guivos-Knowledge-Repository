@@ -69654,6 +69654,117 @@ XD01-D07 → EXAMINED / HUMAN_ADJUDICATION_REQUIRED
 G-XD-01 → UNRESOLVED
 CANONICAL KPI PROMOTIONS → 0
 IMPLEMENTATION AUTHORIZATION → 0
+</code></pre></div>
+<hr />
+<h2 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-24-xd01-d08-matriz-de-correcoes-retroativas-e-reprocessamento-exame-nao-adjudicacao">24. XD01-D08 — Matriz de correções retroativas e reprocessamento (exame, não adjudicação)<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-24-xd01-d08-matriz-de-correcoes-retroativas-e-reprocessamento-exame-nao-adjudicacao" title="Permanent link">&para;</a></h2>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-241-proposito-e-precedencia">24.1 Propósito e precedência<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-241-proposito-e-precedencia" title="Permanent link">&para;</a></h3>
+<p>Este exame de <code>XD01-D08</code> identifica lacunas de autoridade, evidência, versionamento e reconstrução analítica diante de alterações posteriores ao registro original. Não define política global de reprocessamento, prazo de fechamento, imutabilidade, algoritmo de deduplicação ou reescrita histórica. Os contratos de identidade, população elegível, eventos, marcos, cardinalidade, numerador/denominador e tempo permanecem condicionados a <code>XD01-D01..D07</code> e à adjudicação humana.</p>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-242-evidencias-e-lacunas-por-consumidor">24.2 Evidências e lacunas por consumidor<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-242-evidencias-e-lacunas-por-consumidor" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Consumidor / referências documentais</th>
+<th>Situações de correção a examinar</th>
+<th>Lacunas de adjudicação</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Guivos interno — <code>GUV-KPI-POP-001..005</code>, <code>GUV-KPI-ENG-006..008</code>, <code>GUV-KPI-OPP-011..015</code></td>
+<td>Cadastro e vínculo corrigidos, evento de atividade tardio, alteração de inscrição/participação/conclusão, coortes D7/D30/D90</td>
+<td>Autoridade da versão, data efetiva versus data de processamento, impacto na elegibilidade, coorte e séries previamente publicadas</td>
+</tr>
+<tr>
+<td>Business — <code>BUS-KPI-PAR-001..006</code>, <code>BUS-KPI-PRG-001/002</code>, <code>BUS-KPI-JNY-002..004</code></td>
+<td>Revisão de população elegível, contrato/programa, recebimento/validação/rejeição de evidência, acesso custeado, evento duplicado ou revertido</td>
+<td>Responsável pela correção, trilha contratual, períodos reabertos, repercussão econômica e proteção de Journey privado</td>
+</tr>
+<tr>
+<td>Organização — <code>ORG-KPI-OPP-001/002</code>, <code>ORG-KPI-PAR-002..004</code>, <code>ORG-KPI-REL-001/003/005</code></td>
+<td>Oportunidade editada ou encerrada, manifestação retirada, inscrição cancelada, participação e conclusão corrigidas, relação bilateral retificada</td>
+<td>Estados válidos, reversões, origem da retificação, reconciliação de funis e divulgação entre contrapartes</td>
+</tr>
+<tr>
+<td>Coletivo — <code>COL-KPI-PAR-001..006</code>, <code>COL-KPI-ACT-001..003</code></td>
+<td>Vínculo confirmado e posteriormente revogado, presença corrigida, sessão cancelada/remarcada, saída/reingresso, papéis alterados</td>
+<td>Evento histórico versus estado corrente, consentimento, atribuição da correção, múltiplas sessões e contagem de participantes</td>
+</tr>
+<tr>
+<td>Pessoa — <code>PER-KPI-CTX-001..003</code>, <code>PER-KPI-OBJ-001/002/004</code>, <code>PER-KPI-MOV-001..005</code></td>
+<td>Declaração revisada, objetivo reformulado, Próximo Passo substituído, evidência retirada, movimento reconsiderado</td>
+<td>Autoria e controle pessoal, versionamento, visibilidade, retenção, ausência de inferência coercitiva ou score universal</td>
+</tr>
+</tbody>
+</table>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-243-questoes-abertas-para-adjudicacao">24.3 Questões abertas para adjudicação<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-243-questoes-abertas-para-adjudicacao" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Decisão pendente</th>
+<th>Evidência mínima</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>XD01-D08-A</code></td>
+<td>Quais alterações são novo evento, atualização legítima, correção, cancelamento, estorno ou reversão?</td>
+<td>Taxonomia por domínio, estado anterior/posterior e autoridade</td>
+</tr>
+<tr>
+<td><code>XD01-D08-B</code></td>
+<td>Quem pode solicitar, validar, executar e auditar uma correção por objeto e consumidor?</td>
+<td>Papéis, permissões, aprovação e trilha de autoria</td>
+</tr>
+<tr>
+<td><code>XD01-D08-C</code></td>
+<td>Como representar versão, origem, instante de ocorrência, registro, validação, correção e vigência efetiva?</td>
+<td>Proveniência, lineage, histórico e timestamps auditáveis</td>
+</tr>
+<tr>
+<td><code>XD01-D08-D</code></td>
+<td>Qual período, coorte, população e KPI pode ser recalculado após uma alteração tardia?</td>
+<td>Janela, granularidade, denominador, fechamento e política autorizada</td>
+</tr>
+<tr>
+<td><code>XD01-D08-E</code></td>
+<td>Como impedir dupla contagem ou exclusão indevida em merge/split de identidade, eventos repetidos e reingressos?</td>
+<td>Cardinalidade, vínculo de versões, deduplicação e reconciliação</td>
+</tr>
+<tr>
+<td><code>XD01-D08-F</code></td>
+<td>Como distinguir valor publicado anteriormente, valor recalculado e ajuste explícito?</td>
+<td>Versão do indicador, data de referência, histórico de publicação e explicação</td>
+</tr>
+<tr>
+<td><code>XD01-D08-G</code></td>
+<td>Como preservar consentimento, minimização e privacidade em correções compartilhadas entre domínios e consumidores?</td>
+<td>Base de autorização, escopo de disclosure, retenção e revogação</td>
+</tr>
+<tr>
+<td><code>XD01-D08-H</code></td>
+<td>Como tratar origem indisponível, evidência contestada, correção parcial ou reprocessamento falho?</td>
+<td>Estados de qualidade, bloqueio/supressão, auditoria, reversibilidade e não-dado</td>
+</tr>
+</tbody>
+</table>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-244-restricoes-e-encaminhamento">24.4 Restrições e encaminhamento<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-244-restricoes-e-encaminhamento" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Correção de dado não equivale automaticamente a novo evento elegível.</li>
+<li>Reprocessamento não autoriza reconstruir identidades, consentimentos ou denominadores por inferência.</li>
+<li>Um estado corrente não apaga, por presunção, o histórico necessário à auditoria.</li>
+<li>Evento tardio não autoriza automaticamente reabrir períodos fechados ou alterar coortes publicadas.</li>
+<li>Estorno e cancelamento não equivalem a exclusão física de evidências.</li>
+<li>Ajuste financeiro, pontos, participação e evolução pessoal pertencem a contratos e autoridades distintos.</li>
+<li>Correções de Pessoa não autorizam exposição a Business, Organização ou Coletivo.</li>
+<li>Séries corrigidas e originais não são automaticamente intercambiáveis sem proveniência e versão.</li>
+</ul>
+<p>Nenhuma política de reprocessamento, fórmula KPI, regra de retenção ou autorização de implementação é adjudicada nesta seção. <code>XD01-D09</code> (ausência de dados, não-dado e supressão) permanece o próximo exame. <code>G-XD-01</code> segue não resolvido, preservados <code>G-XD-02..07</code> e os documentos especializados.</p>
+<div class="highlight"><pre><span></span><code>XD01-D01..D07 → EXAMINED / HUMAN_ADJUDICATION_REQUIRED
+XD01-D08 → EXAMINED / HUMAN_ADJUDICATION_REQUIRED
+G-XD-01 → UNRESOLVED
+CANONICAL KPI PROMOTIONS → 0
+IMPLEMENTATION AUTHORIZATION → 0
 </code></pre></div></section><section class="print-page" id="intelligence-architecture-dashboard-guivos-business-master-specification" heading-number="16.5"><h1 id="intelligence-architecture-dashboard-guivos-business-master-specification-dashboard-guivos-business-documento-mestre-de-especificacao-analitica-e-handoff-replit">Dashboard Guivos Business — Documento Mestre de Especificação Analítica e Handoff Replit<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-business-master-specification-dashboard-guivos-business-documento-mestre-de-especificacao-analitica-e-handoff-replit" title="Permanent link">&para;</a></h1>
 <h2 id="intelligence-architecture-dashboard-guivos-business-master-specification-1-finalidade">1. Finalidade<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-business-master-specification-1-finalidade" title="Permanent link">&para;</a></h2>
 <p>Este documento é o <strong>Anexo B</strong> de <code>GKR-INTELLIGENCE-DASHBOARD-KPI-001</code> e governa, em nível documental pré-implementação, o <strong>Dashboard Guivos Business</strong>.</p>
