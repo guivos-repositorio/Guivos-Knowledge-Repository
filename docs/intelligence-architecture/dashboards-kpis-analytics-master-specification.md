@@ -2,7 +2,7 @@
 id: GKR-INTELLIGENCE-DASHBOARD-KPI-001
 title: Dashboards, KPIs e Analytics — Documento Mestre de Especificação para Construção
 status: active
-version: 0.2.27
+version: 0.2.28
 owner: Guivos Intelligence Architecture
 last_updated: 2026-10-11
 normative: false
@@ -1735,6 +1735,61 @@ XD01-D01..D08 → DOSSIER_PREPARED / PENDING_HUMAN_ADJUDICATION
 XD01-D09..D10 → EXAMINED / PENDING_HUMAN_ADJUDICATION
 OPEN HUMAN QUESTIONS → 77
 HUMAN ADJUDICATIONS → 0
+G-XD-01 → UNRESOLVED
+G-XD-02..07 → OPEN
+CANONICAL KPI PROMOTIONS → 0
+IMPLEMENTATION AUTHORIZATION → 0
+```
+
+
+---
+
+## 33. G-XD-01 — Dossiês individuais de decisão humana: XD01-D09 e XD01-D10
+
+### 33.1 Escopo, fidelidade e autoridade
+
+Esta seção prepara os 16 dossiês finais do conjunto `XD01-D01..D10`, preservando **integralmente as perguntas e evidências mínimas** das seções 25.3 (`XD01-D09-A..H`) e 26.3 (`XD01-D10-A..H`). As dependências adicionais orientam o exame e não estabelecem decisões, contratos de qualidade, política de disclosure, chave entre produtos ou regras implementáveis. Os cinco Documentos Mestres de dashboards são evidências contextuais; nenhum deles autoriza inferir autoridade humana ou consentimento.
+
+### 33.2 Dossiês — XD01-D09: qualidade, ausência de dados e supressão
+
+| ID | Pergunta/decisão original pendente | Evidência mínima original | Dependências para revisão (não adjudicadas) |
+|---|---|---|---|
+| `XD01-D09-A` | Quais estados distintos representam zero confirmado, desconhecido, não aplicável, pendente, inválido e suprimido? | Taxonomia por KPI/objeto, autoridade e proveniência | Taxonomia de qualidade e autoridade por KPI; G-XD-02 |
+| `XD01-D09-B` | Quando é legítimo apresentar zero, e quando a ausência de evento impede qualquer afirmação? | Cobertura de fonte, universo elegível, janela concluída e completude | Cobertura, elegibilidade e janela; D02/D07 |
+| `XD01-D09-C` | Como tratar numerador conhecido com denominador zero, ausente, desconhecido ou restrito? | Contrato de fórmula, elegibilidade e estado de não-dado sem taxa fabricada | Fórmula, população e supressão; D06 |
+| `XD01-D09-D` | Como representar dados atrasados, parciais, corrigidos, contestados ou em validação? | Freshness, quality, lineage, versão e timestamp de referência | Proveniência, atraso e reprocessamento; D07/D08 |
+| `XD01-D09-E` | Quem autoriza supressão por privacidade, tamanho de célula, papel, consentimento ou contraparte? | Autoridade de disclosure, política de minimização e contexto do consumidor | Privacidade, papel e política de disclosure; G-XD-03/04 |
+| `XD01-D09-F` | Quais campos e dimensões podem ser exibidos, exportados ou combinados sem reidentificação? | Escopo de acesso, composição de células, exportação e avaliação de risco | Minimização, combinação e exportação; G-XD-03/04 |
+| `XD01-D09-G` | Quando indicadores podem ser comparados se uma série tem períodos, coortes ou valores suprimidos? | Mesma granularidade, cobertura, elegibilidade, qualidade e autorização | Comparabilidade de grão, tempo e acesso; D05..D07 |
+| `XD01-D09-H` | Qual comportamento documental/UI diante de não-dado, erro de fonte, indisponibilidade ou informação privada? | Estado explicável, ausência de imputação, mensagens por consumidor e trilha de auditoria | Comportamento por consumidor e qualidade; G-XD-02/03 |
+
+### 33.3 Dossiês — XD01-D10: vínculos entre produtos, dupla contagem e disclosure
+
+| ID | Pergunta/decisão original pendente | Evidência mínima original | Dependências para revisão (não adjudicadas) |
+|---|---|---|---|
+| `XD01-D10-A` | Quais identidades e relações podem ser ligadas entre produtos, e por qual autoridade? | Contratos por domínio, finalidade, autorização e chaves contextuais | Autoridade de identidade e finalidade; D01/G-XD-03 |
+| `XD01-D10-B` | Como distinguir pessoa, conta, papel, vínculo, organização, coletivo, oportunidade, programa e evento? | Identidade analítica, cardinalidade, estado de relação e proveniência | Objeto, papel, vínculo e estado; D01/D03/D05 |
+| `XD01-D10-C` | Em quais condições uma mesma pessoa ou objeto pode contar uma vez ou várias vezes? | Unidade do KPI, população, período, domínio, programa e escopo de deduplicação | Unidade, escopo, janela e unicidade; D02/D05/D06/D07 |
+| `XD01-D10-D` | Como evitar soma indevida entre produtos, clientes, coletivos, programas, oportunidades e períodos? | Contrato de agregação, chaves de sobreposição, denominador e reconciliação | Sobreposição, reconciliação e denominador; D05/D06 |
+| `XD01-D10-E` | Quais informações podem ser servidas a cada consumidor sem revelar Journey privado ou contrapartes? | Permissão, consentimento, minimização, escopo de serving e disclosure | Autorização, Journey privada e contraparte; G-XD-03/04 |
+| `XD01-D10-F` | Como prevenir reidentificação por cruzamento, filtros, exportação, séries e pequenas células? | Política de supressão, análise de combinação, governança de exportação e auditoria | Risco de reidentificação e exportação; D09/G-XD-03 |
+| `XD01-D10-G` | Como tratar mudança de papel, saída/reingresso, merge/split de identidade e correções retroativas entre domínios? | Histórico, versionamento, temporalidade, deduplicação e revogação | Histórico, correção e revogação; D04/D08 |
+| `XD01-D10-H` | Qual representação usar quando vínculo, permissão, identidade ou cardinalidade forem incertos? | Estados de não-dado, proveniência, bloqueio de divulgação e ausência de inferência | Qualidade, identidade incerta e supressão; D09 |
+
+### 33.4 Ficha individual de decisão e verificações cruzadas
+
+Cada dossiê exige registro de **ID, pergunta original, evidência mínima original, objeto/KPI, domínio, consumidor, fonte/versionamento, autoridade humana competente, alternativas, população/unidade/janela quando aplicáveis, dependências, qualidade e proveniência, riscos de reidentificação, privacidade/consentimento/serving/exportação, justificativa, decisão expressa, data, aprovação rastreável e revisão cruzada**. Sem evidência e autoridade, manter `PENDING_HUMAN_ADJUDICATION`, `NEEDS_EVIDENCE` ou `CONFLICT`, sem decisão presumida.
+
+A revisão deverá distinguir zero confirmado de desconhecido, ausente, inválido, atrasado e suprimido; preservar `NO_DATA`, `SOURCE_DELAYED`, `INSUFFICIENT_DATA` e `SUPPRESSED_BY_POLICY`; impedir taxas com denominador não legítimo; não expor dados suprimidos por combinação, filtro ou exportação. Pessoa não equivale a conta, papel ou vínculo; somas de programas, produtos e contrapartes não equivalem a pessoas globais distintas. O acesso a eventos válidos não implica direito de revelar Journey privada, relações, identidades ou informações de contrapartes.
+
+### 33.5 Reconciliação do pacote preparatório completo
+
+As seções 29–33 reúnem 77 dossiês individuais preparados a partir das questões de `XD01-D01..D10` nas seções 17.3–26.3. A cobertura documental completa **não é adjudicação**, não encerra `G-XD-01`, não promove KPIs e não autoriza engenharia, dados reais, publicação de indicadores ou produção. A próxima atividade legítima é revisão humana das evidências, competências e dependências de cada decisão, com registro de autoridade e aprovação expressa.
+
+```text
+XD01-D01..D10 → DOSSIER_PREPARED / PENDING_HUMAN_ADJUDICATION
+DOSSIERS PREPARED → 77/77
+HUMAN ADJUDICATIONS → 0/77
 G-XD-01 → UNRESOLVED
 G-XD-02..07 → OPEN
 CANONICAL KPI PROMOTIONS → 0
