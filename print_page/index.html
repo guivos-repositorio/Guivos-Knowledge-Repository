@@ -72637,6 +72637,67 @@ HUMAN AUTHORITY FORMALLY CONFIRMED → 0/13
 HUMAN ADJUDICATIONS → 0/77
 CANONICAL KPI PROMOTIONS → 0
 IMPLEMENTATION AUTHORIZATION → 0
+</code></pre></div>
+<hr />
+<h2 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-50-g-xd-02-triagem-complementar-dos-quatro-kpis-sem-contrato-individual-do-anexo-a">50. G-XD-02 — Triagem complementar dos quatro KPIs sem contrato individual do Anexo A<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-50-g-xd-02-triagem-complementar-dos-quatro-kpis-sem-contrato-individual-do-anexo-a" title="Permanent link">&para;</a></h2>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-501-escopo-fontes-e-autoridade">50.1 Escopo, fontes e autoridade<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-501-escopo-fontes-e-autoridade" title="Permanent link">&para;</a></h3>
+<p>Exame documental limitado a <code>GUV-KPI-POP-007</code>, <code>GUV-KPI-POP-009</code>, <code>GUV-KPI-POP-011</code> e <code>GUV-KPI-OPP-001</code>. Evidências: Dashboard Guivos master v0.1.5, KPI Registry v0.1.5, reconciliação de status v0.1.1, e seções 48–49 deste master. Nenhum dos quatro possui registro contratual individual materializado no registry verificado. Esta seção não materializa contratos, não decide critérios de validade nem promove KPI.</p>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-502-matriz-de-lacunas-verificadas">50.2 Matriz de lacunas verificadas<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-502-matriz-de-lacunas-verificadas" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>KPI</th>
+<th>Definição candidata existente no Anexo A</th>
+<th>Blocker semântico preservado</th>
+<th>Prova de fonte/qualidade ainda necessária</th>
+<th>Status e readiness</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>GUV-KPI-POP-007</code> — Organizações cadastradas</td>
+<td>Contagem distinta de Organizações válidas</td>
+<td>Validade/elegibilidade de Organização</td>
+<td>Fonte de domínio, identificador e estado válido, regra de exclusões, autoria, unicidade, referência temporal e lineage</td>
+<td><code>proposed / NOT_READY</code></td>
+</tr>
+<tr>
+<td><code>GUV-KPI-POP-009</code> — Coletivos cadastrados</td>
+<td>Contagem distinta de Coletivos válidos</td>
+<td>Validade/elegibilidade de Coletivo</td>
+<td>Fonte e autoridade de Coletivo, critérios de validade, deduplicação, timestamp, qualidade e proveniência</td>
+<td><code>proposed / NOT_READY</code></td>
+</tr>
+<tr>
+<td><code>GUV-KPI-POP-011</code> — Mix de participantes</td>
+<td>Distribuição Pessoa/Organização/Coletivo no universo aplicável</td>
+<td>Denominador, universo e escopo aplicável</td>
+<td>Fontes separadas de cada tipo, cardinalidade, bases comparáveis, janela, cobertura, qualidade e autorização do consumidor</td>
+<td><code>proposed / NOT_READY</code></td>
+</tr>
+<tr>
+<td><code>GUV-KPI-OPP-001</code> — Oportunidades criadas</td>
+<td>Oportunidades válidas criadas no período</td>
+<td>Validade/elegibilidade da oportunidade</td>
+<td>Fonte de oportunidade, evento de criação, estado válido, reversões, timezone, correções e proveniência</td>
+<td><code>proposed / NOT_READY</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-503-requisitos-para-eventual-materializacao-sem-decisao">50.3 Requisitos para eventual materialização, sem decisão<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-503-requisitos-para-eventual-materializacao-sem-decisao" title="Permanent link">&para;</a></h3>
+<p>A futura materialização individual exigiria confrontar <code>metric_id</code>, finalidade e consumidor, autoridade do objeto, população/unidade, fórmula e deduplicação, fonte/versionamento, janela/freshness, quality/null/zero, disclosure/privacidade, ownership, lineage e condições de aceite. A inclusão destes campos em uma matriz <strong>não constitui aprovação de seus valores</strong>. Não se confunde registro documental individual com fonte operacional, adjudicação de elegibilidade ou <code>source_pending</code> como status global.</p>
+<p>As dependências de <code>G-XD-01</code> (identidade, eventos, população, tempo), <code>G-XD-03/04</code> (acesso, privacidade e exportação), <code>G-XD-05</code> (KPI Registry), <code>G-XD-06</code> quando economicamente pertinente, e <code>G-XD-07</code> (Design/Engenharia/dados reais/produção) permanecem abertas. A seção não altera o Anexo A, KPI Registry, contratos individualizados existentes ou decisões históricas.</p>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-504-checkpoint">50.4 Checkpoint<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-504-checkpoint" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>G-XD-02 → ANNEX_A_REMAINING_FOUR_TRIAGED / OPEN
+GUV-KPI-POP-007/009/011 + GUV-KPI-OPP-001 → proposed / NOT_READY
+INDIVIDUAL CONTRACT RECORDS (THESE FOUR) → NOT MATERIALIZED
+SOURCE CONTRACTS OR OPERATIONAL DATA → NOT VERIFIED
+G-XD-01 → UNRESOLVED
+G-XD-03..07 → OPEN
+HUMAN AUTHORITY FORMALLY CONFIRMED → 0/13
+HUMAN ADJUDICATIONS → 0/77
+CANONICAL KPI PROMOTIONS → 0
+IMPLEMENTATION AUTHORIZATION → 0
 </code></pre></div></section><section class="print-page" id="intelligence-architecture-dashboard-guivos-business-master-specification" heading-number="16.5"><h1 id="intelligence-architecture-dashboard-guivos-business-master-specification-dashboard-guivos-business-documento-mestre-de-especificacao-analitica-e-handoff-replit">Dashboard Guivos Business — Documento Mestre de Especificação Analítica e Handoff Replit<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-business-master-specification-dashboard-guivos-business-documento-mestre-de-especificacao-analitica-e-handoff-replit" title="Permanent link">&para;</a></h1>
 <h2 id="intelligence-architecture-dashboard-guivos-business-master-specification-1-finalidade">1. Finalidade<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-business-master-specification-1-finalidade" title="Permanent link">&para;</a></h2>
 <p>Este documento é o <strong>Anexo B</strong> de <code>GKR-INTELLIGENCE-DASHBOARD-KPI-001</code> e governa, em nível documental pré-implementação, o <strong>Dashboard Guivos Business</strong>.</p>
