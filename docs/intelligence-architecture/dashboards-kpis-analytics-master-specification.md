@@ -2,7 +2,7 @@
 id: GKR-INTELLIGENCE-DASHBOARD-KPI-001
 title: Dashboards, KPIs e Analytics — Documento Mestre de Especificação para Construção
 status: active
-version: 0.2.47
+version: 0.2.48
 owner: Guivos Intelligence Architecture
 last_updated: 2026-10-11
 normative: false
@@ -2757,5 +2757,53 @@ G-XD-03..07 → OPEN
 HUMAN AUTHORITY FORMALLY CONFIRMED → 0/13
 HUMAN ADJUDICATIONS → 0/77
 CANONICAL KPI PROMOTIONS → 0
+IMPLEMENTATION AUTHORIZATION → 0
+```
+
+
+---
+
+## 53. G-XD-02 — Confronto P0 com referências canônicas: identidade, elegibilidade e tempo
+
+### 53.1 Método e autoridade
+
+Exame de referências documentais do GKR existentes em `main`, associado aos seis KPIs prioritários do Anexo A e ao registro de recepção da seção 52. Distinguir documento existente de evidência suficiente para KPI. Os documentos de participantes abaixo têm `status: active`, porém `normative: false`; sua descrição conceitual **não decide** o predicado computável de validade ou elegibilidade. A extensão `PAS-001-EV-LIFECYCLE-001` é `normative: true`, mas disciplina **Eventos de Vida** do Journey, não comprova automaticamente o evento de criação de cadastro ou oportunidade usado nos KPIs internos.
+
+### 53.2 Confronto por fonte documental
+
+| Referência verificada | Estado e função | Pertinência P0 | Limite explícito para KPI |
+|---|---|---|---|
+| `docs/participants/person.md` — `GKR-PARTICIPANT-PERSON-001`, v1.1.0 | active, não normativa; caracteriza Pessoa no ecossistema | POP-001/002/011: identidade conceitual de participante | Não adjudica registro válido, exclusões, ID persistente, deduplicação ou momento de criação |
+| `docs/participants/organization.md` — `GKR-PARTICIPANT-ORGANIZATION-001`, v1.1.0 | active, não normativa; identidade/responsabilidades institucionais | POP-007/011: tipologia Organização | Exemplos não conferem elegibilidade automática nem resolvem critérios computáveis de validade |
+| `docs/participants/collective.md` — `GKR-PARTICIPANT-COLLECTIVE-001`, v1.1.0 | active, não normativa; propósito e governança coletiva | POP-009/011: tipologia Coletivo | Não comprova criação válida, unicidade ou contagem de participantes pertencentes a Coletivos |
+| `docs/experience-architecture/organizations-collectives-journey/organization-opportunity-registration-master.md` — `GKR-UX-ORG-OPPORTUNITY-REGISTRATION-MASTER-001`, v0.1.0 | draft, não normativa; superfície de cadastro de oportunidade | OPP-001: contexto de submissão, revisão e estados de informação | Fluxo UX não constitui fonte de evento persistido, timestamp efetivo, confirmação de criação ou exclusões aprovadas |
+| `docs/product-architecture/pas-001-eventos-de-vida-ciclo-de-vida.md` — `PAS-001-EV-LIFECYCLE-001`, v1.0.0 | active, normativa dentro da capacidade Eventos de Vida | Orienta distinção conceitual entre sinal, confirmação, estado e temporalidade de evento | Não transferir por analogia para eventos de cadastro de Pessoa ou Oportunidade sem contrato aplicável |
+| `docs/project/GE2-SYNC-004-context-participant-model-and-architecture-engineering.md` — `GE2-SYNC-004`, v1.0.0 | completed; síntese de arquitetura e preservação de candidatos | Contextualiza identidade, proveniência e temporalidade no modelo de participante | Não substitui esquema operacional de fonte, autoridade adjudicada ou contrato de cálculo do Dashboard Guivos |
+
+### 53.3 Resultado do P0 por KPI
+
+| KPI | Evidência conceitual localizada | Lacuna P0 que permanece |
+|---|---|---|
+| `GUV-KPI-POP-001` | Definição de Pessoa e contrato KPI individual | População válida/elegível, exclusões, identidade estável e `as_of` |
+| `GUV-KPI-POP-002` | Definição de Pessoa e contrato KPI individual | Evento de criação válida, data efetiva, recorte temporal, correções e deduplicação |
+| `GUV-KPI-POP-007` | Definição institucional de Organização | Critério de organização registrada/válida, unidade de contagem e temporalidade |
+| `GUV-KPI-POP-009` | Definição conceitual de Coletivo | Critério de coletivo registrado/válido, unidade de contagem e temporalidade |
+| `GUV-KPI-POP-011` | Distinção documental dos três tipos de participantes | Denominador, escopo de populações comparáveis e cardinalidade |
+| `GUV-KPI-OPP-001` | Superfície de registro de oportunidade, ainda draft | Evento persistido de criação válida, referência temporal e reversões |
+
+### 53.4 Implicações e limites de handoff
+
+As referências acima demonstram **existência de contexto conceitual**, mas não provam critérios computáveis, source of truth, events, contratos de serving, owners designados ou alçada institucional. Não promover indicadores, nem encerrar `G-XD-01` por esse confronto. Uma futura decisão de P0 requer ato verificável da autoridade competente para cada definição semântica; P1 e P2 mantêm suas provas independentes. Não coletar dados reais nem expor informação privada no repositório público.
+
+```text
+G-XD-02 → P0_CANONICAL_REFERENCES_EXAMINED / OPEN
+P0_CONCEPTUAL_REFERENCES → LOCATED
+P0_OPERATIONAL_ELIGIBILITY_AND_EVENT_AUTHORITY → NOT VERIFIED
+G-XD-01 → UNRESOLVED
+G-XD-03..07 → OPEN
+SIX KPIS → proposed / NOT_READY
+HUMAN AUTHORITY FORMALLY CONFIRMED → 0/13
+HUMAN ADJUDICATIONS → 0/77
+KPI PROMOTIONS → 0
 IMPLEMENTATION AUTHORIZATION → 0
 ```
