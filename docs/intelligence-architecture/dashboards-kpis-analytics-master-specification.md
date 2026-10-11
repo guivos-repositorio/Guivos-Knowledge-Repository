@@ -2,7 +2,7 @@
 id: GKR-INTELLIGENCE-DASHBOARD-KPI-001
 title: Dashboards, KPIs e Analytics — Documento Mestre de Especificação para Construção
 status: active
-version: 0.2.16
+version: 0.2.17
 owner: Guivos Intelligence Architecture
 last_updated: 2026-10-11
 normative: false
@@ -1119,6 +1119,58 @@ Nenhuma identidade universal, algoritmo de deduplicação, cardinalidade global,
 ```text
 XD01-D01..D04 → EXAMINED / HUMAN_ADJUDICATION_REQUIRED
 XD01-D05 → EXAMINED / HUMAN_ADJUDICATION_REQUIRED
+G-XD-01 → UNRESOLVED
+CANONICAL KPI PROMOTIONS → 0
+IMPLEMENTATION AUTHORIZATION → 0
+```
+
+
+---
+
+## 22. XD01-D06 — Matriz de numerador, denominador e unidade (exame, não adjudicação)
+
+### 22.1 Propósito e fronteiras
+
+Este exame de `XD01-D06` identifica, para os cinco Documentos Mestres de dashboards, os contratos de contagem e proporção ainda necessários. Não homologa fórmulas, denominadores, unidades, janelas, metas, comparabilidade entre consumidores ou maturidade de KPIs. As dependências `XD01-D01..D05` (identidade, elegibilidade, eventos, marcos e deduplicação) continuam abertas à adjudicação humana.
+
+### 22.2 Matriz de evidências por consumidor
+
+| Consumidor / referências candidatas | Numeradores e unidades que exigem distinção | Denominadores e condições ainda não adjudicados |
+|---|---|---|
+| Guivos interno — `GUV-KPI-POP-001..005`, `GUV-KPI-ENG-006..008`, `GUV-KPI-OPP-011..015` | Pessoas válidas distintas, eventos qualificantes, ativados, retornantes, oportunidades, inscrições, participações, conclusões; contagem, taxa, proporção e coorte não são equivalentes | População elegível por período, coorte de ativação e janelas D7/D30/D90, exclusões, eventos de atividade, deduplicação, reprocessamento e acesso autorizado |
+| Business — `BUS-KPI-PAR-001..006`, `BUS-KPI-PRG-001/002`, `BUS-KPI-JNY-002..004` | Participantes distintos, participações qualificantes, programas, acessos custeados, eventos recebidos/validados; valor monetário e pontos têm unidades próprias | Pessoas elegíveis no contrato/programa, beneficiários com acesso efetivo, universo de eventos validáveis, janela, patrocinador e finalidade; nunca usar Journey privada como proxy |
+| Organização — `ORG-KPI-OPP-001/002`, `ORG-KPI-PAR-002..004`, `ORG-KPI-REL-001/003/005` | Oportunidades, manifestações, inscrições, participantes, conclusões, relações bilaterais e transações em unidades distintas | Oportunidades válidas e expostas, inscritos elegíveis, relações confirmadas, períodos, condições de conclusão e objeto de referência; não presumir conversão universal |
+| Coletivo — `COL-KPI-PAR-001..006`, `COL-KPI-ACT-001..003` | Solicitações, vínculos confirmados, membros distintos, sessões, presenças, participações e recorrências | Convites ou solicitações elegíveis, vínculos ativos válidos, sessões qualificantes, janela, papel, entrada/saída/reingresso e voluntariedade; presença não mede pertencimento |
+| Pessoa — `PER-KPI-CTX-001..003`, `PER-KPI-OBJ-001/002/004`, `PER-KPI-MOV-001..005` | Declarações, objetivos, Próximos Passos, movimentos, evidências e revisões são objetos próprios; indicadores contextuais não autorizam escore único | Universo de objetos pessoais autorizados, autoria, estado confirmado, período, evidência e consentimento/disclosure; não inferir evolução pessoal por razão genérica |
+
+### 22.3 Questões abertas para adjudicação
+
+| ID | Decisão pendente | Evidência necessária |
+|---|---|---|
+| `XD01-D06-A` | Qual o numerador exato por KPI e seu evento/estado qualificante? | Objeto, autoridade, fonte, unidade, elegibilidade, deduplicação |
+| `XD01-D06-B` | Há denominador legítimo? Qual universo e momento de elegibilidade? | População, coorte, data efetiva, exclusões e consumidor |
+| `XD01-D06-C` | Qual unidade: pessoas distintas, eventos, relações, oportunidades, programas, tempo, pontos, moeda ou percentual? | Contrato dimensional, agregação, escala e precisão |
+| `XD01-D06-D` | Quando uma contagem pode ser expressa como taxa/proporção sem misturar grãos? | Correspondência entre numerador e denominador, escopo, janela, cardinalidade |
+| `XD01-D06-E` | Como tratar denominador zero, desconhecido, suprimido ou parcialmente observado? | Estados de qualidade, não-dado, supressão e apresentação sem divisão artificial |
+| `XD01-D06-F` | Como separar eventos recebidos, validados, rejeitados, corrigidos e efetivamente utilizados? | Taxonomia, fonte, reconciliação, estorno, versionamento |
+| `XD01-D06-G` | Quais regras de tempo, atribuição, sobreposição e reprocessamento preservam séries? | Timestamp, janela, coorte, deduplicação, correções e auditoria |
+| `XD01-D06-H` | Quais fórmulas podem ser compartilhadas entre dashboards sem violar autorização e privacidade? | Equivalência de unidade/população, finalidade, disclosure, minimização e contrato explícito |
+
+### 22.4 Restrições e próximo exame
+
+- Numerador observado não autoriza denominador presumido.
+- Contagem de eventos não equivale a contagem de pessoas distintas.
+- Participantes não equivalem a elegíveis; acesso custeado não equivale a participação.
+- Taxa de conclusão de oportunidade não equivale a evolução pessoal.
+- Soma de proporções por programa não equivale a taxa global.
+- Pontos, moeda, tempo, unidades e percentuais não podem ser somados sem contrato dimensional.
+- Denominador zero, ausente ou suprimido não deve gerar taxa fabricada.
+
+Nenhuma fórmula é promovida, nenhum KPI muda de maturidade, e nenhuma implementação é autorizada. `XD01-D07` (calendário, timezone, janelas e granularidade) permanece o próximo exame. `G-XD-01` segue não resolvido, preservados `G-XD-02..07`.
+
+```text
+XD01-D01..D05 → EXAMINED / HUMAN_ADJUDICATION_REQUIRED
+XD01-D06 → EXAMINED / HUMAN_ADJUDICATION_REQUIRED
 G-XD-01 → UNRESOLVED
 CANONICAL KPI PROMOTIONS → 0
 IMPLEMENTATION AUTHORIZATION → 0
