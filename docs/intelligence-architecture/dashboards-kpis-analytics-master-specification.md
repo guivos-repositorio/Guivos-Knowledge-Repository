@@ -2,7 +2,7 @@
 id: GKR-INTELLIGENCE-DASHBOARD-KPI-001
 title: Dashboards, KPIs e Analytics — Documento Mestre de Especificação para Construção
 status: active
-version: 0.2.41
+version: 0.2.42
 owner: Guivos Intelligence Architecture
 last_updated: 2026-10-11
 normative: false
@@ -2504,6 +2504,46 @@ HUMAN REFERRALS SUBMITTED → 0
 HUMAN ADJUDICATIONS → 0/77
 G-XD-01 → UNRESOLVED
 G-XD-02..07 → OPEN
+CANONICAL KPI PROMOTIONS → 0
+IMPLEMENTATION AUTHORIZATION → 0
+```
+
+
+---
+
+## 47. G-XD-02 — Exame documental transversal de fontes, qualidade e proveniência (Anexos A–E)
+
+### 47.1 Escopo e limites
+
+Confronto preparatório dos cinco Documentos Mestres especializados com o gate `G-XD-02` da seção 15.3. Inventários de KPI e campos `source` são **candidatos de contratação de dados**, não evidência de fonte operacional, lineage implementado, SLA vigente ou autorização de serving. Os anexos especializados preservam precedência e não sofrem alteração nesta etapa. O Anexo F (Ads) está fora deste confronto de cinco dashboards.
+
+### 47.2 Evidência individual e lacuna remanescente
+
+| Anexo e versão examinada | Exemplos documentais verificáveis | Lacunas que impedem conclusão |
+|---|---|---|
+| A — Guivos interno v0.1.5 | `GUV-KPI-POP-001/002` dependem de participant source, validade e temporalidade; `GUV-KPI-POP-003` depende de activity event set, janela e source | Identificador de fonte autorizada, contrato de evento, origem e qualidade, lineage, janela/freshness e política de ausência; escolhas e declarações da Pessoa não autorizadas para analytics interno |
+| B — Business v0.1.3 | `BUS-KPI-PRG-001` requer lifecycle/state + source; `BUS-KPI-PTS-003` requer usage source, attribution e disclosure; `BUS-KPI-DQ-001/005` são candidatos de freshness e proveniência | Contratos e SLAs de fontes, atribuição econômica, validação de eventos, qualidade e escopo de dados/consumidores sem inferir GEM-009 |
+| C — Organização v0.1.2 | `ORG-KPI-OPP-001` requer lifecycle/state + source; `ORG-KPI-EVD-004` requer validade de evidências e source; `ORG-KPI-DQ-001` depende de SLA | Origem e validação de eventos, ownership de fonte, restrições de finalidade, qualidade/freshness e proteção de terceiros |
+| D — Coletivo v0.1.2 | `COL-KPI-ACT-001` requer taxonomia/lifecycle/source; `COL-KPI-PAR-003/005` exigem vínculo e participação válidos; `COL-KPI-DQ-001` depende de SLA | Prova legítima de pertencimento e participação, estados e duplicidade, atualização, provenance e escopo de divulgação; inscrições/cadastros continuam BLOCKED sem contrato |
+| E — Pessoa v0.1.3 | `PER-KPI-CTX-001/002` separam vínculos confirmados de candidatos; `PER-KPI-OBJ-006` depende de contrato de evidência; `PER-KPI-REL-006` requer confirmação de fonte externa | Autoria, confirmação e proveniência contextual da Journey, contrato de evidência, tratamento de fontes externas e proteção de dados privados sem inferência de evolução |
+
+### 47.3 Matriz de verificação por KPI e consumidor
+
+Para cada KPI candidato, localizar documentalmente **(1)** ID da fonte e autoridade de domínio; **(2)** objeto, evento e estado válidos; **(3)** finalidade e classe de consumidor; **(4)** origem, autoria e cadeia de transformações; **(5)** versionamento, timestamp, periodicidade e atraso; **(6)** completude, contestação e reconciliação; **(7)** estados distintos de zero confirmado, fonte atrasada, insuficiência e supressão; **(8)** vínculo com o contrato do KPI e evidência datada de aprovação. Ausência de qualquer evidência deve ser registrada especificamente, sem preencher lacunas por aproximação.
+
+A verificação deve preservar: `G-XD-01` não resolvido (identidade, população, eventos, denominadores e tempo); `G-XD-03/04` abertos (serving, privacidade, consentimento e disclosure); `G-XD-05/06` abertos (registry, economia e planos); e `G-XD-07` aberto (implementação separada). Um `source_pending` ou KPI `proposed` não equivale a contrato aprovado, dado recebido, pipeline ou SLA verificado.
+
+### 47.4 Resultado e próximo ponto de passagem
+
+O exame transversal identifica dependências documentais e exemplos rastreáveis, **não comprova integralmente os contratos de fonte, qualidade, freshness ou lineage** para qualquer um dos cinco dashboards. A etapa seguinte é uma triagem por fonte/ID de KPI e sua evidência especializada, sem promover readiness. Não se autoriza reprocessamento, uso de dados reais, RBAC técnico, exportação ou build Replit.
+
+```text
+G-XD-02 → DOCUMENTARY_EXAMINATION_PREPARED / OPEN
+ANNEXES A–E → SOURCE_QUALITY_GAPS_MAPPED / NO CONTRACT PROMOTION
+G-XD-01 → UNRESOLVED
+G-XD-03..07 → OPEN
+HUMAN AUTHORITY FORMALLY CONFIRMED → 0/13
+HUMAN ADJUDICATIONS → 0/77
 CANONICAL KPI PROMOTIONS → 0
 IMPLEMENTATION AUTHORIZATION → 0
 ```
