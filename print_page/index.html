@@ -69989,6 +69989,156 @@ G-XD-01 → UNRESOLVED
 G-XD-02..07 → OPEN
 CANONICAL KPI PROMOTIONS → 0
 IMPLEMENTATION AUTHORIZATION → 0
+</code></pre></div>
+<hr />
+<h2 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-27-g-xd-01-reconciliacao-consolidada-de-xd01-d01d10-pre-adjudicacao">27. G-XD-01 — Reconciliação consolidada de XD01-D01..D10 (pré-adjudicação)<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-27-g-xd-01-reconciliacao-consolidada-de-xd01-d01d10-pre-adjudicacao" title="Permanent link">&para;</a></h2>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-271-escopo-e-natureza">27.1 Escopo e natureza<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-271-escopo-e-natureza" title="Permanent link">&para;</a></h3>
+<p>Esta reconciliação consolida os dez exames documentais de identidade, população, eventos, marcos, deduplicação, fórmulas, tempo, correções, não-dado e vinculação interproduto. É um <strong>índice de dependências e decisões humanas pendentes</strong>, não uma decisão normativa. Os cinco Documentos Mestres de dashboards e as matrizes das seções 17 a 26 continuam sendo as referências de evidência; esta síntese não altera sua autoridade nem presume equivalência entre consumidores.</p>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-272-matriz-de-dependencias-e-decisoes-abertas">27.2 Matriz de dependências e decisões abertas<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-272-matriz-de-dependencias-e-decisoes-abertas" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Exame</th>
+<th>Núcleo de decisão humana pendente</th>
+<th>Dependências principais</th>
+<th>Risco se presumido</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>XD01-D01</code></td>
+<td>Identidade analítica por participante/objeto, papéis, vínculos e alterações</td>
+<td>Autoridade de domínio, consentimento, relações e histórico</td>
+<td>Matching universal, mistura de contas/pessoas e exposição indevida</td>
+</tr>
+<tr>
+<td><code>XD01-D02</code></td>
+<td>População elegível por KPI, consumidor, contrato e janela</td>
+<td>D01, estados, acesso, vigência, finalidade</td>
+<td>Denominadores arbitrários e inclusão de não elegíveis</td>
+</tr>
+<tr>
+<td><code>XD01-D03</code></td>
+<td>Taxonomia de eventos e estados por domínio</td>
+<td>D01, D02, evidência, confirmação/validação</td>
+<td>Tratar intenção, presença, conclusão e evolução como sinônimos</td>
+</tr>
+<tr>
+<td><code>XD01-D04</code></td>
+<td>Marcos de entrada, ativação, retorno, saída e reingresso</td>
+<td>D01..D03, calendário e versões</td>
+<td>Conversão ou retenção sem marco legítimo</td>
+</tr>
+<tr>
+<td><code>XD01-D05</code></td>
+<td>Unidade de unicidade, cardinalidade e deduplicação</td>
+<td>D01..D04, D07, D08, D10</td>
+<td>Contagem duplicada ou exclusão de ocorrências válidas</td>
+</tr>
+<tr>
+<td><code>XD01-D06</code></td>
+<td>Numerador, denominador, unidade e taxa por KPI</td>
+<td>D01..D05, D07, D09</td>
+<td>Percentuais fabricados e agregações incomparáveis</td>
+</tr>
+<tr>
+<td><code>XD01-D07</code></td>
+<td>Calendário, timezone, janelas, coortes e granularidade</td>
+<td>D03..D06, D08</td>
+<td>Séries e coortes incompatíveis ou deslocadas</td>
+</tr>
+<tr>
+<td><code>XD01-D08</code></td>
+<td>Correções, reversões, eventos tardios e reprocessamento</td>
+<td>D01..D07, lineage e auditoria</td>
+<td>Reescrita histórica sem proveniência ou dupla contagem</td>
+</tr>
+<tr>
+<td><code>XD01-D09</code></td>
+<td>Zero confirmado, desconhecido, inválido, pendente e suprimido</td>
+<td>D02, D06..D08, qualidade, privacidade</td>
+<td>Transformar falta de dado em zero ou divulgar células sensíveis</td>
+</tr>
+<tr>
+<td><code>XD01-D10</code></td>
+<td>Vinculação interproduto, contagem distinta e disclosure</td>
+<td>D01..D09, consentimento, papéis, minimização</td>
+<td>Reidentificação e inferência de Journey privado</td>
+</tr>
+</tbody>
+</table>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-273-tensoes-entre-consumidores-a-resolver-sem-adjudicacao">27.3 Tensões entre consumidores a resolver, sem adjudicação<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-273-tensoes-entre-consumidores-a-resolver-sem-adjudicacao" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Tensão</th>
+<th>Consumidores envolvidos</th>
+<th>Condição ainda necessária</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pessoa distinta versus vínculo, papel, sessão, programa e oportunidade</td>
+<td>Guivos, Business, Organização, Coletivo</td>
+<td>Chaves contextuais, cardinalidade e unidade KPI aprovadas</td>
+</tr>
+<tr>
+<td>Elegibilidade contratual versus presença ou evento validado</td>
+<td>Business, Organização, Coletivo</td>
+<td>População, vigência, confirmação e validação por domínio</td>
+</tr>
+<tr>
+<td>Interesse versus inscrição, participação, conclusão e movimento pessoal</td>
+<td>Organização, Coletivo, Pessoa, Guivos</td>
+<td>Taxonomia, marcos e finalidade separados</td>
+</tr>
+<tr>
+<td>Coortes D7/D30/D90 versus períodos contratuais e ciclos de atividade</td>
+<td>Guivos, Business, Organização, Coletivo</td>
+<td>Timezone, marco inicial, janela, granularidade e atraso</td>
+</tr>
+<tr>
+<td>Retificação versus evento adicional e valor previamente publicado</td>
+<td>Todos os cinco</td>
+<td>Política de versionamento, correção e reconciliação</td>
+</tr>
+<tr>
+<td>Zero legítimo versus não-dado ou supressão</td>
+<td>Todos os cinco</td>
+<td>Cobertura, completude, qualidade, privacidade e disclosure</td>
+</tr>
+<tr>
+<td>Métrica agregada de plataforma versus exposição de Journey privado</td>
+<td>Guivos, Business, Organização, Coletivo, Pessoa</td>
+<td>Finalidade, consentimento, minimização e serving autorizados</td>
+</tr>
+<tr>
+<td>Evolução declarada versus performance organizacional</td>
+<td>Pessoa, Business, Organização, Coletivo</td>
+<td>Autonomia, não inferência e ausência de score universal</td>
+</tr>
+</tbody>
+</table>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-274-sequencia-proposta-para-adjudicacao-humana">27.4 Sequência proposta para adjudicação humana<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-274-sequencia-proposta-para-adjudicacao-humana" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Autoridades e escopos:</strong> identificar responsáveis por domínio, consumidor, finalidade, consentimento e disclosure; registrar conflitos antes de decidir.</li>
+<li><strong>Identidade e população:</strong> adjudicar decisões aplicáveis de <code>D01</code> e <code>D02</code>, sem presumir chave global.</li>
+<li><strong>Eventos e marcos:</strong> adjudicar <code>D03</code> e <code>D04</code> por objeto e consumidor.</li>
+<li><strong>Cardinalidade e fórmulas:</strong> adjudicar <code>D05</code> e <code>D06</code> somente para KPIs com evidência suficiente.</li>
+<li><strong>Temporalidade e histórico:</strong> adjudicar <code>D07</code> e <code>D08</code> com regras de proveniência e auditoria.</li>
+<li><strong>Qualidade, não-dado e disclosure:</strong> adjudicar <code>D09</code> e <code>D10</code> por contexto, inclusive exportações e cruzamentos.</li>
+<li><strong>Revisão cruzada:</strong> reexaminar conflitos e dependências, documentar decisões explícitas e revalidar os gates <code>G-XD-01..07</code> sem promoção automática.</li>
+</ol>
+<p>A sequência é uma <strong>proposta de preparação</strong>, não um cronograma obrigatório nem autorização para adjudicar por inferência. Cada decisão deve registrar ID, objeto/KPI, autoridade humana, evidência, consumidores, alternativa rejeitada, dependências, impacto, status e referência à aprovação explícita.</p>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-275-pendencias-e-limites-de-fechamento">27.5 Pendências e limites de fechamento<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-275-pendencias-e-limites-de-fechamento" title="Permanent link">&para;</a></h3>
+<p>As matrizes originais mantêm suas questões individuais abertas: <code>XD01-D01-A..F</code>, <code>XD01-D02-A..G</code>, <code>XD01-D03-A..H</code>, <code>XD01-D04-A..H</code>, <code>XD01-D05-A..H</code>, <code>XD01-D06-A..H</code>, <code>XD01-D07-A..H</code>, <code>XD01-D08-A..H</code>, <code>XD01-D09-A..H</code> e <code>XD01-D10-A..H</code>. São <strong>77 questões abertas de adjudicação</strong> (6 + 7 + 8 × 8), sem contagem como gates aprovados. O exame documental integral não significa validação de contratos KPI ou prontidão para Design/Engineering.</p>
+<div class="highlight"><pre><span></span><code>XD01-D01..D10 → EXAMINED / HUMAN_ADJUDICATION_REQUIRED
+XD01 CONSOLIDATED RECONCILIATION → DOCUMENTED / NOT ADJUDICATED
+G-XD-01 → UNRESOLVED
+G-XD-02..07 → OPEN
+HUMAN ADJUDICATIONS → 0
+CANONICAL KPI PROMOTIONS → 0
+IMPLEMENTATION AUTHORIZATION → 0
 </code></pre></div></section><section class="print-page" id="intelligence-architecture-dashboard-guivos-business-master-specification" heading-number="16.5"><h1 id="intelligence-architecture-dashboard-guivos-business-master-specification-dashboard-guivos-business-documento-mestre-de-especificacao-analitica-e-handoff-replit">Dashboard Guivos Business — Documento Mestre de Especificação Analítica e Handoff Replit<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-business-master-specification-dashboard-guivos-business-documento-mestre-de-especificacao-analitica-e-handoff-replit" title="Permanent link">&para;</a></h1>
 <h2 id="intelligence-architecture-dashboard-guivos-business-master-specification-1-finalidade">1. Finalidade<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-business-master-specification-1-finalidade" title="Permanent link">&para;</a></h2>
 <p>Este documento é o <strong>Anexo B</strong> de <code>GKR-INTELLIGENCE-DASHBOARD-KPI-001</code> e governa, em nível documental pré-implementação, o <strong>Dashboard Guivos Business</strong>.</p>
