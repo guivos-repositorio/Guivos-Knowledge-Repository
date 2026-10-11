@@ -70523,6 +70523,145 @@ G-XD-01 → UNRESOLVED
 G-XD-02..07 → OPEN
 CANONICAL KPI PROMOTIONS → 0
 IMPLEMENTATION AUTHORIZATION → 0
+</code></pre></div>
+<hr />
+<h2 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-31-g-xd-01-dossies-individuais-de-decisao-humana-xd01-d05-e-xd01-d06">31. G-XD-01 — Dossiês individuais de decisão humana: XD01-D05 e XD01-D06<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-31-g-xd-01-dossies-individuais-de-decisao-humana-xd01-d05-e-xd01-d06" title="Permanent link">&para;</a></h2>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-311-escopo-fidelidade-e-autoridade">31.1 Escopo, fidelidade e autoridade<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-311-escopo-fidelidade-e-autoridade" title="Permanent link">&para;</a></h3>
+<p>Esta seção prepara 16 dossiês de adjudicação humana, preservando <strong>integralmente as perguntas e evidências mínimas</strong> das seções 21.3 (<code>XD01-D05-A..H</code>) e 22.3 (<code>XD01-D06-A..H</code>). As dependências adicionais apenas organizam o exame: não são decisões, contratos canônicos ou requisitos implementáveis. Os cinco Documentos Mestres de dashboards são contexto de reconciliação, não autorização de chaves, fórmulas ou acesso. Autoridade e aprovação humanas permanecem em aberto.</p>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-312-dossies-xd01-d05-deduplicacao-e-cardinalidade">31.2 Dossiês — XD01-D05: deduplicação e cardinalidade<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-312-dossies-xd01-d05-deduplicacao-e-cardinalidade" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Pergunta/decisão original pendente</th>
+<th>Evidência mínima original</th>
+<th>Dependências para revisão (não adjudicadas)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>XD01-D05-A</code></td>
+<td>Unidade de contagem por KPI: entidade, vínculo, evento, sessão, programa, objeto ou transação?</td>
+<td>Contrato de métrica, autoridade e população</td>
+<td>Identidade e unidade analítica; D01/D02/D06</td>
+</tr>
+<tr>
+<td><code>XD01-D05-B</code></td>
+<td>Escopo de unicidade: produto, organização, coletivo, contrato, programa, oportunidade, janela ou consumidor?</td>
+<td>Finalidade, escopo e autorização</td>
+<td>Finalidade, consumidor e janela; D02/D07/D10</td>
+</tr>
+<tr>
+<td><code>XD01-D05-C</code></td>
+<td>Duplicata técnica versus nova ocorrência, atualização, correção ou reversão?</td>
+<td>Identificador de origem, estado, timestamps, versionamento</td>
+<td>Eventos, estados e reversões; D03/D08</td>
+</tr>
+<tr>
+<td><code>XD01-D05-D</code></td>
+<td>Múltiplas contas, papéis, vínculos, programas e oportunidades simultâneos?</td>
+<td>Cardinalidade, histórico, papel e atribuição</td>
+<td>Relações e marcos de ciclo de vida; D01/D04</td>
+</tr>
+<tr>
+<td><code>XD01-D05-E</code></td>
+<td>Quando somas dimensionais duplicam pessoas e quando totais distintos são legítimos?</td>
+<td>Grão, sobreposição, população e janela</td>
+<td>População e grão de cada KPI; D02/D06</td>
+</tr>
+<tr>
+<td><code>XD01-D05-F</code></td>
+<td>Saída/reingresso, fusão/divisão, correções retroativas e eventos tardios?</td>
+<td>Autoridade de identidade, tempo efetivo, reconciliação</td>
+<td>Histórico e autoridade de correção; D01/D04/D08</td>
+</tr>
+<tr>
+<td><code>XD01-D05-G</code></td>
+<td>Deduplicação entre produtos sem expor dados de contrapartes ou Journey privada?</td>
+<td>Finalidade, minimização, consentimento aplicável, supressão</td>
+<td>Consentimento, serving e minimização; G-XD-03/04</td>
+</tr>
+<tr>
+<td><code>XD01-D05-H</code></td>
+<td>Ausência de chave, relações ambíguas ou cardinalidade desconhecida?</td>
+<td>Qualidade, proveniência, estado de não dado, não fabricar totais</td>
+<td>Qualidade, atraso, não-dado e supressão; D09</td>
+</tr>
+</tbody>
+</table>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-313-dossies-xd01-d06-numeradores-denominadores-e-unidades">31.3 Dossiês — XD01-D06: numeradores, denominadores e unidades<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-313-dossies-xd01-d06-numeradores-denominadores-e-unidades" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Pergunta/decisão original pendente</th>
+<th>Evidência mínima original</th>
+<th>Dependências para revisão (não adjudicadas)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>XD01-D06-A</code></td>
+<td>Qual o numerador exato por KPI e seu evento/estado qualificante?</td>
+<td>Objeto, autoridade, fonte, unidade, elegibilidade, deduplicação</td>
+<td>Taxonomia de eventos e contagem; D03/D05</td>
+</tr>
+<tr>
+<td><code>XD01-D06-B</code></td>
+<td>Há denominador legítimo? Qual universo e momento de elegibilidade?</td>
+<td>População, coorte, data efetiva, exclusões e consumidor</td>
+<td>Elegibilidade, coorte e temporalidade; D02/D04/D07</td>
+</tr>
+<tr>
+<td><code>XD01-D06-C</code></td>
+<td>Qual unidade: pessoas distintas, eventos, relações, oportunidades, programas, tempo, pontos, moeda ou percentual?</td>
+<td>Contrato dimensional, agregação, escala e precisão</td>
+<td>Dimensões, identidade e agregação; D01/D05</td>
+</tr>
+<tr>
+<td><code>XD01-D06-D</code></td>
+<td>Quando uma contagem pode ser expressa como taxa/proporção sem misturar grãos?</td>
+<td>Correspondência entre numerador e denominador, escopo, janela, cardinalidade</td>
+<td>Compatibilidade entre grãos e escopos; D02/D05/D07</td>
+</tr>
+<tr>
+<td><code>XD01-D06-E</code></td>
+<td>Como tratar denominador zero, desconhecido, suprimido ou parcialmente observado?</td>
+<td>Estados de qualidade, não-dado, supressão e apresentação sem divisão artificial</td>
+<td>Qualidade e apresentação; D09</td>
+</tr>
+<tr>
+<td><code>XD01-D06-F</code></td>
+<td>Como separar eventos recebidos, validados, rejeitados, corrigidos e efetivamente utilizados?</td>
+<td>Taxonomia, fonte, reconciliação, estorno, versionamento</td>
+<td>Proveniência, reversão e reconciliação; D03/D08</td>
+</tr>
+<tr>
+<td><code>XD01-D06-G</code></td>
+<td>Quais regras de tempo, atribuição, sobreposição e reprocessamento preservam séries?</td>
+<td>Timestamp, janela, coorte, deduplicação, correções e auditoria</td>
+<td>Janelas, atribuição e histórico; D04/D05/D07/D08</td>
+</tr>
+<tr>
+<td><code>XD01-D06-H</code></td>
+<td>Quais fórmulas podem ser compartilhadas entre dashboards sem violar autorização e privacidade?</td>
+<td>Equivalência de unidade/população, finalidade, disclosure, minimização e contrato explícito</td>
+<td>Finalidade, consumidor, privacidade e disclosure; D10/G-XD-03/04</td>
+</tr>
+</tbody>
+</table>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-314-ficha-individual-de-decisao-e-verificacoes-cruzadas">31.4 Ficha individual de decisão e verificações cruzadas<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-314-ficha-individual-de-decisao-e-verificacoes-cruzadas" title="Permanent link">&para;</a></h3>
+<p>Cada dossiê exige registro de <strong>ID, pergunta original, evidência mínima original, objeto/KPI, domínio, consumidor, fonte/versionamento, autoridade humana competente, alternativas, unidade e grão, população e janela quando aplicáveis, dependências, risco de dupla contagem, privacidade/consentimento/serving/exportação, justificativa, decisão expressa, data, aprovação rastreável e revisão cruzada</strong>. Campos de decisão e aprovação não devem ser presumidos nem preenchidos sem adjudicação.</p>
+<p>A revisão deverá distinguir Pessoa de conta, papel e vínculo; elegibilidade de participação; solicitação de vínculo confirmado; presença de participação qualificante; inscrição de conclusão; acesso custeado de uso; eventos totais de pessoas distintas; pontos disponibilizados de pontos efetivamente utilizados. Não somar pessoas de programas sobrepostos como se fossem população global distinta; não expressar taxa quando numerador e denominador não têm grão, universo e janela compatíveis; não fabricar divisão quando o denominador for zero, desconhecido ou suprimido. Deduplicação não confere autorização de disclosure entre produtos ou contrapartes.</p>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-315-controle-de-maturidade">31.5 Controle de maturidade<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-315-controle-de-maturidade" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>XD01-D01..D06 → DOSSIER_PREPARED / PENDING_HUMAN_ADJUDICATION
+XD01-D07..D10 → EXAMINED / PENDING_HUMAN_ADJUDICATION
+OPEN HUMAN QUESTIONS → 77
+HUMAN ADJUDICATIONS → 0
+G-XD-01 → UNRESOLVED
+G-XD-02..07 → OPEN
+CANONICAL KPI PROMOTIONS → 0
+IMPLEMENTATION AUTHORIZATION → 0
 </code></pre></div></section><section class="print-page" id="intelligence-architecture-dashboard-guivos-business-master-specification" heading-number="16.5"><h1 id="intelligence-architecture-dashboard-guivos-business-master-specification-dashboard-guivos-business-documento-mestre-de-especificacao-analitica-e-handoff-replit">Dashboard Guivos Business — Documento Mestre de Especificação Analítica e Handoff Replit<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-business-master-specification-dashboard-guivos-business-documento-mestre-de-especificacao-analitica-e-handoff-replit" title="Permanent link">&para;</a></h1>
 <h2 id="intelligence-architecture-dashboard-guivos-business-master-specification-1-finalidade">1. Finalidade<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-business-master-specification-1-finalidade" title="Permanent link">&para;</a></h2>
 <p>Este documento é o <strong>Anexo B</strong> de <code>GKR-INTELLIGENCE-DASHBOARD-KPI-001</code> e governa, em nível documental pré-implementação, o <strong>Dashboard Guivos Business</strong>.</p>
