@@ -72469,6 +72469,86 @@ HUMAN AUTHORITY FORMALLY CONFIRMED → 0/13
 HUMAN ADJUDICATIONS → 0/77
 CANONICAL KPI PROMOTIONS → 0
 IMPLEMENTATION AUTHORIZATION → 0
+</code></pre></div>
+<hr />
+<h2 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-48-g-xd-02-triagem-inicial-de-fontes-e-contratos-por-kpi-anexo-a-guivos-interno">48. G-XD-02 — Triagem inicial de fontes e contratos por KPI: Anexo A (Guivos interno)<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-48-g-xd-02-triagem-inicial-de-fontes-e-contratos-por-kpi-anexo-a-guivos-interno" title="Permanent link">&para;</a></h2>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-481-escopo-e-precedencia">48.1 Escopo e precedência<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-481-escopo-e-precedencia" title="Permanent link">&para;</a></h3>
+<p>Triagem documental de seis IDs previamente reconciliados no Anexo A v0.1.5 e no KPI Registry v0.1.5, confrontados com o registro histórico de reconciliação v0.1.1. Não se revisam os outros KPIs do inventário nem se altera a autoridade especializada. O <code>registry</code> é índice de rastreabilidade, <strong>não</strong> fonte de verdade para promoção de status. A decisão histórica de status já foi absorvida pelo Anexo A; não há nova adjudicação.</p>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-482-matriz-por-identificador">48.2 Matriz por identificador<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-482-matriz-por-identificador" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Dependência semântica original ainda aberta</th>
+<th>Registro individual no registry</th>
+<th>Evidência de fonte ainda necessária</th>
+<th>Estado preservado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>GUV-KPI-POP-001</code></td>
+<td>Validade/elegibilidade e exclusões de Pessoa</td>
+<td><code>guv-kpi-pop-001.md</code> v0.1.0</td>
+<td>Contrato de fonte do participante, escopo de validade, origem, autoria, temporalidade, qualidade e lineage</td>
+<td><code>proposed / NOT_READY</code></td>
+</tr>
+<tr>
+<td><code>GUV-KPI-POP-002</code></td>
+<td>Criação válida e regra temporal</td>
+<td><code>guv-kpi-pop-002.md</code> v0.1.0</td>
+<td>Evento de criação autorizado, timestamp aplicável, proveniência, fechamento de janela e qualidade</td>
+<td><code>proposed / NOT_READY</code></td>
+</tr>
+<tr>
+<td><code>GUV-KPI-POP-007</code></td>
+<td>Validade/elegibilidade de Organização</td>
+<td>Não materializado individualmente</td>
+<td>Fonte de Organização, estado válido, deduplicação, autoridade do objeto e tratamento temporal</td>
+<td><code>proposed / NOT_READY</code></td>
+</tr>
+<tr>
+<td><code>GUV-KPI-POP-009</code></td>
+<td>Validade/elegibilidade de Coletivo</td>
+<td>Não materializado individualmente</td>
+<td>Fonte de Coletivo, estado válido, identidade, deduplicação e provenance</td>
+<td><code>proposed / NOT_READY</code></td>
+</tr>
+<tr>
+<td><code>GUV-KPI-POP-011</code></td>
+<td>Denominador e escopo aplicável</td>
+<td>Não materializado individualmente</td>
+<td>Fontes de três tipos de participante, universo autorizável, compatibilidade temporal e regra de composição</td>
+<td><code>proposed / NOT_READY</code></td>
+</tr>
+<tr>
+<td><code>GUV-KPI-OPP-001</code></td>
+<td>Validade/elegibilidade da oportunidade</td>
+<td>Não materializado individualmente</td>
+<td>Contrato de oportunidade, eventos/estados de criação válida, temporalidade, origem e reconciliação</td>
+<td><code>proposed / NOT_READY</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-483-ordem-de-verificacao-sem-adjudicacao">48.3 Ordem de verificação, sem adjudicação<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-483-ordem-de-verificacao-sem-adjudicacao" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Localizar e confrontar os dois contratos individuais materializados com seus domínios, sem equiparar existência de registro a aprovação integral.</li>
+<li>Identificar os quatro registros contratuais individuais ainda não materializados, preservando IDs e status existentes; a falta de materialização não permite inventar contratos.</li>
+<li>Separar blockers semânticos de blockers de fonte: a regra histórica é <code>SEMANTICS INCOMPLETE → proposed</code>, ao passo que <code>source_pending</code> exige semântica suficientemente fechada.</li>
+<li>Para cada fonte candidata, verificar referência canônica, ownership, finalidade, consumidor, qualidade, freshness, transformação/lineage, estado de ausência e autorizações específicas, mantendo dependências de <code>G-XD-01</code>, <code>G-XD-03/04</code> e <code>G-XD-05/07</code>.</li>
+</ol>
+<p>Não presumir analytics de escolhas/declarações pessoais, acesso a Journey privada, fonte de dados operativa, pipeline, SLA, RBAC ou implementação Replit.</p>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-484-resultado">48.4 Resultado<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-484-resultado" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>G-XD-02 → ANNEX_A_INITIAL_KPI_SOURCE_TRIAGE_PREPARED / OPEN
+SIX RECONCILED KPI IDS → proposed / NOT_READY
+INDIVIDUAL CONTRACT RECORDS → 2 MATERIALIZED / 4 NOT MATERIALIZED
+SOURCE CONTRACTS VERIFIED → NOT ASSERTED
+G-XD-01 → UNRESOLVED
+G-XD-03..07 → OPEN
+HUMAN AUTHORITY FORMALLY CONFIRMED → 0/13
+HUMAN ADJUDICATIONS → 0/77
+CANONICAL KPI PROMOTIONS → 0
+IMPLEMENTATION AUTHORIZATION → 0
 </code></pre></div></section><section class="print-page" id="intelligence-architecture-dashboard-guivos-business-master-specification" heading-number="16.5"><h1 id="intelligence-architecture-dashboard-guivos-business-master-specification-dashboard-guivos-business-documento-mestre-de-especificacao-analitica-e-handoff-replit">Dashboard Guivos Business — Documento Mestre de Especificação Analítica e Handoff Replit<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-business-master-specification-dashboard-guivos-business-documento-mestre-de-especificacao-analitica-e-handoff-replit" title="Permanent link">&para;</a></h1>
 <h2 id="intelligence-architecture-dashboard-guivos-business-master-specification-1-finalidade">1. Finalidade<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-business-master-specification-1-finalidade" title="Permanent link">&para;</a></h2>
 <p>Este documento é o <strong>Anexo B</strong> de <code>GKR-INTELLIGENCE-DASHBOARD-KPI-001</code> e governa, em nível documental pré-implementação, o <strong>Dashboard Guivos Business</strong>.</p>
