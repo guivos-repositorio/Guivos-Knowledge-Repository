@@ -2,9 +2,9 @@
 id: GKR-INTELLIGENCE-DASHBOARD-GUIVOS-001
 title: Dashboard Guivos — Documento Mestre de Especificação Analítica e Handoff Replit
 status: active
-version: 0.1.4
+version: 0.1.5
 owner: Guivos Intelligence Architecture
-last_updated: 2026-09-12
+last_updated: 2026-10-11
 normative: false
 maturity: governed_pre_implementation_dashboard_master
 depends_on:
@@ -793,4 +793,80 @@ REPLIT BUILD
 
 NEXT SPECIALIZED MASTER
 → REQUIRES SEPARATE GOVERNED ACT
+```
+
+
+
+---
+
+## 28. Auditoria executiva e estratégica transversal — v0.1.5
+
+### 28.1 Natureza e limites
+
+Esta seção refina necessidades decisórias do **Dashboard Guivos interno**, sem promover status, alterar os IDs `GUV-KPI-*` ou criar nova autoridade de disclosure. Preserva as 11 áreas e as 10 famílias de KPI já documentadas. As referências `GUV-EX-C*` são **candidatos não canônicos** para análise posterior; podem resultar em composição, filtro ou comparação, e não necessariamente em KPI novo. Permanecem aplicáveis a reconciliação de status absorvida em v0.1.4, os gates do master transversal, `GEM-009` e os limites de privacidade.
+
+### 28.2 Perguntas prioritárias de governança
+
+| Eixo | Pergunta executiva candidata | Família | Cuidados |
+|---|---|---|---|
+| Escala | Como evolui a base válida de Pessoas, Organizações e Coletivos, por coorte e estágio? | POP / ENG | elegibilidade, duplicidade, datas e qualidade |
+| Ativação | Onde ocorrem interrupções entre descoberta, ativação e continuidade? | ENG / JNY | eventos e denominadores específicos; não presumir funil universal |
+| Journey | Quais domínios de evolução recebem ofertas e experiências e onde existem lacunas? | JNY / OPP | demanda declarada não é evolução comprovada; proteger intenções privadas |
+| Oferta e demanda | Onde há oportunidades elegíveis insuficientes, por domínio e território? | OPP / GEO | taxonomias e matching autorizados; sem inferir necessidade individual |
+| Ecossistema | Como relações bilaterais e colaborações sustentam ofertas e experiências? | REL / OPP | Graph Analytics não mede legitimidade ou causalidade |
+| Portfólio | Qual é a adoção, continuidade e contribuição observável de cada produto? | PRD / ENG | definições específicas por produto; evitar somas duplicadas |
+| Economia | Quais receitas, custos, margens e compromissos são verificáveis por produto e coorte? | ECO | `GEM-009`, reconhecimento, unidade econômica e acesso |
+| Território | Quais regiões apresentam presença, cobertura e lacunas observáveis? | GEO / OPP | agregação, supressão e representatividade |
+| Ads | Quais resultados agregados autorizados demonstram desempenho da oferta de mídia? | ADS | contrato Ads próprio; não expor dados individuais ou atribuição não comprovada |
+| Confiança | Quais indicadores são confiáveis, atrasados, incompletos ou suprimidos? | DQ | freshness, provenance, qualidade e governança |
+
+### 28.3 Candidatos não canônicos para reconciliação
+
+| Referência | Refinamento candidato | Gate material |
+|---|---|---|
+| GUV-EX-C01 | Crescimento líquido por tipo de participante e coorte | identidade válida, estados, exclusões e calendário |
+| GUV-EX-C02 | Retenção e reativação por coortes elegíveis | activity event set, janelas e elegibilidade |
+| GUV-EX-C03 | Continuidade da descoberta de possibilidades | eventos autorizados, estados e limites da Journey |
+| GUV-EX-C04 | Distribuição de oferta por domínio de evolução | taxonomia `JED-*`, estados discovery/unmapped/null |
+| GUV-EX-C05 | Lacunas agregadas entre interesses declarados e oportunidades | consentimento/finalidade, supressão, ausência de inferência individual |
+| GUV-EX-C06 | Conversão de oportunidade por etapas válidas | elegibilidade, denominadores, cancelamentos e contratos econômicos quando aplicáveis |
+| GUV-EX-C07 | Relações institucionais com entregas evidenciadas | bilateralidade, lifecycle, atribuição e evidência |
+| GUV-EX-C08 | Cobertura territorial de oportunidades elegíveis | territórios, populações comparáveis e limiares de proteção |
+| GUV-EX-C09 | Adoção e continuidade por produto | eventos e identidades de produto, cross-product dedup |
+| GUV-EX-C10 | Economia unitária por produto ou oferta | `GEM-009`, receita/custo e reconciliação financeira |
+| GUV-EX-C11 | Desempenho agregado autorizado de Ads | autoridade Ads, atribuição e granularidade permitida |
+| GUV-EX-C12 | Qualidade e prontidão dos contratos analíticos | registry, lineage, freshness e estados de readiness |
+| GUV-EX-C13 | Conectividade do ecossistema com relações autorizadas | sem ranking universal de influência, impacto ou reputação |
+| GUV-EX-C14 | Cobertura de experiências com evidências de resultado | distinguir entrega, evidência, resultado e causalidade |
+
+Nenhum candidato é automaticamente um novo `GUV-KPI-*`; primeiro deve ser reconciliado com o catálogo, com `dashboard-guivos-kpi-registry.md` e com as autoridades especializadas. Em particular, `GUV-EX-C05` **não** libera analytics de escolhas/declarações de Pessoas, que continuam bloqueadas conforme seção 25.
+
+### 28.4 Leitura de gestão e investimento
+
+As dimensões podem apoiar hipóteses de alocação de investimento, expansão territorial, priorização de oferta e saúde do portfólio, **desde que** apresentem fonte, período, comparabilidade, incerteza e limitações. Não se presume existência de dados reais nem se convertem correlações em resultados causais. O dashboard não produz decisões automáticas sobre Pessoas, Coletivos ou Organizações.
+
+### 28.5 Gates pendentes
+
+| Gate | Contrato necessário | Estado |
+|---|---|---|
+| G-GUV-01 | universo, identidades, coortes e eventos de participante | UNRESOLVED |
+| G-GUV-02 | taxonomia Journey, oportunidades e interesses declarados | BLOCKED / PARTIAL |
+| G-GUV-03 | produtos, relações bilaterais e grafo autorizado | UNRESOLVED |
+| G-GUV-04 | composição econômica `GEM-009` e Ads | UNRESOLVED |
+| G-GUV-05 | fonte, qualidade, freshness, lineage e thresholds | SOURCE_PENDING |
+| G-GUV-06 | classes de acesso, disclosure, drill-down e exportação | UNRESOLVED |
+| G-GUV-07 | reconciliação de candidatos, status e contratos por KPI | UNRESOLVED |
+| G-GUV-08 | autorização específica de design, dados reais e build | NOT_AUTHORIZED |
+
+### 28.6 Estado desta atualização
+
+```text
+GKR-INTELLIGENCE-DASHBOARD-GUIVOS-001
+→ v0.1.5 / ANNEX A / PRE-IMPLEMENTATION
+→ 11 ANALYTICAL AREAS / 10 KPI FAMILIES PRESERVED
+→ EXISTING GUV-KPI IDS AND STATUSES UNCHANGED
+→ STATUS RECONCILIATION v0.1.4 PRESERVED
+→ EXECUTIVE CANDIDATES NONCANONICAL
+→ PERSON CHOICES / DECLARATIONS ANALYTICS BLOCKED
+→ REAL DATA / TECHNICAL RBAC / REPLIT BUILD NOT AUTHORIZED
 ```
