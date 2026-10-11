@@ -71323,6 +71323,120 @@ G-XD-01 → UNRESOLVED
 G-XD-02..07 → OPEN
 CANONICAL KPI PROMOTIONS → 0
 IMPLEMENTATION AUTHORIZATION → 0
+</code></pre></div>
+<hr />
+<h2 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-37-g-xd-01-exame-dirigido-das-lacunas-xd01-d01-e-e-xd01-d02-c">37. G-XD-01 — Exame dirigido das lacunas XD01-D01-E e XD01-D02-C<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-37-g-xd-01-exame-dirigido-das-lacunas-xd01-d01-e-e-xd01-d02-c" title="Permanent link">&para;</a></h2>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-371-escopo-e-fontes">37.1 Escopo e fontes<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-371-escopo-e-fontes" title="Permanent link">&para;</a></h3>
+<p>Este exame aprofunda as duas lacunas específicas preservadas nas seções 35–36, confrontando-as com <code>XD01-D05</code> (§21.3), <code>XD01-D07</code> (§23.3) e <code>XD01-D08</code> (§24.3), além dos contratos funcionais especializados do Journey. Os documentos <code>docs/product-architecture/pas-001-captura-de-contexto-eventos-integracoes-funcionais.md</code> (<code>v1.0.0</code>, §4675) e <code>docs/product-architecture/pas-001-eventos-de-vida-ciclo-de-vida.md</code> (<code>v1.0.0</code>, seções sobre estado da informação e entrada no ciclo de vida) são <strong>fontes de princípios e estados do domínio</strong>, não evidência de algoritmo analítico implementado, política de KPI adjudicada ou autorização de tratamento transversal.</p>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-372-xd01-d01-e-duplicatas-fusao-separacao-e-correcao-retroativa-de-identidades">37.2 XD01-D01-E — Duplicatas, fusão, separação e correção retroativa de identidades<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-372-xd01-d01-e-duplicatas-fusao-separacao-e-correcao-retroativa-de-identidades" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Dimensão</th>
+<th>Evidência documental identificada</th>
+<th>Contrato ainda não demonstrado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Origem, autoria e histórico</td>
+<td>Captura de Contexto §4675 exige identidade, proveniência, versionamento, imutabilidade histórica, idempotência e correção compensatória</td>
+<td>Identificadores analíticos e autoridade para reconciliar entidades distintas</td>
+</tr>
+<tr>
+<td>Ambiguidade de associação</td>
+<td>Eventos de Vida, ciclo de vida: identificação pode resultar em duplicidade, informação insuficiente ou associação incerta</td>
+<td>Critérios de fusão/separação, contestação, reversão e prevenção de falso vínculo</td>
+</tr>
+<tr>
+<td>Cardinalidade e contagem</td>
+<td><code>XD01-D05-C/D/F/H</code> exige diferenciar duplicata, evento, papel, vínculo, reingresso e ausência de chave</td>
+<td>Unidade, escopo de unicidade e política de recomputação de séries</td>
+</tr>
+<tr>
+<td>Reprocessamento</td>
+<td><code>XD01-D08-B/C/E/F/H</code> exige autoria, versão, histórico e comparação de séries</td>
+<td>Quem autoriza correção, quais séries podem mudar e como auditar resultados anteriores</td>
+</tr>
+<tr>
+<td>Privacidade</td>
+<td>Governança de Privacidade §§4–7 e <code>ADR-CC-004</code> proposto exigem finalidade e acesso contextual</td>
+<td>Finalidade/base/autorização específicas para linkage entre produtos e consumidores</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Resultado:</strong> <code>LACUNA ESPECÍFICA PERSISTENTE / NEEDS_EVIDENCE</code>. Os princípios de correção e idempotência do Journey não são regra de fusão de identidades, não provam implementação e não autorizam deduplicação global.</p>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-373-xd01-d02-c-inicio-termino-e-retroatividade-da-elegibilidade">37.3 XD01-D02-C — Início, término e retroatividade da elegibilidade<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-373-xd01-d02-c-inicio-termino-e-retroatividade-da-elegibilidade" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Dimensão</th>
+<th>Evidência documental identificada</th>
+<th>Contrato ainda não demonstrado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Estados e origem</td>
+<td>Eventos de Vida, ciclo de vida, distingue estado do evento e estado da informação; admite reconstrução retroativa como forma de entrada</td>
+<td>Marco legítimo de início/fim de elegibilidade por KPI, programa e consumidor</td>
+</tr>
+<tr>
+<td>Tempo e janelas</td>
+<td><code>XD01-D07-A/B/D/E</code> exige calendário, timezone, timestamp prevalente, coorte e janela</td>
+<td>Datas efetivas, corte de período e tratamento de fusos no indicador</td>
+</tr>
+<tr>
+<td>Alterações tardias</td>
+<td><code>XD01-D07-F</code> e <code>XD01-D08-C/D/F</code> exigem histórico, versionamento e distinção entre série original/recalculada</td>
+<td>Regra autorizada para reabrir período, recalcular população/coorte e republicar</td>
+</tr>
+<tr>
+<td>Saída/reingresso</td>
+<td><code>XD01-D05-F</code> exige cardinalidade e reconciliação; Master do Coletivo diferencia vínculo e estado</td>
+<td>Elegibilidade após suspensão, cancelamento, reingresso e mudança contratual</td>
+</tr>
+<tr>
+<td>Qualidade e disclosure</td>
+<td><code>XD01-D07-H</code>, <code>XD01-D08-G/H</code> exigem proveniência, não-dado e proteção</td>
+<td>Tratamento de janela incompleta, evidência contestada e resultado suprimido</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Resultado:</strong> <code>LACUNA ESPECÍFICA PERSISTENTE / NEEDS_EVIDENCE</code>. Reconstrução retroativa de um Evento de Vida não implica recálculo retroativo de elegibilidade de KPI nem autorização de divulgação.</p>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-374-pacote-minimo-para-encaminhamento-humano">37.4 Pacote mínimo para encaminhamento humano<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-374-pacote-minimo-para-encaminhamento-humano" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Questão</th>
+<th>Evidência adicional necessária</th>
+<th>Autoridade a identificar, sem atribuição presumida</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>XD01-D01-E</code></td>
+<td>Contrato vigente de identidade e relações; políticas de duplicatas, merge/split, reversão e auditoria; proveniência; testes de cardinalidade e efeitos em séries; limites de acesso</td>
+<td>Responsáveis competentes pelos domínios de identidade/relações, dados/Intelligence e privacidade, com fundamento documental de competência</td>
+</tr>
+<tr>
+<td><code>XD01-D02-C</code></td>
+<td>Contrato de elegibilidade por KPI e consumidor; calendário/timezone; timestamps; ciclo de programa/vínculo; regras de correção, fechamento, coortes e republicação; tratamento de não-dado</td>
+<td>Responsáveis competentes pelos domínios de população/programa, dados/Intelligence e privacidade, com fundamento documental de competência</td>
+</tr>
+</tbody>
+</table>
+<p>Nenhum responsável humano específico é nomeado ou aprovado neste exame. Os contratos devem ser submetidos à autoridade humana pertinente, com alternativas, trade-offs, impacto de privacidade, decisão expressa, data e referência verificável. Enquanto isso, manter <code>NEEDS_EVIDENCE</code> e não executar deduplicação, reprocessamento ou publicação.</p>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-375-estado">37.5 Estado<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-375-estado" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>XD01-D01-E → GAP_EXAMINED / NEEDS_EVIDENCE
+XD01-D02-C → GAP_EXAMINED / NEEDS_EVIDENCE
+XD01-D01/D02 → 13/13 SOURCE_SCREENED (11 PARTIAL; 2 SPECIFIC GAPS)
+HUMAN AUTHORITY CONFIRMED → 0/13
+HUMAN ADJUDICATIONS → 0/77
+G-XD-01 → UNRESOLVED
+G-XD-02..07 → OPEN
+CANONICAL KPI PROMOTIONS → 0
+IMPLEMENTATION AUTHORIZATION → 0
 </code></pre></div></section><section class="print-page" id="intelligence-architecture-dashboard-guivos-business-master-specification" heading-number="16.5"><h1 id="intelligence-architecture-dashboard-guivos-business-master-specification-dashboard-guivos-business-documento-mestre-de-especificacao-analitica-e-handoff-replit">Dashboard Guivos Business — Documento Mestre de Especificação Analítica e Handoff Replit<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-business-master-specification-dashboard-guivos-business-documento-mestre-de-especificacao-analitica-e-handoff-replit" title="Permanent link">&para;</a></h1>
 <h2 id="intelligence-architecture-dashboard-guivos-business-master-specification-1-finalidade">1. Finalidade<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-business-master-specification-1-finalidade" title="Permanent link">&para;</a></h2>
 <p>Este documento é o <strong>Anexo B</strong> de <code>GKR-INTELLIGENCE-DASHBOARD-KPI-001</code> e governa, em nível documental pré-implementação, o <strong>Dashboard Guivos Business</strong>.</p>
