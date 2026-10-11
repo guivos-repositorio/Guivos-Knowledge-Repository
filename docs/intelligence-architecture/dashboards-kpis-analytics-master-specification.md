@@ -2,7 +2,7 @@
 id: GKR-INTELLIGENCE-DASHBOARD-KPI-001
 title: Dashboards, KPIs e Analytics — Documento Mestre de Especificação para Construção
 status: active
-version: 0.2.45
+version: 0.2.46
 owner: Guivos Intelligence Architecture
 last_updated: 2026-10-11
 normative: false
@@ -2674,5 +2674,47 @@ G-XD-03..07 → OPEN
 HUMAN AUTHORITY FORMALLY CONFIRMED → 0/13
 HUMAN ADJUDICATIONS → 0/77
 CANONICAL KPI PROMOTIONS → 0
+IMPLEMENTATION AUTHORIZATION → 0
+```
+
+
+---
+
+## 51. G-XD-02 — Sequenciamento de evidências dos seis KPIs prioritários do Anexo A
+
+### 51.1 Escopo documental
+
+Consolidação das seções 47–50: `GUV-KPI-POP-001`, `002`, `007`, `009`, `011` e `GUV-KPI-OPP-001`. Os dois primeiros possuem contratos individuais v0.1.0 `proposed/NOT_READY`; os quatro restantes não possuem contratos individuais materializados. A matriz abaixo identifica **ordem de comprovação**, não decisão substantiva, especificação operacional ou promoção de readiness.
+
+### 51.2 Matriz de precedência e bloqueios
+
+| Sequência analítica | Evidência requerida | KPI(s) afetados | Gate de autoridade / situação |
+|---|---|---|---|
+| P0 — identidade e população | Identidade canônica, critérios de Pessoa/Organização/Coletivo elegível, validade, deduplicação e reversões | POP-001, POP-002, POP-007, POP-009, POP-011 | `G-XD-01 UNRESOLVED`; sem fechamento humano presumido |
+| P0 — evento e temporalidade | Evento de criação válida, data de efeito, `as_of`, janela, timezone, correções e reprocessamento quando aplicável | POP-002, OPP-001; POP-001/007/009/011 quanto à referência | `G-XD-01 UNRESOLVED`; sem regras temporais inventadas |
+| P0 — universo do mix | Escopo de tipos, cardinalidade, compatibilidade entre populações e denominador | POP-011 | Pendente da elegibilidade e das definições dos três participantes |
+| P1 — prova da fonte | Source of truth, sistema de origem, contrato de extração e owner responsável, com versões verificáveis | Todos | `G-XD-02 OPEN`; fonte não instituída por este documento |
+| P1 — integridade e qualidade | Unicidade, cobertura, completude, estados nulos, ausência real versus indisponibilidade, controle de duplicação e reconciliação | Todos | Sem testes ou limiares aprovados |
+| P1 — freshness e proveniência | Tempo de referência, atualização, lineage, transformações e versionamento | Todos | Sem SLA ou pipeline autorizados |
+| P2 — consumo e proteção | Agregação, segmentação, supressão, exportação, acessos, responsáveis e contrato de serving | Todos | `G-XD-03/04/05/07 OPEN`; sem implementação |
+
+A ordem P0/P1/P2 é **dependência lógica de exame**, não prioridade de execução aprovada, SLA, calendário ou atribuição de competência. Evidência pode ser recebida e qualificada sem maturidade promovida. Regras dependentes de adjudicação humana requerem decisão e mandato institucional verificável antes de serem tratadas como autoridade. Escopo econômico de `G-XD-06` permanece condicionado à pertinência real de cada KPI.
+
+### 51.3 Critérios de handoff documental
+
+Para cada uma das seis métricas, o próximo exame deverá registrar: referência verificável do documento e sua versão, autoridade e escopo, campo/contrato afetado, evidência presente ou ausente, lacuna e dependência de adjudicação, restrições de privacidade e estado resultante. Não aceitar nome de fonte ou esquema hipotético como prova. Não equiparar ausência de eventos a valor zero. Não definir formula, elegibilidade ou decisão humana por simples paralelismo entre indicadores.
+
+### 51.4 Estado preservado
+
+```text
+G-XD-02 → SIX_KPI_DEPENDENCY_SEQUENCE_DOCUMENTED / OPEN
+G-XD-01 → UNRESOLVED
+G-XD-03..07 → OPEN
+GUV-KPI-POP-001/002 → proposed / NOT_READY / INDIVIDUAL CONTRACT EXISTS
+GUV-KPI-POP-007/009/011 + GUV-KPI-OPP-001 → proposed / NOT_READY / NO INDIVIDUAL CONTRACT
+SOURCE CONTRACT AUTHORITY → NOT VERIFIED
+HUMAN AUTHORITY FORMALLY CONFIRMED → 0/13
+HUMAN ADJUDICATIONS → 0/77
+KPI PROMOTIONS → 0
 IMPLEMENTATION AUTHORIZATION → 0
 ```
