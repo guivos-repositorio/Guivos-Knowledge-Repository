@@ -71962,6 +71962,102 @@ G-XD-01 → UNRESOLVED
 G-XD-02..07 → OPEN
 CANONICAL KPI PROMOTIONS → 0
 IMPLEMENTATION AUTHORIZATION → 0
+</code></pre></div>
+<hr />
+<h2 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-42-g-xd-01-confronto-de-fontes-de-participante-elegibilidade-e-kpi">42. G-XD-01 — Confronto de fontes de participante, elegibilidade e KPI<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-42-g-xd-01-confronto-de-fontes-de-participante-elegibilidade-e-kpi" title="Permanent link">&para;</a></h2>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-421-evidencias-e-limites">42.1 Evidências e limites<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-421-evidencias-e-limites" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Fonte</th>
+<th>Regra documental sustentada</th>
+<th>Limite da evidência</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>docs/participants/person.md</code> v1.1.0, active, normative false</td>
+<td>Pessoa é participante humano, distinto de conta e perfil</td>
+<td>Não define fusão, separação ou reconciliação de identificadores</td>
+</tr>
+<tr>
+<td><code>docs/participants/collective.md</code> v1.1.0, active, normative false</td>
+<td>Coletivo é participante distinto de Pessoa e Organização</td>
+<td>Não governa deduplicação analítica</td>
+</tr>
+<tr>
+<td><code>docs/experience-architecture/participant-relationships-interactions-visibility-contract.md</code> v0.3.0, draft</td>
+<td>Relação, visibilidade, vínculo e autoridade são diferentes</td>
+<td>Contrato candidato não concede ligação irrestrita entre participantes</td>
+</tr>
+<tr>
+<td><code>docs/economic-model/gem-004-eligibility-and-funded-access.md</code> v0.1.0, draft</td>
+<td>Critérios candidatos de acesso financiado e ausência de implementação</td>
+<td>Acesso financiado não define população de todo KPI</td>
+</tr>
+<tr>
+<td><code>docs/economic-model/gem-005-incentive-program-contract.md</code> v0.1.0, draft</td>
+<td>Campos conceituais de programa: eligible actors, duplicate control e lifecycle eligibility</td>
+<td>Campos não são política aprovada de vigência ou reprocessamento</td>
+</tr>
+<tr>
+<td><code>docs/intelligence-architecture/kpi-contract-standard.md</code> v0.1.0, active, normative false</td>
+<td>Exige contrato identificável por metric_id; contrato não prova dado ou build autorizada</td>
+<td>Não adjudica contratos individuais</td>
+</tr>
+<tr>
+<td><code>docs/intelligence-architecture/guv-kpi-pop-001.md</code> v0.1.0, proposed, NOT_READY</td>
+<td>Unidade Pessoa; população elegível UNRESOLVED; contagem distinta candidata</td>
+<td>Não autoriza deduplicação, fórmula definitiva ou retroatividade</td>
+</tr>
+</tbody>
+</table>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-422-resultado-por-expediente">42.2 Resultado por expediente<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-422-resultado-por-expediente" title="Permanent link">&para;</a></h3>
+<p><strong>XD01-D01-E:</strong> as fontes sustentam separação entre Pessoa, conta, perfil, Coletivo e relações contextuais. Não demonstram política aprovada de fusão/separação de identidades, reversão, efeitos históricos ou mandato humano. A contagem de Pessoas em GUV-KPI-POP-001 permanece NOT_READY.</p>
+<p><strong>XD01-D02-C:</strong> elegibilidade de acesso financiado, elegibilidade de programa de incentivo e elegibilidade de população de KPI são escopos diferentes. As fontes não demonstram contrato aprovado de datas efetivas, timezone, reprocessamento, republicação ou competência humana.</p>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-423-evidencias-ainda-necessarias">42.3 Evidências ainda necessárias<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-423-evidencias-ainda-necessarias" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Questão</th>
+<th>Evidência pendente</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>D01-E — identidade de domínio</td>
+<td>Contrato do identificador, ownership específico e política de merge/split/reversão</td>
+</tr>
+<tr>
+<td>D01-E — identidade analítica</td>
+<td>Chaves, deduplicação, linhagem, versionamento e efeito sobre séries</td>
+</tr>
+<tr>
+<td>D02-C — elegibilidade de domínio/programa</td>
+<td>Estados, critérios, vigência efetiva e autoridade do ativo concreto</td>
+</tr>
+<tr>
+<td>D02-C — elegibilidade de KPI</td>
+<td>Coortes, janelas, timezone, fechamento e política de republicação</td>
+</tr>
+<tr>
+<td>Ambas — competência</td>
+<td>Instrumento vigente de delegação, decisão humana expressa e registro datado</td>
+</tr>
+</tbody>
+</table>
+<p>A ausência de demonstração se limita às fontes examinadas. Esta seção não altera seus contratos, nem determina arquitetura proprietária específica por inferência.</p>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-424-estado">42.4 Estado<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-424-estado" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>XD01-D01-E / XD01-D02-C → CONTRACT_SOURCE_REVIEW_PARTIAL
+SPECIFIC ASSET OWNERSHIP → NOT_ADJUDICATED
+FORMAL HUMAN MANDATE → NOT_DEMONSTRATED
+HUMAN REFERRALS SUBMITTED → 0
+HUMAN AUTHORITY CONFIRMED → 0/13
+HUMAN ADJUDICATIONS → 0/77
+G-XD-01 → UNRESOLVED
+G-XD-02..07 → OPEN
+CANONICAL KPI PROMOTIONS → 0
+IMPLEMENTATION AUTHORIZATION → 0
 </code></pre></div></section><section class="print-page" id="intelligence-architecture-dashboard-guivos-business-master-specification" heading-number="16.5"><h1 id="intelligence-architecture-dashboard-guivos-business-master-specification-dashboard-guivos-business-documento-mestre-de-especificacao-analitica-e-handoff-replit">Dashboard Guivos Business — Documento Mestre de Especificação Analítica e Handoff Replit<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-business-master-specification-dashboard-guivos-business-documento-mestre-de-especificacao-analitica-e-handoff-replit" title="Permanent link">&para;</a></h1>
 <h2 id="intelligence-architecture-dashboard-guivos-business-master-specification-1-finalidade">1. Finalidade<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-business-master-specification-1-finalidade" title="Permanent link">&para;</a></h2>
 <p>Este documento é o <strong>Anexo B</strong> de <code>GKR-INTELLIGENCE-DASHBOARD-KPI-001</code> e governa, em nível documental pré-implementação, o <strong>Dashboard Guivos Business</strong>.</p>
