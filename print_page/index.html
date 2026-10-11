@@ -72230,6 +72230,87 @@ G-XD-01 → UNRESOLVED
 G-XD-02..07 → OPEN
 CANONICAL KPI PROMOTIONS → 0
 IMPLEMENTATION AUTHORIZATION → 0
+</code></pre></div>
+<hr />
+<h2 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-45-g-xd-01-verificacao-documental-do-mandato-institucional-proposto-para-o-fundador">45. G-XD-01 — Verificação documental do mandato institucional proposto para o fundador<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-45-g-xd-01-verificacao-documental-do-mandato-institucional-proposto-para-o-fundador" title="Permanent link">&para;</a></h2>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-451-escopo-e-metodo">45.1 Escopo e método<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-451-escopo-e-metodo" title="Permanent link">&para;</a></h3>
+<p>Exame documental dos instrumentos institucionais existentes no GKR para avaliar se a indicação expressa registrada na seção 44 demonstra competência formal do fundador para adjudicar <code>XD01-D01-E</code> (reconciliação de identidades) e <code>XD01-D02-C</code> (elegibilidade temporal). <code>NOT_DEMONSTRATED_IN_EXAMINED_SOURCES</code> significa apenas ausência de comprovação nas fontes examinadas, não inexistência de instrumento externo.</p>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-452-confronto-com-as-fontes">45.2 Confronto com as fontes<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-452-confronto-com-as-fontes" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Fonte e estado</th>
+<th>Autoridade demonstrada pelo documento</th>
+<th>Limite quanto ao mandato do fundador</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>docs/adr/ADR-003-architectural-ownership.md</code> — <code>accepted</code> v1.0.0</td>
+<td>Cada ativo canônico tem uma arquitetura proprietária; propriedade incerta demanda decisão formal</td>
+<td>Ownership arquitetural não equivale a nomeação individual para adjudicação</td>
+</tr>
+<tr>
+<td><code>docs/governance-framework/institutional-and-legal-architecture.md</code> — <code>proposed</code> v0.1.0</td>
+<td>Separa entidades, governança, direitos de decisão, competências reservadas e relações institucionais</td>
+<td>Não comprova composição societária real, órgão competente, alçada ou delegação ao fundador</td>
+</tr>
+<tr>
+<td><code>docs/governance-framework/internal-authority-boundary.md</code> — <code>proposed</code> v1.2.0</td>
+<td>Distingue sensibilidade, perfil de autoridade/publicação e finalidade de uso</td>
+<td>Autoridade de publicação/documentação não concede competência decisória sobre dados</td>
+</tr>
+<tr>
+<td><code>docs/governance-framework/operational-and-legal-truth-registry.md</code> — <code>proposed</code> v0.1.0</td>
+<td>Exige evidência verificável; <code>OT2 approved</code> requer autoridade aplicável</td>
+<td>Não comprova ato de aprovação ou mandato para os expedientes</td>
+</tr>
+<tr>
+<td>Seção 44 deste Documento Mestre — registro de manifestação</td>
+<td>Fundador explicitamente indicado como autoridade <strong>proposta</strong> para análise e formalização de competência</td>
+<td>Manifestação não equivale a mandato vigente nem adjudicação</td>
+</tr>
+</tbody>
+</table>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-453-resultado-por-expediente">45.3 Resultado por expediente<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-453-resultado-por-expediente" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Expediente</th>
+<th>Candidato indicado</th>
+<th>Competência institucional comprovada</th>
+<th>Próxima evidência necessária</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>XD01-D01-E</code></td>
+<td>Fundador — <code>EXPLICITLY_PROPOSED</code></td>
+<td><code>NOT_DEMONSTRATED_IN_EXAMINED_SOURCES</code></td>
+<td>Instrumento vigente que identifique entidade, órgão/alçada, poderes para política de identidade e correção histórica, limites e eventual delegação</td>
+</tr>
+<tr>
+<td><code>XD01-D02-C</code></td>
+<td>Fundador — <code>EXPLICITLY_PROPOSED</code></td>
+<td><code>NOT_DEMONSTRATED_IN_EXAMINED_SOURCES</code></td>
+<td>Instrumento vigente que identifique entidade, órgão/alçada, poderes sobre critérios de elegibilidade e efeitos temporais, limites e eventual delegação</td>
+</tr>
+</tbody>
+</table>
+<p>O exame de competência deve ainda identificar os proprietários arquiteturais específicos e eventuais revisões técnicas, de dados e de privacidade exigidas; nenhuma delas é substituída pela indicação do fundador.</p>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-454-proximo-ato-dependente-de-evidencia">45.4 Próximo ato dependente de evidência<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-454-proximo-ato-dependente-de-evidencia" title="Permanent link">&para;</a></h3>
+<p>Solicitar para verificação, <strong>se existentes e aplicáveis</strong>, instrumentos societários ou institucionais vigentes, atos de designação/delegação, políticas de alçada e atas/decisões que demonstrem o direito de decidir essas matérias. Registrar referência, data, vigência, emissor, escopo, limitações e autoridade que validou o instrumento. Não inserir conteúdo sigiloso no repositório público; quando necessário, registrar somente referência sanitizada a evidência sob custódia apropriada.</p>
+<p>Sem essa evidência, não registrar autoridade como confirmada, não encaminhar para adjudicação e não selecionar alternativas de mérito.</p>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-455-estado">45.5 Estado<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-455-estado" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>FOUNDER PROPOSAL → EXPLICITLY_PROPOSED
+MANDATE EVIDENCE IN EXAMINED GKR SOURCES → NOT_DEMONSTRATED
+FORMAL HUMAN AUTHORITY CONFIRMED → 0/13
+HUMAN REFERRALS SUBMITTED → 0
+HUMAN ADJUDICATIONS → 0/77
+G-XD-01 → UNRESOLVED
+G-XD-02..07 → OPEN
+CANONICAL KPI PROMOTIONS → 0
+IMPLEMENTATION AUTHORIZATION → 0
 </code></pre></div></section><section class="print-page" id="intelligence-architecture-dashboard-guivos-business-master-specification" heading-number="16.5"><h1 id="intelligence-architecture-dashboard-guivos-business-master-specification-dashboard-guivos-business-documento-mestre-de-especificacao-analitica-e-handoff-replit">Dashboard Guivos Business — Documento Mestre de Especificação Analítica e Handoff Replit<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-business-master-specification-dashboard-guivos-business-documento-mestre-de-especificacao-analitica-e-handoff-replit" title="Permanent link">&para;</a></h1>
 <h2 id="intelligence-architecture-dashboard-guivos-business-master-specification-1-finalidade">1. Finalidade<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-business-master-specification-1-finalidade" title="Permanent link">&para;</a></h2>
 <p>Este documento é o <strong>Anexo B</strong> de <code>GKR-INTELLIGENCE-DASHBOARD-KPI-001</code> e governa, em nível documental pré-implementação, o <strong>Dashboard Guivos Business</strong>.</p>
