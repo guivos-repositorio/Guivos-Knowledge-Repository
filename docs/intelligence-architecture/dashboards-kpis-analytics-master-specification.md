@@ -2,7 +2,7 @@
 id: GKR-INTELLIGENCE-DASHBOARD-KPI-001
 title: Dashboards, KPIs e Analytics — Documento Mestre de Especificação para Construção
 status: active
-version: 0.2.24
+version: 0.2.25
 owner: Guivos Intelligence Architecture
 last_updated: 2026-10-11
 normative: false
@@ -1568,6 +1568,63 @@ As verificações são critérios de análise, não novas normas nem resultados 
 XD01-D01-A..F → DOSSIER_PREPARED / PENDING_HUMAN_ADJUDICATION
 XD01-D02-A..G → DOSSIER_PREPARED / PENDING_HUMAN_ADJUDICATION
 XD01-D03..D10 → EXAMINED / PENDING_HUMAN_ADJUDICATION
+OPEN HUMAN QUESTIONS → 77
+HUMAN ADJUDICATIONS → 0
+G-XD-01 → UNRESOLVED
+G-XD-02..07 → OPEN
+CANONICAL KPI PROMOTIONS → 0
+IMPLEMENTATION AUTHORIZATION → 0
+```
+
+
+---
+
+## 30. G-XD-01 — Dossiês individuais de decisão humana: XD01-D03 e XD01-D04
+
+### 30.1 Escopo, fidelidade e autoridade
+
+Esta seção prepara 16 dossiês de adjudicação humana, mantendo **integralmente as perguntas e evidências mínimas** das seções 19.3 (`XD01-D03-A..H`) e 20.3 (`XD01-D04-A..H`). A coluna de dependências é auxiliar, não substitui as matrizes originais nem cria regra normativa. Os cinco Documentos Mestres dos dashboards são evidência contextual, não autorização de contratos analíticos, máquinas de estados ou instrumentação. Nenhuma autoridade humana é atribuída por presunção.
+
+### 30.2 Dossiês — XD01-D03: eventos e estados por domínio
+
+| ID | Pergunta/decisão original pendente | Evidência mínima original | Dependências para revisão (não adjudicadas) |
+|---|---|---|---|
+| `XD01-D03-A` | Qual autoridade de domínio define cada tipo de evento e cada estado? | Documento normativo competente, versão, objeto, escopo, dono e finalidade | Autoridade de domínio e precedência; D01 |
+| `XD01-D03-B` | Qual transição é legítima e qual é apenas hipótese de superfície ou indicador? | Máquina de estados ou contrato adjudicado, pré-condições, papel autorizado e relação com objeto | Estados e transições; não inferir implementação |
+| `XD01-D03-C` | O que constitui evento observado, recebido, validado, rejeitado ou confirmado? | Origem, autoria, timestamp de ocorrência/registro, critérios de validação e evidência | Proveniência, observação versus validação; D08 |
+| `XD01-D03-D` | Como representar cancelamento, reversão, expiração, pausa, saída e reingresso? | Semântica de reversão, data efetiva, trilha de auditoria e impacto histórico | Reversão, tempo e histórico; D04/D08 |
+| `XD01-D03-E` | Quando estados distintos podem ser usados como numerador ou coorte? | Evento qualificante, elegibilidade, deduplicação, denominador, janela e unidade de contagem por KPI | Coortes, elegibilidade, deduplicação e fórmula; D02/D05/D06/D07 |
+| `XD01-D03-F` | Quais relações de autoria, contraparte, consentimento e disclosure limitam cada evento? | Autoridade de acesso por consumidor, finalidade, sensibilidade, minimização e política de supressão | Privacidade, consentimento, serving e D10 |
+| `XD01-D03-G` | Como reconciliar nomenclaturas semelhantes entre produtos sem declarar equivalência indevida? | Mapeamento explícito de contratos especializados, proveniência e diferenças de ciclo de vida | Diferenças entre os cinco dashboards; sem equivalência universal |
+| `XD01-D03-H` | Como tratar estados não mapeados, eventos tardios e fontes indisponíveis? | Política de qualidade, freshness, reprocessamento, `NO_DATA`, `SOURCE_DELAYED`, `INSUFFICIENT_DATA` e `SUPPRESSED_BY_POLICY` | Qualidade, atraso, não-dado e supressão; D08/D09 |
+
+### 30.3 Dossiês — XD01-D04: entrada, ativação, retorno e saída
+
+| ID | Pergunta/decisão original pendente | Evidência mínima original | Dependências para revisão (não adjudicadas) |
+|---|---|---|---|
+| `XD01-D04-A` | Qual objeto, relação ou participante tem marco de entrada legitimamente observável? | Autoridade, identidade, evento/estado, data efetiva e condição de elegibilidade | Identidade, elegibilidade e eventos; D01..D03 |
+| `XD01-D04-B` | O que configura ativação por domínio, produto, KPI e consumidor? | Evento qualificante autorizado, população/coorte, exclusões, janela e fonte | População e evento qualificante; D02/D03 |
+| `XD01-D04-C` | Como distinguir primeiro evento, uso recorrente, retenção, retorno e reativação? | Contrato temporal, histórico, janelas de observação, atividade válida e deduplicação | Tempo, unicidade e reprocessamento; D05/D07/D08 |
+| `XD01-D04-D` | Qual a semântica de pausa, inatividade, cancelamento, saída e encerramento? | Lifecycle especializado, evento de reversão, relação afetada e proibição de churn presumido | Lifecycle específico; inatividade não é churn |
+| `XD01-D04-E` | Como tratar reingresso, múltiplos programas, vínculos simultâneos e mudança de papel? | Cardinalidade, identidade legítima, coorte, atribuição, versionamento e histórico | Papéis, vínculos, cardinalidade e histórico; D01/D05/D08 |
+| `XD01-D04-F` | Quando um marco pode ser exibido ao consumidor sem expor Journey ou contraparte privada? | Finalidade, autoridade contextual, agregação, minimização, consentimento quando exigido e supressão | Autorização, minimização e supressão; D09/D10 |
+| `XD01-D04-G` | Como lidar com eventos tardios, marcos desconhecidos, séries incompletas e ausência de observação? | Proveniência, timestamp de ocorrência/registro, freshness, reprocessamento e estados de qualidade | Proveniência, qualidade e temporalidade; D07..D09 |
+| `XD01-D04-H` | Quais marcos são comparáveis entre dashboards sem inferir um funil universal? | Equivalência contratual explícita, mesma unidade/população/janela e divergências documentadas | Grão, população e janela; D02/D05/D06/D07 |
+
+### 30.4 Registro individual e verificações cruzadas
+
+Cada dossiê requer, antes de adjudicação, ficha com **ID, texto original, objeto/KPI, domínio, consumidor, fontes/versionamento, autoridade humana e fundamento de competência, evidência verificável, alternativas, dependências, impactos de privacidade/consentimento/serving/exportação, decisão expressa, justificativa, data, aprovação rastreável, revisão cruzada e status**. Sem autoridade ou evidência suficiente, usar `PENDING_HUMAN_ADJUDICATION`, `NEEDS_EVIDENCE` ou `CONFLICT`, sem preencher decisão.
+
+A revisão humana deverá preservar as distinções entre cadastro e ativação; interesse, inscrição, participação e conclusão; solicitação, aprovação, vínculo confirmado e papel aceito; inclusão em programa, acesso custeado e uso efetivo; declaração, movimento e resultado pessoal. Inatividade não equivale a churn, pausa não equivale a fracasso e saída de programa ou vínculo não equivale a saída da Guivos. Evento válido para cálculo não confere automaticamente direito de disclosure. Comparabilidade entre dashboards exige identidade, unidade, população, janela, finalidade e autoridade compatíveis, não semelhança de nomenclatura.
+
+### 30.5 Controle de maturidade
+
+```text
+XD01-D01-A..F → DOSSIER_PREPARED / PENDING_HUMAN_ADJUDICATION
+XD01-D02-A..G → DOSSIER_PREPARED / PENDING_HUMAN_ADJUDICATION
+XD01-D03-A..H → DOSSIER_PREPARED / PENDING_HUMAN_ADJUDICATION
+XD01-D04-A..H → DOSSIER_PREPARED / PENDING_HUMAN_ADJUDICATION
+XD01-D05..D10 → EXAMINED / PENDING_HUMAN_ADJUDICATION
 OPEN HUMAN QUESTIONS → 77
 HUMAN ADJUDICATIONS → 0
 G-XD-01 → UNRESOLVED
