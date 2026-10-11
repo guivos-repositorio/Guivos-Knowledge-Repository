@@ -2,7 +2,7 @@
 id: GKR-INTELLIGENCE-DASHBOARD-KPI-001
 title: Dashboards, KPIs e Analytics — Documento Mestre de Especificação para Construção
 status: active
-version: 0.2.51
+version: 0.2.52
 owner: Guivos Intelligence Architecture
 last_updated: 2026-10-11
 normative: false
@@ -2941,6 +2941,49 @@ G-XD-01 → UNRESOLVED
 G-XD-03..07 → OPEN
 SIX KPIS → proposed / NOT_READY
 INDIVIDUAL KPI CONTRACTS → 2 PRESENT / 4 NOT MATERIALIZED
+VERIFIED OPERATIONAL SOURCE AUTHORITY → NONE IN THIS EXAM
+HUMAN AUTHORITY FORMALLY CONFIRMED → 0/13
+HUMAN ADJUDICATIONS → 0/77
+CANONICAL KPI PROMOTIONS → 0
+IMPLEMENTATION AUTHORIZATION → 0
+```
+
+
+---
+
+## 57. G-XD-02 — Roteiro de qualificação institucional das evidências P0, P1 e P2
+
+### 57.1 Finalidade
+
+Derivação documental da matriz consolidada na seção 56 para orientar a recepção e a qualificação **sem adjudicar** os seis KPIs prioritários do Anexo A. Roteiro de perguntas e provas, não delegação de competência, convocação formal, decisão aprovada, definição de fonte operacional, autorização de compartilhamento ou ordem de engenharia.
+
+### 57.2 Perguntas para qualificação e provas requeridas
+
+| Frente | Pergunta institucional a examinar | Prova mínima candidata | Restrição de autoridade |
+|---|---|---|---|
+| P0 — Pessoa | Qual definição de Pessoa registrada, válida e elegível governa a contagem e as exclusões? | Documento versionado de identidade/população e decisão formal no escopo | Não presumir que descrição conceitual de Pessoa seja critério computável aprovado |
+| P0 — Organização e Coletivo | Quais estados e critérios definem cadastro elegível por tipo e como distinguir IDs e duplicidades? | Regras semânticas versionadas e adjudicação competente por tipo | Não inferir equivalência com Pessoa ou permissão de acesso entre participantes |
+| P0 — Mix | Qual universo comparável e denominador incorpora os três tipos? | Definição de cardinalidade, escopo, recorte e exclusões adjudicados | Não derivar automaticamente denominador da soma de registros brutos |
+| P0 — Criação e tempo | Qual evento constitui criação válida de Pessoa/Oportunidade, data efetiva, `as_of`, timezone e reversões? | Contrato semântico de eventos e temporalidade com autoridade verificável | Regras de Eventos de Vida do Journey não adjudicam esses eventos por analogia |
+| P1 — Origem | Quem responde pela fonte de verdade de cada entidade/evento e qual versão do contrato operacional comprova isso? | Referência de fonte, contrato de extração, responsável/mandato, lineage | Fonte sugerida ou schema exemplar não comprova dados produtivos autorizados |
+| P1 — Qualidade | Quais critérios verificáveis de unicidade, cobertura, nulos, indisponibilidade, freshness e conciliação se aplicam? | Quality contract, evidências de testes e regras de referência temporal | Sem declarar conformidade, SLA ou zero observado na ausência de prova |
+| P2 — Privacidade e disclosure | Qual finalidade, classe de acesso, proteção por grupo/segmento, política de exportação e tratamento jurídico valem? | Decisão de finalidade/acesso, avaliação jurídica aplicável e regra de supressão | O caráter interno do dashboard não permite acesso individual irrestrito |
+| P2 — Serving | Qual contrato de consumidor/serving, ownership, versionamento e aceite suporta a métrica? | Contrato de serving e aceite por autoridade competente | Requisitos transversais não instituem API, RBAC nem implementação |
+
+### 57.3 Registro e encaminhamento condicionados
+
+Toda eventual evidência deverá ser qualificada com referência verificável, versão, emissão, escopo, KPI/atributo afetado, competência institucional comprovada, conflito com documentos existentes, restrições de privacidade e estado de análise. Classes de recepção permitidas nesta triagem: `EVIDENCE_MISSING`, `EVIDENCE_PRESENT_NOT_ADJUDICATED`, `EVIDENCE_CONFLICT` e `NOT_APPLICABLE_WITH_JUSTIFICATION`. Esses marcadores não promovem status KPI, não encerram `G-XD-02` e não designam autoridades humanas.
+
+Caso se apresente nova decisão humana, sua validade deverá ser examinada separadamente do material técnico, conforme o protocolo de `G-XD-01` (seção 46) e o registro de decisão aplicável. Não enviar dados pessoais, nomes de clientes, bases privadas ou segredos ao repositório público; preservar apenas referências saneadas. Não aplicar mudanças em contratos especializados, registry, regras de acesso ou sistemas sem autorização distinta.
+
+### 57.4 Checkpoint
+
+```text
+G-XD-02 → INSTITUTIONAL_EVIDENCE_QUESTION_SET_PREPARED / OPEN
+P0/P1/P2 → DOCUMENTARY EXAMINED / NOT ADJUDICATED
+SIX KPIS → proposed / NOT_READY
+G-XD-01 → UNRESOLVED
+G-XD-03..07 → OPEN
 VERIFIED OPERATIONAL SOURCE AUTHORITY → NONE IN THIS EXAM
 HUMAN AUTHORITY FORMALLY CONFIRMED → 0/13
 HUMAN ADJUDICATIONS → 0/77
