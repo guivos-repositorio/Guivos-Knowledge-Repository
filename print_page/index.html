@@ -73261,6 +73261,86 @@ HUMAN AUTHORITY FORMALLY CONFIRMED → 0/13
 HUMAN ADJUDICATIONS → 0/77
 CANONICAL KPI PROMOTIONS → 0
 IMPLEMENTATION AUTHORIZATION → 0
+</code></pre></div>
+<hr />
+<h2 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-57-g-xd-02-roteiro-de-qualificacao-institucional-das-evidencias-p0-p1-e-p2">57. G-XD-02 — Roteiro de qualificação institucional das evidências P0, P1 e P2<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-57-g-xd-02-roteiro-de-qualificacao-institucional-das-evidencias-p0-p1-e-p2" title="Permanent link">&para;</a></h2>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-571-finalidade">57.1 Finalidade<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-571-finalidade" title="Permanent link">&para;</a></h3>
+<p>Derivação documental da matriz consolidada na seção 56 para orientar a recepção e a qualificação <strong>sem adjudicar</strong> os seis KPIs prioritários do Anexo A. Roteiro de perguntas e provas, não delegação de competência, convocação formal, decisão aprovada, definição de fonte operacional, autorização de compartilhamento ou ordem de engenharia.</p>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-572-perguntas-para-qualificacao-e-provas-requeridas">57.2 Perguntas para qualificação e provas requeridas<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-572-perguntas-para-qualificacao-e-provas-requeridas" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Frente</th>
+<th>Pergunta institucional a examinar</th>
+<th>Prova mínima candidata</th>
+<th>Restrição de autoridade</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>P0 — Pessoa</td>
+<td>Qual definição de Pessoa registrada, válida e elegível governa a contagem e as exclusões?</td>
+<td>Documento versionado de identidade/população e decisão formal no escopo</td>
+<td>Não presumir que descrição conceitual de Pessoa seja critério computável aprovado</td>
+</tr>
+<tr>
+<td>P0 — Organização e Coletivo</td>
+<td>Quais estados e critérios definem cadastro elegível por tipo e como distinguir IDs e duplicidades?</td>
+<td>Regras semânticas versionadas e adjudicação competente por tipo</td>
+<td>Não inferir equivalência com Pessoa ou permissão de acesso entre participantes</td>
+</tr>
+<tr>
+<td>P0 — Mix</td>
+<td>Qual universo comparável e denominador incorpora os três tipos?</td>
+<td>Definição de cardinalidade, escopo, recorte e exclusões adjudicados</td>
+<td>Não derivar automaticamente denominador da soma de registros brutos</td>
+</tr>
+<tr>
+<td>P0 — Criação e tempo</td>
+<td>Qual evento constitui criação válida de Pessoa/Oportunidade, data efetiva, <code>as_of</code>, timezone e reversões?</td>
+<td>Contrato semântico de eventos e temporalidade com autoridade verificável</td>
+<td>Regras de Eventos de Vida do Journey não adjudicam esses eventos por analogia</td>
+</tr>
+<tr>
+<td>P1 — Origem</td>
+<td>Quem responde pela fonte de verdade de cada entidade/evento e qual versão do contrato operacional comprova isso?</td>
+<td>Referência de fonte, contrato de extração, responsável/mandato, lineage</td>
+<td>Fonte sugerida ou schema exemplar não comprova dados produtivos autorizados</td>
+</tr>
+<tr>
+<td>P1 — Qualidade</td>
+<td>Quais critérios verificáveis de unicidade, cobertura, nulos, indisponibilidade, freshness e conciliação se aplicam?</td>
+<td>Quality contract, evidências de testes e regras de referência temporal</td>
+<td>Sem declarar conformidade, SLA ou zero observado na ausência de prova</td>
+</tr>
+<tr>
+<td>P2 — Privacidade e disclosure</td>
+<td>Qual finalidade, classe de acesso, proteção por grupo/segmento, política de exportação e tratamento jurídico valem?</td>
+<td>Decisão de finalidade/acesso, avaliação jurídica aplicável e regra de supressão</td>
+<td>O caráter interno do dashboard não permite acesso individual irrestrito</td>
+</tr>
+<tr>
+<td>P2 — Serving</td>
+<td>Qual contrato de consumidor/serving, ownership, versionamento e aceite suporta a métrica?</td>
+<td>Contrato de serving e aceite por autoridade competente</td>
+<td>Requisitos transversais não instituem API, RBAC nem implementação</td>
+</tr>
+</tbody>
+</table>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-573-registro-e-encaminhamento-condicionados">57.3 Registro e encaminhamento condicionados<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-573-registro-e-encaminhamento-condicionados" title="Permanent link">&para;</a></h3>
+<p>Toda eventual evidência deverá ser qualificada com referência verificável, versão, emissão, escopo, KPI/atributo afetado, competência institucional comprovada, conflito com documentos existentes, restrições de privacidade e estado de análise. Classes de recepção permitidas nesta triagem: <code>EVIDENCE_MISSING</code>, <code>EVIDENCE_PRESENT_NOT_ADJUDICATED</code>, <code>EVIDENCE_CONFLICT</code> e <code>NOT_APPLICABLE_WITH_JUSTIFICATION</code>. Esses marcadores não promovem status KPI, não encerram <code>G-XD-02</code> e não designam autoridades humanas.</p>
+<p>Caso se apresente nova decisão humana, sua validade deverá ser examinada separadamente do material técnico, conforme o protocolo de <code>G-XD-01</code> (seção 46) e o registro de decisão aplicável. Não enviar dados pessoais, nomes de clientes, bases privadas ou segredos ao repositório público; preservar apenas referências saneadas. Não aplicar mudanças em contratos especializados, registry, regras de acesso ou sistemas sem autorização distinta.</p>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-574-checkpoint">57.4 Checkpoint<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-574-checkpoint" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>G-XD-02 → INSTITUTIONAL_EVIDENCE_QUESTION_SET_PREPARED / OPEN
+P0/P1/P2 → DOCUMENTARY EXAMINED / NOT ADJUDICATED
+SIX KPIS → proposed / NOT_READY
+G-XD-01 → UNRESOLVED
+G-XD-03..07 → OPEN
+VERIFIED OPERATIONAL SOURCE AUTHORITY → NONE IN THIS EXAM
+HUMAN AUTHORITY FORMALLY CONFIRMED → 0/13
+HUMAN ADJUDICATIONS → 0/77
+CANONICAL KPI PROMOTIONS → 0
+IMPLEMENTATION AUTHORIZATION → 0
 </code></pre></div></section><section class="print-page" id="intelligence-architecture-dashboard-guivos-business-master-specification" heading-number="16.5"><h1 id="intelligence-architecture-dashboard-guivos-business-master-specification-dashboard-guivos-business-documento-mestre-de-especificacao-analitica-e-handoff-replit">Dashboard Guivos Business — Documento Mestre de Especificação Analítica e Handoff Replit<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-business-master-specification-dashboard-guivos-business-documento-mestre-de-especificacao-analitica-e-handoff-replit" title="Permanent link">&para;</a></h1>
 <h2 id="intelligence-architecture-dashboard-guivos-business-master-specification-1-finalidade">1. Finalidade<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-business-master-specification-1-finalidade" title="Permanent link">&para;</a></h2>
 <p>Este documento é o <strong>Anexo B</strong> de <code>GKR-INTELLIGENCE-DASHBOARD-KPI-001</code> e governa, em nível documental pré-implementação, o <strong>Dashboard Guivos Business</strong>.</p>
