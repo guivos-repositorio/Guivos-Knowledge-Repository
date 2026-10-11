@@ -2,7 +2,7 @@
 id: GKR-INTELLIGENCE-DASHBOARD-KPI-001
 title: Dashboards, KPIs e Analytics — Documento Mestre de Especificação para Construção
 status: active
-version: 0.2.10
+version: 0.2.11
 owner: Guivos Intelligence Architecture
 last_updated: 2026-10-11
 normative: false
@@ -699,7 +699,7 @@ Cada anexo deve ser construído e revisado individualmente para permitir evoluç
 
 ```text
 GKR-INTELLIGENCE-DASHBOARD-KPI-001
-→ v0.2.10
+→ v0.2.11
 → ACTIVE
 → MULTI-DASHBOARD GOVERNED PRE-IMPLEMENTATION MASTER
 
@@ -801,7 +801,7 @@ Estes gates são **referências de acompanhamento documental**, não decisões n
 
 ```text
 MASTER GLOBAL
-→ v0.2.10 / PRE-IMPLEMENTATION
+→ v0.2.11 / PRE-IMPLEMENTATION
 
 ANNEXES A–E
 → MATERIALIZED / INDIVIDUAL MENU ENTRIES
@@ -817,3 +817,53 @@ REAL DATA / TECHNICAL RBAC / REPLIT BUILD
 ANNEX F — ADS
 → OUTSIDE THIS FIVE-DASHBOARD AUDIT
 ```
+
+
+---
+
+## 16. G-XD-01 — Exame de identidade, populações, eventos e tempo (candidato, não adjudicado)
+
+### 16.1 Propósito e estado
+
+Este exame documenta o primeiro gate transversal aberto na seção 15. Não altera contratos de domínio nem declara conclusão. O objetivo é explicitar quais decisões ainda precisam ser tomadas **por família de KPI e consumidor**, sem universalizar definições próprias de Business, Organização, Coletivo, Guivos interno ou Pessoa.
+
+```text
+G-XD-01
+→ ANALYTIC EXAMINATION OPEN
+→ HUMAN ADJUDICATION PENDING
+→ CANONICAL KPI PROMOTIONS = 0
+→ IMPLEMENTATION AUTHORIZATION = 0
+```
+
+### 16.2 Evidências e diferenças já registradas
+
+| Anexo | Evidência documental | Lacuna que impede fechamento |
+|---|---|---|
+| A — Guivos | retenção D7/D30/D90 referenciada por coorte ativada e atividade qualificante; venda, transação, inscrição, participação e conclusão são eventos distintos | definição de ativação, evento qualificante, identidade válida, elegibilidade e janela |
+| B — Business | elegíveis, participantes distintos e eventos válidos são conceitos separados; PTS-003 usa apenas pontos efetivamente utilizados como denominador | população contratual, marco de ativação, coorte, deduplicação, cancelamento e atribuição |
+| C — Organização | oportunidade, manifestação, inscrição, participação e conclusão são estados/eventos diferentes | correspondência de eventos, população autorizada, estados, cancelamentos e denominadores |
+| D — Coletivo | solicitação, vínculo, presença e continuidade exigem voluntariedade e elegibilidade | transições válidas, desistência, coorte, deduplicação e privacidade de participantes |
+| E — Pessoa | declaração, objetivo, movimento, mudança e evidência não são equivalentes | autoridade de estados e eventos da Journey, temporalidade e autoria; sem score universal |
+
+### 16.3 Matriz de decisões candidatas
+
+| Referência | Decisão a adjudicar | Critério mínimo de exame |
+|---|---|---|
+| XD01-D01 | identidade analítica por tipo de participante/objeto | chave legítima, escopo, ciclo de vida e tratamento de fusões/duplicatas |
+| XD01-D02 | população elegível por KPI e consumidor | inclusão, exclusão, consentimento/contrato e data de elegibilidade |
+| XD01-D03 | taxonomia de eventos e estados por domínio | fonte de autoridade, evento versus estado, validação, reversão e autoria |
+| XD01-D04 | marcos de entrada, ativação, retorno e saída | sem impor um funil universal; definição especializada e observabilidade |
+| XD01-D05 | deduplicação e cardinalidade | pessoa única versus evento, participação, vínculo, oportunidade ou transação |
+| XD01-D06 | numerador, denominador e unidade de análise | mesma coorte, elegibilidade, exclusões e denominador zero |
+| XD01-D07 | calendário, timezone, janela e granularidade | instante de ocorrência versus registro, janela incompleta e comparabilidade |
+| XD01-D08 | correções retroativas e reprocessamento | cancelamento, estorno, mudança de estado, versões e rastreabilidade |
+| XD01-D09 | lacunas, ausência de dados e supressão | distinguir zero observado, NO_DATA, INSUFFICIENT_DATA e estados protegidos |
+| XD01-D10 | cruzamentos entre produtos e participantes | autorização de relacionamento e prevenção de contagem dupla ou disclosure |
+
+Todas as referências `XD01-D*` são **questões de adjudicação**, não decisões tomadas, contratos canônicos, novos KPIs ou novos eventos oficiais.
+
+### 16.4 Critérios de encerramento do gate
+
+Para cada KPI elegível à adjudicação futura, registrar em autoridade competente: consumidor, finalidade, entidade de contagem, população, elegibilidade, fonte e evento, estados e reversões, chave de deduplicação, fórmula, denominador, timezone, janelas, tratamento de atraso, correções, privacidade e qualidade. A consistência entre dashboards deve ser demonstrada por equivalência contratual explícita, nunca apenas por rótulos idênticos.
+
+**Estado do G-XD-01:** `UNRESOLVED / HUMAN_ADJUDICATION_REQUIRED`. Os gates G-XD-02..07 e os gates especializados permanecem inalterados. Dados reais, RBAC técnico e implementação Replit continuam não autorizados.
