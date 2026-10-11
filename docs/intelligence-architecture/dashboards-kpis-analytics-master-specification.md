@@ -2,7 +2,7 @@
 id: GKR-INTELLIGENCE-DASHBOARD-KPI-001
 title: Dashboards, KPIs e Analytics — Documento Mestre de Especificação para Construção
 status: active
-version: 0.2.49
+version: 0.2.50
 owner: Guivos Intelligence Architecture
 last_updated: 2026-10-11
 normative: false
@@ -2849,6 +2849,53 @@ P1_OPERATIONAL_SOURCE_CONTRACT_AUTHORITY → NOT VERIFIED
 SIX KPI STATUSES → proposed / NOT_READY
 G-XD-01 → UNRESOLVED
 G-XD-03..07 → OPEN
+HUMAN AUTHORITY FORMALLY CONFIRMED → 0/13
+HUMAN ADJUDICATIONS → 0/77
+KPI PROMOTIONS → 0
+IMPLEMENTATION AUTHORIZATION → 0
+```
+
+
+---
+
+## 55. G-XD-02 — Confronto P2: consumo, privacidade, disclosure e serving dos seis KPIs do Anexo A
+
+### 55.1 Escopo e precedência
+
+Exame documental dos seis KPIs `GUV-KPI-POP-001/002/007/009/011` e `GUV-KPI-OPP-001`, após P0 (seção 53) e P1 (seção 54). Documentos transversais de governança, experiência e Intelligence constituem **evidência de requisitos e limites**, não autorização individual de dados, RBAC, endpoint de serving, exportação ou acesso produtivo.
+
+### 55.2 Contratos e referências examinados
+
+| Referência GKR | Estado verificado | Conteúdo pertinente a P2 | Limite preservado |
+|---|---|---|---|
+| `docs/governance-framework/data-privacy-and-consent-governance.md` — `GKR-DATA-PRIVACY-CONSENT-001`, v0.1.0 | proposed; arquitetura referencial | Finalidade, bases jurídicas, consentimentos/preferências separados, papéis, retenção e direitos | Não declara controles implementados nem substitui análise jurídica para tratamento concreto; consentimento não é base universal |
+| `docs/experience-architecture/participant-relationships-interactions-visibility-contract.md` — `GKR-UX-PARTICIPANT-RELATIONSHIPS-INTERACTIONS-001`, v0.3.0 | draft; `normative: true`; candidato transversal | Relação e encontrabilidade não concedem acesso irrestrito aos dados de pessoas e contrapartes | Status draft não equivale a aprovação operacional nem expande direitos de leitura entre participantes |
+| `docs/intelligence-architecture/kpi-contract-standard.md` — `GKR-INTELLIGENCE-KPI-CONTRACT-001`, v0.1.0 | active; `normative: false` | `access_class`, `protection_threshold`, `export_rule`, `serving_contract_ref` e readiness | Campos necessários não implicam threshold, política de drill-down/export ou serving materializado |
+| `docs/intelligence-architecture/dashboard-guivos-master-specification.md` — `GKR-INTELLIGENCE-DASHBOARD-GUIVOS-001`, v0.1.5 | active; `normative: false` | Dashboard interno agrega indicadores, exige finalidade/autorização e nega acesso individual irrestrito | Público interno não autoriza automaticamente dados identificáveis, exportação, ou divulgação de decisões individuais do Journey |
+| `docs/intelligence-architecture/surface-provenance-explainability-contract.md` — `GKR-INTELLIGENCE-SURFACE-PROVENANCE-EXPLAINABILITY-001`, v1.0.0 | active; `normative: true`; contrato semântico transversal | Consumidor e finalidade de serving devem permanecer rastreáveis no envelope de explicabilidade | Não define serving técnico, endpoint, política de confiança ou infraestrutura de dados |
+
+### 55.3 Matriz de blockers P2 por KPI
+
+| KPI | Consumidor e limite semântico conhecido | Controles P2 ainda sem prova de fechamento |
+|---|---|---|
+| `GUV-KPI-POP-001` | Dashboard Guivos interno, agregado; contrato individual v0.1.0 | Regras de dimensão/filtros, threshold, supressão, exportação, owner, base aplicável e `serving_contract_ref` |
+| `GUV-KPI-POP-002` | Dashboard Guivos interno, agregado por período; contrato individual v0.1.0 | Mesmos controles, acrescidos de proteção de recortes temporais/grupos pequenos e tratamento de ausência |
+| `GUV-KPI-POP-007` | Dashboard Guivos interno; Organização como objeto contado | Política de acesso, eventual segmentação territorial/institucional, exportação, thresholds e serving |
+| `GUV-KPI-POP-009` | Dashboard Guivos interno; Coletivo como objeto contado | Escopo de divulgação, grupos pequenos, relação com Pessoas, supressão, exportação e serving |
+| `GUV-KPI-POP-011` | Distribuição Pessoa/Organização/Coletivo; população/denominador ainda não adjudicados | Agregação comparável, dimensões autorizadas, denominador, thresholds, supressão, exportação e serving |
+| `GUV-KPI-OPP-001` | Oportunidades criadas; data de evento ainda não adjudicada | Divulgação de dados institucionais/territoriais, recortes temporais, acessos, supressão, exportação e serving |
+
+### 55.4 Fronteira de handoff
+
+O handoff P2 só poderá avançar mediante referências verificáveis de finalidade e base legal aplicável, classes de acesso autorizadas, governança de dimensão/filtro/drill-down, regras de supressão e ausência de dados, política de exportação, responsável com mandato competente, contrato de serving e evidência de implementação/validação separada quando necessária. `Normative: true` num contrato de escopo transversal não valida, sozinho, a exceção concreta. O exame não cria RBAC, endpoint, limiar de supressão, autorização de compartilhamento nem permissão para dados reais.
+
+```text
+G-XD-02 → P2_GOVERNANCE_REFERENCES_EXAMINED / OPEN
+P2_CONCEPTUAL_AND_CROSS_SURFACE_RESTRICTIONS → LOCATED
+P2_OPERATIONAL_DISCLOSURE_AND_SERVING_APPROVAL → NOT VERIFIED
+G-XD-01 → UNRESOLVED
+G-XD-03..07 → OPEN
+SIX KPIS → proposed / NOT_READY
 HUMAN AUTHORITY FORMALLY CONFIRMED → 0/13
 HUMAN ADJUDICATIONS → 0/77
 KPI PROMOTIONS → 0
