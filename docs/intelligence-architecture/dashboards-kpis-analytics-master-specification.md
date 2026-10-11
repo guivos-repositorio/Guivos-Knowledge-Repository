@@ -2,7 +2,7 @@
 id: GKR-INTELLIGENCE-DASHBOARD-KPI-001
 title: Dashboards, KPIs e Analytics — Documento Mestre de Especificação para Construção
 status: active
-version: 0.2.25
+version: 0.2.26
 owner: Guivos Intelligence Architecture
 last_updated: 2026-10-11
 normative: false
@@ -1625,6 +1625,60 @@ XD01-D02-A..G → DOSSIER_PREPARED / PENDING_HUMAN_ADJUDICATION
 XD01-D03-A..H → DOSSIER_PREPARED / PENDING_HUMAN_ADJUDICATION
 XD01-D04-A..H → DOSSIER_PREPARED / PENDING_HUMAN_ADJUDICATION
 XD01-D05..D10 → EXAMINED / PENDING_HUMAN_ADJUDICATION
+OPEN HUMAN QUESTIONS → 77
+HUMAN ADJUDICATIONS → 0
+G-XD-01 → UNRESOLVED
+G-XD-02..07 → OPEN
+CANONICAL KPI PROMOTIONS → 0
+IMPLEMENTATION AUTHORIZATION → 0
+```
+
+
+---
+
+## 31. G-XD-01 — Dossiês individuais de decisão humana: XD01-D05 e XD01-D06
+
+### 31.1 Escopo, fidelidade e autoridade
+
+Esta seção prepara 16 dossiês de adjudicação humana, preservando **integralmente as perguntas e evidências mínimas** das seções 21.3 (`XD01-D05-A..H`) e 22.3 (`XD01-D06-A..H`). As dependências adicionais apenas organizam o exame: não são decisões, contratos canônicos ou requisitos implementáveis. Os cinco Documentos Mestres de dashboards são contexto de reconciliação, não autorização de chaves, fórmulas ou acesso. Autoridade e aprovação humanas permanecem em aberto.
+
+### 31.2 Dossiês — XD01-D05: deduplicação e cardinalidade
+
+| ID | Pergunta/decisão original pendente | Evidência mínima original | Dependências para revisão (não adjudicadas) |
+|---|---|---|---|
+| `XD01-D05-A` | Unidade de contagem por KPI: entidade, vínculo, evento, sessão, programa, objeto ou transação? | Contrato de métrica, autoridade e população | Identidade e unidade analítica; D01/D02/D06 |
+| `XD01-D05-B` | Escopo de unicidade: produto, organização, coletivo, contrato, programa, oportunidade, janela ou consumidor? | Finalidade, escopo e autorização | Finalidade, consumidor e janela; D02/D07/D10 |
+| `XD01-D05-C` | Duplicata técnica versus nova ocorrência, atualização, correção ou reversão? | Identificador de origem, estado, timestamps, versionamento | Eventos, estados e reversões; D03/D08 |
+| `XD01-D05-D` | Múltiplas contas, papéis, vínculos, programas e oportunidades simultâneos? | Cardinalidade, histórico, papel e atribuição | Relações e marcos de ciclo de vida; D01/D04 |
+| `XD01-D05-E` | Quando somas dimensionais duplicam pessoas e quando totais distintos são legítimos? | Grão, sobreposição, população e janela | População e grão de cada KPI; D02/D06 |
+| `XD01-D05-F` | Saída/reingresso, fusão/divisão, correções retroativas e eventos tardios? | Autoridade de identidade, tempo efetivo, reconciliação | Histórico e autoridade de correção; D01/D04/D08 |
+| `XD01-D05-G` | Deduplicação entre produtos sem expor dados de contrapartes ou Journey privada? | Finalidade, minimização, consentimento aplicável, supressão | Consentimento, serving e minimização; G-XD-03/04 |
+| `XD01-D05-H` | Ausência de chave, relações ambíguas ou cardinalidade desconhecida? | Qualidade, proveniência, estado de não dado, não fabricar totais | Qualidade, atraso, não-dado e supressão; D09 |
+
+### 31.3 Dossiês — XD01-D06: numeradores, denominadores e unidades
+
+| ID | Pergunta/decisão original pendente | Evidência mínima original | Dependências para revisão (não adjudicadas) |
+|---|---|---|---|
+| `XD01-D06-A` | Qual o numerador exato por KPI e seu evento/estado qualificante? | Objeto, autoridade, fonte, unidade, elegibilidade, deduplicação | Taxonomia de eventos e contagem; D03/D05 |
+| `XD01-D06-B` | Há denominador legítimo? Qual universo e momento de elegibilidade? | População, coorte, data efetiva, exclusões e consumidor | Elegibilidade, coorte e temporalidade; D02/D04/D07 |
+| `XD01-D06-C` | Qual unidade: pessoas distintas, eventos, relações, oportunidades, programas, tempo, pontos, moeda ou percentual? | Contrato dimensional, agregação, escala e precisão | Dimensões, identidade e agregação; D01/D05 |
+| `XD01-D06-D` | Quando uma contagem pode ser expressa como taxa/proporção sem misturar grãos? | Correspondência entre numerador e denominador, escopo, janela, cardinalidade | Compatibilidade entre grãos e escopos; D02/D05/D07 |
+| `XD01-D06-E` | Como tratar denominador zero, desconhecido, suprimido ou parcialmente observado? | Estados de qualidade, não-dado, supressão e apresentação sem divisão artificial | Qualidade e apresentação; D09 |
+| `XD01-D06-F` | Como separar eventos recebidos, validados, rejeitados, corrigidos e efetivamente utilizados? | Taxonomia, fonte, reconciliação, estorno, versionamento | Proveniência, reversão e reconciliação; D03/D08 |
+| `XD01-D06-G` | Quais regras de tempo, atribuição, sobreposição e reprocessamento preservam séries? | Timestamp, janela, coorte, deduplicação, correções e auditoria | Janelas, atribuição e histórico; D04/D05/D07/D08 |
+| `XD01-D06-H` | Quais fórmulas podem ser compartilhadas entre dashboards sem violar autorização e privacidade? | Equivalência de unidade/população, finalidade, disclosure, minimização e contrato explícito | Finalidade, consumidor, privacidade e disclosure; D10/G-XD-03/04 |
+
+### 31.4 Ficha individual de decisão e verificações cruzadas
+
+Cada dossiê exige registro de **ID, pergunta original, evidência mínima original, objeto/KPI, domínio, consumidor, fonte/versionamento, autoridade humana competente, alternativas, unidade e grão, população e janela quando aplicáveis, dependências, risco de dupla contagem, privacidade/consentimento/serving/exportação, justificativa, decisão expressa, data, aprovação rastreável e revisão cruzada**. Campos de decisão e aprovação não devem ser presumidos nem preenchidos sem adjudicação.
+
+A revisão deverá distinguir Pessoa de conta, papel e vínculo; elegibilidade de participação; solicitação de vínculo confirmado; presença de participação qualificante; inscrição de conclusão; acesso custeado de uso; eventos totais de pessoas distintas; pontos disponibilizados de pontos efetivamente utilizados. Não somar pessoas de programas sobrepostos como se fossem população global distinta; não expressar taxa quando numerador e denominador não têm grão, universo e janela compatíveis; não fabricar divisão quando o denominador for zero, desconhecido ou suprimido. Deduplicação não confere autorização de disclosure entre produtos ou contrapartes.
+
+### 31.5 Controle de maturidade
+
+```text
+XD01-D01..D06 → DOSSIER_PREPARED / PENDING_HUMAN_ADJUDICATION
+XD01-D07..D10 → EXAMINED / PENDING_HUMAN_ADJUDICATION
 OPEN HUMAN QUESTIONS → 77
 HUMAN ADJUDICATIONS → 0
 G-XD-01 → UNRESOLVED
