@@ -2,9 +2,9 @@
 id: GKR-INTELLIGENCE-DASHBOARD-PERSON-001
 title: Dashboard Pessoa — Documento Mestre de Especificação Analítica e Handoff Replit
 status: active
-version: 0.1.2
+version: 0.1.3
 owner: Guivos Intelligence Architecture
-last_updated: 2026-09-13
+last_updated: 2026-10-11
 normative: false
 maturity: governed_pre_implementation_dashboard_master
 depends_on:
@@ -89,7 +89,7 @@ Essa precedência não reescreve evento operacional validado, mas impede que uma
 
 ```text
 GKR-INTELLIGENCE-DASHBOARD-PERSON-001
-→ ACTIVE v0.1.2
+→ ACTIVE v0.1.3
 → PRE-IMPLEMENTATION DASHBOARD MASTER
 
 PESSOA
@@ -957,3 +957,78 @@ ANNEX F
 ```
 
 A materialização documental deste master não autoriza dados reais, implementação, produção, disclosure adicional a terceiros ou promoção automática de KPI.
+
+
+
+---
+
+## 27. Auditoria da leitura analítica pessoal — v0.1.3
+
+### 27.1 Natureza e precedência
+
+Esta auditoria complementa o Anexo E sem substituir a Journey, `Hoje`, `Meus Objetivos`, `Meus Próximos Passos` ou `Minha Evolução`. Preserva **nove áreas analíticas**, **oito famílias KPI** (`CTX / OBJ / MOV / EVO / REL / INT / CAP / DQ`), todos os IDs e status existentes (`proposed / NOT_READY`) e as autoridades de domínio citadas nas seções 2–4. Os refinamentos `PER-AN-C*` abaixo são **candidatos não canônicos**: não constituem novos KPIs, telas, transições ou decisões.
+
+### 27.2 Perguntas legítimas para a Pessoa
+
+| Eixo | Pergunta de compreensão candidata | Limite obrigatório |
+|---|---|---|
+| Contexto | Quais domínios e contextos foram legitimamente declarados, confirmados ou revisados por mim? | não atribuir intenção inferida como declaração |
+| Objetivos | Que objetivos decidi manter, alterar, suspender ou concluir? | decisão e significado pertencem à Pessoa |
+| Próximos passos | Quais movimentos propus, aceitei, adiei ou descartei? | proposto ≠ aceito; passo concluído ≠ evolução |
+| Trajetória | Que mudanças, continuidades e evidências estão disponíveis ao longo do tempo? | mudança ≠ melhora; evidência ≠ causalidade |
+| Participações | De quais experiências, Organizações e Coletivos participei segundo registros autorizados? | não expor dados privados de terceiros |
+| Oportunidades | Que possibilidades foram apresentadas, consideradas ou escolhidas por mim? | não impor caminho ou prioridade; sem funil universal |
+| Intelligence | Por que determinada leitura ou sugestão apareceu e como posso contestá-la? | explicabilidade, natureza, confiança e contestação |
+| Planos | Quais capacidades e limites contratuais são pertinentes ao meu acesso? | não confundir elegibilidade comercial com relevância pessoal |
+| Governança | Que informações estão ausentes, atrasadas, em revisão ou protegidas? | distinguir estados de ausência, incerteza e supressão |
+
+### 27.3 Refinamentos candidatos não canônicos
+
+| Referência | Refinamento para futura reconciliação | Dependência/gate |
+|---|---|---|
+| PER-AN-C01 | Histórico de domínios declarados, confirmados e revisados | `GKR-UX-D5-A-001`, sensibilidade e temporalidade |
+| PER-AN-C02 | Objetivos por estado decidido pela Pessoa | `GKR-UX-D5-C1-001`, revisão e autoria |
+| PER-AN-C03 | Movimentos por estado proposto/aceito/adiado/descartado | transições autorizadas e semântica de evento |
+| PER-AN-C04 | Linha temporal de mudanças e continuidades | evidência, proveniência e ausência de juízo automático |
+| PER-AN-C05 | Evidências associadas a objetivos e trajetórias | não presumir resultado nem causalidade |
+| PER-AN-C06 | Participações e experiências autorizadas | escopo pessoal, consentimento e contraparte |
+| PER-AN-C07 | Relações visíveis à Pessoa no Graph | disclosure bilateral, minimização e explicabilidade |
+| PER-AN-C08 | Histórico de possibilidades exploradas e escolhidas | `UXA-097/098`, estados e autonomia; não inferir obrigação |
+| PER-AN-C09 | Origem e justificativa de sugestões de Intelligence | `GAI-001/002`, confiança, incerteza e contestação |
+| PER-AN-C10 | Capacidade e limites do plano vigente | `UXA-100` e contratos comerciais aplicáveis |
+| PER-AN-C11 | Qualidade, atualização e proveniência dos dados próprios | freshness, qualidade, estados de indisponibilidade |
+| PER-AN-C12 | Revisões e contestações iniciadas pela Pessoa | trilha de revisão e autoridade sobre significado pessoal |
+
+Os candidatos não implicam que os eventos, fontes ou dados já existam. Devem ser reconciliados com os KPIs existentes antes de qualquer promoção de contrato. Nenhuma referência `PER-AN-C*` é KPI canônico.
+
+### 27.4 Leitura longitudinal e autonomia
+
+A leitura temporal deve preservar **declaração versus inferência**, **atividade versus resultado**, **mudança versus melhora** e **correlação versus causalidade**. Não se presume percentual global de evolução, pontuação de vida, ranking de Pessoas ou diagnóstico. Domínios de evolução podem ter níveis distintos de sensibilidade; a Pessoa não perde autonomia por receber uma interpretação de Intelligence. O dashboard deve permitir compreensão e revisão conforme autoridade aplicável, sem se tornar um motor de julgamento pessoal.
+
+### 27.5 Gates ainda pendentes
+
+| Gate | Necessidade | Estado |
+|---|---|---|
+| G-PER-01 | reconciliação com Journey e superfícies especializadas | UNRESOLVED |
+| G-PER-02 | contratos de eventos, estados e temporalidade | UNRESOLVED |
+| G-PER-03 | sensibilidade, consentimento e escopo de disclosure | UNRESOLVED |
+| G-PER-04 | relações bilaterais e proteção de terceiros | UNRESOLVED |
+| G-PER-05 | evidência, natureza dos outputs, contestação e proveniência | UNRESOLVED |
+| G-PER-06 | planos/capacidades e fonte comercial vigente | UNRESOLVED |
+| G-PER-07 | reconciliação KPI, qualidade, freshness e serving | UNRESOLVED |
+| G-PER-08 | autorização específica de design, dados reais e build | NOT_AUTHORIZED |
+
+### 27.6 Estado desta atualização
+
+```text
+GKR-INTELLIGENCE-DASHBOARD-PERSON-001
+→ v0.1.3 / ANNEX E / PRE-IMPLEMENTATION
+→ 9 ANALYTICAL AREAS / 8 KPI FAMILIES PRESERVED
+→ EXISTING KPI IDS AND STATUSES UNCHANGED
+→ ALL CURRENT KPIs = proposed / NOT_READY
+→ CANDIDATE REFINEMENTS NONCANONICAL
+→ PERSON AUTONOMY AND SPECIALIZED JOURNEY AUTHORITIES PRESERVED
+→ PERSON GLOBAL SCORE / CROSS-PERSON RANKING BLOCKED
+→ THIRD-PARTY PRIVATE DATA NOT DISCLOSED
+→ REAL DATA / TECHNICAL RBAC / REPLIT BUILD NOT AUTHORIZED
+```
