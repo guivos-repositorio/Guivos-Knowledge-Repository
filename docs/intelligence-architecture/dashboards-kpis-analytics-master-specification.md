@@ -2,7 +2,7 @@
 id: GKR-INTELLIGENCE-DASHBOARD-KPI-001
 title: Dashboards, KPIs e Analytics — Documento Mestre de Especificação para Construção
 status: active
-version: 0.2.34
+version: 0.2.35
 owner: Guivos Intelligence Architecture
 last_updated: 2026-10-11
 normative: false
@@ -2141,6 +2141,61 @@ A indicação de **domínios de competência a confirmar** não cria órgão col
 
 ```text
 XD01-D01-E / XD01-D02-C → AUTHORITY_EVIDENCE_SCREENED / NEEDS_EVIDENCE
+HUMAN REFERRALS SUBMITTED → 0
+HUMAN AUTHORITY CONFIRMED → 0/13
+HUMAN ADJUDICATIONS → 0/77
+G-XD-01 → UNRESOLVED
+G-XD-02..07 → OPEN
+CANONICAL KPI PROMOTIONS → 0
+IMPLEMENTATION AUTHORIZATION → 0
+```
+
+
+---
+
+## 40. G-XD-01 — Exame de instrumentos institucionais de competência para XD01-D01-E/D02-C
+
+### 40.1 Escopo e critério
+
+Este exame amplia a triagem de §39 para instrumentos institucionais e arquiteturais existentes na `main`. **Arquitetura proprietária de ativo, `owner` documental, direito de publicação, papel de acesso e pessoa/instância competente para adjudicar são categorias distintas.** O exame não constitui inventário exaustivo de atos privados, não nomeia aprovadores e não transforma proposta de governança em delegação vigente.
+
+### 40.2 Confronto documental
+
+| Instrumento e estado declarado | Regra relevante efetivamente documentada | Implicação para os expedientes | Competência humana específica comprovada? |
+|---|---|---|---|
+| `docs/adr/ADR-003-architectural-ownership.md`, `accepted` v1.0.0 | Cada ativo canônico tem uma arquitetura proprietária; consumidores não podem redefini-lo; propriedade indefinida permanece fora da Canon até decisão formal; impactos transversais podem requerer ADR | Exigir identificação da arquitetura proprietária de identidade, elegibilidade e séries analíticas, sem adjudicar por arquitetura consumidora | **NO** — ownership arquitetural não nomeia pessoa ou instância de aprovação para D01-E/D02-C |
+| `docs/governance-framework/institutional-and-legal-architecture.md`, `proposed` v0.1.0 | Propósito compartilhado não implica governança, dados, contrato ou responsabilidade compartilhados; §§3 e 5.2 distinguem estrutura e direitos de decisão a documentar | Verificar quem decide, em qual entidade e matéria, antes de assumir competência institucional | **NO** — arquitetura proposta não é ato constitutivo/delegação demonstrado |
+| `docs/governance-framework/internal-authority-boundary.md`, `proposed` v1.2.0 | Sensibilidade, perfil de autoridade/publicação e finalidade de uso são dimensões distintas | Autoridade para classificar ou publicar documentação não implica autoridade para fundir identidades ou alterar elegibilidade | **NO** — não estabelece mandato decisório analítico |
+| `docs/governance-framework/operational-and-legal-truth-registry.md`, `proposed` v0.1.0 | `planned ≠ configured ≠ implemented ≠ published ≠ used ≠ audited ≠ controlled`; `OT2 approved` requer autoridade aplicável | Não converter modelo, documento ou revisão em aprovação operacional; requer evidência datada e verificável | **NO** — registro de estados não contém aprovação específica |
+| `docs/governance-framework/outcome-governance-method.md`, `draft` v0.4.0 | Candidate Outcomes exigem decisão humana explícita antes da Canon; processo pertence ao escopo de Outcomes | Confirma necessidade de decisão humana, mas não transfere o fluxo de Outcomes para identidade/KPI | **NO** — competência restrita ao assunto do método |
+| `docs/governance-framework/data-privacy-and-consent-governance.md`, `proposed` v0.1.0 | Separa propósito, atividade de tratamento, base jurídica, evidência e controles; não presume implementação | Exigir fundamento aplicado para linkage e divulgação, além da competência de decisão | **NO** — não comprova delegação individual |
+| `docs/product-architecture/adrs/adr-cc-004-acesso-por-finalidade-e-autoridade.md`, `proposed` v0.1.0 | Papel/acesso técnico não concedem automaticamente autoridade funcional | Impede usar permissões de sistema como aprovação de D01-E/D02-C | **NO** — decisão contextual de acesso não é nomeação |
+
+### 40.3 Requisitos distintos de comprovação
+
+| Dimensão | Documento necessário antes de considerar demonstrada | Estado neste exame |
+|---|---|---|
+| Propriedade arquitetural do contrato | Mapa de arquitetura proprietária aplicável ao ativo concreto, consistente com ADR-003 | `REQUIRES_ASSET_MAPPING` |
+| Competência institucional | Instrumento vigente de direitos de decisão e atribuição de competência para a matéria | `NOT_DEMONSTRATED` |
+| Competência de domínio | Contrato vigente e responsável com mandato explícito para identidade/relações ou elegibilidade/programa | `NOT_DEMONSTRATED` |
+| Responsabilidade técnica | Contrato de dados/Intelligence, com limites de correção, deduplicação, reprocessamento e republicação | `NOT_DEMONSTRATED` |
+| Privacidade e divulgação | Análise aplicada da finalidade, base adequada, minimização, consumidores e autoridade competente | `NOT_DEMONSTRATED` |
+| Aprovação humana efetiva | Registro expresso, datado, rastreável, com signatário e fundamento de competência | `NONE` |
+
+`REQUIRES_ASSET_MAPPING` não significa ausência de arquitetura proprietária em todo o GKR; significa que **a correspondência específica para estes contratos e poderes decisórios não foi comprovada por este exame**.
+
+### 40.4 Resultado por expediente
+
+- **`XD01-D01-E`**: o ADR-003 impõe respeitar a arquitetura proprietária, mas não concede a seu `owner` documental poder de aprovar fusão/separação de identidades, cruzamento de participantes, correções históricas ou divulgação. Continuam necessários mandato humano, contrato especializado, privacidade e regras de reversão.
+- **`XD01-D02-C`**: a arquitetura institucional e o registro de verdade operacional impedem equiparar proposta, aprovação de documento ou configuração a política efetiva de elegibilidade/reprocessamento. Continuam necessários mandato humano, contrato por KPI/consumidor, tempo efetivo, fechamento, versionamento e política de republicação.
+
+**Encaminhamento subsequente apenas proposto:** localizar e examinar instrumentos vigentes de direitos de decisão, mapa de ownership dos ativos específicos e eventuais atos de delegação. Sem tais provas, não solicitar adjudicação como se a instância já estivesse definida.
+
+### 40.5 Estado preservado
+
+```text
+XD01-D01-E / XD01-D02-C → INSTITUTIONAL_AUTHORITY_SOURCES_EXAMINED
+FORMAL HUMAN DECISION MANDATE → NOT_DEMONSTRATED
 HUMAN REFERRALS SUBMITTED → 0
 HUMAN AUTHORITY CONFIRMED → 0/13
 HUMAN ADJUDICATIONS → 0/77
