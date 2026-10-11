@@ -2,7 +2,7 @@
 id: GKR-INTELLIGENCE-DASHBOARD-KPI-001
 title: Dashboards, KPIs e Analytics — Documento Mestre de Especificação para Construção
 status: active
-version: 0.2.42
+version: 0.2.43
 owner: Guivos Intelligence Architecture
 last_updated: 2026-10-11
 normative: false
@@ -2540,6 +2540,50 @@ O exame transversal identifica dependências documentais e exemplos rastreáveis
 ```text
 G-XD-02 → DOCUMENTARY_EXAMINATION_PREPARED / OPEN
 ANNEXES A–E → SOURCE_QUALITY_GAPS_MAPPED / NO CONTRACT PROMOTION
+G-XD-01 → UNRESOLVED
+G-XD-03..07 → OPEN
+HUMAN AUTHORITY FORMALLY CONFIRMED → 0/13
+HUMAN ADJUDICATIONS → 0/77
+CANONICAL KPI PROMOTIONS → 0
+IMPLEMENTATION AUTHORIZATION → 0
+```
+
+
+---
+
+## 48. G-XD-02 — Triagem inicial de fontes e contratos por KPI: Anexo A (Guivos interno)
+
+### 48.1 Escopo e precedência
+
+Triagem documental de seis IDs previamente reconciliados no Anexo A v0.1.5 e no KPI Registry v0.1.5, confrontados com o registro histórico de reconciliação v0.1.1. Não se revisam os outros KPIs do inventário nem se altera a autoridade especializada. O `registry` é índice de rastreabilidade, **não** fonte de verdade para promoção de status. A decisão histórica de status já foi absorvida pelo Anexo A; não há nova adjudicação.
+
+### 48.2 Matriz por identificador
+
+| ID | Dependência semântica original ainda aberta | Registro individual no registry | Evidência de fonte ainda necessária | Estado preservado |
+|---|---|---|---|---|
+| `GUV-KPI-POP-001` | Validade/elegibilidade e exclusões de Pessoa | `guv-kpi-pop-001.md` v0.1.0 | Contrato de fonte do participante, escopo de validade, origem, autoria, temporalidade, qualidade e lineage | `proposed / NOT_READY` |
+| `GUV-KPI-POP-002` | Criação válida e regra temporal | `guv-kpi-pop-002.md` v0.1.0 | Evento de criação autorizado, timestamp aplicável, proveniência, fechamento de janela e qualidade | `proposed / NOT_READY` |
+| `GUV-KPI-POP-007` | Validade/elegibilidade de Organização | Não materializado individualmente | Fonte de Organização, estado válido, deduplicação, autoridade do objeto e tratamento temporal | `proposed / NOT_READY` |
+| `GUV-KPI-POP-009` | Validade/elegibilidade de Coletivo | Não materializado individualmente | Fonte de Coletivo, estado válido, identidade, deduplicação e provenance | `proposed / NOT_READY` |
+| `GUV-KPI-POP-011` | Denominador e escopo aplicável | Não materializado individualmente | Fontes de três tipos de participante, universo autorizável, compatibilidade temporal e regra de composição | `proposed / NOT_READY` |
+| `GUV-KPI-OPP-001` | Validade/elegibilidade da oportunidade | Não materializado individualmente | Contrato de oportunidade, eventos/estados de criação válida, temporalidade, origem e reconciliação | `proposed / NOT_READY` |
+
+### 48.3 Ordem de verificação, sem adjudicação
+
+1. Localizar e confrontar os dois contratos individuais materializados com seus domínios, sem equiparar existência de registro a aprovação integral.
+2. Identificar os quatro registros contratuais individuais ainda não materializados, preservando IDs e status existentes; a falta de materialização não permite inventar contratos.
+3. Separar blockers semânticos de blockers de fonte: a regra histórica é `SEMANTICS INCOMPLETE → proposed`, ao passo que `source_pending` exige semântica suficientemente fechada.
+4. Para cada fonte candidata, verificar referência canônica, ownership, finalidade, consumidor, qualidade, freshness, transformação/lineage, estado de ausência e autorizações específicas, mantendo dependências de `G-XD-01`, `G-XD-03/04` e `G-XD-05/07`.
+
+Não presumir analytics de escolhas/declarações pessoais, acesso a Journey privada, fonte de dados operativa, pipeline, SLA, RBAC ou implementação Replit.
+
+### 48.4 Resultado
+
+```text
+G-XD-02 → ANNEX_A_INITIAL_KPI_SOURCE_TRIAGE_PREPARED / OPEN
+SIX RECONCILED KPI IDS → proposed / NOT_READY
+INDIVIDUAL CONTRACT RECORDS → 2 MATERIALIZED / 4 NOT MATERIALIZED
+SOURCE CONTRACTS VERIFIED → NOT ASSERTED
 G-XD-01 → UNRESOLVED
 G-XD-03..07 → OPEN
 HUMAN AUTHORITY FORMALLY CONFIRMED → 0/13
