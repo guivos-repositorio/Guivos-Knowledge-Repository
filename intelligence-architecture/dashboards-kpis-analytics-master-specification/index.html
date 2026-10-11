@@ -5322,6 +5322,55 @@
 </ul>
 </nav>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#54-g-xd-02-confronto-p1-com-padroes-existentes-de-fonte-qualidade-e-proveniencia">
+<span class="md-ellipsis">
+      
+        54. G-XD-02 — Confronto P1 com padrões existentes de fonte, qualidade e proveniência
+      
+    </span>
+</a>
+<nav aria-label="54. G-XD-02 — Confronto P1 com padrões existentes de fonte, qualidade e proveniência" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#541-escopo-e-controle-de-inferencia">
+<span class="md-ellipsis">
+      
+        54.1 Escopo e controle de inferência
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#542-referencias-verificadas">
+<span class="md-ellipsis">
+      
+        54.2 Referências verificadas
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#543-resultado-individual-p1">
+<span class="md-ellipsis">
+      
+        54.3 Resultado individual P1
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#544-handoff-e-fronteira-de-autoridade">
+<span class="md-ellipsis">
+      
+        54.4 Handoff e fronteira de autoridade
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
 </ul>
 </nav>
 </li>
@@ -7892,6 +7941,55 @@
 <span class="md-ellipsis">
       
         53.4 Implicações e limites de handoff
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#54-g-xd-02-confronto-p1-com-padroes-existentes-de-fonte-qualidade-e-proveniencia">
+<span class="md-ellipsis">
+      
+        54. G-XD-02 — Confronto P1 com padrões existentes de fonte, qualidade e proveniência
+      
+    </span>
+</a>
+<nav aria-label="54. G-XD-02 — Confronto P1 com padrões existentes de fonte, qualidade e proveniência" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#541-escopo-e-controle-de-inferencia">
+<span class="md-ellipsis">
+      
+        54.1 Escopo e controle de inferência
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#542-referencias-verificadas">
+<span class="md-ellipsis">
+      
+        54.2 Referências verificadas
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#543-resultado-individual-p1">
+<span class="md-ellipsis">
+      
+        54.3 Resultado individual P1
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#544-handoff-e-fronteira-de-autoridade">
+<span class="md-ellipsis">
+      
+        54.4 Handoff e fronteira de autoridade
       
     </span>
 </a>
@@ -13139,6 +13237,122 @@ P0_OPERATIONAL_ELIGIBILITY_AND_EVENT_AUTHORITY → NOT VERIFIED
 G-XD-01 → UNRESOLVED
 G-XD-03..07 → OPEN
 SIX KPIS → proposed / NOT_READY
+HUMAN AUTHORITY FORMALLY CONFIRMED → 0/13
+HUMAN ADJUDICATIONS → 0/77
+KPI PROMOTIONS → 0
+IMPLEMENTATION AUTHORIZATION → 0
+</code></pre></div>
+<hr/>
+<h2 id="54-g-xd-02-confronto-p1-com-padroes-existentes-de-fonte-qualidade-e-proveniencia">54. G-XD-02 — Confronto P1 com padrões existentes de fonte, qualidade e proveniência<a class="headerlink" href="#54-g-xd-02-confronto-p1-com-padroes-existentes-de-fonte-qualidade-e-proveniencia" title="Permanent link">¶</a></h2>
+<h3 id="541-escopo-e-controle-de-inferencia">54.1 Escopo e controle de inferência<a class="headerlink" href="#541-escopo-e-controle-de-inferencia" title="Permanent link">¶</a></h3>
+<p>Exame documental dos seis KPIs prioritários do Anexo A após o confronto P0 (seção 53). A presença de padrões, regras transversais ou registros de status não comprova um contrato operacional de dados para qualquer KPI. O resultado é uma matriz de evidência documental e lacuna, sem conferir autoridade de source of truth, SLA, pipeline, testes de qualidade, cálculo ou serving.</p>
+<h3 id="542-referencias-verificadas">54.2 Referências verificadas<a class="headerlink" href="#542-referencias-verificadas" title="Permanent link">¶</a></h3>
+<table>
+<thead>
+<tr>
+<th>Referência</th>
+<th>Estado documental</th>
+<th>Evidência P1 fornecida</th>
+<th>Limite para os seis KPIs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>docs/intelligence-architecture/kpi-contract-standard.md</code> — <code>GKR-INTELLIGENCE-KPI-CONTRACT-001</code>, v0.1.0</td>
+<td>active; <code>normative: false</code>; padrão pré-implementação</td>
+<td>Define campos <code>source_of_truth</code>, <code>freshness_rule</code>, <code>quality_checks</code>, <code>provenance</code>, estados <code>SOURCE_PENDING</code> e critérios de readiness</td>
+<td>Campos-padrão não equivalem a fonte designada, teste executado ou contrato operacional aprovado; <code>source_pending</code> exige semântica fechada</td>
+</tr>
+<tr>
+<td><code>docs/intelligence-architecture/surface-provenance-explainability-contract.md</code> — <code>GKR-INTELLIGENCE-SURFACE-PROVENANCE-EXPLAINABILITY-001</code>, v1.0.0</td>
+<td>active; <code>normative: true</code>; contrato transversal semântico</td>
+<td>Define envelope mínimo de origem/proveniência e explicabilidade para output consumidor</td>
+<td>Não institui mecanismo de serving, armazenamento de lineage nem fonte de verdade por apresentar output</td>
+</tr>
+<tr>
+<td><code>docs/intelligence-architecture/dashboard-guivos-kpi-registry.md</code> — <code>GKR-INTELLIGENCE-DASHBOARD-GUIVOS-KPI-REGISTRY-001</code>, v0.1.5</td>
+<td>active; <code>normative: false</code>; registry pré-implementação</td>
+<td>Evidencia os seis IDs, estados <code>proposed/NOT_READY</code> e dois contratos individuais existentes</td>
+<td>Não certifica origem operacional, disponibilidade, owner ou qualidade dos dados</td>
+</tr>
+<tr>
+<td><code>docs/intelligence-architecture/dashboard-guivos-master-specification.md</code> — <code>GKR-INTELLIGENCE-DASHBOARD-GUIVOS-001</code>, v0.1.5</td>
+<td>active; <code>normative: false</code>; Anexo A</td>
+<td>Exige governança de data quality, freshness e source/data contract</td>
+<td>Necessidade de DQ e status de fonte não constitui medição ou evidência de implementação</td>
+</tr>
+<tr>
+<td><code>docs/intelligence-architecture/guv-kpi-pop-001.md</code> e <code>guv-kpi-pop-002.md</code>, v0.1.0</td>
+<td>proposed, <code>NOT_READY</code>, contratos individuais</td>
+<td>Registram <code>source_of_truth</code>, <code>freshness_rule</code>, <code>provenance</code> como <code>SOURCE_PENDING</code>; qualidade ainda não resolvida</td>
+<td>Não confirmam tabela, sistema, identificador operacional ou reconciliação</td>
+</tr>
+</tbody>
+</table>
+<h3 id="543-resultado-individual-p1">54.3 Resultado individual P1<a class="headerlink" href="#543-resultado-individual-p1" title="Permanent link">¶</a></h3>
+<table>
+<thead>
+<tr>
+<th>KPI</th>
+<th>Fonte operacional</th>
+<th>Qualidade e reconciliação</th>
+<th>Freshness, lineage e versão</th>
+<th>Estado governado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>GUV-KPI-POP-001</code></td>
+<td>Não verificada; campo <code>SOURCE_PENDING</code></td>
+<td>Unicidade, elegibilidade e completude não fechadas</td>
+<td>Não verificados</td>
+<td><code>proposed/NOT_READY</code></td>
+</tr>
+<tr>
+<td><code>GUV-KPI-POP-002</code></td>
+<td>Não verificada; campo <code>SOURCE_PENDING</code></td>
+<td>Evento válido, duplicidade, correções e ausência de dado não fechados</td>
+<td>Não verificados</td>
+<td><code>proposed/NOT_READY</code></td>
+</tr>
+<tr>
+<td><code>GUV-KPI-POP-007</code></td>
+<td>Não verificada</td>
+<td>Qualidade e estado válido de Organização pendentes</td>
+<td>Não verificados</td>
+<td><code>proposed/NOT_READY</code></td>
+</tr>
+<tr>
+<td><code>GUV-KPI-POP-009</code></td>
+<td>Não verificada</td>
+<td>Qualidade e estado válido de Coletivo pendentes</td>
+<td>Não verificados</td>
+<td><code>proposed/NOT_READY</code></td>
+</tr>
+<tr>
+<td><code>GUV-KPI-POP-011</code></td>
+<td>Não verificadas fontes compatíveis entre três tipos</td>
+<td>Denominador, cobertura e comparabilidade pendentes</td>
+<td>Não verificados</td>
+<td><code>proposed/NOT_READY</code></td>
+</tr>
+<tr>
+<td><code>GUV-KPI-OPP-001</code></td>
+<td>Não verificada</td>
+<td>Criação válida, correção e reconciliação pendentes</td>
+<td>Não verificados</td>
+<td><code>proposed/NOT_READY</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="544-handoff-e-fronteira-de-autoridade">54.4 Handoff e fronteira de autoridade<a class="headerlink" href="#544-handoff-e-fronteira-de-autoridade" title="Permanent link">¶</a></h3>
+<p>Próximas evidências exigidas por KPI: referência à fonte real e autoridade de dados competente, versão do contrato de extração, mapeamento de entidade/evento, prova de identidade e temporalidade após decisão P0, testes de unicidade/completude/ausência, freshness com referência temporal, lineage/versionamento e restrições de proteção/consumo. A ausência de evidência no exame <strong>não afirma a inexistência de sistemas ou datasets</strong>. Não aceitar exemplos de esquema como fonte, nem converter padrões transversais em autorização operacional. Qualquer promoção demanda gates semânticos, técnicos e humanos independentes.</p>
+<div class="highlight"><pre><span></span><code>G-XD-02 → P1_DOCUMENTARY_STANDARDS_EXAMINED / OPEN
+P1_STANDARD_AND_TRANSVERSE_PROVENANCE_REFERENCES → LOCATED
+P1_OPERATIONAL_SOURCE_CONTRACT_AUTHORITY → NOT VERIFIED
+SIX KPI STATUSES → proposed / NOT_READY
+G-XD-01 → UNRESOLVED
+G-XD-03..07 → OPEN
 HUMAN AUTHORITY FORMALLY CONFIRMED → 0/13
 HUMAN ADJUDICATIONS → 0/77
 KPI PROMOTIONS → 0
