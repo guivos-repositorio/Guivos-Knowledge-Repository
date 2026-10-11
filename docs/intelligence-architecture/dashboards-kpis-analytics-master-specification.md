@@ -2,9 +2,9 @@
 id: GKR-INTELLIGENCE-DASHBOARD-KPI-001
 title: Dashboards, KPIs e Analytics — Documento Mestre de Especificação para Construção
 status: active
-version: 0.2.9
+version: 0.2.10
 owner: Guivos Intelligence Architecture
-last_updated: 2026-09-25
+last_updated: 2026-10-11
 normative: false
 maturity: governed_multi_dashboard_pre_implementation_master_specification
 depends_on:
@@ -111,7 +111,7 @@ Finalidade candidata: visão transversal do ecossistema e da empresa Guivos, inc
 - Pessoas;
 - Organizações;
 - Coletivos;
-- escolhas/declarações das Pessoas;
+- escolhas/declarações das Pessoas (apenas como necessidade candidata histórica, atualmente **bloqueada para analytics interno** pelo Anexo A; não constitui autorização de tratamento ou disclosure);
 - oportunidades;
 - dados demográficos;
 - dados geográficos;
@@ -699,7 +699,7 @@ Cada anexo deve ser construído e revisado individualmente para permitir evoluç
 
 ```text
 GKR-INTELLIGENCE-DASHBOARD-KPI-001
-→ v0.2.8
+→ v0.2.10
 → ACTIVE
 → MULTI-DASHBOARD GOVERNED PRE-IMPLEMENTATION MASTER
 
@@ -752,4 +752,68 @@ REAL DATA / PHYSICAL INTEGRATION / BACKEND / PRODUCTION
 
 DESIGN / UI IMPLEMENTATION
 → NOT AUTHORIZED BY THIS DOCUMENT
+```
+
+---
+
+## 15. Reconciliação transversal dos Anexos A–E — 11/10/2026
+
+### 15.1 Escopo e regra de precedência
+
+Esta verificação documental confronta o master global com os cinco Documentos Mestres especializados já integrados à `main`. Ela não reabre a autoridade de Journey, Economia, Planos, Graph, Intelligence ou Privacidade, não substitui adjudicação de KPI e não inclui auditoria especializada do Anexo F (Ads). Em divergência, prevalece o contrato de domínio mais restritivo; nenhum inventário candidato do master global libera processamento ou divulgação bloqueados em anexo especializado.
+
+| Anexo | Documento | Versão verificada | Estado de escopo |
+|---|---|---|---|
+| A | Dashboard Guivos (interno) | 0.1.5 | 11 áreas / 10 famílias; reconciliação de status preservada |
+| B | Dashboard Guivos Business | 0.1.3 | extensão executiva candidata, sem promoção de KPI |
+| C | Dashboard Organização | 0.1.2 | 8 famílias; candidatos não canônicos |
+| D | Dashboard Coletivo | 0.1.2 | 9 áreas / 8 famílias; candidatos não canônicos |
+| E | Dashboard Pessoa | 0.1.3 | 9 áreas / 8 famílias; candidatos não canônicos |
+
+### 15.2 Resultados da auditoria
+
+| Dimensão | Constatação | Tratamento |
+|---|---|---|
+| Identidade e navegação | Cinco masters especializados possuem IDs próprios, anexos A–E e entradas individuais no MENU | CONSISTENTE documentalmente |
+| Versão global | O front matter indicava `0.2.9` enquanto a seção 14 registrava `v0.2.8` | CORRIGIDO nesta revisão para `0.2.10` |
+| Escolhas/declarações pessoais | O inventário global incluía esta necessidade candidata, mas o Anexo A bloqueia seu analytics interno | CLARIFICADO: inventário histórico não concede autorização |
+| KPI e maturidade | Extensões executivas não são KPIs canônicos; contratos, fontes e adjudicações seguem pendentes | SEM PROMOÇÃO |
+| Acesso e disclosure | Business, Organização e Coletivo não herdam Journey privada da Pessoa; relações bilaterais exigem autoridade específica | LIMITE PRESERVADO |
+| Economia e Planos | Métricas econômicas dependem de `GEM-009` e de contratos especializados de planos/capacidades | NÃO INFERIR VALORES OU ENTITLEMENTS |
+| Intelligence e Graph | Inferência não substitui declaração legítima; relações e correlações não comprovam causalidade | LIMITE PRESERVADO |
+| Dados e implementação | Todos os cinco anexos permanecem pré-implementação, sem dados reais, RBAC técnico ou build Replit autorizados | BLOQUEADO |
+
+### 15.3 Matriz de gates transversais ainda não resolvidos
+
+| Gate | Pendência compartilhada | Anexos afetados |
+|---|---|---|
+| G-XD-01 | identidade, coortes, eventos, denominadores, deduplicação e janelas | A–E |
+| G-XD-02 | fonte, qualidade, freshness, proveniência, lineage e estados de ausência | A–E |
+| G-XD-03 | autorização por consumidor, escopo de serving, minimização, disclosure e exportação | A–E |
+| G-XD-04 | privacidade da Journey, consentimento, proteção de contraparte e sensibilidade | A–E, segundo a leitura |
+| G-XD-05 | reconciliação de candidatos com KPI registry e contratos integrais | A–E |
+| G-XD-06 | economia, Planos, benefícios e `GEM-009` quando aplicáveis | A–E, conforme o domínio |
+| G-XD-07 | autorização separada de Design, Engenharia, dados reais e produção | A–E |
+
+Estes gates são **referências de acompanhamento documental**, não decisões normativas novas e não substituem os gates especializados de cada anexo. Sua existência não converte um KPI `proposed` em `defined` nem altera status reconciliados no Anexo A.
+
+### 15.4 Estado consolidado
+
+```text
+MASTER GLOBAL
+→ v0.2.10 / PRE-IMPLEMENTATION
+
+ANNEXES A–E
+→ MATERIALIZED / INDIVIDUAL MENU ENTRIES
+→ SPECIALIZED AUTHORITIES PRESERVED
+→ EXECUTIVE CANDIDATES NONCANONICAL
+
+PERSON CHOICES / DECLARATIONS INTERNAL ANALYTICS
+→ BLOCKED BY ANNEX A
+
+REAL DATA / TECHNICAL RBAC / REPLIT BUILD
+→ NOT AUTHORIZED
+
+ANNEX F — ADS
+→ OUTSIDE THIS FIVE-DASHBOARD AUDIT
 ```
