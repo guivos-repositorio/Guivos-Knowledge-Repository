@@ -2,7 +2,7 @@
 id: GKR-INTELLIGENCE-DASHBOARD-KPI-001
 title: Dashboards, KPIs e Analytics — Documento Mestre de Especificação para Construção
 status: active
-version: 0.2.21
+version: 0.2.22
 owner: Guivos Intelligence Architecture
 last_updated: 2026-10-11
 normative: false
@@ -1387,6 +1387,69 @@ XD01-D01..D09 → EXAMINED / HUMAN_ADJUDICATION_REQUIRED
 XD01-D10 → EXAMINED / HUMAN_ADJUDICATION_REQUIRED
 G-XD-01 → UNRESOLVED
 G-XD-02..07 → OPEN
+CANONICAL KPI PROMOTIONS → 0
+IMPLEMENTATION AUTHORIZATION → 0
+```
+
+
+---
+
+## 27. G-XD-01 — Reconciliação consolidada de XD01-D01..D10 (pré-adjudicação)
+
+### 27.1 Escopo e natureza
+
+Esta reconciliação consolida os dez exames documentais de identidade, população, eventos, marcos, deduplicação, fórmulas, tempo, correções, não-dado e vinculação interproduto. É um **índice de dependências e decisões humanas pendentes**, não uma decisão normativa. Os cinco Documentos Mestres de dashboards e as matrizes das seções 17 a 26 continuam sendo as referências de evidência; esta síntese não altera sua autoridade nem presume equivalência entre consumidores.
+
+### 27.2 Matriz de dependências e decisões abertas
+
+| Exame | Núcleo de decisão humana pendente | Dependências principais | Risco se presumido |
+|---|---|---|---|
+| `XD01-D01` | Identidade analítica por participante/objeto, papéis, vínculos e alterações | Autoridade de domínio, consentimento, relações e histórico | Matching universal, mistura de contas/pessoas e exposição indevida |
+| `XD01-D02` | População elegível por KPI, consumidor, contrato e janela | D01, estados, acesso, vigência, finalidade | Denominadores arbitrários e inclusão de não elegíveis |
+| `XD01-D03` | Taxonomia de eventos e estados por domínio | D01, D02, evidência, confirmação/validação | Tratar intenção, presença, conclusão e evolução como sinônimos |
+| `XD01-D04` | Marcos de entrada, ativação, retorno, saída e reingresso | D01..D03, calendário e versões | Conversão ou retenção sem marco legítimo |
+| `XD01-D05` | Unidade de unicidade, cardinalidade e deduplicação | D01..D04, D07, D08, D10 | Contagem duplicada ou exclusão de ocorrências válidas |
+| `XD01-D06` | Numerador, denominador, unidade e taxa por KPI | D01..D05, D07, D09 | Percentuais fabricados e agregações incomparáveis |
+| `XD01-D07` | Calendário, timezone, janelas, coortes e granularidade | D03..D06, D08 | Séries e coortes incompatíveis ou deslocadas |
+| `XD01-D08` | Correções, reversões, eventos tardios e reprocessamento | D01..D07, lineage e auditoria | Reescrita histórica sem proveniência ou dupla contagem |
+| `XD01-D09` | Zero confirmado, desconhecido, inválido, pendente e suprimido | D02, D06..D08, qualidade, privacidade | Transformar falta de dado em zero ou divulgar células sensíveis |
+| `XD01-D10` | Vinculação interproduto, contagem distinta e disclosure | D01..D09, consentimento, papéis, minimização | Reidentificação e inferência de Journey privado |
+
+### 27.3 Tensões entre consumidores a resolver, sem adjudicação
+
+| Tensão | Consumidores envolvidos | Condição ainda necessária |
+|---|---|---|
+| Pessoa distinta versus vínculo, papel, sessão, programa e oportunidade | Guivos, Business, Organização, Coletivo | Chaves contextuais, cardinalidade e unidade KPI aprovadas |
+| Elegibilidade contratual versus presença ou evento validado | Business, Organização, Coletivo | População, vigência, confirmação e validação por domínio |
+| Interesse versus inscrição, participação, conclusão e movimento pessoal | Organização, Coletivo, Pessoa, Guivos | Taxonomia, marcos e finalidade separados |
+| Coortes D7/D30/D90 versus períodos contratuais e ciclos de atividade | Guivos, Business, Organização, Coletivo | Timezone, marco inicial, janela, granularidade e atraso |
+| Retificação versus evento adicional e valor previamente publicado | Todos os cinco | Política de versionamento, correção e reconciliação |
+| Zero legítimo versus não-dado ou supressão | Todos os cinco | Cobertura, completude, qualidade, privacidade e disclosure |
+| Métrica agregada de plataforma versus exposição de Journey privado | Guivos, Business, Organização, Coletivo, Pessoa | Finalidade, consentimento, minimização e serving autorizados |
+| Evolução declarada versus performance organizacional | Pessoa, Business, Organização, Coletivo | Autonomia, não inferência e ausência de score universal |
+
+### 27.4 Sequência proposta para adjudicação humana
+
+1. **Autoridades e escopos:** identificar responsáveis por domínio, consumidor, finalidade, consentimento e disclosure; registrar conflitos antes de decidir.
+2. **Identidade e população:** adjudicar decisões aplicáveis de `D01` e `D02`, sem presumir chave global.
+3. **Eventos e marcos:** adjudicar `D03` e `D04` por objeto e consumidor.
+4. **Cardinalidade e fórmulas:** adjudicar `D05` e `D06` somente para KPIs com evidência suficiente.
+5. **Temporalidade e histórico:** adjudicar `D07` e `D08` com regras de proveniência e auditoria.
+6. **Qualidade, não-dado e disclosure:** adjudicar `D09` e `D10` por contexto, inclusive exportações e cruzamentos.
+7. **Revisão cruzada:** reexaminar conflitos e dependências, documentar decisões explícitas e revalidar os gates `G-XD-01..07` sem promoção automática.
+
+A sequência é uma **proposta de preparação**, não um cronograma obrigatório nem autorização para adjudicar por inferência. Cada decisão deve registrar ID, objeto/KPI, autoridade humana, evidência, consumidores, alternativa rejeitada, dependências, impacto, status e referência à aprovação explícita.
+
+### 27.5 Pendências e limites de fechamento
+
+As matrizes originais mantêm suas questões individuais abertas: `XD01-D01-A..F`, `XD01-D02-A..G`, `XD01-D03-A..H`, `XD01-D04-A..H`, `XD01-D05-A..H`, `XD01-D06-A..H`, `XD01-D07-A..H`, `XD01-D08-A..H`, `XD01-D09-A..H` e `XD01-D10-A..H`. São **77 questões abertas de adjudicação** (6 + 7 + 8 × 8), sem contagem como gates aprovados. O exame documental integral não significa validação de contratos KPI ou prontidão para Design/Engineering.
+
+```text
+XD01-D01..D10 → EXAMINED / HUMAN_ADJUDICATION_REQUIRED
+XD01 CONSOLIDATED RECONCILIATION → DOCUMENTED / NOT ADJUDICATED
+G-XD-01 → UNRESOLVED
+G-XD-02..07 → OPEN
+HUMAN ADJUDICATIONS → 0
 CANONICAL KPI PROMOTIONS → 0
 IMPLEMENTATION AUTHORIZATION → 0
 ```
