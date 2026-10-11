@@ -2,7 +2,7 @@
 id: GKR-INTELLIGENCE-DASHBOARD-KPI-001
 title: Dashboards, KPIs e Analytics — Documento Mestre de Especificação para Construção
 status: active
-version: 0.2.22
+version: 0.2.23
 owner: Guivos Intelligence Architecture
 last_updated: 2026-10-11
 normative: false
@@ -1450,6 +1450,68 @@ XD01 CONSOLIDATED RECONCILIATION → DOCUMENTED / NOT ADJUDICATED
 G-XD-01 → UNRESOLVED
 G-XD-02..07 → OPEN
 HUMAN ADJUDICATIONS → 0
+CANONICAL KPI PROMOTIONS → 0
+IMPLEMENTATION AUTHORIZATION → 0
+```
+
+
+---
+
+## 28. G-XD-01 — Protocolo preparatório de adjudicação humana (D01 e D02)
+
+### 28.1 Finalidade e limite de autoridade
+
+Este protocolo organiza a **primeira rodada de exame humano** das questões `XD01-D01-A..F` (identidade analítica) e `XD01-D02-A..G` (população elegível), preservando a reconciliação da seção 27. Trata-se de preparação documental **não normativa**, sem seleção de alternativas, aprovação de chaves, fechamento de gates, promoção de KPIs ou autorização de implementação. O responsável humano competente deve ser identificado e validado antes de qualquer decisão.
+
+### 28.2 Registro mínimo obrigatório por decisão
+
+Cada questão deverá receber registro individual com: (1) ID original; (2) contexto e objeto/KPI; (3) Documento Mestre e evidência específica; (4) domínio e consumidor autorizado; (5) autoridade humana identificada e fundamento da competência; (6) alternativas consideradas e trade-offs; (7) dependências com outras questões e gates; (8) efeitos sobre privacidade, consentimento, serving e exportação; (9) estado `PENDING_HUMAN_ADJUDICATION`, `NEEDS_EVIDENCE`, `CONFLICT` ou `ADJUDICATED`; (10) decisão expressa, data, justificativa e referência de aprovação, **somente quando houver adjudicação efetiva**. Ausência de evidência ou autoridade não pode ser substituída por inferência.
+
+### 28.3 Pauta preparatória — XD01-D01: identidade analítica
+
+| Questão | Ponto a levar à autoridade humana | Evidência/dependência a verificar |
+|---|---|---|
+| `XD01-D01-A` | Chaves e unidades de identidade para pessoa, conta, organização, coletivo e demais objetos | Autoridades dos domínios e objetos dos cinco dashboards |
+| `XD01-D01-B` | Múltiplas contas, operadores e papéis de uma mesma pessoa ou entidade | Vínculos e escopos sem assumir identidade universal |
+| `XD01-D01-C` | Vínculos simultâneos e contextuais entre participantes | Natureza, vigência e cardinalidade dos vínculos |
+| `XD01-D01-D` | Solicitação, aprovação, vínculo confirmado, papel, saída e reentrada | Estados e marcos próprios de cada domínio |
+| `XD01-D01-E` | Deduplicação, fusão, separação e correção retroativa | Rastreabilidade e regras de reprocessamento `D05/D08` |
+| `XD01-D01-F` | Identidade entre produtos e limites de privacidade/disclosure | Finalidade, consentimento e autorização por consumidor `D10` |
+
+Esta pauta resume temas do exame, sem substituir a redação integral das perguntas e evidências da seção 17.
+
+### 28.4 Pauta preparatória — XD01-D02: população elegível
+
+| Questão | Ponto a levar à autoridade humana | Evidência/dependência a verificar |
+|---|---|---|
+| `XD01-D02-A` | Critério de elegibilidade por KPI e consumidor | Finalidade e unidade analítica, sem população global presumida |
+| `XD01-D02-B` | Início e fim da elegibilidade, vínculo e vigência | Estados e marcos `D03/D04`, janelas `D07` |
+| `XD01-D02-C` | Elegibilidade versus convite, acesso, inscrição e participação | Eventos válidos e estados próprios por domínio |
+| `XD01-D02-D` | População contratual, custeada, ativa e efetivamente participante | Contratos, oferta, escala e segregação Business |
+| `XD01-D02-E` | Vínculos múltiplos, sobreposição e deduplicação | Identidade `D01` e cardinalidade `D05` |
+| `XD01-D02-F` | Evidência insuficiente, não-dado, exclusões e supressões | Qualidade, proveniência e `D09` |
+| `XD01-D02-G` | Limites de consumo, exposição e exportação da população | Consentimento, Journey privado e `D10` |
+
+Esta pauta é um **índice de preparação** e não uma reformulação normativa das perguntas da seção 18.
+
+### 28.5 Critérios de entrada e saída da rodada
+
+**Entrada:** confirmar versão dos Documentos Mestres, escopo de cada KPI candidato, fonte verificável, consumidor, autoridade competente e divergências registradas. Sem esses elementos, marcar `NEEDS_EVIDENCE` ou `CONFLICT`, não aprovar.
+
+**Saída documental possível:** dossiês individuais completos, questões explicitamente encaminhadas à autoridade e dependências registradas. A saída **não exige** decisão positiva e não fecha `G-XD-01`.
+
+**Adjudicação futura:** somente decisão humana explícita, rastreável, contextual e consistente com as demais autoridades poderá alterar o estado de uma questão. Nenhuma conclusão do protocolo concede acesso a Journey privado, métricas individuais a terceiros, identificação entre produtos ou KPI de prontidão.
+
+### 28.6 Estado desta preparação
+
+```text
+XD01-D01-A..F → PREPARATION_DOCUMENTED / PENDING_HUMAN_ADJUDICATION
+XD01-D02-A..G → PREPARATION_DOCUMENTED / PENDING_HUMAN_ADJUDICATION
+XD01-D03..D10 → EXAMINED / PENDING_HUMAN_ADJUDICATION
+OPEN HUMAN QUESTIONS → 77
+HUMAN ADJUDICATIONS → 0
+G-XD-01 → UNRESOLVED
+G-XD-02..07 → OPEN
 CANONICAL KPI PROMOTIONS → 0
 IMPLEMENTATION AUTHORIZATION → 0
 ```
