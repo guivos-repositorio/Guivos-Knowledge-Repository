@@ -2,7 +2,7 @@
 id: GKR-INTELLIGENCE-DASHBOARD-KPI-001
 title: Dashboards, KPIs e Analytics — Documento Mestre de Especificação para Construção
 status: active
-version: 0.2.12
+version: 0.2.13
 owner: Guivos Intelligence Architecture
 last_updated: 2026-10-11
 normative: false
@@ -908,3 +908,56 @@ G-XD-01 → UNRESOLVED
 CANONICAL KPI PROMOTIONS → 0
 IMPLEMENTATION AUTHORIZATION → 0
 ```
+
+
+## 18. XD01-D02 — Matriz de população elegível por KPI e consumidor (exame, não adjudicação)
+
+### 18.1 Propósito e limites
+
+Este exame detalha `XD01-D02` da seção 16.3 com base nos cinco Documentos Mestres de dashboards. Não define população canônica universal, não altera as fórmulas candidatas e não presume disponibilidade, consentimento, acesso ou persistência de dados. As referências `*-KPI-*` abaixo identificam indicadores **existentes**, todos sujeitos aos seus próprios gates; não criam novos indicadores.
+
+### 18.2 Matriz de evidências por consumidor
+
+| Consumidor / Documento Mestre | Indicadores existentes e evidência de elegibilidade | Contrato pendente antes de usar população ou denominador |
+|---|---|---|
+| Guivos interno — `dashboard-guivos-master-specification.md` | `GUV-KPI-POP-001`: Pessoas cadastradas no universo válido; `GUV-KPI-POP-005`: ativadas / elegíveis; `GUV-KPI-ENG-006..008`: retenção D7/D30/D90 de coorte ativada com atividade qualificante; `GUV-KPI-OPP-011..015`: populações por eventos distintos | Validade/exclusões de Pessoa, evento de ativação, coorte, elegibilidade por etapa, janelas, deduplicação, privacidade e autoridade de análise interna |
+| Guivos Business — `dashboard-guivos-business-master-specification.md` | `BUS-KPI-PAR-001`: Pessoas legitimamente incluídas no programa/custeio; `BUS-KPI-PAR-002`: participantes únicos com participação válida; `BUS-KPI-PAR-003`: participantes únicos / elegíveis; `BUS-KPI-JNY-002..004`: acesso custeado e agregados autorizados | Escopo do contrato/programa, inclusão e exclusão temporal, elegibilidade de participação e acesso, deduplicação por período, finalidade e limiares de disclosure; não expor Journey individual |
+| Organização — `dashboard-organization-master-specification.md` | `ORG-KPI-PAR-001`: elegíveis de objeto institucional; `ORG-KPI-PAR-003`: Pessoas distintas com participação válida; `ORG-KPI-PAR-004`: taxa segundo contrato específico; relações e oportunidades têm universos próprios | Identificar objeto institucional e sua autoridade, população e relação legítimas, eventos qualificantes, estados/cancelamentos, coorte e visibilidade; Organização não equivale a Business |
+| Coletivo — `dashboard-collective-master-specification.md` | `COL-KPI-PAR-004`: Pessoas distintas com vínculo/participação válida conforme contrato; candidatos `COL-PAR-C01..C03` distinguem solicitação, vínculo, presença e continuidade | Pertencimento voluntário, solicitação versus vínculo confirmado, desistência, janela, cardinalidade e supressão de dados; candidatos `COL-PAR-C*` não são novos KPIs canônicos |
+| Pessoa — `dashboard-person-master-specification.md` | `PER-KPI-CTX-004`: objetos legitimamente mantidos sem `domain_link` confirmado; escopo de análise pessoal e evidências não se confundem com população institucional | Objeto pessoal e autoria, natureza da evidência, período, vínculo/consentimento de contraparte, estados sem classificação, privacidade e limites de compartilhamento; sem score universal |
+
+### 18.3 Perguntas de adjudicação por KPI e consumidor
+
+| Referência | Pergunta ainda aberta | Evidência mínima exigida |
+|---|---|---|
+| `XD01-D02-A` | Qual entidade/objeto integra o universo elegível e qual é a unidade de análise? | Tipo de participante/objeto, chave legítima e escopo do indicador |
+| `XD01-D02-B` | Quais condições determinam inclusão, exclusão, suspensão ou reingresso? | Contrato de domínio, relação/programa, estados e exceções |
+| `XD01-D02-C` | Quando a elegibilidade começa, termina ou muda retroativamente? | Data efetiva, timezone, janela, histórico e reprocessamento |
+| `XD01-D02-D` | Qual evento qualifica numerador e qual população compõe denominador? | Fonte, taxonomia, coorte, validade, deduplicação e denominador zero |
+| `XD01-D02-E` | Quem pode consumir o resultado e em qual granularidade? | Finalidade, classe de acesso, relação legítima, minimização e política de supressão |
+| `XD01-D02-F` | Como distinguir zero observado, ausência, atraso, insuficiência e supressão? | Contrato de qualidade, completude, freshness e estados `NO_DATA`, `INSUFFICIENT_DATA`, `SOURCE_DELAYED`, `SUPPRESSED_BY_POLICY` |
+| `XD01-D02-G` | Como evitar sobreposição entre contratos, programas, contextos e produtos? | Atribuição, cardinalidade, chaves de vínculo e limites de cruzamento |
+
+### 18.4 Regra de não equivalência
+
+```text
+POPULAÇÃO ELEGÍVEL PARA CÁLCULO
+≠ PARTICIPANTES COM EVENTO QUALIFICANTE
+≠ CONTAS AUTENTICADAS
+≠ RELAÇÕES OU VÍNCULOS
+≠ POPULAÇÃO AUTORIZADA PARA DISCLOSURE
+```
+
+Uma Pessoa pode ser elegível para uma métrica sem ter produzido o evento do numerador; a legitimidade do cálculo não concede automaticamente ao consumidor acesso ao dado individual, ao contexto privado da Journey ou à identidade da contraparte. Uma mesma Pessoa em múltiplos contextos exige deduplicação e atribuição específicas; não há funil universal nem conversão presumida entre participantes/produtos. Os estados de dados ausentes e suprimidos não podem ser tratados como zero observado.
+
+### 18.5 Estado e próximo gate
+
+```text
+XD01-D01 → EXAMINED / HUMAN_ADJUDICATION_REQUIRED
+XD01-D02 → EXAMINED / HUMAN_ADJUDICATION_REQUIRED
+G-XD-01 → UNRESOLVED
+CANONICAL KPI PROMOTIONS → 0
+IMPLEMENTATION AUTHORIZATION → 0
+```
+
+Esta seção é uma matriz de evidências e perguntas, não adjudicação. `XD01-D03` (eventos e estados por domínio) permanece como próximo exame; `G-XD-02..07` e gates especializados permanecem inalterados.
