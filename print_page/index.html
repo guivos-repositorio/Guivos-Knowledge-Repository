@@ -72698,6 +72698,80 @@ HUMAN AUTHORITY FORMALLY CONFIRMED → 0/13
 HUMAN ADJUDICATIONS → 0/77
 CANONICAL KPI PROMOTIONS → 0
 IMPLEMENTATION AUTHORIZATION → 0
+</code></pre></div>
+<hr />
+<h2 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-51-g-xd-02-sequenciamento-de-evidencias-dos-seis-kpis-prioritarios-do-anexo-a">51. G-XD-02 — Sequenciamento de evidências dos seis KPIs prioritários do Anexo A<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-51-g-xd-02-sequenciamento-de-evidencias-dos-seis-kpis-prioritarios-do-anexo-a" title="Permanent link">&para;</a></h2>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-511-escopo-documental">51.1 Escopo documental<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-511-escopo-documental" title="Permanent link">&para;</a></h3>
+<p>Consolidação das seções 47–50: <code>GUV-KPI-POP-001</code>, <code>002</code>, <code>007</code>, <code>009</code>, <code>011</code> e <code>GUV-KPI-OPP-001</code>. Os dois primeiros possuem contratos individuais v0.1.0 <code>proposed/NOT_READY</code>; os quatro restantes não possuem contratos individuais materializados. A matriz abaixo identifica <strong>ordem de comprovação</strong>, não decisão substantiva, especificação operacional ou promoção de readiness.</p>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-512-matriz-de-precedencia-e-bloqueios">51.2 Matriz de precedência e bloqueios<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-512-matriz-de-precedencia-e-bloqueios" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Sequência analítica</th>
+<th>Evidência requerida</th>
+<th>KPI(s) afetados</th>
+<th>Gate de autoridade / situação</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>P0 — identidade e população</td>
+<td>Identidade canônica, critérios de Pessoa/Organização/Coletivo elegível, validade, deduplicação e reversões</td>
+<td>POP-001, POP-002, POP-007, POP-009, POP-011</td>
+<td><code>G-XD-01 UNRESOLVED</code>; sem fechamento humano presumido</td>
+</tr>
+<tr>
+<td>P0 — evento e temporalidade</td>
+<td>Evento de criação válida, data de efeito, <code>as_of</code>, janela, timezone, correções e reprocessamento quando aplicável</td>
+<td>POP-002, OPP-001; POP-001/007/009/011 quanto à referência</td>
+<td><code>G-XD-01 UNRESOLVED</code>; sem regras temporais inventadas</td>
+</tr>
+<tr>
+<td>P0 — universo do mix</td>
+<td>Escopo de tipos, cardinalidade, compatibilidade entre populações e denominador</td>
+<td>POP-011</td>
+<td>Pendente da elegibilidade e das definições dos três participantes</td>
+</tr>
+<tr>
+<td>P1 — prova da fonte</td>
+<td>Source of truth, sistema de origem, contrato de extração e owner responsável, com versões verificáveis</td>
+<td>Todos</td>
+<td><code>G-XD-02 OPEN</code>; fonte não instituída por este documento</td>
+</tr>
+<tr>
+<td>P1 — integridade e qualidade</td>
+<td>Unicidade, cobertura, completude, estados nulos, ausência real versus indisponibilidade, controle de duplicação e reconciliação</td>
+<td>Todos</td>
+<td>Sem testes ou limiares aprovados</td>
+</tr>
+<tr>
+<td>P1 — freshness e proveniência</td>
+<td>Tempo de referência, atualização, lineage, transformações e versionamento</td>
+<td>Todos</td>
+<td>Sem SLA ou pipeline autorizados</td>
+</tr>
+<tr>
+<td>P2 — consumo e proteção</td>
+<td>Agregação, segmentação, supressão, exportação, acessos, responsáveis e contrato de serving</td>
+<td>Todos</td>
+<td><code>G-XD-03/04/05/07 OPEN</code>; sem implementação</td>
+</tr>
+</tbody>
+</table>
+<p>A ordem P0/P1/P2 é <strong>dependência lógica de exame</strong>, não prioridade de execução aprovada, SLA, calendário ou atribuição de competência. Evidência pode ser recebida e qualificada sem maturidade promovida. Regras dependentes de adjudicação humana requerem decisão e mandato institucional verificável antes de serem tratadas como autoridade. Escopo econômico de <code>G-XD-06</code> permanece condicionado à pertinência real de cada KPI.</p>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-513-criterios-de-handoff-documental">51.3 Critérios de handoff documental<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-513-criterios-de-handoff-documental" title="Permanent link">&para;</a></h3>
+<p>Para cada uma das seis métricas, o próximo exame deverá registrar: referência verificável do documento e sua versão, autoridade e escopo, campo/contrato afetado, evidência presente ou ausente, lacuna e dependência de adjudicação, restrições de privacidade e estado resultante. Não aceitar nome de fonte ou esquema hipotético como prova. Não equiparar ausência de eventos a valor zero. Não definir formula, elegibilidade ou decisão humana por simples paralelismo entre indicadores.</p>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-514-estado-preservado">51.4 Estado preservado<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-514-estado-preservado" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>G-XD-02 → SIX_KPI_DEPENDENCY_SEQUENCE_DOCUMENTED / OPEN
+G-XD-01 → UNRESOLVED
+G-XD-03..07 → OPEN
+GUV-KPI-POP-001/002 → proposed / NOT_READY / INDIVIDUAL CONTRACT EXISTS
+GUV-KPI-POP-007/009/011 + GUV-KPI-OPP-001 → proposed / NOT_READY / NO INDIVIDUAL CONTRACT
+SOURCE CONTRACT AUTHORITY → NOT VERIFIED
+HUMAN AUTHORITY FORMALLY CONFIRMED → 0/13
+HUMAN ADJUDICATIONS → 0/77
+KPI PROMOTIONS → 0
+IMPLEMENTATION AUTHORIZATION → 0
 </code></pre></div></section><section class="print-page" id="intelligence-architecture-dashboard-guivos-business-master-specification" heading-number="16.5"><h1 id="intelligence-architecture-dashboard-guivos-business-master-specification-dashboard-guivos-business-documento-mestre-de-especificacao-analitica-e-handoff-replit">Dashboard Guivos Business — Documento Mestre de Especificação Analítica e Handoff Replit<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-business-master-specification-dashboard-guivos-business-documento-mestre-de-especificacao-analitica-e-handoff-replit" title="Permanent link">&para;</a></h1>
 <h2 id="intelligence-architecture-dashboard-guivos-business-master-specification-1-finalidade">1. Finalidade<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-business-master-specification-1-finalidade" title="Permanent link">&para;</a></h2>
 <p>Este documento é o <strong>Anexo B</strong> de <code>GKR-INTELLIGENCE-DASHBOARD-KPI-001</code> e governa, em nível documental pré-implementação, o <strong>Dashboard Guivos Business</strong>.</p>
