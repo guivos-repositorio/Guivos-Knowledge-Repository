@@ -7375,6 +7375,41 @@
   
   
     <li class="md-nav__item">
+      <a href="../intelligence-architecture/dashboard-guivos-master-specification/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dashboard Guivos — Documento Mestre
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../adr/ADR-007-neo4j-primary-graph-reference/" class="md-nav__link">
         
   
@@ -9847,10 +9882,21 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#intelligence-architecture-dashboard-guivos-master-specification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16.8 Dashboard Guivos — Documento Mestre
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#adr-adr-007-neo4j-primary-graph-reference" class="md-nav__link">
     <span class="md-ellipsis">
       
-        16.8 Tecnologia de Grafo
+        16.9 Tecnologia de Grafo
       
     </span>
   </a>
@@ -12140,10 +12186,21 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#intelligence-architecture-dashboard-guivos-master-specification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16.8 Dashboard Guivos — Documento Mestre
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#adr-adr-007-neo4j-primary-graph-reference" class="md-nav__link">
     <span class="md-ellipsis">
       
-        16.8 Tecnologia de Grafo
+        16.9 Tecnologia de Grafo
       
     </span>
   </a>
@@ -72347,7 +72404,1703 @@ ANNEX E / F
 → ALL EXISTING KPIs proposed / NOT_READY
 → CANDIDATES NOT CANONICAL
 → REPUTATION SCORE / INDIVIDUAL JOURNEY / REAL DATA / REPLIT BUILD NOT AUTHORIZED
-</code></pre></div></section><section class="print-page" id="adr-adr-007-neo4j-primary-graph-reference" heading-number="16.8"><h1 id="adr-adr-007-neo4j-primary-graph-reference-adr-007-neo4j-como-tecnologia-primaria-de-referencia-para-grafo">ADR-007 — Neo4j como Tecnologia Primária de Referência para Grafo<a class="headerlink" href="#adr-adr-007-neo4j-primary-graph-reference-adr-007-neo4j-como-tecnologia-primaria-de-referencia-para-grafo" title="Permanent link">&para;</a></h1>
+</code></pre></div></section><section class="print-page" id="intelligence-architecture-dashboard-guivos-master-specification" heading-number="16.8"><h1 id="intelligence-architecture-dashboard-guivos-master-specification-dashboard-guivos-documento-mestre-de-especificacao-analitica-e-handoff-replit">Dashboard Guivos — Documento Mestre de Especificação Analítica e Handoff Replit<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-master-specification-dashboard-guivos-documento-mestre-de-especificacao-analitica-e-handoff-replit" title="Permanent link">&para;</a></h1>
+<h2 id="intelligence-architecture-dashboard-guivos-master-specification-1-finalidade">1. Finalidade<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-master-specification-1-finalidade" title="Permanent link">&para;</a></h2>
+<p>Este documento é o <strong>Anexo A</strong> de <code>GKR-INTELLIGENCE-DASHBOARD-KPI-001</code> e governa, em nível documental pré-implementação, o <strong>Dashboard Guivos</strong>.</p>
+<p>O Dashboard Guivos é a superfície analítica interna de visão transversal do ecossistema e da empresa Guivos. Seu objetivo é permitir compreensão executiva e operacional sobre crescimento, participantes, Journey, oportunidades, relações, produtos, economia, território, Ads em nível resumido, qualidade e demais dimensões legitimamente disponíveis.</p>
+<p>Ele não é:</p>
+<ul>
+<li>source of truth;</li>
+<li>banco de dados;</li>
+<li>ferramenta de investigação irrestrita de Pessoas;</li>
+<li>dashboard Business;</li>
+<li>dashboard de Organização;</li>
+<li>dashboard de Coletivo;</li>
+<li>dashboard pessoal;</li>
+<li>substituto do Guivos Intelligence;</li>
+<li>autorização de uso de dados reais;</li>
+<li>autorização de implementação.</li>
+</ul>
+<p>Regra central:</p>
+<blockquote>
+<p><strong>O Dashboard Guivos deve oferecer a visão mais completa necessária à governança do ecossistema sem transformar acesso interno em acesso irrestrito a dados individuais.</strong></p>
+</blockquote>
+<hr />
+<h2 id="intelligence-architecture-dashboard-guivos-master-specification-2-estado-e-boundary">2. Estado e boundary<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-master-specification-2-estado-e-boundary" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>GKR-INTELLIGENCE-DASHBOARD-GUIVOS-001
+→ ACTIVE
+→ PRE-IMPLEMENTATION DASHBOARD MASTER
+
+DASHBOARD GUIVOS
+→ DOCUMENTARILY SPECIFIED
+→ INTERNAL GUIVOS ANALYTICS SURFACE
+
+REAL DATA CONNECTION
+→ NOT AUTHORIZED BY THIS DOCUMENT
+
+REPLIT BUILD
+→ NOT AUTHORIZED BY THIS DOCUMENT
+→ HANDOFF SPECIFICATION ONLY
+
+PERSON-LEVEL PRIVATE CONTEXT
+→ NOT PART OF DEFAULT DASHBOARD DISCLOSURE
+
+ECONOMIC KPIs
+→ REQUIRE COMPOSITION WITH GEM-009
+</code></pre></div>
+<p>Este documento define o que o dashboard deverá ser capaz de representar quando os respectivos contratos, fontes e gates estiverem autorizados. Ele não declara que todos os dados, eventos, relações ou produtos já existem operacionalmente.</p>
+<hr />
+<h2 id="intelligence-architecture-dashboard-guivos-master-specification-3-publico-e-classes-de-acesso">3. Público e classes de acesso<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-master-specification-3-publico-e-classes-de-acesso" title="Permanent link">&para;</a></h2>
+<p>O Dashboard Guivos é destinado a usuários internos autorizados da Guivos.</p>
+<p>As classes abaixo são <strong>funcionais</strong>, não roles técnicas implementadas:</p>
+<table>
+<thead>
+<tr>
+<th>Classe funcional</th>
+<th>Escopo esperado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Visão executiva</td>
+<td>indicadores agregados transversais e tendências estratégicas</td>
+</tr>
+<tr>
+<td>Operação / Produto</td>
+<td>métricas dos domínios sob responsabilidade</td>
+</tr>
+<tr>
+<td>Growth / GTM</td>
+<td>aquisição, ativação, canais e crescimento autorizados</td>
+</tr>
+<tr>
+<td>Economia / Financeiro</td>
+<td>métricas econômicas e transacionais autorizadas</td>
+</tr>
+<tr>
+<td>Data / Intelligence</td>
+<td>análise, qualidade, proveniência e outputs necessários à finalidade autorizada</td>
+</tr>
+<tr>
+<td>Privacidade / Governança</td>
+<td>controles, qualidade de disclosure, auditoria e exceções pertinentes</td>
+</tr>
+</tbody>
+</table>
+<p>Princípio de acesso:</p>
+<div class="highlight"><pre><span></span><code>SER INTERNO DA GUIVOS
+≠ TER ACESSO A TODO DADO
+
+VISÃO EXECUTIVA
+≠ CONTEXTO PRIVADO INDIVIDUAL
+
+DATA / INTELLIGENCE ACCESS
+≠ DISCLOSURE IRRESTRITO
+</code></pre></div>
+<p>Qualquer acesso individualizado excepcional deve possuir finalidade, autoridade e trilha próprias; ele não deve ser inferido da existência deste dashboard.</p>
+<hr />
+<h2 id="intelligence-architecture-dashboard-guivos-master-specification-4-arquitetura-funcional-do-dashboard">4. Arquitetura funcional do dashboard<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-master-specification-4-arquitetura-funcional-do-dashboard" title="Permanent link">&para;</a></h2>
+<p>O Dashboard Guivos deve ser organizado em <strong>onze áreas analíticas principais</strong>:</p>
+<ol>
+<li>Visão Executiva;</li>
+<li>População e Participantes;</li>
+<li>Aquisição, Ativação e Retenção;</li>
+<li>Journey, Próximos Passos e Experiências;</li>
+<li>Oportunidades e Supply;</li>
+<li>Relações e Ecossistema;</li>
+<li>Produtos e Adoção;</li>
+<li>Economia e Planos;</li>
+<li>Território e Demografia;</li>
+<li>Ads / Opportunity Boost — resumo interno;</li>
+<li>Qualidade, Freshness e Governança do Dado.</li>
+</ol>
+<p>Uma área pode permanecer parcial ou integralmente indisponível enquanto seus contratos não estiverem prontos.</p>
+<div class="highlight"><pre><span></span><code>SEÇÃO DOCUMENTADA
+≠ DADO OPERACIONAL DISPONÍVEL
+</code></pre></div>
+<hr />
+<h2 id="intelligence-architecture-dashboard-guivos-master-specification-5-convencoes-de-kpi-e-status">5. Convenções de KPI e status<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-master-specification-5-convencoes-de-kpi-e-status" title="Permanent link">&para;</a></h2>
+<p>Prefixo deste master:</p>
+<div class="highlight"><pre><span></span><code>GUV-KPI-&lt;FAMÍLIA&gt;-NNN
+</code></pre></div>
+<p>Famílias iniciais:</p>
+<ul>
+<li><code>POP</code> — população e participantes;</li>
+<li><code>ENG</code> — aquisição, ativação, retenção e uso;</li>
+<li><code>JNY</code> — Journey e experiência;</li>
+<li><code>OPP</code> — oportunidades e supply;</li>
+<li><code>REL</code> — relações e Graph Analytics;</li>
+<li><code>PRD</code> — produtos e adoção;</li>
+<li><code>ECO</code> — economia, planos e transações;</li>
+<li><code>GEO</code> — território e demografia;</li>
+<li><code>ADS</code> — resumo Ads / Opportunity Boost;</li>
+<li><code>DQ</code> — data quality, freshness e governança.</li>
+</ul>
+<p>Os IDs identificam contratos analíticos candidatos. Um ID não significa implementação.</p>
+<h3 id="intelligence-architecture-dashboard-guivos-master-specification-51-vocabulario-de-status">5.1 Vocabulário de status<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-master-specification-51-vocabulario-de-status" title="Permanent link">&para;</a></h3>
+<p>Este documento usa exclusivamente o vocabulário do master global:</p>
+<table>
+<thead>
+<tr>
+<th>Status</th>
+<th>Semântica</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>proposed</code></td>
+<td>necessidade/definição candidata ainda incompleta; não build-ready</td>
+</tr>
+<tr>
+<td><code>source_pending</code></td>
+<td>definição lógica suficientemente delimitada para continuar, mas source/data contract ou equivalente ainda impede readiness</td>
+</tr>
+<tr>
+<td><code>defined</code></td>
+<td>contrato mínimo transversal documentalmente preenchido; ainda não significa implementação autorizada</td>
+</tr>
+<tr>
+<td><code>approved-equivalent</code></td>
+<td>autoridade especializada aplicável fornece estado equivalente aceito pelo gate governado</td>
+</tr>
+</tbody>
+</table>
+<p>Regras:</p>
+<div class="highlight"><pre><span></span><code>PROPOSED
+→ NÃO IMPLEMENTAR COMO KPI CANÔNICO
+
+SOURCE_PENDING
+→ NÃO IMPLEMENTAR COM DADO REAL
+
+DEFINED
+→ AINDA REQUER CONTRATOS DE DOMÍNIO + BUILD AUTHORIZATION
+</code></pre></div>
+<p>Na versão <code>v0.1.4</code>, <strong>nenhum KPI deste catálogo é declarado <code>defined</code> ou <code>approved-equivalent</code> por inferência</strong>.</p>
+<h3 id="intelligence-architecture-dashboard-guivos-master-specification-52-absorcao-da-reconciliacao-de-status">5.2 Absorção da reconciliação de status<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-master-specification-52-absorcao-da-reconciliacao-de-status" title="Permanent link">&para;</a></h3>
+<p>A adjudicação registrada em <code>GKR-INTELLIGENCE-DASHBOARD-GUIVOS-KPI-STATUS-RECONCILIATION-001</code> foi formalmente absorvida por esta versão do Documento Mestre.</p>
+<div class="highlight"><pre><span></span><code>SEMANTICS INCOMPLETE
+→ proposed
+
+SEMANTICS CLOSED + SOURCE BLOCKED
+→ source_pending
+
+STATUS RECONCILIATION
+→ ABSORBED INTO THIS MASTER
+→ 6 KPI IDS = proposed / NOT_READY
+</code></pre></div>
+<p>Para <code>GUV-KPI-POP-001</code>, <code>GUV-KPI-POP-002</code>, <code>GUV-KPI-POP-007</code>, <code>GUV-KPI-POP-009</code>, <code>GUV-KPI-POP-011</code> e <code>GUV-KPI-OPP-001</code>, permanecem blockers semânticos anteriores à simples resolução de source/data contract; portanto, o status governado é <code>proposed</code> e a readiness permanece <code>NOT_READY</code>.</p>
+<p>Esta absorção altera apenas o campo <code>status</code> desses seis IDs. Ela <strong>não</strong> adjudica fórmula, source, população, regras temporais, elegibilidade/validade, denominador, disclosure, serving, real data ou autorização de build.</p>
+<hr />
+<h2 id="intelligence-architecture-dashboard-guivos-master-specification-6-familia-pop-populacao-e-participantes">6. Família POP — População e participantes<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-master-specification-6-familia-pop-populacao-e-participantes" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Indicador</th>
+<th>Definição lógica candidata</th>
+<th>Unidade</th>
+<th>Status</th>
+<th>Dependência / gate principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GUV-KPI-POP-001</td>
+<td>Pessoas cadastradas</td>
+<td>contagem distinta da entidade Pessoa no universo válido corrente</td>
+<td>pessoas</td>
+<td>proposed</td>
+<td>participant source + validade/exclusões</td>
+</tr>
+<tr>
+<td>GUV-KPI-POP-002</td>
+<td>Novas Pessoas</td>
+<td>Pessoas cuja criação válida ocorreu no período</td>
+<td>pessoas/período</td>
+<td>proposed</td>
+<td>participant source + temporal contract</td>
+</tr>
+<tr>
+<td>GUV-KPI-POP-003</td>
+<td>Pessoas ativas</td>
+<td>Pessoas com ≥1 evento do <code>ACTIVITY_EVENT_SET</code> aprovado na janela</td>
+<td>pessoas</td>
+<td>proposed</td>
+<td>activity event set + janela + source</td>
+</tr>
+<tr>
+<td>GUV-KPI-POP-004</td>
+<td>Pessoas inativas</td>
+<td>Pessoas elegíveis sem evento qualificante na janela</td>
+<td>pessoas</td>
+<td>proposed</td>
+<td>activity/inactivity contract</td>
+</tr>
+<tr>
+<td>GUV-KPI-POP-005</td>
+<td>Taxa de ativação de Pessoas</td>
+<td>Pessoas que atingiram ativação / Pessoas elegíveis</td>
+<td>%</td>
+<td>proposed</td>
+<td>activation event + denominator</td>
+</tr>
+<tr>
+<td>GUV-KPI-POP-006</td>
+<td>Crescimento líquido de Pessoas</td>
+<td>novas Pessoas válidas − saídas/desativações válidas</td>
+<td>pessoas/período</td>
+<td>proposed</td>
+<td>exit/deactivation contract</td>
+</tr>
+<tr>
+<td>GUV-KPI-POP-007</td>
+<td>Organizações cadastradas</td>
+<td>contagem distinta de Organizações válidas</td>
+<td>organizações</td>
+<td>proposed</td>
+<td>organization source + validade</td>
+</tr>
+<tr>
+<td>GUV-KPI-POP-008</td>
+<td>Organizações ativas</td>
+<td>Organizações com atividade qualificante</td>
+<td>organizações</td>
+<td>proposed</td>
+<td>organization activity contract</td>
+</tr>
+<tr>
+<td>GUV-KPI-POP-009</td>
+<td>Coletivos cadastrados</td>
+<td>contagem distinta de Coletivos válidos</td>
+<td>coletivos</td>
+<td>proposed</td>
+<td>collective source + validade</td>
+</tr>
+<tr>
+<td>GUV-KPI-POP-010</td>
+<td>Coletivos ativos</td>
+<td>Coletivos com atividade qualificante</td>
+<td>coletivos</td>
+<td>proposed</td>
+<td>collective activity contract</td>
+</tr>
+<tr>
+<td>GUV-KPI-POP-011</td>
+<td>Mix de participantes</td>
+<td>distribuição Pessoa / Organização / Coletivo no universo aplicável</td>
+<td>%</td>
+<td>proposed</td>
+<td>sources + denominator + scope</td>
+</tr>
+<tr>
+<td>GUV-KPI-POP-012</td>
+<td>Taxa de reativação</td>
+<td>entidades previamente inativas que retornam / inativas elegíveis</td>
+<td>%</td>
+<td>proposed</td>
+<td>reactivation contract</td>
+</tr>
+</tbody>
+</table>
+<h3 id="intelligence-architecture-dashboard-guivos-master-specification-61-necessidade-candidata-preservada-escolhas-declaracoes-das-pessoas">6.1 Necessidade candidata preservada — escolhas / declarações das Pessoas<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-master-specification-61-necessidade-candidata-preservada-escolhas-declaracoes-das-pessoas" title="Permanent link">&para;</a></h3>
+<p>O inventário global preserva como necessidade candidata a possibilidade de leituras relacionadas a <strong>escolhas e declarações das Pessoas</strong>. Este Anexo A mantém essa necessidade como proveniência de escopo, sem promovê-la a KPI, data contract ou autorização de disclosure.</p>
+<div class="highlight"><pre><span></span><code>ESCOLHAS / DECLARAÇÕES DAS PESSOAS
+→ CANDIDATE NEED PRESERVED
+→ BLOCKED / NOT BUILD-READY
+→ KPI ID = NOT ASSIGNED
+→ FORMULA = NOT ADJUDICATED
+→ SOURCE = NOT ADJUDICATED
+→ POPULATION / DENOMINATOR = NOT ADJUDICATED
+→ ACCESS / DISCLOSURE = NOT ADJUDICATED
+→ REPLIT MUST NOT INFER IMPLEMENTATION
+</code></pre></div>
+<p>Qualquer futura materialização deverá ser precedida pela adjudicação das autoridades aplicáveis de Pessoa, Journey, Privacidade e Dados, incluindo finalidade, natureza da evidência, população, granularidade, retenção e disclosure.</p>
+<p>O Replit <strong>não pode decidir sozinho</strong> o que significa <code>ativo</code>.</p>
+<div class="highlight"><pre><span></span><code>LOGIN
+≠ NECESSARIAMENTE ATIVIDADE RELEVANTE
+
+CADASTRO EXISTENTE
+≠ USUÁRIO ATIVO
+</code></pre></div>
+<hr />
+<h2 id="intelligence-architecture-dashboard-guivos-master-specification-7-familia-eng-aquisicao-ativacao-e-retencao">7. Família ENG — Aquisição, ativação e retenção<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-master-specification-7-familia-eng-aquisicao-ativacao-e-retencao" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Indicador</th>
+<th>Definição lógica candidata</th>
+<th>Unidade</th>
+<th>Status</th>
+<th>Dependência / gate principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GUV-KPI-ENG-001</td>
+<td>Conclusão de cadastro</td>
+<td>cadastros concluídos / cadastros iniciados</td>
+<td>%</td>
+<td>proposed</td>
+<td>event contract + denominator</td>
+</tr>
+<tr>
+<td>GUV-KPI-ENG-002</td>
+<td>Tempo até ativação</td>
+<td>tempo entre elegibilidade inicial e evento de ativação</td>
+<td>tempo</td>
+<td>proposed</td>
+<td>activation event</td>
+</tr>
+<tr>
+<td>GUV-KPI-ENG-003</td>
+<td>WAU</td>
+<td>Pessoas únicas ativas em janela móvel de 7 dias</td>
+<td>pessoas</td>
+<td>proposed</td>
+<td>activity event set</td>
+</tr>
+<tr>
+<td>GUV-KPI-ENG-004</td>
+<td>MAU</td>
+<td>Pessoas únicas ativas em janela móvel de 30 dias</td>
+<td>pessoas</td>
+<td>proposed</td>
+<td>activity event set</td>
+</tr>
+<tr>
+<td>GUV-KPI-ENG-005</td>
+<td>Stickiness WAU/MAU</td>
+<td><code>WAU / MAU</code></td>
+<td>razão/%</td>
+<td>proposed</td>
+<td>ENG-003/004 definidos</td>
+</tr>
+<tr>
+<td>GUV-KPI-ENG-006</td>
+<td>Retenção D7</td>
+<td>coorte ativada com atividade qualificante na janela D7 / coorte ativada</td>
+<td>%</td>
+<td>proposed</td>
+<td>cohort + activity contract</td>
+</tr>
+<tr>
+<td>GUV-KPI-ENG-007</td>
+<td>Retenção D30</td>
+<td>coorte ativada com atividade qualificante na janela D30 / coorte ativada</td>
+<td>%</td>
+<td>proposed</td>
+<td>cohort + activity contract</td>
+</tr>
+<tr>
+<td>GUV-KPI-ENG-008</td>
+<td>Retenção D90</td>
+<td>coorte ativada com atividade qualificante na janela D90 / coorte ativada</td>
+<td>%</td>
+<td>proposed</td>
+<td>cohort + activity contract</td>
+</tr>
+<tr>
+<td>GUV-KPI-ENG-009</td>
+<td>Taxa de reengajamento</td>
+<td>inativos elegíveis que retornam / inativos elegíveis</td>
+<td>%</td>
+<td>proposed</td>
+<td>inactivity + reengagement contract</td>
+</tr>
+<tr>
+<td>GUV-KPI-ENG-010</td>
+<td>Origem de aquisição</td>
+<td>distribuição de novos participantes por source/medium/campaign autorizado</td>
+<td>distribuição</td>
+<td>proposed</td>
+<td>attribution contract</td>
+</tr>
+</tbody>
+</table>
+<p><code>Churn</code> não deve ser usado como sinônimo universal de inatividade. Somente usar churn quando cancelamento/abandono possuir definição própria.</p>
+<hr />
+<h2 id="intelligence-architecture-dashboard-guivos-master-specification-8-familia-jny-journey-e-experiencia">8. Família JNY — Journey e experiência<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-master-specification-8-familia-jny-journey-e-experiencia" title="Permanent link">&para;</a></h2>
+<p>Este conjunto deve preservar a centralidade humana e evitar transformar evolução em score universal.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Indicador</th>
+<th>Definição lógica candidata</th>
+<th>Unidade</th>
+<th>Status</th>
+<th>Dependência / gate principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GUV-KPI-JNY-001</td>
+<td>Pessoas com Journey iniciada</td>
+<td>Pessoas com evento legítimo de início de Journey</td>
+<td>pessoas</td>
+<td>proposed</td>
+<td>event contract</td>
+</tr>
+<tr>
+<td>GUV-KPI-JNY-002</td>
+<td>Pessoas com Momento atualizado</td>
+<td>Pessoas com atualização válida de Momento no período</td>
+<td>pessoas</td>
+<td>proposed</td>
+<td>Moment source + validity</td>
+</tr>
+<tr>
+<td>GUV-KPI-JNY-003</td>
+<td>Objetivos ativos</td>
+<td>objetivos em estado válido ativo</td>
+<td>objetivos</td>
+<td>proposed</td>
+<td>objective state contract</td>
+</tr>
+<tr>
+<td>GUV-KPI-JNY-004</td>
+<td>Próximos Passos ativos</td>
+<td>próximos passos em estado válido ativo</td>
+<td>próximos passos</td>
+<td>proposed</td>
+<td>state contract</td>
+</tr>
+<tr>
+<td>GUV-KPI-JNY-005</td>
+<td>Próximos Passos concluídos</td>
+<td>próximos passos concluídos no período</td>
+<td>próximos passos</td>
+<td>proposed</td>
+<td>completion event contract</td>
+</tr>
+<tr>
+<td>GUV-KPI-JNY-006</td>
+<td>Taxa de conclusão de Próximos Passos</td>
+<td>concluídos / próximos passos elegíveis</td>
+<td>%</td>
+<td>proposed</td>
+<td>denominator + exclusions</td>
+</tr>
+<tr>
+<td>GUV-KPI-JNY-007</td>
+<td>Experiências iniciadas</td>
+<td>experiências com início válido</td>
+<td>experiências</td>
+<td>proposed</td>
+<td>event contract</td>
+</tr>
+<tr>
+<td>GUV-KPI-JNY-008</td>
+<td>Experiências concluídas</td>
+<td>experiências com conclusão válida</td>
+<td>experiências</td>
+<td>proposed</td>
+<td>event contract</td>
+</tr>
+<tr>
+<td>GUV-KPI-JNY-009</td>
+<td>Evidências registradas</td>
+<td>evidências válidas registradas</td>
+<td>evidências</td>
+<td>proposed</td>
+<td>evidence validity/source</td>
+</tr>
+<tr>
+<td>GUV-KPI-JNY-010</td>
+<td>Distribuição por Domínio de Evolução</td>
+<td>distribuição candidata por Domínio de Evolução, incluindo estados não mapeados/sem domínio conforme autoridade vigente</td>
+<td>distribuição</td>
+<td>proposed</td>
+<td>buckets + population + denominator + null/unmapped treatment + source/disclosure</td>
+</tr>
+<tr>
+<td>GUV-KPI-JNY-011</td>
+<td>Participação recorrente</td>
+<td>Pessoas com participação qualificante em ≥2 períodos definidos</td>
+<td>pessoas/%</td>
+<td>proposed</td>
+<td>recurrence/window contract</td>
+</tr>
+</tbody>
+</table>
+<p>Para <code>GUV-KPI-JNY-010</code>, a futura adjudicação dos buckets deve preservar explicitamente, conforme as autoridades vigentes, os nove <code>JED-*</code>, <strong><code>Ainda estou descobrindo</code></strong>, <code>other_unmapped</code> e <code>null / sem domínio associado</code>. Esta versão não define o denominador, a forma de agregação, o tratamento de <code>null</code>, a ordem dos buckets ou o disclosure; por isso o KPI permanece <code>proposed</code>.</p>
+<p>Guardrails:</p>
+<div class="highlight"><pre><span></span><code>MAIS PRÓXIMOS PASSOS CONCLUÍDOS
+≠ PESSOA MELHOR
+
+MAIS ATIVIDADE
+≠ MAIS EVOLUÇÃO
+
+EXPERIÊNCIA CONCLUÍDA
+≠ IMPACTO COMPROVADO
+</code></pre></div>
+<hr />
+<h2 id="intelligence-architecture-dashboard-guivos-master-specification-9-familia-opp-oportunidades-e-supply">9. Família OPP — Oportunidades e supply<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-master-specification-9-familia-opp-oportunidades-e-supply" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Indicador</th>
+<th>Definição lógica candidata</th>
+<th>Unidade</th>
+<th>Status</th>
+<th>Dependência / gate principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GUV-KPI-OPP-001</td>
+<td>Oportunidades criadas</td>
+<td>oportunidades válidas criadas no período</td>
+<td>oportunidades</td>
+<td>proposed</td>
+<td>opportunity source + validity</td>
+</tr>
+<tr>
+<td>GUV-KPI-OPP-002</td>
+<td>Oportunidades publicadas</td>
+<td>oportunidades que atingiram estado publicado</td>
+<td>oportunidades</td>
+<td>proposed</td>
+<td>state contract</td>
+</tr>
+<tr>
+<td>GUV-KPI-OPP-003</td>
+<td>Oportunidades ativas</td>
+<td>oportunidades no estado ativo</td>
+<td>oportunidades</td>
+<td>proposed</td>
+<td>active-state contract</td>
+</tr>
+<tr>
+<td>GUV-KPI-OPP-004</td>
+<td>Oportunidades encerradas</td>
+<td>oportunidades encerradas no período</td>
+<td>oportunidades</td>
+<td>proposed</td>
+<td>closed-state contract</td>
+</tr>
+<tr>
+<td>GUV-KPI-OPP-005</td>
+<td>Visualizações</td>
+<td>eventos válidos de visualização</td>
+<td>eventos</td>
+<td>proposed</td>
+<td>event contract</td>
+</tr>
+<tr>
+<td>GUV-KPI-OPP-006</td>
+<td>Interesses / salvamentos</td>
+<td>eventos válidos de interesse</td>
+<td>eventos/pessoas</td>
+<td>proposed</td>
+<td>event contract</td>
+</tr>
+<tr>
+<td>GUV-KPI-OPP-007</td>
+<td>Inscrições / aplicações</td>
+<td>inscrições válidas associadas a oportunidades</td>
+<td>inscrições</td>
+<td>proposed</td>
+<td>event/status contract</td>
+</tr>
+<tr>
+<td>GUV-KPI-OPP-008</td>
+<td>Compras / vendas</td>
+<td>transações válidas atribuídas a oportunidades</td>
+<td>transações</td>
+<td>proposed</td>
+<td>GEM-009 + transaction/attribution</td>
+</tr>
+<tr>
+<td>GUV-KPI-OPP-009</td>
+<td>Participações iniciadas</td>
+<td>participações válidas iniciadas</td>
+<td>participações</td>
+<td>proposed</td>
+<td>participation contract</td>
+</tr>
+<tr>
+<td>GUV-KPI-OPP-010</td>
+<td>Participações concluídas</td>
+<td>participações concluídas</td>
+<td>participações</td>
+<td>proposed</td>
+<td>completion contract</td>
+</tr>
+<tr>
+<td>GUV-KPI-OPP-011</td>
+<td>Conversão view → interesse</td>
+<td>Pessoas com interesse / Pessoas com view elegível</td>
+<td>%</td>
+<td>proposed</td>
+<td>funnel population rules</td>
+</tr>
+<tr>
+<td>GUV-KPI-OPP-012</td>
+<td>Conversão interesse → inscrição</td>
+<td>inscrições / interesses elegíveis</td>
+<td>%</td>
+<td>proposed</td>
+<td>funnel population rules</td>
+</tr>
+<tr>
+<td>GUV-KPI-OPP-013</td>
+<td>Conversão inscrição → transação</td>
+<td>transações / inscrições elegíveis</td>
+<td>%</td>
+<td>proposed</td>
+<td>GEM-009 + attribution</td>
+</tr>
+<tr>
+<td>GUV-KPI-OPP-014</td>
+<td>Conversão transação → participação</td>
+<td>participações iniciadas / transações elegíveis</td>
+<td>%</td>
+<td>proposed</td>
+<td>GEM-009 + transaction eligibility + participation contract</td>
+</tr>
+<tr>
+<td>GUV-KPI-OPP-015</td>
+<td>Conclusão de participação</td>
+<td>participações concluídas / iniciadas elegíveis</td>
+<td>%</td>
+<td>proposed</td>
+<td>participation contract</td>
+</tr>
+<tr>
+<td>GUV-KPI-OPP-016</td>
+<td>Taxa de preenchimento</td>
+<td>capacidade ocupada / capacidade disponibilizada</td>
+<td>%</td>
+<td>proposed</td>
+<td>capacity contract</td>
+</tr>
+<tr>
+<td>GUV-KPI-OPP-017</td>
+<td>Tempo até primeiro engajamento</td>
+<td>publicação → primeiro evento qualificante</td>
+<td>tempo</td>
+<td>proposed</td>
+<td>event contract</td>
+</tr>
+<tr>
+<td>GUV-KPI-OPP-018</td>
+<td>Supply por Domínio</td>
+<td>oportunidades ativas por <code>JED-*</code></td>
+<td>distribuição</td>
+<td>proposed</td>
+<td>state + domain mapping</td>
+</tr>
+<tr>
+<td>GUV-KPI-OPP-019</td>
+<td>Supply por território</td>
+<td>oportunidades ativas por geografia autorizada</td>
+<td>distribuição</td>
+<td>proposed</td>
+<td>geography/disclosure contract</td>
+</tr>
+</tbody>
+</table>
+<p><code>Venda</code>, <code>transação</code>, <code>inscrição</code>, <code>participação</code> e <code>conclusão</code> são eventos distintos e não devem ser colapsados. Qualquer KPI cujo denominador dependa de transação elegível deve compor com o contrato econômico aplicável.</p>
+<hr />
+<h2 id="intelligence-architecture-dashboard-guivos-master-specification-10-familia-rel-relacoes-e-graph-analytics">10. Família REL — Relações e Graph Analytics<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-master-specification-10-familia-rel-relacoes-e-graph-analytics" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Indicador</th>
+<th>Definição lógica candidata</th>
+<th>Unidade</th>
+<th>Status</th>
+<th>Dependência / gate principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GUV-KPI-REL-001</td>
+<td>Relações Pessoa ↔ Organização</td>
+<td>relações válidas correntes desse tipo</td>
+<td>relações</td>
+<td>proposed</td>
+<td>relation contract</td>
+</tr>
+<tr>
+<td>GUV-KPI-REL-002</td>
+<td>Relações Pessoa ↔ Coletivo</td>
+<td>relações válidas correntes desse tipo</td>
+<td>relações</td>
+<td>proposed</td>
+<td>relation contract</td>
+</tr>
+<tr>
+<td>GUV-KPI-REL-003</td>
+<td>Relações Organização ↔ Coletivo</td>
+<td>relações válidas correntes desse tipo</td>
+<td>relações</td>
+<td>proposed</td>
+<td>relation contract</td>
+</tr>
+<tr>
+<td>GUV-KPI-REL-004</td>
+<td>Novas relações</td>
+<td>relações iniciadas no período</td>
+<td>relações/período</td>
+<td>proposed</td>
+<td>relation lifecycle</td>
+</tr>
+<tr>
+<td>GUV-KPI-REL-005</td>
+<td>Relações ativas</td>
+<td>relações que satisfazem regra de atividade/validade</td>
+<td>relações</td>
+<td>proposed</td>
+<td>active relation rule</td>
+</tr>
+<tr>
+<td>GUV-KPI-REL-006</td>
+<td>Participantes conectados</td>
+<td>participantes com ≥1 relação válida / participantes elegíveis</td>
+<td>%</td>
+<td>proposed</td>
+<td>graph/relation contract</td>
+</tr>
+</tbody>
+</table>
+<p>Métricas como densidade, centralidade, comunidades, caminhos, padrões de conexão e isolated-node rate permanecem:</p>
+<div class="highlight"><pre><span></span><code>GRAPH ANALYTICS CANDIDATE
+→ NOT DEFAULT KPI
+→ REQUIRE PURPOSE + INTERPRETATION + PRIVACY + VALIDATION CONTRACT
+</code></pre></div>
+<p>Nenhuma centralidade deve ser apresentada como importância humana, reputação ou valor da Pessoa.</p>
+<hr />
+<h2 id="intelligence-architecture-dashboard-guivos-master-specification-11-familia-prd-produtos-e-adocao">11. Família PRD — Produtos e adoção<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-master-specification-11-familia-prd-produtos-e-adocao" title="Permanent link">&para;</a></h2>
+<p>Produtos Especializados e Experience Layer devem continuar semanticamente distintos.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Indicador</th>
+<th>Definição lógica candidata</th>
+<th>Unidade</th>
+<th>Status</th>
+<th>Dependência / gate principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GUV-KPI-PRD-001</td>
+<td>Usuários ativos por produto</td>
+<td>usuários únicos com evento qualificante por produto</td>
+<td>usuários</td>
+<td>proposed</td>
+<td>product activity contract</td>
+</tr>
+<tr>
+<td>GUV-KPI-PRD-002</td>
+<td>Adoção por produto</td>
+<td>usuários que adotaram produto / população elegível</td>
+<td>%</td>
+<td>proposed</td>
+<td>adoption event + denominator</td>
+</tr>
+<tr>
+<td>GUV-KPI-PRD-003</td>
+<td>Uso cross-product</td>
+<td>usuários ativos em ≥2 produtos no período</td>
+<td>usuários/%</td>
+<td>proposed</td>
+<td>product activity contracts</td>
+</tr>
+<tr>
+<td>GUV-KPI-PRD-004</td>
+<td>Distribuição de uso do ecossistema</td>
+<td>participação relativa de atividade por produto/camada</td>
+<td>distribuição</td>
+<td>proposed</td>
+<td>event normalization contract</td>
+</tr>
+</tbody>
+</table>
+<p>A lista de produtos/camadas deve vir das autoridades correntes do GKR, não ser hard-coded como verdade eterna no Replit.</p>
+<hr />
+<h2 id="intelligence-architecture-dashboard-guivos-master-specification-12-familia-eco-economia-planos-e-transacoes">12. Família ECO — Economia, planos e transações<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-master-specification-12-familia-eco-economia-planos-e-transacoes" title="Permanent link">&para;</a></h2>
+<p>Todos os KPIs desta seção exigem composição com <code>GEM-009-MEASUREMENT-CONTRACT-001</code> e demais autoridades econômicas aplicáveis.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Indicador</th>
+<th>Definição lógica candidata</th>
+<th>Unidade</th>
+<th>Status</th>
+<th>Dependência / gate principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GUV-KPI-ECO-001</td>
+<td>Planos vendidos</td>
+<td>contratos/assinaturas válidas iniciadas no período</td>
+<td>quantidade</td>
+<td>proposed</td>
+<td>GEM-009 + plan lifecycle</td>
+</tr>
+<tr>
+<td>GUV-KPI-ECO-002</td>
+<td>Planos ativos</td>
+<td>relações de plano ativas na referência</td>
+<td>quantidade</td>
+<td>proposed</td>
+<td>GEM-009 + active contract</td>
+</tr>
+<tr>
+<td>GUV-KPI-ECO-003</td>
+<td>Novas assinaturas</td>
+<td>novas relações pagas válidas no período</td>
+<td>quantidade</td>
+<td>proposed</td>
+<td>GEM-009</td>
+</tr>
+<tr>
+<td>GUV-KPI-ECO-004</td>
+<td>Cancelamentos</td>
+<td>cancelamentos válidos no período</td>
+<td>quantidade</td>
+<td>proposed</td>
+<td>GEM-009 + cancellation contract</td>
+</tr>
+<tr>
+<td>GUV-KPI-ECO-005</td>
+<td>Receita</td>
+<td>receita reconhecida segundo contrato econômico aplicável</td>
+<td>moeda</td>
+<td>proposed</td>
+<td>GEM-009 + recognition rules</td>
+</tr>
+<tr>
+<td>GUV-KPI-ECO-006</td>
+<td>MRR</td>
+<td>receita mensal recorrente conforme contrato econômico</td>
+<td>moeda/mês</td>
+<td>proposed</td>
+<td>GEM-009</td>
+</tr>
+<tr>
+<td>GUV-KPI-ECO-007</td>
+<td>ARR</td>
+<td>anualização autorizada de receita recorrente</td>
+<td>moeda/ano</td>
+<td>proposed</td>
+<td>GEM-009</td>
+</tr>
+<tr>
+<td>GUV-KPI-ECO-008</td>
+<td>Receita média por relação</td>
+<td>receita aplicável / relações pagas elegíveis</td>
+<td>moeda</td>
+<td>proposed</td>
+<td>GEM-009 + denominator</td>
+</tr>
+<tr>
+<td>GUV-KPI-ECO-009</td>
+<td>Valor transacionado de oportunidades</td>
+<td>soma de transações elegíveis associadas a oportunidades</td>
+<td>moeda</td>
+<td>proposed</td>
+<td>GEM-009 + attribution</td>
+</tr>
+<tr>
+<td>GUV-KPI-ECO-010</td>
+<td>Taxa de reembolso</td>
+<td>reembolsos / base elegível definida</td>
+<td>%</td>
+<td>proposed</td>
+<td>GEM-009 + denominator</td>
+</tr>
+<tr>
+<td>GUV-KPI-ECO-011</td>
+<td>Mix de planos</td>
+<td>distribuição de relações ativas por plano</td>
+<td>%</td>
+<td>proposed</td>
+<td>GEM-009 + plan taxonomy</td>
+</tr>
+<tr>
+<td>GUV-KPI-ECO-012</td>
+<td>Receita por produto</td>
+<td>receita atribuível por Produto Especializado</td>
+<td>moeda/distribuição</td>
+<td>proposed</td>
+<td>GEM-009 + attribution</td>
+</tr>
+</tbody>
+</table>
+<p>Nenhuma equivalência Pontos ↔ moeda deve ser inferida neste dashboard.</p>
+<hr />
+<h2 id="intelligence-architecture-dashboard-guivos-master-specification-13-familia-geo-territorio-e-demografia">13. Família GEO — Território e demografia<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-master-specification-13-familia-geo-territorio-e-demografia" title="Permanent link">&para;</a></h2>
+<p>Todas as leituras devem respeitar minimização, thresholds e finalidade.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Indicador</th>
+<th>Definição lógica candidata</th>
+<th>Unidade</th>
+<th>Status</th>
+<th>Dependência / gate principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GUV-KPI-GEO-001</td>
+<td>Pessoas por território</td>
+<td>Pessoas agregadas por geografia autorizada</td>
+<td>distribuição</td>
+<td>proposed</td>
+<td>disclosure + geography contract</td>
+</tr>
+<tr>
+<td>GUV-KPI-GEO-002</td>
+<td>Organizações por território</td>
+<td>Organizações agregadas por geografia</td>
+<td>distribuição</td>
+<td>proposed</td>
+<td>geography contract</td>
+</tr>
+<tr>
+<td>GUV-KPI-GEO-003</td>
+<td>Coletivos por território</td>
+<td>Coletivos agregados por geografia</td>
+<td>distribuição</td>
+<td>proposed</td>
+<td>geography contract</td>
+</tr>
+<tr>
+<td>GUV-KPI-GEO-004</td>
+<td>Oportunidades por território</td>
+<td>oportunidades por geografia</td>
+<td>distribuição</td>
+<td>proposed</td>
+<td>opportunity + geography contract</td>
+</tr>
+<tr>
+<td>GUV-KPI-GEO-005</td>
+<td>Distribuição demográfica autorizada</td>
+<td>população agregada por dimensão legítima</td>
+<td>distribuição</td>
+<td>proposed</td>
+<td>privacy/data/disclosure contract</td>
+</tr>
+<tr>
+<td>GUV-KPI-GEO-006</td>
+<td>Completude geográfica</td>
+<td>registros elegíveis com geografia utilizável / registros elegíveis</td>
+<td>%</td>
+<td>proposed</td>
+<td>source + usability rule</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre><span></span><code>MAPA
+≠ AUTORIZAÇÃO DE PRECISÃO MÁXIMA
+
+DADO GEOGRÁFICO DISPONÍVEL
+≠ DADO GEOGRÁFICO EXIBÍVEL
+</code></pre></div>
+<hr />
+<h2 id="intelligence-architecture-dashboard-guivos-master-specification-14-familia-ads-resumo-ads-opportunity-boost">14. Família ADS — Resumo Ads / Opportunity Boost<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-master-specification-14-familia-ads-resumo-ads-opportunity-boost" title="Permanent link">&para;</a></h2>
+<p>Esta é uma <strong>área analítica principal de resumo interno</strong>, mas o detalhamento deverá pertencer ao futuro master específico de Ads / Opportunity Boost.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Indicador</th>
+<th>Definição candidata</th>
+<th>Status</th>
+<th>Dependência / gate principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GUV-KPI-ADS-001</td>
+<td>Campanhas ativas</td>
+<td>campanhas em estado ativo válido</td>
+<td>proposed</td>
+<td>Ads master + campaign state</td>
+</tr>
+<tr>
+<td>GUV-KPI-ADS-002</td>
+<td>Investimento</td>
+<td>valor elegível de spend no período</td>
+<td>proposed</td>
+<td>Ads master + GEM-009/economic contract</td>
+</tr>
+<tr>
+<td>GUV-KPI-ADS-003</td>
+<td>Impressões</td>
+<td>eventos válidos de impressão</td>
+<td>proposed</td>
+<td>Ads master + event contract</td>
+</tr>
+<tr>
+<td>GUV-KPI-ADS-004</td>
+<td>Cliques</td>
+<td>eventos válidos de clique</td>
+<td>proposed</td>
+<td>Ads master + event contract</td>
+</tr>
+<tr>
+<td>GUV-KPI-ADS-005</td>
+<td>Conversões</td>
+<td>eventos de conversão atribuídos conforme contrato</td>
+<td>proposed</td>
+<td>attribution contract</td>
+</tr>
+<tr>
+<td>GUV-KPI-ADS-006</td>
+<td>CTR</td>
+<td>cliques elegíveis / impressões elegíveis</td>
+<td>proposed</td>
+<td>Ads master + denominator rules</td>
+</tr>
+<tr>
+<td>GUV-KPI-ADS-007</td>
+<td>CPA</td>
+<td>spend elegível / aquisições/conversões elegíveis</td>
+<td>proposed</td>
+<td>Ads + attribution + economic contract</td>
+</tr>
+<tr>
+<td>GUV-KPI-ADS-008</td>
+<td>ROAS</td>
+<td>retorno atribuível / spend elegível</td>
+<td>proposed</td>
+<td>attribution + economic contract</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre><span></span><code>BOOSTED PERFORMANCE
+≠ IMPACTO CAUSAL COMPROVADO
+
+CORRELAÇÃO
+≠ CAUSALIDADE
+</code></pre></div>
+<hr />
+<h2 id="intelligence-architecture-dashboard-guivos-master-specification-15-familia-dq-qualidade-freshness-e-governanca">15. Família DQ — Qualidade, freshness e governança<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-master-specification-15-familia-dq-qualidade-freshness-e-governanca" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Indicador</th>
+<th>Definição lógica candidata</th>
+<th>Unidade</th>
+<th>Status</th>
+<th>Dependência / gate principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GUV-KPI-DQ-001</td>
+<td>Freshness compliance</td>
+<td>datasets/contratos dentro do SLA / datasets monitorados</td>
+<td>%</td>
+<td>proposed</td>
+<td>SLA/source contract</td>
+</tr>
+<tr>
+<td>GUV-KPI-DQ-002</td>
+<td>Completude de campos críticos</td>
+<td>campos críticos preenchidos / esperados</td>
+<td>%</td>
+<td>proposed</td>
+<td>data contract</td>
+</tr>
+<tr>
+<td>GUV-KPI-DQ-003</td>
+<td>Taxa de duplicidade</td>
+<td>duplicados confirmados / registros avaliados</td>
+<td>%</td>
+<td>proposed</td>
+<td>data quality contract</td>
+</tr>
+<tr>
+<td>GUV-KPI-DQ-004</td>
+<td>Indicadores indisponíveis</td>
+<td>KPIs esperados sem dado utilizável na janela</td>
+<td>quantidade</td>
+<td>proposed</td>
+<td>expected registry + availability rules</td>
+</tr>
+<tr>
+<td>GUV-KPI-DQ-005</td>
+<td>Supressões de disclosure</td>
+<td>células/segmentos ocultados por proteção</td>
+<td>quantidade</td>
+<td>proposed</td>
+<td>disclosure policy/engine</td>
+</tr>
+<tr>
+<td>GUV-KPI-DQ-006</td>
+<td>KPIs com fonte vencida</td>
+<td>KPIs cujo freshness ultrapassou limite</td>
+<td>quantidade</td>
+<td>proposed</td>
+<td>freshness contract</td>
+</tr>
+</tbody>
+</table>
+<p>Esses indicadores qualificam confiança na leitura; não devem criar aparência de precisão onde o dado é insuficiente.</p>
+<hr />
+<h2 id="intelligence-architecture-dashboard-guivos-master-specification-16-filtros-globais">16. Filtros globais<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-master-specification-16-filtros-globais" title="Permanent link">&para;</a></h2>
+<p>Filtros candidatos:</p>
+<ul>
+<li>período;</li>
+<li>comparação de período;</li>
+<li>tipo de participante;</li>
+<li>Produto Especializado / camada;</li>
+<li>Domínio de Evolução;</li>
+<li>país / região / estado / cidade quando autorizado;</li>
+<li>tipo/categoria de oportunidade;</li>
+<li>plano, quando economicamente definido;</li>
+<li>source / medium / campaign quando houver attribution contract;</li>
+<li>estado de atividade;</li>
+<li>Organização / Coletivo somente quando a autoridade permitir o recorte.</li>
+</ul>
+<div class="highlight"><pre><span></span><code>FILTRO DISPONÍVEL NA UI
+→ DEVE SER SUBCONJUNTO DO ACCESS SCOPE
+</code></pre></div>
+<p>O cliente não pode ampliar escopo enviando filtros arbitrários ao serving/backend.</p>
+<hr />
+<h2 id="intelligence-architecture-dashboard-guivos-master-specification-17-drill-down">17. Drill-down<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-master-specification-17-drill-down" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>N0 — ECOSSISTEMA
+→ N1 — FAMÍLIA / DOMÍNIO
+→ N2 — SEGMENTO / TERRITÓRIO / PRODUTO
+→ N3 — OBJETO OPERACIONAL AUTORIZADO
+</code></pre></div>
+<p>Pessoa individual não é nível padrão de drill-down.</p>
+<p>Qualquer drill-down individual futuro exige autoridade separada e finalidade específica.</p>
+<hr />
+<h2 id="intelligence-architecture-dashboard-guivos-master-specification-18-contrato-de-visualizacao-semantica">18. Contrato de visualização semântica<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-master-specification-18-contrato-de-visualizacao-semantica" title="Permanent link">&para;</a></h2>
+<p>Este documento não define UI visual final, mas orienta a escolha semântica futura:</p>
+<table>
+<thead>
+<tr>
+<th>Necessidade</th>
+<th>Visualização semântica candidata</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>valor atual</td>
+<td>KPI card + contexto temporal</td>
+</tr>
+<tr>
+<td>tendência</td>
+<td>série temporal</td>
+</tr>
+<tr>
+<td>composição</td>
+<td>barras / stacked / distribuição</td>
+</tr>
+<tr>
+<td>funil</td>
+<td>funnel ou etapas sequenciais com taxas</td>
+</tr>
+<tr>
+<td>coorte</td>
+<td>matriz/cohort chart</td>
+</tr>
+<tr>
+<td>território</td>
+<td>mapa somente com granularidade autorizada</td>
+</tr>
+<tr>
+<td>ranking operacional</td>
+<td>tabela ordenada quando não implicar ranking humano</td>
+</tr>
+<tr>
+<td>relações</td>
+<td>visualização Graph somente quando necessária e protegida</td>
+</tr>
+<tr>
+<td>qualidade</td>
+<td>status table / health indicators</td>
+</tr>
+</tbody>
+</table>
+<p>Regras:</p>
+<ul>
+<li>não usar gráfico apenas porque há dado;</li>
+<li>todo valor temporal deve mostrar janela;</li>
+<li><code>%</code> deve indicar denominador;</li>
+<li>nulo, zero, dado insuficiente e indisponível são estados distintos;</li>
+<li>inferências e predições devem ser qualificadas;</li>
+<li>comparações devem explicitar baseline.</li>
+</ul>
+<hr />
+<h2 id="intelligence-architecture-dashboard-guivos-master-specification-19-estados-obrigatorios">19. Estados obrigatórios<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-master-specification-19-estados-obrigatorios" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>LOADING
+NO_DATA
+INSUFFICIENT_DATA
+SUPPRESSED_BY_POLICY
+SOURCE_DELAYED
+ERROR
+AVAILABLE
+</code></pre></div>
+<p><code>0</code> não pode substituir <code>NO_DATA</code>.</p>
+<p><code>SUPPRESSED_BY_POLICY</code> não deve ser apresentado como erro técnico.</p>
+<hr />
+<h2 id="intelligence-architecture-dashboard-guivos-master-specification-20-data-contracts-logicos-esperados">20. Data contracts lógicos esperados<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-master-specification-20-data-contracts-logicos-esperados" title="Permanent link">&para;</a></h2>
+<p>Sem definir schema físico, o Dashboard Guivos deverá poder consumir contratos lógicos equivalentes a:</p>
+<ul>
+<li>Participant Aggregate;</li>
+<li>Participant Activity Aggregate;</li>
+<li>Journey Aggregate;</li>
+<li>Opportunity Aggregate;</li>
+<li>Opportunity Funnel Aggregate;</li>
+<li>Relationship Aggregate;</li>
+<li>Product Usage Aggregate;</li>
+<li>Economic Aggregate;</li>
+<li>Geography/Demography Aggregate;</li>
+<li>Ads Summary Aggregate;</li>
+<li>Data Quality / Freshness Status;</li>
+<li>Graph Analytics Output, quando autorizado;</li>
+<li>Intelligence Output, quando autorizado.</li>
+</ul>
+<p>Cada payload deverá carregar, quando aplicável:</p>
+<ul>
+<li><code>metric_id</code>;</li>
+<li><code>as_of</code>;</li>
+<li><code>period_start</code> / <code>period_end</code>;</li>
+<li><code>value</code>;</li>
+<li><code>unit</code>;</li>
+<li><code>dimensions</code>;</li>
+<li><code>population_scope</code>;</li>
+<li><code>source_version</code>;</li>
+<li><code>freshness</code>;</li>
+<li><code>evidence_nature</code>;</li>
+<li><code>access_class</code>;</li>
+<li><code>suppression_state</code>;</li>
+<li><code>confidence</code> quando material;</li>
+<li><code>provenance_ref</code>.</li>
+</ul>
+<hr />
+<h2 id="intelligence-architecture-dashboard-guivos-master-specification-21-orientacao-especifica-para-a-ai-do-replit">21. Orientação específica para a AI do Replit<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-master-specification-21-orientacao-especifica-para-a-ai-do-replit" title="Permanent link">&para;</a></h2>
+<p>Quando a construção for autorizada, a AI do Replit deverá:</p>
+<ol>
+<li><strong>não inventar métricas, fórmulas, tabelas, bancos ou permissões</strong>;</li>
+<li>usar <code>metric_id</code> como chave estável e não o label visual;</li>
+<li>manter cálculos fora do componente visual quando pertencerem ao serving/analytics layer;</li>
+<li>tratar filtros como restrição adicional, nunca como ampliação de acesso;</li>
+<li>não confiar em <code>participant_id</code>, tenant ou role enviados somente pelo cliente;</li>
+<li>não conectar diretamente o browser aos bancos de origem;</li>
+<li>não armazenar credenciais/secrets no frontend;</li>
+<li>separar mock adapters de real adapters;</li>
+<li>exibir versão/freshness/proveniência quando exigido;</li>
+<li>implementar <code>NO_DATA</code>, <code>INSUFFICIENT_DATA</code>, <code>SUPPRESSED_BY_POLICY</code> e <code>SOURCE_DELAYED</code> separadamente;</li>
+<li>impedir exportação quando o contrato não permitir;</li>
+<li>não habilitar drill-down para Pessoa por conveniência;</li>
+<li>preservar timezone e janela temporal;</li>
+<li>não inferir causalidade em labels, tooltips ou summaries;</li>
+<li>não traduzir <code>inferido</code> para <code>fato</code>;</li>
+<li>registrar a versão deste master usada na build;</li>
+<li>manter componentes bloqueados/TBD claramente identificados em ambiente mock;</li>
+<li>não promover mock data como dado real;</li>
+<li>aceitar como build-ready apenas KPIs com status <code>defined</code> ou <code>approved-equivalent</code> <strong>e</strong> todos os contratos/gates aplicáveis satisfeitos.</li>
+</ol>
+<hr />
+<h2 id="intelligence-architecture-dashboard-guivos-master-specification-22-estrutura-funcional-sugerida-para-futura-construcao">22. Estrutura funcional sugerida para futura construção<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-master-specification-22-estrutura-funcional-sugerida-para-futura-construcao" title="Permanent link">&para;</a></h2>
+<p>Sem definir layout visual:</p>
+<div class="highlight"><pre><span></span><code>DASHBOARD GUIVOS
+
+1. CONTEXTO
+→ período
+→ freshness
+→ access scope
+
+2. EXECUTIVE OVERVIEW
+
+3. POPULATION &amp; PARTICIPANTS
+
+4. GROWTH &amp; ENGAGEMENT
+
+5. JOURNEY &amp; EXPERIENCES
+
+6. OPPORTUNITIES &amp; SUPPLY
+
+7. RELATIONSHIPS &amp; ECOSYSTEM
+
+8. PRODUCTS
+
+9. ECONOMY
+
+10. TERRITORY / DEMOGRAPHY
+
+11. ADS SUMMARY
+
+12. DATA QUALITY / GOVERNANCE
+</code></pre></div>
+<p><code>CONTEXTO</code> é moldura operacional da leitura; as <strong>onze áreas analíticas</strong> são os itens 2–12.</p>
+<p>A ordem pode ser refinada por Design futuro sem alterar o significado dos contratos.</p>
+<hr />
+<h2 id="intelligence-architecture-dashboard-guivos-master-specification-23-criterios-de-aceite-documental-para-futuro-handoff">23. Critérios de aceite documental para futuro handoff<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-master-specification-23-criterios-de-aceite-documental-para-futuro-handoff" title="Permanent link">&para;</a></h2>
+<p>Antes de declarar qualquer release <code>READY FOR BUILD</code>:</p>
+<div class="highlight"><pre><span></span><code>[ ] cada KPI selecionado = defined OU approved-equivalent
+[ ] todas as dependências/gates do KPI estão satisfeitas
+[ ] população e período estão definidos
+[ ] access scope está definido
+[ ] source/data contract está definido
+[ ] regras de supressão estão definidas quando aplicáveis
+[ ] filtros permitidos estão definidos
+[ ] drill-down permitido está definido
+[ ] exportação está definida
+[ ] null/zero/no-data estão definidos
+[ ] freshness está definida
+[ ] critérios de qualidade estão definidos
+[ ] KPIs econômicos compõem com GEM-009
+[ ] Ads metrics compõem com autoridade Ads aplicável
+[ ] Graph Analytics possui finalidade e proteção próprias
+[ ] mock vs real está explicitamente classificado
+[ ] Design/build authorization foi emitida pelo gate aplicável
+</code></pre></div>
+<p><code>proposed</code> e <code>source_pending</code> <strong>não são estados suficientes para build canônico</strong>.</p>
+<hr />
+<h2 id="intelligence-architecture-dashboard-guivos-master-specification-24-testes-minimos-para-futura-implementacao">24. Testes mínimos para futura implementação<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-master-specification-24-testes-minimos-para-futura-implementacao" title="Permanent link">&para;</a></h2>
+<p>A implementação, quando autorizada, deverá provar pelo menos:</p>
+<ol>
+<li>nenhum usuário recebe dado fora do access scope;</li>
+<li>alterar parâmetros de cliente não amplia acesso;</li>
+<li>totais reconciliam com o contrato do KPI;</li>
+<li>filtros preservam população e denominadores corretos;</li>
+<li>timezone e fechamento temporal são consistentes;</li>
+<li>zero, nulo e ausência de dados não são confundidos;</li>
+<li>small-cell suppression funciona quando aplicável;</li>
+<li>dados vencidos são sinalizados;</li>
+<li>exportação respeita a política;</li>
+<li>drill-down respeita autoridade;</li>
+<li>proveniência é rastreável;</li>
+<li>Graph/Intelligence outputs preservam natureza e explicabilidade;</li>
+<li>mock data não aparece como produção;</li>
+<li>métricas econômicas usam contratos econômicos vigentes;</li>
+<li>nenhum texto automático afirma causalidade sem evidência adequada.</li>
+</ol>
+<hr />
+<h2 id="intelligence-architecture-dashboard-guivos-master-specification-25-itens-explicitamente-bloqueados-nesta-versao">25. Itens explicitamente bloqueados nesta versão<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-master-specification-25-itens-explicitamente-bloqueados-nesta-versao" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>BACKEND FÍSICO
+→ NOT DEFINED HERE
+
+DATABASE SELECTION FOR DASHBOARD
+→ NOT DEFINED HERE
+
+API ENDPOINTS
+→ NOT DEFINED HERE
+
+TECHNICAL RBAC
+→ NOT IMPLEMENTED
+
+REAL DATA
+→ NOT AUTHORIZED
+
+PERSON-LEVEL INTERNAL EXPLORER
+→ NOT AUTHORIZED BY THIS MASTER
+
+CHOICES / DECLARATIONS ANALYTICS
+→ CANDIDATE NEED PRESERVED
+→ KPI / FORMULA / SOURCE / DISCLOSURE / DATA CONTRACT NOT ADJUDICATED
+→ NOT BUILD-READY
+
+FINAL VISUAL DESIGN
+→ NOT AUTHORIZED BY THIS MASTER
+
+REPLIT IMPLEMENTATION
+→ NOT AUTHORIZED BY THIS MASTER
+</code></pre></div>
+<hr />
+<h2 id="intelligence-architecture-dashboard-guivos-master-specification-26-handoff-futuro">26. Handoff futuro<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-master-specification-26-handoff-futuro" title="Permanent link">&para;</a></h2>
+<p>Quando autorizado, o pacote de construção deverá incluir:</p>
+<ol>
+<li><code>GKR-INTELLIGENCE-DASHBOARD-KPI-001</code> vigente;</li>
+<li>este documento vigente;</li>
+<li>registry dos KPI IDs selecionados;</li>
+<li>contratos individuais correspondentes;</li>
+<li>data/serving contracts;</li>
+<li>access/disclosure matrix;</li>
+<li>mock dataset aprovado ou integração real explicitamente autorizada;</li>
+<li>Design System/especificação visual autorizada;</li>
+<li>acceptance tests;</li>
+<li>versão do pacote.</li>
+</ol>
+<hr />
+<h2 id="intelligence-architecture-dashboard-guivos-master-specification-27-estado-final">27. Estado final<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-master-specification-27-estado-final" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>GKR-INTELLIGENCE-DASHBOARD-GUIVOS-001
+→ v0.1.4
+→ ACTIVE
+→ ANNEX A OF GKR-INTELLIGENCE-DASHBOARD-KPI-001
+→ GOVERNED PRE-IMPLEMENTATION DASHBOARD MASTER
+
+DASHBOARD GUIVOS
+→ SCOPE + KPI FAMILIES + ACCESS + INTEGRATION + REPLIT HANDOFF SPECIFIED DOCUMENTARILY
+
+ANALYTICAL AREAS
+→ 11
+
+KPI STATUS VOCABULARY
+→ ALIGNED WITH GLOBAL MASTER
+
+STATUS RECONCILIATION
+→ GKR-INTELLIGENCE-DASHBOARD-GUIVOS-KPI-STATUS-RECONCILIATION-001 ABSORBED
+→ POP-001 / POP-002 / POP-007 / POP-009 / POP-011 / OPP-001 = proposed / NOT_READY
+
+CHOICES / DECLARATIONS OF PERSONS
+→ CANDIDATE NEED PRESERVED
+→ BLOCKED / NOT BUILD-READY
+
+JNY-010 DOMAIN DISTRIBUTION
+→ PROPOSED
+→ MUST PRESERVE JED-* + DISCOVERY / UNMAPPED / NULL STATES UNTIL FORMAL ADJUDICATION
+
+TRANSACTION-BASED FUNNEL KPIs
+→ REQUIRE APPLICABLE ECONOMIC CONTRACT WHEN TRANSACTION ELIGIBILITY IS MATERIAL
+
+KPI IMPLEMENTATION READINESS
+→ NONE CLAIMED BY INFERENCE
+→ PROPOSED / SOURCE_PENDING ITEMS REMAIN NOT BUILD-READY
+
+REAL DATA / BACKEND / TECHNICAL RBAC / PRODUCTION
+→ NOT AUTHORIZED
+
+REPLIT BUILD
+→ NOT AUTHORIZED
+
+NEXT SPECIALIZED MASTER
+→ REQUIRES SEPARATE GOVERNED ACT
+</code></pre></div>
+<hr />
+<h2 id="intelligence-architecture-dashboard-guivos-master-specification-28-auditoria-executiva-e-estrategica-transversal-v015">28. Auditoria executiva e estratégica transversal — v0.1.5<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-master-specification-28-auditoria-executiva-e-estrategica-transversal-v015" title="Permanent link">&para;</a></h2>
+<h3 id="intelligence-architecture-dashboard-guivos-master-specification-281-natureza-e-limites">28.1 Natureza e limites<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-master-specification-281-natureza-e-limites" title="Permanent link">&para;</a></h3>
+<p>Esta seção refina necessidades decisórias do <strong>Dashboard Guivos interno</strong>, sem promover status, alterar os IDs <code>GUV-KPI-*</code> ou criar nova autoridade de disclosure. Preserva as 11 áreas e as 10 famílias de KPI já documentadas. As referências <code>GUV-EX-C*</code> são <strong>candidatos não canônicos</strong> para análise posterior; podem resultar em composição, filtro ou comparação, e não necessariamente em KPI novo. Permanecem aplicáveis a reconciliação de status absorvida em v0.1.4, os gates do master transversal, <code>GEM-009</code> e os limites de privacidade.</p>
+<h3 id="intelligence-architecture-dashboard-guivos-master-specification-282-perguntas-prioritarias-de-governanca">28.2 Perguntas prioritárias de governança<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-master-specification-282-perguntas-prioritarias-de-governanca" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Eixo</th>
+<th>Pergunta executiva candidata</th>
+<th>Família</th>
+<th>Cuidados</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Escala</td>
+<td>Como evolui a base válida de Pessoas, Organizações e Coletivos, por coorte e estágio?</td>
+<td>POP / ENG</td>
+<td>elegibilidade, duplicidade, datas e qualidade</td>
+</tr>
+<tr>
+<td>Ativação</td>
+<td>Onde ocorrem interrupções entre descoberta, ativação e continuidade?</td>
+<td>ENG / JNY</td>
+<td>eventos e denominadores específicos; não presumir funil universal</td>
+</tr>
+<tr>
+<td>Journey</td>
+<td>Quais domínios de evolução recebem ofertas e experiências e onde existem lacunas?</td>
+<td>JNY / OPP</td>
+<td>demanda declarada não é evolução comprovada; proteger intenções privadas</td>
+</tr>
+<tr>
+<td>Oferta e demanda</td>
+<td>Onde há oportunidades elegíveis insuficientes, por domínio e território?</td>
+<td>OPP / GEO</td>
+<td>taxonomias e matching autorizados; sem inferir necessidade individual</td>
+</tr>
+<tr>
+<td>Ecossistema</td>
+<td>Como relações bilaterais e colaborações sustentam ofertas e experiências?</td>
+<td>REL / OPP</td>
+<td>Graph Analytics não mede legitimidade ou causalidade</td>
+</tr>
+<tr>
+<td>Portfólio</td>
+<td>Qual é a adoção, continuidade e contribuição observável de cada produto?</td>
+<td>PRD / ENG</td>
+<td>definições específicas por produto; evitar somas duplicadas</td>
+</tr>
+<tr>
+<td>Economia</td>
+<td>Quais receitas, custos, margens e compromissos são verificáveis por produto e coorte?</td>
+<td>ECO</td>
+<td><code>GEM-009</code>, reconhecimento, unidade econômica e acesso</td>
+</tr>
+<tr>
+<td>Território</td>
+<td>Quais regiões apresentam presença, cobertura e lacunas observáveis?</td>
+<td>GEO / OPP</td>
+<td>agregação, supressão e representatividade</td>
+</tr>
+<tr>
+<td>Ads</td>
+<td>Quais resultados agregados autorizados demonstram desempenho da oferta de mídia?</td>
+<td>ADS</td>
+<td>contrato Ads próprio; não expor dados individuais ou atribuição não comprovada</td>
+</tr>
+<tr>
+<td>Confiança</td>
+<td>Quais indicadores são confiáveis, atrasados, incompletos ou suprimidos?</td>
+<td>DQ</td>
+<td>freshness, provenance, qualidade e governança</td>
+</tr>
+</tbody>
+</table>
+<h3 id="intelligence-architecture-dashboard-guivos-master-specification-283-candidatos-nao-canonicos-para-reconciliacao">28.3 Candidatos não canônicos para reconciliação<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-master-specification-283-candidatos-nao-canonicos-para-reconciliacao" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Referência</th>
+<th>Refinamento candidato</th>
+<th>Gate material</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GUV-EX-C01</td>
+<td>Crescimento líquido por tipo de participante e coorte</td>
+<td>identidade válida, estados, exclusões e calendário</td>
+</tr>
+<tr>
+<td>GUV-EX-C02</td>
+<td>Retenção e reativação por coortes elegíveis</td>
+<td>activity event set, janelas e elegibilidade</td>
+</tr>
+<tr>
+<td>GUV-EX-C03</td>
+<td>Continuidade da descoberta de possibilidades</td>
+<td>eventos autorizados, estados e limites da Journey</td>
+</tr>
+<tr>
+<td>GUV-EX-C04</td>
+<td>Distribuição de oferta por domínio de evolução</td>
+<td>taxonomia <code>JED-*</code>, estados discovery/unmapped/null</td>
+</tr>
+<tr>
+<td>GUV-EX-C05</td>
+<td>Lacunas agregadas entre interesses declarados e oportunidades</td>
+<td>consentimento/finalidade, supressão, ausência de inferência individual</td>
+</tr>
+<tr>
+<td>GUV-EX-C06</td>
+<td>Conversão de oportunidade por etapas válidas</td>
+<td>elegibilidade, denominadores, cancelamentos e contratos econômicos quando aplicáveis</td>
+</tr>
+<tr>
+<td>GUV-EX-C07</td>
+<td>Relações institucionais com entregas evidenciadas</td>
+<td>bilateralidade, lifecycle, atribuição e evidência</td>
+</tr>
+<tr>
+<td>GUV-EX-C08</td>
+<td>Cobertura territorial de oportunidades elegíveis</td>
+<td>territórios, populações comparáveis e limiares de proteção</td>
+</tr>
+<tr>
+<td>GUV-EX-C09</td>
+<td>Adoção e continuidade por produto</td>
+<td>eventos e identidades de produto, cross-product dedup</td>
+</tr>
+<tr>
+<td>GUV-EX-C10</td>
+<td>Economia unitária por produto ou oferta</td>
+<td><code>GEM-009</code>, receita/custo e reconciliação financeira</td>
+</tr>
+<tr>
+<td>GUV-EX-C11</td>
+<td>Desempenho agregado autorizado de Ads</td>
+<td>autoridade Ads, atribuição e granularidade permitida</td>
+</tr>
+<tr>
+<td>GUV-EX-C12</td>
+<td>Qualidade e prontidão dos contratos analíticos</td>
+<td>registry, lineage, freshness e estados de readiness</td>
+</tr>
+<tr>
+<td>GUV-EX-C13</td>
+<td>Conectividade do ecossistema com relações autorizadas</td>
+<td>sem ranking universal de influência, impacto ou reputação</td>
+</tr>
+<tr>
+<td>GUV-EX-C14</td>
+<td>Cobertura de experiências com evidências de resultado</td>
+<td>distinguir entrega, evidência, resultado e causalidade</td>
+</tr>
+</tbody>
+</table>
+<p>Nenhum candidato é automaticamente um novo <code>GUV-KPI-*</code>; primeiro deve ser reconciliado com o catálogo, com <code>dashboard-guivos-kpi-registry.md</code> e com as autoridades especializadas. Em particular, <code>GUV-EX-C05</code> <strong>não</strong> libera analytics de escolhas/declarações de Pessoas, que continuam bloqueadas conforme seção 25.</p>
+<h3 id="intelligence-architecture-dashboard-guivos-master-specification-284-leitura-de-gestao-e-investimento">28.4 Leitura de gestão e investimento<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-master-specification-284-leitura-de-gestao-e-investimento" title="Permanent link">&para;</a></h3>
+<p>As dimensões podem apoiar hipóteses de alocação de investimento, expansão territorial, priorização de oferta e saúde do portfólio, <strong>desde que</strong> apresentem fonte, período, comparabilidade, incerteza e limitações. Não se presume existência de dados reais nem se convertem correlações em resultados causais. O dashboard não produz decisões automáticas sobre Pessoas, Coletivos ou Organizações.</p>
+<h3 id="intelligence-architecture-dashboard-guivos-master-specification-285-gates-pendentes">28.5 Gates pendentes<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-master-specification-285-gates-pendentes" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Gate</th>
+<th>Contrato necessário</th>
+<th>Estado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>G-GUV-01</td>
+<td>universo, identidades, coortes e eventos de participante</td>
+<td>UNRESOLVED</td>
+</tr>
+<tr>
+<td>G-GUV-02</td>
+<td>taxonomia Journey, oportunidades e interesses declarados</td>
+<td>BLOCKED / PARTIAL</td>
+</tr>
+<tr>
+<td>G-GUV-03</td>
+<td>produtos, relações bilaterais e grafo autorizado</td>
+<td>UNRESOLVED</td>
+</tr>
+<tr>
+<td>G-GUV-04</td>
+<td>composição econômica <code>GEM-009</code> e Ads</td>
+<td>UNRESOLVED</td>
+</tr>
+<tr>
+<td>G-GUV-05</td>
+<td>fonte, qualidade, freshness, lineage e thresholds</td>
+<td>SOURCE_PENDING</td>
+</tr>
+<tr>
+<td>G-GUV-06</td>
+<td>classes de acesso, disclosure, drill-down e exportação</td>
+<td>UNRESOLVED</td>
+</tr>
+<tr>
+<td>G-GUV-07</td>
+<td>reconciliação de candidatos, status e contratos por KPI</td>
+<td>UNRESOLVED</td>
+</tr>
+<tr>
+<td>G-GUV-08</td>
+<td>autorização específica de design, dados reais e build</td>
+<td>NOT_AUTHORIZED</td>
+</tr>
+</tbody>
+</table>
+<h3 id="intelligence-architecture-dashboard-guivos-master-specification-286-estado-desta-atualizacao">28.6 Estado desta atualização<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-master-specification-286-estado-desta-atualizacao" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>GKR-INTELLIGENCE-DASHBOARD-GUIVOS-001
+→ v0.1.5 / ANNEX A / PRE-IMPLEMENTATION
+→ 11 ANALYTICAL AREAS / 10 KPI FAMILIES PRESERVED
+→ EXISTING GUV-KPI IDS AND STATUSES UNCHANGED
+→ STATUS RECONCILIATION v0.1.4 PRESERVED
+→ EXECUTIVE CANDIDATES NONCANONICAL
+→ PERSON CHOICES / DECLARATIONS ANALYTICS BLOCKED
+→ REAL DATA / TECHNICAL RBAC / REPLIT BUILD NOT AUTHORIZED
+</code></pre></div></section><section class="print-page" id="adr-adr-007-neo4j-primary-graph-reference" heading-number="16.9"><h1 id="adr-adr-007-neo4j-primary-graph-reference-adr-007-neo4j-como-tecnologia-primaria-de-referencia-para-grafo">ADR-007 — Neo4j como Tecnologia Primária de Referência para Grafo<a class="headerlink" href="#adr-adr-007-neo4j-primary-graph-reference-adr-007-neo4j-como-tecnologia-primaria-de-referencia-para-grafo" title="Permanent link">&para;</a></h1>
 <h2 id="adr-adr-007-neo4j-primary-graph-reference-contexto">Contexto<a class="headerlink" href="#adr-adr-007-neo4j-primary-graph-reference-contexto" title="Permanent link">&para;</a></h2>
 <p>A Guivos concebe dados, contexto, conhecimento e relações como ativos que precisam preservar significado, proveniência, autoridade e conexões entre Pessoas, Coletivos, Organizações, oportunidades, produtos, evidências e demais objetos governados.</p>
 <p>Nas discussões arquiteturais anteriores, Neo4j e Amazon Neptune foram comparados como alternativas para a camada de grafo. A decisão validada foi seguir com <strong>Neo4j</strong> como referência primária, sem transformar essa escolha em afirmação de implantação.</p>
@@ -73949,9 +75702,14 @@ REGISTRO TEMPORÁRIO DA AUDITORIA
                 .print-site-enumerate-headings #intelligence-architecture-dashboard-collective-master-specification h2:before { content: '16.7.' counter(counter-intelligence-architecture-dashboard-collective-master-specification-2) ' ' }
                 .print-site-enumerate-headings #intelligence-architecture-dashboard-collective-master-specification h2 {  counter-increment: counter-intelligence-architecture-dashboard-collective-master-specification-2 }
             
-.print-site-enumerate-headings #adr-adr-007-neo4j-primary-graph-reference > h1:before { content: '16.8 ' }
+.print-site-enumerate-headings #intelligence-architecture-dashboard-guivos-master-specification > h1:before { content: '16.8 ' }
 
-                .print-site-enumerate-headings #adr-adr-007-neo4j-primary-graph-reference h2:before { content: '16.8.' counter(counter-adr-adr-007-neo4j-primary-graph-reference-2) ' ' }
+                .print-site-enumerate-headings #intelligence-architecture-dashboard-guivos-master-specification h2:before { content: '16.8.' counter(counter-intelligence-architecture-dashboard-guivos-master-specification-2) ' ' }
+                .print-site-enumerate-headings #intelligence-architecture-dashboard-guivos-master-specification h2 {  counter-increment: counter-intelligence-architecture-dashboard-guivos-master-specification-2 }
+            
+.print-site-enumerate-headings #adr-adr-007-neo4j-primary-graph-reference > h1:before { content: '16.9 ' }
+
+                .print-site-enumerate-headings #adr-adr-007-neo4j-primary-graph-reference h2:before { content: '16.9.' counter(counter-adr-adr-007-neo4j-primary-graph-reference-2) ' ' }
                 .print-site-enumerate-headings #adr-adr-007-neo4j-primary-graph-reference h2 {  counter-increment: counter-adr-adr-007-neo4j-primary-graph-reference-2 }
             
 .print-site-enumerate-headings #section-17 > h1:before { content: '17 ' }

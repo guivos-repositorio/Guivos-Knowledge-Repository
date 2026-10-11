@@ -13,6 +13,10 @@
       
       
       
+        <link rel="prev" href="../dashboard-collective-master-specification/">
+      
+      
+        <link rel="next" href="../../adr/ADR-007-neo4j-primary-graph-reference/">
       
       
         
@@ -7069,8 +7073,10 @@
       
   
   
+    
   
   
+  
     
     
     
@@ -7081,11 +7087,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_16" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_16" checked>
         
           
           <label class="md-nav__link" for="__nav_16" id="__nav_16_label" tabindex="">
@@ -7106,7 +7112,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_16_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_16_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_16">
             <span class="md-nav__icon md-icon"></span>
             
@@ -7357,6 +7363,520 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dashboard Guivos — Documento Mestre
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dashboard Guivos — Documento Mestre
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-finalidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Finalidade
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-estado-e-boundary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Estado e boundary
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-publico-e-classes-de-acesso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Público e classes de acesso
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-arquitetura-funcional-do-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Arquitetura funcional do dashboard
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-convencoes-de-kpi-e-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Convenções de KPI e status
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Convenções de KPI e status">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-vocabulario-de-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 Vocabulário de status
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-absorcao-da-reconciliacao-de-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 Absorção da reconciliação de status
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-familia-pop-populacao-e-participantes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Família POP — População e participantes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Família POP — População e participantes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-necessidade-candidata-preservada-escolhas-declaracoes-das-pessoas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 Necessidade candidata preservada — escolhas / declarações das Pessoas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-familia-eng-aquisicao-ativacao-e-retencao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Família ENG — Aquisição, ativação e retenção
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-familia-jny-journey-e-experiencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Família JNY — Journey e experiência
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-familia-opp-oportunidades-e-supply" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Família OPP — Oportunidades e supply
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-familia-rel-relacoes-e-graph-analytics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Família REL — Relações e Graph Analytics
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-familia-prd-produtos-e-adocao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Família PRD — Produtos e adoção
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-familia-eco-economia-planos-e-transacoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. Família ECO — Economia, planos e transações
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-familia-geo-territorio-e-demografia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13. Família GEO — Território e demografia
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-familia-ads-resumo-ads-opportunity-boost" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14. Família ADS — Resumo Ads / Opportunity Boost
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-familia-dq-qualidade-freshness-e-governanca" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15. Família DQ — Qualidade, freshness e governança
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16-filtros-globais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16. Filtros globais
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17-drill-down" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17. Drill-down
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18-contrato-de-visualizacao-semantica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        18. Contrato de visualização semântica
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#19-estados-obrigatorios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        19. Estados obrigatórios
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20-data-contracts-logicos-esperados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20. Data contracts lógicos esperados
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#21-orientacao-especifica-para-a-ai-do-replit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        21. Orientação específica para a AI do Replit
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#22-estrutura-funcional-sugerida-para-futura-construcao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        22. Estrutura funcional sugerida para futura construção
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#23-criterios-de-aceite-documental-para-futuro-handoff" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        23. Critérios de aceite documental para futuro handoff
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#24-testes-minimos-para-futura-implementacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        24. Testes mínimos para futura implementação
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#25-itens-explicitamente-bloqueados-nesta-versao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        25. Itens explicitamente bloqueados nesta versão
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#26-handoff-futuro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        26. Handoff futuro
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#27-estado-final" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        27. Estado final
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#28-auditoria-executiva-e-estrategica-transversal-v015" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        28. Auditoria executiva e estratégica transversal — v0.1.5
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="28. Auditoria executiva e estratégica transversal — v0.1.5">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#281-natureza-e-limites" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        28.1 Natureza e limites
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#282-perguntas-prioritarias-de-governanca" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        28.2 Perguntas prioritárias de governança
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#283-candidatos-nao-canonicos-para-reconciliacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        28.3 Candidatos não canônicos para reconciliação
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#284-leitura-de-gestao-e-investimento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        28.4 Leitura de gestão e investimento
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#285-gates-pendentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        28.5 Gates pendentes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#286-estado-desta-atualizacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        28.6 Estado desta atualização
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -7988,6 +8508,89 @@
       
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#28-auditoria-executiva-e-estrategica-transversal-v015" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        28. Auditoria executiva e estratégica transversal — v0.1.5
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="28. Auditoria executiva e estratégica transversal — v0.1.5">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#281-natureza-e-limites" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        28.1 Natureza e limites
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#282-perguntas-prioritarias-de-governanca" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        28.2 Perguntas prioritárias de governança
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#283-candidatos-nao-canonicos-para-reconciliacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        28.3 Candidatos não canônicos para reconciliação
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#284-leitura-de-gestao-e-investimento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        28.4 Leitura de gestão e investimento
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#285-gates-pendentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        28.5 Gates pendentes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#286-estado-desta-atualizacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        28.6 Estado desta atualização
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -9501,6 +10104,230 @@ REPLIT BUILD
 
 NEXT SPECIALIZED MASTER
 → REQUIRES SEPARATE GOVERNED ACT
+</code></pre></div>
+<hr />
+<h2 id="28-auditoria-executiva-e-estrategica-transversal-v015">28. Auditoria executiva e estratégica transversal — v0.1.5<a class="headerlink" href="#28-auditoria-executiva-e-estrategica-transversal-v015" title="Permanent link">&para;</a></h2>
+<h3 id="281-natureza-e-limites">28.1 Natureza e limites<a class="headerlink" href="#281-natureza-e-limites" title="Permanent link">&para;</a></h3>
+<p>Esta seção refina necessidades decisórias do <strong>Dashboard Guivos interno</strong>, sem promover status, alterar os IDs <code>GUV-KPI-*</code> ou criar nova autoridade de disclosure. Preserva as 11 áreas e as 10 famílias de KPI já documentadas. As referências <code>GUV-EX-C*</code> são <strong>candidatos não canônicos</strong> para análise posterior; podem resultar em composição, filtro ou comparação, e não necessariamente em KPI novo. Permanecem aplicáveis a reconciliação de status absorvida em v0.1.4, os gates do master transversal, <code>GEM-009</code> e os limites de privacidade.</p>
+<h3 id="282-perguntas-prioritarias-de-governanca">28.2 Perguntas prioritárias de governança<a class="headerlink" href="#282-perguntas-prioritarias-de-governanca" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Eixo</th>
+<th>Pergunta executiva candidata</th>
+<th>Família</th>
+<th>Cuidados</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Escala</td>
+<td>Como evolui a base válida de Pessoas, Organizações e Coletivos, por coorte e estágio?</td>
+<td>POP / ENG</td>
+<td>elegibilidade, duplicidade, datas e qualidade</td>
+</tr>
+<tr>
+<td>Ativação</td>
+<td>Onde ocorrem interrupções entre descoberta, ativação e continuidade?</td>
+<td>ENG / JNY</td>
+<td>eventos e denominadores específicos; não presumir funil universal</td>
+</tr>
+<tr>
+<td>Journey</td>
+<td>Quais domínios de evolução recebem ofertas e experiências e onde existem lacunas?</td>
+<td>JNY / OPP</td>
+<td>demanda declarada não é evolução comprovada; proteger intenções privadas</td>
+</tr>
+<tr>
+<td>Oferta e demanda</td>
+<td>Onde há oportunidades elegíveis insuficientes, por domínio e território?</td>
+<td>OPP / GEO</td>
+<td>taxonomias e matching autorizados; sem inferir necessidade individual</td>
+</tr>
+<tr>
+<td>Ecossistema</td>
+<td>Como relações bilaterais e colaborações sustentam ofertas e experiências?</td>
+<td>REL / OPP</td>
+<td>Graph Analytics não mede legitimidade ou causalidade</td>
+</tr>
+<tr>
+<td>Portfólio</td>
+<td>Qual é a adoção, continuidade e contribuição observável de cada produto?</td>
+<td>PRD / ENG</td>
+<td>definições específicas por produto; evitar somas duplicadas</td>
+</tr>
+<tr>
+<td>Economia</td>
+<td>Quais receitas, custos, margens e compromissos são verificáveis por produto e coorte?</td>
+<td>ECO</td>
+<td><code>GEM-009</code>, reconhecimento, unidade econômica e acesso</td>
+</tr>
+<tr>
+<td>Território</td>
+<td>Quais regiões apresentam presença, cobertura e lacunas observáveis?</td>
+<td>GEO / OPP</td>
+<td>agregação, supressão e representatividade</td>
+</tr>
+<tr>
+<td>Ads</td>
+<td>Quais resultados agregados autorizados demonstram desempenho da oferta de mídia?</td>
+<td>ADS</td>
+<td>contrato Ads próprio; não expor dados individuais ou atribuição não comprovada</td>
+</tr>
+<tr>
+<td>Confiança</td>
+<td>Quais indicadores são confiáveis, atrasados, incompletos ou suprimidos?</td>
+<td>DQ</td>
+<td>freshness, provenance, qualidade e governança</td>
+</tr>
+</tbody>
+</table>
+<h3 id="283-candidatos-nao-canonicos-para-reconciliacao">28.3 Candidatos não canônicos para reconciliação<a class="headerlink" href="#283-candidatos-nao-canonicos-para-reconciliacao" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Referência</th>
+<th>Refinamento candidato</th>
+<th>Gate material</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GUV-EX-C01</td>
+<td>Crescimento líquido por tipo de participante e coorte</td>
+<td>identidade válida, estados, exclusões e calendário</td>
+</tr>
+<tr>
+<td>GUV-EX-C02</td>
+<td>Retenção e reativação por coortes elegíveis</td>
+<td>activity event set, janelas e elegibilidade</td>
+</tr>
+<tr>
+<td>GUV-EX-C03</td>
+<td>Continuidade da descoberta de possibilidades</td>
+<td>eventos autorizados, estados e limites da Journey</td>
+</tr>
+<tr>
+<td>GUV-EX-C04</td>
+<td>Distribuição de oferta por domínio de evolução</td>
+<td>taxonomia <code>JED-*</code>, estados discovery/unmapped/null</td>
+</tr>
+<tr>
+<td>GUV-EX-C05</td>
+<td>Lacunas agregadas entre interesses declarados e oportunidades</td>
+<td>consentimento/finalidade, supressão, ausência de inferência individual</td>
+</tr>
+<tr>
+<td>GUV-EX-C06</td>
+<td>Conversão de oportunidade por etapas válidas</td>
+<td>elegibilidade, denominadores, cancelamentos e contratos econômicos quando aplicáveis</td>
+</tr>
+<tr>
+<td>GUV-EX-C07</td>
+<td>Relações institucionais com entregas evidenciadas</td>
+<td>bilateralidade, lifecycle, atribuição e evidência</td>
+</tr>
+<tr>
+<td>GUV-EX-C08</td>
+<td>Cobertura territorial de oportunidades elegíveis</td>
+<td>territórios, populações comparáveis e limiares de proteção</td>
+</tr>
+<tr>
+<td>GUV-EX-C09</td>
+<td>Adoção e continuidade por produto</td>
+<td>eventos e identidades de produto, cross-product dedup</td>
+</tr>
+<tr>
+<td>GUV-EX-C10</td>
+<td>Economia unitária por produto ou oferta</td>
+<td><code>GEM-009</code>, receita/custo e reconciliação financeira</td>
+</tr>
+<tr>
+<td>GUV-EX-C11</td>
+<td>Desempenho agregado autorizado de Ads</td>
+<td>autoridade Ads, atribuição e granularidade permitida</td>
+</tr>
+<tr>
+<td>GUV-EX-C12</td>
+<td>Qualidade e prontidão dos contratos analíticos</td>
+<td>registry, lineage, freshness e estados de readiness</td>
+</tr>
+<tr>
+<td>GUV-EX-C13</td>
+<td>Conectividade do ecossistema com relações autorizadas</td>
+<td>sem ranking universal de influência, impacto ou reputação</td>
+</tr>
+<tr>
+<td>GUV-EX-C14</td>
+<td>Cobertura de experiências com evidências de resultado</td>
+<td>distinguir entrega, evidência, resultado e causalidade</td>
+</tr>
+</tbody>
+</table>
+<p>Nenhum candidato é automaticamente um novo <code>GUV-KPI-*</code>; primeiro deve ser reconciliado com o catálogo, com <code>dashboard-guivos-kpi-registry.md</code> e com as autoridades especializadas. Em particular, <code>GUV-EX-C05</code> <strong>não</strong> libera analytics de escolhas/declarações de Pessoas, que continuam bloqueadas conforme seção 25.</p>
+<h3 id="284-leitura-de-gestao-e-investimento">28.4 Leitura de gestão e investimento<a class="headerlink" href="#284-leitura-de-gestao-e-investimento" title="Permanent link">&para;</a></h3>
+<p>As dimensões podem apoiar hipóteses de alocação de investimento, expansão territorial, priorização de oferta e saúde do portfólio, <strong>desde que</strong> apresentem fonte, período, comparabilidade, incerteza e limitações. Não se presume existência de dados reais nem se convertem correlações em resultados causais. O dashboard não produz decisões automáticas sobre Pessoas, Coletivos ou Organizações.</p>
+<h3 id="285-gates-pendentes">28.5 Gates pendentes<a class="headerlink" href="#285-gates-pendentes" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Gate</th>
+<th>Contrato necessário</th>
+<th>Estado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>G-GUV-01</td>
+<td>universo, identidades, coortes e eventos de participante</td>
+<td>UNRESOLVED</td>
+</tr>
+<tr>
+<td>G-GUV-02</td>
+<td>taxonomia Journey, oportunidades e interesses declarados</td>
+<td>BLOCKED / PARTIAL</td>
+</tr>
+<tr>
+<td>G-GUV-03</td>
+<td>produtos, relações bilaterais e grafo autorizado</td>
+<td>UNRESOLVED</td>
+</tr>
+<tr>
+<td>G-GUV-04</td>
+<td>composição econômica <code>GEM-009</code> e Ads</td>
+<td>UNRESOLVED</td>
+</tr>
+<tr>
+<td>G-GUV-05</td>
+<td>fonte, qualidade, freshness, lineage e thresholds</td>
+<td>SOURCE_PENDING</td>
+</tr>
+<tr>
+<td>G-GUV-06</td>
+<td>classes de acesso, disclosure, drill-down e exportação</td>
+<td>UNRESOLVED</td>
+</tr>
+<tr>
+<td>G-GUV-07</td>
+<td>reconciliação de candidatos, status e contratos por KPI</td>
+<td>UNRESOLVED</td>
+</tr>
+<tr>
+<td>G-GUV-08</td>
+<td>autorização específica de design, dados reais e build</td>
+<td>NOT_AUTHORIZED</td>
+</tr>
+</tbody>
+</table>
+<h3 id="286-estado-desta-atualizacao">28.6 Estado desta atualização<a class="headerlink" href="#286-estado-desta-atualizacao" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>GKR-INTELLIGENCE-DASHBOARD-GUIVOS-001
+→ v0.1.5 / ANNEX A / PRE-IMPLEMENTATION
+→ 11 ANALYTICAL AREAS / 10 KPI FAMILIES PRESERVED
+→ EXISTING GUV-KPI IDS AND STATUSES UNCHANGED
+→ STATUS RECONCILIATION v0.1.4 PRESERVED
+→ EXECUTIVE CANDIDATES NONCANONICAL
+→ PERSON CHOICES / DECLARATIONS ANALYTICS BLOCKED
+→ REAL DATA / TECHNICAL RBAC / REPLIT BUILD NOT AUTHORIZED
 </code></pre></div>
 
 
