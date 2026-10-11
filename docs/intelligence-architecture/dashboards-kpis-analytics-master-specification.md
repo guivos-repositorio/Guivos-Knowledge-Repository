@@ -2,7 +2,7 @@
 id: GKR-INTELLIGENCE-DASHBOARD-KPI-001
 title: Dashboards, KPIs e Analytics — Documento Mestre de Especificação para Construção
 status: active
-version: 0.2.36
+version: 0.2.37
 owner: Guivos Intelligence Architecture
 last_updated: 2026-10-11
 normative: false
@@ -2247,6 +2247,56 @@ XD01 ARCHITECTURAL CATEGORY MAPPING → PRELIMINARY / NON-ADJUDICATED
 XD01-D01-E → CROSS_DOMAIN_BOUNDARY_UNRESOLVED
 XD01-D02-C → SPECIFIC_OWNER_UNRESOLVED
 FORMAL HUMAN DECISION MANDATE → NOT_DEMONSTRATED
+HUMAN REFERRALS SUBMITTED → 0
+HUMAN AUTHORITY CONFIRMED → 0/13
+HUMAN ADJUDICATIONS → 0/77
+G-XD-01 → UNRESOLVED
+G-XD-02..07 → OPEN
+CANONICAL KPI PROMOTIONS → 0
+IMPLEMENTATION AUTHORIZATION → 0
+```
+
+
+---
+
+## 42. G-XD-01 — Confronto de fontes de participante, elegibilidade e KPI
+
+### 42.1 Evidências e limites
+
+| Fonte | Regra documental sustentada | Limite da evidência |
+|---|---|---|
+| `docs/participants/person.md` v1.1.0, active, normative false | Pessoa é participante humano, distinto de conta e perfil | Não define fusão, separação ou reconciliação de identificadores |
+| `docs/participants/collective.md` v1.1.0, active, normative false | Coletivo é participante distinto de Pessoa e Organização | Não governa deduplicação analítica |
+| `docs/experience-architecture/participant-relationships-interactions-visibility-contract.md` v0.3.0, draft | Relação, visibilidade, vínculo e autoridade são diferentes | Contrato candidato não concede ligação irrestrita entre participantes |
+| `docs/economic-model/gem-004-eligibility-and-funded-access.md` v0.1.0, draft | Critérios candidatos de acesso financiado e ausência de implementação | Acesso financiado não define população de todo KPI |
+| `docs/economic-model/gem-005-incentive-program-contract.md` v0.1.0, draft | Campos conceituais de programa: eligible actors, duplicate control e lifecycle eligibility | Campos não são política aprovada de vigência ou reprocessamento |
+| `docs/intelligence-architecture/kpi-contract-standard.md` v0.1.0, active, normative false | Exige contrato identificável por metric_id; contrato não prova dado ou build autorizada | Não adjudica contratos individuais |
+| `docs/intelligence-architecture/guv-kpi-pop-001.md` v0.1.0, proposed, NOT_READY | Unidade Pessoa; população elegível UNRESOLVED; contagem distinta candidata | Não autoriza deduplicação, fórmula definitiva ou retroatividade |
+
+### 42.2 Resultado por expediente
+
+**XD01-D01-E:** as fontes sustentam separação entre Pessoa, conta, perfil, Coletivo e relações contextuais. Não demonstram política aprovada de fusão/separação de identidades, reversão, efeitos históricos ou mandato humano. A contagem de Pessoas em GUV-KPI-POP-001 permanece NOT_READY.
+
+**XD01-D02-C:** elegibilidade de acesso financiado, elegibilidade de programa de incentivo e elegibilidade de população de KPI são escopos diferentes. As fontes não demonstram contrato aprovado de datas efetivas, timezone, reprocessamento, republicação ou competência humana.
+
+### 42.3 Evidências ainda necessárias
+
+| Questão | Evidência pendente |
+|---|---|
+| D01-E — identidade de domínio | Contrato do identificador, ownership específico e política de merge/split/reversão |
+| D01-E — identidade analítica | Chaves, deduplicação, linhagem, versionamento e efeito sobre séries |
+| D02-C — elegibilidade de domínio/programa | Estados, critérios, vigência efetiva e autoridade do ativo concreto |
+| D02-C — elegibilidade de KPI | Coortes, janelas, timezone, fechamento e política de republicação |
+| Ambas — competência | Instrumento vigente de delegação, decisão humana expressa e registro datado |
+
+A ausência de demonstração se limita às fontes examinadas. Esta seção não altera seus contratos, nem determina arquitetura proprietária específica por inferência.
+
+### 42.4 Estado
+
+```text
+XD01-D01-E / XD01-D02-C → CONTRACT_SOURCE_REVIEW_PARTIAL
+SPECIFIC ASSET OWNERSHIP → NOT_ADJUDICATED
+FORMAL HUMAN MANDATE → NOT_DEMONSTRATED
 HUMAN REFERRALS SUBMITTED → 0
 HUMAN AUTHORITY CONFIRMED → 0/13
 HUMAN ADJUDICATIONS → 0/77
