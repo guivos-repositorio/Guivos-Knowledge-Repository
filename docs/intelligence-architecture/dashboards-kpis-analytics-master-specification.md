@@ -2,7 +2,7 @@
 id: GKR-INTELLIGENCE-DASHBOARD-KPI-001
 title: Dashboards, KPIs e Analytics — Documento Mestre de Especificação para Construção
 status: active
-version: 0.2.37
+version: 0.2.38
 owner: Guivos Intelligence Architecture
 last_updated: 2026-10-11
 normative: false
@@ -2297,6 +2297,59 @@ A ausência de demonstração se limita às fontes examinadas. Esta seção não
 XD01-D01-E / XD01-D02-C → CONTRACT_SOURCE_REVIEW_PARTIAL
 SPECIFIC ASSET OWNERSHIP → NOT_ADJUDICATED
 FORMAL HUMAN MANDATE → NOT_DEMONSTRATED
+HUMAN REFERRALS SUBMITTED → 0
+HUMAN AUTHORITY CONFIRMED → 0/13
+HUMAN ADJUDICATIONS → 0/77
+G-XD-01 → UNRESOLVED
+G-XD-02..07 → OPEN
+CANONICAL KPI PROMOTIONS → 0
+IMPLEMENTATION AUTHORIZATION → 0
+```
+
+
+---
+
+## 43. G-XD-01 — Consolidação de dependências de decisão para XD01-D01-E/D02-C
+
+### 43.1 Natureza do registro
+
+Este registro consolida as pendências das seções 37–42 para **preparar encaminhamento a instância humana cuja competência ainda deverá ser comprovada**. Não é convocação, adjudicação, delegação, aprovação de contrato ou promoção de KPI. `NOT_DEMONSTRATED` descreve somente a evidência examinada; não afirma inexistência universal.
+
+### 43.2 Dependências verificáveis
+
+| Expediente | Decisão humana ainda necessária | Evidência prévia mínima | Fonte documental e limite |
+|---|---|---|---|
+| `XD01-D01-E` — identidade de domínio | Confirmar autoridade e política de fusão, separação, correção e reversão de participantes | Contrato canônico de identificador, proprietário do ativo, mandato formal e trilha auditável | §41; `docs/participants/person.md` distingue Pessoa de conta/perfil, mas não adjudica merge/split |
+| `XD01-D01-E` — identidade analítica | Determinar repercussão de reconciliações em chaves, deduplicação, coortes e séries | Contrato analítico versionado, lineage, janela e política de republicação | §42; KPI Contract Standard fornece envelope, não regra aprovada |
+| `XD01-D01-E` — divulgação | Delimitar finalidade e consumidores legítimos de eventual linkage | Tratamento, finalidade, minimização, acesso, revisão de sensibilidade e autoridade competente | §§36, 39–42; papéis técnicos não substituem decisão |
+| `XD01-D02-C` — elegibilidade de domínio | Definir qual objeto possui critérios, estados, entrada, suspensão, término e reingresso | Contrato do objeto concreto, arquitetura proprietária única e vigência | §41; GEM-004 é candidato para acesso financiado, GEM-005 para incentivo |
+| `XD01-D02-C` — temporalidade analítica | Deliberar sobre datas efetivas, timezone, retroatividade, fechamento e reprocessamento | Contrato por KPI/coorte, fontes de eventos, versionamento, impactos e política de republicação | §42; `GUV-KPI-POP-001` permanece proposed/NOT_READY |
+| `XD01-D02-C` — consumidores | Autorizar granularidade e condições de uso dos resultados recalculados | Finalidade, classe de consumidor, proteção de Journey privado e supressão | §§34–42; visibilidade não equivale a autorização |
+
+### 43.3 Sequência condicionada de encaminhamento
+
+1. **Inventariar contratos concretos** de participante, programa, elegibilidade e KPI, com ID, versão, estado, arquitetura proprietária e referências; se o ownership estiver ambíguo, manter o ativo fora da Canon até decisão formal conforme ADR-003.
+2. **Identificar instrumentos de competência vigentes**, separando titularidade arquitetural, decisão de domínio, responsabilidade analítica, privacidade e poder de aprovação. Não usar `owner` de documento como prova de delegação.
+3. **Preparar o registro de decisão por expediente**, com alternativas, consequências, consumidores, dados sensíveis, temporalidade e evidências; submeter somente após comprovação de competência.
+4. **Registrar eventual adjudicação humana real** com autoridade, instrumento, data, escopo, decisão, ressalvas e dependências. Nenhuma das etapas anteriores equivale a adjudicação.
+5. **Reconciliar contratos e gates posteriores** antes de qualquer mudança de `readiness`, exposição de dado ou autorização de implementação.
+
+### 43.4 Bloqueios e ponto de passagem
+
+| Bloqueio | Evidência de saída | Situação |
+|---|---|---|
+| `BLOCK-OWNERSHIP` | Ativo concreto com proprietário único formalmente definido | `OPEN` |
+| `BLOCK-MANDATE` | Instrumento vigente que comprove autoridade humana para a decisão | `OPEN` |
+| `BLOCK-CONTRACT` | Contratos de identidade, elegibilidade e KPI aprovados nos respectivos escopos | `OPEN` |
+| `BLOCK-PRIVACY` | Finalidade, tratamento, minimização e consumidores examinados no caso concreto | `OPEN` |
+| `BLOCK-TEMPORAL` | Regras de data efetiva, retroatividade, reprocessamento e republicação decididas | `OPEN` |
+
+**Próxima dependência externa ao exame documental:** apresentação ou localização verificável dos instrumentos formais de competência e dos contratos específicos ainda não comprovados. Sem isso, não existe base para registrar encaminhamento humano efetivo.
+
+### 43.5 Estado preservado
+
+```text
+XD01-D01-E / XD01-D02-C → DECISION_DEPENDENCIES_CONSOLIDATED
 HUMAN REFERRALS SUBMITTED → 0
 HUMAN AUTHORITY CONFIRMED → 0/13
 HUMAN ADJUDICATIONS → 0/77
