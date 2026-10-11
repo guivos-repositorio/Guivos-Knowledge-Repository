@@ -2,7 +2,7 @@
 id: GKR-INTELLIGENCE-DASHBOARD-KPI-001
 title: Dashboards, KPIs e Analytics — Documento Mestre de Especificação para Construção
 status: active
-version: 0.2.18
+version: 0.2.19
 owner: Guivos Intelligence Architecture
 last_updated: 2026-10-11
 normative: false
@@ -1224,6 +1224,59 @@ Nenhuma regra temporal ou KPI é adjudicada nesta seção. `XD01-D08` (correçõ
 ```text
 XD01-D01..D06 → EXAMINED / HUMAN_ADJUDICATION_REQUIRED
 XD01-D07 → EXAMINED / HUMAN_ADJUDICATION_REQUIRED
+G-XD-01 → UNRESOLVED
+CANONICAL KPI PROMOTIONS → 0
+IMPLEMENTATION AUTHORIZATION → 0
+```
+
+
+---
+
+## 24. XD01-D08 — Matriz de correções retroativas e reprocessamento (exame, não adjudicação)
+
+### 24.1 Propósito e precedência
+
+Este exame de `XD01-D08` identifica lacunas de autoridade, evidência, versionamento e reconstrução analítica diante de alterações posteriores ao registro original. Não define política global de reprocessamento, prazo de fechamento, imutabilidade, algoritmo de deduplicação ou reescrita histórica. Os contratos de identidade, população elegível, eventos, marcos, cardinalidade, numerador/denominador e tempo permanecem condicionados a `XD01-D01..D07` e à adjudicação humana.
+
+### 24.2 Evidências e lacunas por consumidor
+
+| Consumidor / referências documentais | Situações de correção a examinar | Lacunas de adjudicação |
+|---|---|---|
+| Guivos interno — `GUV-KPI-POP-001..005`, `GUV-KPI-ENG-006..008`, `GUV-KPI-OPP-011..015` | Cadastro e vínculo corrigidos, evento de atividade tardio, alteração de inscrição/participação/conclusão, coortes D7/D30/D90 | Autoridade da versão, data efetiva versus data de processamento, impacto na elegibilidade, coorte e séries previamente publicadas |
+| Business — `BUS-KPI-PAR-001..006`, `BUS-KPI-PRG-001/002`, `BUS-KPI-JNY-002..004` | Revisão de população elegível, contrato/programa, recebimento/validação/rejeição de evidência, acesso custeado, evento duplicado ou revertido | Responsável pela correção, trilha contratual, períodos reabertos, repercussão econômica e proteção de Journey privado |
+| Organização — `ORG-KPI-OPP-001/002`, `ORG-KPI-PAR-002..004`, `ORG-KPI-REL-001/003/005` | Oportunidade editada ou encerrada, manifestação retirada, inscrição cancelada, participação e conclusão corrigidas, relação bilateral retificada | Estados válidos, reversões, origem da retificação, reconciliação de funis e divulgação entre contrapartes |
+| Coletivo — `COL-KPI-PAR-001..006`, `COL-KPI-ACT-001..003` | Vínculo confirmado e posteriormente revogado, presença corrigida, sessão cancelada/remarcada, saída/reingresso, papéis alterados | Evento histórico versus estado corrente, consentimento, atribuição da correção, múltiplas sessões e contagem de participantes |
+| Pessoa — `PER-KPI-CTX-001..003`, `PER-KPI-OBJ-001/002/004`, `PER-KPI-MOV-001..005` | Declaração revisada, objetivo reformulado, Próximo Passo substituído, evidência retirada, movimento reconsiderado | Autoria e controle pessoal, versionamento, visibilidade, retenção, ausência de inferência coercitiva ou score universal |
+
+### 24.3 Questões abertas para adjudicação
+
+| ID | Decisão pendente | Evidência mínima |
+|---|---|---|
+| `XD01-D08-A` | Quais alterações são novo evento, atualização legítima, correção, cancelamento, estorno ou reversão? | Taxonomia por domínio, estado anterior/posterior e autoridade |
+| `XD01-D08-B` | Quem pode solicitar, validar, executar e auditar uma correção por objeto e consumidor? | Papéis, permissões, aprovação e trilha de autoria |
+| `XD01-D08-C` | Como representar versão, origem, instante de ocorrência, registro, validação, correção e vigência efetiva? | Proveniência, lineage, histórico e timestamps auditáveis |
+| `XD01-D08-D` | Qual período, coorte, população e KPI pode ser recalculado após uma alteração tardia? | Janela, granularidade, denominador, fechamento e política autorizada |
+| `XD01-D08-E` | Como impedir dupla contagem ou exclusão indevida em merge/split de identidade, eventos repetidos e reingressos? | Cardinalidade, vínculo de versões, deduplicação e reconciliação |
+| `XD01-D08-F` | Como distinguir valor publicado anteriormente, valor recalculado e ajuste explícito? | Versão do indicador, data de referência, histórico de publicação e explicação |
+| `XD01-D08-G` | Como preservar consentimento, minimização e privacidade em correções compartilhadas entre domínios e consumidores? | Base de autorização, escopo de disclosure, retenção e revogação |
+| `XD01-D08-H` | Como tratar origem indisponível, evidência contestada, correção parcial ou reprocessamento falho? | Estados de qualidade, bloqueio/supressão, auditoria, reversibilidade e não-dado |
+
+### 24.4 Restrições e encaminhamento
+
+- Correção de dado não equivale automaticamente a novo evento elegível.
+- Reprocessamento não autoriza reconstruir identidades, consentimentos ou denominadores por inferência.
+- Um estado corrente não apaga, por presunção, o histórico necessário à auditoria.
+- Evento tardio não autoriza automaticamente reabrir períodos fechados ou alterar coortes publicadas.
+- Estorno e cancelamento não equivalem a exclusão física de evidências.
+- Ajuste financeiro, pontos, participação e evolução pessoal pertencem a contratos e autoridades distintos.
+- Correções de Pessoa não autorizam exposição a Business, Organização ou Coletivo.
+- Séries corrigidas e originais não são automaticamente intercambiáveis sem proveniência e versão.
+
+Nenhuma política de reprocessamento, fórmula KPI, regra de retenção ou autorização de implementação é adjudicada nesta seção. `XD01-D09` (ausência de dados, não-dado e supressão) permanece o próximo exame. `G-XD-01` segue não resolvido, preservados `G-XD-02..07` e os documentos especializados.
+
+```text
+XD01-D01..D07 → EXAMINED / HUMAN_ADJUDICATION_REQUIRED
+XD01-D08 → EXAMINED / HUMAN_ADJUDICATION_REQUIRED
 G-XD-01 → UNRESOLVED
 CANONICAL KPI PROMOTIONS → 0
 IMPLEMENTATION AUTHORIZATION → 0
