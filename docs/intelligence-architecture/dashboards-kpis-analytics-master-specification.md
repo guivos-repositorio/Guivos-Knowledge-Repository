@@ -2,7 +2,7 @@
 id: GKR-INTELLIGENCE-DASHBOARD-KPI-001
 title: Dashboards, KPIs e Analytics — Documento Mestre de Especificação para Construção
 status: active
-version: 0.2.38
+version: 0.2.39
 owner: Guivos Intelligence Architecture
 last_updated: 2026-10-11
 normative: false
@@ -2352,6 +2352,52 @@ Este registro consolida as pendências das seções 37–42 para **preparar enca
 XD01-D01-E / XD01-D02-C → DECISION_DEPENDENCIES_CONSOLIDATED
 HUMAN REFERRALS SUBMITTED → 0
 HUMAN AUTHORITY CONFIRMED → 0/13
+HUMAN ADJUDICATIONS → 0/77
+G-XD-01 → UNRESOLVED
+G-XD-02..07 → OPEN
+CANONICAL KPI PROMOTIONS → 0
+IMPLEMENTATION AUTHORIZATION → 0
+```
+
+
+---
+
+## 44. G-XD-01 — Indicação do fundador como autoridade proposta para exame de competência
+
+### 44.1 Registro de manifestação
+
+Em 11/10/2026, o fundador da Guivos manifestou expressamente: **"Confirmo o fundador da Guivos como autoridade proposta para análise e formalização de competência dos expedientes XD01-D01-E e XD01-D02-C, sem adjudicação automática."**
+
+Esta manifestação constitui **indicação explícita de candidato a instância decisória**, não prova de mandato vigente, delegação formal, competência jurídica/estatutária, aprovação de política de identidade, definição de elegibilidade ou adjudicação de qualquer uma das 77 questões.
+
+### 44.2 Escopo e separação de atos
+
+| Ato | Estado | Interpretação |
+|---|---|---|
+| Indicação do fundador para exame de competência em `XD01-D01-E` e `XD01-D02-C` | `EXPLICITLY_PROPOSED` | Manifestação humana registrada; escopo limitado aos dois expedientes |
+| Verificação de competência institucional e eventuais alçadas/delegações | `PENDING_EVIDENCE` | Exige instrumentos institucionais vigentes e verificação de aplicabilidade |
+| Formalização da autoridade decisória no âmbito aplicável | `NOT_COMPLETED` | Não resulta automaticamente da indicação |
+| Aprovação de contratos de identidade, elegibilidade, temporalidade ou KPI | `NOT_APPROVED` | Exige decisões próprias e contratos completos |
+| Adjudicação humana de `XD01-D01-E` ou `XD01-D02-C` | `NONE` | A indicação não seleciona alternativas nem decide mérito |
+| Autorização de implementação ou divulgação | `NONE` | Nenhuma liberação de engenharia, dado real ou serving |
+
+### 44.3 Evidências para o exame de competência
+
+Antes de tratar o fundador como autoridade adjudicadora formalmente confirmada, confrontar os instrumentos institucionais vigentes que definam a entidade responsável, os direitos de decisão, as alçadas, eventuais delegações, as matérias reservadas e os requisitos de registro. Distinguir competência institucional para aprovar políticas da propriedade arquitetural de cada ativo conforme ADR-003 e da revisão especializada de dados, privacidade e tecnologia.
+
+O registro de manifestação não substitui instrumentos societários, atos de delegação, políticas aprovadas ou parecer jurídico quando exigível. Se a documentação vigente não demonstrar a competência, manter `PENDING_EVIDENCE` e não adjudicar.
+
+### 44.4 Próxima passagem controlada
+
+Preparar a verificação documental dos instrumentos institucionais aplicáveis à indicação; identificar lacunas; somente após evidência suficiente, registrar decisão formal de competência com data, escopo, fundamento e eventuais limitações. A adjudicação de mérito permanece etapa separada.
+
+### 44.5 Estado preservado
+
+```text
+PROPOSED HUMAN AUTHORITY (XD01-D01-E / XD01-D02-C) → FOUNDER / EXPLICITLY_PROPOSED
+FORMAL HUMAN MANDATE → PENDING_EVIDENCE
+HUMAN AUTHORITY FORMALLY CONFIRMED → 0/13
+HUMAN REFERRALS SUBMITTED → 0
 HUMAN ADJUDICATIONS → 0/77
 G-XD-01 → UNRESOLVED
 G-XD-02..07 → OPEN
