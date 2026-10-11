@@ -2,7 +2,7 @@
 id: GKR-INTELLIGENCE-DASHBOARD-KPI-001
 title: Dashboards, KPIs e Analytics — Documento Mestre de Especificação para Construção
 status: active
-version: 0.2.43
+version: 0.2.44
 owner: Guivos Intelligence Architecture
 last_updated: 2026-10-11
 normative: false
@@ -2584,6 +2584,52 @@ G-XD-02 → ANNEX_A_INITIAL_KPI_SOURCE_TRIAGE_PREPARED / OPEN
 SIX RECONCILED KPI IDS → proposed / NOT_READY
 INDIVIDUAL CONTRACT RECORDS → 2 MATERIALIZED / 4 NOT MATERIALIZED
 SOURCE CONTRACTS VERIFIED → NOT ASSERTED
+G-XD-01 → UNRESOLVED
+G-XD-03..07 → OPEN
+HUMAN AUTHORITY FORMALLY CONFIRMED → 0/13
+HUMAN ADJUDICATIONS → 0/77
+CANONICAL KPI PROMOTIONS → 0
+IMPLEMENTATION AUTHORIZATION → 0
+```
+
+
+---
+
+## 49. G-XD-02 — Confronto individual dos contratos GUV-KPI-POP-001 e GUV-KPI-POP-002
+
+### 49.1 Fontes, escopo e precedência
+
+Exame documental dos registros individuais `docs/intelligence-architecture/guv-kpi-pop-001.md` e `guv-kpi-pop-002.md`, ambos v0.1.0, contra o Anexo A v0.1.5, o KPI Registry v0.1.5, o registro de reconciliação v0.1.1 e as seções 47–48 deste master. Não substitui a autoridade do Anexo A e não altera contratos individuais, fontes nem statuses. A expressão `SOURCE_PENDING` em campos de contrato não promove o **status** do KPI enquanto blockers semânticos persistirem.
+
+### 49.2 Evidências contrastadas por campo
+
+| Dimensão | `GUV-KPI-POP-001` — Pessoas cadastradas | `GUV-KPI-POP-002` — Novas Pessoas | Conclusão de triagem |
+|---|---|---|---|
+| Finalidade | Tamanho agregado de Pessoas válidas/elegíveis no universo corrente | Entradas agregadas de Pessoas com criação válida no período | Identidade e finalidade declaradas, sem liberação de dados reais |
+| Unidade e cálculo | Pessoa; distinct count após validade; fórmula e população `UNRESOLVED` | Pessoa/período; distinct count após elegibilidade; fórmula/população `UNRESOLVED` | Regra de validade/criação não adjudicada |
+| Fonte | `source_of_truth: SOURCE_PENDING` — fonte Pessoa não adjudicada | `source_of_truth: SOURCE_PENDING` | Fonte operacional/canônica não comprovada |
+| Temporalidade | `time_window`, `timezone`, `closing_rule: UNRESOLVED`; `as_of` pendente | `time_window`, `timezone`, `closing_rule: UNRESOLVED`; criação válida e retroatividade pendentes | Contrato temporal não fechado |
+| Qualidade | Checks de unicidade, validade e completude `UNRESOLVED`; null/zero pendentes | `quality_checks`, null/zero `UNRESOLVED`; duplicidade e eventos retroativos confundem a leitura | Sem regras de qualidade/ausência aprovadas |
+| Freshness e lineage | Freshness, provenance e source version `SOURCE_PENDING` | Mesmos campos `SOURCE_PENDING` | Sem SLA, cadeia de transformação ou versão de fonte comprovados |
+| Acesso/disclosure | Agregado autorizado como classe conceitual; dimensões, thresholds, exportação e supressão `UNRESOLVED` | Agregado autorizado como classe conceitual; filtros, thresholds, exportação e supressão `UNRESOLVED` | Sem serving/exportação operacional autorizados |
+| Responsabilidade | `accountable_owner`, `calculation_owner`, `domain_contracts` `UNRESOLVED` | Mesmo conjunto `UNRESOLVED` | Owner documental não demonstra alçada semântica/operacional |
+| Estado contratual | `proposed / NOT_READY` | `proposed / NOT_READY` | Sem promoção |
+
+### 49.3 Dependências de passagem
+
+A verificação futura de `POP-001` exige comprovação da regra de validade/elegibilidade e exclusões da Pessoa, identificador e contrato de fonte, referência temporal `as_of`, unicidade/qualidade, owners competentes e disclosure autorizado. Para `POP-002`, exige adicionalmente autoridade para evento de criação válida, data efetiva, período, timezone, atrasos/correções e reconciliação temporal. Em ambos, contratos de fonte, qualidade, lineage e periodicidade requerem evidência material verificável, e não inferência a partir do nome do objeto.
+
+Dependências `G-XD-01` (identidade, população, eventos, temporalidade), `G-XD-03/04` (consumidor, consentimento, privacidade e divulgação), `G-XD-05` (registry e contrato) e `G-XD-07` (autorização separada de engenharia) permanecem. Este exame não aprova fonte de dados, pipeline, KPI ou acesso, nem autoriza integração real, RBAC ou build Replit.
+
+### 49.4 Estado
+
+```text
+G-XD-02 → POP001_POP002_CONTRACT_EVIDENCE_EXAMINED / OPEN
+GUV-KPI-POP-001 → proposed / NOT_READY
+GUV-KPI-POP-002 → proposed / NOT_READY
+INDIVIDUAL CONTRACT RECORDS → 2 EXISTING / NO CHANGE
+SOURCE, FRESHNESS, PROVENANCE → SOURCE_PENDING IN CONTRACT FIELDS
+SEMANTIC / QUALITY / TIME / DISCLOSURE BLOCKERS → UNRESOLVED
 G-XD-01 → UNRESOLVED
 G-XD-03..07 → OPEN
 HUMAN AUTHORITY FORMALLY CONFIRMED → 0/13
