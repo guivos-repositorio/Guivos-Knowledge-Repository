@@ -2,7 +2,7 @@
 id: GKR-INTELLIGENCE-DASHBOARD-KPI-001
 title: Dashboards, KPIs e Analytics — Documento Mestre de Especificação para Construção
 status: active
-version: 0.2.11
+version: 0.2.12
 owner: Guivos Intelligence Architecture
 last_updated: 2026-10-11
 normative: false
@@ -867,3 +867,44 @@ Todas as referências `XD01-D*` são **questões de adjudicação**, não decis�
 Para cada KPI elegível à adjudicação futura, registrar em autoridade competente: consumidor, finalidade, entidade de contagem, população, elegibilidade, fonte e evento, estados e reversões, chave de deduplicação, fórmula, denominador, timezone, janelas, tratamento de atraso, correções, privacidade e qualidade. A consistência entre dashboards deve ser demonstrada por equivalência contratual explícita, nunca apenas por rótulos idênticos.
 
 **Estado do G-XD-01:** `UNRESOLVED / HUMAN_ADJUDICATION_REQUIRED`. Os gates G-XD-02..07 e os gates especializados permanecem inalterados. Dados reais, RBAC técnico e implementação Replit continuam não autorizados.
+
+
+## 17. XD01-D01 — Matriz de evidências de identidade analítica (exame, não adjudicação)
+
+### 17.1 Escopo e hierarquia
+
+Esta matriz aprofunda exclusivamente `XD01-D01` da seção 16.3. Evidências de documentos de participantes (`normative: false`) descrevem conceitos, não criam chaves técnicas. O contrato transversal de relações (`status: draft; normative: true; maturity: cross_participant_contract_candidate`) e o Master de superfície `COL-004` (`status: draft; normative: false`) não devem ser promovidos implicitamente a autoridade técnica ou contrato analítico adjudicado. O modelo de domínio de Captura de Contexto (`status: draft; normative: true`) delimita identidades dos objetos de seu próprio domínio, sem generalizá-las a todos os dashboards.
+
+### 17.2 Matriz de evidências e consequências analíticas candidatas
+
+| Fonte / autoridade consultada | Evidência documental | Consequência analítica a examinar — **não adjudicada** |
+|---|---|---|
+| `GKR-PARTICIPANT-PERSON-001` — `docs/participants/person.md` | Pessoa não é conta, perfil, lead ou conjunto de dados; cadastro e visualização não criam vínculo ou consentimento | Identidade da Pessoa deve ser distinguida de identidade de autenticação e de eventos de cadastro, exposição ou relação |
+| `GKR-PARTICIPANT-ORGANIZATION-001` — `docs/participants/organization.md` | Organização é participante institucional; Guivos Business é produto especializado, não sinônimo de Organização | Distinguir unidade institucional, tenant/contrato Business, unidade organizacional e usuário operador antes de contar organizações |
+| `GKR-PARTICIPANT-COLLECTIVE-001` — `docs/participants/collective.md` | Coletivo não é Pessoa, Organização, lista de contatos ou audiência; participação e vínculos são governados | Contagem de Coletivos não equivale a quantidade de membros, solicitações ou vínculos |
+| `GKR-UX-PARTICIPANT-RELATIONSHIPS-INTERACTIONS-001` — `docs/experience-architecture/participant-relationships-interactions-visibility-contract.md` | Pessoa atua em contextos de Coletivo/Organização somente com papel e autoridade; Pessoa solicita participação e Coletivo avalia; não há lifecycle genérico Coletivo→Pessoa adjudicado | Separar agente humano, contexto de atuação, solicitação, vínculo, papel e relação; não inferir convite ou associação unilateral |
+| `GKR-UX-COL-PARTICIPANTS-LINKS-MASTER-001` — `docs/experience-architecture/organizations-collectives-journey/collective-participants-links-master.md` | Solicitação aprovada ≠ vínculo técnico confirmado ≠ papel aceito; `TRN-114` é continuidade funcional, não prova de persistência técnica | Contagens de solicitações aprovadas, vínculos confirmados e papéis aceitos requerem eventos/estados e evidências distintos |
+| `PAS-001-CC-UIC-DOMAIN-001` — `docs/product-architecture/pas-001-captura-de-contexto-domain-model.md` | Registro de Captura, sessão e entrada possuem identidades próprias; evento técnico não substitui fato humano | Não utilizar IDs de sessão/entrada/captura como substitutos universais de Pessoa, vínculo ou progresso da Journey |
+| `GKR-INTELLIGENCE-DASHBOARD-KPI-001` — seção 5 | Identidade autenticada + contexto + papel + relação legítima + finalidade + sensibilidade + disclosure determinam escopo máximo de leitura | Uma identidade analítica não confere autorização de leitura; agregações e exportações exigem controle contextual próprio |
+
+### 17.3 Pendências que exigem autoridade e adjudicação humana
+
+| Questão | Decisão ainda não tomada | Evidência mínima para decisão futura |
+|---|---|---|
+| `XD01-D01-A` | Chave analítica estável e escopo por tipo de participante | Contrato de identidade do domínio, ciclo de vida, unicidade e versionamento |
+| `XD01-D01-B` | Múltiplas contas, perfis ou operadores relacionados a um participante | Política de vinculação, delegação, auditoria e prevenção de fusões indevidas |
+| `XD01-D01-C` | Cardinalidade e simultaneidade de vínculos Pessoa–Coletivo e relações institucionais | Objeto de relação, estados autorizados, validade temporal e chave de contagem |
+| `XD01-D01-D` | Identidade em solicitação, aprovação, vínculo confirmado, papel aceito e saída/reingresso | Fontes dos eventos e estados, reversões, datas efetivas e continuidade de histórico |
+| `XD01-D01-E` | Duplicatas, fusão, separação e correção retroativa de identidades | Autoridade de reconciliação, rastreabilidade, reversibilidade e impactos em séries históricas |
+| `XD01-D01-F` | Identificação transversal entre produtos e participantes | Finalidade, legitimidade do relacionamento, minimização e limites de disclosure |
+
+### 17.4 Limites e encaminhamento
+
+A matriz registra **evidência existente versus hipótese de contrato**, sem estabelecer ID técnico, cardinalidade oficial, evento novo, consentimento presumido ou KPI READY. Não é permitido inferir vínculo a partir de cadastro, aprovação a partir de solicitação, vínculo técnico a partir de aprovação, papel a partir de vínculo ou identidade pessoal a partir de sessão técnica. A futura adjudicação deve ocorrer nas autoridades de domínio competentes, com reconciliação por KPI/consumidor (`XD01-D02..D10`).
+
+```text
+XD01-D01 → EXAMINED / HUMAN_ADJUDICATION_REQUIRED
+G-XD-01 → UNRESOLVED
+CANONICAL KPI PROMOTIONS → 0
+IMPLEMENTATION AUTHORIZATION → 0
+```
