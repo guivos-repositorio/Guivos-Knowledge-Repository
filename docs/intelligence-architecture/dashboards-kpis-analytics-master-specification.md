@@ -2,7 +2,7 @@
 id: GKR-INTELLIGENCE-DASHBOARD-KPI-001
 title: Dashboards, KPIs e Analytics — Documento Mestre de Especificação para Construção
 status: active
-version: 0.2.15
+version: 0.2.16
 owner: Guivos Intelligence Architecture
 last_updated: 2026-10-11
 normative: false
@@ -1066,6 +1066,59 @@ XD01-D01 → EXAMINED / HUMAN_ADJUDICATION_REQUIRED
 XD01-D02 → EXAMINED / HUMAN_ADJUDICATION_REQUIRED
 XD01-D03 → EXAMINED / HUMAN_ADJUDICATION_REQUIRED
 XD01-D04 → EXAMINED / HUMAN_ADJUDICATION_REQUIRED
+G-XD-01 → UNRESOLVED
+CANONICAL KPI PROMOTIONS → 0
+IMPLEMENTATION AUTHORIZATION → 0
+```
+
+
+---
+
+## 21. XD01-D05 — Matriz de deduplicação e cardinalidade (exame, não adjudicação)
+
+### 21.1 Escopo e precedência
+
+Este exame de `XD01-D05` identifica unidades de contagem, cardinalidade e riscos de dupla contagem nos cinco Documentos Mestres de dashboards, sem estabelecer chaves canônicas, algoritmos, contratos KPI ou regras de implementação. As decisões anteriores `XD01-D01..D04` permanecem dependentes de adjudicação humana.
+
+### 21.2 Evidências e lacunas por consumidor
+
+| Consumidor | Unidades distintas a examinar | Riscos e pendências |
+|---|---|---|
+| Guivos interno — `GUV-KPI-POP-001..005`, `GUV-KPI-ENG-006..008`, `GUV-KPI-OPP-011..015` | Pessoa válida, conta, ativação, evento, oportunidade, inscrição, participação, conclusão | Múltiplas contas/papéis, eventos repetidos, participações em vários produtos, coortes, janelas e reprocessamento; falta identidade e grão autorizados |
+| Business — `BUS-KPI-PAR-001..006`, `BUS-KPI-PRG-001/002`, `BUS-KPI-JNY-002..004` | Contratante, contrato, programa, elegível, acesso custeado, participação, evento validado | Uma Pessoa em múltiplos programas; elegível não é participante; acesso custeado não é uso; não revelar Journey privada entre patrocinadores |
+| Organização — `ORG-KPI-OPP-001/002`, `ORG-KPI-PAR-002..004`, `ORG-KPI-REL-001/003/005` | Organização, oportunidade, manifestação, inscrição, participante, conclusão, relação bilateral | Múltiplas inscrições e relações por Pessoa; a soma de oportunidades não implica total distinto de pessoas; depende da autoridade de cada objeto |
+| Coletivo — `COL-KPI-PAR-001..006`, `COL-KPI-ACT-001..003` | Solicitação, vínculo confirmado, papel aceito, sessão, presença, participação | Solicitações repetidas, papéis simultâneos, várias presenças, saída e reingresso; presença não é vínculo nem reputação |
+| Pessoa — `PER-KPI-CTX-001..003`, `PER-KPI-OBJ-001/002/004`, `PER-KPI-MOV-001..005` | Declaração, objetivo, Próximo Passo, movimento, evidência, revisão | A mesma ação pode servir vários objetivos; revisões não criam resultados adicionais; preservar autoria, privacidade e ausência de escore universal |
+
+### 21.3 Questões abertas de adjudicação
+
+| ID | Decisão pendente | Evidência mínima |
+|---|---|---|
+| `XD01-D05-A` | Unidade de contagem por KPI: entidade, vínculo, evento, sessão, programa, objeto ou transação? | Contrato de métrica, autoridade e população |
+| `XD01-D05-B` | Escopo de unicidade: produto, organização, coletivo, contrato, programa, oportunidade, janela ou consumidor? | Finalidade, escopo e autorização |
+| `XD01-D05-C` | Duplicata técnica versus nova ocorrência, atualização, correção ou reversão? | Identificador de origem, estado, timestamps, versionamento |
+| `XD01-D05-D` | Múltiplas contas, papéis, vínculos, programas e oportunidades simultâneos? | Cardinalidade, histórico, papel e atribuição |
+| `XD01-D05-E` | Quando somas dimensionais duplicam pessoas e quando totais distintos são legítimos? | Grão, sobreposição, população e janela |
+| `XD01-D05-F` | Saída/reingresso, fusão/divisão, correções retroativas e eventos tardios? | Autoridade de identidade, tempo efetivo, reconciliação |
+| `XD01-D05-G` | Deduplicação entre produtos sem expor dados de contrapartes ou Journey privada? | Finalidade, minimização, consentimento aplicável, supressão |
+| `XD01-D05-H` | Ausência de chave, relações ambíguas ou cardinalidade desconhecida? | Qualidade, proveniência, estado de não dado, não fabricar totais |
+
+### 21.4 Não equivalências e estado
+
+- Pessoa não equivale a conta, papel ou vínculo.
+- Elegível não equivale a participante ou evento.
+- Solicitação não equivale a vínculo confirmado ou presença.
+- Inscrição não equivale a participação ou conclusão.
+- Acesso custeado não equivale a uso efetivo.
+- Eventos totais não equivalem a pessoas distintas.
+- Soma por programa não equivale a total global deduplicado.
+- Revisão de evidência não equivale a novo resultado.
+
+Nenhuma identidade universal, algoritmo de deduplicação, cardinalidade global, métrica aprovada ou instrumentação é estabelecida. `XD01-D06` (numerador, denominador e unidade) permanece o próximo exame. `G-XD-01` permanece não resolvido; `G-XD-02..07` e as autoridades especializadas permanecem inalterados.
+
+```text
+XD01-D01..D04 → EXAMINED / HUMAN_ADJUDICATION_REQUIRED
+XD01-D05 → EXAMINED / HUMAN_ADJUDICATION_REQUIRED
 G-XD-01 → UNRESOLVED
 CANONICAL KPI PROMOTIONS → 0
 IMPLEMENTATION AUTHORIZATION → 0
