@@ -2,7 +2,7 @@
 id: GKR-INTELLIGENCE-DASHBOARD-KPI-001
 title: Dashboards, KPIs e Analytics — Documento Mestre de Especificação para Construção
 status: active
-version: 0.2.50
+version: 0.2.51
 owner: Guivos Intelligence Architecture
 last_updated: 2026-10-11
 normative: false
@@ -2899,5 +2899,51 @@ SIX KPIS → proposed / NOT_READY
 HUMAN AUTHORITY FORMALLY CONFIRMED → 0/13
 HUMAN ADJUDICATIONS → 0/77
 KPI PROMOTIONS → 0
+IMPLEMENTATION AUTHORIZATION → 0
+```
+
+
+---
+
+## 56. G-XD-02 — Matriz consolidada P0 + P1 + P2 dos seis KPIs prioritários
+
+### 56.1 Natureza e limites
+
+Consolidação documental das seções 48–55 do Documento Mestre Global, sem nova adjudicação, fonte operacional certificada ou mudança dos contratos especializados e do Anexo A. A expressão **examinado** indica verificação de referências e lacunas, não gate encerrado. A matriz descreve dependências para eventual exame humano, técnico e jurídico e não autoriza sua execução.
+
+### 56.2 Matriz transversal de bloqueios e evidências
+
+| KPI | P0 — semântica, elegibilidade e tempo | P1 — fonte, qualidade e proveniência | P2 — consumo, proteção e serving | Contrato individual e estado |
+|---|---|---|---|---|
+| `GUV-KPI-POP-001` | Pessoa válida, exclusões, identidade estável, `as_of` sem adjudicação | Pessoa/source of truth, unicidade, freshness e lineage sem comprovação | Agregação autorizada como limite conceitual; dimensões, supressão, exportação, owners e serving pendentes | v0.1.0 existente; `proposed/NOT_READY` |
+| `GUV-KPI-POP-002` | Criação válida, evento, data efetiva, janela/timezone e retroatividade pendentes | Evento/fonte, controle de duplicidades, correções e lineage não verificados | Recortes temporais e grupos pequenos, supressão, exportação e serving pendentes | v0.1.0 existente; `proposed/NOT_READY` |
+| `GUV-KPI-POP-007` | Organização válida, elegibilidade, exclusões e referência temporal pendentes | Fonte Organização, estado operacional, qualidade e versionamento não verificados | Acesso, segmentos institucionais/territoriais, proteção e serving pendentes | Não materializado; `proposed/NOT_READY` |
+| `GUV-KPI-POP-009` | Coletivo válido, elegibilidade, exclusões e referência temporal pendentes | Fonte Coletivo, unicidade, qualidade e proveniência não verificadas | Grupos pequenos, vínculos com Pessoas, disclosure/exportação e serving pendentes | Não materializado; `proposed/NOT_READY` |
+| `GUV-KPI-POP-011` | Universo comparável Pessoa/Organização/Coletivo, cardinalidade e denominador pendentes | Fontes compatíveis, cobertura e reconciliação entre tipos não verificadas | Agregação, segmentos, supressão, exportação e serving pendentes | Não materializado; `proposed/NOT_READY` |
+| `GUV-KPI-OPP-001` | Oportunidade válida, evento de criação, data efetiva, correção/reversão pendentes | Fonte de oportunidade, integridade de eventos, freshness e lineage não verificados | Dados institucionais/territoriais, recortes, proteção, exportação e serving pendentes | Não materializado; `proposed/NOT_READY` |
+
+### 56.3 Classes de evidência e fronteiras de autoridade
+
+- **Encontradas:** definições conceituais de Pessoa, Organização e Coletivo; contexto de registro de oportunidades; padrão de contrato KPI; regras transversais de proveniência; princípios de privacidade e limites de acesso no Dashboard Guivos. Seu alcance é o declarado nos documentos de origem e não valida decisões específicas de KPIs.
+- **Não verificadas neste exame:** fonte operacional autorizada, contrato de extração/transformação, regra de cálculo aceita, referência temporal aprovada, reconciliação de qualidade, SLA de freshness, contrato técnico de serving, política concreta de supressão/exportação ou owner com mandato confirmado. Ausência documental não demonstra inexistência operacional.
+- **Dependentes de decisão:** `G-XD-01` para identidade e eventos pertinentes; `G-XD-02` para origem e qualidade; `G-XD-03/04` para acesso, finalidade e disclosure; `G-XD-05` para KPI Registry; `G-XD-06` apenas quando houver pertinência econômica; `G-XD-07` para autorização separada de implementação. A indicação da dependência não nomeia ou valida autoridade humana.
+
+### 56.4 Condições de eventual progressão
+
+Antes de propor promoção, registrar para cada KPI: prova versionada de definição semântica adjudicada; fonte com responsável competente e lineage; qualidade, freshness, janela e ausência-de-dado; finalidade e disclosure; contract/serving; evidência técnica e decisões humanas separadas. Não converter `SOURCE_PENDING` de campos internos em `source_pending` global enquanto a semântica não estiver fechada. Não confundir `0`, `null`, supressão, atraso e indisponibilidade. Nenhum dado real, RBAC, API, extração, dashboard operacional ou trabalho em Replit está autorizado por esta consolidação.
+
+### 56.5 Checkpoint
+
+```text
+G-XD-02 → P0_P1_P2_CONSOLIDATED_DOCUMENTARY_MATRIX / OPEN
+P0/P1/P2 → DOCUMENTARY EXAMINED / NOT ADJUDICATED
+G-XD-01 → UNRESOLVED
+G-XD-03..07 → OPEN
+SIX KPIS → proposed / NOT_READY
+INDIVIDUAL KPI CONTRACTS → 2 PRESENT / 4 NOT MATERIALIZED
+VERIFIED OPERATIONAL SOURCE AUTHORITY → NONE IN THIS EXAM
+HUMAN AUTHORITY FORMALLY CONFIRMED → 0/13
+HUMAN ADJUDICATIONS → 0/77
+CANONICAL KPI PROMOTIONS → 0
 IMPLEMENTATION AUTHORIZATION → 0
 ```
