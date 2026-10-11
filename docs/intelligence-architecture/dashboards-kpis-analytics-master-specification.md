@@ -2,7 +2,7 @@
 id: GKR-INTELLIGENCE-DASHBOARD-KPI-001
 title: Dashboards, KPIs e Analytics — Documento Mestre de Especificação para Construção
 status: active
-version: 0.2.23
+version: 0.2.24
 owner: Guivos Intelligence Architecture
 last_updated: 2026-10-11
 normative: false
@@ -1507,6 +1507,66 @@ Esta pauta é um **índice de preparação** e não uma reformulação normativa
 ```text
 XD01-D01-A..F → PREPARATION_DOCUMENTED / PENDING_HUMAN_ADJUDICATION
 XD01-D02-A..G → PREPARATION_DOCUMENTED / PENDING_HUMAN_ADJUDICATION
+XD01-D03..D10 → EXAMINED / PENDING_HUMAN_ADJUDICATION
+OPEN HUMAN QUESTIONS → 77
+HUMAN ADJUDICATIONS → 0
+G-XD-01 → UNRESOLVED
+G-XD-02..07 → OPEN
+CANONICAL KPI PROMOTIONS → 0
+IMPLEMENTATION AUTHORIZATION → 0
+```
+
+
+---
+
+## 29. G-XD-01 — Dossiês individuais de decisão humana: XD01-D01 e XD01-D02
+
+### 29.1 Critério de fidelidade às fontes
+
+Os 13 dossiês abaixo preservam a **pergunta e a evidência mínima das matrizes originais**: `XD01-D01-A..F` na seção 17.3 e `XD01-D02-A..G` na seção 18.3. A pauta resumida da seção 28 é apenas instrumento preparatório: **em caso de diferença de ênfase, prevalece a formulação da matriz original**. Nenhum dossiê atribui autoridade humana, escolhe alternativa ou altera estado de gate. Os Documentos Mestres dos cinco dashboards permanecem fontes contextuais, não prova de contratos implementados.
+
+### 29.2 Dossiês — XD01-D01 (identidade analítica)
+
+| ID | Decisão original pendente | Evidência mínima da seção 17.3 | Dependência e risco a registrar |
+|---|---|---|---|
+| `XD01-D01-A` | Chave analítica estável e escopo por tipo de participante | Contrato de identidade do domínio, ciclo de vida, unicidade e versionamento | Pessoa ≠ conta; Organização ≠ tenant Business; Coletivo ≠ membros |
+| `XD01-D01-B` | Múltiplas contas, perfis ou operadores relacionados a um participante | Política de vinculação, delegação, auditoria e prevenção de fusões indevidas | Separar ator, papel e participante; evitar fusão indevida |
+| `XD01-D01-C` | Cardinalidade e simultaneidade de vínculos Pessoa–Coletivo e relações institucionais | Objeto de relação, estados autorizados, validade temporal e chave de contagem | Vínculo contextual não implica vínculo universal |
+| `XD01-D01-D` | Identidade em solicitação, aprovação, vínculo confirmado, papel aceito e saída/reingresso | Fontes dos eventos e estados, reversões, datas efetivas e continuidade de histórico | Solicitação ≠ aprovação ≠ vínculo confirmado ≠ papel |
+| `XD01-D01-E` | Duplicatas, fusão, separação e correção retroativa de identidades | Autoridade de reconciliação, rastreabilidade, reversibilidade e impactos em séries históricas | `D05/D08`; preservar trilha de correção |
+| `XD01-D01-F` | Identificação transversal entre produtos e participantes | Finalidade, legitimidade do relacionamento, minimização e limites de disclosure | `D10`; chave de grafo não concede leitura nem consentimento |
+
+### 29.3 Dossiês — XD01-D02 (população elegível)
+
+| ID | Pergunta original pendente | Evidência mínima da seção 18.3 | Dependência e risco a registrar |
+|---|---|---|---|
+| `XD01-D02-A` | Qual entidade/objeto integra o universo elegível e qual é a unidade de análise? | Tipo de participante/objeto, chave legítima e escopo do indicador | `D01`; não presumir população universal |
+| `XD01-D02-B` | Quais condições determinam inclusão, exclusão, suspensão ou reingresso? | Contrato de domínio, relação/programa, estados e exceções | `D03/D04`; elegibilidade ≠ cadastro |
+| `XD01-D02-C` | Quando a elegibilidade começa, termina ou muda retroativamente? | Data efetiva, timezone, janela, histórico e reprocessamento | `D07/D08`; não deslocar coortes |
+| `XD01-D02-D` | Qual evento qualifica numerador e qual população compõe denominador? | Fonte, taxonomia, coorte, validade, deduplicação e denominador zero | `D03/D05/D06/D09`; não inventar taxas |
+| `XD01-D02-E` | Quem pode consumir o resultado e em qual granularidade? | Finalidade, classe de acesso, relação legítima, minimização e política de supressão | `D09/D10`; privacidade e Journey pessoal |
+| `XD01-D02-F` | Como distinguir zero observado, ausência, atraso, insuficiência e supressão? | Contrato de qualidade, completude, freshness e estados `NO_DATA`, `INSUFFICIENT_DATA`, `SOURCE_DELAYED`, `SUPPRESSED_BY_POLICY` | `D09`; ausência não é zero |
+| `XD01-D02-G` | Como evitar sobreposição entre contratos, programas, contextos e produtos? | Atribuição, cardinalidade, chaves de vínculo e limites de cruzamento | `D05/D10`; somas não implicam distintos globais |
+
+### 29.4 Ficha individual a preencher exclusivamente na rodada humana
+
+Para cada um dos 13 IDs, registrar em artefato de decisão próprio: **ID; texto original; KPI(s)/objeto(s); domínio e consumidor; fontes e versão; autoridade humana competente e fundamento; evidência verificada; alternativas e consequências; dependências; efeitos de consentimento, privacidade, serving e exportação; decisão explícita e justificativa; data e referência da aprovação; revisão cruzada; status**. Enquanto não houver evidência e autoridade verificadas, deixar os campos de decisão **não preenchidos** e usar `PENDING_HUMAN_ADJUDICATION`, `NEEDS_EVIDENCE` ou `CONFLICT` conforme o caso. Não transformar esta matriz em aprovação em lote.
+
+### 29.5 Verificações cruzadas obrigatórias antes de qualquer adjudicação
+
+- **Guivos interno:** coortes e eventos de ativação/retorno não equivalem a contagem de contas, vínculos ou oportunidades; não inferir métricas pessoais privadas.
+- **Business:** elegibilidade por contrato/programa e participação válida são universos distintos; tenant não recebe Journey individual.
+- **Organização:** interesse, inscrição, participação e conclusão exigem estados e unidades próprios; Organização não equivale a Business.
+- **Coletivo:** solicitação, aprovação, vínculo confirmado, papel e presença não são intercambiáveis; respeitar voluntariedade.
+- **Pessoa:** declarações, objetivos, movimentos e evidências pertencem ao escopo pessoal; sem score universal nem disclosure presumido.
+
+As verificações são critérios de análise, não novas normas nem resultados de validação. Divergência de autoridade ou ausência de fonte deve permanecer registrada como pendência.
+
+### 29.6 Estado de controle
+
+```text
+XD01-D01-A..F → DOSSIER_PREPARED / PENDING_HUMAN_ADJUDICATION
+XD01-D02-A..G → DOSSIER_PREPARED / PENDING_HUMAN_ADJUDICATION
 XD01-D03..D10 → EXAMINED / PENDING_HUMAN_ADJUDICATION
 OPEN HUMAN QUESTIONS → 77
 HUMAN ADJUDICATIONS → 0
