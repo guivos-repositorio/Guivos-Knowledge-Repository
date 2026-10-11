@@ -73180,6 +73180,87 @@ HUMAN AUTHORITY FORMALLY CONFIRMED → 0/13
 HUMAN ADJUDICATIONS → 0/77
 KPI PROMOTIONS → 0
 IMPLEMENTATION AUTHORIZATION → 0
+</code></pre></div>
+<hr />
+<h2 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-56-g-xd-02-matriz-consolidada-p0-p1-p2-dos-seis-kpis-prioritarios">56. G-XD-02 — Matriz consolidada P0 + P1 + P2 dos seis KPIs prioritários<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-56-g-xd-02-matriz-consolidada-p0-p1-p2-dos-seis-kpis-prioritarios" title="Permanent link">&para;</a></h2>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-561-natureza-e-limites">56.1 Natureza e limites<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-561-natureza-e-limites" title="Permanent link">&para;</a></h3>
+<p>Consolidação documental das seções 48–55 do Documento Mestre Global, sem nova adjudicação, fonte operacional certificada ou mudança dos contratos especializados e do Anexo A. A expressão <strong>examinado</strong> indica verificação de referências e lacunas, não gate encerrado. A matriz descreve dependências para eventual exame humano, técnico e jurídico e não autoriza sua execução.</p>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-562-matriz-transversal-de-bloqueios-e-evidencias">56.2 Matriz transversal de bloqueios e evidências<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-562-matriz-transversal-de-bloqueios-e-evidencias" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>KPI</th>
+<th>P0 — semântica, elegibilidade e tempo</th>
+<th>P1 — fonte, qualidade e proveniência</th>
+<th>P2 — consumo, proteção e serving</th>
+<th>Contrato individual e estado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>GUV-KPI-POP-001</code></td>
+<td>Pessoa válida, exclusões, identidade estável, <code>as_of</code> sem adjudicação</td>
+<td>Pessoa/source of truth, unicidade, freshness e lineage sem comprovação</td>
+<td>Agregação autorizada como limite conceitual; dimensões, supressão, exportação, owners e serving pendentes</td>
+<td>v0.1.0 existente; <code>proposed/NOT_READY</code></td>
+</tr>
+<tr>
+<td><code>GUV-KPI-POP-002</code></td>
+<td>Criação válida, evento, data efetiva, janela/timezone e retroatividade pendentes</td>
+<td>Evento/fonte, controle de duplicidades, correções e lineage não verificados</td>
+<td>Recortes temporais e grupos pequenos, supressão, exportação e serving pendentes</td>
+<td>v0.1.0 existente; <code>proposed/NOT_READY</code></td>
+</tr>
+<tr>
+<td><code>GUV-KPI-POP-007</code></td>
+<td>Organização válida, elegibilidade, exclusões e referência temporal pendentes</td>
+<td>Fonte Organização, estado operacional, qualidade e versionamento não verificados</td>
+<td>Acesso, segmentos institucionais/territoriais, proteção e serving pendentes</td>
+<td>Não materializado; <code>proposed/NOT_READY</code></td>
+</tr>
+<tr>
+<td><code>GUV-KPI-POP-009</code></td>
+<td>Coletivo válido, elegibilidade, exclusões e referência temporal pendentes</td>
+<td>Fonte Coletivo, unicidade, qualidade e proveniência não verificadas</td>
+<td>Grupos pequenos, vínculos com Pessoas, disclosure/exportação e serving pendentes</td>
+<td>Não materializado; <code>proposed/NOT_READY</code></td>
+</tr>
+<tr>
+<td><code>GUV-KPI-POP-011</code></td>
+<td>Universo comparável Pessoa/Organização/Coletivo, cardinalidade e denominador pendentes</td>
+<td>Fontes compatíveis, cobertura e reconciliação entre tipos não verificadas</td>
+<td>Agregação, segmentos, supressão, exportação e serving pendentes</td>
+<td>Não materializado; <code>proposed/NOT_READY</code></td>
+</tr>
+<tr>
+<td><code>GUV-KPI-OPP-001</code></td>
+<td>Oportunidade válida, evento de criação, data efetiva, correção/reversão pendentes</td>
+<td>Fonte de oportunidade, integridade de eventos, freshness e lineage não verificados</td>
+<td>Dados institucionais/territoriais, recortes, proteção, exportação e serving pendentes</td>
+<td>Não materializado; <code>proposed/NOT_READY</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-563-classes-de-evidencia-e-fronteiras-de-autoridade">56.3 Classes de evidência e fronteiras de autoridade<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-563-classes-de-evidencia-e-fronteiras-de-autoridade" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Encontradas:</strong> definições conceituais de Pessoa, Organização e Coletivo; contexto de registro de oportunidades; padrão de contrato KPI; regras transversais de proveniência; princípios de privacidade e limites de acesso no Dashboard Guivos. Seu alcance é o declarado nos documentos de origem e não valida decisões específicas de KPIs.</li>
+<li><strong>Não verificadas neste exame:</strong> fonte operacional autorizada, contrato de extração/transformação, regra de cálculo aceita, referência temporal aprovada, reconciliação de qualidade, SLA de freshness, contrato técnico de serving, política concreta de supressão/exportação ou owner com mandato confirmado. Ausência documental não demonstra inexistência operacional.</li>
+<li><strong>Dependentes de decisão:</strong> <code>G-XD-01</code> para identidade e eventos pertinentes; <code>G-XD-02</code> para origem e qualidade; <code>G-XD-03/04</code> para acesso, finalidade e disclosure; <code>G-XD-05</code> para KPI Registry; <code>G-XD-06</code> apenas quando houver pertinência econômica; <code>G-XD-07</code> para autorização separada de implementação. A indicação da dependência não nomeia ou valida autoridade humana.</li>
+</ul>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-564-condicoes-de-eventual-progressao">56.4 Condições de eventual progressão<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-564-condicoes-de-eventual-progressao" title="Permanent link">&para;</a></h3>
+<p>Antes de propor promoção, registrar para cada KPI: prova versionada de definição semântica adjudicada; fonte com responsável competente e lineage; qualidade, freshness, janela e ausência-de-dado; finalidade e disclosure; contract/serving; evidência técnica e decisões humanas separadas. Não converter <code>SOURCE_PENDING</code> de campos internos em <code>source_pending</code> global enquanto a semântica não estiver fechada. Não confundir <code>0</code>, <code>null</code>, supressão, atraso e indisponibilidade. Nenhum dado real, RBAC, API, extração, dashboard operacional ou trabalho em Replit está autorizado por esta consolidação.</p>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-565-checkpoint">56.5 Checkpoint<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-565-checkpoint" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>G-XD-02 → P0_P1_P2_CONSOLIDATED_DOCUMENTARY_MATRIX / OPEN
+P0/P1/P2 → DOCUMENTARY EXAMINED / NOT ADJUDICATED
+G-XD-01 → UNRESOLVED
+G-XD-03..07 → OPEN
+SIX KPIS → proposed / NOT_READY
+INDIVIDUAL KPI CONTRACTS → 2 PRESENT / 4 NOT MATERIALIZED
+VERIFIED OPERATIONAL SOURCE AUTHORITY → NONE IN THIS EXAM
+HUMAN AUTHORITY FORMALLY CONFIRMED → 0/13
+HUMAN ADJUDICATIONS → 0/77
+CANONICAL KPI PROMOTIONS → 0
+IMPLEMENTATION AUTHORIZATION → 0
 </code></pre></div></section><section class="print-page" id="intelligence-architecture-dashboard-guivos-business-master-specification" heading-number="16.5"><h1 id="intelligence-architecture-dashboard-guivos-business-master-specification-dashboard-guivos-business-documento-mestre-de-especificacao-analitica-e-handoff-replit">Dashboard Guivos Business — Documento Mestre de Especificação Analítica e Handoff Replit<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-business-master-specification-dashboard-guivos-business-documento-mestre-de-especificacao-analitica-e-handoff-replit" title="Permanent link">&para;</a></h1>
 <h2 id="intelligence-architecture-dashboard-guivos-business-master-specification-1-finalidade">1. Finalidade<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-business-master-specification-1-finalidade" title="Permanent link">&para;</a></h2>
 <p>Este documento é o <strong>Anexo B</strong> de <code>GKR-INTELLIGENCE-DASHBOARD-KPI-001</code> e governa, em nível documental pré-implementação, o <strong>Dashboard Guivos Business</strong>.</p>
