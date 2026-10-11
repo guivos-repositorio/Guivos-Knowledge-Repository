@@ -2,7 +2,7 @@
 id: GKR-INTELLIGENCE-DASHBOARD-KPI-001
 title: Dashboards, KPIs e Analytics — Documento Mestre de Especificação para Construção
 status: active
-version: 0.2.46
+version: 0.2.47
 owner: Guivos Intelligence Architecture
 last_updated: 2026-10-11
 normative: false
@@ -2716,5 +2716,46 @@ SOURCE CONTRACT AUTHORITY → NOT VERIFIED
 HUMAN AUTHORITY FORMALLY CONFIRMED → 0/13
 HUMAN ADJUDICATIONS → 0/77
 KPI PROMOTIONS → 0
+IMPLEMENTATION AUTHORIZATION → 0
+```
+
+
+---
+
+## 52. G-XD-02 — Registro de recepção e qualificação de evidências: seis KPIs prioritários
+
+### 52.1 Objetivo e limite
+
+Aplicar o handoff da seção 51 aos indicadores `GUV-KPI-POP-001/002/007/009/011` e `GUV-KPI-OPP-001`. Este é um **registro de lacunas e exigências de prova**, não um inventário de fontes confirmadas. A consulta documental às especificações do Anexo A, KPI Registry e contratos individuais disponíveis não certifica a existência de sistema, tabela, stream, owner institucional, regra de cálculo ou dataset operacional. Receber documento não equivale a aprovar autoridade.
+
+### 52.2 Estado individual de recepção
+
+| KPI | Registro documental individual verificado | Evidência P0 a qualificar | Evidência P1 a qualificar | Evidência P2 a qualificar | Estado |
+|---|---|---|---|---|---|
+| `GUV-KPI-POP-001` | Contrato v0.1.0 existente | Pessoa válida, exclusões e `as_of` | Fonte Pessoa, unicidade, freshness e lineage | Disclosure, owners e serving | `proposed / NOT_READY` |
+| `GUV-KPI-POP-002` | Contrato v0.1.0 existente | Criação válida, evento, janela e correções | Fonte Pessoa/evento, quality e proveniência | Disclosure, owners e serving | `proposed / NOT_READY` |
+| `GUV-KPI-POP-007` | Não materializado | Organização válida, estados e exclusões | Fonte Organização, cardinalidade e lineage | Disclosure, owners e serving | `proposed / NOT_READY` |
+| `GUV-KPI-POP-009` | Não materializado | Coletivo válido, estados e exclusões | Fonte Coletivo, qualidade e lineage | Disclosure, owners e serving | `proposed / NOT_READY` |
+| `GUV-KPI-POP-011` | Não materializado | Universo e denominador comparável dos três tipos | Fontes e qualidade reconciliadas entre tipos | Disclosure, owners e serving | `proposed / NOT_READY` |
+| `GUV-KPI-OPP-001` | Não materializado | Oportunidade válida, criação, janela e reversão | Fonte Oportunidade, qualidade e lineage | Disclosure, owners e serving | `proposed / NOT_READY` |
+
+### 52.3 Protocolo mínimo para futuras evidências
+
+Uma evidência candidata somente deverá ser registrada com: (a) KPI e campo afetado; (b) documento e versão, link/referência estável e data da extração; (c) natureza da prova — definição semântica, dado de origem, lineage, quality, disclosure ou contrato de serving; (d) responsável nominal pela emissão e seu mandato verificável quando autoridade for requerida; (e) escopo, população, tempo de referência e restrições aplicáveis; (f) conflito com autoridades existentes; (g) resultado da qualificação — `EVIDENCE_PRESENT_NOT_ADJUDICATED`, `EVIDENCE_MISSING`, `EVIDENCE_CONFLICT` ou `NOT_APPLICABLE_WITH_JUSTIFICATION`. Estes marcadores descrevem **prova recebida**, não maturidade KPI nem autorização. Não publicar dado pessoal sensível ou documentação privada no repositório aberto; preferir referência saneada.
+
+Na ausência de prova verificável, o campo permanece `EVIDENCE_MISSING`; não inferir inexistência do sistema de dados. A distinção entre ausência real de evento, zero computado e indisponibilidade deve ser resolvida antes de qualquer leitura quantitativa. A passagem por P0, P1 ou P2 requer autoridades e validações próprias, não podendo ser satisfeita somente pelo registro de recepção.
+
+### 52.4 Checkpoint
+
+```text
+G-XD-02 → SIX_KPI_EVIDENCE_INTAKE_REGISTER_PREPARED / OPEN
+VERIFIED INDIVIDUAL KPI CONTRACTS → 2/6
+UNMATERIALIZED INDIVIDUAL CONTRACTS → 4/6
+SOURCE OF TRUTH / OPERATIONAL CONTRACTS → NO AUTHORITY VERIFIED BY THIS EXAM
+G-XD-01 → UNRESOLVED
+G-XD-03..07 → OPEN
+HUMAN AUTHORITY FORMALLY CONFIRMED → 0/13
+HUMAN ADJUDICATIONS → 0/77
+CANONICAL KPI PROMOTIONS → 0
 IMPLEMENTATION AUTHORIZATION → 0
 ```
