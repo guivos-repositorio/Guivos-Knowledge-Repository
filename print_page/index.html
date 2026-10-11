@@ -73078,6 +73078,108 @@ HUMAN AUTHORITY FORMALLY CONFIRMED → 0/13
 HUMAN ADJUDICATIONS → 0/77
 KPI PROMOTIONS → 0
 IMPLEMENTATION AUTHORIZATION → 0
+</code></pre></div>
+<hr />
+<h2 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-55-g-xd-02-confronto-p2-consumo-privacidade-disclosure-e-serving-dos-seis-kpis-do-anexo-a">55. G-XD-02 — Confronto P2: consumo, privacidade, disclosure e serving dos seis KPIs do Anexo A<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-55-g-xd-02-confronto-p2-consumo-privacidade-disclosure-e-serving-dos-seis-kpis-do-anexo-a" title="Permanent link">&para;</a></h2>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-551-escopo-e-precedencia">55.1 Escopo e precedência<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-551-escopo-e-precedencia" title="Permanent link">&para;</a></h3>
+<p>Exame documental dos seis KPIs <code>GUV-KPI-POP-001/002/007/009/011</code> e <code>GUV-KPI-OPP-001</code>, após P0 (seção 53) e P1 (seção 54). Documentos transversais de governança, experiência e Intelligence constituem <strong>evidência de requisitos e limites</strong>, não autorização individual de dados, RBAC, endpoint de serving, exportação ou acesso produtivo.</p>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-552-contratos-e-referencias-examinados">55.2 Contratos e referências examinados<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-552-contratos-e-referencias-examinados" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Referência GKR</th>
+<th>Estado verificado</th>
+<th>Conteúdo pertinente a P2</th>
+<th>Limite preservado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>docs/governance-framework/data-privacy-and-consent-governance.md</code> — <code>GKR-DATA-PRIVACY-CONSENT-001</code>, v0.1.0</td>
+<td>proposed; arquitetura referencial</td>
+<td>Finalidade, bases jurídicas, consentimentos/preferências separados, papéis, retenção e direitos</td>
+<td>Não declara controles implementados nem substitui análise jurídica para tratamento concreto; consentimento não é base universal</td>
+</tr>
+<tr>
+<td><code>docs/experience-architecture/participant-relationships-interactions-visibility-contract.md</code> — <code>GKR-UX-PARTICIPANT-RELATIONSHIPS-INTERACTIONS-001</code>, v0.3.0</td>
+<td>draft; <code>normative: true</code>; candidato transversal</td>
+<td>Relação e encontrabilidade não concedem acesso irrestrito aos dados de pessoas e contrapartes</td>
+<td>Status draft não equivale a aprovação operacional nem expande direitos de leitura entre participantes</td>
+</tr>
+<tr>
+<td><code>docs/intelligence-architecture/kpi-contract-standard.md</code> — <code>GKR-INTELLIGENCE-KPI-CONTRACT-001</code>, v0.1.0</td>
+<td>active; <code>normative: false</code></td>
+<td><code>access_class</code>, <code>protection_threshold</code>, <code>export_rule</code>, <code>serving_contract_ref</code> e readiness</td>
+<td>Campos necessários não implicam threshold, política de drill-down/export ou serving materializado</td>
+</tr>
+<tr>
+<td><code>docs/intelligence-architecture/dashboard-guivos-master-specification.md</code> — <code>GKR-INTELLIGENCE-DASHBOARD-GUIVOS-001</code>, v0.1.5</td>
+<td>active; <code>normative: false</code></td>
+<td>Dashboard interno agrega indicadores, exige finalidade/autorização e nega acesso individual irrestrito</td>
+<td>Público interno não autoriza automaticamente dados identificáveis, exportação, ou divulgação de decisões individuais do Journey</td>
+</tr>
+<tr>
+<td><code>docs/intelligence-architecture/surface-provenance-explainability-contract.md</code> — <code>GKR-INTELLIGENCE-SURFACE-PROVENANCE-EXPLAINABILITY-001</code>, v1.0.0</td>
+<td>active; <code>normative: true</code>; contrato semântico transversal</td>
+<td>Consumidor e finalidade de serving devem permanecer rastreáveis no envelope de explicabilidade</td>
+<td>Não define serving técnico, endpoint, política de confiança ou infraestrutura de dados</td>
+</tr>
+</tbody>
+</table>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-553-matriz-de-blockers-p2-por-kpi">55.3 Matriz de blockers P2 por KPI<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-553-matriz-de-blockers-p2-por-kpi" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>KPI</th>
+<th>Consumidor e limite semântico conhecido</th>
+<th>Controles P2 ainda sem prova de fechamento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>GUV-KPI-POP-001</code></td>
+<td>Dashboard Guivos interno, agregado; contrato individual v0.1.0</td>
+<td>Regras de dimensão/filtros, threshold, supressão, exportação, owner, base aplicável e <code>serving_contract_ref</code></td>
+</tr>
+<tr>
+<td><code>GUV-KPI-POP-002</code></td>
+<td>Dashboard Guivos interno, agregado por período; contrato individual v0.1.0</td>
+<td>Mesmos controles, acrescidos de proteção de recortes temporais/grupos pequenos e tratamento de ausência</td>
+</tr>
+<tr>
+<td><code>GUV-KPI-POP-007</code></td>
+<td>Dashboard Guivos interno; Organização como objeto contado</td>
+<td>Política de acesso, eventual segmentação territorial/institucional, exportação, thresholds e serving</td>
+</tr>
+<tr>
+<td><code>GUV-KPI-POP-009</code></td>
+<td>Dashboard Guivos interno; Coletivo como objeto contado</td>
+<td>Escopo de divulgação, grupos pequenos, relação com Pessoas, supressão, exportação e serving</td>
+</tr>
+<tr>
+<td><code>GUV-KPI-POP-011</code></td>
+<td>Distribuição Pessoa/Organização/Coletivo; população/denominador ainda não adjudicados</td>
+<td>Agregação comparável, dimensões autorizadas, denominador, thresholds, supressão, exportação e serving</td>
+</tr>
+<tr>
+<td><code>GUV-KPI-OPP-001</code></td>
+<td>Oportunidades criadas; data de evento ainda não adjudicada</td>
+<td>Divulgação de dados institucionais/territoriais, recortes temporais, acessos, supressão, exportação e serving</td>
+</tr>
+</tbody>
+</table>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-554-fronteira-de-handoff">55.4 Fronteira de handoff<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-554-fronteira-de-handoff" title="Permanent link">&para;</a></h3>
+<p>O handoff P2 só poderá avançar mediante referências verificáveis de finalidade e base legal aplicável, classes de acesso autorizadas, governança de dimensão/filtro/drill-down, regras de supressão e ausência de dados, política de exportação, responsável com mandato competente, contrato de serving e evidência de implementação/validação separada quando necessária. <code>Normative: true</code> num contrato de escopo transversal não valida, sozinho, a exceção concreta. O exame não cria RBAC, endpoint, limiar de supressão, autorização de compartilhamento nem permissão para dados reais.</p>
+<div class="highlight"><pre><span></span><code>G-XD-02 → P2_GOVERNANCE_REFERENCES_EXAMINED / OPEN
+P2_CONCEPTUAL_AND_CROSS_SURFACE_RESTRICTIONS → LOCATED
+P2_OPERATIONAL_DISCLOSURE_AND_SERVING_APPROVAL → NOT VERIFIED
+G-XD-01 → UNRESOLVED
+G-XD-03..07 → OPEN
+SIX KPIS → proposed / NOT_READY
+HUMAN AUTHORITY FORMALLY CONFIRMED → 0/13
+HUMAN ADJUDICATIONS → 0/77
+KPI PROMOTIONS → 0
+IMPLEMENTATION AUTHORIZATION → 0
 </code></pre></div></section><section class="print-page" id="intelligence-architecture-dashboard-guivos-business-master-specification" heading-number="16.5"><h1 id="intelligence-architecture-dashboard-guivos-business-master-specification-dashboard-guivos-business-documento-mestre-de-especificacao-analitica-e-handoff-replit">Dashboard Guivos Business — Documento Mestre de Especificação Analítica e Handoff Replit<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-business-master-specification-dashboard-guivos-business-documento-mestre-de-especificacao-analitica-e-handoff-replit" title="Permanent link">&para;</a></h1>
 <h2 id="intelligence-architecture-dashboard-guivos-business-master-specification-1-finalidade">1. Finalidade<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-business-master-specification-1-finalidade" title="Permanent link">&para;</a></h2>
 <p>Este documento é o <strong>Anexo B</strong> de <code>GKR-INTELLIGENCE-DASHBOARD-KPI-001</code> e governa, em nível documental pré-implementação, o <strong>Dashboard Guivos Business</strong>.</p>
