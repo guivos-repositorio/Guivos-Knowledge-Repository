@@ -2,7 +2,7 @@
 id: GKR-INTELLIGENCE-DASHBOARD-KPI-001
 title: Dashboards, KPIs e Analytics — Documento Mestre de Especificação para Construção
 status: active
-version: 0.2.29
+version: 0.2.30
 owner: Guivos Intelligence Architecture
 last_updated: 2026-10-11
 normative: false
@@ -1846,6 +1846,53 @@ XD01-D01/D02 → REVIEW_REGISTER_PREPARED / NEEDS_EVIDENCE
 XD01-D01..D10 → DOSSIER_PREPARED / PENDING_HUMAN_ADJUDICATION
 DOSSIERS PREPARED → 77/77
 HUMAN ADJUDICATIONS → 0/77
+G-XD-01 → UNRESOLVED
+G-XD-02..07 → OPEN
+CANONICAL KPI PROMOTIONS → 0
+IMPLEMENTATION AUTHORIZATION → 0
+```
+
+
+---
+
+## 35. G-XD-01 — Triagem de evidências documentais para revisão humana de XD01-D01/D02
+
+### 35.1 Método e limites da triagem
+
+Esta triagem confronta os 13 registros da seção 34 com os cinco Documentos Mestres dos dashboards (Anexos A–E), em suas versões `0.1.5`, `0.1.3`, `0.1.2`, `0.1.2` e `0.1.3`, respectivamente, e com as matrizes do próprio Documento Mestre Global. **Referência documental não é contrato de fonte implementado, nem evidência de execução, consentimento, autoridade humana ou aprovação.** `PARCIAL` significa que existe uma distinção ou definição candidata relevante, mas não o contrato completo; `LACUNA` significa que a evidência mínima específica não foi demonstrada nas fontes examinadas. Não se afirma inexistência em outros documentos especializados não verificados nesta triagem.
+
+### 35.2 Matriz individual de rastreabilidade preliminar
+
+| ID | Triagem de evidência documental (referências por seção e KPI) | Lacuna/autoridade | Estado |
+|---|---|---|---|
+| `XD01-D01-A` | PARCIAL — Anexo A §6 `GUV-KPI-POP-001` (Pessoa distinta válida); Anexo D §10 `COL-KPI-PAR-003/004` (vínculo ≠ Pessoa). Contrato de chave/versão não demonstrado. | Autoridade humana competente não identificada nem validada; obter contrato especializado e prova de competência | NEEDS_EVIDENCE / PENDING_HUMAN_ADJUDICATION |
+| `XD01-D01-B` | PARCIAL — Anexo D §3 (participante ≠ administrador/moderador/representante; pertencimento ≠ autoridade). Política de contas múltiplas/delegação não demonstrada. | Autoridade humana competente não identificada nem validada; obter contrato especializado e prova de competência | NEEDS_EVIDENCE / PENDING_HUMAN_ADJUDICATION |
+| `XD01-D01-C` | PARCIAL — Anexo D §10 `COL-KPI-PAR-003/004` separa vínculos e Pessoas. Cardinalidade simultânea Pessoa–Coletivo e relações institucionais não demonstradas. | Autoridade humana competente não identificada nem validada; obter contrato especializado e prova de competência | NEEDS_EVIDENCE / PENDING_HUMAN_ADJUDICATION |
+| `XD01-D01-D` | PARCIAL — Anexo D §10 `COL-KPI-PAR-001/003/006/007` distingue solicitação, vínculo, saída e papel; Anexo C §10 `ORG-KPI-PAR-003`. Contratos de transição e datas não demonstrados. | Autoridade humana competente não identificada nem validada; obter contrato especializado e prova de competência | NEEDS_EVIDENCE / PENDING_HUMAN_ADJUDICATION |
+| `XD01-D01-E` | LACUNA — Anexo A §6 exige universo válido; Anexo D §10 distingue unidades, mas não apresenta autoridade e regra de merge/split/reversão. | Autoridade humana competente não identificada nem validada; obter contrato especializado e prova de competência | NEEDS_EVIDENCE / PENDING_HUMAN_ADJUDICATION |
+| `XD01-D01-F` | PARCIAL — Anexo B §1 proíbe autoridade empresarial sobre Journey privada; Anexo D §3 proíbe disclosure pessoal por padrão. Chave transversal/finalidade específica não demonstrada. | Autoridade humana competente não identificada nem validada; obter contrato especializado e prova de competência | NEEDS_EVIDENCE / PENDING_HUMAN_ADJUDICATION |
+| `XD01-D02-A` | PARCIAL — Anexo A §6 `GUV-KPI-POP-001`; B §10 `BUS-KPI-PAR-001`; C §10 `ORG-KPI-PAR-001`; D §10 `COL-KPI-PAR-004`. Universos distintos, sem contrato final. | Autoridade humana competente não identificada nem validada; obter contrato especializado e prova de competência | NEEDS_EVIDENCE / PENDING_HUMAN_ADJUDICATION |
+| `XD01-D02-B` | PARCIAL — Anexo B §10 `BUS-KPI-PAR-001` inclui escopo legítimo de programa/custeio; Anexo D §10 `COL-KPI-PAR-006` contempla pausas/saídas. Regras de inclusão/reingresso não adjudicadas. | Autoridade humana competente não identificada nem validada; obter contrato especializado e prova de competência | NEEDS_EVIDENCE / PENDING_HUMAN_ADJUDICATION |
+| `XD01-D02-C` | LACUNA — Anexo A §6 `GUV-KPI-POP-005` depende de evento e denominador; Anexo D §10 `COL-KPI-PAR-006` de contrato temporal. Vigência efetiva e retroatividade não demonstradas. | Autoridade humana competente não identificada nem validada; obter contrato especializado e prova de competência | NEEDS_EVIDENCE / PENDING_HUMAN_ADJUDICATION |
+| `XD01-D02-D` | PARCIAL — Anexo B §10 `BUS-KPI-PAR-003` participantes únicos/elegíveis; Anexo C §10 `ORG-KPI-PAR-004` depende de contrato específico. Fontes e regras de denominador não aprovadas. | Autoridade humana competente não identificada nem validada; obter contrato especializado e prova de competência | NEEDS_EVIDENCE / PENDING_HUMAN_ADJUDICATION |
+| `XD01-D02-E` | PARCIAL — Anexo B §1 limita Journey privada; Anexo D §3 limita divulgação individual; Anexo E §1 limita autoridade sobre trajetória pessoal. Serving/granularidade não aprovados. | Autoridade humana competente não identificada nem validada; obter contrato especializado e prova de competência | NEEDS_EVIDENCE / PENDING_HUMAN_ADJUDICATION |
+| `XD01-D02-F` | PARCIAL — Global §18.4 distingue zero de ausência e supressão; Global §25.3 `XD01-D09-A..H` exige taxonomia e qualidade. Nenhum contrato operacional demonstrado. | Autoridade humana competente não identificada nem validada; obter contrato especializado e prova de competência | NEEDS_EVIDENCE / PENDING_HUMAN_ADJUDICATION |
+| `XD01-D02-G` | PARCIAL — Anexo D §10 `COL-KPI-PAR-003/004` diferencia vínculos e pessoas; Global §26.3 `XD01-D10-C/D` exige dedup e reconciliação. Contratos entre produtos não demonstrados. | Autoridade humana competente não identificada nem validada; obter contrato especializado e prova de competência | NEEDS_EVIDENCE / PENDING_HUMAN_ADJUDICATION |
+
+### 35.3 Síntese de lacunas e próximos exames
+
+A triagem identificou 11 itens com **evidência documental parcial** e 2 com **lacuna específica** (`XD01-D01-E` e `XD01-D02-C`). Nenhum dos 13 possui comprovação integral de contrato, fonte, competência humana e autorização contextual. Antes de encaminhar à decisão, consultar e citar documentos especializados de identidade, papéis/vínculos, Business, Organização, Coletivo, Pessoa/Journey, Privacidade e Dados, conforme aplicabilidade; registrar arquivo, seção, versão, trecho, divergências e autoridade responsável **com fundamento explícito**. A existência de um documento mestre não identifica automaticamente o adjudicador.
+
+As diferenças entre Pessoa, conta, papel, vínculo, participante elegível, participante efetivo e consumidor autorizado permanecem mandatórias. A triagem não autoriza chave global, inferência de identidade, acesso a Journey privada, contagem agregada entre produtos, supressão de consentimento, taxa fabricada ou engenharia.
+
+### 35.4 Estado
+
+```text
+XD01-D01/D02 → SOURCE_EVIDENCE_SCREENED / NEEDS_EVIDENCE
+SOURCE SCREENING → 13/13 (11 PARTIAL; 2 GAP)
+HUMAN AUTHORITY CONFIRMED → 0/13
+HUMAN ADJUDICATIONS → 0/77
+XD01-D01..D10 → DOSSIER_PREPARED / PENDING_HUMAN_ADJUDICATION
 G-XD-01 → UNRESOLVED
 G-XD-02..07 → OPEN
 CANONICAL KPI PROMOTIONS → 0
