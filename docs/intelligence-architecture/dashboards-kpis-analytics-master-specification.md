@@ -2,7 +2,7 @@
 id: GKR-INTELLIGENCE-DASHBOARD-KPI-001
 title: Dashboards, KPIs e Analytics — Documento Mestre de Especificação para Construção
 status: active
-version: 0.2.26
+version: 0.2.27
 owner: Guivos Intelligence Architecture
 last_updated: 2026-10-11
 normative: false
@@ -1679,6 +1679,60 @@ A revisão deverá distinguir Pessoa de conta, papel e vínculo; elegibilidade d
 ```text
 XD01-D01..D06 → DOSSIER_PREPARED / PENDING_HUMAN_ADJUDICATION
 XD01-D07..D10 → EXAMINED / PENDING_HUMAN_ADJUDICATION
+OPEN HUMAN QUESTIONS → 77
+HUMAN ADJUDICATIONS → 0
+G-XD-01 → UNRESOLVED
+G-XD-02..07 → OPEN
+CANONICAL KPI PROMOTIONS → 0
+IMPLEMENTATION AUTHORIZATION → 0
+```
+
+
+---
+
+## 32. G-XD-01 — Dossiês individuais de decisão humana: XD01-D07 e XD01-D08
+
+### 32.1 Escopo, fidelidade e autoridade
+
+Esta seção prepara 16 dossiês de adjudicação humana, preservando **integralmente as perguntas e evidências mínimas** das seções 23.3 (`XD01-D07-A..H`) e 24.3 (`XD01-D08-A..H`). As dependências adicionais organizam o exame sem constituir decisão, contrato temporal, política de correção, autorização de acesso ou regra implementável. Os cinco Documentos Mestres dos dashboards são evidência contextual, não fonte de adjudicação presumida.
+
+### 32.2 Dossiês — XD01-D07: calendário, timezone, janelas e granularidade
+
+| ID | Pergunta/decisão original pendente | Evidência mínima original | Dependências para revisão (não adjudicadas) |
+|---|---|---|---|
+| `XD01-D07-A` | Qual calendário e timezone rege cada fonte, objeto, KPI e consumidor? | Autoridade de domínio, timezone explícito, convenção de calendário e localidade | Autoridade de domínio, consumidor e fonte; D01/D03 |
+| `XD01-D07-B` | Qual timestamp prevalece para contagem: ocorrência, recebimento, validação, confirmação ou correção? | Taxonomia de evento, proveniência, data efetiva e trilha de auditoria | Taxonomia e evento qualificante; D03/D04 |
+| `XD01-D07-C` | Qual granularidade legítima: evento, sessão, dia, semana, mês, ciclo, contrato ou coorte? | Unidade, finalidade, elegibilidade, cardinalidade e supressão | Grão, elegibilidade e deduplicação; D02/D05/D06 |
+| `XD01-D07-D` | Como delimitar janelas móveis, períodos fechados e coortes D7/D30/D90 sem misturá-los? | Marco de entrada/ativação, instante inicial/final, janela e denominador | Coorte, ativação e denominador; D02/D04/D06 |
+| `XD01-D07-E` | Como lidar com fusos distintos, horário de verão, fronteiras de dia e virada de período? | Origem, offset/timezone, transformação rastreável e regra de corte | Proveniência, transformação e auditoria; D08 |
+| `XD01-D07-F` | Como registrar atraso, reprocessamento, estorno, mudança retroativa e fechamento de período? | Versionamento, histórico, política de correção, freshness e reconciliação | Correção, fechamento e qualidade; D08/D09 |
+| `XD01-D07-G` | Quando séries de diferentes dashboards podem ser comparadas no mesmo período? | Mesmo objeto/unidade, janela, coorte, fuso, granularidade e autorização | Equivalência de grão e disclosure; D05/D06/D10 |
+| `XD01-D07-H` | Como representar dados sem timestamp confiável, janela incompleta ou período suprimido? | Estado de qualidade, não-dado, proveniência, supressão e ausência de inferência | Qualidade, atraso e supressão; D09 |
+
+### 32.3 Dossiês — XD01-D08: correções retroativas, reprocessamento e histórico
+
+| ID | Pergunta/decisão original pendente | Evidência mínima original | Dependências para revisão (não adjudicadas) |
+|---|---|---|---|
+| `XD01-D08-A` | Quais alterações são novo evento, atualização legítima, correção, cancelamento, estorno ou reversão? | Taxonomia por domínio, estado anterior/posterior e autoridade | Eventos, estados e reversão; D03/D04 |
+| `XD01-D08-B` | Quem pode solicitar, validar, executar e auditar uma correção por objeto e consumidor? | Papéis, permissões, aprovação e trilha de autoria | Autoridade contextual e trilha de auditoria; G-XD-03 |
+| `XD01-D08-C` | Como representar versão, origem, instante de ocorrência, registro, validação, correção e vigência efetiva? | Proveniência, lineage, histórico e timestamps auditáveis | Temporalidade, origem e versionamento; D07/G-XD-02 |
+| `XD01-D08-D` | Qual período, coorte, população e KPI pode ser recalculado após uma alteração tardia? | Janela, granularidade, denominador, fechamento e política autorizada | Coorte, janela, fórmula e fechamento; D02/D06/D07 |
+| `XD01-D08-E` | Como impedir dupla contagem ou exclusão indevida em merge/split de identidade, eventos repetidos e reingressos? | Cardinalidade, vínculo de versões, deduplicação e reconciliação | Identidade, cardinalidade e histórico; D01/D05 |
+| `XD01-D08-F` | Como distinguir valor publicado anteriormente, valor recalculado e ajuste explícito? | Versão do indicador, data de referência, histórico de publicação e explicação | Proveniência e explicabilidade da série; G-XD-02 |
+| `XD01-D08-G` | Como preservar consentimento, minimização e privacidade em correções compartilhadas entre domínios e consumidores? | Base de autorização, escopo de disclosure, retenção e revogação | Consentimento, minimização e disclosure; G-XD-03/04 |
+| `XD01-D08-H` | Como tratar origem indisponível, evidência contestada, correção parcial ou reprocessamento falho? | Estados de qualidade, bloqueio/supressão, auditoria, reversibilidade e não-dado | Qualidade, exceções e não-dado; D09 |
+
+### 32.4 Ficha individual de decisão e verificações cruzadas
+
+Cada dossiê requer registro de **ID, pergunta original, evidência mínima original, objeto/KPI, domínio, consumidor, fontes/versionamento, autoridade humana competente, alternativas, timestamp e calendário quando pertinentes, unidade/coorte/janela, dependências, riscos de atraso e correção, privacidade/consentimento/serving/exportação, justificativa, decisão expressa, data, aprovação rastreável e revisão cruzada**. Não preencher decisão nem autoridade por inferência; evidência insuficiente deve manter `PENDING_HUMAN_ADJUDICATION`, `NEEDS_EVIDENCE` ou `CONFLICT`.
+
+A revisão deve distinguir ocorrência, recebimento, validação, confirmação, correção e vigência efetiva; períodos fechados de janelas móveis; retenção D7/D30/D90 de recorrência e reativação; evento novo de correção, estorno e reversão; valor previamente publicado de valor recalculado e ajuste explícito. Comparações entre dashboards exigem equivalência contratual de objeto, população, unidade, janela, fuso e autorização. Reprocessamento não pode fabricar eventos, apagar trilhas históricas nem ampliar disclosure de Journey privada ou contrapartes. Estados `NO_DATA`, `SOURCE_DELAYED`, `INSUFFICIENT_DATA` e `SUPPRESSED_BY_POLICY` permanecem distinguíveis.
+
+### 32.5 Controle de maturidade
+
+```text
+XD01-D01..D08 → DOSSIER_PREPARED / PENDING_HUMAN_ADJUDICATION
+XD01-D09..D10 → EXAMINED / PENDING_HUMAN_ADJUDICATION
 OPEN HUMAN QUESTIONS → 77
 HUMAN ADJUDICATIONS → 0
 G-XD-01 → UNRESOLVED
