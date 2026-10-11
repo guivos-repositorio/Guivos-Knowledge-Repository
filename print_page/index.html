@@ -72772,6 +72772,88 @@ HUMAN AUTHORITY FORMALLY CONFIRMED → 0/13
 HUMAN ADJUDICATIONS → 0/77
 KPI PROMOTIONS → 0
 IMPLEMENTATION AUTHORIZATION → 0
+</code></pre></div>
+<hr />
+<h2 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-52-g-xd-02-registro-de-recepcao-e-qualificacao-de-evidencias-seis-kpis-prioritarios">52. G-XD-02 — Registro de recepção e qualificação de evidências: seis KPIs prioritários<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-52-g-xd-02-registro-de-recepcao-e-qualificacao-de-evidencias-seis-kpis-prioritarios" title="Permanent link">&para;</a></h2>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-521-objetivo-e-limite">52.1 Objetivo e limite<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-521-objetivo-e-limite" title="Permanent link">&para;</a></h3>
+<p>Aplicar o handoff da seção 51 aos indicadores <code>GUV-KPI-POP-001/002/007/009/011</code> e <code>GUV-KPI-OPP-001</code>. Este é um <strong>registro de lacunas e exigências de prova</strong>, não um inventário de fontes confirmadas. A consulta documental às especificações do Anexo A, KPI Registry e contratos individuais disponíveis não certifica a existência de sistema, tabela, stream, owner institucional, regra de cálculo ou dataset operacional. Receber documento não equivale a aprovar autoridade.</p>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-522-estado-individual-de-recepcao">52.2 Estado individual de recepção<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-522-estado-individual-de-recepcao" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>KPI</th>
+<th>Registro documental individual verificado</th>
+<th>Evidência P0 a qualificar</th>
+<th>Evidência P1 a qualificar</th>
+<th>Evidência P2 a qualificar</th>
+<th>Estado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>GUV-KPI-POP-001</code></td>
+<td>Contrato v0.1.0 existente</td>
+<td>Pessoa válida, exclusões e <code>as_of</code></td>
+<td>Fonte Pessoa, unicidade, freshness e lineage</td>
+<td>Disclosure, owners e serving</td>
+<td><code>proposed / NOT_READY</code></td>
+</tr>
+<tr>
+<td><code>GUV-KPI-POP-002</code></td>
+<td>Contrato v0.1.0 existente</td>
+<td>Criação válida, evento, janela e correções</td>
+<td>Fonte Pessoa/evento, quality e proveniência</td>
+<td>Disclosure, owners e serving</td>
+<td><code>proposed / NOT_READY</code></td>
+</tr>
+<tr>
+<td><code>GUV-KPI-POP-007</code></td>
+<td>Não materializado</td>
+<td>Organização válida, estados e exclusões</td>
+<td>Fonte Organização, cardinalidade e lineage</td>
+<td>Disclosure, owners e serving</td>
+<td><code>proposed / NOT_READY</code></td>
+</tr>
+<tr>
+<td><code>GUV-KPI-POP-009</code></td>
+<td>Não materializado</td>
+<td>Coletivo válido, estados e exclusões</td>
+<td>Fonte Coletivo, qualidade e lineage</td>
+<td>Disclosure, owners e serving</td>
+<td><code>proposed / NOT_READY</code></td>
+</tr>
+<tr>
+<td><code>GUV-KPI-POP-011</code></td>
+<td>Não materializado</td>
+<td>Universo e denominador comparável dos três tipos</td>
+<td>Fontes e qualidade reconciliadas entre tipos</td>
+<td>Disclosure, owners e serving</td>
+<td><code>proposed / NOT_READY</code></td>
+</tr>
+<tr>
+<td><code>GUV-KPI-OPP-001</code></td>
+<td>Não materializado</td>
+<td>Oportunidade válida, criação, janela e reversão</td>
+<td>Fonte Oportunidade, qualidade e lineage</td>
+<td>Disclosure, owners e serving</td>
+<td><code>proposed / NOT_READY</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-523-protocolo-minimo-para-futuras-evidencias">52.3 Protocolo mínimo para futuras evidências<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-523-protocolo-minimo-para-futuras-evidencias" title="Permanent link">&para;</a></h3>
+<p>Uma evidência candidata somente deverá ser registrada com: (a) KPI e campo afetado; (b) documento e versão, link/referência estável e data da extração; (c) natureza da prova — definição semântica, dado de origem, lineage, quality, disclosure ou contrato de serving; (d) responsável nominal pela emissão e seu mandato verificável quando autoridade for requerida; (e) escopo, população, tempo de referência e restrições aplicáveis; (f) conflito com autoridades existentes; (g) resultado da qualificação — <code>EVIDENCE_PRESENT_NOT_ADJUDICATED</code>, <code>EVIDENCE_MISSING</code>, <code>EVIDENCE_CONFLICT</code> ou <code>NOT_APPLICABLE_WITH_JUSTIFICATION</code>. Estes marcadores descrevem <strong>prova recebida</strong>, não maturidade KPI nem autorização. Não publicar dado pessoal sensível ou documentação privada no repositório aberto; preferir referência saneada.</p>
+<p>Na ausência de prova verificável, o campo permanece <code>EVIDENCE_MISSING</code>; não inferir inexistência do sistema de dados. A distinção entre ausência real de evento, zero computado e indisponibilidade deve ser resolvida antes de qualquer leitura quantitativa. A passagem por P0, P1 ou P2 requer autoridades e validações próprias, não podendo ser satisfeita somente pelo registro de recepção.</p>
+<h3 id="intelligence-architecture-dashboards-kpis-analytics-master-specification-524-checkpoint">52.4 Checkpoint<a class="headerlink" href="#intelligence-architecture-dashboards-kpis-analytics-master-specification-524-checkpoint" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>G-XD-02 → SIX_KPI_EVIDENCE_INTAKE_REGISTER_PREPARED / OPEN
+VERIFIED INDIVIDUAL KPI CONTRACTS → 2/6
+UNMATERIALIZED INDIVIDUAL CONTRACTS → 4/6
+SOURCE OF TRUTH / OPERATIONAL CONTRACTS → NO AUTHORITY VERIFIED BY THIS EXAM
+G-XD-01 → UNRESOLVED
+G-XD-03..07 → OPEN
+HUMAN AUTHORITY FORMALLY CONFIRMED → 0/13
+HUMAN ADJUDICATIONS → 0/77
+CANONICAL KPI PROMOTIONS → 0
+IMPLEMENTATION AUTHORIZATION → 0
 </code></pre></div></section><section class="print-page" id="intelligence-architecture-dashboard-guivos-business-master-specification" heading-number="16.5"><h1 id="intelligence-architecture-dashboard-guivos-business-master-specification-dashboard-guivos-business-documento-mestre-de-especificacao-analitica-e-handoff-replit">Dashboard Guivos Business — Documento Mestre de Especificação Analítica e Handoff Replit<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-business-master-specification-dashboard-guivos-business-documento-mestre-de-especificacao-analitica-e-handoff-replit" title="Permanent link">&para;</a></h1>
 <h2 id="intelligence-architecture-dashboard-guivos-business-master-specification-1-finalidade">1. Finalidade<a class="headerlink" href="#intelligence-architecture-dashboard-guivos-business-master-specification-1-finalidade" title="Permanent link">&para;</a></h2>
 <p>Este documento é o <strong>Anexo B</strong> de <code>GKR-INTELLIGENCE-DASHBOARD-KPI-001</code> e governa, em nível documental pré-implementação, o <strong>Dashboard Guivos Business</strong>.</p>
