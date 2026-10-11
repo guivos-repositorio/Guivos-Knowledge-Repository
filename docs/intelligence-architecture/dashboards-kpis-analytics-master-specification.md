@@ -2,7 +2,7 @@
 id: GKR-INTELLIGENCE-DASHBOARD-KPI-001
 title: Dashboards, KPIs e Analytics — Documento Mestre de Especificação para Construção
 status: active
-version: 0.2.40
+version: 0.2.41
 owner: Guivos Intelligence Architecture
 last_updated: 2026-10-11
 normative: false
@@ -2445,6 +2445,61 @@ Sem essa evidência, não registrar autoridade como confirmada, não encaminhar 
 FOUNDER PROPOSAL → EXPLICITLY_PROPOSED
 MANDATE EVIDENCE IN EXAMINED GKR SOURCES → NOT_DEMONSTRATED
 FORMAL HUMAN AUTHORITY CONFIRMED → 0/13
+HUMAN REFERRALS SUBMITTED → 0
+HUMAN ADJUDICATIONS → 0/77
+G-XD-01 → UNRESOLVED
+G-XD-02..07 → OPEN
+CANONICAL KPI PROMOTIONS → 0
+IMPLEMENTATION AUTHORIZATION → 0
+```
+
+
+---
+
+## 46. G-XD-01 — Protocolo de recepção e qualificação de evidência institucional (XD01-D01-E/D02-C)
+
+### 46.1 Finalidade e limite
+
+Esta ficha operacionaliza a **recepção futura** de evidência de competência, sem declarar que documentos externos foram apresentados, sem conferir mandato por inferência e sem repetir a conclusão de mérito da seção 45. A manifestação do fundador na seção 44 permanece proposta expressa, não outorga formal. O registro é preparatório e **não constitui solicitação enviada, encaminhamento humano, decisão ou adjudicação**.
+
+### 46.2 Registro mínimo por instrumento recebido
+
+| Campo | Exigência de preenchimento | Estado inicial |
+|---|---|---|
+| Identificador de evidência | ID estável, sem conteúdo sensível | `NOT_RECEIVED` |
+| Natureza do instrumento | Contrato/estatuto, ata, procuração, delegação, política de alçada ou equivalente aplicável | `NOT_RECEIVED` |
+| Entidade e jurisdição | Pessoa/entidade à qual a competência pertence, com fonte verificável | `UNVERIFIED` |
+| Emissor e legitimidade | Quem emitiu, aprovou ou assinou e em que capacidade | `UNVERIFIED` |
+| Datas e vigência | Emissão, entrada em vigor, alterações, revogação e prazo de validade | `UNVERIFIED` |
+| Poderes e alçadas | Matérias reservadas, limites, condições, quórum, eventuais aprovações adicionais | `UNVERIFIED` |
+| Aplicabilidade por expediente | Delimitar separadamente `XD01-D01-E` e `XD01-D02-C` | `UNASSESSED` |
+| Custódia e sensibilidade | Referência sanitizada, localização segura, restrições de divulgação | `UNASSESSED` |
+| Verificação | Revisor competente, data, fonte e conclusão fundamentada | `NOT_PERFORMED` |
+
+Não inserir instrumentos confidenciais, documentos pessoais ou assinaturas em repositório público. Um resumo ou referência sanitizada não substitui a conferência do instrumento original em ambiente adequado.
+
+### 46.3 Triagem de competência por expediente
+
+| Expediente | Pergunta de competência (não de mérito) | Evidências que podem ser necessárias | Resultado inicial |
+|---|---|---|---|
+| `XD01-D01-E` | A instância indicada tem poder formal para decidir política de identidade, correção, merge/split e seus efeitos, respeitados direitos de titulares e papéis técnicos? | Instrumento institucional aplicável, limites de alçada e revisões especializadas cabíveis | `PENDING_EVIDENCE` |
+| `XD01-D02-C` | A instância indicada tem poder formal para aprovar critérios de elegibilidade e implicações temporais, sem decidir automaticamente contratos de KPI ou reprocessamento? | Instrumento institucional aplicável, escopo do programa/objeto, alçadas e revisões cabíveis | `PENDING_EVIDENCE` |
+
+Distinguir competência institucional, ownership do ativo de domínio, responsabilidade analítica e obrigações de privacidade; nenhuma prova de um desses elementos substitui as demais.
+
+### 46.4 Estados permitidos do expediente de evidência
+
+`NOT_RECEIVED` → nenhum instrumento específico apresentado; `RECEIVED_UNVERIFIED` → instrumento recebido, autenticidade/validade/aplicabilidade ainda não verificadas; `NEEDS_COMPLEMENT` → insuficiência localizada; `CONFLICT` → inconsistência material; `COMPETENCE_EVIDENCED` → conclusão sustentada por instrumento vigente e revisão rastreável, **somente após ato humano competente**. A progressão não é automática, nem substitui adjudicação de mérito.
+
+Antes de encaminhamento humano efetivo, registrar instrumento verificado, entidade, escopo, eventuais reservas, competência de quem validou, data e local seguro de custódia. Havendo lacunas, não selecionar alternativas de mérito nem promover prontidão, KPI, autorização de acesso, serving ou implementação.
+
+### 46.5 Checkpoint
+
+```text
+XD01-D01-E / XD01-D02-C → MANDATE_EVIDENCE_INTAKE_PREPARED
+SPECIFIC EXTERNAL MANDATE EVIDENCE RECEIVED → 0 DOCUMENTED IN THIS SECTION
+FOUNDER → EXPLICITLY_PROPOSED / NOT_FORMALLY_CONFIRMED
+HUMAN AUTHORITY FORMALLY CONFIRMED → 0/13
 HUMAN REFERRALS SUBMITTED → 0
 HUMAN ADJUDICATIONS → 0/77
 G-XD-01 → UNRESOLVED
