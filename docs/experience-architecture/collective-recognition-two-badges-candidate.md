@@ -3603,3 +3603,80 @@ PR #654 → OPEN / DRAFT
 GKR MENU ACCESS → REQUESTED / NOT PUBLISHED
 BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
 ```
+
+## DEC-05.B — Exame individual: fraude, integridade e proteção contra manipulação (v4.17 candidato)
+
+**Resultado:** EXAME DOCUMENTAL CONCLUÍDO / CONVERGÊNCIA ANALÍTICA CONDICIONAL / ADJUDICAÇÃO HUMANA PENDENTE. Os controles abaixo são propostas de governança; não constituem detecção implantada, comprovação de fraude, sanção, concessão ou revogação automática de selos.
+
+### Questão decisória
+
+Como identificar, instruir e revisar sinais de falsificação, coerção, duplicidade, manipulação de avaliações e conflitos de interesse, sem substituir o juízo institucional por métricas ou penalizar injustificadamente Coletivos pequenos, informais ou de atuação territorial específica?
+
+### Taxonomia de sinais e consequências candidatas
+
+| Código | Situação | Tratamento proposto |
+|---|---|---|
+| INT-01 | Prova de existência ou representação inconsistente | Solicitar esclarecimento ou evidência proporcional; revisão humana |
+| INT-02 | Respostas duplicadas ou vínculo de experiência inconclusivo | Verificar proveniência e deduplicação protegida, sem expor identidade |
+| INT-03 | Concentração atípica de avaliações positivas ou negativas | Sinal de revisão; nunca prova suficiente de fraude |
+| INT-04 | Pressão por avaliações, incentivos condicionados ou retaliação | Proteger Pessoas, preservar elementos necessários e encaminhar à autoridade competente |
+| INT-05 | Avaliação artificial, coordenação indevida ou identidade simulada | Análise contextual e contraditório proporcional antes de decisão |
+| INT-06 | Conflito de interesses de examinador, representante ou parceiro | Declaração, afastamento ou redistribuição de competência conforme política ratificada |
+| INT-07 | Denúncia maliciosa ou disputa entre Coletivos | Triagem independente e proteção contra represália; denúncia não produz sanção automática |
+| INT-08 | Falsificação comprovada por rito regular | Decisão motivada, proporcional e recorrível por autoridade formalmente investida |
+
+### Guardas institucionais
+
+1. **Presunção não automatizada:** anomalia estatística, sinal de IA, denúncia ou baixa amostragem não equivalem a fraude comprovada e não podem determinar concessão, suspensão ou revogação automática.
+2. **Proporcionalidade territorial:** não exigir CNPJ, escala de audiência, volume absoluto de avaliações ou formalização incompatível como atalho universal para legitimidade; critérios de prova dependem de ratificação DEC-01.
+3. **Separação de funções:** recebimento de denúncias, instrução, decisão inicial, recurso e auditoria devem observar independência e impedimentos sujeitos à DEC-03.
+4. **Proteção de Pessoas:** não revelar identidade, avaliação R1, participação sensível, denunciante ou crítico a representantes, patrocinadores ou público; aplicar limites de DEC-05.A.
+5. **Proveniência e cadeia de custódia:** registrar origem, integridade, versão, acesso, encaminhamentos e justificativas de evidências, com retenção e descarte ainda a deliberar.
+6. **Contraditório e recurso:** oferecer informação suficiente e compatível com privacidade, prazo a definir e instância de revisão independente; não presumir recurso resolvido pelo mesmo decisor.
+7. **Independência econômica:** compra de mídia, patrocínio ou receita de Coletivo jamais servem como prova de legitimidade ou contribuição nem bloqueiam investigação.
+8. **Distinção dos selos:** indícios relacionados à legitimidade e representação não são automaticamente equivalentes aos referentes a contribuição percebida; observar dependências de estados normativamente ratificadas.
+9. **Escalonamento proporcional:** medidas protetivas cautelares, se futuramente aprovadas, exigem fundamento, competência, prazo, revisão e regra explícita de publicação/retirada; não instituí-las por este exame.
+10. **Auditabilidade:** registrar erros confirmados, falsos positivos, reversões e vieses para revisão da política sem produzir ranking reputacional público.
+
+### Fluxo institucional candidato
+
+1. **Recepção controlada:** receber sinal, denúncia ou divergência, classificar urgência e restringir acesso.
+2. **Triagem independente:** distinguir falha de dados, ruído estatístico, suspeita fundamentada e risco concreto para Pessoas; registrar conflito potencial.
+3. **Instrução proporcional:** coletar somente evidências necessárias, verificar proveniência e documentar incerteza.
+4. **Contraditório protegido:** possibilitar manifestação sem expor respondentes ou denunciantes.
+5. **Decisão competente:** autoridade humana designada aplica política ratificada, fundamentação e medidas proporcionais.
+6. **Recurso segregado:** decisão revisável por instância independente, com trilha protegida.
+7. **Atualização canônica:** mudanças autorizadas seguem DEC-04 para projeção ou retirada segura das superfícies.
+8. **Auditoria:** examinar qualidade, seletividade e impactos não intencionais sobre Coletivos de diferentes portes e territórios.
+
+Este fluxo não está implementado e não autoriza tratamento adicional de dados nem procedimento sancionador.
+
+### Cenários adversariais de teste futuro
+
+| Cenário | Resultado esperado do controle |
+|---|---|
+| Grupo de pedal pequeno recebe só três avaliações legítimas | Não classificar automaticamente como manipulação ou inelegível; reconhecer limitação de inferência |
+| Grupo de oração recebe denúncia anônima sobre pressão por avaliação | Proteger denunciante e vínculo religioso; triagem independente, sem sanção automática |
+| Coletivo com patrocinador tenta exigir selo em contrato | Impedir influência comercial na decisão |
+| Várias Pessoas avaliam a mesma experiência, com perfis semelhantes | Investigar duplicidade somente com dados necessários; não presumir identidade simulada |
+| Representante pede lista de avaliadores desfavoráveis | Negar acesso identificável e comunicar apenas fundamento proporcional |
+| Auditor participou da concessão questionada | Registrar impedimento e encaminhar a instância independente |
+| Erro de deduplicação reduz avaliação válida | Possibilitar correção, reprocessamento documentado e revisão humana |
+| Selo foi publicado e surge suspeita não comprovada | Aplicar somente política cautelar previamente ratificada; preservar estados canônicos e direitos de defesa |
+
+### Pendências de adjudicação e homologação
+
+Ratificar tipologia de fraude e critérios probatórios; papéis e impedimentos; critérios de triagem e urgência; medidas protetivas e seus limites; prazos e recursos; proteção de denunciantes e avaliadores; regras de uso de modelos estatísticos/IA; cadeia de custódia; qualidade de deduplicação; monitoramento de falso positivo, vieses territoriais e taxa de reversão; requisitos legais e evidências de homologação. Nenhum limiar estatístico, prazo de retenção, SLA ou alçada está aprovado.
+
+```text
+DEC-05.B INDIVIDUAL EXAM → COMPLETE
+DEC-05.B ANALYTICAL DIRECTION → CONDITIONAL CONVERGENCE
+DEC-05.B HUMAN NORMATIVE ADJUDICATION → PENDING
+DEC-05 INDIVIDUAL EXAMS → 2/5 DOCUMENTED
+DEC-01..04 ANALYTICAL EXAMS → 20/20 DOCUMENTED
+DEC-01..04 HUMAN NORMATIVE RATIFICATIONS → 0/20 CONFIRMED
+DEC-05.C → NEXT
+PR #654 → OPEN / DRAFT
+GKR MENU ACCESS → REQUESTED / NOT PUBLISHED
+BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
+```
