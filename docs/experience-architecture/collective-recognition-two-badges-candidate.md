@@ -2,7 +2,7 @@
 id: GKR-COLLECTIVE-RECOGNITION-001
 title: Coletivos — Verificado e Contribuição Reconhecida
 status: proposed
-version: 1.9.0
+version: 2.0.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -1245,4 +1245,68 @@ P0-05 OPERATIONAL VALIDATION → NOT STARTED
 P0-01..05 NORMATIVE APPROVAL → PENDING
 CBR-01..08 HUMAN NORMATIVE ADJUDICATION → 0/8 CONFIRMED
 BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
+```
+
+
+## ADJ-11 — Auditoria consolidada, reconciliação editorial e pauta de deliberação (v2.0 candidato)
+
+**Escopo verificado:** CBR-01..08, ADJ-01..10 e matrizes P0-01..05 desta proposta, com limites derivados das autoridades canônicas já referidas. **Natureza:** exame documental, não auditoria técnica executada, validação jurídica, homologação, nem adjudicação humana normativa.
+
+### 1. Reconciliação dos estados
+
+- `CBR-01..08 = 8/8 DOCUMENTED` significa **seções candidatas redigidas**, não aprovação dos oito gates. `OPEN` em cada CBR permanece correto até deliberação expressa.
+- `P0-01..05 = 5/5 DOCUMENTED` significa **cobertura das cinco pendências por propostas**, não resolução de bloqueios.
+- `ADJ-01..11` designa **etapas de preparação para adjudicação**; a palavra “ADJ” no título não converte análise em autoridade formal.
+- `version: 2.0.0` é a versão do **documento candidato**, não do Master PER-103, da política de reputação, nem de um produto implementado.
+- PR #654 segue DRAFT: nenhuma permissão para concessão, publicação, ranking ou protótipo deriva destes anexos.
+
+### 2. Findings de consistência e correções interpretativas
+
+| ID | Classificação | Evidência interna | Reconciliação requerida |
+|---|---|---|---|
+| CF-01 | EDITORIAL | “Adjudicação” aparece nos títulos ADJ-01..10, mas estados afirmam `PENDING` | Interpretar ADJ como preparação; não exibir “adjudicado” em relatório sem ata/decisão formal |
+| CF-02 | METHOD | Amostras numéricas de ADJ-07 são hipóteses (20 pessoas, 70%, 8 pessoas etc.) | Não citar esses números em UX, contratos de selo ou normas como limites oficiais |
+| CF-03 | METHOD | Experiência, avaliação e Pessoa têm denominadores diferentes, com amostras não probabilísticas | Publicar um percentual único de contribuição ou confiança apenas se metodologia adjudicada o permitir |
+| CF-04 | SEMANTIC | Termos “experiência verificada” e “contribuição reconhecida” podem sugerir causalidade | Distinguir vivência/atribuição comprovadas de percepções relatadas; não afirmar evolução individual objetiva |
+| CF-05 | AUTHORITY | Decisão material de selo e publicação estão desenhadas separadamente | Exigir autoridades distintas, fonte canônica e extensão de PER-103/cards antes de projetar |
+| CF-06 | PRIVACY | Evidências de participação, crença, saúde e avaliações podem ser sensíveis | Evidência privada não gera direito de divulgação pública; revisão de privacidade é gate independente |
+| CF-07 | OPERATIONS | Promessa de invalidação de cache sem implementação | Tratar SLA, offline, eventos e sincronização como requisitos a testar, não capacidade vigente |
+| CF-08 | FAIRNESS | Critérios de quantidade podem favorecer Coletivos grandes e recorrentes | Calibrar sem excluir automaticamente iniciativas pequenas, novas ou pontuais |
+| CF-09 | EDITORIAL | Rótulo visual usa “Contribuição reconhecida”; nome do conceito aparece com inicial maiúscula nas duas palavras | Preservar denominação do selo e variante tipográfica da interface, sem criar terceiro reconhecimento |
+
+**Conclusão do exame interno:** não se identificou uma contradição semântica central que obrigue abandonar a dupla de selos; há, porém, riscos de **interpretação excessiva** de status, números, prova e autoridade. Os itens CF-01..09 são ajustes de leitura e gates de reconciliação, não erros comprovados de implementação.
+
+### 3. Pacote objetivo de decisões humanas necessárias
+
+| Decisão | Pergunta que deve ser deliberada | Artefato de saída exigido |
+|---|---|---|
+| DEC-01 / P0-01 | Quais provas e corroborações bastam por tipologia para existência, representação e experiência? | Política de prova versionada e exemplos aprovados |
+| DEC-02 / P0-02 | Quais dimensões substantivas e limites de robustez autorizam reconhecimento? | Protocolo metodológico calibrado, inclusive para pequeno porte |
+| DEC-03 / P0-03 | Qual instância detém competência para conceder, indeferir, suspender e julgar recurso? | Mandatos, segregação, alçadas e prazos aprovados |
+| DEC-04 / P0-04 | Qual fonte de verdade e qual ato autorizam exibição em cards e PER-103? | Extensão expressa dos Masters/superfícies e contrato de publicação |
+| DEC-05 / P0-05 | Quais controles de privacidade, integridade, segurança e retirada são suficientes para operar? | Revisões competentes, política operacional e ensaios de homologação |
+
+**Ordem de dependência:** DEC-01 e DEC-02 sustentam decisão de mérito; DEC-03 designa autoridade; DEC-04 autoriza visibilidade; DEC-05 valida condições para operação. DEC-05 deve ser considerado transversal, não postergado na prática para depois da implementação.
+
+### 4. Critérios formais de saída da PR candidata
+
+1. Decisões humanas explicitadas com autoridade, escopo, fundamentos, data e versão; silêncio ou “de acordo” com continuar documentação não equivale a ratificação de thresholds.
+2. Corrigir divergências identificadas e ampliar contratos canônicos **apenas após** ato apropriado, sem sobrescrita de autoridades existentes por inferência.
+3. Rever proteção de dados, integridade, direitos das Pessoas, contestação e transparência dos selos.
+4. Executar ensaios técnicos e estatísticos quando existirem bases/sistemas adequados; não registrar `PASS` por cenários apenas descritos.
+5. Decidir separadamente `MERGE DOCUMENTAL`, `PROMOÇÃO NORMATIVA` e `IMPLEMENTAÇÃO DE PRODUTO`; nenhum decorre automaticamente de outro.
+
+### 5. Resultado consolidado
+
+```text
+CBR-01..08 DRAFT DOCUMENTATION → 8/8
+P0-01..05 CANDIDATE COVERAGE → 5/5
+ADJ-11 DOCUMENTARY AUDIT → COMPLETE
+CONCRETE NORMATIVE THRESHOLDS → NOT APPROVED
+ISSUANCE / APPEAL OWNERS → NOT INSTITUTED
+PER-103 / CARD DISPLAY AUTHORITY → NOT EXTENDED
+OPERATING CONTROLS → NOT TESTED
+CBR HUMAN NORMATIVE ADJUDICATION → 0/8 CONFIRMED
+PR #654 → OPEN / DRAFT
+REAL BADGES / REPLIT IMPLEMENTATION → NOT AUTHORIZED
 ```
