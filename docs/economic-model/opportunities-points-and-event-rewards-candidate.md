@@ -2,7 +2,7 @@
 id: GEM-OPPORTUNITIES-POINTS-REWARDS-CANDIDATE-001
 title: Oportunidades — Retorno em Pontos e Premiações de Eventos — Proposta Transversal
 status: draft
-version: 0.9.0
+version: 1.0.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -623,4 +623,99 @@ HOME PERSON AND O-C → UNCHANGED
 PR #655 → OPEN / DRAFT
 GKR MAIN / MENU / MASTERS / REGISTRIES → UNCHANGED
 ENGINEERING / POINT ISSUANCE / LIVE REDEMPTION → NOT AUTHORIZED
+```
+
+## 19. Instrumento de decisão econômica — PAR-01/PAR-02/FUND-01/LIQ-01/LIQ-02 (v1.0.0 candidato)
+
+**Natureza:** formulário documental de adjudicação futura, sem decisão financeira registrada ou poderes presumidos. O ofertante financia 100% dos pontos propostos, seja Organização ou Coletivo. Pontos são facultativos e secundários à proposta de valor Guivos.
+
+### 19.1 Princípios que toda decisão deve preservar
+
+- Unidade única de pontos do ecossistema, com semântica e regras comunicáveis à Pessoa.
+- Valor econômico prometido coberto integralmente pelo ofertante, sem obrigação implícita de subsídio Guivos.
+- Inscrições em oportunidades independentes do número de beneficiários de pontos.
+- Pontos podem decorrer de percentual sobre oportunidade paga ou regras fixas por participação/classificação em evento gratuito ou pago.
+- Reserva de orçamento, elegibilidade, crédito em saldo, resgate e liquidação são eventos distintos.
+- Guivos Mall e Guivos Travel só aceitam/resgatam pontos sob contratos e regras operacionais próprios.
+- Não impor ranking de relevância ou reconhecimento institucional por capacidade de financiar pontos.
+
+### 19.2 Quadro de adjudicação
+
+| Gate | Pergunta institucional | Opções avaliadas | Evidência mínima | Situação |
+|---|---|---|---|---|
+| **PAR-01** | Qual fator de emissão e precisão/arredondamento transforma benefício econômico ou prêmio em pontos? | PAR-A fixa; PAR-B com taxas distintas; regras explícitas para pontos fixos | Fórmulas, casos monetários, cenários de arredondamento, transparência | ABERTO |
+| **PAR-02** | Qual capacidade de utilização/resgate por ponto e como preservar valor e direitos adquiridos? | Valor uniforme ou regras diferenciadas governadas; PAR-C em catálogo | Teste de custos Mall/Travel, validade, mudança de política e comunicação | ABERTO |
+| **FUND-01** | Como assegurar lastro e segregar compromissos de cada ofertante/campanha? | FUND-A campanha; FUND-B saldo pré-pago; FUND-C garantia | Conciliação financeira, ledger, insolvência, limites e saldo residual | ABERTO |
+| **LIQ-01** | Como aceitar e liquidar pontos em pedidos elegíveis do Mall? | Abatimento/cobertura conforme contratos dos vendedores | Reserva de checkout, confirmação, taxas, estorno, parceiro recebedor | ABERTO |
+| **LIQ-02** | Como aceitar e liquidar pontos em reservas elegíveis do Travel? | Resgate com cotação e confirmação de disponibilidade | Prazo de reserva, cancelamento, fornecedor, diferença tarifária | ABERTO |
+
+### 19.3 Campos obrigatórios em cada decisão
+
+```text
+GATE: [PAR-01 / PAR-02 / FUND-01 / LIQ-01 / LIQ-02]
+VERSÃO DA POLÍTICA: [NÃO DEFINIDA]
+AUTORIDADE COMPETENTE / FUNDAMENTO: [COMPROVAR]
+PROPOSTA ESCOLHIDA: [NÃO ESCOLHIDA]
+OPÇÕES DESCARTADAS E MOTIVAÇÃO: [PENDENTE]
+FÓRMULA / UNIDADE / PRECISÃO: [PENDENTE]
+CUSTO E OBRIGAÇÃO PARA OFERTANTE: [PENDENTE]
+DIREITO, VALIDADE E COMUNICAÇÃO À PESSOA: [PENDENTE]
+LIQUIDAÇÃO E RESPONSABILIDADE DOS PRODUTOS: [PENDENTE]
+FRAUDE / ESTORNO / CONTESTAÇÃO / RISCO: [PENDENTE]
+EVIDÊNCIAS E TESTES ECONÔMICOS: [PENDENTES]
+ANÁLISE JURÍDICA / FISCAL / CONTÁBIL APLICÁVEL: [PENDENTE]
+RESULTADO: [APROVAR / APROVAR_COM_AJUSTES / DEVOLVER / REJEITAR]
+DATA / SIGNATÁRIO / FUNDAMENTO: [NÃO REGISTRADOS]
+```
+
+A concordância para prosseguir a documentação não preenche o resultado nem comprova competências decisórias.
+
+### 19.4 Matriz de dependências
+
+```text
+PAR-01 + PAR-02
+    → fatores oficiais e direitos dos pontos
+
+FUND-01
+    → compromisso econômico coberto e reservas auditáveis
+
+PAR + FUND
+    → emissão condicionada a elegibilidade verificável
+
+LIQ-01 / LIQ-02
+    → aceitação, cotação, bloqueio, resgate, estornos, repasse
+
+VALIDAÇÃO JURÍDICA / FISCAL / CONTÁBIL + UX + AUDITORIA
+    → autorização técnica/homologação posterior
+```
+
+PAR-01/PAR-02 e FUND-01 devem convergir antes de liberar compromissos reais; LIQ-01 e LIQ-02 demandam regras específicas de cada produto, sem supor que a aprovação de um libera o outro.
+
+### 19.5 Testes de consistência que devem acompanhar a deliberação
+
+1. R$ 200 de base elegível × 5% hipotéticos = R$ 10 de obrigação econômica; confirmar pontos emitidos, taxa de resgate, cobertura e arredondamento.
+2. Corrida com 100 pontos às primeiras 30 inscrições: teto de 3.000 pontos, sem bloquear inscrições subsequentes.
+3. Bônus por classificação de 1.000/600/300 pontos separado do teto acima: exposição combinada de 4.900 pontos, sujeita a regras de empate.
+4. Duas campanhas tentando comprometer o último saldo de um ofertante: evitar duplo bloqueio.
+5. Desistência e ausência: prova de elegibilidade e redistribuição de cota apenas quando prevista.
+6. Compra ou reserva cancelada após crédito: tratamento do estorno e eventual resgate já efetuado.
+7. Variação de preço de item Mall ou reserva Travel: garantir cotação e confirmação adequadas antes da liquidação.
+8. Inadimplência, fechamento do ofertante ou indisponibilidade do parceiro: tratar direitos e obrigações sem transferir automaticamente o custo à Guivos.
+
+### 19.6 Critério de saída e próximo passo
+
+O instrumento estará **pronto para apreciação econômica formal** quando vier acompanhado de tabelas de valores, simulações financeiras, modelo de garantia, responsáveis e pareceres pertinentes. Estar pronto para apreciação não equivale a ratificação.
+
+**Próxima etapa:** simulações comparativas de paridade e capacidade financeira por campanha/ofertante, com cenários explícitos de emissão, resgate, custo, estorno e saldos remanescentes, utilizando números **hipotéticos** até aprovação de taxas oficiais.
+
+```text
+DOCUMENT CANDIDATE → v1.0.0
+ECONOMIC DECISION INSTRUMENT → DRAFTED
+PAR-01/PAR-02/FUND-01/LIQ-01/LIQ-02 → 0/5 NORMATIVE DECISIONS
+ISSUER FUNDS → 100%
+POINTS → OPTIONAL
+HOME PERSON / HOME O-C → UNCHANGED
+GKR MAIN / MENU / MASTERS / REGISTRIES → UNCHANGED
+PR #655 → OPEN / DRAFT
+REAL POINT ISSUANCE / REDEMPTION / REPLIT → NOT AUTHORIZED
 ```
