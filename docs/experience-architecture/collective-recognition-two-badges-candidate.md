@@ -3843,3 +3843,84 @@ PR #654 → OPEN / DRAFT
 GKR MENU ACCESS → REQUESTED / NOT PUBLISHED
 BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
 ```
+
+## DEC-05.E — Exame individual: homologação institucional e critérios de liberação (v4.20 candidato)
+
+**Estado:** EXAME DOCUMENTAL CONCLUÍDO / CONVERGÊNCIA ANALÍTICA CONDICIONAL / ADJUDICAÇÃO NORMATIVA PENDENTE. Nenhuma homologação, piloto, concessão, publicação ou operação é autorizada por este instrumento.
+
+### Questão decisória
+
+Quais competências, evidências e condições não compensatórias devem anteceder a autorização humana de cada estágio — política normativa, homologação técnica, piloto controlado, publicação/produção e expansão — dos selos `Verificado` e `Contribuição Reconhecida`?
+
+### Cinco decisões de liberação distintas
+
+| Estágio | Ato futuro requerido | Condição necessária | O que não autoriza |
+|---|---|---|---|
+| LIB-01 — Política normativa | Ratificação expressa das DEC-01..05 pelas autoridades legítimas | Registros de deliberação completos, conflitos resolvidos e versões vigentes | Não autoriza testar com Pessoas reais ou conceder selos |
+| LIB-02 — Homologação técnica | Aceite formal de segurança, privacidade, acessibilidade, consistência e controles | Plano DEC-05.D executado, resultados e riscos residuais examinados | Não autoriza piloto ou publicação pública |
+| LIB-03 — Piloto controlado | Autorização específica de escopo, prazo, responsabilidades, finalidade e proteção | Política e homologação aplicáveis, critérios de interrupção e monitoramento | Não autoriza produção ampla ou expansão automática |
+| LIB-04 — Publicação/produção | Decisão editorial e operacional específica, além da decisão institucional de cada selo | Estado canônico válido, direitos e recursos preservados, retirada testada e responsabilidades ativas | Não autoriza nova modalidade/território sem revisão |
+| LIB-05 — Expansão | Autorização incremental por contexto ou território | Auditoria do piloto/operação, riscos locais, habilitação e controles proporcionais | Não transforma escala em concessão automática |
+
+A ordem é lógica e sujeita a competências normativamente ratificadas. Conclusão de uma etapa não implica aprovação da próxima.
+
+### Gates não compensatórios candidatos
+
+1. **GOV-01 — Autoridade:** titularidade, alçadas, segregação, impedimentos, recurso e independência comercial aprovados.
+2. **GOV-02 — Critérios:** elegibilidade `Verificado` e mérito contextual `Contribuição Reconhecida` ratificados separadamente.
+3. **GOV-03 — Privacidade:** inventário de dados, finalidade, base legal, minimização, acesso, retenção e riscos sensíveis avaliados por competências próprias.
+4. **GOV-04 — Segurança e integridade:** controles de antifraude, autenticação, logs protegidos, incidentes e recuperação demonstrados.
+5. **GOV-05 — Estados e publicação:** dependência entre selos, estados impeditivos, fonte canônica, sincronização e retirada verificados em todas as superfícies autorizadas.
+6. **GOV-06 — Qualidade:** testes críticos executados com evidências verificáveis, achados classificados, correções e retestes registrados.
+7. **GOV-07 — Transparência e acessibilidade:** semântica pública, linguagem, equivalentes acessíveis e vedação de exposição de dados privados examinados.
+8. **GOV-08 — Responsabilização:** operadores habilitados, supervisão, recursos, auditoria independente e critérios de suspensão do estágio estabelecidos.
+
+**Regra:** qualquer gate aplicável não demonstrado, não ratificado ou reprovado bloqueia o estágio correspondente; não há compensação por maioria, pontuação média, interesse comercial ou aprovação técnica isolada.
+
+### Dossiê candidato de homologação
+
+Cada solicitação futura deve identificar: estágio e escopo exato; responsável solicitante; autoridade legitimada e eventuais impedimentos; versões normativas; mapa de requisitos e resultados de teste; relatório de riscos residuais e tratamento; pareceres de segurança, privacidade, acessibilidade e integridade; fluxos de recurso; plano de monitoramento, interrupção e rollback; superfícies e territórios abrangidos; período de validade da autorização; decisão motivada e condições. Guardar evidências protegidas fora da divulgação pública.
+
+### Rito decisório proposto
+
+1. **Instrução:** responsável compõe dossiê sem presumir conformidade.
+2. **Revisão independente:** áreas competentes examinam o estágio e registram divergências e conflitos.
+3. **Verificação dos gates:** cada condição é classificada `ATENDIDO`, `NÃO_ATENDIDO` ou `NÃO_DEMONSTRADO`; `NÃO_APLICÁVEL` requer justificativa e ratificação competente.
+4. **Deliberação humana:** autoridade formalmente investida decide `APROVAR`, `APROVAR_COM_AJUSTES`, `DEVOLVER_PARA_REVISAO` ou `REJEITAR`, com fundamento, escopo, data, versão e condições. Aprovação com ajustes **não** libera operação enquanto houver condição impeditiva.
+5. **Registro e acompanhamento:** registrar autorização específica e vigência; mudanças materiais exigem reexame ou suspensão conforme política ratificada.
+6. **Encerramento ou ampliação:** piloto e expansão requerem nova decisão; resultados do estágio anterior não são credencial permanente.
+
+### Cenários adversariais de deliberação
+
+| Situação | Resultado institucional candidato |
+|---|---|
+| Todos os documentos completos, mas testes de retirada não executados | `NÃO_DEMONSTRADO` em gate crítico; produção bloqueada |
+| Testes técnicos aprovados, DEC-03 sem alçadas ratificadas | Nenhuma concessão ou piloto autorizado |
+| Piloto autorizado para determinada região e modalidade | Não estender a outras regiões por equivalência presumida |
+| Patrocinador solicita antecipação do lançamento | Interesse comercial não substitui gates ou decisão competente |
+| Falha de privacidade com correção ainda sem reteste | Gate crítico não atendido; liberação bloqueada |
+| Autoridade aprova com ajustes contendo dependência crítica aberta | Registrar decisão condicional, sem liberar estágio |
+| Coletivo informal apresenta provas legítimas | Aplicar critérios proporcionais, sem exigir porte ou CNPJ por padrão |
+| Após liberação aparece incidente grave ou divergência pública | Acionar rito de contenção, revisão e suspensão segundo competências futuras |
+
+### Pendências normativas e operacionais
+
+Ratificar quem aprova cada LIB-01..05, quais assinaturas e revisões independentes são exigidas, como se define criticidade, que riscos residuais são aceitáveis, prazos de vigência e recurso, critérios de parada e retomada, artefatos de evidência, escopo territorial, tratamento de exceções e reporte de incidentes. Nenhum SLA, arquitetura, ambiente de piloto, controlador de dados ou autoridade decisória concreta foi designado aqui.
+
+### Relação com a publicação do MENU do GKR
+
+O acesso documental **Reconhecimento de Coletivos** pelo MENU segue solicitado e separado da publicação dos selos no produto. A inserção no MENU exige avaliação da hierarquia de `mkdocs.yml`, estado editorial e autoridade dos documentos; esta etapa não altera a navegação nem promove o candidato a norma vigente.
+
+```text
+DEC-05.E INDIVIDUAL EXAM → COMPLETE
+DEC-05.E ANALYTICAL DIRECTION → CONDITIONAL CONVERGENCE
+DEC-05.E HUMAN NORMATIVE ADJUDICATION → PENDING
+DEC-05 INDIVIDUAL EXAMS → 5/5 DOCUMENTED
+DEC-01..05 ANALYTICAL EXAMS → 25/25 DOCUMENTED
+DEC-01..05 HUMAN NORMATIVE RATIFICATIONS → 0/25 CONFIRMED
+TECHNICAL TESTS / HOMOLOGATION → NOT VERIFIED
+DEC-05 INTEGRATED HUMAN DELIBERATION REGISTER → NEXT
+PR #654 → OPEN / DRAFT
+GKR MENU ACCESS → REQUESTED / NOT PUBLISHED
+BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
+```
