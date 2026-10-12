@@ -2,7 +2,7 @@
 id: GKR-COLLECTIVE-RECOGNITION-001
 title: Coletivos — Verificado e Contribuição Reconhecida
 status: proposed
-version: 2.8.0
+version: 2.9.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -1786,4 +1786,43 @@ DEC-01.A OPERATIONAL GATES → OPEN
 DEC-01.B..E HUMAN APPROVAL → PENDING
 PR #654 → OPEN / DRAFT
 ISSUANCE / PUBLICATION / IMPLEMENTATION → NOT AUTHORIZED
+```
+
+
+## DEC-01.B — Minuta de decisão humana expressa sobre representação legítima (v2.9 candidato)
+
+**Estado:** PREPARADA PARA RATIFICAÇÃO, NÃO ADJUDICADA. O “de acordo, segue” recebido após a minuta DEC-01.A foi interpretado apenas como autorização para prosseguir com os trabalhos, não como seleção inequívoca de uma alternativa de aprovação. DEC-01.A permanece sem ratificação normativa.
+
+### Texto normativo candidato
+
+> Para fins de solicitação e manutenção do reconhecimento `Verificado`, a Guivos deverá identificar em ambiente protegido a Pessoa que atua pelo Coletivo e confirmar a legitimidade, a vigência e o escopo de sua representação mediante prova proporcional à modalidade da iniciativa. Associações formais poderão demonstrar mandato por instrumentos pertinentes; Coletivos informais, novos, digitais, comunitários e de liderança compartilhada poderão demonstrar legitimidade por confirmação contextual independente, sem exigência universal de CNPJ, líder único ou exposição pública de membros. A representação concede apenas as competências expressamente autorizadas para cada ato e não assegura acesso às avaliações e aos dados privados das Pessoas.
+
+### Guardas de interpretação
+
+- A existência do Coletivo (DEC-01.A) não demonstra por si a legitimidade do solicitante.
+- A posse de senha, domínio, conta social, patrocínio ou vínculo comercial não confere mandato institucional automaticamente.
+- Delegação para editar apresentação pública não concede poder de emitir selo, acessar R1, representar terceiros ou decidir recursos.
+- Representantes concorrentes, co-lideranças, mudanças de mandato, fusões ou nomes semelhantes exigem verificação contextual e revisão de conflito.
+- Informações de participação sensível e credenciais de representantes devem permanecer protegidas; não exigir listas públicas de membros.
+- Mandato expirado, contestado ou não demonstrado impede concluir legitimidade vigente sem, por isso, afirmar fraude.
+
+### Opções de decisão humana a registrar
+
+| Item | Decisão necessária | Estado |
+|---|---|---|
+| DEC-01.B.1 | Ratificar princípio de representação legítima vinculada a escopo | SEM DELIBERAÇÃO |
+| DEC-01.B.2 | Adotar verificação proporcional para Coletivos formais e informais | SEM DELIBERAÇÃO |
+| DEC-01.B.3 | Aprovar proteção a co-lideranças e delegações limitadas | SEM DELIBERAÇÃO |
+| DEC-01.B.4 | Definir validade, revogação, conflitos e recurso | SEM DELIBERAÇÃO |
+| DEC-01.B.5 | Designar competência e prova aceitável por modalidade | SEM DELIBERAÇÃO |
+
+A manifestação competente poderá aprovar, aprovar com ajustes, devolver para revisão ou rejeitar cada item, com registro de fundamentos, responsáveis, escopo e data. A ratificação apenas do princípio não supre as regras operacionais nem autoriza a concessão.
+
+```text
+DEC-01.A → EXPRESS RATIFICATION STILL PENDING
+DEC-01.B DECISION DRAFT → READY
+DEC-01.B NORMATIVE ADJUDICATION → PENDING
+DEC-01.C → NEXT DRAFT
+PR #654 → OPEN / DRAFT
+BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
 ```
