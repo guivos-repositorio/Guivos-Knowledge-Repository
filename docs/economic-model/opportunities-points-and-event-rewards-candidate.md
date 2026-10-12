@@ -2,7 +2,7 @@
 id: GEM-OPPORTUNITIES-POINTS-REWARDS-CANDIDATE-001
 title: Oportunidades — Retorno em Pontos e Premiações de Eventos — Proposta Transversal
 status: draft
-version: 2.3.0
+version: 2.4.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -1734,4 +1734,71 @@ FIN-COMPRA → PAYOUT WITHHOLDING
 FIN-EVENTO → PREPAID BALANCE
 PR #655 → OPEN / DRAFT
 MAIN / MENU / HOME MASTERS / REGISTRIES / REPLIT → UNCHANGED
+```
+
+## 33. Mapa de dependências E2E e validação incremental por fluxo (v2.4.0 candidato)
+
+**Estado:** análise de dependências e critérios de entrada/saída, sem execução dos 16 testes, sem adjudicação de gates econômicos e sem autorização de engenharia. Esta seção não altera a premissa de FIN-COMPRA (retenção no repasse ao ofertante) nem de FIN-EVENTO (saldo de pontos pré-pago). A unidade de pontos da Pessoa é comum às duas origens.
+
+### 33.1 Sequenciamento por domínio
+
+| Etapa | Escopo | Testes E2E relevantes | Dependências formais | Saída verificável |
+|---|---|---|---|---|
+| V0 — Definição de política | Base elegível, emissão, precisão, estorno, lastro, identidade e segurança | Precondição de todos | PAR-01, ROUND-01..06, FUND-01, COVER-01..05 e análises legais pertinentes | Regras aprovadas, versionadas e rastreáveis |
+| V1 — FIN-COMPRA isolado | Compra, dedução no repasse, crédito, refund, multi-ofertante e idempotência | E2E-01,02,03,04,05,06 | V0; processador de pagamento/repasse integrado e contratualizado | Pagamentos, retenções, pontos e estornos conciliados por ofertante |
+| V2 — FIN-EVENTO isolado | Aquisição de saldo, reserva, cotas, premiação e campanha | E2E-07,08,09,10,11,16 | V0; pagamento pré-pago confirmado e atribuição de competência ao organizador | Saldo não negativo, reservas atômicas e créditos com evidência |
+| V3 — Resgate Mall isolado | Pedido, múltiplos vendedores, bloqueio e estorno | E2E-12,14,15; cruzamento com E2E-06 | V1 ou V2 validado, PAR-02, LIQ-01, cobertura contratual e testes de segurança | Liquidação por vendedor reconciliada |
+| V4 — Resgate Travel isolado | Cotação, reserva, cancelamento e fornecedor | E2E-13,14,15; cruzamento com E2E-06 | V1 ou V2 validado, PAR-02, LIQ-02, contrato do fornecedor | Pontos e valor de liquidação conciliados segundo reserva |
+| V5 — Transversal | Duas fontes financiadoras + saldo único da Pessoa + múltiplos produtos | Reexecução encadeada E2E-01..16 com identidades e saldos controlados | V1/V2/V3/V4 validados e políticas compatíveis | Ausência de dupla emissão, repasse cruzado ou resgate além da cobertura |
+
+**Distinção:** validação de FIN-COMPRA ou FIN-EVENTO isolados não autoriza automaticamente aceitar pontos como pagamento no Mall ou Travel. Homologação funcional também não equivale a autorização regulatória, contábil ou institucional.
+
+### 33.2 Conjunto mínimo de aceite para FIN-COMPRA
+
+**Casos de entrada:** E2E-01 (curso de R$ 200 → 2 pontos, R$ 198 de repasse-base), E2E-02 (frações com política efetiva), E2E-03 (dois ofertantes), E2E-04 (retry/idempotência), E2E-05 (refund parcial), E2E-06 (refund após resgate em cenário integrado; como teste de risco, requer ambiente de resgate habilitado).
+
+**Mínimo para validar núcleo sem resgate:** E2E-01..05, mais prova de **não crédito sem liquidação** e tratamento de chargeback pendente; E2E-06 continua **bloqueador para liberar resgate** e não pode ser silenciosamente dispensado. Matriz de autorização precisa distinguir teste do núcleo de liberação de uso comercial.
+
+**Evidência:** transação confirmada, base elegível, percentual escolhido, custo retido, taxa Guivos discriminada, repasse por ofertante, lançamento da Pessoa, reversões e razão de conciliação. Sem contratos e recursos legalmente adequados, a execução não pode ser classificada como homologação.
+
+### 33.3 Conjunto mínimo de aceite para FIN-EVENTO
+
+**Casos centrais:** E2E-07 (aquisição pré-paga confirmada), 08 (4.900 pontos, duas classes de incentivo e 31ª inscrição permitida), 09 (última cota concorrente), 10 (saldo insuficiente), 11 (acúmulo apenas conforme regulamento), 16 (encerramento de campanha sem reembolso automático).
+
+**Condições adicionais:** inscrição não implica presença validada; resultado contestado suspende prêmio segundo política; nenhuma promessa ultrapassa o saldo livre; cancelamento redistribui cota apenas sob regulamento expresso. O núcleo de campanha poderá ser tecnicamente validado antes de integrar resgate em produtos, mas **não** operacionalizado sem gates de financiamento e proteção.
+
+### 33.4 Dependências exclusivas de Mall e Travel
+
+- **Mall:** LIQ-01, política de valor efetivo de pontos PAR-02, custo e preço do item, split de vários vendedores, confirmação de entrega/compra, devolução e baixas.
+- **Travel:** LIQ-02, PAR-02, disponibilidade e janela de cotação, penalidades, moeda, fornecedor, cancelamento e reembolso.
+- **Compartilhados:** carteira da Pessoa, reservas idempotentes, precisão ROUND aprovada, prova de lastro, conciliação da obrigação financeira e proteção de direitos.
+- **Regra de não contágio:** falha em Travel não autoriza debitar resgate Mall ou desconsiderar crédito elegível de origem; cada produto precisa de confirmação e resolução própria.
+
+### 33.5 Critérios de classificação de maturidade
+
+| Classificação | Significado | Neste registro |
+|---|---|---|
+| DOCUMENTED | Caso e dependência descritos | SIM |
+| POLICY_APPROVED | Gate materialmente decidido por autoridade competente | NÃO comprovado para os itens pendentes |
+| TEST_READY | Ambiente, oráculos, dados, responsáveis, contratos e política preparados | NÃO |
+| EXECUTED | Evidências de execução reproduzíveis | 0/16 |
+| VALIDATED | Execução, reconciliação e revisão humana concluídas | 0/16 |
+| LIVE_AUTHORIZED | Implantação e operação expressamente autorizadas | NÃO |
+
+### 33.6 Bloqueadores explícitos e próximo passo
+
+**Bloqueadores:** ROUND, paridade de uso PAR-02, preço do saldo pré-pago FUND-01, cobertura COVER, processamento de pagamentos, responsabilidades por fraude/chargeback e contratos LIQ-01/02. Não criar IDs canônicos, compromissos reais, saldos operacionais, páginas públicas nem promessas de pontos antes do rito competente.
+
+**Próxima etapa candidata:** consolidar decisões de produto já expressas em um resumo executivo dos dois modelos e produzir um pacote de perguntas econômicas **somente das pendências reais**, evitando a repetição de alternativas já encerradas pelo fundador.
+
+```text
+VERSION → v2.4.0 CANDIDATE
+E2E TESTS → 16/16 MAPPED; 0/16 EXECUTED
+FIN-COMPRA CORE → E2E-01..05 (E2E-06 INTEGRATED BLOCKER)
+FIN-EVENTO CORE → E2E-07..11,16
+MALL → E2E-12,14,15 + INTEGRATED RISK
+TRAVEL → E2E-13,14,15 + INTEGRATED RISK
+LIVE AUTHORIZATION → NONE
+PR #655 → OPEN / DRAFT
+MAIN / MENU / MASTERS / REGISTRIES / REPLIT → UNCHANGED
 ```
