@@ -2,7 +2,7 @@
 id: GEM-OPPORTUNITIES-POINTS-REWARDS-CANDIDATE-001
 title: Oportunidades — Retorno em Pontos e Premiações de Eventos — Proposta Transversal
 status: draft
-version: 2.2.0
+version: 2.3.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -1636,6 +1636,102 @@ VERSION → v2.2.0 CANDIDATE
 RSK-01..12 → 12 DOCUMENTED; NO LIVE TESTS
 COVER-01..05 → 0/5 ADJUDICATED
 PARITY EQ-1 → SIMULATION ONLY
+PR #655 → OPEN / DRAFT
+MAIN / MENU / HOME MASTERS / REGISTRIES / REPLIT → UNCHANGED
+```
+
+## 32. Contrato mínimo de ledger e matriz de aceite ponta a ponta (v2.3.0 candidato)
+
+**Natureza:** especificação lógica candidata, sem definição de tecnologia de custódia, API operacional, registro oficial de transições, aprovação institucional ou autorização de implementação. FIN-COMPRA e FIN-EVENTO são origens financeiras distintas, mas entregam **uma unidade de pontos** à Pessoa.
+
+### 32.1 Razões e separação de responsabilidades
+
+| Razão lógico | Responsabilidade | Não confundir com |
+|---|---|---|
+| `purchase_settlement_ledger` | Compra, pagamento elegível, retenção dos pontos, taxa Guivos e repasse por ofertante | Carteira de pontos |
+| `prepaid_funding_ledger` | Aquisição antecipada, saldo livre e reservas de campanha por Organização/Coletivo | Receita automática da Guivos |
+| `person_points_ledger` | Créditos, reservas, resgates, ajustes e saldo verificável da Pessoa | Dinheiro disponível ou conta bancária |
+| `partner_settlement_ledger` | Obrigações de resgates confirmados e repasses a vendedor/fornecedor | Cobrança original da oportunidade |
+| `reconciliation_audit_log` | Vínculos, evidências e divergências entre razões | Fonte de autoridade jurídica ou prova artificial de liquidação |
+
+### 32.2 Eventos candidatos e estados
+
+```text
+FIN-COMPRA
+purchase_created → payment_pending → payment_confirmed
+→ settlement_eligible → points_withholding_recorded
+→ issuer_payout_reconciled → person_points_credited
+↘ refund_requested / refund_confirmed / chargeback_opened
+→ adjustment_reviewed → financial_and_points_adjustment_reconciled
+
+FIN-EVENTO
+funding_requested → payment_pending → funding_confirmed
+→ organizer_points_available → campaign_reserve_confirmed
+→ participation_or_ranking_verified → person_points_credited
+↘ cancellation_or_dispute → reserve_adjusted_or_released
+
+RESGATE
+redemption_quoted → points_reserved → partner_order_confirmed
+→ points_redeemed → partner_settlement_pending → partner_settled
+↘ quote_expired / cancelled / partially_refunded → points_and_cash_reconciled
+```
+
+Esses nomes são **vocabulário de estudo**, não IDs canônicos GKR-TRN nem implementação de máquina de estados. Transições financeiras dependem de eventos verificados; callback externo isolado não comprova liquidação sem reconciliação.
+
+### 32.3 Contrato lógico de lançamento
+
+Campos mínimos candidatos: `entry_id`, `source_type` (compra/evento/resgate/ajuste), `source_id`, `issuer_id`, `person_id` quando aplicável, `partner_id`, `campaign_id`, `asset` (BRL/pontos), `amount` decimal exato, `entry_type`, `event_time`, `effective_time`, `policy_version`, `idempotency_key`, `correlation_id`, `status`, `evidence_ref`, `reversal_of_entry_id`.
+
+- Todo lançamento possui **origem rastreável**; reversão é novo lançamento vinculado, sem apagar histórico.
+- Saldos são derivados do ledger e de reservas confirmadas; não confiar em contador mutável isolado.
+- Cada chave de idempotência produz no máximo um efeito econômico por operação e escopo.
+- Controle de concorrência impede dois créditos/compromissos para a mesma cota ou utilização duplicada de saldo.
+- Identificadores de Pessoas e evidências devem respeitar LGPD, minimização e segregação de acesso.
+
+### 32.4 Invariantes econômicas testáveis
+
+1. **Compra:** `valor elegível = repasse-base ao ofertante + retenção para pontos` antes de taxa Guivos e outros ajustes explicitamente discriminados; R$ 200 × 1% → 2 pontos, R$ 2 retidos, repasse-base R$ 198.
+2. **Campanha:** `pontos adquiridos + ajustes = livres + reservados + distribuídos + baixas justificadas`; não reaproveitar os pontos distribuídos como saldo do ofertante.
+3. **Pessoa:** `saldo inicial + concessões − resgates ± ajustes = saldo final`; pontos reservados para checkout não podem ser gastos simultaneamente.
+4. **Parceiro:** cada resgate confirmado vincula a obrigação de liquidação ao parceiro correto e não gera repasse duplicado.
+5. **Cobertura:** em paridade e condições **ainda não aprovadas**, qualquer compromisso real deverá ter lastro suficiente, inclusive custos e riscos contratuais.
+6. **Cancelamento:** refund da compra pode rever elegibilidade sem apagar pagamento original ou liquidação ocorrida.
+7. **Unidade:** pontos de compra e de evento são fungíveis para a Pessoa sob política única; origem financeira continua segregável para auditoria.
+8. **Separação funcional:** ausência de saldo pré-pago bloqueia recompensa de evento, não impede automaticamente inscrições legítimas.
+
+### 32.5 Matriz de testes ponta a ponta proposta
+
+| ID | Cenário | Critério de aceite | Situação |
+|---|---|---|---|
+| E2E-01 | Curso R$ 200, 1% | 2 pontos; custo R$ 2; repasse-base R$ 198; taxa Guivos separada | NÃO EXECUTADO |
+| E2E-02 | Compra com pontos fracionários | Precisão e retenção compatíveis com ROUND aprovado | NÃO EXECUTADO |
+| E2E-03 | Carrinho com dois ofertantes | Retenção e repasse individual sem cruzamento | NÃO EXECUTADO |
+| E2E-04 | Retry/duplicidade de confirmação | Um só crédito, retenção e repasse | NÃO EXECUTADO |
+| E2E-05 | Estorno parcial pré-resgate | Ajuste proporcional auditável | NÃO EXECUTADO |
+| E2E-06 | Estorno integral pós-resgate | Exposição e responsável identificados; nenhum débito oculto | NÃO EXECUTADO |
+| E2E-07 | Compra de saldo para evento | Pontos só disponíveis após pagamento confirmado | NÃO EXECUTADO |
+| E2E-08 | Corrida 30 × 100 + pódio 1.000/600/300 | Reservar 4.900 pontos, sem impedir 31ª inscrição | NÃO EXECUTADO |
+| E2E-09 | Última cota com duas inscrições simultâneas | Cota atribuída uma vez e ordem verificável | NÃO EXECUTADO |
+| E2E-10 | Saldo insuficiente em campanhas paralelas | Nova reserva negada sem prejudicar compromissos anteriores | NÃO EXECUTADO |
+| E2E-11 | Vencedor com bônus de inscrição | Acúmulo apenas quando regulamento permite, sem crédito duplicado | NÃO EXECUTADO |
+| E2E-12 | Pedido Mall com dois vendedores | Liquidação e estorno alocados por vendedor | NÃO EXECUTADO |
+| E2E-13 | Reserva Travel cancelada | Multa, reversão de pontos e parceiro conforme contrato | NÃO EXECUTADO |
+| E2E-14 | Checkout expirado | Reserva liberada sem crédito/resgate duplicado | NÃO EXECUTADO |
+| E2E-15 | Alteração de paridade/validade | Direitos adquiridos e cobertura preservados por versão | NÃO EXECUTADO |
+| E2E-16 | Organizador encerra campanha | Saldos livres/reservados tratados sem reembolso em caixa presumido | NÃO EXECUTADO |
+
+### 32.6 Gates de passagem
+
+O artefato só se torna contrato implementável após ratificação de `PAR-02`, `FUND-01`, `LIQ-01/02`, ROUND, COVER e responsabilidades jurídico-fiscais-contábeis; testes E2E exigem ambiente e implementação autorizados. Nenhum dos 16 testes foi executado nesta etapa. Não há publicação de preço oficial de ponto nem autorização de custódia de recursos.
+
+**Próximo passo candidato:** mapa de dependências entre os 16 E2E, gates e evidências, identificando o conjunto mínimo seguro de validação de FIN-COMPRA e FIN-EVENTO antes de ativar resgates Mall/Travel.
+
+```text
+VERSION → v2.3.0 CANDIDATE
+LEDGER LOGICAL DOMAINS → 5 DRAFTED
+E2E CASES → 16 DEFINED / 0 EXECUTED
+FIN-COMPRA → PAYOUT WITHHOLDING
+FIN-EVENTO → PREPAID BALANCE
 PR #655 → OPEN / DRAFT
 MAIN / MENU / HOME MASTERS / REGISTRIES / REPLIT → UNCHANGED
 ```
