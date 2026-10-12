@@ -4879,3 +4879,72 @@ PR #654 → OPEN / DRAFT
 GKR MENU → UNCHANGED
 BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
 ```
+
+## Etapa 283 — RSP-06: Instrumento de exame do ciclo de vida institucional dos reconhecimentos (v4.35 candidato)
+
+**Estado:** INSTRUMENTO PREPARADO / EXAMES ESPECIALIZADOS A INICIAR / ADJUDICAÇÃO NORMATIVA PENDENTE. Não cria estados técnicos, transições de registry, concessões ou publicações.
+
+### Questão central
+
+Como representar e governar separadamente a validade institucional de cada selo, o processamento de recursos, a autorização editorial e a projeção pública, com tratamento seguro de suspensão, expiração, revogação, renovação e divergências entre superfícies?
+
+### Cinco frentes de exame
+
+| Código | Tema | Questão a deliberar |
+|---|---|---|
+| RSP-06.A | Modelo de estados e dimensões independentes | Quais estados pertencem ao mérito, ao recurso, à autorização editorial e à projeção técnica, sem confundi-los? |
+| RSP-06.B | Transições, competências e eventos | Quais atos humanos e evidências permitem conceder, renovar, suspender, expirar, revogar ou reformar? |
+| RSP-06.C | Dependência entre os dois selos | Como preservar histórico de `Contribuição Reconhecida` sem afirmá-lo publicamente quando faltar `Verificado` vigente, conforme regra futura? |
+| RSP-06.D | Sincronização, retirada e recuperação | Como detectar e tratar caches, eventos fora de ordem, indisponibilidade e correções? |
+| RSP-06.E | Auditoria e deliberação integrada | Quais testes, trilhas, revisões e alçadas devem anteceder aprovação do ciclo de vida? |
+
+### Quatro dimensões separadas (conceituais)
+
+1. **Mérito institucional por selo:** processo, decisão, vigência, suspensão, expiração ou revogação; independência substantiva dos dois atos.
+2. **Processo recursal:** admissibilidade, tramitação e decisão de revisão; a existência de recurso não substitui estado de mérito nem presume efeito suspensivo.
+3. **Autorização editorial:** permissão específica para exposição pública, independente da concessão.
+4. **Projeção nas superfícies:** estado efetivamente representado em cards, perfis e demais interfaces autorizadas, sem se tornar fonte de verdade.
+
+A ausência de decisão, a indisponibilidade técnica e a inexistência de selo são situações distintas. Não apresentar indisponibilidade de consulta como revogação ou fraude.
+
+### Guardas não compensatórias propostas
+
+- Nenhuma decisão de selo ou revisão será automatizada; atos institucionais exigem competência e rastreabilidade.
+- Nenhuma decisão favorável equivale a autorização pública; sem autorização editorial vigente, não exibir.
+- Nenhuma projeção pode afirmar selo sem respaldo da fonte canônica e das condições de validade.
+- Uma transição sobre `Verificado` não apaga automaticamente o mérito histórico de `Contribuição Reconhecida`; efeitos sobre sua projeção exigem regra ratificada.
+- Expiração, suspensão e revogação precisam de fundamentos e regimes próprios, não de um estado genérico indistinto.
+- Recurso não suspende, restaura ou renova automaticamente decisões; efeitos cautelares dependem de competência e política explícitas.
+- Retirada segura, acessibilidade, proteção de Pessoas e não exposição de dados R1 são requisitos para eventual homologação.
+- Os identificadores de `GKR-SURF-*` e `GKR-TRN-*` e suas maturidades permanecem inalterados.
+
+### Exemplos de verificação futura
+
+| Situação | Resultado esperado de governança |
+|---|---|
+| Concessão humana favorável, sem ato editorial | Reconhecimento não publicável |
+| Recurso protocolado contra decisão negativa | Nenhum selo surge automaticamente |
+| `Verificado` expira e `Contribuição Reconhecida` tem ato histórico | Preservar histórico; reavaliar publicabilidade sob regra expressa |
+| Revogação registrada, card ainda em cache | Divergência a corrigir; não afirmar estado inválido |
+| Fonte canônica indisponível | Tratamento de falha segura sem inventar mérito |
+| Coletivo protegido obtém reconhecimento | Não expandir encontrabilidade ou revelar participação sensível |
+| Renovação solicitada antes da expiração | Pedido não significa prorrogação automática |
+
+### Instrumento decisório e dependências
+
+Cada RSP-06.A..E exigirá exame documental individual e posterior ato humano `APROVAR`, `APROVAR_COM_AJUSTES`, `DEVOLVER_PARA_REVISAO` ou `REJEITAR`, com autoridade competente, versão, motivação, escopo, impedimentos, efeitos e evidências. Dependências: DEC-01..05, RSP-05, PER-102/103, registries de superfícies e transições e política de navegação do GKR. Nenhum desses atos foi presumido.
+
+```text
+ETAPA 283 RSP-06 DELIBERATION INSTRUMENT → PREPARED
+RSP-06.A..E INDIVIDUAL EXAMS → 0/5 DOCUMENTED
+RSP-06.A..E HUMAN ADJUDICATIONS → 0/5 CONFIRMED
+RSP-05.A..F EXAMS → 6/6 DOCUMENTED
+RSP-05 HUMAN ADJUDICATIONS → 0/6 CONFIRMED
+DEC-01..05 EXAMS → 25/25 DOCUMENTED
+DEC-01..05 NORMATIVE RATIFICATIONS → 0/25 CONFIRMED
+NEW GKR-SURF / GKR-TRN IDS → 0
+PR #654 → OPEN / DRAFT
+GKR MENU → UNCHANGED
+BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
+NEXT → RSP-06.A
+```
