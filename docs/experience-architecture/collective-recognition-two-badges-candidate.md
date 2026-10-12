@@ -2,7 +2,7 @@
 id: GKR-COLLECTIVE-RECOGNITION-001
 title: Coletivos — Verificado e Contribuição Reconhecida
 status: proposed
-version: 4.10.0
+version: 4.11.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -3150,6 +3150,105 @@ DEC-04.B ANALYTICAL DIRECTION → CONDITIONAL CONVERGENCE
 DEC-04.B HUMAN NORMATIVE ADJUDICATION → PENDING
 DEC-04 INDIVIDUAL EXAMS → 2/5 DOCUMENTED
 DEC-04.C → NEXT
+PR #654 → OPEN / DRAFT
+GKR MENU ACCESS → REQUESTED / NOT PUBLISHED
+BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
+```
+
+
+## DEC-04.C — Exame individual: contrato de publicação e fonte canônica (v4.11 candidato)
+
+**Resultado:** CONVERGÊNCIA ANALÍTICA CONDICIONAL. Este contrato lógico é candidato, sem API implementada, autoridade editorial ratificada ou extensão vigente de PER-103.
+
+### Questão decisória
+
+Quais provas de decisão institucional, vigência, identidade, escopo, autorização de superfície e sincronização são necessárias antes de projetar um selo em cards ou PER-103, sem transformar uma aprovação privada em publicação automática?
+
+### Portas de publicação não compensatórias
+
+| Gate | Exigência candidata | Falha implica |
+|---|---|---|
+| PUB-01 Identidade | Identificador canônico do Coletivo e representação correspondentes | Bloquear projeção potencialmente atribuída a terceiro |
+| PUB-02 Decisão | Decisão material humana competente, fundamentada, versionada e válida para o selo | Não publicar a partir de parecer, índice ou recomendação |
+| PUB-03 Vigência | Estado material VIGENTE no momento da consulta, sem suspensão/expiração/revogação | Não representar selo como vigente |
+| PUB-04 Dependência | Contribuição Reconhecida exige Verificado vigente no mesmo Coletivo | Não projetar segundo selo isoladamente |
+| PUB-05 Publicação | Ato próprio de publicação autorizado, ativo, com selo, escopo e período | Aprovação privada permanece não publicada |
+| PUB-06 Superfície | Card/PER-103 e variante cobertos por contrato autorizado e Master competente | Não inferir extensão a novas telas |
+| PUB-07 Privacidade | Payload público estritamente mínimo, sem dados R1 ou justificativas confidenciais | Não expor informações protegidas |
+| PUB-08 Consistência | Fonte de decisão e projeção coerentes; comportamento seguro diante de divergências | Não afirmar reconhecimento por cache ou fonte incerta |
+
+### Registro canônico mínimo proposto (esquema conceitual)
+
+```text
+collective_id
+badge_type                  VERIFICADO | CONTRIBUICAO_RECONHECIDA
+material_decision_id
+material_decision_version
+material_state              APPROVED_NOT_PUBLISHED | ACTIVE | SUSPENDED | EXPIRED | REVOKED | ...
+material_valid_from / material_valid_until
+material_scope_id
+publication_authorization_id
+publication_state           AUTHORIZED | WITHDRAWN | ...
+authorized_surfaces         explicit identifiers and variants
+publication_valid_from / publication_valid_until
+canonical_revision
+last_reconciled_at
+```
+
+Os nomes acima não constituem contratos de API aprovados. O registro privado guarda provas, responsáveis e motivos; o payload público contém somente identificador/sinal, rótulo e explicação institucional autorizada, quando apropriados. Não projetar contagens de respondentes ou resultados individuais sem decisão separada.
+
+### Função lógica de projeção (não implementada)
+
+```text
+PUBLICABLE(badge, collective, surface, now)
+  = canonical_identity_matches
+  AND authorized_material_decision_exists
+  AND material_state_is_active_at(now)
+  AND specific_publication_authorization_is_active_at(now)
+  AND surface_and_variant_explicitly_authorized
+  AND privacy_contract_satisfied
+  AND trustworthy_current_state_obtainable
+  AND (badge != CONTRIBUICAO_RECONHECIDA
+       OR VERIFICADO_is_currently_active_for_same_collective)
+```
+
+Nenhum sinal de IA, indicador agregado, contrato comercial ou estado de um componente de interface substitui essas portas. A função é critério candidato de decisão de renderização, não permissão para criar backend ou selo.
+
+### Responsabilidades e eventos
+
+- **Autoridade material:** decide concessão, vigência, suspensão e revogação; registra fundamentação protegida (DEC-03).
+- **Autoridade de publicação:** autoriza ou retira projeção por selo e superfície, sem alterar a decisão material.
+- **Serviço de leitura:** consome fonte canônica autorizada e aplica portas de exibição, sem recalcular mérito.
+- **Superfície:** apresenta significado e limites conforme DEC-04.A/B; não torna seu estado visual fonte de verdade.
+- **Auditoria:** registra versões, publicações, retiradas, divergências e reconciliações com acessos mínimos.
+
+Eventos candidatos: `MATERIAL_DECISION_CHANGED`, `PUBLICATION_AUTHORIZED`, `PUBLICATION_WITHDRAWN`, `BADGE_EXPIRED`, `PREREQUISITE_INVALIDATED`, `SURFACE_RECONCILED`. A assinatura, transporte, ordem de eventos, retenção e SLAs seguem não adjudicados.
+
+### Casos de fronteira
+
+| Cenário | Comportamento candidato |
+|---|---|
+| Verificado aprovado, sem autorização de publicação | Não exibir |
+| Verificado vigente e autorizado no PER-103, não nos cards | Exibir somente no PER-103 |
+| Contribuição vigente e publicável, Verificado expirado | Bloquear exibição do segundo selo |
+| Ambos materialmente vigentes, só um autorizado | Projetar somente o autorizado, observada a dependência |
+| Documento candidato cita PER-103 | Não alterar autoridade vigente do Master |
+| Ato de publicação retirado, decisão material continua válida | Retirar da superfície; manter histórico institucional |
+| Resposta de cache diverge da fonte atual | Não afirmar vigência a partir do cache; reconciliar |
+| Ausência de conectividade com fonte confiável | Aplicar fallback seguro previsto; não inventar selo |
+| Payload contém avaliação privada ou identidade de Pessoa | Rejeitar/proteger, sem exibição |
+| Coletivo muda de identidade/escopo | Reconciliar vínculo antes de nova projeção |
+
+### Pendências normativas e técnicas
+
+Designar autoridades de publicação e donos do contrato; ratificar estados, validade, payload e identificadores públicos; estabelecer fonte canônica e permissão de cada superfície/variante; fixar comportamento de indisponibilidade, revogação, cache e SLA; estender PER-103 e cards mediante rito próprio; executar testes de privacidade e consistência em DEC-05. Nenhum endpoint, integração, permissão ou teste foi executado aqui.
+
+```text
+DEC-04.C INDIVIDUAL EXAM → COMPLETE
+DEC-04.C ANALYTICAL DIRECTION → CONDITIONAL CONVERGENCE
+DEC-04.C HUMAN NORMATIVE ADJUDICATION → PENDING
+DEC-04 INDIVIDUAL EXAMS → 3/5 DOCUMENTED
+DEC-04.D → NEXT
 PR #654 → OPEN / DRAFT
 GKR MENU ACCESS → REQUESTED / NOT PUBLISHED
 BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
