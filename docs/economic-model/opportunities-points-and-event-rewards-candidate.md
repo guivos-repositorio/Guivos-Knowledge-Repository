@@ -2,7 +2,7 @@
 id: GEM-OPPORTUNITIES-POINTS-REWARDS-CANDIDATE-001
 title: Oportunidades — Retorno em Pontos e Premiações de Eventos — Proposta Transversal
 status: draft
-version: 2.1.0
+version: 2.2.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -1584,6 +1584,58 @@ RISK CASES → 12 DOCUMENTED; FORMAL HOMOLOGATION NONE
 COVER-01..05 → 0/5 ADJUDICATED
 EQ-1 → ILLUSTRATIVE ONLY
 PAR/FUND/LIQ → FORMAL RATIFICATIONS PENDING
+PR #655 → OPEN / DRAFT
+MAIN / MENU / HOME MASTERS / REGISTRIES / REPLIT → UNCHANGED
+```
+
+## 31. Pacote decisório de riscos residuais — responsabilidade e evidência (v2.2.0 candidato)
+
+**Natureza:** matriz documental, sem aprovação contratual ou operacional. FIN-COMPRA retém custo dos pontos do repasse ao ofertante; FIN-EVENTO exige saldo pré-pago. O ofertante financia o incentivo, mas chargebacks, fraudes e perdas após resgate requerem **atribuição específica de responsabilidade**, não presumida.
+
+### Matriz de 12 cenários
+
+| Risco | Responsável funcional proposto (não autoridade formal) | Evidência | Tratamento contratual pendente | Teste de aceite futuro |
+|---|---|---|---|---|
+| RSK-01 repasse indisponível | Financeiro/Payments | Pagamento, liquidação, retenção | Crédito após cobertura real | Impedir crédito sem lastro |
+| RSK-02 chargeback após crédito | Risco/Payments + ofertante | Contestação, crédito, saldo | Recuperação e contestação | Reversão rastreável |
+| RSK-03 refund após Mall | Risco + Mall + vendedor | Compra origem, emissão, resgate, repasse | Alocação de perda após resgate | Não criar débito negativo oculto |
+| RSK-04 refund após Travel | Risco + Travel + fornecedor | Cotação, reserva, multas, liquidação | Multas, cancelamentos e ressarcimentos | Estágios distintos de cancelamento |
+| RSK-05 saldo pré-pago pendente | Payments + campanhas | Pagamento e aporte | Ativação só após confirmação | Aporte não confirmado não cria pontos |
+| RSK-06 saldo de campanha insuficiente | Ledger + organizador | Disponível, reservas, configuração | Vedação de novas promessas | Reserva superior ao saldo falha |
+| RSK-07 campanhas concorrentes | Ledger + organizador | Operações atômicas e idempotência | Prioridade e rollback | Uma reserva pelo último saldo |
+| RSK-08 múltiplos ofertantes | Payments + ofertantes | Itens, IDs, splits e refund | Repasses e taxas separados | Refund parcial de um ofertante |
+| RSK-09 múltiplos fornecedores | Mall/Travel + ledger | Itens, parceiros e liquidações | Split e reversão por fornecedor | Não cruzar repasses |
+| RSK-10 parceiro encerra operação | Jurídico/Risco + parceiro | Contratos e obrigações abertas | Continuidade e garantia | Parceiro indisponível |
+| RSK-11 saldo expirado/não usado | Jurídico/Financeiro | Prazo, comunicação e saldo | Direitos, reembolso e destino do lastro | Prazo-limite e contestação |
+| RSK-12 alteração de paridade | Governança econômica | Versionamento e exposição | Preservar direitos e cobertura | Comparar obrigações antes/depois |
+
+### Foco RSK-03 — estorno após resgate
+
+Curso de R$ 200, retorno 1% → **2 pontos**, R$ 2 retidos do repasse e repasse-base de R$ 198 (taxa Guivos separada). Pessoa utiliza **1,25 ponto** no Mall. Na hipótese **EQ-1 não aprovada**, o parceiro tem cobertura teórica de R$ 1,25. Depois ocorre estorno integral da compra do curso.
+
+Separar: (a) os **0,75 ponto** ainda não resgatados e potencialmente reversíveis, sujeitos à política; (b) os **1,25 ponto** já consumidos e obrigação com parceiro; (c) a reversão financeira de origem e a necessidade de atribuir a perda **sem presumir automaticamente responsabilidade de Guivos, ofertante ou Pessoa**.
+
+**Procedimento candidato:** detectar incidente; vincular pagamento, crédito, pedido e liquidação; verificar contestação; medir exposição; notificar partes; adjudicar responsável sob contrato e lei; compensar/reverter com lançamentos identificáveis; reconciliar parceria e encerrar auditavelmente. Proibido débito oculto, saldo negativo silencioso ou cancelamento unilateral de repasse devido.
+
+**Alternativas de responsabilidade para decisão:** recuperação proporcional e juridicamente permitida com contestação; garantia contratual de chargeback do ofertante; responsabilidade por fraude/falha comprovada do agente competente; atraso de disponibilidade ou limites para reduzir risco. Nenhuma selecionada.
+
+### Gates de cobertura a ratificar
+
+| Gate | Evidência exigida | Estado |
+|---|---|---|
+| COVER-01 | Obrigação mensurada sob paridade aprovada e lastro suficiente | ABERTO |
+| COVER-02 | Contratos e parecer jurídico de chargeback, insolvência e responsabilização | ABERTO |
+| COVER-03 | Split e conciliação por ofertante, parceiro e linha de pedido | ABERTO |
+| COVER-04 | Tratamento de expiração, saldos livres, reembolso e destinação de recursos | ABERTO |
+| COVER-05 | Trilha de incidentes, controles, testes e auditoria | ABERTO |
+
+**Rito seguinte:** especificação candidata do ledger financeiro e de pontos e matriz de aceite ponta a ponta, sem implantar APIs nem adjudicar competências. Requisitos jurídico, fiscal, contábil, privacidade e meios de pagamento permanecem gates independentes.
+
+```text
+VERSION → v2.2.0 CANDIDATE
+RSK-01..12 → 12 DOCUMENTED; NO LIVE TESTS
+COVER-01..05 → 0/5 ADJUDICATED
+PARITY EQ-1 → SIMULATION ONLY
 PR #655 → OPEN / DRAFT
 MAIN / MENU / HOME MASTERS / REGISTRIES / REPLIT → UNCHANGED
 ```
