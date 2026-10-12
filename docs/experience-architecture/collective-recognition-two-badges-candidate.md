@@ -2,7 +2,7 @@
 id: GKR-COLLECTIVE-RECOGNITION-001
 title: Coletivos — Verificado e Contribuição Reconhecida
 status: proposed
-version: 3.8.0
+version: 3.9.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -2358,4 +2358,91 @@ DEC-02.E → NEXT
 PR #654 → OPEN / DRAFT
 GKR MENU ACCESS → REQUESTED / NOT PUBLISHED
 ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
+```
+
+
+## DEC-02.E — Exame individual: regra de concessão de Contribuição Reconhecida (v3.9 candidato)
+
+**Resultado:** CONVERGÊNCIA ANALÍTICA CONDICIONAL. O exame encerra a cobertura analítica DEC-02.A..E, mas não aprova thresholds, autoridade, publicação nem implementação.
+
+### Pergunta decisória
+
+Como converter evidências elegíveis, mérito substantivo, robustez estatística, atribuição e integridade em uma decisão institucional auditável, sem concessão automática por índice, sem compensar fraude ou ausência de evidência, e sem criar hierarquia reputacional universal?
+
+### Portas necessárias e não compensatórias
+
+| Porta | Condição candidata | Se não satisfeita |
+|---|---|---|
+| GR-01 — Verificado | Selo Verificado vigente, decisão e identidade do Coletivo compatíveis | Não conceder Contribuição Reconhecida |
+| GR-02 — Vivência e elegibilidade | Experiências efetivamente vividas e respostas de Pessoas legitimamente elegíveis | Base insuficiente ou revisão |
+| GR-03 — Mérito | Benefícios, aprendizados ou avanços percebidos em dimensão pertinente à finalidade | Mérito não demonstrado, sem juízo negativo geral |
+| GR-04 — Atribuição | Atuação material do Coletivo, escopo e período comprovados | Não transferir mérito de terceiros |
+| GR-05 — Robustez | Evidência suficientemente informativa, sem viés/concentração material não esclarecidos, segundo critérios futuros | Não conceder por percentual bruto |
+| GR-06 — Integridade | Procedência, voluntariedade, privacidade e riscos relevantes examinados | Revisão, proteção e eventual bloqueio fundamentado |
+| GR-07 — Autoridade | Decisão humana competente, motivada, versionada, com direito de revisão | Cálculo ou IA não emite o selo |
+| GR-08 — Publicação | Ato separado de divulgação e superfície autorizada | Decisão privada não gera selo público automaticamente |
+
+GR-08 não integra a prova de mérito, mas é pré-condição independente da **exibição pública**. A ausência de qualquer uma das portas de mérito aplicáveis impede concessão; um percentual elevado não compensa fraude confirmada, coação, atribuição inexistente ou amostra insuficiente.
+
+### Resultado decisório candidato
+
+| Estado | Significado | Exibição pública |
+|---|---|---|
+| `EM_ANALISE` | Verificações ainda em curso | Não exibir selo |
+| `COMPLEMENTACAO` | Falta prova recuperável de uma condição | Não exibir selo |
+| `BASE_INSUFICIENTE` | Evidência não sustenta concessão no recorte | Não classificar Coletivo negativamente |
+| `INDEFERIDO` | Decisão motivada de não concessão segundo política vigente | Não apresentar rótulo depreciativo |
+| `APROVADO_NAO_PUBLICADO` | Decisão material favorável, sem autorização de projeção | Não exibir selo |
+| `VIGENTE_PUBLICAVEL` | Concessão válida com ato de publicação separado | Exibir somente em superfície autorizada |
+| `EM_REAVALIACAO` | Mudança material, temporal ou de integridade requer exame | Comportamento público depende do estado vigente e da decisão cautelar competente |
+| `SUSPENSO` / `EXPIRADO` / `REVOGADO` | Reconhecimento sem condição de vigência | Retirar da exibição, sem divulgar acusação protegida |
+
+Os nomes dos estados são conceituais e não substituem um esquema técnico aprovado.
+
+### Controles contra injustiça
+
+1. Não reprovar ou privilegiar por porte, CNPJ, seguidores, patrocínio, quantidade de eventos ou popularidade.
+2. Aceitar contribuição percebida pertinente em uma ou mais dimensões, examinando igualmente contradições e sinais desfavoráveis relevantes.
+3. Não selecionar retrospectivamente apenas dimensões com resultados positivos.
+4. Não imputar respostas a quem não avaliou nem tratar participantes repetidos como indivíduos independentes.
+5. Não declarar benefício comprovado, progresso objetivo ou causalidade a partir de percepção autorrelatada.
+6. Proporcionar complementação, fundamentação e recurso independente antes de decisões finais segundo competências futuras.
+7. Conservar histórico legítimo de experiências ao revisar ou revogar um selo, com proteção de dados.
+8. Assegurar que a ausência do selo não cause rebaixamento automático de visibilidade ou declaração de risco.
+
+### Cenários adversariais de aplicação candidata
+
+| Caso | Direção esperada |
+|---|---|
+| 100% favorável em três relatos elegíveis | Não emitir sem suficiência metodológica |
+| Grande amostra favorável obtida por convites seletivos | Revisar viés e integridade |
+| Avaliações consistentes de pequeno Coletivo informal | Examinar proporcionalmente, sem exclusão por porte |
+| Benefícios percebidos em pedalada sem aprendizado financeiro | Dimensão não pertinente não bloqueia mérito |
+| Coletivo patrocinador sem papel material demonstrado | Não atribuir mérito de terceiro |
+| Verificado perde vigência | Não exibir segundo selo como vigente; revisar estado competente |
+| Selo aprovado, mas PER-103 ainda sem autoridade | Não publicar |
+| Recurso apresenta prova de erro material | Nova decisão fundamentada; restaurar projeção somente mediante ato autorizado |
+
+### Pendências para adjudicação
+
+Devem ser ratificados os gates e seus efeitos, parâmetros quantitativos e substantivos de DEC-02.C, tratamento de resultados adversos, autoridade concessória de DEC-03, recurso e prazos, vigência, fonte canônica, publicação de DEC-04 e controles de DEC-05. A conformidade documental de DEC-02.E não demonstra testes estatísticos nem controles implementados.
+
+### Fechamento analítico DEC-02
+
+| Decisão | Exame | Adjudicação normativa |
+|---|---|---|
+| DEC-02.A — Mérito substantivo | CONCLUÍDO | PENDENTE |
+| DEC-02.B — Instrumento de avaliação e elegibilidade | CONCLUÍDO | PENDENTE |
+| DEC-02.C — Robustez e representatividade | CONCLUÍDO | PENDENTE |
+| DEC-02.D — Atribuição e temporalidade | CONCLUÍDO | PENDENTE |
+| DEC-02.E — Regra de concessão | CONCLUÍDO | PENDENTE |
+
+```text
+DEC-02.A..E INDIVIDUAL EXAMS → 5/5 DOCUMENTED
+DEC-02.A..E HUMAN NORMATIVE ADJUDICATION → 0/5 CONFIRMED
+DEC-02 INTEGRATED DELIBERATION REGISTER → NEXT
+DEC-01.A..E HUMAN NORMATIVE ADJUDICATION → 0/5 CONFIRMED
+GKR MENU ACCESS → REQUESTED / NOT PUBLISHED
+PR #654 → OPEN / DRAFT
+BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
 ```
