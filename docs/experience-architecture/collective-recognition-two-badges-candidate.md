@@ -5843,3 +5843,92 @@ GKR MENU → UNCHANGED
 BADGE ISSUANCE / PUBLICATION / TESTS / HOMOLOGATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
 NEXT → G0/B-01 INSTITUTIONAL SUBMISSION DOSSIER
 ```
+
+## Etapa 296 — G0/B-01: Dossiê de encaminhamento institucional e admissibilidade documental (v4.48 candidato)
+
+**Resultado:** DOSSIÊ CANDIDATO CONSOLIDADO / ADMISSÍVEL PARA TRIAGEM PRELIMINAR / INADMISSÍVEL COMO ATO EFICAZ SEM PROVA DE COMPETÊNCIA. Nenhuma submissão externa, assinatura, decisão normativa ou autorização de operação foi executada.
+
+### Finalidade e fronteira
+
+Organizar os insumos das Etapas 291–295 para encaminhamento **eventual e condicionado** à instância institucional efetivamente legitimada, sem tratar a tramitação do dossiê como comprovação de titularidade, investidura, deliberação das 36 decisões ou aprovação da política dos selos.
+
+### Índice do dossiê
+
+| Peça | Origem | Condição atual |
+|---|---|---|
+| D-01 — Questão e matriz das autoridades | Etapa 291 | Exame das fontes correntes documentado |
+| D-02 — Alternativas G0-A/B/C/D | Etapa 292 | Hipóteses institucionais não escolhidas |
+| D-03 — Fontes e lacunas de competência | Etapa 293 | Insuficiência de prova específica identificada |
+| D-04 — Minuta institucional e delegações | Etapa 294 | Dez cláusulas preparadas, campos abertos |
+| D-05 — Auditoria de completude e conflitos | Etapa 295 | Estrutura suficiente para apreciação preliminar; impedimentos materiais |
+| D-06 — Registro de decisão G0/B-01 | Este instrumento | Modelo sem signatário, fundamento ou resultado |
+| D-07 — Dependências DEC/RSP | Etapas 289–290 | 36/36 exames documentados; 0/36 adjudicações |
+
+### Teste de admissibilidade em dois níveis
+
+**Nível P — Triagem preliminar documental:** admissível como material de análise, pois objeto, alternativas, riscos, lacunas e forma proposta de decisão estão identificados. Não produz eficácia normativa.
+
+**Nível N — Deliberação institucional válida:** **pendente/bloqueada** até comprovação da cadeia de competência, da capacidade do signatário, do ato/rito exigido, da abrangência, das salvaguardas e do preenchimento dos campos materiais. O dossiê não substitui as formalidades legais ou institucionais pertinentes.
+
+### Tabela de bloqueios para decisão G0
+
+| Código | Prova ou definição necessária | Estado |
+|---|---|---|
+| ADM-01 | Documento constitutivo/mandato vigente que legitime aprovar a política | NÃO COMPROVADO NESTAS FONTES |
+| ADM-02 | Identificação de instância, signatário e poderes aplicáveis | PENDENTE |
+| ADM-03 | Competências delegáveis e reservas normativas | PENDENTE |
+| ADM-04 | Escopo territorial, validade e eficácia | PENDENTE |
+| ADM-05 | Segregação entre instrução, mérito, recurso, auditoria e editorial | PROPOSTA; NÃO RATIFICADA |
+| ADM-06 | Impedimentos, substituição, revogação de delegações | PROPOSTA; NÃO RATIFICADA |
+| ADM-07 | Registro assinado, motivado e versionado | NÃO PRODUZIDO |
+| ADM-08 | Compatibilidade jurídica, institucional e com o GKR | A VALIDAR POR AUTORIDADE COMPETENTE |
+
+### Protocolo candidato de encaminhamento
+
+1. Identificar autoridade destinatária **por documento verificável**, não por presunção de cargo ou autoria.
+2. Encaminhar dossiê com seus campos pendentes expressamente marcados e condições de admissibilidade.
+3. Submeter primeiro prova de competência e, se pertinente, revisão jurídica/institucional específica.
+4. Registrar resultado próprio da triagem: `ADMISSÍVEL_PARA_DELIBERAÇÃO`, `DEVOLVIDO_PARA_COMPLEMENTAÇÃO` ou `INADMISSÍVEL`; esses rótulos são **candidatos**, não estados implementados.
+5. Apenas instância competente poderá decidir G0-A/B/C/D e preencher ato eficaz, motivado e datado.
+6. Mesmo um G0 aprovado não adjudica automaticamente DEC-01..05, RSP-05 ou RSP-06 e não libera publicação ou engenharia.
+
+### Registro deliberativo não preenchido
+
+```text
+DOSSIÊ: G0/B-01 — RECONHECIMENTO DE COLETIVOS
+VERSÃO: v4.48 CANDIDATO
+DESTINATÁRIO COMPETENTE: [A COMPROVAR]
+ATO DE COMPETÊNCIA: [A ANEXAR / VALIDAR]
+ESCOPO E JURISDIÇÃO: [A DELIBERAR]
+COMPLETUDE FORMAL: [PENDENTE]
+RESULTADO DE ADMISSIBILIDADE: [NÃO DELIBERADO]
+ALTERNATIVA G0-A/B/C/D: [NÃO ESCOLHIDA]
+ASSINATURA / DATA / FUNDAMENTAÇÃO: [NÃO REGISTRADAS]
+G0 ADJUDICADO: NÃO
+DEC/RSP RATIFICADOS: 0/36
+```
+
+### Fronteiras de publicação e continuação
+
+**Trilha da política:** G0/B-01 só poderá avançar após prova de competência. Ratificação dos 36 gates, especificação técnica, testes, homologação e liberação de engenharia são atos posteriores e distintos.
+
+**Trilha do MENU do GKR:** eventual hub informativo de Reconhecimento de Coletivos deverá respeitar a autoridade editorial do GKR e não apresentar o DRAFT como norma aprovada. Nenhuma alteração de `mkdocs.yml` foi realizada.
+
+### Próxima etapa
+
+**Etapa 297 — Checklist final de prontidão G0/B-01 e decisão de encaminhamento condicionado:** verificar completude do dossiê, separar pendências obtíveis documentalmente daquelas que exigem ato de autoridade externa e preparar a recomendação de encaminhamento, sem simular decisão humana.
+
+```text
+ETAPA 296 G0/B-01 INSTITUTIONAL SUBMISSION DOSSIER → DOCUMENTED
+PRELIMINARY DOCUMENTARY TRIAGE → ELIGIBLE FOR REVIEW ONLY
+NORMATIVE ADMISSIBILITY / COMPETENCE → NOT ESTABLISHED
+G0/B-01 HUMAN ADJUDICATION → PENDING
+DEC-01..05 EXAMS → 25/25; RATIFICATIONS → 0/25
+RSP-05 EXAMS → 6/6; ADJUDICATIONS → 0/6
+RSP-06 EXAMS → 5/5; ADJUDICATIONS → 0/5
+COMBINED EXAMS → 36/36; HUMAN ADJUDICATIONS → 0/36
+PR #654 → OPEN / DRAFT
+GKR MENU → UNCHANGED
+BADGE ISSUANCE / PUBLICATION / TESTS / HOMOLOGATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
+NEXT → G0/B-01 FINAL READINESS CHECKLIST
+```
