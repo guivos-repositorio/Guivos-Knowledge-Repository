@@ -3680,3 +3680,93 @@ PR #654 → OPEN / DRAFT
 GKR MENU ACCESS → REQUESTED / NOT PUBLISHED
 BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
 ```
+
+## DEC-05.C — Exame individual: rastreabilidade institucional e segurança operacional (v4.18 candidato)
+
+**Resultado:** EXAME DOCUMENTAL CONCLUÍDO / CONVERGÊNCIA ANALÍTICA CONDICIONAL / ADJUDICAÇÃO NORMATIVA PENDENTE. A descrição abaixo é um contrato candidato, não uma implementação ou homologação de infraestrutura.
+
+### Questão decisória
+
+Como assegurar que toda concessão, manutenção, suspensão, expiração, revogação, recurso e publicação dos selos `Verificado` e `Contribuição Reconhecida` seja atribuível a autoridade legitimada, recuperável para auditoria e refletida com segurança em todas as superfícies autorizadas, inclusive diante de erros, indisponibilidade e divergências de estado?
+
+### Dez controles operacionais candidatos
+
+| Controle | Requisito candidato | Evidência futura de verificação |
+|---|---|---|
+| OPS-01 — Fonte canônica | Manter registro institucional único de decisão e vigência, distinguindo estado decisório, aprovação editorial e projeção pública | Esquema ratificado e testes de origem |
+| OPS-02 — Autoridade e acesso | Exigir permissões por papel, segregação de funções e impedimento quando houver conflito | Matriz de alçadas, trilhas de autorização e testes de acesso negativo |
+| OPS-03 — Trilha de decisão | Registrar ator institucional, competência, fundamento, escopo, versão de política, instante, decisão e recurso; proteger campos sensíveis | Logs auditáveis e revisão de amostras |
+| OPS-04 — Integridade de eventos | Preservar proveniência, ordem lógica, controle de duplicidade e correlação entre decisão e publicação | Ensaios de reprocessamento e idempotência |
+| OPS-05 — Estados impeditivos | Bloquear afirmação pública quando houver expiração, suspensão, revogação ou ausência de autorização vigente; respeitar dependência entre selos | Testes positivos e negativos por estado |
+| OPS-06 — Propagação | Reconciliar perfis, cards, busca, cache, APIs e outras superfícies permitidas com a fonte vigente | Matriz de superfícies e testes de divergência |
+| OPS-07 — Falha segura | Diante de estado desconhecido, fonte indisponível ou inconsistência, não afirmar reconhecimento não confirmado | Ensaios de indisponibilidade e fallback |
+| OPS-08 — Correção e rollback | Permitir retificação rastreável e reversão de publicação incorreta, sem apagar histórico institucional devido | Simulações de erro, recuperação e revalidação |
+| OPS-09 — Incidentes e supervisão | Registrar incidentes, gravidade, responsável, contenção, evidências e lições aprendidas sob competências definidas | Exercícios de resposta e auditoria independente |
+| OPS-10 — Observabilidade proporcional | Medir latência de sincronização, inconsistências, acessos indevidos, falhas e recuperação sem tornar controles ranking público de reputação | Indicadores internos, testes de alertas e revisão de viés |
+
+### Modelo lógico mínimo de rastreabilidade (não implementado)
+
+Separar os seguintes objetos conceituais:
+- **Caso institucional:** Coletivo canônico, finalidade e escopo da avaliação, com dados privados protegidos.
+- **Evidência protegida:** origem, integridade, versão, classificação, acesso e retenção ainda a ratificar; nunca integrar automaticamente o payload público.
+- **Decisão humana:** selo específico, autoridade legitimada, fundamento institucional, versão de critério, data e validade, com registro de impedimentos.
+- **Recurso:** identificador de revisão, instância independente, relação com decisão contestada e resultado motivado.
+- **Autorização editorial:** decisão separada que determina o que pode aparecer publicamente e em quais superfícies.
+- **Projeção pública:** apenas estado publicável mínimo, escopo e metadados autorizados; nenhum dado individual R1 ou conteúdo sensível.
+- **Evento operacional:** identificador de correlação, origem, versão monotônica ou mecanismo equivalente, resultado de entrega e trilha de reconciliação.
+
+Nenhuma tecnologia de banco de dados, fila, identidade, retenção ou arquitetura específica é escolhida por este exame.
+
+### Invariantes de integridade
+
+1. A fonte de apresentação nunca substitui o registro de decisão institucional; cache não concede autoridade.
+2. A atualização de `Contribuição Reconhecida` deve respeitar o estado vigente de `Verificado`, conforme dependência candidata da DEC-04, sem criar aprovação implícita.
+3. Uma ação de IA, serviço técnico ou colaborador sem competência não cria, revoga ou restaura um selo.
+4. Publicações e reversões exigem permissão e justificativa; falhas de transporte não alteram resultado normativo.
+5. Repetições e processamento fora de ordem não podem ressuscitar selo expirado, suspenso ou revogado.
+6. Uma atualização de política não reescreve retroativamente o fundamento histórico de decisões antigas; migrações exigem rito explícito.
+7. Retirada pública e eliminação de dados pessoais são atos distintos, governados por finalidades, prazos e regras próprias.
+8. Logs e observabilidade não devem expor avaliações R1, identidades de denunciantes ou pertencimento sensível em telemetria pública.
+9. Divergências entre superfícies devem produzir sinal de correção e tratamento seguro, não um segundo estado de autoridade.
+10. Operação manual de contingência, se prevista futuramente, mantém segregação, evidência e reconciliação posterior.
+
+### Cenários de teste futuros
+
+| Cenário | Comportamento esperado |
+|---|---|
+| Recurso altera decisão originalmente publicada | Registrar nova decisão competente e reconciliar superfícies autorizadas sem apagar histórico |
+| `Verificado` perde vigência e `Contribuição Reconhecida` continua em cache | Não exibir a contribuição como reconhecimento vigente independente |
+| Duas mensagens chegam em ordem invertida | Não promover versão antiga sobre estado atual |
+| Serviço de publicação fica indisponível | Impedir nova afirmação pública sem confirmação; abrir reconciliação e incidente conforme política futura |
+| Tentativa de publicação por conta comercial | Rejeitar pela matriz de permissões e registrar tentativa proporcionalmente |
+| Registro apresenta dados pessoais em payload público | Bloquear exposição, tratar como falha de proteção e acionar rito de incidente |
+| Correção editorial de texto sem nova decisão institucional | Não permitir alteração implícita do estado ou mérito do selo |
+| Rede ou cache mantém selo removido | Detectar divergência, retirar exibição e verificar correção em cada superfície |
+| Coletivo pequeno solicita transparência sobre decisão | Fornecer fundamentos proporcionais sem identificar avaliadores ou denunciantes |
+| Auditor requer reconstrução de concessão antiga | Recuperar política, competência, atos e eventos permitidos, preservando restrições de acesso |
+
+### Interfaces com decisões anteriores
+
+- **DEC-01/02:** critérios substantivos de elegibilidade e contribuição permanecem candidatos, não implementados.
+- **DEC-03:** titularidade, segregação, recurso e competências humanas ainda dependem de adjudicação.
+- **DEC-04:** fonte canônica, publicação, retirada e contratos de superfície permanecem não ratificados.
+- **DEC-05.A:** privacidade, minimização, bases legais, retenção e controle de acesso são pré-condições independentes.
+- **DEC-05.B:** sinais de fraude não se convertem em punição ou mudança de estado automatizada.
+- **DEC-05.D/E:** testes técnicos e homologação futura deverão demonstrar efetividade antes de qualquer operação.
+
+### Pendências para ratificação
+
+Definir arquitetura autorizada, propriedade da fonte canônica, esquema de estados e versões, matriz de permissões, escopo e proteção dos logs, controles de integridade, alertas, política de indisponibilidade, prazos de sincronização/retirada, plano de contingência, retenção, requisitos de recuperação, responsabilidades de incidentes, testes de segurança e rito de homologação. Nenhum SLA numérico, controle técnico implantado ou capacidade operacional foi comprovado.
+
+```text
+DEC-05.C INDIVIDUAL EXAM → COMPLETE
+DEC-05.C ANALYTICAL DIRECTION → CONDITIONAL CONVERGENCE
+DEC-05.C HUMAN NORMATIVE ADJUDICATION → PENDING
+DEC-05 INDIVIDUAL EXAMS → 3/5 DOCUMENTED
+DEC-01..04 ANALYTICAL EXAMS → 20/20 DOCUMENTED
+DEC-01..04 HUMAN NORMATIVE RATIFICATIONS → 0/20 CONFIRMED
+DEC-05.D → NEXT
+PR #654 → OPEN / DRAFT
+GKR MENU ACCESS → REQUESTED / NOT PUBLISHED
+BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
+```
