@@ -2,7 +2,7 @@
 id: GKR-COLLECTIVE-RECOGNITION-001
 title: Coletivos — Verificado e Contribuição Reconhecida
 status: proposed
-version: 2.0.0
+version: 2.1.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -1309,4 +1309,52 @@ OPERATING CONTROLS → NOT TESTED
 CBR HUMAN NORMATIVE ADJUDICATION → 0/8 CONFIRMED
 PR #654 → OPEN / DRAFT
 REAL BADGES / REPLIT IMPLEMENTATION → NOT AUTHORIZED
+```
+
+
+## DEC-01 — Instrumento de deliberação sobre prova de existência, representação e experiência (v2.1 candidato)
+
+**Status:** PREPARADO PARA DECISÃO HUMANA; NÃO ADJUDICADO. A concordância com a continuidade da redação não ratifica por si só os requisitos normativos ou a emissão de selos. Este instrumento preserva a autoridade de Avaliação e Reputação e não altera os Masters.
+
+### DEC-01.A — Existência verificável
+**Regra candidata:** a Guivos exige prova de atuação real do Coletivo, com origem, pertinência, data e corroboração independente ou cruzada. Perfis sociais e seguidores isolados não comprovam existência.
+**Decisão humana requerida:** ratificar o padrão qualitativo de corroboração; definir catálogo de fontes aceitáveis, substituições e exceções, com tratamento de conflitos.
+
+### DEC-01.B — Representação legítima
+**Regra candidata:** quem solicita representa legitimamente o Coletivo, por mandato formal válido ou confirmação contextual independente quando o Coletivo é informal.
+**Decisão humana requerida:** definir como verificar identidade e mandato, como resolver representantes concorrentes e como revalidar mudanças, sem impor personalidade jurídica a grupos informais.
+
+### DEC-01.C — Atividade efetivamente realizada
+**Regra candidata:** o Coletivo possui ação própria verificável (atividade, serviço, encontro ou projeto) e não apenas intenção, publicidade ou interesse.
+**Decisão humana requerida:** quais provas substitutivas servem a Coletivos novos, digitais, híbridos, pontuais e iniciativas sensíveis; como definir atualização/validade das evidências.
+
+### DEC-01.D — Experiência elegível à contribuição
+**Regra candidata:** a experiência foi realmente vivida por Pessoa elegível; inscrição, clique, presença meramente formal ou divulgação não comprovam benefício. Papel do Coletivo deve ser material e atribuível.
+**Decisão humana requerida:** critérios de comprovação proporcional e salvaguardas para vivência privada, recorrente e em colaboração de terceiros.
+
+### DEC-01.E — Integridade e proteção
+**Regra candidata:** evidências conflitantes exigem revisão humana; não publicar dados de participantes, crenças, saúde, objetivos privados ou respostas individuais; negar por base insuficiente não implica juízo de fraude.
+**Decisão humana requerida:** alçadas de revisão, política de fontes reservadas, acesso e retenção, recurso, temporalidade e governança de riscos.
+
+### Quadro de decisão sugerido
+
+| Item | Recomendação técnica candidata | Estado |
+|---|---|---|
+| Existência | Prova rastreável + corroboração com independência analisada | A DELIBERAR |
+| Representação | Mandato ou confirmação legítima proporcional à tipologia | A DELIBERAR |
+| Atuação | Atividade real atribuível e datável | A DELIBERAR |
+| Experiência | Vivência elegível e atribuição específica, distinta de cadastro | A DELIBERAR |
+| Integridade | Revisão fundamentada, minimização e recurso | A DELIBERAR |
+| Exceções | Coletivos pequenos/informais/sensíveis sem exigência universal de CNPJ | A DELIBERAR |
+
+### Saída exigida antes de marcar DEC-01 como aprovada
+
+Ato de decisão humana explícito que identifique os itens aprovados/rejeitados/emendados, responsável competente, vigência, catálogo ou padrão de evidências e regras de exceção; reconciliação com autoridades canônicas; versão do documento normativo. A decisão de DEC-01 não resolve, por si só, DEC-02..05.
+
+```text
+DEC-01 DELIBERATION INSTRUMENT → PREPARED
+DEC-01 APPROVED NORMATIVE POLICY → NO
+P0-01 STATE → OPEN
+PR #654 → DRAFT
+BADGE ISSUANCE/PUBLICATION/IMPLEMENTATION → NOT AUTHORIZED
 ```
