@@ -2,7 +2,7 @@
 id: GKR-COLLECTIVE-RECOGNITION-001
 title: Coletivos — Verificado e Contribuição Reconhecida
 status: proposed
-version: 2.4.0
+version: 2.5.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -1536,6 +1536,80 @@ DEC-01.C INDIVIDUAL EXAM → COMPLETE
 DEC-01.C ANALYTICAL DIRECTION → CONDITIONAL CONVERGENCE
 DEC-01.C HUMAN NORMATIVE ADJUDICATION → PENDING
 DEC-01.D → NEXT
+PR #654 → OPEN / DRAFT
+ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
+```
+
+
+## DEC-01.D — Exame individual: experiência efetivamente vivida e elegível (v2.5 candidato)
+
+**Resultado:** CONVERGÊNCIA ANALÍTICA CONDICIONAL. O exame não concede o selo nem valida estatisticamente a contribuição; não substitui a autoridade canônica de Avaliação e Reputação ou o direito privado da Pessoa.
+
+### Questão
+
+Quando a experiência específica pode alimentar a apuração de `Contribuição Reconhecida`, sem confundir descoberta, inscrição, presença nominal, vivência efetiva e percepção de benefício?
+
+### Quatro camadas obrigatoriamente distintas
+
+| Camada | Significado | Efeito candidato |
+|---|---|---|
+| Descoberta/interesse | Pessoa encontrou, salvou, seguiu ou manifestou interesse | Não comprova participação nem gera avaliação elegível |
+| Inscrição/compromisso | Pessoa registrou intenção ou reserva | Não comprova execução ou vivência |
+| Participação ou etapa vivida | Pessoa efetivamente realizou ou viveu uma etapa delimitada da experiência | Pode ser elegível à avaliação contextual, com prova proporcional |
+| Percepção voluntária | Pessoa relata benefício, aprendizado ou avanço percebido em dimensão aplicável | Pode compor apuração apenas após elegibilidade, atribuição e integridade |
+
+Check-in isolado, presença nominal e conclusão administrativa não equivalem necessariamente a experiência substantiva vivida nem a progresso percebido. A vivência pode ocorrer de forma parcial, pontual, recorrente, presencial, digital ou híbrida; avaliar a etapa que realmente ocorreu.
+
+### Requisitos candidatos de elegibilidade
+
+| Referência | Claim | Prova proporcional |
+|---|---|---|
+| EXP-01 | Experiência concreta e delimitada | Evento, edição, projeto, sessão, atividade ou etapa com identificador, contexto e janela temporal |
+| EXP-02 | Atividade de fato realizada | Evidência legítima de realização e etapa efetiva, sem depender só de anúncio |
+| EXP-03 | Vivência elegível da Pessoa | Confirmação protegida, contextual e minimizada, proporcional ao risco e tipo de experiência |
+| EXP-04 | Papel material do Coletivo | Organização/execução/coexecução verificável, sem absorver mérito de terceiro por divulgação |
+| EXP-05 | Percepção não coercitiva | Resposta voluntária específica sobre benefício, aprendizado ou avanço percebido, com opção de não se aplicar/não responder |
+| EXP-06 | Qualidade e proveniência | Identificação lógica privada deduplicada, integridade e limites de coleta explicitados |
+
+### Atribuição e casos especiais
+
+- **Coexecução:** preservar a experiência da Pessoa mesmo quando a contribuição institucional não pode ser atribuída seguramente a um dos Coletivos.
+- **Vivência parcial:** admitir avaliação da etapa realmente vivida, sem declarar conclusão de programa inteiro.
+- **Experiência contínua:** delimitar ciclos/etapas comparáveis; respostas repetidas da mesma Pessoa não são observações independentes automaticamente.
+- **Digital/híbrida:** comprovação idônea não depende de presença territorial física.
+- **Atividade sensível:** minimizar confirmação de presença ou crença; nunca exigir lista pública de participantes.
+- **Pessoa convidada a avaliar, mas não respondeu:** ausência não é avaliação negativa nem contribuição comprovada.
+
+### Estados candidatos
+
+`EXPERIENCIA_ELEGIVEL_PARA_AVALIACAO` = vivência delimitada, legitimamente comprovada, com atribuição contextual analisada e direitos preservados; **não é concessão do selo**.  
+`INSCRICAO_SEM_VIVENCIA_COMPROVADA` = inscrição isolada, sem inferir participação.  
+`VIVENCIA_PARCIAL_DELIMITADA` = etapa efetivamente vivida, sem inferir programa completo.  
+`ATRIBUICAO_INDETERMINADA` = experiência válida, mas mérito institucional não imputável com segurança.  
+`EVIDENCIA_INSUFICIENTE` / `INTEGRIDADE_EM_REVISAO` = necessidade de complementação ou análise competente, sem estigmatização.
+
+### Ensaios de fronteira
+
+1. Pessoa salva uma pedalada e não se inscreve → interesse, não experiência.
+2. Pessoa se inscreve e evento é cancelado → não há vivência da atividade.
+3. Check-in registrado mas Pessoa sai antes de participar → verificar etapa efetivamente vivida.
+4. Pessoa faz apenas uma parte do curso → percepção contextual dessa parte, sem afirmar conclusão.
+5. Grupo promove oficina conduzida por outro → participação pode existir, mas atribuição institucional exige prova.
+6. Pessoa participa de reunião de oração → avaliar sem expor crença, presença ou identidade ao público.
+7. Experiência online realizada → elegibilidade possível com prova legítima proporcional.
+8. Pessoa responde sobre benefício percebido, mas há suspeita automatizada de anomalia → revisão humana, não exclusão automática.
+9. Pessoa não responde → não classificar como desfavorável.
+10. Pessoa repete atividades no mesmo grupo → manter histórico, distinguir número de experiências de Pessoas independentes.
+
+### Pontos ainda a adjudicar
+
+Definir meios de prova de vivência por modalidade, escopo de etapa parcial, políticas de convite/consentimento, metodologia de deduplicação compatível com privacidade, atribuição em coexecução, tratamento de provas conflitantes, retenção, recurso e requisitos estatísticos de DEC-02. A comprovação de experiência é condição de elegibilidade, não evidência suficiente de contribuição.
+
+```text
+DEC-01.D INDIVIDUAL EXAM → COMPLETE
+DEC-01.D ANALYTICAL DIRECTION → CONDITIONAL CONVERGENCE
+DEC-01.D HUMAN NORMATIVE ADJUDICATION → PENDING
+DEC-01.E → NEXT
 PR #654 → OPEN / DRAFT
 ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
 ```
