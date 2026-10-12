@@ -1,7 +1,7 @@
 ---
 id: GKR-BRAND-TYPOGRAPHY-001
 title: Tipografia Oficial da Guivos
-version: 1.0.1
+version: 1.0.2
 status: current
 normative: true
 ---
@@ -120,3 +120,37 @@ IA pode consultar este documento para reconhecer a tipografia oficial e seus est
 Mudanças na família oficial, pesos, escala ou funções tipográficas devem ser registradas por atualização desta autoridade.
 
 Explorações de Design podem testar alternativas sem alterar o estado canônico. Uma exploração somente se torna nova especificação oficial quando incorporada explicitamente ao GKR.
+
+
+## 11. Confirmação documental — Guia de aplicação da tipografia (11/10/2026)
+
+O anexo **Tipografia Guivos.pdf**, página única intitulada *Foundations / Typography*, confirmou a aplicação da família **Goldplay** em hierarquia visual e as combinações de estilos já prescritas nas seções 3–6. O documento **não altera** a escala ou os line heights anteriormente registrados; o PDF explicita os tamanhos e pesos, e os line heights permanecem respaldados pela referência Figma já identificada na seção 2, não pelo novo PDF.
+
+| Estilo | Tamanho confirmado no PDF | Peso confirmado | Função de uso |
+|---|---:|---|---|
+| Display | 60 px | SemiBold | Hero, campanha e primeiro impacto |
+| H1 | 48 px | SemiBold | Título principal de página ou fluxo |
+| H2 | 40 px | SemiBold | Título de seção |
+| H3 | 32 px | SemiBold | Agrupamento de conteúdo |
+| H4 | 24 px | Medium | Título curto de card e componente |
+| Body | 20 px | Regular | Leitura principal |
+| Body Small | 16 px | Regular | Descrições, formulários e textos de apoio |
+| Caption | 12 px | Regular | Metadados e legendas |
+| Micro | 10 px | Medium | Badges e microcopy |
+
+O documento reafirma **Display + Body 20**, **H1 + Body Small**, **H2 + Body Small** e **H4 + Caption** como combinações recomendadas; estilos sublinhados devem ser reservados para links e ações textuais, evitando uso meramente decorativo em títulos. `Body Medium` é citado na matriz ilustrativa, mas não possui token publicado na escala: não inventar seu tamanho.
+
+### 11.1 Inventário de fonte recebido e delimitação da licença
+
+O arquivo **Goldplay_Font_Family (1) (1)(1).zip** entregue pelo fundador contém 32 fontes OTF (Goldplay e Goldplay Alt, incluindo pesos Thin, Light, Regular, Medium, SemiBold, Bold, Black e itálicos). A escala publicada usa **Goldplay normal, não Goldplay Alt**, especificamente arquivos Regular, Medium e SemiBold. O arquivo README do ZIP remete a um site de distribuição, mas **não comprova licença de incorporação web, redistribuição ou hospedagem pública**. Por isso o repositório de conhecimento não incorpora binários de fonte e não declara liberação de uso em produção a partir desse ZIP.
+
+### 11.2 Contrato de aplicação nos protótipos
+
+- Aplicar a hierarquia oficial por função sem substituir por fontes externas ou alterar os valores canônicos. A composição permanece livre, não a identidade tipográfica.
+- Carregar fontes Goldplay Regular (400), Medium (500) e SemiBold (600) apenas a partir de ativos já legitimamente disponíveis para o aplicativo **quando a autorização de incorporação/hospedagem estiver demonstrada**. Na ausência de prova de licença ou acesso aos arquivos, registrar bloqueio de disponibilização, sem afirmar que Goldplay foi instalado.
+- Não baixar Goldplay de fontes não verificadas nem criar/expor URLs públicas de distribuição do ZIP. Não usar Goldplay Alt, itálicos e Bold como substituições arbitrárias dos nove tokens.
+- Utilizar fontes de fallback acessíveis **somente como contingência técnica identificada**, nunca apresentar o fallback como Goldplay oficial. Quando a família oficial não puder carregar legitimamente, comunicar a lacuna.
+- Aplicar estilos nos dois protótipos — Guivos Descoberta de Oportunidades e Guivos Business Dashboard — e preservar a [Paleta Oficial de Cores e Fundo Branco](https://guivos-repositorio.github.io/Guivos-Knowledge-Repository/governance-framework/guivos-official-color-palette/): somente os 30 tokens permitidos e canvas branco `#FFFFFF` em todas as telas.
+- Após a materialização, realizar auditoria específica de **fontes computadas, pesos, tamanhos, line height, hierarquia, carregamento de assets, telas responsivas e conformidade cromática**. Build/testes não comprovam por si só a renderização tipográfica correta.
+
+**Estado:** autoridade tipográfica reafirmada; nenhuma nova escala, licença, promoção de produto ou autorização de dados reais.
