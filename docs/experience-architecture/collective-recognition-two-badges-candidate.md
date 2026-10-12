@@ -4163,3 +4163,56 @@ PR #654 → OPEN / DRAFT
 NEXT → REGISTRY AND AUTHORITIES GAP RECONCILIATION
 BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
 ```
+
+## Etapa 273 — Reconciliação dos registries, alçadas e lacunas (v4.25 candidato)
+
+**Estado:** RECONCILIAÇÃO DOCUMENTAL PARCIAL / SEM PROMOÇÃO DE MATURIDADE / SEM ADJUDICAÇÃO. Fontes diretamente verificadas na `main`: `organizations-collectives-authenticated-surface-map.md` e `organizations-collectives-authenticated-actors-authorities-and-jobs.md`; preservam-se os achados das etapas 271–272. Os arquivos raiz dos registries globais não foram localizados diretamente nesta revisão: não declarar inspeção integral deles.
+
+### Constatações de autoridade
+
+1. O mapa autenticado `GKR-UX-ORGCOL-AUTH-SURFACE-MAP-001` referencia explicitamente `GKR-JOURNEY-SURFACE-REGISTRY-001` como inventário estável; seus códigos lógicos não criam novo namespace, rotas, permissões ou implementação.
+2. O documento `GKR-UX-ORGCOL-AUTH-JOBS-001` distingue ator funcional de conta técnica/RBAC e autoridade declarada de autoridade tecnicamente verificada.
+3. Os mapas e Masters autenticados não concedem, por analogia, poder para julgar os selos; a concessão, recurso e publicação requerem competências institucionais separadas, ainda candidatas em DEC-03/04.
+4. O mapa de estados revisado na etapa 272 não cria transições `GKR-TRN-*` e não redefine maturidade. Eventuais transições de reconhecimento deverão ser conciliadas com o Transition Registry competente.
+5. A política vigente do `mkdocs.yml` continua restringindo itens DRAFT/proposed no MENU; o pedido de encontrabilidade documental não constitui exceção aprovada.
+
+### Matriz de lacunas e ações governadas
+
+| Código | Superfície/autoridade | Cobertura existente observada | Lacuna candidata | Próxima prova necessária |
+|---|---|---|---|---|
+| REG-01 | Surface Registry / Surface Map | Mapa autenticado consome IDs `GKR-SURF-*` estáveis | Identificador/responsabilidade própria do reconhecimento não confirmado | Identificar entrada efetiva no Surface Registry e autoridade de criação/extensão |
+| REG-02 | Transition Registry | Masters referenciam famílias `GKR-TRN-*`, sem autorização para criar novas | Transições de concessão, recurso, suspensão, expiração e retirada não reconciliadas | Ler entradas canônicas e mapear mudanças reais de responsabilidade |
+| REG-03 | Atores e alçadas | Documento de jobs preserva função, contexto e limites | Autoridade institucional de selos não designada normativamente | Ratificar DEC-03, segregação e competência recursal |
+| REG-04 | PER-101/102/103 | Descoberta, resultado e perfil possuem funções distintas e proteção | Contrato de projeção pública entre cards e perfil não ratificado | Ratificar DEC-04 e anexar testes de estados e visibilidade |
+| REG-05 | COL — responsabilidades | Solicitação, vínculo e moderação já têm fronteiras próprias | Risco de atribuir a operador do Coletivo decisão institucional da Guivos | Validar não sobreposição e acesso mínimo |
+| REG-06 | Fonte de verdade e auditoria | Documentos distinguem proveniência de implementação | Esquema técnico, autorização, evento e sincronização não homologados | DEC-05 e testes, sem presumir tecnologia |
+| REG-07 | Navegação do GKR | MENU principal é descoberta governada; documentos candidatos são excluídos | Destino aprovado para reconhecimento ainda não existe | Decidir hub autorizado e verificar elegibilidade editorial antes de editar `mkdocs.yml` |
+
+### Regras de não promoção
+
+- Sem novo `GKR-SURF-*`, `GKR-TRN-*`, status de maturidade, rota, evento ou permissão inferidos nesta etapa.
+- Não reclassificar um Master ou um registry sem revisão da autoridade corrente e do escopo exato.
+- A eventual gestão de evidências por representantes de Coletivos não implica participação em julgamento institucional nem acesso às avaliações R1 protegidas.
+- No produto, selos não geram ranking, destaque, encontrabilidade ou vínculo por efeito automático.
+- Nenhum documento candidato deve ser apresentado no MENU como norma vigente.
+
+### Resolução documental proposta para o MENU
+
+**Opção preferencial a deliberar, não autorizada:** hub corrente e editorialmente aprovado sobre Coletivos, com função legítima de orientação e status visível para a proposta `Reconhecimento de Coletivos`. A inclusão do hub no MENU só ocorre após confirmação de sua autoridade, referência válida e verificação da política de navegação. Alternativa de inserir diretamente a PR DRAFT como destino do MENU permanece bloqueada pela regra vigente.
+
+### Próximos exames
+
+Localizar e ler diretamente entradas do `GKR-JOURNEY-SURFACE-REGISTRY-001` e Transition Registry vigente; confrontar IDs e maturidades; produzir mapa de responsabilidade e transições mínimas; deliberar REC-271-A..E e REG-01..07 sob alçadas legítimas. Manter ratificações DEC-01..05 em 0/25 até decisão humana formal.
+
+```text
+ETAPA 273 REGISTRY/AUTHORITY RECONCILIATION → PARTIAL DOCUMENTED
+SURFACE MAP / ACTORS-JOBS → DIRECTLY VERIFIED
+GLOBAL SURFACE REGISTRY / TRANSITION REGISTRY ENTRIES → DIRECT REVIEW PENDING
+REG-01..07 → CANDIDATE GAPS, NO ADJUDICATION
+DEC-01..05 EXAMS → 25/25 DOCUMENTED
+DEC-01..05 NORMATIVE RATIFICATIONS → 0/25 CONFIRMED
+PR #654 → OPEN / DRAFT
+GKR MENU → NOT MODIFIED
+BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
+NEXT → CANONICAL REGISTRY ENTRIES AND RESPONSIBILITY MAPPING
+```
