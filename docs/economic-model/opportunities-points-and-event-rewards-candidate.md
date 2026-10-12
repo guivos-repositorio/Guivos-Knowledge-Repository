@@ -2,7 +2,7 @@
 id: GEM-OPPORTUNITIES-POINTS-REWARDS-CANDIDATE-001
 title: Oportunidades — Retorno em Pontos e Premiações de Eventos — Proposta Transversal
 status: draft
-version: 1.3.0
+version: 1.4.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -974,4 +974,117 @@ PAR/FUND/LIQ → RECONCILED DOCUMENTALLY; 0/5 FORMAL GATES RATIFIED
 REDEMPTION PARITY / PREPAID PRICE / PLATFORM FEES → OPEN
 PR #655 → OPEN / DRAFT
 GKR MAIN / MENU / HOME MASTERS / REGISTRIES / REPLIT → UNCHANGED
+```
+
+## 23. Contrato econômico-funcional dos dois fluxos e casos de borda (v1.4.0 candidato)
+
+**Estado:** contrato funcional candidato preparado para exame; não equivale a homologação ou implantação. As decisões expressas permanecem: (a) compras elegíveis geram pontos por percentual com **abatimento no repasse ao ofertante**, taxa Guivos separada; (b) eventos e premiações usam **saldo de pontos pré-pago** pela Organização/Coletivo. Em ambos, o ofertante suporta integralmente o custo dos pontos.
+
+### 23.1 Fluxo FIN-COMPRA — cálculo e repasse
+
+```text
+OPORTUNIDADE PAGA + PERCENTUAL OPCIONAL PRÉ-DEFINIDO
+→ COMPRA INTERMEDIADA PELA GUIVOS
+→ PAGAMENTO CONFIRMADO / CONDIÇÃO DE LIQUIDAÇÃO VERIFICADA
+→ BASE ELEGÍVEL × PERCENTUAL = VALOR DO INCENTIVO (R$)
+→ CONVERSÃO EM PONTOS (REGRA DE FRAÇÕES PENDENTE)
+→ ABATIMENTO DO CUSTO DO INCENTIVO NO REPASSE AO OFERTANTE
+→ COBRANÇA SEPARADA DA TAXA GUIVOS
+→ REPASSE LÍQUIDO RECONCILIADO
+→ CRÉDITO DA PESSOA SEGUNDO REGRA DE CONFIRMAÇÃO/ESTORNO
+```
+
+**Fórmula base sem demais retenções:** `R = V - (V × p) - T`, onde `V` é o valor elegível efetivamente atribuído ao ofertante, `p` o percentual optativo e `T` a taxa aplicável da plataforma, definida separadamente. O cálculo oficial precisará esclarecer quando a base é diferente do valor total cobrado (tributos, frete, descontos, cupons, taxas de terceiros e múltiplos ofertantes).
+
+**Caso expresso:** R$ 200 × 1% → custo de R$ 2 → 2 pontos à Pessoa → repasse-base de R$ 198, antes de `T`.
+
+### 23.2 Frações, precisão e arredondamento
+
+Exemplo meramente técnico: compra de R$ 149,90 com 1% produz benefício econômico de **R$ 1,499**. A diretriz 1 ponto para R$ 1 de benefício do exemplo não define se a Pessoa receberá pontos inteiros, frações de pontos ou acumulação residual.
+
+**Alternativas a adjudicar:**
+- `ROUND-A`: permitir pontos fracionários com precisão padronizada.
+- `ROUND-B`: emitir apenas pontos inteiros, com regra clara sobre valores residuais.
+- `ROUND-C`: acumular frações economicamente devidas até atingir unidade creditável.
+
+**Proteção obrigatória:** a retenção econômica no repasse deve reconciliar exatamente a obrigação emitida e os resíduos; não reter silenciosamente valores que não geram direito correspondente. Determinar também a precisão monetária e o instante do arredondamento (item, compra ou liquidação consolidada).
+
+### 23.3 Estorno parcial e total em FIN-COMPRA
+
+- **Antes do crédito:** recalcular a base após estorno e cancelar/reduzir pontos pendentes e abatimento no repasse conforme liquidação.
+- **Após crédito, antes de resgate:** executar ajuste rastreável, observando notificação e contestação.
+- **Após resgate dos pontos:** registrar obrigação de ajuste/compensação com procedimento e responsáveis previamente definidos; não lançar saldo negativo oculto.
+- **Exemplo:** compra de R$ 200 a 1% (2 pontos) com devolução elegível de R$ 50 → base remanescente R$ 150 e benefício remanescente de R$ 1,50; a quantidade de pontos definitiva depende da regra de frações. A retenção inicial de R$ 2 deverá ser recalculada sem exceder o compromisso final.
+
+**Falha ou indisponibilidade de repasse:** se o valor não for recebido ou não estiver sob controle da Guivos, não ativar retenção fictícia nem liberar crédito sem lastro. Transações com intermediário externo exigem contrato explícito, prova de liquidação e estratégia de liquidação aprovada. Conciliar eventuais chargebacks e inadimplência.
+
+### 23.4 Fluxo FIN-EVENTO — aquisição, reserva e premiação
+
+```text
+OFERTANTE ADQUIRE SALDO DE PONTOS (PAGAMENTO PRÉVIO CONFIRMADO)
+→ SALDO DISPONÍVEL
+→ CONFIGURA CAMPANHA, REGRAS, LIMITES E GATILHOS
+→ RESERVA ATÔMICA DOS PONTOS NECESSÁRIOS
+→ INSCRIÇÕES/RESULTADOS ELEGÍVEIS COMPROVADOS
+→ CRÉDITOS EM CONTAS DE PESSOAS
+→ CONCILIAÇÃO DE RESERVAS, SALDO LIVRE E CONTROVÉRSIAS
+```
+
+Exemplo: 4.900 pontos em saldo pré-pago; 3.000 reservados para as primeiras 30 inscrições elegíveis e 1.900 para pódio. Inscrições subsequentes continuam disponíveis sem bônus das primeiras 30, se o evento permanecer aberto.
+
+**Saldo insuficiente:** impedir nova promessa/reserva que exceda saldo livre, permitir recarga validada antes da ativação e preservar compromissos já assumidos. A falta de pontos não pode cancelar automaticamente uma inscrição válida; eventual suspensão da promoção é distinta da continuidade do evento.
+
+**Premiações acumuladas:** participação e classificação podem acumular se o regulamento permitir; reservar o teto máximo de cada modalidade, evitar crédito em duplicidade e explicitar empates/redistribuição.
+
+### 23.5 Contratos de estado e evidência, sem criação de IDs oficiais
+
+| Evento candidato | Evidência mínima | Efeito econômico |
+|---|---|---|
+| Compra liquidada | Transação reconciliada e repasse sob controle | Habilita abatimento e geração elegível de pontos |
+| Pagamento de saldo de pontos | Pagamento confirmado do ofertante | Aumenta saldo pré-pago disponível |
+| Campanha ativada | Regulamento, tetos e saldo reservado | Bloqueia orçamento para obrigações prometidas |
+| Inscrição elegível | Confirmação com ordem verificável | Reserva cota, sem necessariamente creditar |
+| Participação/resultado confirmado | Prova proporcional e direito de contestação | Autoriza crédito da modalidade correspondente |
+| Estorno/cancelamento | Evento financeiro ou funcional verificável | Ajuste/reversão com trilha |
+| Resgate Mall/Travel | Cotação elegível, disponibilidade e confirmação | Bloqueia/debita pontos e registra liquidação |
+
+### 23.6 Invariantes de reconciliação
+
+1. **FIN-COMPRA:** `valor pago elegível = repasse ofertante + custo pontos retido + taxa Guivos + demais valores legítimos explicitamente discriminados`, com tratamento contábil conforme contrato.
+2. **FIN-EVENTO:** `saldo adquirido = saldo livre + saldo reservado + pontos distribuídos + outros ajustes rastreáveis` considerando recargas e estornos; não inferir que pontos já distribuídos continuam saldo do ofertante.
+3. Os dois fluxos geram a **mesma unidade de pontos da Pessoa**, mas possuem lançamentos financeiros de origem diferentes.
+4. Idempotência na liquidação, na reserva, no crédito e no resgate; concorrência nunca permite usar uma mesma cota/saldo duas vezes.
+5. Oportunidade pode existir sem incentivo; benefício esgotado não implica inscrições encerradas.
+6. Nenhuma obrigação econômica é gerada por clique, inscrição externa não confirmada, visualização, conclusão presumida ou resultado não validado.
+7. Informações sensíveis da Journey não são condição implícita para verificar direito a pontos.
+
+### 23.7 Casos obrigatórios para testes futuros
+
+| Caso | Comportamento requerido |
+|---|---|
+| R$ 149,90 × 1% | Não fixar pontos finais até política oficial de frações |
+| Estorno parcial de R$ 50 em compra de R$ 200 | Reconciliar R$ 1,50 de benefício residual com pontos e abatimento |
+| Plataforma não controla repasse | Não presumir retenção possível |
+| 30ª/31ª inscrições simultâneas | Uma única última cota de benefício; inscrições independentes |
+| Saldo do ofertante menor que prêmio programado | Bloquear nova promessa, manter inscrições conforme evento |
+| Pessoa vence e também recebe bônus de inscrição | Acumular somente conforme regra divulgada, sem crédito duplicado |
+| Cancelamento após pontos utilizados | Ajuste rastreável, sem saldo negativo silencioso |
+| Compra de saldo do ofertante estornada | Congelar emissão futura e reconciliar reservas/direitos válidos |
+| Resgate no Mall ou Travel cancelado | Reconciliar bloqueio, devolução e repasse conforme contrato de produto |
+
+### 23.8 Pendências de formalização
+
+`ROUND-A/B/C`, definição de base elegível, catálogo de percentuais, momento de crédito, taxas, preço do saldo pré-pago, paridade de resgate, cronograma de repasses, contratos de custódia e liquidação, tributação, proteção de consumidores, LGPD, responsabilidade por chargebacks e homologação permanecem pendentes de decisões específicas.
+
+**Próxima etapa candidata:** adjudicação comparada de regras de fração e resíduos em FIN-COMPRA, acompanhada de reconciliação numérica completa de estornos e da cobertura econômica da conta de pontos pré-pagos.
+
+```text
+VERSION → v1.4.0 CANDIDATE
+FIN-COMPRA → ABATIMENTO NO REPASSE; TAXA GUIVOS SEPARADA
+FIN-EVENTO → SALDO DE PONTOS PRÉ-PAGO PELO OFERTANTE
+POINT ISSUER FINANCING → 100%
+FRACTIONS / FEES / PREPAID UNIT PRICE / REDEMPTION VALUE → NOT ADJUDICATED
+PAR/FUND/LIQ → 0/5 FORMAL GATES RATIFIED
+PR #655 → OPEN / DRAFT
+MAIN / MENU / HOME MASTERS / REGISTRIES / REPLIT → UNCHANGED
 ```
