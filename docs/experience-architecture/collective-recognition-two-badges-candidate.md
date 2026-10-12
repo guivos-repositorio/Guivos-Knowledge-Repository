@@ -2,7 +2,7 @@
 id: GKR-COLLECTIVE-RECOGNITION-001
 title: Coletivos — Verificado e Contribuição Reconhecida
 status: proposed
-version: 4.15.0
+version: 4.16.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -3527,5 +3527,79 @@ DEC-01..04 HUMAN NORMATIVE RATIFICATIONS → 0/20 CONFIRMED
 DEC-05.A → NEXT
 PR #654 → OPEN / DRAFT
 MENU PUBLICATION → REQUESTED / NOT AUTHORIZED
+BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
+```
+
+
+## DEC-05.A — Exame individual: proteção de dados e privacidade (v4.16 candidato)
+
+**Resultado:** CONVERGÊNCIA ANALÍTICA CONDICIONAL. Este exame é proposta de controles, não parecer jurídico, decisão sobre base legal, DPIA concluída, controle implementado ou autorização de tratamento.
+
+### Questão decisória
+
+Quais dados estritamente necessários podem fundamentar elegibilidade, avaliação contextual e reconhecimento institucional de Coletivos, por quais funções e por quanto tempo, sem revelar participação sensível, opiniões individuais ou identidades de Pessoas e denunciantes?
+
+### Inventário e limites de tratamento candidatos
+
+| Classe | Exemplo | Finalidade candidata | Limite |
+|---|---|---|---|
+| DAT-01 Identificação do Coletivo | Identificador canônico, representantes e mandato | Verificação de existência e legitimidade | Acesso institucional proporcional |
+| DAT-02 Vínculo com experiência | Edição, data, etapa e prova mínima de presença/vivência | Elegibilidade de avaliação contextual | Não criar registro público de participação pessoal |
+| DAT-03 Avaliação R1 | Percepções de benefício, aprendizado e avanço, inclusive negativas/parciais | Instrução de mérito e análise de robustez | Protegida; não visível ao representante do Coletivo |
+| DAT-04 Deduplicação | Identificador protegido por Pessoa e experiência | Evitar contagem indevida e manipulação | Separar chave de identidade das respostas na medida tecnicamente viável |
+| DAT-05 Provas e contestação | Documentos, pareceres, recursos e denúncias | Decisão, revisão e auditoria competente | Proteção reforçada e acesso restrito |
+| DAT-06 Decisões institucionais | Selo, estado, escopo, vigência, versão e autorização | Gestão e projeção pública mínima | Separar fundamentos privados do sinal publicável |
+| DAT-07 Logs | Acessos, mudanças, decisões e incidentes | Segurança, auditoria e responsabilização | Evitar incluir conteúdo integral de avaliações e dados sensíveis |
+| DAT-08 Dados potencialmente sensíveis | Crença, saúde, filiação ou participação em contextos reveladores | Não coletar por padrão; avaliar necessidade específica | Sem publicação e com salvaguardas reforçadas se tratamento excepcional for legitimado |
+
+### Portas de proteção propostas
+
+1. **Finalidade e necessidade:** mapear a finalidade de cada campo antes da coleta; remover dados não necessários. A mera participação em Coletivo espiritual ou de saúde pode revelar dado sensível por inferência.
+2. **Fundamento jurídico:** identificar controlador, operadores, papéis, bases legais adequadas, obrigações de informação e salvaguardas para cada operação; **não presumir consentimento como base universal**.
+3. **Transparência e voluntariedade:** explicar a avaliação, seus usos, limites e direitos em linguagem clara; a Pessoa poderá não avaliar sem penalidade. Voluntariedade da resposta não substitui a definição da base legal do tratamento.
+4. **Acesso e segregação:** implementar permissões por função, necessidade e contexto; separar dados R1 e identidade, com rastreabilidade de consulta. Representantes não recebem lista identificável de avaliadores.
+5. **Segurança:** requisitos candidatos de criptografia em trânsito e repouso, gestão de credenciais, autenticação, minimização de logs, backup e resposta a incidentes; nenhum controle técnico é declarado existente.
+6. **Retenção e descarte:** estabelecer prazos específicos por finalidade, restrições legais e contestação, com exclusão/anonimização verificável e tratamento de cópias e backups; **nenhum prazo numérico é aprovado**.
+7. **Compartilhamento e terceiros:** inventariar fluxos com provedores, países e subprocessadores, exigindo avaliação contratual e mecanismos adequados quando aplicáveis; não transferir dados brutos para patrocinadores, comercial ou Coletivos.
+8. **Direitos das Pessoas:** definir canais e ritos para acesso, correção, oposição e demais direitos cabíveis, ponderando direitos de terceiros, integridade processual e obrigações legais.
+9. **Agregação pública:** não publicar automaticamente números ou relatos agregados de pequenas populações quando permitirem reidentificação; critérios estatísticos e privacidade precisam ser ratificados.
+10. **Privacidade desde a concepção:** revisar formulários, APIs, PER-103, cards, analytics, telemetria e modelos de IA antes de qualquer piloto autorizado, incluindo ameaça de inferência por pertencimento.
+
+### Matriz de acesso candidata
+
+| Papel | Coleta/provas estritamente necessárias | Avaliação R1 identificável | Estado público do selo |
+|---|---|---|---|
+| Pessoa avaliadora | Própria experiência e resposta conforme direitos e interface autorizados | Própria resposta, segundo política aplicável | Apenas quando publicável |
+| Representante do Coletivo | Provas institucionais próprias e fundamentos proporcionais do processo | **Não** | Quando publicável |
+| Analista autorizado | Evidências mínimas relevantes ao caso | Somente se imprescindível e sob controle de acesso | Conforme função |
+| Autoridade decisória/recursal | Sínteses qualificadas e provas necessárias à decisão | Acesso excepcional e motivado, quando indispensável | Conforme função |
+| Auditoria e segurança | Logs e evidências mínimas para controle | Restrito, rastreável e justificado | Conforme função |
+| Público, publicidade e patrocinadores | Nenhuma prova protegida | **Não** | Payload público mínimo autorizado |
+
+### Cenários adversariais
+
+- Grupo de oração: a associação identificável pode revelar crença; não publicar lista de participantes nem respostas.
+- Grupo de saúde: não usar relatos para inferir diagnóstico, evolução clínica ou condição pessoal.
+- Coletivo pequeno: percentuais, comentários ou recortes podem permitir identificação indireta; bloquear agregação desprotegida.
+- Coletivo solicita nomes de críticos: comunicar fundamentos proporcionais e recurso, nunca fornecer identidade privada.
+- Pessoa não responde: não inferir opinião favorável ou desfavorável; não forçar resposta para manter participação.
+- Analista exporta base completa para planilha externa: avaliar e restringir exportação sob finalidade, autorização, controle e registro.
+- Patrocinador solicita pesquisa individual: não conceder acesso por relação comercial.
+- Modelo de IA recebe avaliações brutas: bloquear por padrão; requer finalidade, governança e proteção expressamente aprovadas.
+- Titular pede tratamento de seus dados: aplicar processo específico sem apagar indevidamente trilha institucional exigível.
+- Incidente afeta respostas: conter, investigar e aplicar comunicação/obrigações pertinentes após avaliação competente, sem presumir conformidade.
+
+### Pendências para adjudicação e homologação
+
+Ratificar inventário de dados, finalidade e base legal por operação, papéis de agentes de tratamento, informações aos titulares, restrições a dados sensíveis, retenção e descarte, fornecedores/transferências, controle de acesso, avaliação de risco e eventual relatório de impacto, resposta a incidentes, limites de agregação, critérios de acesso em recurso e testes de segurança. A adequação à LGPD e outras jurisdições exigirá avaliação jurídica e técnica específica, não sendo certificada por este documento.
+
+```text
+DEC-05.A INDIVIDUAL EXAM → COMPLETE
+DEC-05.A ANALYTICAL DIRECTION → CONDITIONAL CONVERGENCE
+DEC-05.A HUMAN NORMATIVE ADJUDICATION → PENDING
+DEC-05 INDIVIDUAL EXAMS → 1/5 DOCUMENTED
+DEC-05.B → NEXT
+PR #654 → OPEN / DRAFT
+GKR MENU ACCESS → REQUESTED / NOT PUBLISHED
 BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
 ```
