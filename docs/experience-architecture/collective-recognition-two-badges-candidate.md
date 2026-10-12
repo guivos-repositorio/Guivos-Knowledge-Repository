@@ -5176,3 +5176,83 @@ GKR MENU → UNCHANGED
 BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
 NEXT → RSP-06.D
 ```
+
+## Etapa 287 — RSP-06.D: Sincronização, retirada e recuperação dos reconhecimentos (v4.39 candidato)
+
+**Resultado:** EXAME INDIVIDUAL DOCUMENTADO / CONVERGÊNCIA ANALÍTICA CONDICIONAL / ADJUDICAÇÃO NORMATIVA PENDENTE. Nenhuma alteração técnica, execução de retirada, SLA ou regra de disponibilidade foi homologada.
+
+### Questão decisória
+
+Como manter a apresentação dos selos `Verificado` e `Contribuição Reconhecida` consistente com as decisões e autorizações canônicas, mesmo diante de atrasos, caches, eventos concorrentes, indisponibilidade e correções, sem transformar a infraestrutura em autoridade de mérito?
+
+### Matriz de controles candidatos
+
+| Controle | Objeto | Condição de governança |
+|---|---|---|
+| SYN-01 | Fonte única de verdade institucional | Mérito, vigência e autorização editorial prevalecem sobre estado de tela ou cache |
+| SYN-02 | Projeção derivada por superfície | Card, perfil e demais destinos exibem apenas atributos expressamente autorizados |
+| SYN-03 | Ordenação e versionamento | Evitar regressão por eventos atrasados, duplicados ou fora de ordem |
+| SYN-04 | Retirada por perda de publicabilidade | Suspensão, expiração, revogação ou retirada editorial exigem desativação de afirmações inválidas |
+| SYN-05 | Falha segura | Estado desconhecido não deve fabricar selo válido, fraude ou revogação |
+| SYN-06 | Recuperação e reconciliação | Após indisponibilidade, comparar projeção com fonte canônica e corrigir divergências |
+| SYN-07 | Dependência entre selos | Em DEP-B, se ratificado, bloquear apresentação de Contribuição sem Verificado vigente |
+| SYN-08 | Observabilidade e auditoria | Detectar estado divergente, registrar causa, responsável, versão e correção |
+| SYN-09 | Proteção e acessibilidade | Evitar exposição R1 e inferências sensíveis; manter equivalência textual e neutralidade na ausência |
+| SYN-10 | Homologação antes de operação | Testar retirada, eventos concorrentes, rollback seguro e recuperação; sem ativação por exame documental |
+
+### Fluxo conceitual de publicação e reconciliação
+
+`DECISÃO DE MÉRITO CANÔNICA + VIGÊNCIA + AUTORIZAÇÃO EDITORIAL + CONDIÇÕES DE PRIVACIDADE → AVALIAÇÃO DE PUBLICABILIDADE → PROJEÇÃO POR SUPERFÍCIE → MONITORAMENTO → RECONCILIAÇÃO/RETIRADA, QUANDO NECESSÁRIO`.
+
+A avaliação de publicabilidade é uma verificação subordinada a normas ratificadas, não novo ato decisório automatizado. As configurações de fila, cache, integração, RBAC, API e tempo de propagação não estão especificadas nem autorizadas.
+
+### Matriz de falhas e respostas candidatas
+
+| Cenário | Tratamento esperado |
+|---|---|
+| Revogação posterior à publicação | Retirar afirmação pública inválida e preservar histórico institucional |
+| Suspensão cautelar | Bloquear apresentação conforme ato competente, sem presumir revogação |
+| Expiração com evento antigo de concessão em fila | Impedir reaparecimento por registro desatualizado |
+| Retirada editorial sem revogação do mérito | Cessar publicação, preservando decisão |
+| Fonte canônica indisponível | Não validar novo estado com base exclusiva em cache; política de falha segura a ratificar |
+| Divergência entre card e perfil | Reconciliar ambos a partir de autoridade canônica, sem tornar um deles fonte de verdade |
+| Recuperação após interrupção | Reprocessar de forma controlada e verificar convergência antes da afirmação pública |
+| Renovação aprovada com Contribuição histórica | Reavaliar vigência e guardas editoriais, nunca republicar automaticamente |
+| Coletivo protegido muda configuração de visibilidade | Reconciliar superfície sem expor participantes ou vínculos sensíveis |
+| Duas alterações competentes concorrentes | Resolver precedência por critérios de versão e causalidade ratificados |
+
+### Guardas não compensatórias
+
+1. A retirada pública por perda de publicabilidade é distinta de revogação substantiva do selo.
+2. Se a projeção divergir do ato canônico, registrar incidente; não reescrever o mérito para justificar a tela.
+3. Nenhuma recuperação técnica deve reativar exibição com autorização editorial vencida ou retirada.
+4. Caches e snapshots são derivados e não concedem autoridade.
+5. Eventos de recurso não suspendem ou restauram reconhecimento automaticamente.
+6. No modelo DEP-B, ainda candidato, o histórico de Contribuição permanece independente, mas a publicação segue guardas dos dois selos.
+7. A ausência pública do selo deve ser neutra, sem exibir causa sensível, investigação ou avaliação individual.
+8. Controles de disponibilidade, propagação e prioridade devem ser proporcionais ao risco e explicitamente homologados; nenhum valor de SLA é presumido.
+
+### Pontos de decisão humana e testes futuros
+
+Ratificar fontes institucionais e responsáveis, regras de precedência e revisão, política de falha segura e exibição em indisponibilidade, tempos de retirada e recuperação, tratamento de conteúdo distribuído e caches, procedimento de incidente, verificações de proteção de dados e acessibilidade, contratos entre superfícies e indicadores de auditoria. Planejar testes com concessão sem autorização, expiração, suspensão, revogação, publicação fora de ordem, recurso, indisponibilidade, recuperação e DEP-B. A execução desses testes depende de autorização futura, após adjudicação e especificação técnica.
+
+### Limites de integração
+
+Este exame não altera `GKR-JOURNEY-SURFACE-REGISTRY-001`, `GKR-JOURNEY-TRANSITION-REGISTRY-001`, `PER-102`, `PER-103`, Masters, MENU ou protótipo. RSP-06.E deverá integrar os exames, as exigências de auditoria, as pendências normativas e critérios de prontidão sem declarar homologação.
+
+```text
+ETAPA 287 RSP-06.D INDIVIDUAL EXAM → DOCUMENTED
+RSP-06.D ANALYTICAL DIRECTION → CONDITIONAL CONVERGENCE
+RSP-06.D HUMAN NORMATIVE ADJUDICATION → PENDING
+RSP-06.A..E EXAMS → 4/5 DOCUMENTED
+RSP-06.A..E HUMAN ADJUDICATIONS → 0/5 CONFIRMED
+RSP-05.A..F EXAMS → 6/6 DOCUMENTED
+RSP-05 HUMAN ADJUDICATIONS → 0/6 CONFIRMED
+DEC-01..05 EXAMS → 25/25 DOCUMENTED
+DEC-01..05 NORMATIVE RATIFICATIONS → 0/25 CONFIRMED
+NEW GKR-SURF / GKR-TRN IDS → 0
+PR #654 → OPEN / DRAFT
+GKR MENU → UNCHANGED
+BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
+NEXT → RSP-06.E
+```
