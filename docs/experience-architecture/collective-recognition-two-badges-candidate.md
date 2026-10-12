@@ -4216,3 +4216,83 @@ GKR MENU → NOT MODIFIED
 BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
 NEXT → CANONICAL REGISTRY ENTRIES AND RESPONSIBILITY MAPPING
 ```
+
+## Etapa 274 — Reconciliação canônica direta dos registries e mapeamento de responsabilidades (v4.26 candidato)
+
+**Estado:** EXAME DOCUMENTAL CONCLUÍDO COM LACUNAS IDENTIFICADAS / SEM CRIAÇÃO DE IDs / RATIFICAÇÃO PENDENTE.
+
+### Fontes diretamente inspecionadas na main
+
+- `docs/journeys/surface-registry.md` — `GKR-JOURNEY-SURFACE-REGISTRY-001`, versão `0.36.21`, `active`, `normative: false`.
+- `docs/journeys/transition-registry.md` — `GKR-JOURNEY-TRANSITION-REGISTRY-001`, versão `0.29.26`, `active`, `normative: false`.
+- Mantidos como contexto os Masters e mapas de experiência verificados nas etapas 271–273.
+
+### Resultado da inspeção do Surface Registry
+
+| Entrada | Responsabilidade existente | Maturidade tal como registrada | Relação com o candidato |
+|---|---|---|---|
+| `GKR-SURF-PER-101` | Explorar Coletivos | validado | Descoberta, não concessão de selo |
+| `GKR-SURF-PER-102` | Resultados de Busca de Coletivos | validado | Card/resultados sujeitos a contrato público |
+| `GKR-SURF-PER-103` | Perfil Público do Coletivo | validado | Eventual exposição de selo carece de ratificação própria |
+| `GKR-SURF-COL-001` | Presença pública e entrada coletiva | parcial | Sem autoridade automática sobre reconhecimento |
+| `GKR-SURF-COL-002` | Visão Geral do Responsável | parcial / low-fidelity principal validado | Contexto administrativo não equivale a autoridade institucional |
+| `GKR-SURF-COL-003` | Gestão de Solicitações | validado | Decisões sobre participação distintas da decisão sobre selo |
+| `GKR-SURF-COL-004` | Participantes e Vínculos | contratada / cobertura low-fidelity parcial | Participação não pode ser inferida de reconhecimento |
+| `GKR-SURF-COL-005` | Comunicação Oficial | contratada / cobertura low-fidelity parcial | Comunicar não é publicar selo institucional |
+| `GKR-SURF-COL-006` | Atividades, Consultas e Decisões | contratada / cobertura low-fidelity parcial | Decisões internas não equivalem a adjudicação institucional |
+| `GKR-SURF-COL-007` | Proteção e Moderação | contratado | Moderação não concede/revoga selo |
+| `GKR-SURF-COL-008` | Relação Organização–Coletivo | contratado | Relação comercial/institucional não concede reconhecimento |
+
+Os identificadores de planos `COL-301..304` também existem, mas não são fundamento para selo, autoridade de concessão ou direito automático. Não foi verificada entrada específica de reconhecimento de Coletivos no conjunto de superfícies acima. Isto é **lacuna de responsabilidade candidata**, não mandato para criar nova superfície.
+
+### Resultado da inspeção do Transition Registry
+
+O registro declara **76 transições correntes**. As seguintes continuidades são especialmente relevantes:
+
+| Código | Origem → destino | Maturidade registrada | Limite do reconhecimento |
+|---|---|---|---|
+| `GKR-TRN-101` | PER-101 → PER-102 | localmente validada | Pesquisa/filtro, não concessão |
+| `GKR-TRN-102` | PER-102 → PER-103 | localmente validada | Abertura do perfil, não validação de selo |
+| `GKR-TRN-103` | PER-103 → PER-104 | localmente validada | Revisão consciente de solicitação |
+| `GKR-TRN-104` | PER-104 → PER-105 | localmente validada | Envio autorizado de solicitação |
+| `GKR-TRN-105..109` | Fluxos de solicitação entre Pessoa e Coletivo | integralmente validadas | Gestão de vínculo e resposta, não reconhecimento |
+| `GKR-TRN-110..112` | Continuidade da Pessoa e abertura da gestão de solicitações | integralmente validadas | Não cria instância de concessão |
+| `GKR-TRN-113` | COL-004 → COL-005 | contratada | Comunicação autorizada |
+| `GKR-TRN-114` | COL-003 → COL-004 | contratada | Continuidade operacional pós-aprovação |
+
+Não foi identificada, nas entradas examinadas, transição expressa de concessão, revisão de mérito, expiração, suspensão, recurso ou revogação dos dois selos candidatos. O registro de transições deve continuar sendo a fonte de identificação e maturidade; não presumir novos `GKR-TRN-*`.
+
+### Mapeamento de responsabilidade e decisões abertas
+
+| Código | Objeto de responsabilidade | Responsabilidade já coberta | Lacuna a adjudicar |
+|---|---|---|---|
+| RSP-01 | Descoberta/resultado | PER-101 e PER-102 | Se e como selo pode aparecer sem alterar ordenação |
+| RSP-02 | Perfil público | PER-103 | Escopo público, legenda, estado vigente e retirada |
+| RSP-03 | Pedido e vínculo | COL-003 e COL-004 | Proibir confusão entre elegibilidade, aprovação de entrada e reconhecimento |
+| RSP-04 | Moderação | COL-007 | Segregar moderação da autoridade de selo |
+| RSP-05 | Decisão institucional | Não identificada como responsabilidade de selo nas entradas verificadas | Designar autoridade DEC-03; definir caso, evidências, decisão e recurso |
+| RSP-06 | Ciclo de vida e publicação | Estados e eventos candidatos DEC-03/04/05 | Ratificar máquina de estados, origem, transições e autoridade editorial |
+| RSP-07 | Navegação documental | `mkdocs.yml` restringe candidatos no MENU | Resolver hub aprovado sem promover DRAFT a norma |
+
+### Regra de desenho futuro
+
+Antes de criar nova superfície ou transição, avaliar: **responsabilidade existente → estado ou controle contextual suficiente → extensão justificada → mudança real de responsabilidade → entrada nova somente mediante autoridade e registry governados**. O presente exame não altera os registries, os Masters, `mkdocs.yml` ou o Replit.
+
+### Próxima decisão
+
+Preparar matriz de adjudicação `RSP-01..07`, com foco em RSP-05/RSP-06, verificando ownership institucional, revisão independente, ciclo dos selos e consistência de exibição. O hub documental para MENU permanece proposta editorial independente.
+
+```text
+ETAPA 274 → CANONICAL REGISTRIES DIRECTLY REVIEWED
+SURFACE REGISTRY → v0.36.21 / ACTIVE
+TRANSITION REGISTRY → v0.29.26 / ACTIVE / 76 TRANSITIONS
+NEW SURFACE IDS → 0
+NEW TRANSITION IDS → 0
+MATURITY PROMOTIONS → 0
+DEC-01..05 ANALYTICAL EXAMS → 25/25 DOCUMENTED
+DEC-01..05 NORMATIVE RATIFICATIONS → 0/25 CONFIRMED
+PR #654 → OPEN / DRAFT
+GKR MENU → UNCHANGED
+BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
+NEXT → HUMAN RESPONSIBILITY AND LIFECYCLE ADJUDICATION PREPARATION
+```
