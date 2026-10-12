@@ -2,7 +2,7 @@
 id: GEM-OPPORTUNITIES-POINTS-REWARDS-CANDIDATE-001
 title: Oportunidades — Retorno em Pontos e Premiações de Eventos — Proposta Transversal
 status: draft
-version: 2.0.0
+version: 2.1.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -1512,6 +1512,78 @@ FIN-EVENTO → ORGANIZER PREPAID POINTS
 EQ-1 → HYPOTHETICAL SETTLEMENT ONLY, NOT OFFICIAL
 CASH / ISSUER BALANCES / PERSON POINTS / PARTNER SETTLEMENT → SEPARATED
 PAR/FUND/LIQ → 0/5 FORMAL RATIFICATIONS
+PR #655 → OPEN / DRAFT
+MAIN / MENU / HOME MASTERS / REGISTRIES / REPLIT → UNCHANGED
+```
+
+## 30. Matriz de cobertura financeira e conciliação de obrigações (v2.1.0 candidato)
+
+**Natureza:** exame documental de risco financeiro e consistência de ledger, sem homologação, autorização de custódia, operação ou definição da taxa de resgate. Padrões definidos pelo fundador permanecem: FIN-COMPRA = deduzir custo dos pontos do repasse ao ofertante, taxa Guivos separada; FIN-EVENTO = organizador adquire saldo pré-pago de pontos.
+
+### 30.1 Separação das exposições
+
+| Camada | Origem | Obrigação | Controle mínimo |
+|---|---|---|---|
+| Recebível de compra | Pagamento da Pessoa por oportunidade | Repasse líquido ao ofertante e retenções discriminadas | Confirmação de liquidação, conciliação por transação |
+| Cobertura FIN-COMPRA | Montante retido do repasse | Lastro dos pontos creditados | Não creditar sem montante sob controle e condição satisfeita |
+| Cobertura FIN-EVENTO | Aquisição pré-paga de pontos pelo organizador | Saldo livre, reservado e transferido à Pessoa | Pagamento confirmado e reservas atômicas |
+| Carteira da Pessoa | Créditos de ambas as origens | Disponibilidade para resgate elegível | Razão imutável/idempotente e conciliação de reversões |
+| Liquidação Mall/Travel | Resgate aprovado de pontos | Obrigação perante parceiro/fornecedor | Cotação, confirmação, autorização e prova de repasse |
+
+**Regra de solvência econômica a demonstrar:** em qualquer instante, a cobertura financeira efetivamente segregada ou juridicamente exigível deve ser suficiente para as obrigações assumidas, medidas pela política oficial de resgate e pelos custos contratuais. Não contar como disponível duas vezes uma reserva ou retenção.
+
+### 30.2 Matriz de cenários de risco
+
+| Cenário | Falha a impedir | Resposta candidata | Prova de reconciliação |
+|---|---|---|---|
+| RSK-01 — pagamento confirmado, repasse ainda indisponível | Crédito sem lastro | Crédito pendente até direito financeiro confirmado, ou garantia aprovada | Pagamento, retenção e crédito ligados a um identificador único |
+| RSK-02 — chargeback após crédito | Perda de cobertura | Suspender nova exposição onde legítimo e executar política de ajuste/contestação | Reversão financeira e de pontos no ledger |
+| RSK-03 — estorno após resgate no Mall | Saldo negativo oculto e perda não alocada | Registrar obrigação em disputa e mecanismo transparente de compensação | Trilha que conecta compra, resgate, vendedor e liquidação |
+| RSK-04 — estorno após reserva Travel | Divergência entre pontos e condições da tarifa | Respeitar janela, multa e cancelamento do fornecedor, sem crédito automático | Cotação, contrato de viagem, estado da reserva e restituição |
+| RSK-05 — aporte do organizador não liquidado | Reserva de pontos fictícia | Não disponibilizar saldo antes da confirmação de pagamento | Conciliação do pagamento com pontos adquiridos |
+| RSK-06 — saldo insuficiente em campanha | Overdraft de pontos | Bloqueio atômico; permitir recarga ou reduzir campanha antes de ativar | Pontos livres nunca negativos |
+| RSK-07 — duas campanhas pelo mesmo saldo | Dupla promessa econômica | Reserva serializável/idempotente por ofertante e campanha | Total reservado ≤ saldo comprovado |
+| RSK-08 — múltiplos ofertantes no mesmo carrinho | Custos debitados do parceiro errado | Particionar por item, origem e ofertante; repasses independentes | Identificadores e totais conciliáveis por ofertante |
+| RSK-09 — múltiplos fornecedores num resgate | Repasses cruzados e dupla baixa | Alocar valor/pontos por linha e fornecedor | Liquidação por item/fornecedor e reconciliação com pedido |
+| RSK-10 — parceiro encerra atividades | Pontos não resgatáveis e obrigações sem responsável | Plano de continuidade ou substituição contratual legítima | Inventário de obrigações e lastro reservado |
+| RSK-11 — pontos expirados ou não utilizados | Tratamento indevido de saldo e recursos | Aplicar política informada, sem apropriação automática | Classificação jurídico-contábil e histórico |
+| RSK-12 — alteração de paridade | Obrigações maiores que lastro ou redução retroativa | Versionamento, simulação de exposição e proteção de direitos | Comparativo de passivo antes/depois e cobertura adicional |
+
+### 30.3 Ensaios numéricos com paridade EQ-1 hipotética
+
+**Caso A — curso, ponto e estorno posterior:** R$ 200 pagos, 1% = 2 pontos, custo R$ 2 retido e repasse-base R$ 198. Se 1 ponto for usado em resgate hipotético EQ-1 de R$ 1, e a compra for posteriormente estornada integralmente, não basta subtrair 2 pontos do saldo restante: existe pelo menos **R$ 1 de obrigação já liquidada ao parceiro**, que exige atribuição de risco, eventual recuperação e tratamento contratual. Sem a política, não se promete recuperação automática.
+
+**Caso B — duas campanhas e saldo único:** ofertante adquiriu hipoteticamente 500 pontos pré-pagos; Campanha 1 reserva 350; Campanha 2 tenta reservar 200: **somente 150 pontos livres**; a segunda reserva não pode exceder o saldo. Se uma terceira tentativa concorrer pelo saldo, idempotência e bloqueio evitam duplicidade.
+
+**Caso C — carrinho multi-ofertante:** Pessoa compra R$ 80 de A e R$ 120 de B, ambos com retorno opcional de 1%. Custo de pontos: **R$ 0,80 para A** e **R$ 1,20 para B**; repasses-base: **R$ 79,20** e **R$ 118,80**, respectivamente, antes das taxas e demais ajustes. Crédito agregado: 2,00 pontos, com lastro de fontes separado.
+
+**Caso D — múltiplos fornecedores:** Pessoa usa hipoteticamente 3 pontos no Mall, sendo 1 para produto do vendedor X e 2 para produto do vendedor Y. Sob EQ-1, obrigação ilustrativa de R$ 1 a X e R$ 2 a Y; cada repasse requer confirmação própria e não se liquidam R$ 3 apenas ao primeiro vendedor.
+
+### 30.4 Identificadores e relatórios necessários, sem instituir registro oficial
+
+**Vínculos mínimos candidatos:** `purchase_id`, `issuer_id`, `purchase_line_id`, `payment_settlement_id`, `campaign_id`, `prepaid_funding_id`, `points_ledger_entry_id`, `person_account_id`, `redemption_id`, `partner_id`, `payout_id`, `reversal_id`, com políticas de proteção de dados e segregação de acessos.
+
+**Relatórios futuros:** compromisso por ofertante, conciliação de retenções versus pontos de compra, posição de pontos pré-pagos por campanha, saldos por Pessoa sem exposição indevida, valores pendentes de parceiros, estornos e disputas, e razão de ajuste de cobertura. Estes são nomes conceituais, não contratos técnicos publicados.
+
+### 30.5 Portas de decisão e impedimentos
+
+- **COVER-01:** aprovar método de mensuração da obrigação e suficiência de lastro em função de PAR-02, custos e direitos.
+- **COVER-02:** atribuir responsabilidade financeira por chargeback após resgate e por insolvência de ofertantes/parceiros.
+- **COVER-03:** formalizar reconciliação multi-ofertante/multi-fornecedor e identidade de lançamentos.
+- **COVER-04:** definir política de saldos não utilizados, reembolsos e expiração.
+- **COVER-05:** homologar procedimentos de incidentes, disputa, correção contábil e auditoria.
+
+**Nenhum COVER aprovado.** O exame econômico exige parecer jurídico, fiscal e contábil e testes de engenharia autorizados; o presente documento não pressupõe que Guivos possui permissões operacionais para guardar recursos de terceiros ou operar carteira regulada.
+
+**Próxima etapa candidata:** pacote de decisão de cobertura financeira e risco residual, rastreando cada caso RSK-01..12 até responsável, prova, tratamento contratual e teste, com foco no risco de estornos após resgate.
+
+```text
+VERSION → v2.1.0 CANDIDATE
+FIN-COMPRA / FIN-EVENTO → DIRECTIONS PRESERVED
+RISK CASES → 12 DOCUMENTED; FORMAL HOMOLOGATION NONE
+COVER-01..05 → 0/5 ADJUDICATED
+EQ-1 → ILLUSTRATIVE ONLY
+PAR/FUND/LIQ → FORMAL RATIFICATIONS PENDING
 PR #655 → OPEN / DRAFT
 MAIN / MENU / HOME MASTERS / REGISTRIES / REPLIT → UNCHANGED
 ```
