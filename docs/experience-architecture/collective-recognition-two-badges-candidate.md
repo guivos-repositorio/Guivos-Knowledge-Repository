@@ -2,7 +2,7 @@
 id: GKR-COLLECTIVE-RECOGNITION-001
 title: Coletivos — Verificado e Contribuição Reconhecida
 status: proposed
-version: 4.9.0
+version: 4.10.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -3073,6 +3073,83 @@ DEC-04.A ANALYTICAL DIRECTION → CONDITIONAL CONVERGENCE
 DEC-04.A HUMAN NORMATIVE ADJUDICATION → PENDING
 DEC-04 INDIVIDUAL EXAMS → 1/5 DOCUMENTED
 DEC-04.B → NEXT
+PR #654 → OPEN / DRAFT
+GKR MENU ACCESS → REQUESTED / NOT PUBLISHED
+BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
+```
+
+
+## DEC-04.B — Exame individual: superfícies e apresentação visual dos selos (v4.10 candidato)
+
+**Resultado:** CONVERGÊNCIA ANALÍTICA CONDICIONAL. Exame de contrato de interface candidato, não extensão normativa de PER-103, implementação, autorização de publicação ou validação de acessibilidade com Pessoas.
+
+### Questão decisória
+
+Quais superfícies podem, após autorização própria, mostrar `Verificado` e `Contribuição Reconhecida` de forma discreta e inteligível junto ao nome do Coletivo, sem transformar o selo em selo de qualidade universal, ranqueamento, publicidade ou dado individual?
+
+### Matriz de superfícies candidatas
+
+| Superfície | Papel visual proposto | Dependência |
+|---|---|---|
+| Cards de Coletivo em descoberta, busca e recomendações | Ícone discreto e rótulo acessível junto ao nome, sujeito a espaço responsivo | Contrato do card, autorização editorial e fonte vigente |
+| PER-103 — perfil público do Coletivo | Dois sinais independentes na identificação do Coletivo, com explicação contextual acessível | Extensão explícita do Master PER-103; não presumir autorização |
+| Visualizações compactas, resultados e referências ao Coletivo | Apenas se a superfície tiver semântica e contrato ratificados; não inferir permissão por analogia | Avaliação específica de contexto e hierarquia |
+| Home, publicidade, destaque patrocinado ou ranking | Não usar o selo como destaque promocional, critério automático de ordenação ou benefício comercial | Nova competência/autoridade específica, não abrangida nesta proposta |
+| Área de gestão privada do Coletivo | Exibir estado do processo e orientações autorizadas, sem expor R1 ou identidade de avaliadores | Política de acesso, DEC-03 e DEC-04.C |
+
+### Componente visual candidato
+
+- `Verificado`: `badge-check`, roxo `#5D34A9`, rótulo `Verificado`.
+- `Contribuição Reconhecida`: `award`, verde `#18A15D`, rótulo visível `Contribuição reconhecida`.
+- Posicionamento preferencial: ao lado do nome do Coletivo, integrados à linha de identidade, nunca substituindo o nome, imagem ou contexto real da atividade.
+- Quando ambos forem vigentes e publicáveis, exibir dois elementos **distintos**, sem produzir selo combinado ou inferir hierarquia entre eles.
+- Tamanho, espaçamento, quebra de linha e truncamento devem acomodar telas pequenas e nomes longos sem ocultar o texto identificador ou transformar o selo em protagonismo visual.
+- Evitar duplicação decorativa de ícones, badges grandes, dourados, contadores, estrelas e pontuações globais.
+- Cores são referências de linguagem visual, não critério suficiente de compreensão; identidade Guivos e sistema de design vigentes prevalecem em homologação.
+
+### Acessibilidade e interação
+
+1. Não usar cor isoladamente: ícone acompanhado de nome programaticamente legível ou controle rotulado.
+2. Garantir descrição de significado e limite do selo sob interação apropriada, inclusive navegação por teclado e leitores de tela.
+3. Se o detalhe for interativo, distinguir a ação explicativa da navegação do card ou perfil; não criar alvos concorrentes ou clicabilidade falsa.
+4. Verificar contraste, alvos, estados de foco, zoom, reflow, texto alternativo e idioma em QA dedicado; este documento não afirma conformidade técnica medida.
+5. Permitir compreensão do estado sem exigir interpretação do roxo/verde ou familiaridade prévia com a Guivos.
+6. A ausência dos selos não gera placeholder depreciativo (`não confiável`, `sem reconhecimento`) na apresentação pública.
+
+### Estados de exibição exemplificativos
+
+| Estado canônico/edição | Apresentação candidata |
+|---|---|
+| Apenas Verificado vigente + publicado | Mostrar somente Verificado |
+| Ambos vigentes + ambos publicados | Mostrar Verificado e Contribuição Reconhecida |
+| Contribuição vigente + Verificado inválido | Não mostrar Contribuição como vigente |
+| Decisão aprovada mas sem ato de publicação | Não mostrar selo |
+| Ambos ausentes | Exibir nome e identidade normalmente |
+| Estado em reavaliação | Respeitar decisão vigente e cautela, sem presumir publicação |
+| Fonte indisponível ou informação divergente | Não afirmar reconhecimento sem condição verificável; reconciliar |
+| Estado de contribuição suspenso ou expirado | Remover seu ícone dos destinos autorizados, preservar histórico protegido |
+
+### Ensaios de fronteira de UX
+
+- Nomes longos e dois selos num card estreito: permitir reflow sem ocultar nome nem rótulos acessíveis.
+- Resultados de busca em lista: mesma semântica sem alargar indevidamente o item.
+- Coletivo sem selos: visibilidade normal, sem punição reputacional.
+- Patrocínio associado ao card: manter sinal institucional separado do destaque publicitário.
+- Leitor de tela: anunciar nomes e significados sem repetição excessiva.
+- Modal/tooltip: conteúdo explica limites e não revela Pessoas, percepções individuais R1 ou razões protegidas.
+- Mudança de estado entre card e PER-103: reconciliar fonte antes de exibir afirmações conflitantes.
+- Superfície fora da matriz: requer autorização específica, não reutilização automática do componente.
+
+### Pontos de adjudicação
+
+Ratificar matriz de superfícies, hierarquia e compactação, rótulos e conteúdo de ajuda, contrato de componente acessível, independência de publicidade, regras de publicação e fallback, responsabilidade de atualizar o Master PER-103, testes com dispositivos e tecnologias assistivas. Não há mockup, teste de usabilidade, componente implementado ou validação de contraste incluídos neste exame.
+
+```text
+DEC-04.B INDIVIDUAL EXAM → COMPLETE
+DEC-04.B ANALYTICAL DIRECTION → CONDITIONAL CONVERGENCE
+DEC-04.B HUMAN NORMATIVE ADJUDICATION → PENDING
+DEC-04 INDIVIDUAL EXAMS → 2/5 DOCUMENTED
+DEC-04.C → NEXT
 PR #654 → OPEN / DRAFT
 GKR MENU ACCESS → REQUESTED / NOT PUBLISHED
 BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
