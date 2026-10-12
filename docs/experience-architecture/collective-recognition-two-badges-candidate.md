@@ -2,7 +2,7 @@
 id: GKR-COLLECTIVE-RECOGNITION-001
 title: Coletivos — Verificado e Contribuição Reconhecida
 status: proposed
-version: 2.9.0
+version: 3.0.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -1823,6 +1823,51 @@ DEC-01.A → EXPRESS RATIFICATION STILL PENDING
 DEC-01.B DECISION DRAFT → READY
 DEC-01.B NORMATIVE ADJUDICATION → PENDING
 DEC-01.C → NEXT DRAFT
+PR #654 → OPEN / DRAFT
+BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
+```
+
+
+## DEC-01.C — Minuta de decisão humana expressa sobre atuação real (v3.0 candidato)
+
+**Estado:** PREPARADA PARA RATIFICAÇÃO, NÃO ADJUDICADA. Esta seção não transforma o assentimento para avançar em aprovação normativa de DEC-01.A, B ou C.
+
+### Texto normativo candidato
+
+> Para fins do reconhecimento `Verificado`, a Guivos deverá comprovar que o Coletivo realizou ação, atividade, encontro, serviço ou projeto real, delimitável e materialmente atribuível à iniciativa, por evidências rastreáveis de realização, origem, período e papel exercido. A análise deve ser proporcional a ações pontuais, recorrentes, presenciais, digitais e híbridas, sem impor uma quantidade universal de edições ou longevidade mínima. Divulgação, patrocínio, cessão de espaço e anúncio futuro somente comprovam o papel efetivamente exercido, não execução de terceiros. Atuação comprovada não é prova de experiência vivida ou de contribuição percebida das Pessoas.
+
+### Regras de delimitação
+
+1. Diferenciar `ANUNCIADA`, `REALIZADA`, `HISTÓRICA`, `ATUAL` e `CANCELADA` conforme evidência, sem inferir situação vigente a partir de registro antigo.
+2. Comprovar autoria, execução ou coexecução de modo contextual. O Coletivo não recebe mérito integral de todos os parceiros por associação institucional.
+3. Uma primeira ação comprovada de iniciativa nova pode sustentar exame de existência e atuação; o requisito não exige eventos reiterados.
+4. Ações digitais e híbridas são realidades equivalentes para prova de atuação quando sua execução é legitimamente demonstrada.
+5. Provas de atividade sensível podem ser examinadas em custódia protegida sem exposição de membros ou identidades.
+6. Discordância sobre papel ou execução deve gerar complementação ou revisão fundamentada, sem rotular automaticamente fraude.
+
+### Matriz para deliberação humana
+
+| Item | Questão submetida | Estado |
+|---|---|---|
+| DEC-01.C.1 | Aprovar exigência de realização real e atribuível, distinguindo mero anúncio | SEM DELIBERAÇÃO |
+| DEC-01.C.2 | Confirmar proporcionalidade para atividade única, digital e híbrida | SEM DELIBERAÇÃO |
+| DEC-01.C.3 | Ratificar identificação do papel material em coexecução e apoio | SEM DELIBERAÇÃO |
+| DEC-01.C.4 | Definir validade e reexame de atuação histórica/atual | SEM DELIBERAÇÃO |
+| DEC-01.C.5 | Designar prova admitida, instância de revisão e tratamento de conflito | SEM DELIBERAÇÃO |
+
+### Condição de saída
+
+A ratificação depende de decisão competente explicitamente registrada, com alcance, fundamentos, critérios aceitos, ressalvas e versão. Enquanto não houver decisão, a regra integra somente o pacote candidato. A concessão do selo continua dependente dos demais requisitos e da autorização separada de publicação.
+
+### Navegação do GKR — pedido de acesso no MENU
+
+Foi solicitada a inclusão de acesso no MENU para facilitar a descoberta deste conteúdo **após a conclusão do pacote**. Até a decisão sobre status normativo e localização canônica, a navegação deve identificar claramente o conteúdo como `Proposta de Reconhecimento de Coletivos`, não como política vigente. O caminho e a configuração do MENU devem ser confrontados com a estrutura real do site; não presumir publicação na main.
+
+```text
+DEC-01.C EXPLICIT DECISION DRAFT → READY
+DEC-01.A / B / C NORMATIVE APPROVAL → PENDING
+DEC-01.D → NEXT EXPLICIT DECISION DRAFT
+GKR MENU LINK → REQUESTED / NOT YET PUBLISHED
 PR #654 → OPEN / DRAFT
 BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
 ```
