@@ -2,7 +2,7 @@
 id: GKR-COLLECTIVE-RECOGNITION-001
 title: Coletivos — Verificado e Contribuição Reconhecida
 status: proposed
-version: 1.7.0
+version: 1.8.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -1100,4 +1100,79 @@ P0-03 GOVERNANCE RESPONSIBILITIES → SPECIFIED AS CANDIDATE
 ACTUAL DECISION OWNERS / DELEGATIONS → NOT DESIGNATED
 P0-03 NORMATIVE ADJUDICATION → PENDING
 BADGE ISSUANCE/PUBLICATION/IMPLEMENTATION → NOT AUTHORIZED
+```
+
+
+## ADJ-09 / P0-04 — Autoridade de publicação, sincronização e retirada (v1.8 candidato)
+
+**Natureza:** contrato de projeção pública proposto; não cria autorização de exibição no PER-103 ou nos cards de descoberta. Preserva a separação estabelecida em Avaliação e Reputação — Autoridade Canônica v1.1.0 e a governança existente de PER-103 v0.2.1.
+
+### Decisão competente não equivale a publicação
+
+A concessão de `Verificado` e `Contribuição Reconhecida` são decisões independentes, com fontes, escopos e justificativas próprios. A exibição pública exige ato de publicação autorizado e contrato específico por superfície. Nenhum serviço de busca, ranking, feed, mapa ou exportação pode inferir selo de quantidade de avaliações, satisfação, CNPJ, patrocinadores ou conteúdo privado R1/P1.
+
+### Contrato lógico candidato de projeção
+
+| Campo conceitual | Uso permitido | Restrição |
+|---|---|---|
+| `collective_ref` / `badge_type` | Resolver Coletivo e tipo de selo | Não transformar em reputação universal |
+| `decision_ref` / `decision_version` | Rastrear decisão competente | Não expor evidências brutas |
+| `criteria_version` / `scope` | Explicar critérios e recorte aprovado | Não generalizar para outras atividades |
+| `state` / `valid_from` / `valid_until` | Comprovar estado vigente no momento de publicação | Não apresentar estado expirado como vigente |
+| `publication_authorization` / `published_at` | Distinguir concessão e permissão de exibição | Ausência de autorização = não publicar |
+| `public_label` / `public_explanation` | Exibir linguagem acessível | Sem alegações de segurança/impacto garantidos |
+| `state_version` / `invalidated_at` | Sincronizar retirada e impedir ressurgimento | Sem reativação por cache ou dado atrasado |
+
+São campos de **contrato lógico**, não um esquema técnico ou banco de dados já aprovado.
+
+### Superfícies candidatas e limite de autoridade
+
+| Destino | Conteúdo candidato | Status normativo atual |
+|---|---|---|
+| Card de descoberta de Coletivo | Ícone + rótulo discreto do selo vigente | EXTENSÃO EXPRESSA PENDENTE |
+| PER-103 — Perfil Público do Coletivo | Rótulos e explicação de escopo, validade e significado | EXTENSÃO EXPRESSA PENDENTE |
+| Administração privada do Coletivo | Solicitação, requisitos, estado, complementação e recurso | CONTRATO DE ACESSO PENDENTE |
+| Feed, recomendação, mapas e busca ampliada | Nenhum consumo automático por analogia | AUTORIZAÇÃO ESPECÍFICA NECESSÁRIA |
+| Compartilhamento, indexação e exportação | Sem selo por padrão; contrato próprio para qualquer divulgação | AUTORIZAÇÃO ESPECÍFICA NECESSÁRIA |
+
+### Regras de exibição e retirada
+
+1. Só projetar selo com decisão material competente **vigente**, publicação autorizada, versão atual e escopo correspondente.
+2. O selo `Contribuição Reconhecida` exige também `Verificado` vigente; perda do pressuposto impede exibir contribuição como vigente sem apagar histórico privado legítimo.
+3. `SOLICITADO`, `EM ANÁLISE`, `COMPLEMENTAÇÃO`, `INDEFERIDO`, `EXPIRADO`, `SUSPENSO` e `REVOGADO`: não exibir selo público vigente.
+4. Estado desconhecido, conflito de versões, falha de validação ou indisponibilidade: não afirmar vigência. A falha técnica não é mensagem pública de fraude ou baixa qualidade.
+5. Atualização de estado deve invalidar de modo coerente cards, PER-103, caches, índices, compartilhamentos controláveis e demais projeções autorizadas. Definir SLA e propagação em futura engenharia.
+6. Recurso provido não reativa projeção antiga automaticamente: exige novo ato competente, autorização e publicação versionada.
+7. Nenhum selo comprado, destacado por patrocínio ou utilizado automaticamente para reduzir alcance de Coletivos sem reconhecimento.
+8. Explicação acessível por clique, toque e teclado; não depender somente da cor; preservar identidade dos avaliadores, membros, dados sensíveis e evidência reservada.
+
+### Matriz de testes de aceitação candidata
+
+| Teste | Esperado |
+|---|---|
+| Ambos vigentes/publicáveis | Mostrar dois rótulos distintos |
+| Somente Verificado vigente | Mostrar apenas Verificado |
+| Nenhum vigente | Nenhum rótulo nem mensagem depreciativa |
+| Contribuição vigente mas Verificado expirou | Não mostrar Contribuição como vigente |
+| Suspensão ou revogação após indexação | Invalidar publicação, sem reaparecimento por cache |
+| Erro de fonte canônica | Não criar estado público afirmativo fictício |
+| Recurso reverte decisão | Atualizar apenas após novo ato autorizado |
+| Solicitação por patrocinador | Não alterar estado ou posição |
+| Coletivo sensível | Não inferir membros ou participação privada |
+| Leitor de tela | Rótulos e explicações semanticamente completos |
+
+### Bloqueios e dependências para fechar P0-04
+
+- Ratificar contrato de exibição em PER-103 e no card de descoberta por extensão expressa às autoridades pertinentes, sem editar Masters como consequência automática desta PR.
+- Designar fonte canônica de decisão, autoridade de publicação e trilha de autorização, com versionamento e permissões.
+- Adjudicar política de prazo, expiração, offline, cache, indexação, compartilhamentos, SLA de retirada e restauração por recurso.
+- Validar privacidade e dados públicos por escopo, inclusive Coletivos sensíveis.
+- Testar acessibilidade, estado concorrente, reversão, dependência e consistência entre superfícies.
+
+```text
+P0-04 PUBLICATION CONTRACT CANDIDATE → DOCUMENTED
+PER-103 / DISCOVERY BADGE AUTHORITY → NOT EXTENDED
+CANONICAL ISSUANCE / PUBLICATION OWNER → NOT DESIGNATED
+P0-04 NORMATIVE APPROVAL → PENDING
+PROTOTYPE / REAL BADGE ISSUANCE → NOT AUTHORIZED
 ```
