@@ -2,7 +2,7 @@
 id: GKR-COLLECTIVE-RECOGNITION-001
 title: Coletivos — Verificado e Contribuição Reconhecida
 status: proposed
-version: 2.7.0
+version: 2.8.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -1745,4 +1745,45 @@ DEC-01.A..E NORMATIVE ADJUDICATION → 0/5 CONFIRMED
 DEC-01 STATUS → PENDING HUMAN DECISION
 PR #654 → OPEN / DRAFT
 BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
+```
+
+
+## DEC-01.A — Minuta de decisão humana expressa (v2.8 candidato)
+
+**Status:** SUBMETIDA À RATIFICAÇÃO EXPLÍCITA / NÃO APROVADA. O assentimento para continuar a análise não representa aprovação normativa desta minuta.
+
+### Texto normativo proposto para deliberação
+
+> Para fins do reconhecimento `Verificado`, a Guivos somente poderá concluir pela existência verificável de um Coletivo quando houver identidade coletiva distinguível, manifestação real e contextualizada de sua organização ou atuação, evidências rastreáveis com origem e referência temporal, e corroboração suficiente cuja independência seja examinada. A existência de CNPJ não é requisito universal; possuir registro formal, seguidores ou perfis digitais isolados não determina aprovação. A suficiência deve ser proporcional à modalidade e ao estágio da iniciativa, incluindo Coletivos informais, novos, pontuais, digitais e sensíveis. Existência não equivale a representação legítima, qualidade, segurança, experiência vivida ou contribuição percebida.
+
+### Salvaguardas essenciais à decisão
+
+- O revisor deve identificar fonte, data, alegação comprovada, vínculos entre fontes e eventual evidência contraditória.
+- Repetições originadas do mesmo declarante não devem contar como corroboração independente.
+- Comprovações de Coletivos sensíveis devem minimizar identificação de participantes e informações protegidas.
+- Atividade histórica não comprova automaticamente atuação vigente.
+- Prova insuficiente exige complementação ou decisão fundamentada, sem rotular o Coletivo como fraudulento.
+- Aprovar apenas DEC-01.A não concede selo: DEC-01.B, C e E, critérios institucionais e publicação permanecem exigíveis.
+
+### Matriz de decisão pronta para preenchimento por autoridade humana
+
+| Item | Alternativas | Registro atual |
+|---|---|---|
+| Princípio de existência verificável | APROVAR / APROVAR COM AJUSTES / DEVOLVER / REJEITAR | **SEM DELIBERAÇÃO** |
+| Corroboração e independência | Ratificar regra qualitativa e definir padrão operacional | **PENDENTE** |
+| Aplicação a grupos informais/novos/sensíveis | Confirmar inclusão proporcional e salvaguardas | **PENDENTE** |
+| Temporalidade e atualização | Aprovar periodicidade por modalidade e risco | **PENDENTE** |
+| Fonte e competência de revisão | Designar órgão/mandato, custódia e recurso | **PENDENTE** |
+
+### Procedimento de ratificação
+
+A autoridade humana competente precisa confirmar o **texto normativo** e registrar aprovação, emendas, ressalvas, alcance, responsável e data. Mesmo em caso de aprovação expressa do princípio, os critérios operacionais acima podem permanecer como pendências que impedem sua aplicação prática. Não atualizar `status: proposed` nem `normative: false` até reconciliar a decisão e demais dependências. Não editar os Masters nesta etapa.
+
+```text
+DEC-01.A DECISION DRAFT → READY FOR EXPLICIT HUMAN RESPONSE
+DEC-01.A PRINCIPLE RATIFIED → NO
+DEC-01.A OPERATIONAL GATES → OPEN
+DEC-01.B..E HUMAN APPROVAL → PENDING
+PR #654 → OPEN / DRAFT
+ISSUANCE / PUBLICATION / IMPLEMENTATION → NOT AUTHORIZED
 ```
