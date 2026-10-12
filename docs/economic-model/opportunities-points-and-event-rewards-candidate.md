@@ -2,7 +2,7 @@
 id: GEM-OPPORTUNITIES-POINTS-REWARDS-CANDIDATE-001
 title: Oportunidades — Retorno em Pontos e Premiações de Eventos — Proposta Transversal
 status: draft
-version: 2.4.0
+version: 2.5.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -1799,6 +1799,90 @@ FIN-EVENTO CORE → E2E-07..11,16
 MALL → E2E-12,14,15 + INTEGRATED RISK
 TRAVEL → E2E-13,14,15 + INTEGRATED RISK
 LIVE AUTHORIZATION → NONE
+PR #655 → OPEN / DRAFT
+MAIN / MENU / MASTERS / REGISTRIES / REPLIT → UNCHANGED
+```
+
+## 34. Consolidação executiva — decisões estabelecidas e pendências reais (v2.5.0 candidato)
+
+**Objetivo:** encerrar ciclos de comparação repetitiva e oferecer um quadro único para deliberação. Esta seção tem precedência interpretativa sobre hipóteses econômicas anteriores que contrariem decisões expressas do fundador, mas não promove automaticamente status normativo, implementação ou ratificação de gates formais.
+
+### 34.1 Decisões de produto expressamente estabelecidas
+
+| ID descritivo | Regra estabelecida | Consequência |
+|---|---|---|
+| DEC-01 | Pontos são um incentivo **opcional e secundário** às oportunidades reais e à Journey | Não transformar as Homes em páginas de cashback |
+| DEC-02 | Organizações e Coletivos podem publicar oportunidades gratuitas ou pagas | Papel de ofertante independe da categoria |
+| DEC-03 | Compra de oportunidade paga elegível pode oferecer percentual de pontos entre opções Guivos | Ofertante configura a escolha; percentual não é obrigatório |
+| DEC-04 | FIN-COMPRA: custo dos pontos é **deduzido do repasse ao ofertante**; taxa Guivos separada | Curso R$ 200, 1% → 2 pontos; R$ 2 retidos; repasse-base R$ 198 |
+| DEC-05 | FIN-EVENTO: incentivos de inscrição, participação e premiações usam **saldo de pontos pré-pago** pelo organizador | Sem ativação de promessa acima do saldo comprovado |
+| DEC-06 | Limite de beneficiários de incentivo independe do limite de inscrições | 30 primeiras inscrições com bônus não impedem a 31ª |
+| DEC-07 | Premiações de participação e classificação podem coexistir, conforme regulamento | Exemplo de 3.000 + 1.900 = 4.900 pontos |
+| DEC-08 | Os pontos pertencem a **uma única unidade de valor Guivos**, ainda que origens financeiras distintas | Carteira da Pessoa não deve criar moedas incompatíveis |
+| DEC-09 | Mall e Travel são possíveis superfícies de utilização futura | Disponibilidade e liquidação dependem dos contratos próprios |
+| DEC-10 | Selos Verificado / Contribuição Reconhecida estão aprovados na direção de produto, mas são acessórios na Home O/C | Formalizações ainda pendentes seguem na PR #654 |
+
+**Não reabrir DEC-01..10** em novas comparações, salvo revisão humana expressa. Regra de exemplo de emissão (R$ 1 de benefício → 1 ponto) não equivale à aprovação de paridade de uso em produtos.
+
+### 34.2 Pendências estritamente necessárias para configuração econômica
+
+| Ordem | Decisão real ainda necessária | Opção/encaminhamento tecnicamente sugerido | Dependências |
+|---|---|---|---|
+| P1 | Precisão e arredondamento de crédito por compra | ROUND-A, duas casas decimais de pontos; forma de arredondamento monetário a deliberar | PAR-01, ROUND |
+| P2 | Paridade **de utilização** de pontos na Pessoa | Comparar EQ-1 com capacidade efetiva de cobertura; comunicação transparente | PAR-02, COVER-01 |
+| P3 | **Preço de aquisição** de pontos pré-pagos para eventos | Separar lastro do ponto e eventual taxa de serviço | FUND-01, jurídico/contábil |
+| P4 | Tabela oficial de percentuais optativos e base elegível | Tabela governada, cálculo por ofertante, descontos, impostos e estornos | FIN-COMPRA, pricing/contratos |
+| P5 | Taxa da plataforma em compras e eventuais tarifas de campanhas | Mostrar separadamente do custo do ponto | Pricing/contratos, impostos |
+| P6 | Estornos após pontos resgatados e responsabilidade por risco | Política de compensação, chargeback, contestação e lastro | COVER-02, proteção da Pessoa |
+| P7 | Resgate Mall — cotação, vendedores, cancelamentos e liquidação | Contrato específico antes de aceitar pontos | LIQ-01 |
+| P8 | Resgate Travel — disponibilidade, fornecedores, multas e liquidação | Contrato específico antes de aceitar pontos | LIQ-02 |
+| P9 | Custódia, contabilização, tributos, direitos e saldos não utilizados | Parecer especializado, transparência e trilha financeira | LEG/FIN/COVER |
+
+### 34.3 Decisões por sequência, sem repetir análises históricas
+
+**Etapa A — Política econômica mínima:** decidir P1, P2 e P3 conjuntamente para garantir que a mesma unidade de pontos seja inteligível e integralmente coberta. O fato de EQ-1 ser baseline técnico **não o torna aprovado**.
+
+**Etapa B — Contrato com ofertantes:** deliberar P4, P5 e P6; preservar FIN-COMPRA por retenção e FIN-EVENTO por pré-pagamento sem subsídio não declarado.
+
+**Etapa C — Aceitação nos produtos:** Mall (P7) e Travel (P8) por contratos independentes, com P9 transversal e testes E2E quando autorizados.
+
+### 34.4 Pacote conciso para futura decisão humana
+
+```text
+MANTER COMO DECIDIDO:
+- FIN-COMPRA → abatimento do custo de pontos do repasse; taxa Guivos separada
+- FIN-EVENTO → saldo de pontos pré-pago pelo organizador
+- R$200 COM 1% → 2 PONTOS; REPASSE-BASE R$198
+- OPORTUNIDADES/PREMIAÇÕES → OPCIONAIS
+- LIMITES DE BONIFICAÇÃO ≠ LIMITES DE INSCRIÇÃO
+- PONTOS → UNIDADE ÚNICA; MALL/TRAVEL FUTUROS
+
+ESCOLHAS PENDENTES:
+- ROUND-A + 2 casas? Modo de arredondamento?
+- Valor de resgate por ponto?
+- Quanto custa comprar 1 ponto para organizar evento?
+- Percentuais oficiais, base elegível e taxas?
+- Quem responde por chargeback depois de resgate?
+- Quais contratos de liquidação Mall e Travel?
+- Qual modelo jurídico-contábil para saldos e lastro?
+
+NÃO CONCLUIR SEM PROVA:
+- Gates normativos e homologação
+- Emissão ou resgate efetivos
+- Operação de conta de pagamento/custódia
+```
+
+### 34.5 Critério de fechamento deste ciclo
+
+O trabalho analítico de arquitetura e casos de borda pode ser considerado **consolidado documentalmente** nesta PR. O próximo avanço deve priorizar **deliberações econômicas e jurídicas explícitas** e a reconciliação de autoridade do GKR, em vez de acrescentar novas séries de cenários hipotéticos sem necessidade. A existência de 16 testes definidos não substitui sua execução.
+
+```text
+VERSION → v2.5.0 CANDIDATE
+FOUNDATIONAL PRODUCT DECISIONS → 10/10 CATALOGUED
+OPEN DECISION TOPICS → 9
+FIN-COMPRA / FIN-EVENTO → PRESERVED
+ROUND / PAR / FUND / LIQ / COVER → RATIFICATIONS PENDING
+E2E → 16 DEFINED / 0 EXECUTED
 PR #655 → OPEN / DRAFT
 MAIN / MENU / MASTERS / REGISTRIES / REPLIT → UNCHANGED
 ```
