@@ -2,7 +2,7 @@
 id: GKR-COLLECTIVE-RECOGNITION-001
 title: Coletivos — Verificado e Contribuição Reconhecida
 status: proposed
-version: 4.5.0
+version: 4.6.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -2799,6 +2799,82 @@ DEC-03.D HUMAN NORMATIVE ADJUDICATION → PENDING
 DEC-03 INDIVIDUAL EXAMS → 4/5 DOCUMENTED
 DEC-03.E → NEXT
 GKR MENU ACCESS → REQUESTED / NOT PUBLISHED
+PR #654 → OPEN / DRAFT
+BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
+```
+
+
+## DEC-03.E — Exame individual: escalabilidade institucional e auditoria (v4.6 candidato)
+
+**Resultado:** CONVERGÊNCIA ANALÍTICA CONDICIONAL. Não constitui aprovação de estrutura organizacional, contratação, autorização de auditor, implementação ou homologação de controles.
+
+### Questão decisória
+
+Como garantir decisões consistentes, supervisionáveis e auditáveis para os dois selos em localidades, escalas e modalidades de Coletivos distintas, sem excluir iniciativas informais, expor Pessoas ou transformar volume operacional em concessão automática?
+
+### Controles institucionais candidatos
+
+| Código | Controle | Regra proposta |
+|---|---|---|
+| ESC-01 — Política única versionada | Critérios e sua autoridade | Versão e vigência rastreáveis em todas as decisões, com adaptações locais somente formalmente autorizadas |
+| ESC-02 — Habilitação de revisores | Formação e competência | Capacitação em elegibilidade, evidência, vieses, proteção de dados, conflitos e limites dos selos |
+| ESC-03 — Segregação escalável | Continuidade com independência | Mandatos, substitutos e instância recursal segregada, inclusive nas equipes pequenas |
+| ESC-04 — Amostragem de auditoria | Controle de qualidade | Revisões periódicas e baseadas em risco de concessões, indeferimentos, revalidações e recursos |
+| ESC-05 — Equidade territorial | Adaptação proporcional | Não exigir CNPJ, porte, número de membros ou presença digital como substitutos universais de legitimidade |
+| ESC-06 — Segurança e privacidade | Acesso mínimo e retenção | R1 protegido, consultas auditáveis, acesso contextual, sem dados individualizados para representantes |
+| ESC-07 — Integridade de métricas | Consistência estatística | Auditar cobertura, não resposta, concentração, convites seletivos e confusão entre Pessoas e respostas |
+| ESC-08 — Projeção pública | Fonte canônica e reconciliação | Cards e PER-103 devem refletir decisão atual e autorização de DEC-04, inclusive retirada e expiração |
+| ESC-09 — Supervisão e melhoria | Erros e deriva de critérios | Investigar padrões, registrar correções, treinar revisores e atualizar políticas com controle de versão |
+| ESC-10 — Independência comercial | Imparcialidade | Nenhuma meta de vendas, patrocínio ou remuneração associada à aprovação do selo |
+
+### Indicadores de gestão interna candidatos (não públicos, não metas de aprovação)
+
+- Percentual de processos amostrados para auditoria, por modalidade e risco.
+- Taxa de inconformidades processuais confirmadas, distinguindo falha de documentação, erro material e fraude comprovada.
+- Tempo de tramitação por estado, recursos pendentes e reavaliações em atraso, sem pressupor SLA aprovado.
+- Distribuição de concessões/indeferimentos por tipologia e localidade, examinada para detectar disparidades sem concluir discriminação automaticamente.
+- Divergência entre decisão canônica, autorização de publicação e projeção em interface/cache.
+- Taxa de revisões que corrigem decisões e causas de reversão, mantendo confidencialidade.
+- Cobertura, duplicidade e dependência de respondentes, sempre separadas de mérito percebido.
+
+Os indicadores são instrumentos de auditoria interna, não pontuação reputacional pública nem fórmula automática de concessão.
+
+### Modelo de implantação gradual, dependente de autorização
+
+**Fase documental:** ratificar política, alçadas, garantias, critérios, linguagem e restrições.  
+**Fase de validação:** ensaios de decisões adversariais, calibração de evidências e revisão por papéis independentes.  
+**Fase controlada:** operação piloto somente se autorizada, com casos reais consentidos, proteção de dados, métricas e testes de retirada.  
+**Fase de escala:** delegação territorial habilitada, auditorias periódicas e monitoramento de deriva, preservando recurso independente.  
+
+Nenhuma fase operacional foi iniciada ou autorizada neste documento.
+
+### Casos de fronteira
+
+| Caso | Resposta candidata |
+|---|---|
+| Coletivo informal sem CNPJ | Provas alternativas proporcionais, sem exclusão automática |
+| Territórios com conectividade limitada | Recepção de evidência por meios acessíveis e auditáveis, sem relaxar legitimidade |
+| Revisores locais são próximos ao Coletivo | Declaração de conflito e redistribuição |
+| Equipe pequena acumula instrução e análise | Controles mínimos e decisão/recurso independentes; não conceder se inviável |
+| Grande aumento no volume de pedidos | Priorizar com política justa, sem liberar selo por algoritmo |
+| Coletivo questiona viés de decisão territorial | Auditoria da política e das evidências, com recurso disponível |
+| Indicador positivo sobe após campanha de incentivo | Auditar seleção e integridade; não promover mérito por volume |
+| Selo revogado ainda aparece em resultados | Inconformidade de sincronização a investigar e corrigir |
+| Auditor necessita rastrear decisão sensível | Acesso mínimo, justificativa e registro, sem expor Pessoas no relatório |
+| Revisão descobre erro sistêmico em casos anteriores | Remediação versionada, decisões competentes e comunicação proporcional |
+
+### Pendências para ratificação
+
+Definir órgão auditor e independência, periodicidade e amostragem, critérios de risco, habilitação e recertificação de revisores, gestão territorial e multilíngue, limites de acesso, retenção e segurança, SLA de retirada pública, revisão de políticas, recursos operacionais e critérios de piloto. Não há orçamento, cronograma, equipe ou sistema técnico aprovados.
+
+```text
+DEC-03.E INDIVIDUAL EXAM → COMPLETE
+DEC-03.E ANALYTICAL DIRECTION → CONDITIONAL CONVERGENCE
+DEC-03.E HUMAN NORMATIVE ADJUDICATION → PENDING
+DEC-03.A..E INDIVIDUAL EXAMS → 5/5 DOCUMENTED
+DEC-03.A..E NORMATIVE RATIFICATIONS → 0/5 CONFIRMED
+DEC-03 INTEGRATED DELIBERATION REGISTER → NEXT
+GKR MENU LINK → REQUESTED / NOT PUBLISHED
 PR #654 → OPEN / DRAFT
 BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
 ```
