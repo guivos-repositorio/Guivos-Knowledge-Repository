@@ -2,7 +2,7 @@
 id: GKR-COLLECTIVE-RECOGNITION-001
 title: Coletivos — Verificado e Contribuição Reconhecida
 status: proposed
-version: 4.8.0
+version: 4.9.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -3007,5 +3007,73 @@ DEC-01..03 HUMAN NORMATIVE RATIFICATIONS → 0/15 CONFIRMED
 DEC-04.A → NEXT
 PR #654 → OPEN / DRAFT
 MENU PUBLICATION → NOT AUTHORIZED
+BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
+```
+
+
+## DEC-04.A — Exame individual: significado e linguagem pública dos selos (v4.9 candidato)
+
+**Resultado:** CONVERGÊNCIA ANALÍTICA CONDICIONAL. O exame prepara conteúdo público e limitações sem ratificar textos de interface, alterar Masters ou autorizar exibição.
+
+### Questão decisória
+
+Como explicar `Verificado` e `Contribuição Reconhecida` em linguagem curta, inteligível e não promocional, sem sugerir avaliação universal da qualidade, segurança, resultado assegurado ou comprovação objetiva de evolução pessoal?
+
+### Contrato semântico candidato
+
+| Selo | Significado público permitido | Interpretação a impedir |
+|---|---|---|
+| **Verificado** | A Guivos examinou e confirmou, no escopo e vigência aplicáveis, a existência do Coletivo e a legitimidade de sua representação | Certificação de segurança, qualidade dos serviços, veracidade de todas as publicações ou garantia de resultado |
+| **Contribuição Reconhecida** | A Guivos reconheceu evidências elegíveis de que Pessoas perceberam benefícios, aprendizados ou avanços pertinentes em experiências atribuídas ao Coletivo | Prova causal de evolução objetiva, índice universal de impacto, endosso irrestrito ou resultado garantido |
+
+Ambos comunicam **decisões institucionais contextualizadas**, não propriedades permanentes e absolutas da organização. `Contribuição Reconhecida` só pode figurar como vigente quando `Verificado` também está vigente.
+
+### Camadas de conteúdo público propostas
+
+| Camada | Verificado | Contribuição Reconhecida |
+|---|---|---|
+| Rótulo curto | `Verificado` | `Contribuição reconhecida` |
+| Microdescrição acessível | `Existência e representação do Coletivo verificadas pela Guivos.` | `Contribuições percebidas por Pessoas em experiências avaliadas pela Guivos.` |
+| Explicação contextual | `Este selo indica que a Guivos verificou a existência e a representação legítima deste Coletivo, conforme critérios e validade aplicáveis.` | `Este selo indica que a Guivos reconheceu, no escopo avaliado, relatos elegíveis de benefícios, aprendizados ou avanços percebidos por Pessoas em experiências vinculadas a este Coletivo.` |
+| Limite explícito | `Não certifica a segurança, a qualidade de todas as atividades nem resultados individuais.` | `Não comprova evolução objetiva, impacto causal ou benefício garantido a cada participante.` |
+
+As formulações são **minutas de conteúdo**, sujeitas a revisão editorial, jurídica, acessibilidade e autoridade de produto. A microdescrição não deve substituir a explicação de limites em contexto apropriado.
+
+### Regras de linguagem
+
+1. Preferir verbos precisos (`verificou`, `reconheceu evidências`, `perceberam`) a superlativos (`melhor`, `mais seguro`, `transforma vidas`, `impacto comprovado`).
+2. Evitar `certificado`, `aprovado pela Guivos` sem escopo, `100% confiável`, `evolução comprovada` ou `recomendado para todos`.
+3. Nome do selo e seu significado devem ser identificáveis por texto, não somente por cor ou iconografia.
+4. Utilizar o mesmo núcleo de significado em cards, PER-103, busca e informações de ajuda, adaptando extensão sem alterar a semântica.
+5. Ausência de selo deve permanecer neutra; não empregar `não verificado = inseguro` ou `sem contribuição = não contribui`.
+6. Não revelar avaliações individuais R1, dados de Pessoas, pertencimentos sensíveis, identidade de denunciantes ou detalhes de apuração confidencial.
+7. Não ocultar que `Contribuição Reconhecida` é contextual, temporal e baseada em percepções elegíveis; evitar analogia com avaliação universal de qualidade.
+8. O texto não substitui o contrato decisório e de publicação (DEC-03, DEC-04.C) nem autoriza a produção de selos em PER-103.
+
+### Cenários de interpretação
+
+| Afirmação exibida ou inferida | Encaminhamento |
+|---|---|
+| `Grupo de pedal verificado pela Guivos` | Admitir somente com estado vigente e contexto explicativo |
+| `Pedal seguro e certificado` | Indevida: Verificado não cobre segurança |
+| `Pessoas perceberam benefícios em experiências deste Coletivo` | Compatível com Contribuição Reconhecida quando evidências e publicação autorizadas |
+| `Este Coletivo comprovadamente melhora a saúde dos participantes` | Indevida: confunde percepção e causalidade clínica |
+| `O grupo não tem selo, portanto não é confiável` | Indevida: ausência é neutra |
+| `Contribuição reconhecida em educação financeira` | Só se a dimensão e o escopo estiverem comprovados, vigentes e publicáveis |
+| `Selo obtido por ser parceiro da Guivos` | Indevida: parceria não confere reconhecimento |
+| `Reconhecimento significa nota máxima dos usuários` | Indevida: não há score universal nem nota global |
+
+### Lacunas de adjudicação
+
+Ratificar textos curtos, explicações completas, convenções de capitalização, acessibilidade e traduções; definir informação de escopo/validade publicável sem riscos de identificação; determinar os pontos de acesso à explicação; alinhar com política editorial, autoridade PER-103 e futura matriz DEC-04.B. Este exame não confirma homologação de UX nem critérios de legibilidade testados com Pessoas.
+
+```text
+DEC-04.A INDIVIDUAL EXAM → COMPLETE
+DEC-04.A ANALYTICAL DIRECTION → CONDITIONAL CONVERGENCE
+DEC-04.A HUMAN NORMATIVE ADJUDICATION → PENDING
+DEC-04 INDIVIDUAL EXAMS → 1/5 DOCUMENTED
+DEC-04.B → NEXT
+PR #654 → OPEN / DRAFT
+GKR MENU ACCESS → REQUESTED / NOT PUBLISHED
 BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
 ```
