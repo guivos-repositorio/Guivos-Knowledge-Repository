@@ -2,7 +2,7 @@
 id: GKR-COLLECTIVE-RECOGNITION-001
 title: Coletivos — Verificado e Contribuição Reconhecida
 status: proposed
-version: 0.2.0
+version: 0.3.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -132,3 +132,60 @@ Um Coletivo novo pode apresentar evidências suficientes de existência sem hist
 | Denúncia sem apuração | Não revogar automaticamente; aplicar procedimento de exame e proteção |
 
 **CBR-01 permanece OPEN** até decisão humana sobre suficiência por tipologia, padrões de corroboração, retenção/privacidade, competência decisória, prazo de validade e mecanismo de recurso. Nenhum threshold, selo ou implementação foi autorizado.
+
+
+## CBR-02 — Experiência elegível e instrumento de percepção (proposta v0.3)
+
+### Unidade e elegibilidade
+
+O objeto de avaliação é a **experiência delimitada**, com identificador, tipo, atividade/edição ou etapa, período, vínculo da Pessoa e papel material do Coletivo. Avaliação positiva de uma atividade não é automaticamente reputação global do Coletivo. Inscrição, intenção, acompanhamento, convite, visualização e vínculo cadastral não comprovam experiência posterior.
+
+| Cenário | Elegível a avaliar o que viveu? | Usável na apuração do selo de contribuição? |
+|---|---|---|
+| Pessoa compareceu e participou de pedalada promovida pelo Coletivo | Sim, experiência daquela edição | Candidata, após verificação e vínculo de execução |
+| Pessoa concluiu oficina promovida pelo Coletivo | Sim, experiência da oficina | Candidata, após verificação e vínculo de execução |
+| Pessoa apenas se inscreveu em evento | Sim, experiência de inscrição | **Não** comprova contribuição da atividade não vivida |
+| Pessoa apenas segue o perfil do Coletivo | Não, ausência de experiência suficiente | Não |
+| Participação externa declarada sem validação | Avaliação privada pode ser recebida conforme contrato geral | Não é considerada verificada automaticamente |
+| Evento organizado por outra entidade, apenas divulgado pelo Coletivo | Depende do objeto real vivido | Não atribuir ao Coletivo divulgação como execução |
+| Pessoa atualiza resposta da mesma edição | Atualiza continuidade da mesma avaliação | Não duplica amostra |
+| Pessoa vive nova edição materialmente diferente | Pode constituir nova unidade avaliável | Candidata, com controles contra concentração por autor |
+
+### Evidência e tratamento
+
+Preservar classes existentes do GKR: verificada pela Guivos, confirmada pelo responsável competente, declarada pela Pessoa, externa identificada, insuficiente/conflitante/revogada. Confirmação unilateral do responsável, foto, check-in ou inscrição isolada não são automaticamente prova conclusiva. A regra de suficiência para ingresso na apuração permanece pendente de CBR-03/05; recebimento de avaliação e admissão estatística são decisões distintas.
+
+Prevenir duplicidades pela unidade lógica **Pessoa × experiência avaliável**, com identificadores privados e sem presumir divulgação de presença. Separar experiência e Coletivo responsável; quando existir coexecução, definir atribuição proporcional ou exclusão até CBR-04, sem copiar pontuação entre entidades. Não exigir histórico sensível da Journey.
+
+### Instrumento candidato de percepção
+
+As perguntas devem se referir à experiência identificada, com respostas semânticas já reconhecidas pela autoridade de avaliação: **não correspondeu; correspondeu parcialmente; correspondeu; correspondeu plenamente; não se aplica; não tenho informação suficiente**.
+
+1. **Benefício percebido:** “Essa experiência trouxe algum benefício relevante para você?”
+2. **Aprendizado percebido:** “Você aprendeu ou desenvolveu algo que considera útil com essa experiência?”
+3. **Avanço percebido:** “Essa experiência contribuiu para você avançar em algum objetivo ou área da sua vida?”
+4. **Área relacionada (opcional):** Saúde e bem-estar, educação, profissional, financeira, relacionamentos, espiritual ou outras áreas governadas pela Journey, sem inferir informação sensível da escolha.
+5. **Comentário (opcional):** “Se desejar, conte o que foi significativo para você.” Não exigir objetivo, crença, diagnóstico, renda ou identificação de terceiros.
+6. **Conflitos/incentivos:** declarar vínculo material com responsável ou benefício recebido por avaliar, segundo regras a aprovar.
+
+O texto exato e a escala não estão adjudicados como questionário definitivo. Respostas parciais, negativas, não aplicáveis, insuficientes e em branco devem permanecer distinguíveis. Satisfação geral, recomendação e presença não substituem essas três dimensões.
+
+### Procedimento candidato
+
+Experiência concluída/etapa vivida → convite não seletivo quando legítimo → conferência de elegibilidade e proveniência → apresentação das dimensões → respostas voluntárias e opção de não avaliar → revisão consciente e envio idempotente → registro privado de autoria/objeto/evidência → eventual publicação autorizada distinta → apuração agregada somente de respostas elegíveis com privacidade preservada.
+
+Não excluir críticas nem compensar percentual desfavorável com publicidade, popularidade ou número de seguidores. Amostra pequena, adesão seletiva e não resposta não são qualificadas como resultado negativo; geram base insuficiente ou advertência metodológica segundo CBR-03.
+
+### Critérios de aceite candidato
+
+- A Pessoa compreende **qual experiência e etapa** avalia, sem atribuição global automática.
+- Comprovação de inscrição não vale como prova de comparecimento/aprendizado.
+- Cada resposta fica vinculada à unidade de avaliação e versão do instrumento.
+- Envio repetido não produz múltiplos votos; experiência nova pode ter objeto novo.
+- Recusa e silêncio não prejudicam direitos ou acesso.
+- Não se publica avaliação ou identidade automaticamente.
+- O Coletivo não seleciona apenas pessoas favoráveis para responder.
+- O reconhecimento não depende da divulgação de condições individuais sensíveis.
+- Nenhum resultado de percepção é declarado como evolução causal comprovada.
+
+**CBR-02 permanece OPEN** para validação humana das perguntas e escalas, prova admitida de experiência vivida, atribuição material e permissões de agregação. CBR-03 permanece responsável por limites estatísticos e critério de concessão.
