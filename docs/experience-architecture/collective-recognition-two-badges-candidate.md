@@ -6249,3 +6249,74 @@ PR #654 → OPEN / DRAFT
 BADGE ISSUANCE / PUBLICATION / TESTS / HOMOLOGATION / REPLIT → NOT AUTHORIZED
 NEXT → NAV-A / NAV-B EDITORIAL REVIEW MATRIX
 ```
+
+## Etapa 301 — Matriz de revisão e autorização editorial NAV-A/NAV-B (v4.53 candidato)
+
+**Resultado:** EXAME EDITORIAL DOCUMENTADO / CONVERGÊNCIA CONDICIONAL PARA NAV-A COMO CONTEXTO E NAV-B COMO HUB FUTURO / APROVAÇÃO EDITORIAL NÃO REGISTRADA. Nenhuma página corrente, `mkdocs.yml` ou estado normativo foi alterado.
+
+### Bases da revisão
+
+A regra vigente de `mkdocs.yml` define MENU como superfície de descoberta, não inventário de candidatos. Documentos `draft/proposed` somente podem integrar o MENU como fonte operacional se uma autoridade superior corrente assim o declarar expressamente. A PR #654 permanece `OPEN / DRAFT` e não é destino normativo.
+
+Referências correntes: `participants/collective.md`, `experience-architecture/organizations-collectives-journey/read-first.md`, `journeys/collective.md`, `experience-architecture/person-journey/per-103-collective-public-profile-master.md`. Nenhuma delas institui o programa de selos.
+
+### Matriz de revisão editorial
+
+| Código | Requisito | NAV-A | NAV-B | Condição |
+|---|---|---|---|---|
+| REV-01 | Status inequívoco `EM ESTUDO — NÃO APROVADO` | ADEQUADO EM MINUTA | ADEQUADO EM MINUTA | Manter em título/abertura |
+| REV-02 | Distinção dos selos sem promessa | ADEQUADO EM MINUTA | ADEQUADO EM MINUTA | Evitar certificação de qualidade, garantia de resultado e ranking |
+| REV-03 | Rastreabilidade de fontes vigentes | COMPLEMENTAR LINKS | COMPLEMENTAR LINKS | Identificar funções e maturidades de cada fonte |
+| REV-04 | Conformidade com política de MENU | SEM NOVO ITEM | EXIGE RITO ESPECÍFICO | Não apontar MENU para PR candidata |
+| REV-05 | Neutralidade e não endosso | ADEQUADO EM MINUTA | ADEQUADO EM MINUTA | Não sugerir emissão ativa, vantagem comercial ou solicitação |
+| REV-06 | Proteção de Pessoas/Coletivos | ADEQUADO CONDICIONAL | ADEQUADO CONDICIONAL | Não expor R1, avaliadores nem vínculos sensíveis |
+| REV-07 | Titularidade e aprovação editorial | PENDENTE | PENDENTE | Identificar responsável editorial competente |
+| REV-08 | Coerência com PER-103 | VERIFICAR NO ATO DE EDIÇÃO | VERIFICAR NO ATO DE EDIÇÃO | Não materializar selo no perfil |
+| REV-09 | Versão e manutenção | PENDENTE | PENDENTE | Definir atualização, owner e revisão de status |
+| REV-10 | Links, build e legibilidade | NÃO TESTADOS | NÃO TESTADOS | Executar somente na PR editorial própria, após autorização |
+
+### Decisão de encaminhamento candidata
+
+**NAV-A — Seção na página vigente Participantes → Coletivo:** apta **para submissão à revisão editorial**, após acrescentar links com contexto e confirmar owner competente. É a via de menor impacto: mantém entrada existente, apresenta o estudo como estudo e não modifica `mkdocs.yml`.
+
+**NAV-B — Hub autônomo:** apto **para amadurecimento editorial**, mas não para inclusão imediata no MENU. Uma página informativa poderá ser concebida separadamente; seu status, escopo, autoridade de orientação, localização e forma de publicação precisam de ato editorial próprio, sem equiparação a fonte normativa dos selos.
+
+**NAV-C — Link contextual no Leia Primeiro:** possibilidade complementar, não pré-requisito de NAV-A; precisa revisão para evitar duplicação ou expansão indevida da autoridade daquela página.
+
+### Minuta do ato editorial (não preenchida)
+
+```text
+GATE EDITORIAL → NAV-A / NAV-B
+OBJETO → orientação sobre Reconhecimento de Coletivos em estudo
+RESPONSÁVEL COMPETENTE → [NÃO COMPROVADO NESTE ATO]
+FONTE / MANDATO EDITORIAL → [A VERIFICAR]
+NAV-A → [APROVAR / AJUSTAR / DEVOLVER / REJEITAR]
+NAV-B → [APROVAR / AJUSTAR / DEVOLVER / REJEITAR]
+LOCALIZAÇÃO NO MENU → [SEM DELIBERAÇÃO]
+VERSÃO / DATA / MOTIVAÇÃO → [PENDENTES]
+EFEITOS → NÃO PUBLICA NEM EMITE SELOS
+```
+
+### Fronteiras de continuidade
+
+- `G0/B-01` e `0/36` adjudicações permanecem inalterados.
+- Aprovação editorial de orientação **não equivale** a ratificação de política, autoridade de reconhecimento ou implementação.
+- Nenhuma modificação em PER-103, Masters, registries ou selos técnicos.
+- O MENU poderá receber acesso próprio somente após decisão editorial coerente com as regras vigentes, sem apresentar um DRAFT como norma aprovada.
+
+### Próxima etapa
+
+**Etapa 302 — Pacote de publicação editorial governada:** preparar arquivos-alvo, vínculos, condições de status e checklist da PR editorial separada, mantendo mudanças operacionais suspensas até deliberação editorial legítima.
+
+```text
+ETAPA 301 NAV-A/NAV-B EDITORIAL REVIEW MATRIX → DOCUMENTED
+NAV-A → CONDITIONAL EDITORIAL REVIEW CANDIDATE
+NAV-B → FUTURE HUB / MENU DECISION PENDING
+EDITORIAL HUMAN APPROVAL → 0 CONFIRMED
+CURRENT GKR MENU CHANGES → 0
+G0/B-01 → BLOCKED / NO INSTITUTIONAL ADJUDICATION
+DEC/RSP → 36/36 EXAMS; 0/36 HUMAN RATIFICATIONS
+PR #654 → OPEN / DRAFT
+BADGE ISSUANCE / PUBLICATION / TESTS / HOMOLOGATION / REPLIT → NOT AUTHORIZED
+NEXT → GOVERNED EDITORIAL PUBLICATION PACKAGE
+```
