@@ -2,7 +2,7 @@
 id: GEM-OPPORTUNITIES-POINTS-REWARDS-CANDIDATE-001
 title: Oportunidades — Retorno em Pontos e Premiações de Eventos — Proposta Transversal
 status: draft
-version: 1.8.0
+version: 1.9.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -1357,6 +1357,75 @@ HALF-UP → TEST ASSUMPTION ONLY
 POINT REDEMPTION RATE → UNDECIDED
 MALL/TRAVEL → COMPATIBILITY CONDITIONS DOCUMENTED / NOT IMPLEMENTED
 ROUND-01..06 → 0/6 ADJUDICATED
+PR #655 → OPEN / DRAFT
+MAIN / MENU / HOME MASTERS / REGISTRIES / REPLIT → UNCHANGED
+```
+
+## 28. Paridade transversal: emissão por compra, compra de saldo e utilização (v1.9.0 candidato)
+
+**Escopo:** análise de consistência econômica — não autoriza taxa oficial, preço de pontos, operação financeira ou resgate real. O fundador definiu `R$ 200 × 1% = R$ 2 de custeio = 2 pontos`, com repasse-base de R$ 198 antes da taxa Guivos; e premiações/eventos com saldo de pontos pré-pago.
+
+### 28.1 Três relações distintas
+
+1. **FIN-COMPRA, emissão:** valor do benefício monetário calculado em R$ a partir do percentual e convertido em pontos na proporção do exemplo: **R$ 1 de custo de pontos = 1 ponto creditável** (sujeito à precisão/estorno). O custo é retido do repasse ao ofertante.
+2. **FIN-EVENTO, aquisição de saldo:** Organização ou Coletivo **paga antecipadamente** um valor `C` para obter `P` pontos; **preço por ponto `a=C/P` ainda não aprovado**. Saldo disponível só após confirmação da aquisição e conciliação.
+3. **MALL/TRAVEL, utilização:** Pessoa aplica `P` pontos sob regra `u` de benefício efetivo por ponto ou cotação de produto, **a definir**. Não inferir `u` a partir da regra de emissão, embora a sustentabilidade exija comparação entre custo, obrigação de resgate e taxas/fornecedor.
+
+**Invariante:** pontos de origens diferentes formam uma mesma unidade de valor para a Pessoa; a conciliação financeira preserva origem, responsável por custeio e obrigação.
+
+### 28.2 Matriz de cenários econômicos hipotéticos
+
+Para tornar diferenças verificáveis, usar `a` = preço em R$ cobrado por ponto pré-pago e `u` = benefício monetário em R$ efetivamente coberto por ponto em resgate elegível, **ambos fictícios nos cenários abaixo**.
+
+| Cenário | Emissão FIN-COMPRA | Aquisição FIN-EVENTO (`a`) | Utilização (`u`) | Exposição principal |
+|---|---|---|---|---|
+| EQ-1 — simétrico | R$ 1 retido → 1 ponto | R$ 1 por ponto | R$ 1 por ponto | Clareza; custos operacionais/fornecedores não cobertos sem tarifa ou contrato próprio |
+| EQ-2 — aquisição diferenciada | R$ 1 retido → 1 ponto | R$ 1,05 por ponto | R$ 1 por ponto | Diferença de R$ 0,05 requer classificação e transparência; pode cobrir serviços, não presumir receita |
+| EQ-3 — utilização inferior | R$ 1 retido → 1 ponto | R$ 1 por ponto | R$ 0,80 por ponto | Pessoa recebe benefício inferior ao custo nominal; risco de percepção enganosa se não comunicado previamente |
+| EQ-4 — utilização superior | R$ 1 retido → 1 ponto | R$ 1 por ponto | R$ 1,10 por ponto | Obrigação pode superar lastro de origem; exige financiamento contratual extra explícito |
+
+**Diagnóstico:** EQ-1 é **baseline conceitual para testar integridade de valor**, sem ser aprovado. EQ-2 permite separar eventual tarifa de serviço do custo dos pontos e merece simulação específica. EQ-3 e EQ-4 geram riscos que precisam de fundamento econômico, transparência, cobertura financeira e aprovação formal, não podendo ser adotados por inferência.
+
+### 28.3 Exemplos consistentes por modalidade
+
+**Curso de R$ 200 a 1%:** 2 pontos para Pessoa, R$ 2 de custo retidos, repasse-base **R$ 198** antes de taxa Guivos. Na hipótese EQ-1, 2 pontos poderiam cobrir até R$ 2 de uso elegível, desde que Mall/Travel aceitem os pontos sob seus próprios contratos. **Esse resgate não está aprovado.**
+
+**Corrida de 4.900 pontos:** sob EQ-1, o Coletivo necessitaria de **R$ 4.900 de aquisição pré-paga**; sob EQ-2, **R$ 5.145**, dos quais R$ 245 corresponderiam à diferença de preço a classificar e justificar. Os valores são *simulações*, não preço praticado ou oferta comercial. A quantidade total de 4.900 permanece composta de 3.000 pontos para inscrições e 1.900 para classificação.
+
+**Ponto de atenção:** a compra percentual gera poucos pontos quando comparada aos prêmios nominais (por exemplo, 2 versus 1.000). Antes de definir a paridade de resgate, verificar se prêmios como 1.000 pontos representam incentivo econômico intencionalmente alto. O organizador deve conhecer o **custo em reais da premiação antes de confirmá-la**, e a Guivos não deve subsidiar implicitamente a diferença.
+
+### 28.4 Custeio, taxa e liquidação
+
+- O preço de aquisição pré-paga e qualquer **taxa de administração da Guivos** devem ser apresentados em linhas distintas; sugerir `a = custo lastreado por ponto` e `tarifa = item separado` para melhor transparência, mas essa decomposição requer decisão contratual.
+- O mesmo vale para compra de oportunidade: `R$ 200 - R$ 2 de pontos - taxa Guivos aplicável = repasse líquido` (outros descontos legalmente previstos devem ser discriminados).
+- Em Mall/Travel, o ledger não transforma automaticamente valor de ponto em caixa do fornecedor; deve haver conciliação de crédito de pontos, baixa da obrigação, pedido/reserva e repasse ao parceiro.
+- Valores de taxas, tributos, custo de adquirência, câmbio, cancelamentos e spreads de fornecedor afetam a sustentabilidade do cenário EQ-1 e precisam ser cobertos explicitamente por contrato — sem reduzir em segredo o direito prometido à Pessoa.
+- Expiração, uso parcial, reembolso e insolvência requerem tratamento jurídico e contábil específico, incluindo destinação de recursos não utilizados.
+
+### 28.5 Gate de decisão transversal
+
+| Gate | Pergunta a adjudicar | Estado |
+|---|---|---|
+| PAR-01 | Confirmar norma da taxa de emissão do exemplo e tratamento de frações | Direção de produto definida, formalização pendente |
+| FUND-01 | Fixar preço de aquisição de saldo pré-pago, confirmação e reserva | Pendente |
+| PAR-02 | Fixar valor de uso/benefício por ponto, comunicação e validade | Pendente |
+| LIQ-01 | Cobertura da liquidação no Mall e repasse a vendedor | Pendente |
+| LIQ-02 | Cobertura da liquidação no Travel e repasse a fornecedor | Pendente |
+| ECO-COVER | Demonstrar cobertura integral de pontos e custos, sem subsídio implícito | Pendente |
+
+### 28.6 Parecer técnico para apreciação
+
+**Recomendar como ponto de partida para deliberação** uma paridade econômica compreensível, com hipótese simétrica EQ-1 e **tarifas de serviço separadas**, sujeita a teste de sustentabilidade, legalidade e adequação ao posicionamento Guivos. **Não validar automaticamente EQ-1 como regra de resgate oficial.**
+
+**Próximo exame:** simulação de fluxo de caixa/razão por origens — retenção de compras e aquisição de saldo — contra resgates efetivos, tarifas, estornos e saldos não utilizados; identificar responsabilidade pelo passivo em cada estado.
+
+```text
+VERSION → v1.9.0 CANDIDATE
+FIN-COMPRA → R$200 AT 1% = 2 POINTS; R$198 BASE PAYOUT
+FIN-EVENTO → ORGANIZER PREPAID POINT BALANCE
+EQ-1..EQ-4 → HYPOTHETICAL ECONOMIC COMPARISON
+ACQUISITION PRICE / REDEMPTION VALUE / FEES → NOT FORMALLY APPROVED
+POINTS → SINGLE UNIT, OPTIONAL
 PR #655 → OPEN / DRAFT
 MAIN / MENU / HOME MASTERS / REGISTRIES / REPLIT → UNCHANGED
 ```
