@@ -6018,3 +6018,56 @@ GKR MENU → UNCHANGED
 BADGE ISSUANCE / PUBLICATION / TESTS / HOMOLOGATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
 NEXT → G0 PREPARATION CLOSEOUT AND TRACK SEPARATION
 ```
+
+## Etapa 298 — Encerramento da preparação G0/B-01 e separação das frentes de continuidade (v4.50 candidato)
+
+**Resultado:** PREPARAÇÃO DOCUMENTAL G0/B-01 ENCERRADA / BLOQUEIO DE AUTORIDADE MANTIDO / FRENTE EDITORIAL GKR IDENTIFICADA. Este encerramento significa que novas iterações de minuta sem evidência externa não promovem maturidade normativa. Não configura abandono do tema, adjudicação ou autorização operacional.
+
+### Marco de encerramento
+
+O pacote G0/B-01 possui inventário de fontes, alternativas G0-A/B/C/D, minuta, matriz de competências, auditoria de conflitos, dossiê e checklist (Etapas 291–297). As sete peças estão identificadas para **triagem preliminar condicionada**, mas o ato legitimador específico, o signatário competente e as delegações permanecem não comprovados.
+
+**Regra de retomada G0:** reabrir a avaliação substantiva apenas diante de evidência material nova (ato vigente de poderes, manifestação formal de instância legitimada, instrumento societário/estatutário aplicável, definição validada de competência e escopo ou correção documental relevante). A concordância com continuidade documental não equivale a essa evidência.
+
+### Trilha A — política e operação dos selos: bloqueada em G0
+
+| Elemento | Estado | Evento necessário para prosseguir |
+|---|---|---|
+| Autoridade originária | NÃO COMPROVADA NAS FONTES EXAMINADAS | Instrumento válido com competência e representação |
+| Adjudicação G0/B-01 | PENDENTE | Deliberação humana formal, fundamentada e registrada |
+| DEC-01..05 | 25/25 EXAMES; 0/25 RATIFICAÇÕES | Adjudicações individuais competentes após regularização |
+| RSP-05 | 6/6 EXAMES; 0/6 ADJUDICAÇÕES | Definição e ratificação das competências específicas |
+| RSP-06 | 5/5 EXAMES; 0/5 ADJUDICAÇÕES | Ratificação dos estados, eventos, dependências e guardas |
+| Engenharia, testes e publicação | NÃO AUTORIZADOS | Ritos específicos após normas, requisitos e homologação |
+
+Nenhum dos exames documentados será repetido como substituto de decisão institucional. A PR #654 permanece `OPEN / DRAFT`, sem merge de autoridade.
+
+### Trilha B — encontrabilidade e orientação no GKR: independente
+
+**Objetivo editorial:** tornar o assunto **Reconhecimento de Coletivos** localizável, esclarecer a distinção entre `Verificado` e `Contribuição Reconhecida`, e apresentar corretamente o estado **EM ESTUDO / NÃO APROVADO**, sem promover a PR #654 a política vigente.
+
+**Fronteiras:** observar `mkdocs.yml` (MENU como superfície de descoberta; candidatos/drafts não são destinos correntes salvo autorização de autoridade superior vigente); considerar um hub editorial estável ou uma referência contextual sob páginas já autorizadas, com identificação do estágio e links para as fontes adequadas. Não alterar MENU neste encerramento.
+
+**Entregáveis futuros condicionados:** análise do ponto de navegação mais coerente, minuta de hub informativo, verificação da autoridade editorial do GKR e eventual PR específica, com aprovação própria. Não confundir visibilidade do tema com emissão de selos.
+
+### Critério de passagem à próxima análise
+
+A continuidade útil, sem nova prova sobre G0, é **examinar a estrutura de navegação e os hubs correntes do GKR** para indicar um caminho editorial compatível com as regras existentes. Se não houver base autorizada para página candidata no MENU, manter acesso via hub vigente e busca até decisão editorial adequada.
+
+### Registro de handoff
+
+```text
+G0/B-01 PREPARATION → CLOSED DOCUMENTALLY / UNRESOLVED NORMATIVELY
+G0 DOSSIER → 7/7 PIECES IDENTIFIED
+G0 AUTHORITY PROOF / HUMAN ADJUDICATION → NOT CONFIRMED / PENDING
+DEC-01..05 → 25/25 EXAMS; 0/25 RATIFICATIONS
+RSP-05 → 6/6 EXAMS; 0/6 ADJUDICATIONS
+RSP-06 → 5/5 EXAMS; 0/5 ADJUDICATIONS
+COMBINED → 36/36 EXAMS; 0/36 HUMAN RATIFICATIONS
+TRAIL A POLICY / ENGINEERING → BLOCKED
+TRAIL B GKR EDITORIAL DISCOVERABILITY → NEXT, WITHOUT MENU CHANGE
+PR #654 → OPEN / DRAFT
+NEW GKR-SURF / GKR-TRN IDS → 0
+BADGE ISSUANCE / PUBLICATION / TESTS / HOMOLOGATION / REPLIT → NOT AUTHORIZED
+NEXT → GKR MENU / HUB EDITORIAL NAVIGATION AUDIT
+```
