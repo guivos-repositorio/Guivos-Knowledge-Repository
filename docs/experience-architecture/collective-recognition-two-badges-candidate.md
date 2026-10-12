@@ -2,7 +2,7 @@
 id: GKR-COLLECTIVE-RECOGNITION-001
 title: Coletivos — Verificado e Contribuição Reconhecida
 status: proposed
-version: 4.2.0
+version: 4.3.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -2608,5 +2608,67 @@ DEC-03.B → NEXT
 DEC-03 INDIVIDUAL EXAMS → 1/5 DOCUMENTED
 PR #654 → OPEN / DRAFT
 GKR MENU ACCESS → REQUESTED / NOT PUBLISHED
+BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
+```
+
+
+## DEC-03.B — Exame individual: segregação de funções e conflitos de interesses (v4.3 candidato)
+
+**Resultado:** CONVERGÊNCIA ANALÍTICA CONDICIONAL. A matriz é proposta de controle institucional; não institui equipes nem define alçadas normativas.
+
+### Questão decisória
+
+Quais responsabilidades podem coexistir em uma operação enxuta e quais devem permanecer independentes para impedir autoconcessão, interferência comercial, captura da análise de evidências ou recurso meramente formal?
+
+### Matriz de segregação candidata
+
+| Combinação ou vínculo | Tratamento candidato | Motivo |
+|---|---|---|
+| Representante do Coletivo + decisor de seu próprio selo | VEDADA | Autoconcessão e interesse direto |
+| Analista do caso + decisor do mesmo caso | SEGREGAÇÃO PREFERENCIAL; revisão independente obrigatória nos casos de maior risco | Reduz viés, sem presumir capacidade de equipes grandes |
+| Responsável por cálculo estatístico + concessão automática | VEDADA | Métrica não é autoridade |
+| Decisor original + julgador conclusivo do próprio recurso | VEDADA | Revisão sem independência |
+| Patrocinador, comercial ou parceiro interessado + concessão | VEDADA para casos de interesse material | Evitar selo como benefício comercial |
+| Analista de verificação + instrução técnica de contribuição | POSSÍVEL com controles de acesso e revisão | Acúmulo técnico não implica competência para conceder |
+| Autoridade material + execução técnica de publicação | SEPARAR PERMISSÕES E ATO DE PUBLICAÇÃO | Concessão não equivale à projeção pública |
+| Auditor de decisão + responsável por alterar a decisão auditada | EXIGE rito de remediação com alçada própria | Auditoria não é concessão retroativa |
+
+As etiquetas `VEDADA` e `POSSÍVEL` expressam **regras propostas**, não proibições organizacionais já adjudicadas.
+
+### Declaração e tratamento de conflitos
+
+Conflitos candidatos a registro incluem: vínculo pessoal ou familiar com representantes, participação no Coletivo, remuneração vinculada à aprovação, investimento, patrocínio, contrato comercial, rivalidade relevante, atuação anterior no caso e acesso privilegiado a avaliações protegidas. Exigir declaração contextual antes da decisão; definir impedimento, substituição, revisão independente e registro auditável. A mera existência de vínculo não demonstra fraude; o risco deve ser tratado com proporcionalidade.
+
+### Modelo compatível com escala inicial
+
+Em operação pequena, uma Pessoa pode preparar documentação, realizar conferências e encaminhar pareceres **sem** possuir autoridade irrestrita para aprovar a própria análise ou julgar seu recurso. Para concessões sensíveis e contestações, prever segundo revisor ou instância externa independente, com mandato e controle de confidencialidade. Se a segregação mínima não for possível, registrar `CAPACIDADE_DECISORIA_INSUFICIENTE` e não conceder até viabilizar controle adequado.
+
+### Controles de rastreabilidade e acesso
+
+Registrar responsáveis por coleta, conferência, cálculo, decisão, publicação e recurso; declarações de impedimento; permissões efetivamente concedidas; versões de critérios e fundamentos; trilha de alterações. O representante do Coletivo não recebe acesso a respostas privadas R1, identidade de denunciantes, avaliação individual ou dados de membros por representar a entidade.
+
+### Ensaios de fronteira
+
+1. Coletivo cliente de plano pago solicita reconhecimento: tratamento idêntico ao de não clientes.
+2. Analista participou pessoalmente da atividade: declarar vínculo e avaliar impedimento/revisão.
+3. Operação tem somente um revisor disponível: não presumir recurso independente; definir instância complementar.
+4. Sistema apresenta índice alto: não conceder sem autoridade material.
+5. Denúncia é enviada por concorrente: apurar fatos sem acolher conflito como prova automática.
+6. Parceiro comercial pede priorização de concessão: não alterar mérito ou fila fora de política aprovada.
+7. Mesmo decisor recebe recurso contra seu indeferimento: redistribuir para instância independente.
+8. Serviço de publicação tenta exibir selo com estado privado `APROVADO_NAO_PUBLICADO`: não publicar.
+
+### Dependências normativas ainda abertas
+
+Aprovar matriz mínima de segregação e exceções, limites de acúmulo de função por porte, critérios de risco e de impedimento, autoridade externa/recursal quando equipe for pequena, trilha de auditoria, direitos de acesso, sanções procedimentais, SLAs e governança territorial. Nenhum controle foi homologado tecnicamente.
+
+```text
+DEC-03.B INDIVIDUAL EXAM → COMPLETE
+DEC-03.B ANALYTICAL DIRECTION → CONDITIONAL CONVERGENCE
+DEC-03.B HUMAN NORMATIVE ADJUDICATION → PENDING
+DEC-03 INDIVIDUAL EXAMS → 2/5 DOCUMENTED
+DEC-03.C → NEXT
+GKR MENU ACCESS → REQUESTED / NOT PUBLISHED
+PR #654 → OPEN / DRAFT
 BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
 ```
