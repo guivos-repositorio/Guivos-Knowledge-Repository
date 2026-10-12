@@ -3924,3 +3924,63 @@ PR #654 → OPEN / DRAFT
 GKR MENU ACCESS → REQUESTED / NOT PUBLISHED
 BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
 ```
+
+## DEC-05 — Registro integrado de deliberação humana: segurança, integridade e homologação (v4.21 candidato)
+
+**Estado:** CONSOLIDAÇÃO DOCUMENTAL CONCLUÍDA / RATIFICAÇÕES HUMANAS PENDENTES / SEM AUTORIZAÇÃO OPERACIONAL. Este instrumento reúne os cinco exames DEC-05.A..E; não os transforma em norma, homologação, testes executados, piloto ou publicação.
+
+### Quadro integrado de deliberação
+
+| Decisão | Objeto | Exame documental | Ratificação normativa |
+|---|---|---|---|
+| DEC-05.A | Proteção de dados, privacidade e direitos das Pessoas | CONCLUÍDO (v4.16) | PENDENTE |
+| DEC-05.B | Fraude, integridade e proteção contra manipulação | CONCLUÍDO (v4.17) | PENDENTE |
+| DEC-05.C | Rastreabilidade e segurança operacional | CONCLUÍDO (v4.18) | PENDENTE |
+| DEC-05.D | Testes, validação e qualidade | CONCLUÍDO (v4.19) | PENDENTE |
+| DEC-05.E | Homologação, competências e liberação por estágios | CONCLUÍDO (v4.20) | PENDENTE |
+
+A convergência analítica condicional documenta uma direção de exame, **não** decisão da autoridade competente.
+
+### Contrato de dependências não compensatórias
+
+1. **Normas materiais e competências:** DEC-01 (existência e legitimidade), DEC-02 (contribuição contextual), DEC-03 (autoridades) e DEC-04 (semântica/publicação) necessitam ratificação expressa antes de operação pertinente.
+2. **Proteção de dados:** ratificar agentes, finalidades, bases legais por operação, dados sensíveis, acesso, retenção, transparência e resposta a incidentes; avaliação jurídica/técnica apropriada continua necessária.
+3. **Integridade e equidade:** sinais antifraude, amostras reduzidas, denúncias e anomalias não autorizam decisões automáticas nem exclusão injustificada de Coletivos informais.
+4. **Segurança e estados:** decisões versionadas, acesso segregado, eventos rastreáveis, dependência entre selos, falha segura e retirada entre superfícies devem ser demonstrados, não somente descritos.
+5. **Ensaios verificáveis:** resultados de testes críticos, evidências, defeitos, correções, retestes e revisões independentes serão indispensáveis à homologação correspondente.
+6. **Liberação por ato específico:** LIB-01 política, LIB-02 homologação, LIB-03 piloto, LIB-04 produção/publicação e LIB-05 expansão são estágios distintos; nenhum é liberado por avanço documental ou por outro ato sem escopo explícito.
+7. **Publicação editorial separada:** decisão institucional sobre selo e autorização de sua projeção pública são atos distintos; o MENU do GKR pertence à governança documental.
+8. **Riscos residuais:** não se admite compensar gate crítico ausente por médias, interesse comercial, pressão por lançamento ou alegada capacidade de IA.
+
+### Instrumento de ratificação humana
+
+Para cada DEC-05.A..E, a autoridade futuramente legitimada deverá registrar: identificador e versão exatos; `APROVAR`, `APROVAR_COM_AJUSTES`, `DEVOLVER_PARA_REVISAO` ou `REJEITAR`; fundamento e divergências; responsável e impedimentos; data; âmbito territorial e funcional; condições e evidências ainda exigidas; impacto nos demais pacotes; necessidade de atualização de Masters; trilha de revisão/recurso pertinente. **Não preencher resultado por inferência.**
+
+### Separação entre status documental, normativo e operacional
+
+| Dimensão | Estado confirmado neste instrumento |
+|---|---|
+| Exames DEC-01..DEC-05 | 25/25 DOCUMENTADOS |
+| Ratificações normativas DEC-01..DEC-05 | 0/25 CONFIRMADAS |
+| DEC-05 consolidação analítica | CONCLUÍDA |
+| Testes de homologação executados e verificados | NÃO COMPROVADOS |
+| Autoridade concreta de liberação designada | NÃO RATIFICADA |
+| Piloto, publicação dos selos, produção e expansão | NÃO AUTORIZADOS |
+| PR #654 | OPEN / DRAFT — CANDIDATO |
+| Acesso ao documento no MENU do GKR | SOLICITADO / NÃO PUBLICADO |
+
+### Próximo registro proposto — consolidação transversal DEC-01..05
+
+Preparar matriz única para deliberação humana com (i) semântica e evidência de `Verificado`; (ii) limites e legitimidade de `Contribuição Reconhecida`; (iii) autoridades e recursos; (iv) publicação e superfícies; (v) privacidade, segurança e homologação. Mapear conflitos, lacunas, dependências de PER-103/Masters e decisões de publicação do GKR, **sem presumir** aprovação ou merge. A organização documental não autoriza promover critérios ao produto ou implementar no Replit.
+
+```text
+DEC-05.A..E INDIVIDUAL EXAMS → 5/5 DOCUMENTED
+DEC-05 INTEGRATED HUMAN DELIBERATION REGISTER → COMPLETE
+DEC-05 NORMATIVE RATIFICATIONS → 0/5 CONFIRMED
+DEC-01..05 ANALYTICAL EXAMS → 25/25 DOCUMENTED
+DEC-01..05 NORMATIVE RATIFICATIONS → 0/25 CONFIRMED
+CROSS-PACKAGE DEC-01..05 DELIBERATION MATRIX → NEXT
+PR #654 → OPEN / DRAFT
+GKR MENU ACCESS → REQUESTED / NOT PUBLISHED
+TECHNICAL HOMOLOGATION / PILOT / BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
+```
