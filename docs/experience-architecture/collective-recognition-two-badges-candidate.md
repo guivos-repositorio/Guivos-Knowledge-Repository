@@ -2,7 +2,7 @@
 id: GKR-COLLECTIVE-RECOGNITION-001
 title: Coletivos — Verificado e Contribuição Reconhecida
 status: proposed
-version: 0.8.0
+version: 0.9.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -579,3 +579,67 @@ Correções, expiração, suspensão e revogação requerem retirada coerente em
 10. Recurso/restabelecimento: somente nova publicação autorizada atualiza todas as superfícies.
 
 **CBR-07 → OPEN** até adjudicação expressa do PER-103, cards e demais superfícies, owner da fonte canônica de concessão, direitos de publicação, política de indisponibilidade, prazos de retirada, acessibilidade e critérios de privacidade. Não autoriza prototipação, implantação nem emissão.
+
+
+## CBR-08 — Auditoria adversarial e dossiê de fechamento (proposta v0.9)
+
+**Natureza da auditoria:** ensaio documental de regras e cenários, não teste estatístico executado em dados reais, não auditoria operacional de antifraude, não ensaio jurídico e não prova de que um mecanismo técnico existe. Resultado global: **CANDIDATE ANALYSIS COMPLETE / NORMATIVE CLOSURE BLOCKED**.
+
+### Matriz de cenários adversariais
+
+| Caso | Cenário | Selo Verificado | Contribuição Reconhecida | Critério de aceite |
+|---|---|---|---|---|
+| T-01 | Grupo informal legítimo sem CNPJ, atuação e representação corroboradas | Candidato à aprovação | Independe de satisfação e exige apuração própria | Ausência de CNPJ não impede verificação |
+| T-02 | Associação registrada, representante sem mandato | Não conceder enquanto sem legitimidade | Não conceder sem Verificado vigente | Registro empresarial não substitui representação |
+| T-03 | Rede social com seguidores e fotos, sem prova externa de atuação | Complementação / base insuficiente | Não conceder | Popularidade não prova existência |
+| T-04 | Grupo pequeno com 10 avaliações favoráveis de 12 participantes | Verificação independente | Requer robustez e critérios proporcionais, não emissão automática | Pequeno porte não reprova nem garante reconhecimento |
+| T-05 | 3/3 positivas em atividade isolada | Verificação independente | Base insuficiente até política validada | 100% não substitui robustez |
+| T-06 | 90/100 favoráveis, com convites seletivos | Verificação independente | Em revisão por viés de coleta | Alta taxa não compensa manipulação |
+| T-07 | 40 respostas, 30 de duas Pessoas | Verificação independente | Dependência e concentração exigem ajuste | Não confundir respostas com Pessoas únicas |
+| T-08 | Grupo de oração com participantes e crenças sensíveis | Prova proporcional sem listas públicas | Somente apuração protegida e não identificável | Sem exposição de crença/participação |
+| T-09 | Pedalada gera benefício e saúde, mas não aprendizado aplicável | Verificado pode vigorar | Não exigir três dimensões favoráveis | Propósito material, com respostas não aplicáveis preservadas |
+| T-10 | Curso apenas divulgado por Coletivo | Verificação independente | Não atribuir resultado de executor terceiro | Divulgação não é execução |
+| T-11 | Oficina coexecutada, papéis impossíveis de separar | Verificação independente | Atribuição institucional indeterminada | Avaliação da experiência permanece íntegra |
+| T-12 | Feedback negativo legítimo e contestação comercial | Sem efeito automático | Manter crítica elegível | Discordância não fundamenta supressão |
+| T-13 | Sinal automatizado de fraude ainda não confirmado | Investigação, sem culpa presumida | Revisão proporcional, sem revogação automática | IA não atua como autoridade sancionadora |
+| T-14 | Fraude de representação comprovada após concessão | Reexame e medida fundamentada | Não apresentar vigente sem pressuposto | Sem restauração silenciosa |
+| T-15 | Coletivo muda finalidade/executor | Reexaminar alteração relevante | Segmentar períodos de atribuição | Histórico não é reescrito nem generalizado |
+| T-16 | Selo expira, mas card em cache ainda o exibe | Não exibir vigente | Não exibir vigente | Fonte de autoridade prevalece sobre cache |
+| T-17 | Recurso provido após revogação | Restaurar somente por decisão competente | Reavaliar dependências | Trilha de decisão e publicação explícitas |
+| T-18 | Coletivo compra plano ou publicidade | Nenhuma vantagem de concessão | Nenhuma vantagem de concessão | Reconhecimento não é produto comercial |
+| T-19 | Avaliador recusa responder | Sem impacto | Não resposta não equivale a resultado negativo | Autonomia protegida |
+| T-20 | Falha de sistema impede consultar estado | Não afirmar vigência não comprovada | Não afirmar vigência não comprovada | Indisponibilidade não é juízo negativo |
+
+### Achados transversais
+
+- **F-01 / BLOCKING / suficiência de existência:** cruzamento de provas, critérios mínimos por tipologia e independência de fontes ainda não adjudicados.
+- **F-02 / BLOCKING / experiência legítima:** evidência admitida para participação vivida e eventual contribuição institucional ainda dependem de contratos expressos.
+- **F-03 / BLOCKING / estatística:** `CBR-03` não contém thresholds aprovados, janela, tamanho efetivo mínimo, critérios de intervalo de incerteza ou taxa de resposta para emissão. Esses valores não devem ser inventados na auditoria.
+- **F-04 / BLOCKING / finalidade:** definir se contribuição positiva em uma dimensão compatível basta e como tratar respostas negativas nas outras, sem converter resultados em nota universal.
+- **F-05 / BLOCKING / governança:** não há autoridade nominada de concessão, recurso e publicação, nem prazos normativos de revisão/retenção.
+- **F-06 / BLOCKING / superfície e fonte:** `PER-103` e cards não estão autorizados para exibir selo; fonte canônica, invalidação, SLAs e direitos de publicação faltam.
+- **F-07 / HIGH / antifraude:** protocolo verificável de seleção não enviesada, apuração de anomalias, meios legítimos de evidência e garantias de privacidade precisa de especificação técnica/jurídica e revisão humana.
+- **F-08 / HIGH / justiça:** validar taxa de falsos reconhecimentos e falsos indeferimentos em Coletivos de diferentes tamanhos/tipologias, usando dados sintéticos calibrados antes de testes reais autorizados.
+
+### Decisão de fechamento do gate
+
+```text
+CBR-08 SCENARIO COVERAGE → 20/20 DOCUMENTED
+CBR-01..08 CANDIDATE DOCUMENTATION → 8/8
+CBR-01..08 HUMAN ADJUDICATION → 0/8 CONFIRMED
+NUMERIC ISSUANCE THRESHOLDS → NOT APPROVED
+ISSUING AUTHORITY → NOT DESIGNATED
+PER-103 AND CARD BADGE PUBLICATION → NOT AUTHORIZED
+BADGE GRANT/IMPLEMENTATION → NOT AUTHORIZED
+PR #654 → DOCUMENTARY DRAFT / HUMAN REVIEW REQUIRED
+```
+
+Esta matriz mostra a decisão esperada de cada regra sob situações adversariais, mas não comprova eficiência de detecção ou justiça estatística de uma implementação. Não efetuar merge normativo nem acrescentar selos a protótipos como resultado deste exercício.
+
+### Próximo rito proposto
+
+1. **Adjudicação semântica:** ratificar significados dos dois selos, relação de dependência, dimensão de contribuição compatível com finalidade e limites de afirmação pública.
+2. **Adjudicação de evidências:** padrões por tipologia, experiência comprovada, atribuição do Coletivo e proteção de Pessoas.
+3. **Calibração estatística:** definir parâmetros a partir de dados e cenários que sustentem o controle de falsos positivos, pequenos coletivos e viés de seleção.
+4. **Governança e publicação:** designar competência decisória, recurso, temporalidade e autorizar expressamente PER-103/cards.
+5. **Gate de release:** revisões jurídica/privacidade e engenharia, testes contra critérios aprovados e nova deliberação de implantação.
