@@ -4534,3 +4534,72 @@ GKR MENU → UNCHANGED
 BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
 NEXT → RSP-05.C
 ```
+
+## Etapa 278 — RSP-05.C: Competência decisória e concessão institucional dos selos (v4.30 candidato)
+
+**Resultado:** EXAME INDIVIDUAL DOCUMENTADO / CONVERGÊNCIA ANALÍTICA CONDICIONAL / ADJUDICAÇÃO NORMATIVA PENDENTE. Nenhuma concessão, recusa, suspensão ou revogação foi realizada. Não foram designados decisores ou poderes operacionais.
+
+### Questão decisória
+
+Quem pode decidir, mediante quais provas, competências, controles de impedimento e fundamentação, a concessão institucional separada dos selos `Verificado` e `Contribuição Reconhecida`, sem converter parecer técnico, métricas, patrocínio ou automações em autoridade?
+
+### Matriz candidata de decisão
+
+| Controle | Deliberação a ratificar | Limite institucional |
+|---|---|---|
+| CON-01 — Investidura | Decisor formalmente habilitado, mandato, escopo e substituição | Acesso administrativo ou cargo comercial não presume competência |
+| CON-02 — Independência | Declaração de conflito, afastamento e segregação de instrução, decisão e recurso | Ninguém decide próprio interesse ou recurso contra o próprio ato |
+| CON-03 — Decisão Verificado | Provas suficientes de existência e representação legítima no contexto ratificado | Não certifica excelência, segurança absoluta nem benefícios |
+| CON-04 — Decisão Contribuição | Evidências contextuais admissíveis e análise de limites estatísticos | Não promete evolução individual nem produz score universal |
+| CON-05 — Dependência | Verificar estado institucional de `Verificado` conforme dependência a ratificar | Um selo não é concedido automaticamente pela existência do outro |
+| CON-06 — Motivação | Registrar critérios aplicados, provas, incerteza, versão, ato e autoridade | Parecer de analista é insumo, não decisão |
+| CON-07 — Resultado e contestação | Formalizar deferimento, diligência, indeferimento e direito à revisão nos limites ratificados | Recusa não é prova automática de fraude; recurso é segregado |
+| CON-08 — Publicabilidade | Encaminhar ato para verificação e autorização editorial separada | Decisão favorável não implica publicação ou ativação técnica |
+
+### Dois testes materiais distintos
+
+**Verificado:** a futura autoridade deverá julgar existência e representação legítima dentro de escopo, momento e validade definidos. Informalidade ou ausência de CNPJ não são motivos automáticos de rejeição. A comprovação não valida toda atividade nem elimina riscos inerentes.
+
+**Contribuição Reconhecida:** o futuro decisor deverá considerar evidências independentes e contextuais de benefício percebido, aprendizado ou progresso, inclusive respostas parciais e negativas, condições de amostra, vieses e representatividade. Não se infere causalidade, benefício universal, garantia clínica ou ranking.
+
+### Instrumento de decisão humana candidato
+
+Registro mínimo: identificador do caso e do Coletivo; selo específico; autoridade e habilitação; impedimentos; versão da política; escopo territorial e temporal; evidências admissíveis e sua proveniência; parecer técnico e divergências; fundamento motivado; resultado explícito; validade e condições; direito de recurso e instância independente; requisitos de proteção; identificador e versão do ato; autorização editorial de publicação em registro **separado**.
+
+Os resultados decisórios, prazos, evidências mínimas, condições de renovação e efeitos do recurso continuam a ratificar. Nenhum formulário ou fluxo técnico é instituído por esta proposta.
+
+### Casos adversariais para adjudicação
+
+| Caso | Fronteira decisória |
+|---|---|
+| Grupo de pedal informal apresenta registros coerentes de atuação | Avaliar prova proporcional; não exigir formalização sem fundamento |
+| Grupo de oração reúne provas com identificação sensível | Minimizar e proteger Pessoas e suas associações |
+| Organizador apresenta somente testemunhos próprios de sucesso | Não transformar autopromoção em contribuição independente |
+| Avaliações de pequena amostra são consistentes | Registrar incerteza sem concluir fraude nem mérito por pontuação |
+| Decisor é patrocinador ou dirigente do Coletivo | Identificar impedimento e redistribuir ato |
+| IA recomenda conceder por alta pontuação | Não conceder sem exame e ato humano habilitado |
+| `Verificado` expira com contribuição historicamente reconhecida | Distinguir histórico institucional, validade e projeção pública; efeito normativo a ratificar |
+| Decisão favorável não tem liberação editorial | Manter `approved_not_published` como cenário conceitual, sem exibição |
+| Decisão contestada é revista pela mesma pessoa | Exigir instância recursal independente, sujeita a designação formal |
+
+### Pendências para aprovação normativa
+
+Ratificar identidade e mandato da autoridade competente para cada selo, independência e conflitos, evidências mínimas, tratamento de amostras e incertezas, relação entre selos, resultados e seus efeitos, validade e renovação, recurso, proteção de dados e conteúdo publicável. A decisão deve ser adjudicada de forma humana, individual, motivada e versionada. Nenhum gate DEC-01..05 é implicitamente aprovado.
+
+### Limites de integração
+
+Nenhum `GKR-SURF-*`, `GKR-TRN-*`, competência de PER-103, papel de Coletivo, regra de MENU ou estado de produção é modificado. O exame prepara deliberação, não engenharia.
+
+```text
+ETAPA 278 RSP-05.C INDIVIDUAL EXAM → DOCUMENTED
+RSP-05.C ANALYTICAL DIRECTION → CONDITIONAL CONVERGENCE
+RSP-05.C HUMAN NORMATIVE ADJUDICATION → PENDING
+RSP-05.A..F EXAMS → 3/6 DOCUMENTED
+RSP-05.A..F HUMAN ADJUDICATION → 0/6 CONFIRMED
+DEC-01..05 EXAMS → 25/25 DOCUMENTED
+DEC-01..05 HUMAN NORMATIVE RATIFICATIONS → 0/25 CONFIRMED
+PR #654 → OPEN / DRAFT
+GKR MENU → UNCHANGED
+BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
+NEXT → RSP-05.D
+```
