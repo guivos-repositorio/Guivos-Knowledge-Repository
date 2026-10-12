@@ -4455,3 +4455,82 @@ GKR MENU → UNCHANGED
 BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
 NEXT → RSP-05.B
 ```
+
+## Etapa 277 — RSP-05.B: Instrução institucional e exame de evidências (v4.29 candidato)
+
+**Resultado:** EXAME INDIVIDUAL DOCUMENTADO / CONVERGÊNCIA ANALÍTICA CONDICIONAL / ADJUDICAÇÃO NORMATIVA PENDENTE. Nenhuma evidência real foi recebida, examinada ou aprovada nesta etapa. Nenhum analista ou órgão foi designado.
+
+### Questão decisória
+
+Como receber, qualificar, complementar e examinar evidências dos Coletivos para os selos `Verificado` e `Contribuição Reconhecida` com proporcionalidade, proteção das Pessoas, rastreabilidade e independência, sem transformar a instrução técnica em decisão institucional de concessão?
+
+### Oito controles de instrução candidatos
+
+| Código | Controle | Limite |
+|---|---|---|
+| INS-01 | Abertura e legitimidade de solicitação | Confirmar representação e escopo; pedido não gera selo |
+| INS-02 | Inventário mínimo de evidências | Documentar finalidade, origem e necessidade, sem exigir CNPJ por padrão |
+| INS-03 | Proveniência e integridade | Registrar fonte, data, versão e eventual contestação, com acesso protegido |
+| INS-04 | Triagem proporcional | Distinguir ausência, incompletude, inconsistência e possível fraude |
+| INS-05 | Complementação e contraditório | Solicitar esclarecimento pertinente sem exposições indevidas |
+| INS-06 | Evidências de contribuição | Usar avaliações contextuais R1 somente sob base, finalidade e regras ratificadas |
+| INS-07 | Parecer técnico independente | Indicar achados, limites, incertezas e divergências; não conceder selo |
+| INS-08 | Encaminhamento decisório | Entregar dossiê mínimo à autoridade humana competente, com trilha de acesso |
+
+### Tipos de evidência em exame
+
+1. **Existência e atuação:** histórico verificável, atividades e materiais contextuais proporcionais, inclusive em grupos informais.
+2. **Representação legítima:** vínculo demonstrável entre solicitante e Coletivo, sem pressupor formalização empresarial.
+3. **Contribuição contextual:** percepções de participantes sobre benefício, aprendizado ou evolução, sem converter testemunhos em garantia universal ou ranking.
+4. **Integridade e proteção:** divergências e sinais de manipulação tratados como indícios sujeitos a revisão humana, nunca como fraude automaticamente comprovada.
+5. **Circunstâncias territoriais:** considerar realidades locais e formas de organização sem dispensar confiabilidade mínima da evidência.
+
+Nenhuma classe de evidência, limiar de amostra, documento obrigatório ou método de verificação foi normativamente ratificado por este exame.
+
+### Segregação de responsabilidades
+
+| Ator funcional candidato | Pode instruir ou contribuir | Não pode inferir como atribuição automática |
+|---|---|---|
+| Representante do Coletivo | Solicitar reconhecimento, apresentar provas próprias e esclarecimentos | Decidir seu próprio selo ou conhecer identidade de avaliadores |
+| Analista habilitado | Verificar completude, proveniência e consistência; elaborar parecer | Conceder, suspender ou revogar reconhecimento por parecer |
+| Autoridade institucional | Examinar o dossiê conforme competência futura | Ignorar impedimentos, privacidade ou critérios normativos |
+| Instância recursal independente | Reexaminar decisão e provas admissíveis | Substituir rito por decisão do mesmo agente impedido |
+| IA / automação | Sinalizar inconsistências e apoiar organização de evidências aprovadas | Fixar mérito, punir, conceder ou determinar fraude automaticamente |
+| Auditoria | Verificar integridade e seletividade do processo | Publicar dados protegidos ou assumir mérito sem alçada |
+
+### Procedimento candidato
+
+`SOLICITAÇÃO LEGÍTIMA → INVENTÁRIO MÍNIMO → TRIAGEM → COMPLEMENTAÇÃO PROPORCIONAL → PARECER TÉCNICO MOTIVADO → ENCAMINHAMENTO À AUTORIDADE HUMANA → DECISÃO SEPARADA`.
+
+O parecer poderá recomendar diligência, registrar insuficiência ou explicitar incerteza. Nenhuma dessas saídas equivale a `Verificado` ou `Contribuição Reconhecida` concedido.
+
+### Cenários adversariais
+
+- Grupo de pedal informal comprova encontros recorrentes sem CNPJ: avaliar fontes alternativas legítimas; não excluir automaticamente.
+- Grupo de oração fornece informação que revelaria crença ou filiação de Pessoas: minimizar evidência e proteger vínculos sensíveis.
+- Coletivo apresenta apenas depoimentos de dirigentes sobre benefício: distinguir autopromoção de percepções independentes admissíveis.
+- Três avaliações legítimas são recebidas: registrar limitações da amostra, sem presumir fraude ou mérito estatístico.
+- Patrocinador oferece recursos para acelerar validação: impedir preferência ou alteração de critérios.
+- Analista detecta documento divergente: abrir diligência proporcional, não declarar fraude sem rito.
+- Representante solicita lista de avaliações negativas: impedir acesso identificável e preservar contraditório proporcional.
+- IA sinaliza duplicidade equivocada: manter correção e revisão humana independente.
+
+### Pendências para adjudicação
+
+Ratificar responsáveis, habilitação e impedimentos; quem pode iniciar o processo; provas mínimas por tipo de Coletivo; meios válidos de comprovação de representação; política de diligência e prazos; proteção jurídica e técnica de avaliações R1; proveniência e cadeia de custódia; critérios de completude e limitações estatísticas; direitos de manifestação; formato e escopo do parecer; acesso ao dossiê; retenção e descarte; encaminhamento e revisão independente.
+
+A relação com DEC-01 e DEC-02 permanece substantiva; DEC-03 definirá alçadas, DEC-05.A a proteção de dados, DEC-05.B a integridade e DEC-05.C a rastreabilidade. Não se presume homologação nem execução.
+
+```text
+ETAPA 277 RSP-05.B INDIVIDUAL EXAM → DOCUMENTED
+RSP-05.B ANALYTICAL DIRECTION → CONDITIONAL CONVERGENCE
+RSP-05.B HUMAN NORMATIVE ADJUDICATION → PENDING
+RSP-05.A..F EXAMS → 2/6 DOCUMENTED
+RSP-05.A..F HUMAN ADJUDICATION → 0/6 CONFIRMED
+DEC-01..05 EXAMS → 25/25 DOCUMENTED
+DEC-01..05 HUMAN NORMATIVE RATIFICATIONS → 0/25 CONFIRMED
+PR #654 → OPEN / DRAFT
+GKR MENU → UNCHANGED
+BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
+NEXT → RSP-05.C
+```
