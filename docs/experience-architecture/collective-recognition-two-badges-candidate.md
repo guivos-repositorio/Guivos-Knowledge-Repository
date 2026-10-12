@@ -5765,3 +5765,81 @@ GKR MENU → UNCHANGED
 TESTS / HOMOLOGATION / BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
 NEXT → G0 ACT COMPLETENESS AND CONFLICTS REVIEW
 ```
+
+## Etapa 295 — G0/B-01: Auditoria de completude, conflitos e encaminhamento institucional (v4.47 candidato)
+
+**Resultado:** EXAME DOCUMENTAL DE COMPLETUDE CONCLUÍDO / MINUTA ESTRUTURALMENTE APROVEITÁVEL COM PENDÊNCIAS MATERIAIS / G0 NÃO ADJUDICADO. Esta auditoria não comprova poderes, não é revisão jurídica conclusiva e não autoriza assinatura, delegação, emissão ou publicação.
+
+### Escopo da auditoria
+
+Aferir se as dez cláusulas e a matriz de delegação da Etapa 294 estão suficientemente estruturadas para **encaminhamento condicionado** a uma autoridade legitimamente comprovada, distinguindo lacunas supríveis na preparação da minuta de pressupostos institucionais não substituíveis por documentação candidata.
+
+### Matriz de completude
+
+| Critério | Avaliação documental | Lacuna ou exigência |
+|---|---|---|
+| AUD-G0-01 — Objeto e dois selos | ESTRUTURADO | Ratificar finalidade, escopo, alcance territorial e limites |
+| AUD-G0-02 — Fonte originária dos poderes | BLOQUEADOR | Comprovar ato institucional/societário válido e capacidade da instância |
+| AUD-G0-03 — Titular e delegações | ESTRUTURADO, NÃO DESIGNADO | Identificar titulares, alçadas, duração, substitutos e delegabilidade |
+| AUD-G0-04 — Independência e conflitos | ESTRUTURADO, NÃO RATIFICADO | Definir impedimentos, declaração, afastamento e substituição |
+| AUD-G0-05 — Instrução e decisão de mérito | SEGREGADO CONCEITUALMENTE | Formalizar investidura, decisões por selo, motivação e provas |
+| AUD-G0-06 — Recurso e auditoria | SEGREGADO CONCEITUALMENTE | Designar instância recursal independente e supervisão |
+| AUD-G0-07 — Publicação dos selos | SEGREGADO CONCEITUALMENTE | Designar autoridade editorial, guardas e retirada |
+| AUD-G0-08 — Documentação no GKR/MENU | SEPARADO, NÃO AUTORIZADO | Definir ato editorial específico e autoridade vigente |
+| AUD-G0-09 — Vigência e eficácia | CAMPOS ABERTOS | Formalizar versões, início, prazo, revisões, revogação de delegação |
+| AUD-G0-10 — Assinatura e registro | MODELO PREPARADO | Identificar signatário, ato, data, decisão, fundamento e evidências |
+
+**Achado central:** as dez cláusulas permitem estruturar uma deliberação, mas **AUD-G0-02 impede qualificar a minuta como ato institucional eficaz**. Os demais campos abertos impedem delegações reais.
+
+### Conflitos e sobreposições a prevenir
+
+| Conflito | Regra candidata |
+|---|---|
+| Fundador e autoridade pública confundidos com titular automático de selos | Exigir mandato específico e delimitação de competência |
+| Owner do GKR confundido com aprovador de mérito | Separar custódia documental de decisão sobre reconhecimento |
+| Analista de evidências também decide/revisa sem salvaguarda | Segregação e impedimentos proporcionais |
+| Autoridade de concessão julga recurso contra próprio ato | Revisão independente obrigatória |
+| Patrocinador influencia concessão ou prioridade | Independência comercial e tratamento rastreável |
+| Auditor altera decisão em vez de apontar não conformidade | Encaminhar revisão ao órgão competente |
+| Editor publica concessão sem guardas de vigência | Ato editorial separado e rastreável |
+| Engenharia ou IA convertem estados em concessões automáticas | Proibição de autoridade técnica sobre mérito |
+| Gestão de moderação `COL-007` assume competência de selo | Preservar fronteiras de autoridade |
+| Ato G0 aprovado é interpretado como ratificação automática dos 36 gates | Adjudicações individuais, posteriores e explícitas |
+
+### Classificação do encaminhamento
+
+- **Documentação apta para apreciação preliminar:** SIM, desde que identificada a natureza exclusivamente candidata e apresentadas lacunas.
+- **Ato pronto para assinatura eficaz:** NÃO; faltam fonte legitimadora, capacidade, mandatos e campos materiais.
+- **Adjudicação G0/B-01:** NÃO OCORREU.
+- **Adjudicações DEC/RSP:** 0/36.
+- **Homologação e publicação:** NÃO AUTORIZADAS.
+
+### Pacote mínimo para decisão competente
+
+1. Documento ou referência verificável dos poderes institucionais originários.
+2. Identificação da instância e representante com capacidade para o ato.
+3. Minuta revisada com objeto, escopo, vigência e matriz de competências preenchidos.
+4. Política de impedimentos, recurso, supervisão e segregação.
+5. Manifestação institucional ou jurídica apropriada aos requisitos societários, territoriais e de dados, se aplicável.
+6. Registro explícito do resultado, condições, fundamentação, signatário, data e versão.
+7. Plano para as 36 adjudicações subsequentes, sem aprovação presumida por bloco.
+8. Trilha editorial do GKR/MENU separada da aprovação do programa de selos.
+
+### Próximo passo documental
+
+**Etapa 296 — Dossiê de encaminhamento institucional G0/B-01 e decisão de admissibilidade documental:** reunir achados, lacunas, alternativas G0-A..D e campos mínimos de validação, sem tratar o encaminhamento como assinatura ou autoridade estabelecida.
+
+```text
+ETAPA 295 G0 ACT COMPLETENESS / CONFLICT AUDIT → DOCUMENTED
+G0 DRAFT STRUCTURAL COMPLETENESS → CONDITIONAL / MATERIAL GAPS
+G0 LEGITIMATING AUTHORITY PROOF → NOT CONFIRMED
+G0 HUMAN ADJUDICATION → PENDING
+DEC-01..05 EXAMS → 25/25; RATIFICATIONS → 0/25
+RSP-05 EXAMS → 6/6; ADJUDICATIONS → 0/6
+RSP-06 EXAMS → 5/5; ADJUDICATIONS → 0/5
+COMBINED EXAMS → 36/36; HUMAN ADJUDICATIONS → 0/36
+PR #654 → OPEN / DRAFT
+GKR MENU → UNCHANGED
+BADGE ISSUANCE / PUBLICATION / TESTS / HOMOLOGATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
+NEXT → G0/B-01 INSTITUTIONAL SUBMISSION DOSSIER
+```
