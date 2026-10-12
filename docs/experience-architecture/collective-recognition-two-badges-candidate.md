@@ -4380,3 +4380,78 @@ MENU CHANGE → NOT AUTHORIZED
 BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
 NEXT → INDIVIDUAL HUMAN DECISION EXAM RSP-05.A
 ```
+
+## Etapa 276 — RSP-05.A: Titularidade da política e delegação de competências (v4.28 candidato)
+
+**Resultado:** EXAME INDIVIDUAL DOCUMENTADO / CONVERGÊNCIA ANALÍTICA CONDICIONAL / ADJUDICAÇÃO NORMATIVA PENDENTE. Não se designa órgão, titular, cargo ou pessoa e não se concede competência operacional.
+
+### Questão decisória
+
+Qual autoridade institucional da Guivos pode aprovar e manter a política dos selos `Verificado` e `Contribuição Reconhecida`, delegar atribuições proporcionais e supervisionar sua execução, preservando independência decisória, recursos e direitos das Pessoas?
+
+### Matriz candidata de competências
+
+| Código | Competência a disciplinar | Limite de delegação proposto |
+|---|---|---|
+| TIT-01 | Titularidade da política: critérios, versões e alcance | Ato formal de autoridade legitimada; não presumir titular a partir de acesso administrativo |
+| TIT-02 | Gestão documental e propostas de revisão | Instrução delegável; publicação normativa exige aprovação própria |
+| TIT-03 | Habilitação de analistas e decisores | Requisitos, impedimentos, treinamento, validade e reavaliação definidos pela política |
+| TIT-04 | Exame de elegibilidade e evidências | Atividade técnica não confere poder automático de concessão |
+| TIT-05 | Decisão de cada selo | Competência humana expressa, registrada e segregada de interesses comerciais |
+| TIT-06 | Revisão e recursos | Instância independente do ato contestado, com acesso mínimo a provas protegidas |
+| TIT-07 | Auditoria, incidentes e correções | Supervisão rastreável sem substituir instância recursal ou reescrever mérito |
+| TIT-08 | Publicação pública | Ato editorial separado e dependente de decisão canônica vigente |
+
+### Modelos institucionais candidatos para adjudicação
+
+| Alternativa | Benefício potencial | Risco/condição |
+|---|---|---|
+| Autoridade central com delegação operacional | Uniformidade de política e rastreabilidade | Deve evitar concentração entre instrução, decisão e recurso |
+| Autoridade central com revisores territoriais habilitados | Escala contextual e proximidade local | Exige política versionada, habilitação, auditoria e impedimentos |
+| Colegiado institucional para decisões sensíveis ou recursos | Deliberação plural e supervisão | Requer mandato, quórum e competência formal; não presumir sua existência |
+
+As alternativas são hipóteses de governança, não órgãos constituídos. Modelos podem combinar funções desde que a segregação de decisões e recursos seja garantida normativamente.
+
+### Invariantes e limites
+
+1. Titularidade da política, instrução, decisão de concessão, revisão recursal, auditoria e autorização editorial são responsabilidades distintas, ainda que se articulem institucionalmente.
+2. Delegação exige escopo, habilitação, duração, responsável, impedimentos, substituição, supervisão e trilha de revogação de poderes.
+3. Representantes de Coletivos podem fornecer provas e contestar decisões, mas não têm automaticamente competência de adjudicação própria ou acesso identificável a respostas R1.
+4. Investidor, patrocinador, parceiro comercial, publicidade, porte e capacidade financeira não conferem direito a selo, prioridade ou influência institucional.
+5. IA, indicadores, sistemas de detecção e operadores técnicos prestam apoio; não recebem autoridade normativa nem podem emitir, suspender ou revogar selos automaticamente.
+6. A ausência de CNPJ ou de formalização empresarial não deve, por si só, excluir Coletivos; os critérios de legitimidade continuam sujeitos a DEC-01.
+7. O titular não pode usar publicação de selos como substituto de autorização editorial, privacidade e homologação DEC-04/05.
+8. Recursos exigem revisão independente e fundamentação proporcional, sem exposição indevida de Pessoas.
+9. Delegações territoriais não podem introduzir critérios conflitantes sem rito de versão, revisão e autoridade competente.
+10. Substituição, vacância ou conflito da autoridade requer regra de continuidade e suspensão de atos não autorizados, sem presumir sucessão automática.
+
+### Casos de fronteira
+
+- Um responsável por Coletivo solicita decidir o próprio selo: conflito deve ser tratado por instância independente.
+- A área comercial pressiona para conceder selo a patrocinador: interesse econômico não supre competência nem prova.
+- Revisor territorial identifica documentação equivalente de Coletivo informal: instrução pode considerar contexto, sem flexibilização unilateral da norma.
+- Um decisor é também a autoridade do recurso: impedimento e redistribuição precisam ser previstos.
+- A política é revisada após concessão anterior: preservar versão histórica e definir tratamento prospectivo ou revisão formal.
+- A autoridade designada fica indisponível: não presumir transferência automática de poderes ou conceder selo por decurso de prazo.
+
+### Registro de decisão humana exigido
+
+A futura adjudicação precisa especificar o titular legitimado, fundamento institucional, mandato, competências delegáveis e indelegáveis, matriz de impedimentos, habilitação territorial, regras de vacância, recurso independente, versionamento, publicidade dos critérios e proteção de dados; registrar resultado `APROVAR`, `APROVAR_COM_AJUSTES`, `DEVOLVER_PARA_REVISAO` ou `REJEITAR`, com data, versão, motivação, condições e responsável. Nenhum campo decisório foi preenchido neste exame.
+
+### Dependências e continuidade
+
+RSP-05.A é premissa candidata para RSP-05.B–F e RSP-06, mas sua análise não adjudica DEC-03 nem valida competências. Não altera Surface Registry, Transition Registry, PER-103, Masters, MENU do GKR ou protótipo.
+
+```text
+ETAPA 276 RSP-05.A INDIVIDUAL EXAM → DOCUMENTED
+RSP-05.A ANALYTICAL DIRECTION → CONDITIONAL CONVERGENCE
+RSP-05.A HUMAN NORMATIVE ADJUDICATION → PENDING
+RSP-05.A..F EXAMS → 1/6 DOCUMENTED
+RSP-05.A..F HUMAN ADJUDICATION → 0/6 CONFIRMED
+DEC-01..05 EXAMS → 25/25 DOCUMENTED
+DEC-01..05 HUMAN NORMATIVE RATIFICATIONS → 0/25 CONFIRMED
+PR #654 → OPEN / DRAFT
+GKR MENU → UNCHANGED
+BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
+NEXT → RSP-05.B
+```
