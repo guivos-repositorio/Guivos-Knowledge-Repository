@@ -2,7 +2,7 @@
 id: GKR-COLLECTIVE-RECOGNITION-001
 title: Coletivos — Verificado e Contribuição Reconhecida
 status: proposed
-version: 0.9.0
+version: 1.0.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -643,3 +643,46 @@ Esta matriz mostra a decisão esperada de cada regra sob situações adversariai
 3. **Calibração estatística:** definir parâmetros a partir de dados e cenários que sustentem o controle de falsos positivos, pequenos coletivos e viés de seleção.
 4. **Governança e publicação:** designar competência decisória, recurso, temporalidade e autorizar expressamente PER-103/cards.
 5. **Gate de release:** revisões jurídica/privacidade e engenharia, testes contra critérios aprovados e nova deliberação de implantação.
+
+
+## ADJ-01 — Adjudicação semântica proposta para decisão humana (v1.0 candidato)
+
+**Escopo:** consolidação das decisões conceituais expressas pelo fundador durante a construção CBR-01..08, separando-as das questões operacionais ainda abertas. Esta seção **não é adjudicação humana formal de critérios de emissão**, não substitui a autoridade canônica de Avaliação e Reputação e não autoriza implementação.
+
+### Consensos conceituais explícitos
+
+| Tema | Decisão conceitual registrada | Limite |
+|---|---|---|
+| Selos | Dois selos independentes: **Verificado** e **Contribuição Reconhecida** | Não fundir os dois |
+| Verificado | Evidência de existência real e representação legítima | Não garante segurança absoluta, qualidade, satisfação ou evolução |
+| Contribuição Reconhecida | Evidências suficientes de benefícios, aprendizados ou avanços percebidos pelas Pessoas em experiências efetivamente vividas, com atribuição legítima ao Coletivo | Não prova causalidade nem evolução objetiva |
+| Finalidade | Reconhecimento relacionado ao propósito Guivos de evolução humana, não mera presença, vivência, popularidade ou participação | Não criar score universal |
+| Dependência | Para apresentar Contribuição Reconhecida como vigente, exigir Verificado vigente | Decisões, evidências e revisões específicas de cada selo |
+| Apresentação | Identificadores discretos: “Verificado” e “Contribuição reconhecida” no card do Coletivo | Sem privilegiar ou depreciar automaticamente não reconhecidos |
+| Justiça | Ausência de selo não é juízo negativo; porte e CNPJ não são critérios universais de qualidade | Critérios proporcionais e protegidos |
+| Integridade | Avaliação falsa/incentivada não fundamenta reconhecimento; avaliação negativa legítima não pode ser removida por interesse comercial | Suspeita não é prova |
+
+### Interpretação do propósito por dimensões
+
+A contribuição pode ocorrer em **uma ou mais** dimensões legitimamente compatíveis com o propósito e a experiência — benefício percebido, aprendizado percebido, avanço percebido — e em áreas de vida pertinentes à Journey. Não exigir, conceitualmente, sinal positivo nas três dimensões para toda atividade. Isso **não significa** que uma resposta favorável isolada autorize o selo: suficiência, consistência, respostas negativas aplicáveis, riscos e inferência são matérias abertas de CBR-03.
+
+Exemplo: pedalada pode apresentar contribuição relevante para saúde e convivência sem ter de demonstrar aprendizado financeiro; curso pode ser relevante pelo aprendizado sem prometer melhora objetiva de renda. Informar áreas de vida sem inferir diagnósticos, crenças ou evolução privada de participantes.
+
+### Linguagem pública aceitável e vedada
+
+| Selo | Formulação curta candidata | Afirmações indevidas |
+|---|---|---|
+| Verificado | “A Guivos examinou evidências da existência e da representação legítima deste Coletivo.” | “Coletivo seguro/garantido”, “identidade infalível”, “impacto comprovado” |
+| Contribuição reconhecida | “Experiências verificadas deste Coletivo apresentaram evidências suficientes de benefícios, aprendizados ou avanços percebidos pelas Pessoas no período avaliado.” | “A Guivos comprovou a evolução das Pessoas”, “todos evoluíram”, “recomendado para qualquer Pessoa” |
+
+### Registro de decisão sem criar autoridade indevida
+
+**Conceitualmente acordado:** dupla de selos, rótulos, finalidades, discrição visual, propósito Guivos e proteção contra manipulação e desvalorização dos não reconhecidos.  
+**Ainda sujeito a adjudicação normativa:** limiares e métodos estatísticos, provas e corroboração suficientes, tratamento de contradição entre dimensões, validade, alçadas nominadas, recurso, publicação, controle técnico e calibração dos critérios.
+
+```text
+ADJ-01 DOCUMENTED CONCEPTUAL CONSENSUS → YES
+ADJ-01 FORMAL NORMATIVE ADJUDICATION → PENDING
+CBR-01..08 HUMAN NORMATIVE ADJUDICATIONS → 0/8 CONFIRMED
+BADGE ISSUANCE / PUBLICATION → NOT AUTHORIZED
+```
