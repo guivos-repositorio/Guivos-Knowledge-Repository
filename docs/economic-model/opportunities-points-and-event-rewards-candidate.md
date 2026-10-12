@@ -2,7 +2,7 @@
 id: GEM-OPPORTUNITIES-POINTS-REWARDS-CANDIDATE-001
 title: Oportunidades — Retorno em Pontos e Premiações de Eventos — Proposta Transversal
 status: draft
-version: 1.9.0
+version: 2.0.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -1426,6 +1426,92 @@ FIN-EVENTO → ORGANIZER PREPAID POINT BALANCE
 EQ-1..EQ-4 → HYPOTHETICAL ECONOMIC COMPARISON
 ACQUISITION PRICE / REDEMPTION VALUE / FEES → NOT FORMALLY APPROVED
 POINTS → SINGLE UNIT, OPTIONAL
+PR #655 → OPEN / DRAFT
+MAIN / MENU / HOME MASTERS / REGISTRIES / REPLIT → UNCHANGED
+```
+
+## 29. Fluxo financeiro e reconciliação transversal — retenção, saldo pré-pago e resgate (v2.0.0 candidato)
+
+**Natureza:** simulação documental e numérica de fluxos, sem instituição de conta de pagamento, custódia, regra contábil, preço oficial de ponto ou implementação. Cenário-base fictício **EQ-1: um ponto gera R$ 1,00 de abatimento elegível**, sem taxas nem tributos; NÃO é paridade aprovada.
+
+### 29.1 Origens distintas; unidade de pontos única
+
+**FIN-COMPRA:** compra intermediada por Guivos → benefício percentual → valor retido do repasse ao ofertante → obrigação de pontos da Pessoa, após critérios de liquidação. **FIN-EVENTO:** ofertante aporta antecipadamente recursos para adquirir pontos → saldo pré-pago do ofertante → reserva por campanha → distribuição após gatilho → obrigação de pontos da Pessoa. Após o crédito, o saldo da Pessoa mantém unidade comum, embora os lançamentos de origem continuem identificáveis para auditoria.
+
+**Não confundir três responsabilidades:** (i) dinheiro do comprador devido ao ofertante; (ii) recursos retidos ou recebidos para cobertura de incentivos; (iii) obrigação potencial de liquidar uso dos pontos perante fornecedor no Mall/Travel. A cobrança da taxa Guivos ocorre **fora** do valor prometido como pontos.
+
+### 29.2 Mini-razão hipotético, sem tributos nem taxa da plataforma
+
+**Operação A — compra de curso.** Pessoa paga R$ 200,00; retorno opcional 1% = 2,00 pontos; R$ 2,00 retidos para cobertura; repasse-base R$ 198,00 ao ofertante. Identificar receita de taxa e demais repasses separadamente quando aprovados.
+
+**Operação B — Coletivo pré-paga pontos de evento.** Coletivo adquire 4.900 pontos: custo **hipotético EQ-1** R$ 4.900,00; o sistema registra 4.900 pontos livres. Ao ativar corrida, compromete 3.000 para inscrições e 1.900 para pódio, sem novo débito do caixa — apenas transfere saldo livre para reserva. Pontos concedidos à Pessoa saem da reserva, sem nova emissão financeira sem lastro.
+
+**Operação C — resgate.** A Pessoa utiliza hipoteticamente 1,25 ponto num pedido elegível do Mall com valor de cobertura de R$ 1,25; o sistema bloqueia 1,25 ponto e, após confirmação, baixa o saldo e reconhece obrigação de liquidação ao parceiro conforme contrato. A transferência ao parceiro deve conciliar o valor reconhecido e os ajustes cabíveis. No Travel, a lógica de ledger pode ser análoga, mas regras de disponibilidade, cotação, fornecedor, cancelamento e datas são específicas.
+
+### 29.3 Razão ilustrativo por evento
+
+| Evento | Caixa/repasse em R$ | Pontos do ofertante livres | Pontos ofertante reservados | Pontos disponíveis da Pessoa | Obrigação de resgate em R$ |
+|---|---|---:|---:|---:|---:|
+| A1: curso R$ 200 com 1% | R$ 200 recebidos; R$ 198 repasse-base; R$ 2 de cobertura | — | — | +2,00 | R$ 2,00, sob EQ-1 |
+| B1: aquisição do Coletivo | R$ 4.900 aporte hipotético | +4.900 | 0 | 0 | Obrigação de saldo adquirido a classificar |
+| B2: reserva da corrida | Sem novo pagamento | 0 | 4.900 | 0 | Reserva financiada, ainda não crédito à Pessoa |
+| B3: entrega de 100 pontos | Sem novo pagamento | 0 | 4.800 | +100 | R$ 100,00, sob EQ-1 |
+| C1: resgate Mall de 1,25 ponto | Pagamento ao parceiro só conforme liquidação contratual | — | — | -1,25 | -R$ 1,25 de obrigação da Pessoa, transferida/quitada conforme fluxo |
+ 
+**Advertência:** linhas são movimentos independentes e ilustrativos; não se deve somar A1, B3 e C1 para inferir saldo de **uma** carteira pessoal sem declarar titularidade. A coluna de obrigação é uma exposição econômica sob hipótese EQ-1, **não lançamento contábil obrigatório**; natureza da obrigação de saldo do ofertante exige parecer próprio.
+
+### 29.4 Exemplo de saldo de uma Pessoa, explícito
+
+Pessoa X recebeu **2,00 pontos** do curso elegível e **100,00 pontos** da inscrição em corrida. Saldo total após concessões: **102,00 pontos**. Se utilizar **1,25 ponto** em resgate autorizado: saldo disponível **100,75 pontos**. Custo de utilização hipotético EQ-1: **R$ 1,25**; tarifas e obrigações de parceiro não incluídas.
+
+### 29.5 Repasses e taxas sem mascarar custos
+
+Para uma oportunidade simples sem outras retenções: `V=R$200; beneficio=V×1%=R$2; taxa_plataforma=T; repasse_liquido=R$198−T`. O valor de `T` e sua base não estão aprovados. O custo do benefício não pode aparecer também como taxa ou ser cobrado duas vezes do ofertante.
+
+No FIN-EVENTO, o custo dos pontos pré-pagos e eventual tarifa de serviço devem aparecer separadamente: `pagamento_do_ofertante = lastro_dos_pontos + tarifa_explicita + demais_itens_legalmente_previstos`, segundo modelo contratual ainda não definido.
+
+### 29.6 Estornos, reservas remanescentes e fluxo de caixa
+
+| Ocorrência | Tratamento econômico candidato | Risco a resolver |
+|---|---|---|
+| Estorno integral de compra antes do crédito | Desfazer valor de incentivo pendente e acertar repasse | Chargeback, tarifas não reversíveis |
+| Refund parcial após crédito | Recalcular benefício proporcional e ajustar saldo de modo auditável | Pontos já utilizados |
+| Inscrição cancelada antes do direito ao bônus | Liberar reserva conforme regulamento publicado | Redistribuição não automática |
+| Premiação de pódio pendente | Manter reserva até resultado confirmado ou encerramento contratual | Empates, recursos e fraude |
+| Campanha encerrada com saldo não prometido | Liberar reserva para saldo livre do ofertante se regra permitir | Reembolso, expiração, destinação de caixa |
+| Saldo pré-pago não utilizado | Conservar obrigação e status conforme prazo contratual | Custódia, insolvência, tributos e rescisão |
+| Checkout Mall expirado | Reverter bloqueio de pontos não liquidados | Concorrência e consistência de pedido |
+| Cancelamento Travel | Aplicar contrato do fornecedor e regra específica de restituição | Multas, variação tarifária e prazo de liquidação |
+
+**Invariante:** reclassificar reserva em saldo livre não equivale automaticamente a **reembolsar dinheiro** ao ofertante. As devoluções em caixa dependem das condições contratuais e análise jurídica/contábil.
+
+### 29.7 Reconciliações mínimas para operação futura
+
+1. **Por compra e ofertante:** pagamento confirmado = repasse-base + incentivo retido, antes de taxa Guivos e demais ajustes identificados.
+2. **Por orçamento de campanha:** pontos pré-pagos adquiridos + ajustes = pontos livres + reservados + distribuídos + outras baixas rastreáveis, sem contabilizar novamente pontos distribuídos como propriedade do ofertante.
+3. **Por Pessoa:** saldo inicial + concessões - resgates ± estornos e ajustes = saldo final verificável.
+4. **Por parceiro Mall/Travel:** pontos confirmados utilizados × regra de cobertura/cotação = obrigação liquidável ± descontos, taxas e estornos contratuais, com documentação do beneficiário do repasse.
+5. **Por fonte de lastro:** origem da cobertura de pontos de compra ou evento identificada sem criar dois saldos incompatíveis para a Pessoa.
+6. **Por estado financeiro:** não reconhecer como entrada de caixa a mera reserva nem contabilizar duas vezes a liquidação de um mesmo pagamento.
+
+### 29.8 Riscos e gates ainda sem fechamento
+
+- **PAR-02:** valor efetivo de utilização no Mall/Travel e proteção de direitos.
+- **FUND-01:** preço e natureza do saldo de pontos pré-pago, cobertura, custódia e ressarcimento.
+- **LIQ-01/LIQ-02:** obrigações e repasses a vendedores/fornecedores, com regras próprias de cancelamento e confirmação.
+- **ROUND:** precisão monetária e política oficial de arredondamento.
+- **LEGAL/FIN:** natureza jurídica dos pontos e saldos, retenção para terceiros, meios de pagamento, tributação, normas de consumo, tratamento contábil, insolvência e proteção de dados.
+- **OPERAÇÃO:** relatórios de reconciliação, tolerância a divergências, idempotência e evidência auditável de pagamentos.
+
+**Próxima etapa candidata:** matriz de reconciliação de passivos e recursos por estado, com testes de insuficiência de cobertura, estorno após resgate e múltiplos ofertantes/fornecedores. Sem promoção de maturidade institucional ou autorização de engenharia.
+
+```text
+VERSION → v2.0.0 CANDIDATE
+FIN-COMPRA → POINT COST DEDUCTED FROM ISSUER PAYOUT
+FIN-EVENTO → ORGANIZER PREPAID POINTS
+EQ-1 → HYPOTHETICAL SETTLEMENT ONLY, NOT OFFICIAL
+CASH / ISSUER BALANCES / PERSON POINTS / PARTNER SETTLEMENT → SEPARATED
+PAR/FUND/LIQ → 0/5 FORMAL RATIFICATIONS
 PR #655 → OPEN / DRAFT
 MAIN / MENU / HOME MASTERS / REGISTRIES / REPLIT → UNCHANGED
 ```
