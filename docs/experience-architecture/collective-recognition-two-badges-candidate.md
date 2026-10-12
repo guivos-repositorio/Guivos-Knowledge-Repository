@@ -2,7 +2,7 @@
 id: GKR-COLLECTIVE-RECOGNITION-001
 title: Coletivos — Verificado e Contribuição Reconhecida
 status: proposed
-version: 3.3.0
+version: 3.4.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -2028,5 +2028,57 @@ DEC-01 INTEGRATED DECISION REGISTER → PREPARED
 DEC-01.A..E HUMAN NORMATIVE RATIFICATIONS → 0/5 CONFIRMED
 PR #654 → OPEN / DRAFT
 GKR MENU LINK → REQUESTED / NOT PUBLISHED
+BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
+```
+
+
+## DEC-02 — Instrumento de deliberação sobre Contribuição Reconhecida (v3.4 candidato)
+
+**Estado:** PREPARADO PARA EXAMES INDIVIDUAIS, SEM APROVAÇÃO NORMATIVA. Derivado de CBR-02/03/04, ADJ-03 e ADJ-07/P0-02. Não estabelece percentuais oficiais, cria KPI canônico ou autoriza selo.
+
+### Objetivo e pressuposto
+
+`Contribuição Reconhecida` exige `Verificado` vigente e evidências contextualizadas de benefício, aprendizado ou avanço **percebido** por Pessoas em experiências efetivamente vividas e atribuíveis materialmente ao Coletivo. Não equivale a nota universal de reputação, demonstração causal de evolução, simples satisfação, participação ou publicidade.
+
+### Cinco decisões humanas individualizáveis
+
+| Item | Questão para deliberação | Direção candidata | Estado |
+|---|---|---|---|
+| DEC-02.A — Mérito substantivo | Quais percepções representam contribuição compatível com a finalidade? | Uma ou mais dimensões relevantes de benefício/aprendizado/avanço percebido, com exame de avaliações contrárias | A EXAMINAR |
+| DEC-02.B — Instrumento e elegibilidade | Como obter relatos legítimos sem coerção? | Experiência comprovada, Pessoa elegível, perguntas contextualizadas, resposta voluntária, não aplicável e não resposta separados | A EXAMINAR |
+| DEC-02.C — Robustez e amostragem | Qual volume, diversidade, cobertura e incerteza são suficientes? | Critérios híbridos e proporcionais; números de ensaio não normativos; controlar dependência e seleção | A EXAMINAR |
+| DEC-02.D — Atribuição e tempo | Qual Coletivo pode receber reconhecimento em qual recorte? | Papel material verificável, coexecução delimitada, edição/período explícitos e revisão por mudança de finalidade | A EXAMINAR |
+| DEC-02.E — Regra de concessão | Como aplicar gates, discrepâncias, privacidade e revisão? | Gates não compensatórios, decisão competente motivada, vigência e recurso, sem concessão por algoritmo | A EXAMINAR |
+
+### Critérios de medição em discussão, NÃO APROVADOS
+
+A dimensão contextual `d` pode ser descrita por `F_d/(F_d+P_d+D_d)`, com respostas favoráveis `F_d`, parciais `P_d` e desfavoráveis `D_d`, quando houver denominador válido. `Não se aplica`, `não sei` e ausência de resposta devem permanecer separados. Distinguir Pessoas distintas, experiências, convites, respostas e períodos.
+
+Os exemplos numéricos anteriores (`20 Pessoas`, `70% de cobertura`, `8 Pessoas`, `10 Pessoas`, `2 experiências`) são **hipóteses sintéticas para comparação**, nunca exigências de concessão. Uma amostra de 3/3 favoráveis ou 90% entre respondentes não implica aprovação; avaliar cobertura, viés de seleção, repetição, integridade e incerteza. Wilson isolado não corrige amostra voluntária enviesada.
+
+### Condições de justiça e proteção
+
+- Coletivos pequenos, novos, episódicos ou sensíveis não devem ser excluídos automaticamente por porte, duração ou impossibilidade legítima de expor participantes.
+- A percepção positiva em dimensão pertinente não exige positividade artificial em todas as dimensões, mas sinais negativos relevantes não podem ser descartados.
+- Divulgação, patrocínio e cessão de local não transferem automaticamente mérito de execução de terceiro.
+- Ninguém compra o selo, manipula coleta ou suprime crítica legítima para obter reconhecimento.
+- Dados privados da Pessoa, identidade de respondentes e participação sensível não são publicados por efeito da agregação ou selo.
+- O selo é decisão institucional distinta dos dados de avaliação contextual R1 e publicação P1; apresentação em PER-103/cards ainda requer extensão normativa expressa.
+
+### Dependências para deliberação conclusiva
+
+DEC-01 define prova elegível; DEC-02 deve estabelecer instrumento, suficiência substantiva e estatística, recortes e critério de decisão. DEC-03 designará alçadas; DEC-04 autorizará publicação; DEC-05 validará segurança e integridade operacional. Sem esses componentes não existe concessão operacional segura.
+
+### Registro a preencher
+
+Cada DEC-02.A..E deverá receber `APROVAR`, `APROVAR_COM_AJUSTES`, `DEVOLVER_PARA_REVISAO` ou `REJEITAR`, com fundamento, competência, data, escopo e versão. A aprovação do plano de exames não implica aprovação das hipóteses quantitativas.
+
+```text
+DEC-02 DELIBERATION INSTRUMENT → PREPARED
+DEC-02.A..E INDIVIDUAL EXAM → NOT STARTED
+DEC-02 NORMATIVE RATIFICATION → 0/5 CONFIRMED
+DEC-01 NORMATIVE RATIFICATION → 0/5 CONFIRMED
+GKR MENU ACCESS → REQUESTED / NOT PUBLISHED
+PR #654 → OPEN / DRAFT
 BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
 ```
