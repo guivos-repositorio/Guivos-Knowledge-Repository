@@ -5534,3 +5534,89 @@ GKR MENU → UNCHANGED
 BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
 NEXT → G0/B-01 FORMAL AUTHORITY RESOLUTION INSTRUMENT
 ```
+
+## Etapa 292 — G0/B-01: Instrumento de formalização da titularidade e delegação institucional (v4.44 candidato)
+
+**Estado:** INSTRUMENTO DE RESOLUÇÃO PREPARADO / ALTERNATIVAS NÃO ADJUDICADAS / BLOQUEIO G0/B-01 ABERTO. Não nomeia órgãos ou pessoas, não altera poderes societários, não aprova política dos selos e não autoriza implantação.
+
+### Objetivo decisório
+
+Estabelecer como a Guivos comprovará a competência institucional legítima para aprovar a política de `Verificado` e `Contribuição Reconhecida`, delegar funções distintas e registrar adjudicações das 36 decisões sem confundir autoridade fundadora pública, gestão do GKR, decisão de mérito, recurso, publicação e engenharia.
+
+### Alternativas de regularização a submeter à autoridade competente
+
+| Caminho | Hipótese | Documento ou comprovação exigida | Limite |
+|---|---|---|---|
+| G0-A — Reconhecimento de competência pré-existente | Instrumento societário/institucional já válido atribui poder à instância identificada | Ato vigente, escopo, signatários, jurisdição e cadeia de delegação verificáveis | Não inferir titular a partir do papel público do fundador |
+| G0-B — Ato institucional específico de instituição da política | Competência legítima existente aprova ato destinado ao reconhecimento de Coletivos | Deliberação formal com titular da política, mandato e poderes delegáveis | Não instituir órgão por minuta ou aprovação do assistente |
+| G0-C — Política aprovada por instância colegiada competente | Estrutura institucional legítima prevê deliberação colegiada | Regras de composição, quórum, impedimentos, atas e atribuições | Não presumir colegiado constituído |
+| G0-D — Devolução para saneamento de competência | Não se comprova quem pode conferir ou exercer a autoridade | Lista de lacunas, fontes externas necessárias e rito de regularização | Manter gates bloqueados até documentação suficiente |
+
+Alternativas podem ser combinadas apenas se houver fundamento para a cadeia de poderes. A referência vigente `GKR-BRAND-PUBLIC-AUTHORITY-001` registra a autoridade pública do fundador, **não** uma atribuição específica de titularidade da política dos selos.
+
+### Matriz de atribuições a definir, sem ocupantes presumidos
+
+| Competência | Titular/instância | Delegável? | Restrição candidata |
+|---|---|---|---|
+| Aprovar e alterar a política dos selos | A identificar em ato válido | A definir por fonte legítima | Exige fundamento, versão e competência normativa |
+| Instruir provas e emitir parecer técnico | A habilitar | Candidata à delegação | Não decide mérito |
+| Conceder/negar cada selo | A investir formalmente | Somente conforme política e mandato | Decisão humana fundamentada por selo |
+| Conhecer recurso e revisar decisão | Instância independente a constituir/habilitar | Conforme mandato | Não revisar ato próprio |
+| Auditar e supervisionar | A designar | Conforme política | Não usurpar decisão nem expor R1 |
+| Autorizar publicação de reconhecimento | Autoridade editorial a identificar | Conforme política | Separada de concessão |
+| Publicar documentação no GKR/MENU | Autoridade editorial-documental vigente | Conforme regras do GKR | Não converter DRAFT em norma |
+| Implementar e operar | Engenharia, quando autorizada | Execução técnica limitada | Não criar autoridade por RBAC |
+
+### Checklist de validade formal
+
+1. **Fundamento:** identificar o ato e a fonte jurídica/institucional vigente, seu alcance e se há conflitos com mandatos superiores.
+2. **Identificação:** denominação da instância competente e capacidade do signatário, sem inferência por propriedade, cargo, autoria ou acesso a GitHub.
+3. **Objeto:** política de reconhecimento de Coletivos e distinção explícita entre os dois selos.
+4. **Escopo:** território, participantes, vigência, limites, versão e possibilidade de revisão.
+5. **Segregação:** política, instrução, mérito, recurso, auditoria, editorial e engenharia.
+6. **Impedimentos:** relações econômicas, representação do próprio Coletivo, participação no ato revisado e tratamento de vacância.
+7. **Delegações:** documento expresso, competência concedida, início/fim, condição de substituição, supervisão e revogação.
+8. **Motivação e registro:** decisões rastreáveis por gate, autoridade, data, evidências, alternativa escolhida, condições e resultado.
+9. **Compatibilidade:** política de dados R1, direitos dos participantes, requisitos legais aplicáveis e fontes canônicas já vigentes.
+10. **Publicação e eficácia:** ato institucional e publicação documental, quando exigidos, são distintos de implementação e exibição de selos.
+
+### Minuta de registro deliberativo — G0/B-01 (campos não preenchidos)
+
+```text
+GATE: G0/B-01
+OBJETO: Titularidade e possibilidade de delegação da política de reconhecimento
+REFERÊNCIAS: documentação de governança vigente + ato de competência
+INSTÂNCIA LEGITIMADA: [A COMPROVAR]
+FUNDAMENTO E VERSÃO: [A COMPROVAR]
+ALTERNATIVA: [G0-A / G0-B / G0-C / G0-D]
+TITULAR DA POLÍTICA: [A DELIBERAR]
+COMPETÊNCIAS DELEGÁVEIS / NÃO DELEGÁVEIS: [A DELIBERAR]
+IMPEDIMENTOS E INDEPENDÊNCIA: [A DELIBERAR]
+RESULTADO: [APROVAR / APROVAR_COM_AJUSTES / DEVOLVER_PARA_REVISAO / REJEITAR]
+MOTIVAÇÃO, CONDIÇÕES, DATA, SIGNATÁRIO E VALIDADE: [PENDENTES]
+SITUAÇÃO ATUAL: NÃO ADJUDICADO
+EFEITO ATUAL: SEM INVESTIDURA, DELEGAÇÃO OU DESBLOQUEIO
+```
+
+### Fronteira decisória
+
+A autorização para prosseguir a análise documental não é voto institucional de G0. Esta minuta não constitui aconselhamento jurídico substitutivo nem ato societário. Se a competência derivar de instrumentos legais, estatutários ou societários externos, seus requisitos devem ser verificados pela instância competente.
+
+### Próxima etapa
+
+**Etapa 293 — Reconciliação de evidências e prontidão de deliberação de G0/B-01:** preparar registro objetivo de fontes, lacunas e decisões possíveis; estabelecer o menor conjunto verificável para encaminhamento humano, sem ratificar as 36 decisões em bloco. MENU segue como frente documental separada.
+
+```text
+ETAPA 292 G0/B-01 FORMAL AUTHORITY RESOLUTION INSTRUMENT → PREPARED
+G0/B-01 INSTITUTIONAL ADJUDICATION → PENDING
+G0/B-01 BLOCKER → OPEN
+DEC-01..05 EXAMS → 25/25; HUMAN RATIFICATIONS → 0/25
+RSP-05 EXAMS → 6/6; HUMAN ADJUDICATIONS → 0/6
+RSP-06 EXAMS → 5/5; HUMAN ADJUDICATIONS → 0/5
+COMBINED EXAMS → 36/36; CONFIRMED ADJUDICATIONS → 0/36
+TESTS / HOMOLOGATION → NOT EXECUTED / NOT AUTHORIZED
+PR #654 → OPEN / DRAFT
+GKR MENU → UNCHANGED
+BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
+NEXT → G0/B-01 EVIDENCE RECONCILIATION AND DELIBERATION READINESS
+```
