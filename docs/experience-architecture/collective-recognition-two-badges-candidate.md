@@ -2,7 +2,7 @@
 id: GKR-COLLECTIVE-RECOGNITION-001
 title: Coletivos — Verificado e Contribuição Reconhecida
 status: proposed
-version: 4.1.0
+version: 4.2.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -2545,5 +2545,68 @@ DEC-03.A..E NORMATIVE RATIFICATIONS → 0/5 CONFIRMED
 DEC-01 AND DEC-02 NORMATIVE RATIFICATION → PENDING
 GKR MENU LINK → REQUESTED / NOT PUBLISHED
 PR #654 → OPEN / DRAFT
+BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
+```
+
+
+## DEC-03.A — Exame individual: titularidade institucional e alçadas dos reconhecimentos (v4.2 candidato)
+
+**Resultado:** CONVERGÊNCIA ANALÍTICA CONDICIONAL. Exame documental, sem designação de órgão, cargo, responsável efetivo ou ratificação normativa.
+
+### Questão central
+
+Qual autoridade institucional deverá ser titular das políticas e decisões relativas a `Verificado` e `Contribuição Reconhecida`, e como poderá delegar análises e decisões sem confundir papéis, interesses comerciais ou atribuições privadas das Pessoas?
+
+### Matriz candidata de competências
+
+| Função | Competência proposta | Limites |
+|---|---|---|
+| Titular institucional da política | Governar critérios, versões, riscos, supervisão e delegações formais | Não substituir evidências individuais nem alterar silenciosamente decisões |
+| Autoridade de Verificado | Decidir sobre existência, representação, atuação e integridade | Não certificar impacto, segurança absoluta ou satisfação |
+| Autoridade de Contribuição Reconhecida | Deliberar sobre mérito, elegibilidade, atribuição e robustez | Exigir Verificado vigente; não inferir evolução causal |
+| Analistas de evidência | Instruir processos, conferir provas e recomendar encaminhamento | Não emitir selo apenas por parecer ou cálculo |
+| Núcleo de integridade | Apurar inconsistências, conflitos e riscos, recomendar salvaguardas | Detecção automatizada ou denúncia não constituem condenação |
+| Autoridade de publicação | Autorizar projeção em superfície expressamente permitida | Não conceder selo por índice ou por interesse comercial |
+| Autoridade recursal independente | Rever decisões impugnadas dentro de mandato específico | Decisor único do caso não julga o próprio recurso conclusivo |
+| Auditoria e supervisão | Examinar equidade, rastreabilidade, consistência e conformidade | Auditoria não altera decisões sem rito previsto |
+
+Todas as denominações são **papéis lógicos**, não unidades organizacionais existentes.
+
+### Regras candidatas de delegação
+
+1. A instituição titular mantém a responsabilidade pela política, mesmo quando delega a execução; cada mandato explicita objeto, âmbito territorial, limites, prazo, impedimentos, substituição e revogação.
+2. `Verificado` e `Contribuição Reconhecida` exigem competência decisória especificada por tipo, sem transferência implícita entre os selos.
+3. Instrução técnica, cálculo estatístico, moderação, publicação e concessão não se confundem; privilégios de acesso são proporcionais à função.
+4. Representantes de Coletivos, patrocinadores, parceiros comerciais e anunciantes não decidem o reconhecimento de interesse próprio.
+5. A decisão material é humana, fundamentada, versionada e auditável; IA pode auxiliar triagem, não substituir autoridade final.
+6. Situações sensíveis, de risco elevado, de conflito ou de contestação requerem escalonamento proporcional e revisão independente.
+7. O titular da política deve prever continuidade operacional sem depender permanentemente do fundador, com supervisão, habilitação e substituição documentadas.
+8. A definição da autoridade responsável por **publicar** um selo e sua extensão em `PER-103` e cards permanece sujeita a DEC-04; competência para conceder não significa direito de publicar.
+
+### Cenários de conflito e autoridade
+
+| Caso | Encaminhamento candidato |
+|---|---|
+| Analista conclui que há provas suficientes | Encaminhar para decisão, sem emissão automática |
+| Responsável por vendas solicita selo para cliente pagante | Não interferir no processo decisório |
+| Coletivo tem parceria com pessoa que integra a alçada | Declarar impedimento e redistribuir/revisar |
+| Grupo disputa legitimidade da liderança | Autoridade de Verificado examina vínculo; preservar prova independente de existência |
+| Contribuição positiva sem Verificado vigente | Não conceder o segundo reconhecimento |
+| Selo aprovado sem extensão de PER-103 | Não mostrar no perfil público |
+| Recurso contesta indeferimento | Revisor independente e competente |
+| Titular de função se desliga | Substituição por mandato formal, sem perda de trilha |
+
+### Lacunas para adjudicação
+
+Designar órgão titular efetivo; formalizar alçadas de aprovação, suspensão e revogação dos dois selos; matriz de impedimentos, número mínimo de revisores e contingência em equipes pequenas; habilitação e treinamento; jurisdição e proteção de dados; mandato da publicação; responsabilização por recurso e auditoria; SLAs e prazos. Nenhuma dessas competências é instituída por este exame.
+
+```text
+DEC-03.A INDIVIDUAL EXAM → COMPLETE
+DEC-03.A ANALYTICAL DIRECTION → CONDITIONAL CONVERGENCE
+DEC-03.A HUMAN NORMATIVE ADJUDICATION → PENDING
+DEC-03.B → NEXT
+DEC-03 INDIVIDUAL EXAMS → 1/5 DOCUMENTED
+PR #654 → OPEN / DRAFT
+GKR MENU ACCESS → REQUESTED / NOT PUBLISHED
 BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
 ```
