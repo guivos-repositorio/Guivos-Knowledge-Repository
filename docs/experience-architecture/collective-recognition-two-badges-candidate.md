@@ -4823,3 +4823,59 @@ GKR MENU → UNCHANGED
 BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
 NEXT → RSP-05 INTEGRATED HUMAN DELIBERATION REGISTER
 ```
+
+## Etapa 282 — RSP-05: Registro integrado de deliberação institucional (v4.34 candidato)
+
+**Estado:** CONSOLIDAÇÃO DOCUMENTAL CONCLUÍDA / 6/6 EXAMES / 0/6 ADJUDICAÇÕES HUMANAS CONFIRMADAS. Este registro reúne as decisões RSP-05.A..F para apreciação futura e não constitui instituição de órgão, delegação efetiva, decisão sobre selo ou autorização editorial.
+
+### Matriz integrada
+
+| Código | Responsabilidade | Exame | Adjudicação |
+|---|---|---|---|
+| RSP-05.A | Titularidade da política, habilitação e delegação | Concluído | Pendente |
+| RSP-05.B | Instrução, proveniência e parecer técnico das evidências | Concluído | Pendente |
+| RSP-05.C | Decisão humana específica sobre cada selo | Concluído | Pendente |
+| RSP-05.D | Contestação e recurso por instância independente | Concluído | Pendente |
+| RSP-05.E | Supervisão, auditoria proporcional e impedimentos | Concluído | Pendente |
+| RSP-05.F | Autorização editorial separada e projeção pública | Concluído | Pendente |
+
+### Contrato transversal de segregação candidato
+
+1. A titularidade da política estabelece competências, habilitações e limites, mas não substitui instrução individual e decisão motivada.
+2. A instrução produz provas, diligências e parecer técnico, não concessão automática.
+3. A concessão dos dois selos pressupõe decisões humanas **distintas**, com critérios, âmbito, validade e motivação próprios.
+4. Recursos são analisados por instância independente da decisão contestada e sem divulgação de avaliações R1, denunciantes ou participação sensível.
+5. Auditoria supervisiona integridade do procedimento e corrige achados, sem substituir a autoridade de mérito ou a instância recursal.
+6. Autorização editorial determina **se, onde e em que extensão** um selo vigente pode ser apresentado; não concede selo e não é presumida pela decisão de mérito.
+7. Patrocínio, vendas, popularidade, porte, CNPJ e IA não fornecem autoridade nem alteram critérios de concessão.
+8. Suspensão, expiração, revogação e recursos exigem tratamento de estado específico, trilha, proteção das Pessoas e retirada pública governada, a ser examinado em RSP-06.
+
+### Registro de deliberação humana futura
+
+Cada decisão RSP-05.A..F exige: autoridade formalmente legitimada; versão e objeto exato; declaração de impedimentos; fundamento e evidências; resultado `APROVAR`, `APROVAR_COM_AJUSTES`, `DEVOLVER_PARA_REVISAO` ou `REJEITAR`; condições, prazos e responsáveis; data; escopo territorial; recurso; interfaces afetadas; rastreabilidade. Nenhum resultado foi presumido a partir da aprovação de continuidade documental.
+
+### Dependências não compensatórias
+
+- DEC-01/02: comprovação e contribuição contextual continuam sem ratificação.
+- DEC-03: competências, segregação e recursos continuam sem instituição normativa.
+- DEC-04: semântica, publicação e retirada continuam candidatas.
+- DEC-05: segurança, privacidade e homologação permanecem sem comprovação operacional.
+- Registries `GKR-SURF-*` e `GKR-TRN-*`: sem novos identificadores ou promoções de maturidade.
+- `PER-103` e demais Masters: sem extensão normativa aprovada.
+- `mkdocs.yml`: menu inalterado; a descobribilidade do documento deverá ser resolvida por autoridade editorial sem promover DRAFT a fonte vigente.
+
+### Próxima frente — RSP-06
+
+Preparar exame individual do ciclo de vida institucional de cada selo, separando estado de mérito, recurso, autorização editorial, vigência e estado de projeção pública. O vocabulário apresentado na Etapa 275 foi ilustrativo, não constitui `enum` ou máquina de estados ratificada. A análise deverá contemplar transições e condições impeditivas, independência entre mérito e publicação, sincronização, renovação e efeitos da perda de vigência de `Verificado` sobre `Contribuição Reconhecida`.
+
+```text
+ETAPA 282 RSP-05 INTEGRATED REGISTER → DOCUMENTED
+RSP-05 INDIVIDUAL EXAMS → 6/6 DOCUMENTED
+RSP-05 HUMAN ADJUDICATIONS → 0/6 CONFIRMED
+DEC-01..05 EXAMS → 25/25 DOCUMENTED
+DEC-01..05 NORMATIVE RATIFICATIONS → 0/25 CONFIRMED
+RSP-06 → NEXT / NOT STARTED
+PR #654 → OPEN / DRAFT
+GKR MENU → UNCHANGED
+BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
+```
