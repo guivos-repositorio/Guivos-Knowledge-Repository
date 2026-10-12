@@ -5693,3 +5693,75 @@ GKR MENU → UNCHANGED
 BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
 NEXT → MINIMUM G0 INSTITUTIONAL ACT DRAFT
 ```
+
+## Etapa 294 — G0/B-01: Minuta de ato institucional e matriz de delegação (v4.46 candidato)
+
+**Estado:** MINUTA DOCUMENTAL PREPARADA / SEM VALIDADE CONSTITUTIVA / G0-B/01 NÃO ADJUDICADO. Este texto não é ato societário, não institui órgão, não designa titular, não transfere competência, não concede selo e não autoriza sua publicação.
+
+### Objeto e pressuposto de legitimidade
+
+Propor um instrumento mínimo para que **autoridade institucional previamente comprovada** possa decidir se institui, aprova e governa a política dos selos `Verificado` e `Contribuição Reconhecida`. A origem e extensão de seus poderes **não** decorrem automaticamente da autoridade pública do fundador, autoria de documento ou permissão de repositório.
+
+### Minuta candidata — cláusulas estruturais (campos em aberto)
+
+**Cláusula 1 — Identificação da autoridade legitimadora.** Instância `[IDENTIFICAR]`, ato de investidura `[FONTE VIGENTE]`, competência `[DELIMITAR]`, representante e poderes `[COMPROVAR]`, data `[PREENCHER]`, eventual jurisdição `[VALIDAR]`.
+
+**Cláusula 2 — Objeto e escopo.** Disciplina institucional da política de reconhecimento de Coletivos mediante dois selos distintos, seus fins, beneficiários, exclusões, alcance territorial, início de eficácia e prazo de revisão `[DELIBERAR]`. Reconhecimento não representa garantia geral de segurança ou resultados.
+
+**Cláusula 3 — Titularidade normativa.** A instância `[IDENTIFICAR APÓS ATO VÁLIDO]` será responsável pelas versões e revisões da política apenas se receber competência expressa. Competência indelegável, se houver, será identificada por fonte superior e neste ato `[DELIBERAR]`.
+
+**Cláusula 4 — Delegações funcionais.** Instrução de evidências, decisões sobre cada selo, recursos, supervisão e publicação editorial poderão ser atribuídos a instâncias habilitadas `[IDENTIFICAR]`, conforme alcance, duração, independência, substituição e revogação `[DELIBERAR]`. A decisão normativa não equivale a permissão técnica.
+
+**Cláusula 5 — Segregação e impedimentos.** O decisor não poderá revisar o próprio ato; relações comerciais, representação do Coletivo, interesses pessoais, acesso a dados e participação na instrução serão tratados por regras proporcionais `[RATIFICAR]`.
+
+**Cláusula 6 — Direitos, proteção e recursos.** Contraditório, contestação, revisão humana, minimização de informações R1, proteção de grupos sensíveis e proporcionalidade para Coletivos informais dependerão de atos normativos e salvaguardas aplicáveis `[RATIFICAR]`.
+
+**Cláusula 7 — Controle de publicabilidade.** Concessão, recurso, auditoria, autorização editorial e projeção pública são atos separados. Não se exibirá selo sem mérito válido e autorização editorial. A dependência DEP-A/B/C será escolhida somente por decisão normativa expressa `[PENDENTE]`.
+
+**Cláusula 8 — Registro e governança.** Cada ato deverá identificar autoridade, objeto, critérios, fundamento, versão, data, evidências, escopo, resultados, impedimentos e revisão; requisitos de retenção e acesso serão definidos `[DELIBERAR]`.
+
+**Cláusula 9 — Eficácia condicionada.** A assinatura do eventual ato G0 somente estabelecerá a competência nele legitimamente compreendida. **Não** ratificará automaticamente os 36 gates, não constituirá homologação, não liberará engenharia ou Replit e não publicará selos ou documentos candidatos no MENU.
+
+**Cláusula 10 — Aprovação.** Resultado `[APROVAR / APROVAR_COM_AJUSTES / DEVOLVER_PARA_REVISAO / REJEITAR]`, fundamento `[REGISTRAR]`, instância competente `[COMPROVAR]`, signatário `[IDENTIFICAR]`, data `[PREENCHER]`, condições `[DELIBERAR]`. **Todos os campos permanecem abertos.**
+
+### Matriz de competências — proposta, não investidura
+
+| Responsabilidade | Natureza | Reserva e condição candidata |
+|---|---|---|
+| Validar legitimidade e aprovar política-base | Normativa institucional | Exige mandato preexistente comprovado; indelegabilidade a aferir |
+| Alterar critérios e versões | Normativa | Necessita competência e rito de revisão expressos |
+| Receber e instruir dossiês | Técnica instrutória | Delegação habilitada, sigilo e impedimentos; sem concessão |
+| Conceder ou negar `Verificado` | Decisão individual | Autoridade humana específica, motivação e prazo |
+| Conceder ou negar `Contribuição Reconhecida` | Decisão individual distinta | Evidências de contribuição independentes e proteção R1 |
+| Apreciar recursos | Revisão institucional | Instância separada e independente da decisão original |
+| Supervisionar e auditar | Controle institucional | Não reescrever mérito nem substituir recurso |
+| Autorizar apresentação dos selos | Editorial de produto | Ato separado, dependente de mérito e política ratificada |
+| Publicar normas e navegar no GKR | Editorial documental | Seguir governança do repositório e regra de MENU |
+| Executar operações técnicas | Engenharia | Apenas após requisitos, testes e autorização expressos |
+
+### Validação e integridade antes de assinatura
+
+- Verificar competência originária e poderes reais de quem assina, inclusive formalidades societárias/estatutárias aplicáveis.
+- Anexar instrumentos comprobatórios e resolver divergências com fontes institucionais superiores.
+- Estabelecer escopo temporal, territorial, titulares, substitutos, impedimentos e alçadas específicas.
+- Distinguir deliberação G0 do rito de adjudicação individual dos 36 gates.
+- Registrar versão, aprovação humana válida e publicação normativa apenas conforme procedimento próprio.
+- Se os requisitos não forem demonstrados, aplicar encaminhamento `G0-D` e manter o bloqueio.
+
+### Continuidade
+
+**Etapa 295 — Verificação de completude e conflitos da minuta G0**, incluindo separação entre competências normativas, mérito, recurso, editorial e engenharia e decisão de encaminhamento institucional. Nenhum nome de titular ou decisão é presumido.
+
+```text
+ETAPA 294 G0 MINIMUM INSTITUTIONAL ACT DRAFT → DOCUMENTED
+G0/B-01 HUMAN ADJUDICATION → PENDING
+G0/B-01 AUTHORITY EVIDENCE → INSUFFICIENT IN EXAMINED SOURCES
+DEC-01..05 EXAMS → 25/25; HUMAN RATIFICATIONS → 0/25
+RSP-05 EXAMS → 6/6; HUMAN ADJUDICATIONS → 0/6
+RSP-06 EXAMS → 5/5; HUMAN ADJUDICATIONS → 0/5
+COMBINED EXAMS → 36/36; CONFIRMED ADJUDICATIONS → 0/36
+PR #654 → OPEN / DRAFT
+GKR MENU → UNCHANGED
+TESTS / HOMOLOGATION / BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
+NEXT → G0 ACT COMPLETENESS AND CONFLICTS REVIEW
+```
