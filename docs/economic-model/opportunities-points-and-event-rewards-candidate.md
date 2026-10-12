@@ -2,7 +2,7 @@
 id: GEM-OPPORTUNITIES-POINTS-REWARDS-CANDIDATE-001
 title: Oportunidades — Retorno em Pontos e Premiações de Eventos — Proposta Transversal
 status: draft
-version: 0.7.0
+version: 0.8.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -459,4 +459,89 @@ BADGES → PRODUCT DIRECTION APPROVED / DESIGN CONTEXTUAL
 POINTS → OPTIONAL SUPPORTING DETAIL, NOT HOME EMPHASIS
 HOME MASTERS / MENU / REGISTRIES / MAIN → UNCHANGED
 PR #655 → OPEN / DRAFT
+```
+
+## 17. Alternativas econômicas para paridade, custeio e liquidação Mall/Travel (v0.8.0 candidato)
+
+**Resultado:** comparação analítica de arquitetura econômica; nenhuma taxa, preço do ponto, entidade custodiante ou meio de pagamento está aprovado. O custeio dos incentivos é **100% do ofertante** (Organização ou Coletivo), independentemente da modalidade.
+
+### 17.1 Definições separadas
+
+- `B`: valor econômico do benefício prometido, em reais, derivado de percentual sobre pagamento efetivamente elegível ou de pontuação fixa com custo unitário.
+- `q_emissao`: pontos emitidos por R$ 1 de benefício econômico; variável **pendente de decisão**.
+- `q_resgate`: valor de abatimento/resgate correspondente a cada ponto; variável **pendente de decisão**, contratual e distinta da taxa de emissão.
+- `P`: pontos prometidos/emitidos; `F`: financiamento efetivo recebido/garantido do ofertante; `L`: obrigação estimada de liquidação/resgate, com reservas e ajustes sujeitos à política.
+- Reserva de orçamento, reserva individual, crédito disponível e resgate são eventos contabilmente distintos; obrigação de incentivo **não é receita automática** da Guivos.
+
+### 17.2 Comparação de modelos de paridade
+
+| Alternativa | Forma | Benefício | Limitação / controle necessário |
+|---|---|---|---|
+| PAR-A — Paridade fixa uniforme | Uma taxa governada e versionada para emissão/resgate | Compreensibilidade e previsibilidade | Exposição a subsídio oculto, inflação e custo dos parceiros |
+| PAR-B — Duas taxas governadas | Emissão e resgate definidos separadamente, com transparência e limites | Permite cobrir custos e preservar sustentabilidade | Exige explicação clara, proteção dos direitos já adquiridos e governança contra depreciação |
+| PAR-C — Conversão por catálogo de recompensas | Pontos necessários por item/viagem variam segundo resgate | Adapta-se a ofertas heterogêneas | Precificação menos intuitiva e volatilidade; custos precisam estar integralmente cobertos |
+
+**Direção analítica:** comparar **PAR-A** como baseline de simplicidade e **PAR-B** como cenário de flexibilidade; PAR-C pode coexistir no catálogo, mas não deve obscurecer o valor que a Pessoa efetivamente recebe. Nenhum modelo é escolhido normativamente.
+
+### 17.3 Comparação de garantia do custo dos pontos
+
+| Alternativa | Mecanismo | Regra para ofertante | Risco |
+|---|---|---|---|
+| FUND-A — Pré-financiamento integral por campanha | Recursos proporcionais ao máximo comprometido recebidos antes de ativar | Reserva efetivamente lastreada | Exige custódia, conciliação e tratamento de saldos |
+| FUND-B — Saldo pré-pago reutilizável do ofertante | Carteira de orçamento empresarial/coletivo, com blocos reservados por campanha | Compromisso nunca supera saldo livre | Precisa isolar saldos e evitar duplo compromisso |
+| FUND-C — Garantia externa/limite contratado | Caução/garantia aprovada equivalente à exposição máxima | Garantia executável suficiente | Crédito, inadimplência, enforcement e maior complexidade jurídica |
+
+**Direção analítica recomendada para MVP futuro:** examinar **FUND-A** ou **FUND-B** porque ambos permitem travas por orçamento e pré-reserva mais simples do que crédito ao ofertante. Trata-se de recomendação para teste de viabilidade, **não escolha normativa ou autorização financeira**. Em todos os casos, o custo econômico do incentivo pertence ao ofertante; a Guivos não é fonte residual de cobertura por padrão.
+
+### 17.4 Liquidação em Mall e Travel
+
+**Modelo de responsabilidade candidato:**
+1. Oportunidade gera direito condicional; apenas crédito comprovado aumenta o saldo de pontos da Pessoa.
+2. Um serviço de ledger central mantém emissão, bloqueio, resgate, reversão e idempotência, com competência econômica e segurança adjudicadas.
+3. No Mall, um pedido elegível pode aceitar pontos até limite definido, registrando cotação, valor coberto, parceiro vendedor, taxas e evidência de entrega/liquidação.
+4. No Travel, reserva ou serviço elegível pode aceitar pontos sob disponibilidade e política de cancelamento própria, com liquidação diferenciada por fornecedor e janela de reserva.
+5. O custo do resgate é atendido pelo lastro economicamente atribuído às campanhas, com conciliação entre emissor, plataforma e recebedor. Não presumir que Mall ou Travel financiam os pontos.
+6. A disponibilidade ou o preço de uma viagem não pode ser inferido do saldo de pontos. A jornada de resgate exige confirmação real do produto/serviço.
+
+### 17.5 Cenários ilustrativos sem paridade oficial
+
+**Oportunidade paga:** R$ 200 pagos × 5% configurados = R$ 10 de benefício financiado pelo ofertante. Os pontos `P = R$ 10 × q_emissao` serão calculáveis apenas após fixação de `q_emissao`.
+
+**Corrida de Coletivo:** 30 inscrições × 100 pontos = 3.000 pontos de teto do incentivo; premiação separada de 1.900 pontos → 4.900 pontos totais de exposição nominal. Custeio em reais dependerá de `q_resgate`, tarifas e demais obrigações.
+
+**Exemplo de teste matemático (não oficial):** se 1 ponto pudesse gerar R$ 0,01 de resgate e não houvesse custo adicional, a exposição nominal de 4.900 pontos equivaleria a R$ 49,00; não se adota essa equivalência.
+
+### 17.6 Invariantes para adjudicação
+
+1. Garantia/recursos suficientes **antes** de prometer pontos; orçamento bloqueado por campanha.
+2. Quem criou a campanha paga integralmente sua obrigação, inclusive ajustes previstos contratualmente, sem cofinanciamento implícito.
+3. A Pessoa vê regra, quantidade esperada, condições, validade e valor de uso aplicável sem comunicação enganosa.
+4. A alocação às primeiras `N` inscrições não restringe outras inscrições da oportunidade.
+5. Direitos adquiridos têm tratamento explícito para alteração de paridade, cancelamento ou encerramento de parceiro.
+6. Nenhum resgate é liquidado duas vezes; reserva de checkout expira e libera saldo conforme política.
+7. Privacidade e reconciliação de ledger, conciliação financeira e razão de auditoria são separados por função e acesso.
+8. Os termos "pontos", "saldo" e "resgate" não presumem classificações regulatórias sem exame jurídico adequado.
+
+### 17.7 Gates de decisão e sequência
+
+| Gate | Decisão requerida | Estado |
+|---|---|---|
+| PAR-01 | Taxa de emissão e unidade única de valor | PENDENTE |
+| PAR-02 | Taxa/precificação de resgate e direitos acumulados | PENDENTE |
+| FUND-01 | FUND-A/B/C, regras de depósito/garantia, auditoria e saldos | PENDENTE |
+| LIQ-01 | Liquidação Mall, elegibilidade de pedidos e parceiros | PENDENTE |
+| LIQ-02 | Liquidação Travel, reservas, cancelamentos e fornecedores | PENDENTE |
+| RISK-01 | Impostos, consumo, privacidade, meios de pagamento e insolvência | PENDENTE |
+| GKR-01 | Conciliação com economia, UX, contratos e IDs oficiais | PENDENTE |
+
+**Próximo trabalho:** matriz de decisão para comparar PAR-A/B e FUND-A/B com casos de estorno, saldos remanescentes e variações de resgate; somente após critérios claros, preparar deliberação institucional e implementação.
+
+```text
+GKR PR #655 → OPEN / DRAFT
+POINTS PARITY → ALTERNATIVES COMPARED / NOT CHOSEN
+ISSUER FINANCING → 100% / PRE-FUNDING OPTIONS COMPARED
+MALL / TRAVEL SETTLEMENT → CONCEPTUAL CONDITIONS DOCUMENTED
+PERSON / O-C HOME MASTERS → UNCHANGED
+GKR MAIN / MENU / REGISTRIES → UNCHANGED
+ENGINEERING / LIVE POINTS → NOT AUTHORIZED
 ```
