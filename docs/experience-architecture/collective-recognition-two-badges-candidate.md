@@ -4948,3 +4948,77 @@ GKR MENU → UNCHANGED
 BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
 NEXT → RSP-06.A
 ```
+
+## Etapa 284 — RSP-06.A: Modelo de estados e dimensões independentes (v4.36 candidato)
+
+**Resultado:** EXAME INDIVIDUAL DOCUMENTADO / CONVERGÊNCIA ANALÍTICA CONDICIONAL / ADJUDICAÇÃO NORMATIVA PENDENTE. Os nomes de estados são semântica candidata, não enums técnicos, IDs `GKR-TRN-*`, decisões efetivas ou autorização de implementação.
+
+### Questão decisória
+
+Como modelar o estado de cada selo sem confundir (i) mérito e vigência institucional, (ii) tramitação recursal, (iii) autorização editorial e (iv) situação da projeção pública, inclusive em condições de erro ou informação desconhecida?
+
+### Quatro eixos ortogonais candidatos
+
+| Eixo | Propriedade | Exemplos ilustrativos | Fonte de autoridade futura |
+|---|---|---|---|
+| ST-M — Mérito institucional | Resultado e vigência de decisão **por selo** | `not_requested`, `under_review`, `granted_valid`, `denied`, `suspended`, `expired`, `revoked` | Ato humano de autoridade RSP-05.C, critérios DEC-01/02/03 |
+| ST-R — Recurso | Processo contestatório separado do mérito | `none`, `filed`, `admissibility_review`, `in_review`, `decided` | Autoridade recursal independente RSP-05.D |
+| ST-E — Editorial | Autorização de representação pública | `not_authorized`, `authorized`, `withdrawn` | Ato editorial próprio RSP-05.F / DEC-04 |
+| ST-P — Projeção | Condição observada nas superfícies | `not_displayed`, `displayed`, `stale`, `unknown`, `reconciling` | Sistema de projeção subordinado à fonte canônica, nunca autoridade decisória |
+
+Os exemplos não são exaustivos. A modelagem poderá exigir subestados ou qualificação temporal próprios, somente após ratificação competente.
+
+### Invariantes de consistência
+
+1. Cada selo possui mérito, escopo e validade próprios; não há concessão automática de um a partir do outro.
+2. Recurso protocolado não altera automaticamente o mérito nem presume efeito suspensivo; medidas cautelares dependem de política e competência ratificadas.
+3. Decisão favorável não é equivalente a publicação: `ST-M=granted_valid` e `ST-E=not_authorized` exigem ausência de selo público.
+4. Uma projeção `displayed` sem mérito vigente, autorização editorial ou proteção aplicável corresponde a divergência, não à criação de autoridade.
+5. `ST-P=unknown` ou erro de consulta não demonstra inexistência, fraude, revogação ou expiração; a apresentação deve falhar de maneira segura sem fabricar estado.
+6. O histórico de mérito de `Contribuição Reconhecida` permanece separado da possibilidade atual de publicá-lo quando `Verificado` não estiver vigente; dependência precisa de norma expressa.
+7. Expiração temporal, revogação motivada e suspensão cautelar não são a mesma categoria de ato e exigem fundamentos e efeitos distinguíveis.
+8. Publicação e retirada devem observar visibilidade/privacidade do Coletivo, inclusive possibilidade de não encontrabilidade.
+9. A falta de selo não constitui juízo público negativo.
+10. Mudança de estado exige versão, origem, competência, evidência e reconciliabilidade futura; nenhum estado técnico é implementado por esta etapa.
+
+### Combinações de fronteira a validar
+
+| ST-M | ST-R | ST-E | ST-P | Interpretação candidata |
+|---|---|---|---|---|
+| `granted_valid` | `none` | `not_authorized` | `not_displayed` | Decisão favorável ainda não publicável |
+| `granted_valid` | `filed` | `authorized` | `displayed` | Efeito do recurso não presumido; sujeito à política cautelar |
+| `suspended` | `in_review` | `withdrawn` | `not_displayed` | Sem afirmação pública de vigência |
+| `expired` | `none` | `authorized` (registro antigo) | `stale` | Divergência a retirar, sem prorrogação por autorização editorial histórica |
+| `revoked` | `decided` | `withdrawn` | `displayed` | Falha crítica de sincronização |
+| `granted_valid` | `none` | `authorized` | `unknown` | Indisponibilidade técnica; não presumir exibição correta |
+| `denied` | `filed` | `not_authorized` | `not_displayed` | Recurso não equivale a concessão |
+
+### Decisões que exigem ratificação
+
+- Vocabulário final, dimensões e semântica dos estados; situações condicionais e temporais.
+- Identidade, escopo, validade e versão canônica por selo.
+- Efeitos de protocolo recursal, cautelares, revisão e reforma sobre a publicidade.
+- Relação normativa entre `Verificado` e `Contribuição Reconhecida`.
+- Condições de retirada, falha segura, retomada e histórico verificável.
+- Correspondência eventual com Surface/Transition Registries e PER-102/PER-103, sem IDs ou maturidades presumidos.
+- Direitos, transparência, privacidade e retenção aplicáveis aos diferentes eixos.
+
+### Próximo exame
+
+RSP-06.B deverá examinar eventos, guardas e competências de cada transição candidata, sem converter a matriz atual em máquina de estados técnica ou institucionalmente aprovada.
+
+```text
+ETAPA 284 RSP-06.A INDIVIDUAL EXAM → DOCUMENTED
+RSP-06.A ANALYTICAL DIRECTION → CONDITIONAL CONVERGENCE
+RSP-06.A HUMAN NORMATIVE ADJUDICATION → PENDING
+RSP-06.A..E EXAMS → 1/5 DOCUMENTED
+RSP-06.A..E HUMAN ADJUDICATIONS → 0/5 CONFIRMED
+RSP-05.A..F EXAMS → 6/6 DOCUMENTED
+RSP-05 HUMAN ADJUDICATIONS → 0/6 CONFIRMED
+DEC-01..05 EXAMS → 25/25 DOCUMENTED
+DEC-01..05 NORMATIVE RATIFICATIONS → 0/25 CONFIRMED
+PR #654 → OPEN / DRAFT
+GKR MENU → UNCHANGED
+BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
+NEXT → RSP-06.B
+```
