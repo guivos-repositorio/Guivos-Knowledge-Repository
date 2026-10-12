@@ -2,7 +2,7 @@
 id: GKR-COLLECTIVE-RECOGNITION-001
 title: Coletivos — Verificado e Contribuição Reconhecida
 status: proposed
-version: 2.3.0
+version: 2.4.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -1467,6 +1467,75 @@ DEC-01.B INDIVIDUAL EXAM → COMPLETE
 DEC-01.B ANALYTICAL DIRECTION → CONDITIONAL CONVERGENCE
 DEC-01.B HUMAN NORMATIVE ADJUDICATION → PENDING
 DEC-01.C → NEXT
+PR #654 → OPEN / DRAFT
+ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
+```
+
+
+## DEC-01.C — Exame individual: atuação real atribuível ao Coletivo (v2.4 candidato)
+
+**Resultado:** CONVERGÊNCIA ANALÍTICA CONDICIONAL; não equivale a adjudicação normativa, execução de testes ou concessão de selo.
+
+### Questão decisória
+
+Quais elementos comprovam que um Coletivo realiza ou realizou atividades, serviços, projetos ou encontros reais e próprios, sem exigir recorrência universal, presença física, CNPJ ou provas pessoais desnecessárias?
+
+### Protocolo candidato de exame
+
+| Claim | Critério de evidência | Limite de afirmação |
+|---|---|---|
+| ACT-01 — Atividade identificável | Tipo de iniciativa, propósito, contexto, período e escopo distinguíveis | Página com intenção de realizar não comprova execução |
+| ACT-02 — Realização | Vestígio idôneo de ação realizada, datada e corroborável conforme risco | Cadastro, convite e agendamento não comprovam realização |
+| ACT-03 — Papel material | Identificar se o Coletivo organizou, executou, coexecutou, apoiou ou apenas divulgou | Apoio financeiro, local ou publicidade não implica autoria integral |
+| ACT-04 — Procedência | Fontes com origem, titularidade, data, integridade e independência examinadas | Fotografias de terceiros e duplicações não sustentam atuação própria |
+| ACT-05 — Proporcionalidade e atualidade | Evidência suficiente para iniciativa pontual, nova, recorrente ou contínua; distinguir histórico de atividade atual | Atuação passada não garante calendário vigente |
+
+### Matriz por modalidade
+
+| Modalidade | Evidências candidatas | Cuidado |
+|---|---|---|
+| Encontros presenciais (pedal, esporte, oração) | Registro idôneo do encontro, organização demonstrável e corroboração contextual | Evitar expor rostos, crenças ou presença individual |
+| Projetos educacionais e culturais | Realização de oficina, aula, atividade artística, entrega ou edição | Divulgação isolada não prova execução |
+| Comunidade digital | Sessão, atividade ou projeto efetivamente realizado, com proveniência legítima | Número de seguidores não mede realidade da atuação |
+| Híbrido | Evidência de etapas online e/ou presenciais conforme a atividade alegada | Não exigir prova física de etapa exclusivamente digital |
+| Pontual ou recém-criado | Uma ação real suficientemente corroborada pode fundamentar análise | Não exigir duas edições nem longevidade universal |
+| Recorrente | Histórico e recorte recente verificados por amostragem proporcional | Não projetar automaticamente histórico para presente |
+| Coexecução | Papéis separados ou explicitamente compartilhados, conforme documentos e evidências | Não atribuir mérito integral indistintamente a todos |
+| Divulgação, patrocínio ou cessão de local | Provar apenas a contribuição material realmente desempenhada | Não caracterizar execução própria sem prova |
+
+### Distinção entre os dois selos
+
+Para `Verificado`, ACT-01..05 sustentam **realidade e atribuição de atuação**, sem demonstrar benefício individual. Para `Contribuição Reconhecida`, a atuação pode integrar a prova de elegibilidade e atribuição, mas requer adicionalmente vivência específica e percepções elegíveis verificadas (DEC-01.D/CBR-02), robustez e decisão competente. A presença em evento não prova benefício.
+
+### Resultado decisório candidato
+
+- `ACTUACAO_SUFICIENTE_PARA_DELIBERACAO`: realização e papel material plausivelmente comprovados, sem autorização automática do selo.
+- `COMPLEMENTACAO`: vestígio parcial ou proveniência insuficiente.
+- `ATRIBUICAO_INDETERMINADA`: experiência real, mas papel específico do Coletivo não demonstrado.
+- `ATUACAO_HISTORICA`: iniciativa realizada no passado, sem prova de continuidade atual.
+- `CONFLITO_DE_EVIDENCIA`: incompatibilidade material exige revisão.
+- `INTEGRIDADE_EM_ANALISE`: indícios fundamentados sujeitos a procedimento e recurso.
+
+### Cenários de fronteira
+
+1. Grupo faz a primeira pedalada comprovada: atuação possível sem histórico longo.
+2. Grupo anuncia passeio futuro que depois é cancelado: não comprova realização.
+3. Coletivo organiza oficina executada por parceiro: apurar os dois papéis e escopo, sem transferir mérito automaticamente.
+4. Perfil social com vídeos de eventos de terceiros: sem atribuição própria presumida.
+5. Grupo de oração com encontros legítimos: corroboração reservada, sem revelar participantes.
+6. Comunidade realiza sessão online: atividade digital pode ser atuação real.
+7. Iniciativa se encerra: preservar histórico de atuação sem afirmar atividade atual.
+8. Clube cede espaço para treinamento: provar cessão; não presumir condução do treino.
+
+### Pendências de deliberação
+
+Definir catálogo de vestígios por modalidade; critérios de corroboração e provas substitutivas; prazo de atualização e revisão de iniciativas pontuais; distinção formal entre atividade histórica/atual; alçada em coexecução e atribuição parcial; proteção e retenção de evidências; procedimento de contestação. Nenhum número mínimo de eventos deve ser estabelecido apenas a partir deste exame.
+
+```text
+DEC-01.C INDIVIDUAL EXAM → COMPLETE
+DEC-01.C ANALYTICAL DIRECTION → CONDITIONAL CONVERGENCE
+DEC-01.C HUMAN NORMATIVE ADJUDICATION → PENDING
+DEC-01.D → NEXT
 PR #654 → OPEN / DRAFT
 ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
 ```
