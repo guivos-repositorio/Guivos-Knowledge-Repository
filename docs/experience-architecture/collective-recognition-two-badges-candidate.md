@@ -2,7 +2,7 @@
 id: GKR-COLLECTIVE-RECOGNITION-001
 title: Coletivos — Verificado e Contribuição Reconhecida
 status: proposed
-version: 4.7.0
+version: 4.8.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -2935,6 +2935,76 @@ DEC-03 INTEGRATED DELIBERATION REGISTER → COMPLETE
 DEC-03 HUMAN NORMATIVE RATIFICATION → 0/5 CONFIRMED
 DEC-01 AND DEC-02 HUMAN NORMATIVE RATIFICATION → 0/5 EACH
 DEC-04 → NEXT
+PR #654 → OPEN / DRAFT
+MENU PUBLICATION → NOT AUTHORIZED
+BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
+```
+
+
+## DEC-04 — Instrumento de deliberação: publicação e superfícies dos reconhecimentos (v4.8 candidato)
+
+**Estado:** INSTRUMENTO PREPARADO / EXAMES INDIVIDUAIS A INICIAR / NÃO ADJUDICADO. A preparação não altera autoridades de PER-103, cards ou MENU e não autoriza renderização em produto.
+
+### Questão central
+
+Sob quais condições decisões materiais válidas sobre `Verificado` e `Contribuição Reconhecida` podem ser projetadas em superfícies públicas da Guivos de modo discreto, compreensível, acessível, atual e fiel à fonte canônica, sem divulgar avaliações individuais nem sugerir certificações não concedidas?
+
+### Matriz de decisões para exame individual
+
+| Item | Questão normativa | Direção candidata | Estado |
+|---|---|---|---|
+| DEC-04.A — Significado e linguagem | O que cada selo comunica ao público e o que nunca implica? | Mensagem curta, contextual, sem qualidade universal, segurança absoluta, causalidade ou comparação | A EXAMINAR |
+| DEC-04.B — Superfícies e apresentação | Onde e como exibir cada selo? | Ícones discretos junto ao nome em cards de Coletivos e PER-103, sujeitos à extensão formal de autoridade e acessibilidade | A EXAMINAR |
+| DEC-04.C — Contrato de publicação | Qual decisão habilita exibição e qual fonte tem autoridade? | Estado canônico vigente por selo, consentimentos/escopo pertinentes e ato separado de publicação, com critérios verificáveis | A EXAMINAR |
+| DEC-04.D — Atualização e retirada | Como evitar selos desatualizados após expiração, suspensão ou revogação? | Invalidação, reconciliação de cache e comportamento seguro quando a fonte não for confiável | A EXAMINAR |
+| DEC-04.E — Transparência e limites | Quais explicações, acessos e controles públicos são permitidos? | Informações institucionais proporcionais sem exposição de R1, Pessoas, denunciantes ou evidência sensível | A EXAMINAR |
+
+### Semântica visual candidata
+
+- `Verificado`: ícone discreto `badge-check`, roxo `#5D34A9`; identifica validação institucional de existência e representação legítima, nunca qualidade de serviço ou proteção absoluta.
+- `Contribuição Reconhecida`: ícone discreto `award`, verde `#18A15D`; comunica evidência institucional de contribuição **percebida** em experiências elegíveis, não evolução objetiva, causalidade, resultado garantido nem ranking.
+- Rótulos legíveis e equivalentes acessíveis são necessários; cor sozinha não comunica significado. A apresentação próxima ao nome não deverá induzir endosso total à entidade.
+- Ausência de selo é neutra. Não acrescentar etiquetas de risco, qualidade inferior ou desconfiança por ausência de reconhecimento.
+
+### Guardas de publicação e privacidade
+
+1. Concessão e exibição são atos distintos, com autoridades e trilhas auditáveis.
+2. Publicação somente quando selo específico está vigente, seu escopo e identidade correspondem ao Coletivo e existe permissão editorial/funcional expressa da superfície.
+3. Para `Contribuição Reconhecida`, exigir simultaneamente `Verificado` vigente; perda do pré-requisito impede exibição do segundo selo como vigente.
+4. Cards e PER-103 não são fontes canônicas do estado nem podem inferir selo por métricas de satisfação, número de membros, patrocínio ou respostas isoladas.
+5. Não expor dados R1, identidades, crenças, saúde, registros de contestação, denunciantes ou detalhes de proteção sob pretexto de transparência.
+6. Projeções de resultados de reconhecimento exigem revisão de acessibilidade, idioma, versão e testes para remoção de selo obsoleto.
+7. Nenhuma alteração neste documento `proposed/non-normative` estende automaticamente o Master de PER-103, a Home Coletivo ou outras autoridades UX.
+
+### Cenários de publicação a examinar
+
+| Situação | Comportamento candidato |
+|---|---|
+| Apenas Verificado vigente e publicável | Mostrar somente Verificado na superfície autorizada |
+| Dois selos materialmente vigentes e publicáveis | Mostrar ambos, com semânticas distintas e apresentação discreta |
+| Contribuição aprovada, mas Verificado não vigente | Não projetar o segundo selo |
+| Contribuição aprovada, sem ato editorial de publicação | Não exibir |
+| Coletivo sem nenhum selo | Exibir perfil normal, sem aviso depreciativo |
+| Selo expirado ainda presente em cache | Corrigir projeção; tratar falha de consistência |
+| Pessoa consulta explicação dos selos | Explicar significado institucional e limites, sem abrir R1 |
+| Decisão em recurso ou reavaliação | Não inferir estado publicável sem decisão atual e política de cautela |
+| Card em busca e perfil exibem estados divergentes | Reconciliar com fonte canônica; não aceitar a interface como autoridade |
+
+### Ratificações exigidas
+
+Deliberar individualmente DEC-04.A..E: linguagem pública, ícones e acessibilidade, matriz de superfícies, fonte canônica, separação da autorização de publicação, semântica de vigência, retirada/caches, transparência e privacidade, autoridade de edição de Masters. Não estabelecer publicação automática como efeito de merge deste documento.
+
+### Relação com o MENU do GKR
+
+O acesso documental a **Reconhecimento de Coletivos** pelo MENU segue **solicitado, não publicado**. Trata-se de navegação do repositório, distinta da exibição de selos em superfícies do produto. Somente publicar destino canônico ou material explicitamente autorizado pela política editorial/normativa; não promover esta candidatura a fonte vigente por mera inclusão no MENU.
+
+```text
+DEC-04 DELIBERATION INSTRUMENT → PREPARED
+DEC-04.A..E INDIVIDUAL EXAMS → NOT STARTED
+DEC-04.A..E HUMAN NORMATIVE RATIFICATIONS → 0/5 CONFIRMED
+DEC-01..03 ANALYTICAL EXAMS → 15/15 DOCUMENTED
+DEC-01..03 HUMAN NORMATIVE RATIFICATIONS → 0/15 CONFIRMED
+DEC-04.A → NEXT
 PR #654 → OPEN / DRAFT
 MENU PUBLICATION → NOT AUTHORIZED
 BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
