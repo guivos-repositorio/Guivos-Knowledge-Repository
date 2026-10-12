@@ -2,7 +2,7 @@
 id: GKR-COLLECTIVE-RECOGNITION-001
 title: Coletivos — Verificado e Contribuição Reconhecida
 status: proposed
-version: 1.6.0
+version: 1.7.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -1034,4 +1034,70 @@ P0-02 POLICY OPTIONS → DOCUMENTED
 P0-02 NUMERIC THRESHOLDS → NOT APPROVED
 P0-02 NORMATIVE ADJUDICATION → PENDING
 REAL BADGE ISSUANCE / PUBLICATION → NOT AUTHORIZED
+```
+
+
+## ADJ-08 / P0-03 — Autoridade de concessão, revisão e recurso (v1.7 candidato)
+
+**Natureza:** contrato de competências e segregação institucional proposto; não declara equipes já instituídas, pessoas designadas ou outorga operacional. Subordinado à autoridade de Avaliação e Reputação vigente.
+
+### Matriz de alçadas candidatas
+
+| Papel funcional | Ação permitida sob futura delegação | Vedação |
+|---|---|---|
+| Solicitante do Coletivo | Pedir selo, corrigir informações, apresentar provas, recorrer | Aprovar, modificar estado ou ver identidade de avaliadores |
+| Analista de verificação | Conferir existência, atuação e representação para Verificado | Conceder autonomamente sem alçada ou reescrever prova |
+| Analista de contribuição | Conferir elegibilidade, dimensão relevante, atribuição e robustez | Transformar apuração em concessão automática |
+| Integridade/proteção | Investigar manipulação, risco e denúncia com acesso mínimo | Punir apenas por algoritmo, denúncia ou crítica |
+| Decisor de selo Verificado | Aprovar, indeferir ou determinar complementação fundamentada | Ter interesse material não declarado na decisão |
+| Decisor de Contribuição Reconhecida | Decidir após pré-condição Verificado, exame das provas e metodologia vigente | Ignorar respostas adversas ou conceder por interesse comercial |
+| Publicação | Projetar apenas estado vigente e autorizado em cards/PER-103 | Inventar aprovação por cache ou KPI |
+| Recurso | Reexaminar fundamentação, procedimento e novas evidências por autoridade independente | Revisão conclusiva pelo mesmo decisor único contestado |
+| Auditoria institucional | Examinar qualidade, independência, decisões e falsos positivos/negativos | Alterar decisões individuais sem rito e competência |
+
+### Modelo escalável sugerido
+
+- **Nível 1 — Operação ordinária:** análise padronizada e decisão por pessoa autorizada, com dupla checagem em situações relevantes.
+- **Nível 2 — Revisão especializada:** prova controversa, Coletivo sensível, múltiplos executores ou suspeita fundamentada de fraude exigem revisão independente.
+- **Nível 3 — Recurso:** decisão material contestada tem revisor diferente e sem conflito; impugnação não garante manutenção/restauração automática do selo.
+- **Supervisão:** governança central define e versiona metodologia, treina revisores, audita amostras de decisões, monitora erros e corrige desigualdades por porte/tipologia.
+
+A denominação desses níveis não constitui cargos ou equipes implantadas. Regras de duas pessoas por decisão, SLA e limites de escalonamento requerem deliberação adicional.
+
+### Impedimentos e conflito de interesses
+
+Ninguém que represente, financie, contrate comercialmente ou possua interesse relevante num Coletivo deve decidir sua concessão, recurso ou retirada sem declaração e tratamento formal de impedimento. Autorização de acesso para analisar evidências não implica competência de aprovar selo; função comercial não atribui reputação. Automação/IA pode auxiliar conferência, nunca ser autoridade sancionadora ou decisora final por inferência.
+
+### Registro obrigatório candidato
+
+Cada ato material deve registrar: Coletivo, selo, período, fonte e versão de critérios, decisão precedente, evidência e cobertura do claim, restrições de privacidade, fundamentos favoráveis e contrários, decisor e impedimentos, data de efeito, vigência, notificações, possibilidade de recurso e evento separado de publicação. Preservar trilha e cadeia de custódia com prazos de retenção ainda a adjudicar.
+
+### Independência do recurso
+
+- Apresentação clara do motivo ao Coletivo, com proteção de denunciantes e autoras de avaliação.
+- Possibilidade de corrigir erro material e complementar evidência, sem transformar simples discordância com crítica em justificativa de remoção.
+- Revisor independente da decisão original e sem benefício financeiro ou vínculo relevante.
+- Resultado recursal motivado e versionado; restauração exige nova autorização de estado e de publicação.
+- Medida cautelar em caso de risco sério pode proteger Pessoas antes da decisão final, com proporcionalidade, prazo e reexame; não é sentença de fraude.
+
+### Separação dos selos
+
+A autoridade de Verificado delibera existência/representação, não impacto. A autoridade de Contribuição Reconhecida delibera contribuição percebida admissível e robusta, sem revalidar por si mesma representação como se fosse a mesma competência. Suspensão/revogação de Verificado exige revisão do pressuposto público do segundo selo, mas não elimina retroativamente avaliações legítimas.
+
+### Pendências para adjudicação normativa
+
+1. Órgão institucional titular e delegação formal de poderes para cada selo.
+2. Elegibilidade, formação e independência dos revisores, incluindo operações pequenas.
+3. Alçadas para situações ordinárias, complexas e de segurança.
+4. Impedimentos, controles de acesso, supervisão e auditoria.
+5. Prazos de decisão, complementação, validade e recurso.
+6. Responsabilidade pela publicação e revogação sincronizada em todas as superfícies.
+7. Regra de emergência, revisão cautelar, proteção e possibilidade de contestação.
+8. Compatibilidade territorial, privacidade, retenção e conformidade aplicável.
+
+```text
+P0-03 GOVERNANCE RESPONSIBILITIES → SPECIFIED AS CANDIDATE
+ACTUAL DECISION OWNERS / DELEGATIONS → NOT DESIGNATED
+P0-03 NORMATIVE ADJUDICATION → PENDING
+BADGE ISSUANCE/PUBLICATION/IMPLEMENTATION → NOT AUTHORIZED
 ```
