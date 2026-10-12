@@ -6071,3 +6071,73 @@ NEW GKR-SURF / GKR-TRN IDS → 0
 BADGE ISSUANCE / PUBLICATION / TESTS / HOMOLOGATION / REPLIT → NOT AUTHORIZED
 NEXT → GKR MENU / HUB EDITORIAL NAVIGATION AUDIT
 ```
+
+## Etapa 299 — Auditoria do MENU e identificação do hub editorial de Reconhecimento de Coletivos (v4.51 candidato)
+
+**Resultado:** AUDITORIA DE NAVEGAÇÃO DOCUMENTADA / CAMINHO EDITORIAL CANDIDATO IDENTIFICADO / MENU NÃO ALTERADO. A documentação de reconhecimento continua candidata e nenhuma autoridade de selo, publicação de produto ou concessão foi ratificada.
+
+### Fontes consultadas na main
+
+- `mkdocs.yml`: regra explícita de MENU como superfície de descoberta, não inventário; documentos `draft/proposed` não entram como destinos correntes salvo declaração por autoridade superior vigente.
+- `docs/participants/collective.md` — `GKR-PARTICIPANT-COLLECTIVE-001`, `active`, `normative: false`: entrada de significado, identidade, atividades e valor contextual dos Coletivos.
+- `docs/experience-architecture/organizations-collectives-journey/read-first.md` — `GKR-UX-ORGCOL-JOURNEY-READ-FIRST-001`, `active`, `normative: true`: porta de entrada governada para superfícies/fluxos.
+- `docs/experience-architecture/person-journey/per-103-collective-public-profile-master.md` — `GKR-UX-PER103-MASTER-001`, `active`: perfil público atual, sem autorização corrente para exibição dos dois selos.
+
+### Posições reais do MENU verificadas
+
+| Entrada existente | Local na navegação | Adequação ao tema |
+|---|---|---|
+| `Participantes → Coletivo` | `participants/collective.md` | **Melhor ponto de orientação conceitual**, pois explica o participante sem confundir programa candidato com funcionalidade ativa |
+| `Jornada de Organizações e Coletivos — Superfícies e Fluxos → Comece por aqui → Leia Primeiro` | `organizations-collectives-journey/read-first.md` | **Entrada complementar de governança UX**, não política de selo |
+| `Jornada da Pessoa — Superfícies e Fluxos → Perfil Público do Coletivo` | `per-103-collective-public-profile-master.md` | Referência de interface futura **dependente de ratificação**, não destino primário de governança |
+| `Experiência → Jornada e Continuidade → Jornada do Coletivo` | `journeys/collective.md` | Referência para descoberta da jornada, sem conceder nova autoridade |
+| `Ecossistema` | Seção já existente em `mkdocs.yml` | **Não criar novamente**; não é o melhor contêiner para política transversal de reconhecimento |
+
+### Alternativas editoriais examinadas
+
+**NAV-A — Orientação na página existente `Participantes → Coletivo`.** Inserir futuramente uma subseção editorial identificada como `Reconhecimento de Coletivos — em estudo`, apenas após aprovação editorial competente e reconciliação com status/propósito da página. É a opção de **menor impacto na navegação**, mas não cria item de MENU autônomo.
+
+**NAV-B — Hub editorial estável e autônomo `Reconhecimento de Coletivos`.** Criar documento de orientação separado, com fontes correntes, significado conceitual, status candidato, limites, dependências e apontadores ao registro de trabalho. Sua inclusão explícita no MENU depende de aprovação editorial específica e da regra vigente de não promover `draft/proposed` a destino operacional.
+
+**NAV-C — Acesso contextual em `Leia Primeiro` da Jornada de Organizações e Coletivos.** Útil para ligação com arquitetura UX e estados futuros, mas insuficiente como único ponto para quem procura política de reconhecimento.
+
+**Direção analítica:** adotar **NAV-A como entrada contextual imediata após rito editorial**, e preparar NAV-B como possível hub próprio se houver decisão explícita de disponibilizar uma seção do MENU. NAV-C é conexão complementar. **Nenhuma alternativa está ratificada nesta etapa.**
+
+### Contrato mínimo de conteúdo editorial (candidato)
+
+1. Título claro: `Reconhecimento de Coletivos`.
+2. Situação inequívoca: **`EM ESTUDO — POLÍTICA NÃO APROVADA`**.
+3. Distinção entre `Verificado` (existência/representação legítima) e `Contribuição Reconhecida` (contribuição contextual examinada), **ambos conceitos candidatos**.
+4. Declaração expressa: **nenhum selo está autorizado para emissão ou exibição pública**.
+5. Diferenciação entre documentação de participante, arquitetura UX, proposta de política e programa operacional.
+6. Links para `Participantes → Coletivo`, `Leia Primeiro`, `PER-103` e documentação candidata com rótulos de maturidade corretos, se o acesso à PR for editorialmente permitido.
+7. Sem rankings, promessa de benefício, endosso implícito, dados R1 ou afirmação de que a Guivos já reconhece Coletivos.
+8. Data/versão de atualização e responsável editorial confirmados por rito do GKR.
+
+### Restrições e decisão editorial necessária
+
+- Não apontar `mkdocs.yml` diretamente para `collective-recognition-two-badges-candidate.md` como autoridade de produto.
+- Não alterar `PER-103`, Surface/Transition Registries ou introduzir badges de produto para resolver a encontrabilidade documental.
+- Uma página hub poderá esclarecer que há estudo em andamento, mas sua autoridade editorial, status, metadata e posição exigem decisão separada.
+- A seção **Ecossistema** já existe no MENU e não precisa ser recriada.
+- A publicação documental é independente do bloqueio G0 de emissão dos selos.
+
+### Próxima etapa — 300
+
+Preparar a **minuta de orientação editorial de Reconhecimento de Coletivos**, com estrutura curta e links às referências vigentes, adequada à opção NAV-A/NAV-B, **sem escrever na `main` ou inserir item de MENU** antes da revisão editorial competente.
+
+```text
+ETAPA 299 GKR MENU / HUB EDITORIAL NAVIGATION AUDIT → DOCUMENTED
+PRIMARY CONTEXTUAL ENTRY → PARTICIPANTES / COLETIVO (CANDIDATE)
+AUTONOMOUS MENU HUB → OPTIONAL / EDITORIAL APPROVAL REQUIRED
+ECOSSISTEMA MENU SECTION → ALREADY EXISTS
+GKR MENU CHANGE → 0
+G0 AUTHORITY / ADJUDICATION → PENDING
+DEC-01..05 → 25/25 EXAMS; 0/25 RATIFICATIONS
+RSP-05 → 6/6 EXAMS; 0/6 ADJUDICATIONS
+RSP-06 → 5/5 EXAMS; 0/5 ADJUDICATIONS
+COMBINED → 36/36 EXAMS; 0/36 ADJUDICATIONS
+PR #654 → OPEN / DRAFT
+BADGE ISSUANCE / PUBLICATION / TESTS / HOMOLOGATION / REPLIT → NOT AUTHORIZED
+NEXT → EDITORIAL ORIENTATION DRAFT NAV-A/NAV-B
+```
