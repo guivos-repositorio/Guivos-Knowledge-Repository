@@ -2,7 +2,7 @@
 id: GKR-COLLECTIVE-RECOGNITION-001
 title: Coletivos — Verificado e Contribuição Reconhecida
 status: proposed
-version: 4.14.0
+version: 4.15.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -3463,5 +3463,69 @@ DEC-01..04 HUMAN NORMATIVE RATIFICATIONS → 0/20 CONFIRMED
 DEC-05 → NEXT
 PR #654 → OPEN / DRAFT
 GKR MENU PUBLICATION → REQUESTED / NOT AUTHORIZED
+BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
+```
+
+
+## DEC-05 — Instrumento de deliberação: segurança operacional, integridade e homologação (v4.15 candidato)
+
+**Estado:** INSTRUMENTO PREPARADO / EXAMES INDIVIDUAIS A INICIAR / NÃO ADJUDICADO. Este pacote não declara controles implementados, testes executados, conformidade jurídica comprovada nem permissão de operação.
+
+### Questão central
+
+Quais controles de segurança, privacidade, integridade, rastreabilidade e qualidade precisam ser definidos, testados e formalmente homologados antes de coletar avaliações, conceder ou publicar os selos `Verificado` e `Contribuição Reconhecida`, preservando critérios justos e competências humanas?
+
+### Matriz de decisões para exames individuais
+
+| Item | Questão normativa | Direção candidata | Estado |
+|---|---|---|---|
+| DEC-05.A — Proteção e dados | Como proteger identidade, participação e avaliações R1 em coleta, armazenamento, consulta e retenção? | Minimização, finalidade, acesso por papel, segregação público/privado, segurança e direitos de titulares | A EXAMINAR |
+| DEC-05.B — Fraude e integridade | Como identificar manipulação sem punir automaticamente denúncias, anomalias ou Coletivos pequenos? | Proveniência de evidências, antifraude proporcional, revisão humana, proteção contra coação e recursos | A EXAMINAR |
+| DEC-05.C — Rastreabilidade e operações | Como manter fonte canônica, permissões, mudanças e remoção consistente? | Decisões versionadas, logs protegidos, reconciliação, controle de falhas, rollback e resposta a incidentes | A EXAMINAR |
+| DEC-05.D — Validação e testes | Quais ensaios devem demonstrar segurança, integridade de métricas, privacidade e publicação correta? | Cenários adversariais, testes negativos, acessibilidade, estatística, segurança e revogação entre superfícies | A EXAMINAR |
+| DEC-05.E — Homologação e liberação | Quem poderá autorizar piloto e produção e com quais evidências? | Gates não compensatórios, autoridade competente, riscos residuais registrados, aprovação separada por estágio | A EXAMINAR |
+
+### Invariantes preliminares de proteção
+
+1. `Verificado` e `Contribuição Reconhecida` são decisões institucionais distintas; nenhum mecanismo antifraude, índice ou IA pode emiti-los ou revogá-los automaticamente.
+2. Dados de respostas individuais, identidade de avaliadores, vínculo com Coletivos sensíveis, denúncias e evidências privadas não migram automaticamente para cards, PER-103 ou payloads públicos.
+3. Integridade deve distinguir erro, comportamento atípico, possível manipulação e fraude comprovada mediante rito e autoridade competentes.
+4. Não usar popularidade, contrato comercial, patrocínio, existência de CNPJ ou porte como critério automático de confiança ou de exclusão.
+5. A validação da retirada de selo obsoleto e do bloqueio de `Contribuição Reconhecida` sem `Verificado` vigente é condição operacional fundamental.
+6. Segurança de publicação não substitui as ratificações normativas DEC-01 a DEC-04, nem altera por si só a autoridade de PER-103 ou o MENU do GKR.
+7. Auditoria deve ser rastreável e proporcional, sem converter dados de auditoria em reputação universal ou publicidade de supostas infrações.
+8. A autorização de piloto, quando cabível, não equivale à autorização de operação geral ou publicação ampla.
+
+### Evidências futuras mínimas para homologação (não produzidas)
+
+- Políticas aprovadas de dados pessoais, finalidade, acesso, retenção e resposta a incidentes.
+- Matriz de responsabilidades e controles de conflito de interesses formalmente designados.
+- Procedimentos ratificados de elegibilidade, integridade, contestação e revisão humana.
+- Testes de tratamento de sinais antifraude, amostras pequenas, duplicidade, coação e proteção de Pessoas.
+- Testes de estado canônico, expiração, suspensão, revogação, idempotência, indisponibilidade e cache em superfícies autorizadas.
+- Testes de acessibilidade e clareza de comunicação, inclusive ausência de selo neutra.
+- Relatório de falhas, riscos residuais e decisão expressa de homologação competente.
+
+A lista indica **evidências exigíveis no futuro**, não resultados disponíveis. Critérios numéricos, SLAs, arquitetura de infraestrutura e base jurídica concreta dependem de exame próprio.
+
+### Encadeamento decisório
+
+`DEC-05.A` delimita proteção e governança de dados; `DEC-05.B` aborda integridade/antifraude; `DEC-05.C` disciplina registros e operações; `DEC-05.D` define ensaios; `DEC-05.E` compõe homologação e gates de liberação.
+
+Cada deliberação exige decisão formal `APROVAR`, `APROVAR_COM_AJUSTES`, `DEVOLVER_PARA_REVISAO` ou `REJEITAR`, com autoridade legitimada, versão, data, fundamento, condições e critérios de evidência. Continuar a elaboração documental não significa adjudicar.
+
+### MENU do GKR — separação de escopo
+
+O acesso a **Reconhecimento de Coletivos** pelo MENU segue solicitado, ainda não publicado. Navegação documental é diferente da liberação de selos em produto; somente inserir destino e estado documental compatíveis com a política de navegação e autoridade editorial corrente.
+
+```text
+DEC-05 DELIBERATION INSTRUMENT → PREPARED
+DEC-05.A..E INDIVIDUAL EXAMS → NOT STARTED
+DEC-05.A..E HUMAN NORMATIVE RATIFICATIONS → 0/5 CONFIRMED
+DEC-01..04 ANALYTICAL EXAMS → 20/20 DOCUMENTED
+DEC-01..04 HUMAN NORMATIVE RATIFICATIONS → 0/20 CONFIRMED
+DEC-05.A → NEXT
+PR #654 → OPEN / DRAFT
+MENU PUBLICATION → REQUESTED / NOT AUTHORIZED
 BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
 ```
