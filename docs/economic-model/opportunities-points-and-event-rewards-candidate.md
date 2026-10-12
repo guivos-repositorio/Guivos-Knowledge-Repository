@@ -2,7 +2,7 @@
 id: GEM-OPPORTUNITIES-POINTS-REWARDS-CANDIDATE-001
 title: Oportunidades — Retorno em Pontos e Premiações de Eventos — Proposta Transversal
 status: draft
-version: 1.2.0
+version: 1.3.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -886,4 +886,92 @@ PLATFORM FEE → ADDITIONAL / SEPARATE / NOT YET PARAMETERIZED
 POINT REDEMPTION PARITY → NOT DECIDED
 PR #655 → OPEN / DRAFT
 MAIN / MASTERS / MENU / PRODUCT / REPLIT → UNCHANGED
+```
+
+## 22. Reconciliação dos gates econômicos — duas origens de financiamento (v1.3.0 candidato)
+
+**Resultado:** reconciliação documental das regras decididas pelo fundador com os cinco gates PAR/FUND/LIQ; sem aprovar parâmetros financeiros ou emissão real.
+
+### 22.1 Regras de precedência
+
+**FIN-COMPRA — retorno percentual nas compras intermediadas pela Guivos.** Valor de pontos sai do valor a repassar ao ofertante, sem exigir compra prévia de saldo. A taxa da plataforma é separada. Exemplo vinculante de direção de produto: `R$ 200 × 1% = R$ 2 = 2 pontos`; `repasse-base = R$ 200 - R$ 2 = R$ 198`, antes da taxa Guivos. **A emissão percentual desse exemplo usa 1 ponto por R$ 1 de benefício econômico**; preço/valor de resgate ainda precisam de decisão.
+
+**FIN-EVENTO — premiações por participação, inscrição, desempenho e colocação.** Organização/Coletivo obtém saldo de pontos antecipadamente, após pagamento confirmado; aloca e reserva pontos conforme regras, gatilhos e limites. A oportunidade/inscrição pode continuar mesmo após esgotamento do incentivo. O valor de compra de pontos pré-pagos permanece pendente.
+
+**Precedência sobre comparações anteriores:** FUND-A/B não constituem mais pré-financiamento universal de todas as oportunidades. As simulações da seção 20 são históricas/hipotéticas e não substituem o cálculo de compra 1% → 2 pontos.
+
+### 22.2 Reconciliação gate a gate
+
+| Gate | FIN-COMPRA | FIN-EVENTO | Decisão remanescente |
+|---|---|---|---|
+| **PAR-01 — emissão** | Percentual × base elegível monetária; equivalência 1 ponto por R$ 1 do benefício no exemplo | Quantidade fixa de pontos do saldo pré-pago conforme campanha | Decimais, arredondamento, limites e mudanças da tabela percentual |
+| **PAR-02 — valor de uso** | Pontos creditados à Pessoa após liquidação elegível | Pontos creditados após prova de participação/resultado | Paridade de resgate Mall/Travel, validade, proteção de direitos e comunicação |
+| **FUND-01 — cobertura** | Abatimento no repasse ao ofertante, separado da taxa Guivos | Pagamento antecipado de saldo com reserva por incentivo | Custódia, contabilização, preço do saldo, critérios de cobertura e conciliação |
+| **LIQ-01 — Mall** | Saldo creditado pode ser utilizado, se elegível e autorizado | Mesmo saldo único, sem distinção discriminatória por origem | Pedido, abatimento, repasse ao vendedor, cancelamento, custo e auditoria |
+| **LIQ-02 — Travel** | Saldo creditado pode ser utilizado, se elegível e autorizado | Mesmo saldo único, sem distinção discriminatória por origem | Cotação, reserva, disponibilidade, fornecedor, cancelamento e liquidação |
+
+**Unidade única:** a origem financeira do crédito não cria espécies incompatíveis de pontos para a Pessoa. O ledger poderá preservar origem e obrigações para conciliação, mas a experiência utilizará uma unidade de valor comum, sujeita à política de elegibilidade e resgate.
+
+### 22.3 Campos de cálculo, pagamento e contabilidade
+
+| Campo | Direção candidata |
+|---|---|
+| `purchase_paid_amount` | Valor efetivamente pago e elegível; imposto/frete/desconto/exclusões a definir |
+| `selected_points_percent` | Opção predefinida da Guivos, selecionada expressamente pelo ofertante |
+| `points_benefit_amount` | Valor pago elegível × percentual |
+| `points_quantity` na compra | Quantidade equivalente ao benefício em R$, conforme exemplo; política de frações pendente |
+| `gross_payable_to_issuer` | Montante da transação atribuível ao ofertante antes de retenções |
+| `points_cost_withheld` | Custo em R$ dos pontos debitado no repasse |
+| `guivos_platform_fee` | Taxa distinta e explícita, com base de incidência a definir |
+| `issuer_transfer_net` | Repasse-base menos taxa e outras retenções legítimas expressamente previstas |
+| `prepaid_points_balance` | Saldo em pontos adquirido e pago antes da campanha, com preço unitário a definir |
+| `reserved_points` | Saldo bloqueado por incentivo/cota, sem creditá-lo ainda à Pessoa |
+| `issued_points` | Pontos efetivamente creditados após gatilho validado |
+| `redeemed_points` | Pontos consumidos em Mall/Travel sob contrato aplicável |
+
+**Fórmula ilustrativa da compra sem outros ajustes:**
+```text
+VALOR ELEGÍVEL = 200,00
+PERCENTUAL = 1%
+CUSTO DE PONTOS = 200,00 × 0,01 = 2,00
+PONTOS CREDITÁVEIS = 2 (sujeito à elegibilidade/liquidação)
+REPASSE-BASE = 200,00 - 2,00 = 198,00
+REPASSE FINAL = 198,00 - TAXA GUIVOS APLICÁVEL
+```
+
+A classificação contábil dos valores retidos, taxas, receitas e obrigações necessita validação própria; a retenção dos R$ 2 **não** deve ser equiparada automaticamente a receita.
+
+### 22.4 Estornos e condições de emissão
+
+**Compras:** a confirmação do pagamento e do direito ao repasse deve sustentar o crédito; compra cancelada ou parcialmente estornada requer ajuste proporcional, com regras para pontos já creditados ou usados. Não exigir que o ofertante antecipe recursos para essa modalidade por simples herança do antigo modelo.
+
+**Eventos:** pagamento do saldo precede sua utilização; inscrição elegível pode reservar um benefício, mas presença/posição precisa de prova conforme regulamento. Cancelamentos e redistribuição de cotas seguem regra explícita, sem compromisso acima do saldo não reservado.
+
+**Resgates:** Mall e Travel consultam a mesma unidade de pontos, reservam no checkout elegível e liquidam após confirmação, sem presumir disponibilidade de produtos ou viagens; eventual devolução de pontos acompanha o ciclo do pedido/reserva.
+
+### 22.5 Checklist de validação futura
+
+1. Especificar quais valores compõem a base elegível e como pontos fracionários serão tratados.
+2. Definir tabela oficial de percentuais e se há mínimo/máximo por compra.
+3. Deliberar incidência, percentual e destinatário da taxa Guivos, junto com custos de pagamento e tributos.
+4. Definir **preço de aquisição** dos pontos pré-pagos e cobertura do custo de resgate.
+5. Fixar paridade de utilização, condições, validade e destino de recursos não utilizados.
+6. Documentar conciliação entre transação paga, repasse ao ofertante, retenção para pontos, ledger e estorno.
+7. Proteger independência entre cotas de pontos e número de inscrições/participações.
+8. Revisar responsabilidade jurídica, fiscal, contábil e de proteção de dados antes de operar.
+9. Definir transições oficiais, testes e homologação próprios para compra e premiações, sem criar IDs por inferência.
+
+### Próxima etapa
+
+**Etapa candidata:** contrato econômico-funcional dos dois fluxos, com casos de borda de frações, refund parcial, indisponibilidade de repasse, recompensas cumulativas e saldo insuficiente. Sem mudanças na Home nem autorização de engenharia.
+
+```text
+VERSION → v1.3.0 CANDIDATE
+FIN-COMPRA → WITHHOLD POINTS COST FROM PAYOUT
+FIN-EVENTO → PREPAID POINT BALANCE REQUIRED
+ISSUER FUNDS POINTS → 100%
+PAR/FUND/LIQ → RECONCILED DOCUMENTALLY; 0/5 FORMAL GATES RATIFIED
+REDEMPTION PARITY / PREPAID PRICE / PLATFORM FEES → OPEN
+PR #655 → OPEN / DRAFT
+GKR MAIN / MENU / HOME MASTERS / REGISTRIES / REPLIT → UNCHANGED
 ```
