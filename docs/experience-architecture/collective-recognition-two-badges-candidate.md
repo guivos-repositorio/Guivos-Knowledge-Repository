@@ -6141,3 +6141,111 @@ PR #654 → OPEN / DRAFT
 BADGE ISSUANCE / PUBLICATION / TESTS / HOMOLOGATION / REPLIT → NOT AUTHORIZED
 NEXT → EDITORIAL ORIENTATION DRAFT NAV-A/NAV-B
 ```
+
+## Etapa 300 — Minuta editorial de Reconhecimento de Coletivos: NAV-A e NAV-B (v4.52 candidato)
+
+**Resultado:** MINUTAS EDITORIAIS DOCUMENTADAS / NAV-A E NAV-B PREPARADAS PARA REVISÃO / SEM PUBLICAÇÃO, ALTERAÇÃO DE MENU OU AUTORIDADE NORMATIVA. Os textos abaixo não são política aprovada nem selo disponível.
+
+### Premissas de fonte e status
+
+- `Participantes → Coletivo` (`docs/participants/collective.md`) é entrada vigente sobre identidade, atuação e valor contextual do participante Coletivo, não fonte de concessão dos selos.
+- `Leia Primeiro — Jornada de Organizações e Coletivos` é referência vigente de consumo da arquitetura, não atribuição de autoridade para reconhecimento.
+- `PER-103 — Perfil Público do Coletivo` documenta a superfície corrente, mas não autoriza badges ou novo contrato de publicação.
+- `mkdocs.yml` exige não tratar `draft/proposed` como destino corrente sem declaração superior aplicável.
+- O conteúdo da PR #654 é hipótese documental, com 36/36 exames e 0/36 adjudicações; não pode ser anunciado como programa ativo.
+
+### NAV-A — Texto candidato para orientação contextual em Participantes → Coletivo
+
+> **Reconhecimento de Coletivos — em estudo**
+>
+> A Guivos estuda uma política institucional de reconhecimento de Coletivos, ainda não aprovada e sem selos disponíveis para emissão ou exibição.
+>
+> A proposta diferencia dois conceitos: **Verificado**, referente à comprovação de existência e representação legítima do Coletivo; e **Contribuição Reconhecida**, referente à análise contextual de evidências de contribuição percebida por Pessoas. Nenhum dos conceitos constitui promessa de resultado individual, selo de qualidade universal ou classificação dos Coletivos.
+>
+> As condições de elegibilidade, decisão humana, recurso, vigência, proteção de dados e publicação seguem em deliberação. Para entender o participante Coletivo, consulte esta página; para a arquitetura da experiência, consulte o `Leia Primeiro` da Jornada de Organizações e Coletivos e, para o perfil público, o Master `PER-103`.
+>
+> **Estado institucional: proposta documental, sem aprovação de política, concessão ou implantação.**
+
+**Limites de NAV-A:** seção informativa, preferencialmente breve, sem elemento gráfico de selo real, CTA de solicitação, formulário, ranking, promessa ou exposição R1. Inserção na página corrente exige edição e revisão editorial próprias.
+
+### NAV-B — Minuta candidata de hub editorial autônomo
+
+**Título:** Reconhecimento de Coletivos
+
+**Subtítulo:** Conceitos, governança e estágio de estudo na Guivos
+
+**Estado visível:** `EM ESTUDO — POLÍTICA NÃO APROVADA`
+
+**Abertura proposta:**
+
+> A Guivos está estudando mecanismos institucionais para reconhecer a existência legítima de Coletivos e analisar contribuições contextuais que suas atividades podem proporcionar às Pessoas. O estudo busca distinguir comprovação de representação de evidências de contribuição, com atenção à diversidade territorial, à autonomia dos participantes e à proteção dos seus dados.
+>
+> **A Guivos ainda não aprovou esta política. Nenhum reconhecimento está autorizado para concessão, contratação, solicitação pública ou exibição no ecossistema.**
+
+**Seção 1 — O que está em análise**
+
+- **Verificado:** hipótese de reconhecimento institucional da existência e representação legítima do Coletivo. Não garante segurança absoluta ou adequação para toda Pessoa.
+- **Contribuição Reconhecida:** hipótese de reconhecimento contextual de contribuições percebidas, com evidências e limites de representatividade. Não equivale a evolução comprovada de todas as Pessoas ou ranking.
+- **Relação entre selos:** continua sujeita a adjudicação; o modelo de mérito independente e publicação condicionada (`DEP-B`) é candidato, não norma.
+
+**Seção 2 — O que já está documentado**
+
+A definição do participante Coletivo, sua Jornada Integrada e o Perfil Público `PER-103` possuem fontes próprias. A existência dessas fontes não significa reconhecimento automático nem amplia competências de representantes, moderadores ou sistemas.
+
+**Seção 3 — O que ainda depende de aprovação**
+
+Titularidade institucional, critérios, prova e integridade, avaliadores independentes, recursos, proteção de avaliações R1, estados e vigência, autorização editorial, testes, homologação e regras para exibição nas interfaces.
+
+**Seção 4 — Referências e continuidade**
+
+- `Participante — Coletivo` — `participants/collective.md`
+- `Jornada de Organizações e Coletivos — Leia Primeiro` — `experience-architecture/organizations-collectives-journey/read-first.md`
+- `Jornada Integrada do Coletivo` — `journeys/collective.md`
+- `PER-103 — Perfil Público do Coletivo` — `experience-architecture/person-journey/per-103-collective-public-profile-master.md`
+- PR #654 — **material candidato de estudo**, explicitamente distinto das fontes correntes. Link eventual depende de decisão editorial sobre exposição do documento de trabalho.
+
+**Rodapé proposto:** `Status: em estudo | Sem emissão de selos | Documento de orientação sujeito à revisão editorial`.
+
+**Limites de NAV-B:** página hub poderá ser fonte de orientação apenas após aprovação editorial própria; nunca assumir autoridade normativa de reconhecimento nem ser criada como atalho para tratar o DRAFT da PR #654 como documento vigente.
+
+### Comparação editorial
+
+| Critério | NAV-A: seção contextual | NAV-B: hub autônomo |
+|---|---|---|
+| Descoberta via MENU atual | Imediata pelo item `Participantes → Coletivo` | Depende de página e decisão explícita de MENU |
+| Profundidade | Resumo curto | Contexto, status, fontes e pendências estruturados |
+| Alteração de `mkdocs.yml` | Não necessária | Necessária para item novo |
+| Risco de confundir proposta e política | Controlável com indicação explícita de status | Requer sinais editoriais consistentes em toda a página |
+| Uso recomendado | Contextualização como opção de menor impacto | Hub se aprovada encontrabilidade autônoma |
+
+**Direção analítica candidata:** preparar NAV-A como referência breve e NAV-B como hub de aprofundamento futuro, preservando a aprovação editorial e avaliando se um item autônomo é proporcional ao estágio de estudo. Nenhum texto será apresentado como publicação corrente nesta etapa.
+
+### Checklist para revisão editorial humana
+
+1. Conferir precisão contra fontes vigentes da `main` e evitar afirmações de autoridade ou funcionalidades inexistentes.
+2. Validar se o vocabulário `Verificado` e `Contribuição Reconhecida` pode ser citado publicamente como hipótese, sem criar expectativa contratual.
+3. Confirmar escopo, conteúdo, owner editorial, status/metadata, versão e eventual localização do hub.
+4. Revisar privacidade, visibilidade de Coletivos protegidos, ausência de provas identificáveis e neutralidade.
+5. Deliberar separadamente sobre alteração em `participants/collective.md`, criação de hub e inclusão no MENU.
+6. Preservar bloqueio G0/B-01, 0/36 adjudicações, ausência de emissão de selos e bloqueio de engenharia.
+7. Verificar links e build do site **somente após** existir PR editorial específica com autorização para edição.
+
+### Próxima etapa
+
+**Etapa 301 — Matriz de revisão e autorização editorial NAV-A/NAV-B:** avaliar o conteúdo, a suficiência das fontes e o destino do MENU, distinguindo conteúdo informativo possível de política operacional. Sem edição da `main` ou publicação por continuidade de conversa.
+
+```text
+ETAPA 300 NAV-A / NAV-B EDITORIAL DRAFTS → DOCUMENTED
+NAV-A CONTEXTUAL COPY → CANDIDATE
+NAV-B AUTONOMOUS HUB COPY → CANDIDATE
+EDITORIAL APPROVAL → NOT RECORDED
+GKR MENU / MAIN FILE CHANGES → 0
+G0/B-01 AUTHORITY PROOF → PENDING
+DEC-01..05 → 25/25 EXAMS; 0/25 RATIFICATIONS
+RSP-05 → 6/6 EXAMS; 0/6 ADJUDICATIONS
+RSP-06 → 5/5 EXAMS; 0/5 ADJUDICATIONS
+COMBINED → 36/36 EXAMS; 0/36 ADJUDICATIONS
+PR #654 → OPEN / DRAFT
+BADGE ISSUANCE / PUBLICATION / TESTS / HOMOLOGATION / REPLIT → NOT AUTHORIZED
+NEXT → NAV-A / NAV-B EDITORIAL REVIEW MATRIX
+```
