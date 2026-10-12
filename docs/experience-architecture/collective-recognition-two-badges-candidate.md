@@ -2,7 +2,7 @@
 id: GKR-COLLECTIVE-RECOGNITION-001
 title: Coletivos — Verificado e Contribuição Reconhecida
 status: proposed
-version: 1.3.0
+version: 1.4.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -846,3 +846,56 @@ PUBLICATION AUTHORITY → NOT ASSIGNED
 OPERATING SLAS → NOT ADJUDICATED
 BADGE ISSUANCE / IMPLEMENTATION → NOT AUTHORIZED
 ```
+
+
+## ADJ-05 — Auditoria de consistência e fechamento documental (v1.4 candidato)
+
+### Fontes examinadas
+- Avaliação e Reputação — Autoridade Canônica v1.1.0: experiência real e delimitada; prova vinculada ao claim; reputação contextual e não universal; separação privada/pública; autoridade competente, contestação e recurso.
+- Jornada da Pessoa — PER-103 Perfil Público do Coletivo v0.2.1: identidade e propósito; não presumir vínculo de participante, qualidade ou direito de publicação; extensão explícita necessária para novos elementos de reputação.
+- Participantes — Coletivo v1.1.0: diversidade de coletivos e contribuição às áreas de vida, sem exigir personalidade jurídica universal.
+- Esta proposta de reconhecimento v1.3.0 e suas seções CBR-01..08 e ADJ-01..04.
+
+### Matriz de reconciliação
+
+| Questão | Resultado documental | Pendência para norma |
+|---|---|---|
+| Dois selos e significados distintos | CONCEITUALMENTE ALINHADO | Ratificação normativa separada |
+| Verificado como existência e representação | ALINHADO | Padrão de prova e decisão |
+| Contribuição percebida vinculada ao propósito | ALINHADO | Suficiência e consistência por finalidade |
+| Avaliações de experiências não propagadas universalmente | PRESERVADO | Contrato específico de atribuição e agregação |
+| Sem CNPJ universal | COMPATÍVEL COM DIVERSIDADE DE COLETIVOS | Prova proporcional por tipologia |
+| Sem vantagem automática em ranking | PRESERVADO | Regras futuras de descoberta |
+| Respostas privadas e publicação distinta | PRESERVADO | Base de publicação, privacidade, controle de dados |
+| PER-103 como superfície candidata | NÃO AUTORIZADO ATUALMENTE | Extensão expressa do Master |
+| Calibração estatística | NÃO CONCLUÍDA NORMATIVAMENTE | Thresholds, janela, amostra e viés |
+| Governança de emissão e recurso | DESENHO CANDIDATO | Alçadas, mandato e prazos |
+| Segurança operacional e remoção de caches | NÃO VALIDADA | Contratos técnicos e testes futuros |
+
+### Achados bloqueadores priorizados
+
+**P0-01** Ausência de critérios de prova formalmente suficientes para existência, representação e experiência.  
+**P0-02** Ausência de regra substantiva e estatística de concessão de Contribuição Reconhecida, com robustez proporcional para Coletivos pequenos.  
+**P0-03** Autoridade humana competente de concessão, recurso e publicação não designada.  
+**P0-04** PER-103 e cards carecem de contrato normativo expresso e fonte canônica de selo vigente.  
+**P0-05** Proteções contra fraude, dados sensíveis, contestação, validade e retirada ainda não validadas como operação.  
+
+### Separação de estados
+
+- **Acordos conceituais:** dois selos, finalidade, nomenclatura, discrição visual, ausência de juízo negativo em não reconhecidos.
+- **Matrizes candidatas documentadas:** CBR-01..08 e ADJ-01..05.
+- **Aprovações normativas não concluídas:** suficiência, estatística, alçadas, privacidade, publicação.
+- **Implementação:** não autorizada; nenhum selo pode ser exibido como concedido por este documento.
+
+### Fechamento
+
+```text
+CANDIDATE DOCUMENTARY AUDIT → COMPLETED
+CBR-01..08 DOCUMENTED → 8/8
+CBR-01..08 NORMATIVE ADJUDICATION → 0/8 CONFIRMED
+ADJ-05 NORMATIVE CLOSURE → BLOCKED BY P0-01..P0-05
+PR → DRAFT
+REAL BADGE ISSUANCE / REPLIT IMPLEMENTATION → NOT AUTHORIZED
+```
+
+A próxima deliberação precisa resolver os achados P0 antes de promover esta proposta a autoridade normativa, sem inventar aprovação humana a partir de documentação candidata.
