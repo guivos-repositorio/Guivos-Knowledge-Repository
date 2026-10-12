@@ -2,7 +2,7 @@
 id: GEM-OPPORTUNITIES-POINTS-REWARDS-CANDIDATE-001
 title: Oportunidades — Retorno em Pontos e Premiações de Eventos — Proposta Transversal
 status: draft
-version: 1.0.0
+version: 1.1.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -718,4 +718,95 @@ HOME PERSON / HOME O-C → UNCHANGED
 GKR MAIN / MENU / MASTERS / REGISTRIES → UNCHANGED
 PR #655 → OPEN / DRAFT
 REAL POINT ISSUANCE / REDEMPTION / REPLIT → NOT AUTHORIZED
+```
+
+## 20. Simulações econômicas comparativas — emissão, reservas e resgate (v1.1.0 candidato)
+
+**Natureza:** ensaio matemático hipotético, não precificação oficial, oferta pública ou autorização financeira. O ofertante custeia 100% do compromisso; pontos e taxas abaixo são cenários apenas para comparação.
+
+### 20.1 Premissas transparentes
+
+- **Cenário A:** 100 pontos por R$ 1,00 de benefício financiado, resgate teórico a R$ 0,01 por ponto. Equivalência matemática simétrica; sem tarifas.
+- **Cenário B:** 100 pontos por R$ 1,00 de benefício financiado, resgate teórico a R$ 0,008 por ponto. Equivalência assimétrica; diferença **não é automaticamente margem ou receita** da Guivos, pois existem custos, obrigações, direitos e efeitos jurídicos a avaliar.
+- **Cenário C:** 50 pontos por R$ 1,00 de benefício financiado, resgate teórico a R$ 0,02 por ponto. Equivalência econômica simétrica com menor quantidade nominal.
+- Todos os cenários desconsideram tarifas operacionais, tributos, spread de fornecedor, riscos de cancelamento e precificação específica do Mall/Travel, que deverão compor simulação posterior.
+
+### 20.2 Oportunidade paga: R$ 200, benefício opcional hipotético de 5%
+
+`B = R$ 200 × 5% = R$ 10,00`; obrigação econômica-base do ofertante: **R$ 10,00**, além de encargos que venham a ser contratados.
+
+| Cenário | Pontos emitidos | Valor teórico de resgate | Diferença teórica entre B e resgate |
+|---|---:|---:|---:|
+| A | 1.000 | R$ 10,00 | R$ 0,00 |
+| B | 1.000 | R$ 8,00 | R$ 2,00 |
+| C | 500 | R$ 10,00 | R$ 0,00 |
+
+**Atenção:** a diferença do cenário B não constitui receita reconhecida, desconto em benefício contratado ou justificativa para reduzir o que foi anunciado à Pessoa. A política precisará declarar a economia efetiva e seus compromissos.
+
+### 20.3 Corrida: 100 pontos às primeiras 30 inscrições e prêmio de classificação
+
+`P_inscricao = 30 × 100 = 3.000 pontos`; `P_podio = 1.000 + 600 + 300 = 1.900 pontos`; teto de exemplo **4.900 pontos**, sem multiplicador por empates. Inscrições após a 30ª continuam disponíveis segundo regras do evento, **sem esse bônus específico**.
+
+| Cenário | Teto nominal de pontos | Valor teórico de resgate a cobrir |
+|---|---:|---:|
+| A | 4.900 | R$ 49,00 |
+| B | 4.900 | R$ 39,20 |
+| C | 4.900 | R$ 98,00 |
+
+Para prêmios fixados diretamente em **pontos**, o custo econômico de cobertura depende da paridade e do custo real de liquidação; portanto não pode ser inferido apenas do valor nominal. Antes de aprovação, verificar valor prometido, custos e se eventual modelo assimétrico atende às condições divulgadas.
+
+### 20.4 Pré-financiamento: comparação FUND-A / FUND-B
+
+**FUND-A — por campanha:** reserva econômica específica antes de lançar obrigação; conciliação individual e saldo remanescente após encerrar inscrições, resultados, recursos e resgates.
+
+**FUND-B — saldo pré-pago do ofertante:** se o saldo disponível for R$ 100 e a primeira campanha reservar R$ 49, restariam **R$ 51 livres** para outras campanhas (cenário A, sem tarifas). Uma segunda reserva de R$ 60 deve ser negada ou condicionada a novo aporte; a reserva de R$ 49 continua protegida.
+
+A simulação de saldo pressupõe que recursos podem ser legalmente recebidos e administrados segundo solução validada; **não constitui autorização para carteira financeira**.
+
+### 20.5 Resgates e estornos exemplificados
+
+**Mall:** compra elegível com abatimento teórico de 600 pontos no cenário A = R$ 6,00; confirmar disponibilidade de pontos, valor aplicável, regras do vendedor e liquidação, com reserva atômica para não debitar duas vezes.
+
+**Travel:** reserva elegível com uso teórico de 2.000 pontos no cenário A = R$ 20,00; não pressupor disponibilidade, taxa de câmbio, cotação de fornecedor nem direito automático a reserva. Cancelamentos seguem contrato Travel/fornecedor; pontos bloqueados podem voltar ao saldo somente conforme estado verificável.
+
+**Estorno de oportunidade paga:** se o valor elegível foi estornado antes de os pontos serem creditados, cancelar reserva correspondente. Se já houve crédito ou resgate, aplicar política de recuperação/compensação e contestação, sem débito silencioso em saldo pessoal.
+
+**Inscrição cancelada:** reserva pode ser liberada, mas não passar automaticamente à pessoa seguinte sem regra de realocação previamente publicada.
+
+### 20.6 Sensibilidade e sustentabilidade
+
+| Parâmetro variável | Consequência a medir |
+|---|---|
+| Taxa de emissão | Pontos nominais concedidos e entendimento da Pessoa |
+| Taxa de resgate | Valor efetivo entregue e exigência de lastro |
+| Preço Mall/Travel e taxas de fornecedores | Diferenças reais de liquidação, não capturadas pelos cenários ideais |
+| Participações válidas e cancelamentos | Obrigações efetivas versus reservas condicionais |
+| Volume de campanhas simultâneas | Necessidade de saldo livre e controle de concorrência |
+| Expiração, estorno após resgate e insolvência | Tratamento jurídico/contábil do passivo e direitos |
+
+**Critério recomendado para próxima deliberação:** escolher primeiramente a *semântica de valor compreensível* e testar cobertura integral de obrigações; somente então parametrizar o número nominal de pontos, taxas de utilização, fontes de custeio e contratos de resgate.
+
+### 20.7 Registro de testes analíticos (sem homologação)
+
+```text
+SCENARIO A: 200 × 0.05 = R$10; 1000 POINTS × R$0.01 = R$10
+SCENARIO B: 200 × 0.05 = R$10; 1000 POINTS × R$0.008 = R$8
+SCENARIO C: 200 × 0.05 = R$10; 500 POINTS × R$0.02 = R$10
+REGISTRATION INCENTIVE: 30 × 100 = 3000 POINTS
+PODIUM INCENTIVE: 1000 + 600 + 300 = 1900 POINTS
+COMBINED CAP: 3000 + 1900 = 4900 POINTS
+FUND-B TEST: R$100 - R$49 = R$51; R$60 EXTRA RESERVE UNSUPPORTED
+```
+
+**Próxima etapa candidata:** definir teste de decisão dos cenários A/B/C com critérios de comunicação de valor, lastro completo, custo de parceiros, tributos, garantia e proteção da Pessoa, preparando recomendação condicional aos gates PAR/FUND/LIQ — sem declarar taxas oficiais.
+
+```text
+VERSION → v1.1.0 CANDIDATE
+ECONOMIC SIMULATIONS → DOCUMENTED / HYPOTHETICAL
+POINT ISSUER FINANCING → 100% BY OFFERING ORGANIZATION OR COLLECTIVE
+PAR/FUND/LIQ GATES → 0/5 RATIFIED
+MALL / TRAVEL REDEMPTION → CONCEPTUAL EXAMPLES ONLY
+GKR MAIN / MENU / MASTERS / REGISTRIES → UNCHANGED
+PR #655 → OPEN / DRAFT
+IMPLEMENTATION / REAL POINT ISSUANCE → NOT AUTHORIZED
 ```
