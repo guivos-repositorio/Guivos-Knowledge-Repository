@@ -2,7 +2,7 @@
 id: GKR-COLLECTIVE-RECOGNITION-001
 title: Coletivos — Verificado e Contribuição Reconhecida
 status: proposed
-version: 3.7.0
+version: 3.8.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -2293,4 +2293,69 @@ DEC-02.D → NEXT
 GKR MENU ACCESS → REQUESTED / NOT PUBLISHED
 PR #654 → OPEN / DRAFT
 BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
+```
+
+
+## DEC-02.D — Exame individual: atribuição e temporalidade da contribuição (v3.8 candidato)
+
+**Resultado:** CONVERGÊNCIA ANALÍTICA CONDICIONAL. Este exame detalha atribuição material e recortes de vigência, sem aprovar limiares, transformar avaliação em reputação universal ou autorizar concessão.
+
+### Pergunta decisória
+
+Em que condições o relato de benefício, aprendizado ou avanço percebido em uma experiência elegível poderá integrar o reconhecimento de um Coletivo específico, sem atribuir resultados automaticamente a divulgadores, patrocinadores ou a todos os parceiros? Como preservar mudanças históricas sem afirmar contribuição atual não comprovada?
+
+### Gates de atribuição
+
+| Gate | Afirmação necessária | Caso que impede atribuição |
+|---|---|---|
+| ATR-01 Identificação | Experiência, edição, etapa e período delimitados | Evento genérico ou sem contexto |
+| ATR-02 Papel do Coletivo | Organização, execução ou coexecução material verificável | Apenas divulgação, hospedagem de link ou patrocínio |
+| ATR-03 Correspondência | Percepção da Pessoa vinculada à etapa realmente vivida e à intervenção pertinente | Avaliação de outro produto, etapa ou executor |
+| ATR-04 Coexecução | Distribuição de papéis explicitada por evidências, com atribuição parcial/compartilhada quando justificável | Transferência integral e automática a todos os parceiros |
+| ATR-05 Integridade | Procedência, independência, conflito de interesse e contestação examinados | Evidências materialmente conflitantes ou manipuladas |
+| ATR-06 Recorte temporal | Período, versão de atividades, finalidade e identidade do Coletivo compatíveis | Misturar épocas e finalidades distintas como se fossem idênticas |
+
+### Classes candidatas de participação institucional
+
+- **EXECUTOR DIRETO:** realiza etapa material central que fundamenta a avaliação, após comprovação.
+- **COEXECUTOR MATERIAL:** possui papel comprovável de execução compartilhada; não implica fração quantitativa automaticamente presumida.
+- **ORGANIZADOR MATERIAL:** estrutura ou conduz aspectos fundamentais da vivência, com correspondência evidenciada entre seu papel e a contribuição alegada.
+- **APOIADOR / PATROCINADOR / DIVULGADOR / CEDENTE:** papel pode ser verdadeiro e relevante, mas não herda automaticamente percepções atribuíveis ao executor.
+- **INDETERMINADO:** vivência e relato permanecem válidos na fonte contextual, mas não sustentam reconhecimento institucional do Coletivo específico.
+
+### Temporalidade e mudanças materiais
+
+1. Preservar separação entre data da experiência, data da resposta, janela de análise, data de decisão e validade/publicação do selo.
+2. Usar recortes temporais compatíveis com finalidade e forma de atuação; não misturar relatórios de experiências incomparáveis.
+3. Mudança de finalidade, liderança relevante, executor, identidade, território ou formato requer exame de continuidade e, quando material, reavaliação.
+4. Encerramento de atividades não apaga avaliação histórica legítima, mas não autoriza afirmação pública de contribuição corrente.
+5. Reconhecimento institucional vigente exige evidência e decisão no escopo temporal aprovado; não transferir automaticamente selo a sucessor, filial, parceiro ou iniciativa com nome semelhante.
+6. Edições únicas e Coletivos novos não são eliminados por ausência de séries temporais; robustez exige método proporcional a ser definido em DEC-02.C.
+
+### Cenários de fronteira
+
+| Cenário | Encaminhamento candidato |
+|---|---|
+| Grupo de pedal organiza e conduz pedalada | Atribuição material possível após prova contextual |
+| Loja patrocina água em pedalada de outro organizador | Patrocínio não transfere mérito integral |
+| Dois Coletivos coexecutam oficina | Examinar contribuição de cada um, sem dupla contagem automática |
+| Curso realizado por parceiro e apenas divulgado pelo Coletivo | Experiência válida, atribuição institucional não presumida |
+| Grupo altera foco de atividades esportivas para formação | Segmentar janela e finalidade; não extrapolar indicadores |
+| Coletivo suspende funcionamento | Preservar histórico, examinar vigência e retirar projeção quando aplicável |
+| Evento único comprovado | Atribuição pode ser analisada, sem exigir eventos repetidos universalmente |
+| Coletivo é renomeado ou incorporado | Reexaminar continuidade de identidade e titularidade, sem transferência automática |
+
+### Questões de deliberação
+
+Definir categorias formais e prova mínima de papel material; regras para coexecução e possíveis métricas sem dupla contagem; janela de avaliação e revalidação; tratamento de mudanças materiais e sucessão; proteção das respostas privadas; autoridade de contestação e reatribuição. DEC-02.D não fixa durações de selo ou metodologia estatística que ainda dependem de DEC-02.C/E e DEC-03/04.
+
+```text
+DEC-02.D INDIVIDUAL EXAM → COMPLETE
+DEC-02.D ANALYTICAL DIRECTION → CONDITIONAL CONVERGENCE
+DEC-02.D HUMAN NORMATIVE ADJUDICATION → PENDING
+DEC-02 INDIVIDUAL EXAMS → 4/5 DOCUMENTED
+DEC-02.E → NEXT
+PR #654 → OPEN / DRAFT
+GKR MENU ACCESS → REQUESTED / NOT PUBLISHED
+ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
 ```
