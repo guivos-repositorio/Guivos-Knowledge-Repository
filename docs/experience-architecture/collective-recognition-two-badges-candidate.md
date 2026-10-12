@@ -2,7 +2,7 @@
 id: GKR-COLLECTIVE-RECOGNITION-001
 title: Coletivos — Verificado e Contribuição Reconhecida
 status: proposed
-version: 1.2.0
+version: 1.3.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -771,4 +771,78 @@ ADJ-03 DESIGN / CALIBRATION SCENARIOS → DOCUMENTED
 ADJ-03 QUANTITATIVE THRESHOLDS → NOT ADJUDICATED
 ADJ-03 HUMAN APPROVAL → PENDING
 ISSUANCE/PUBLICATION/IMPLEMENTATION → NOT AUTHORIZED
+```
+
+
+## ADJ-04 — Governança operacional, alçadas e escalabilidade (v1.3 candidato)
+
+**Natureza:** proposta de segregação de funções e desenho operacional; não designa cargos reais nem concede competência normativa, acesso a dados, entitlement, emissão ou publicação.
+
+### RACI candidato de decisões
+
+| Atividade | Responsável operacional candidato | Aprovador competente a designar | Separação/controle |
+|---|---|---|---|
+| Solicitar Verificado | Representante legitimado do Coletivo | Nenhum na abertura | Autodeclaração não aprova selo |
+| Conferir existência e representação | Núcleo de verificação de entidades | Autoridade de decisão Verificado | Evidências e conflito de interesse registrados |
+| Validar experiência e atribuição | Equipe de integridade de evidência | Autoridade metodológica | Não editar avaliação privada |
+| Calcular indicadores de contribuição | Serviço de apuração versionada | Responsável pela metodologia | Cálculo não é concessão |
+| Examinar fraude e denúncias | Equipe independente de integridade/proteção | Alçada de moderação competente | Suspeita não é condenação |
+| Deliberar sobre Contribuição Reconhecida | Revisor de concessão independente | Autoridade de decisão do selo | Exige Verificado vigente, robustez e fundamento |
+| Publicar/retirar selo | Serviço de projeção autorizado | Autoridade de publicação | Consome estado competente; não infere selo por métricas |
+| Revisar recursos | Instância independente de recurso | Instância recursal definida | Não ser decisor único do ato recorrido |
+| Auditar políticas e equidade | Governança de confiança/reputação | Colegiado humano a designar | Exame de falsos positivos/negativos e revisão das regras |
+
+São **funções lógicas**, não cargos, núcleos existentes ou órgãos institucionalmente constituídos. Uma equipe pequena pode acumular atividades administrativas compatíveis, mas a decisão material e seu recurso não devem depender de uma única pessoa sem revisão independente.
+
+### Níveis candidatos de risco
+
+- **Risco ordinário:** prova consistente, sem conflito material; análise padronizada e decisão humana rastreável.
+- **Risco elevado:** identidade ou representação conflitante, evidência externa difícil, coexecução complexa, anomalia de amostragem; revisão adicional com independência.
+- **Risco crítico:** suspeita fundada de falsificação, ameaça a participantes, exposição sensível ou comprometimento da fonte canônica; proteção cautelar proporcional, escalonamento especializado e contraditório seguro quando cabível.
+
+A estratificação de risco não muda o significado dos selos nem transforma sinais automatizados em decisões de fraude.
+
+### Contrato mínimo de trilha de decisão
+
+Para cada decisão de selo preservar, em custódia autorizada: `collective_ref`, tipo de selo, escopo e período, versão normativa de critérios, estado anterior/novo, evidências admissíveis e proveniência, decisão motivada, alçada competente, conflitos de interesse e impedimentos, data de vigência/revisão, notificações, recurso e evento de publicação/retirada. São **campos conceituais** sujeitos a arquitetura, privacidade e retenção, não schema implementável automaticamente.
+
+### Separação de produto e evidência
+
+- Área privada do Coletivo: solicitação, complementação, prazo, status e recurso, sem exibir avaliações privadas ou denunciantes.
+- Serviços internos autorizados Guivos: ingestão, verificação, análise, revisão e auditoria, com mínimos privilégios.
+- Fonte canônica de reconhecimento: decisão versionada do selo, separada da fonte de avaliações R1 e do objeto de publicação P1.
+- Superfícies públicas: cards/PER-103 apenas projetam reconhecimento vigente e publicável, com invalidação de cache.
+- Organizações parceiras, anunciantes e representantes comerciais não são autoridades de reconhecimento.
+
+### Escala e autonomia institucional
+
+A Guivos deve estabelecer políticas versionadas, capacitação de revisores, controle de qualidade por amostragem, alçadas proporcionais ao risco, revisão independente e indicadores internos de tempo de resposta, erros revertidos, contestações e decisões sem evidência suficiente. Esses indicadores operacionais não são métricas públicas de qualidade dos Coletivos nem KPIs canônicos aprovados.
+
+A função de autoridade de reconhecimento não deve depender permanentemente do fundador. A delegação concreta requer mandato institucional, impedimentos, supervisão e trilha audível antes de operação.
+
+### Resiliência e impossibilidade de reativação indevida
+
+Erro de dados, indisponibilidade da fonte, conflito entre regiões, expiração, suspensão ou revogação não autorizam exibição de selo não validado. Publicação depende de decisão material vigente. Retries devem ser idempotentes; cache, índice, exportação e backup não reativam status revogado. Definir SLAs, sincronização, rotinas de reconciliação e política de indisponibilidade antes de autorizar engenharia.
+
+### Testes da estrutura de autoridade
+
+1. Representante solicita e anexa provas: não consegue aprovar a própria solicitação.
+2. Analista com conflito de interesse: caso é redistribuído ou revisado independentemente.
+3. Cálculo estatístico acima de limite candidato: não concede selo sem decisão competente.
+4. Recurso contra revogação: revisão não conduzida pelo mesmo decisor único.
+5. Equipe comercial patrocinadora tenta acelerar ou alterar reconhecimento: pedido não altera decisão.
+6. Falha de cache mantém selo expirado: projeção é corrigida, sem estado vigente fictício.
+7. Equipe de integridade identifica risco sério a participante: medidas de proteção têm prioridade sobre publicidade e respeitam devido processo.
+8. Auditoria encontra inconsistência em critério versionado: correção não reescreve silenciosamente decisões históricas.
+
+### Pendências bloqueadoras
+
+Adjudicar órgãos/mandatos reais, competência de cada selo, separação mínima em pequenas operações, prazos e SLAs, níveis de risco, custódia e retenção, direitos de defesa, auditoria e recursos, tratamento internacional por jurisdição, custos de operação e contratos técnicos. A governança institucional e a política de proteção de dados necessitam validação específica antes de implementação.
+
+```text
+ADJ-04 GOVERNANCE RACI CANDIDATE → DOCUMENTED
+REAL DECISION AUTHORITY → NOT ASSIGNED
+PUBLICATION AUTHORITY → NOT ASSIGNED
+OPERATING SLAS → NOT ADJUDICATED
+BADGE ISSUANCE / IMPLEMENTATION → NOT AUTHORIZED
 ```
