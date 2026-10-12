@@ -2,7 +2,7 @@
 id: GEM-OPPORTUNITIES-POINTS-REWARDS-CANDIDATE-001
 title: Oportunidades — Retorno em Pontos e Premiações de Eventos — Proposta Transversal
 status: draft
-version: 0.5.0
+version: 0.6.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -394,3 +394,13 @@ A Home Pessoa parte de quem vive sua Journey, reconhece necessidades, desejos, p
 **Regra de não regressão:** um visitante deve conseguir compreender a visão Guivos e seu papel como Organização ou Coletivo **sem precisar conhecer o sistema de pontos ou os dois selos**. Retirar essas menções não pode enfraquecer a mensagem central da Home.
 
 **Estado:** diretriz editorial candidata registrada, sem mudança no Master da Home, sem autorização de publicação dos pontos ou selos e sem alteração no MENU ou na PR #654.
+
+## 15. Confirmação de direção sobre os dois selos — orientação de Home (v0.6.0)
+
+**Decisão comunicada pelo fundador em 12/10/2026:** a política conceitual dos selos **Verificado** e **Contribuição Reconhecida** é considerada **aprovada na direção de produto**. As pendências de registros e formalização no GKR não impedem que a equipe de design contemple esses elementos na futura Home. Esta decisão atualiza a interpretação editorial anterior de que os selos só poderiam ser considerados no design após conclusão de todos os registros.
+
+**Não confundir estágios:** aprovação declarada de direção de produto ≠ regularização documental já concluída ≠ competência institucional comprovada para todos os atos ≠ implementação, emissão ou concessão real de selos. O histórico de exames e adjudicações na PR #654 deve ser atualizado pelo rito próprio, sem reclassificação automática de 0/36 para 36/36.
+
+**Aplicação à Home O/C:** os selos podem fazer parte do escopo de concepção de design, **discretamente** e em conexão com M09 (confiança, representação, evidências, contribuições), sem entrar no hero, protagonizar a narrativa ou substituir o significado de confiança por ícones. Sua eventual exposição como funcionalidades disponíveis em site público ainda exige implantação e veracidade operacional.
+
+**Invariante:** mesma visão da Home Pessoa sob o ângulo de Organizações/Coletivos; nenhum mecanismo instrumental — selos ou pontos — se torna protagonista.
