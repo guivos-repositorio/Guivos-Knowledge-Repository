@@ -2,7 +2,7 @@
 id: GKR-COLLECTIVE-RECOGNITION-001
 title: Coletivos — Verificado e Contribuição Reconhecida
 status: proposed
-version: 4.3.0
+version: 4.4.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -2668,6 +2668,64 @@ DEC-03.B ANALYTICAL DIRECTION → CONDITIONAL CONVERGENCE
 DEC-03.B HUMAN NORMATIVE ADJUDICATION → PENDING
 DEC-03 INDIVIDUAL EXAMS → 2/5 DOCUMENTED
 DEC-03.C → NEXT
+GKR MENU ACCESS → REQUESTED / NOT PUBLISHED
+PR #654 → OPEN / DRAFT
+BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
+```
+
+
+## DEC-03.C — Exame individual: recursos, contestação e proteção (v4.4 candidato)
+
+**Resultado:** CONVERGÊNCIA ANALÍTICA CONDICIONAL. Exame de garantias e alçadas recursais, sem instituir instância de recurso, fixar prazos ou adjudicar política normativa.
+
+### Questão decisória
+
+Como assegurar que decisões de concessão, indeferimento, suspensão e revogação dos dois selos sejam contestáveis e revisadas por autoridade independente, preservando avaliações negativas legítimas, identidades protegidas, denúncias de boa-fé e medidas urgentes proporcionais?
+
+### Direitos processuais candidatos
+
+| Código | Garantia proposta | Limite |
+|---|---|---|
+| REC-01 Comunicação | Informar ao Coletivo o estado, o escopo e os motivos materiais da decisão em linguagem compreensível | Não revelar participantes, denunciantes, sinais antifraude sensíveis ou avaliações privadas |
+| REC-02 Complementação | Admitir correção de erro, resposta a inconsistência e envio de prova pertinente | Não permitir alteração retroativa de respostas das Pessoas |
+| REC-03 Contestação | Disponibilizar canal formal para questionar mérito, prova ou procedimento | Crítica negativa legítima não se remove por discordância |
+| REC-04 Independência | Submeter recurso a revisor com competência, sem conflito e distinto do decisor único original | Recurso não pode ser julgando conclusivamente por quem praticou o ato |
+| REC-05 Fundamentação | Registrar fatos, critério versionado, razões, contraditório cabível e decisão final | Algoritmo ou denúncia isolada não comprovam fraude |
+| REC-06 Proteção | Resguardar autores de avaliações, denunciantes e membros sensíveis contra exposição e retaliação | Representação do Coletivo não dá acesso a identidades privadas |
+| REC-07 Urgência | Admitir medida cautelar proporcional sob risco relevante, com limite temporal e revisão posterior | Medida cautelar não equivale a decisão definitiva de fraude |
+| REC-08 Correção e publicação | Aplicar decisão de recurso à fonte canônica e, separadamente, às projeções autorizadas | Provimento não reativa selo antigo por cache ou sem ato de publicação |
+
+### Fluxo institucional candidato
+
+`NOTIFICAÇÃO PROPORCIONAL` → `PEDIDO DE COMPLEMENTAÇÃO OU RECURSO` → `TRIAGEM DE ADMISSIBILIDADE` → `INSTRUÇÃO PROTEGIDA` → `REVISÃO INDEPENDENTE` → `DECISÃO FUNDAMENTADA` → `ATUALIZAÇÃO CANÔNICA` → `EVENTUAL PUBLICAÇÃO/RETIRADA AUTORIZADA`.
+
+A condição de recurso não suspende nem restaura automaticamente o selo: efeitos durante contestação devem ser definidos de acordo com risco, vigência e decisão cautelar competente.
+
+### Casos de fronteira
+
+| Cenário | Resposta candidata |
+|---|---|
+| Coletivo contesta prova de representação e apresenta novo mandato | Reexaminar vínculo sem apagar a decisão anterior |
+| Avaliação negativa legítima gera pedido de exclusão | Preservar crítica contextual e proteger a Pessoa |
+| Denúncia de concorrente com possível interesse | Apurar independentemente; conflito não constitui prova |
+| Fraude presumida apenas por sinal de IA | Não declarar fraude sem análise humana fundamentada |
+| Participantes de grupo espiritual seriam expostos pela justificativa | Fornecer fundamentação protegida, sem identidade de membros |
+| Selo suspenso por risco urgente | Limitar a medida, documentar motivo e prever revisão |
+| Recurso provido após revogação | Nova decisão versionada e publicação expressa antes de exibir |
+| Pequeno Coletivo sem assessor jurídico | Procedimento acessível, proporcional, com comunicação clara |
+| Recurso a ser julgado pelo próprio decisor original | Exigir revisor independente ou não concluir o recurso |
+| Falha na entrega de notificação | Reexaminar tempestividade e assegurar defesa efetiva |
+
+### Questões normativas abertas
+
+Definir titular do rito, legitimidade para recurso, níveis de revisão, prazos, forma de notificação, efeitos suspensivos, regras de cautela, evidências acessíveis à defesa sem expor Pessoas, exceções para denúncias sensíveis, retenção, idioma/jurisdição, auditoria e SLA de atualização pública. Devem existir critérios expressos para evitar recursos usados como assédio contra Pessoas avaliadoras.
+
+```text
+DEC-03.C INDIVIDUAL EXAM → COMPLETE
+DEC-03.C ANALYTICAL DIRECTION → CONDITIONAL CONVERGENCE
+DEC-03.C HUMAN NORMATIVE ADJUDICATION → PENDING
+DEC-03 INDIVIDUAL EXAMS → 3/5 DOCUMENTED
+DEC-03.D → NEXT
 GKR MENU ACCESS → REQUESTED / NOT PUBLISHED
 PR #654 → OPEN / DRAFT
 BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
