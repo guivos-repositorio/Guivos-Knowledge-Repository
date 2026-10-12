@@ -2,7 +2,7 @@
 id: GEM-OPPORTUNITIES-POINTS-REWARDS-CANDIDATE-001
 title: Oportunidades — Retorno em Pontos e Premiações de Eventos — Proposta Transversal
 status: draft
-version: 0.6.0
+version: 0.7.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -404,3 +404,59 @@ A Home Pessoa parte de quem vive sua Journey, reconhece necessidades, desejos, p
 **Aplicação à Home O/C:** os selos podem fazer parte do escopo de concepção de design, **discretamente** e em conexão com M09 (confiança, representação, evidências, contribuições), sem entrar no hero, protagonizar a narrativa ou substituir o significado de confiança por ícones. Sua eventual exposição como funcionalidades disponíveis em site público ainda exige implantação e veracidade operacional.
 
 **Invariante:** mesma visão da Home Pessoa sob o ângulo de Organizações/Coletivos; nenhum mecanismo instrumental — selos ou pontos — se torna protagonista.
+
+## 16. Reconciliação conceitual entre as Homes — mesmo ecossistema, duas perspectivas (v0.7.0 candidato)
+
+**Fontes comparadas na `main` em 12/10/2026:** `GKR-UX-HOME-MASTER-001 v1.0.7` (Pessoa) e `GKR-UX-HOME-OC-MASTER-001 v1.0.7` (Organizações e Coletivos). Ambos estão `active`, `normative:false`, como referências correntes de consumo de design; o Master O/C declara o Master Pessoa como `parent`. Esta análise não modifica nenhum Master.
+
+### Regra-mãe de simetria
+
+**Uma Guivos, uma visão, perspectivas complementares.** A Home Pessoa apresenta o ecossistema desde a autonomia de quem vive a própria Journey. A Home O/C expõe possibilidades desde as capacidades, iniciativas, recursos e contribuições dos agentes que podem habilitar experiências reais. A segunda página não é um funil de aquisição B2B, ferramenta de preços ou vitrine de funcionalidades.
+
+### Matriz de equivalência semântica
+
+| Eixo | Perspectiva Pessoa | Perspectiva Organização/Coletivo | Resultado |
+|---|---|---|---|
+| Fundação | Momento, possibilidade, próximo passo e experiências vividas | Capacidade legítima, contribuição, contexto e acesso | CONVERGENTE, sem promessa de impacto |
+| Participantes | Pessoa com decisão sobre sua Journey | Organização/Coletivo preserva identidade e governança | CONVERGENTE, papéis distintos |
+| Possibilidade/oportunidade | Descobre, compreende, decide participar | Cria, habilita ou disponibiliza oportunidades reais | CONVERGENTE, complementar |
+| Vida real/território | Pessoas, lugares e experiências além da tela | Ações, iniciativas, infraestrutura e vínculos territoriais | CONVERGENTE, não simular escala |
+| Autonomia | Sem prescrição e coerção | Sem captura da Journey, compra de relevância ou pressão comercial | CONVERGENTE |
+| Confiança e prova | Escolha consciente com evidências | Responsabilidade, representação, proteção e comprovação de alegações | CONVERGENTE |
+| Jornada/produtos | Journey central, especializados como capacidades | Mesma Guivos e papéis preservados, sem reduzir organizações a Business | CONVERGENTE |
+| Valor/circulação | Viver experiências e conexões | Contribuir e habilitar contexto de valor | CONVERGENTE; pontos instrumentais |
+
+### Impacto dos mecanismos adicionais
+
+- **Selos** `Verificado` e `Contribuição Reconhecida`: há aprovação expressa da **direção de produto** pelo fundador para integrarem o **escopo do design** da Home O/C. Permanecem elementos contextuais possíveis de M09; não substituem confiança, evidência, transparência ou contribuição. Formalização documental específica da PR #654 segue distinta.
+- **Pontos** em oportunidades pagas e eventos: apoio econômico facultativo, custeado integralmente pelo ofertante; podem ser compreendidos em aprofundamento sobre M08, **sem obrigação de menção na Home pública**. Percentuais, cotas, paridade, ranking de colocação e orçamentos pertencem às superfícies funcionais e às políticas econômicas, não à tese pública central.
+- **Mall e Travel**: possíveis relações futuras de utilização de pontos não alteram o conceito de Journey nem tornam a Home O/C um catálogo de produtos ou programa de fidelidade.
+
+### Diagnóstico de lacunas reais
+
+**Lacuna narrativa estrutural demonstrada:** NENHUMA nas fontes comparadas. A Home O/C já contém movimentos de capacidades, fragmentação, contribuição, complementaridade, circulação de valor, confiança e produtos em papéis próprios.
+
+**Possível aperfeiçoamento condicionado:** quando a equipe materializar o design e houver prova/estado adequado, adicionar menção **curta e contextual** aos selos no M09, sem seção nova e sem alegar selos concedidos. Menção econômica sobre pontos no M08 é **opcional**, não requisito de aceitação. Não se exige ajuste em M02/M10 por existirem propostas de mecanismos.
+
+**Rejeitar:** hero com cashback, cards centrais de premiações, benefícios como eixo de convencimento, selos como substitutos da confiança, exemplares inventados de Coletivos reconhecidos, comparação de planos ou narrativa comercial incompatível com a Home Pessoa.
+
+### Critérios de aceitação futuros
+
+1. Um visitante entende propósito, possibilidades, contribuição e relações mesmo sem conhecer selos/pontos.
+2. Os 11 movimentos preservam função, hierarquia e liberdade criativa do designer.
+3. Ambas as Homes continuam expressando a mesma fundação sem copiar textualmente conteúdo nem apagar diferenças de perspectiva.
+4. Toda alegação pública corresponde à maturidade real de produto; design conceitual não equivale a funcionalidade operacional.
+5. Selos, quando representados, são contextuais e não viram credencial fictícia em atores reais.
+6. Pontos não controlam percepção de relevância, ordenação de oportunidades nem mérito dos Coletivos.
+
+**Encaminhamento:** manter Masters vigentes intactos neste ciclo; usar esta matriz como insumo candidato de design e auditoria, com eventual PR específica de revisão apenas se surgir mudança textual justificada por lacuna verificável.
+
+```text
+HOME PERSON v1.0.7 / HOME O-C v1.0.7 → CONCEPTUALLY RECONCILED
+ONE ECOSYSTEM / TWO PERSPECTIVES → PRESERVED
+STRUCTURAL HOME NARRATIVE GAP → NONE CONFIRMED
+BADGES → PRODUCT DIRECTION APPROVED / DESIGN CONTEXTUAL
+POINTS → OPTIONAL SUPPORTING DETAIL, NOT HOME EMPHASIS
+HOME MASTERS / MENU / REGISTRIES / MAIN → UNCHANGED
+PR #655 → OPEN / DRAFT
+```
