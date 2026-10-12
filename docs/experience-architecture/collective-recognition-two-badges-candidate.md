@@ -3770,3 +3770,76 @@ PR #654 → OPEN / DRAFT
 GKR MENU ACCESS → REQUESTED / NOT PUBLISHED
 BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
 ```
+
+## DEC-05.D — Exame individual: validação, testes e critérios de qualidade (v4.19 candidato)
+
+**Estado:** EXAME DOCUMENTAL CONCLUÍDO / CONVERGÊNCIA ANALÍTICA CONDICIONAL / ADJUDICAÇÃO NORMATIVA PENDENTE. Os ensaios abaixo constituem plano candidato: nenhum teste foi executado ou aprovado por esta atualização, nenhuma evidência de homologação é reivindicada e nenhum lançamento é autorizado.
+
+### Questão decisória
+
+Quais testes, cenários adversariais, evidências, responsáveis e critérios de aceite devem demonstrar a segurança, justiça, privacidade, integridade decisória e coerência de publicação dos selos `Verificado` e `Contribuição Reconhecida`, antes de eventual piloto ou operação?
+
+### Matriz candidata de validação
+
+| Código | Domínio | Ensaio mínimo proposto | Evidência futura |
+|---|---|---|---|
+| VAL-01 | Identidade e autoridade | Negar decisão a papel não habilitado, incluindo área comercial, IA e aprovador impedido | Casos negativos, matriz de permissões e trilha protegida |
+| VAL-02 | Elegibilidade e prova | Cobrir Coletivos formais/informais, de diferentes portes e localidades; evidência insuficiente não significa fraude | Casos de fronteira e parecer técnico |
+| VAL-03 | Contribuição contextual | Ensaiar percepção positiva, negativa, parcial, não resposta, baixa amostra e duplicidade sem inferência de mérito automático | Amostras sintéticas, análise estatística e revisão humana |
+| VAL-04 | Privacidade e minimização | Verificar coleta mínima, acesso por papel, dados sensíveis inferíveis e vazamento em exports, logs e APIs | Revisão de fluxos, testes de acesso e relatório de riscos |
+| VAL-05 | Antifraude proporcional | Simular manipulação, coerção, denúncias falsas, anomalias e falsos positivos sem sanção automática | Registros de triagem e análise independente |
+| VAL-06 | Estados e dependências | Cobrir emissão autorizada, vigência, expiração, suspensão, recurso, revogação e dependência entre os selos | Matriz de transições com resultados esperados |
+| VAL-07 | Sincronização e retirada | Testar atraso, cache, eventos duplicados/fora de ordem, fonte indisponível e exclusão do selo de cada superfície | Evidência de reconciliação e testes de falha segura |
+| VAL-08 | UX e acessibilidade | Validar rótulos não enganosos, equivalentes textuais, leitores de tela, teclado, responsividade e ausência neutra | Checklist de acessibilidade e ensaios com Pessoas |
+| VAL-09 | Segurança e resiliência | Testar autenticação, autorização, integridade, tratamento de incidentes, recuperação e trilhas protegidas | Relatório de segurança e cenários de recuperação |
+| VAL-10 | Auditoria e regressão | Reproduzir decisão histórica por versão; reexecutar cenários críticos após alterações de política ou software | Matriz de rastreabilidade e regressão |
+
+### Critérios de aceite candidatos (não ratificados)
+
+1. Cada requisito deve apontar para uma decisão candidata identificável, caso de teste, resultado, evidência acessível a revisores autorizados e responsável pela revisão.
+2. Falhas em bloqueios críticos de autoridade, exposição de dados protegidos, dependência dos selos, publicação sem autorização ou retirada segura não podem ser compensadas por médias de testes aprovados.
+3. A ausência de casos de teste, evidências reproduzíveis ou responsável habilitado equivale a **não demonstrado**, jamais a aprovação tácita.
+4. Amostragem, limiares de qualidade, severidades, SLAs, acessibilidade aplicável e tolerância a riscos deverão ser ratificados separadamente, sem números arbitrários.
+5. Dados reais de Pessoas e avaliações R1 não devem ser usados como padrão em testes; preferir dados sintéticos e avaliar tratamento excepcional com competência jurídica/técnica e controles específicos.
+6. Verificações automáticas podem apoiar execução e coleta de evidência, mas não adjudicam critérios institucionais nem autorizam selos.
+7. Achados devem distinguir falha funcional, segurança, privacidade, risco estatístico, problema de linguagem e ausência de documentação; registrar severidade, correção e reteste.
+8. Registros de teste devem preservar segregação, data, versão de política/código, ambiente, resultado, evidência protegida e histórico de reaberturas.
+9. Mudança de política, contrato de superfície, dados ou modelo de estados deverá disparar análise de regressão proporcional antes da autorização de publicação.
+10. Teste em ambiente controlado não constitui autorização de piloto, produção ou extensão a novas localidades.
+
+### Cenários adversariais cruzados
+
+| Cenário | Critério de verificação futuro |
+|---|---|
+| `Contribuição Reconhecida` presente, `Verificado` expirado | Não projetar contribuição como reconhecimento vigente; registrar divergência |
+| Patrocinador tenta interferir na concessão | Permissão negada; nenhuma transição canônica |
+| Coletivo pequeno com avaliações legítimas e dispersas | Não gerar reprovação ou suspeita automática pela amostra |
+| Denúncia anônima com vínculo religioso potencialmente sensível | Triagem protegida; nenhum vazamento de identidade ou associação |
+| Versão antiga chega depois da revogação | Impedir reaparecimento público do selo |
+| Perfil exibe selo removido enquanto card está correto | Detectar e corrigir divergência por superfície |
+| Cache e fonte canônica indisponíveis simultaneamente | Fallback sem afirmação pública não confirmada |
+| Pessoa usa leitor de tela e somente ícone é exibido | Falha de acessibilidade identificada; requer equivalente semântico |
+| Logs contêm conteúdo bruto de avaliação R1 | Falha de privacidade e contenção exigidas antes de autorização |
+| Recurso é provido após decisão publicada | Atualizar somente mediante ato humano autorizado e trilha rastreável |
+
+### Matriz de evidências para futura homologação
+
+Documentar: identificador e versão do requisito; caso de teste; pré-condições; dados sintéticos ou base legítima de tratamento; resultado esperado; resultado obtido; defeitos e severidade; responsável técnico; revisor independente; links a evidências protegidas; decisão de aceite ou reprovação pela autoridade habilitada. Não incluir dados pessoais protegidos em anexos públicos da PR.
+
+### Deliberações ainda necessárias
+
+Ratificar escopo e ambientes; plano de testes e independência das revisões; classificação de criticidade; critérios de bloqueio e reteste; requisitos acessíveis aplicáveis; desenho de ensaios estatísticos sem vieses; limites para dados de teste; política de evidências e retenção; critérios de regressão; procedimentos de incidente; critérios de passagem de DEC-05.D para DEC-05.E. A homologação futura deverá ser expressa e não compensatória quanto aos riscos críticos.
+
+```text
+DEC-05.D INDIVIDUAL EXAM → COMPLETE
+DEC-05.D ANALYTICAL DIRECTION → CONDITIONAL CONVERGENCE
+DEC-05.D TEST EXECUTION → 0 VERIFIED
+DEC-05.D HUMAN NORMATIVE ADJUDICATION → PENDING
+DEC-05 INDIVIDUAL EXAMS → 4/5 DOCUMENTED
+DEC-01..04 ANALYTICAL EXAMS → 20/20 DOCUMENTED
+DEC-01..04 HUMAN NORMATIVE RATIFICATIONS → 0/20 CONFIRMED
+DEC-05.E → NEXT
+PR #654 → OPEN / DRAFT
+GKR MENU ACCESS → REQUESTED / NOT PUBLISHED
+BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
+```
