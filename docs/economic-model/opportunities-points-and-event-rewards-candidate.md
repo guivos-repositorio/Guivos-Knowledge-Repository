@@ -2,7 +2,7 @@
 id: GEM-OPPORTUNITIES-POINTS-REWARDS-CANDIDATE-001
 title: Oportunidades — Retorno em Pontos e Premiações de Eventos — Proposta Transversal
 status: draft
-version: 0.4.0
+version: 0.5.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -363,3 +363,34 @@ HOME O/C MAIN MASTER / READ FIRST → UNCHANGED
 SELLOS PR #654 / G0 / 0-36 → UNCHANGED
 MENU / GKR REGISTRIES / REPLIT / LIVE POINTS → UNCHANGED
 ```
+
+## 14. Diretriz de hierarquia narrativa — Home Organizações e Coletivos (v0.5.0 candidato)
+
+**Ressalva expressa do fundador em 12/10/2026:** a Home de Organizações e Coletivos deve expressar **a mesma visão da Home Pessoa sob outro ângulo**, e não girar em torno dos pontos, selos ou de um catálogo de mecanismos. Esta diretriz **corrige a ênfase** da avaliação da seção 13; aderência temática não implica destaque, destaque no hero ou presença obrigatória nos movimentos.
+
+### Princípio editorial central
+
+A Home Pessoa parte de quem vive sua Journey, reconhece necessidades, desejos, possibilidades, oportunidades e próximos passos. A Home de Organizações e Coletivos parte de quem tem propósito, pessoas, recursos, iniciativas, conhecimento, experiências, serviços e oportunidades que podem contribuir com essa mesma realidade. **É o mesmo ecossistema, uma perspectiva complementar**. Não são duas teses, um catálogo B2B ou uma vitrine de recompensas.
+
+**Hierarquia inegociável de comunicação:**
+1. Propósito da Guivos, possibilidades, contexto e vida real;
+2. Papel e capacidade legítima de Organizações e Coletivos de criar/habilitar oportunidades e relações;
+3. Conexão entre participantes, território, experiências e continuidade;
+4. Confiança, transparência e contribuição com evidências;
+5. Mecanismos instrumentais opcionais (pontos, premiações e selos), apenas se úteis à compreensão — jamais protagonista.
+
+### Critérios de inclusão dos mecanismos
+
+| Tema | Prioridade narrativa | Regra |
+|---|---|---|
+| Criar e habilitar oportunidades reais | Central como expressão de contribuição | Não reduzir oferta ao aspecto monetário |
+| Capacidades, experiências, contextos e relações | Central | Preservar autonomia dos participantes e relevância local/global |
+| Pontos percentuais e prêmios em eventos | **Terciária / detalhe funcional** | Não destacar no hero, não criar movimento nem card promocional obrigatório |
+| Selos Verificado e Contribuição Reconhecida | **Terciária / detalhe de governança** | Podem compor futuro detalhamento de confiança, mas não substituir confiança por símbolo |
+| Mall/Travel como destinos possíveis | Complementar | Não transformar Home em argumento comercial de recompensas |
+
+**Direção textual:** se uma atualização da Home for necessária, preferir uma frase discreta dentro de M08 sobre circulação de valor, sem exemplos de percentuais, quantidade de pontos, rankings ou orçamento; selos, quando cabíveis e aprovados, devem ficar em fontes de profundidade ou menção discreta de confiança em M09. M02 e M10 **não exigem alteração** apenas porque os mecanismos estão em estudo. O contexto existente sobre oportunidades, participação e papéis dos produtos já é suficiente para a narrativa principal.
+
+**Regra de não regressão:** um visitante deve conseguir compreender a visão Guivos e seu papel como Organização ou Coletivo **sem precisar conhecer o sistema de pontos ou os dois selos**. Retirar essas menções não pode enfraquecer a mensagem central da Home.
+
+**Estado:** diretriz editorial candidata registrada, sem mudança no Master da Home, sem autorização de publicação dos pontos ou selos e sem alteração no MENU ou na PR #654.
