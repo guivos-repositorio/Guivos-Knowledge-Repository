@@ -5330,3 +5330,62 @@ GKR MENU → UNCHANGED
 BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
 NEXT → RSP-06 INTEGRATED HUMAN DELIBERATION REGISTER
 ```
+
+## Etapa 289 — RSP-06: Registro integrado de deliberação humana do ciclo de vida (v4.41 candidato)
+
+**Estado:** CONSOLIDAÇÃO DOCUMENTAL CONCLUÍDA / 5/5 EXAMES DOCUMENTADOS / 0/5 ADJUDICAÇÕES HUMANAS CONFIRMADAS. Não é homologação, aprovação de DEP-B, criação de máquina de estados, publicação ou autorização operacional.
+
+### Matriz decisória integrada
+
+| Código | Questão para adjudicação humana | Exame | Adjudicação |
+|---|---|---|---|
+| RSP-06.A | Quais dimensões e estados distinguem mérito, recurso, autorização editorial e projeção? | Concluído | Pendente |
+| RSP-06.B | Quais eventos, autoridades, pré-condições e efeitos permitem transições? | Concluído | Pendente |
+| RSP-06.C | Qual modelo DEP-A/B/C rege a dependência entre os selos e sua apresentação pública? | Concluído | Pendente |
+| RSP-06.D | Como sincronizar, retirar, recuperar e reconciliar todas as superfícies? | Concluído | Pendente |
+| RSP-06.E | Quais controles, testes e evidências precedem eventual homologação? | Concluído | Pendente |
+
+### Invariantes transversais candidatos
+
+1. Os selos `Verificado` e `Contribuição Reconhecida` possuem mérito e histórico institucional próprios, sem concessão automática cruzada.
+2. Estados de mérito, recurso, autorização editorial e projeção pública são dimensões distintas.
+3. Instâncias humanas formalmente habilitadas decidem mérito e recurso; a operação técnica não recebe essa autoridade.
+4. A exibição pública depende de decisão válida, autorização editorial e condições de privacidade, acessibilidade e escopo.
+5. Expiração, suspensão e revogação possuem fundamentos e efeitos próprios, sem apagamento automático do histórico.
+6. Nenhum recurso protocolado ou pedido de renovação altera automaticamente a decisão ou a vigência.
+7. Eventos concorrentes, duplicados, atrasados e fontes indisponíveis exigem políticas de falha segura e reconciliação, não inferências de fraude.
+8. O modelo **DEP-B** é apenas direção analítica candidata para separar mérito de contribuição e publicação condicionada à vigência de `Verificado`; sua escolha depende de adjudicação explícita.
+9. Proteção de avaliações R1 e vínculos sensíveis, proporcionalidade a Coletivos informais, neutralidade da ausência de selo e independência comercial são condições não compensatórias.
+10. Auditoria, especificação técnica, testes executados e homologação são etapas posteriores, não supridas pela conclusão documental.
+
+### Pacote de decisão humana a preencher
+
+Para cada RSP-06.A..E: instância competente e mandato; impedimentos; escopo e política de referência; alternativas efetivamente consideradas; evidências; resultado `APROVAR`, `APROVAR_COM_AJUSTES`, `DEVOLVER_PARA_REVISAO` ou `REJEITAR`; fundamentação; limites e condições; responsáveis; data; versionamento; consequências editoriais e técnicas; mecanismo recursal; cadeia de rastreabilidade. **Nenhuma decisão humana foi registrada neste instrumento.**
+
+### Dependências e ordem de governança
+
+**Primeiro:** adjudicar os gates normativos aplicáveis de DEC-01..05, com as lacunas e vínculos de autoridade identificados. **Depois:** instituir competências de RSP-05.A..F por decisões humanas, e adjudicar RSP-06.A..E sem presumir autoridade antecipadamente. **Posteriormente:** promover, se justificado, contratos normativos e reconciliações com PER-102/PER-103, Masters e Surface/Transition Registries através de fluxos próprios; especificar e autorizar engenharia; executar testes; homologar; e somente então deliberar sobre publicação de selos.
+
+O pedido de acesso via **MENU do GKR** continua sendo uma frente **editorial-documental separada**, cuja solução não pode representar o material `DRAFT` da PR #654 como autoridade vigente. Uma página de referência aprovada e seu posicionamento no MENU exigem ato editorial próprio.
+
+### Próxima frente documental
+
+Preparar uma **matriz única de pendências e sequência de adjudicação normativa** para DEC-01..05 (25 decisões), RSP-05 (6) e RSP-06 (5), distinguindo exames concluídos, autoridades ainda não instituídas, bloqueios e dependências. Não contar a continuidade da análise como ratificação.
+
+```text
+ETAPA 289 RSP-06 INTEGRATED HUMAN DELIBERATION REGISTER → DOCUMENTED
+RSP-06 INDIVIDUAL EXAMS → 5/5 DOCUMENTED
+RSP-06 HUMAN ADJUDICATIONS → 0/5 CONFIRMED
+RSP-05 INDIVIDUAL EXAMS → 6/6 DOCUMENTED
+RSP-05 HUMAN ADJUDICATIONS → 0/6 CONFIRMED
+DEC-01..05 INDIVIDUAL EXAMS → 25/25 DOCUMENTED
+DEC-01..05 NORMATIVE RATIFICATIONS → 0/25 CONFIRMED
+COMBINED EXAMS → 36/36 DOCUMENTED
+COMBINED HUMAN ADJUDICATIONS → 0/36 CONFIRMED
+TESTS / HOMOLOGATION → NOT EXECUTED / NOT AUTHORIZED
+NEW GKR-SURF / GKR-TRN IDS → 0
+PR #654 → OPEN / DRAFT
+GKR MENU → UNCHANGED
+BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
+NEXT → CROSS-PACKAGE NORMATIVE ADJUDICATION DEPENDENCY MATRIX
+```
