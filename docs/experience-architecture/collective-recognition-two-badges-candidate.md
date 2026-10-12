@@ -2,7 +2,7 @@
 id: GKR-COLLECTIVE-RECOGNITION-001
 title: Coletivos — Verificado e Contribuição Reconhecida
 status: proposed
-version: 4.13.0
+version: 4.14.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -3405,5 +3405,63 @@ DEC-04.A..E NORMATIVE RATIFICATIONS → 0/5 CONFIRMED
 DEC-04 INTEGRATED DELIBERATION REGISTER → NEXT
 PR #654 → OPEN / DRAFT
 GKR MENU ACCESS → REQUESTED / NOT PUBLISHED
+BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
+```
+
+
+## DEC-04 — Registro integrado de deliberação humana (v4.14 candidato)
+
+**Estado:** PACOTE ANALÍTICO CONSOLIDADO / RATIFICAÇÃO NORMATIVA PENDENTE. Este registro não autoriza renderização, integração, alteração de PER-103, concessão ou publicação de qualquer selo.
+
+### Quadro integrado de decisões
+
+| Item | Objeto a adjudicar | Direção analítica candidata | Decisão normativa |
+|---|---|---|---|
+| DEC-04.A — Significado e linguagem | Sentido público e limites dos dois selos | `Verificado` confirma existência/representação; `Contribuição Reconhecida` sinaliza contribuição **percebida** e contextual; nenhum implica segurança ou evolução causal | PENDENTE |
+| DEC-04.B — Superfícies e apresentação | Cards, busca, PER-103, responsividade e acessibilidade | Ícones distintos e discretos junto ao nome, roxo `#5D34A9` e verde `#18A15D`, textos acessíveis e superfícies explicitamente autorizadas | PENDENTE |
+| DEC-04.C — Contrato de publicação | Autoridade, fonte, identidade, vigência, escopo, permissão e privacidade | Gates PUB-01..08 não compensatórios; decisão material e autorização editorial distintas | PENDENTE |
+| DEC-04.D — Sincronização e retirada | Mudanças de estado, cache, indisponibilidade e dependência | Invariantes SYN-01..10; não exibir reconhecimento obsoleto nem restaurá-lo por evento antigo | PENDENTE |
+| DEC-04.E — Transparência e limites | Informação pública, privada, de Coletivo e de auditoria | Explicação institucional acessível, proteção R1, ausência neutra e estatísticas não publicadas automaticamente | PENDENTE |
+
+### Invariantes transversais candidatos
+
+1. **Concessão não é publicação.** A decisão material pode estar aprovada e permanecer `APROVADO_NAO_PUBLICADO`; nenhuma superfície deduz autorização por conta própria.
+2. **Cada selo tem escopo próprio.** `Verificado` não certifica segurança ou qualidade geral. `Contribuição Reconhecida` não comprova evolução objetiva, nexo causal ou satisfação universal.
+3. **Pré-requisito vigente.** `Contribuição Reconhecida` só pode ser apresentada como vigente quando `Verificado` do mesmo Coletivo também estiver vigente.
+4. **Projeções não são autoridades.** Cards, busca, PER-103, caches e índices refletem decisões e permissões canônicas; não criam mérito institucional.
+5. **Retirada segura.** Suspensão, expiração, revogação e retirada editorial impedem a afirmação pública do selo; recuperação exige fonte e autorizações atuais.
+6. **Acessibilidade e neutralidade.** Ícones devem ter equivalentes textuais/semânticos; ausência de selo não significa baixa qualidade, fraude ou insegurança.
+7. **Dados protegidos continuam protegidos.** Avaliações individuais R1, identidades, crenças, dados de saúde, denúncias e fundamentos sensíveis não são conteúdo de selo público.
+8. **Sem promoção documental implícita.** Este candidato não altera automaticamente o Master PER-103, outros Masters ou a navegação do GKR.
+
+### Decisões formais exigidas
+
+| Código | Deliberação explícita necessária | Evidência de conclusão futura |
+|---|---|---|
+| RAT-04-A | Ratificar rótulos, microdescrições, explicações e proibições semânticas | Texto público aprovado e versionado |
+| RAT-04-B | Ratificar matriz de superfícies, componente responsivo, acessibilidade e extensão dos Masters | Contratos de UX autorizados, com testes previstos |
+| RAT-04-C | Ratificar PUB-01..08, fonte canônica, alçadas e ato editorial de publicação | Contrato de autorização e escopo de dados aprovados |
+| RAT-04-D | Ratificar SYN-01..10, estados impeditivos, reconciliação, fallback e SLA de retirada | Política e critérios de homologação operacional aprovados |
+| RAT-04-E | Ratificar níveis de transparência, dados públicos, dados protegidos e agregações permitidas | Política editorial e privacidade aprovadas |
+
+Resultados válidos de deliberação futura: `APROVAR`, `APROVAR_COM_AJUSTES`, `DEVOLVER_PARA_REVISAO` e `REJEITAR`, acompanhados de autoridade legitimada, motivação, data, versão e condições. **Nenhum resultado foi presumido** a partir da continuidade de documentação.
+
+### Dependências para saída
+
+`DEC-01` (existência/legitimidade), `DEC-02` (contribuição percebida), `DEC-03` (alçadas), `DEC-04` (publicação) permanecem cada qual com 5/5 exames, mas 0/5 ratificações normativas confirmadas. A operação futura ainda requer `DEC-05` (segurança, testes, controles e homologação), decisão formal de publicação e reconciliação dos Masters. Sem esses atos, o status permanece `proposed` e `non-normative`.
+
+### MENU do GKR — pendência separada
+
+Permanece solicitado acesso a **Reconhecimento de Coletivos** no MENU do repositório. A navegação documental não equivale à publicação de selos no produto. O destino, a hierarquia e a permissão editorial deverão ser reconciliados com `mkdocs.yml` e autoridades correntes; não incluir este rascunho no MENU como fonte operacional vigente.
+
+```text
+DEC-04.A..E INDIVIDUAL EXAMS → 5/5 DOCUMENTED
+DEC-04 INTEGRATED DELIBERATION REGISTER → COMPLETE
+DEC-04 HUMAN NORMATIVE RATIFICATION → 0/5 CONFIRMED
+DEC-01..04 ANALYTICAL EXAMS → 20/20 DOCUMENTED
+DEC-01..04 HUMAN NORMATIVE RATIFICATIONS → 0/20 CONFIRMED
+DEC-05 → NEXT
+PR #654 → OPEN / DRAFT
+GKR MENU PUBLICATION → REQUESTED / NOT AUTHORIZED
 BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
 ```
