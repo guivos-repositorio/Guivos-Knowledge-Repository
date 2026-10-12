@@ -2,7 +2,7 @@
 id: GKR-COLLECTIVE-RECOGNITION-001
 title: Coletivos — Verificado e Contribuição Reconhecida
 status: proposed
-version: 1.0.0
+version: 1.1.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -686,3 +686,23 @@ ADJ-01 FORMAL NORMATIVE ADJUDICATION → PENDING
 CBR-01..08 HUMAN NORMATIVE ADJUDICATIONS → 0/8 CONFIRMED
 BADGE ISSUANCE / PUBLICATION → NOT AUTHORIZED
 ```
+
+
+## ADJ-02 — Matriz candidata de suficiência das evidências
+
+**Verificado:** requer comprovação independente ou cruzada de quatro afirmações: existência do Coletivo; legitimidade da representação; atuação real atribuível ao Coletivo; consistência e atualidade das evidências. CNPJ não é requisito universal e não substitui comprovação de representação. Fotos, seguidores ou autodeclarações isolados não bastam.
+
+**Contribuição Reconhecida:** depende de Verificado vigente e de cinco afirmações adicionais: experiência efetivamente vivida, elegibilidade da Pessoa, atuação material do Coletivo na experiência, resposta voluntária sobre benefício/aprendizado/avanço percebido e integridade e robustez da apuração. Inscrição não comprova participação; avaliação positiva não comprova evolução causal.
+
+| Situação | Encaminhamento candidato |
+|---|---|
+| Existência demonstrada e representação pendente | Solicitar complementação, sem conceder |
+| Coletivo informal com atividades corroboradas | Elegível a exame, mesmo sem CNPJ |
+| Coletivo legítimo com três avaliações positivas | Verificado pode ser analisado separadamente; contribuição depende de robustez |
+| Atividade apenas divulgada pelo Coletivo | Não atribuir sua contribuição |
+| Evidências em conflito | Revisão fundamentada e sem presunção de irregularidade |
+| Atividades sensíveis | Verificação proporcional sem exposição de participantes |
+
+As fontes devem preservar proveniência, escopo, data e autoridade. Evidência verificada pela Guivos, confirmada por responsável, declarada pela Pessoa e externa identificada são categorias diferentes, sem equivalência automática.
+
+**Pendências normativas:** padrões mínimos por tipologia, prova de experiência, critérios estatísticos CBR-03, competência de decisão CBR-06, publicação CBR-07 e proteção de dados. ADJ-02 registra proposta para deliberação, sem adjudicação formal ou autorização de emissão.
