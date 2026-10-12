@@ -5098,3 +5098,81 @@ GKR MENU → UNCHANGED
 BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
 NEXT → RSP-06.C
 ```
+
+## Etapa 286 — RSP-06.C: Dependência institucional entre Verificado e Contribuição Reconhecida (v4.38 candidato)
+
+**Resultado:** EXAME INDIVIDUAL DOCUMENTADO / CONVERGÊNCIA ANALÍTICA CONDICIONAL / ADJUDICAÇÃO NORMATIVA PENDENTE. A dependência é hipótese governada; não se altera mérito, autorização editorial, registry ou interface.
+
+### Questão decisória
+
+Qual relação institucional e publicável deve existir entre os selos `Verificado` e `Contribuição Reconhecida`, distinguindo concessão, persistência histórica, vigência e apresentação pública sem apagar evidências legítimas quando a verificação expira, é suspensa ou revogada?
+
+### Três alternativas para decisão normativa
+
+| Modelo candidato | Relação | Risco e condição |
+|---|---|---|
+| DEP-A — Dependência de mérito | Contribuição só pode ser concedida quando Verificado estiver vigente | Pode invalidar indevidamente avaliações e histórico independentes; requer justificação |
+| DEP-B — Mérito independente, publicação condicionada | Cada selo possui decisão e histórico próprios; Contribuição só pode ser exibida com Verificado vigente e autorização editorial própria | Exige sincronização e regras de retirada e restauração |
+| DEP-C — Independência integral | Contribuição pode ser concedida e publicada sem Verificado | Exige explicar publicamente legitimidade e proteção contra falsa impressão de verificação |
+
+**Direção analítica candidata:** DEP-B, sujeita a decisão humana. Não representa adoção, ratificação ou compromisso de produto.
+
+### Matriz de cenários candidata para DEP-B
+
+| Estado de Verificado | Estado de Contribuição Reconhecida | Tratamento histórico | Projeção pública candidata |
+|---|---|---|---|
+| Não solicitado / em análise | Ainda não concedido | Preservar processos separados | Não exibir contribuição |
+| Vigente | Vigente e editorialmente autorizada | Manter atos separados | Exibir conforme proteção, escopo e autorização |
+| Vigente | Aprovada sem autorização editorial | Preservar concessão | Não exibir contribuição |
+| Expirado | Concessão de contribuição historicamente vigente ou registrada | Não apagar mérito ou evidências | Bloquear exposição dependente de Verificado até regra de restabelecimento |
+| Suspenso | Contribuição concedida anteriormente | Preservar histórico com controles de acesso | Não afirmar publicamente contribuição dependente durante suspensão |
+| Revogado | Contribuição historicamente reconhecida | Preservar trilha; examinar necessidade de revisão própria do mérito | Não exibir como reconhecimento vigente sob DEP-B |
+| Renovado por nova decisão competente | Contribuição ainda válida e autorizada | Revalidar condições e versões | Restabelecer exibição somente após nova verificação das guardas |
+| Indisponibilidade da fonte canônica | Qualquer estado | Não inventar alteração de mérito | Falha segura, sem afirmar novo status ou fraude |
+
+Os estados são conceituais, não enums. O sentido de `vigente` e a validade temporal de Contribuição dependem de critérios ainda não aprovados.
+
+### Dez guardas propostas
+
+1. **Separação substantiva:** `Verificado` atesta existência/representação; `Contribuição Reconhecida` examina contribuição contextual, sem equivalência material.
+2. **Atos separados:** concessão, negativa, renovação e recurso possuem fundamento, autoridade, prazo e escopo por selo.
+3. **Sem efeito retroativo presumido:** expiração de Verificado não apaga automaticamente contribuição legitimamente documentada.
+4. **Publicabilidade condicional candidata:** em DEP-B, contribuição requer Verificado vigente, próprio mérito válido, autorização editorial e visibilidade permitida.
+5. **Suspensão e revogação:** diferenciar bloqueio cautelar de perda definitiva; o reflexo sobre o outro selo não implica revogá-lo automaticamente.
+6. **Restabelecimento:** retorno de Verificado não reativa automaticamente publicação de contribuição sem nova verificação de suas guardas.
+7. **Recurso independente:** interposição ou êxito de recurso sobre um selo não decide automaticamente o mérito do outro.
+8. **Privacidade:** nenhuma dependência expõe avaliadores R1, participantes ou vínculos sensíveis.
+9. **Sem penalização pública:** ausência ou indisponibilidade de qualquer selo não equivale a reputação negativa.
+10. **Rastreabilidade:** guardar versões das políticas, histórico de atos por selo e justificativa de cada alteração de publicação.
+
+### Casos adversariais
+
+- Coletivo informal perde vigência de Verificado por prazo, mas mantém depoimentos legítimos de contribuição: preservar histórico, sem publicidade indevida.
+- Renovação de Verificado pendente: protocolo não permite reativação de Contribuição.
+- Revogação de Verificado por representação fraudulenta: reavaliar a confiabilidade de evidências de contribuição por procedimento próprio, sem anulação automática.
+- Contribuição reconhecida em território específico: não ampliar escopo global pelo simples status de Verificado.
+- Grupo religioso ou de saúde sensível: não ampliar encontrabilidade nem publicar vínculos protegidos.
+- Card apresenta Contribuição após suspensão de Verificado: tratar como divergência de publicação, sujeita a retirada segura.
+- Recurso de Verificado obtém reforma: recomputar guardas editoriais antes de qualquer restabelecimento público.
+- Patrocinador tenta obter Contribuição sem Verificado: patrocínio não modifica regras nem hierarquia de autoridade.
+
+### Questões pendentes de adjudicação
+
+Escolha institucional entre DEP-A/B/C, critérios e temporalidade de validade de ambos os selos, tratamento da expiração e suspensão, semântica de histórico público ou privado, reavaliação após revogação, eventual escopo territorial, política de recurso, conteúdo editorial e sincronização técnica. Exigir aprovação humana motivada e versionada sem transição presumida nos registries ou mudança em PER-103/MENU.
+
+```text
+ETAPA 286 RSP-06.C INDIVIDUAL EXAM → DOCUMENTED
+RSP-06.C ANALYTICAL DIRECTION → DEP-B CONDITIONAL CANDIDATE
+RSP-06.C HUMAN NORMATIVE ADJUDICATION → PENDING
+RSP-06.A..E EXAMS → 3/5 DOCUMENTED
+RSP-06.A..E HUMAN ADJUDICATIONS → 0/5 CONFIRMED
+RSP-05.A..F EXAMS → 6/6 DOCUMENTED
+RSP-05 HUMAN ADJUDICATIONS → 0/6 CONFIRMED
+DEC-01..05 EXAMS → 25/25 DOCUMENTED
+DEC-01..05 NORMATIVE RATIFICATIONS → 0/25 CONFIRMED
+NEW GKR-SURF / GKR-TRN IDS → 0
+PR #654 → OPEN / DRAFT
+GKR MENU → UNCHANGED
+BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
+NEXT → RSP-06.D
+```
