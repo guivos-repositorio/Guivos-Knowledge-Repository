@@ -2,7 +2,7 @@
 id: GKR-COLLECTIVE-RECOGNITION-001
 title: Coletivos — Verificado e Contribuição Reconhecida
 status: proposed
-version: 2.1.0
+version: 2.2.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -1357,4 +1357,58 @@ DEC-01 APPROVED NORMATIVE POLICY → NO
 P0-01 STATE → OPEN
 PR #654 → DRAFT
 BADGE ISSUANCE/PUBLICATION/IMPLEMENTATION → NOT AUTHORIZED
+```
+
+
+## DEC-01.A — Exame individual: existência verificável (v2.2 candidato)
+
+**Resultado do exame:** CONVERGÊNCIA ANALÍTICA CONDICIONAL. Este exame não constitui adjudicação humana formal nem autorização de concessão.
+
+### Questão e proposta examinada
+
+**Questão:** quando a Guivos pode afirmar, com fundamento rastreável, que um Coletivo realmente existe, sem exigir CNPJ de todos e sem tomar seguidores, imagens ou alegações isoladas como prova?
+
+**Tese candidata:** a existência exige (i) identidade coletiva distinguível, (ii) ao menos uma manifestação real de atuação ou organização verificável com escopo e data, (iii) proveniência identificada e (iv) corroboração que não dependa unicamente do mesmo interessado. A representação legítima será deliberada separadamente na DEC-01.B.
+
+### Exame por dimensão
+
+| Dimensão | Condição de suficiência proposta | Caso impeditivo |
+|---|---|---|
+| Identidade distinguível | Nome ou designação, finalidade e características suficientes para evitar confusão com homônimo | Página ou nome isolado sem identificação do coletivo |
+| Realidade da iniciativa | Atividade, organização ou prática comunitária efetiva, demonstrada no contexto apropriado | Intenção de criar grupo, anúncio futuro isolado ou seguidores comprados |
+| Procedência | Fonte, período, relação com a iniciativa e condições de autenticidade rastreáveis | Foto reutilizada ou evento de terceiros atribuído sem vínculo |
+| Corroboração | Fonte ou evidência cruzada que não apenas repita a mesma autodeclaração | Dois perfis geridos pelo mesmo solicitante tratados como independentes |
+| Atualidade | Prova pertinente à existência alegada, com eventual revalidação após mudança material | Registro histórico usado para afirmar atividade presente sem verificação |
+
+### Aplicação proporcional
+
+- **Formal:** registro jurídico é evidência útil, mas não comprova automaticamente atuação atual nem representação da Pessoa solicitante.
+- **Informal, esportivo e comunitário:** ações e encontros corroborados podem sustentar existência sem CNPJ.
+- **Espiritual ou sensível:** aceitar exame reservado e métodos alternativos que não exponham membros, crenças ou participação individual.
+- **Digital/híbrido:** comprovar atividade efetivamente ocorrida e origem controlada da iniciativa, não apenas volume de seguidores.
+- **Recém-formado ou pontual:** não exigir histórico longo ou repetição obrigatória de atividades; evidência real proporcional ao estágio é admissível.
+
+### Resultados possíveis do exame de existência
+
+`SUFICIENTE_PARA_DELIBERACAO`: prova rastreável e corroborada, sem conflito relevante em aberto; não concede selo.  
+`COMPLEMENTACAO`: falta evidência recuperável de um requisito.  
+`CONFLITANTE`: há incompatibilidade material a resolver.  
+`INSUFICIENTE`: não se pode sustentar a afirmação, sem declarar que o Coletivo não existe ou é fraudulento.  
+`INTEGRIDADE_EM_REVISAO`: indício objetivo de falsificação sujeito a processo independente.
+
+### Condições para aprovação normativa
+
+1. Ratificar o conceito de corroboração e definir catálogo aceitável de fontes e prova alternativa.
+2. Definir autenticidade, temporalidade e periodicidade de revalidação, inclusive grupos episódicos.
+3. Estabelecer procedimento para conflito de nomes, identidade clonada e origem contestada.
+4. Definir revisão humana, registros, acesso restrito, minimização e recurso.
+5. Designar instância competente e autoridade de adjudicação antes de marcar `APPROVED`.
+
+```text
+DEC-01.A INDIVIDUAL EXAM → COMPLETE
+DEC-01.A ANALYTICAL DIRECTION → CONDITIONAL CONVERGENCE
+DEC-01.A HUMAN NORMATIVE ADJUDICATION → PENDING
+DEC-01.B → NEXT
+PR #654 → OPEN / DRAFT
+ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
 ```
