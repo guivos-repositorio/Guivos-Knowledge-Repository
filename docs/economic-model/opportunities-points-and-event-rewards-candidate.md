@@ -2,7 +2,7 @@
 id: GEM-OPPORTUNITIES-POINTS-REWARDS-CANDIDATE-001
 title: Oportunidades — Retorno em Pontos e Premiações de Eventos — Proposta Transversal
 status: draft
-version: 1.5.0
+version: 1.6.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -1163,4 +1163,71 @@ FIN-EVENTO → PREPAID POINT BALANCE
 PAR/FUND/LIQ FORMAL GATES → 0/5
 PR #655 → OPEN / DRAFT
 MAIN / MENU / MASTERS / REGISTRIES / REPLIT → UNCHANGED
+```
+
+## 25. Instrumento de adjudicação ROUND — precisão, arredondamento e evidências (v1.6.0 candidato)
+
+**Status:** pronto para apreciação, não adjudicado. A análise ROUND-A (pontos fracionários) é preferencial tecnicamente, mas não se presume decisão humana de precisão, valor de resgate ou metodologia contábil.
+
+### 25.1 Decisões separadas
+
+| Subgate | Questão | Proposta para testar | Situação |
+|---|---|---|---|
+| ROUND-01 | Pontos inteiros, fracionários ou resíduos acumulados? | ROUND-A, com frações visíveis | ABERTO |
+| ROUND-02 | Quantas casas decimais para pontos? | Avaliar 2 versus 3 casas | ABERTO |
+| ROUND-03 | Quando arredondar o benefício em reais? | Uma vez por oportunidade/ofertante e transação liquidada, com decimal exato | ABERTO |
+| ROUND-04 | O que fazer com arredondamentos residuais? | Conciliar retenção em centavos e obrigação efetiva de pontos; sem diferença oculta | ABERTO |
+| ROUND-05 | Como tratar pontos em estornos, cancelamentos e resgates já realizados? | Ajustes auditáveis, política informada e contestação | ABERTO |
+| ROUND-06 | Como expor frações em saldo, checkout Mall e Travel? | Mesmo saldo com precisão uniforme, sem prometer resgate indisponível | ABERTO |
+
+### 25.2 Conjunto de testes para aceitação futura
+
+| Teste | Entrada | Esperado / critério |
+|---|---|---|
+| T01 — Caso fundador | R$ 200,00; 1% | Exatamente 2 pontos, retenção R$ 2,00, repasse-base R$ 198,00 |
+| T02 — Compra com fração | R$ 149,90; 1% | Valor bruto R$ 1,499; demonstrar reconciliação com arredondamento monetário aprovado |
+| T03 — Compra pequena | R$ 0,49; 1% | R$ 0,0049 bruto; declarar se benefício é zero ou acumulável, sem retenção indevida |
+| T04 — Limiar de centavo | R$ 0,50; 1% | R$ 0,005 bruto; comparar modos half-up/half-even e evidenciar escolha, sem presumir um |
+| T05 — Multi-ofertante | Itens R$ 80 e R$ 120, ofertantes distintos, ambos 1% | Reconciliar R$ 0,80 e R$ 1,20 separadamente; não cruzar repasses |
+| T06 — Devolução parcial | R$ 200 com estorno R$ 50 | Benefício final R$ 1,50; diferença -R$ 0,50; repasse-base final teórico R$ 148,50, sem confundir com caixa pós-repasse |
+| T07 — Estorno total | R$ 200 estornados | Ajuste completo dos 2 pontos, respeitando estado de resgate e política |
+| T08 — Retry de pagamento | Mesmo ID transacional reapresentado | Zero duplicidade em retenção, ponto, taxa e repasse |
+| T09 — Pagamento em parcelas | Pagamento parcelado com liquidações distintas | Uma só obrigação por base elegível; regra de crédito explicitada |
+| T10 — Resgate e estorno posterior | Pontos usados em Mall/Travel antes de refund | Não gerar débito oculto; registrar disputa/compensação |
+| T11 — Cashback versus prêmio | Compra com incentivo e participação no evento | Origens financeiras distintas, crédito único por gatilho, combinações só se divulgadas |
+| T12 — Saldo evento insuficiente | Reserva excede pontos disponíveis | Falha da promoção sem impedir inscrição válida |
+| T13 — Concorrência de cotas | Duas inscrições pela última vaga de bônus | Uma só reserva de pontos, ambas inscrições seguem regras do evento |
+
+**Propriedade numérica obrigatória:** para cada ofertante e transação, `valor elegível = repasse-base + retenção de incentivo`, antes de taxa da plataforma e outros ajustes previstos. Para o saldo de pessoa, emissão, estorno e resgate devem preservar ledger verificável, não apenas um número final.
+
+### 25.3 Registro de escolha — a preencher em deliberação
+
+```text
+POLÍTICA ROUND / VERSÃO: A DEFINIR
+AUTORIDADE COMPETENTE E EVIDÊNCIA: A IDENTIFICAR
+MODALIDADE SELECIONADA: ROUND-A / ROUND-B / ROUND-C / OUTRA
+PRECISÃO DOS PONTOS: NÃO APROVADA
+PRECISÃO E ARREDONDAMENTO MONETÁRIO: NÃO APROVADOS
+NÍVEL DO CÁLCULO: ITEM / OPORTUNIDADE / TRANSAÇÃO — NÃO APROVADO
+TRATAMENTO DOS RESÍDUOS: NÃO APROVADO
+REGRAS PARA REFUND/CHARGEBACK: NÃO APROVADAS
+CONSISTÊNCIA NO MALL E TRAVEL: A VALIDAR
+EVIDÊNCIAS DOS TESTES T01..T13: NÃO EXECUTADOS
+PARECER ECONÔMICO, CONTÁBIL, JURÍDICO E UX: PENDENTE
+RESULTADO DA DELIBERAÇÃO: NÃO REGISTRADO
+```
+
+**Porta de saída:** definição formal dos subgates e validação econômica dos T01..T13, acompanhada de compatibilidade com PAR-02/FUND-01/LIQ-01/LIQ-02, precede implementação real. O presente instrumento é apenas uma proposta documental.
+
+### 25.4 Próxima etapa
+
+Montar tabela de decisão com **efeitos sobre saldo da Pessoa e conciliação por ofertante**, sobretudo para compras pequenas e cenários de arredondamento divergente, e estabelecer uma recomendação final condicionada para revisão humana.
+
+```text
+VERSION → v1.6.0 CANDIDATE
+ROUND SUBGATES → 6 DOCUMENTED / 0 ADJUDICATED
+ACCEPTANCE TESTS → 13 DEFINED / 0 EXECUTED
+FIN-COMPRA / FIN-EVENTO → PRESERVED
+PR #655 → OPEN / DRAFT
+MAIN / MENU / MASTERS / REGISTRIES / IMPLEMENTATION → UNCHANGED
 ```
