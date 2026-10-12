@@ -2,7 +2,7 @@
 id: GKR-COLLECTIVE-RECOGNITION-001
 title: Coletivos — Verificado e Contribuição Reconhecida
 status: proposed
-version: 4.12.0
+version: 4.13.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -3329,6 +3329,80 @@ DEC-04.D ANALYTICAL DIRECTION → CONDITIONAL CONVERGENCE
 DEC-04.D HUMAN NORMATIVE ADJUDICATION → PENDING
 DEC-04 INDIVIDUAL EXAMS → 4/5 DOCUMENTED
 DEC-04.E → NEXT
+PR #654 → OPEN / DRAFT
+GKR MENU ACCESS → REQUESTED / NOT PUBLISHED
+BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
+```
+
+
+## DEC-04.E — Exame individual: transparência pública e limites de informação (v4.13 candidato)
+
+**Resultado:** CONVERGÊNCIA ANALÍTICA CONDICIONAL. Exame documental, sem ratificar política de transparência, liberar dados individuais ou autorizar alterações nas superfícies públicas.
+
+### Questão decisória
+
+Quais informações institucionais sobre cada selo devem estar disponíveis para compreensão, verificação de escopo e contestação proporcional, preservando a confidencialidade de Pessoas, avaliações contextuais R1, denúncias, provas protegidas e direitos dos Coletivos?
+
+### Matriz de divulgação candidata
+
+| Classe | Conteúdo | Regime candidato |
+|---|---|---|
+| T-01 Identificação pública | Nome do selo, significado e limite semântico | Público, apenas quando selo publicável |
+| T-02 Estado publicável | Sinal de vigência autorizado por superfície e escopo | Público de forma mínima, sem expor tramitação privada |
+| T-03 Escopo institucional | Natureza geral do reconhecimento e, quando seguro, contexto de atividade ou período | Público somente se ratificado e sem risco de reidentificação |
+| T-04 Política geral | Requisitos e processo em linguagem clara, incluindo distinção dos dois selos | Conteúdo informativo público, após autoridade editorial |
+| T-05 Dados de avaliação R1 | Respostas individuais, vínculo com experiência, identificadores e comentários | Privado/protegido; não expor em cards ou PER-103 |
+| T-06 Evidências sensíveis | Identidades de participantes/denunciantes, dados de crença, saúde ou associação, mecanismos antifraude | Acesso restrito sob necessidade e governança de dados |
+| T-07 Processo e recurso | Detalhes de contestação, denúncias e fundamentos protegidos | Disponibilização proporcional à parte legitimada, não publicação irrestrita |
+| T-08 Indicadores agregados | Amostras, percentuais e dimensões avaliadas | Não publicar automaticamente; exigir revisão estatística, privacidade e autoridade separada |
+| T-09 Ausência de selo | Não solicitado, em análise, indeferido, expirado ou sem reconhecimento | Não inferir nem rotular publicamente causa ou qualidade inferior |
+| T-10 Auditoria | Histórico de decisões, responsáveis, trilhas e divergências | Interno sob autorização; relatórios públicos somente agregados e aprovados |
+
+### Camadas de transparência
+
+**Camada pública:** nome, ícone, significado, limitações e informações institucionais expressamente autorizadas, sem inferir score, impacto causal, garantia de segurança ou endosso universal.
+
+**Camada do Coletivo legitimado:** estado do próprio processo, provas solicitadas, fundamentos compreensíveis da decisão e meios de revisão; não inclui avaliações privadas identificáveis nem a identidade de denunciantes.
+
+**Camada de autoridade e auditoria:** dados mínimos necessários à instrução, fundamentação, segurança e conformidade, com acesso por função, trilha e prazo de retenção a definir. A autoridade não deve publicar material interno apenas por possuí-lo.
+
+### Princípios de proteção e minimização
+
+1. Transparência sobre **o significado e a governança** do selo não exige transparência pública sobre a identidade das Pessoas ou cada resposta.
+2. Exibir apenas conteúdo pertinente ao propósito do selo e à decisão de publicação autorizada; evitar inferências sobre atributos sensíveis ou participação em Coletivos sensíveis.
+3. Não publicar contagens diminutas, comentários ou cortes territoriais/demográficos que permitam reidentificar participantes.
+4. A publicação de estatísticas agregadas requer metodologia, amostragem e limiares de privacidade próprios, ainda não adjudicados em DEC-02/DEC-05.
+5. Não expor denúncia ou investigação não concluída como certeza sobre fraude ou risco; comunicar decisões às partes por canais protegidos.
+6. Preservar direito à contestação e comunicação fundamentada ao Coletivo sem comprometer privacidade, segurança ou integridade da apuração.
+7. Permitir que a Pessoa entenda que ausência de selo é neutra; não anunciar indeferimentos ou estados de revisão como classificação pública negativa.
+8. Evitar rótulos ou contadores universais de qualidade, desempenho, reputação ou impacto; o reconhecimento permanece limitado ao escopo avaliado.
+
+### Casos de fronteira
+
+| Pedido ou exposição | Encaminhamento candidato |
+|---|---|
+| Pessoa pergunta o significado de Verificado | Oferecer explicação clara e limites da verificação |
+| Pessoa pergunta se Contribuição garante melhora de saúde | Negar garantia/causalidade e esclarecer natureza percebida |
+| Coletivo pede lista das Pessoas que o avaliaram | Negar acesso identificável; oferecer fundamento protegido e recurso |
+| Card tenta exibir `92% de contribuição` | Não publicar indicador sem metodologia e autoridade separada |
+| Grupo pequeno tem três avaliações sobre tema sensível | Não divulgar contagem capaz de reidentificar Pessoas |
+| Coletivo sem selo aparece na busca | Mostrar normalmente, sem etiqueta depreciativa |
+| Denúncia está sob apuração | Não transformar alegação em aviso público de fraude |
+| Coletivo recorre de indeferimento | Informar andamento à parte legitimada, sem tornar caso público |
+| Auditor solicita evidência para controle | Fornecer acesso mínimo autorizado, com trilha |
+| Publicação inclui detalhe de crença ou saúde de membros | Bloquear divulgação sensível e revisar incidente |
+
+### Pendências de adjudicação
+
+Ratificar taxonomia de informação pública/protegida, política de transparência por superfície, divulgação de escopo e validade, restrições a agregados e microamostras, autorização de publicação de políticas gerais, mecanismos de explicação acessíveis, direitos de acesso por papel, retenção, resposta a incidentes, revisões legais e tratamento de pedidos de acesso ou contestação.
+
+```text
+DEC-04.E INDIVIDUAL EXAM → COMPLETE
+DEC-04.E ANALYTICAL DIRECTION → CONDITIONAL CONVERGENCE
+DEC-04.E HUMAN NORMATIVE ADJUDICATION → PENDING
+DEC-04.A..E INDIVIDUAL EXAMS → 5/5 DOCUMENTED
+DEC-04.A..E NORMATIVE RATIFICATIONS → 0/5 CONFIRMED
+DEC-04 INTEGRATED DELIBERATION REGISTER → NEXT
 PR #654 → OPEN / DRAFT
 GKR MENU ACCESS → REQUESTED / NOT PUBLISHED
 BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
