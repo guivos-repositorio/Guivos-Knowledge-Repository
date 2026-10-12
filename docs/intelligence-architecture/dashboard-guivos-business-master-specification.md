@@ -2,7 +2,7 @@
 id: GKR-INTELLIGENCE-DASHBOARD-BUSINESS-001
 title: Dashboard Guivos Business — Documento Mestre de Especificação Analítica e Handoff Replit
 status: active
-version: 0.1.3
+version: 0.1.4
 owner: Guivos Intelligence Architecture
 last_updated: 2026-10-11
 normative: false
@@ -755,3 +755,81 @@ A tela executiva deve oferecer valor, referência, janela, população, natureza
 Para cada KPI que avance futuramente, aplicar o envelope integral de `GKR-INTELLIGENCE-KPI-CONTRACT-001`: identidade; fórmula; população; tempo; dimensões; acesso; source; qualidade; governança; interpretação; handoff. Nenhum `proposed` vira `source_pending` enquanto semântica material permanecer aberta.
 
 **Estado desta extensão:** documentação de auditoria proposta; sem promoção de maturidade, sem conexão de dados, sem implementação, sem autorização de disclosure adicional e sem alteração dos anexos C/D/E/F.
+
+
+---
+
+## 25. Extensão candidata — Analytics avançado, grafo de relações autorizadas e explicação por IA
+
+### 25.1 Natureza desta extensão
+
+Esta seção documenta requisitos **candidatos de experiência, exame semântico e demonstração**, inspirados por referências públicas de mercado. Não promove KPIs `proposed/NOT_READY`, não redefine escopo da empresa cliente, não cria autorização de desenvolvimento funcional, uso de dados reais, grafo pessoal ou relatório exportável. O Business mantém a distinção entre empresa cliente e áreas internas Guivos (seção 24.2), e entre dado agregado legítimo e Journey/contexto individual protegido.
+
+### 25.2 Referências de mercado (benchmark não normativo)
+
+| Referência pública | Padrão útil de experiência | Fronteira de adaptação Guivos |
+|---|---|---|
+| Microsoft Viva Insights — Organizational Network Analysis (Microsoft Learn, 2026) | Comparação antes/depois; colaboração entre grupos; visualização grafo/matriz; tendências, silos e hubs coletivos | Não importar dados de colaboração, inferir relações pessoais ou monitorar empregados; somente relações comprovadas/autorizadas e agregação protegida |
+| Visier — People Analytics / Analytics & Reporting | Narrativa visual contextual; exploração de tendências, períodos, coortes e explicação apoiada por dados | Não copiar métricas de RH nem acesso a colaboradores não legitimamente autorizados |
+| Neo4j Bloom / Enterprise Studio | Grafo explorável com perspectivas, tipos de nó/relação, filtros, legenda, seleção e controles visuais | Neo4j como referência técnica não estabelece schema, queries, driver ou produção autorizada |
+| OrgMapper — Organizational Network Analysis | Leitura de redes colaborativas, conexões entre grupos e contextualização de hipóteses | Não criar ranking/influência/reputação individual nem surveillance por analogia |
+
+Fontes de pesquisa: https://learn.microsoft.com/en-us/viva/insights/advanced/analyst/network-collaboration-insights ; https://learn.microsoft.com/en-us/viva/insights/advanced/analyst/change-management-queries ; https://www.visier.com/platform/analytics/ ; https://neo4j.com/docs/enterprise-studio/current/tools/bloom/ ; https://orgmapper.com/ . Usá-las como repertório de UX, sem promover autoridade institucional externa ao GKR.
+
+### 25.3 Superfície candidata de Graph Analytics Business
+
+A empresa poderá, **somente após autorização de escopo, definição de domínio, privacidade e contrato de serving**, explorar relações de objetos sob sua finalidade legítima: empresa/conta contratante, programas autorizados, oportunidades/benefícios oferecidos, participação agregada e relações institucionais autorizadas. Não pressupor um grafo de empregados, influenciadores, relações pessoais, interesses privados, objetivos, vulnerabilidades ou evolução individual.
+
+Experiências candidatas, sem criação de namespace KPI:
+
+- visão de rede agrupada por programa, tipo de iniciativa, unidade ou território **somente quando contratados e autorizados**;
+- alternância entre grafo, matriz de relações agregadas, distribuição, lista acessível e visão temporal, todas sobre o **mesmo recorte de prova**;
+- seleção de nó/aresta em nível de objeto/agrupamento, com legenda, definição de relação, fonte, `as_of`, qualidade e limites de inferência;
+- identificação exploratória de conectividade, alcance de iniciativas e concentração de relações institucionais, se fórmulas, denominadores e thresholds forem aprovados;
+- comparações entre períodos/coortes com explicação de mudanças de cobertura, composição e indisponibilidade;
+- estados `NOT_AUTHORIZED`, `NOT_ENTITLED`, `NO_DATA`, `INSUFFICIENT_DATA`, `SUPPRESSED_BY_POLICY`, `SOURCE_PENDING` e `UNAVAILABLE` distinguíveis, sem transformar ausência em zero.
+
+Centralidade, comunidade, densidade e caminhos são **métodos candidatos** sujeitos a contrato de grafo, validação estatística, proteção contra reidentificação, legitimidade e evidência; não constituem KPIs ou scores de Pessoas aprovados. A leitura de grafo não concede descoberta de nós ocultos, acesso cruzado entre contas ou exportação de topologia privada.
+
+### 25.4 Painel lateral paralelo — solicitar explicação à Guivos Intelligence
+
+Candidato de UX: o dashboard preserva visualizações e filtros na área principal e oferece **painel lateral opcional, recolhível e paralelo**, com ação explícita do usuário corporativo: `Explicar este painel` / `Analisar seleção` / `Preparar relatório`. Este componente é um consumidor de Intelligence, não modelo decisor nem acesso direto à Journey.
+
+Fluxo contratual candidato:
+
+1. O usuário solicita a análise e escolhe período, objetivo/pergunta e escopo autorizado. **Não transmitir silenciosamente todo o dashboard, nem conteúdo oculto.**
+2. Um serviço autorizado constrói um **pacote mínimo de evidência** apenas com dados já permitidos ao usuário, versionamento do KPI, filtros, `as_of`, fontes, frescor, supressões, base de comparação e limitações.
+3. A Guivos Intelligence produz explicação textual com estrutura: resumo executivo, observações comprovadas, comparações, padrões do grafo autorizados, hipóteses, ressalvas, qualidade/confiança de evidência e questões/ações para avaliação humana.
+4. Separar em linguagem visível `OBSERVADO`, `DECLARADO`, `INFERIDO`, `ESTIMADO` e `PREVISTO`; não afirmar causalidade, desempenho humano individual, diagnóstico ou resultado de evolução sem evidência específica.
+5. Permitir revisão do texto e do escopo; **exportação de relatório escrito** (por exemplo PDF/documento) fica como capacidade candidata **bloqueada** até contratos de acesso, proteção, retenção, logs, auditoria, classificação de conteúdo, segurança, exportação e serving serem autorizados.
+6. O relatório deve conservar fonte, versão, recorte temporal, filtros, limites e supressões, inclusive no arquivo exportado. Não remover anonimização/limites pelo uso de IA; não habilitar prompts para contornar autorização ou revelar relações individuais.
+
+O painel não pode inferir automaticamente intenção, recomendar sanções individuais, fazer ranking humano, realizar ações empresariais, adjudicar decisões ou gerar relatório que exponha dados não permitidos no dashboard de origem. A narrativa não vira verdade operacional por ter sido redigida pela IA.
+
+### 25.5 Primeira experiência demonstrativa no Replit — fronteira
+
+A organização visual candidata para Business: **Visão Executiva**, **Programas e Participação**, **Benefícios/Orçamento**, **Pontos/Journey custeado**, **Intelligence agregada**, **Relações autorizadas (grafo/matriz)**, **Qualidade/Proveniência** e painel paralelo de explicação. Reaproveitar estruturas existentes no master, sem criar automaticamente uma superfície principal, namespace KPI, conexão de dados, entitlement ou novo papel de acesso.
+
+Um futuro **protótipo visual sintético e isolado**, somente se expressamente autorizado no gate próprio, deve usar fixtures claramente rotuladas `DEMONSTRAÇÃO / DADOS SINTÉTICOS`, sem conexões a dados reais, identidade identificável, API produtiva, Neo4j real ou exportação de dados privados; estados bloqueados devem ser demonstrados honestamente. A referência visual deve ser original da Guivos, com adaptação funcional de padrões de mercado e não reprodução de telas/ativos protegidos de terceiros.
+
+### 25.6 Gates não satisfeitos
+
+| Gate candidato | Exigência | Situação desta extensão |
+|---|---|---|
+| G-BUS-GRAPH-01 | Objeto, tipo de relação, população, validade, janela, método e denominador adjudicados | `UNRESOLVED` |
+| G-BUS-GRAPH-02 | Fonte/lineage do grafo, qualidade, privacidade e mitigação de inferência/reidentificação | `NOT_VERIFIED` |
+| G-BUS-AI-01 | Finalidade, base autorizativa, pacote mínimo de evidência, modelo de explicabilidade e revisão humana | `NOT_AUTHORIZED` |
+| G-BUS-AI-02 | Contrato de relatório/exportação, retenção, acesso, rastreabilidade, testes de segurança e serving | `NOT_AUTHORIZED` |
+| G-BUS-DESIGN-01 | Aceite humano do escopo de demonstração sintética, identidade visual e implantação isolada | `NOT_AUTHORIZED` |
+
+```text
+BUSINESS DASHBOARD → governed_pre_implementation_dashboard_master
+BUSINESS KPI FAMILY → proposed / NOT_READY
+HUMAN GRAPH ANALYTICS → CANDIDATE / NO PERSON-LEVEL ACCESS
+PARALLEL AI EXPLANATION PANEL → CANDIDATE / NOT AUTHORIZED
+TEXTUAL ANALYTICAL REPORT EXPORT → CANDIDATE / NOT AUTHORIZED
+REPLIT REAL-DATA IMPLEMENTATION → NOT AUTHORIZED
+SYNTHETIC VISUAL PROTOTYPE → REQUIRES DISTINCT AUTHORIZATION
+CANONICAL KPI PROMOTIONS → 0
+IMPLEMENTATION AUTHORIZATION → 0
+```
