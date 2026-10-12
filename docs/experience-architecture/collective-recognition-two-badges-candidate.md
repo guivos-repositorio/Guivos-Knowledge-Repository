@@ -2,7 +2,7 @@
 id: GKR-COLLECTIVE-RECOGNITION-001
 title: Coletivos — Verificado e Contribuição Reconhecida
 status: proposed
-version: 3.2.0
+version: 3.3.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -1980,5 +1980,53 @@ DEC-01 HUMAN NORMATIVE ADJUDICATION → 0/5 CONFIRMED
 P0-01..05 CANDIDATE PROTOCOLS → DOCUMENTED / OPEN
 GKR MENU ENTRY → REQUESTED / NOT PUBLISHED
 PR #654 → OPEN / DRAFT
+BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
+```
+
+
+## DEC-01 — Registro único de adjudicação para deliberação humana (v3.3 candidato)
+
+**Situação:** FORMULÁRIO DOCUMENTAL PREPARADO, SEM DELIBERAÇÃO REGISTRADA. Consolida as minutas DEC-01.A..E sem presumir que “de acordo, segue” significa ratificação normativa ou mandato de concessão.
+
+### Registro de decisões
+
+| Item | Objeto a decidir | Texto-base candidato | Estado humano | Fundamentação / ajustes | Autoridade / data |
+|---|---|---|---|---|---|
+| DEC-01.A | Existência verificável | Identidade coletiva real, prova rastreável, corroboração proporcional e não obrigatoriedade universal de CNPJ | PENDENTE | A preencher | A preencher |
+| DEC-01.B | Representação legítima | Identidade privada, mandato ou confirmação legítima, escopo e vigência, inclusive co-lideranças | PENDENTE | A preencher | A preencher |
+| DEC-01.C | Atuação real | Ação efetivamente realizada, papel material do Coletivo, período e modalidade | PENDENTE | A preencher | A preencher |
+| DEC-01.D | Experiência elegível | Vivência real distinta de interesse, inscrição e percepção, atribuição contextual e resposta voluntária | PENDENTE | A preencher | A preencher |
+| DEC-01.E | Integridade e proteção | Procedência, privacidade, prevenção de manipulação, não retaliação, revisão e retirada governada | PENDENTE | A preencher | A preencher |
+
+Para cada item, a autoridade humana deverá escolher **APROVAR**, **APROVAR COM AJUSTES**, **DEVOLVER PARA REVISÃO** ou **REJEITAR**. Documentar justificativa e versão resultante. Em caso de aprovação parcial, identificar as condições pendentes; aprovação do princípio não autoriza aplicação operacional.
+
+### Controle de autoridade e rastreabilidade
+
+Um registro de decisão somente será considerado válido quando: (a) houver competência institucional reconhecida para deliberar o assunto; (b) decisão e escopo estiverem expressos; (c) fundamento, data e versão constarem do histórico; (d) eventuais ajustes sejam incorporados sem sobrescrever silenciosamente o texto anterior; e (e) a decisão seja reconciliada com os Masters e normas vigentes. O quadro não cria nova autoridade nem valida retroativamente orientações.
+
+### Parecer analítico para deliberação
+
+Os cinco princípios apresentam convergência analítica condicional e são candidatos a ratificação **separadamente**. O pacote não encerra critérios de suficiência operacional, catálogo de evidências, estatística de contribuição, competência institucional, privacidade ou publicação.
+
+**Recomendação documental:** não consolidar a dupla de selos como funcionalidade vigente enquanto DEC-02..05, contratos de superfície e homologação permanecerem pendentes. A DEC-01 concentra a política de evidências e experiência, não todo o sistema.
+
+### Requisitos de fechamento da DEC-01
+
+1. Preencher decisões humanas para A..E, incluindo ajustes e ressalvas.
+2. Validar a competência da autoridade deliberante e compatibilidade com GKR.
+3. Resolver lacunas de prova, periodicidade, modalidade, coexecução e direitos das Pessoas.
+4. Atualizar a autoridade canônica apropriada por processo separado e rastreável, se aprovado.
+5. Não declarar selo em operação, Master PER-103 alterado ou acesso publicado no MENU como consequência automática do fechamento documental.
+
+### Encaminhamento sequencial
+
+`DEC-01 → AGUARDANDO RATIFICAÇÃO`; `DEC-02 → PRÓXIMO PACOTE DE DELIBERAÇÃO`, relativo à metodologia de contribuição percebida. A solicitação de acesso pelo MENU do GKR permanece registrada para reconciliação posterior com `mkdocs.yml` e a política que impede divulgação de drafts como autoridades vigentes.
+
+```text
+DEC-01.A..E DRAFTS → 5/5 PREPARED
+DEC-01 INTEGRATED DECISION REGISTER → PREPARED
+DEC-01.A..E HUMAN NORMATIVE RATIFICATIONS → 0/5 CONFIRMED
+PR #654 → OPEN / DRAFT
+GKR MENU LINK → REQUESTED / NOT PUBLISHED
 BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
 ```
