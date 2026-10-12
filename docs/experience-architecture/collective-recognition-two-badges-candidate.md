@@ -2,7 +2,7 @@
 id: GKR-COLLECTIVE-RECOGNITION-001
 title: Coletivos — Verificado e Contribuição Reconhecida
 status: proposed
-version: 2.2.0
+version: 2.3.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -1409,6 +1409,64 @@ DEC-01.A INDIVIDUAL EXAM → COMPLETE
 DEC-01.A ANALYTICAL DIRECTION → CONDITIONAL CONVERGENCE
 DEC-01.A HUMAN NORMATIVE ADJUDICATION → PENDING
 DEC-01.B → NEXT
+PR #654 → OPEN / DRAFT
+ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
+```
+
+
+## DEC-01.B — Exame individual: representação legítima (v2.3 candidato)
+
+**Resultado:** CONVERGÊNCIA ANALÍTICA CONDICIONAL. A existência real do Coletivo (DEC-01.A) não comprova que qualquer solicitante possa agir em seu nome. Esta seção não formaliza mandato, não decide litígio e não adjudica o gate.
+
+### Questão e critério candidato
+
+Quem solicita a verificação deve ser identificável em âmbito privado, demonstrar vínculo legítimo com o Coletivo e possuir autorização atual e compatível com **a ação pretendida**: solicitar selo, atualizar dados, contestar decisão ou autorizar publicação institucional. Representar o Coletivo não implica automaticamente acessar participantes, avaliações privadas, denúncias ou informações R1 de Pessoas.
+
+### Matriz de exame
+
+| Contexto | Prova candidata de legitimidade | Restrição essencial |
+|---|---|---|
+| Pessoa jurídica formal | Ato constitutivo, registro ou mandato pertinente e atual, combinado com confirmação de vínculo | CNPJ sozinho não comprova poder de representação |
+| Grupo informal com liderança reconhecida | Confirmações independentes de responsáveis legítimos, histórico de coordenação e fontes de atuação, conforme risco | Não exigir CNPJ, exposição de todos os membros ou votação pública |
+| Liderança compartilhada | Mandato coletivo, regras do grupo ou consentimento verificável dos responsáveis competentes para o ato | Um coordenador não se apropria unilateralmente da representação |
+| Grupo sensível/espiritual | Confirmação proporcional e reservada, sem divulgar crenças ou pertencimento privado | Minimização de identificação de terceiros |
+| Coletivo digital/híbrido | Controle legítimo da iniciativa mais validação de autoridade, não só domínio ou senha de perfil | Acesso a canal não equivale a mandato |
+| Representante substituto ou gestor terceirizado | Delegação expressa e limitada por escopo, prazo e revogação | Prestador de serviço não se torna titular da entidade |
+| Mudança de liderança | Evento verificável e revalidação do vínculo de quem atua | Permissões antigas não se perpetuam |
+| Disputa entre representantes | Congelar decisão de representação controversa, preservar evidências e encaminhar a revisão competente | Não escolher automaticamente quem primeiro pediu ou tem mais seguidores |
+
+### Testes de fronteira
+
+1. Associação formal com CNPJ válido e diretoria vencida: **COMPLEMENTAÇÃO**, até comprovar mandato atual.
+2. Dois organizadores de pedal alegam liderar o mesmo grupo: **CONFLITO DE REPRESENTAÇÃO**, com análise independente; ambos podem existir como pessoas legítimas, mas não recebem autoridade unilateral.
+3. Coordenadora de grupo de oração comprova função sem divulgar membros: **EXAME PROTEGIDO POSSÍVEL**, sem publicidade de participantes.
+4. Agência de marketing detém senha do perfil social: **SEM REPRESENTAÇÃO PRESUMIDA**.
+5. Cofundador deixa o grupo: revisão de poderes anteriores e preservação da trilha, sem apagar histórico.
+6. Responsável legítimo pode editar informações institucionais públicas, mas não acessar avaliações R1: **AUTORIDADE RESTRITA AO ESCOPO**.
+7. Coletivo não tem líder único: admitir modelo legítimo de co-representação, com ato documentado segundo regras próprias.
+8. Mudança de nome ou fusão: reexaminar continuidade da entidade e mandato; não transferir selo automaticamente.
+
+### Estados candidatos da verificação do vínculo
+
+`REPRESENTACAO_COMPROVADA_PARA_DELIBERACAO`: identidade/vínculo/mandato/escopo adequados, sujeitos a decisão competente.  
+`COMPLEMENTACAO_REQUERIDA`: falta documento ou confirmação proporcional.  
+`REPRESENTACAO_CONTESTADA`: alegações materiais conflitantes, sem presunção de má-fé.  
+`MANDATO_EXPIRADO_OU_REVOGADO`: não presumir autorização atual.  
+`INTEGRIDADE_EM_ANALISE`: indício fundamentado de identidade ou autorização adulterada, sujeito a procedimento e recurso.
+
+### Dependências e decisão ainda aberta
+
+- Definir fonte de legitimidade reconhecida por tipologia, inclusive co-liderança e coletivos sem liderança formal.
+- Definir limites de ações delegáveis, prazo, autenticação, recuperação de acesso e notificações.
+- Definir tratamento de conflito, impedimento, contestação e continuidade do serviço público sem rotular negativamente o Coletivo.
+- Estabelecer competência institucional para decidir o vínculo e política de retenção de evidências.
+- Compatibilizar identificação privada do representante com privacidade e autoridade de publicação do PER-103.
+
+```text
+DEC-01.B INDIVIDUAL EXAM → COMPLETE
+DEC-01.B ANALYTICAL DIRECTION → CONDITIONAL CONVERGENCE
+DEC-01.B HUMAN NORMATIVE ADJUDICATION → PENDING
+DEC-01.C → NEXT
 PR #654 → OPEN / DRAFT
 ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
 ```
