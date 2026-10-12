@@ -4108,3 +4108,58 @@ PR #654 → OPEN / DRAFT
 MENU CHANGE / BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
 NEXT → EXTENDED AUTHORITY INVENTORY AND MENU RESOLUTION
 ```
+
+## Etapa 272 — Inventário ampliado de autoridades e encontrabilidade documental (v4.24 candidato)
+
+**Estado:** EXAME DOCUMENTAL AMPLIADO / ALINHAMENTOS PARCIAIS / SEM RATIFICAÇÃO OU ALTERAÇÃO DE MENU.
+
+### Fontes adicionais efetivamente verificadas na main
+
+- `experience-architecture/person-journey/per-101-explore-collectives-master.md`
+- `experience-architecture/person-journey/per-102-collective-search-results-master.md`
+- `experience-architecture/organizations-collectives-journey/collective-request-management-master.md`
+- `experience-architecture/organizations-collectives-journey/collective-participants-links-master.md`
+- `experience-architecture/organizations-collectives-journey/collective-protection-moderation-master.md`
+- `experience-architecture/organizations-collectives-authenticated-state-map.md`
+- `mkdocs.yml` (regra de navegação confirmada na etapa 271).
+
+### Matriz de impacto por responsabilidade
+
+| Autoridade | Achado documentado | Implicação para os selos | Conclusão |
+|---|---|---|---|
+| PER-101 — Explorar Coletivos | Busca, encontrabilidade, ordenação orgânica, proteção e publicidade possuem fronteiras próprias; sem ranking universal | Selo não cria prioridade de busca, filtro, recomendação nem capacidade de encontrar Coletivo protegido automaticamente | ALINHAMENTO PARCIAL; apresentação futura depende de autoridade |
+| PER-102 — Resultados | Cards expõem somente informação pública legítima; ordenação não institui score; PER-103 é continuidade | Eventual selo no card requer contrato público, fonte canônica, proteção e revisão própria | EXTENSÃO PENDENTE |
+| COL — Gestão de Solicitações | Gestão de pedido de entrada obedece autoridade do Coletivo e registries de transição | Reconhecimento institucional não concede ao Coletivo poder adicional sobre solicitação, dados ou decisão de Pessoa | FRONTEIRA PRESERVADA |
+| COL — Participantes e Vínculos | Responsabilidade cobre continuidade e gestão de participações legítimas | Selo não constitui vínculo, não exige avaliação e não expõe participantes | FRONTEIRA PRESERVADA |
+| COL — Proteção e Moderação | Medidas materiais requerem competência, proporcionalidade, contestação e proteção; não equivalem a governança ilimitada | Não reutilizar moderação do Coletivo como autoridade para conceder, suspender ou revogar selos institucionais | SEGREGAÇÃO NECESSÁRIA |
+| O/C — Mapa de Estados | Estados funcionais são componíveis; não criam registry global nem transições novas | Estados dos selos necessitam contrato específico e reconciliação com registries, sem promover estados por analogia | INTEGRAÇÃO PENDENTE |
+
+### Tensões que exigem decisão normativa ou revisão técnica
+
+1. **Descoberta vs. reconhecimento:** proibir inferir ordenação, relevância ou recomendação baseada em selo sem autoridade de descoberta expressa.
+2. **Card vs. perfil:** eventual exibição exige a mesma fonte válida e retirada coerente, mas não implica o mesmo layout ou densidade visual.
+3. **Verificação vs. vínculo:** selo não presume que visitante participa ou que o Coletivo pode visualizar histórico, respostas R1 ou identidade.
+4. **Moderação vs. concessão:** proteger a autonomia de `COL-007` sem delegar indevidamente a uma liderança de Coletivo poder institucional da Guivos.
+5. **Estado vs. transição:** separar estados funcionais de reconhecimento de ações de solicitação, participação, proteção e publicação; mapear qualquer transição futura no registry competente antes de engenharia.
+6. **MENU vs. candidato:** a política vigente de `mkdocs.yml` impede inserir diretamente documento DRAFT como fonte operacional; desejo de encontrabilidade não equivale a autorização editorial.
+
+### Alternativa de encontrabilidade a submeter, não implementada
+
+Propor futuramente um **hub corrente de orientação para Coletivos** ou uma atualização governada de hub existente, caso autoridade editorial legitimada reconheça essa função. O hub poderá indicar, com estado visível, que existe documentação candidata de Reconhecimento de Coletivos, sem apresentá-la como política aprovada. Somente após decisão editorial e validação da regra de `mkdocs.yml` submeter uma alteração independente do MENU. Não foi criada página, nem modificado `mkdocs.yml`.
+
+### Pendências
+
+Cobertura complementar: Surface Registry e Transition Registry correntes, regras globais de visibilidade e privacidade, autoridade institucional nominada, outros Masters relacionados e eventuais testes de navegação. Há alinhamentos preliminares, mas nenhuma prova de compatibilidade integral. Os cinco itens REC-271-A..E seguem sem adjudicação.
+
+```text
+ETAPA 272 EXTENDED DOCUMENT INVENTORY → DOCUMENTED
+PER-101 / PER-102 / COL REQUESTS / LINKS / MODERATION / STATE MAP → EXAMINED
+CROSS-DOCUMENT FULL COMPATIBILITY → NOT ESTABLISHED
+MENU DOCUMENTATION HUB → PROPOSED ONLY
+MENU UPDATE → NOT EXECUTED
+DEC-01..05 ANALYTICAL EXAMS → 25/25 DOCUMENTED
+DEC-01..05 NORMATIVE RATIFICATIONS → 0/25 CONFIRMED
+PR #654 → OPEN / DRAFT
+NEXT → REGISTRY AND AUTHORITIES GAP RECONCILIATION
+BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
+```
