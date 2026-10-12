@@ -2,7 +2,7 @@
 id: GKR-COLLECTIVE-RECOGNITION-001
 title: Coletivos — Verificado e Contribuição Reconhecida
 status: proposed
-version: 3.0.0
+version: 3.1.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -1868,6 +1868,56 @@ DEC-01.C EXPLICIT DECISION DRAFT → READY
 DEC-01.A / B / C NORMATIVE APPROVAL → PENDING
 DEC-01.D → NEXT EXPLICIT DECISION DRAFT
 GKR MENU LINK → REQUESTED / NOT YET PUBLISHED
+PR #654 → OPEN / DRAFT
+BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
+```
+
+
+## DEC-01.D — Minuta de decisão humana expressa sobre experiência elegível (v3.1 candidato)
+
+**Estado:** PREPARADA PARA RATIFICAÇÃO; NÃO ADJUDICADA. A anuência para prosseguir não equivale a aprovação do texto normativo. DEC-01.A..C permanecem sem ratificação formal.
+
+### Texto normativo candidato
+
+> Para sustentar a apuração de `Contribuição Reconhecida`, a Guivos deverá comprovar que uma Pessoa elegível viveu efetivamente uma experiência ou etapa concreta, delimitada por contexto, atividade e período, materialmente atribuível ao Coletivo no escopo analisado. Descoberta, interesse, inscrição, reserva, presença administrativa e check-in isolados não comprovarão por si a experiência substantiva nem qualquer benefício. A manifestação sobre benefício, aprendizado ou avanço percebido deverá ser voluntária, contextual e protegida, sem presunção de causalidade ou evolução objetiva. Vivências parciais, contínuas, digitais, presenciais ou híbridas serão tratadas proporcionalmente à etapa real, sem generalização ao programa inteiro.
+
+### Elementos que exigem decisão expressa
+
+| Item | Diretriz candidata submetida | Estado |
+|---|---|---|
+| DEC-01.D.1 | Separar descoberta, inscrição, vivência e percepção, sem passagem automática entre etapas | SEM DELIBERAÇÃO |
+| DEC-01.D.2 | Exigir comprovação contextual e proporcional de etapa efetivamente vivida | SEM DELIBERAÇÃO |
+| DEC-01.D.3 | Restringir atribuição de contribuição ao papel material verificável do Coletivo, inclusive em coexecução | SEM DELIBERAÇÃO |
+| DEC-01.D.4 | Admitir avaliações voluntárias por dimensão pertinente e distinguir não resposta, não aplicável, parcial e desfavorável | SEM DELIBERAÇÃO |
+| DEC-01.D.5 | Preservar vínculo privado com a experiência, proteção de identidade, deduplicação e direito de revisão | SEM DELIBERAÇÃO |
+
+### Distinções e limites
+
+- `Verificado` não requer avaliação positiva de experiência ou contribuição percebida; DEC-01.D fornece elegibilidade para o **segundo selo**.
+- Participação de Pessoa que não respondeu à avaliação não deve ser convertida em resposta positiva ou negativa.
+- Experiência em parceria pode permanecer legítima mesmo quando a atribuição a um Coletivo específico é indeterminada; não transferir mérito automaticamente a promotores, patrocinadores ou outros participantes.
+- Avaliação de etapa parcial não constitui conclusão de todo um curso, desafio, programa ou jornada.
+- Pessoas distintas, experiências distintas e respostas distintas não são unidades amostrais equivalentes; a robustez depende de DEC-02.
+- A prova de participação de atividades sensíveis não cria direito de divulgar crença, saúde, nome, presença ou objetivos pessoais.
+- Anomalias detectadas automaticamente devem seguir revisão fundamentada, não recusa sancionadora automática.
+
+### Provas e lacunas para ratificação
+
+Devem ser estabelecidos: catálogo de provas adequadas a cada modalidade; papel do Coletivo e critérios para coexecução; conceito de etapa substantivamente vivida; gestão de convites e autorizações; proteção do objeto privado da Pessoa; deduplicação compatível com privacidade; temporalidade, custódia e recurso; integração com decisão estatística DEC-02 e autoridade DEC-03.
+
+### Critério de saída
+
+A deliberação competente deverá registrar para DEC-01.D.1..D.5 a alternativa **APROVAR**, **APROVAR COM AJUSTES**, **DEVOLVER PARA REVISÃO** ou **REJEITAR**, com fundamento, autoridade, data e escopo. Nenhum estado está preenchido aqui. Mesmo eventual ratificação de DEC-01.D não concederá `Contribuição Reconhecida`, pois méritos, thresholds, decisões e publicação continuam pendentes.
+
+### Acesso pelo MENU do GKR
+
+A futura navegação para este conteúdo permanece **SOLICITADA, NÃO PUBLICADA**. Conforme as regras atuais de `mkdocs.yml`, documentos `proposed/draft` não entram diretamente no MENU sem autorização superior. Após a conclusão e o enquadramento normativo apropriado, validar a localização em Participantes/Coletivos ou outro hub canônico e registrar a alteração explícita de navegação, sem confundir acesso documental com autorização de conceder selos.
+
+```text
+DEC-01.D DECISION DRAFT → PREPARED
+DEC-01.A..D EXPRESS NORMATIVE ADJUDICATION → PENDING
+DEC-01.E → NEXT DECISION DRAFT
+GKR MENU ACCESS → REQUESTED / NOT PUBLISHED
 PR #654 → OPEN / DRAFT
 BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
 ```
