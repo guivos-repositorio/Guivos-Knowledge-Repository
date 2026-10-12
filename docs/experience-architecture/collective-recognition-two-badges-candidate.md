@@ -2,7 +2,7 @@
 id: GKR-COLLECTIVE-RECOGNITION-001
 title: Coletivos — Verificado e Contribuição Reconhecida
 status: proposed
-version: 0.4.0
+version: 0.5.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -262,3 +262,70 @@ São estados candidatos; nenhuma classificação deve ser calculada automaticame
 6. Alçada humana de revisão, versão dos métodos e regras de contestação.
 
 **CBR-03 → OPEN**, até calibração validada e adjudicação humana. Nenhum `KPI` canônico, algoritmo de selo ou entitlement é criado por este documento.
+
+
+## CBR-04 — Atribuição da contribuição, coexecução e integridade temporal (proposta v0.5)
+
+### Princípio de atribuição
+
+**A Pessoa avalia a experiência que viveu.** A eventual utilização de seus relatos agregados para reconhecer um Coletivo depende de evidência de seu **papel material na oferta e execução daquela experiência**. Divulgação, patrocínio, inscrição, indicação, fornecimento de espaço ou relação comercial não transferem automaticamente avaliação de atividade para reputação de quem não a executou. `ORG-005`/`COL-008` não concedem por analogia reputação pública nem autorização para usar dados da relação.
+
+### Matriz de papéis e prova
+
+| Papel do Coletivo | Evidência necessária | Uso candidato na apuração |
+|---|---|---|
+| Organizador e executor principal | Plano/registro da edição, execução efetiva e confirmação material independente | Potencialmente atribuível à execução delimitada |
+| Coexecutor de atividade conjunta | Atribuições específicas, período, participação material verificável e objeto compartilhado | Somente após contrato de coexecução e atribuição aprovado; sem crédito automático integral para todos |
+| Promotor/divulgador | Divulgação, encaminhamento, campanha ou convite | Não atribuir resultado da atividade executada por terceiro |
+| Patrocinador/financiador | Apoio financeiro, material ou institucional | Não atribuir automaticamente aprendizado, benefício ou avanço |
+| Cedente de local/plataforma | Uso de espaço, infraestrutura ou canal | Não atribuir execução por mera infraestrutura |
+| Parceiro institucional | Relação ou cooperação documentada, sem atuação individual comprovada | Não atribuir até demonstração do papel na experiência |
+| Executor externo contratado | Execução comprovada por terceiro | Reconhecimento do Coletivo depende de nexo material próprio, não do simples contrato |
+| Organizador de atividade interrompida ou cancelada | Histórico da etapa efetivamente vivida | Avaliar somente a etapa real, sem inferir resultado final |
+
+A unidade da relação institucional, se existir, é distinta da unidade da experiência. Comprovar um contrato entre Organização e Coletivo não comprova, por si só, que a Pessoa viveu a atividade, nem que avançou em sua Journey.
+
+### Chaves privadas de rastreabilidade candidatas
+
+- Identificador lógico de Coletivo e, se necessário, organizações coexecutoras, sem confundir identidades.
+- Identificador de **experiência/edição/atividade/etapa** efetivamente vivida, com período e versão material.
+- Registro do papel do Coletivo por unidade, com proveniência, fonte, nível de corroboração, vigência e revisão.
+- Identificador privado de avaliação com vínculo autorizado à experiência; privacidade da Pessoa não migra com a agregação.
+- Registro de decisão de admissibilidade para apuração e respectiva versão de critérios.
+- Evento de alteração, suspensão, contestação ou revogação do vínculo de atribuição.
+- Decisão de publicação pública separada da custódia privada de evidências.
+
+Não declarar esquema de banco de dados ou API autorizado a partir destes campos conceituais.
+
+### Coexecução e múltiplos responsáveis
+
+Uma avaliação representa a **mesma experiência** independentemente de quantas partes colaboraram. Não duplicá-la como experiências artificiais. Não distribuir crédito 100% a cada parceiro nem dividir por percentuais arbitrários. É necessário delimitar evidência do papel de cada entidade e método de atribuição a ser adjudicado.
+
+Quando não houver separação defensável de papéis, adotar `ATRIBUICAO_INDETERMINADA` e não usar a avaliação para a concessão de selo institucional, ainda que ela permaneça válida como avaliação privada da experiência. Não descartar a voz da Pessoa por falta de atribuição institucional.
+
+### Tempo, mudança material e revisão
+
+Atribuição é condicionada a um período e a condições efetivamente vividas. Uma edição positiva anterior não certifica automaticamente edições futuras. Mudança de representante, finalidade, formato, executor, local, condições ou estrutura exige análise proporcional para determinar se o histórico continua comparável.
+
+A troca de representante não apaga avaliações históricas legítimas do Coletivo, mas pode afetar o selo `Verificado` atual. Mudança de execução/propósito não reescreve opiniões históricas; cria recorte novo para decidir se o selo `Contribuição Reconhecida` permanece sustentado. Um vínculo institucional encerrado não reativa direitos de publicação, avaliação, dados ou selo.
+
+### Testes de fronteira
+
+| Caso | Resultado esperado |
+|---|---|
+| Coletivo apenas compartilhou inscrição de curso executado por Organização | Não atribuir aprendizagem do curso ao Coletivo |
+| Coletivo coordenou e executou encontros próprios | Admissível para apuração depois da prova de experiência e demais gates |
+| Coletivo e Organização coexecutaram oficina | Identificar papéis; não duplicar avaliações nem conceder crédito integral automático |
+| Organização financiou pedalada executada por Coletivo | Apoio financeiro não altera automaticamente autoria da execução |
+| Duas entidades usam mesma foto ou evento como prova | Conferir vínculo e proveniência antes de atribuir |
+| Participante avaliou inscrição, mas evento foi cancelado | Somente a experiência de inscrição pode ser avaliada |
+| Coletivo mudou responsável após período avaliado | Manter atribuição histórica; reexaminar representação vigente |
+| Coletivo alterou radicalmente sua proposta | Segmentar períodos; não generalizar resultados da proposta anterior |
+| Evento externo foi apenas publicado no perfil do Coletivo | Não atribuir resultados ao publicador |
+| Não se consegue distinguir a atuação dos coexecutores | `ATRIBUICAO_INDETERMINADA`, sem uso na concessão até revisão |
+
+### Dependências e critérios de encerramento
+
+Requer decisão humana sobre unidade de contribuição material, suficiência de prova por papel, coexecução, eventual atribuição compartilhada, comparabilidade temporal, efeitos de mudança material, privacidade, recursos e autoridade para rever vínculos.
+
+**CBR-04 permanece OPEN.** Esta seção é candidata, não cria KPI canônico, autorização de divulgação de relacionamento, propagação de reputação, implementação ou concessão de qualquer selo.
