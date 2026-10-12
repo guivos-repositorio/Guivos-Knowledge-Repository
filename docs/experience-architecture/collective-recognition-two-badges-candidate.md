@@ -3984,3 +3984,79 @@ PR #654 → OPEN / DRAFT
 GKR MENU ACCESS → REQUESTED / NOT PUBLISHED
 TECHNICAL HOMOLOGATION / PILOT / BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
 ```
+
+## DEC-01..05 — Consolidação transversal e matriz de deliberação institucional (v4.22 candidato)
+
+**Estado:** MATRIZ DOCUMENTAL CONSOLIDADA / 25 EXAMES DOCUMENTADOS / 0 RATIFICAÇÕES NORMATIVAS CONFIRMADAS. Este registro não é adjudicação, homologação, decisão de publicação ou autorização de implementação.
+
+### Questão transversal
+
+Como reconhecer legitimidade institucional e contribuição contextual de Coletivos por meio de dois selos distintos, assegurando critérios justos, independência, proteção das Pessoas e publicação fiel à autoridade canônica, sem transformar avaliação percebida em garantia universal de resultado?
+
+### Matriz única dos cinco pacotes
+
+| Pacote | Questão institucional a adjudicar | Resultado documental | Pré-condição externa ou dependência | Estado normativo |
+|---|---|---|---|---|
+| DEC-01 — Comprovação | Quais provas proporcionais atestam existência, representação e elegibilidade ao selo `Verificado`? | 5/5 exames concluídos | Coletivos informais, legitimidade contextual, revisões, antifraude | 0/5 ratificações |
+| DEC-02 — Contribuição | Que evidências contextualizadas permitem `Contribuição Reconhecida`, sem pontuação de reputação ou promessa de progresso? | 5/5 exames concluídos | Avaliações R1 protegidas, representatividade, limites de inferência | 0/5 ratificações |
+| DEC-03 — Autoridades | Quem tem competência, impedimentos, recursos, supervisão e alçadas de decisão? | 5/5 exames concluídos | Segregação, independência comercial, revisão humana | 0/5 ratificações |
+| DEC-04 — Publicação | Qual significado, estado e superfície podem apresentar cada selo? | 5/5 exames concluídos | PER-103, Masters, fonte canônica, autorização editorial e retirada | 0/5 ratificações |
+| DEC-05 — Segurança | Que proteção, testes e homologação são indispensáveis antes de operar? | 5/5 exames concluídos | Privacidade, segurança, evidência de teste, LIB-01..05 | 0/5 ratificações |
+
+### Contrato transversal candidato de reconhecimento
+
+1. `Verificado` comunica comprovação institucional de existência e representação legítima no escopo aprovado; não atesta qualidade universal, segurança absoluta ou benefício para toda Pessoa.
+2. `Contribuição Reconhecida` comunica percepção contextual de contribuição, benefício, aprendizado ou progresso avaliada por processo independente; não equivale a garantia, certificação clínica, aprovação moral ou ranking.
+3. São **dois atos institucionais distintos**. A dependência de contribuição em relação à vigência de `Verificado` deve ser explicitamente adjudicada e testada, sem concessão por herança.
+4. Falta de selo não afirma fraude, baixa qualidade ou ausência de contribuição. A linguagem e ícones não podem induzir leitura contrária.
+5. Porte, território, CNPJ, patrocínio, monetização, quantidade de seguidores ou interesse comercial não substituem critérios proporcionais e provas.
+6. Dados R1 individuais, avaliadores, denunciantes, participação sensível e fundamentos privados permanecem protegidos; somente dados publicáveis autorizados compõem superfícies.
+7. IA, métricas, antifraude e automações são apoio, não autoridade de concessão, suspensão, revogação ou adjudicação.
+8. Recursos, correções e expiração exigem processo rastreável, competências legítimas e consistência entre estado institucional e exposição pública.
+
+### Dependências e possíveis tensões a deliberar
+
+| Código | Interface entre pacotes | Risco a resolver na adjudicação | Tratamento candidato |
+|---|---|---|---|
+| X-01 | DEC-01 × DEC-02 | Contribuição exibida sem comprovação vigente | Ratificar dependência entre selos e transições impeditivas |
+| X-02 | DEC-01 × DEC-05 | Exigência excessiva que exclui informalidade | Prova proporcional, cenários territoriais e análise independente |
+| X-03 | DEC-02 × DEC-05 | Amostra pequena ou não resposta interpretadas como fraude/ausência de valor | Limites estatísticos e proteção contra automatismos |
+| X-04 | DEC-02 × DEC-04 | Selo percebido como promessa de resultado universal | Semântica contextual, microdescrição e testes com Pessoas |
+| X-05 | DEC-03 × DEC-05 | Ferramenta ou patrocinador assume decisão humana | Matriz de acesso, impedimentos, auditoria e gates |
+| X-06 | DEC-03 × DEC-04 | Aprovação de selo confundida com autorização de publicação | Atos separados, autoridade editorial e trilha |
+| X-07 | DEC-04 × DEC-05 | Cache ou superfícies mostram selo inválido | Fonte canônica, reconciliação, falha segura e testes de retirada |
+| X-08 | Todos × PER-103/Masters | Candidato sobrepõe autoridade vigente ou muda apresentação sem ratificação | Inventário de impactos e reconciliação normativa antes de publicação |
+| X-09 | Todos × GKR MENU | Navegação documental confundida com disponibilização de selo operacional | Rótulo e status explícitos de candidato, aprovação editorial separada |
+| X-10 | Todos × expansão | Critérios locais e dados sensíveis tratados como universais | Revisão territorial e liberação por estágio específico |
+
+Essas tensões são **pontos de verificação e decisão**, não conflitos normativos comprovados nos Masters. A verificação detalhada desses documentos permanece necessária antes da promoção.
+
+### Instrumento de adjudicação transversal
+
+Cada uma das 25 deliberações exige registro individual: código DEC-xx.x, texto e versão apreciados, autoridade legitimada, declaração de impedimentos, data, fundamento, resultado (`APROVAR`, `APROVAR_COM_AJUSTES`, `DEVOLVER_PARA_REVISAO`, `REJEITAR`), condições e seus responsáveis, evidências, impactos em documentos normativos, revisão e publicidade permitida. Decisões condicionais não são permissões operacionais tácitas.
+
+**Sequência candidata:** conferir autoridade e integridade da matriz → adjudicar critérios DEC-01/02 e alçadas DEC-03 de modo coerente → adjudicar semântica e publicação DEC-04 → adjudicar proteção e homologação DEC-05 → reconciliar Masters e PER-103 → realizar testes/atos LIB-01..05 independentes. A ordem poderá ser ajustada pela autoridade legítima; nenhum passo pode suprir ato faltante.
+
+### Plano de publicação documental no GKR (separado do produto)
+
+- **Inventariar** a hierarquia corrente do MENU (`mkdocs.yml`) e a classificação de autoridade dos documentos associados a Coletivos.
+- **Propor** localização clara para `Reconhecimento de Coletivos`, com distinção entre documento candidato e autoridade aprovada.
+- **Conferir** referências a PER-103 e Masters, sem substituir os documentos de autoridade por esta PR em DRAFT.
+- **Submeter** alteração de navegação à aprovação editorial e às verificações do GKR aplicáveis, em mudança própria e rastreável.
+- **Não publicar** o documento como política vigente nem iniciar exibição de selos ou implementação no Replit pela simples inclusão de link.
+
+### Saídas e condições para próxima etapa
+
+A consolidação disponibiliza uma matriz única para deliberação futura. Permanecem abertas: confirmação das competências humanas; 25 ratificações; adequação jurídica/técnica e privacidade; compatibilização com Masters e PER-103; execução e aprovação de testes; homologação; decisões específicas de piloto, produção, publicação e expansão; aprovação da navegação do GKR.
+
+```text
+CROSS-PACKAGE DEC-01..05 DELIBERATION MATRIX → DOCUMENTED
+DEC-01..05 INDIVIDUAL EXAMS → 25/25 DOCUMENTED
+DEC-01..05 HUMAN NORMATIVE RATIFICATIONS → 0/25 CONFIRMED
+MASTER / PER-103 COMPATIBILITY → NOT YET ADJUDICATED
+GKR MENU ACCESS → REQUESTED / NOT PUBLISHED
+PR #654 → OPEN / DRAFT
+TEST EXECUTION / HOMOLOGATION / PILOT → NOT VERIFIED OR AUTHORIZED
+BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
+NEXT → CROSS-DOCUMENT AUTHORITY AND NAVIGATION RECONCILIATION
+```
