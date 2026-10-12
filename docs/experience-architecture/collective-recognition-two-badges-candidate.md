@@ -5022,3 +5022,79 @@ GKR MENU → UNCHANGED
 BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
 NEXT → RSP-06.B
 ```
+
+## Etapa 285 — RSP-06.B: Transições, competências e eventos institucionais (v4.37 candidato)
+
+**Resultado:** EXAME INDIVIDUAL DOCUMENTADO / CONVERGÊNCIA ANALÍTICA CONDICIONAL / ADJUDICAÇÃO NORMATIVA PENDENTE. Nenhuma transição técnica, regra operacional ou competência foi implementada ou ratificada.
+
+### Questão decisória
+
+Quais eventos legitimamente documentados e decisões humanas poderão alterar mérito e vigência de cada selo, tramitação recursal e autorização editorial, com regras de origem, destino, impedimentos, rastreabilidade e efeitos públicos seguros?
+
+### Matriz de eventos candidatos
+
+| Código analítico | Evento | Autoridade requerida | Guarda e efeito candidato |
+|---|---|---|---|
+| EVT-01 | Solicitação recebida | Solicitante legitimado e recepção habilitada | Abre caso sem criar selo |
+| EVT-02 | Instrução iniciada ou complementada | Analista habilitado | Atualiza evidências, não mérito |
+| EVT-03 | Decisão de concessão | Decisor humano investido | Registra selo, escopo e vigência; não publica |
+| EVT-04 | Indeferimento fundamentado | Decisor humano investido | Registra motivação e possibilidade recursal |
+| EVT-05 | Autorização editorial | Responsável editorial habilitado | Habilita projeção somente sob mérito vigente e demais guardas |
+| EVT-06 | Pedido de renovação | Solicitante legitimado | Não prorroga vigência automaticamente |
+| EVT-07 | Renovação deferida | Decisor humano investido | Nova decisão versionada com validade explícita |
+| EVT-08 | Expiração por prazo | Critério temporal normativamente ratificado | Reconhecimento deixa de ser afirmado como vigente; registro histórico preservado |
+| EVT-09 | Suspensão cautelar | Autoridade humana competente, política e fundamento | Bloqueia projeção segundo regras ratificadas; revisão e prazo necessários |
+| EVT-10 | Revogação | Autoridade humana competente | Retirada pública e preservação de histórico |
+| EVT-11 | Recurso protocolado | Legitimado e instância de recepção | Abre tramitação separada; sem efeito suspensivo presumido |
+| EVT-12 | Decisão recursal | Revisor independente investido | Mantém, reforma, anula ou devolve conforme norma, sem publicação automática |
+| EVT-13 | Retirada ou correção editorial | Autoridade editorial competente | Atualiza autorização sem reescrever decisão de mérito |
+| EVT-14 | Reconciliação de superfícies | Operação técnica homologada | Corrige projeção; não concede nem revoga selo |
+
+Esses códigos `EVT-*` são referências **locais deste exame**, não identificadores de evento de produção nem entradas `GKR-TRN-*`.
+
+### Regras de transição propostas
+
+1. **Pré-condições:** toda transição de mérito requer competência humana ou regra temporal expressamente ratificada, caso identificado, versão de política aplicável e evidência suficiente.
+2. **Segregação:** instrução, decisão, recurso, auditoria e autorização editorial mantêm atribuições distintas e impedimentos rastreáveis.
+3. **Atomicidade conceitual:** ato institucional e sua publicação são registros separados. Falha em publicação não anula automaticamente mérito, e publicação não cria mérito.
+4. **Expiração temporal:** pode decorrer de regra previamente aprovada sem adjudicação de mérito por IA; o momento, a fonte temporal, a extensão dos efeitos e a possibilidade de renovação exigem decisão normativa.
+5. **Recurso:** abertura ou apreciação não cria automaticamente suspensão, restauração, concessão ou extensão de vigência.
+6. **Dependência entre selos:** perda de validade de `Verificado` exige bloqueio de afirmação pública incompatível de `Contribuição Reconhecida` segundo norma futura; não apaga seu histórico nem presume revogação substantiva.
+7. **Condição desconhecida:** falha de fonte, ordenação de eventos ou indisponibilidade não podem ser representadas como fraude ou revogação; projeção deve adotar comportamento seguro.
+8. **Rastreabilidade:** registrar estado anterior, evento, autoridade, fundamento, data, versão, escopo, estado resultante e correlação com publicação, com proteção de informações privadas.
+9. **Repetição e concorrência:** eventos duplicados e fora de ordem não devem ressuscitar estado expirado ou revogado nem vencer ato mais recente competente.
+10. **Não promoção:** nenhum fluxo operacional, SLA, transição de registry, papel de RBAC ou interface é criado pelo exame.
+
+### Exemplos adversariais
+
+| Condição | Resultado candidato |
+|---|---|
+| Analista encerra parecer favorável | Nenhuma concessão sem decisão habilitada |
+| Concessão aprovada, editor não autoriza | Não publicar |
+| Renovação solicitada após expiração | Não restabelecer vigência por protocolo |
+| Recurso contra suspensão cautelar | Tramitação separada; efeito depende de política |
+| Revogação seguida de evento antigo de publicação | Impedir reaparecimento do selo |
+| Duas decisões simultâneas sobre o mesmo caso | Resolver por competência, versão e política de concorrência ratificada |
+| Selo `Verificado` expirado e contribuição historicamente reconhecida | Preservar mérito histórico; bloquear exposição que contrarie dependência vigente |
+| Sistema detecta dado duplicado | Sinal de revisão humana, não revogação automática |
+
+### Evidências e decisões pendentes
+
+Ratificar papéis decisórios, elegibilidade e condições de cada evento, prazos e validade, medidas cautelares, recursos, competência editorial, dependência entre selos, ordem/versionamento dos atos, reversibilidade, idempotência e condições de retirada. A reconciliação com o Transition Registry vigente deverá ocorrer **após** definição da responsabilidade e decisão governada; não inferir `GKR-TRN` a partir de `EVT`.
+
+```text
+ETAPA 285 RSP-06.B INDIVIDUAL EXAM → DOCUMENTED
+RSP-06.B ANALYTICAL DIRECTION → CONDITIONAL CONVERGENCE
+RSP-06.B HUMAN NORMATIVE ADJUDICATION → PENDING
+RSP-06.A..E EXAMS → 2/5 DOCUMENTED
+RSP-06.A..E HUMAN ADJUDICATIONS → 0/5 CONFIRMED
+RSP-05.A..F EXAMS → 6/6 DOCUMENTED
+RSP-05 HUMAN ADJUDICATIONS → 0/6 CONFIRMED
+DEC-01..05 EXAMS → 25/25 DOCUMENTED
+DEC-01..05 NORMATIVE RATIFICATIONS → 0/25 CONFIRMED
+NEW GKR-SURF / GKR-TRN IDS → 0
+PR #654 → OPEN / DRAFT
+GKR MENU → UNCHANGED
+BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
+NEXT → RSP-06.C
+```
