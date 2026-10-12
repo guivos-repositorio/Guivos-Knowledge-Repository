@@ -2,7 +2,7 @@
 id: GKR-COLLECTIVE-RECOGNITION-001
 title: Coletivos — Verificado e Contribuição Reconhecida
 status: proposed
-version: 1.4.0
+version: 1.5.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -899,3 +899,72 @@ REAL BADGE ISSUANCE / REPLIT IMPLEMENTATION → NOT AUTHORIZED
 ```
 
 A próxima deliberação precisa resolver os achados P0 antes de promover esta proposta a autoridade normativa, sem inventar aprovação humana a partir de documentação candidata.
+
+
+## ADJ-06 / P0-01 — Requisitos mínimos de prova e suficiência (v1.5 candidato)
+
+**Objeto:** transformar a matriz qualitativa de existência, representação e experiência em protocolo verificável de decisão, sujeito a validação humana, jurídica e de segurança. Não fixa autoridade operativa nem concede selo.
+
+### A. Quatro gates de Verificado, todos necessários
+
+| Gate | Claim a sustentar | Regra de suficiência candidata | Impedimento |
+|---|---|---|---|
+| PROOF-EX | Coletivo existe | Ao menos uma fonte rastreável sobre atuação real mais corroboração independente ou cruzada, pertinente ao mesmo Coletivo | Somente página social, seguidores ou foto sem procedência |
+| PROOF-REP | Solicitante pode representá-lo | Identidade privada do representante e vínculo confirmado por prova institucional quando formal ou por confirmação independente contextual quando informal | Autodeclaração unilateral ou representação contestada não esclarecida |
+| PROOF-ACT | Atuação material | Registro de atividade, serviço ou iniciativa que de fato ocorreu, com data/escopo e atribuição ao Coletivo | Divulgação de evento alheio ou inscrição sem realização |
+| PROOF-INT | Integridade e atualidade | Evidências com origem, data, pertinência e resultado da conferência, sem conflito material não resolvido | Prova adulterada, incompatibilidade grave ou vencimento sem reexame |
+
+“Corroboração independente ou cruzada” é critério candidato **de qualidade**, não número fixo de documentos: duas páginas controladas pelo mesmo responsável não são necessariamente duas fontes independentes. Revisores devem registrar por que a prova é suficiente e qual afirmação comprova.
+
+### B. Adaptação por contexto
+
+| Coletivo | Evidência de existência | Evidência de representação |
+|---|---|---|
+| Associação formal | Registro oficial aplicável + atividade própria verificável | Ato de nomeação ou mandato vigente |
+| Pedal/corrida informal | Encontros e atuação corroborados por registros independentes de eventos | Responsável identificado e confirmação externa legítima, sem lista pública de membros |
+| Espiritual/comunitário sensível | Atividade real validada com minimização de dados e possibilidade de fonte reservada | Confirmação legítima sem divulgação de religião ou identidade de participantes |
+| Cultural/educacional | Oficinas, encontros, publicações ou entregas verificáveis | Responsável que efetivamente conduz a iniciativa |
+| Novo Coletivo | Atividade inicial real e evidências compatíveis | Relação de representante legítima, sem exigência de anos de atuação |
+| Digital/híbrido | Atividade online efetivamente ocorrida, histórico e origem verificáveis | Controle legítimo da iniciativa e confirmação independente |
+
+Nenhum tipo é superior por natureza. Prova substitutiva proporcional é admitida à avaliação quando fontes tradicionais inexistirem, mas ausência de comprovação não pode ser tratada como comprovação.
+
+### C. Prova de experiência — distinta de existência
+
+Para `Contribuição Reconhecida`, cada avaliação candidata deve estar ligada a uma experiência materialmente delimitada: objeto, edição/etapa, período, Pessoa elegível, evidência idônea de etapa vivida, papel do Coletivo e resposta voluntária de percepção. Inscrição válida permite avaliar a inscrição, **não** comprova realização da atividade, aprendizado ou avanço. Confirmação unilateral de organizador não equivale automaticamente à prova robusta; validar proveniência e conflitos.
+
+### D. Resultado da verificação
+
+- `COMPROVACAO_SUFICIENTE_PARA_DELIBERACAO`: evidências pertinentes e verificadas, sem conflitos materiais pendentes; **não é emissão automática**.
+- `COMPLEMENTACAO_NECESSARIA`: existe indício promissor, mas falta claim necessário.
+- `EVIDENCIA_CONFLITANTE`: inconsistências materiais exigem reexame, com proteção e recurso.
+- `EVIDENCIA_INSUFICIENTE`: não se comprovou o claim no escopo; não afirmar que Coletivo é falso.
+- `REVISAO_DE_INTEGRIDADE`: indicação fundamentada de adulteração, representação indevida ou risco relevante; indício não significa fraude comprovada.
+
+### E. Trilha de auditoria mínima
+
+Registrar em custódia privada identificador do objeto e da prova, origem, data, escopo, vínculo com claim, autenticidade e limites, conferência executada, evidências conflitantes, versão de critério, decisor com competência a definir, justificativa e possibilidades de revisão. Evitar coleta de listas de participantes, crenças, dados de saúde ou objetivos pessoais. Definir retenção e acesso antes da operação.
+
+### F. Testes de fronteira
+
+1. Duas contas sociais controladas pela mesma Pessoa: não presumir corroboração independente.
+2. Associação com registro mas mandato vencido: existência não supre representação.
+3. Pedal informal com encontros verificáveis: sem CNPJ não impede deliberação.
+4. Foto de terceiros reutilizada: exigir vínculo e origem, investigar inconsistência.
+5. Coletivo sensível: prova reservada pode ser examinada sem publicar membros.
+6. Atividade futura anunciada, sem realização: não comprova atuação já vivida.
+7. Pessoa fez check-in mas não participou: avaliar o que efetivamente viveu.
+8. Evidência antiga sem contexto atual: solicitar revalidação, sem reescrever histórico.
+9. Coletivo recém-formado: não exigir notoriedade ou histórico longo.
+10. Ausência de prova suficiente: não exibir “fraudulento” ou “inseguro”.
+
+### G. Decisão e impedimentos para encerramento P0-01
+
+Esta matriz define **requisitos candidatos verificáveis**, mas a suficiência concreta por fonte, prova aceitável de identidade, regras de fonte reservada, periodicidade, privacidade/retencão, autoridade decisória e recurso ainda exigem adjudicação e teste operacional.
+
+```text
+P0-01 EVIDENCE PROTOCOL CANDIDATE → DOCUMENTED
+P0-01 NORMATIVE APPROVAL → PENDING
+CBR-01..08 FORMAL ADJUDICATION → 0/8 CONFIRMED
+REAL BADGE ISSUANCE / PUBLICATION → NOT AUTHORIZED
+```
