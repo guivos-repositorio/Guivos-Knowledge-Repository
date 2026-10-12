@@ -5256,3 +5256,77 @@ GKR MENU → UNCHANGED
 BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
 NEXT → RSP-06.E
 ```
+
+## Etapa 288 — RSP-06.E: Auditoria, testes e deliberação integrada do ciclo de vida (v4.40 candidato)
+
+**Resultado:** EXAME INDIVIDUAL DOCUMENTADO / CONVERGÊNCIA ANALÍTICA CONDICIONAL / ADJUDICAÇÃO NORMATIVA PENDENTE. A matriz de testes é proposta; nenhum teste, piloto, homologação ou implementação foi executado.
+
+### Questão decisória
+
+Quais evidências de governança, testes e auditoria precisam estar disponíveis antes que estados e transições dos selos `Verificado` e `Contribuição Reconhecida` sejam homologados e autorizados para uso, respeitando decisões humanas, privacidade e integridade de todas as superfícies?
+
+### Matriz de controles candidatos
+
+| Código | Controle | Evidência exigível futuramente |
+|---|---|---|
+| LIF-AUD-01 | Autoridade e segregação | Matriz RSP-05 ratificada; delegações, impedimentos e decisões rastreáveis |
+| LIF-AUD-02 | Estados e transições | Semântica RSP-06.A/B aprovada; guardas, versões e eventos formalizados |
+| LIF-AUD-03 | Dependência entre selos | Modelo RSP-06.C explicitamente adjudicado e aplicado sem apagar histórico |
+| LIF-AUD-04 | Publicação e retirada | Correspondência entre mérito, autorização editorial e todas as projeções |
+| LIF-AUD-05 | Recursos e cautelares | Independência recursal; efeitos somente conforme decisão e política ratificadas |
+| LIF-AUD-06 | Falhas e concorrência | Testes de duplicidade, eventos fora de ordem, indisponibilidade e recuperação |
+| LIF-AUD-07 | Privacidade e acessibilidade | Provas de minimização R1, não inferência sensível e equivalência acessível |
+| LIF-AUD-08 | Auditoria e incidentes | Trilha protegida, alertas, correções, responsáveis e comprovação de reteste |
+| LIF-AUD-09 | Coletivos proporcionais | Cenários de informalidade, pequenos grupos, contextos locais e não discriminação |
+| LIF-AUD-10 | Gate de homologação | Aprovações humanas, critérios de aceitação e autorização de estágio separados |
+
+### Bateria candidata de testes (não executada)
+
+| Caso | Condição inicial | Verificação futura |
+|---|---|---|
+| TST-01 | Decisão favorável sem autorização editorial | Nenhuma exibição |
+| TST-02 | Card exibe selo já revogado | Retirada e reconciliação rastreáveis |
+| TST-03 | `Verificado` expirou e Contribuição possui histórico | Preservar histórico; aplicar regra de publicabilidade ratificada |
+| TST-04 | Recurso protocolado | Mérito e publicação não mudam automaticamente |
+| TST-05 | Renovação solicitada, não decidida | Vigência não é prorrogada por protocolo |
+| TST-06 | Eventos duplicados e fora de ordem | Nenhuma ressurreição de estado superado |
+| TST-07 | Fonte canônica indisponível | Comportamento seguro e sem alegação falsa de fraude |
+| TST-08 | Divergência entre perfil e card | Convergência a partir do registro autorizado |
+| TST-09 | Coletivo pequeno/informal | Evidência proporcional e ausência de exclusão automática |
+| TST-10 | Dados R1 potencialmente identificáveis | Nenhuma divulgação indevida ou reidentificação |
+| TST-11 | Retirada editorial com mérito preservado | Publicação cessa sem adulteração de decisão |
+| TST-12 | Retorno de Verificado após renovação | Contribuição não republica sem nova avaliação das guardas |
+
+### Gate de prontidão candidato
+
+A futura homologação deverá exigir **cumulativamente**: DEC-01..05 ratificados no escopo pertinente; RSP-05.A..F adjudicados; RSP-06.A..E adjudicados; autoridade institucional formalmente designada; especificações e critérios de aceitação técnicos aprovados; casos de teste executados com evidências; revisão de privacidade, acessibilidade e segurança; mecanismo de rollback e incidentes; verificação de alinhamento com PER-102/PER-103, Masters e registries; e autorização explícita de engenharia e publicação. A ausência de qualquer requisito mantém bloqueio. Esta lista é proposta e não uma homologação automática.
+
+### Registro integrado RSP-06
+
+| Decisão | Tema | Exame | Adjudicação |
+|---|---|---|---|
+| RSP-06.A | Estados em quatro dimensões | Documentado | Pendente |
+| RSP-06.B | Eventos, guardas e competência | Documentado | Pendente |
+| RSP-06.C | Dependência entre selos | Documentado | Pendente |
+| RSP-06.D | Sincronização, retirada e recuperação | Documentado | Pendente |
+| RSP-06.E | Auditoria, testes e gate de prontidão | Documentado | Pendente |
+
+**Encaminhamento:** organizar a adjudicação normativa individual e integrada de RSP-06 sem presumir aprovação de DEP-B ou de estados candidatos. Após adjudicações válidas, tratar eventuais edições de registries e Masters por fluxo próprio. A navegação no MENU do GKR é uma frente editorial distinta; não expor diretamente documento DRAFT como referência vigente.
+
+```text
+ETAPA 288 RSP-06.E INDIVIDUAL EXAM → DOCUMENTED
+RSP-06.E ANALYTICAL DIRECTION → CONDITIONAL CONVERGENCE
+RSP-06.E HUMAN NORMATIVE ADJUDICATION → PENDING
+RSP-06.A..E EXAMS → 5/5 DOCUMENTED
+RSP-06.A..E HUMAN ADJUDICATIONS → 0/5 CONFIRMED
+RSP-05.A..F EXAMS → 6/6 DOCUMENTED
+RSP-05 HUMAN ADJUDICATIONS → 0/6 CONFIRMED
+DEC-01..05 EXAMS → 25/25 DOCUMENTED
+DEC-01..05 NORMATIVE RATIFICATIONS → 0/25 CONFIRMED
+TESTS EXECUTED / HOMOLOGATION → 0 / NOT AUTHORIZED
+NEW GKR-SURF / GKR-TRN IDS → 0
+PR #654 → OPEN / DRAFT
+GKR MENU → UNCHANGED
+BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
+NEXT → RSP-06 INTEGRATED HUMAN DELIBERATION REGISTER
+```
