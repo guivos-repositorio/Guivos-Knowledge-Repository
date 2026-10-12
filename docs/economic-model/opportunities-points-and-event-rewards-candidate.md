@@ -2,7 +2,7 @@
 id: GEM-OPPORTUNITIES-POINTS-REWARDS-CANDIDATE-001
 title: Oportunidades — Retorno em Pontos e Premiações de Eventos — Proposta Transversal
 status: draft
-version: 1.6.0
+version: 1.7.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -1230,4 +1230,69 @@ ACCEPTANCE TESTS → 13 DEFINED / 0 EXECUTED
 FIN-COMPRA / FIN-EVENTO → PRESERVED
 PR #655 → OPEN / DRAFT
 MAIN / MENU / MASTERS / REGISTRIES / IMPLEMENTATION → UNCHANGED
+```
+
+## 26. Comparação numérica ROUND-A/B/C — créditos, resíduos e repasse (v1.7.0 candidato)
+
+**Status:** exemplos calculados com aritmética decimal exata e conferência matemática, sem teste de software produtivo nem adjudicação. Hipótese exclusivamente comparativa: percentual de 1%, benefício monetário arredondado para centavos com `half-up` uma vez por oportunidade/ofertante/transação. Essa política **não está aprovada**.
+
+### 26.1 Contratos alternativos usados na simulação
+
+- **ROUND-A:** crédito fracionário em pontos igual ao valor do benefício arredondado em reais; retenção igual a esse valor. Exige suportar ao menos duas casas nos pontos.
+- **ROUND-B:** crédito apenas dos pontos inteiros por truncamento; **retenção ajustada ao valor realmente creditado**, devolvendo o resíduo ao repasse do ofertante. Não é admissível reter a fração sem a creditar ou contratualmente resolver o resíduo.
+- **ROUND-C:** creditar imediatamente a parte inteira, registrar a fração em uma **subconta nominativa de direitos pendentes**, e reter economicamente a quantia correspondente ao benefício total; a fração acumulada deve ser convertível e a obrigação coberta. Para a simulação, o resíduo é demonstrado em equivalência monetária, não um crédito de resgate disponível.
+
+### 26.2 Compras individuais
+
+| Compra | Benefício bruto 1% | Benefício em centavos hipotético | ROUND-A: pontos imediatos / retenção | ROUND-B: pontos / retenção / repasse-base | ROUND-C: pontos + resíduo pendente / retenção |
+|---|---:|---:|---|---|---|
+| R$ 200,00 | R$ 2,0000 | R$ 2,00 | 2,00 pt / R$ 2,00 | 2 pt / R$ 2,00 / R$ 198,00 | 2 pt + 0,00 / R$ 2,00 |
+| R$ 149,90 | R$ 1,4990 | R$ 1,50 | 1,50 pt / R$ 1,50 | 1 pt / R$ 1,00 / R$ 148,90 | 1 pt + 0,50 / R$ 1,50 |
+| R$ 49,95 | R$ 0,4995 | R$ 0,50 | 0,50 pt / R$ 0,50 | 0 pt / R$ 0,00 / R$ 49,95 | 0 pt + 0,50 / R$ 0,50 |
+| R$ 0,49 | R$ 0,0049 | R$ 0,00 | 0,00 pt / R$ 0,00 | 0 pt / R$ 0,00 / R$ 0,49 | 0 pt + 0,00 / R$ 0,00 |
+| R$ 0,50 | R$ 0,0050 | R$ 0,01 | 0,01 pt / R$ 0,01 | 0 pt / R$ 0,00 / R$ 0,50 | 0 pt + 0,01 / R$ 0,01 |
+| R$ 0,51 | R$ 0,0051 | R$ 0,01 | 0,01 pt / R$ 0,01 | 0 pt / R$ 0,00 / R$ 0,51 | 0 pt + 0,01 / R$ 0,01 |
+
+**Exemplo de precisão:** R$ 149,90 × 1% = R$ 1,499 antes da política de centavos; sob a hipótese `half-up`, retorna R$ 1,50 e o ROUND-A concede 1,50 ponto. Não misturar valor bruto não liquidável de R$ 1,499 com retenção de R$ 1,50 e pontos 1,499 sem reconciliar a diferença.
+
+### 26.3 Duas compras e efeito de agregação de resíduos
+
+Pessoa compra oportunidades de R$ 149,90 e R$ 49,95, ambas elegíveis a 1%, de **dois ofertantes diferentes**.
+
+- Benefícios arredondados por transação: R$ 1,50 + R$ 0,50 = **R$ 2,00**.
+- ROUND-A: **2,00 pontos disponíveis** e R$ 2,00 retidos dos **respectivos ofertantes**.
+- ROUND-B truncado com retenção equivalente: **1 ponto disponível**, R$ 1,00 retido do primeiro ofertante; **R$ 1,00** de incentivos calculados deixa de ser entregue, mas também não pode ser cobrado dos ofertantes.
+- ROUND-C: **1 ponto disponível** e **1,00 ponto acumulado como resíduo**, que pode converter-se em um ponto adicional; R$ 1,50 e R$ 0,50 retidos **individualmente de cada ofertante**. A subconta exige política de titularidade, reversão e expiração.
+
+**Cuidado:** a Pessoa pode somar benefícios em sua carteira, mas a conciliação financeira não pode misturar obrigações ou alterar repasses por ofertante.
+
+### 26.4 Estorno parcial (caso fundador)
+
+Compra original R$ 200,00 com 1% → 2 pontos / R$ 2 de retenção; estorno elegível de R$ 50,00 → base R$ 150,00 e benefício final R$ 1,50.
+
+| Alternativa | Saldo de direito após estorno | Ajuste do incentivo | Repasse-base final teórico |
+|---|---|---:|---:|
+| ROUND-A | 1,50 pt | -R$ 0,50 / -0,50 pt | R$ 148,50 |
+| ROUND-B truncado | 1 pt | -R$ 1,00 / -1 pt | R$ 149,00 |
+| ROUND-C | 1 pt + 0,50 pt pendente | -R$ 0,50 / -0,50 pt de direito total | R$ 148,50 |
+
+Repasse-base final teórico **não equivale** ao dinheiro que precisará ser movimentado após eventuais repasses originais: conciliar pagamentos e estornos já efetivados, taxa Guivos e custos dos meios de pagamento separadamente.
+
+### 26.5 Decisão analítica condicionada
+
+**ROUND-A** mantém a proporcionalidade prometida com menos estados ocultos e é o candidato técnico preferencial. **ROUND-C** preserva equivalência, mas requer subconta e regras adicionais. **ROUND-B** produz perda de incentivos percebidos em compras pequenas, salvo se oferta e percentual forem formulados de maneira compatível e explícita.
+
+**Não decididos:** número máximo de decimais de pontos, arredondamento oficial, aplicação por linha/carrinho, regras de microvalores, preço de saldo pré-pago para eventos, taxa da plataforma e paridade de utilização Mall/Travel.
+
+**Próxima etapa candidata:** submeter a preferência ROUND-A e hipótese de duas casas decimais ao rito de decisão competente, anexando evidências econômicas e teste de política em cenários de estorno, sem confundir acordo para continuidade documental com adjudicação.
+
+```text
+VERSION → v1.7.0 CANDIDATE
+ROUND COMPARISON → MATHEMATICAL CASES DOCUMENTED (NOT LIVE TESTS)
+ROUND-A → CONDITIONALLY PREFERRED / NOT RATIFIED
+ROUND-01..06 → 0/6 ADJUDICATED
+FIN-COMPRA → DEDUCT POINT COST FROM OFFEROR PAYOUT
+FIN-EVENTO → PREPAID ORGANIZER BALANCE
+PR #655 → OPEN / DRAFT
+GKR MAIN / MENU / HOME MASTERS / REGISTRIES / REPLIT → UNCHANGED
 ```
