@@ -5932,3 +5932,89 @@ GKR MENU → UNCHANGED
 BADGE ISSUANCE / PUBLICATION / TESTS / HOMOLOGATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
 NEXT → G0/B-01 FINAL READINESS CHECKLIST
 ```
+
+## Etapa 297 — G0/B-01: Checklist final de prontidão e encaminhamento condicionado (v4.49 candidato)
+
+**Resultado:** CHECKLIST FINAL DOCUMENTADO / ENCAMINHAMENTO PRELIMINAR RECOMENDADO COM CONDIÇÕES / ADJUDICAÇÃO G0 PENDENTE. Este registro não comprova autoridade legitimadora, não formaliza ato, não encaminha solicitação externamente e não ratifica a política dos selos.
+
+### Questão de controle
+
+O dossiê G0/B-01 está completo para apreciação preliminar por instância competente, e quais condições impedem que seja tratado como ato institucional válido, antes das 36 deliberações DEC/RSP?
+
+### Checklist das sete peças
+
+| Peça | Verificação de presença | Situação e ressalva |
+|---|---|---|
+| D-01 | Matriz de autoridades do GKR | PRESENTE; não identifica mandato específico da política |
+| D-02 | Alternativas G0-A/B/C/D | PRESENTE; nenhuma escolhida |
+| D-03 | Fontes e lacunas | PRESENTE; poderes originários não comprovados |
+| D-04 | Minuta e matriz de delegação | PRESENTE; campos essenciais sem preenchimento |
+| D-05 | Auditoria de completude e conflitos | PRESENTE; impedimento material identificado |
+| D-06 | Formulário de decisão humana | PRESENTE; sem autoridade, assinatura, data ou resultado |
+| D-07 | Matriz de dependência DEC/RSP | PRESENTE; 36/36 exames, 0/36 ratificações |
+
+**Conclusão de completude:** 7/7 peças existem como material de análise. Essa completude não significa que estejam preenchidas ou aprovadas, nem que a legitimidade da instância decisora tenha sido comprovada.
+
+### Separação das pendências por natureza
+
+| Categoria | Pode ser preparada documentalmente | Exige ato/evidência externa ou autoridade legitimada |
+|---|---|---|
+| Descrição da finalidade dos selos | Sim | Ratificação de escopo e critérios |
+| Inventário de fontes, riscos e alternativas | Sim | Comprovação de atos não presentes nas fontes |
+| Minuta de titularidade e delegações | Sim | Definição e aprovação de signatário com poderes |
+| Matriz de competências e impedimentos | Sim | Investidura, mandato e independência formal |
+| Procedimento das 36 decisões | Sim | Deliberações expressas, individuais e motivadas |
+| Plano editorial de navegação GKR | Sim | Publicação por autoridade editorial apropriada |
+| Arquitetura e testes de implementação | Planejamento somente após delimitação válida | Autorização técnica, testes efetivos e homologação |
+
+### Recomendação de encaminhamento condicionado
+
+**Recomendação documental:** classificar G0/B-01 como `PREPARADO_PARA_TRIAGEM_PRELIMINAR` apenas em sentido analítico e encaminhar o conjunto para identificação/comprovação de autoridade competente e saneamento de campos materiais, caso exista rito institucional legítimo para fazê-lo.
+
+**Não recomendar:** assinatura imediata, investidura por inferência, promoção do documento candidato na `main`, abertura das 36 adjudicações como se G0 estivesse resolvido, publicação de selos ou implantação no Replit.
+
+A indicação `PREPARADO_PARA_TRIAGEM_PRELIMINAR` é rótulo descritivo deste exame, **não estado normativo ou de workflow implementado**.
+
+### Cinco portas para decisão futura
+
+1. **Origem de poderes:** instrumento constituinte, delegação ou outro mandato verificável.
+2. **Competência e capacidade:** identificação da instância e do signatário legítimos.
+3. **Objeto e limites:** dois selos, territórios, temporalidade, delegabilidade e independência.
+4. **Rito e prova de aprovação:** registro de resultado, motivação, versão, data e evidências, com formalidades aplicáveis.
+5. **Separação de efeitos:** G0 somente permite decidir competências de acordo com o ato válido; não adjudica DEC/RSP nem autoriza operação.
+
+Se qualquer porta essencial não puder ser comprovada, o encaminhamento recomendado é devolução para complementação (`G0-D`) e manutenção do bloqueio.
+
+### Registro de encaminhamento ainda não executado
+
+```text
+GATE: G0/B-01
+DOCUMENTARY PIECES: 7/7 IDENTIFIED
+PRELIMINARY REVIEW PACKAGE: READY WITH MATERIAL GAPS
+COMPETENT RECIPIENT: NOT VERIFIED
+ORIGINAL AUTHORITY DOCUMENT: NOT PROVIDED
+FORMAL SUBMISSION: NOT PERFORMED
+HUMAN G0 DECISION: NOT RECORDED
+COMBINED DEC/RSP DECISIONS: 0/36 CONFIRMED
+NORMATIVE / TECHNICAL EFFECT: NONE
+```
+
+### Continuidade delimitada
+
+**Etapa 298 — encerramento da preparação G0 e separação das trilhas de resolução:** consolidar o bloqueio de titularidade para depender de evidência humana legítima e identificar trabalho editorial-documental independente para organizar a encontrabilidade do tema no GKR. Nenhum ato de governança será considerado aprovado por continuidade de conversa.
+
+```text
+ETAPA 297 G0/B-01 FINAL READINESS CHECKLIST → DOCUMENTED
+G0 DOSSIER PIECES → 7/7 IDENTIFIED
+G0 PRELIMINARY REVIEW → CONDITIONALLY PREPARED
+G0 FORMAL INSTITUTIONAL SUBMISSION → NOT EXECUTED
+G0 HUMAN ADJUDICATION → PENDING
+DEC-01..05 EXAMS → 25/25; RATIFICATIONS → 0/25
+RSP-05 EXAMS → 6/6; ADJUDICATIONS → 0/6
+RSP-06 EXAMS → 5/5; ADJUDICATIONS → 0/5
+COMBINED EXAMS → 36/36; RATIFICATIONS → 0/36
+PR #654 → OPEN / DRAFT
+GKR MENU → UNCHANGED
+BADGE ISSUANCE / PUBLICATION / TESTS / HOMOLOGATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
+NEXT → G0 PREPARATION CLOSEOUT AND TRACK SEPARATION
+```
