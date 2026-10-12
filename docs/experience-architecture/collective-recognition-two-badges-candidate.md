@@ -2,7 +2,7 @@
 id: GKR-COLLECTIVE-RECOGNITION-001
 title: Coletivos — Verificado e Contribuição Reconhecida
 status: proposed
-version: 4.0.0
+version: 4.1.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -2496,6 +2496,53 @@ DEC-02 INTEGRATED DELIBERATION REGISTER → COMPLETE
 DEC-02 HUMAN NORMATIVE RATIFICATION → 0/5 CONFIRMED
 DEC-01 HUMAN NORMATIVE RATIFICATION → 0/5 CONFIRMED
 DEC-03 → NEXT
+GKR MENU LINK → REQUESTED / NOT PUBLISHED
+PR #654 → OPEN / DRAFT
+BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
+```
+
+
+## DEC-03 — Instrumento de deliberação sobre autoridade institucional (v4.1 candidato)
+
+**Estado:** PREPARADO PARA EXAMES INDIVIDUAIS, NÃO ADJUDICADO. Este instrumento complementa CBR-06, ADJ-04 e ADJ-08/P0-03. Descreve papéis funcionais candidatos, não equipes instituídas ou delegação operacional vigente.
+
+### Objetivo
+
+Separar prova e análise de evidências, decisão material dos dois selos, publicação, supervisão e recurso, com independência de interesses comerciais e capacidade de escala sem dependência permanente do fundador.
+
+### Matriz de cinco decisões a examinar
+
+| Item | Questão normativa | Direção candidata | Estado |
+|---|---|---|---|
+| DEC-03.A — Titularidade e alçadas | Quem pode conceder, indeferir, suspender e revogar cada selo? | Autoridade institucional formalmente designada e mandato específico por reconhecimento | A EXAMINAR |
+| DEC-03.B — Segregação e conflitos | Como separar solicitação, análise, cálculo, decisão e interesses comerciais? | Impedimentos, menor privilégio, trilha de decisão e revisão independente | A EXAMINAR |
+| DEC-03.C — Recurso e proteção | Quem reexamina decisões e como preservar contraditório, dados privados e urgências? | Instância recursal distinta, fundamento, proteção proporcional e efeitos versionados | A EXAMINAR |
+| DEC-03.D — Ciclo de vida e prazos | Quais estados, duração, revalidação, mudanças e suspensão são admissíveis? | Estados independentes por selo, vigência explícita e dependência de Verificado | A EXAMINAR |
+| DEC-03.E — Escala e auditoria | Como operar em diferentes portes e territórios? | Política versionada, formação, controles de qualidade, gestão de risco e supervisão independente | A EXAMINAR |
+
+### Limites de competência
+
+- Representante de Coletivo pode solicitar, complementar e recorrer segundo autorização, mas não conceder seu reconhecimento nem acessar avaliações individuais protegidas.
+- Analistas podem avaliar evidências e calcular indicadores, mas não adquirem automaticamente competência decisória.
+- Autoridade de `Verificado` delibera existência e representação; autoridade de `Contribuição Reconhecida` examina mérito contextual e robustez, exigindo Verificado vigente.
+- Publicação nos cards e PER-103 depende de contrato e ato próprios de DEC-04; decisão material não equivale a publicidade.
+- Comercial, patrocinadores, anunciantes e parceiros não controlam reconhecimento; IA pode auxiliar triagem sem ser autoridade decisória ou sancionadora final.
+- Recursos devem ser revisados sem que o decisor único do ato contestado seja a instância recursal conclusiva.
+- Mandatos, cargos, acessos, SLAs, proteção de dados, revisão jurídica e controles técnicos precisam ser estabelecidos antes da operação.
+
+### Dependências
+
+DEC-01 e DEC-02 fornecerão os critérios materiais, ainda sem ratificação normativa. DEC-03 deverá designar as alçadas reais antes de qualquer concessão. DEC-04 fornecerá a autoridade de publicação e DEC-05 os controles operacionais, proteção e homologação. Nenhuma decisão parcial autoriza implementação ou promoção automática dos Masters.
+
+### Registro humano futuro
+
+Cada item DEC-03.A..E exige resultado expresso `APROVAR`, `APROVAR_COM_AJUSTES`, `DEVOLVER_PARA_REVISAO` ou `REJEITAR`, acompanhado de órgão/mandato, fundamento, data, versão, escopo e condições. A autorização genérica para continuar a documentação não constitui adjudicação formal.
+
+```text
+DEC-03 DELIBERATION INSTRUMENT → PREPARED
+DEC-03.A..E INDIVIDUAL EXAMS → NOT STARTED
+DEC-03.A..E NORMATIVE RATIFICATIONS → 0/5 CONFIRMED
+DEC-01 AND DEC-02 NORMATIVE RATIFICATION → PENDING
 GKR MENU LINK → REQUESTED / NOT PUBLISHED
 PR #654 → OPEN / DRAFT
 BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
