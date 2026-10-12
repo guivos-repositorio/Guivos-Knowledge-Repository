@@ -2,7 +2,7 @@
 id: GKR-COLLECTIVE-RECOGNITION-001
 title: Coletivos — Verificado e Contribuição Reconhecida
 status: proposed
-version: 1.8.0
+version: 1.9.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -1175,4 +1175,74 @@ PER-103 / DISCOVERY BADGE AUTHORITY → NOT EXTENDED
 CANONICAL ISSUANCE / PUBLICATION OWNER → NOT DESIGNATED
 P0-04 NORMATIVE APPROVAL → PENDING
 PROTOTYPE / REAL BADGE ISSUANCE → NOT AUTHORIZED
+```
+
+
+## ADJ-10 / P0-05 — Integridade, privacidade e segurança operacional (v1.9 candidato)
+
+**Natureza:** contrato de controles e ensaios de aceitação candidato. Nenhum controle aqui é declarado implementado, juridicamente aprovado, operacionalmente testado ou suficiente para emissão.
+
+### A. Modelo de ameaças e respostas
+
+| Ameaça | Prevenção/detecção candidata | Medida com autoridade |
+|---|---|---|
+| Identidade fictícia ou representante sem mandato | Proveniência e corroboração independente, revisão de mudanças de representação | Complementar, indeferir ou reexaminar com fundamento |
+| Coletivo duplicado ou identidade clonada | Detecção contextual de coincidência; revisão humana de homônimos | Não fundir automaticamente organizações distintas |
+| Avaliações artificiais, contas em massa ou respostas combinadas | Deduplicação protegida, anomalias de concentração, elegibilidade e amostragem | Suspensão cautelar proporcional/revisão, nunca condenação automática |
+| Incentivo condicionado à resposta positiva | Proibir troca por benefício, auditar mecanismo de convite | Desconsiderar coleta viciada após decisão competente |
+| Manipulação de seleção de respondentes | Registrar universo, convite, não resposta, canais e períodos | Invalidar inferência sem afirmar resultado negativo |
+| Uso de experiência de terceiro | Proveniência, papéis e coexecução auditados | Negar atribuição institucional não demonstrada |
+| Retaliação contra Pessoa que avaliou negativamente | Respostas protegidas, acesso mínimo e canal seguro de relato | Investigar, proteger e revisar independência |
+| Exposição de dados sensíveis de participantes | Minimização, segregação R1/P1, autorização granular, agregação segura | Bloquear divulgação e conter incidente |
+| Dado ou selo expirado em cache e exportação | Eventos versionados, invalidação, reconciliação e teste de rollback | Retirada coordenada por autoridade de publicação |
+| Acesso interno indevido, alteração de evidências | Permissão por função, registro auditável, controle de integridade | Revogar acesso e analisar impacto, sem atribuição de culpa automática |
+
+### B. Política de privacidade e direitos de Pessoas
+
+1. Avaliação contextual pertence à experiência autorizada; não converter percepções privadas, participação, crença, dado de saúde ou objetivo pessoal em publicidade individual.
+2. Coletar e manter apenas informações necessárias para conferir legitimidade, elegibilidade, atribuição, robustez, recurso e segurança; definir base legal, finalidade, acesso e retenção conforme jurisdição antes da operação.
+3. Pessoa avalia voluntariamente, pode não responder, e silêncio não equivale a insatisfação nem autoriza retaliação.
+4. Resposta negativa legítima não é fraude; denúncia exige análise, presunção de inocência procedimental e proteção de denunciantes.
+5. Apenas agregados especificamente autorizados e suficientemente protegidos poderão ser considerados para divulgação; o selo público não expõe respostas, membros ou avaliações brutas.
+6. Perfis públicos de Coletivos espirituais, culturais, sociais ou sensíveis não podem revelar pertencimento privado de indivíduos.
+
+### C. Segurança e custódia
+
+Exigir desenho de controles de acesso por menor privilégio, autenticação compatível com risco, integridade e rastreabilidade das evidências, proteção de dados em trânsito e repouso, segregação de ambientes, gestão de segredos, monitoramento autorizado e plano de resposta a incidentes. Definir especificamente proprietário do tratamento, matriz de acesso, retenção e exclusão, prazos e transferências internacionais antes de implantação. Estes itens são critérios para revisão de engenharia/privacidade, não alegação de que controles já existem.
+
+### D. Fluxo para denúncias e contestação
+
+`RELATO` → `TRIAGEM` → `PROTEÇÃO PROPORCIONAL` quando necessária → `APURAÇÃO` → `DECISÃO FUNDAMENTADA` → `COMUNICAÇÃO ADEQUADA` → `RECURSO INDEPENDENTE` → `REVISÃO / ENCERRAMENTO`.
+
+Denúncia, anomalia automatizada ou divergência comercial não bastam para declarar fraude. Medidas urgentes de proteção precisam de escopo, justificativa, temporalidade, reexame e canal de contestação. Revelações ao Coletivo devem evitar identificar autores de críticas, denunciantes ou participantes protegidos.
+
+### E. Retirada e recuperação seguras
+
+Selo vigente só pode ser projetado com decisão e publicação autorizadas. Ao expirar, suspender ou revogar, produzir evento versionado para remover a apresentação em todas as projeções autorizadas; bloquear reativação por cache antigo, reprocessamento fora de ordem, índices, snapshots e retries. Estados inválidos ou temporariamente não verificáveis não devem aparecer como selo vigente, tampouco como condenação pública do Coletivo. Restituição depende de nova decisão competente e publicação expressa. SLA e arquitetura de distribuição continuam pendentes.
+
+### F. Ensaios para futura homologação
+
+| Teste | Evidência exigida no futuro |
+|---|---|
+| Rede de contas artificiais produz 95% de avaliações favoráveis | Bloqueio de concessão automática; revisão fundamentada |
+| Participante avalia negativamente e organizador exige identificação | Não divulgar identidade nem alterar avaliação por pressão |
+| Apenas três Pessoas elegíveis em pequeno Coletivo | Não afirmar robustez inexistente; não depreciação pública |
+| Alteração de representante sem comprovação | Reexame de Verificado e dependência do segundo selo |
+| Parceria apenas publicitária | Não atribuir benefício de terceiro |
+| Colisão de nomes de dois Coletivos legítimos | Não fundir ou penalizar automaticamente |
+| Selo suspenso ainda aparece em cache | Detectar inconsistência e retirar de projeções controláveis |
+| Recurso provido | Estado restaurado somente por decisão e publicação competentes |
+| Incidente expõe registro privado de participação sensível | Conter, apurar, registrar e acionar protocolos aplicáveis |
+| Usuário não responde ou não consente com avaliação | Nenhuma penalidade pessoal ou inferência negativa |
+
+### G. Achados e critérios de fechamento
+
+**P0-05 permanece OPEN:** faltam avaliação de impacto em privacidade, classificação de riscos, bases legais, retenção/transferências, matriz de acessos, arquitetura e SLA de sincronização, equipe formal de segurança e integridade, política de incidentes e recurso, evidências de ensaios técnicos e revisão humana/jurídica. A especificação documental sozinha não fecha segurança operacional.
+
+```text
+P0-01..05 DOCUMENTARY CANDIDATE COVERAGE → 5/5
+P0-05 OPERATIONAL VALIDATION → NOT STARTED
+P0-01..05 NORMATIVE APPROVAL → PENDING
+CBR-01..08 HUMAN NORMATIVE ADJUDICATION → 0/8 CONFIRMED
+BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
 ```
