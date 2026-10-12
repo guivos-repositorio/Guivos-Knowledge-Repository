@@ -5620,3 +5620,76 @@ GKR MENU → UNCHANGED
 BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
 NEXT → G0/B-01 EVIDENCE RECONCILIATION AND DELIBERATION READINESS
 ```
+
+## Etapa 293 — G0/B-01: Reconciliação de evidências e prontidão de deliberação humana (v4.45 candidato)
+
+**Resultado:** RECONCILIAÇÃO DOCUMENTAL CONCLUÍDA / PACOTE DE ENCAMINHAMENTO PREPARADO / G0 NÃO ADJUDICADO. Esta etapa não reconhece novos mandatos, não cria entidade titular da política e não desbloqueia DEC-01..05, RSP-05 ou RSP-06.
+
+### Questão de prontidão
+
+As fontes hoje identificadas sustentam uma decisão humana válida sobre a titularidade da política de `Verificado` e `Contribuição Reconhecida`, ou ainda falta comprovação específica de competência, forma deliberativa e cadeia de delegação?
+
+### Inventário reconciliado de fontes e lacunas
+
+| Evidência examinada | Fato documental verificável | O que não permite concluir |
+|---|---|---|
+| `GKR-BRAND-PUBLIC-AUTHORITY-001` na `main` | Fundador como autoridade humana pública principal, referência fundadora e de grandes mudanças, quando aplicável | Competência específica de emitir selos, julgar recursos ou instituir sozinho sua política |
+| `GKR-UX-ORGCOL-AUTH-JOBS-001` na `main` | Classes de representantes e autoridades contextuais; ator funcional ≠ permissão técnica | Autoridade da Guivos para reconhecer Coletivos por analogia |
+| `organizations-collectives-journey/read-first.md` na `main` | Autoridades, limites e fontes canônicas devem ser respeitados | Ratificação por mera continuidade documental |
+| `collective-protection-moderation-master.md` na `main` | Disciplina proteção/moderação `COL-007` em seu contexto documental | Concessão/revogação do programa de selos |
+| `mkdocs.yml` na `main` | Candidatos/drafts não são destinos correntes do MENU salvo autorização superior aplicável | Publicação normativa implícita da PR #654 |
+| PR #654 — documentação candidata v4.44 | 36 exames e instrumentos G0 registrados, com 0/36 adjudicações | Ato constitutivo, investidura, aprovação ou homologação |
+
+Este levantamento evidencia **insuficiência de comprovação específica nas fontes verificadas**; não demonstra que outros atos societários, institucionais ou externos inexista(m).
+
+### Matriz de prontidão G0
+
+| Requisito | Estado documental atual | Ação necessária |
+|---|---|---|
+| Identidade da instância legítima titular da política | NÃO COMPROVADO | Apresentar fundamento vigente ou constituir competência por ato válido |
+| Capacidade e mandato de quem delibera | NÃO COMPROVADO | Verificar poderes, forma de representação e limites |
+| Território, escopo e período da competência | NÃO DEFINIDOS | Registrar expressamente no instrumento competente |
+| Delegação de instrução, mérito, recurso e supervisão | NÃO RATIFICADA | Aprovar matriz segregada e impedimentos |
+| Autoridade editorial da publicação dos selos | NÃO DESIGNADA | Deliberação específica, separada do mérito |
+| Competência para publicação documental no MENU | REGRAS GKR IDENTIFICADAS; ATO ESPECÍFICO PENDENTE | Encaminhar página/hub pelo rito editorial aplicável |
+| Rito das 36 adjudicações, resultado e registro | INSTRUMENTO PREPARADO; SEM ATOS | Identificar signatário competente, decisões individuais e trilha |
+| Requisitos técnicos e homologação | NÃO EXECUTADOS | Permanecem condicionados às ratificações prévias |
+
+### Três condições de encaminhamento
+
+**PRONTO PARA SUBMISSÃO À AUTORIDADE COMPETENTE:** pacote de perguntas, alternativas G0-A..D, fontes verificadas, riscos e campos de registro estão preparados para apreciação.
+
+**NÃO PRONTO PARA ADJUDICAÇÃO COMO ATO FINAL:** falta prova documental de quem pode decidir e do fundamento/mandato pertinente aos selos. O assistente, uma PR aberta ou um “de acordo, segue” não supre a lacuna.
+
+**NÃO PRONTO PARA IMPLEMENTAÇÃO:** não há critérios, competências, publicabilidade, transições e homologação ratificados.
+
+### Checklist de decisão humana
+
+1. Comprovar ato de origem da competência e identificar instância e signatário legitimados.
+2. Escolher e fundamentar encaminhamento G0-A, G0-B, G0-C ou G0-D, com eventuais condicionantes.
+3. Determinar se há consulta/validação jurídica, societária, territorial ou de proteção de dados aplicável.
+4. Delimitar competências indelegáveis, delegáveis, impedimentos, independência recursal e supervisão.
+5. Formalizar escopo da política e rito das adjudicações DEC/RSP, com versões e efeitos.
+6. Registrar resultado expresso, responsável, data, motivação, evidências e condições.
+7. Verificar eventuais conflitos com fontes GKR vigentes antes de promover autoridade.
+8. Não confundir a aprovação da decisão G0 com concessões, emissão de selos ou autorização técnica.
+
+### Próxima etapa 294 — proposta
+
+Preparar a **minuta mínima de ato institucional G0/B-01 e sua matriz de delegação**, com campos explícitos para competência legitimadora, titularidade, reserva de poderes, impedimentos e eficácia. Permanecerá apenas uma minuta até assinatura/aprovação válida pela instância competente. Não iniciar adjudicação das 36 decisões por presunção.
+
+```text
+ETAPA 293 G0/B-01 EVIDENCE RECONCILIATION → DOCUMENTED
+G0 DOCUMENTARY SUBMISSION PACKAGE → PREPARED
+G0 SPECIFIC AUTHORITY PROOF → INSUFFICIENT IN EXAMINED SOURCES
+G0 HUMAN ADJUDICATION → PENDING
+DEC-01..05 EXAMS → 25/25; NORMATIVE RATIFICATIONS → 0/25
+RSP-05 EXAMS → 6/6; HUMAN ADJUDICATIONS → 0/6
+RSP-06 EXAMS → 5/5; HUMAN ADJUDICATIONS → 0/5
+COMBINED EXAMS → 36/36; CONFIRMED ADJUDICATIONS → 0/36
+TESTS / HOMOLOGATION → NOT EXECUTED / NOT AUTHORIZED
+PR #654 → OPEN / DRAFT
+GKR MENU → UNCHANGED
+BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
+NEXT → MINIMUM G0 INSTITUTIONAL ACT DRAFT
+```
