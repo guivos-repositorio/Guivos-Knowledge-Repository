@@ -2,7 +2,7 @@
 id: GKR-COLLECTIVE-RECOGNITION-001
 title: Coletivos — Verificado e Contribuição Reconhecida
 status: proposed
-version: 3.6.0
+version: 3.7.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -2223,6 +2223,73 @@ DEC-02.B ANALYTICAL DIRECTION → CONDITIONAL CONVERGENCE
 DEC-02.B HUMAN NORMATIVE ADJUDICATION → PENDING
 DEC-02.C → NEXT
 DEC-02 INDIVIDUAL EXAMS → 2/5 DOCUMENTED
+GKR MENU ACCESS → REQUESTED / NOT PUBLISHED
+PR #654 → OPEN / DRAFT
+BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
+```
+
+
+## DEC-02.C — Exame individual: robustez estatística e representatividade (v3.7 candidato)
+
+**Resultado:** CONVERGÊNCIA ANALÍTICA CONDICIONAL. Este exame sistematiza CBR-03, ADJ-03 e P0-02; não aprova limiares, não valida base observacional nem permite emissão.
+
+### Pergunta decisória
+
+Quando o conjunto de percepções elegíveis fornece evidência suficientemente robusta da contribuição do Coletivo, considerando tamanho efetivo, cobertura, seleção de respondentes, repetição, heterogeneidade e incerteza, sem penalizar automaticamente iniciativas pequenas ou pontuais?
+
+### Unidades e denominadores não intercambiáveis
+
+| Medida | Significado | Advertência |
+|---|---|---|
+| Pessoas elegíveis distintas | Pessoas legitimamente aptas após vivência comprovada | Pode ser desconhecido em atividade aberta |
+| Pessoas convidadas distintas | Pessoas elegíveis a quem o convite chegou, conforme prova disponível | Convite seletivo distorce resultado |
+| Pessoas respondentes distintas | Pessoas elegíveis que responderam | Não equivale ao número total de respostas |
+| Experiências/edições | Atividades ou ciclos examinados | Uma Pessoa pode aparecer em várias |
+| Respostas válidas por dimensão | Favoráveis, parciais ou desfavoráveis sobre dimensão pertinente | Não aplicável, informação insuficiente e silêncio são relatados à parte |
+
+Para a dimensão pertinente `d`, `F_d/(F_d + P_d + D_d)` descreve proporção favorável **entre respostas válidas dessa dimensão**, e não aprovação do selo. Preservar análise das parciais e desfavoráveis. `Respostas`, `experiências` e `Pessoas distintas` jamais devem ser presumidas independentes.
+
+### Portas candidatas de robustez
+
+- **R-01 / integridade:** filtrar apenas por critérios legitimamente adjudicados; anomalia automática não é prova de fraude.
+- **R-02 / elegibilidade:** experiências e Pessoas comprovadas, incluindo deduplicação privada e atribuição legítima.
+- **R-03 / amostragem:** documentar mecanismo de convites, recusas, elegíveis conhecidos e cobertura, sem convidar só satisfeitos.
+- **R-04 / suficiência:** avaliar precisão, diversidade e tamanho efetivo sob metodologia a aprovar; não transformar 3/3 favoráveis em evidência conclusiva.
+- **R-05 / dependência:** considerar agrupamento de várias respostas de uma mesma Pessoa, edição ou grupo.
+- **R-06 / estabilidade:** examinar variações entre edições, períodos e dimensões comparáveis, sem exigir recorrência impossível a eventos únicos.
+- **R-07 / justiça:** testar risco de falso reconhecimento e falsa exclusão para Coletivos informais, pequenos e pontuais.
+- **R-08 / revisão:** exigir decisão humana competente fundamentada, registrando incertezas e evidências adversas.
+
+### Matriz sintética ilustrativa (não configurações de emissão)
+
+| Caso | Dado sintético | Questão de robustez |
+|---|---|---|
+| A | 3 de 3 favoráveis (100%) | Elevada incerteza; insuficiente para concessão automática |
+| B | 10 de 12 favoráveis (83,3%) | Coletivo pequeno: verificar diversidade, universo e cobertura sem exclusão pelo porte |
+| C | 90 de 100 favoráveis (90%) | Boa base descritiva, mas convites, origem e independência continuam relevantes |
+| D | 18 favoráveis entre 20 respondentes de 400 convidados | 90% entre respondentes, apenas 5% de resposta; viés potencial |
+| E | 40 respostas, 30 emitidas por duas Pessoas | Tamanho efetivo não equivale a 40 indivíduos |
+| F | Coletivo novo com única atividade elegível | Não exigir duas edições universalmente; examinar suficiência compatível com modalidade |
+| G | Excelente resultado em uma dimensão, relatos desfavoráveis consistentes em outra aplicável | Não ocultar contradições e riscos relevantes |
+
+### Modelos a calibrar, sem escolha normativa
+
+**Absoluto:** quantidade fixa de Pessoas/experiências; simples, mas excludente para Coletivos pequenos.  
+**Proporcional:** fração de participantes elegíveis conhecidos; pode ser inadequado quando universo é incerto.  
+**Híbrido:** integração da integridade, composição da amostra, cobertura, concentração, incerteza e revisão humana; direção metodológica candidata preferida, sujeita a ensaio e adjudicação.
+
+Os números de exemplos prévios (`20 Pessoas`, `8 Pessoas`, `10 Pessoas`, `70%`, `2 experiências`) permanecem somente **hipóteses de sensibilidade**. Intervalos binomiais como Wilson descrevem incerteza sob hipóteses próprias, mas não corrigem vieses de autoseleção ou dependência entre respostas.
+
+### Critérios de saída para deliberação
+
+Definir, mediante estudo e decisão competente, unidade principal e tamanho efetivo, janela e recorte, cobertura e estratégia de convite, limites de evidência, tratamento de não resposta, critérios por porte/tipologia, política de comparabilidade e confiança, agregação de dimensões, controle de manipulação e método recursal. Dados reais não foram analisados; nenhum limiar estatístico está aprovado.
+
+```text
+DEC-02.C INDIVIDUAL EXAM → COMPLETE
+DEC-02.C ANALYTICAL DIRECTION → CONDITIONAL CONVERGENCE
+DEC-02.C HUMAN NORMATIVE ADJUDICATION → PENDING
+DEC-02 INDIVIDUAL EXAMS → 3/5 DOCUMENTED
+DEC-02.D → NEXT
 GKR MENU ACCESS → REQUESTED / NOT PUBLISHED
 PR #654 → OPEN / DRAFT
 BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
