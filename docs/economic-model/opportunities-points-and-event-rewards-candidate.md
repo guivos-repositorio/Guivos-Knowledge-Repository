@@ -2,7 +2,7 @@
 id: GEM-OPPORTUNITIES-POINTS-REWARDS-CANDIDATE-001
 title: Oportunidades — Retorno em Pontos e Premiações de Eventos — Proposta Transversal
 status: draft
-version: 0.2.0
+version: 0.3.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -178,3 +178,106 @@ OPORTUNIDADE / EVENTO
 8. O limite opcional pode igualmente ser configurado por Organizações e Coletivos, respeitando a autoridade de cadastro de cada tipo de participante.
 
 **Pendências de adjudicação:** regra definitiva do instante de prioridade, elegibilidade em modalidades externas, devolução e redistribuição de cotas, tratamento de empates/concurrency, estornos, limite de campanha e provas de participação. Esta proposta não altera Masters, registros GKR-SURF/TRN, MENU, `main` nem autoriza engenharia.
+
+## 11. Orçamento, reserva e distribuição por incentivo — candidato v0.3.0
+
+**Objetivo:** oferecer ao publicador instrumentos opcionais de incentivo com orçamento definido, financiamento integral pelo próprio ofertante e uma separação auditável entre **inscrição**, **elegibilidade**, **reserva**, **validação** e **crédito**. Regras ainda candidatas, não contrato vigente.
+
+### 11.1 Objetos econômicos separados
+
+| Objeto | Responsabilidade | Invariante |
+|---|---|---|
+| Oportunidade | Cadastro e condições de participação | Permanece válida e inscrevível independentemente de o incentivo esgotar, se houver vagas de participação |
+| Campanha de pontos | Vigência, regulamento, modalidades e custeio | Incentivo é opcional, versão de regra fica preservada |
+| Faixa de incentivo | Pontos por beneficiário, limite e critérios de elegibilidade | Tetos por faixa e gatilhos não se confundem |
+| Orçamento comprometido | Exposição máxima prevista da campanha | Ofertante custeia 100%; não criar obrigação sem lastro |
+| Reserva condicional | Alocação a pessoa elegível, ainda não creditada | Uma reserva por direito, com controle de concorrência |
+| Crédito confirmado | Pontos efetivamente disponibilizados | Exige prova do gatilho, registro de ledger e ausência de duplicidade |
+| Reversão/expiração | Ajuste de direitos conforme política | Rastreável; nunca apagar histórico contábil |
+
+### 11.2 Fórmulas e tetos de exemplo
+
+**Primeiras N inscrições:** `ORÇAMENTO_FAIXA = PONTOS_POR_PESSOA × LIMITE_BENEFICIÁRIOS`. Para 100 pontos × 30 primeiras inscrições elegíveis: **3.000 pontos de limite de compromisso**, sem limitar o número de inscrições do evento.
+
+**Premiação por colocação:** `ORÇAMENTO_RANK = SOMA(PONTOS_DE_CADA_POSIÇÃO × QTDE_DE_BENEFICIÁRIOS_DA_POSIÇÃO)`, com tratamento explícito para empates e eventual prêmio compartilhado.
+
+**Incentivo percentual em oportunidade paga:** `BASE_ELEGÍVEL × TAXA_ESCOLHIDA` produz **valor econômico de benefício**, não quantidade de pontos, até a política oficial definir paridade, arredondamento e custos de liquidação. Para volume incerto, exigir teto de transações/beneficiários ou reserva máxima monetária convertida e coberta financeiramente.
+
+**Exemplo combinado:** 3.000 pontos de primeiras inscrições + (1.000 + 600 + 300) pontos de classificação = **4.900 pontos de exposição nominal**. O prêmio por classificação é independente; a distribuição real depende dos gatilhos comprovados. Empates ou outras bonificações não podem elevar o teto sem regra e financiamento adicionais.
+
+### 11.3 Fluxo candidato de orçamento e emissão
+
+```text
+ORGANIZAÇÃO OU COLETIVO
+  → CONFIGURA OPORTUNIDADE E INCENTIVOS OPCIONAIS
+  → DEFINE TETOS, REGRAS, GATILHOS E JANELA
+  → SISTEMA CALCULA EXPOSIÇÃO MÁXIMA
+  → OFERTANTE FINANCIA / GARANTE 100% DO COMPROMISSO
+  → LASTRO RECONCILIADO E CAMPANHA APTA A ATIVAÇÃO
+  → INSCRIÇÃO ELEGÍVEL OCUPA UMA DAS N COTAS (ATOMICAMENTE)
+  → RESERVA CONDICIONAL DE PONTOS, NÃO SALDO DISPONÍVEL
+  → PRESENÇA / RESULTADO / PAGAMENTO COMPROVADO, CONFORME FAIXA
+  → CRÉDITO FINAL EM LEDGER ÚNICO DE PONTOS
+  → UTILIZAÇÃO NO MALL / TRAVEL SUJEITA ÀS REGRAS DE RESGATE
+```
+
+A Guivos não participa do **custeio econômico** dos pontos prometidos, conforme diretriz estabelecida. Custódia, liquidação e eventuais serviços administrativos ainda exigem modelo contratual e operacional próprios; o termo “100% financiado” não dispensa definir esses papéis.
+
+### 11.4 Esgotamento de benefício ≠ encerramento de inscrição
+
+- A capacidade de inscrição na oportunidade e o limite de beneficiários do incentivo são contadores distintos.
+- Para as primeiras 30 inscrições elegíveis, a reserva só nasce após confirmação válida sob ordenação verificável. Para a 31ª em diante, o sistema não reserva esses 100 pontos, mas permite inscrição se o evento estiver aberto.
+- A Pessoa deve conhecer antes de confirmar se o benefício é elegível, indisponível ou depende de confirmação.
+- Bloquear promessas sem disponibilidade de orçamento e evitar duas reservas para a última cota.
+- Cancelamento ou falta de presença pode invalidar o crédito; **redistribuição da cota não é automática** sem regra pública prévia. Se permitida, deverá respeitar uma fila elegível, janela de corte e cronologia auditável.
+
+### 11.5 Ledger mínimo e reconciliação
+
+Registrar por transação `incentive_id`, `opportunity_id`, `issuer_id`, `person_ref` protegido, `rule_version`, `eligible_event_id`, `idempotency_key`, quantidade, estado, timestamps, origem da comprovação, referência de lastro e eventual operação reversa.
+
+Manter sem ambiguidade:
+- **Orçamento máximo** da campanha;
+- **Orçamento financiado/garantido**, sujeito ao regime econômico futuro;
+- **Cotas/reservas condicionais** ainda não creditadas;
+- **Créditos efetivos** emitidos em conta de Pessoa;
+- **Obrigações de resgate/liquidação**, sem pressupor que reserva represente receita;
+- **Saldo não utilizado**, cuja liberação/restituição depende de prazos, conciliações e disputas.
+
+A validade e autorização de uma oportunidade não bastam para autorizar sua campanha de pontos; a campanha requer regras e orçamento próprios.
+
+### 11.6 Cenários obrigatórios de validação futura
+
+| Cenário | Resultado esperado em proposta |
+|---|---|
+| 30ª e 31ª inscrições simultâneas | Uma única atribuição da última cota; inscrição da outra Pessoa pode continuar |
+| Evento com 100 participantes e apenas 30 bonificados | 30 cotas de incentivo no máximo; até 100 inscritos conforme limite da atividade |
+| Cancelamento da 5ª inscrição | Não premiar sem gatilho; reabrir cota apenas quando regra expressa permitir |
+| Ausência do 1º colocado | Tratar resultado/recurso conforme regulamento, não creditá-lo automaticamente |
+| Orçamento insuficiente | Não ativar novo compromisso, ou suspender novas reservas sem afetar indevidamente direitos já adquiridos |
+| Pagamento externo em `BND-001` | Não presumir transação liquidada ou elegibilidade sem prova confiável |
+| Pontos parcialmente resgatados, depois estornados | Processo governado de dívida/ajuste e contestação; evitar saldo negativo silencioso |
+| Incentivo percentual + inscrição + podium | Orçamentos, eventos elegíveis e controles separados; cumulação divulgada |
+| Encerramento do evento com orçamento sobrante | Conciliar obrigações, disputas e saldo residual antes de liberação contratual |
+
+### 11.7 Gates de decisão
+
+1. **FIN-01:** modalidade de pré-financiamento/garantia, liquidez, custódia e liquidação; **não decidida**.
+2. **FIN-02:** paridade oficial monetária ↔ pontos, percentual e arredondamento; **não decidida**.
+3. **FIN-03:** cancelamento, expiração, reabertura de cota e saldo residual; **não decidida**.
+4. **FUN-01:** identidade de inscrição elegível e confiabilidade de ordem, inclusive integração externa; **não decidida**.
+5. **FUN-02:** regras de combinação, empates, contestação e ratificação de resultado; **não decidida**.
+6. **GOV-01:** autorização de orçamento e função legítima de publicador Coletivo sem presumir `ORG-002`; **não decidida**.
+7. **TEC-01:** transações atômicas, reconciliação, ledger, privacidade e homologação E2E; **não autorizadas**.
+
+### Checkpoint
+
+```text
+CANDIDATE MODEL → BUDGET / RESERVATION / DISTRIBUTION DOCUMENTED
+ISSUER FINANCING → 100% OF OFFERED POINTS
+BENEFIT QUOTA LIMIT → INDEPENDENT OF OPPORTUNITY ENROLLMENT
+PERCENTAGE / PARTICIPATION / PLACEMENT → DISTINCT, COMBINABLE BY EXPLICIT RULES
+OFFICIAL POINTS PARITY / PERCENTAGE CATALOG → UNDEFINED
+ECONOMIC, UX, LEGAL AND TECHNICAL GATES → PENDING
+PR #655 → OPEN / DRAFT
+MAIN / MENU / MASTERS / REGISTRIES / PRODUCT → UNCHANGED
+```
