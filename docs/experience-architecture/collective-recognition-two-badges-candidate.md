@@ -2,7 +2,7 @@
 id: GKR-COLLECTIVE-RECOGNITION-001
 title: Coletivos — Verificado e Contribuição Reconhecida
 status: proposed
-version: 4.4.0
+version: 4.5.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -2726,6 +2726,78 @@ DEC-03.C ANALYTICAL DIRECTION → CONDITIONAL CONVERGENCE
 DEC-03.C HUMAN NORMATIVE ADJUDICATION → PENDING
 DEC-03 INDIVIDUAL EXAMS → 3/5 DOCUMENTED
 DEC-03.D → NEXT
+GKR MENU ACCESS → REQUESTED / NOT PUBLISHED
+PR #654 → OPEN / DRAFT
+BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
+```
+
+
+## DEC-03.D — Exame individual: ciclo de vida, vigência e dependência entre selos (v4.5 candidato)
+
+**Resultado:** CONVERGÊNCIA ANALÍTICA CONDICIONAL. Exame documental, sem fixar vigências normativas, alçadas efetivas, prazos operacionais ou conceder/revogar selo.
+
+### Questão decisória
+
+Quais eventos e autoridades controlam solicitação, comprovação, concessão, vigência, revalidação, suspensão, expiração e revogação de cada selo, especialmente quando `Verificado` perde validade e `Contribuição Reconhecida` depende dele?
+
+### Ciclo de vida lógico por selo
+
+| Estado candidato | Significado | Exibição pública |
+|---|---|---|
+| NÃO_SOLICITADO | Nenhum processo aberto | Nenhum selo |
+| SOLICITADO | Requerimento apresentado | Nenhum selo |
+| EM_ANALISE | Provas e critérios sob exame | Nenhum selo |
+| COMPLEMENTACAO | Pendente informação pertinente | Nenhum selo |
+| INDEFERIDO | Decisão de não concessão fundamentada | Nenhum rótulo depreciativo |
+| APROVADO_NAO_PUBLICADO | Decisão favorável sem ato de publicação | Nenhum selo |
+| VIGENTE | Decisão em vigor, dentro de escopo e prazo | Exibir **apenas** se publicação e superfície autorizadas |
+| EM_REAVALIACAO | Alteração ou revisão em curso | Depende da vigência material e de eventual medida cautelar, não presume continuidade |
+| SUSPENSO | Efeito cautelar ou decisório de não vigência | Retirar selo vigente |
+| EXPIRADO | Prazo vencido sem revalidação legítima | Retirar selo vigente |
+| REVOGADO | Decisão competente encerrou reconhecimento | Retirar selo vigente |
+
+Estados são semânticos e não esquema de banco de dados pronto. Renovação/recurso geram decisão competente versionada; não reativam estado antigo automaticamente.
+
+### Regras de dependência
+
+1. `Contribuição Reconhecida` só pode ser **concedida e exibida como vigente** se `Verificado` também estiver vigente, com identidade do Coletivo e período compatíveis.
+2. `Verificado` expirado, suspenso ou revogado bloqueia a **exibição** do segundo selo como vigente imediatamente segundo contrato de publicação a homologar; não elimina automaticamente avaliações históricas legítimas.
+3. A perda de Verificado exige reexame institucional do segundo reconhecimento para decidir seu estado formal próprio; não presumir revogação retroativa nem atribuir fraude por inferência.
+4. Suspensão cautelar de um selo exige competência, fundamentos, prazo/revisão e medida proporcional. Denúncia ou sinal de IA isolado não impõe automaticamente suspensão.
+5. Recuperação de Verificado não restaura Contribuição Reconhecida automaticamente: verificar estado do segundo selo, critérios e ato de publicação atuais.
+6. Expiração programada exige gestão de prazo, notificação conforme política futura e comportamento seguro quando a fonte canônica estiver indisponível.
+7. Alteração material de representação, finalidade, execução, identidade ou evidência pode iniciar reavaliação, preservando histórico e direitos de contestação.
+8. Fonte pública, card, PER-103, cache e índices não são autoridade; devem refletir retirada e nova concessão conforme decisão canônica e permissão da superfície.
+
+### Eventos auditáveis mínimos candidatos
+
+`REQUESTED`, `EVIDENCE_UPDATED`, `REVIEW_STARTED`, `DECISION_ISSUED`, `PUBLICATION_AUTHORIZED`, `PUBLICATION_WITHDRAWN`, `REVALIDATION_REQUESTED`, `EXPIRED`, `SUSPENSION_ORDERED`, `REVOCATION_ORDERED`, `APPEAL_FILED`, `APPEAL_DECIDED`, `STATE_RECONCILED`. Cada evento deve registrar versão, competência, fundamento, escopo, data e efeitos; acesso e retenção dependem de proteção normativa.
+
+### Casos de fronteira
+
+| Caso | Resultado candidato |
+|---|---|
+| Verificado vigente e Contribuição em análise | Somente Verificado publicável, se autorizado |
+| Ambos vigentes/publicáveis | Dois selos, cada qual com decisão e validade próprias |
+| Verificado expira antes da Contribuição | Não exibir Contribuição como vigente; analisar estado próprio |
+| Verificado volta após recurso | Não restaurar segundo selo nem sua projeção por automatismo |
+| Revisão sem perda material de vigência | Continuidade pública somente se decisão vigente e política de cautela permitirem |
+| Denúncia sem prova suficiente | Apuração, sem suspensão automática |
+| Selo revogado permanece em cache | Falha a detectar e corrigir, sem alegar que controle já foi implementado |
+| Coletivo muda legitimamente de liderança | Revalidar representação proporcionalmente, sem presumir fraude |
+| Coletivo deixa de operar | Preservar histórico e avaliar atualização do estado de ambos os selos |
+| Aprovação material sem publicação | Nenhum selo público até ato autorizado |
+
+### Pendências normativas para DEC-03.D
+
+Definir durações por selo, calendário e gatilhos de revalidação, alçadas de suspensão/revogação/recurso, efeito durante reavaliação, políticas de notificação e oportunidade de contestação, dependência de estado entre selos, preservação histórica, fonte canônica e contrato técnico de retirada com SLA. Não inferir duração de validade a partir do período das experiências.
+
+```text
+DEC-03.D INDIVIDUAL EXAM → COMPLETE
+DEC-03.D ANALYTICAL DIRECTION → CONDITIONAL CONVERGENCE
+DEC-03.D HUMAN NORMATIVE ADJUDICATION → PENDING
+DEC-03 INDIVIDUAL EXAMS → 4/5 DOCUMENTED
+DEC-03.E → NEXT
 GKR MENU ACCESS → REQUESTED / NOT PUBLISHED
 PR #654 → OPEN / DRAFT
 BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
