@@ -4060,3 +4060,51 @@ TEST EXECUTION / HOMOLOGATION / PILOT → NOT VERIFIED OR AUTHORIZED
 BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
 NEXT → CROSS-DOCUMENT AUTHORITY AND NAVIGATION RECONCILIATION
 ```
+
+## Reconciliação com autoridades vigentes e navegação — Etapa 271 (v4.23 candidato)
+
+**Estado:** REVISÃO DOCUMENTAL COM EVIDÊNCIAS PARCIAIS / INTEGRAÇÃO NÃO RATIFICADA / MENU NÃO ALTERADO. Fontes verificadas na `main`: `mkdocs.yml`, `participants/collective.md`, `experience-architecture/person-journey/per-103-collective-public-profile-master.md`, `experience-architecture/public-home-organizations-collectives-master-document.md` e `experience-architecture/organizations-collectives-journey/read-first.md`. A revisão destas fontes não equivale à auditoria exaustiva de todos os Masters.
+
+### Reconciliação por autoridade
+
+| Referência corrente | Constatação documental | Relação com o candidato | Resultado |
+|---|---|---|---|
+| PER-103 — Perfil Público do Coletivo | Exige verdade pública, proteção de Coletivos sensíveis, limites de dados, neutralidade de contagens, acessibilidade e não fabricação de informação | Compatível em princípio com selos discretos, mas **não** oferece por si autorização de concessão, payload, estado ou exibição dos novos selos | ALINHAMENTO PARCIAL / EXTENSÃO PENDENTE |
+| Participante Coletivo | Define propósito, contribuições, atuação e relação com Pessoas/Organizações, sem tornar oferta universalmente benéfica | A distinção entre identidade legítima e contribuição contextual preserva essa separação | SEM CONTRADIÇÃO DIRETA IDENTIFICADA NO ESCOPO LIDO |
+| Home Pública de Organizações e Coletivos | Promove reconhecimento de capacidades, mas delimita autoridade, verdade pública, evidência e autonomia | Reconhecer capacidades na narrativa pública não constitui a concessão dos dois selos | ALINHAMENTO SEMÂNTICO / NÃO AUTORIZA SELOS |
+| Jornada O/C — Leia Primeiro | Exige fonte governada, bloqueia invenção de estados/entitlements e impede promoção documental a engenharia | Contrato de badges proposto permanece subordinado às fontes e autorizações de engenharia | COMPATÍVEL COM BLOQUEIO DE IMPLEMENTAÇÃO |
+| `mkdocs.yml` | MENU é superfície seletiva de descoberta; `draft/proposed` só entra quando autoridade superior corrente o declara explicitamente fonte operacional | PR #654 é `OPEN / DRAFT` e candidata | **INSERÇÃO DIRETA NO MENU INCOMPATÍVEL COM A REGRA CORRENTE** |
+
+### Ajustes e decisões que faltam
+
+1. **PER-103 e superfícies relacionadas:** definir futuramente, mediante autoridade legítima, rótulos, semântica acessível, condições de exibição/retirada, contrato de dados públicos e estados; não inserir badges por analogia a identidade, contagem ou atividade.
+2. **Estado de reconhecimento versus estado do Coletivo:** evitar equivalência entre funcionamento, abertura a solicitações, vínculo, verificação institucional e contribuição reconhecida.
+3. **Proteção e consentimentos:** a visita ao perfil não presume participação nem autoriza expor avaliações R1, identidades ou vínculos sensíveis; revisar inferências por agregação.
+4. **Home pública:** não transformar o movimento editorial de tornar contribuições reconhecíveis em promessa de selo ou certificação operacional.
+5. **Arquitetura autenticada O/C:** decidir se haverá responsabilidade funcional específica de evidências/recursos antes de propor novas superfícies; obedecer regra `job + estado + continuidade`.
+6. **MENU:** pedido de encontrabilidade é legítimo, mas a navegação `main` proíbe promover este documento `draft/proposed` diretamente. Para atender ao pedido, primeiro ratificar política e autoridade editorial aplicáveis, ou criar futuramente um hub corrente de orientação aprovado, que aponte para o candidato com estado explícito sem tratá-lo como fonte operacional. Não houve autorização de nenhuma dessas alternativas.
+7. **Cobertura da auditoria:** ainda deverão ser examinados PER-101/PER-102, demais Masters de Coletivos autenticados, registries e estados relevantes, antes de declarar compatibilidade integral.
+
+### Deliberações futuras
+
+- **REC-271-A:** adjudicar a extensão semântica e os limites dos selos em PER-103 e superfícies pertinentes;
+- **REC-271-B:** adjudicar separação dos estados de Coletivo, decisão institucional e projeção pública;
+- **REC-271-C:** definir responsabilidade, acesso, recurso e continuidade das superfícies autenticadas, se necessários;
+- **REC-271-D:** autorizar ou devolver para revisão uma solução de encontrabilidade documental compatível com a política do MENU;
+- **REC-271-E:** concluir inventário ampliado de autoridades e revisão de impacto antes de qualquer mudança normativa.
+
+Nenhum dos cinco itens foi adjudicado. O status `ALINHAMENTO` significa apenas que não foi encontrada contradição direta no trecho examinado; **não** equivale a compatibilidade integral nem autoriza edição de Masters, navegação ou protótipo.
+
+```text
+ETAPA 271 — LIMITED CROSS-DOCUMENT REVIEW → DOCUMENTED
+PER-103 / HOME / PARTICIPANT / O-C READ-FIRST → REVIEWED AT DOCUMENT LEVEL
+GKR MENU RULE → VERIFIED IN mkdocs.yml
+DRAFT CANDIDATE AS DIRECT MENU DESTINATION → BLOCKED BY CURRENT RULE
+MASTER INTEGRATION / FULL COMPATIBILITY → PENDING
+REC-271-A..E HUMAN ADJUDICATION → 0/5 CONFIRMED
+DEC-01..05 ANALYTICAL EXAMS → 25/25 DOCUMENTED
+DEC-01..05 HUMAN NORMATIVE RATIFICATIONS → 0/25 CONFIRMED
+PR #654 → OPEN / DRAFT
+MENU CHANGE / BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
+NEXT → EXTENDED AUTHORITY INVENTORY AND MENU RESOLUTION
+```
