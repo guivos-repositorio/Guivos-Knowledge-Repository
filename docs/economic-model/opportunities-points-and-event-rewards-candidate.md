@@ -2,7 +2,7 @@
 id: GEM-OPPORTUNITIES-POINTS-REWARDS-CANDIDATE-001
 title: Oportunidades — Retorno em Pontos e Premiações de Eventos — Proposta Transversal
 status: draft
-version: 1.4.0
+version: 1.5.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -1087,4 +1087,80 @@ FRACTIONS / FEES / PREPAID UNIT PRICE / REDEMPTION VALUE → NOT ADJUDICATED
 PAR/FUND/LIQ → 0/5 FORMAL GATES RATIFIED
 PR #655 → OPEN / DRAFT
 MAIN / MENU / HOME MASTERS / REGISTRIES / REPLIT → UNCHANGED
+```
+
+## 24. Frações, resíduos e conciliação de estornos — avaliação ROUND-A/B/C (v1.5.0 candidato)
+
+**Estado:** exame técnico comparativo, sem definição normativa da política de arredondamento. Mantêm-se as decisões: FIN-COMPRA financiado por retenção no repasse; FIN-EVENTO financiado por saldo pré-pago.
+
+### 24.1 Precisão econômica e semântica
+
+A compra de R$ 149,90 com retorno de 1% calcula exatamente **R$ 1,499 de benefício bruto** antes da regra monetária de centavos. Não há autorização para reter R$ 1,499 em um meio financeiro que liquida apenas em centavos nem para afirmar que 1,499 ponto foi creditado sem definir granularidade da unidade.
+
+**Separar obrigatoriamente** (1) percentual aplicado à base; (2) valor monetário do incentivo após regra explícita de precisão; (3) pontos devidos/visíveis; (4) resíduos, quando houver; e (5) custo efetivamente retido em centavos. Não arredondar cada item e novamente o carrinho sem regra oficial.
+
+### 24.2 Comparação de políticas
+
+| Modelo | Pontos visíveis no exemplo | Tratamento de R$ 1,499 | Proteção e ônus |
+|---|---|---|---|
+| ROUND-A — pontos fracionários | 1,499 pontos antes da precisão adotada | Definir precisão do ponto (por exemplo 0,01 ou 0,001) e monetária | Melhor correspondência, mas exige UI, ledger e resgate fracionário |
+| ROUND-B — pontos inteiros por compra | 1 ou 2 pontos, conforme arredondamento definido | Diferença residual precisa voltar ao ofertante ou ser lastreada sem ocultação | Simples na interface, risco de ganho/perda arbitrária em compras pequenas |
+| ROUND-C — resíduo acumulado | 1 ponto + resíduo rastreável | Fração elegível permanece registrada e poderá converter em ponto futuro; valor retido exige conciliação | Pontos inteiros visíveis; precisa de subconta, expiração, estornos e política de encerramento |
+
+**Recomendação técnica condicionada:** priorizar teste de **ROUND-A com precisão explícita**, por manter a proporcionalidade do retorno sem converter frações em saldo oculto; avaliar **ROUND-C** somente se a experiência de pontos inteiros for requisito de produto. **ROUND-B com truncamento ou arredondamento isolado por compra não é recomendável sem proteção expressa** da parcela não creditada. Isto **não aprova ROUND-A**.
+
+### 24.3 Simulação monetária de uma compra
+
+Para fins de teste, e **não como regra oficial**, suponha arredondamento monetário para centavos uma única vez por compra, `half-up`, com representação decimal exata:
+
+| Compra elegível | Retorno | Incentivo bruto | Incentivo em centavos (hipótese) | Repasse-base antes da taxa |
+|---|---:|---:|---:|---:|
+| R$ 200,00 | 1% | R$ 2,000 | R$ 2,00 | R$ 198,00 |
+| R$ 149,90 | 1% | R$ 1,499 | R$ 1,50 | R$ 148,40 |
+| R$ 49,95 | 1% | R$ 0,4995 | R$ 0,50 | R$ 49,45 |
+| R$ 0,49 | 1% | R$ 0,0049 | R$ 0,00 | R$ 0,49 |
+
+**Observação crítica:** com ROUND-A, se ponto proporcional ao incentivo em reais, a quantidade creditada nesse ensaio deve reconciliar com **o valor final em centavos retido** (por exemplo **1,50 ponto**, não simultaneamente 1,499 ponto e retenção de R$ 1,50), salvo regra de diferença expressamente financiada. Qualquer arredondamento que produza incentivo nulo para compras pequenas deve ser transparente e validado.
+
+### 24.4 Estorno parcial e recomposição
+
+Compra original `R$ 200 × 1% → R$ 2,00 → 2 pontos`. Após devolução elegível de R$ 50, a base remanescente é R$ 150:
+
+```text
+BENEFÍCIO INICIAL            R$ 2,00 / 2,00 PONTOS
+BENEFÍCIO RECOMPUTADO        R$ 1,50 / 1,50 PONTOS (ROUND-A HIPOTÉTICO)
+AJUSTE DE INCENTIVO          -R$ 0,50 / -0,50 PONTOS
+REPASSE-BASE RECOMPUTADO     R$ 150,00 - R$ 1,50 = R$ 148,50
+TAXA GUIVOS / PROCESSAMENTO  A RECONCILIAR SEPARADAMENTE
+```
+
+**Não confundir** repasse-base final da compra (R$ 148,50) com **transferência adicional ou estorno em caixa** após um repasse original já efetuado; o segundo depende do fluxo financeiro real. Ledger deve registrar lançamentos de ajuste, não apagar o histórico.
+
+### 24.5 Concorrência, compras agrupadas e disputas
+
+- Se várias oportunidades forem adquiridas em um carrinho, calcular elegibilidade e percentual por **oportunidade/ofertante**, depois conciliar os totais; não retirar custo de pontos do repasse do ofertante errado.
+- Se o pagamento tiver valor dividido em parcelas, definir se o direito surge pela transação integral liquidada ou por parcela efetivamente confirmada, sem duplicar créditos.
+- Se estorno ocorrer após resgate Mall/Travel, registrar passivo e procedimento de regularização auditável sem debitar silenciosamente a Pessoa.
+- Reservas de pontos de eventos não compartilham o mesmo algoritmo de arredondamento da compra; eventos prometem **quantidade nominal de pontos adquiridos antecipadamente** e exigem saldo suficiente.
+- Idempotência de eventos de pagamento, estorno, crédito e ajuste; uso de decimal exato em vez de ponto flutuante binário para dinheiro.
+
+### 24.6 Critérios para deliberação e aceite
+
+1. Escolher precisão monetária e de pontos, forma de exibição e regra de arredondamento por transação.
+2. Fazer coincidir custo retido no repasse, obrigação de pontos concedidos e lastro econômico da carteira, com diferenças expressamente contabilizadas.
+3. Estipular como o resgate de frações funciona em Mall/Travel e como a política de expiração se aplica.
+4. Validar exemplos de valor pequeno, divisão por ofertante, alteração de percentual, estorno antes/depois do crédito e cancelamento após resgate.
+5. Obter aprovação jurídica, contábil, UX e governança econômica antes de tornar parâmetros operacionais.
+
+**Próximo passo candidato:** matriz de adjudicação de ROUND-A/B/C, com especificação de precisão e política de repasse escolhidas pela autoridade competente. O exemplo fundador R$ 200 → 2 pontos → repasse-base R$ 198 fica preservado sem alteração.
+
+```text
+CANDIDATE → v1.5.0
+ROUND-A/B/C → EXAMINED; ROUND-A CONDITIONALLY RECOMMENDED, NOT APPROVED
+PRECISION / ROUNDING / RESIDUALS → NOT ADJUDICATED
+FIN-COMPRA → PAYOUT DEDUCTION / PLATFORM FEE SEPARATE
+FIN-EVENTO → PREPAID POINT BALANCE
+PAR/FUND/LIQ FORMAL GATES → 0/5
+PR #655 → OPEN / DRAFT
+MAIN / MENU / MASTERS / REGISTRIES / REPLIT → UNCHANGED
 ```
