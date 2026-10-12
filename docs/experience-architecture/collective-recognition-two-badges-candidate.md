@@ -2,7 +2,7 @@
 id: GKR-COLLECTIVE-RECOGNITION-001
 title: Coletivos — Verificado e Contribuição Reconhecida
 status: proposed
-version: 1.1.0
+version: 1.2.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -706,3 +706,69 @@ BADGE ISSUANCE / PUBLICATION → NOT AUTHORIZED
 As fontes devem preservar proveniência, escopo, data e autoridade. Evidência verificada pela Guivos, confirmada por responsável, declarada pela Pessoa e externa identificada são categorias diferentes, sem equivalência automática.
 
 **Pendências normativas:** padrões mínimos por tipologia, prova de experiência, critérios estatísticos CBR-03, competência de decisão CBR-06, publicação CBR-07 e proteção de dados. ADJ-02 registra proposta para deliberação, sem adjudicação formal ou autorização de emissão.
+
+
+## ADJ-03 — Calibração estatística candidata (v1.2)
+
+**Natureza:** exercício metodológico ilustrativo, sem dados de operação, thresholds aprovados, simulação de fraude comprovada, certificação, KPI canônico ou autorização de emissão. Amostra voluntária não é, por si só, aleatória.
+
+### População e estimadores
+
+- `P_e`: Pessoas distintas com experiência elegível comprovada na janela, quando legitimamente conhecido.
+- `P_i`: Pessoas distintas elegíveis convidadas por mecanismo não seletivo.
+- `P_r`: Pessoas distintas respondentes; frequência de experiências por Pessoa deve ser aferida sem revelar identidades.
+- `n_d`: respostas elegíveis válidas da dimensão d, após controles de experiência, autoria, duplicidade e atribuição.
+- `f_d`, `p_d`, `u_d`: favoráveis, parciais e desfavoráveis, respectivamente; `n_d=f_d+p_d+u_d`.
+- `T_d=f_d/n_d`, apenas se `n_d>0`; ausente não significa 0. Não se aplica, não sabe e não respondidas reportadas separadamente.
+- `c_i=P_i/P_e`, cobertura de convite se universo conhecido; `c_r=P_r/P_i`, taxa de resposta se convites conhecidos; nunca igualar `n_d`, experiências e Pessoas.
+
+### Faixas de análise ilustrativas, não limites de selo
+
+| Cenário sintético | Favoráveis/válidas | Percentual observado | Risco principal |
+|---|---:|---:|---|
+| Grupo inicial | 3/3 | 100% | Incerteza muito alta |
+| Coletivo pequeno | 10/12 | 83,3% | Intervalo amplo; verificar cobertura |
+| Amostra intermediária | 18/20 | 90% | Dependência, viés e seleção |
+| Amostra maior | 90/100 | 90% | Ainda requer cobertura e integridade |
+| Respostas seletivas | 18/20 entre 400 convidados | 90% | Apenas 5% de respostas, sem representatividade demonstrada |
+| Repetição concentrada | 30 de 40 avaliações de 2 Pessoas | Não resumir automaticamente | Tamanho efetivo inferior a 40 |
+
+Para respostas aproximadamente independentes, um intervalo binomial de Wilson poderia ser usado como **diagnóstico exploratório de incerteza amostral**. Como a coleta pode não ser probabilística e experiências de uma Pessoa podem se repetir, Wilson isolado **não resolve** viés de não resposta, manipulação ou dependência. É incorreto converter seu limite inferior automaticamente em garantia de contribuição.
+
+### Sensibilidade obrigatória
+
+1. Recalcular por Pessoas distintas, por experiência, por edição e por período; mostrar divergências.
+2. Examinar concentração de resultados em poucas Pessoas, datas ou atividades.
+3. Avaliar seleção de convidados: taxa de convite, taxa de resposta, exclusões e motivos.
+4. Mostrar cenário pessimista/otimista de não resposta apenas como **limites de sensibilidade**, sem imputar avaliação falsa aos silenciosos.
+5. Preservar dimensões separadas; um Coletivo pode contribuir fortemente para saúde, convivência ou educação sem desempenho positivo em dimensão fora da finalidade. Falhas relevantes em outras dimensões avaliáveis devem permanecer visíveis à análise.
+6. Comparar períodos somente quando finalidade, execução e instrumento forem suficientemente equivalentes.
+7. Suprimir pequenos agregados em exibição pública quando reidentificação for possível.
+8. Testar falsos positivos/negativos segundo porte e tipologia, sem transformar número de membros em qualidade.
+
+### Abordagens para deliberação de limites (não aprovadas)
+
+| Alternativa | Benefício | Risco / lacuna |
+|---|---|---|
+| Mínimo fixo de respostas | Simples de auditar | Pode excluir injustamente pequenos Coletivos |
+| Fração do universo elegível | Adapta-se a grupos menores | Universo pode ser desconhecido, auto-selecionado ou restrito |
+| Limite inferior de intervalo estatístico | Expõe incerteza amostral sob hipóteses apropriadas | Não corrige viés, dependência e fraude |
+| Critérios híbridos (evidência + diversidade + robustez + revisão) | Melhor adequação ao propósito e riscos | Exige metodologia, custo de revisão e calibração transparente |
+
+**Direção metodológica recomendada para exame:** critérios híbridos com revisão humana e faixas diferenciadas de suficiência baseadas na composição efetiva da evidência, não no porte bruto do Coletivo. Nenhuma alternativa é aprovada até ensaios calibrados e deliberação específica.
+
+### Questões abertas de adjudicação
+
+- Janela temporal, distribuição mínima entre experiências/edições e tratamento de repetição da Pessoa.
+- Taxa mínima de convite e resposta; política quando denominador real é desconhecido.
+- Estatística apropriada a amostras voluntárias, pequenos grupos e dependência.
+- Hipótese substantiva: contribuição em uma dimensão relevante ou critérios adicionais de consistência.
+- Critérios para suspensão por perda de robustez, correção de fraude e mudanças materiais.
+- Competências e trilha decisória para calibrar limites e validar metodologia.
+
+```text
+ADJ-03 DESIGN / CALIBRATION SCENARIOS → DOCUMENTED
+ADJ-03 QUANTITATIVE THRESHOLDS → NOT ADJUDICATED
+ADJ-03 HUMAN APPROVAL → PENDING
+ISSUANCE/PUBLICATION/IMPLEMENTATION → NOT AUTHORIZED
+```
