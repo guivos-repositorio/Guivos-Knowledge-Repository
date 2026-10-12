@@ -2,7 +2,7 @@
 id: GEM-OPPORTUNITIES-POINTS-REWARDS-CANDIDATE-001
 title: Oportunidades — Retorno em Pontos e Premiações de Eventos — Proposta Transversal
 status: draft
-version: 1.7.0
+version: 1.8.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -1295,4 +1295,68 @@ FIN-COMPRA → DEDUCT POINT COST FROM OFFEROR PAYOUT
 FIN-EVENTO → PREPAID ORGANIZER BALANCE
 PR #655 → OPEN / DRAFT
 GKR MAIN / MENU / HOME MASTERS / REGISTRIES / REPLIT → UNCHANGED
+```
+
+## 27. Parecer técnico ROUND-A: duas casas decimais e resgates Mall/Travel (v1.8.0 candidato)
+
+**Natureza:** recomendação técnica formal para apreciação, sem aprovação de política, publicação, homologação ou implementação. O consentimento de continuidade da documentação não significa adjudicação de ROUND-01..06.
+
+### 27.1 Proposta condicionada
+
+- **ROUND-A como alternativa preferencial:** saldo da Pessoa suporta pontos fracionários, evitando perda de valor por truncamento por compra.
+- **Precisão candidata:** **duas casas decimais para quantidade de pontos na unidade exibida**, sujeita a testes e validação de valor econômico.
+- **Cálculo candidato:** calcular o percentual em aritmética decimal exata; arredondar o **benefício econômico** uma única vez por oportunidade/ofertante e transação elegível em centavos; então traduzir esse benefício em pontos com a equivalência aprovada no exemplo de FIN-COMPRA (**R$ 1,00 de incentivo = 1 ponto**). O modo `half-up` permanece **hipótese**, não política aprovada.
+- **A mesma precisão deve percorrer carteira, reserva, checkout, resgate, reversão e conciliação**; nenhum produto pode arredondar silenciosamente ou ocultar a fração.
+- **Separar taxa de emissão de valor de resgate:** duas casas decimais na quantidade não escolhem a paridade de utilização nem o preço de compra de pontos pré-pagos.
+
+### 27.2 Exames de compatibilidade Mall / Travel
+
+| Aspecto | Mall | Travel | Condição |
+|---|---|---|---|
+| Exposição do saldo | Exibir `1,50 ponto` e custo em pontos da oferta | Exibir `1,50 ponto` e pontos aplicáveis à reserva | Saldo único e legível |
+| Cotação | Congelar valor de uso no pedido antes de confirmar | Congelar cotação e validade conforme fornecedor | PAR-02, LIQ-01/02 pendentes |
+| Reserva | Bloqueio atômico de frações, com expiração clara | Bloqueio sob disponibilidade e tempo de cotação | Sem overspend |
+| Liquidação | Consumo definitivo após condições do pedido | Consumo definitivo conforme reserva/fornecedor | Ledger idempotente |
+| Estorno | Devolver frações elegíveis com rastreio | Devolver frações conforme multa/penalidade contratual | Sem devolução presumida |
+| Arredondamento monetário | Taxa de conversão e centavos conciliados | Taxas/tarifas e fornecedor conciliados | Sem valor residual oculto |
+| Oferta indivisível | Produto/pedido pode exigir quantidade mínima ou múltiplo | Reserva pode exigir mínimo ou cotação integral | Informar requisitos antes de confirmar |
+
+**Princípio:** Guivos Mall e Guivos Travel podem oferecer regras distintas de elegibilidade e disponibilidade, mas não produzir pontos de qualidade desigual pela sua origem (FIN-COMPRA vs FIN-EVENTO) nem aplicar precisões contraditórias ao mesmo saldo da Pessoa.
+
+### 27.3 Casos numéricos e riscos
+
+**Caso P1 — compra do fundador:** R$ 200,00 × 1% = R$ 2,00 de incentivo = **2,00 pontos**; repasse-base ao ofertante **R$ 198,00**, antes da taxa da plataforma. Invariante obrigatória.
+
+**Caso P2 — pequena fração:** R$ 149,90 × 1% = R$ 1,499 bruto; sob arredondamento hipotético de centavos `half-up` = R$ 1,50 → **1,50 ponto** e retenção de R$ 1,50; repasse-base R$ 148,40.
+
+**Caso P3 — microtransação:** R$ 0,49 × 1% = R$ 0,0049, que arredondaria a R$ 0,00 sob o exemplo `half-up`. O resultado de 0,00 ponto não pode esconder uma retenção maior que zero. Produto deve decidir se há valor mínimo, acumulação ou regra de comunicação apropriada.
+
+**Caso P4 — prêmio:** Coletivo configura 100,00 pontos por inscrição elegível, sujeito ao orçamento pré-pago e à cota; não há dedução de repasse por compra. Prêmios inteiros continuam permitidos.
+
+**Caso P5 — resgate parcial hipotético:** se houver saldo de 2,50 pontos e resgate autorizado de 1,25 pontos, saldo restante = 1,25 pontos. O equivalente monetário só é conhecido após PAR-02 e cotação do produto; **não presumir 1 ponto = R$ 1 no resgate**.
+
+**Caso P6 — ajuste após estorno:** 2,00 pontos iniciais, compra R$ 200,00; refund R$ 50,00 → benefício final 1,50 ponto na hipótese de precisão; ajuste de -0,50 ponto, sujeito a procedimento se resgate já ocorreu.
+
+### 27.4 Recomendação para deliberação
+
+**Propor como pacote técnico:** ROUND-A + quantidade de pontos com duas casas decimais + aritmética decimal exata + retenção reconciliada por ofertante + crédito somente após evento financeiro elegível + operações idempotentes em Mall/Travel.
+
+**Não incluir automaticamente no pacote:** modo de arredondamento `half-up`, taxa de resgate, prazo de validade, preço do saldo pré-pago, forma de custódia, regra de microcompras ou autoridade de emissão; exigem deliberações separadas.
+
+**Condições de aprovação futura:**
+1. Demonstrar que duas casas decimais cobrem todos os percentuais permitidos com representação justa, inclusive em compras pequenas.
+2. Executar testes T01..T13 e casos P1..P6 contra protótipo ou implementação verificável, após autorização técnica.
+3. Validar custo máximo e lastro em cenários reais de Mall/Travel e em prêmios pré-pagos.
+4. Garantir legibilidade de saldo, resgate e estorno à Pessoa; responsabilidade por tarifas e termos ao ofertante.
+5. Obter registro de competência e aprovação formal de ROUND-01..06, PAR-02, FUND-01, LIQ-01 e LIQ-02 antes de ativação operacional.
+
+```text
+VERSION → v1.8.0 CANDIDATE
+ROUND-A + 2 DECIMAL POINT PRECISION → FORMAL TECHNICAL RECOMMENDATION
+HALF-UP → TEST ASSUMPTION ONLY
+POINT REDEMPTION RATE → UNDECIDED
+MALL/TRAVEL → COMPATIBILITY CONDITIONS DOCUMENTED / NOT IMPLEMENTED
+ROUND-01..06 → 0/6 ADJUDICATED
+PR #655 → OPEN / DRAFT
+MAIN / MENU / HOME MASTERS / REGISTRIES / REPLIT → UNCHANGED
 ```
