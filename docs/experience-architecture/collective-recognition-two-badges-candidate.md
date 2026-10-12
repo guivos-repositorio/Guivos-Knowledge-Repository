@@ -4674,3 +4674,81 @@ GKR MENU → UNCHANGED
 BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
 NEXT → RSP-05.E
 ```
+
+## Etapa 280 — RSP-05.E: Supervisão institucional, auditoria e impedimentos (v4.32 candidato)
+
+**Resultado:** EXAME INDIVIDUAL DOCUMENTADO / CONVERGÊNCIA ANALÍTICA CONDICIONAL / ADJUDICAÇÃO NORMATIVA PENDENTE. Nenhuma auditoria operacional foi realizada, nenhum supervisor nomeado e nenhuma medida institucional aplicada.
+
+### Questão decisória
+
+Como supervisionar a política dos selos `Verificado` e `Contribuição Reconhecida`, identificar impedimentos e corrigir falhas processuais com independência, proporcionalidade territorial, proteção de Pessoas e rastreabilidade, sem transformar auditoria em concessão, julgamento recursal ou ranking reputacional?
+
+### Dez controles candidatos de supervisão e auditoria
+
+| Código | Controle | Limite proposto |
+|---|---|---|
+| AUD-01 | Mandato e competência de supervisão | Exigir titular designado e atribuições versionadas; não presumir poder de concessão |
+| AUD-02 | Plano de auditoria baseado em risco | Amostragem proporcional por modalidade, território e volume; sem exclusão automática de pequenos Coletivos |
+| AUD-03 | Independência e impedimentos | Declarar vínculos comerciais, pessoais e participação na decisão revisada; redistribuir exame |
+| AUD-04 | Qualidade decisória | Verificar aderência a critérios, fundamentos, versão normativa e segregação de funções |
+| AUD-05 | Proteção de dados e acessos | Minimizar exposição de avaliações R1, denúncias e vínculos sensíveis; registrar acesso justificado |
+| AUD-06 | Integridade e viés | Examinar falsos positivos, denúncias indevidas, incoerências estatísticas e assimetrias territoriais |
+| AUD-07 | Estados e publicação | Reconciliar decisão canônica, vigência, autorização editorial e exibição/retirada de selos |
+| AUD-08 | Não conformidades e remediação | Classificar achados, atribuir responsáveis, evidência de correção e reteste; sem sanção automática |
+| AUD-09 | Recursos e escalonamento | Preservar instância recursal independente; auditoria não substitui julgamento de mérito |
+| AUD-10 | Prestação de contas e evolução da política | Reportar qualidade dos processos com agregações protegidas, sem pontuação pública dos Coletivos |
+
+### Matriz de impedimentos candidata
+
+| Relação ou situação | Risco | Tratamento candidato |
+|---|---|---|
+| Auditor participou da concessão questionada | Autorrevisão | Declaração e afastamento do caso |
+| Decisor tem vínculo com o Coletivo avaliado | Interesse pessoal | Redistribuição formal da decisão |
+| Patrocinador financia operação institucional | Influência econômica | Segregação de supervisão e decisões |
+| Revisor territorial atua como dirigente do Coletivo | Conflito de representação | Inabilitação para aquele processo |
+| Instância recursal integra equipe que produziu o parecer decisivo | Independência insuficiente | Avaliação de impedimento e substituição |
+| Auditor acessa dados protegidos sem necessidade | Exposição de Pessoas | Controle de acesso, registro e tratamento de incidente |
+
+Os critérios exatos de impedimento, declaração, substituição, sanção e supervisão precisam ser ratificados. Nenhuma pessoa ou organização é declarada impedida neste exame.
+
+### Procedimento de auditoria candidato
+
+`PLANO E ESCOPO → DECLARAÇÃO DE INDEPENDÊNCIA → AMOSTRAGEM JUSTIFICADA → INSPEÇÃO PROTEGIDA → ACHADOS E CONTRADITÓRIO PROPORCIONAL → PLANO DE CORREÇÃO → VERIFICAÇÃO DE EFETIVIDADE → RELATÓRIO INSTITUCIONAL`.
+
+- A auditoria verifica processos e controles, sem decidir automaticamente o mérito ou retirar selo por descoberta de anomalia.
+- Achados críticos de segurança e exposição indevida requerem encaminhamento a autoridades e processos competentes, inclusive medidas cautelares apenas quando previamente ratificadas.
+- Indicadores internos de consistência, tempo de tramitação, recurso, reversão, sincronização e viés não se convertem em notas públicas de reputação.
+- Supervisão territorial deverá aplicar critérios versionados comuns, admitindo evidências proporcionais às realidades locais.
+
+### Cenários adversariais para homologação futura
+
+1. Coletivo informal é sistematicamente rejeitado por não possuir CNPJ: investigar desvio de critério e viés sem conceder automaticamente selo.
+2. Auditor identifica alta aprovação de Coletivos patrocinados: investigar conflito e qualidade da prova, sem inferir fraude apenas pela correlação.
+3. Representante solicita identificação de avaliadores críticos para responder auditoria: negar acesso identificável e apresentar fundamentação compatível com privacidade.
+4. Revisor detecta selo expirado ainda exibido em card: registrar inconsistência e acionar retirada segura conforme autoridade futura.
+5. Auditor é também autor da política aplicada ao caso: avaliar impedimento de revisão independente quando houver risco de autorrevisão material.
+6. Relatório agregado expõe dados inferíveis de grupo de oração muito pequeno: bloquear divulgação e revisar limites de agregação.
+7. Divergência estatística resulta de dados duplicados: verificar integridade, corrigir processo e preservar revisão humana do mérito.
+8. Incidente grave ocorre durante piloto: ativar responsabilidade e bloqueios conforme política ratificada; piloto não implica produção autorizada.
+
+### Pendências de ratificação
+
+Definir titular e mandato da supervisão, habilitação e independência de auditores, política de conflitos, frequência e amostragem, classificação de riscos e achados, acesso a evidências protegidas, contraditório e recursos, competência para medidas cautelares, prazos de correção, critérios de efetividade, indicadores internos, limites de transparência e aprovação de revisões da política. Nenhum SLA, prazo, limiar ou mecanismo automático é instituído aqui.
+
+### Fronteiras normativas
+
+DEC-03 disciplina autoridade e segregação; DEC-05.A–D condiciona privacidade, integridade e testes; DEC-04 condiciona publicação; RSP-05.D preserva recurso independente. Este exame não altera registros canônicos, `GKR-SURF-*`, `GKR-TRN-*`, PER-103, Masters, MENU ou Replit.
+
+```text
+ETAPA 280 RSP-05.E INDIVIDUAL EXAM → DOCUMENTED
+RSP-05.E ANALYTICAL DIRECTION → CONDITIONAL CONVERGENCE
+RSP-05.E HUMAN NORMATIVE ADJUDICATION → PENDING
+RSP-05.A..F EXAMS → 5/6 DOCUMENTED
+RSP-05.A..F HUMAN ADJUDICATION → 0/6 CONFIRMED
+DEC-01..05 EXAMS → 25/25 DOCUMENTED
+DEC-01..05 HUMAN NORMATIVE RATIFICATIONS → 0/25 CONFIRMED
+PR #654 → OPEN / DRAFT
+GKR MENU → UNCHANGED
+BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
+NEXT → RSP-05.F
+```
