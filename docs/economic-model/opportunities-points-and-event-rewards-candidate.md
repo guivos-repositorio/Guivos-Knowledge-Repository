@@ -2,7 +2,7 @@
 id: GEM-OPPORTUNITIES-POINTS-REWARDS-CANDIDATE-001
 title: Oportunidades — Retorno em Pontos e Premiações de Eventos — Proposta Transversal
 status: draft
-version: 1.1.0
+version: 1.2.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -809,4 +809,81 @@ MALL / TRAVEL REDEMPTION → CONCEPTUAL EXAMPLES ONLY
 GKR MAIN / MENU / MASTERS / REGISTRIES → UNCHANGED
 PR #655 → OPEN / DRAFT
 IMPLEMENTATION / REAL POINT ISSUANCE → NOT AUTHORIZED
+```
+
+## 21. Duas regras de custeio — abatimento no repasse de compra versus saldo pré-pago de premiações (v1.2.0 candidato)
+
+**Decisão explícita do fundador, 12/10/2026:** distinguir obrigatoriamente dois modelos econômicos por origem dos pontos. Esta decisão substitui, nos casos de compra intermediada pela Guivos, a hipótese anterior de exigir pré-financiamento de todas as campanhas. Permanecem 100% custeados pelo ofertante; não há duplicação de cobrança de lastro.
+
+### 21.1 Compra de oportunidade paga — retenção no repasse ao ofertante
+
+**Contrato econômico definido para modelagem:**
+1. A Organização ou Coletivo cadastra oportunidade paga com percentual opcional de pontos escolhido de opções predefinidas pela Guivos.
+2. A Pessoa paga a oportunidade por fluxo de cobrança/liquidação **intermediado pela Guivos**, para que exista valor a repassar.
+3. No acerto, a Guivos **abate do repasse ao ofertante o valor econômico correspondente aos pontos creditados à Pessoa**.
+4. **A taxa da plataforma Guivos é cobrada separadamente desse abatimento**, segundo regras comerciais próprias (alíquota, incidência, tributos e taxas de meios de pagamento a definir).
+5. O ofertante recebe o valor líquido após o benefício em pontos **e** após a taxa de plataforma aplicável. O benefício não é desconto no preço pago pela Pessoa.
+
+**Exemplo expresso do fundador:** curso de **R$ 200,00**; percentual **1%**; Pessoa recebe **2 pontos**; valor de custeio desses pontos = **R$ 2,00**; repasse-base à Organização = **R$ 198,00**, **antes de descontar a taxa da plataforma Guivos**, se aplicável.
+
+```text
+COMPRA DA PESSOA                         R$ 200,00
+RETORNO EM PONTOS (1%)                   2 pontos
+VALOR ECONÔMICO DO INCENTIVO            R$   2,00
+REPASSE-BASE À ORGANIZAÇÃO               R$ 198,00
+TAXA DA PLATAFORMA GUIVOS                [DEFINIR] — SEPARADA
+REPASSE LÍQUIDO FINAL AO OFERTANTE       R$ 198,00 - TAXA APLICÁVEL
+```
+
+**Paridade implícita deste caso aprovado como direção de modelagem:** para esta modalidade, 1% × R$ 200 = R$ 2 de incentivo e **2 pontos**; isto representa **1 ponto por R$ 1 de benefício calculado** na emissão percentual. Não implica por si só que **1 ponto vale R$ 1 no resgate no Mall/Travel**; a taxa de uso, custódia e liquidação deve ser formalizada de modo a honrar obrigações prometidas. A simulação anterior de 100 pontos por R$ 1 era hipótese e **não deve prevalecer sobre este exemplo**.
+
+**Guarda essencial:** retenção só se aplica a transação efetivamente intermediada/liquidada pela Guivos. Para compras fora da plataforma, sem repasse sob controle da Guivos, não presumir abatimento possível nem direito automático a pontos; exigir integração e acordo distintos ou deixar a função desativada.
+
+**Outras condições a especificar:** base de cálculo (valor efetivo pago), cálculo e arredondamento de frações de pontos, prazos de confirmação, chargebacks/estornos, refund parcial, separação contábil entre valores de terceiros e obrigações de pontos, limites de elegibilidade e conciliação com taxa da plataforma.
+
+### 21.2 Eventos e premiações — orçamento em pontos pré-pago
+
+1. Organização ou Coletivo adiciona/contrata **saldo pré-pago em pontos** no módulo de incentivos sob regras econômicas e de pagamento governadas.
+2. Após confirmação do pagamento do saldo, configura livre e opcionalmente faixas e critérios: primeiras N inscrições, presença validada, posições/pódio, outras recompensas autorizadas.
+3. Cada premiação **reserva pontos do saldo do ofertante**, sem ultrapassá-lo. Inscrições no evento permanecem abertas mesmo quando as cotas de pontos se esgotarem, conforme regras do evento.
+4. Após comprovação do gatilho elegível, os pontos reservados são creditados à Pessoa; cancelamentos e saldos não utilizados seguem política contratual.
+5. **Não há retenção de repasse de compras como fonte de cobertura para essas premiações.** Trata-se de pré-pagamento explícito do organizador.
+
+**Exemplo:** Coletivo compra/deposita saldo de **4.900 pontos** e cria corrida com 100 pontos para as 30 primeiras inscrições elegíveis (3.000 pontos), primeiro lugar 1.000, segundo 600 e terceiro 300 (1.900 pontos). O sistema reserva o orçamento contratado, permite inscrições adicionais sem bônus de entrada e só distribui créditos com provas válidas. O **preço em reais da aquisição de 4.900 pontos não está definido** nesta etapa.
+
+### 21.3 Matriz de duas origens
+
+| Critério | Compra de oportunidade paga | Evento / premiação |
+|---|---|---|
+| Origem de financiamento | **Abatimento no valor de repasse ao ofertante** | **Saldo de pontos pré-pago pelo organizador** |
+| Gatilho | Transação paga e liquidada elegível | Inscrição, presença, resultado ou critério válido |
+| Escolha | Percentual em tabela Guivos | Pontos por critério e limite de beneficiários |
+| Crédito | Pontos ao comprador | Pontos aos beneficiários elegíveis |
+| Taxa da Guivos | Separada do percentual de pontos | Taxas de aquisição/serviço, se houver, separadas e explícitas |
+| Necessidade de financiamento antecipado | **Não**, quando a Guivos controla repasse suficiente | **Sim**, saldo disponível antes das promessas |
+| Oportunidade gratuita | Não admite retorno percentual baseado em preço inexistente | Pode distribuir premiações com saldo pré-pago |
+| Limite de participantes | Regra da oportunidade independente | Regra do evento independente do limite de beneficiários de pontos |
+
+### 21.4 Reconciliação expressa das análises anteriores
+
+- Onde as seções 5, 11, 12, 17–20 tratam **pré-financiamento universal**, isso passa a ser **substituído para incentivos percentuais de compras intermediadas** pela retenção no repasse definida nesta seção. As alternativas FUND-A/B continuam aplicáveis à compra de saldo e distribuição em eventos.
+- As taxas e cenários **A/B/C da seção 20 são experimentos históricos**, não taxas oficiais ou representação fiel da nova regra de 1% = 2 pontos para R$ 200.
+- Separar **paridade de emissão em oportunidade paga** (fixada conceitualmente pelo exemplo) de **valor de compra de pontos pré-pagos** e **valor de resgate** (ambos pendentes de regra oficial).
+- Evitar creditar pontos antes de pagamento elegível liquidado e conciliação do repasse, para não transformar reversões em subsídio involuntário.
+- Não implementar fluxo de compra de pontos de um Coletivo antes de adjudicar autoridade de conta, mecanismo de pagamento, custódia, conciliação e responsabilidades contratuais.
+- Repasses, taxas, reservas e valores não são receita reconhecida sem análise contábil; nada nesta seção autoriza operar serviços financeiros sem requisitos legais.
+
+### 21.5 Próxima etapa
+
+Atualizar a matriz PAR/FUND/LIQ, distinguindo formalmente **FIN-COMPRA** (retenção na liquidação) de **FIN-EVENTO** (saldo pré-pago) e definir cálculo, prazos, contabilidade, estorno e pagamento do saldo. Preservar a hierarquia narrativa das Homes: pontos são recurso secundário da experiência.
+
+```text
+CANDIDATE VERSION → v1.2.0
+USER-DECIDED COMPRA → 1% OF R$200 = 2 POINTS / R$2 COST / R$198 PRE-FEE TRANSFER
+USER-DECIDED EVENTO → POINT BALANCE PREPAID BY ORGANIZER
+ISSUER COST SHARE → 100%
+PLATFORM FEE → ADDITIONAL / SEPARATE / NOT YET PARAMETERIZED
+POINT REDEMPTION PARITY → NOT DECIDED
+PR #655 → OPEN / DRAFT
+MAIN / MASTERS / MENU / PRODUCT / REPLIT → UNCHANGED
 ```
