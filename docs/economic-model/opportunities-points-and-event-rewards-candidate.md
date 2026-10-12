@@ -2,7 +2,7 @@
 id: GEM-OPPORTUNITIES-POINTS-REWARDS-CANDIDATE-001
 title: Oportunidades — Retorno em Pontos e Premiações de Eventos — Proposta Transversal
 status: draft
-version: 0.8.0
+version: 0.9.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -544,4 +544,83 @@ MALL / TRAVEL SETTLEMENT → CONCEPTUAL CONDITIONS DOCUMENTED
 PERSON / O-C HOME MASTERS → UNCHANGED
 GKR MAIN / MENU / REGISTRIES → UNCHANGED
 ENGINEERING / LIVE POINTS → NOT AUTHORIZED
+```
+
+## 18. Matriz decisória econômica: paridade, custeio e cenários adversos (v0.9.0 candidato)
+
+**Estado:** comparação documental concluída; opções não adjudicadas. O ofertante (Organização ou Coletivo) financia **100% da obrigação econômica** de pontos que oferecer, inclusive em modalidades percentuais, participação ou colocação. A taxa de paridade e o modelo operacional não foram aprovados.
+
+### 18.1 Critérios de comparação
+
+Pontuação qualitativa analítica: `BAIXA / MÉDIA / ALTA` para clareza à Pessoa, previsibilidade de passivo, simplicidade operacional, flexibilidade no Mall/Travel, risco de mudança de valor percebido e carga de reconciliação. **Não constituem ranking normativo**, validação contábil ou autorização jurídica.
+
+| Modelo | Clareza à Pessoa | Previsibilidade econômica | Complexidade | Risco central |
+|---|---|---|---|---|
+| PAR-A: paridade uniforme de emissão/resgate | ALTA | ALTA quando reserva cobre obrigação | MENOR | Custo de liquidação e manutenção da equivalência |
+| PAR-B: emissão/resgate com regras distintas | MÉDIA, depende de transparência | MÉDIA/ALTA sob teto e versão | MAIOR | Confusão sobre valor real dos pontos, mudanças retroativas |
+| PAR-C: recompensas precificadas em pontos por catálogo | MÉDIA/BAIXA sem referência financeira clara | DEPENDE DE ESTOQUE/COTAÇÃO | MAIOR | Resgate desigual por produto/fornecedor |
+
+**PAR-A e PAR-B** seguem alternativas principais de comparação, sem escolha. Se PAR-B for adotada, valor de utilização, validade, revisões e comunicação devem ser explícitos e coerentes com direitos já concedidos.
+
+### 18.2 Matriz de financiamento
+
+| Modelo | Reserva | Benefício | Risco e proteção |
+|---|---|---|---|
+| FUND-A: pré-financiamento por campanha | Orçamento vinculado à campanha antes de compromisso | Simplicidade do teto e encerramento | Saldos dispersos; exigir conciliação por campanha e regras de devolução |
+| FUND-B: saldo pré-pago reutilizável | Saldo central do ofertante, segregado em reservas por campanha | Flexibilidade para múltiplas oportunidades | Concorrência entre campanhas; exigir bloqueio atômico do saldo comprometido |
+| FUND-C: garantia externa | Capacidade de cobertura por garantia validada | Menor desembolso antecipado | Inadimplemento, execução e risco de liquidez; não preferencial na análise de MVP |
+
+**Hipótese de implementação para testes posteriores:** admitir FUND-A e FUND-B como modelos alternativos de origem dos recursos e exigir, em ambos, a mesma regra de **orçamento disponível ≥ compromissos novos**. Não instituir carteira financeira sem análise regulatória específica.
+
+### 18.3 Cenários de decisão
+
+| Evento | Efeito sobre a oportunidade | Efeito na cota/reserva | Efeito econômico |
+|---|---|---|---|
+| 31ª inscrição após bônus para 30 | Inscrição permitida se evento aberto | Nenhuma nova reserva do bônus | Não cria obrigação de 100 pontos |
+| Cancelamento antes do gatilho | Conforme regulamento de inscrição | Reserva pode ser liberada; redistribuição só se prevista | Saldo retorna à disponibilidade após conciliação |
+| Não comparecimento a evento | Inscrição pode ter existido | Não creditar prêmio condicionado à presença | Obrigação condicional extinta ou contestável |
+| Resultado esportivo contestado | Participação pode permanecer válida | Prêmio por posição suspenso até adjudicação | Manter lastro do valor em disputa |
+| Oportunidade paga estornada | Elegibilidade econômica revogada conforme regras | Suspender/reverter crédito quando permitido | Tratar resgate já ocorrido em procedimento formal, não subtrair em silêncio |
+| Duas campanhas competindo pelo último saldo | Publicações condicionadas ao orçamento | Reservar atomicamente sem duplicidade | Não permitir exposição superior ao lastro |
+| Resgate Mall confirmado | Oportunidade originária permanece histórica | Debitar saldo uma única vez | Liquidação conforme preço, parceiro e conciliação |
+| Reserva Travel cancelada | Aplicam-se regras do fornecedor/Guivos Travel | Reverter bloqueio/crédito conforme estágio | Reconciliação de taxas e estornos dependente de contrato |
+| Expiração de pontos | Sem alteração retrospectiva da oportunidade | Respeitar prazo informado e contestação | Destinação de recurso remanescente exige regra contratual |
+| Ofertante encerra atividade | Não extinguir direitos adquiridos por padrão | Reservas e obrigações em aberto precisam continuidade | Política de garantia e insolvência a adjudicar |
+
+### 18.4 Exemplos ilustrativos comparados
+
+**Oportunidade paga:** preço elegível R$ 200, taxa escolhida hipotética de 5%, orçamento econômico do benefício R$ 10. Em PAR-A, pontos emitidos dependem da paridade oficial uniforme. Em PAR-B, o valor de emissão e a capacidade de resgate são definidos por fatores diferentes, exigindo garantir ao menos a obrigação prometida segundo termos comunicados. Nenhuma taxa oficial foi definida.
+
+**Corrida:** primeira faixa 30 × 100 = **3.000 pontos**; podium 1.000 + 600 + 300 = **1.900 pontos**; obrigação máxima nominal **4.900 pontos**, sem empates que aumentem a distribuição. Em FUND-A, a campanha deve ter seu lastro reservado; em FUND-B, cada faixa deve bloquear parte do saldo pré-pago do ofertante. Inscrições além da 30ª seguem possíveis sem o bônus de inscrição.
+
+### 18.5 Regras de transparência e direitos
+
+- Antes da adesão, revelar condição elegível, teto de beneficiários, regra de prioridade e se pontos são estimados, reservados, pendentes ou disponíveis.
+- Nenhuma mudança unilateral de paridade deve eliminar sem tratamento adequado um benefício já legitimamente adquirido.
+- Distinguir financiamento de pontos de tarifa da plataforma: custo do incentivo pertence integralmente ao ofertante; taxas adicionais, se existirem, demandam política própria.
+- Não tratar custo do incentivo como desconto obrigatório nem pontos como dinheiro resgatável em espécie sem autorização.
+- Manter razão financeira, ledger de pontos e estados de oportunidade como registros reconciliáveis, mas distintos.
+- Proibir que pontos comprados pelo ofertante alterem o ranking de relevância, a confiança ou o mérito de reconhecimentos.
+
+### 18.6 Parecer analítico e portas de decisão
+
+**PAR-A + FUND-A**: candidato de referência para simulação simples de uma campanha; simplicidade não é decisão de adoção.
+
+**PAR-A + FUND-B**: candidato para ofertantes recorrentes, com saldo reutilizável e reservas individuais auditáveis.
+
+**PAR-B + FUND-A/FUND-B**: somente se a flexibilidade justificar complexidade e comunicação transparente do valor de resgate.
+
+**Pendências antes de decisão econômica:** paridade de emissão/resgate, lastro unitário, custo de cobertura, retenção, custódia, conciliação, regras de pontos vencidos, reversões após resgate, responsabilidades Mall/Travel, análise jurídica-fiscal-contábil e compatibilidade com a unidade única de valor da Guivos.
+
+**Próxima etapa candidata:** instrumento de adjudicação econômica `PAR-01/PAR-02/FUND-01/LIQ-01/LIQ-02`, com campos para premissas, efeitos, riscos, evidências e aprovação por autoridade legítima. Esta etapa não gera superfície/ID `GKR-SURF`, transição `GKR-TRN` ou autorização de implementação.
+
+```text
+VERSION → v0.9.0 CANDIDATE
+PARITY MODELS → COMPARATIVE EXAM COMPLETE / NO NORMATIVE CHOICE
+FUNDING MODELS → COMPARATIVE EXAM COMPLETE / ISSUER FUNDS 100%
+CANCELLATION / REVERSAL / MALL / TRAVEL → SCENARIOS DOCUMENTED
+HOME PERSON AND O-C → UNCHANGED
+PR #655 → OPEN / DRAFT
+GKR MAIN / MENU / MASTERS / REGISTRIES → UNCHANGED
+ENGINEERING / POINT ISSUANCE / LIVE REDEMPTION → NOT AUTHORIZED
 ```
