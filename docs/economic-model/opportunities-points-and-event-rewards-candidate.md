@@ -2,7 +2,7 @@
 id: GEM-OPPORTUNITIES-POINTS-REWARDS-CANDIDATE-001
 title: Oportunidades — Retorno em Pontos e Premiações de Eventos — Proposta Transversal
 status: draft
-version: 0.1.0
+version: 0.2.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -134,3 +134,47 @@ Esses estados **não** constituem novos IDs `GKR-TRN`, eventos implementados ou 
 | TEC-01 | Contrato técnico, testes E2E e homologação? | PENDENTE |
 
 **Situação:** proposta de produto/economia recebida e documentada; não é regra operacional ou autorização de implementação. Sem alterações de `main`, `mkdocs.yml`, Masters, registries ou PR #654 (Reconhecimento de Coletivos, frente pausada).
+
+## 10. Limites de benefício por ordem de inscrição — proposta complementar v0.2.0
+
+**Diretriz do fundador:** o ofertante pode limitar a quantidade de pessoas contempladas com determinado incentivo **sem limitar o número de inscrições ou participações na oportunidade**.
+
+### Exemplo — corrida com pontos para inscrições iniciais
+
+Um Coletivo divulga uma corrida com **100 pontos para as primeiras 30 inscrições elegíveis**. Após a 30ª inscrição elegível, outras Pessoas continuam podendo se inscrever normalmente, mas **não recebem esse incentivo específico**. A eventual premiação por colocação (1º, 2º, 3º) possui regras e orçamento próprios e poderá continuar acessível aos participantes posteriores se o regulamento assim definir.
+
+```text
+OPORTUNIDADE / EVENTO
+  → INSCRIÇÕES ABERTAS
+  → INCENTIVO DE INSCRIÇÃO: 100 PONTOS × 30 VAGAS DE BENEFÍCIO
+  → ORÇAMENTO MÁXIMO DESTE INCENTIVO: 3.000 PONTOS
+  → PRIMEIRAS 30 INSCRIÇÕES ELEGÍVEIS: RESERVA CONDICIONAL
+  → INSCRIÇÕES 31+ : INSCRIÇÃO PERMITIDA, SEM ESTE INCENTIVO
+  → PRESENÇA / PARTICIPAÇÃO COMPROVADA (SE EXIGIDA)
+  → CRÉDITO EFETIVO DAS RESERVAS ELEGÍVEIS
+```
+
+**Separar semanticamente** `LIMITE_INSCRIÇÕES_EVENTO` de `LIMITE_BENEFICIÁRIOS_INCENTIVO`; o segundo não encerra o primeiro. O compromisso do incentivo de inscrição é limitado a `30 × 100 = 3.000 pontos`, sem incluir premiações de classificação ou outros incentivos contratados, que exigem orçamento adicional.
+
+### Campos candidatos
+
+- Incentivo ativado, quantidade de pontos, **máximo de beneficiários**, período promocional e critério de ordenação.
+- Marco de ordenação verificável: inscrição interna **confirmada e elegível**, com timestamp de autoridade e desempate determinístico. Uma inscrição meramente iniciada não garante direito.
+- Reserva condicional por beneficiário, orçamento reservado, quantidade remanescente e estados `DISPONÍVEL` / `ESGOTADO` do **benefício**, nunca do evento por inferência.
+- Regra divulgada para desistência, cancelamento, duplicidade, não comparecimento e eventual reaproveitamento de cota. **Não presumir** realocação automática aos próximos inscritos sem política previamente informada.
+- Separação entre **elegibilidade à reserva** (posição dentro das 30 primeiras inscrições válidas) e **direito a crédito final** (cumprimento de eventual exigência de presença/participação).
+- Exibição clara antes da inscrição: “100 pontos para as 30 primeiras inscrições elegíveis”, com indicação de disponibilidade atual sem garantia quando a confirmação depende de processamento.
+- Se a inscrição ocorrer por sistema externo/`BND-001`, a Guivos não infere ordem, confirmação ou elegibilidade sem prova de integração autorizada e confiável.
+
+### Invariantes econômicos e técnicos
+
+1. Um mecanismo transacional/atômico impede reservar a mesma última vaga de benefício para duas Pessoas concorrentes.
+2. O teto reservado é calculado sobre beneficiários, **não** sobre todas as inscrições; no exemplo, 3.000 pontos mais orçamentos independentes de classificação.
+3. A inscrição após o esgotamento do benefício continua disponível quando o evento aceita novas inscrições.
+4. Desistência e não comparecimento não geram crédito indevido; reaproveitamento de cotas segue regra expressa.
+5. Incentivos distintos podem ter públicos, tetos e gatilhos próprios; bonificações acumuladas exigem regras visíveis.
+6. O ofertante financia 100% das reservas e créditos conforme a política econômica aprovada.
+7. A experiência da Pessoa distingue `INSCRIÇÃO CONFIRMADA`, `BENEFÍCIO RESERVADO`, `BENEFÍCIO ESGOTADO` e `PONTOS CREDITADOS`; nenhuma dessas expressões é novo ID oficial do GKR.
+8. O limite opcional pode igualmente ser configurado por Organizações e Coletivos, respeitando a autoridade de cadastro de cada tipo de participante.
+
+**Pendências de adjudicação:** regra definitiva do instante de prioridade, elegibilidade em modalidades externas, devolução e redistribuição de cotas, tratamento de empates/concurrency, estornos, limite de campanha e provas de participação. Esta proposta não altera Masters, registros GKR-SURF/TRN, MENU, `main` nem autoriza engenharia.
