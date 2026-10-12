@@ -2,7 +2,7 @@
 id: GKR-COLLECTIVE-RECOGNITION-001
 title: Coletivos — Verificado e Contribuição Reconhecida
 status: proposed
-version: 3.5.0
+version: 3.6.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -2154,5 +2154,76 @@ DEC-02.B → NEXT
 DEC-01.A..E NORMATIVE ADJUDICATION → 0/5 CONFIRMED
 PR #654 → OPEN / DRAFT
 GKR MENU ACCESS → REQUESTED / NOT PUBLISHED
+BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
+```
+
+
+## DEC-02.B — Exame individual: instrumento de avaliação e elegibilidade (v3.6 candidato)
+
+**Resultado:** CONVERGÊNCIA ANALÍTICA CONDICIONAL. Instrumento candidato para avaliação contextual; não implica ratificação normativa, KPI aprovado, concessão automática ou acesso de Coletivos a avaliações privadas.
+
+### Questão central
+
+Como colher percepções voluntárias sobre benefício, aprendizado e avanço efetivamente percebidos, apenas de Pessoas elegíveis que viveram a experiência, distinguindo avaliação contextual de satisfação genérica e protegendo a fonte privada de dados?
+
+### Portas de elegibilidade
+
+| Gate | Evidência candidata | Vedação |
+|---|---|---|
+| Q-01 Experiência | Atividade/etapa delimitada e comprovadamente realizada | Convite ou anúncio não comprova vivência |
+| Q-02 Pessoa elegível | Vínculo privado e proporcional com etapa efetivamente vivida | Seguidor, interessado, inscrito ou check-in isolado não bastam |
+| Q-03 Atribuição | Papel material do Coletivo na edição/período | Divulgação, patrocínio ou cessão de espaço não transferem mérito automaticamente |
+| Q-04 Convite íntegro | Política rastreável e não seletiva de convite para avaliar | Convites condicionados a satisfação ou recompensa por resposta favorável |
+| Q-05 Resposta voluntária | Possibilidade real de recusar, pular dimensão, declarar “não se aplica” ou “informação insuficiente” | Coação ou conversão de silêncio em nota negativa |
+| Q-06 Identidade e privacidade | Deduplicação protegida por Pessoa, experiência e período, com acesso mínimo | Acesso do representante à identidade dos avaliadores, respostas R1 ou participação sensível |
+
+### Instrumento contextual candidato
+
+Perguntas por experiência ou etapa realmente vivida, apresentadas em linguagem simples e sem sugerir resultado:
+
+1. **“Essa experiência trouxe algum benefício relevante para você?”**
+2. **“Você aprendeu ou desenvolveu algo que considera útil com essa experiência?”**
+3. **“Essa experiência contribuiu para você avançar em algum objetivo ou área da sua vida?”**
+
+Escala semântica candidata para as dimensões aplicáveis: `NÃO CORRESPONDEU`, `CORRESPONDEU PARCIALMENTE`, `CORRESPONDEU`, `CORRESPONDEU PLENAMENTE`, `NÃO SE APLICA`, `NÃO TENHO INFORMAÇÃO SUFICIENTE`. Campo contextual de área da vida e comentário devem ser opcionais e protegidos; o texto não induz causalidade, diagnóstico, renda ou progresso garantido. A confirmação de que uma pergunta é pertinente ao propósito da experiência deve ocorrer antes da apuração do mérito.
+
+### Interpretação e não resposta
+
+- `CORRESPONDEU` e `CORRESPONDEU PLENAMENTE`: respostas favoráveis **percebidas**, não prova de evolução objetiva.
+- `CORRESPONDEU PARCIALMENTE`: sinal parcial próprio; não recodificar como favorável ou desfavorável automaticamente.
+- `NÃO CORRESPONDEU`: sinal desfavorável pertinente, não prova isolada de falha ou fraude.
+- `NÃO SE APLICA`: dimensão não pertinente ao recorte, não é avaliação negativa.
+- `NÃO TENHO INFORMAÇÃO SUFICIENTE`: não permite conclusão substantiva.
+- `NÃO RESPONDEU`: evento de cobertura, sem percepção imputada.
+
+### Proteções contra viés
+
+Registrar população elegível quando conhecida, universo de convites, canal, cobertura, não resposta, repetição de Pessoas e heterogeneidade das experiências. Não comparar respostas de dimensões ou períodos diferentes sem verificação de comparabilidade. Convite deve evitar selecionar exclusivamente participantes satisfeitos. A ausência de denominador verificável exige qualificação explícita da inferência e revisão humana, nunca confiança estatística fabricada.
+
+### Fluxos de fronteira
+
+1. Pessoa viu a atividade mas não participou → inelegível.
+2. Pessoa inscrita em evento cancelado → inelegível para avaliar vivência.
+3. Pessoa viveu etapa parcial de curso → avaliação contextual da etapa, não do curso inteiro.
+4. Pessoa participou de várias edições → histórico preservado, dependência das respostas examinada.
+5. Atividade espiritual/sensível → resposta e pertencimento não divulgados.
+6. Pessoa responde “não se aplica” em aprendizado de uma pedalada → não conta como desfavorável.
+7. Organizador oferece benefício somente para avaliações positivas → coleta sujeita à revisão de integridade.
+8. Pessoa registra crítica legítima → não excluir por interesse comercial ou receio de reputação.
+9. Coletivo apenas divulga experiência → resposta não gera atribuição automática.
+10. Pessoa recusa avaliação → nenhuma penalidade.
+
+### Pendências de adjudicação
+
+Ratificar perguntas e escala, ajustar acessibilidade e adequação cultural/linguística, definir comprovação de elegibilidade por modalidade, direitos de coleta e retenção, validação de voluntariedade, deduplicação e política de convites, método de ligação entre experiência privada R1 e apuração institucional, metodologia de DEC-02.C e autoridade decisória. A aprovação de texto de perguntas não autoriza exposição de respostas em PER-103.
+
+```text
+DEC-02.B INDIVIDUAL EXAM → COMPLETE
+DEC-02.B ANALYTICAL DIRECTION → CONDITIONAL CONVERGENCE
+DEC-02.B HUMAN NORMATIVE ADJUDICATION → PENDING
+DEC-02.C → NEXT
+DEC-02 INDIVIDUAL EXAMS → 2/5 DOCUMENTED
+GKR MENU ACCESS → REQUESTED / NOT PUBLISHED
+PR #654 → OPEN / DRAFT
 BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
 ```
