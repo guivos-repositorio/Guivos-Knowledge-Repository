@@ -5458,3 +5458,79 @@ GKR MENU → UNCHANGED
 BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
 NEXT → G0 / B-01 AUTHORITY AND ADJUDICATION RECORD EXAM
 ```
+
+## Etapa 291 — G0 / B-01: Exame da autoridade institucional e dos registros de adjudicação (v4.43 candidato)
+
+**Resultado:** EXAME DOCUMENTAL DE AUTORIDADE CONCLUÍDO / LACUNA ESPECÍFICA DE INVESTIDURA PARA A POLÍTICA DOS SELOS NÃO RESOLVIDA / ADJUDICAÇÃO NORMATIVA PENDENTE. Não designa autoridade, não modifica a titularidade normativa do GKR e não concede competência para reconhecer Coletivos.
+
+### Questão de controle
+
+Os documentos vigentes da `main` conferem, comprovadamente, poder específico a alguma pessoa, instância ou papel para aprovar a política dos selos `Verificado` e `Contribuição Reconhecida`, adjudicar DEC-01..05/RSP-05/RSP-06, delegar decisões sobre concessões, conhecer recursos, autorizar publicação ou alterar o MENU?
+
+### Fontes correntes diretamente examinadas
+
+| Fonte em `main` | Autoridade e limite que efetivamente expressa | Conclusão para G0 |
+|---|---|---|
+| `GKR-BRAND-PUBLIC-AUTHORITY-001` — `docs/governance-framework/brand-public-authority-and-founder-role.md` (active; normative: true) | Nomeia Guilherme Oliveira como autoridade humana pública principal, referência da visão fundadora e de grandes decisões quando aplicável; distingue fala pessoal, fala do fundador e posição institucional; fundador não substitui GKR | **Autoridade pública e fundadora identificada, sem atribuição específica comprovada de titularidade ou decisão dos dois selos** |
+| `GKR-UX-ORGCOL-AUTH-JOBS-001` — `docs/experience-architecture/organizations-collectives-authenticated-actors-authorities-and-jobs.md` (active; normative: false) | Define classes funcionais, autoridades contextuais e limites de representantes, decisores, governança coletiva e operação; declara que papel funcional não equivale a RBAC/permissão | **Nenhuma classe funcional constitui por si decisor de reconhecimento Guivos** |
+| `docs/experience-architecture/organizations-collectives-journey/read-first.md` (normative: true) | Governa consumo da jornada e proíbe inventar autoridade, capacidades e permissões por convenção ou sugestão | **Exige fonte formal para extensão de competência** |
+| `docs/experience-architecture/organizations-collectives-journey/collective-protection-moderation-master.md` (draft; normative: false) | Delimita proteção/moderação `COL-007`, recursos e proporcionalidade, sem autoridade irrestrita | **Moderação não corresponde a concessão de selo** |
+| `mkdocs.yml` | MENU destina-se à descoberta e exclui documentos candidatos/draft como destinos correntes, salvo declaração explícita por autoridade superior vigente | **Não permite promover esta PR candidata como autoridade pelo MENU** |
+
+**Âmbito da verificação:** fontes acima e estados da PR #654 neste exame. A ausência de ato específico nessas fontes **não equivale a prova universal de inexistência** de mandatos externos, societários ou documentos não examinados. Nenhum desses mandatos adicionais foi apresentado ou confirmado neste registro.
+
+### Distinções institucionais não compensatórias
+
+1. **Fundador e autoridade de marca:** relevância institucional comprovada; não equivale a mandato específico para conceder ou revisar selos por presunção.
+2. **Owner documental:** responsabilidade editorial sobre artefatos do GKR não equivale a poder decisório do programa de reconhecimento.
+3. **Aprovação de PR / merge:** ato de governança de repositório não equivale a adjudicação substantiva sobre elegibilidade ou emissão de selo.
+4. **Representante do Coletivo:** governança interna da entidade não equivale à competência da Guivos de reconhecimento independente.
+5. **Moderação de Coletivo:** medidas de proteção e contestação não criam competência para conceder, suspender ou revogar ambos os selos.
+6. **Decisão sobre o produto:** eventual autorização de UX/implementação não constitui aprovação de critérios de certificação, privacidade e publicação.
+7. **Continuidade documental do usuário:** aprovação de prosseguimento dos exames não é ato formal individual de `APROVAR` gates.
+
+### Evidências mínimas para destravar G0/B-01 (candidatas)
+
+- Identificação formal da instância **titular da política**, com fundamento, alcance territorial e mandato verificáveis.
+- Instrumento de aprovação/delegação que discrimine critérios, instrução, decisão por selo, recurso, supervisão e publicação.
+- Matriz de impedimentos, incompatibilidades, conflito comercial e substituições.
+- Rito expresso de alteração da política, vigência, versionamento e adjudicação dos 36 gates.
+- Separação entre autoridade normativa de reconhecimento, autoridade editorial de GKR/MENU e autorização de produto/engenharia.
+- Registro de deliberação contendo responsável competente, data, alternativa, resultado, motivação, escopo, condições e dependências.
+- Revisão jurídica/institucional pertinente quando a origem dos poderes, a forma societária ou a jurisdição implicarem requisitos ainda não estabelecidos.
+
+### Instrumento candidato para a primeira decisão humana
+
+```text
+GATE → G0 / B-01
+PERGUNTA → Quem possui mandato institucional válido para aprovar e delegar
+            a política de reconhecimento de Coletivos na Guivos?
+ALTERNATIVAS → comprovar autoridade existente / formalizar novo ato
+               constitutivo ou delegação / devolver para adequação
+RESULTADO → NOT ADJUDICATED
+AUTORIDADE COMPETENTE → NOT EVIDENCED FOR BADGE POLICY
+DATA / FUNDAMENTO / ESCOPO / IMPEDIMENTOS → NOT RECORDED
+EFEITO → NO AUTHORITY PROMOTION
+```
+
+O instrumento não determina quem *deve* assumir o poder; exige que a legitimidade e o processo sejam estabelecidos por fonte competente e não por inferência do assistente.
+
+### Implicações de navegação e próxima etapa
+
+A criação de acesso ao tema no MENU pode ser preparada por uma **página editorial de orientação com status expresso de proposta**, caso o GKR aprove forma e localização compatíveis com sua regra vigente. Não altera o estado normativo da política e não autoriza o MENU a anunciar os selos como ativos.
+
+**Próxima etapa 292:** instrumento de regularização de G0/B-01, com alternativas de titularidade e delegação, checklist de evidências, incompatibilidades e rito de decisão, sem nomear titular automaticamente.
+
+```text
+ETAPA 291 G0/B-01 AUTHORITY EVIDENCE EXAM → DOCUMENTED
+SPECIFIC BADGE POLICY AUTHORITY INVESTITURE → NOT CONFIRMED IN EXAMINED SOURCES
+FOUNDING / PUBLIC BRAND AUTHORITY → DOCUMENTED; NOT BADGE POLICY GRANT
+DEC-01..05 EXAMS → 25/25; HUMAN RATIFICATIONS → 0/25
+RSP-05 EXAMS → 6/6; HUMAN ADJUDICATIONS → 0/6
+RSP-06 EXAMS → 5/5; HUMAN ADJUDICATIONS → 0/5
+COMBINED → 36/36 EXAMS; 0/36 RATIFICATIONS
+PR #654 → OPEN / DRAFT
+GKR MENU → UNCHANGED
+BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
+NEXT → G0/B-01 FORMAL AUTHORITY RESOLUTION INSTRUMENT
+```
