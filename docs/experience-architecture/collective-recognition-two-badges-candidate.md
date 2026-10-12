@@ -2,7 +2,7 @@
 id: GKR-COLLECTIVE-RECOGNITION-001
 title: Coletivos — Verificado e Contribuição Reconhecida
 status: proposed
-version: 2.6.0
+version: 2.7.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -1689,4 +1689,60 @@ DEC-01 INTEGRATED DECISION RECORD → NEXT
 CBR-01..08 FORMAL ADJUDICATION → 0/8 CONFIRMED
 PR #654 → OPEN / DRAFT
 ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
+```
+
+
+## DEC-01 — Consolidação integrada para deliberação humana (v2.7 candidato)
+
+**Status:** READY FOR HUMAN DELIBERATION / NOT NORMATIVELY ADJUDICATED. Esta consolidação reúne os exames DEC-01.A..E, mas não ratifica os critérios, não institui autoridades e não autoriza emissão ou publicação dos selos.
+
+### 1. Quadro integrado de claims
+
+| Item | Afirmação verificável | Regra candidata resultante | Convergência | Aprovação |
+|---|---|---|---|---|
+| DEC-01.A — Existência | Coletivo é iniciativa real e distinguível | Identidade, atuação/organização, procedência, corroboração e atualidade; sem CNPJ universal | Condicional | PENDENTE |
+| DEC-01.B — Representação | Solicitante possui mandato legítimo para o ato | Identidade privada, prova formal ou contextual, escopo de poderes e revisão de mudanças | Condicional | PENDENTE |
+| DEC-01.C — Atuação | Ação própria real e materialmente atribuível | Atividade delimitada, efetivamente realizada, origem, papel e período, inclusive digital ou pontual | Condicional | PENDENTE |
+| DEC-01.D — Experiência | Pessoa viveu etapa elegível da experiência | Separar interesse, inscrição, vivência e percepção; proteger resposta privada e atribuição | Condicional | PENDENTE |
+| DEC-01.E — Integridade | Provas e decisões preservam justiça e proteção | Procedência, integridade, privacidade, não retaliação, revisão, temporalidade e publicação governada | Condicional | PENDENTE |
+
+### 2. Relação entre selos e decisões
+
+Para **Verificado**, DEC-01.A + B + C + E são elementos candidatos necessários para exame de prova e decisão competente. DEC-01.D não é requisito de percepção de benefício para o selo Verificado: trata da elegibilidade de experiências que poderão fundamentar **Contribuição Reconhecida**. O segundo selo pressupõe Verificado vigente, DEC-01.D, atribuição contextual, mérito e robustez ainda em DEC-02, além de autoridade, publicação e proteção (DEC-03..05). Nenhum resultado de avaliação transfere automaticamente legitimidade de representação.
+
+### 3. Propostas que podem ser encaminhadas para ratificação, sem presumir aprovação
+
+- Inclusão proporcional de Coletivos formais e informais, novos, digitais, híbridos e pontuais, sem exigência universal de CNPJ nem recorrência artificial.
+- Separação de existência, representação, atuação, vivência e percepção; dados de Pessoa permanecem protegidos.
+- Evidências rastreáveis e legitimamente corroboradas, com origem e período explícitos; duplicação de fonte não cria independência fictícia.
+- Tratamento de informação insuficiente e controvérsia sem rotular automaticamente o Coletivo como irregular.
+- Revisão humana fundamentada, independência de recurso e não interferência comercial.
+
+### 4. Matérias que ainda exigem deliberação específica
+
+| Decisão pendente | Responsabilidade da futura autoridade |
+|---|---|
+| PROOF-CATALOG | Aprovar tipos, independência, suficiência e substituição de evidências por modalidade |
+| PROOF-TEMPORALITY | Definir validade, atualização e critérios de reexame |
+| REPRESENTATION-RIGHTS | Aprovar escopos de mandato, co-representação, delegação e resolução de conflitos |
+| EXPERIENCE-ELIGIBILITY | Aprovar prova de vivência parcial/recorrente, papel do Coletivo e tratamento de coexecução |
+| PRIVACY-INTEGRITY | Aprovar custódia, acesso, retenção, denúncia, contestação e proteção |
+| REVIEW-AUTHORITY | Instituir alçada e critérios de revisão/recursos |
+| SURFACE-AUTHORITY | Autorizar separadamente projeções públicas, inclusive PER-103 e cards, sem presumir direito de exibição |
+
+### 5. Registro de decisão a preencher por deliberação humana
+
+Para cada item DEC-01.A..E, a instância competente deverá registrar `APROVADO`, `APROVADO_COM_AJUSTES`, `DEVOLVIDO_PARA_REVISAO` ou `REJEITADO`, com fundamento, escopo, autoridade, data, versão, condições e eventuais ressalvas. **Nenhum desses estados é preenchido por este documento.** Aprovação sem definição das dependências não autoriza emissão.
+
+### 6. Gate de saída da DEC-01
+
+DEC-01 somente poderá migrar de `READY_FOR_HUMAN_DELIBERATION` para `NORMATIVELY_ADJUDICATED` após decisão expressa dos cinco itens, tratamento de suas pendências e reconciliação com as autoridades canônicas. A documentação de DEC-01 por si só não fecha DEC-02, DEC-03, DEC-04 ou DEC-05.
+
+```text
+DEC-01.A..E INDIVIDUAL ANALYSIS → 5/5 COMPLETE
+DEC-01 INTEGRATED DELIBERATION PACKAGE → READY
+DEC-01.A..E NORMATIVE ADJUDICATION → 0/5 CONFIRMED
+DEC-01 STATUS → PENDING HUMAN DECISION
+PR #654 → OPEN / DRAFT
+BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
 ```
