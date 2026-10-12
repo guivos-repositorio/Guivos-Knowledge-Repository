@@ -2,7 +2,7 @@
 id: GKR-COLLECTIVE-RECOGNITION-001
 title: Coletivos — Verificado e Contribuição Reconhecida
 status: proposed
-version: 0.6.0
+version: 0.7.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -407,3 +407,98 @@ Não definir efeito automático entre selos: dependência de Verificado vigente 
 10. Um Coletivo paga por publicidade: pagamento não interfere nas decisões de integridade e reconhecimento.
 
 **CBR-05 → OPEN**, até adjudicação de papéis, procedimentos, política de privacidade/retenção, medidas cautelares, tratamento de denúncias, critérios antifraude, recursos e comunicação pública. Nenhuma implementação de moderação ou autorização de selo é criada.
+
+
+## CBR-06 — Autoridade humana e ciclo de vida dos selos (proposta v0.7)
+
+### 1. Separação de competências
+
+A Guivos deve distinguir **coleta e verificação de evidências**, **decisão de concessão**, **integridade/moderação**, **publicação** e **recurso**. São funções candidatas, não cargos ou equipes já criados.
+
+| Função | Competência candidata | Vedação |
+|---|---|---|
+| Solicitante representante do Coletivo | Solicitar, complementar evidências, atualizar representação e recorrer | Não emitir nem alterar o próprio selo |
+| Verificação de existência | Conferir identidade, existência operacional e legitimidade de representação para Verificado | Não declarar evolução das Pessoas nem substituir autoridade decisória |
+| Avaliação metodológica | Apurar admissibilidade, contribuição percebida, robustez e atribuição para Contribuição Reconhecida | Não modificar avaliação privada nem ocultar respostas desfavoráveis |
+| Integridade e proteção | Investigar irregularidades e recomendar medidas proporcionais, preservando sigilo | Não presumir fraude por denúncia ou automação |
+| Autoridade de concessão | Deliberar motivadamente sobre cada selo segundo versão vigente dos critérios | Não conceder por patrocínio, plano ou pressão comercial |
+| Instância de recurso | Revisar decisões materiais com independência e ausência de conflito de interesse | Não ser a mesma pessoa única responsável pelo ato contestado |
+| Autoridade de publicação | Exibir/retirar estado público após decisão competente e trilha versionada | Não inferir concessão por indicador, cache ou resultado de cálculo |
+
+O titular concreto, critérios de impedimento, níveis de alçada e competências de substituição permanecem pendentes de adjudicação humana. IA/automação pode apoiar triagem e conferência, mas não é a autoridade final de fraude, concessão ou revogação.
+
+### 2. Ciclos de estado independentes
+
+```text
+VERIFICADO:
+NÃO SOLICITADO → SOLICITADO → EM ANÁLISE
+→ [COMPLEMENTAÇÃO / INDEFERIDO / APROVADO]
+→ VIGENTE
+→ [REAVALIAÇÃO / EXPIRADO / SUSPENSO / REVOGADO]
+→ [RENOVADO / ENCERRADO / RECURSO E REEXAME]
+
+CONTRIBUIÇÃO RECONHECIDA:
+NÃO SOLICITADO / CANDIDATO ELEGÍVEL
+→ COLETA E VERIFICAÇÃO DE EXPERIÊNCIAS
+→ APURAÇÃO E CONTROLE DE ROBUSTEZ
+→ [BASE INSUFICIENTE / COMPLEMENTAÇÃO / INDEFERIDO / APROVADO]
+→ VIGENTE
+→ [REAVALIAÇÃO / EXPIRADO / SUSPENSO / REVOGADO]
+→ [RENOVADO / ENCERRADO / RECURSO E REEXAME]
+```
+
+Estados conceituais não autorizam esquema, endpoints, execução automática ou exibição pública. Recusa de avaliação por Pessoa não é falha nem fundamento de penalização do Coletivo.
+
+### 3. Regras de decisão e evidência
+
+- Toda decisão deve vincular objeto (Coletivo), selo, período, versão de critérios, evidências admissíveis, impedimentos, responsável competente, justificativa, data e possibilidade de revisão.
+- O selo **Verificado** depende de comprovação suficiente de existência/representação; não depende de satisfação e não é comprado.
+- **Contribuição Reconhecida** exige Verificado vigente como pressuposto, mais evidências elegíveis, contribuição percebida e robustez segundo parâmetros ainda não aprovados em CBR-03.
+- A decisão de publicar o selo é distinta da decisão privada de concessão; não publicar documentos, autores, listas de participantes, denúncias ou números reidentificáveis.
+- A resposta favorável de uma única experiência, indicador parcial ou revisão de IA não altera o status público sem decisão competente.
+- Renovação exige reexame dos critérios aplicáveis, atualidade das evidências e mudanças materiais. Não renovar automaticamente por pagamento ou ausência de denúncia.
+
+### 4. Vigência e gatilhos de reavaliação
+
+A duração de cada ciclo, antecedência de aviso, prazo para complementação e janela de recurso **não estão definidos**. Valores trimestrais/semestrais/anual são hipóteses para avaliação posterior, não prazos oficiais.
+
+Gatilhos candidatos:
+- mudança de nome, finalidade ou responsável do Coletivo;
+- inconsistência relevante em registro de existência/representação;
+- novas evidências sobre fraude, coerção ou manipulação;
+- perda de robustez na janela de contribuição ou alteração material de atividades;
+- erro material confirmado, decisão revisada, retificação ou determinação competente;
+- período de vigência encerrado.
+
+### 5. Suspensão versus revogação versus expiração
+
+| Situação | Leitura proposta | Consequência pública candidata |
+|---|---|---|
+| Vigente | Critérios válidos e decisão competente | Exibir somente o selo autorizado |
+| Em complementação | Faltam evidências para nova decisão | Não exibir concessão inexistente; selo vigente anterior só permanece conforme regra própria |
+| Expirado | Ciclo terminou sem renovação válida | Retirar o selo de exibição vigente; preservar histórico protegido |
+| Suspenso | Medida cautelar/revisável com causa e prazo de reexame | Não exibir como vigente; sem rótulo público acusatório automático |
+| Revogado | Decisão material final fundamentada | Retirar exibição vigente e impedir ressurreição por cache/backup |
+| Indeferido | Condições não atendidas no ciclo examinado | Sem selo; não publicar reprovação como juízo de qualidade |
+| Em recurso | Decisão impugnada, sujeito a regras de efeito suspensivo | Não restaurar selo automaticamente por recurso interposto |
+
+O efeito de perda/suspensão de Verificado sobre Contribuição Reconhecida precisa ser definido explicitamente: **não apresentar Contribuição Reconhecida como vigente quando seu pressuposto obrigatório não estiver vigente**, sem reescrever avaliações históricas, e assegurando reexame proporcional.
+
+### 6. Comunicação, direitos e auditoria
+
+O Coletivo recebe decisão com fundamento suficiente e orientação de complementação/recurso, sem dados protegidos de avaliadores ou denunciantes. A Pessoa avaliada não recebe notificação pública sobre denúncia ou decisão institucional apenas por ter participado. Acesso a provas é limitado por finalidade e papel.
+
+Toda emissão, renovação, suspensão, revogação, expiração, retificação e restauração autorizada deve produzir evento auditável e versão temporal, propagando retirada de selo a card, PER-103, buscas, caches e outros derivados dentro de prazo operacional a aprovar. Backup e replay não devem reativar estado encerrado.
+
+### 7. Cenários de validação
+
+1. Coletivo existente, mas representante trocado sem confirmação: reexaminar Verificado, sem apagar histórico de avaliações.
+2. Coletivo legítimo com amostra insuficiente: Verificado pode vigorar; Contribuição Reconhecida não é concedida.
+3. Coletivo paga plano/anúncio: não ganha prioridade nem selo.
+4. Fraude de avaliação sob investigação: reexame proporcional; sinal isolado não determina culpa.
+5. Verificado suspenso: dependência do segundo selo exige retirada de vigência pública até decisão específica.
+6. Prazo expirado sem nova decisão: selo deixa de ser apresentado como vigente.
+7. Recurso provido: restabelecimento só por nova decisão competente, com trilha auditável.
+8. Decisão revogada permanece em cache: falha de integridade, deve haver invalidação e não ressurreição.
+
+**CBR-06 → OPEN.** Permanecem não adjudicados: alçadas nominadas, segregação mínima, calendários de validade, prazos de notificação/recurso, critérios finais de concessão, fluxos excepcionais, segurança jurídica e contrato de publicação CBR-07. Não há implementação autorizada.
