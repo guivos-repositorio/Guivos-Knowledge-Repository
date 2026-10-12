@@ -4603,3 +4603,74 @@ GKR MENU → UNCHANGED
 BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
 NEXT → RSP-05.D
 ```
+
+## Etapa 279 — RSP-05.D: Recursos, contestação e revisão institucional independente (v4.31 candidato)
+
+**Resultado:** EXAME INDIVIDUAL DOCUMENTADO / CONVERGÊNCIA ANALÍTICA CONDICIONAL / ADJUDICAÇÃO NORMATIVA PENDENTE. Não existe instância recursal designada, recurso real apreciado ou efeito sobre selo autorizado por este exame.
+
+### Questão decisória
+
+Como garantir contestação proporcional, revisão humana imparcial e tratamento rastreável de decisões sobre `Verificado` e `Contribuição Reconhecida`, preservando direitos dos Coletivos e privacidade das Pessoas avaliadoras, denunciantes e participantes?
+
+### Oito controles candidatos
+
+| Controle | Objeto | Salvaguarda proposta |
+|---|---|---|
+| REC-01 — Legitimidade | Quem pode contestar e em quais hipóteses | Vínculo e interesse legitimados sem divulgação de avaliadores |
+| REC-02 — Comunicação | Ciência do resultado e fundamentos proporcionais | Não revelar relatos individuais ou elementos sensíveis |
+| REC-03 — Protocolo | Recebimento, identificação, versão e integridade do recurso | Rastro protegido e confirmação sem promessa de deferimento |
+| REC-04 — Admissibilidade | Escopo, tempestividade e requisitos de exame | Prazos e hipóteses sujeitos à política ratificada |
+| REC-05 — Independência | Impedimentos e instância revisora competente | Decisor originário não julga seu próprio ato |
+| REC-06 — Instrução revisional | Novas evidências, diligência e contraditório | Acesso mínimo, minimização e não retaliação |
+| REC-07 — Deliberação | Manutenção, reforma, anulação ou retorno à instrução | Ato humano fundamentado, versionado e rastreável |
+| REC-08 — Efeitos | Correção canônica e projeção pública consistente | Recurso não concede/restaura selo automaticamente |
+
+### Regras de proteção e independência
+
+1. A Pessoa avaliadora não se torna parte identificável do processo pelo simples fato de ter apresentado resposta R1; sua identidade e participação sensível permanecem protegidas.
+2. O Coletivo deverá poder compreender razões proporcionais e contestar erros sem exigir acesso ao conteúdo integral das avaliações privadas.
+3. Protocolo de recurso e resultado de mérito são atos distintos; apresentação do recurso não implica efeito suspensivo, restauração ou publicação sem norma específica.
+4. Suspeita de fraude, denúncia ou baixa amostra não constitui decisão recorrível de mérito até haver ato formal aplicável; ritos de proteção urgentes, se necessários, exigem fundamento próprio.
+5. Prazos, admissibilidade, instâncias, efeitos cautelares e hipóteses de nova revisão precisam ser ratificados, inclusive tratamento justo de coletivos informais.
+6. Revisão deve registrar conflito de interesses, competência, política vigente no ato original, evidências novas, motivação e efeitos sobre ambos os selos.
+7. Reforma de decisão não apaga o ato anterior nem divulga seus fundamentos protegidos; o histórico institucional e a projeção pública têm finalidades diferentes.
+8. Parceiros, patrocinadores, vendedores e modelos de IA não podem influenciar a decisão recursal por vantagem econômica ou score.
+9. Eventual erro de publicação pode demandar retirada técnica imediata por política aprovada, sem antecipar julgamento definitivo do mérito.
+10. Medidas de proteção contra coação e retaliação devem alcançar avaliadores, denunciantes, representantes e responsáveis pela instrução.
+
+### Fluxo institucional candidato
+
+`DECISÃO FORMAL COMUNICADA → PROTOCOLO DE CONTESTAÇÃO → TRIAGEM DE ADMISSIBILIDADE → IMPEDIMENTOS E DESIGNAÇÃO INDEPENDENTE → INSTRUÇÃO PROTEGIDA → DECISÃO RECURSAL HUMANA → REGISTRO CANÔNICO → RECONCILIAÇÃO EDITORIAL/OPERACIONAL`.
+
+O fluxo é analítico. Nenhuma etapa cria novo `GKR-TRN-*`, interface, permissão ou prazo operacional.
+
+### Cenários de fronteira
+
+| Situação | Tratamento candidato |
+|---|---|
+| Representante pede nomes de avaliadores críticos | Oferecer fundamentação proporcional sem identidade ou respostas protegidas |
+| Decisor inicial integra a instância de revisão | Declarar impedimento e remeter a revisor independente habilitado |
+| Coletivo pequeno questiona interpretação estatística | Reexaminar limites da amostra sem presunção de fraude |
+| Coletivo espiritual tem recurso que expõe associação religiosa | Minimizar dados e proteger registros e acesso |
+| Recurso é protocolado após selo expirado | Separar admissibilidade, mérito histórico, renovação e publicabilidade |
+| Reforma favorável do mérito, sem aprovação editorial | Não exibir selo antes de autorização editorial e estado vigente |
+| Suspeita de manipulação é descartada | Corrigir registros e efeitos legítimos sem apagar trilha de auditoria |
+| Patrocinador pede revisão acelerada | Preservar ordem e critérios equitativos, ressalvadas prioridades normativamente aprovadas |
+
+### Deliberações ainda exigidas
+
+Ratificar legitimados, objetos e fundamentos de contestação, prazos, ciência e comunicação, instâncias de admissibilidade e mérito, impedimentos, efeitos suspensivos, níveis de acesso à prova, revisão de medidas cautelares, tratamento de denúncias e proteção antirretaliação, resultados possíveis, atualização canônica e critérios de publicação. O mesmo conjunto deve ser consistente com DEC-03.C/D, DEC-04, DEC-05.A/C e RSP-06; nenhuma ratificação é presumida.
+
+```text
+ETAPA 279 RSP-05.D INDIVIDUAL EXAM → DOCUMENTED
+RSP-05.D ANALYTICAL DIRECTION → CONDITIONAL CONVERGENCE
+RSP-05.D HUMAN NORMATIVE ADJUDICATION → PENDING
+RSP-05.A..F EXAMS → 4/6 DOCUMENTED
+RSP-05.A..F HUMAN ADJUDICATION → 0/6 CONFIRMED
+DEC-01..05 EXAMS → 25/25 DOCUMENTED
+DEC-01..05 HUMAN NORMATIVE RATIFICATIONS → 0/25 CONFIRMED
+PR #654 → OPEN / DRAFT
+GKR MENU → UNCHANGED
+BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
+NEXT → RSP-05.E
+```
