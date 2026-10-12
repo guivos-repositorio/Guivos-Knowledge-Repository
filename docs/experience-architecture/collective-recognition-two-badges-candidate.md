@@ -2,7 +2,7 @@
 id: GKR-COLLECTIVE-RECOGNITION-001
 title: Coletivos — Verificado e Contribuição Reconhecida
 status: proposed
-version: 3.1.0
+version: 3.2.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -1918,6 +1918,67 @@ DEC-01.D DECISION DRAFT → PREPARED
 DEC-01.A..D EXPRESS NORMATIVE ADJUDICATION → PENDING
 DEC-01.E → NEXT DECISION DRAFT
 GKR MENU ACCESS → REQUESTED / NOT PUBLISHED
+PR #654 → OPEN / DRAFT
+BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
+```
+
+
+## DEC-01.E — Minuta de decisão expressa sobre integridade e proteção (v3.2 candidato)
+
+**Estado:** MINUTA PREPARADA PARA DELIBERAÇÃO HUMANA; NÃO ADJUDICADA. Esta seção encerra a preparação das minutas DEC-01.A..E, sem aprová-las. Preserva a autoridade canônica de Avaliação e Reputação, a separação entre avaliação privada e publicação autorizada e os limites do PER-103.
+
+### Texto normativo candidato
+
+> A Guivos deverá assegurar que a verificação de Coletivos e a utilização de evidências de experiências ocorram mediante procedência identificável, integridade dos registros, proteção proporcional de dados e direitos das Pessoas, tratamento imparcial de conflitos e contestação fundamentada. Evidências insuficientes, avaliações críticas legítimas, denúncias não confirmadas ou sinais automatizados de risco não equivalem, isoladamente, a fraude comprovada. Nenhum reconhecimento autoriza a divulgação automática de participantes, dados de saúde, crenças, objetivos individuais ou avaliações privadas. A concessão, manutenção, suspensão, revogação e publicação dos selos dependem de competências e critérios normativos próprios e auditáveis.
+
+### DEC-01.E — Itens submetidos à deliberação
+
+| Item | Proposta a ratificar ou ajustar | Estado |
+|---|---|---|
+| E.1 Procedência e autenticidade | Exigir origem, temporalidade, pertinência e conferência independente de evidências | SEM DELIBERAÇÃO |
+| E.2 Integridade da experiência | Proteger elegibilidade, vínculo com experiência, deduplicação e atribuição | SEM DELIBERAÇÃO |
+| E.3 Antimanipulação | Investigar coerção, duplicidade e seleção enviesada sem decisão sancionadora automática | SEM DELIBERAÇÃO |
+| E.4 Privacidade | Minimizar coleta, separar fonte privada de projeção pública e controlar acesso | SEM DELIBERAÇÃO |
+| E.5 Não retaliação | Resguardar autores de avaliações legítimas e denunciantes | SEM DELIBERAÇÃO |
+| E.6 Revisão e recurso | Garantir fundamento, possibilidade de complementação e revisão independente | SEM DELIBERAÇÃO |
+| E.7 Vigência | Controlar versão de prova, mudanças materiais, revalidação e temporalidade | SEM DELIBERAÇÃO |
+| E.8 Publicação/retirada | Exibir apenas estado autorizado e vigente; impedir reativação por cache | SEM DELIBERAÇÃO |
+
+### Limites e exceções
+
+- **Incompletude** gera complementação ou conclusão de base insuficiente, sem rotular o Coletivo como inseguro.
+- **Conflito material** gera exame independente e medidas proporcionais, não declaração automática de fraude.
+- **Risco à Pessoa** pode justificar medida cautelar fundamentada, com prazo, reexame e possibilidade adequada de contestação.
+- **Coletivo sensível** pode oferecer prova reservada, sem divulgação pública de crenças, membros ou histórico de participação.
+- **Crítica legítima** não pode ser excluída apenas por pressão institucional ou comercial.
+- **Dados públicos** não herdam autorização da fonte privada; publicação nos cards/PER-103 continua dependente de autoridade expressa.
+- **Apoio de IA** não substitui decisão competente nem determina sanção automaticamente.
+
+### Pendências para aprovação e operação
+
+Deliberar competências e alçadas, política de identidade e acesso, bases e prazos de retenção conforme legislação aplicável, controles de segurança, resposta a incidentes, custódia das evidências, reexame, recurso, tratamento de Coletivos sensíveis, SLA de retirada e ensaios técnicos. Ratificação do princípio sem essas condições não valida operacionalmente P0-05.
+
+### Pacote DEC-01 completo para deliberação
+
+| Instrumento | Minuta expressa | Adjudicação normativa |
+|---|---|---|
+| DEC-01.A Existência | PREPARADA | PENDENTE |
+| DEC-01.B Representação | PREPARADA | PENDENTE |
+| DEC-01.C Atuação | PREPARADA | PENDENTE |
+| DEC-01.D Experiência | PREPARADA | PENDENTE |
+| DEC-01.E Integridade | PREPARADA | PENDENTE |
+
+Para cada instrumento, a instância humana competente deverá registrar **APROVAR**, **APROVAR COM AJUSTES**, **DEVOLVER PARA REVISÃO** ou **REJEITAR**, com fundamentos, autoridade, data, escopo, reservas e versão. O comando conversacional “de acordo, segue” não substitui registro de ratificação individual inequívoca.
+
+### Navegação no GKR
+
+Pedido de inclusão de acesso no MENU permanece registrado e **não publicado**. O `mkdocs.yml` da main restringe destinos do MENU a conteúdos correntes; proposta `draft/proposed` não deve aparecer como norma vigente por conveniência. Na consolidação final, identificar o hub canônico de Coletivos e um destino editorial corrente autorizado ou obter extensão formal de autoridade para acesso a proposta, sem alterar masters por inferência.
+
+```text
+DEC-01.A..E EXPLICIT DRAFTS → 5/5 PREPARED
+DEC-01 HUMAN NORMATIVE ADJUDICATION → 0/5 CONFIRMED
+P0-01..05 CANDIDATE PROTOCOLS → DOCUMENTED / OPEN
+GKR MENU ENTRY → REQUESTED / NOT PUBLISHED
 PR #654 → OPEN / DRAFT
 BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
 ```
