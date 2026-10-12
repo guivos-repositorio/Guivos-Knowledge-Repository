@@ -2,7 +2,7 @@
 id: GKR-COLLECTIVE-RECOGNITION-001
 title: Coletivos — Verificado e Contribuição Reconhecida
 status: proposed
-version: 2.5.0
+version: 2.6.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -1610,6 +1610,83 @@ DEC-01.D INDIVIDUAL EXAM → COMPLETE
 DEC-01.D ANALYTICAL DIRECTION → CONDITIONAL CONVERGENCE
 DEC-01.D HUMAN NORMATIVE ADJUDICATION → PENDING
 DEC-01.E → NEXT
+PR #654 → OPEN / DRAFT
+ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
+```
+
+
+## DEC-01.E — Exame individual: integridade e proteção (v2.6 candidato)
+
+**Resultado:** CONVERGÊNCIA ANALÍTICA CONDICIONAL. O exame conclui a cobertura analítica DEC-01.A..E, sem adjudicar formalmente qualquer item ou autorizar selos. Preserva separação R1 privado / P1 público, autoridade contextual de avaliação e limitações do PER-103.
+
+### Pergunta decisória
+
+Quais garantias permitem reconhecer evidências autênticas e tratá-las com justiça, sem permitir manipulação, discriminação, retaliação, divulgação de dados protegidos ou condenação automática do Coletivo?
+
+### Matriz de requisitos
+
+| Gate | Controle candidato | Limite não negociável de inferência |
+|---|---|---|
+| INT-01 Procedência | Fonte, data, contexto, vínculo com claim e integridade registrados | Evidência duplicada ou publicação social não prova independência |
+| INT-02 Elegibilidade | Experiência delimitada, Pessoa lógica deduplicada e atribuição material verificáveis | Inscrição não comprova vivência e vivência não prova evolução |
+| INT-03 Antimanipulação | Sinais de respostas coordenadas, coerção, seleção enviesada e conflitos submetidos a exame humano | Sinal automatizado não é fraude comprovada |
+| INT-04 Privacidade | Minimização, finalidade, acesso por competência e separação de dados privados/publicados | Selo não autoriza revelar participante ou resposta individual |
+| INT-05 Não retaliação | Canal protegido, anonimização/segregação apropriada, proteção contra pressão por resposta positiva | Avaliação crítica legítima não é ilícito |
+| INT-06 Direito de revisão | Procedimento documentado, fundamentação proporcional, complementação e recurso independente | Denúncia isolada não implica punição definitiva |
+| INT-07 Temporalidade | Versão de prova, revalidação e registro de mudança material | Histórico de atuação não confirma automaticamente vigência atual |
+| INT-08 Publicação coerente | Estado competente, validade, versão e retirada das projeções autorizadas | Cache não pode ressuscitar reconhecimento revogado |
+
+### Diferenciações de risco
+
+1. **Evidência incompleta:** solicitar complementação; a ausência de prova não autoriza rotular como falso ou inseguro.
+2. **Evidência conflitante:** suspender conclusão do claim controverso e revisar, sem presumir má-fé.
+3. **Indício de manipulação:** preservar registros necessários, proteger Pessoas e submeter à autoridade de integridade.
+4. **Risco grave à Pessoa:** medidas cautelares proporcionais, com prazo, justificativa, proteção e revisão posterior adequada.
+5. **Fraude material constatada em processo competente:** decidir efeitos sobre selo de acordo com critérios normativos futuros; não apagar avaliações legítimas.
+6. **Erro técnico/publicação indevida:** conter divulgação e reconciliar superfícies sem anunciar juízo negativo sobre Coletivo.
+
+### Condições de salvaguarda
+
+- Coletivos espirituais, de saúde, apoio social e grupos pequenos não devem ser obrigados a divulgar membros, crenças, diagnósticos ou objetivos pessoais para obter reconhecimento.
+- Confirmações privadas de experiência exigem base legítima, minimização, autorização adequada e custódia; não devem ser expostas a representantes do Coletivo automaticamente.
+- Quem tem interesse no resultado não decide sozinho conflito, concessão ou recurso. Equipe comercial, anunciante e patrocinador não obtêm autoridade de reconhecimento.
+- Respostas negativas, parciais, não aplicáveis e silêncio preservam significado próprio; não podem ser apagados ou recodificados por conveniência.
+- Política de proteção deve levar em conta leis aplicáveis e direitos das Pessoas, sem presumir que um desenho documental já seja avaliação jurídica ou teste de segurança executado.
+
+### Cenários de fronteira examinados
+
+| Caso | Encaminhamento candidato |
+|---|---|
+| Avaliações positivas obtidas em troca de benefício | Examinar coerção e validade da coleta; não conceder por índice |
+| Organizador exige identidade de avaliador crítico | Não revelar por poder de representação |
+| Fotografias de terceiros usadas como prova | Confrontar origem e atribuição |
+| Grupo informal com evidências reservadas legítimas | Admitir exame protegido proporcional |
+| Denúncia sem confirmação | Investigar sem rotular automaticamente |
+| Atuação real com disputa de liderança | Preservar prova de existência, suspender conclusão da representação |
+| Selo revogado aparece em cache | Retirada/reconciliação pendentes de engenharia e teste |
+| Pessoa não responde | Não imputar percepção desfavorável |
+| Pequena amostra revela identidade por cruzamento | Restringir agregado/publicação |
+| Recurso comprova erro de análise | Nova decisão fundamentada sem reescrita silenciosa do histórico |
+
+### Pendências para aprovação normativa
+
+Definir competência de revisão, evidências admitidas em apuração, política de acesso/retencão e direitos de Pessoas, segurança e incidentes, proteção e recurso, procedimentos por risco, prazos para revalidação e propagação de retirada. DEC-01.E documenta princípios e testes de fronteira, não demonstra controles implementados nem satisfaz automaticamente P0-05.
+
+### Consolidação DEC-01.A..E
+
+| Item | Cobertura analítica | Aprovação normativa |
+|---|---|---|
+| DEC-01.A Existência | CONVERGÊNCIA CONDICIONAL | PENDENTE |
+| DEC-01.B Representação | CONVERGÊNCIA CONDICIONAL | PENDENTE |
+| DEC-01.C Atuação | CONVERGÊNCIA CONDICIONAL | PENDENTE |
+| DEC-01.D Experiência vivida | CONVERGÊNCIA CONDICIONAL | PENDENTE |
+| DEC-01.E Integridade/proteção | CONVERGÊNCIA CONDICIONAL | PENDENTE |
+
+```text
+DEC-01 INDIVIDUAL EXAMS → 5/5 DOCUMENTED
+DEC-01 NORMATIVE ADJUDICATION → 0/5 CONFIRMED
+DEC-01 INTEGRATED DECISION RECORD → NEXT
+CBR-01..08 FORMAL ADJUDICATION → 0/8 CONFIRMED
 PR #654 → OPEN / DRAFT
 ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
 ```
