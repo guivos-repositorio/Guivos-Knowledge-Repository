@@ -2,7 +2,7 @@
 id: GKR-COLLECTIVE-RECOGNITION-001
 title: Coletivos — Verificado e Contribuição Reconhecida
 status: proposed
-version: 3.4.0
+version: 3.5.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -2080,5 +2080,79 @@ DEC-02 NORMATIVE RATIFICATION → 0/5 CONFIRMED
 DEC-01 NORMATIVE RATIFICATION → 0/5 CONFIRMED
 GKR MENU ACCESS → REQUESTED / NOT PUBLISHED
 PR #654 → OPEN / DRAFT
+BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
+```
+
+
+## DEC-02.A — Exame individual: mérito substantivo da contribuição percebida (v3.5 candidato)
+
+**Resultado:** CONVERGÊNCIA ANALÍTICA CONDICIONAL. Não é adjudicação humana formal, aprovação de limiares, concessão do selo ou autorização de publicar.
+
+### Pergunta decisória
+
+Quais percepções elegíveis de Pessoas, vinculadas à finalidade real de experiências atribuídas ao Coletivo, representam contribuição substantiva para a Journey — sem reduzir a avaliação a satisfação genérica nem afirmar evolução individual causalmente comprovada?
+
+### Distinção semântica do mérito
+
+| Conceito | Pode informar | Não comprova isoladamente |
+|---|---|---|
+| Satisfação | Qualidade percebida da experiência | Benefício pertinente à vida da Pessoa |
+| Participação | Vivência de etapa efetivamente ocorrida | Aprendizado, benefício ou avanço |
+| Benefício percebido | Algo que a Pessoa considera relevante para si, no recorte vivido | Resultado objetivo ou duradouro |
+| Aprendizado percebido | Conhecimento, compreensão ou habilidade que a Pessoa relata ter desenvolvido | Domínio técnico certificado |
+| Avanço percebido | Percepção de progresso em objetivo ou área de vida relacionada à experiência | Evolução pessoal objetiva ou causalmente atribuída |
+| Contribuição institucional | Evidências de benefício/aprendizado/avanço percebido em experiências materialmente atribuíveis ao Coletivo | Qualidade universal do Coletivo, segurança absoluta ou resultado de todas as Pessoas |
+
+### Compatibilidade com a finalidade
+
+O exame de mérito deve verificar a correspondência entre (i) propósito público legítimo do Coletivo, (ii) natureza e conteúdo da experiência vivida, (iii) dimensão avaliada e (iv) percepção expressa livremente. Ao menos uma dimensão relevante poderá constituir sinal substantivo, **sem exigir as três simultaneamente**; não autoriza selecionar somente respostas positivas e ocultar experiências ou dimensões desfavoráveis pertinentes.
+
+### Exemplos de enquadramento candidato
+
+| Coletivo / experiência | Possível contribuição pertinente | Inferência indevida |
+|---|---|---|
+| Grupo de pedal | Saúde, atividade física, convivência e disciplina percebidas | Garantia de melhora clínica |
+| Grupo de oração | Acolhimento, convivência, aprendizado ou desenvolvimento espiritual percebidos | Divulgação de crença ou condição pessoal |
+| Grupo de formação profissional | Aprendizado, preparação e progresso profissional percebidos | Emprego ou renda futura garantidos |
+| Coletivo de educação financeira | Compreensão e organização financeira percebidas | Comprovação de aumento patrimonial |
+| Coletivo cultural | Expressão, pertencimento e aprendizado artístico percebidos | Benefício uniforme a todos |
+| Mobilização comunitária | Apoio, conexão ou contribuição coletiva percebidos | Impacto social causal automaticamente comprovado |
+
+### Regra substantiva candidata
+
+1. Exigir experiência realmente vivida e atribuição material verificável, conforme DEC-01.D e DEC-02.D.
+2. Examinar percepções contextualizadas sobre benefício, aprendizado ou avanço, evitando perguntas genéricas apenas sobre satisfação.
+3. Determinar antecipadamente dimensões pertinentes à finalidade para reduzir seleção oportunista após observar resultados.
+4. Tratar respostas favoráveis, parciais, desfavoráveis, não aplicáveis e ausências com significados próprios.
+5. Registrar resultados contraditórios e riscos materiais sem compensá-los por uma dimensão positiva.
+6. Não converter percepção individual em evolução objetiva, diagnóstico, prova de causalidade ou nota global.
+7. Exigir robustez estatística e integridade em DEC-02.C/E antes de reconhecer mérito institucional.
+
+### Casos de fronteira
+
+- Avaliação “adorei o evento” sem benefício indicado: satisfação, insuficiente por si só.
+- Participação documentada sem resposta: experiência válida, sem percepção de contribuição inferida.
+- Pedalada com benefício de convivência e aprendizagem financeira não aplicável: dimensão pertinente pode ser examinada.
+- Curso com aprendizado positivo mas relatos consistentes de dano/restrições relevantes: análise não pode ignorar contradições.
+- Grupo espiritual com relatos positivos: proteção de crenças e participantes é condição independente.
+- Organização apenas patrocinadora: avaliação permanece contextual, sem atribuição automática de mérito à patrocinadora.
+- Uma resposta favorável isolada: sinal individual admissível, não demonstra suficiência institucional.
+
+### Questões para ratificação
+
+- Definir vocabulário oficial e exemplos de benefício, aprendizado e avanço percebido para cada família de experiências.
+- Definir método de pré-vinculação das dimensões ao propósito, inclusive mudanças de finalidade e múltiplas áreas de vida.
+- Definir como tratar danos, percepções desfavoráveis e contradições sem criar score universal.
+- Validar instrumento de perguntas e interpretação sem afirmar causalidade.
+- Definir critérios de suficiência e robustez em DEC-02.C e autoridade de decisão em DEC-02.E.
+
+```text
+DEC-02.A INDIVIDUAL EXAM → COMPLETE
+DEC-02.A ANALYTICAL DIRECTION → CONDITIONAL CONVERGENCE
+DEC-02.A HUMAN NORMATIVE ADJUDICATION → PENDING
+DEC-02.B → NEXT
+DEC-01.A..E NORMATIVE ADJUDICATION → 0/5 CONFIRMED
+PR #654 → OPEN / DRAFT
+GKR MENU ACCESS → REQUESTED / NOT PUBLISHED
 BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
 ```
