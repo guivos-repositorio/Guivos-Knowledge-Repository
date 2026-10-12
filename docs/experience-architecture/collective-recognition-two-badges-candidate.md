@@ -2,7 +2,7 @@
 id: GKR-COLLECTIVE-RECOGNITION-001
 title: Coletivos — Verificado e Contribuição Reconhecida
 status: proposed
-version: 0.3.0
+version: 0.4.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -189,3 +189,76 @@ Não excluir críticas nem compensar percentual desfavorável com publicidade, p
 - Nenhum resultado de percepção é declarado como evolução causal comprovada.
 
 **CBR-02 permanece OPEN** para validação humana das perguntas e escalas, prova admitida de experiência vivida, atribuição material e permissões de agregação. CBR-03 permanece responsável por limites estatísticos e critério de concessão.
+
+
+## CBR-03 — Contrato candidato de indicadores e robustez (v0.4)
+
+**Escopo:** proposta metodológica, não regra de concessão. A discussão humana ainda deve aprovar os limites de tamanho amostral, intervalos de confiança, janelas, cobertura e critérios substantivos. Nenhum limiar numérico deste documento confere selo.
+
+### 1. Populações e chaves
+
+- **E**: conjunto de experiências elegíveis que comprovadamente ocorreram no recorte, com ligação material ao Coletivo.
+- **P**: conjunto de Pessoas distintas elegíveis, com deduplicação privada governada.
+- **I**: Pessoas elegíveis efetivamente convidadas a avaliar, usando procedimento não seletivo e rastreável.
+- **R_d**: respostas elegíveis válidas à dimensão d, com deduplicação por Pessoa × experiência avaliável, preservando as respostas históricas conforme contrato canônico.
+- **F_d**: respostas classificadas favoráveis na dimensão d; **A_d**: respostas parciais; **N_d**: desfavoráveis; **NA_d**: não se aplica; **U_d**: informação insuficiente; **M_d**: omissões.
+
+Não confundir número de avaliações, experiências e Pessoas únicas. Repetições da mesma Pessoa em várias edições criam **dependência estatística**; deve-se apresentar participação de Pessoas distintas, concentração, agrupamento e estimativa de tamanho efetivo em vez de tratar respostas como independentes.
+
+### 2. Indicadores com denominadores explícitos
+
+Para d em {benefício, aprendizado, avanço}:
+
+`TAXA_FAVORAVEL_d = F_d / (F_d + A_d + N_d)`, quando denominador > 0 e elegibilidade/integridade aprovadas. Apresentar também `TAXA_PARCIAL_d = A_d / (F_d + A_d + N_d)` e `TAXA_DESFAVORAVEL_d = N_d / (F_d + A_d + N_d)` em vez de mascarar divergência. Categorias `NA_d`, `U_d` e `M_d` são contabilizadas separadamente, não computadas como insatisfação nem como sucesso.
+
+Classificação favorável candidata: **correspondeu / correspondeu plenamente** na escala semântica UXA-057. `Correspondeu parcialmente` permanece parcial. O questionário final precisa validar linguagem e interpretação; a correlação entre respostas não deve ser convertida em comprovação causal.
+
+**Cobertura de convites:** Pessoas distintas elegíveis convidadas / Pessoas distintas elegíveis comprovadas e alcançáveis na janela, quando ambas as bases forem legitimamente conhecidas. **Taxa de resposta:** Pessoas distintas que responderam ao menos a uma dimensão / Pessoas distintas legitimamente convidadas. Exibir as duas; não denominar taxa de resposta como cobertura total da experiência.
+
+Quando o universo não é identificável de forma legítima, apresentar `DENOMINADOR_DESCONHECIDO`. Não inventar alcance universal. Não resposta não é resposta desfavorável nem neutra; analisar potencial viés de seleção.
+
+### 3. Robustez e efeitos de seleção
+
+Cada decisão requer análise conjunta:
+- Contagens brutas e distintas; unidade por Pessoa/edição e período.
+- Composição por experiências e concentração por Pessoa, organizador e edição.
+- Taxas de convite e resposta, comparando grupos elegíveis alcançados e não alcançados sem coletar dados sensíveis desnecessários.
+- Intervalos de incerteza adequados ao mecanismo de amostragem; com respostas dependentes ou autoselecionadas, intervalo binomial ingênuo não representa toda a incerteza.
+- Sensibilidade a exclusões antifraude, perdas, respostas parciais, não aplicáveis e concentração em poucas atividades.
+- Estabilidade temporal entre períodos comparáveis e mudanças materiais do Coletivo.
+- Tratamento de risco de reidentificação e supressão de agregados pequenos.
+
+Não existe um percentual mínimo oficial, tamanho mínimo universal, prazo ou número de atividades aprovado. A escolha deve passar por cenários calibrados e análise de falsos positivos/negativos, com atenção aos pequenos Coletivos.
+
+### 4. Decisão proposta, sem pontuação única
+
+`BASE_INSUFICIENTE`: denominador ausente/inválido, amostra inadequada, evidência fraca ou cobertura indecidível.  
+`EM_REVISAO`: fraude potencial, viés relevante, conflito de evidências, denúncia fundamentada em apuração ou mudança de contexto.  
+`ELEGIVEL_A_DELIBERACAO`: requisitos de existência, elegibilidade, integridade, robustez e contribuição atendidos sob regras **futuras** publicadas e versionadas.  
+`NAO_ELEGIVEL_NO_CICLO`: critérios futuros válidos não atendidos, com fundamentação e possibilidade de recurso.  
+
+São estados candidatos; nenhuma classificação deve ser calculada automaticamente antes de decisão de governança. `BASE_INSUFICIENTE` não equivale a contribuição negativa.
+
+### 5. Cenários de ensaio (sem concessão)
+
+| Caso | Dados sintéticos | Leitura necessária |
+|---|---|---|
+| A | 3 favoráveis / 3 válidas | 100% observado, evidência estatística muito limitada |
+| B | 90 favoráveis / 100 válidas | 90% observado; testar cobertura, seleção e dependência |
+| C | 18 favoráveis / 20 válidas, somente 20 de 400 convidados responderam | 90% observado com taxa de resposta reduzida; alto risco de viés |
+| D | 40 avaliações, 30 pertencem a 2 Pessoas frequentes | Independência insuficiente para considerar n=40 |
+| E | 30 avaliações de uma única edição extraordinária | Não generalizar automaticamente para todo o Coletivo |
+| F | Respostas favoráveis, mas participação só declarada sem corroboração | Não converter percepção em experiência verificada |
+| G | Coletivo pequeno legítimo com 12 participantes, 10 respostas verificadas | Não penalizar por ser pequeno; calibrar incerteza e elegibilidade conforme população real |
+| H | Denúncia não confirmada de avaliação coordenada | Revisão proporcional e direito de resposta; denúncia não é fraude provada |
+
+### 6. Perguntas em aberto para fechamento
+
+1. O selo exige contribuição favorável em pelo menos uma dimensão ou também desempenho mínimo nas outras? Evitar excluir grupos de finalidade específica onde `não se aplica` seja legítimo.
+2. Janela temporal, renovação e tratamento de mudança de propósito/organizador/atividade.
+3. Estatística apropriada para amostras pequenas, resposta voluntária, repetição de Pessoas e efeitos de contexto.
+4. Política de supressão, privacidade e exposição de numeradores.
+5. Critério proporcional e auditável para Coletivos pequenos, sem conceder selo por evidência insuficiente.
+6. Alçada humana de revisão, versão dos métodos e regras de contestação.
+
+**CBR-03 → OPEN**, até calibração validada e adjudicação humana. Nenhum `KPI` canônico, algoritmo de selo ou entitlement é criado por este documento.
