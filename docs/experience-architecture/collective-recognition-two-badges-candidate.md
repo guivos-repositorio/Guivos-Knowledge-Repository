@@ -2,7 +2,7 @@
 id: GKR-COLLECTIVE-RECOGNITION-001
 title: Coletivos — Verificado e Contribuição Reconhecida
 status: proposed
-version: 1.5.0
+version: 1.6.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -966,5 +966,72 @@ Esta matriz define **requisitos candidatos verificáveis**, mas a suficiência c
 P0-01 EVIDENCE PROTOCOL CANDIDATE → DOCUMENTED
 P0-01 NORMATIVE APPROVAL → PENDING
 CBR-01..08 FORMAL ADJUDICATION → 0/8 CONFIRMED
+REAL BADGE ISSUANCE / PUBLICATION → NOT AUTHORIZED
+```
+
+
+## ADJ-07 / P0-02 — Regra candidata de mérito e parâmetros de concessão (v1.6)
+
+**Natureza:** proposta de política quantitativa e substantiva para deliberação, não aprovação de thresholds, KPI canônico ou autorização de emissão.
+
+### 1. Mérito vinculado ao propósito
+
+O selo `Contribuição Reconhecida` depende do selo `Verificado` vigente. Seu mérito é o conjunto **contextualizado** de benefícios, aprendizados ou avanços percebidos pelas Pessoas elegíveis em experiências materialmente atribuíveis ao Coletivo. Participação, satisfação geral, popularidade, seguidores e volume de atividades não substituem contribuição à Journey.
+
+Um Coletivo pode evidenciar contribuição pertinente em **uma dimensão relevante** à sua finalidade: não exigir resultados positivos nas três. Contudo, os resultados negativos e parciais de dimensões aplicáveis não podem ser ocultados ou compensados automaticamente. A indicação de dimensão relevante exige evidência coerente com atividades e finalidade declaradas, não escolha oportunista posterior para maximizar aprovação.
+
+### 2. Funil decisório: gates não compensatórios
+
+| Gate | Verificação | Bloqueio candidato |
+|---|---|---|
+| M1 | Verificado vigente e competência de atribuição confirmada | Ausência do pressuposto |
+| M2 | Experiências vividas, elegíveis, deduplicadas e pertencentes ao recorte | Inscrições, seguidores ou experiências alheias |
+| M3 | Convites não seletivos e rastreáveis | Seleção exclusiva de satisfeitos |
+| M4 | Integridade e privacidade das respostas | Fraude material demonstrada, coação ou exposição indevida |
+| M5 | Amostra suficientemente informativa, Pessoas distintas e cobertura examinada | Amostra insuficiente, desconhecimento de denominadores ou concentração excessiva |
+| M6 | Evidência favorável consistente em pelo menos uma dimensão pertinente e exame de sinais desfavoráveis | Percentuais frágeis ou inconsistência material |
+| M7 | Revisão humana fundamentada e publicação autorizada | Emissão automática ou decisão comercial |
+
+A ausência de dados pode produzir `BASE_INSUFICIENTE`, nunca a afirmação pública de que o Coletivo é ruim ou inseguro.
+
+### 3. Medidas e limiares sujeitos a ensaio
+
+Para dimensão `d`: `n_d=F_d+P_d+D_d`; `taxa_favoravel_d=F_d/n_d`, distinguindo parciais `P_d` e desfavoráveis `D_d`. `NA`, não sabe e silêncio não entram nesse denominador, mas suas contagens são mantidas. Também registrar Pessoas distintas, experiências/edições, taxas de convite e resposta, integridade, concentração e incerteza.
+
+**Três configurações apenas para teste de sensibilidade (NÃO thresholds adotados):**
+
+| Configuração exploratória | Suficiência mínima sintética | Vantagem | Risco |
+|---|---|---|---|
+| A — Amostra absoluta | 20 Pessoas distintas e 2 experiências/edições | Simples | Pode excluir pequenos grupos |
+| B — Proporcional | 70% do universo elegível conhecido, pelo menos 8 Pessoas distintas, 2 experiências/edições quando existirem | Inclui pequenos grupos com boa cobertura | Universo pode ser desconhecido e ainda haver viés |
+| C — Híbrida | 10 Pessoas distintas ou fração suficiente do universo pequeno, mais exame de resposta, independência, incerteza, periodicidade e revisão humana | Maior flexibilidade | Requer calibração e critérios detalhados |
+
+Esses números são **hipóteses construídas para comparar efeitos**, não exigências da Guivos. Não há amostra mínima, percentual de contribuição ou janela temporal oficialmente estabelecidos. A possibilidade de uma única edição exige exame específico para coletivos com atuação episódica, evitando rejeição automática de iniciativas legítimas.
+
+### 4. Ensaio de decisões sem fingir robustez
+
+| Caso | Evidência sintética | Encaminhamento sob lógica candidata |
+|---|---|---|
+| Grupo com 3/3 positivas | n=3, total elegível desconhecido | Base insuficiente, nunca concessão automática |
+| Grupo pequeno com 10/12 favoráveis, 12 participantes elegíveis confirmados | Alta cobertura, um único encontro | Examinar robustez e continuidade; não reprovar por porte |
+| Coletivo com 90/100 favoráveis, convite aberto a 100 elegíveis | Boa amostra observada | Candidato a deliberação, sujeito a integridade e propósito |
+| Coletivo com 18/20 favoráveis, mas 400 convidados | 5% de respostas | Revisão por viés de não resposta |
+| 40 avaliações, 30 de duas Pessoas | Concentração de autores | Corrigir unidade estatística e dependência |
+| Aprendizado positivo, avanço não aplicável | Finalidade educacional | Avaliar mérito na dimensão aplicável |
+| Benefício percebido favorável e denúncias materiais comprovadas | Resultados positivos com problema de integridade | Bloqueio não compensável por favorabilidade |
+| Coletivo recém-criado, uma iniciativa legítima | Atuação demonstrada, pouca história | Regras proporcionais e estado sem base até calibração, não juízo negativo |
+
+### 5. Evidência para calibrar de forma responsável
+
+Antes de adotar números é necessário construir base sintética com distribuição controlada e, quando autorizado e legítimo, dados observacionais adequados; calcular falsos reconhecimentos, falsos indeferimentos, sensibilidade por porte/área de vida, efeito de amostragem voluntária, concentração de Pessoas, alterações de finalidade e capacidade de revisão. Um intervalo de Wilson pode descrever incerteza binomial sob hipóteses específicas, mas não corrige amostragem enviesada ou respostas dependentes. Não converter a confiança estatística isolada em prova de contribuição causal.
+
+### 6. Decisão candidata
+
+Priorizar **configuração híbrida para calibração futura**, com gates não compensatórios, sem fixar números. A emissão exige ratificação humana da dimensão relevante, unidade amostral, requisitos estatísticos, método de coleta, janela, validade, alçadas e mecanismos de recurso.
+
+```text
+P0-02 POLICY OPTIONS → DOCUMENTED
+P0-02 NUMERIC THRESHOLDS → NOT APPROVED
+P0-02 NORMATIVE ADJUDICATION → PENDING
 REAL BADGE ISSUANCE / PUBLICATION → NOT AUTHORIZED
 ```
