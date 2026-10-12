@@ -2,7 +2,7 @@
 id: GEM-OPPORTUNITIES-POINTS-REWARDS-CANDIDATE-001
 title: Oportunidades — Retorno em Pontos e Premiações de Eventos — Proposta Transversal
 status: draft
-version: 0.3.0
+version: 0.4.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -280,4 +280,86 @@ OFFICIAL POINTS PARITY / PERCENTAGE CATALOG → UNDEFINED
 ECONOMIC, UX, LEGAL AND TECHNICAL GATES → PENDING
 PR #655 → OPEN / DRAFT
 MAIN / MENU / MASTERS / REGISTRIES / PRODUCT → UNCHANGED
+```
+
+## 12. Economia dos pontos: paridade, pré-financiamento e liquidação transversal (v0.4.0 candidato)
+
+**Princípio fornecido:** 100% do custo econômico de pontos ofertados decorre da Organização ou Coletivo que os promete; Guivos não é cofinanciadora presumida. A fonte, depósito, titularidade dos recursos, custódia e tratamento contábil exigem decisão posterior.
+
+### Modelo recomendado para avaliação, não regra vigente
+
+1. Definir uma **unidade única de pontos** com fator de emissão e valor econômico de resgate, versionados e passíveis de revisão prospectiva sem retirar direito adquirido indevidamente.
+2. Separar claramente três números: **valor pago pela Pessoa**, **valor econômico financiado pelo ofertante** e **quantidade de pontos emitidos**. Para a modalidade percentual, uma escolha de 5% sobre R$ 200 gera base de custeio de R$ 10; a quantidade emitida depende de paridade a definir. Para premiação fixa de 100 pontos, custo de cobertura depende do valor unitário de responsabilidade por ponto.
+3. Adotar como **hipótese candidata** pré-financiamento segregado ou garantia economicamente suficiente antes de assumir obrigações de pontos. Não converter a hipótese em regra bancária, de pagamento ou financeira aprovada.
+4. Orçamentos de incentivos separados (percentual, primeiras N inscrições, participação validada, classificação), com somatório da exposição e reservas condicionais atômicas.
+5. O saldo da Pessoa somente fica disponível após evento elegível verificado e ledger de crédito idempotente; reserva condicional não é crédito.
+6. Mall e Travel funcionam como **destinos de resgate condicionados a contratos futuros**, com compensação/liquidação entre participantes e produtos. Pontos não equivalem a dinheiro sacável, transferível ou reembolsável sem norma expressa.
+7. Definir quem suporta taxas operacionais, impostos, devoluções, expiração, variações de preço de resgate, fraudes e quebra de lastro, sem transferir o custeio dos pontos à Guivos por omissão.
+
+### Exemplo com duas reservas
+
+- Campanha de uma corrida: 100 pontos × 30 primeiras inscrições elegíveis = teto de 3.000 pontos.
+- Premiações adicionais: 1.000 + 600 + 300 = 1.900 pontos, antes da política de empates.
+- **Teto nominal combinado: 4.900 pontos**, com controles independentes.
+- Se a taxa de garantia futura for R$ `v` por ponto, o valor de lastro seria `4.900 × v`; o documento não define `v` nem paridade de resgate.
+
+### Riscos que exigem adjudicação
+
+| Gate | Ponto decisório | Situação |
+|---|---|---|
+| ECO-PAR | Emissão percentual, valor econômico, paridade, arredondamento e revisões | PENDENTE |
+| ECO-FUND | Pré-financiamento, caução/garantia, custódia e titularidade dos recursos | PENDENTE |
+| ECO-LIQ | Contratos de resgate Mall/Travel, liquidação e responsabilidade por diferença de valores | PENDENTE |
+| ECO-CAN | Estornos, ausência, cancelamento e créditos já resgatados | PENDENTE |
+| ECO-RES | Saldo remanescente, expiração, restituição e eventos de insolvência | PENDENTE |
+| ECO-LEG | Avaliação jurídica, fiscal, consumerista, privacidade e eventual regulação de meios de pagamento | PENDENTE |
+
+**Separações obrigatórias:** incentivo não é desconto presumido; pontos não são declaração de impacto; campanha de pontos não é pagamento por relevância no Journey; participação e resultado permanecem condicionados a prova proporcional; oportunidades sem pontos continuam legítimas.
+
+## 13. Auditoria de pertinência editorial — Home de Organizações e Coletivos (v0.4.0 candidato)
+
+**Fonte examinada na main:** `GKR-UX-HOME-OC-MASTER-001`, versão 1.0.7, `active`, `normative: false`, documento vigente de consumo para design; `GKR-UX-HOME-OC-READ-FIRST-001`, v1.0.5. Nenhum arquivo da Home foi alterado.
+
+### Correspondência com os movimentos existentes
+
+| Tema recente | Movimento da Home | Juízo documental | Limite de publicação |
+|---|---|---|---|
+| Selos `Verificado` e `Contribuição Reconhecida` | M09 — Confiança por autoridade, evidência e proteção | **Aderência semântica forte**; preservar existência/representação ≠ contribuição e impacto | Política em estudo na PR #654; não mostrar badges como concedidos ou disponíveis |
+| Oportunidade paga com percentual opcional em pontos | M08 — Circulação de valor; M10 — Produtos | **Aderência econômica forte**; custo integral do ofertante, escolha optativa, conexão potencial Mall/Travel | PR #655 candidata; não anunciar cashbacks ou resgates ativos |
+| Incentivos por participação/resultado em eventos (Organizações e Coletivos) | M02 — Capacidades reais; M08 — Circulação de valor | **Aderência funcional**: organizadores podem conceber formatos com limites, regras e prêmios | Não simular evento real, concessão atual ou resultados não comprovados |
+| Limite de 100 pontos para primeiras 30 inscrições sem bloquear restantes | M08, como explicação aprofundada futura | **Detalhe de mecanismo**, não assunto de hero ou narrativa principal | Melhor em exemplo editorial secundário e nas superfícies de cadastro após adjudicação |
+| Integração de pontos a Mall/Travel | M10 — Papéis de produtos | **Aderência transversal**; conservar especialização e não transformar Journey em loja | Não presumir conversão, resgate ou liquidação operacional |
+
+### Proposta editorial de conteúdo, explicitamente futuro/candidato
+
+**M02 — Capacidades e contribuições:** "Organizações e Coletivos podem criar oportunidades, experiências e eventos. Formatos futuros de incentivo poderão permitir que quem organiza reconheça participação ou desempenho por regras e limites definidos, sem converter participação em obrigação ou medida universal de evolução."
+
+**M08 — Circulação de valor:** "O ecossistema estuda mecanismos pelos quais Organizações e Coletivos poderão, opcionalmente e com custeio próprio, oferecer pontos vinculados a oportunidades pagas ou premiar participações e resultados em atividades e eventos. Os limites, os critérios e o orçamento serão definidos pelo ofertante sob regras comuns da Guivos."
+
+**M09 — Evidência e confiança:** "Também estão em estudo formas diferentes de reconhecer a existência e representação legítima de um Coletivo e de analisar contribuições contextuais apoiadas em evidências. Verificação não significa garantia de segurança ou impacto, e reconhecimento de contribuição não equivale a resultado universal."
+
+**M10 — Ecossistema integrado:** "Pontos gerados por mecanismos elegíveis poderão, conforme regras econômicas futuras, conectar oportunidades, experiências e opções de utilização no Guivos Mall e Guivos Travel, preservando as responsabilidades de cada produto."
+
+**Atenção:** as frases usam futuro e estágio de estudo. Não são recomendação de exibição pública imediata enquanto a governança das capacidades estiver pendente. O conceito pode orientar o design do futuro sem ser representado como funcionalidade corrente.
+
+### Restrições de hierarquia e provas
+
+- **Não incluir seção autônoma ou cards promocionais de três funcionalidades no hero.** Preservar a narrativa de 11 movimentos, possibilidades reais, participantes e evidências.
+- **Não misturar selos com pontos.** Os selos dizem respeito a legitimidade e contribuição; os pontos são compromissos econômicos facultativos do ofertante.
+- **Não diferenciar indevidamente Organização e Coletivo**: ambos podem oferecer incentivos conforme regras, ainda que a arquitetura corrente do cadastro em `ORG-002` não se aplique por simetria ao Coletivo.
+- **Não prometer recursos ativos**: nem badge de verificação, nem crédito de pontos, nem liquidação Mall/Travel, nem cotas de evento implantadas.
+- **Não alterar a autoridade editorial da Home por esta PR**; futura proposta de revisão deve reconciliar `GKR-UX-HOME-OC-MASTER-001`, Read First, roteiro de design e provas.
+- **Não reabrir G0/B-01 da PR #654** sem evidência institucional material.
+
+### Próxima análise recomendada
+
+Preparar uma matriz de impacto redacional de M02/M08/M09/M10 sobre a Home, com textos alternativas, atributos de prova e propostas de versão, **sem alteração direta do Master vigente** antes de decisão editorial distinta. Em paralelo, amadurecer ECO-PAR/ECO-FUND/ECO-LIQ com propostas comparadas e explícita distinção entre hipótese e ato econômico aprovado.
+
+```text
+PR #655 → OPEN / DRAFT
+ECONOMIC PARITY / FINANCING / SETTLEMENT → ANALYTIC CANDIDATES, NOT APPROVED
+HOME O/C CONTENT AUDIT → DOCUMENTED IN CANDIDATE
+HOME O/C MAIN MASTER / READ FIRST → UNCHANGED
+SELLOS PR #654 / G0 / 0-36 → UNCHANGED
+MENU / GKR REGISTRIES / REPLIT / LIVE POINTS → UNCHANGED
 ```
