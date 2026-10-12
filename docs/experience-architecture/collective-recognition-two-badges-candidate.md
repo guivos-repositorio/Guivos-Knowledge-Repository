@@ -2,7 +2,7 @@
 id: GKR-COLLECTIVE-RECOGNITION-001
 title: Coletivos — Verificado e Contribuição Reconhecida
 status: proposed
-version: 0.5.0
+version: 0.6.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -329,3 +329,81 @@ A troca de representante não apaga avaliações históricas legítimas do Colet
 Requer decisão humana sobre unidade de contribuição material, suficiência de prova por papel, coexecução, eventual atribuição compartilhada, comparabilidade temporal, efeitos de mudança material, privacidade, recursos e autoridade para rever vínculos.
 
 **CBR-04 permanece OPEN.** Esta seção é candidata, não cria KPI canônico, autorização de divulgação de relacionamento, propagação de reputação, implementação ou concessão de qualquer selo.
+
+
+## CBR-05 — Antifraude, privacidade, denúncias e contestação (proposta v0.6)
+
+### 1. Ameaças e separação entre sinais e comprovação
+
+| Risco | Indícios auditáveis possíveis | Medida candidata |
+|---|---|---|
+| Coletivo inexistente ou representação falsa | Fontes inconsistentes, documento adulterado, apropriação de identidade | Exame reservado, corroboração independente e decisão humana |
+| Avaliações de Pessoas sem experiência | Ausência de comprovação da edição/etapa, vínculos impossíveis | Excluir da apuração até evidência válida; não presumir má-fé |
+| Contas duplicadas ou coordenadas | Coincidência relevante de padrões, frequência atípica, autoria vinculada | Investigar com proporcionalidade; um sinal isolado não comprova fraude |
+| Incentivo por avaliação favorável | Recompensa condicional, pressão do organizador, seleção de respondentes | Proibir compra ou coação; examinar amostra e conflitos |
+| Retaliação a crítica | Exclusão do grupo, ameaça, divulgação de identidade, constrangimento | Proteção da Pessoa, moderação independente e revisão fundamentada |
+| Manipulação institucional | Parceiro atribui a si contribuição que não executou | Conferir papéis e evidência de execução conforme CBR-04 |
+| Denúncia abusiva | Acusação sem base e padrão de uso retaliatório | Avaliação imparcial; não punir automaticamente o denunciado |
+| Exposição indevida | Avaliações agregadas que identificam pessoas em grupos pequenos | Supressão e limitação de acesso conforme finalidade |
+
+O sinal de anomalia **não é prova de fraude**, a denúncia **não é condenação** e uma avaliação negativa **não é irregularidade**. Não utilizar gênero, religião, saúde, etnia, ideologia ou outros atributos pessoais como proxy de suspeita, elegibilidade ou credibilidade. Não equiparar mesma localização/rede/dispositivo a mesma Pessoa; qualquer sinal técnico exige base legítima e controle de privacidade.
+
+### 2. Separação das autoridades
+
+- **Pessoa autora:** controla seu envio, permissões de visibilidade e direitos de revisão aplicáveis; não precisa tornar pública a identidade para integrar análise agregada elegível.
+- **Coletivo avaliado:** pode prestar esclarecimentos e responder quando competente; **não pode** editar, excluir, selecionar ou vetar críticas, nem acessar identidade protegida.
+- **Equipe de verificação:** examina evidências de existência/representação, sem se tornar dona da avaliação privada.
+- **Equipe de integridade/moderação:** investiga denúncias e irregularidades, registra razões e aplica medidas autorizadas; separação de interesses e acesso mínimo.
+- **Autoridade de concessão/recurso:** responsável pela decisão material de selo e instância independente de revisão, **ainda não designadas**.
+- **Automação/IA:** pode sinalizar revisão; não concede, suspende, revoga nem declara fraude automaticamente sem contrato e autoridade específica.
+
+### 3. Privacidade e minimização
+
+Preservar registro privado da autoria, objeto, edição, tempo, evidência de experiência, versão de critérios e decisão de admissibilidade segundo R1 e autoridades competentes. Tornar públicas apenas informações autorizadas; selo público não expõe quem avaliou, compareceu, quais objetivos individuais declarou ou quais denúncias foram feitas. Separar confirmação de participação de publicidade da participação.
+
+Coletivos pequenos ou experiências sensíveis exigem supressão de células potencialmente reidentificáveis; ainda não existe limite numérico aprovado para publicação. Não compartilhar registros brutos da Journey, comentários privados ou evidências de identidade com parceiros, contratantes, coletivos ou anunciantes. Retenção por finalidade, prazo, remoção e propagação para caches, derivados e exportações exigem contrato específico, não inferir retenção ilimitada.
+
+### 4. Ciclo de denúncia, investigação e contestação
+
+```text
+REGISTRO DE SINAL / DENÚNCIA / CONTESTAÇÃO
+→ TRIAGEM E AVALIAÇÃO DE RISCO
+→ PRESERVAÇÃO PROPORCIONAL DE EVIDÊNCIAS
+→ ANÁLISE POR ALÇADA COMPETENTE
+→ CONTRADITÓRIO QUANDO CABÍVEL E SEGURO
+→ DECISÃO FUNDAMENTADA E VERSIONADA
+→ COMUNICAÇÃO COM ESCOPO ADEQUADO
+→ RECURSO E REVISÃO INDEPENDENTE
+→ CORREÇÃO/RESTABELECIMENTO OU MEDIDA MANTIDA
+```
+
+Denúncia de risco à integridade física, assédio ou violação de dados pode requerer medidas protetivas cautelares, proporcionais e temporárias, **sem antecipar culpa**. Não expor denúncia ao Coletivo quando comprometer segurança da Pessoa. Discordância com opinião desfavorável ou efeito comercial não são fundamento de remoção.
+
+### 5. Efeitos candidatos sobre cada selo
+
+| Situação | Verificado | Contribuição Reconhecida |
+|---|---|---|
+| Avaliação negativa legítima | Não afeta existência por si só | Mantida na apuração elegível |
+| Evidência de existência vencida ou representante não validado | Reexame do status | Reexaminar pressuposto de Verificado vigente |
+| Pequena amostra ou baixa cobertura | Sem efeito automático | Base insuficiente, sem juízo negativo |
+| Avaliações suspeitas, ainda não comprovadas | Não presumir fraude do Coletivo | Quarentena analítica proporcional e revisão de admissibilidade |
+| Fraude comprovada de identidade/representação | Medida fundamentada podendo afetar selo | Revisão consequente do pressuposto de Verificado |
+| Manipulação comprovada da apuração | Avaliar se afeta identidade/integridade | Reprocessamento, suspensão ou revogação conforme alçada |
+| Denúncia de segurança sem decisão final | Medidas cautelares somente quando justificadas | Não confundir denúncia com avaliação; revisar riscos de divulgação |
+
+Não definir efeito automático entre selos: dependência de Verificado vigente requer regra expressa de suspensão/exibição em CBR-06/07, preservando histórico e recurso.
+
+### 6. Testes de aceitação candidatos
+
+1. Coletivo recebe críticas legítimas: críticas não são removidas ou tratadas como fraude.
+2. Dez respostas idênticas de um grupo reunido: sem presunção automática de contas falsas; investigar provas específicas.
+3. Organizador oferece benefício somente a quem der avaliação positiva: flag de manipulação e exame da elegibilidade.
+4. Pessoa denuncia retaliação e teme exposição: proteção de identidade, alçada independente e medida cautelar proporcional se necessária.
+5. Grupo de apoio sensível com quatro avaliações: não publicar métricas identificáveis ou lista de participantes.
+6. Evidências conflitantes sobre representação: não conceder automaticamente, solicitar exame e permitir recurso.
+7. Denúncia maliciosa contra Coletivo legítimo: apuração imparcial e reparação de status quando cabível.
+8. Uma avaliação removida legitimamente: derivados/cache/índices não devem ressuscitá-la como prova de selo.
+9. Avaliação alterada pela Pessoa: atualização idempotente, trilha de versão e reprocessamento quando legítimo.
+10. Um Coletivo paga por publicidade: pagamento não interfere nas decisões de integridade e reconhecimento.
+
+**CBR-05 → OPEN**, até adjudicação de papéis, procedimentos, política de privacidade/retenção, medidas cautelares, tratamento de denúncias, critérios antifraude, recursos e comunicação pública. Nenhuma implementação de moderação ou autorização de selo é criada.
