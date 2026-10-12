@@ -4752,3 +4752,74 @@ GKR MENU → UNCHANGED
 BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
 NEXT → RSP-05.F
 ```
+
+## Etapa 281 — RSP-05.F: Autoridade editorial e publicação institucional dos selos (v4.33 candidato)
+
+**Resultado:** EXAME INDIVIDUAL DOCUMENTADO / CONVERGÊNCIA ANALÍTICA CONDICIONAL / ADJUDICAÇÃO NORMATIVA PENDENTE. Nenhuma autoridade editorial foi formalmente investida; não houve publicação de selo, edição de Master ou alteração de navegação.
+
+### Questão decisória
+
+Quem poderá autorizar a projeção pública de `Verificado` e `Contribuição Reconhecida`, sob quais condições documentais, de privacidade e vigência, e com quais responsabilidades de sincronização e retirada, preservando a separação entre decisão institucional e publicação editorial?
+
+### Dez controles candidatos
+
+| Código | Controle | Exigência de deliberação futura |
+|---|---|---|
+| PUB-AUT-01 | Titularidade editorial | Designar responsável autorizado, mandato e limites |
+| PUB-AUT-02 | Ato editorial separado | Decisão favorável do selo não implica publicação automática |
+| PUB-AUT-03 | Fonte canônica | Consultar estado institucional, validade, escopo e versão autorizada |
+| PUB-AUT-04 | Dependência entre selos | Não projetar contribuição como vigente sem condições de verificação exigidas pela norma futura |
+| PUB-AUT-05 | Semântica | Aprovar rótulos, explicações e limites de afirmação de cada selo |
+| PUB-AUT-06 | Superfícies | Autorizar especificamente perfil, cards e outros contextos pertinentes |
+| PUB-AUT-07 | Privacidade | Publicar apenas payload mínimo; proteger avaliações R1 e pertencimento sensível |
+| PUB-AUT-08 | Acessibilidade | Garantir equivalente textual e interpretação não dependente de ícone/cor |
+| PUB-AUT-09 | Retirada e correção | Reconciliar suspensão, expiração, revogação e erro em todas as superfícies |
+| PUB-AUT-10 | Auditoria editorial | Registrar autorização, versões, responsável, alterações, falhas e retestes |
+
+### Distinção entre atos
+
+1. **Decisão institucional:** autoridade competente determina o mérito e o estado de cada selo, sob DEC-01/02/03 e RSP-05.C.
+2. **Autorização editorial:** competência específica confirma quais afirmações públicas estão permitidas, quando, onde e sob qual versão de política.
+3. **Projeção técnica:** mecanismos homologados apresentam exclusivamente o estado publicável autorizado; a sincronização não exerce competência de concessão.
+4. **Retirada pública:** executa o estado impeditivo ou a determinação editorial competente sem reescrever automaticamente o fundamento histórico.
+
+### Contrato público mínimo candidato
+
+| Elemento | Possível conteúdo público | Limite |
+|---|---|---|
+| Nome do selo | `Verificado` ou `Contribuição Reconhecida` | Rótulos dependem de ratificação semântica |
+| Explicação | Descrição curta, contextual e verificável | Sem promessa de benefício universal ou segurança absoluta |
+| Estado | Somente afirmação vigente e publicável | Não exibir status interno, investigação ou denúncias |
+| Escopo | Contexto ou validade estritamente necessários, se aprovados | Não permitir inferência sensível desnecessária |
+| Proveniência institucional | Indicação da Guivos como responsável, se aprovada | Sem publicidade de avaliadores ou pareceres protegidos |
+
+Nenhum esquema de API, componente visual, prazo de sincronização ou regra numérica foi aprovado.
+
+### Casos adversariais
+
+- `Verificado` foi concedido, mas falta autorização editorial: não exibir.
+- `Contribuição Reconhecida` tem decisão histórica favorável, porém `Verificado` expirou: não projetar afirmação inconsistente; preservar histórico para revisão.
+- Um card mantém selo após suspensão: detectar divergência e retirar de acordo com política e homologação futura.
+- Coletivo sensível recebe selo: não ampliar automaticamente encontrabilidade ou revelar participantes, crença ou saúde.
+- Patrocinador solicita maior destaque: relação comercial não modifica estado, ordem orgânica ou autoridade editorial.
+- Coletivo sem selo aparece em resultados: ausência deve permanecer neutra, sem imputação negativa.
+- Visitante usa leitor de tela: significado do selo deve estar disponível em linguagem acessível.
+- Editor altera copy para "garantia de resultados": rejeitar expressão semanticamente incompatível.
+
+### Dependências para adjudicação e liberação
+
+Ratificar titular editorial, matriz de competências e impedimentos, critérios de publicação/retirada, contrato público de dados, linguagem, superfícies, dependência entre selos, fallback, auditoria e testes de acessibilidade e sincronização. Reconciliar PER-102/PER-103, DEC-04 e DEC-05 e preservar o bloqueio de implementação até homologação e autorização de estágio. O MENU do GKR é um objeto **distinto** de navegação documental, sujeito à regra vigente de `mkdocs.yml`.
+
+```text
+ETAPA 281 RSP-05.F INDIVIDUAL EXAM → DOCUMENTED
+RSP-05.F ANALYTICAL DIRECTION → CONDITIONAL CONVERGENCE
+RSP-05.F HUMAN NORMATIVE ADJUDICATION → PENDING
+RSP-05.A..F EXAMS → 6/6 DOCUMENTED
+RSP-05.A..F HUMAN ADJUDICATION → 0/6 CONFIRMED
+DEC-01..05 EXAMS → 25/25 DOCUMENTED
+DEC-01..05 HUMAN NORMATIVE RATIFICATIONS → 0/25 CONFIRMED
+PR #654 → OPEN / DRAFT
+GKR MENU → UNCHANGED
+BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
+NEXT → RSP-05 INTEGRATED HUMAN DELIBERATION REGISTER
+```
