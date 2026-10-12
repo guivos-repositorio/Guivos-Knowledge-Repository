@@ -6320,3 +6320,13 @@ PR #654 → OPEN / DRAFT
 BADGE ISSUANCE / PUBLICATION / TESTS / HOMOLOGATION / REPLIT → NOT AUTHORIZED
 NEXT → GOVERNED EDITORIAL PUBLICATION PACKAGE
 ```
+
+## Registro complementar — Declaração de aprovação de direção da política de selos (12/10/2026)
+
+O fundador informou expressamente: **a política dos dois selos está aprovada quanto à direção de produto; restam registros e formalizações no GKR**. Para a materialização futura do design da Home de Organizações e Coletivos, os selos **Verificado** e **Contribuição Reconhecida** devem poder ser considerados como capacidades previstas, com presença contextual e secundária, sem subordinar a narrativa central da Home aos selos.
+
+**Reconciliação obrigatória de estados:** este registro documenta uma decisão humana explícita de direção e **supera a hipótese anterior de falta de aprovação conceitual**, mas não prova, por si só, a conclusão de atos institucionais específicos, delegações, adjudicação individual dos 36 gates ou competência operacional para atribuir selos. O último registro de 0/36 refere-se a **ratificações formais individualizadas documentadas**, e não deve ser apresentado como inexistência de apoio do fundador à política. Até que atas/atos/registros de competência sejam verificados, o controle formal permanece pendente e não se atribuem retrospectivamente assinaturas ou decisões individuais.
+
+**Design da Home:** inclusão conceitual autorizada pela direção de produto; confiança e contribuição seguem como fundamentos, os selos como mecanismos de apoio. **Exibição pública como selo efetivamente concedido, concessão real, implementação técnica e merge normativo** continuam sujeitos às comprovações e aprovações próprias.
+
+Este complemento não altera o MENU, Masters vigentes, registries, implementação nem o estado DRAFT desta PR. A revisão de autoridade e adjudicações formais segue trilha separada quando os registros necessários estiverem disponíveis.
