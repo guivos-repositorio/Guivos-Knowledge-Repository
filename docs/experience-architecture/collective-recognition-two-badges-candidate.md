@@ -2,7 +2,7 @@
 id: GKR-COLLECTIVE-RECOGNITION-001
 title: Coletivos — Verificado e Contribuição Reconhecida
 status: proposed
-version: 4.11.0
+version: 4.12.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -3249,6 +3249,86 @@ DEC-04.C ANALYTICAL DIRECTION → CONDITIONAL CONVERGENCE
 DEC-04.C HUMAN NORMATIVE ADJUDICATION → PENDING
 DEC-04 INDIVIDUAL EXAMS → 3/5 DOCUMENTED
 DEC-04.D → NEXT
+PR #654 → OPEN / DRAFT
+GKR MENU ACCESS → REQUESTED / NOT PUBLISHED
+BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
+```
+
+
+## DEC-04.D — Exame individual: sincronização, atualização e retirada dos selos (v4.12 candidato)
+
+**Resultado:** CONVERGÊNCIA ANALÍTICA CONDICIONAL. Este exame documenta comportamento seguro esperado, sem afirmar que existam barramento de eventos, API, invalidação de cache, testes ou SLA implementados.
+
+### Questão decisória
+
+Como garantir que a decisão material, a autorização de publicação e cada projeção em cards, busca e PER-103 permaneçam coerentes diante de expiração, suspensão, revogação, recurso, perda do pré-requisito `Verificado`, falhas de integração e informações em cache?
+
+### Invariantes candidatos
+
+| Código | Controle | Requisito proposto |
+|---|---|---|
+| SYN-01 — Autoridade | Fonte canônica como referência | Nenhum card, cache ou frontend decide vigência ou restaura selo |
+| SYN-02 — Versão | Monotonicidade e rastreabilidade | Não sobrescrever decisão mais recente por evento antigo ou fora de ordem |
+| SYN-03 — Dependência | Verificado vigente é pré-requisito do segundo selo | Perda de Verificado bloqueia projeção de Contribuição Reconhecida sem apagar história |
+| SYN-04 — Retirada | Suspensão, expiração, revogação ou retirada da autorização | Não manter sinal público como vigente após estado impeditivo |
+| SYN-05 — Cache | Invalidação/reconciliação por entidade, selo e superfície | TTL isolado não substitui retirada confiável para estados sensíveis |
+| SYN-06 — Indisponibilidade | Comportamento seguro e observável | Não afirmar reconhecimento com base em informação incerta/desatualizada |
+| SYN-07 — Idempotência | Repetições e reprocessamentos de eventos | Não recriar publicação antiga por replay |
+| SYN-08 — Auditoria | Registro de mudança, projeção e correção | Evidenciar causa, responsável, versão, tempo e superfícies afetadas |
+| SYN-09 — Privacidade | Payload público mínimo em todas as projeções | Não vazar R1, identidade de avaliadores ou razões protegidas |
+| SYN-10 — Recuperação | Reconciliação após falha e retorno de serviço | Revalidar decisão e autorização antes de reexibir qualquer selo |
+
+### Eventos conceituais e consequências
+
+| Evento | Consequência candidata |
+|---|---|
+| Decisão de concessão válida | Não publicar sem autorização separada |
+| Publicação expressamente autorizada | Projetar apenas nas superfícies cobertas e com todos os demais gates ativos |
+| Expiração de selo | Bloquear exibição vigente e atualizar projeções |
+| Suspensão ou revogação | Retirar projeção conforme decisão competente; conservar trilha histórica protegida |
+| Perda de Verificado | Bloquear também a projeção de Contribuição Reconhecida como vigente |
+| Restauração de Verificado | Reavaliar o segundo selo; não restaurar automaticamente |
+| Recurso provido | Aplicar nova decisão versionada; publicação requer autorização válida |
+| Evento antigo entregue após evento recente | Rejeitar regressão ou reconciliar pela versão canônica |
+| Cache divergente | Invalidar e reconstruir somente a partir da fonte autorizada |
+| Fonte canônica indisponível | Aplicar fallback conservador sem alegar vigência não confirmada |
+
+### Contrato técnico candidato (não implementado)
+
+1. Estado material e autorização de publicação devem ter identificadores e revisões próprios, relacionados ao identificador canônico do Coletivo.
+2. A operação de renderização revalida as portas PUB-01..08, inclusive `Verificado` para o segundo selo.
+3. Eventos registram tipo, objeto, revisão, instante, autoridade e escopo, evitando dados individuais.
+4. Uma revisão mais antiga jamais prevalece sobre estado canônico mais recente.
+5. A retirada deve alcançar projeções derivadas, resultados indexados, compartilhamentos controláveis e caches sob gestão da Guivos, conforme escopo efetivamente homologado.
+6. Quando houver inconsistência ou indisponibilidade, priorizar não afirmar publicamente um reconhecimento cuja vigência não possa ser comprovada; registrar e reconciliar.
+7. Nenhuma reativação ocorre somente porque uma integração retorna ou um recurso é apresentado: exigir decisão material e autorização de publicação vigentes.
+8. SLAs, estratégia de propagação, mecanismos de invalidação, testes de carga e critérios de disponibilidade serão definidos e homologados em DEC-05.
+
+### Cenários adversariais para homologação futura
+
+| Caso | Resultado esperado |
+|---|---|
+| Verificado revogado, segundo selo ainda em cache | Não exibir Contribuição como vigente |
+| Perfil PER-103 atualizado e card de busca desatualizado | Detectar e corrigir divergência |
+| Evento de concessão atrasado chega após revogação | Não restaurar selo revogado |
+| Publicação cancelada e mérito ainda aprovado | Não exibir; manter decisão protegida |
+| Coletivo muda de identificador ou representação | Reconciliar identidade antes de publicar |
+| Expiração ocorre com serviço indisponível | Não presumir extensão automática da validade |
+| Duas mensagens idênticas de suspensão | Aplicação idempotente sem efeitos contraditórios |
+| Restabelecimento do serviço após incidente | Reprocessar a partir do estado canônico atual |
+| Recurso altera decisão sem nova permissão de interface | Não projetar selo automaticamente |
+| Payload de sincronização inclui identidade de avaliador | Bloquear exposição e registrar incidente protegido |
+
+### Pendências de decisão
+
+Ratificar fonte e revisão canônicas, comportamento de fallback, significado dos estados impeditivos, eventos e ordenação, política de cache, alcance da retirada, SLAs, responsabilidades entre infraestrutura e autoridades, resposta a incidentes, critérios de reconciliação, retenção e testes de homologação. Nenhum SLA numérico ou garantia de retirada em produção é afirmado.
+
+```text
+DEC-04.D INDIVIDUAL EXAM → COMPLETE
+DEC-04.D ANALYTICAL DIRECTION → CONDITIONAL CONVERGENCE
+DEC-04.D HUMAN NORMATIVE ADJUDICATION → PENDING
+DEC-04 INDIVIDUAL EXAMS → 4/5 DOCUMENTED
+DEC-04.E → NEXT
 PR #654 → OPEN / DRAFT
 GKR MENU ACCESS → REQUESTED / NOT PUBLISHED
 BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
