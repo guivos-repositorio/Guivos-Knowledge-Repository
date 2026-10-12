@@ -2,9 +2,9 @@
 id: GIA-000
 title: Guivos Intelligence Architecture
 status: active
-version: 1.7.1
+version: 1.7.2
 owner: Guivos
-last_updated: 2026-09-25
+last_updated: 2026-10-11
 related:
   - GPA-006
   - GAI-001
@@ -22,6 +22,14 @@ related:
 # Guivos Intelligence Architecture
 
 Este domínio reúne os modelos arquiteturais que orientam como a Guivos realiza tecnicamente capacidades necessárias para transformar dados, conhecimento, evidências, contexto e conexões em inteligência útil.
+
+## Dashboards, KPIs e Analytics — acesso ao estado documental vigente
+
+- [Documento Mestre Global de Dashboards, KPIs e Analytics](dashboards-kpis-analytics-master-specification.md) — v0.2.52, com exames documentais P0/P1/P2 e protocolo de evidências, sem autorização operacional.
+- [Dashboard Guivos — Anexo A](dashboard-guivos-master-specification.md) — indicadores internos e limites de disclosure.
+- [KPI Registry do Dashboard Guivos](dashboard-guivos-kpi-registry.md) — estados governados por KPI.
+
+O Documento Mestre Global v0.2.52 preserva `G-XD-01 UNRESOLVED`, `G-XD-02 OPEN`, seis KPIs `proposed / NOT_READY`, nenhuma adjudicação humana ou promoção de KPI e nenhuma autorização de implementação. A [PR #648](https://github.com/guivos-repositorio/Guivos-Knowledge-Repository/pull/648) permanece proposta separada, sem integrar esta versão.
 
 ## Documentos do domínio
 

@@ -4,6 +4,12 @@ O GKR é a base oficial do conhecimento vigente da Guivos.
 
 > **Git = histórico. GKR publicado = verdade atual.**
 
+## Acesso aos documentos do ecossistema
+
+O **MENU** apresenta **Ecossistema** como seção principal, com Journey, Mall, Travel, Business, Media, Intelligence e Ads. A [Arquitetura de Produtos](product-architecture/index.md) reúne sua relação estrutural e os links para cada produto.
+
+Os trabalhos documentais mais recentes de Analytics estão no [Documento Mestre de Dashboards, KPIs e Analytics](intelligence-architecture/dashboards-kpis-analytics-master-specification.md), v0.2.52 na `main`. Trata-se de exame de evidências, não de aprovação de dados reais, KPIs ou implementação. O [Registro do Estado Atual](project/current-state-register.md) continua sendo a autoridade normativa de estado; esta nota de navegação não altera sua versão ou adjudicações.
+
 ## Comece por aqui
 
 - [Estado Atual do Repositório](project/current-state-register.md) — o que pode ser afirmado hoje;
