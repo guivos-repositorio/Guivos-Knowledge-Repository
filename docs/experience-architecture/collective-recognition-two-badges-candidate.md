@@ -2,7 +2,7 @@
 id: GKR-COLLECTIVE-RECOGNITION-001
 title: Coletivos — Verificado e Contribuição Reconhecida
 status: proposed
-version: 3.9.0
+version: 4.0.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -2443,6 +2443,60 @@ DEC-02.A..E HUMAN NORMATIVE ADJUDICATION → 0/5 CONFIRMED
 DEC-02 INTEGRATED DELIBERATION REGISTER → NEXT
 DEC-01.A..E HUMAN NORMATIVE ADJUDICATION → 0/5 CONFIRMED
 GKR MENU ACCESS → REQUESTED / NOT PUBLISHED
+PR #654 → OPEN / DRAFT
+BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
+```
+
+
+## DEC-02 — Registro integrado de deliberação humana (v4.0 candidato)
+
+**Estado:** PACOTE ANALÍTICO CONSOLIDADO / RATIFICAÇÃO NORMATIVA PENDENTE. O registro reúne DEC-02.A..E, não converte análises em aprovação de critérios, não fixa thresholds nem autoriza emissão.
+
+### Quadro integrado
+
+| Item | Objeto a deliberar | Regra candidata | Resultado analítico | Decisão humana |
+|---|---|---|---|---|
+| DEC-02.A Mérito | Contribuição substantiva relacionada à finalidade | Benefício, aprendizado ou avanço **percebido** em dimensão pertinente; contradições não omitidas | Convergência condicional | PENDENTE |
+| DEC-02.B Instrumento | Elegibilidade e coleta de avaliações | Experiência vivida, resposta voluntária, perguntas contextuais, estados não aplicável/não resposta preservados | Convergência condicional | PENDENTE |
+| DEC-02.C Robustez | Suficiência e justiça das evidências | Pessoas distintas, cobertura, seleção, dependência, incerteza e critérios proporcionais; sem thresholds aprovados | Convergência condicional | PENDENTE |
+| DEC-02.D Atribuição | Responsabilidade e recorte temporal | Papel material do Coletivo e período verificáveis, sem transferência automática de mérito a parceiros | Convergência condicional | PENDENTE |
+| DEC-02.E Concessão | Decisão institucional dos selos | Gates não compensatórios, Verificado vigente, decisão competente, recurso e publicação separada | Convergência condicional | PENDENTE |
+
+### Encadeamento e limites
+
+1. DEC-01 determina a elegibilidade de provas, existência, representação, atuação, experiências e integridade; o conjunto DEC-01.A..E **permanece sem ratificação normativa**.
+2. DEC-02.A define *o que* constitui sinal de contribuição; DEC-02.B *como* a percepção é colhida legitimamente; DEC-02.C *quando* o conjunto tem suficiência; DEC-02.D *a quem* e *a que período* se atribui; DEC-02.E *como* a autoridade delibera.
+3. A exigência de **Verificado vigente** é pressuposto do segundo selo; a publicação pública de qualquer selo requer ato e superfície autorizados independentemente.
+4. Nenhuma aprovação isolada de DEC-02.A..E pode dispensar os outros gates; avaliações positivas não compensam manipulação, ausência de vivência comprovada ou atribuição inexistente.
+5. Experiências e avaliações R1 permanecem contextuais e protegidas, sem transformação em nota universal, comprovação causal de evolução ou dados publicáveis automaticamente.
+
+### Decisões objetivas ainda necessárias
+
+| Código | Decisão expressa exigida | Resultado esperado |
+|---|---|---|
+| RAT-02-A | Ratificar vocabulário, dimensões pertinentes e tratamento de percepções desfavoráveis | Política substantiva versionada |
+| RAT-02-B | Ratificar instrumento, elegibilidade, voluntariedade e proteção de respostas | Instrumento e política de coleta aprovados |
+| RAT-02-C | Calibrar e aprovar suficiência, tamanho efetivo, cobertura, janelas e tratamento de não resposta | Método estatístico validado; números antes ilustrativos permanecem não adotados |
+| RAT-02-D | Definir atribuição por papel, coexecução, mudança de finalidade e temporalidade | Política de atribuição e vigência |
+| RAT-02-E | Aprovar gates, alçadas decisórias, estados, fundamentação e recursos | Regra de concessão normativamente autorizada |
+
+O registro decisório competente deverá conter resultado `APROVAR`, `APROVAR_COM_AJUSTES`, `DEVOLVER_PARA_REVISAO` ou `REJEITAR`, acompanhado por fundamentos, responsável institucional autorizado, data, escopo, versão e eventuais condições. **Nenhuma dessas escolhas foi presumida** com base em solicitações de continuidade documental.
+
+### Condições de saída
+
+Antes de `DEC-02 = NORMATIVELY_ADJUDICATED`: ratificação explícita de A..E; parâmetros substantivos e estatísticos calibrados; compatibilidade com a autoridade canônica de Avaliação e Reputação; DEC-01 resolvida quanto à prova; e dependências de DEC-03 (autoridade), DEC-04 (publicação) e DEC-05 (segurança) identificadas. Concluir o registro não significa autorizar a operação.
+
+### Roteiro de continuidade e MENU
+
+Próximo pacote `DEC-03`: competência institucional, separação de concessão/revisão/recurso e delegação escalável. A inclusão de acesso pelo MENU foi solicitada para após a conclusão e só ocorrerá mediante reconciliação com o `mkdocs.yml` e status editorial/normativo autorizado. Evitar entrada direta para documento `draft/proposed` enquanto vigorar a política de navegação atual.
+
+```text
+DEC-02.A..E ANALYTICAL EXAMS → 5/5 DOCUMENTED
+DEC-02 INTEGRATED DELIBERATION REGISTER → COMPLETE
+DEC-02 HUMAN NORMATIVE RATIFICATION → 0/5 CONFIRMED
+DEC-01 HUMAN NORMATIVE RATIFICATION → 0/5 CONFIRMED
+DEC-03 → NEXT
+GKR MENU LINK → REQUESTED / NOT PUBLISHED
 PR #654 → OPEN / DRAFT
 BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
 ```
