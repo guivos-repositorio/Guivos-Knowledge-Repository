@@ -2,7 +2,7 @@
 id: GKR-COLLECTIVE-RECOGNITION-001
 title: Coletivos — Verificado e Contribuição Reconhecida
 status: proposed
-version: 0.7.0
+version: 0.8.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -502,3 +502,80 @@ Toda emissão, renovação, suspensão, revogação, expiração, retificação 
 8. Decisão revogada permanece em cache: falha de integridade, deve haver invalidação e não ressurreição.
 
 **CBR-06 → OPEN.** Permanecem não adjudicados: alçadas nominadas, segregação mínima, calendários de validade, prazos de notificação/recurso, critérios finais de concessão, fluxos excepcionais, segurança jurídica e contrato de publicação CBR-07. Não há implementação autorizada.
+
+
+## CBR-07 — Contrato candidato de exibição pública e retirada (v0.8)
+
+### Escopo e semântica
+
+Os dois selos são **independentes na finalidade e na decisão**, com dependência de elegibilidade: `Contribuição Reconhecida` pressupõe `Verificado` vigente. A ausência de selo não é nota negativa, suspeita de fraude ou ausência de contribuição. Selos não prometem segurança absoluta, satisfação universal, causalidade ou evolução individual comprovada.
+
+**Rótulos públicos exatos:**
+- `Verificado`: existência real e representação legítima examinadas pela Guivos, no escopo e data da verificação.
+- `Contribuição reconhecida`: evidências suficientes, no recorte avaliado, de benefícios, aprendizados ou avanços **percebidos** pelas Pessoas em experiências elegíveis atribuíveis ao Coletivo.
+
+`Contribuição Reconhecida` permanece a denominação do contrato; `Contribuição reconhecida` é o texto visual.
+
+### Superfícies candidatas
+
+| Superfície | Exibição candidata | Autoridade necessária |
+|---|---|---|
+| Card em resultados de descoberta de Coletivos (ex.: PER-102) | Ícone + texto curto apenas quando selo vigente | Extensão expressa de contrato de card/busca e fonte de decisão de selo |
+| Perfil Público do Coletivo (PER-103) | Dois rótulos junto à identidade, detalhes acessíveis sob demanda | Extensão expressa do Master PER-103 e permissão de publicação |
+| Superfícies internas de gestão do próprio Coletivo | Estado privado, requisitos, vigência, pendências e recurso, sem dados das Pessoas | Papel/mandato, contrato de gestão e autoridade de estado |
+| Lista, mapa, feed ou recomendação | Selo apenas se a superfície for expressamente autorizada a consumi-lo | Não criar ranking, boost ou filtro discriminatório por analogia |
+| Índice externo, exportação e compartilhamento | Nenhum dado de selo por padrão | Contrato específico de projeção, validade e retirada |
+
+Nenhum `PER-ID`, `COL-ID`, rota ou handoff novo é criado por esta matriz. PER-103 não recebe autoridade de avaliações/reputação por analogia.
+
+### Composição do card (proposta)
+
+```text
+[Imagem autorizada]
+Grupo Pedal & Vida
+Saúde · Esporte · Bem-estar
+[ícone] Verificado  [ícone] Contribuição reconhecida
+[Descrição curta das atividades]
+[Localização/área, se publicável]
+```
+
+Os selos aparecem próximos ao nome do Coletivo, em ícones distintos acompanhados de palavras, sem textos de metodologia, números ou parâmetros técnicos permanentemente visíveis. O texto deve continuar legível sem depender apenas de cor ou hover. Ícones e cores devem observar a identidade Guivos, a paleta oficial e acessibilidade. Não usar estrelas gerais ou selo premium.
+
+### Interação de explicação sob demanda
+
+Ao selecionar `Verificado`, apresentar informação breve: “A Guivos examinou evidências da existência e da representação deste Coletivo.” Mostrar escopo, data de verificação e validade **quando publicados e vigentes**, além de acesso à política completa. Não dizer “seguro”, “recomendado” ou “certificado pela Guivos”.
+
+Ao selecionar `Contribuição reconhecida`, apresentar: “Experiências elegíveis deste Coletivo receberam avaliações verificadas que indicam benefícios, aprendizados ou avanços percebidos pelas Pessoas.” Informar período, natureza contextual do reconhecimento, data de avaliação, validade e limitações de causalidade; métricas agregadas somente quando limiares de privacidade, robustez e permissão estiverem cumpridos.
+
+A explicação não revela identidade, comparecimento individual, objetivos privados, avaliações brutas, testemunhos não autorizados, denúncias, conflito de interesse nem dados de parceiros protegidos.
+
+### Estados de exibição pública
+
+| Estado canônico competente | Card / Perfil público | Regra |
+|---|---|---|
+| Vigente e publicação autorizada | Exibir somente o selo correspondente | Vincular escopo, data, validade e versão de decisão |
+| Não solicitado, em análise, base insuficiente, indeferido | Não exibir selo | Não exibir “não confiável” ou negativo |
+| Suspenso, revogado ou expirado | Não exibir como vigente | Não divulgar suspeita ou fundamentação protegida como acusação pública |
+| Erro, fonte indisponível ou estado não verificável | Não afirmar selo vigente até reconciliação com fonte de autoridade | Falha técnica não se converte em reprovação do Coletivo |
+| Verificado não vigente | Não apresentar Contribuição reconhecida como vigente | Preservar registros históricos e revisão separada |
+
+### Publicação e consistência
+
+A decisão privada fundamentada **não equivale** automaticamente à publicação. A projeção de selo em cards, PERF-103, busca, cache, compartilhamento e eventual exportação só pode ocorrer com fonte de verdade, contrato de publicação, controle de versão, permissões e invalidação de retiradas.
+
+Correções, expiração, suspensão e revogação requerem retirada coerente em todas as projeções, sem reativação por cache, backup ou renderização desatualizada. Definir SLA de propagação e comportamento offline antes de implementar. Quando uma decisão de selo for restaurada em recurso, nova decisão competente deverá autorizar projeção novamente.
+
+### Cenários de aceite de UX
+
+1. Coletivo tem apenas `Verificado`: mostrar somente esse rótulo, sem espaço reservado ou avaliação negativa do segundo.
+2. Coletivo possui ambos: dois ícones e rótulos compactos, legíveis e acessíveis.
+3. Coletivo não tem selos: card visualmente equivalente, sem mensagem depreciativa e sem desvantagem automática em descoberta.
+4. `Contribuição reconhecida` perdeu pressuposto Verificado: não mostrar como vigente.
+5. Selo expirou durante cache: não reaparecer nem permanecer como vigente por dado desatualizado.
+6. Pessoa aciona explicação: significado simples, recorte e validade; sem revelar dados pessoais.
+7. Navegação por teclado e leitor de tela: rótulos completos e interação acessível, sem dependência exclusiva de cor.
+8. Coletivo sensível: sem exposição indireta de participantes ou informações protegidas.
+9. Selos em resultados: não alteram automaticamente ordenação, alcance, filtro ou elegibilidade.
+10. Recurso/restabelecimento: somente nova publicação autorizada atualiza todas as superfícies.
+
+**CBR-07 → OPEN** até adjudicação expressa do PER-103, cards e demais superfícies, owner da fonte canônica de concessão, direitos de publicação, política de indisponibilidade, prazos de retirada, acessibilidade e critérios de privacidade. Não autoriza prototipação, implantação nem emissão.
