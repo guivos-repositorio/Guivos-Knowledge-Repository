@@ -4296,3 +4296,87 @@ GKR MENU → UNCHANGED
 BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
 NEXT → HUMAN RESPONSIBILITY AND LIFECYCLE ADJUDICATION PREPARATION
 ```
+
+## Etapa 275 — Instrumento de deliberação RSP-05/RSP-06: autoridade e ciclo de vida (v4.27 candidato)
+
+**Estado:** INSTRUMENTO DE DELIBERAÇÃO PREPARADO / NÃO ADJUDICADO / SEM ALTERAÇÃO DOS REGISTRIES. Esta etapa não designa autoridade institucional nem autoriza concessão, suspensão, revogação ou publicação de qualquer selo.
+
+### Questão central
+
+Que autoridade humana legitimada responderá pelas decisões institucionais sobre `Verificado` e `Contribuição Reconhecida`, e quais eventos, estados, recursos e autorizações editoriais determinarão seu ciclo de vida sem contaminar as responsabilidades existentes de Pessoa e Coletivo?
+
+### RSP-05 — Decisão institucional e alçadas (matriz candidata)
+
+| Gate | Deliberação humana requerida | Guarda candidata |
+|---|---|---|
+| RSP-05.A | Titular da política e competência para credenciar decisores | Instituir competência formal sem presumir órgão ou função já existente |
+| RSP-05.B | Quem instrui evidências de existência e representação | Prova proporcional; não exigir porte/CNPJ automaticamente |
+| RSP-05.C | Quem decide `Verificado` e quem decide `Contribuição Reconhecida` | Decisões distintas, humanas, rastreáveis e independentes de venda |
+| RSP-05.D | Quem recebe e decide contestação/recurso | Revisão segregada; preservação de Pessoas e fundamentos privados |
+| RSP-05.E | Quem supervisiona, audita e declara impedimentos | Proibir que responsável de Coletivo, comercial ou algoritmo assuma competência por analogia |
+| RSP-05.F | Quem autoriza projeção pública | Ato editorial independente da decisão institucional |
+
+**Estado dos gates:** todos **PENDENTES DE ADJUDICAÇÃO**. O documento não indica titulares concretos, alçadas, prazos ou poderes técnicos existentes.
+
+### RSP-06 — Ciclo de vida (estados candidatos, não registrados)
+
+| Estado conceitual | Significado proposto | Condição antes de exposição |
+|---|---|---|
+| `not_requested` | Sem processo de reconhecimento aberto | Nenhum selo apresentado |
+| `under_review` | Instrução ou revisão em curso | Nenhum selo novo apresentado |
+| `approved_not_published` | Decisão institucional favorável sem autorização pública | Não projetar selo |
+| `active_public` | Decisão e publicação vigentes autorizadas | Exibir apenas escopo, conteúdo e superfícies ratificados |
+| `suspended` | Efeito institucional temporariamente impedido por ato competente | Não afirmar reconhecimento vigente |
+| `expired` | Vigência encerrada sem renovação ratificada | Retirar afirmação de vigência |
+| `revoked` | Revogação motivada por autoridade competente | Retirar de todas as superfícies governadas |
+| `appealed` | Recurso interposto contra decisão | Efeito público depende de política cautelar expressa, nunca presumida |
+
+Os nomes são **vocabulário ilustrativo de exame**, não IDs de registry, enum técnico ou máquina de estados aprovada. Recurso pode ser condição paralela ao estado de mérito; a modelagem final deve decidir essa ortogonalidade antes de implementação.
+
+### Transições e atos a adjudicar
+
+1. **Abertura → instrução:** quem inicia, evidências admissíveis e proteção de dados.
+2. **Instrução → decisão:** segregação, versão dos critérios, fundamentos e assinatura competente.
+3. **Decisão → publicação:** autorização editorial independente e verificação do estado canônico.
+4. **Vigência → expiração/renovação:** periodicidade, evidências e ritos ainda não definidos.
+5. **Vigência → suspensão/revogação:** competência, motivação, contraditório, medidas cautelares e recurso.
+6. **Recurso → revisão:** instância independente, impacto cautelar e correção histórica.
+7. **Mudança de estado → atualização pública:** reconciliação, retirada e falha segura em PER-102/PER-103 e outras superfícies autorizadas.
+8. **`Verificado` deixa de vigorar:** avaliar efeito sobre `Contribuição Reconhecida`; dependência candidata não concede revogação automática de mérito, mas impede afirmação pública inconsistente conforme política futura.
+
+### Casos de fronteira para decisão humana
+
+| Caso | Pergunta ainda aberta |
+|---|---|
+| Grupo de pedal informal comprova atuação, sem registro empresarial | Quais evidências proporcionais bastam para legitimidade? |
+| Grupo de oração solicita privacidade reforçada | Que partes do processo e da publicação podem ser minimizadas? |
+| Coletivo patrocinado pleiteia revisão rápida | Como evitar privilégio comercial na instrução ou decisão? |
+| Decisor inicial recebe recurso contra sua própria decisão | Qual instância independente assume a revisão? |
+| `Verificado` expira enquanto `Contribuição Reconhecida` consta como vigente | Como bloquear projeção inconsistente preservando histórico e direito de recurso? |
+| Card mostra selo após suspensão competente | Quais controles detectam e retiram o sinal desatualizado? |
+
+### Evidências mínimas para futura adjudicação
+
+Para cada gate, registrar autoridade legitimada, versão da política, proposta deliberada, fundamento, impedimentos, decisão explícita (`APROVAR`, `APROVAR_COM_AJUSTES`, `DEVOLVER_PARA_REVISAO` ou `REJEITAR`), data, condições, interfaces afetadas, proteção de dados, escopo territorial e responsável pelo cumprimento. Nenhum resultado é presumido.
+
+### Relações de precedência
+
+- DEC-01/02 continuam determinando o conteúdo material candidato dos selos.
+- DEC-03 continua condicionando titularidade, segregação e recursos.
+- DEC-04 condiciona semântica, exposição e retirada editorial.
+- DEC-05 condiciona privacidade, integridade, testes e homologação.
+- Surface Registry e Transition Registry permanecem inalterados; somente após decisão normativa e identificação de responsabilidade real poderá ser proposta extensão específica.
+- MENU do GKR é questão editorial documental separada, não interface de concessão nem autorização de selos.
+
+```text
+ETAPA 275 RSP-05/RSP-06 DELIBERATION INSTRUMENT → PREPARED
+RSP-05.A..F HUMAN ADJUDICATION → 0/6
+RSP-06 STATE/TRANSITION ADJUDICATION → PENDING
+DEC-01..05 EXAMS → 25/25 DOCUMENTED
+DEC-01..05 NORMATIVE RATIFICATIONS → 0/25 CONFIRMED
+NEW GKR-SURF / GKR-TRN IDS → 0
+PR #654 → OPEN / DRAFT
+MENU CHANGE → NOT AUTHORIZED
+BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
+NEXT → INDIVIDUAL HUMAN DECISION EXAM RSP-05.A
+```
