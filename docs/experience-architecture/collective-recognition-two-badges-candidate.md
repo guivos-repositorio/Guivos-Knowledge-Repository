@@ -2,7 +2,7 @@
 id: GKR-COLLECTIVE-RECOGNITION-001
 title: Coletivos — Verificado e Contribuição Reconhecida
 status: proposed
-version: 4.6.0
+version: 4.7.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -2876,5 +2876,66 @@ DEC-03.A..E NORMATIVE RATIFICATIONS → 0/5 CONFIRMED
 DEC-03 INTEGRATED DELIBERATION REGISTER → NEXT
 GKR MENU LINK → REQUESTED / NOT PUBLISHED
 PR #654 → OPEN / DRAFT
+BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
+```
+
+
+## DEC-03 — Registro integrado de deliberação humana (v4.7 candidato)
+
+**Estado:** PACOTE ANALÍTICO CONSOLIDADO / RATIFICAÇÃO NORMATIVA PENDENTE. A consolidação não cria órgão, alçada, mandato, SLA, sistema ou autorização para conceder selos.
+
+### Registro integrado de decisões
+
+| Decisão | Matéria para deliberação | Direção analítica candidata | Adjudicação humana |
+|---|---|---|---|
+| DEC-03.A — Titularidade e alçadas | Titular da política, competências por selo e delegação | Responsabilidade institucional definida; mandatos explícitos; independência entre concessão e publicação | PENDENTE |
+| DEC-03.B — Segregação e conflitos | Acúmulo, impedimentos e influência comercial | Proibir autoconcessão e recurso decidido conclusivamente pelo próprio decisor; controles proporcionais em equipes pequenas | PENDENTE |
+| DEC-03.C — Recursos e proteção | Contestação, revisão independente e privacidade | Fundamentação, complementação, contraditório proporcional, proteção de avaliadores e cautela revisável | PENDENTE |
+| DEC-03.D — Ciclo de vida | Estados, vigência, revalidação e dependência entre selos | Decisões e prazos próprios; Contribuição Reconhecida exige Verificado vigente; sem restauração automática | PENDENTE |
+| DEC-03.E — Escala e auditoria | Formação, supervisão e qualidade territorial | Política versionada, revisores habilitados, auditoria proporcional, equidade e correção de divergências | PENDENTE |
+
+### Invariantes de governança propostos
+
+1. **Política e decisão são distintas:** o titular institucional define e mantém critérios; autoridade formalmente habilitada decide cada caso com fundamento e rastreabilidade.
+2. **Dois reconhecimentos, duas competências materiais:** `Verificado` comprova existência/representação; `Contribuição Reconhecida` examina experiências e contribuições percebidas sem presumir causalidade ou qualidade global.
+3. **Decisão sem autointeresse:** Coletivo interessado, comercial, anunciante e patrocinador não controlam concessão. Conflitos exigem declaração e tratamento.
+4. **Análise não é concessão:** conferência de documentos, parecer técnico, índice estatístico ou suporte de IA não substituem decisão humana competente.
+5. **Recurso não é revisão do próprio ato:** instância recursal independente, motivação e proteção das fontes individuais e denunciantes.
+6. **Ciclo próprio e dependência explícita:** a exibição pública de Contribuição Reconhecida depende de Verificado vigente, sem apagar automaticamente história nem restaurar o segundo selo ao recuperar o primeiro.
+7. **Ato de publicação separado:** autorização material não habilita PER-103, cards ou outras projeções; depende de DEC-04 e controles de DEC-05.
+8. **Escalabilidade com imparcialidade:** mandato, capacitação, supervisão e auditoria são necessários também a operações enxutas, sem exclusão por informalidade ou porte.
+
+### Registro de ratificações exigidas
+
+| Código | Escolha normativa explícita | Evidência de conclusão futura |
+|---|---|---|
+| RAT-03-A | Designar titular institucional e alçadas específicas por selo, inclusive suspensão e revogação | Mandatos, competência, impedimentos e responsáveis aprovados |
+| RAT-03-B | Aprovar matriz de segregação, impedimentos e exceções proporcionais | Política de conflito e trilha de decisões aprovadas |
+| RAT-03-C | Estabelecer legitimidade, rito, prazos e revisor independente de recurso | Procedimento, garantias e proteção de informações ratificados |
+| RAT-03-D | Definir estados, vigência, revisão, efeitos da perda de Verificado e gatilhos de retirada | Modelo de ciclo de vida ratificado, sem implementação presumida |
+| RAT-03-E | Aprovar habilitação, amostragem, supervisão, qualidade e governança multiterritorial | Política de auditoria, acessos e escala ratificada |
+
+Cada deliberação deve registrar `APROVAR`, `APROVAR_COM_AJUSTES`, `DEVOLVER_PARA_REVISAO` ou `REJEITAR`, com responsável legitimado, fundamento, data, versão, escopo e condições. Nenhuma opção foi selecionada neste documento.
+
+### Dependências de execução e sequência
+
+- `DEC-01`: prova e legitimidade; exames 5/5 documentados, ratificações 0/5.
+- `DEC-02`: contribuição percebida e regra substantiva; exames 5/5 documentados, ratificações 0/5.
+- `DEC-03`: alçadas e garantias; exames 5/5 documentados, ratificações 0/5.
+- `DEC-04` **NEXT**: autoridade editorial e contrato de publicação de sinais em perfis, cards e demais superfícies explicitamente habilitadas.
+- `DEC-05`: segurança, rastreabilidade, antifraude e controles de homologação.
+
+### MENU do GKR
+
+A entrada de reconhecimento no MENU continua **solicitada, não publicada**. Reconciliar nomenclatura, destino e hierarquia com o MENU e autoridades correntes; não transformar este documento `proposed/non-normative` em fonte operacional por mera navegação. A proposta de entrada só poderá ser integrada mediante autorização editorial/normativa explícita na fase adequada.
+
+```text
+DEC-03.A..E ANALYTICAL EXAMS → 5/5 DOCUMENTED
+DEC-03 INTEGRATED DELIBERATION REGISTER → COMPLETE
+DEC-03 HUMAN NORMATIVE RATIFICATION → 0/5 CONFIRMED
+DEC-01 AND DEC-02 HUMAN NORMATIVE RATIFICATION → 0/5 EACH
+DEC-04 → NEXT
+PR #654 → OPEN / DRAFT
+MENU PUBLICATION → NOT AUTHORIZED
 BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
 ```
