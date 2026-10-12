@@ -5389,3 +5389,72 @@ GKR MENU → UNCHANGED
 BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
 NEXT → CROSS-PACKAGE NORMATIVE ADJUDICATION DEPENDENCY MATRIX
 ```
+
+## Etapa 290 — Matriz transversal de pendências e sequência de adjudicação normativa (v4.42 candidato)
+
+**Resultado:** MATRIZ DE DEPENDÊNCIAS DOCUMENTADA / 36/36 EXAMES EXISTENTES / 0/36 ADJUDICAÇÕES NORMATIVAS CONFIRMADAS. A ordem proposta é instrumento de preparação, não ratificação, delegação, liberação de PR ou autorização técnica.
+
+### Pacotes de decisão e precedência candidata
+
+| Bloco | Decisões | Quantidade | Dependência de entrada | Saída exigida |
+|---|---|---:|---|---|
+| G0 — legitimidade decisória | Titular e competência normativa para DEC-01..05 e RSP-05/06 | Transversal | Autoridade existente comprovada ou ato constituinte válido | Identificação de autoridade, mandato, impedimentos e forma de deliberação |
+| G1 — fundamentos dos selos | DEC-01.A..E | 5 | G0 | Critérios de verificação de existência/representação |
+| G2 — contribuição e evidências | DEC-02.A..E | 5 | G0, compatibilidade com G1 | Evidências contextuais, limites de alegação e proteção R1 |
+| G3 — governança e autoridade | DEC-03.A..E | 5 | G0, interfaces com G1/G2 | Alçadas, segregação, recurso e fiscalização |
+| G4 — semântica e projeção | DEC-04.A..E | 5 | G1..G3 como insumos ratificados | Linguagem e condições editoriais de exibição e retirada |
+| G5 — proteção e prontidão | DEC-05.A..E | 5 | Normas G1..G4, no escopo | Privacidade, fraude, rastreabilidade, testes e homologação propostos |
+| G6 — responsabilidades específicas | RSP-05.A..F | 6 | G0, decisões de autoridade G3, dependências G1/G2 | Responsabilidades específicas formalmente instituídas |
+| G7 — ciclo de vida | RSP-06.A..E | 5 | G1..G6 no escopo relevante | Estados, eventos, DEP-A/B/C, sincronização e evidências de prontidão |
+
+A precedência é **lógica e não uma aprovação em cascata**: exames, revisão editorial e preparação podem acontecer em paralelo; atos de autorização dependem das decisões humanas competentes. O escopo e as dependências de cada gate serão conferidos antes de ratificação, sem alterar o total de 36.
+
+### Matriz de bloqueios não compensatórios
+
+| Bloqueio | Evidência ausente | Consequência |
+|---|---|---|
+| B-01 Autoridade | Titular normativo e decisores formalmente legitimados | Não adjudicar competência por presunção |
+| B-02 Fundamentos | Critérios DEC-01 e DEC-02 ratificados | Não reconhecer Coletivos nem afirmar contribuição |
+| B-03 Separação funcional | DEC-03 e RSP-05 ratificados | Não operar concessão, recurso, auditoria ou publicação |
+| B-04 Semântica pública | DEC-04 e RSP-05.F ratificados | Não exibir selo |
+| B-05 Privacidade/integridade | DEC-05.A–C e salvaguardas verificadas | Não processar dados R1 reais nem fazer piloto |
+| B-06 Testes e homologação | DEC-05.D/E, RSP-06.E e evidências executadas | Não ativar máquina de estados ou integração |
+| B-07 Ciclo de vida | RSP-06.A–D e dependência DEP-A/B/C escolhida | Não instituir transições ou restabelecimento automatizado |
+| B-08 Superfícies/registries | Reconciliar PER-102/103 e autoridades/identificadores | Não presumir novos GKR-SURF/GKR-TRN |
+| B-09 Editorial documental | Página de referência e ato de publicação no GKR | Não promover documento DRAFT da PR #654 no MENU |
+| B-10 Liberação de engenharia | Autorização explícita após gates e escopo aprovado | Não implementar ou publicar no Replit |
+
+### Procedimento de adjudicação humana candidato
+
+1. Identificar instância competente já legitimada, fundamento, mandato e impedimentos; lacunas de autoridade não são sanadas por acordo de continuidade do exame.
+2. Abrir registro por gate com código, versão, alternativas, evidências, dependências e riscos.
+3. Colher decisão humana explícita: `APROVAR`, `APROVAR_COM_AJUSTES`, `DEVOLVER_PARA_REVISAO` ou `REJEITAR`, com autor, data, justificativa, escopo e condições.
+4. Reconciliar impactos entre gates antes de qualquer promoção de autoridade; decisão local não libera pacote dependente.
+5. Registrar publicação normativa separada, conforme rito do GKR, e só depois tratar especificações, testes e permissões operacionais.
+6. Distinguir **controle documental de completude**, **adjudicação normativa**, **homologação técnica** e **liberação editorial**, sem substituir um pelo outro.
+
+### Encaminhamentos distintos
+
+**Trilha A — Política dos selos:** consolidar evidências para decisão humana, formalizar autoridade, fechar pendências, revisar Masters/registries se autorizado e homologar antes de qualquer publicação de selos.
+
+**Trilha B — Encontrabilidade no GKR:** planejar página editorial estável que identifique o tema de reconhecimento de Coletivos, descreva corretamente que a política permanece candidata e ofereça navegação para materiais autorizados; a alteração de `mkdocs.yml` exigirá reconciliação com a regra de MENU vigente, decisão editorial específica e PR apropriada. Não criar um atalho que caracterize este DRAFT como norma.
+
+### Próximo exame
+
+Etapa 291 — verificar a **autoridade decisória e os registros de adjudicação disponíveis** para G0/B-01, distinguindo ausência de evidência, poderes reais existentes e qualquer necessidade de ato formal anterior às 36 decisões. Nenhuma ratificação individual é presumida.
+
+```text
+ETAPA 290 CROSS-PACKAGE ADJUDICATION DEPENDENCY MATRIX → DOCUMENTED
+DEC-01..05 EXAMS → 25/25; HUMAN RATIFICATIONS → 0/25
+RSP-05 EXAMS → 6/6; HUMAN ADJUDICATIONS → 0/6
+RSP-06 EXAMS → 5/5; HUMAN ADJUDICATIONS → 0/5
+COMBINED EXAMS → 36/36 DOCUMENTED
+COMBINED HUMAN ADJUDICATIONS → 0/36 CONFIRMED
+G0 AUTHORITY PROOF → OPEN
+TESTS / HOMOLOGATION → NOT EXECUTED / NOT AUTHORIZED
+NEW GKR-SURF / GKR-TRN IDS → 0
+PR #654 → OPEN / DRAFT
+GKR MENU → UNCHANGED
+BADGE ISSUANCE / PUBLICATION / REPLIT IMPLEMENTATION → NOT AUTHORIZED
+NEXT → G0 / B-01 AUTHORITY AND ADJUDICATION RECORD EXAM
+```
