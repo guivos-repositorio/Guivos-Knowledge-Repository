@@ -1457,7 +1457,7 @@ MAIN / MENU / HOME MASTERS / REGISTRIES / REPLIT → UNCHANGED
 | B2: reserva da corrida | Sem novo pagamento | 0 | 4.900 | 0 | Reserva financiada, ainda não crédito à Pessoa |
 | B3: entrega de 100 pontos | Sem novo pagamento | 0 | 4.800 | +100 | R$ 100,00, sob EQ-1 |
 | C1: resgate Mall de 1,25 ponto | Pagamento ao parceiro só conforme liquidação contratual | — | — | -1,25 | -R$ 1,25 de obrigação da Pessoa, transferida/quitada conforme fluxo |
- 
+
 **Advertência:** linhas são movimentos independentes e ilustrativos; não se deve somar A1, B3 e C1 para inferir saldo de **uma** carteira pessoal sem declarar titularidade. A coluna de obrigação é uma exposição econômica sob hipótese EQ-1, **não lançamento contábil obrigatório**; natureza da obrigação de saldo do ofertante exige parecer próprio.
 
 ### 29.4 Exemplo de saldo de uma Pessoa, explícito
