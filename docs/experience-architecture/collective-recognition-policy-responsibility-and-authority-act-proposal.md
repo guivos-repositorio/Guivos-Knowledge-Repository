@@ -36,9 +36,9 @@ O fundador confirmou expressamente que **a Guivos já possui CNPJ e representant
 
 **Requisitos para formalizar e assinar este ato:**
 
-1. Informar razão social e CNPJ da entidade operadora juridicamente responsável pela política.
-2. Juntar comprovação cadastral atual e o instrumento constitutivo/alterações vigentes ou documento jurídico aplicável.
-3. Identificar representante legal e demonstrar seus poderes para aprovar política, instituir responsabilidades e delegar funções.
+1. Registrar a responsável como pessoa jurídica Guivos, inscrita no CNPJ, sem exigir número ou razão social neste documento.
+2. Preservar documentos societários e de poderes no arquivo corporativo apropriado, quando exigidos para atos específicos.
+3. Confirmar a representação legitimada somente na formalização de atos que dependam de assinatura ou delegação.
 4. Registrar eventuais restrições de representação, exigência de assinatura conjunta e conflitos/impedimentos.
 5. Adequar a minuta ao instrumento societário aplicável; assinar e conservar evidências antes de atribuir eficácia.
 
