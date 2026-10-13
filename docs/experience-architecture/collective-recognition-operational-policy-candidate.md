@@ -2,7 +2,7 @@
 id: GKR-COLLECTIVE-RECOGNITION-OPERATIONS-001
 title: Selos de Coletivos — Política Operacional Candidata
 status: proposed
-version: 0.2.0
+version: 0.3.0
 owner: Pessoa jurídica Guivos, inscrita no CNPJ, por meio de sua direção
 last_updated: 2026-10-13
 normative: false
@@ -132,3 +132,31 @@ PUBLIC BADGE ISSUANCE → NOT AUTHORIZED
 **Revisão documental:** o par de documentos está pronto para **revisão de coerência e suficiência de fontes**, mas não para promover status `active`/`normative`, declarar programa em operação ou mesclar como política canônica já vigente. Eventual merge de documento `proposed` exige decisão editorial de permanência no corpus de acordo com as regras de governança do GKR; não presumir que PR mergeável significa política adjudicada.
 
 **Próximo ato de decisão (sem reabrir análise):** deliberar sobre o conjunto mínimo de regras ainda abertas — evidências e método, critérios de suficiência, autoridade de concessão e recursos, validade/revalidação, estados e transições e critérios de publicação. Registrar decisões por objeto em matriz rastreável 25+6+5, evitando novos ciclos de simulação conceitual.
+
+
+## 12. Matriz de deliberação operacional — pacote compacto (13/10/2026)
+
+**Natureza:** proposta para decisão pela direção da Guivos. A aprovação genérica de continuidade não substitui deliberação expressa sobre os parâmetros abaixo. Não declarar qualquer item adjudicado pela inclusão desta matriz.
+
+| ID | Matéria | Proposta delimitada | Decisão ainda necessária |
+|---|---|---|---|
+| OP-01 | Elegibilidade de Verificado | Avaliar as cinco portas V1–V5, com proporcionalidade para coletivos informais e prova cruzada de existência/representação | Confirmar evidências obrigatórias e exceções por tipologia |
+| OP-02 | Condição de Contribuição Reconhecida | Requer Verificado vigente + experiência elegível + participação comprovada + percepções válidas, incluindo desfavoráveis | Ratificar dependência e unidade de avaliação |
+| OP-03 | Método de percepção | Distinguir benefício, aprendizado e avanço percebidos, com cobertura, consistência e robustez | Aprovar instrumento, denominadores, limiares, amostra mínima e janela temporal |
+| OP-04 | Integridade e proteção | Vedação a avaliações compradas ou induzidas; deduplicação e contestação; proteção dos avaliadores | Aprovar procedimento de investigação, retenção, acessos e revisão |
+| OP-05 | Instâncias executivas | Equipe técnica instrui; decisor formalmente habilitado concede; revisão segregada examina recurso | Designar funções e regras de impedimento nos atos pertinentes |
+| OP-06 | Ciclo de vida | Solicitação, análise, complementação, decisão, vigência, suspensão, expiração, revogação e recurso com trilha | Ratificar estados, transições, motivos, validade e prazos |
+| OP-07 | Publicação | Exibição discreta em superfícies pertinentes, sem ranking universal, com significado e vigência consultáveis | Autorizar formato, superfícies e critérios de retirada do selo público |
+| OP-08 | Engenharia | Não ativar emissão automática ou manual em produção até haver critérios, autorização e testes | Ratificar gatilho de implantação, cobertura E2E e aceite operacional |
+
+**Rastreabilidade necessária:** cada deliberação OP-01..08 deverá apontar aos objetos pertinentes `DEC-01..05` (25 itens), `RSP-05` (6 itens) e `RSP-06` (5 itens), identificando expressamente objeto, decisão, fundamento, responsável legitimado, data e eventuais reservas. Os IDs OP são **agrupadores temáticos**, não novos gates que substituem nem contam como ratificados os 36 originais.
+
+**Sequência recomendada:** deliberar primeiro OP-01, OP-02, OP-04 e OP-05 (regras qualitativas e responsabilidade); definir parâmetros de OP-03 e OP-06 em decisão própria baseada em dados e segurança; finalizar OP-07 e OP-08 somente após a demonstração de capacidade técnica. Nenhum limiar numérico ou validade foi inventado.
+
+```text
+PRODUCT CONCEPT → APPROVED
+ACCOUNTABLE ENTITY → GUIVOS LEGAL PERSON (CNPJ NUMBER NOT REQUIRED)
+OP-01..08 → PROPOSALS FOR EXPLICIT DECISION
+DEC/RSP → 36/36 ANALYTICALLY EXAMINED; 0/36 FORMALLY RATIFIED
+OPERATIONAL BADGE ISSUANCE → NOT AUTHORIZED
+```
