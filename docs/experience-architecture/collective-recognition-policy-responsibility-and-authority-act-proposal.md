@@ -2,7 +2,7 @@
 id: GKR-COLLECTIVE-RECOGNITION-AUTHORITY-ACT-001
 title: Selos de Coletivos — Minuta de Ato de Responsabilidade e Competências
 status: proposed
-version: 0.2.0
+version: 0.3.0
 owner: Direção da Guivos (instância indicada; poderes formais pendentes)
 last_updated: 2026-10-13
 normative: false
@@ -96,7 +96,7 @@ A futura autoridade competente deve vincular cada objeto a resultado expresso, f
 
 ```text
 EXISTÊNCIA DE CNPJ E REPRESENTANTE LEGAL: [CONFIRMADA POR DECLARAÇÃO DO FUNDADOR — PROVA DOCUMENTAL PENDENTE]
-RAZÃO SOCIAL E NÚMERO DO CNPJ: [PENDENTES]
+RESPONSÁVEL: PESSOA JURÍDICA GUIVOS, INSCRITA NO CNPJ; NÚMERO NÃO REQUERIDO NO GKR
 INSTÂNCIA RESPONSÁVEL: DIREÇÃO DA GUIVOS (DIREÇÃO APROVADA)
 PESSOA SIGNATÁRIA LEGITIMADA: [EXISTÊNCIA DECLARADA; IDENTIFICAÇÃO E PODERES PENDENTES]
 INSTRUMENTO / FUNDAMENTO DE PODERES: [PENDENTE]
@@ -130,3 +130,8 @@ DEC/RSP FORMAL RATIFICATIONS → 0/36 DOCUMENTED
 BADGE ISSUANCE → NOT AUTHORIZED
 PR #654 → DRAFT / NOT MERGED
 ```
+
+
+## 9. Orientação editorial aprovada (13/10/2026)
+
+A pessoa jurídica Guivos, inscrita no CNPJ, é responsável pela política dos selos, por meio de sua direção. O número do CNPJ não precisa ser especificado no GKR. A identificação de representantes habilitados, quando necessária a atos jurídicos específicos, permanece no registro corporativo apropriado. Esta orientação não ratifica automaticamente os 36 gates nem autoriza a emissão de selos.
