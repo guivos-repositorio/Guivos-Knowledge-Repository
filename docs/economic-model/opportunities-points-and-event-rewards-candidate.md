@@ -2,9 +2,9 @@
 id: GEM-OPPORTUNITIES-POINTS-REWARDS-CANDIDATE-001
 title: Oportunidades — Retorno em Pontos e Premiações de Eventos — Proposta Transversal
 status: draft
-version: 2.5.0
+version: 2.6.0
 owner: Guivos
-last_updated: 2026-10-12
+last_updated: 2026-10-13
 normative: false
 maturity: conceptual_candidate
 related:
@@ -1885,4 +1885,43 @@ ROUND / PAR / FUND / LIQ / COVER → RATIFICATIONS PENDING
 E2E → 16 DEFINED / 0 EXECUTED
 PR #655 → OPEN / DRAFT
 MAIN / MENU / MASTERS / REGISTRIES / REPLIT → UNCHANGED
+```
+
+## 35. Encaminhamento P1–P3 — política econômica mínima (v2.6.0 candidata)
+
+**Natureza:** a orientação de continuidade permite aprofundar tecnicamente P1–P3, **não** equivale a adjudicação humana dos parâmetros nem à aprovação de uma paridade monetária. Preservar `status: draft`, `normative: false`, sem saldo efetivo, cobrança, emissão ou integração de resgate.
+
+| Decisão | Encaminhamento preferencial para validação | Condições antes de eficácia | Estado |
+|---|---|---|---|
+| **P1 / ROUND** | **ROUND-A como hipótese técnica:** precisão de pontos com duas casas decimais, cálculos monetários independentes em centavos e regra explícita de arredondamento por transação | Simular fronteiras de centavos, múltiplos ofertantes, estornos parciais, acumulação e reconciliação; aprovar modo de arredondamento e tratamento de resíduos | RECOMENDADO PARA TESTE; NÃO ADJUDICADO |
+| **P2 / PAR-02 / COVER** | Paridade de **uso** somente após comprovar lastro, capacidade de liquidação e obrigações contratuais; **EQ-1 (1 ponto = R$ 1)** fica exclusivamente como cenário de teste | Identificar financiador, reservas, responsabilidade, cobertura integral, custos de Mall/Travel, estorno, expiração e impostos; decisão expressa de preço de liquidação | CONDICIONADO; SEM PARIDADE OFICIAL |
+| **P3 / FUND-01** | Separar em orçamento e fatura **valor de aquisição/cobertura dos pontos** e **eventual tarifa de serviço** | Preço oficial, tratamento jurídico-contábil/tributário, lastro, política de saldo e cancelamento; confirmação de depósito antes de reservar ou prometer pontos em evento | DIREÇÃO DE SEPARAÇÃO PROPOSTA; PREÇO NÃO DEFINIDO |
+
+### 35.1 Verificações de coerência entre P1, P2 e P3
+
+1. **Unidade única:** os pontos da Pessoa devem continuar fungíveis na mesma unidade governada, sem presumir igualdade entre custo de aquisição, valor de crédito contábil e valor de liquidação no resgate.
+2. **FIN-COMPRA:** a retenção do custo dos pontos no repasse ao ofertante permanece a regra de origem. A taxa Guivos é separada. Simulação de 1% sobre R$ 200 com 2 pontos é ilustrativa, não aprovação de resgate a R$ 1/ponto.
+3. **FIN-EVENTO:** o organizador pré-financia orçamento próprio; promessa, reserva, crédito disponível e liquidação são momentos distintos. A cobrança por aquisição de saldo deve explicitar cobertura e eventual serviço.
+4. **Risco e arredondamento:** resíduos, estornos, devoluções após resgate e liquidação multivendedor/multifornecedor não podem originar pontos sem financiamento nem ônus cruzado entre ofertantes.
+5. **Fronteira legal:** não afirmar regime de pagamento, custódia, tributação ou obrigação contábil sem enquadramento especializado.
+
+### 35.2 Critérios para decisão humana posterior
+
+| Evidência | Critério mínimo de aceitação |
+|---|---|
+| ROUND | Casos de borda reproduzíveis para frações, reservas, repetição de transações e reversões; regra de arredondamento declarada |
+| PAR-02/COVER | Reconciliação entre origem financiadora, carteira, eventual valor de uso e contraparte de liquidação, incluindo perdas e taxas |
+| FUND-01 | Proposta de preço e fatura com discriminação do lastro e da tarifa, e regras de devolução de saldo não utilizado |
+| Institucional | Responsável competente, data, instrumento de decisão, motivação e reservas registrados |
+| Operacional | Gates jurídicos, contábeis, técnicos e testes E2E antes de eventual habilitação |
+
+**Próxima deliberação recomendada:** apreciar conjuntamente ROUND-A e o método de cobertura de P2/P3 com simulações financeiras verificáveis; somente então deliberar valores oficiais e atualizar o contrato econômico. Não promover `P1–P3` a `APPROVED` ou `LIVE` pelo mero registro desta análise.
+
+```text
+P1 PRECISION → ROUND-A CANDIDATE / NOT ADJUDICATED
+P2 REDEMPTION PARITY → NOT ADJUDICATED / EQ-1 SCENARIO ONLY
+P3 EVENT POINT PURCHASE → SEPARATE COVERAGE AND SERVICE FEE CANDIDATE / PRICE OPEN
+FIN-COMPRA / FIN-EVENTO → FOUNDER DIRECTIONS PRESERVED
+E2E → 16 SPECIFIED / 0 EXECUTED
+PR #655 → DRAFT / NOT NORMATIVE
 ```
