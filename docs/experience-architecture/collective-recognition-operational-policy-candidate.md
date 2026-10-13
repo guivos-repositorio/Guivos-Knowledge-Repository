@@ -2,7 +2,7 @@
 id: GKR-COLLECTIVE-RECOGNITION-OPERATIONS-001
 title: Selos de Coletivos — Política Operacional Candidata
 status: proposed
-version: 0.5.0
+version: 0.6.0
 owner: Pessoa jurídica Guivos, inscrita no CNPJ, por meio de sua direção
 last_updated: 2026-10-13
 normative: false
@@ -225,4 +225,47 @@ OP-01, OP-02, OP-04, OP-05 → FOUNDER PRODUCT POLICY DIRECTION APPROVED
 OP-03, OP-06 → PROPOSALS UNDER DELIBERATION
 DEC/RSP → 36/36 EXAMINED; 0/36 INDIVIDUAL RATIFICATIONS DOCUMENTED
 ISSUANCE → NOT AUTHORIZED
+```
+
+
+## 15. Aprovação de princípios OP-03 e OP-06; análise delimitada OP-07 (13/10/2026)
+
+O fundador aprovou a recomendação de adotar **os princípios metodológicos de OP-03 e as regras de transição qualitativas de OP-06**, mantendo parâmetros quantitativos, prazos e requisitos de implementação para deliberação própria. A aprovação vale como **direção de política**, não como ratificação individual automática dos 36 objetos DEC/RSP nem autorização de emissão.
+
+### OP-03 — princípios aprovados
+
+- A avaliação se refere à Pessoa elegível e a uma experiência/edição identificada; a participação deve ser demonstrável e a inscrição isolada não basta.
+- Benefício, aprendizado e avanço são **percepções reportadas**, com denominadores e respostas tratados de modo transparente; não significam causalidade ou evolução objetiva comprovada.
+- Proveniência, deduplicação, inclusão de respostas desfavoráveis, cobertura, consistência e proteção contra amostras enganosas são requisitos qualitativos.
+- **Em aberto:** instrumento final, amostras mínimas, limiares, cobertura aceitável, janelas e agregação.
+
+### OP-06 — princípios aprovados
+
+- O ciclo de vida deve distinguir solicitação, exame, complementação, decisão, vigência, revalidação, suspensão, expiração, revogação e contestação.
+- Deferimento, emissão e exibição pública são atos distintos; mudanças exigem causa válida, decisão habilitada e trilha de auditoria.
+- Suspensão não é prova de fraude; ausência ou expiração não tornam automaticamente um Coletivo ilegítimo.
+- **Em aberto:** duração, renovação, prazos de recurso, guarda das transições e efeitos entre os dois selos.
+
+### OP-07 — critérios candidatos de apresentação pública (NÃO ADJUDICADOS)
+
+| Aspecto | Direção proposta | Condição de ativação |
+|---|---|---|
+| Perfil público do Coletivo | Selos discretos e contextualizados, acompanhados de significado consultável | Concessão legítima e integração PER-103 aprovada |
+| Superfícies de descoberta | Não transformar selo em ranking ou prioridade automática | Avaliar separadamente critérios de busca e de apresentação |
+| Home Organizações e Coletivos | Menção conceitual secundária, sem selo apresentado como efetivamente concedido | Conformidade com Documento Mestre e evidência pública |
+| Transparência | Identificar escopo, período de referência, condições e limites do reconhecimento | Contrato de conteúdo e acessibilidade validado |
+| Estados adversos | Retirar ou contextualizar exibição ao suspender, expirar ou revogar; não alegar fraude sem decisão fundamentada | Contrato de estados OP-06 e publicação homologados |
+| Neutralidade | Ausência do selo não caracteriza inferioridade e não obriga o Coletivo a participar | Princípio de não discriminação preservado |
+
+**A ser deliberado em OP-07:** superfícies concretas, hierarquia visual, texto público sobre cada selo, estados visíveis, regras de atualização/revogação, acessibilidade e tratamento de erro de sincronização. A amostra de design não equivale a emissão real.
+
+### Estado após esta rodada
+
+```text
+OP-01, OP-02, OP-03, OP-04, OP-05, OP-06 → PRINCIPLES APPROVED BY FOUNDER
+OP-03 NUMERIC CRITERIA / OP-06 DEADLINES → OPEN
+OP-07 → PUBLIC DISPLAY CANDIDATE; DECISION PENDING
+OP-08 → ENGINEERING / ISSUANCE NOT AUTHORIZED
+DEC/RSP → 36/36 ANALYTICAL EXAMS; 0/36 DOCUMENTED INDIVIDUAL RATIFICATIONS
+PR #654 → DRAFT
 ```
