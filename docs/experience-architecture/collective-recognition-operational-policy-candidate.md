@@ -2,7 +2,7 @@
 id: GKR-COLLECTIVE-RECOGNITION-OPERATIONS-001
 title: Selos de Coletivos — Política Consolidada Candidata
 status: proposed
-version: 0.9.0
+version: 0.9.1
 owner: Pessoa jurídica Guivos, inscrita no CNPJ, por meio de sua direção
 last_updated: 2026-10-13
 normative: false
@@ -87,3 +87,24 @@ A responsabilidade institucional pertence à pessoa jurídica Guivos, por meio d
 - Handoff: `collective-recognition-approval-and-formalization-handoff.md` (decisões expressas e histórico de bloqueios).
 
 **Checkpoint 13/10/2026:** direção aprovada; política operacional não ratificada; 36/36 exames, 0/36 ratificações individuais documentalmente comprovadas; PR #654 em DRAFT; emissão, implementação e publicação como selo concedido não autorizadas.
+
+## 8. Registro decisório para formalização — objetos ainda abertos (13/10/2026)
+
+Esta matriz delimita o que precisa de **decisão expressa e fonte de competência**; não registra deliberação, não equivale a 36 ratificações e não cria thresholds por suposição.
+
+| Registro | Decisão formal a documentar | Comprovação necessária | Estado |
+|---|---|---|---|
+| F-02 / G0-B01 | Poderes da direção/representante para aprovar política, atribuir competências e decidir recursos | Instrumento corporativo válido, alcance, impedimentos, referência e manifestação eficaz | PENDENTE |
+| OP-01 | Padrão verificável de prova de existência e representação, inclusive Coletivos informais | Matriz por tipologia e critérios de suficiência | PENDENTE |
+| OP-02 | Unidade elegível por experiência e efeitos da dependência de Verificado | Contrato de elegibilidade, perda/retomada de vigência e prova de participação | PENDENTE |
+| OP-03 | Instrumento de percepção, denominadores, amostra, cobertura, janela e agregação | Método documentado, teste de viés e decisão expressa sobre parâmetros | PENDENTE |
+| OP-04 | Procedimentos de fraude, contestação, privacidade e retenção | Papéis, evidências, controles de acesso, incidente e revisão | PENDENTE |
+| OP-05 | Avaliação, decisão e recurso por responsáveis habilitados | Designações e segregação/controles compensatórios fundamentados | PENDENTE |
+| OP-06 | Validade, renovação, prazos, estados e transições | Tabela final de eventos, guardas, notificações e efeitos entre selos | PENDENTE |
+| OP-07 | Exibição de selo vigente, acessibilidade e retirada em perfis | Homologação PER-103 e ato de autorização de publicação | PENDENTE |
+| OP-08 | Testes e autorização de implantação | Evidências IMP-01..09 e decisão própria de liberação | NÃO AUTORIZADO |
+| DEC/RSP | Resultado explícito para cada um dos 36 objetos examinados | Identificador original → decisão → fundamento → instância habilitada → data → evidência | 0/36 COMPROVADOS |
+
+**Regra de rastreabilidade:** as linhas OP organizam temas para decisão, não substituem os objetos DEC-01..05 (25), RSP-05 (6) e RSP-06 (5). Uma decisão humana agrupada poderá cobrir vários objetos somente com identificação e prova individualizada do alcance. Os princípios OP-01..07 previamente aprovados não serão reabertos sem novo fundamento; a deliberação recai sobre parâmetros, instrumentos e execução.
+
+**Próximo gate material:** comprovar G0/B-01 no arquivo corporativo pertinente e registrar a suficiência da representação; depois submeter os parâmetros ao decisor habilitado. A PR #654 permanece exclusivamente candidata até essas evidências, independentemente de sucesso de CI.
