@@ -1,8 +1,8 @@
 ---
 id: GKR-UX-OPPORTUNITIES-LIVE-001
-title: Oportunidades em Movimento — Gráfico Vivo e Aplicação nas Homes
+title: Oportunidades em Movimento — Gráfico Vivo no Movimento 11 da Home Pessoa
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-12
 normative: false
@@ -14,40 +14,47 @@ related:
   - GKR-UX-HOME-NARR-003
 ---
 
-# Oportunidades em Movimento — Gráfico Vivo e Aplicação nas Homes
+# Oportunidades em Movimento — Gráfico Vivo no Movimento 11 da Home Pessoa
 
 ## 1. Finalidade e limite de autoridade
 
-Este documento é uma **referência de concepção narrativa, UX e dados**, acessível pelo MENU do GKR, sobre um único gráfico de linha vivo que expresse a variação de oportunidades efetivamente disponíveis no ecossistema Guivos. Não altera os Documentos Mestres das Homes nem autoriza implementação, produção de dados fictícios, lançamento ou publicação de números como reais.
+Este documento é uma **referência de concepção narrativa, UX e dados**, acessível pelo MENU do GKR, sobre um único gráfico de linha vivo que expresse a variação de oportunidades efetivamente disponíveis no ecossistema Guivos. A aplicação editorial aprovada é exclusiva da Home Pessoa / Movimento 11 — Descoberta; o Documento Mestre recebe referência pontual nesta mesma PR. Não autoriza implementação, produção de dados fictícios, lançamento ou publicação de números como reais.
 
 O gráfico é **instrumento narrativo secundário**, não KPI que substitui a Pessoa, catálogo de funcionalidades, mecanismo comercial ou argumento de urgência.
 
 **Tese:** muitas possibilidades existem além do campo de percepção de uma Pessoa. Cursos, encontros, caminhadas, pedaladas, projetos e experiências surgem, ficam disponíveis e se encerram em seus próprios tempos. A Guivos pode aproximar Pessoas de possibilidades reais e contextualizadas, sem garantir que toda oportunidade seja relevante ou acessível para qualquer Pessoa.
 
-## 2. Direção editorial
+## 2. Movimento 11 — Descoberta: texto validado
 
-**Título candidato:** O mundo de possibilidades não para.
+**Aplicação aprovada:** exclusivamente na **Home Pública Pessoa, Movimento 11 — Descoberta**. Não utilizar o gráfico na Home Organizações e Coletivos. A posição no Movimento 02 foi superada pela decisão expressa do fundador.
 
-**Texto de apoio candidato:** Oportunidades surgem, se transformam e se encerram todos os dias. Muitas podem fazer sentido para diferentes momentos da vida, mas nem sempre chegam ao nosso campo de percepção. A Guivos ajuda a aproximar pessoas dessas possibilidades, conectando contextos e tornando caminhos mais visíveis.
+**Rótulo:** Oportunidades em movimento
 
-**Complemento:** Ver uma oportunidade não é obrigação de participar. O papel da Guivos é ampliar percepção, ajudar a reconhecer contexto e preservar a decisão da Pessoa.
+**Título:** O mundo de possibilidades não para.
 
-Evitar: «você perdeu X oportunidades», contagens de oportunidades supostamente personalizadas, pressão para cadastro, sensação fabricada de escassez, aumento contínuo fictício, promessas de match e causalidade de evolução não demonstrada.
+**Texto de apoio:** Oportunidades surgem, se transformam e se encerram todos os dias.
 
-## 3. Matriz de aplicação nas Homes
+**Elemento visual:** Gráfico vivo de linha com contagem real das oportunidades disponíveis, atualizado conforme eventos efetivos de ativação e saída do estado disponível.
 
-| Home | Decisão editorial | Local/contexto | Justificativa e limite |
-|---|---|---|---|
-| **Pessoa — pública principal** | **Prioritária, condicionada à viabilidade e ao design** | **Movimento 02 — Possibilidades Reais**; pode estabelecer continuidade para Movimento 06 | Torna observável a existência dinâmica de oportunidades reais, sem capturar a Hero nem confundir presença com relevância |
-| **Organizações e Coletivos — pública** | **Opcional e secundária** | **Movimento 08 — Circulação de valor, supply e escala responsável**; pode dialogar com a ideia de capacidades do Movimento 02 | Mostra que o supply é gerado por Organizações/Coletivos, mas não duplica automaticamente o impacto principal nem vira ranking comercial |
-| Guivos Intelligence | **Opcional como visão analítica específica**, não cópia do apelo público | Superfície de dados sob contrato próprio | Permite estudar a evolução da oferta com métricas verificáveis, sujeito a escopo e acesso |
-| Mall | **Não recomendado como gráfico global da Home** | Somente se houver caso próprio validado | Mall não deve se confundir com total de oportunidades do ecossistema |
-| Travel | **Não recomendado como gráfico global da Home** | Somente se houver caso próprio validado | Experiências e reservas requerem disponibilidade e regras particulares |
-| Business | **Não recomendado como gráfico global da Home** | Dados de programas/organizações apenas em contexto próprio | Evitar tratar métrica global como indicador comercial de cliente |
-| Media | **Não recomendado como gráfico global da Home** | Eventual matéria explicativa/editorial | Não presumir que mídia equivale a oferta ativa |
-| Ads | **Não recomendado como gráfico global da Home** | Sem função publicitária direta | Relevância e oportunidade não são compradas com mídia |
+**Texto de fechamento:** Explore o ecossistema, conheça o que existe e descubra qual pode ser o próximo passo.
 
-O **mesmo componente de dados** pode alimentar mais de uma superfície; a inclusão visual em uma Home não exige sua reprodução em outra. As duas Homes expressam a mesma Guivos sob perspectivas complementares, conforme seus Masters vigentes.
+**CTA:** Descubra a Guivos
+
+**Composição:** rótulo → título → texto de apoio → gráfico → texto de fechamento → CTA.
+
+Não acrescentar texto explicativo **abaixo do gráfico** que replique os Movimentos 04 (desconexão) e 05 (conexão), já responsáveis por explicar as possibilidades invisíveis e o papel da Guivos em aproximá-las. O gráfico **mostra o fenômeno**; não precisa reexplicar o problema.
+
+**Referência visual:** amostra de gráfico com fundo branco validada para orientar a designer, sem constituir layout obrigatório, fonte de números reais ou autorização de publicação. Os valores exemplificativos da imagem são simulados e não devem ser reaproveitados como números reais.
+
+## 3. Aplicação exclusiva e fronteiras
+
+| Home | Decisão |
+|---|---|
+| **Home Pessoa — Movimento 11** | **APLICAR NA CONCEPÇÃO DO DESIGN**, subordinado à verdade dos dados e aos gates de publicação |
+| **Home Organizações e Coletivos** | **NÃO APLICAR** — decisão expressa |
+| **Demais Homes** | **NÃO APLICAR** como componente global; não criar replicações por padrão |
+
+O Documento Mestre da Home Pessoa continua sendo a autoridade de narrativa da Home; este documento aprofunda dados, métrica e comportamento do gráfico. Aplicação narrativa aprovada **não implica sistema já disponível**.
 
 ## 4. Definição da métrica
 
@@ -109,7 +116,7 @@ Arquitetura candidata:
 | OPM-07 Prova pública | Números, alcance geográfico e disponibilidade são reais e auditáveis? | Aberto |
 | OPM-08 Publicação | Aprovações, compatibilidade com Masters e qualidade do design estão concluídas? | Aberto |
 
-A recomendação de **Home Pessoa / Movimento 02** é de pertinência semântica, não um novo movimento obrigatório ou ordem de implementação. O gráfico pode ser rejeitado no design final se prejudicar clareza, confiança ou ritmo.
+A recomendação de **Home Pessoa / Movimento 11** é de pertinência semântica, não um novo movimento obrigatório ou ordem de implementação. A designer mantém liberdade de execução visual; eventual ausência do componente ou mudança de posição exige reconciliar a decisão editorial do Movimento 11, sem reivindicar funcionamento real.
 
 ## 8. Encaminhamento
 
@@ -117,8 +124,8 @@ Este documento específico deve ficar no MENU, sob **Experiência e Journey → 
 
 ```text
 DOCUMENT → GKR-UX-OPPORTUNITIES-LIVE-001 v1.0.0
-HOME PESSOA → PRIMARY CANDIDATE (MOVIMENTO 02)
-HOME O/C → OPTIONAL CONTEXTUAL CANDIDATE (MOVIMENTO 08)
+HOME PESSOA → APPROVED DESIGN PLACEMENT (MOVIMENTO 11)
+HOME O/C → DO NOT APPLY
 OTHER HOMES → NO DEFAULT REPLICATION
 DATA → REAL VERIFIED EVENTS ONLY
 DESIGN → NOT REQUIRED TO USE GRAPH IF UNSUITABLE
