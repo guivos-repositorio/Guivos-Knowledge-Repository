@@ -2,7 +2,7 @@
 id: GKR-COLLECTIVE-RECOGNITION-OPERATIONS-001
 title: Selos de Coletivos — Política Operacional Candidata
 status: proposed
-version: 0.7.0
+version: 0.8.0
 owner: Pessoa jurídica Guivos, inscrita no CNPJ, por meio de sua direção
 last_updated: 2026-10-13
 normative: false
@@ -313,3 +313,31 @@ TECHNICAL TESTS EXECUTED → 0 CONFIRMED
 BADGE ISSUANCE AND PRODUCTION PUBLICATION → NOT AUTHORIZED
 PR #654 → DRAFT
 ```
+
+
+## 17. Matriz executiva consolidada — decisões e pendências OP-01..08 (13/10/2026)
+
+**Finalidade:** fornecer um único quadro corrente de consulta para revisão da PR #654. As seções precedentes preservam justificativas e requisitos úteis, mas não devem ser interpretadas como novas rodadas de aprovação. O Git conserva o histórico da elaboração.
+
+| Grupo | Direção de política aprovada pelo fundador | O que permanece pendente | Consequência operacional |
+|---|---|---|---|
+| **OP-01 Verificado** | Existência real, representação legítima, proporcionalidade e neutralidade para Coletivos sem CNPJ | Prova mínima e suficiência por tipologia, exceções, revalidação | Não conceder até haver critérios verificáveis |
+| **OP-02 Contribuição Reconhecida** | Verificado vigente, experiência real, vínculo e percepções elegíveis | Instrumento, unidade final, regras de amostragem e suficiência | Não emitir com base em inscrições ou relatos sem validação |
+| **OP-03 Método** | Percepções contextualizadas, denominadores transparentes, deduplicação, participação comprovável | Thresholds, janela, amostra mínima, agregação, instrumento final | Não declarar evidência suficiente quantitativamente |
+| **OP-04 Integridade** | Antifraude, privacidade, tratamento de conflitos, contestação, revisão humana | Procedimentos de retenção, controle de acesso, incidentes e auditoria | Sem processamento operacional antes dos controles |
+| **OP-05 Competências** | Pessoa jurídica Guivos inscrita no CNPJ, por meio de sua direção; distinção entre avaliação, decisão e revisão | Atribuições e habilitações específicas, poderes para atos executivos | Nenhuma concessão automática ou sem decisor legítimo |
+| **OP-06 Ciclo de vida** | Estados e transições auditáveis; decisões motivadas; deferimento ≠ publicação | Vigência, renovação, prazos, guardas e efeitos entre selos | Não marcar selos vigentes em produção |
+| **OP-07 Exibição** | Discrição, significado, neutralidade da ausência, sem ranking ou venda; estados corretos | Contratos PER-103, rótulos, acessibilidade e autorização de publicação | Não apresentar selo como concedido sem concessão efetiva |
+| **OP-08 Implantação/testes** | **Não houve aprovação de execução**; nove gates IMP-01..09 preparados para futura homologação | Evidências e testes em todos os gates; decisão expressa de implantação | Bloqueado |
+
+### Fronteiras de decisão
+
+1. **Aprovado como direção de política:** OP-01 a OP-07; existência conceitual de dois selos independentes; responsabilidade da pessoa jurídica Guivos, inscrita no CNPJ, por meio da direção; sem necessidade de registrar o número do CNPJ no GKR.
+2. **Pendente de ratificação normativa e operacional:** parâmetros objetivos, poderes executivos, instrumentos de prova e avaliação, prazos, transições finais, decisões de perfil e exibição; vínculo item a item aos objetos DEC-01..05, RSP-05, RSP-06.
+3. **Não autorizado:** desenvolvimento, migração de estados em produção, emissão, concessão, exibição de selo efetivamente concedido e anúncio de programa ativo.
+
+### Critério de revisão e permanência no GKR
+
+O documento continua `proposed` e `normative: false`. A PR pode passar por exame semântico e mecânico, mas **não deve ser mesclada como política canônica vigente** apenas porque sete grupos têm direção aprovada. Os **36/36 exames analíticos** não são **36 ratificações formais**: seguem **0/36 formalmente comprovadas**. O dossiê extenso permanece material de rastreabilidade no Git; antes de eventual publicação do corpus, decidir qual documento conciso retém autoridade e quais peças são evidência, minuta ou histórico.
+
+**Próximo ato específico:** revisão da PR #654 quanto a fontes, consistência entre ato de competência e política, estatutos documentais, riscos de publicar candidato na `main` e matriz de correspondência DEC/RSP. Não abrir novas análises teóricas dos selos.
