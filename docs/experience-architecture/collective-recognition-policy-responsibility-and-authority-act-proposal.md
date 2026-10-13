@@ -2,7 +2,7 @@
 id: GKR-COLLECTIVE-RECOGNITION-AUTHORITY-ACT-001
 title: Selos de Coletivos — Minuta de Ato de Responsabilidade e Competências
 status: proposed
-version: 0.3.0
+version: 0.4.0
 owner: Direção da Guivos (instância indicada; poderes formais pendentes)
 last_updated: 2026-10-13
 normative: false
@@ -20,7 +20,7 @@ related:
 
 | Campo obrigatório | Estado da evidência |
 |---|---|
-| Estrutura/entidade responsável pela operação da política | **Guivos com CNPJ constituído — fato declarado expressamente pelo fundador em 13/10/2026**; razão social, número do CNPJ e documento comprobatório **não apresentados** |
+| Estrutura/entidade responsável pela política | **Pessoa jurídica Guivos, inscrita no CNPJ, por meio de sua direção**; número do CNPJ não requerido no GKR |
 | Órgão ou instância dirigente | Direção da Guivos — **definida como orientação de governança pelo fundador** |
 | Titular/signatário do ato | **Representante legal constituído — existência confirmada por declaração do fundador**; identificação nominal e prova documental **pendentes** |
 | Fundamento dos poderes e competência | **A ANEXAR** (instrumento identificável, data, versão, fonte verificável) |
@@ -110,7 +110,7 @@ EFICÁCIA / PUBLICAÇÃO: NÃO AUTORIZADAS NESTA MINUTA
 
 ## 7. Sequência de formalização
 
-1. Identificar e anexar **instrumento real** de poderes e signatário competente.
+1. Manter ou referenciar em registro corporativo apropriado o instrumento de poderes do representante competente para atos que exijam assinatura, sem reproduzir o número do CNPJ no GKR.
 2. Verificar a suficiência, abrangência e autenticidade do instrumento.
 3. Adequar esta minuta ao tipo de ato compatível com a estrutura efetiva e obter a manifestação formal válida.
 4. Resolver DEC-01..05, RSP-05 e RSP-06 mediante adjudicações rastreáveis, sem reproduzir 36 ciclos de exame conceitual.
@@ -135,3 +135,12 @@ PR #654 → DRAFT / NOT MERGED
 ## 9. Orientação editorial aprovada (13/10/2026)
 
 A pessoa jurídica Guivos, inscrita no CNPJ, é responsável pela política dos selos, por meio de sua direção. O número do CNPJ não precisa ser especificado no GKR. A identificação de representantes habilitados, quando necessária a atos jurídicos específicos, permanece no registro corporativo apropriado. Esta orientação não ratifica automaticamente os 36 gates nem autoriza a emissão de selos.
+
+
+## 10. Reconciliação entre ato de competência e política operacional (13/10/2026)
+
+A minuta do ato e a [Política Operacional Candidata](collective-recognition-operational-policy-candidate.md) têm **funções distintas**: o ato define responsabilidade, poderes e condições de eficácia; a política especifica critérios, fluxos, evidências, recurso, suspensão e revogação. A pessoa jurídica Guivos, inscrita no CNPJ, responde pela política por meio de sua direção. **Não há requisito de informar o número de CNPJ neste documento.**
+
+**Orientação de produto aprovada:** os dois selos independentes, seus significados e a instância responsável. **Não decididos como regra operativa:** delegações concretas, signatários em cada rito, limiares quantitativos, validade, revalidação, instrumento de avaliação, estados definitivos e publicação de concessões.
+
+A política operacional não substitui o ato de competências e o ato de competências não ratifica os 36 objetos DEC/RSP. As duas peças permanecem **proposed / non-normative**, sem assinatura nem autorização de emissão. A comprovação de representação eventualmente necessária para um ato jurídico específico pode permanecer na documentação corporativa, sem sua transcrição no GKR.
