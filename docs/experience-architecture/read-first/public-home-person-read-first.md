@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-PERSON-READ-FIRST-001
 title: 00 — Leia Primeiro — Home Pública — Pessoa
 status: active
-version: 1.0.4
+version: 1.0.5
 owner: Experience Architecture
-last_updated: 2026-09-25
+last_updated: 2026-10-13
 normative: false
 maturity: current_design_routing
 depends_on:
@@ -46,7 +46,7 @@ AI
 
 ### Fontes específicas desta Home
 
-1. `GKR-UX-HOME-MASTER-001 v1.0.7` — `docs/experience-architecture/public-home-master-document.md`;
+1. `GKR-UX-HOME-MASTER-001 v1.0.8` — `docs/experience-architecture/public-home-master-document.md`;
 2. `GKR-UX-HOME-PERSON-MEDIA-SUPPLY-001 v1.0.2` — `docs/experience-architecture/public-home-person-media-editorial-supply-reconciliation.md`;
 
 Se a designer optar por IA, acrescentar `GKR-UX-HOMES-GENINPUT-001` e preparar **Source Lock de execução / prompt** somente para essa execução. Esse artefato de execução não substitui nem altera eventual **Source Lock canônico da Home** já listado entre as fontes específicas.
