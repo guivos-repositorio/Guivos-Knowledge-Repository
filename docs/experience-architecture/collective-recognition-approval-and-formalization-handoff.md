@@ -2,7 +2,7 @@
 id: GKR-COLLECTIVE-RECOGNITION-FORMALIZATION-HANDOFF-001
 title: Selos de Coletivos — Aprovação de Direção e Formalização Pendente
 status: proposed
-version: 0.3.0
+version: 0.4.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -112,7 +112,7 @@ EFEITO
 
 | Campo | Registro atual |
 |---|---|
-| Instância competente para ratificar política | NÃO INFORMADA / NÃO COMPROVADA |
+| Instância indicada para governança da política | **DIREÇÃO DA PRÓPRIA GUIVOS — APROVADA PELO FUNDADOR COMO DIRETRIZ INTERNA**; competência jurídica e forma de representação a comprovar |
 | Titular ou signatário legitimado | NÃO INFORMADO / NÃO COMPROVADO |
 | Instrumento de competência (tipo, ID, data, versão) | NÃO APRESENTADO |
 | Fonte verificável (caminho ou anexo) | NÃO APRESENTADA |
@@ -133,6 +133,38 @@ EFEITO
 
 ---
 
+## 4.3 Decisão expressa de governança — direção da própria Guivos (13/10/2026)
+
+**Decisão do fundador nesta conversa:** aprovada a proposta de que **a direção da própria Guivos seja a instância responsável pela política de reconhecimento de Coletivos**, incluindo os selos **Verificado** e **Contribuição Reconhecida**, com **formalização dos poderes e procedimentos correspondentes**.
+
+**Alcance exato da aprovação:** orientação institucional interna sobre qual instância **deverá** governar a política. Não se presume, por esta manifestação isolada, que a Guivos tenha comprovado pessoa jurídica, representação legal registrada, cargo de diretor constituído, delegação executiva válida, comissão instituída ou signatário individual identificado. A aprovação anterior da existência e da direção de produto dos dois selos continua preservada.
+
+### Modelo de responsabilidade aprovado como direção
+
+| Função | Responsabilidade proposta | Limite |
+|---|---|---|
+| **Direção da Guivos** | Autoridade responsável pela política, seus critérios e eventuais revisões | Exige identificação de representantes legitimados e ato de competência adequado antes de efeitos operacionais |
+| Avaliação de evidências | Instrução técnica das solicitações e verificação documental | Não concede selos por conta própria |
+| Deliberação/concessão | Decisão individual rastreável por responsável habilitado | Não pode ser inferida da aprovação conceitual |
+| Contestação e revisão | Reexame motivado, com tratamento de conflito de interesses | Separação de papéis proporcional à estrutura efetiva, a formalizar |
+| Revogação/suspensão | Ato fundamentado, notificado e revisável conforme regras futuras | Sem automatismos não aprovados |
+
+### G0/B-01 após a decisão
+
+- **G0/B-01 — orientação da instância responsável:** **DECIDIDA — DIREÇÃO DA GUIVOS**.
+- **G0/B-01 — comprovação do instrumento jurídico/institucional e dos poderes exercíveis:** **PENDENTE**.
+- **F-03 — 36 gates:** permanecem 36/36 exames e 0/36 ratificações individualmente comprovadas; não houve aprovação automática desses objetos.
+- **F-04/F-05/F-07:** normatização operacional, design de selo concedido e execução produtiva continuam sem autorização.
+- **PR #654:** DRAFT, não normativa e não apta a ser tratada como política de concessão vigente apenas por esta decisão.
+
+### Próximo ato material necessário
+
+Preparar para assinatura/registro em instância habilitada um **Ato de Responsabilidade e Competências da Política de Reconhecimento de Coletivos**, contendo identificação da entidade/estrutura e seu representante legitimado, fundamento de poderes, instância decisória, eventual delegação, matriz de avaliação/concessão/revisão, tratamento de impedimentos, efeitos e vigência. A suficiência e a natureza jurídica desse instrumento devem ser verificadas à luz da estrutura efetiva da Guivos.
+
+Somente após comprovação do instrumento aplicável relacionar os objetos dos blocos `DEC-01..05` (25), `RSP-05` (6) e `RSP-06` (5) a deliberações rastreáveis. **Não elaborar novas 36 rodadas de exame conceitual**.
+
+---
+
 ## 5. Limites e preservação de outras frentes
 
 A Home de Organizações e Coletivos permanece centrada em propósito, capacidades e contribuição, e não nos selos. A Home Pessoa / Movimento 11 — Oportunidades em Movimento, da PR #656 já incorporada à main, é assunto distinto.
@@ -143,8 +175,8 @@ A PR #655 — oportunidades e pontos — permanece em DRAFT e suas pendências e
 FOUNDER PRODUCT-DIRECTION APPROVAL → CONFIRMED
 36 ANALYTICAL EXAMS → COMPLETED
 36 FORMAL INDIVIDUAL RATIFICATIONS → NOT DOCUMENTED
-G0/B-01 AUTHORITY PROOF → PENDING
+G0/B-01 GOVERNING BODY → GUIVOS DIRECTION APPROVED / LEGAL COMPETENCE PROOF → PENDING
 OPERATIVE BADGE ISSUANCE → NOT AUTHORIZED
 PR #654 → OPEN / DRAFT
-NEXT → RECEIVE PRIMARY COMPETENCE EVIDENCE OR DOCUMENTED COMPETENT DELIBERATION
+NEXT → FORMALIZE COMPETENCE INSTRUMENT AND RESPONSIBILITY ACT
 ```
