@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-MASTER-001
 title: Home Pública — Pessoa — Documento Mestre de Arquitetura Estratégica
 status: active
-version: 1.0.7
+version: 1.0.8
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-09-24
 normative: false
@@ -549,6 +549,27 @@ Os movimentos são funções de significado, não obrigação de onze seções v
 | 09 | Autoridade | demonstrar substância, método, proveniência e responsabilidade |
 | 10 | Autonomia e Confiança | explicitar limites e preservar controle |
 | 11 | Descoberta | reabrir continuidade sem fechar como venda |
+
+### 13.1 Movimento 11 — Descoberta: Oportunidades em Movimento
+
+**Decisão editorial aprovada para concepção de design:** aplicar o gráfico vivo **exclusivamente na Home Pessoa, Movimento 11 — Descoberta**. Não aplicar na Home de Organizações e Coletivos nem reposicionar este componente para o Movimento 02. O gráfico evidencia possibilidades que surgem e deixam de estar disponíveis, sem transformar a Home em painel de indicadores ou induzir medo de perder oportunidades.
+
+**Conteúdo validado:**
+
+- **Rótulo:** Oportunidades em movimento
+- **Título:** O mundo de possibilidades não para.
+- **Texto de apoio:** Oportunidades surgem, se transformam e se encerram todos os dias.
+- **Elemento visual:** Gráfico vivo de linha com a evolução temporal da contagem de oportunidades disponíveis, a partir de ativações e encerramentos reais.
+- **Texto de fechamento:** Explore o ecossistema, conheça o que existe e descubra qual pode ser o próximo passo.
+- **CTA:** Descubra a Guivos
+
+**Ordem de composição:** rótulo → título → texto curto → gráfico → fechamento → CTA.
+
+O Movimento 11 **materializa a descoberta**; não deve repetir em texto abaixo do gráfico as explicações já dadas pelos Movimentos 04 e 05 sobre invisibilidade, distância e aproximação de possibilidades. Preservar a função de fechamento exploratório, a autonomia da Pessoa e a liberdade criativa da designer.
+
+**Dados e honestidade operacional:** rascunhos não entram no indicador; somente transições verificadas alteram o total. Linha sobe na ativação elegível, desce na saída do estado disponível e fica estável na ausência de eventos. A amostra com fundo branco é **referência visual simulada**, não número real, implementação, nem layout obrigatório. Não publicar contagens fictícias ou alegar atualização em tempo real sem pipeline e métricas comprovados.
+
+**Aprofundamento específico:** [Oportunidades em Movimento — Gráfico Vivo no Movimento 11 da Home Pessoa](opportunities-in-motion-live-graph-design-reference.md), `GKR-UX-OPPORTUNITIES-LIVE-001`, com contrato semântico da métrica, arquitetura candidata e gates OPM-01..08. A inclusão editorial no Master não autoriza engenharia, publicação ou operação.
 
 ### Quadro de consulta rápida — significado e função
 
