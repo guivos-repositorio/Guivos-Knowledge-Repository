@@ -2,7 +2,7 @@
 id: GKR-COLLECTIVE-RECOGNITION-PR654-AUDIT-001
 title: Selos de Coletivos — Auditoria de Prontidão da PR 654
 status: proposed
-version: 0.1.0
+version: 0.2.0
 owner: Governança de Arquitetura da Guivos
 last_updated: 2026-10-13
 normative: false
@@ -20,7 +20,7 @@ Análise da PR #654 sobre a branch `docs/collective-recognition-candidate-202610
 
 A direção da pessoa jurídica Guivos, inscrita no CNPJ, é responsável pela política. Os conceitos dos dois selos e as diretrizes qualitativas OP-01..07 têm aprovação expressa da direção. Nenhuma dessas aprovações substitui as decisões formais e operacionais ainda pendentes. Exames analíticos: 36/36; ratificações individuais documentalmente demonstradas no dossiê: 0/36.
 
-A PR contém **quatro arquivos propostos**, todos com `status: proposed` e `normative: false`. O arquivo original reúne aproximadamente **6.333 linhas** de histórico cumulativo; sua inclusão no corpus da `main` como leitura corrente contrariaria a regra de manter histórico de evolução no Git, sem antes consolidar conhecimento único válido.
+A PR contém **cinco arquivos propostos, incluindo este relatório de auditoria**, todos com `status: proposed` e `normative: false`. O arquivo original reúne aproximadamente **6.333 linhas** de histórico cumulativo; sua inclusão no corpus da `main` como leitura corrente contrariaria a regra de manter histórico de evolução no Git, sem antes consolidar conhecimento único válido.
 
 ## 3. Classificação por documento
 
@@ -63,3 +63,19 @@ Há correspondência **em nível de grupos temáticos OP**, mas não foi demonst
 ## 7. Conclusão
 
 **PR #654: documentação conceitual e diretrizes consolidadas, mas não pronta para merge como política vigente.** Preservar o estado DRAFT e não atualizar MENU, perfis, Homes ou sistema de emissão nesta etapa. A próxima ação útil é **compactação canônica da documentação**, não novos ciclos de interpretação conceitual.
+
+## 8. Encerramento das validações automáticas (13/10/2026)
+
+Na revisão do commit `656090b688bd04256f37a171af033c7740c8bf62`, as duas verificações da PR #654 terminaram com **SUCCESS**: `GKR Semantic State Validation` e `GKR Mechanical Validation`. A branch foi indicada como tecnicamente mergeável na consulta ao GitHub. Essas verificações demonstram conformidade automática do pacote candidato, **não** ratificação de política, assinatura do ato de competências ou autorização de publicação.
+
+A política operacional candidata foi compactada na versão `0.9.0` e o dossiê histórico recebeu limpeza exclusivamente mecânica de whitespace. A contagem de 36/36 exames e 0/36 ratificações individuais comprovadas permanece inalterada.
+
+### Deliberação de prontidão
+
+- **CI:** PASS; a falha mecânica de whitespace foi saneada.
+- **Governança normativa:** HOLD; instrumento eficaz de competências, parâmetros e adjudicações DEC/RSP permanecem por comprovar.
+- **Higiene documental:** HOLD para merge integral; cinco documentos de naturezas distintas ainda figuram na PR, incluindo o dossiê cumulativo e o handoff de evolução. As fontes históricas não devem tornar-se leitura canônica corrente por efeito de merge.
+- **Próxima entrega autorizável:** pacote editorial reduzido e distinto, com apenas decisões aprovadas, pendências verificáveis e referências ao histórico da PR; submetê-lo a revisão própria, sem promover status normativo. A norma operacional futura exige decisão humana competente.
+- **Efeito sobre PR #655:** nenhum. Continua DRAFT com governança econômica separada.
+
+**Conclusão atual:** validações técnicas aprovadas; PR #654 preservada em DRAFT; nenhuma emissão, publicação de selo concedido ou implementação autorizada.
