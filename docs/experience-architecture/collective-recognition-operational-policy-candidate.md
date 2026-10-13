@@ -2,7 +2,7 @@
 id: GKR-COLLECTIVE-RECOGNITION-OPERATIONS-001
 title: Selos de Coletivos — Política Operacional Candidata
 status: proposed
-version: 0.6.0
+version: 0.7.0
 owner: Pessoa jurídica Guivos, inscrita no CNPJ, por meio de sua direção
 last_updated: 2026-10-13
 normative: false
@@ -267,5 +267,49 @@ OP-03 NUMERIC CRITERIA / OP-06 DEADLINES → OPEN
 OP-07 → PUBLIC DISPLAY CANDIDATE; DECISION PENDING
 OP-08 → ENGINEERING / ISSUANCE NOT AUTHORIZED
 DEC/RSP → 36/36 ANALYTICAL EXAMS; 0/36 DOCUMENTED INDIVIDUAL RATIFICATIONS
+PR #654 → DRAFT
+```
+
+
+## 16. Aprovação de direção OP-07 e contrato candidato de implantação OP-08 (13/10/2026)
+
+O fundador aprovou a recomendação de **diretrizes qualitativas de OP-07 — Exibição Pública**, condicionando a utilização efetiva à concessão legítima, aos contratos de interface e à governança de publicação. **Não houve autorização para publicar selos como concedidos**.
+
+### OP-07 — princípios de apresentação aprovados
+
+1. Selos discretos em perfis de Coletivos, com significado, período, escopo e limites acessíveis.
+2. A ausência de selo é neutra e não gera automaticamente punição, classificação inferior ou perda de descobribilidade.
+3. Não vender selos e não transformar reconhecimentos em ranking universal ou alegação de segurança/impacto garantidos.
+4. Estados suspenso, expirado e revogado exigem atualização/retirada apropriada da exibição, com respeito à transparência, privacidade e contestação.
+5. A Home Organizações e Coletivos pode abordar o conceito de confiança e contribuição sem afirmar selos concedidos antes da operação real.
+6. Os detalhes de posicionamento, rótulos por estado, acessibilidade e integração de PER-103 continuam sujeitos a contrato de UX e dados.
+
+### OP-08 — requisitos candidatos de implantação e testes (AINDA NÃO APROVADOS)
+
+| Gate | Evidência verificável antes da implantação | Estado |
+|---|---|---|
+| IMP-01 | Política normativa final com critérios, parâmetros, validade e concessão ratificados | Pendente |
+| IMP-02 | Responsáveis habilitados, delegações aplicáveis e trilha de decisões formalizadas | Pendente |
+| IMP-03 | Estados e transições aprovados, incluindo dependência entre Verificado e Contribuição Reconhecida | Pendente |
+| IMP-04 | Dados: proveniência, elegibilidade, deduplicação, retenção e acessos verificados | Pendente |
+| IMP-05 | Segurança e proteção: antifraude, moderação, contestação, auditoria e incidentes testados | Pendente |
+| IMP-06 | UX: apresentação contextual, acessibilidade, ausência neutra e estado de revogação testados | Pendente |
+| IMP-07 | E2E: concessão, indeferimento, complementação, recurso, renovação, suspensão, expiração, revogação e correção | Pendente |
+| IMP-08 | Observabilidade: idempotência, logs, sincronização com perfis e prevenção de selo fantasma | Pendente |
+| IMP-09 | Homologação e autorização expressa para engenharia, ativação e publicação, conforme responsabilidades | Pendente |
+
+**Testes críticos de fronteira:** Coletivo informal sem CNPJ; representação contestada; avaliação comprada; poucos respondentes; retirada de Verificado com Contribuição Reconhecida vigente; reversão de decisão; falha de sincronização de perfil público; reprocessamento de evento duplicado; suspensão indevida e recurso acolhido. Nenhum caso será marcado como executado sem relatório verificável.
+
+**Sequência de liberação proposta:** (a) ratificações e parâmetros operacionais; (b) contratos de dados/UX/segurança; (c) implementação isolada e testes; (d) homologação; (e) autorização humana específica para produção; (f) exibição apenas de reconhecimentos efetivamente concedidos. Este documento **não autoriza nenhuma dessas ações** por si.
+
+### Checkpoint da política
+
+```text
+OP-01..07 → FOUNDER-APPROVED QUALITATIVE POLICY DIRECTION
+OP-08 → IMPLEMENTATION / TEST REQUIREMENTS CANDIDATE ONLY
+DEC/RSP → 36/36 ANALYTICAL EXAMS; 0/36 DOCUMENTED INDIVIDUAL RATIFICATIONS
+NUMERIC CRITERIA, DEADLINES, DELEGATIONS → OPEN
+TECHNICAL TESTS EXECUTED → 0 CONFIRMED
+BADGE ISSUANCE AND PRODUCTION PUBLICATION → NOT AUTHORIZED
 PR #654 → DRAFT
 ```
