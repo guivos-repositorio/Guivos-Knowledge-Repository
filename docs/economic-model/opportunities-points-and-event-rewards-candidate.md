@@ -2,7 +2,7 @@
 id: GEM-OPPORTUNITIES-POINTS-REWARDS-CANDIDATE-001
 title: Oportunidades — Retorno em Pontos e Premiações de Eventos — Proposta Transversal
 status: draft
-version: 2.8.0
+version: 2.8.1
 owner: Guivos
 last_updated: 2026-10-13
 normative: false
@@ -2030,7 +2030,33 @@ PR #655 → DRAFT / NO PRODUCTION AUTHORIZATION
 P7 / LIQ-01 MALL → CONTRACT AND SETTLEMENT NOT APPROVED
 P8 / LIQ-02 TRAVEL → CONTRACT AND SETTLEMENT NOT APPROVED
 P9 / LEG-FIN-COVER → SPECIALIST REVIEW AND DECISIONS OPEN
-P1–P6 → DOCUMENTED CANDIDATE DIRECTIONS / ECONOMIC VALUES OPEN
+P1 / ROUND → POLICY DIRECTION APPROVED / IMPLEMENTATION NOT AUTHORIZED
+P2–P6 → ECONOMIC AND CONTRACTUAL GATES OPEN
 E2E → 16 DOCUMENTED / 0 EXECUTED
 PR #655 → DRAFT / NON-NORMATIVE / NO LIVE POINTS
+```
+
+## 38. ROUND/P1 — decisão expressa de política de arredondamento (v2.8.1)
+
+**Evidência:** manifestação de aprovação do fundador registrada na [Issue #661, comentário de deliberação](https://github.com/guivos-repositorio/Guivos-Knowledge-Repository/issues/661#issuecomment-6157719752) em 13/10/2026. Esta seção registra a **decisão de política específica** e não promove o presente dossiê integral a documento normativo, nem autoriza implementar pontos.
+
+| Parâmetro ROUND/P1 | Decisão aprovada |
+|---|---|
+| Método | `ROUND_HALF_EVEN` (empate decimal para o dígito final par) |
+| Precisão | `0,01 ponto` — duas casas decimais |
+| Unidade | Um fato gerador elegível por ofertante, após apuração decimal exata, com quantização única |
+| Estorno parcial | Proporcional acumulado: recálculo do crédito-alvo sobre a base remanescente segundo versão original da política, reversão da diferença entre saldo creditado e alvo |
+| Estorno integral | Reversão exata do crédito original, sem saldos residuais fictícios |
+| Auditoria | Insumos e regra versionados, ledger segregado por ofertante, idempotência e reconciliação do resíduo de arredondamento |
+
+**Limite da aprovação:** o método de quantização é uma diretriz de política aprovada para futura especificação e validação. A elegibilidade, percentuais de FIN-COMPRA (P4), custo e retenção, paridade de utilização (PAR-02/P2), aquisição pré-paga (FUND-01/P3), cobertura (COVER/P6/P9), obrigações de parceiros, tributação e regras operacionais de emissão/resgate **não** foram ratificados por essa decisão.
+
+**Condição técnica:** formalizar exemplos automatizados de empates decimais, estornos parciais em ordens distintas, transações de múltiplos ofertantes, versões de política e idempotência. Os 16 testes E2E econômicos permanecem especificados, sem comprovação de execução.
+
+```text
+ROUND/P1 → APPROVED POLICY DIRECTION
+ROUND/P1 IMPLEMENTATION → NOT AUTHORIZED
+PAR-02 / FUND-01 / COVER / P4–P9 → OPEN WITH THEIR OWN GATES
+E2E → 16 SPECIFIED / 0 EXECUTED
+PR #655 → DRAFT / NON-NORMATIVE
 ```
