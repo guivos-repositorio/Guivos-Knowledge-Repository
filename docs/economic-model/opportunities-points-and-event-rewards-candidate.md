@@ -2,7 +2,7 @@
 id: GEM-OPPORTUNITIES-POINTS-REWARDS-CANDIDATE-001
 title: Oportunidades — Retorno em Pontos e Premiações de Eventos — Proposta Transversal
 status: draft
-version: 2.6.0
+version: 2.7.0
 owner: Guivos
 last_updated: 2026-10-13
 normative: false
@@ -1924,4 +1924,58 @@ P3 EVENT POINT PURCHASE → SEPARATE COVERAGE AND SERVICE FEE CANDIDATE / PRICE 
 FIN-COMPRA / FIN-EVENTO → FOUNDER DIRECTIONS PRESERVED
 E2E → 16 SPECIFIED / 0 EXECUTED
 PR #655 → DRAFT / NOT NORMATIVE
+```
+
+## 36. Encaminhamento P4–P6 — contrato com ofertantes (v2.7.0 candidato)
+
+**Status:** análise delimitada para deliberação futura, não aprovação de tabela comercial, tributos, preço, responsabilidade contratual ou implementação. Preserva as decisões FIN-COMPRA (retenção do custo de pontos no repasse) e FIN-EVENTO (saldo pré-pago).
+
+### 36.1 P4 — Percentuais opcionais e base elegível
+
+A Guivos deverá governar **uma tabela de percentuais optativos**, selecionáveis pelo ofertante de oportunidades pagas. Nenhum percentual específico ou conjunto de faixas foi ratificado. Percentuais de exemplos históricos (inclusive 1%) são ilustrativos, não catálogo oficial. O denominador precisa ser expresso em regra contratual e demonstrado no checkout: valor elegível da oportunidade após descontos aplicáveis, com tratamento ainda a deliberar para impostos, frete, serviços acessórios, reembolsos e splits por ofertante.
+
+**Condições de decisão:** publicar versão e vigência da tabela; delimitar quem pode selecionar/alterar percentual e quando; proibir alteração retroativa de benefício prometido sem rito; comprovar consistência entre preço, base de cálculo, retenção, quantidade de pontos e comunicação à Pessoa. Oportunidades gratuitas não devem gerar FIN-COMPRA sobre base monetária zero; podem usar FIN-EVENTO sob orçamento próprio.
+
+### 36.2 P5 — Taxa Guivos e encargos separados
+
+A taxa própria da plataforma, eventual tarifa de campanha/evento e custo de cobertura dos pontos deverão aparecer como **componentes distintos** nos demonstrativos. Não fixar percentual ou preço por inferência. A remuneração da Guivos não pode ser confundida com o valor financiado de pontos, repasse ao ofertante, tributo ou tarifa de adquirência. A sequência de deduções e o responsável por cada encargo exigem definição contábil e contratual específica.
+
+**Modelo ilustrativo, sem valores oficiais:**
+```text
+VALOR BRUTO DA OPORTUNIDADE
+- DESCONTOS / AJUSTES CONTRATUAIS
+= BASE ELEGÍVEL (A RATIFICAR)
+→ PONTOS PROJETADOS PELA TABELA OPTATIVA (A RATIFICAR)
+→ CUSTO DOS PONTOS RETIDO NO REPASSE DO OFERTANTE (FIN-COMPRA)
+→ TAXA GUIVOS APURADA EM RUBRICA SEPARADA
+→ OUTRAS TAXAS / TRIBUTOS DISCRIMINADOS SEGUNDO REGRA APROVADA
+= REPASSE LÍQUIDO CONCILIÁVEL (SEM FÓRMULA DEFINITIVA NESTE DOCUMENTO)
+```
+
+### 36.3 P6 — Estornos, chargeback e cobertura após resgate
+
+Proposta de princípio: impedir crédito definitivo sem confirmação do gatilho elegível; tratar cancelamento e estorno com lançamentos reversíveis e trilha de auditoria, jamais apagando histórico. Caso pontos já tenham sido legitimamente utilizados, não presumir débito negativo automático da Pessoa, confisco, obrigação de pagamento ou repasse do prejuízo a terceiros sem base contratual e exame jurídico. O processo deve identificar financiador de origem, causa da contestação, status do saldo, reserva de cobertura e eventual recuperação contra a contraparte efetivamente responsável, com proteção contra dupla cobrança.
+
+**Casos mínimos para futura homologação:** reembolso total/parcial antes do crédito; depois do crédito e antes do resgate; chargeback após resgate; transação dividida entre ofertantes; erro operacional e reexecução idempotente; fraude alegada mas ainda não comprovada; disputa favorável à Pessoa. Não marcar esses casos como testados por estarem documentados.
+
+### 36.4 Matriz decisória e dependências
+
+| Gate | Regra já estabelecida | Decisão pendente | Evidência necessária |
+|---|---|---|---|
+| P4 | Incentivo percentual opcional, selecionado de tabela Guivos | Percentuais, base elegível, exclusões e versionamento | Simulações por compra, descontos, múltiplos ofertantes, devoluções |
+| P5 | Custo de pontos e remuneração Guivos separados | Preços/taxas, incidências, ordem de deduções e discriminação fiscal | Quadro de liquidação conciliável e exame tributário |
+| P6 | Custeio atribuído ao ofertante de origem, sem subsídio implícito | Risco de chargeback, perdas após resgate, reservas, responsabilidade e recursos | Matriz de cenários, contratos, proteção da Pessoa e cobertura COVER |
+| Dependência | P1–P3 seguem candidatos e não adjudicados | ROUND, PAR-02, FUND-01 e COVER | Deliberação conjunta por responsável competente |
+
+**Proibição de inferência:** nenhuma tabela percentual, tarifa, paridade, operação de crédito, saldo real ou direito de resgate é criada por esta matriz. A seleção de porcentagens não altera a unidade única de pontos e não habilita Mall/Travel; LIQ-01/02 permanecem decisões futuras separadas.
+
+```text
+P4 → TABLE AND ELIGIBLE BASE OPEN
+P5 → FEES AND TAX ALLOCATION OPEN
+P6 → REVERSAL / CHARGEBACK / COVERAGE OPEN
+FIN-COMPRA → DEDUCT POINT COST FROM OFFEROR PAYOUT (PRESERVED)
+FIN-EVENTO → OFFEROR PREPAID BALANCE (PRESERVED)
+P1–P3 → CANDIDATE / NOT NORMATIVE
+E2E → 16 DOCUMENTED / 0 EXECUTED
+PR #655 → DRAFT / NO PRODUCTION AUTHORIZATION
 ```
