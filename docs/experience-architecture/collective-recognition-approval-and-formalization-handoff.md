@@ -2,7 +2,7 @@
 id: GKR-COLLECTIVE-RECOGNITION-FORMALIZATION-HANDOFF-001
 title: Selos de Coletivos — Aprovação de Direção e Formalização Pendente
 status: proposed
-version: 0.4.0
+version: 0.5.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -165,6 +165,18 @@ Somente após comprovação do instrumento aplicável relacionar os objetos dos 
 
 ---
 
+## 4.4 Confirmação de CNPJ e representante legal constituídos (13/10/2026)
+
+O fundador confirmou que **a Guivos possui CNPJ e representante legal constituídos**. Assim, a hipótese de Guivos ainda não constituída **não deve permanecer como premissa corrente deste processo específico**. A confirmação é **declaratória**, sem apresentação do número do CNPJ, razão social, documento constitutivo ou prova de poderes neste processo.
+
+O **ato de responsabilidade** foi atualizado para v0.2.0 na PR #654. A pendência G0/B-01 passa a ser **comprovação de identidade jurídica e poderes do representante já declarado existente**, não uma pergunta aberta sobre a existência de pessoa jurídica.
+
+Próxima evidência necessária: comprovação de CNPJ/razão social e documento vigente que identifique representante, poderes de gestão, regras de assinatura e delegações. **Não presumir que ser fundador equivale automaticamente a ser o representante habilitado**, nem inventar dados identificadores.
+
+**Estado:** instituição jurídica declarada pelo fundador; documentação do ato de competência e poderes ainda pendente; 36/36 exames preservados, 0/36 ratificações individualmente comprovadas; emissão de selos não autorizada.
+
+---
+
 ## 5. Limites e preservação de outras frentes
 
 A Home de Organizações e Coletivos permanece centrada em propósito, capacidades e contribuição, e não nos selos. A Home Pessoa / Movimento 11 — Oportunidades em Movimento, da PR #656 já incorporada à main, é assunto distinto.
@@ -178,5 +190,5 @@ FOUNDER PRODUCT-DIRECTION APPROVAL → CONFIRMED
 G0/B-01 GOVERNING BODY → GUIVOS DIRECTION APPROVED / LEGAL COMPETENCE PROOF → PENDING
 OPERATIVE BADGE ISSUANCE → NOT AUTHORIZED
 PR #654 → OPEN / DRAFT
-NEXT → FORMALIZE COMPETENCE INSTRUMENT AND RESPONSIBILITY ACT
+NEXT → VERIFY CORPORATE REGISTRATION AND LEGAL REPRESENTATIVE POWERS; EXECUTE COMPETENCE ACT
 ```
