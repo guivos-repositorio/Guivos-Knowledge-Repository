@@ -2,7 +2,7 @@
 id: GEM-OPPORTUNITIES-POINTS-REWARDS-CANDIDATE-001
 title: Oportunidades — Retorno em Pontos e Premiações de Eventos — Proposta Transversal
 status: draft
-version: 2.7.0
+version: 2.8.0
 owner: Guivos
 last_updated: 2026-10-13
 normative: false
@@ -1978,4 +1978,59 @@ FIN-EVENTO → OFFEROR PREPAID BALANCE (PRESERVED)
 P1–P3 → CANDIDATE / NOT NORMATIVE
 E2E → 16 DOCUMENTED / 0 EXECUTED
 PR #655 → DRAFT / NO PRODUCTION AUTHORIZATION
+```
+
+## 37. Encaminhamento P7–P9 — liquidação e governança financeira transversal (v2.8.0 candidata)
+
+**Natureza:** especificação candidata para decisões futuras, sem contratos de parceiros assinados, paridade de uso definida, autorização de resgate ou operação financeira. A existência de uma única unidade de pontos não confere aceitação automática nos produtos especializados.
+
+### 37.1 P7 / LIQ-01 — Guivos Mall
+
+- **Reserva e cotação:** apresentar valor monetário da cesta, quantidade de pontos estimada e condições de uso somente depois de PAR-02 e cobertura aprovados. Cotação expirada não constitui direito a uma taxa indefinida.
+- **Múltiplos vendedores:** atribuir cada obrigação de liquidação ao vendedor/contrato pertinente, com ledger por pedido e item; não compensar o custo de um vendedor com o de outro sem regra explícita.
+- **Gatilho de liquidação:** decidir contratualmente se depende de confirmação de compra, pagamento, entrega ou janela de contestação, registrando evidência, retenções e prazo.
+- **Cancelamentos e devoluções:** reverter reservas e créditos de maneira idempotente e proporcional, tratando devolução parcial, fraude contestada e resgate já liquidado sem gerar saldo ocultamente negativo.
+- **Responsabilidades:** estabelecer quem financia diferença de cotação, taxas, chargeback, inadimplência e indisponibilidade do parceiro; não presumir obrigação universal da Guivos ou do vendedor.
+
+**Gate de aceite LIQ-01:** contrato por contraparte, preço e paridade autorizados, reconciliação por vendedor, reserva atômica, regras de estorno, tributação e testes E2E-12/14/15 com risco integrado E2E-06. **Estado: PENDENTE / SEM RESGATE.**
+
+### 37.2 P8 / LIQ-02 — Guivos Travel
+
+- **Cotação e disponibilidade:** pontos só poderão compor pagamento após confirmação da oferta do fornecedor, preço, moeda, prazo da cotação e regras de reserva.
+- **Reservas e tarifas:** diferenciar pedido, reserva pendente, emissão/confirmacão e serviço prestado; identificar multa, remarcação, no-show, câmbio e tributos sem transformá-los em perda automática dos pontos.
+- **Cancelamentos e reembolsos:** registrar contraparte e política contratual aplicável, restituição parcial, prazo, disponibilidade de pontos e reversão de liquidação, com proteção à Pessoa.
+- **Risco por fornecedor:** responsabilidades por recusa, alteração de tarifa, insolvência ou cancelamento precisam de tratamento contratual específico; nenhuma promessa de resgate é válida apenas por haver saldo na carteira.
+
+**Gate de aceite LIQ-02:** acordos com fornecedores, confirmação de disponibilidade, paridade/cobertura, políticas de alteração e cancelamento, conciliação de moeda e execução dos E2E-13/14/15, inclusive risco integrado E2E-06. **Estado: PENDENTE / SEM RESGATE.**
+
+### 37.3 P9 / LEG-FIN-COVER — obrigações transversais
+
+| Dimensão | Evidência/decisão pendente | Proibição de inferência |
+|---|---|---|
+| Natureza jurídica dos pontos | Enquadramento do benefício, titularidade, transferibilidade, uso e deveres das partes | Não tratar automaticamente como moeda, depósito ou conta de pagamento |
+| Contabilização | Reconhecimento de recebimento, obrigação, receita, passivo e baixa, por modalidade de origem | Exemplo de ledger não é lançamento contábil obrigatório |
+| Cobertura econômica | Reservas, segregação lógica, reconciliação, déficit e resolução de incidentes | Não emitir crédito ou permitir resgate além de cobertura verificável |
+| Tributação e documentos | Incidências por origem, remuneração, parceiro e jurisdição; documentos fiscais e retenções | Não presumir alíquota ou isenção |
+| Privacidade e dados | Minimização, acesso, conservação, prevenção de fraude e evidências de contestação | Não publicar dados pessoais/financeiros identificáveis |
+| Saldo não utilizado | Expiração, restituição, campanhas encerradas, sucessão de contratos e comunicação | Não presumir retenção ou reembolso automático |
+| Responsabilidade e recursos | Tratamento de erro, inadimplência, fraude, insolvência, disputas e competência decisória | Não transferir perdas automaticamente à Pessoa |
+
+### 37.4 Dependências e limites de maturidade
+
+| Etapa | Dependências | Liberação possível apenas após |
+|---|---|---|
+| P7 / Mall | P1–P6, PAR-02, COVER e LIQ-01 | Contratos, política, segurança e testes isolados/integração |
+| P8 / Travel | P1–P6, PAR-02, COVER e LIQ-02 | Fornecedor, cotação, reservas, cancelamentos e testes |
+| P9 / Transversal | FUND-01, ROUND, PAR, LEG/FIN/COVER e responsabilidades | Parecer especializado, aprovação por autoridade competente, conciliação |
+| Operação | E2E-01..16 e homologação própria | Evidências de execução e autorização expressa de produção |
+
+**Decisão editorial:** P7–P9 representam delimitação de requisitos para deliberação; não ratificam a escolha de uso de pontos, não definem paridade, não contratam fornecedores e não inauguram custodiante, emissor regulado ou obrigação de resgate. Revisão regulatória e tributária deverá considerar as operações efetivas e as jurisdições pertinentes.
+
+```text
+P7 / LIQ-01 MALL → CONTRACT AND SETTLEMENT NOT APPROVED
+P8 / LIQ-02 TRAVEL → CONTRACT AND SETTLEMENT NOT APPROVED
+P9 / LEG-FIN-COVER → SPECIALIST REVIEW AND DECISIONS OPEN
+P1–P6 → DOCUMENTED CANDIDATE DIRECTIONS / ECONOMIC VALUES OPEN
+E2E → 16 DOCUMENTED / 0 EXECUTED
+PR #655 → DRAFT / NON-NORMATIVE / NO LIVE POINTS
 ```
