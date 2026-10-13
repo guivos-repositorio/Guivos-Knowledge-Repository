@@ -2,7 +2,7 @@
 id: GKR-COLLECTIVE-RECOGNITION-OPERATIONS-001
 title: Selos de Coletivos — Política Operacional Candidata
 status: proposed
-version: 0.3.0
+version: 0.4.0
 owner: Pessoa jurídica Guivos, inscrita no CNPJ, por meio de sua direção
 last_updated: 2026-10-13
 normative: false
@@ -160,3 +160,17 @@ OP-01..08 → PROPOSALS FOR EXPLICIT DECISION
 DEC/RSP → 36/36 ANALYTICALLY EXAMINED; 0/36 FORMALLY RATIFIED
 OPERATIONAL BADGE ISSUANCE → NOT AUTHORIZED
 ```
+
+
+## 13. Exame de deliberação qualitativa OP-01, OP-02, OP-04 e OP-05
+
+A concordância do fundador autorizou seguir com a análise desses quatro grupos, não ratificou automaticamente os 36 objetos.
+
+| Grupo | Proposta pronta para apreciação | Questões ainda abertas |
+|---|---|---|
+| OP-01 Verificado | Existência, representação legítima, prova proporcional, revisão de alterações; CNPJ não obrigatório para Coletivos | Evidência mínima por tipo e suficiência |
+| OP-02 Contribuição | Verificado vigente, experiência e participação comprovadas, percepção contextual com respostas desfavoráveis incluídas | Unidade, instrumento, mínimos e janelas |
+| OP-04 Proteção | Vedação a fraude e avaliações compradas, revisão humana, deduplicação, privacidade e contestação | Retenção, controles de acesso e rito específico |
+| OP-05 Competências | Guivos inscrita no CNPJ responde pela política por meio da direção; análise, decisão e revisão funcionalmente distintas | Designações, delegações e poderes específicos |
+
+**Resultado:** quatro propostas qualitativas estabilizadas para deliberação; sem ratificação formal individual, sem publicação ou emissão autorizada. Os exames DEC/RSP continuam 36/36 e as ratificações formalmente documentadas 0/36.
