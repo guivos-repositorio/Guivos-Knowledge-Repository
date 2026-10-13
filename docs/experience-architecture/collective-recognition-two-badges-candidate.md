@@ -54,8 +54,8 @@ Solicitado → evidências em exame → complementação/elegível/indeferido �
 
 ## Exibição candidata — card/PER-103
 
-**Grupo Pedal & Vida**  
-Saúde · Esporte · Bem-estar  
+**Grupo Pedal & Vida**
+Saúde · Esporte · Bem-estar
 **Verificado** · **Contribuição reconhecida**
 
 Selos discretos com significado e escopo consultáveis, período e revisão; nunca nota universal ou vantagem comprável. Não inserir em PER-103, buscas ou protótipos antes de autoridade específica sobre emissão e publicação.
@@ -232,10 +232,10 @@ Não existe um percentual mínimo oficial, tamanho mínimo universal, prazo ou n
 
 ### 4. Decisão proposta, sem pontuação única
 
-`BASE_INSUFICIENTE`: denominador ausente/inválido, amostra inadequada, evidência fraca ou cobertura indecidível.  
-`EM_REVISAO`: fraude potencial, viés relevante, conflito de evidências, denúncia fundamentada em apuração ou mudança de contexto.  
-`ELEGIVEL_A_DELIBERACAO`: requisitos de existência, elegibilidade, integridade, robustez e contribuição atendidos sob regras **futuras** publicadas e versionadas.  
-`NAO_ELEGIVEL_NO_CICLO`: critérios futuros válidos não atendidos, com fundamentação e possibilidade de recurso.  
+`BASE_INSUFICIENTE`: denominador ausente/inválido, amostra inadequada, evidência fraca ou cobertura indecidível.
+`EM_REVISAO`: fraude potencial, viés relevante, conflito de evidências, denúncia fundamentada em apuração ou mudança de contexto.
+`ELEGIVEL_A_DELIBERACAO`: requisitos de existência, elegibilidade, integridade, robustez e contribuição atendidos sob regras **futuras** publicadas e versionadas.
+`NAO_ELEGIVEL_NO_CICLO`: critérios futuros válidos não atendidos, com fundamentação e possibilidade de recurso.
 
 São estados candidatos; nenhuma classificação deve ser calculada automaticamente antes de decisão de governança. `BASE_INSUFICIENTE` não equivale a contribuição negativa.
 
@@ -677,7 +677,7 @@ Exemplo: pedalada pode apresentar contribuição relevante para saúde e conviv�
 
 ### Registro de decisão sem criar autoridade indevida
 
-**Conceitualmente acordado:** dupla de selos, rótulos, finalidades, discrição visual, propósito Guivos e proteção contra manipulação e desvalorização dos não reconhecidos.  
+**Conceitualmente acordado:** dupla de selos, rótulos, finalidades, discrição visual, propósito Guivos e proteção contra manipulação e desvalorização dos não reconhecidos.
 **Ainda sujeito a adjudicação normativa:** limiares e métodos estatísticos, provas e corroboração suficientes, tratamento de contradição entre dimensões, validade, alçadas nominadas, recurso, publicação, controle técnico e calibração dos critérios.
 
 ```text
@@ -874,11 +874,11 @@ BADGE ISSUANCE / IMPLEMENTATION → NOT AUTHORIZED
 
 ### Achados bloqueadores priorizados
 
-**P0-01** Ausência de critérios de prova formalmente suficientes para existência, representação e experiência.  
-**P0-02** Ausência de regra substantiva e estatística de concessão de Contribuição Reconhecida, com robustez proporcional para Coletivos pequenos.  
-**P0-03** Autoridade humana competente de concessão, recurso e publicação não designada.  
-**P0-04** PER-103 e cards carecem de contrato normativo expresso e fonte canônica de selo vigente.  
-**P0-05** Proteções contra fraude, dados sensíveis, contestação, validade e retirada ainda não validadas como operação.  
+**P0-01** Ausência de critérios de prova formalmente suficientes para existência, representação e experiência.
+**P0-02** Ausência de regra substantiva e estatística de concessão de Contribuição Reconhecida, com robustez proporcional para Coletivos pequenos.
+**P0-03** Autoridade humana competente de concessão, recurso e publicação não designada.
+**P0-04** PER-103 e cards carecem de contrato normativo expresso e fonte canônica de selo vigente.
+**P0-05** Proteções contra fraude, dados sensíveis, contestação, validade e retirada ainda não validadas como operação.
 
 ### Separação de estados
 
@@ -1390,10 +1390,10 @@ BADGE ISSUANCE/PUBLICATION/IMPLEMENTATION → NOT AUTHORIZED
 
 ### Resultados possíveis do exame de existência
 
-`SUFICIENTE_PARA_DELIBERACAO`: prova rastreável e corroborada, sem conflito relevante em aberto; não concede selo.  
-`COMPLEMENTACAO`: falta evidência recuperável de um requisito.  
-`CONFLITANTE`: há incompatibilidade material a resolver.  
-`INSUFICIENTE`: não se pode sustentar a afirmação, sem declarar que o Coletivo não existe ou é fraudulento.  
+`SUFICIENTE_PARA_DELIBERACAO`: prova rastreável e corroborada, sem conflito relevante em aberto; não concede selo.
+`COMPLEMENTACAO`: falta evidência recuperável de um requisito.
+`CONFLITANTE`: há incompatibilidade material a resolver.
+`INSUFICIENTE`: não se pode sustentar a afirmação, sem declarar que o Coletivo não existe ou é fraudulento.
 `INTEGRIDADE_EM_REVISAO`: indício objetivo de falsificação sujeito a processo independente.
 
 ### Condições para aprovação normativa
@@ -1448,10 +1448,10 @@ Quem solicita a verificação deve ser identificável em âmbito privado, demons
 
 ### Estados candidatos da verificação do vínculo
 
-`REPRESENTACAO_COMPROVADA_PARA_DELIBERACAO`: identidade/vínculo/mandato/escopo adequados, sujeitos a decisão competente.  
-`COMPLEMENTACAO_REQUERIDA`: falta documento ou confirmação proporcional.  
-`REPRESENTACAO_CONTESTADA`: alegações materiais conflitantes, sem presunção de má-fé.  
-`MANDATO_EXPIRADO_OU_REVOGADO`: não presumir autorização atual.  
+`REPRESENTACAO_COMPROVADA_PARA_DELIBERACAO`: identidade/vínculo/mandato/escopo adequados, sujeitos a decisão competente.
+`COMPLEMENTACAO_REQUERIDA`: falta documento ou confirmação proporcional.
+`REPRESENTACAO_CONTESTADA`: alegações materiais conflitantes, sem presunção de má-fé.
+`MANDATO_EXPIRADO_OU_REVOGADO`: não presumir autorização atual.
 `INTEGRIDADE_EM_ANALISE`: indício fundamentado de identidade ou autorização adulterada, sujeito a procedimento e recurso.
 
 ### Dependências e decisão ainda aberta
@@ -1582,10 +1582,10 @@ Check-in isolado, presença nominal e conclusão administrativa não equivalem n
 
 ### Estados candidatos
 
-`EXPERIENCIA_ELEGIVEL_PARA_AVALIACAO` = vivência delimitada, legitimamente comprovada, com atribuição contextual analisada e direitos preservados; **não é concessão do selo**.  
-`INSCRICAO_SEM_VIVENCIA_COMPROVADA` = inscrição isolada, sem inferir participação.  
-`VIVENCIA_PARCIAL_DELIMITADA` = etapa efetivamente vivida, sem inferir programa completo.  
-`ATRIBUICAO_INDETERMINADA` = experiência válida, mas mérito institucional não imputável com segurança.  
+`EXPERIENCIA_ELEGIVEL_PARA_AVALIACAO` = vivência delimitada, legitimamente comprovada, com atribuição contextual analisada e direitos preservados; **não é concessão do selo**.
+`INSCRICAO_SEM_VIVENCIA_COMPROVADA` = inscrição isolada, sem inferir participação.
+`VIVENCIA_PARCIAL_DELIMITADA` = etapa efetivamente vivida, sem inferir programa completo.
+`ATRIBUICAO_INDETERMINADA` = experiência válida, mas mérito institucional não imputável com segurança.
 `EVIDENCIA_INSUFICIENTE` / `INTEGRIDADE_EM_REVISAO` = necessidade de complementação ou análise competente, sem estigmatização.
 
 ### Ensaios de fronteira
@@ -2274,8 +2274,8 @@ Para a dimensão pertinente `d`, `F_d/(F_d + P_d + D_d)` descreve proporção fa
 
 ### Modelos a calibrar, sem escolha normativa
 
-**Absoluto:** quantidade fixa de Pessoas/experiências; simples, mas excludente para Coletivos pequenos.  
-**Proporcional:** fração de participantes elegíveis conhecidos; pode ser inadequado quando universo é incerto.  
+**Absoluto:** quantidade fixa de Pessoas/experiências; simples, mas excludente para Coletivos pequenos.
+**Proporcional:** fração de participantes elegíveis conhecidos; pode ser inadequado quando universo é incerto.
 **Híbrido:** integração da integridade, composição da amostra, cobertura, concentração, incerteza e revisão humana; direção metodológica candidata preferida, sujeita a ensaio e adjudicação.
 
 Os números de exemplos prévios (`20 Pessoas`, `8 Pessoas`, `10 Pessoas`, `70%`, `2 experiências`) permanecem somente **hipóteses de sensibilidade**. Intervalos binomiais como Wilson descrevem incerteza sob hipóteses próprias, mas não corrigem vieses de autoseleção ou dependência entre respostas.
@@ -2841,10 +2841,10 @@ Os indicadores são instrumentos de auditoria interna, não pontuação reputaci
 
 ### Modelo de implantação gradual, dependente de autorização
 
-**Fase documental:** ratificar política, alçadas, garantias, critérios, linguagem e restrições.  
-**Fase de validação:** ensaios de decisões adversariais, calibração de evidências e revisão por papéis independentes.  
-**Fase controlada:** operação piloto somente se autorizada, com casos reais consentidos, proteção de dados, métricas e testes de retirada.  
-**Fase de escala:** delegação territorial habilitada, auditorias periódicas e monitoramento de deriva, preservando recurso independente.  
+**Fase documental:** ratificar política, alçadas, garantias, critérios, linguagem e restrições.
+**Fase de validação:** ensaios de decisões adversariais, calibração de evidências e revisão por papéis independentes.
+**Fase controlada:** operação piloto somente se autorizada, com casos reais consentidos, proteção de dados, métricas e testes de retirada.
+**Fase de escala:** delegação territorial habilitada, auditorias periódicas e monitoramento de deriva, preservando recurso independente.
 
 Nenhuma fase operacional foi iniciada ou autorizada neste documento.
 
