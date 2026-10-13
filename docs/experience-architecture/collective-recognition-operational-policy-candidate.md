@@ -2,7 +2,7 @@
 id: GKR-COLLECTIVE-RECOGNITION-OPERATIONS-001
 title: Selos de Coletivos — Política Operacional Candidata
 status: proposed
-version: 0.4.0
+version: 0.5.0
 owner: Pessoa jurídica Guivos, inscrita no CNPJ, por meio de sua direção
 last_updated: 2026-10-13
 normative: false
@@ -174,3 +174,55 @@ A concordância do fundador autorizou seguir com a análise desses quatro grupos
 | OP-05 Competências | Guivos inscrita no CNPJ responde pela política por meio da direção; análise, decisão e revisão funcionalmente distintas | Designações, delegações e poderes específicos |
 
 **Resultado:** quatro propostas qualitativas estabilizadas para deliberação; sem ratificação formal individual, sem publicação ou emissão autorizada. Os exames DEC/RSP continuam 36/36 e as ratificações formalmente documentadas 0/36.
+
+
+## 14. Aprovação de direção OP-01 / OP-02 / OP-04 / OP-05 e preparação OP-03 / OP-06 (13/10/2026)
+
+**Decisão expressa do fundador nesta conversa:** aprovada a recomendação de adotar as quatro diretrizes qualitativas consolidadas no §13. Trata-se de **aprovação de direção de política por grupos OP**, não de prova de 36 ratificações individuais DEC/RSP, nomeações ou liberação de operação.
+
+| Grupo | Diretriz aprovada | Reserva preservada |
+|---|---|---|
+| OP-01 — Verificado | Existência e representação legítima, provas proporcionais, CNPJ não obrigatório para Coletivos | Suficiência por tipologia, revalidação e exceções |
+| OP-02 — Contribuição Reconhecida | Verificado vigente e experiências reais com participação e percepções elegíveis | Instrumento, unidade, amostras e thresholds |
+| OP-04 — Proteção | Integridade, antifraude, privacidade, correção, contestação e revisão humana | Controles técnicos, retenção e ritos completos |
+| OP-05 — Competência | Pessoa jurídica Guivos inscrita no CNPJ responde pela política por meio de sua direção; avaliação, decisão e revisão funcionalmente distintas | Delegações e habilitações específicas |
+
+### OP-03 — Método de avaliação: contrato proposto para decisão
+
+**Unidade de observação:** uma Pessoa elegível e uma experiência/edição identificada, com deduplicação de revisões. Inscrição não basta para demonstrar participação. Cada dimensão (benefício percebido, aprendizado percebido, avanço percebido) deve ter seu próprio denominador válido; respostas ausentes, não aplicáveis, neutras e desfavoráveis não podem ser disfarçadas ou automaticamente convertidas em positivas.
+
+**Qualidade da evidência:** identificação verificável do Coletivo e da experiência, janelas de coleta, proveniência, mecanismos antifraude, elegibilidade de avaliador e impossibilidade de o organizador selecionar apenas avaliações favoráveis. Apresentar cobertura de respostas, consistência por edição e robustez diante de amostras pequenas.
+
+**Ainda sujeitos a decisão fundamentada:** instrumento/perguntas definitivas; critérios de participação; unidade por pessoa/edição e casos de múltiplas atividades; tamanho mínimo da amostra; limite de cobertura; thresholds por dimensão; regra de agregação; janela temporal; tratamento de dados sensíveis. **Não atribuir valores numéricos por inferência.**
+
+### OP-06 — Ciclo de vida: contrato proposto para decisão
+
+```text
+NAO_SOLICITADO
+→ SOLICITADO
+→ EM_ANALISE
+   ├─ COMPLEMENTACAO_PENDENTE → EM_ANALISE
+   ├─ INDEFERIDO → RECURSO / REEXAME
+   └─ DEFERIDO_NAO_PUBLICADO → VIGENTE (apenas após autorização e publicação válidas)
+VIGENTE
+   ├─ REVALIDACAO_PENDENTE → VIGENTE / EXPIRADO / SUSPENSO
+   ├─ SUSPENSO → REEXAME → VIGENTE / REVOGADO
+   └─ EXPIRADO / REVOGADO
+```
+
+**Guardas obrigatórias propostas:** registro de decisão humana legitimada; motivo e evidência em decisões adversas; histórico auditável; eventos idempotentes; transparência sobre significado e vigência; separação entre deferir, conceder, ativar e publicar. A suspensão não prova fraude; a expiração não indica necessariamente perda de legitimidade do Coletivo.
+
+**Ainda sujeitos a decisão:** prazo inicial e renovação; gatilhos de reavaliação; tempo de complementação/recurso; política de suspensão e revogação; comportamentos de interfaces durante cada estado; restauração após decisão favorável; controle de experiências vinculadas a Contribuição Reconhecida quando Verificado perde vigência.
+
+### Próxima deliberação e efeitos
+
+1. Avaliar e aprovar ou alterar **OP-03 e OP-06** em seus princípios metodológicos e guardas, deixando números e prazos para aprovação específica com evidências.
+2. Mapear as decisões OP aos objetos DEC-01..05, RSP-05 e RSP-06, sem recalcular ratificações formais antes da evidência individual.
+3. Manter OP-07 (publicação) e OP-08 (engenharia) bloqueados até a governança e o método serem suficientes.
+
+```text
+OP-01, OP-02, OP-04, OP-05 → FOUNDER PRODUCT POLICY DIRECTION APPROVED
+OP-03, OP-06 → PROPOSALS UNDER DELIBERATION
+DEC/RSP → 36/36 EXAMINED; 0/36 INDIVIDUAL RATIFICATIONS DOCUMENTED
+ISSUANCE → NOT AUTHORIZED
+```
