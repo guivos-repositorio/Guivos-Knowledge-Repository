@@ -2,7 +2,7 @@
 id: GKR-COLLECTIVE-RECOGNITION-FORMALIZATION-HANDOFF-001
 title: Selos de Coletivos — Aprovação de Direção e Formalização Pendente
 status: proposed
-version: 0.5.0
+version: 0.6.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -177,6 +177,14 @@ Próxima evidência necessária: comprovação de CNPJ/razão social e documento
 
 ---
 
+## 4.5 Simplificação de responsabilidade institucional (13/10/2026)
+
+Por determinação do fundador, **a responsável pela política é a pessoa jurídica Guivos, inscrita no CNPJ, por meio de sua direção**. O número do CNPJ **não é exigido nem registrado neste documento**. A existência de CNPJ e representante legal foi confirmada pelo fundador. A eventual prova de poderes para assinaturas juridicamente eficazes deve ser conservada em documentação corporativa própria, sem transformar o número de cadastro em bloqueio editorial do GKR.
+
+O gate G0/B-01 permanece limitado ao que não foi efetivamente formalizado: competências e atos operacionais específicos. Não se considera assinada a minuta nem ratificados os 36 objetos por esta simplificação.
+
+---
+
 ## 5. Limites e preservação de outras frentes
 
 A Home de Organizações e Coletivos permanece centrada em propósito, capacidades e contribuição, e não nos selos. A Home Pessoa / Movimento 11 — Oportunidades em Movimento, da PR #656 já incorporada à main, é assunto distinto.
@@ -190,5 +198,5 @@ FOUNDER PRODUCT-DIRECTION APPROVAL → CONFIRMED
 G0/B-01 GOVERNING BODY → GUIVOS DIRECTION APPROVED / LEGAL COMPETENCE PROOF → PENDING
 OPERATIVE BADGE ISSUANCE → NOT AUTHORIZED
 PR #654 → OPEN / DRAFT
-NEXT → VERIFY CORPORATE REGISTRATION AND LEGAL REPRESENTATIVE POWERS; EXECUTE COMPETENCE ACT
+NEXT → CORPORATE RESPONSIBILITY STATED; FORMALIZE SPECIFIC OPERATIONAL POWERS WHEN APPLICABLE
 ```
