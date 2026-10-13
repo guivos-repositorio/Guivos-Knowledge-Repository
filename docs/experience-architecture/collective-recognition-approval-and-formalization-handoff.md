@@ -2,7 +2,7 @@
 id: GKR-COLLECTIVE-RECOGNITION-FORMALIZATION-HANDOFF-001
 title: Selos de Coletivos — Aprovação de Direção e Formalização Pendente
 status: proposed
-version: 0.2.0
+version: 0.3.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -102,6 +102,37 @@ EFEITO
 
 ---
 
+## 4.2 Gate G0/B-01 — decisão sobre suficiência de evidência
+
+**Verificação complementar de 13/10/2026:** a busca no código da `main` pelos termos `G0/B-01`, `ato legitimador` e `delegação competência selos` não retornou evidência adicional na ferramenta de busca. **Ausência de resultado não prova inexistência de documento.** Permanecem como fonte positiva os registros já lidos de arquitetura institucional, governança e o dossiê candidato, que não demonstram competência institucional específica.
+
+**Critério de resolução (sem presunções):** G0/B-01 somente poderá ser declarado comprovado quando houver instrumento identificável que sustente simultaneamente: (a) identidade da instância/pessoa que decide; (b) fundamento de competência pertinente à política e à operação de reconhecimento de Coletivos; (c) alcance e limitações dos poderes, inclusive delegação se aplicável; (d) autenticidade, data, versão e local de conservação; (e) análise de conflito de interesses e segregação entre quem avalia, delibera e revisa; (f) vínculo inequívoco entre instrumento e decisão que se pretende ratificar. A espécie documental exata depende da situação jurídica comprovada; **não exigir nem presumir estatuto/CNPJ da futura Fundação Guivos como pré-requisito dos selos**.
+
+### Ficha de evidência primária a preencher por responsável habilitado
+
+| Campo | Registro atual |
+|---|---|
+| Instância competente para ratificar política | NÃO INFORMADA / NÃO COMPROVADA |
+| Titular ou signatário legitimado | NÃO INFORMADO / NÃO COMPROVADO |
+| Instrumento de competência (tipo, ID, data, versão) | NÃO APRESENTADO |
+| Fonte verificável (caminho ou anexo) | NÃO APRESENTADA |
+| Alcance: política / concessão / revisão / recurso / revogação | NÃO DELIMITADO |
+| Delegações e segregação | NÃO COMPROVADAS |
+| Conflitos de interesse e mitigação | NÃO AVALIADOS |
+| Autoridade que verificou os documentos | NÃO REGISTRADA |
+| Resultado de verificação | **PENDENTE — G0/B-01 BLOQUEADO** |
+
+### Encaminhamento fechado
+
+1. **Não criar outra rodada de análise dos 36 gates** enquanto o fundamento de competência permanecer ausente.
+2. Receber **uma evidência primária de competência** ou uma **deliberação humana expressa e documentada** que defina o rito aplicável, submetendo sua suficiência à governança pertinente.
+3. Se houver instrumento idôneo, preencher a ficha com fonte rastreável e executar deliberação sobre os blocos `DEC-01..05` (25), `RSP-05` (6) e `RSP-06` (5), preservando decisão por objeto; não alterar contagem antes das provas.
+4. Se não houver instrumento, manter G0/B-01 pendente e solicitar a definição institucional competente. **Este documento não outorga poderes por si só.**
+
+**Conclusão desta etapa:** verificação documental concluída **dentro das evidências disponíveis**; avanço normativo dependente de informação/ato externo ao material comprovado. Não é apropriado fabricar decisões nem continuar gerando checkpoints equivalentes sem evidência nova.
+
+---
+
 ## 5. Limites e preservação de outras frentes
 
 A Home de Organizações e Coletivos permanece centrada em propósito, capacidades e contribuição, e não nos selos. A Home Pessoa / Movimento 11 — Oportunidades em Movimento, da PR #656 já incorporada à main, é assunto distinto.
@@ -115,5 +146,5 @@ FOUNDER PRODUCT-DIRECTION APPROVAL → CONFIRMED
 G0/B-01 AUTHORITY PROOF → PENDING
 OPERATIVE BADGE ISSUANCE → NOT AUTHORIZED
 PR #654 → OPEN / DRAFT
-NEXT → VERIFY G0/B-01 LEGITIMATING ACT; GROUPED 25+6+5 FORMALIZATION MATRIX PREPARED
+NEXT → RECEIVE PRIMARY COMPETENCE EVIDENCE OR DOCUMENTED COMPETENT DELIBERATION
 ```
