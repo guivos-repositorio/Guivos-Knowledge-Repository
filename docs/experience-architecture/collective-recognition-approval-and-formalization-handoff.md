@@ -2,7 +2,7 @@
 id: GKR-COLLECTIVE-RECOGNITION-FORMALIZATION-HANDOFF-001
 title: Selos de Coletivos — Aprovação de Direção e Formalização Pendente
 status: proposed
-version: 0.1.0
+version: 0.2.0
 owner: Guivos
 last_updated: 2026-10-12
 normative: false
@@ -56,6 +56,52 @@ Dois selos independentes:
 
 O próximo avanço deverá concentrar-se nos **registros faltantes**, não em mais dezenas de simulações ou exames conceituais. Não atualizar MENU ou Master de perfis apenas para divulgar selos antes de comprovar o estágio efetivo de publicação.
 
+## 4.1 Resultado da verificação documental de autoridade (13/10/2026)
+
+Fontes verificadas: `governance-framework/architectural-audit-framework.md` (validado, normativo), `governance-framework/institutional-and-legal-architecture.md` (proposed, normativo quanto a fronteiras conceituais), `governance-framework/institutional-and-legal-architecture-index.md` (proposed) e o dossiê da PR #654, especialmente suas Etapas 291–301.
+
+**Resultado:** há **regras de auditoria, separação institucional e um pacote preparatório G0/B-01**, mas tais documentos **não evidenciam ato legitimador específico, signatário competente ou delegação vigente para emissão/ratificação dos selos**. Uma autoridade metodológica de auditoria não é competência institucional para conceder reconhecimentos. O dossiê registra expressamente G0/B-01 como **não resolvido normativamente**.
+
+O inventário já existente aponta **sete peças de preparação**: inventário de fontes, alternativas G0-A/B/C/D, minuta, matriz de competências, auditoria de conflitos, dossiê e checklist. Essas peças já estão identificadas para triagem preliminar condicionada; produzir novos artefatos equivalentes sem evidência adicional seria redundante.
+
+### Agrupamento factual dos 36 gates
+
+| Bloco | Exames documentados | Ratificações individuais comprovadas | Encaminhamento |
+|---|---:|---:|---|
+| DEC-01..05 | 25/25 | 0/25 | Vincular exame → autoridade específica → decisão humana registrada |
+| RSP-05 | 6/6 | 0/6 | Resolver competência de representação e atribuição de poderes |
+| RSP-06 | 5/5 | 0/5 | Ratificar estados, eventos e guardas pertinentes |
+| **Total** | **36/36** | **0/36** | **Não inferir signatários ou ratificações** |
+
+Este agrupamento não equivale à conclusão de qualquer gate individual nem prova que todos exigirão 36 atos distintos: o rito de ratificação poderá admitir deliberações agrupadas **somente após** validação da competência e rastreabilidade individual dos objetos decididos.
+
+### Fato já aprovado versus ato ainda necessário
+
+```text
+DECISÃO DE PRODUTO DA DIREÇÃO
+→ EXISTÊNCIA E DISTINÇÃO DOS DOIS SELOS: APROVADA
+
+ATO G0/B-01
+→ INSTÂNCIA COMPETENTE / SIGNATÁRIO / DELEGAÇÃO: NÃO COMPROVADOS
+
+DEC / RSP
+→ EXAMES ANALÍTICOS COMPLETOS
+→ RATIFICAÇÕES FORMAIS INDIVIDUAIS: NÃO COMPROVADAS
+
+EFEITO
+→ NÃO EMITIR, NÃO EXIBIR COMO CONCEDIDO, NÃO IMPLEMENTAR
+```
+
+### Minuta compacta de encaminhamento para deliberação competente (NÃO ASSINADA)
+
+**Objeto:** registrar a aprovação direcional de dois selos independentes para Coletivos, denominados **Verificado** e **Contribuição Reconhecida**, preservando ausência de selo como condição neutra e proibindo inferência de garantia universal de segurança, impacto ou desempenho. Submeter à autoridade legitimamente competente o rito formal de atribuição, verificação de evidências, contestação, suspensão, revisão e revogação, bem como a aplicação aos objetos DEC-01..05, RSP-05 e RSP-06 listados no dossiê.
+
+**Antes de eficácia:** preencher referência do ato legitimador, autoridade competente, escopo dos poderes, data, rastreio da decisão sobre cada objeto ou conjunto explicitamente abrangido, conflitos de interesse e eventuais reservas. Até isso ocorrer, o texto é **minuta sem efeito operativo**, não adjudicação.
+
+**Próxima verificação objetiva:** localizar prova externa ou interna concreta do ato G0/B-01 (estatuto, instrumento de poderes, deliberação, delegação ou autoridade GKR efetivamente aplicável). Na ausência dessa prova, preservar o bloqueio, sem recorrer à reiteração analítica.
+
+---
+
 ## 5. Limites e preservação de outras frentes
 
 A Home de Organizações e Coletivos permanece centrada em propósito, capacidades e contribuição, e não nos selos. A Home Pessoa / Movimento 11 — Oportunidades em Movimento, da PR #656 já incorporada à main, é assunto distinto.
@@ -69,5 +115,5 @@ FOUNDER PRODUCT-DIRECTION APPROVAL → CONFIRMED
 G0/B-01 AUTHORITY PROOF → PENDING
 OPERATIVE BADGE ISSUANCE → NOT AUTHORIZED
 PR #654 → OPEN / DRAFT
-NEXT → VERIFY AUTHORITY RECORDS + FORMALIZATION MATRIX
+NEXT → VERIFY G0/B-01 LEGITIMATING ACT; GROUPED 25+6+5 FORMALIZATION MATRIX PREPARED
 ```
