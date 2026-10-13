@@ -2,7 +2,7 @@
 id: GKR-COLLECTIVE-RECOGNITION-AUTHORITY-ACT-001
 title: Selos de Coletivos — Minuta de Ato de Responsabilidade e Competências
 status: proposed
-version: 0.1.0
+version: 0.2.0
 owner: Direção da Guivos (instância indicada; poderes formais pendentes)
 last_updated: 2026-10-13
 normative: false
@@ -20,15 +20,29 @@ related:
 
 | Campo obrigatório | Estado da evidência |
 |---|---|
-| Estrutura/entidade responsável pela operação da política | Guivos — identificação institucional/jurídica concreta **pendente de evidência** |
+| Estrutura/entidade responsável pela operação da política | **Guivos com CNPJ constituído — fato declarado expressamente pelo fundador em 13/10/2026**; razão social, número do CNPJ e documento comprobatório **não apresentados** |
 | Órgão ou instância dirigente | Direção da Guivos — **definida como orientação de governança pelo fundador** |
-| Titular/signatário do ato | **A IDENTIFICAR**, com documentação de legitimidade |
+| Titular/signatário do ato | **Representante legal constituído — existência confirmada por declaração do fundador**; identificação nominal e prova documental **pendentes** |
 | Fundamento dos poderes e competência | **A ANEXAR** (instrumento identificável, data, versão, fonte verificável) |
 | Delegação, se houver | **A DEFINIR E COMPROVAR** |
 | Data de eficácia do ato | **NÃO DEFINIDA** |
 | Local do registro e cadeia de custódia | **A DEFINIR** |
 
-A forma documental aplicável deve refletir a situação jurídico-organizacional efetivamente comprovada. Não presumir CNPJ, associação, Fundação Guivos constituída, diretoria estatutária ou conselho formal.
+A forma documental aplicável deve refletir a situação jurídico-organizacional efetivamente comprovada. A existência de CNPJ e representante legal foi declarada pelo fundador; **não presumir número, razão social, qualificação do representante, alcance dos poderes, associação à futura Fundação Guivos ou conselho formal**.
+
+### 1.1 Atualização de fato institucional declarado — 13/10/2026
+
+O fundador confirmou expressamente que **a Guivos já possui CNPJ e representante legal constituídos**. O registro supera a hipótese anterior de inexistência de pessoa jurídica, **mas é uma declaração**, ainda sem apresentação neste processo de cartão CNPJ, contrato/estatuto social ou ato de designação/poderes do representante.
+
+**Requisitos para formalizar e assinar este ato:**
+
+1. Informar razão social e CNPJ da entidade operadora juridicamente responsável pela política.
+2. Juntar comprovação cadastral atual e o instrumento constitutivo/alterações vigentes ou documento jurídico aplicável.
+3. Identificar representante legal e demonstrar seus poderes para aprovar política, instituir responsabilidades e delegar funções.
+4. Registrar eventuais restrições de representação, exigência de assinatura conjunta e conflitos/impedimentos.
+5. Adequar a minuta ao instrumento societário aplicável; assinar e conservar evidências antes de atribuir eficácia.
+
+Não inserir esses dados por inferência, memória ou identificação presumida do fundador.
 
 ## 2. Objeto da deliberação direcional aprovada
 
@@ -81,9 +95,10 @@ A futura autoridade competente deve vincular cada objeto a resultado expresso, f
 ## 6. Quadro de assinatura e validade — não preenchido
 
 ```text
-IDENTIFICAÇÃO DA ESTRUTURA JURÍDICO-ORGANIZACIONAL: [PENDENTE]
+EXISTÊNCIA DE CNPJ E REPRESENTANTE LEGAL: [CONFIRMADA POR DECLARAÇÃO DO FUNDADOR — PROVA DOCUMENTAL PENDENTE]
+RAZÃO SOCIAL E NÚMERO DO CNPJ: [PENDENTES]
 INSTÂNCIA RESPONSÁVEL: DIREÇÃO DA GUIVOS (DIREÇÃO APROVADA)
-PESSOA SIGNATÁRIA LEGITIMADA: [PENDENTE]
+PESSOA SIGNATÁRIA LEGITIMADA: [EXISTÊNCIA DECLARADA; IDENTIFICAÇÃO E PODERES PENDENTES]
 INSTRUMENTO / FUNDAMENTO DE PODERES: [PENDENTE]
 REFERÊNCIA E VERSÃO: [PENDENTE]
 DELEGAÇÕES / CONFLITOS / SEGREGAÇÃO: [PENDENTE]
@@ -105,6 +120,7 @@ EFICÁCIA / PUBLICAÇÃO: NÃO AUTORIZADAS NESTA MINUTA
 ## 8. Checkpoint
 
 ```text
+FOUNDER CONFIRMS GUIVOS CNPJ AND LEGAL REPRESENTATIVE → YES (DOCUMENTARY PROOF PENDING)
 FOUNDER POLICY DIRECTION → APPROVED
 GOVERNING INSTANCE → GUIVOS DIRECTION (APPROVED AS INTERNAL DIRECTION)
 LEGAL / INSTITUTIONAL POWERS → UNVERIFIED
