@@ -2,7 +2,7 @@
 id: GKR-UX-OPPORTUNITIES-LIVE-001
 title: Oportunidades em Movimento — Gráfico Vivo no Movimento 11 da Home Pessoa
 status: active
-version: 1.1.0
+version: 1.1.1
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-12
 normative: false
@@ -112,7 +112,7 @@ Arquitetura candidata:
 | OPM-03 Integridade | Deduplicação, reativação, correção retroativa e múltiplas edições são reconciliáveis? | Aberto |
 | OPM-04 Desempenho | Histórico, SSE, latência, reconexão e custo suportam crescimento? | Aberto |
 | OPM-05 UX | O gráfico melhora compreensão da Pessoa sem competir com Hero ou provocar FOMO? | Aberto |
-| OPM-06 O/C | Há benefício narrativo comprovado na segunda Home ou a repetição seria redundante? | Aberto |
+| OPM-06 Exclusividade | A composição respeita a decisão de uso exclusivo na Home Pessoa / Movimento 11, sem replicação na Home O/C? | Direção editorial definida; validar no design |
 | OPM-07 Prova pública | Números, alcance geográfico e disponibilidade são reais e auditáveis? | Aberto |
 | OPM-08 Publicação | Aprovações, compatibilidade com Masters e qualidade do design estão concluídas? | Aberto |
 
@@ -120,15 +120,15 @@ A recomendação de **Home Pessoa / Movimento 11** é de pertinência semântica
 
 ## 8. Encaminhamento
 
-Este documento específico deve ficar no MENU, sob **Experiência e Journey → Visualizações e Narrativa → Oportunidades em Movimento**, como referência de design e dados, mantendo Masters como autoridade corrente de cada Home. Após avaliação de OPM-01..08, propor ajuste editorial pontual aos Masters **somente se necessário**. Não iniciar integração real, eventos produtivos ou publicação sem validação.
+Este documento específico deve ficar no MENU, sob **Experiência e Journey → Visualizações e Narrativa → Oportunidades em Movimento**, como referência de design e dados, mantendo Masters como autoridade corrente de cada Home. O ajuste editorial pontual ao Master da Home Pessoa foi incluído nesta PR; a Home O/C permanece inalterada. Os gates OPM-01..08 continuam pertinentes à especificação funcional, às evidências dos dados e à publicação da experiência. Não iniciar integração real, eventos produtivos ou publicação sem validação.
 
 ```text
-DOCUMENT → GKR-UX-OPPORTUNITIES-LIVE-001 v1.0.0
+DOCUMENT → GKR-UX-OPPORTUNITIES-LIVE-001 v1.1.1
 HOME PESSOA → APPROVED DESIGN PLACEMENT (MOVIMENTO 11)
 HOME O/C → DO NOT APPLY
 OTHER HOMES → NO DEFAULT REPLICATION
 DATA → REAL VERIFIED EVENTS ONLY
 DESIGN → NOT REQUIRED TO USE GRAPH IF UNSUITABLE
-HOME MASTERS → NOT MODIFIED
+HOME PERSON MASTER → UPDATED IN PR #656 / HOME O-C MASTER → UNCHANGED
 IMPLEMENTATION → NOT AUTHORIZED
 ```
