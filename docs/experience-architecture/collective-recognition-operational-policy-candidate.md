@@ -2,7 +2,7 @@
 id: GKR-COLLECTIVE-RECOGNITION-OPERATIONS-001
 title: Selos de Coletivos — Política Operacional Candidata
 status: proposed
-version: 0.1.0
+version: 0.2.0
 owner: Pessoa jurídica Guivos, inscrita no CNPJ, por meio de sua direção
 last_updated: 2026-10-13
 normative: false
@@ -114,3 +114,21 @@ OPERATIONAL POLICY → CANDIDATE / NOT RATIFIED
 BINDING BADGE DECISIONS → NOT AUTHORIZED
 PUBLIC BADGE ISSUANCE → NOT AUTHORIZED
 ```
+
+
+## 11. Reconciliação decisória e prontidão de revisão (13/10/2026)
+
+| Assunto | Tratamento | Estado |
+|---|---|---|
+| Dois selos distintos e seus significados | Decisão expressa do fundador; manter descrições sem promessa de segurança absoluta ou causalidade | **APROVADO COMO DIREÇÃO DE PRODUTO** |
+| Responsabilidade institucional | Pessoa jurídica Guivos, inscrita no CNPJ, governada por sua direção; número do cadastro não exigido no GKR | **APROVADO COMO DIREÇÃO DE GOVERNANÇA** |
+| Requisitos V1–V5 / evidência contextual | Critérios candidatos derivados do dossiê; detalhamento e suficiência a ratificar | **CANDIDATO** |
+| Dependência de Verificado para Contribuição Reconhecida | Proposta expressa no dossiê; aplicação operativa sujeita a ratificação | **CANDIDATO** |
+| Limiares, mínimos, janelas, vencimento | Nenhum número escolhido ou autorizado | **ABERTO** |
+| Concessão, contraditório, revisão e revogação | Desenho funcional proposto; instâncias, prazos e guardas específicos exigem decisão | **ABERTO** |
+| Decisões DEC-01..05 / RSP-05 / RSP-06 | 25+6+5 exames concluídos; atos formais não demonstrados | **0/36 RATIFICAÇÕES COMPROVADAS** |
+| Publicação, engenharia e emissão | Não decorrem do aceite conceitual | **NÃO AUTORIZADAS** |
+
+**Revisão documental:** o par de documentos está pronto para **revisão de coerência e suficiência de fontes**, mas não para promover status `active`/`normative`, declarar programa em operação ou mesclar como política canônica já vigente. Eventual merge de documento `proposed` exige decisão editorial de permanência no corpus de acordo com as regras de governança do GKR; não presumir que PR mergeável significa política adjudicada.
+
+**Próximo ato de decisão (sem reabrir análise):** deliberar sobre o conjunto mínimo de regras ainda abertas — evidências e método, critérios de suficiência, autoridade de concessão e recursos, validade/revalidação, estados e transições e critérios de publicação. Registrar decisões por objeto em matriz rastreável 25+6+5, evitando novos ciclos de simulação conceitual.
