@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-DELIVERY-001
 title: Homes Públicas — Manifesto Canônico de Entrega para Design
 status: active
-version: 7.0.52
+version: 7.0.53
 owner: Experience Architecture
 last_updated: 2026-10-13
 normative: true
@@ -70,7 +70,7 @@ O uso manual não exige Source Lock ou registro de execução de IA.
 
 ### 3.2 Organizações e Coletivos
 
-- `GKR-UX-HOME-OC-READ-FIRST-001 v1.0.4` — `docs/experience-architecture/read-first/public-home-organizations-collectives-read-first.md`;
+- `GKR-UX-HOME-OC-READ-FIRST-001 v1.0.5` — `docs/experience-architecture/read-first/public-home-organizations-collectives-read-first.md`;
 
 - `GKR-UX-HOME-OC-MASTER-001 v1.0.7` — `docs/experience-architecture/public-home-organizations-collectives-master-document.md`;
 - `GKR-UX-HOME-OC-MEDIA-SUPPLY-001 v1.0.1` — `docs/experience-architecture/public-home-organizations-collectives-media-editorial-supply-reconciliation.md`.
@@ -105,12 +105,12 @@ O uso manual não exige Source Lock ou registro de execução de IA.
 
 ### 3.7 Business
 
-- `GKR-UX-HOME-BUSINESS-READ-FIRST-001 v1.0.18` — `docs/experience-architecture/read-first/public-home-business-read-first.md`;
+- `GKR-UX-HOME-BUSINESS-READ-FIRST-001 v1.0.19` — `docs/experience-architecture/read-first/public-home-business-read-first.md`;
 
-- `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.27` — `docs/experience-architecture/public-home-business-source-lock.md`;
-- `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.9` — `docs/experience-architecture/public-home-business-master-document.md`;
-- `GKR-UX-HOME-BUSINESS-CONVERSION-002 v1.0.2` — `docs/experience-architecture/public-home-business-conversion-authority-v2.md`;
-- `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.10` — `docs/experience-architecture/public-home-business-authority-contracts.md`;
+- `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.28` — `docs/experience-architecture/public-home-business-source-lock.md`;
+- `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.10` — `docs/experience-architecture/public-home-business-master-document.md`;
+- `GKR-UX-HOME-BUSINESS-CONVERSION-002 v1.0.3` — `docs/experience-architecture/public-home-business-conversion-authority-v2.md`;
+- `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.11` — `docs/experience-architecture/public-home-business-authority-contracts.md`;
 - `GPA-004 v1.7.5` — `docs/product-architecture/business.md`;
 - `GKR-PLANS-BUSINESS-001 v1.3.1` — `docs/plans/business.md`.
 
