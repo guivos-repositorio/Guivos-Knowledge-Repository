@@ -26,7 +26,7 @@ A existência da pessoa jurídica Guivos **não comprova, isoladamente, a habili
 
 ## Pontos — Incentivos e Economia
 
-A porta de entrada vigente é o [Modelo Econômico](../economic-model/index.md), especialmente o grupo GEM-005 (incentivos, recompensas, política conceitual de pontos e créditos, funding, eventos elegíveis, resgate e proteção).
+A porta de entrada vigente é o [Modelo Econômico](index.md), especialmente o grupo GEM-005 (incentivos, recompensas, política conceitual de pontos e créditos, funding, eventos elegíveis, resgate e proteção).
 
 A proposta em exame consta da [PR #655](https://github.com/guivos-repositorio/Guivos-Knowledge-Repository/pull/655).
 
