@@ -8319,6 +8319,56 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#64-ftr-03-auditoria-exploratoria-do-aplicativo-replit-16102026" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4. FTR-03 — auditoria exploratória do aplicativo Replit (16/10/2026)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.4. FTR-03 — auditoria exploratória do aplicativo Replit (16/10/2026)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cobertura-das-homes-segundo-o-relato-de-inspecao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cobertura das Homes segundo o relato de inspeção
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#divergencias-e-limites-relatados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Divergências e limites relatados
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#encaminhamento-que-exige-evidencia-primaria" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Encaminhamento que exige evidência primária
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#7-fronteiras-com-trabalhos-em-andamento" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -8852,6 +8902,85 @@
 <p><strong>Deliberação delimitada do fundador em 16/10/2026 — FTR-01/D2:</strong> após receber a proposta completa da PR #672, o fundador respondeu <strong>"de acordo, segue"</strong> ao encaminhamento da decisão. Registra-se a aceitação <strong>apenas da regra de arquitetura de variantes</strong>: (i) <code>full</code> responsivo como padrão nas oito Homes públicas, inclusive com reflow/empilhamento conforme viewport; (ii) <code>compact</code> elegível somente para páginas internas públicas, mediante justificativa por contexto e preservação de identidade, navegação, suporte e direitos; (iii) <code>minimal</code> elegível excepcionalmente em fluxos sensíveis, autenticados ou de indisponibilidade, dependente de contrato contextual e da preservação de informação essencial; (iv) breakpoints e métricas não fixados sem testes; (v) nenhum conteúdo ou função validado pode ser excluído automaticamente por responsividade; (vi) indisponibilidade de um destino não pode ser disfarçada de funcionalidade existente.</p>
 <p><strong>Limite da decisão:</strong> o aceite do <strong>padrão e dos critérios de elegibilidade</strong> não concede autorização automática para aplicar <code>compact</code> ou <code>minimal</code> em uma rota específica, retirar <code>Receba novidades</code>, alterar a referência visual institucional, homologar uma versão mobile/tablet ou declarar conformidade de acessibilidade. Exceções por superfície, inclusive qualquer alteração de bloco aprovado, permanecem sujeitas a decisão contextual rastreável. <code>FTR-02</code> conserva a dependência de destino real do <code>Mapa do Ecossistema</code>.</p>
 <p><strong>Estado resultante:</strong> <code>FTR-01/D1 = POSITION_ACCEPTED</code>; <code>FTR-01/D2 = ARCHITECTURE_VARIANTS_ACCEPTED_SCOPED</code>; <code>FTR-01 = PARTIAL_NOT_CLOSED</code> (revisão de hierarquia e exceções visuais ainda necessárias); <code>FTR-03 = NOT_ADJUDICATED</code>; <code>FTR-05 = NOT_TESTED</code>; <code>FTR-06..08 = NOT_EVIDENCED</code>. A fonte de concordância é o assentimento nesta conversa, sem atribuir aprovações a Brand, Legal, Design ou equipes que não participaram. Nenhuma interface foi implementada por esta deliberação.</p>
+<h2 id="64-ftr-03-auditoria-exploratoria-do-aplicativo-replit-16102026">6.4. FTR-03 — auditoria exploratória do aplicativo Replit (16/10/2026)<a class="headerlink" href="#64-ftr-03-auditoria-exploratoria-do-aplicativo-replit-16102026" title="Permanent link">&para;</a></h2>
+<p><strong>Fonte e método:</strong> resposta do agente de inspeção <strong>somente leitura</strong> do aplicativo conectado <a href="https://replit.com/@guivos/Guivos-Descoberta-de-Oportunidades">Guivos — Descoberta de Oportunidades</a>, emitida em 16/10/2026. O agente declarou inspeção do roteamento e do componente de rodapé, além de capturas no <strong>preview interno</strong>; relatou repositório do aplicativo sem modificações. <strong>As capturas não foram anexadas ao GKR nesta revisão.</strong> Portanto o presente registro é um <em>relatório secundário de inspeção</em>, a ser confrontado com evidência visual primária versionada antes de adjudicar FTR-03. Não equivale a validação independente pelo GKR nem a auditoria de publicação.</p>
+<h3 id="cobertura-das-homes-segundo-o-relato-de-inspecao">Cobertura das Homes segundo o relato de inspeção<a class="headerlink" href="#cobertura-das-homes-segundo-o-relato-de-inspecao" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Home</th>
+<th>Rota própria identificada no app</th>
+<th>Rodapé / evidência descrita pelo agente</th>
+<th>Estado para FTR-03</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pessoa</td>
+<td><code>/pessoa</code> (a rota <code>/</code> corresponde a entrada de jornada, não à Home)</td>
+<td>Rodapé exploratório compartilhado; agente relata capturas desktop/mobile no preview</td>
+<td><strong>DIVERGÊNCIA REPORTADA</strong>; prova primária não anexada, sem aprovação</td>
+</tr>
+<tr>
+<td>Organizações e Coletivos</td>
+<td><code>/organizacoes-coletivos</code></td>
+<td>Rodapé exploratório compartilhado <strong>mais</strong> rodapé local, segundo inspeção; captura desktop; mobile só início da Home</td>
+<td><strong>DIVERGÊNCIA REPORTADA</strong>; mobile do rodapé não verificado</td>
+</tr>
+<tr>
+<td>Mall</td>
+<td>Nenhuma rota de Home identificada</td>
+<td>Fallback recebe rodapé compartilhado, mas não constitui Home Mall</td>
+<td><strong>NÃO AVALIÁVEL VISUALMENTE</strong></td>
+</tr>
+<tr>
+<td>Travel</td>
+<td>Nenhuma rota de Home identificada</td>
+<td>Fallback não constitui Home Travel</td>
+<td><strong>NÃO AVALIÁVEL VISUALMENTE</strong></td>
+</tr>
+<tr>
+<td>Business</td>
+<td>Nenhuma Home própria identificada</td>
+<td><code>/planos</code> e <code>/planos/fluxos</code> são superfícies de planos, não Home Business</td>
+<td><strong>NÃO AVALIÁVEL VISUALMENTE</strong></td>
+</tr>
+<tr>
+<td>Media</td>
+<td>Nenhuma rota de Home identificada</td>
+<td>Fallback não constitui Home Media</td>
+<td><strong>NÃO AVALIÁVEL VISUALMENTE</strong></td>
+</tr>
+<tr>
+<td>Intelligence</td>
+<td>Nenhuma rota de Home identificada</td>
+<td>Fallback não constitui Home Intelligence</td>
+<td><strong>NÃO AVALIÁVEL VISUALMENTE</strong></td>
+</tr>
+<tr>
+<td>Ads</td>
+<td>Nenhuma rota de Home identificada</td>
+<td>Fallback não constitui Home Ads</td>
+<td><strong>NÃO AVALIÁVEL VISUALMENTE</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Denominador:</strong> <code>2/8</code> Homes com rota própria identificada <strong>neste aplicativo</strong>; <code>6/8</code> sem rota de Home própria identificada no escopo inspecionado; <strong><code>0/8</code> homologadas em FTR-03</strong>. Não inferir que as seis Homes inexistam em outras bases, apps, documentos ou protótipos. A prova visual mobile da Home O/C continua pendente.</p>
+<h3 id="divergencias-e-limites-relatados">Divergências e limites relatados<a class="headerlink" href="#divergencias-e-limites-relatados" title="Permanent link">&para;</a></h3>
+<p>O agente reportou que o componente global <code>FlowFooter</code> mostra conteúdo de <strong>proposta exploratória e créditos/licença de imagens</strong>, em vez do conteúdo da referência visual <code>GKR-UX-GLOBAL-FOOTER-001 v1.0.0</code>. Relatou não encontrar no rodapé atual:
+- <code>Possibility, lived.</code>, a mensagem <code>Conectamos pessoas a possibilidades que podem transformar suas vidas.</code> ou <code>Descubra. Viva. Evolua.</code>;
+- os quatro agrupamentos <code>Explore o ecossistema</code>, <code>Guivos</code>, <code>Ajuda</code>, <code>Receba novidades</code>;
+- <code>Mapa do Ecossistema</code> ao final de <code>Explore o ecossistema</code> (há um item <code>Mapa</code> no cabeçalho, que não equivale ao requisito);
+- links jurídicos, campo de novidades e controle de envio, botões/QR de aplicativo.</p>
+<p>O fundo branco foi reportado como observado nas capturas disponíveis, <strong>sem homologação cromática ou de tipografia</strong>. O agente relatou também que o domínio público testado nas rotas <code>/pessoa</code> e <code>/organizacoes-coletivos</code> exibiu uma tela genérica de rota indisponível, em contraste com o preview interno; <strong>causa não determinada</strong>, não presumir deploy funcional. Um workflow do aplicativo constava como falho por conflito de porta no momento da inspeção; esse achado não altera os checks de CI do GKR.</p>
+<h3 id="encaminhamento-que-exige-evidencia-primaria">Encaminhamento que exige evidência primária<a class="headerlink" href="#encaminhamento-que-exige-evidencia-primaria" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Pessoa e O/C:</strong> obter capturas identificadas/versionadas do rodapé desktop e mobile e confrontá-las com a composição de 14/10; separar o rodapé global do duplicado local de O/C antes de alegar paridade visual.</li>
+<li><strong>Demais seis Homes:</strong> localizar uma implementação/protótipo específico de cada Home antes de abrir checklist visual; fallback não conta como Home.</li>
+<li><strong>Publicação:</strong> examinar distintamente preview interno e rota pública; ausência de destino público validado bloqueia alegação de disponibilidade.</li>
+<li><strong>Registro FTR-03:</strong> somente uma matriz de oito evidências primárias com revisão contextual Brand/Design e resultados documentados poderá encerrar o gate. <strong>Nenhum teste FTR-05/FTR-07 nem alteração de aplicativo foi realizado por esta auditoria.</strong></li>
+</ol>
+<p><strong>Estado:</strong> <code>FTR-03 = OPEN_WITH_REPORTED_NONCONFORMITIES</code>; <code>HOME_ROUTES_IDENTIFIED_IN_REPLIT = 2/8</code>; <code>HOME_RENDER_EVIDENCE_PRIMARY_ATTACHED_TO_GKR = 0/8</code>; <code>FTR-03_ADJUDICATED = 0/8</code>; <code>FTR-05 = NOT_TESTED</code>. O caráter candidato e não normativo deste documento é preservado; nenhuma autorização de implantação é inferida.</p>
 <h2 id="7-fronteiras-com-trabalhos-em-andamento">7. Fronteiras com trabalhos em andamento<a class="headerlink" href="#7-fronteiras-com-trabalhos-em-andamento" title="Permanent link">&para;</a></h2>
 <ul>
 <li><strong>Gráfico Vivo:</strong> permanece parte da experiência e narrativa específica, não métrica de rodapé nem painel de contadores.</li>
