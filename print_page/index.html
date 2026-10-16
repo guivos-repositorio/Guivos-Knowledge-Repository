@@ -2881,6 +2881,41 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../experience-architecture/global-footer-ftr08-release-verification/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rodapé Global — Publicação e Verificação FTR-08
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--proposed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -9060,6 +9095,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#experience-architecture-global-footer-ftr08-release-verification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.3.9 Rodapé Global — Publicação e Verificação FTR-08
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -11535,6 +11581,17 @@
     <span class="md-ellipsis">
       
         9.3.8 Rodapé Global — Testes Funcionais e Regressão FTR-07
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#experience-architecture-global-footer-ftr08-release-verification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.3.9 Rodapé Global — Publicação e Verificação FTR-08
       
     </span>
   </a>
@@ -31229,10 +31286,10 @@ RELEASE AUTHORITY
 </tr>
 <tr>
 <td><strong>FTR-08</strong> — Publicação</td>
-<td>Nenhuma prova de deploy completo do rodapé; rotas públicas consultadas no Replit não mostraram as duas Homes no relato</td>
+<td><a href="#experience-architecture-global-footer-ftr08-release-verification">Protocolo FTR-08</a> documentado: fases R0-R8, 13 provas de release e Go/No-go; sem publicação comprovada</td>
 <td>Aprovação expressa de publicação, deploy real, URLs e verificação pós-publicação</td>
 <td>Responsável pelo release/produto</td>
-<td><strong>NOT_PUBLISHED_EVIDENCED</strong></td>
+<td><strong>RELEASE_PROTOCOL_DOCUMENTED / PUBLICATION_NOT_EVIDENCED</strong></td>
 </tr>
 </tbody>
 </table>
@@ -32229,7 +32286,183 @@ RELEASE AUTHORITY
 <p>Não concluir FTR-07 com base em CI do próprio GKR: Semantic/Mechanical validam <strong>documentação</strong>, não os recursos de rodapé do produto.</p>
 <h2 id="experience-architecture-global-footer-ftr07-functional-regression-protocol-6-limites-com-publicacao">6. Limites com publicação<a class="headerlink" href="#experience-architecture-global-footer-ftr07-functional-regression-protocol-6-limites-com-publicacao" title="Permanent link">&para;</a></h2>
 <p>Mesmo FTR-07 aprovado <strong>não</strong> comprova FTR-08: release, domínios públicos, implantação e verificação pós-publicação permanecem independentes. As rotas públicas relatadas como indisponíveis em auditoria exploratória não devem ser apresentadas como publicadas.</p>
-<p><strong>Fronteira desta fase:</strong> somente GKR; sem testes automatizados acionados contra Replit, sem edição de aplicativo, criação de QR ou ativação de serviços.</p></section></section>
+<p><strong>Fronteira desta fase:</strong> somente GKR; sem testes automatizados acionados contra Replit, sem edição de aplicativo, criação de QR ou ativação de serviços.</p></section><section class="print-page" id="experience-architecture-global-footer-ftr08-release-verification" heading-number="9.3.9"><h1 id="experience-architecture-global-footer-ftr08-release-verification-rodape-global-protocolo-ftr-08-de-publicacao-e-verificacao-pos-implantacao">Rodapé Global — Protocolo FTR-08 de Publicação e Verificação Pós-Implantação<a class="headerlink" href="#experience-architecture-global-footer-ftr08-release-verification-rodape-global-protocolo-ftr-08-de-publicacao-e-verificacao-pos-implantacao" title="Permanent link">&para;</a></h1>
+<h2 id="experience-architecture-global-footer-ftr08-release-verification-1-proposito-autoridade-e-situacao-inicial">1. Propósito, autoridade e situação inicial<a class="headerlink" href="#experience-architecture-global-footer-ftr08-release-verification-1-proposito-autoridade-e-situacao-inicial" title="Permanent link">&para;</a></h2>
+<p><strong>Protocolo de governança de publicação, não ordem de implantação.</strong> O FTR-08 somente poderá atestar um release real do rodapé se houver decisão competente, artefato implantado e verificação independente dos destinos públicos. A publicação no GKR de documentação ou merges de PRs documentais não representam liberação da interface Guivos.</p>
+<p>Precedência:
+- <a href="#experience-architecture-global-institutional-footer">Rodapé Institucional Oficial</a> v1.0.0: conteúdo e referência visual normativa.
+- <a href="#experience-architecture-global-footer-surface-candidate">Arquitetura Candidata</a> v0.2.8: decisões FTR-01/D1/D2 e limites de aplicação, sem obrigação de implementar na presente etapa.
+- <a href="#experience-architecture-global-footer-ftr-control-board">Quadro de Controle FTR</a>: acompanhamento conjunto.
+- <a href="#experience-architecture-global-footer-ftr02-destination-inventory">Inventário de Destinos FTR-02</a>: comprovação de links e contas.
+- <a href="#experience-architecture-global-footer-ftr04-legal-privacy-review">Matriz Jurídica e Privacidade FTR-04</a>: matérias institucionais, dados e consentimento.
+- <a href="#experience-architecture-global-footer-ftr05-responsive-accessibility-matrix">Matriz Responsiva e Acessibilidade FTR-05</a>: evidências reais de comportamento adaptativo.
+- <a href="#experience-architecture-global-footer-ftr06-implementation-integrity">Contrato de Integridade FTR-06</a>: componente, composição e versão.
+- <a href="#experience-architecture-global-footer-ftr07-functional-regression-protocol">Protocolo de Testes FTR-07</a>: execução verificável dos cenários.</p>
+<p><strong>Estado atual:</strong> <code>FTR-08 = RELEASE_PROTOCOL_DOCUMENTED / PUBLICATION_NOT_EVIDENCED / GATE_OPEN</code>. Não existe, por esta documentação, aceite de release ou publicação.</p>
+<h2 id="experience-architecture-global-footer-ftr08-release-verification-2-modelo-de-decisao-e-fases">2. Modelo de decisão e fases<a class="headerlink" href="#experience-architecture-global-footer-ftr08-release-verification-2-modelo-de-decisao-e-fases" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Fase</th>
+<th>Condição verificável</th>
+<th>Quem revisa (função, sem pessoas nomeadas)</th>
+<th>Evidência de conclusão</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R0 — Escopo de release</td>
+<td>Definir superfícies/rotas incluídas e excluídas, variante e diferença frente ao conteúdo aprovado, com justificativas</td>
+<td>Produto / Arquitetura de Experiência</td>
+<td>Escopo e baseline aprovados, datados</td>
+</tr>
+<tr>
+<td>R1 — Prontidão editorial e de destinos</td>
+<td>Confirmar textos/identidade oficiais, Mapa, links reais, contas e comportamento de indisponibilidade</td>
+<td>Brand / Produto / responsáveis pelos destinos</td>
+<td>Versões do GKR, FTR-01/02/03 e tabela de URLs</td>
+</tr>
+<tr>
+<td>R2 — Prontidão jurídica e privacidade</td>
+<td>Validar identificação institucional, termos, privacidade, canais e integração de novidades se houver</td>
+<td>Jurídico / Privacidade</td>
+<td>Decisões FTR-04 com fonte primária</td>
+</tr>
+<tr>
+<td>R3 — Prontidão visual, técnica e acessível</td>
+<td>Obter evidências FTR-03/05/06 por Home e variante efetiva</td>
+<td>Design / Acessibilidade / Engenharia</td>
+<td>Relatórios, capturas primárias e versão do componente</td>
+</tr>
+<tr>
+<td>R4 — QA e regressão</td>
+<td>Executar cenários relevantes de FTR-07, classificar falhas e bloquear defeitos críticos sem exceção aprovada</td>
+<td>QA / Produto</td>
+<td>Resultados com PASS/FAIL/BLOCKED e decisão documentada</td>
+</tr>
+<tr>
+<td>R5 — Go/No-go formal</td>
+<td>Decidir de maneira explícita com base nos gates e riscos restantes; nenhum merge do GKR substitui essa decisão</td>
+<td>Autoridade de release / Produto</td>
+<td>Registro <code>GO</code> ou <code>NO_GO</code> com data e escopo</td>
+</tr>
+<tr>
+<td>R6 — Implantação autorizada</td>
+<td>Publicar somente release autorizado; registrar build, commit, ambiente, domínio e procedimento de retorno</td>
+<td>Engenharia / Operação de Release</td>
+<td>Identificador do deploy e evidência técnica</td>
+</tr>
+<tr>
+<td>R7 — Verificação externa</td>
+<td>Abrir rotas públicas reais, validar conteúdo e links de fora do ambiente de desenvolvimento, comparar com baseline e registrar erros</td>
+<td>QA / Operação / Design</td>
+<td>Capturas e resultados por URL/dispositivo com data</td>
+</tr>
+<tr>
+<td>R8 — Monitoramento e encerramento</td>
+<td>Definir responsável por incidentes, verificação de serviços, correções e rollback; encerrar apenas após critérios satisfeitos</td>
+<td>Produto / Engenharia / Operação</td>
+<td>Aceite pós-implantação, incidentes tratados e trilha de auditoria</td>
+</tr>
+</tbody>
+</table>
+<p>As fases são <strong>propostas para governança</strong>, não autorização de publicação nem novos gates globalmente adjudicados.</p>
+<h2 id="experience-architecture-global-footer-ftr08-release-verification-3-checklist-de-evidencias-para-um-release">3. Checklist de evidências para um release<a class="headerlink" href="#experience-architecture-global-footer-ftr08-release-verification-3-checklist-de-evidencias-para-um-release" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Item obrigatório</th>
+<th>Resultado atual</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FTR08-P01</td>
+<td>Escopo da versão, lista de oito Homes cobertas e exceções aprovadas quando aplicáveis</td>
+<td>NOT_EVIDENCED</td>
+</tr>
+<tr>
+<td>FTR08-P02</td>
+<td>Referência oficial, copy, assinatura e variantes reconciliadas, com aprovação de divergências</td>
+<td>NOT_EVIDENCED</td>
+</tr>
+<tr>
+<td>FTR08-P03</td>
+<td>URLs canônicas, links legais, redes oficiais e destino do Mapa verificados ou explicitamente bloqueados</td>
+<td>BLOCKED_BY_FTR02</td>
+</tr>
+<tr>
+<td>FTR08-P04</td>
+<td>Revisão jurídica e privacidade concluída para as funções efetivamente oferecidas</td>
+<td>BLOCKED_BY_FTR04</td>
+</tr>
+<tr>
+<td>FTR08-P05</td>
+<td>Evidência primária visual por Home e viewport, com aceites Brand/Design</td>
+<td>BLOCKED_BY_FTR03_FTR05</td>
+</tr>
+<tr>
+<td>FTR08-P06</td>
+<td>Artefato do componente global identificado, testável e sem duplicações indevidas</td>
+<td>BLOCKED_BY_FTR06</td>
+</tr>
+<tr>
+<td>FTR08-P07</td>
+<td>Relatório de execução dos casos críticos e regressão, com defeitos tratados</td>
+<td>BLOCKED_BY_FTR07</td>
+</tr>
+<tr>
+<td>FTR08-P08</td>
+<td>Registro explícito de decisão Go/No-go para versão/escopo, com autoridade identificada</td>
+<td>NOT_AUTHORIZED</td>
+</tr>
+<tr>
+<td>FTR08-P09</td>
+<td>Commit/build, release ID, ambiente público e domínio canônico com titularidade verificada</td>
+<td>NOT_EVIDENCED</td>
+</tr>
+<tr>
+<td>FTR08-P10</td>
+<td>Evidência de implantação e teste de abertura externa das rotas incluídas</td>
+<td>NOT_EVIDENCED</td>
+</tr>
+<tr>
+<td>FTR08-P11</td>
+<td>Testes pós-deploy de navegação, privacidade, novidades, status de links e acessibilidade relevante</td>
+<td>NOT_EVIDENCED</td>
+</tr>
+<tr>
+<td>FTR08-P12</td>
+<td>Plano de rollback e responsabilidades de incidente/continuidade</td>
+<td>NOT_EVIDENCED</td>
+</tr>
+<tr>
+<td>FTR08-P13</td>
+<td>Registro de aceite pós-implantação com data, resultados, exceções e divergências</td>
+<td>NOT_EVIDENCED</td>
+</tr>
+</tbody>
+</table>
+<p>Nenhuma linha se converte em <code>PASS</code> por declaração geral de prontidão, existência de build local, aprovação de design ou sucesso dos workflows de documentação.</p>
+<h2 id="experience-architecture-global-footer-ftr08-release-verification-4-evidencia-publica-versus-ambiente-de-desenvolvimento">4. Evidência pública versus ambiente de desenvolvimento<a class="headerlink" href="#experience-architecture-global-footer-ftr08-release-verification-4-evidencia-publica-versus-ambiente-de-desenvolvimento" title="Permanent link">&para;</a></h2>
+<p>O registro FTR-03 na arquitetura candidata reportou que os previews internos do aplicativo Replit permitiam inspeções parciais, enquanto endereços públicos testados não renderizavam as duas Homes identificadas. Essa observação <strong>não é prova de causa, nem prova de implantação corrigida</strong>. A publicação somente pode ser comprovada por URL real, versão e comportamento observados em acesso público apropriado, com evidência preservada.</p>
+<p>Não presumir que o repositório documental GKR e os domínios de produto compartilham estado de deploy. O site publicado do GKR comprova <strong>documentação</strong>, não experiência do produto.</p>
+<h2 id="experience-architecture-global-footer-ftr08-release-verification-5-registro-minimo-de-gono-go">5. Registro mínimo de Go/No-go<a class="headerlink" href="#experience-architecture-global-footer-ftr08-release-verification-5-registro-minimo-de-gono-go" title="Permanent link">&para;</a></h2>
+<p>Para cada proposta de release, preencher:</p>
+<ul>
+<li><strong>Versão e superfícies</strong>: artefato, SHA, ambientes, oito Homes elegíveis e exclusões justificadas.</li>
+<li><strong>Referências</strong>: IDs/versões da autoridade visual, arquitetural e contratos FTR relacionados.</li>
+<li><strong>Gates</strong>: decisões de FTR-01 a FTR-07 e evidências, com dependências abertas explícitas.</li>
+<li><strong>Riscos e limitações</strong>: falhas, indisponibilidades, impacto de dados e experiência da pessoa.</li>
+<li><strong>Decisão</strong>: <code>GO</code>, <code>NO_GO</code> ou <code>DEFERRED</code>, autoridade competente, data, alcance, condições e validade.</li>
+<li><strong>Operação</strong>: executor, plano de retorno, verificações externas e responsáveis pelo pós-implantação.</li>
+</ul>
+<p><strong>Sem decisão registrada, o estado é <code>NO_AUTHORIZED_RELEASE</code></strong>. Não executar deploy por inferência a partir deste protocolo.</p>
+<h2 id="experience-architecture-global-footer-ftr08-release-verification-6-criterio-de-encerramento-do-ftr-08">6. Critério de encerramento do FTR-08<a class="headerlink" href="#experience-architecture-global-footer-ftr08-release-verification-6-criterio-de-encerramento-do-ftr-08" title="Permanent link">&para;</a></h2>
+<p>Encerrar somente se: decisão Go aplicável existir; a versão exata tiver sido implantada em ambiente público aprovado; as rotas incluídas apresentarem o rodapé correto sem duplicação; links e informações legais funcionarem conforme seus contratos; o fluxo de novidades não simular processamento; acessibilidade e regressão relevantes tiverem resultado verificável; e o aceite pós-deploy for documentado.</p>
+<p>A inexistência de implantação comprovada mantém <code>PUBLICATION_NOT_EVIDENCED</code> mesmo quando todos os checklists documentais estiverem completos.</p>
+<p><strong>Fronteira:</strong> nenhuma execução, deploy, QR oficial, ligação de app ou mudança no Replit nesta etapa de GKR.</p></section></section>
                     <section class='print-page md-section' id='section-9-4' heading-number='9.4'>
                         <h1>Visualizações e Narrativa<a class='headerlink' href='#section-9-4' title='Permanent link'></a>
                         </h1>
@@ -85402,6 +85635,8 @@ REGISTRO TEMPORÁRIO DA AUDITORIA
 .print-site-enumerate-headings #experience-architecture-global-footer-ftr06-implementation-integrity > h1:before { content: '9.3.7 ' }
 
 .print-site-enumerate-headings #experience-architecture-global-footer-ftr07-functional-regression-protocol > h1:before { content: '9.3.8 ' }
+
+.print-site-enumerate-headings #experience-architecture-global-footer-ftr08-release-verification > h1:before { content: '9.3.9 ' }
 
 .print-site-enumerate-headings #section-9-4 > h1:before { content: '9.4 ' }
 .print-site-enumerate-headings #experience-architecture-opportunities-in-motion-live-graph-design-reference > h1:before { content: '9.4.1 ' }
