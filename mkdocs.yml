@@ -95,7 +95,8 @@ nav:
   - Produtos e Economia:
       - Arquitetura de Produtos: product-architecture/index.md
       - Modelo Econômico: economic-model/index.md
-      - Selos e Pontos — Guia de Consulta: economic-model/selos-pontos-guia-consulta.md
+      - Selos — Reconhecimento e Reputação: economic-model/selos-guia-consulta.md
+      - Pontos — Incentivos em Oportunidades: economic-model/pontos-guia-consulta.md
       - Estratégia de Negócio: business-architecture/index.md
 
   - Ecossistema:
