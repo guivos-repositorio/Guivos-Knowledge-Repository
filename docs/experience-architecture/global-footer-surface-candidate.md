@@ -2,7 +2,7 @@
 id: GKR-UX-GLOBAL-FOOTER-SURFACE-001
 title: Superfície Transversal — Rodapé Global da Guivos
 status: proposed
-version: 0.2.7
+version: 0.2.8
 owner: Experience Architecture
 last_updated: 2026-10-16
 normative: false
@@ -288,6 +288,44 @@ Para cada uma das **oito Homes** (Pessoa; Organizações e Coletivos; Mall; Trav
 **Limite da decisão:** o aceite do **padrão e dos critérios de elegibilidade** não concede autorização automática para aplicar `compact` ou `minimal` em uma rota específica, retirar `Receba novidades`, alterar a referência visual institucional, homologar uma versão mobile/tablet ou declarar conformidade de acessibilidade. Exceções por superfície, inclusive qualquer alteração de bloco aprovado, permanecem sujeitas a decisão contextual rastreável. `FTR-02` conserva a dependência de destino real do `Mapa do Ecossistema`.
 
 **Estado resultante:** `FTR-01/D1 = POSITION_ACCEPTED`; `FTR-01/D2 = ARCHITECTURE_VARIANTS_ACCEPTED_SCOPED`; `FTR-01 = PARTIAL_NOT_CLOSED` (revisão de hierarquia e exceções visuais ainda necessárias); `FTR-03 = NOT_ADJUDICATED`; `FTR-05 = NOT_TESTED`; `FTR-06..08 = NOT_EVIDENCED`. A fonte de concordância é o assentimento nesta conversa, sem atribuir aprovações a Brand, Legal, Design ou equipes que não participaram. Nenhuma interface foi implementada por esta deliberação.
+
+## 6.4. FTR-03 — auditoria exploratória do aplicativo Replit (16/10/2026)
+
+**Fonte e método:** resposta do agente de inspeção **somente leitura** do aplicativo conectado [Guivos — Descoberta de Oportunidades](https://replit.com/@guivos/Guivos-Descoberta-de-Oportunidades), emitida em 16/10/2026. O agente declarou inspeção do roteamento e do componente de rodapé, além de capturas no **preview interno**; relatou repositório do aplicativo sem modificações. **As capturas não foram anexadas ao GKR nesta revisão.** Portanto o presente registro é um *relatório secundário de inspeção*, a ser confrontado com evidência visual primária versionada antes de adjudicar FTR-03. Não equivale a validação independente pelo GKR nem a auditoria de publicação.
+
+### Cobertura das Homes segundo o relato de inspeção
+
+| Home | Rota própria identificada no app | Rodapé / evidência descrita pelo agente | Estado para FTR-03 |
+|---|---|---|---|
+| Pessoa | `/pessoa` (a rota `/` corresponde a entrada de jornada, não à Home) | Rodapé exploratório compartilhado; agente relata capturas desktop/mobile no preview | **DIVERGÊNCIA REPORTADA**; prova primária não anexada, sem aprovação |
+| Organizações e Coletivos | `/organizacoes-coletivos` | Rodapé exploratório compartilhado **mais** rodapé local, segundo inspeção; captura desktop; mobile só início da Home | **DIVERGÊNCIA REPORTADA**; mobile do rodapé não verificado |
+| Mall | Nenhuma rota de Home identificada | Fallback recebe rodapé compartilhado, mas não constitui Home Mall | **NÃO AVALIÁVEL VISUALMENTE** |
+| Travel | Nenhuma rota de Home identificada | Fallback não constitui Home Travel | **NÃO AVALIÁVEL VISUALMENTE** |
+| Business | Nenhuma Home própria identificada | `/planos` e `/planos/fluxos` são superfícies de planos, não Home Business | **NÃO AVALIÁVEL VISUALMENTE** |
+| Media | Nenhuma rota de Home identificada | Fallback não constitui Home Media | **NÃO AVALIÁVEL VISUALMENTE** |
+| Intelligence | Nenhuma rota de Home identificada | Fallback não constitui Home Intelligence | **NÃO AVALIÁVEL VISUALMENTE** |
+| Ads | Nenhuma rota de Home identificada | Fallback não constitui Home Ads | **NÃO AVALIÁVEL VISUALMENTE** |
+
+**Denominador:** `2/8` Homes com rota própria identificada **neste aplicativo**; `6/8` sem rota de Home própria identificada no escopo inspecionado; **`0/8` homologadas em FTR-03**. Não inferir que as seis Homes inexistam em outras bases, apps, documentos ou protótipos. A prova visual mobile da Home O/C continua pendente.
+
+### Divergências e limites relatados
+
+O agente reportou que o componente global `FlowFooter` mostra conteúdo de **proposta exploratória e créditos/licença de imagens**, em vez do conteúdo da referência visual `GKR-UX-GLOBAL-FOOTER-001 v1.0.0`. Relatou não encontrar no rodapé atual:
+- `Possibility, lived.`, a mensagem `Conectamos pessoas a possibilidades que podem transformar suas vidas.` ou `Descubra. Viva. Evolua.`;
+- os quatro agrupamentos `Explore o ecossistema`, `Guivos`, `Ajuda`, `Receba novidades`;
+- `Mapa do Ecossistema` ao final de `Explore o ecossistema` (há um item `Mapa` no cabeçalho, que não equivale ao requisito);
+- links jurídicos, campo de novidades e controle de envio, botões/QR de aplicativo.
+
+O fundo branco foi reportado como observado nas capturas disponíveis, **sem homologação cromática ou de tipografia**. O agente relatou também que o domínio público testado nas rotas `/pessoa` e `/organizacoes-coletivos` exibiu uma tela genérica de rota indisponível, em contraste com o preview interno; **causa não determinada**, não presumir deploy funcional. Um workflow do aplicativo constava como falho por conflito de porta no momento da inspeção; esse achado não altera os checks de CI do GKR.
+
+### Encaminhamento que exige evidência primária
+
+1. **Pessoa e O/C:** obter capturas identificadas/versionadas do rodapé desktop e mobile e confrontá-las com a composição de 14/10; separar o rodapé global do duplicado local de O/C antes de alegar paridade visual.
+2. **Demais seis Homes:** localizar uma implementação/protótipo específico de cada Home antes de abrir checklist visual; fallback não conta como Home.
+3. **Publicação:** examinar distintamente preview interno e rota pública; ausência de destino público validado bloqueia alegação de disponibilidade.
+4. **Registro FTR-03:** somente uma matriz de oito evidências primárias com revisão contextual Brand/Design e resultados documentados poderá encerrar o gate. **Nenhum teste FTR-05/FTR-07 nem alteração de aplicativo foi realizado por esta auditoria.**
+
+**Estado:** `FTR-03 = OPEN_WITH_REPORTED_NONCONFORMITIES`; `HOME_ROUTES_IDENTIFIED_IN_REPLIT = 2/8`; `HOME_RENDER_EVIDENCE_PRIMARY_ATTACHED_TO_GKR = 0/8`; `FTR-03_ADJUDICATED = 0/8`; `FTR-05 = NOT_TESTED`. O caráter candidato e não normativo deste documento é preservado; nenhuma autorização de implantação é inferida.
 
 ## 7. Fronteiras com trabalhos em andamento
 
