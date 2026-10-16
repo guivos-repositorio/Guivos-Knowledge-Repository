@@ -2,7 +2,7 @@
 id: GKR-UX-GLOBAL-FOOTER-FTR-TRACKER-001
 title: Rodapé Global — Quadro de Controle de Gates FTR-01 a FTR-08
 status: proposed
-version: 0.1.3
+version: 0.1.4
 owner: Experience Architecture
 last_updated: 2026-10-16
 normative: false
@@ -35,7 +35,7 @@ Ler primeiro:
 | **FTR-03** — Coerência das oito Homes | 8/8 Masters reconciliados documentalmente; inspeção secundária do Replit relata 2 Homes com rota, divergências visuais/estruturais e seis sem Home própria naquele app | Capturas primárias versionadas da área final em desktop/mobile, por Home; avaliação Brand/Design, divergências e desfecho 8/8; não contar fallback nem relato de agente como homologação | Brand/Design e responsável pela Home | **OPEN_WITH_REPORTED_NONCONFORMITIES** |
 | **FTR-04** — Legal/Privacidade | [Matriz de revisão FTR-04](global-footer-ftr04-legal-privacy-review.md) documentada: identificação, links legais, canais, novidades e eventual app/QR | Validar dados institucionais, URLs, finalidade/base legal, consentimento quando aplicável, política, canais e fluxo de novidades | Legal/Privacidade e donos dos canais | **MATRIX_DOCUMENTED / LEGAL_PRIVACY_REVIEW_NOT_ADJUDICATED** |
 | **FTR-05** — Responsividade e acessibilidade | [Matriz FTR-05](global-footer-ftr05-responsive-accessibility-matrix.md) documentada: variantes D2, 16 ensaios candidatos, evidências por Home e exceções por rota; referência desktop aprovada | Implementar/prototipar estados reais e testar teclado, leitor de tela, foco, contraste, zoom, mobile e tablet | Design/Acessibilidade e QA | **MATRIX_DOCUMENTED / TESTS_NOT_EXECUTED** |
-| **FTR-06** — Implementação | Componente compartilhado é proposta; auditoria Replit reporta `FlowFooter` exploratório e rodapé local adicional em O/C | Demonstrar componente coerente com conteúdo validado e cobertura das superfícies elegíveis sem duplicações, com evidência de código/versão | Engenharia/Produto | **NOT_IMPLEMENTATION_EVIDENCED** |
+| **FTR-06** — Implementação | [Contrato FTR-06](global-footer-ftr06-implementation-integrity.md) documentado: 12 evidências de integridade, cobertura das oito Homes, destinos e prevenção de duplicidades; auditoria Replit secundária | Demonstrar componente coerente com conteúdo validado e cobertura das superfícies elegíveis sem duplicações, com evidência de código/versão | Engenharia/Produto | **CONTRACT_DOCUMENTED / IMPLEMENTATION_NOT_EVIDENCED** |
 | **FTR-07** — Testes funcionais | Critérios documentados; agente Replit não encontrou execução FTR-03 específica | Executar testes rastreáveis de links, estados, formulário, responsividade, regressão, acessibilidade e falhas | QA/Engenharia | **NOT_EXECUTED** |
 | **FTR-08** — Publicação | Nenhuma prova de deploy completo do rodapé; rotas públicas consultadas no Replit não mostraram as duas Homes no relato | Aprovação expressa de publicação, deploy real, URLs e verificação pós-publicação | Responsável pelo release/produto | **NOT_PUBLISHED_EVIDENCED** |
 
