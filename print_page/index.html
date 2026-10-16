@@ -2811,6 +2811,41 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../experience-architecture/global-footer-ftr06-implementation-integrity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rodapé Global — Contrato de Implementação FTR-06
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--proposed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -8968,6 +9003,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#experience-architecture-global-footer-ftr06-implementation-integrity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.3.7 Rodapé Global — Contrato de Implementação FTR-06
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -11421,6 +11467,17 @@
     <span class="md-ellipsis">
       
         9.3.6 Rodapé Global — Matriz Responsiva e Acessibilidade FTR-05
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#experience-architecture-global-footer-ftr06-implementation-integrity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.3.7 Rodapé Global — Contrato de Implementação FTR-06
       
     </span>
   </a>
@@ -31101,10 +31158,10 @@ RELEASE AUTHORITY
 </tr>
 <tr>
 <td><strong>FTR-06</strong> — Implementação</td>
-<td>Componente compartilhado é proposta; auditoria Replit reporta <code>FlowFooter</code> exploratório e rodapé local adicional em O/C</td>
+<td><a href="#experience-architecture-global-footer-ftr06-implementation-integrity">Contrato FTR-06</a> documentado: 12 evidências de integridade, cobertura das oito Homes, destinos e prevenção de duplicidades; auditoria Replit secundária</td>
 <td>Demonstrar componente coerente com conteúdo validado e cobertura das superfícies elegíveis sem duplicações, com evidência de código/versão</td>
 <td>Engenharia/Produto</td>
-<td><strong>NOT_IMPLEMENTATION_EVIDENCED</strong></td>
+<td><strong>CONTRACT_DOCUMENTED / IMPLEMENTATION_NOT_EVIDENCED</strong></td>
 </tr>
 <tr>
 <td><strong>FTR-07</strong> — Testes funcionais</td>
@@ -31813,7 +31870,124 @@ RELEASE AUTHORITY
 <li>FTR-07: valida funcionalidade e regressão.</li>
 <li>FTR-08: comprova implantação e aceite pós-publicação.</li>
 </ul>
-<p><strong>Fronteira desta PR:</strong> somente GKR. Nenhuma atualização de aplicativo, screenshots de produção, breakpoint implementado ou teste executado.</p></section></section>
+<p><strong>Fronteira desta PR:</strong> somente GKR. Nenhuma atualização de aplicativo, screenshots de produção, breakpoint implementado ou teste executado.</p></section><section class="print-page" id="experience-architecture-global-footer-ftr06-implementation-integrity" heading-number="9.3.7"><h1 id="experience-architecture-global-footer-ftr06-implementation-integrity-rodape-global-contrato-ftr-06-de-implementacao-e-integridade">Rodapé Global — Contrato FTR-06 de Implementação e Integridade<a class="headerlink" href="#experience-architecture-global-footer-ftr06-implementation-integrity-rodape-global-contrato-ftr-06-de-implementacao-e-integridade" title="Permanent link">&para;</a></h1>
+<h2 id="experience-architecture-global-footer-ftr06-implementation-integrity-1-escopo-e-precedencia">1. Escopo e precedência<a class="headerlink" href="#experience-architecture-global-footer-ftr06-implementation-integrity-1-escopo-e-precedencia" title="Permanent link">&para;</a></h2>
+<p><strong>Contrato documental de evidências de implementação, não autorização para alterar código.</strong> Define o que uma futura entrega de componente deve demonstrar para ser examinada em FTR-06. O <a href="#experience-architecture-global-institutional-footer">Rodapé Institucional Oficial</a> v1.0.0 continua autoridade da cópia, marca e referência visual; a <a href="#experience-architecture-global-footer-surface-candidate">Arquitetura Candidata</a> v0.2.8 registra a arquitetura transversal e as decisões FTR-01/D1/D2. O <a href="#experience-architecture-global-footer-ftr-control-board">Quadro de Controle</a> concentra estados, o <a href="#experience-architecture-global-footer-ftr02-destination-inventory">Inventário FTR-02</a> trata destinos, a <a href="#experience-architecture-global-footer-ftr04-legal-privacy-review">Matriz FTR-04</a> trata dados e legal, e a <a href="#experience-architecture-global-footer-ftr05-responsive-accessibility-matrix">Matriz FTR-05</a> especifica provas de responsividade/acessibilidade.</p>
+<p><strong>Estado inicial:</strong> <code>FTR-06 = IMPLEMENTATION_CONTRACT_DOCUMENTED / IMPLEMENTATION_NOT_EVIDENCED / GATE_OPEN</code>. Nenhuma integração, alteração em Replit, componente React, implantação ou ensaio decorre deste texto.</p>
+<h2 id="experience-architecture-global-footer-ftr06-implementation-integrity-2-componentizacao-e-integridade-de-fonte">2. Componentização e integridade de fonte<a class="headerlink" href="#experience-architecture-global-footer-ftr06-implementation-integrity-2-componentizacao-e-integridade-de-fonte" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Exigência candidata de implementação</th>
+<th>Evidência necessária</th>
+<th>Estado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FTR06-C01</td>
+<td>Componente institucional com fonte editorial compartilhada para as oito Homes elegíveis</td>
+<td>Identificação de artefato/caminho, versão, contratos de props, referência de conteúdos e dependências, sem inventar nome de componente</td>
+<td>NOT_EVIDENCED</td>
+</tr>
+<tr>
+<td>FTR06-C02</td>
+<td>Conformidade com a referência institucional: marca, <code>Possibility, lived.</code>, <code>Conectamos pessoas a possibilidades que podem transformar suas vidas.</code>, grupos, <code>Receba novidades</code>, faixa inferior, <code>Descubra. Viva. Evolua.</code></td>
+<td>Comparativo de cópia, ordem e layout perante referência aprovada; diferenças registradas</td>
+<td>NOT_EVIDENCED</td>
+</tr>
+<tr>
+<td>FTR06-C03</td>
+<td>Aplicação explícita de <code>full</code> nas oito Homes públicas</td>
+<td>Inventário de rotas elegíveis, versão da aplicação e prova de renderização por rota; não contar fallback ou páginas de plano como Home</td>
+<td>NOT_EVIDENCED</td>
+</tr>
+<tr>
+<td>FTR06-C04</td>
+<td><code>compact</code> ou <code>minimal</code> somente por exceção formal de contexto, preservando acesso a direitos e ajuda</td>
+<td>Registro por rota, justificativa e decisão competente com data, diferenças autorizadas e comportamento</td>
+<td>NOT_EVIDENCED</td>
+</tr>
+<tr>
+<td>FTR06-C05</td>
+<td>Ausência de rodapés institucionais locais duplicados ou variações editoriais acidentais</td>
+<td>Auditoria de composição e evidência de que cada rota elegível rende exatamente a configuração autorizada</td>
+<td>NOT_EVIDENCED</td>
+</tr>
+<tr>
+<td>FTR06-C06</td>
+<td>Rótulos de navegação ligados apenas a destinos oficiais verificados</td>
+<td>Vínculos item a item ao inventário FTR-02, destinos e comportamento com estado de indisponibilidade honesto</td>
+<td>BLOCKED_BY_FTR02</td>
+</tr>
+<tr>
+<td>FTR06-C07</td>
+<td><code>Mapa do Ecossistema</code> localizado após os oito destinos de <code>Explore o ecossistema</code>; link somente após destino definido e verificado</td>
+<td>Ordem e existência editorial, URL oficial/decisão de arquitetura e teste de abertura antes de torná-lo clicável</td>
+<td>POSITION_ACCEPTED / DESTINATION_BLOCKED</td>
+</tr>
+<tr>
+<td>FTR06-C08</td>
+<td>Formulário <code>Receba novidades</code> sem envio simulado, finalidade e fluxo próprios aprovados antes de ativação</td>
+<td>Código/integração, validação, estados e revisão FTR-04, evidência de persistência e descadastramento quando aplicáveis</td>
+<td>BLOCKED_BY_FTR04</td>
+</tr>
+<tr>
+<td>FTR06-C09</td>
+<td>Canais sociais, legais, eventual app e QR sem links inventados</td>
+<td>Catálogo de URLs/titularidade; destinação exata do QR e disponibilidade real se adotado; rastreabilidade FTR-02/04</td>
+<td>BLOCKED_BY_FTR02_FTR04</td>
+</tr>
+<tr>
+<td>FTR06-C10</td>
+<td>Semântica, foco, labels, contraste, comportamento e reflow implementados e passíveis de testes</td>
+<td>Árvores acessíveis, capturas por variante e execução da matriz FTR-05/FTR-07; código sozinho não equivale a aprovação</td>
+<td>TESTS_NOT_EXECUTED</td>
+</tr>
+<tr>
+<td>FTR06-C11</td>
+<td>Responsabilidade clara por alterações de conteúdo, visual, URLs e código</td>
+<td>Registro de owners por função, decisões, origem dos tokens e relação com referências oficiais</td>
+<td>NOT_EVIDENCED</td>
+</tr>
+<tr>
+<td>FTR06-C12</td>
+<td>Mudanças auditáveis e possibilidade de reversão</td>
+<td>PR de código, hash/artefato, escopo, testes automatizados e plano de rollback quando houver deploy</td>
+<td>NOT_EVIDENCED</td>
+</tr>
+</tbody>
+</table>
+<p>A composição visual branca (<code>#FFFFFF</code>), os tokens, a tipografia e a ordem dos ícones obedecem à referência aprovada. Não impor framework, arquitetura de pastas, CMS, tecnologia, nomes de props ou breakpoints por inferência: os critérios são <strong>independentes da implementação técnica</strong>.</p>
+<h2 id="experience-architecture-global-footer-ftr06-implementation-integrity-3-estado-relatado-do-prototipo-e-lacunas">3. Estado relatado do protótipo e lacunas<a class="headerlink" href="#experience-architecture-global-footer-ftr06-implementation-integrity-3-estado-relatado-do-prototipo-e-lacunas" title="Permanent link">&para;</a></h2>
+<p>A seção FTR-03 da <a href="#experience-architecture-global-footer-surface-candidate">arquitetura candidata</a>, incluída pela PR #674, registra <strong>relato secundário de inspeção do aplicativo Replit</strong>, não homologação:</p>
+<ul>
+<li>foram identificadas no aplicativo inspecionado rotas <code>/pessoa</code> e <code>/organizacoes-coletivos</code>; as seis Homes restantes não tinham rotas de Home próprias naquele aplicativo;</li>
+<li>o rodapé <code>FlowFooter</code> relatado continha marcação exploratória e textos distintos da referência de 14/10, sem os quatro grupos e os elementos aprovados;</li>
+<li>a área de Organizações/Coletivos também apresentava outro rodapé local, indicando risco de duplicidade;</li>
+<li>um acesso <code>Mapa</code> no cabeçalho não é prova de <code>Mapa do Ecossistema</code> no rodapé;</li>
+<li>capturas do agente em preview, sem anexos primários versionados no GKR, <strong>não encerram FTR-03/FTR-05</strong>; relato de falha pública também não estabelece por si só diagnóstico causal.</li>
+</ul>
+<p><strong>Não alterar o Replit nesta fase.</strong> Os itens acima são pontos de atenção e hipóteses de correção futura, não instruções de intervenção, escopo de produto aprovado ou diagnóstico independente de todo o ecossistema.</p>
+<h2 id="experience-architecture-global-footer-ftr06-implementation-integrity-4-criterios-de-aceite-e-evidencia-por-superficie">4. Critérios de aceite e evidência por superfície<a class="headerlink" href="#experience-architecture-global-footer-ftr06-implementation-integrity-4-criterios-de-aceite-e-evidencia-por-superficie" title="Permanent link">&para;</a></h2>
+<p>Para cada futura aplicação do rodapé, registrar: (i) Home/página e rota <strong>reais</strong>; (ii) variante <code>full/compact/minimal</code> e decisão de elegibilidade; (iii) commit/versão/ambiente; (iv) referência editorial e de tokens; (v) elemento compartilhado, configurações e exceções; (vi) capturas primárias desktop/tablet/mobile identificadas; (vii) lista de destinos reais e comportamento quando indisponíveis; (viii) tratamento de formulário/dados; (ix) teste de duplicidade; (x) revisão de Design, Brand, Engenharia, Acessibilidade e Legal conforme competência; (xi) divergências, correções e decisão.</p>
+<p><strong>Cobertura necessária:</strong> as oito Homes públicas, sem substituir falta de Home por rota fallback, mockup isolado ou página funcional de outro produto. Caso a aplicação examinada não contenha todas as Homes, registrar honestamente o subconjunto observado e a dependência externa, sem afirmar 8/8.</p>
+<h3 id="experience-architecture-global-footer-ftr06-implementation-integrity-criterio-de-bloqueio">Critério de bloqueio<a class="headerlink" href="#experience-architecture-global-footer-ftr06-implementation-integrity-criterio-de-bloqueio" title="Permanent link">&para;</a></h3>
+<p>Não promover FTR-06 a <code>IMPLEMENTED</code> pela simples existência de <code>FlowFooter</code>, por merge do GKR, por captura exploratória ou por implementação parcial. Exigir evidência de componente conforme referência, composição de superfícies, ausência de duplicidade, tratamento de URLs e decisões contextuais.</p>
+<h2 id="experience-architecture-global-footer-ftr06-implementation-integrity-5-interdependencia-com-outros-gates">5. Interdependência com outros gates<a class="headerlink" href="#experience-architecture-global-footer-ftr06-implementation-integrity-5-interdependencia-com-outros-gates" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>FTR-01</strong>: aprovação das regras de variantes não autoriza cada exceção de rota.</li>
+<li><strong>FTR-02</strong>: nenhum destino se torna operacional antes de verificação.</li>
+<li><strong>FTR-03</strong>: revisão visual comparativa por Home permanece independente do aceite técnico.</li>
+<li><strong>FTR-04</strong>: matéria legal e fluxo de dados exigem revisão competente.</li>
+<li><strong>FTR-05</strong>: acessibilidade/responsividade dependem de provas reais por ambiente.</li>
+<li><strong>FTR-07</strong>: execução de testes e resultados comprováveis é etapa própria.</li>
+<li><strong>FTR-08</strong>: deploy, URL pública, release e monitoramento requerem prova separada.</li>
+</ul>
+<h2 id="experience-architecture-global-footer-ftr06-implementation-integrity-6-registro-de-atualizacao-futura">6. Registro de atualização futura<a class="headerlink" href="#experience-architecture-global-footer-ftr06-implementation-integrity-6-registro-de-atualizacao-futura" title="Permanent link">&para;</a></h2>
+<p>Cada avanço deverá informar <code>exigência C01..C12</code>, objeto, versão de código, URL/ambiente, evidência primária, responsável funcional, resultado, pendência e ato autorizativo. Falta de evidência mantém <code>NOT_EVIDENCED</code> ou <code>BLOCKED</code>.</p>
+<p><strong>Status deste documento:</strong> candidato não normativo. <strong>FTR-06 permanece aberto</strong>, sem implementação autorizada ou comprovada por esta atualização do GKR.</p></section></section>
                     <section class='print-page md-section' id='section-9-4' heading-number='9.4'>
                         <h1>Visualizações e Narrativa<a class='headerlink' href='#section-9-4' title='Permanent link'></a>
                         </h1>
@@ -84982,6 +85156,8 @@ REGISTRO TEMPORÁRIO DA AUDITORIA
 .print-site-enumerate-headings #experience-architecture-global-footer-ftr04-legal-privacy-review > h1:before { content: '9.3.5 ' }
 
 .print-site-enumerate-headings #experience-architecture-global-footer-ftr05-responsive-accessibility-matrix > h1:before { content: '9.3.6 ' }
+
+.print-site-enumerate-headings #experience-architecture-global-footer-ftr06-implementation-integrity > h1:before { content: '9.3.7 ' }
 
 .print-site-enumerate-headings #section-9-4 > h1:before { content: '9.4 ' }
 .print-site-enumerate-headings #experience-architecture-opportunities-in-motion-live-graph-design-reference > h1:before { content: '9.4.1 ' }
