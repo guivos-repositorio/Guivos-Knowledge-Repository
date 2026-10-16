@@ -2,7 +2,7 @@
 id: GKR-UX-GLOBAL-FOOTER-SURFACE-001
 title: Superfície Transversal — Rodapé Global da Guivos
 status: proposed
-version: 0.2.1
+version: 0.2.2
 owner: Experience Architecture
 last_updated: 2026-10-16
 normative: false
@@ -145,6 +145,25 @@ A variação contextual altera **densidade e prioridade**, nunca o conteúdo nor
 | FTR-08 | Aprovação de publicação e evidência de deploy real |
 
 **Estado inicial:** `FTR-01..08 = NOT_ADJUDICATED`. A estrutura é uma proposta documentada para deliberação, não autorização de implantação ou anúncio de disponibilidade.
+
+**Linha de base auditada em 16/10/2026:** os oito gates seguem **sem ratificação formal de conclusão**. O quadro abaixo indica evidência parcial, não aprovação tácita. A referência visual `GKR-UX-GLOBAL-FOOTER-001 v1.0.0` é válida e não precisa ser revalidada por esta PR.
+
+| Gate | Evidência existente | Lacuna objetiva para concluir | Estado corrente |
+|---|---|---|---|
+| FTR-01 | Módulos R01–R06 e R05A documentados; referência visual aprovada | Ratificação específica da arquitetura transversal, variantes e integração de `Mapa do Ecossistema` | DOCUMENTED / NOT_ADJUDICATED |
+| FTR-02 | Lista editorial de destinos no rodapé validado; Home Master §31 exige `Mapa do Ecossistema` | Mapa de URLs verificadas, disponibilidade de cada destino e tratamento de ausências | NOT_VERIFIED |
+| FTR-03 | Assinaturas e sistema visual fixados pela referência aprovada, prevalência explícita neste candidato | Revisão de consistência da composição nas oito Homes e variantes, com evidência por contexto | PARTIAL_EVIDENCE / NOT_ADJUDICATED |
+| FTR-04 | Textos institucionais e jurídicos registrados na referência visual | Verificação Legal/Privacidade de URLs, identificação, captação voluntária, avisos e canais | NOT_VERIFIED |
+| FTR-05 | Diretrizes de acessibilidade e adaptação responsiva descritas | Protótipos/implementações mobile e tablet, teste de contraste, teclado e tecnologias assistivas | NOT_TESTED |
+| FTR-06 | Proposta de componente compartilhado e configuração única | Implementação real auditada, cobertura das superfícies públicas elegíveis e configuração dos destinos | NOT_IMPLEMENTATION_EVIDENCED |
+| FTR-07 | Critérios de testes descritos | Execução reproduzível de navegação, formulário, links, estados vazios/falhos, regressão e mobile | NOT_EXECUTED |
+| FTR-08 | Referência visual aprovada pelo fundador | Aprovação de publicação **e** evidência verificável de deploy real | NOT_PUBLISHED_EVIDENCED |
+
+**Regras de decisão:** `FTR-01` não é automaticamente satisfeito pela aprovação visual de 14/10; `FTR-03` possui base de marca, mas não auditoria completa das oito Homes; `FTR-02` não se satisfaz por rótulos de link ou rotas fictícias; `FTR-06..08` exigem evidência de interface, teste e deploy, não apenas texto. O link do `Mapa do Ecossistema` é obrigação arquitetural da Home Pessoa, mas seu destino ainda não está validado. O QR/app, se incorporado após 14/10, deverá ser reconciliado com uma referência visual posterior identificada, sem inventar QR real ou disponibilidade em lojas.
+
+**Sequência admissível:** conclusão documental da PR apenas como **candidata não normativa** após checks de CI e exame de precedência; decisão humana FTR-01/FTR-03; confirmação de destinos e responsabilidade jurídica FTR-02/FTR-04; materialização e provas FTR-05..08 em trilha própria. Merge documental **não equivale** a autorização de execução.
+
+
 
 ## 7. Fronteiras com trabalhos em andamento
 
