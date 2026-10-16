@@ -2,7 +2,7 @@
 id: GKR-UX-GLOBAL-FOOTER-SURFACE-001
 title: Superfície Transversal — Rodapé Global da Guivos
 status: proposed
-version: 0.2.2
+version: 0.2.3
 owner: Experience Architecture
 last_updated: 2026-10-16
 normative: false
@@ -164,6 +164,50 @@ A variação contextual altera **densidade e prioridade**, nunca o conteúdo nor
 **Sequência admissível:** conclusão documental da PR apenas como **candidata não normativa** após checks de CI e exame de precedência; decisão humana FTR-01/FTR-03; confirmação de destinos e responsabilidade jurídica FTR-02/FTR-04; materialização e provas FTR-05..08 em trilha própria. Merge documental **não equivale** a autorização de execução.
 
 
+
+## 6.1. Reconciliação documental de FTR-01 e FTR-03 nas oito Homes — 16/10/2026
+
+**Natureza:** exame de compatibilidade documental da proposta transversal com os oito Documentos Mestres públicos. Não é ratificação humana de FTR-01, não comprova reprodução visual ou cobertura real nas oito Homes e não encerra FTR-03. Mantém a referência `GKR-UX-GLOBAL-FOOTER-001 v1.0.0` como autoridade visual e verbal aprovada.
+
+### FTR-01 — arquitetura de informação e módulos
+
+| Função | Fonte de precedência | Síntese candidata para uso transversal | Limite |
+|---|---|---|---|
+| Identidade e posicionamento | Rodapé Institucional Global validado, guia de marca | **R01** mantém logotipo, `Possibility, lived.` e a mensagem institucional textual exata | Não substituir a assinatura de marca nem a mensagem validada |
+| Exploração do ecossistema | Rodapé validado + Home Pessoa §31 | **R02** preserva a coluna `Explore o ecossistema`; **R03** adiciona a obrigação de `Mapa do Ecossistema` no rodapé | Obrigação do item não comprova página, URL ou link ativo; não retirar itens previamente aprovados |
+| Informação institucional | Rodapé validado | **R04** preserva grupo `Guivos` e itens editoriais aprovados | Não pressupor páginas de Carreiras, Imprensa ou Comunidade publicadas |
+| Ajuda e direitos | Rodapé validado + competências Legal/Privacidade | **R05** preserva grupo `Ajuda`, separando apoio e links jurídicos | Destinos e textos legais definitivos exigem verificação competente |
+| Novidades e canais | Rodapé validado | **R05A** preserva `Receba novidades`, texto aprovado, campo, ação e ícones sociais | Formulário, tratamento de dados e canais não estão operacionais por inferência |
+| Faixa inferior | Rodapé validado | **R06** mantém identificação corporativa, links jurídicos e `Descubra. Viva. Evolua.` | Número de registro, símbolo, informações e links devem seguir a referência factual e revisão pertinente |
+| Componentização | Proposta transversal | Um contrato semântico compartilhável com densidade contextual nas páginas elegíveis | Não impor grid, breakpoint ou paridade visual fictícia; implementação depende de FTR-05..08 |
+
+**Resultado FTR-01:** `CONTENT_AND_MODULE_CROSSWALK = DOCUMENTED`; `ARCHITECTURE_RATIFICATION = PENDING`. A composição validada em 14/10 **não ratifica automaticamente** o acréscimo `Mapa do Ecossistema` ou variantes compactas nas oito Homes. A decisão humana deverá confirmar localização, convivência com os itens aprovados, variantes contextuais e tratamento de destino ausente.
+
+### FTR-03 — confronto individual com os oito Masters ativos
+
+| Home | Documento Mestre ativo conferido | Convergência de arquitetura de rodapé | Risco contextual e limite |
+|---|---|---|---|
+| Pessoa | `GKR-UX-HOME-MASTER-001 v1.0.8` | §31 exige link `Mapa do Ecossistema`; rodapé pós-narrativa, sem absorver Movimento 11 | Não criar página do Mapa nem alterar o CTA narrativo por inferência |
+| Organizações e Coletivos | `GKR-UX-HOME-OC-MASTER-001 v1.0.7` | Usa identidade pública Guivos e rodapé compartilhado, incluindo decisão de Mapa | Não converter Coletivo em Organização/Business nem exibir selos pendentes |
+| Mall | `GKR-UX-HOME-MALL-MASTER-001 v1.1.4` | Identidade e navegação comuns compatíveis | Saldo de pontos pertence ao contexto global de conta, não ao rodapé público; não prometer paridade ou checkout |
+| Travel | `GKR-UX-HOME-TRAVEL-MASTER-001 v1.1.6` | Identidade e navegação comuns compatíveis | Não antecipar reserva, disponibilidade, preços em pontos ou acordos de resgate |
+| Business | `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.10` | Identidade institucional comum sem alterar a Home B2B | Não confundir plano recorrente, recursos para incentivos e orçamento separado; liberdade criativa interna preservada |
+| Media | `GKR-UX-HOME-MEDIA-MASTER-001 v1.0.3` | Identidade transversal compatível | Não apresentar canal editorial, podcast, rede ou página como efetivamente publicada sem fonte |
+| Intelligence | `GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.14` | Identidade transversal compatível | Não transformar IA em autoridade individual nem prometer sistemas operacionais não comprovados |
+| Ads | `GKR-UX-HOME-ADS-MASTER-001 v1.0.3` | Identidade transversal compatível | Não converter navegação, marca ou rodapé em inventário de anúncios, oferta ativa ou distribuição garantida |
+
+**Cobertura da auditoria documental:** 8/8 Masters examinados para fronteiras de semântica e autoridade; **não** significa oito protótipos/implementações validados, 8/8 de aprovação de Design, nem resultados de testes. A ausência de contradição semântica evidente no recorte do rodapé não substitui a auditoria de conteúdo e layout de cada Home.
+
+**Resultado FTR-03:** `MASTER_CONTEXT_CROSSWALK = 8/8_DOCUMENTED`; `BRAND_REFERENCE = VALIDATED_FOR_FOOTER`; `EIGHT_HOME_VISUAL_REVIEW = NOT_EVIDENCED`; `FTR-03 = NOT_ADJUDICATED`.
+
+### Gates humanos remanescentes sem inventar decisão
+
+1. **FTR-01/D1:** confirmar o acréscimo do rótulo `Mapa do Ecossistema` na composição já validada, sua localização e o estado não clicável/oculto até possuir destino legítimo.
+2. **FTR-01/D2:** aprovar a semântica de variantes `full`, `compact` e `minimal` sem suprimir acesso jurídico essencial; versão mobile depende de design e testes.
+3. **FTR-03/D1:** confrontar a composição real em cada uma das oito Homes com a referência validada; registrar capturas, revisão de Brand/Design e diferenças legítimas.
+4. **FTR-03/D2:** resolver eventual conflito entre a referência aprovada em 14/10 e iterações visuais posteriores (por exemplo, acesso ao app por QR Code), **somente mediante nova evidência visual identificável**, não por lembrança editorial ou inferência de publicação.
+
+**Critério de avanço:** após deliberação documentada de FTR-01, examinar FTR-03 com evidência visual 8/8; FTR-02/04/05/06/07/08 mantêm seus requisitos independentes. Não iniciar implementação, fazer merge de funcionalidades ou declarar publicação por esta análise.
 
 ## 7. Fronteiras com trabalhos em andamento
 
