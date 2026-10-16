@@ -2,7 +2,7 @@
 id: GKR-UX-GLOBAL-FOOTER-SURFACE-001
 title: Superfície Transversal — Rodapé Global da Guivos
 status: proposed
-version: 0.2.6
+version: 0.2.7
 owner: Experience Architecture
 last_updated: 2026-10-16
 normative: false
@@ -283,7 +283,11 @@ Para cada uma das **oito Homes** (Pessoa; Organizações e Coletivos; Mall; Trav
 
 **Evidência necessária para ratificar:** concordância específica sobre as variantes e seu escopo, revisão de hierarquia por Brand/Design, e registro de quaisquer exceções aprovadas. A homologação de viewport, acessibilidade e interação depende de FTR-05/07 e não deve ser confundida com decisão de arquitetura.
 
-**Estado em 16/10/2026:** `FTR-01/D1 = POSITION_ACCEPTED`; `FTR-01/D2 = CANDIDATE_FOR_DECISION / NOT_RATIFIED`; `FTR-01 = PARTIAL_NOT_CLOSED`; `FTR-03 = NOT_ADJUDICATED`; `FTR-05 = NOT_TESTED`. Nenhum componente de interface foi implementado por esta seção.
+**Deliberação delimitada do fundador em 16/10/2026 — FTR-01/D2:** após receber a proposta completa da PR #672, o fundador respondeu **"de acordo, segue"** ao encaminhamento da decisão. Registra-se a aceitação **apenas da regra de arquitetura de variantes**: (i) `full` responsivo como padrão nas oito Homes públicas, inclusive com reflow/empilhamento conforme viewport; (ii) `compact` elegível somente para páginas internas públicas, mediante justificativa por contexto e preservação de identidade, navegação, suporte e direitos; (iii) `minimal` elegível excepcionalmente em fluxos sensíveis, autenticados ou de indisponibilidade, dependente de contrato contextual e da preservação de informação essencial; (iv) breakpoints e métricas não fixados sem testes; (v) nenhum conteúdo ou função validado pode ser excluído automaticamente por responsividade; (vi) indisponibilidade de um destino não pode ser disfarçada de funcionalidade existente.
+
+**Limite da decisão:** o aceite do **padrão e dos critérios de elegibilidade** não concede autorização automática para aplicar `compact` ou `minimal` em uma rota específica, retirar `Receba novidades`, alterar a referência visual institucional, homologar uma versão mobile/tablet ou declarar conformidade de acessibilidade. Exceções por superfície, inclusive qualquer alteração de bloco aprovado, permanecem sujeitas a decisão contextual rastreável. `FTR-02` conserva a dependência de destino real do `Mapa do Ecossistema`.
+
+**Estado resultante:** `FTR-01/D1 = POSITION_ACCEPTED`; `FTR-01/D2 = ARCHITECTURE_VARIANTS_ACCEPTED_SCOPED`; `FTR-01 = PARTIAL_NOT_CLOSED` (revisão de hierarquia e exceções visuais ainda necessárias); `FTR-03 = NOT_ADJUDICATED`; `FTR-05 = NOT_TESTED`; `FTR-06..08 = NOT_EVIDENCED`. A fonte de concordância é o assentimento nesta conversa, sem atribuir aprovações a Brand, Legal, Design ou equipes que não participaram. Nenhuma interface foi implementada por esta deliberação.
 
 ## 7. Fronteiras com trabalhos em andamento
 
