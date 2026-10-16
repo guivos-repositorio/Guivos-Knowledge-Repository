@@ -137,7 +137,7 @@ Consulte separadamente [Pontos — Incentivos em Oportunidades](pontos-guia-cons
 
 ## 11. Documentos e autoridades para aprofundamento
 
-**Leitura principal:** [Política consolidada candidata de Selos](../experience-architecture/collective-recognition-operational-policy-candidate.md) — na PR #654, não necessariamente publicada na main.
+**Leitura principal:** [Política consolidada candidata de Selos, na PR #654](https://github.com/guivos-repositorio/Guivos-Knowledge-Repository/blob/refs/pull/654/head/docs/experience-architecture/collective-recognition-operational-policy-candidate.md) — documento de proposta ainda não publicado na main.
 
 **Dossiê de origem e gates:** [PR #654](https://github.com/guivos-repositorio/Guivos-Knowledge-Repository/pull/654), que contém a proposta extensiva de dois selos, critérios CBR-01..08, matriz de 36 objetos, política consolidada e minutas. [Issue #660 — competências e G0/B-01](https://github.com/guivos-repositorio/Guivos-Knowledge-Repository/issues/660).
 
