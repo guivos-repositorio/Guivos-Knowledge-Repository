@@ -2636,6 +2636,41 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../experience-architecture/global-footer-surface-candidate/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rodapé Global — Arquitetura Candidata e Gates FTR
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--proposed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -8738,6 +8773,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#experience-architecture-global-footer-surface-candidate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.3.2 Rodapé Global — Arquitetura Candidata e Gates FTR
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -11136,6 +11182,17 @@
     <span class="md-ellipsis">
       
         9.3.1 Rodapé Institucional Oficial
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#experience-architecture-global-footer-surface-candidate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.3.2 Rodapé Global — Arquitetura Candidata e Gates FTR
       
     </span>
   </a>
@@ -30191,7 +30248,575 @@ RELEASE AUTHORITY
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Versões mobile/tablet auditadas</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Contraste, teclado e leitor de tela testados</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Implementação e publicação comprovadas</li>
-</ul></section></section>
+</ul></section><section class="print-page" id="experience-architecture-global-footer-surface-candidate" heading-number="9.3.2"><h1 id="experience-architecture-global-footer-surface-candidate-rodape-global-superficie-transversal-da-guivos">Rodapé Global — superfície transversal da Guivos<a class="headerlink" href="#experience-architecture-global-footer-surface-candidate-rodape-global-superficie-transversal-da-guivos" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p><strong>Superfície de projeto candidata.</strong> Este documento define uma arquitetura editorial e de experiência a ser validada para o rodapé de todas as Homes públicas e páginas elegíveis da Guivos. Não substitui a autoridade de cada produto, não aprova novos destinos, não cria páginas jurídicas e não equivale à implementação.</p>
+</blockquote>
+<h2 id="experience-architecture-global-footer-surface-candidate-0-precedencia-sobre-a-referencia-visual-validada-reconciliacao-de-16102026">0. Precedência sobre a referência visual validada (reconciliação de 16/10/2026)<a class="headerlink" href="#experience-architecture-global-footer-surface-candidate-0-precedencia-sobre-a-referencia-visual-validada-reconciliacao-de-16102026" title="Permanent link">&para;</a></h2>
+<p><strong>Autoridade corrente já existente na <code>main</code>:</strong> <a href="#experience-architecture-global-institutional-footer">Rodapé Institucional Global — Referência Validada</a>, <code>GKR-UX-GLOBAL-FOOTER-001 v1.0.0</code>, <code>status: validated-visual-reference</code>, <code>normative: true</code>, baseada na composição aprovada pelo fundador em 14/10/2026. Esta PR não é autorização para redesenhar a composição, suprimir conteúdo aprovado ou substituir seus textos. Os módulos R01–R06 abaixo são <strong>um mapa lógico de responsabilidades</strong> para implementação transversal, e não um novo copywriting, wireframe de substituição ou revisão do Design validado.</p>
+<p><strong>Elementos já fixados e que deverão ser preservados em qualquer composição conforme a referência:</strong>
+- assinatura de marca: <strong>Possibility, lived.</strong>;
+- posicionamento: <strong>Conectamos pessoas a possibilidades que podem transformar suas vidas.</strong>;
+- seções: <strong>Explore o ecossistema</strong>, <strong>Guivos</strong>, <strong>Ajuda</strong> e <strong>Receba novidades</strong>;
+- descrição do bloco de novidades: <strong>Acompanhe novas oportunidades, experiências e possibilidades que surgem e evoluem no ecossistema Guivos.</strong>;
+- chamada final: <strong>Descubra. Viva. Evolua.</strong>, com destaque cromático em <strong>Evolua.</strong>;
+- fundo <code>#FFFFFF</code>, paleta oficial, família Goldplay conforme autoridade tipográfica e respiros da referência visual;
+- navegação institucional e jurídica, campo voluntário de novidades e canais sociais conforme a referência, <strong>sem presumir destinos ou integração ativos</strong>.</p>
+<p><strong>Complementos em exame neste documento:</strong> <code>Mapa do Ecossistema</code> como responsabilidade de navegação referida pela autoridade da Home, aplicação em outras Homes, estados responsivos, ajuda e variações por contexto. O item <code>Mapa do Ecossistema</code> não substitui os grupos/itens aprovados no rodapé nem vira link clicável sem destino autorizado. Para qualquer diferença entre o wireframe lógico da §4 e a referência validada, <strong>prevalece a referência validada</strong>, sujeita às autoridades legais, de marca e acessibilidade pertinentes.</p>
+<p><strong>Lacunas de implantação:</strong> a referência corrente não comprova ativo vetorial, links, captação de novidades, publicação, mobile ou integração. O botão/QR de obtenção do app, se proposto em iteração visual posterior, exige registro de conteúdo e destino oficiais antes de integrar a superfície de produção; não presumir que já esteja contemplado pela referência normativa de 14/10. Nenhuma implementação é autorizada por esta reconciliação.</p>
+<h2 id="experience-architecture-global-footer-surface-candidate-1-papel-e-principios">1. Papel e princípios<a class="headerlink" href="#experience-architecture-global-footer-surface-candidate-1-papel-e-principios" title="Permanent link">&para;</a></h2>
+<p>O Rodapé é uma <strong>superfície transversal de orientação, confiança, continuidade e compreensão do ecossistema</strong>, não uma nona Home, uma vitrine extensa de serviços ou um funil compulsório. Sua função é permitir que a Pessoa, Organização ou Coletivo compreenda a Guivos, transite entre superfícies, encontre assistência e acesse informações institucionais e legais verificadas.</p>
+<ul>
+<li>Preservar sensação de ecossistema único, global e territorialmente relevante, sem alegar presença efetiva em países não atendidos.</li>
+<li>Respeitar a liberdade criativa de Design definida pelas autoridades comuns do GKR; esta especificação fixa <strong>funções, agrupamentos, prioridades e limites</strong>, não grade visual, cor, dimensão ou tecnologia.</li>
+<li>Manter consistência estrutural nas oito Homes e páginas internas, com adaptação contextual limitada e rastreável.</li>
+<li>Não antecipar acesso, serviço, recurso social, programa ou página inexistente.</li>
+<li>Preservar a autonomia de navegação e o acesso por teclado, leitura assistiva e dispositivos móveis.</li>
+</ul>
+<h2 id="experience-architecture-global-footer-surface-candidate-2-estrutura-conceitual-da-superficie">2. Estrutura conceitual da superfície<a class="headerlink" href="#experience-architecture-global-footer-surface-candidate-2-estrutura-conceitual-da-superficie" title="Permanent link">&para;</a></h2>
+<h3 id="experience-architecture-global-footer-surface-candidate-r01-identidade-e-continuidade">R01 — Identidade e continuidade<a class="headerlink" href="#experience-architecture-global-footer-surface-candidate-r01-identidade-e-continuidade" title="Permanent link">&para;</a></h3>
+<p>Identidade Guivos, frase curta de posicionamento vinculada ao significado institucional corrente e, <strong>quando adequado ao contexto e autoridade de marca</strong>, assinatura <code>Possibility, lived.</code>. Uma mensagem de encerramento não deve substituir o conteúdo narrativo próprio de cada Home.</p>
+<h3 id="experience-architecture-global-footer-surface-candidate-r02-explore-o-ecossistema">R02 — Explore o ecossistema<a class="headerlink" href="#experience-architecture-global-footer-surface-candidate-r02-explore-o-ecossistema" title="Permanent link">&para;</a></h3>
+<p>Área de orientação para os destinos publicamente disponíveis do ecossistema. Candidatos à arquitetura de informação:</p>
+<ul>
+<li>Pessoa e Journey;</li>
+<li>Organizações e Coletivos;</li>
+<li>Mall;</li>
+<li>Travel;</li>
+<li>Business;</li>
+<li>Media;</li>
+<li>Intelligence;</li>
+<li>Ads.</li>
+</ul>
+<p><strong>Regra de presença:</strong> destino só vira link clicável quando URL, finalidade pública e disponibilidade real forem confirmadas. Para superfícies ainda sem página, não usar <code>#</code>, links quebrados nem simular lançamento. A relação entre nome de produto, navegação e disponibilidade não autoriza promessa operacional.</p>
+<h3 id="experience-architecture-global-footer-surface-candidate-r03-mapa-do-ecossistema-item-obrigatorio">R03 — Mapa do Ecossistema — item obrigatório<a class="headerlink" href="#experience-architecture-global-footer-surface-candidate-r03-mapa-do-ecossistema-item-obrigatorio" title="Permanent link">&para;</a></h3>
+<p><strong>Obrigatório no rodapé:</strong> link textual com nome exato <strong><code>Mapa do Ecossistema</code></strong>, conforme seção 31 de <code>GKR-UX-HOME-MASTER-001 v1.0.8</code>.</p>
+<p>O destino, conteúdo e comportamento da futura página <strong>não estão definidos por esta seção</strong>. Antes de ativar o link em produção, resolver URL e arquitetura dessa página por decisão própria. Durante prototipação, o componente pode apresentar estado explicitamente rotulado como demonstração e não deve navegar a destino fictício.</p>
+<h3 id="experience-architecture-global-footer-surface-candidate-r04-sobre-a-guivos">R04 — Sobre a Guivos<a class="headerlink" href="#experience-architecture-global-footer-surface-candidate-r04-sobre-a-guivos" title="Permanent link">&para;</a></h3>
+<p>Entrada institucional de entendimento da plataforma, propósito, marca e informações corporativas que estiverem publicadas e aprovadas. A existência de <code>Sobre</code>, <code>Carreiras</code>, <code>Imprensa</code>, <code>Contato</code> ou redes sociais é <strong>candidata</strong>, não um inventário de páginas já existentes.</p>
+<h3 id="experience-architecture-global-footer-surface-candidate-r05-ajuda-confianca-e-direitos">R05 — Ajuda, confiança e direitos<a class="headerlink" href="#experience-architecture-global-footer-surface-candidate-r05-ajuda-confianca-e-direitos" title="Permanent link">&para;</a></h3>
+<p>Acesso simples às rotas efetivamente disponibilizadas de suporte, acessibilidade, privacidade, termos, preferências e canais de reporte. Não inventar canais de suporte, garantias legais, promessas de resposta, telefones, endereços ou contatos.</p>
+<p>Os links legais definitivos, jurisdição, entidade editorial, cookies e meios de exercer direitos exigem validação por Legal/Privacidade e disponibilidade real.</p>
+<h3 id="experience-architecture-global-footer-surface-candidate-r05a-receba-novidades-funcao-preservada-da-referencia-aprovada">R05A — Receba novidades — função preservada da referência aprovada<a class="headerlink" href="#experience-architecture-global-footer-surface-candidate-r05a-receba-novidades-funcao-preservada-da-referencia-aprovada" title="Permanent link">&para;</a></h3>
+<p>O bloco <strong>Receba novidades</strong> é parte do rodapé validado em <code>GKR-UX-GLOBAL-FOOTER-001</code>, não uma opção editorial a ser omitida pelo wireframe lógico desta PR. Deve preservar título, descrição oficial, campo de e-mail, botão de envio e canais sociais conforme a referência, com adaptação responsiva sem exclusão de função.</p>
+<p>Esse bloco é <strong>distinto</strong> de Ajuda e da faixa institucional inferior. A presença visual aprovada não comprova captação real, consentimento, integração, assinatura concluída, destinos ou contas oficiais das redes. Não ativar o formulário nem links sem validação de finalidade, privacidade e comportamento.</p>
+<p>A designação R05A é <strong>submódulo editorial desta proposta</strong>, não ID de superfície nem alteração de <code>GKR-SURF</code> ou <code>GKR-TRN</code>.</p>
+<h3 id="experience-architecture-global-footer-surface-candidate-r06-faixa-institucional-inferior">R06 — Faixa institucional inferior<a class="headerlink" href="#experience-architecture-global-footer-surface-candidate-r06-faixa-institucional-inferior" title="Permanent link">&para;</a></h3>
+<p>Conjunto de informações factuais e revisadas que podem incluir identificação corporativa apropriada, direitos de marca, ano, políticas e controles de idioma/região quando estes existirem e forem operacionais. Não exibir país, moeda, seletor, número de CNPJ, símbolo de certificação ou texto de conformidade como adorno ou suposição.</p>
+<h2 id="experience-architecture-global-footer-surface-candidate-3-tratamento-por-tipo-de-pagina">3. Tratamento por tipo de página<a class="headerlink" href="#experience-architecture-global-footer-surface-candidate-3-tratamento-por-tipo-de-pagina" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Superfície</th>
+<th>Aplicação do rodapé</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Home Pessoa</td>
+<td>Completo, após a narrativa e o Movimento 11, sem repetir nem enfraquecer o CTA da Home</td>
+</tr>
+<tr>
+<td>Home Organizações e Coletivos</td>
+<td>Mesmo esqueleto, sem insinuar que selos pendentes estão concedidos</td>
+</tr>
+<tr>
+<td>Homes Mall e Travel</td>
+<td>Mesmo esqueleto; não prometer liquidação, parceiros, estoque ou disponibilidade não contratados</td>
+</tr>
+<tr>
+<td>Homes Business, Media, Intelligence e Ads</td>
+<td>Mesma arquitetura; não transformar itens de navegação em claims de operação</td>
+</tr>
+<tr>
+<td>Páginas públicas internas</td>
+<td>Rodapé completo ou condensado conforme extensão, mantendo <code>Mapa do Ecossistema</code> quando o contexto permitir</td>
+</tr>
+<tr>
+<td>Formulários e fluxos autenticados sensíveis</td>
+<td>Variante compacta de confiança e links legais, sem distrações e sem vazamento de estado privado; requisitos próprios devem ser validados</td>
+</tr>
+<tr>
+<td>Telas de erro e indisponibilidade</td>
+<td>Acesso mínimo a ajuda verificada, navegação e políticas quando possível</td>
+</tr>
+</tbody>
+</table>
+<p>A variação contextual altera <strong>densidade e prioridade</strong>, nunca o conteúdo normativo ou a existência de produtos.</p>
+<h2 id="experience-architecture-global-footer-surface-candidate-4-wireframe-logico-nao-visual-final">4. Wireframe lógico — não visual final<a class="headerlink" href="#experience-architecture-global-footer-surface-candidate-4-wireframe-logico-nao-visual-final" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>┌────────────────────────────────────────────────────────────────────┐
+│ GUIVOS          Explore o ecossistema  Sobre  Ajuda  Receba novidades│
+│ Posicionamento Destinos ativos        Guivos Apoio  E-mail / canais│
+│                 Mapa do Ecossistema (destino a validar)             │
+├────────────────────────────────────────────────────────────────────┤
+│ Identificação factual  •  Privacidade/Termos aprovados  •  Controles│
+└────────────────────────────────────────────────────────────────────┘
+</code></pre></div>
+<p><strong>Mobile:</strong> módulos em sequência sem colunas comprimidas; agrupamentos expansíveis são opcionais, desde que nomeados e operáveis por teclado, sem ocultar links legais essenciais. <strong>Desktop:</strong> design pode usar distribuição em colunas, hierarquia editorial e presença imagética discreta. <strong>Acessibilidade:</strong> landmark de rodapé, títulos, links com propósito identificável, foco visível, contraste, leitura linear, movimento reduzido e alvos de toque adequados.</p>
+<h2 id="experience-architecture-global-footer-surface-candidate-5-arquitetura-de-dados-e-implementacao">5. Arquitetura de dados e implementação<a class="headerlink" href="#experience-architecture-global-footer-surface-candidate-5-arquitetura-de-dados-e-implementacao" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Única fonte de configuração de links</strong>, com <code>id</code>, rótulo, finalidade, rota absoluta/interna, idioma, mercado, <code>available</code>, <code>approved</code> e versão de origem. Não inferir publicação a partir da existência de um Master.</li>
+<li><strong>Componente compartilhado</strong> para todas as Homes, evitando oito rodapés divergentes; variações <code>full</code>, <code>compact</code> e <code>minimal</code> somente quando justificadas por contexto.</li>
+<li>Nenhum link deve existir funcionalmente sem URL validada; navegação externa deve identificar destino e observar boas práticas de segurança.</li>
+<li>Idioma e região devem refletir suporte real, não dropdowns demonstrativos apresentados como funcionalidade ativa.</li>
+<li>Pode usar fotografia, iconografia e visualização, mas os elementos não podem eclipsar navegação e informações de confiança.</li>
+</ul>
+<h2 id="experience-architecture-global-footer-surface-candidate-6-gates-e-criterios-de-aceite">6. Gates e critérios de aceite<a class="headerlink" href="#experience-architecture-global-footer-surface-candidate-6-gates-e-criterios-de-aceite" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Gate</th>
+<th>Necessário para declarar concluído</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FTR-01</td>
+<td>Ratificação humana da arquitetura de informação e módulos</td>
+</tr>
+<tr>
+<td>FTR-02</td>
+<td>Destinos e URLs ativas verificadas, sobretudo <code>Mapa do Ecossistema</code></td>
+</tr>
+<tr>
+<td>FTR-03</td>
+<td>Revisão Brand e coerência das oito Homes</td>
+</tr>
+<tr>
+<td>FTR-04</td>
+<td>Revisão Legal/Privacidade de elementos legais e institucionais</td>
+</tr>
+<tr>
+<td>FTR-05</td>
+<td>Design responsivo e validação de acessibilidade, inclusive teclado/leitor de tela</td>
+</tr>
+<tr>
+<td>FTR-06</td>
+<td>Implementação de componente compartilhado e cobertura de rotas públicas elegíveis</td>
+</tr>
+<tr>
+<td>FTR-07</td>
+<td>Testes de links, estados indisponíveis, mobile, regressão e navegação assistiva</td>
+</tr>
+<tr>
+<td>FTR-08</td>
+<td>Aprovação de publicação e evidência de deploy real</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Estado inicial:</strong> <code>FTR-01..08 = NOT_ADJUDICATED</code>. A estrutura é uma proposta documentada para deliberação, não autorização de implantação ou anúncio de disponibilidade.</p>
+<p><strong>Linha de base auditada em 16/10/2026:</strong> os oito gates seguem <strong>sem ratificação formal de conclusão</strong>. O quadro abaixo indica evidência parcial, não aprovação tácita. A referência visual <code>GKR-UX-GLOBAL-FOOTER-001 v1.0.0</code> é válida e não precisa ser revalidada por esta PR.</p>
+<table>
+<thead>
+<tr>
+<th>Gate</th>
+<th>Evidência existente</th>
+<th>Lacuna objetiva para concluir</th>
+<th>Estado corrente</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FTR-01</td>
+<td>Módulos R01–R06 e R05A documentados; referência visual aprovada</td>
+<td>Ratificação específica da arquitetura transversal, variantes e integração de <code>Mapa do Ecossistema</code></td>
+<td>DOCUMENTED / NOT_ADJUDICATED</td>
+</tr>
+<tr>
+<td>FTR-02</td>
+<td>Lista editorial de destinos no rodapé validado; Home Master §31 exige <code>Mapa do Ecossistema</code></td>
+<td>Mapa de URLs verificadas, disponibilidade de cada destino e tratamento de ausências</td>
+<td>NOT_VERIFIED</td>
+</tr>
+<tr>
+<td>FTR-03</td>
+<td>Assinaturas e sistema visual fixados pela referência aprovada, prevalência explícita neste candidato</td>
+<td>Revisão de consistência da composição nas oito Homes e variantes, com evidência por contexto</td>
+<td>PARTIAL_EVIDENCE / NOT_ADJUDICATED</td>
+</tr>
+<tr>
+<td>FTR-04</td>
+<td>Textos institucionais e jurídicos registrados na referência visual</td>
+<td>Verificação Legal/Privacidade de URLs, identificação, captação voluntária, avisos e canais</td>
+<td>NOT_VERIFIED</td>
+</tr>
+<tr>
+<td>FTR-05</td>
+<td>Diretrizes de acessibilidade e adaptação responsiva descritas</td>
+<td>Protótipos/implementações mobile e tablet, teste de contraste, teclado e tecnologias assistivas</td>
+<td>NOT_TESTED</td>
+</tr>
+<tr>
+<td>FTR-06</td>
+<td>Proposta de componente compartilhado e configuração única</td>
+<td>Implementação real auditada, cobertura das superfícies públicas elegíveis e configuração dos destinos</td>
+<td>NOT_IMPLEMENTATION_EVIDENCED</td>
+</tr>
+<tr>
+<td>FTR-07</td>
+<td>Critérios de testes descritos</td>
+<td>Execução reproduzível de navegação, formulário, links, estados vazios/falhos, regressão e mobile</td>
+<td>NOT_EXECUTED</td>
+</tr>
+<tr>
+<td>FTR-08</td>
+<td>Referência visual aprovada pelo fundador</td>
+<td>Aprovação de publicação <strong>e</strong> evidência verificável de deploy real</td>
+<td>NOT_PUBLISHED_EVIDENCED</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Regras de decisão:</strong> <code>FTR-01</code> não é automaticamente satisfeito pela aprovação visual de 14/10; <code>FTR-03</code> possui base de marca, mas não auditoria completa das oito Homes; <code>FTR-02</code> não se satisfaz por rótulos de link ou rotas fictícias; <code>FTR-06..08</code> exigem evidência de interface, teste e deploy, não apenas texto. O link do <code>Mapa do Ecossistema</code> é obrigação arquitetural da Home Pessoa, mas seu destino ainda não está validado. O QR/app, se incorporado após 14/10, deverá ser reconciliado com uma referência visual posterior identificada, sem inventar QR real ou disponibilidade em lojas.</p>
+<p><strong>Sequência admissível:</strong> conclusão documental da PR apenas como <strong>candidata não normativa</strong> após checks de CI e exame de precedência; decisão humana FTR-01/FTR-03; confirmação de destinos e responsabilidade jurídica FTR-02/FTR-04; materialização e provas FTR-05..08 em trilha própria. Merge documental <strong>não equivale</strong> a autorização de execução.</p>
+<h2 id="experience-architecture-global-footer-surface-candidate-61-reconciliacao-documental-de-ftr-01-e-ftr-03-nas-oito-homes-16102026">6.1. Reconciliação documental de FTR-01 e FTR-03 nas oito Homes — 16/10/2026<a class="headerlink" href="#experience-architecture-global-footer-surface-candidate-61-reconciliacao-documental-de-ftr-01-e-ftr-03-nas-oito-homes-16102026" title="Permanent link">&para;</a></h2>
+<p><strong>Natureza:</strong> exame de compatibilidade documental da proposta transversal com os oito Documentos Mestres públicos. Não é ratificação humana de FTR-01, não comprova reprodução visual ou cobertura real nas oito Homes e não encerra FTR-03. Mantém a referência <code>GKR-UX-GLOBAL-FOOTER-001 v1.0.0</code> como autoridade visual e verbal aprovada.</p>
+<h3 id="experience-architecture-global-footer-surface-candidate-ftr-01-arquitetura-de-informacao-e-modulos">FTR-01 — arquitetura de informação e módulos<a class="headerlink" href="#experience-architecture-global-footer-surface-candidate-ftr-01-arquitetura-de-informacao-e-modulos" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Função</th>
+<th>Fonte de precedência</th>
+<th>Síntese candidata para uso transversal</th>
+<th>Limite</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Identidade e posicionamento</td>
+<td>Rodapé Institucional Global validado, guia de marca</td>
+<td><strong>R01</strong> mantém logotipo, <code>Possibility, lived.</code> e a mensagem institucional textual exata</td>
+<td>Não substituir a assinatura de marca nem a mensagem validada</td>
+</tr>
+<tr>
+<td>Exploração do ecossistema</td>
+<td>Rodapé validado + Home Pessoa §31</td>
+<td><strong>R02</strong> preserva a coluna <code>Explore o ecossistema</code>; <strong>R03</strong> adiciona a obrigação de <code>Mapa do Ecossistema</code> no rodapé</td>
+<td>Obrigação do item não comprova página, URL ou link ativo; não retirar itens previamente aprovados</td>
+</tr>
+<tr>
+<td>Informação institucional</td>
+<td>Rodapé validado</td>
+<td><strong>R04</strong> preserva grupo <code>Guivos</code> e itens editoriais aprovados</td>
+<td>Não pressupor páginas de Carreiras, Imprensa ou Comunidade publicadas</td>
+</tr>
+<tr>
+<td>Ajuda e direitos</td>
+<td>Rodapé validado + competências Legal/Privacidade</td>
+<td><strong>R05</strong> preserva grupo <code>Ajuda</code>, separando apoio e links jurídicos</td>
+<td>Destinos e textos legais definitivos exigem verificação competente</td>
+</tr>
+<tr>
+<td>Novidades e canais</td>
+<td>Rodapé validado</td>
+<td><strong>R05A</strong> preserva <code>Receba novidades</code>, texto aprovado, campo, ação e ícones sociais</td>
+<td>Formulário, tratamento de dados e canais não estão operacionais por inferência</td>
+</tr>
+<tr>
+<td>Faixa inferior</td>
+<td>Rodapé validado</td>
+<td><strong>R06</strong> mantém identificação corporativa, links jurídicos e <code>Descubra. Viva. Evolua.</code></td>
+<td>Número de registro, símbolo, informações e links devem seguir a referência factual e revisão pertinente</td>
+</tr>
+<tr>
+<td>Componentização</td>
+<td>Proposta transversal</td>
+<td>Um contrato semântico compartilhável com densidade contextual nas páginas elegíveis</td>
+<td>Não impor grid, breakpoint ou paridade visual fictícia; implementação depende de FTR-05..08</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Resultado FTR-01:</strong> <code>CONTENT_AND_MODULE_CROSSWALK = DOCUMENTED</code>; <code>ARCHITECTURE_RATIFICATION = PENDING</code>. A composição validada em 14/10 <strong>não ratifica automaticamente</strong> o acréscimo <code>Mapa do Ecossistema</code> ou variantes compactas nas oito Homes. A decisão humana deverá confirmar localização, convivência com os itens aprovados, variantes contextuais e tratamento de destino ausente.</p>
+<h3 id="experience-architecture-global-footer-surface-candidate-ftr-03-confronto-individual-com-os-oito-masters-ativos">FTR-03 — confronto individual com os oito Masters ativos<a class="headerlink" href="#experience-architecture-global-footer-surface-candidate-ftr-03-confronto-individual-com-os-oito-masters-ativos" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Home</th>
+<th>Documento Mestre ativo conferido</th>
+<th>Convergência de arquitetura de rodapé</th>
+<th>Risco contextual e limite</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pessoa</td>
+<td><code>GKR-UX-HOME-MASTER-001 v1.0.8</code></td>
+<td>§31 exige link <code>Mapa do Ecossistema</code>; rodapé pós-narrativa, sem absorver Movimento 11</td>
+<td>Não criar página do Mapa nem alterar o CTA narrativo por inferência</td>
+</tr>
+<tr>
+<td>Organizações e Coletivos</td>
+<td><code>GKR-UX-HOME-OC-MASTER-001 v1.0.7</code></td>
+<td>Usa identidade pública Guivos e rodapé compartilhado, incluindo decisão de Mapa</td>
+<td>Não converter Coletivo em Organização/Business nem exibir selos pendentes</td>
+</tr>
+<tr>
+<td>Mall</td>
+<td><code>GKR-UX-HOME-MALL-MASTER-001 v1.1.4</code></td>
+<td>Identidade e navegação comuns compatíveis</td>
+<td>Saldo de pontos pertence ao contexto global de conta, não ao rodapé público; não prometer paridade ou checkout</td>
+</tr>
+<tr>
+<td>Travel</td>
+<td><code>GKR-UX-HOME-TRAVEL-MASTER-001 v1.1.6</code></td>
+<td>Identidade e navegação comuns compatíveis</td>
+<td>Não antecipar reserva, disponibilidade, preços em pontos ou acordos de resgate</td>
+</tr>
+<tr>
+<td>Business</td>
+<td><code>GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.10</code></td>
+<td>Identidade institucional comum sem alterar a Home B2B</td>
+<td>Não confundir plano recorrente, recursos para incentivos e orçamento separado; liberdade criativa interna preservada</td>
+</tr>
+<tr>
+<td>Media</td>
+<td><code>GKR-UX-HOME-MEDIA-MASTER-001 v1.0.3</code></td>
+<td>Identidade transversal compatível</td>
+<td>Não apresentar canal editorial, podcast, rede ou página como efetivamente publicada sem fonte</td>
+</tr>
+<tr>
+<td>Intelligence</td>
+<td><code>GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.14</code></td>
+<td>Identidade transversal compatível</td>
+<td>Não transformar IA em autoridade individual nem prometer sistemas operacionais não comprovados</td>
+</tr>
+<tr>
+<td>Ads</td>
+<td><code>GKR-UX-HOME-ADS-MASTER-001 v1.0.3</code></td>
+<td>Identidade transversal compatível</td>
+<td>Não converter navegação, marca ou rodapé em inventário de anúncios, oferta ativa ou distribuição garantida</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Cobertura da auditoria documental:</strong> 8/8 Masters examinados para fronteiras de semântica e autoridade; <strong>não</strong> significa oito protótipos/implementações validados, 8/8 de aprovação de Design, nem resultados de testes. A ausência de contradição semântica evidente no recorte do rodapé não substitui a auditoria de conteúdo e layout de cada Home.</p>
+<p><strong>Resultado FTR-03:</strong> <code>MASTER_CONTEXT_CROSSWALK = 8/8_DOCUMENTED</code>; <code>BRAND_REFERENCE = VALIDATED_FOR_FOOTER</code>; <code>EIGHT_HOME_VISUAL_REVIEW = NOT_EVIDENCED</code>; <code>FTR-03 = NOT_ADJUDICATED</code>.</p>
+<h3 id="experience-architecture-global-footer-surface-candidate-gates-humanos-remanescentes-sem-inventar-decisao">Gates humanos remanescentes sem inventar decisão<a class="headerlink" href="#experience-architecture-global-footer-surface-candidate-gates-humanos-remanescentes-sem-inventar-decisao" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>FTR-01/D1 — posição aceita:</strong> registrar o rótulo <code>Mapa do Ecossistema</code> ao final da coluna <code>Explore o ecossistema</code>; <strong>a decisão sobre exibição de um item sem destino real em produção permanece pendente de FTR-02</strong>, e nenhum link operacional pode ser presumido.</li>
+<li><strong>FTR-01/D2:</strong> aprovar a semântica de variantes <code>full</code>, <code>compact</code> e <code>minimal</code> sem suprimir acesso jurídico essencial; versão mobile depende de design e testes.</li>
+<li><strong>FTR-03/D1:</strong> confrontar a composição real em cada uma das oito Homes com a referência validada; registrar capturas, revisão de Brand/Design e diferenças legítimas.</li>
+<li><strong>FTR-03/D2:</strong> resolver eventual conflito entre a referência aprovada em 14/10 e iterações visuais posteriores (por exemplo, acesso ao app por QR Code), <strong>somente mediante nova evidência visual identificável</strong>, não por lembrança editorial ou inferência de publicação.</li>
+</ol>
+<p><strong>Critério de avanço:</strong> após deliberação documentada de FTR-01, examinar FTR-03 com evidência visual 8/8; FTR-02/04/05/06/07/08 mantêm seus requisitos independentes. Não iniciar implementação, fazer merge de funcionalidades ou declarar publicação por esta análise.</p>
+<h2 id="experience-architecture-global-footer-surface-candidate-62-ftr-01-proposta-decisoria-de-localizacao-do-mapa-e-ftr-03-protocolo-de-evidencia-16102026">6.2. FTR-01 — proposta decisória de localização do Mapa e FTR-03 — protocolo de evidência (16/10/2026)<a class="headerlink" href="#experience-architecture-global-footer-surface-candidate-62-ftr-01-proposta-decisoria-de-localizacao-do-mapa-e-ftr-03-protocolo-de-evidencia-16102026" title="Permanent link">&para;</a></h2>
+<h3 id="experience-architecture-global-footer-surface-candidate-localizacao-do-mapa-do-ecossistema-solucao-preferencial-para-apreciacao-humana">Localização do <code>Mapa do Ecossistema</code> — solução preferencial para apreciação humana<a class="headerlink" href="#experience-architecture-global-footer-surface-candidate-localizacao-do-mapa-do-ecossistema-solucao-preferencial-para-apreciacao-humana" title="Permanent link">&para;</a></h3>
+<p><strong>Proposta:</strong> acrescentar o item textual <strong><code>Mapa do Ecossistema</code> ao final da coluna <code>Explore o ecossistema</code></strong>, depois dos oito destinos aprovados (Pessoa e Journey; Organizações e Coletivos; Mall; Travel; Business; Media; Intelligence; Ads). O item será separado dos destinos por espaçamento editorial discreto, sem criar uma quinta coluna, nova faixa institucional ou CTA dominante.</p>
+<p><strong>Justificativa:</strong> a intenção é orientar a Pessoa sobre o conjunto do ecossistema; por isso o agrupamento de exploração é semanticamente mais adequado que <code>Guivos</code> (institucional), <code>Ajuda</code> (suporte) ou <code>Receba novidades</code> (captação voluntária). A ordem dos oito produtos e participantes, as assinaturas e a faixa inferior já aprovadas devem permanecer intactas. Tipografia Goldplay, fundo <code>#FFFFFF</code>, espaçamentos, paleta e composição da referência visual conservam precedência.</p>
+<p><strong>Estado do link:</strong> a obrigação documental do item não autoriza URL fictícia. Enquanto não existir destino público real, aprovado e testado, o Design pode representar um item <strong>explicitamente inativo em protótipo</strong>, identificado como demonstração, sem href enganoso, <code>#</code> ou promessa de navegação; a política de exibição do item em produção depende de FTR-02 e deliberação FTR-01. O requisito de existência na arquitetura não deve ser falsamente relatado como link operacional.</p>
+<p><strong>Deliberação específica FTR-01/D1 — posicionamento (16/10/2026):</strong> após a apresentação da proposta na PR #670 e seu merge documental, o fundador respondeu <strong>"de acordo, segue"</strong> à continuidade da formalização. A concordância é registrada <strong>somente quanto à direção editorial proposta</strong>: inserir o rótulo <strong><code>Mapa do Ecossistema</code> ao final de <code>Explore o ecossistema</code></strong>, depois dos oito destinos, preservando os agrupamentos e o conteúdo visual já validado. <strong>Estado: FTR-01/D1 — POSITION_ACCEPTED (escopo delimitado).</strong></p>
+<p><strong>Não coberto pela concordância:</strong> não há aprovação de URL, clique funcional, simulação de link em produção, variante móvel/compacta, medidas pixel-perfect, revisão visual da imagem de 14/10, redesign das demais colunas ou declaração de prontidão do rodapé. <code>FTR-01</code> como gate integral <strong>permanece PARTIAL / NOT_CLOSED</strong>; <code>FTR-01/D2</code> (variantes e estados) e evidência visual de aplicação requerem tratamento próprio. <code>FTR-02</code> permanece bloqueado até existir destino validado. A decisão verbal nesta conversa é a fonte da concordância e <strong>não se confunde com assinatura formal de outros responsáveis</strong>.</p>
+<h3 id="experience-architecture-global-footer-surface-candidate-ftr-03-matriz-objetiva-de-evidencia-por-home">FTR-03 — matriz objetiva de evidência por Home<a class="headerlink" href="#experience-architecture-global-footer-surface-candidate-ftr-03-matriz-objetiva-de-evidencia-por-home" title="Permanent link">&para;</a></h3>
+<p>Para cada uma das <strong>oito Homes</strong> (Pessoa; Organizações e Coletivos; Mall; Travel; Business; Media; Intelligence; Ads), a revisão deverá conter uma linha de evidência verificável com:</p>
+<ol>
+<li>referência ao Master, versão e data de exame;</li>
+<li>URL do protótipo ou arquivo com captura real da área final da página, identificável por versão;</li>
+<li>estado desktop e mobile, <strong>sem confundir protótipo com produção</strong>;</li>
+<li>checklist da presença e literalidade de <code>Possibility, lived.</code>, <code>Conectamos pessoas a possibilidades que podem transformar suas vidas.</code>, <code>Descubra. Viva. Evolua.</code>, quatro agrupamentos editoriais, destinos e faixa jurídica;</li>
+<li>colocação e estado funcional/indisponível de <code>Mapa do Ecossistema</code>, quando a proposta tiver sido aprovada;</li>
+<li>contraste visual com a referência de 14/10/2026, respeitando <code>#FFFFFF</code>, tipografia, símbolos e hierarquia;</li>
+<li>registro de divergências e decisões contextuais aprovadas, revisor de Brand/Design e desfecho datado;</li>
+<li>identificação separada de variações posteriores <strong>somente com evidência identificada</strong>, incluindo eventual botão/QR de aplicativo: QR ilustrativo não é QR oficial, e não demonstra disponibilização nas lojas.</li>
+</ol>
+<p><strong>Critério de conclusão:</strong> <code>FTR-03</code> só pode ser declarado concluído com <strong>8/8 evidências individuais verificadas</strong> e análise das divergências; a auditoria documental 8/8 já realizada não substitui essas provas. A revisão responsiva funcional e de acessibilidade pertence também a FTR-05 e permanece pendente.</p>
+<p><strong>Matriz atual de prova:</strong> <code>8/8_MASTERS_DOCUMENTALLY_RECONCILED</code>; <code>0/8_HOME_RENDER_EVIDENCES_VERIFIED_IN_THIS_REVIEW</code> (a última contagem descreve <strong>evidência efetivamente examinada nesta revisão</strong>, não afirma ausência de protótipos externos); <code>FTR-01/D1 = POSITION_ACCEPTED</code>, <code>FTR-01 = PARTIAL_NOT_CLOSED</code>; <code>FTR-03 = NOT_ADJUDICATED</code>; <code>FTR-02 = URL_NOT_VERIFIED</code>. Este registro não autoriza implementação, publicação ou alteração normativa de marca.</p>
+<h2 id="experience-architecture-global-footer-surface-candidate-63-ftr-01d2-contrato-candidato-de-variantes-responsivas-16102026">6.3. FTR-01/D2 — contrato candidato de variantes responsivas (16/10/2026)<a class="headerlink" href="#experience-architecture-global-footer-surface-candidate-63-ftr-01d2-contrato-candidato-de-variantes-responsivas-16102026" title="Permanent link">&para;</a></h2>
+<p><strong>Finalidade:</strong> registrar uma opção de arquitetura semântica de variantes para avaliação de Design, Produto, Brand e Acessibilidade. <strong>Não há mockup mobile/tablet homologado nem variante ratificada por esta seção.</strong> A referência oficial de 14/10/2026 continua definindo a composição desktop, seu conteúdo, fundo <code>#FFFFFF</code>, paleta, Goldplay e assinaturas.</p>
+<h3 id="experience-architecture-global-footer-surface-candidate-regras-comuns-invariantes">Regras comuns invariantes<a class="headerlink" href="#experience-architecture-global-footer-surface-candidate-regras-comuns-invariantes" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Identidade:</strong> manter logotipo, <code>Possibility, lived.</code>, mensagem de posicionamento e assinatura final <code>Descubra. Viva. Evolua.</code> sem reescrever ou converter esta última em assinatura institucional.</li>
+<li><strong>Quatro grupos editoriais distintos:</strong> <code>Explore o ecossistema</code>, <code>Guivos</code>, <code>Ajuda</code>, <code>Receba novidades</code>; preservar também identificação e links jurídicos da faixa inferior. Reorganizar espacialmente não significa excluir função.</li>
+<li><strong>Mapa:</strong> no grupo <code>Explore o ecossistema</code>, depois dos oito destinos, conforme FTR-01/D1. Ausência de URL validada proíbe link de produção que simule navegação; FTR-02 continua independente.</li>
+<li><strong>Integridade funcional:</strong> os mesmos destinos realmente disponíveis e informações públicas verificadas devem permanecer alcançáveis em qualquer viewport. Não criar URLs, canais, captação efetiva, consentimento presumido, botão funcional ou QR oficial por conveniência visual.</li>
+<li><strong>Adaptação por conteúdo:</strong> pontos de quebra, largura, altura e disposição dependem de ensaio de texto real, zoom, fonte, tamanho de toque e dispositivos-alvo; nenhum breakpoint ou comprimento de card é token normativo nesta proposta.</li>
+<li><strong>Acesso essencial:</strong> políticas legais, contato de suporte efetivamente disponível e identificação institucional não podem desaparecer em versões reduzidas nem depender exclusivamente de hover, gesto ou animação.</li>
+<li><strong>Acessibilidade:</strong> ordem de leitura linear compreensível, títulos de agrupamento, foco visível, teclado, leitores de tela, alvos tocáveis e estados explícitos; ícones sociais/QR exigem rótulos acessíveis quando forem legitimamente habilitados.</li>
+</ul>
+<h3 id="experience-architecture-global-footer-surface-candidate-matriz-de-variantes-hipotese-de-aplicacao-por-contexto-nao-por-pixel-fixo">Matriz de variantes — hipótese de aplicação por contexto, não por pixel fixo<a class="headerlink" href="#experience-architecture-global-footer-surface-candidate-matriz-de-variantes-hipotese-de-aplicacao-por-contexto-nao-por-pixel-fixo" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variante</th>
+<th>Contexto preferencial</th>
+<th>Organização candidata</th>
+<th>O que nunca pode ser suprimido</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>full</code></td>
+<td>Homes públicas e páginas informacionais extensas; tela larga</td>
+<td>Reproduzir hierarquia aprovada: bloco de marca, navegação em três grupos, bloco de novidades, divisor e faixa inferior</td>
+<td>Textos da referência, coluna de novidades, grupos, assinatura final, informação jurídica</td>
+</tr>
+<tr>
+<td><code>full</code> refluído</td>
+<td>Homes e páginas públicas em largura intermediária/tablet</td>
+<td>Reorganizar os mesmos blocos em linhas/colunas conforme espaço efetivo; <code>Receba novidades</code> pode ocupar linha própria</td>
+<td>Todos os blocos e links verificados, sem colunas comprimidas ou campo ilegível</td>
+</tr>
+<tr>
+<td><code>full</code> empilhado</td>
+<td>Home pública em viewport estreita/mobile</td>
+<td>Empilhar marca e texto, grupos, novidades e faixa inferior com ordem semântica explícita; apresentação expansível de grupos só após prova de acessibilidade e descoberta</td>
+<td>Nenhum grupo essencial apagado; link jurídico acessível; não esconder conteúdo aprovado sob ícones mudos</td>
+</tr>
+<tr>
+<td><code>compact</code></td>
+<td>Páginas internas públicas de fluxo prolongado, mediante justificativa contextual</td>
+<td>Reduzir densidade visual e redistribuir blocos, sem alterar identidade e acesso a navegação/ajuda/direitos; tratamento de novidades precisa de decisão específica</td>
+<td>Identidade, navegação essencial, suporte e direitos; não fingir aprovação de exclusão do bloco <code>Receba novidades</code></td>
+</tr>
+<tr>
+<td><code>minimal</code></td>
+<td>Fluxos sensíveis/autenticados, estados de erro ou indisponibilidade, somente se autorizados em contexto próprio</td>
+<td>Mínimo de identificação, ajuda real e informações legais, sem expor estado privado; aplicação excepcional, não padrão das oito Homes</td>
+<td>Acesso legal e suporte pertinente; não reaproveitar indiscriminadamente o <code>full</code> como superfície de coleta</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Limite importante:</strong> <code>compact</code> e <code>minimal</code> são <strong>variantes hipotéticas</strong>, não exceções já autorizadas ao conteúdo visual aprovado. Especialmente <code>Receba novidades</code>: nenhuma omissão, recolhimento ou deslocamento que altere seu papel editorial será considerado aprovado antes de decisão humana explícita. Para as <strong>oito Homes públicas</strong>, a base candidata é <code>full</code> responsivo (refluído ou empilhado segundo o espaço), não <code>minimal</code>.</p>
+<h3 id="experience-architecture-global-footer-surface-candidate-estados-e-comportamentos-que-exigem-decisaoexecucao-futura">Estados e comportamentos que exigem decisão/execução futura<a class="headerlink" href="#experience-architecture-global-footer-surface-candidate-estados-e-comportamentos-que-exigem-decisaoexecucao-futura" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Objeto</th>
+<th>Estado seguro enquanto não houver comprovação</th>
+<th>Gate decisivo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Mapa do Ecossistema</code></td>
+<td>Rótulo de protótipo demonstrativo, não link operacional; exibição na produção depende de política aprovada e destino</td>
+<td>FTR-01 + FTR-02</td>
+</tr>
+<tr>
+<td>Destinos institucionais e sociais</td>
+<td>Só habilitar URL oficial verificada; não simular destino indisponível</td>
+<td>FTR-02 + FTR-04</td>
+</tr>
+<tr>
+<td><code>Receba novidades</code></td>
+<td>Bloco visual preservado; formulário não pode prometer cadastro sem finalidade, consentimento/aviso e integração real</td>
+<td>FTR-04 + FTR-06/07</td>
+</tr>
+<tr>
+<td><code>Obter o app</code> / QR</td>
+<td>Tratar eventual iteração posterior como referência visual separada; não gerar QR fictício nem alegar distribuição</td>
+<td>Nova evidência Brand/Design + FTR-02/03</td>
+</tr>
+<tr>
+<td>Ícones e controles de expandir</td>
+<td>Estado, foco, semântica, leitores de tela e testes reais antes de publicar</td>
+<td>FTR-05 + FTR-07</td>
+</tr>
+<tr>
+<td>Implantação comum</td>
+<td>Nenhuma rota, responsividade, cobertura das oito Homes ou deploy demonstrado por este texto</td>
+<td>FTR-06..08</td>
+</tr>
+</tbody>
+</table>
+<h3 id="experience-architecture-global-footer-surface-candidate-deliberacao-ftr-01d2-e-criterio-de-aceite">Deliberação FTR-01/D2 e critério de aceite<a class="headerlink" href="#experience-architecture-global-footer-surface-candidate-deliberacao-ftr-01d2-e-criterio-de-aceite" title="Permanent link">&para;</a></h3>
+<p><strong>Proposta para ratificação:</strong> (1) oito Homes públicas seguem um rodapé <code>full</code> com reflow conforme conteúdo e viewport; (2) <code>compact</code> só em página interna pública com motivo e conteúdo essencial preservado; (3) <code>minimal</code> apenas em fluxos restritos com contrato próprio; (4) não fixar breakpoints sem testes; (5) nenhuma função aprovada pode ser retirada por adaptação responsiva; (6) estados indisponíveis nunca serão apresentados como ações concluídas.</p>
+<p><strong>Evidência necessária para ratificar:</strong> concordância específica sobre as variantes e seu escopo, revisão de hierarquia por Brand/Design, e registro de quaisquer exceções aprovadas. A homologação de viewport, acessibilidade e interação depende de FTR-05/07 e não deve ser confundida com decisão de arquitetura.</p>
+<p><strong>Deliberação delimitada do fundador em 16/10/2026 — FTR-01/D2:</strong> após receber a proposta completa da PR #672, o fundador respondeu <strong>"de acordo, segue"</strong> ao encaminhamento da decisão. Registra-se a aceitação <strong>apenas da regra de arquitetura de variantes</strong>: (i) <code>full</code> responsivo como padrão nas oito Homes públicas, inclusive com reflow/empilhamento conforme viewport; (ii) <code>compact</code> elegível somente para páginas internas públicas, mediante justificativa por contexto e preservação de identidade, navegação, suporte e direitos; (iii) <code>minimal</code> elegível excepcionalmente em fluxos sensíveis, autenticados ou de indisponibilidade, dependente de contrato contextual e da preservação de informação essencial; (iv) breakpoints e métricas não fixados sem testes; (v) nenhum conteúdo ou função validado pode ser excluído automaticamente por responsividade; (vi) indisponibilidade de um destino não pode ser disfarçada de funcionalidade existente.</p>
+<p><strong>Limite da decisão:</strong> o aceite do <strong>padrão e dos critérios de elegibilidade</strong> não concede autorização automática para aplicar <code>compact</code> ou <code>minimal</code> em uma rota específica, retirar <code>Receba novidades</code>, alterar a referência visual institucional, homologar uma versão mobile/tablet ou declarar conformidade de acessibilidade. Exceções por superfície, inclusive qualquer alteração de bloco aprovado, permanecem sujeitas a decisão contextual rastreável. <code>FTR-02</code> conserva a dependência de destino real do <code>Mapa do Ecossistema</code>.</p>
+<p><strong>Estado resultante:</strong> <code>FTR-01/D1 = POSITION_ACCEPTED</code>; <code>FTR-01/D2 = ARCHITECTURE_VARIANTS_ACCEPTED_SCOPED</code>; <code>FTR-01 = PARTIAL_NOT_CLOSED</code> (revisão de hierarquia e exceções visuais ainda necessárias); <code>FTR-03 = NOT_ADJUDICATED</code>; <code>FTR-05 = NOT_TESTED</code>; <code>FTR-06..08 = NOT_EVIDENCED</code>. A fonte de concordância é o assentimento nesta conversa, sem atribuir aprovações a Brand, Legal, Design ou equipes que não participaram. Nenhuma interface foi implementada por esta deliberação.</p>
+<h2 id="experience-architecture-global-footer-surface-candidate-64-ftr-03-auditoria-exploratoria-do-aplicativo-replit-16102026">6.4. FTR-03 — auditoria exploratória do aplicativo Replit (16/10/2026)<a class="headerlink" href="#experience-architecture-global-footer-surface-candidate-64-ftr-03-auditoria-exploratoria-do-aplicativo-replit-16102026" title="Permanent link">&para;</a></h2>
+<p><strong>Fonte e método:</strong> resposta do agente de inspeção <strong>somente leitura</strong> do aplicativo conectado <a href="https://replit.com/@guivos/Guivos-Descoberta-de-Oportunidades">Guivos — Descoberta de Oportunidades</a>, emitida em 16/10/2026. O agente declarou inspeção do roteamento e do componente de rodapé, além de capturas no <strong>preview interno</strong>; relatou repositório do aplicativo sem modificações. <strong>As capturas não foram anexadas ao GKR nesta revisão.</strong> Portanto o presente registro é um <em>relatório secundário de inspeção</em>, a ser confrontado com evidência visual primária versionada antes de adjudicar FTR-03. Não equivale a validação independente pelo GKR nem a auditoria de publicação.</p>
+<h3 id="experience-architecture-global-footer-surface-candidate-cobertura-das-homes-segundo-o-relato-de-inspecao">Cobertura das Homes segundo o relato de inspeção<a class="headerlink" href="#experience-architecture-global-footer-surface-candidate-cobertura-das-homes-segundo-o-relato-de-inspecao" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Home</th>
+<th>Rota própria identificada no app</th>
+<th>Rodapé / evidência descrita pelo agente</th>
+<th>Estado para FTR-03</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pessoa</td>
+<td><code>/pessoa</code> (a rota <code>/</code> corresponde a entrada de jornada, não à Home)</td>
+<td>Rodapé exploratório compartilhado; agente relata capturas desktop/mobile no preview</td>
+<td><strong>DIVERGÊNCIA REPORTADA</strong>; prova primária não anexada, sem aprovação</td>
+</tr>
+<tr>
+<td>Organizações e Coletivos</td>
+<td><code>/organizacoes-coletivos</code></td>
+<td>Rodapé exploratório compartilhado <strong>mais</strong> rodapé local, segundo inspeção; captura desktop; mobile só início da Home</td>
+<td><strong>DIVERGÊNCIA REPORTADA</strong>; mobile do rodapé não verificado</td>
+</tr>
+<tr>
+<td>Mall</td>
+<td>Nenhuma rota de Home identificada</td>
+<td>Fallback recebe rodapé compartilhado, mas não constitui Home Mall</td>
+<td><strong>NÃO AVALIÁVEL VISUALMENTE</strong></td>
+</tr>
+<tr>
+<td>Travel</td>
+<td>Nenhuma rota de Home identificada</td>
+<td>Fallback não constitui Home Travel</td>
+<td><strong>NÃO AVALIÁVEL VISUALMENTE</strong></td>
+</tr>
+<tr>
+<td>Business</td>
+<td>Nenhuma Home própria identificada</td>
+<td><code>/planos</code> e <code>/planos/fluxos</code> são superfícies de planos, não Home Business</td>
+<td><strong>NÃO AVALIÁVEL VISUALMENTE</strong></td>
+</tr>
+<tr>
+<td>Media</td>
+<td>Nenhuma rota de Home identificada</td>
+<td>Fallback não constitui Home Media</td>
+<td><strong>NÃO AVALIÁVEL VISUALMENTE</strong></td>
+</tr>
+<tr>
+<td>Intelligence</td>
+<td>Nenhuma rota de Home identificada</td>
+<td>Fallback não constitui Home Intelligence</td>
+<td><strong>NÃO AVALIÁVEL VISUALMENTE</strong></td>
+</tr>
+<tr>
+<td>Ads</td>
+<td>Nenhuma rota de Home identificada</td>
+<td>Fallback não constitui Home Ads</td>
+<td><strong>NÃO AVALIÁVEL VISUALMENTE</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Denominador:</strong> <code>2/8</code> Homes com rota própria identificada <strong>neste aplicativo</strong>; <code>6/8</code> sem rota de Home própria identificada no escopo inspecionado; <strong><code>0/8</code> homologadas em FTR-03</strong>. Não inferir que as seis Homes inexistam em outras bases, apps, documentos ou protótipos. A prova visual mobile da Home O/C continua pendente.</p>
+<h3 id="experience-architecture-global-footer-surface-candidate-divergencias-e-limites-relatados">Divergências e limites relatados<a class="headerlink" href="#experience-architecture-global-footer-surface-candidate-divergencias-e-limites-relatados" title="Permanent link">&para;</a></h3>
+<p>O agente reportou que o componente global <code>FlowFooter</code> mostra conteúdo de <strong>proposta exploratória e créditos/licença de imagens</strong>, em vez do conteúdo da referência visual <code>GKR-UX-GLOBAL-FOOTER-001 v1.0.0</code>. Relatou não encontrar no rodapé atual:
+- <code>Possibility, lived.</code>, a mensagem <code>Conectamos pessoas a possibilidades que podem transformar suas vidas.</code> ou <code>Descubra. Viva. Evolua.</code>;
+- os quatro agrupamentos <code>Explore o ecossistema</code>, <code>Guivos</code>, <code>Ajuda</code>, <code>Receba novidades</code>;
+- <code>Mapa do Ecossistema</code> ao final de <code>Explore o ecossistema</code> (há um item <code>Mapa</code> no cabeçalho, que não equivale ao requisito);
+- links jurídicos, campo de novidades e controle de envio, botões/QR de aplicativo.</p>
+<p>O fundo branco foi reportado como observado nas capturas disponíveis, <strong>sem homologação cromática ou de tipografia</strong>. O agente relatou também que o domínio público testado nas rotas <code>/pessoa</code> e <code>/organizacoes-coletivos</code> exibiu uma tela genérica de rota indisponível, em contraste com o preview interno; <strong>causa não determinada</strong>, não presumir deploy funcional. Um workflow do aplicativo constava como falho por conflito de porta no momento da inspeção; esse achado não altera os checks de CI do GKR.</p>
+<h3 id="experience-architecture-global-footer-surface-candidate-encaminhamento-que-exige-evidencia-primaria">Encaminhamento que exige evidência primária<a class="headerlink" href="#experience-architecture-global-footer-surface-candidate-encaminhamento-que-exige-evidencia-primaria" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Pessoa e O/C:</strong> obter capturas identificadas/versionadas do rodapé desktop e mobile e confrontá-las com a composição de 14/10; separar o rodapé global do duplicado local de O/C antes de alegar paridade visual.</li>
+<li><strong>Demais seis Homes:</strong> localizar uma implementação/protótipo específico de cada Home antes de abrir checklist visual; fallback não conta como Home.</li>
+<li><strong>Publicação:</strong> examinar distintamente preview interno e rota pública; ausência de destino público validado bloqueia alegação de disponibilidade.</li>
+<li><strong>Registro FTR-03:</strong> somente uma matriz de oito evidências primárias com revisão contextual Brand/Design e resultados documentados poderá encerrar o gate. <strong>Nenhum teste FTR-05/FTR-07 nem alteração de aplicativo foi realizado por esta auditoria.</strong></li>
+</ol>
+<p><strong>Estado:</strong> <code>FTR-03 = OPEN_WITH_REPORTED_NONCONFORMITIES</code>; <code>HOME_ROUTES_IDENTIFIED_IN_REPLIT = 2/8</code>; <code>HOME_RENDER_EVIDENCE_PRIMARY_ATTACHED_TO_GKR = 0/8</code>; <code>FTR-03_ADJUDICATED = 0/8</code>; <code>FTR-05 = NOT_TESTED</code>. O caráter candidato e não normativo deste documento é preservado; nenhuma autorização de implantação é inferida.</p>
+<h2 id="experience-architecture-global-footer-surface-candidate-7-fronteiras-com-trabalhos-em-andamento">7. Fronteiras com trabalhos em andamento<a class="headerlink" href="#experience-architecture-global-footer-surface-candidate-7-fronteiras-com-trabalhos-em-andamento" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Gráfico Vivo:</strong> permanece parte da experiência e narrativa específica, não métrica de rodapé nem painel de contadores.</li>
+<li><strong>Selos:</strong> não usar selo de reconhecimento como rodapé institucional ou sinal de certificação.</li>
+<li><strong>Pontos:</strong> não incluir saldo, valor, câmbio ou resgate no rodapé público.</li>
+<li><strong>Replit:</strong> executar implantação apenas após compatibilização de rotas reais e decisão de Design, sem interromper atualização atual de Organizações e Coletivos.</li>
+<li><strong>MENU do GKR:</strong> eventual entrada de descoberta documental para esta superfície precisa de aprovação e publicação separadas; o item <code>Mapa do Ecossistema</code> é um <strong>link do produto</strong>, não um item do MENU do repositório.</li>
+</ul>
+<h2 id="experience-architecture-global-footer-surface-candidate-8-decisoes-de-arquitetura-pendentes">8. Decisões de arquitetura pendentes<a class="headerlink" href="#experience-architecture-global-footer-surface-candidate-8-decisoes-de-arquitetura-pendentes" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Nomes finais e ordem dos grupos, variante compacta e peso editorial da assinatura da marca.</li>
+<li>Página de destino de <code>Mapa do Ecossistema</code> e seus critérios de publicação.</li>
+<li>Canais de ajuda e contato efetivamente mantidos.</li>
+<li>Conteúdos legais, informação institucional obrigatória e mercados/idiomas ativos.</li>
+</ul>
+<p>Estas decisões devem ser resolvidas com responsáveis pertinentes e evidências, sem preencher lacunas com textos ou URLs fictícios.</p></section></section>
                     <section class='print-page md-section' id='section-9-4' heading-number='9.4'>
                         <h1>Visualizações e Narrativa<a class='headerlink' href='#section-9-4' title='Permanent link'></a>
                         </h1>
@@ -83350,6 +83975,8 @@ REGISTRO TEMPORÁRIO DA AUDITORIA
 
 .print-site-enumerate-headings #section-9-3 > h1:before { content: '9.3 ' }
 .print-site-enumerate-headings #experience-architecture-global-institutional-footer > h1:before { content: '9.3.1 ' }
+
+.print-site-enumerate-headings #experience-architecture-global-footer-surface-candidate > h1:before { content: '9.3.2 ' }
 
 .print-site-enumerate-headings #section-9-4 > h1:before { content: '9.4 ' }
 .print-site-enumerate-headings #experience-architecture-opportunities-in-motion-live-graph-design-reference > h1:before { content: '9.4.1 ' }
