@@ -2846,6 +2846,41 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../experience-architecture/global-footer-ftr07-functional-regression-protocol/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rodapé Global — Testes Funcionais e Regressão FTR-07
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--proposed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -9014,6 +9049,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#experience-architecture-global-footer-ftr07-functional-regression-protocol" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.3.8 Rodapé Global — Testes Funcionais e Regressão FTR-07
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -11478,6 +11524,17 @@
     <span class="md-ellipsis">
       
         9.3.7 Rodapé Global — Contrato de Implementação FTR-06
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#experience-architecture-global-footer-ftr07-functional-regression-protocol" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.3.8 Rodapé Global — Testes Funcionais e Regressão FTR-07
       
     </span>
   </a>
@@ -31165,10 +31222,10 @@ RELEASE AUTHORITY
 </tr>
 <tr>
 <td><strong>FTR-07</strong> — Testes funcionais</td>
-<td>Critérios documentados; agente Replit não encontrou execução FTR-03 específica</td>
+<td><a href="#experience-architecture-global-footer-ftr07-functional-regression-protocol">Protocolo FTR-07</a> documentado: 18 casos de testes e regressão, nenhum executado</td>
 <td>Executar testes rastreáveis de links, estados, formulário, responsividade, regressão, acessibilidade e falhas</td>
 <td>QA/Engenharia</td>
-<td><strong>NOT_EXECUTED</strong></td>
+<td><strong>PROTOCOL_DOCUMENTED / TESTS_NOT_EXECUTED</strong></td>
 </tr>
 <tr>
 <td><strong>FTR-08</strong> — Publicação</td>
@@ -31987,7 +32044,192 @@ RELEASE AUTHORITY
 </ul>
 <h2 id="experience-architecture-global-footer-ftr06-implementation-integrity-6-registro-de-atualizacao-futura">6. Registro de atualização futura<a class="headerlink" href="#experience-architecture-global-footer-ftr06-implementation-integrity-6-registro-de-atualizacao-futura" title="Permanent link">&para;</a></h2>
 <p>Cada avanço deverá informar <code>exigência C01..C12</code>, objeto, versão de código, URL/ambiente, evidência primária, responsável funcional, resultado, pendência e ato autorizativo. Falta de evidência mantém <code>NOT_EVIDENCED</code> ou <code>BLOCKED</code>.</p>
-<p><strong>Status deste documento:</strong> candidato não normativo. <strong>FTR-06 permanece aberto</strong>, sem implementação autorizada ou comprovada por esta atualização do GKR.</p></section></section>
+<p><strong>Status deste documento:</strong> candidato não normativo. <strong>FTR-06 permanece aberto</strong>, sem implementação autorizada ou comprovada por esta atualização do GKR.</p></section><section class="print-page" id="experience-architecture-global-footer-ftr07-functional-regression-protocol" heading-number="9.3.8"><h1 id="experience-architecture-global-footer-ftr07-functional-regression-protocol-rodape-global-protocolo-ftr-07-de-testes-funcionais-e-regressao">Rodapé Global — Protocolo FTR-07 de Testes Funcionais e Regressão<a class="headerlink" href="#experience-architecture-global-footer-ftr07-functional-regression-protocol-rodape-global-protocolo-ftr-07-de-testes-funcionais-e-regressao" title="Permanent link">&para;</a></h1>
+<h2 id="experience-architecture-global-footer-ftr07-functional-regression-protocol-1-finalidade-fontes-e-limite">1. Finalidade, fontes e limite<a class="headerlink" href="#experience-architecture-global-footer-ftr07-functional-regression-protocol-1-finalidade-fontes-e-limite" title="Permanent link">&para;</a></h2>
+<p>Este protocolo <strong>documenta os ensaios que deverão ser executados quando existir uma implementação autorizada e identificável</strong>. Não certifica comportamento já entregue nem substitui aceite visual, jurídico, de acessibilidade ou de release.</p>
+<p>A autoridade de conteúdo e aparência é o <a href="#experience-architecture-global-institutional-footer">Rodapé Institucional Oficial</a> v1.0.0. As decisões sobre variante e posição do Mapa constam da <a href="#experience-architecture-global-footer-surface-candidate">Arquitetura Candidata</a> v0.2.8. Ver o <a href="#experience-architecture-global-footer-ftr-control-board">Quadro de Controle</a>, o <a href="#experience-architecture-global-footer-ftr02-destination-inventory">Inventário de Destinos FTR-02</a>, a <a href="#experience-architecture-global-footer-ftr04-legal-privacy-review">Matriz Legal e Privacidade FTR-04</a>, a <a href="#experience-architecture-global-footer-ftr05-responsive-accessibility-matrix">Matriz Responsiva e Acessibilidade FTR-05</a> e o <a href="#experience-architecture-global-footer-ftr06-implementation-integrity">Contrato de Integridade FTR-06</a>.</p>
+<p><strong>Estado:</strong> <code>FTR-07 = TEST_PROTOCOL_DOCUMENTED / TESTS_NOT_EXECUTED / GATE_OPEN</code>. Todo resultado abaixo é <code>NOT_RUN</code> ou bloqueado por dependência; não há aqui registros de execução real.</p>
+<h2 id="experience-architecture-global-footer-ftr07-functional-regression-protocol-2-condicoes-previas-a-execucao">2. Condições prévias à execução<a class="headerlink" href="#experience-architecture-global-footer-ftr07-functional-regression-protocol-2-condicoes-previas-a-execucao" title="Permanent link">&para;</a></h2>
+<p>Antes de marcar um cenário como <code>PASS</code> ou <code>FAIL</code>, obter: ambiente reproduzível, URL/rota legítima, identificador de build/commit, artefato de componente, versão da referência editorial, variante aplicada e suas exceções autorizadas, status de links FTR-02, decisão aplicável FTR-04 e responsável por teste.</p>
+<p>Não substituir as oito Homes por fallback, páginas internas de planos ou mockups. O relato exploratório de Replit incorporado à arquitetura candidata na PR #674 não equivale a testes FTR-07 executados.</p>
+<h2 id="experience-architecture-global-footer-ftr07-functional-regression-protocol-3-casos-funcionais-e-de-regressao">3. Casos funcionais e de regressão<a class="headerlink" href="#experience-architecture-global-footer-ftr07-functional-regression-protocol-3-casos-funcionais-e-de-regressao" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Caso</th>
+<th>Objetivo verificável</th>
+<th>Evidência exigida</th>
+<th>Resultado inicial</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FTR07-01</td>
+<td>Renderizar exatamente o rodapé institucional esperado em cada Home pública elegível, com referência textual e visual correta</td>
+<td>Rota real + versão + captura por Home + confronto com referência</td>
+<td>NOT_RUN</td>
+</tr>
+<tr>
+<td>FTR07-02</td>
+<td>Detectar ausência de duplicação de rodapés e de variantes locais não autorizadas</td>
+<td>Árvore/render por Home e lista de componentes/instâncias</td>
+<td>NOT_RUN</td>
+</tr>
+<tr>
+<td>FTR07-03</td>
+<td>Conferir ordem dos oito destinos e presença editorial de <code>Mapa do Ecossistema</code> na posição FTR-01/D1</td>
+<td>Inspeção da ordem e da estrutura por rota</td>
+<td>NOT_RUN</td>
+</tr>
+<tr>
+<td>FTR07-04</td>
+<td>Cada link ativo abre exatamente o destino verificado em FTR-02; itens indisponíveis não fazem navegação enganosa</td>
+<td>Matriz item → URL oficial → clique → resultado e data</td>
+<td>BLOCKED_BY_FTR02</td>
+</tr>
+<tr>
+<td>FTR07-05</td>
+<td>Links de Ajuda e jurídicos correspondem a destinos aprovados, inclusive as ocorrências duplicadas de Privacidade/Termos</td>
+<td>Revisão FTR-02/FTR-04 e teste real de abertura</td>
+<td>BLOCKED_BY_FTR02_FTR04</td>
+</tr>
+<tr>
+<td>FTR07-06</td>
+<td>Ícones sociais conduzem somente a contas oficiais confirmadas, com rótulo acessível</td>
+<td>URL, prova de titularidade e navegação</td>
+<td>BLOCKED_BY_FTR02</td>
+</tr>
+<tr>
+<td>FTR07-07</td>
+<td>Bloco <code>Receba novidades</code> apresenta instruções, rótulos, validação e estados coerentes; sem simulação de envio</td>
+<td>Registro do fluxo real ou indisponibilidade honesta</td>
+<td>BLOCKED_BY_FTR04_FTR06</td>
+</tr>
+<tr>
+<td>FTR07-08</td>
+<td>Quando houver inscrição efetiva, validar consentimento/base legal, submissão, erro, duplicidade, feedback, tratamento de dados e cancelamento conforme o serviço real</td>
+<td>Cenários e resultados do backend e da UI, sem exposição de dados pessoais</td>
+<td>BLOCKED_BY_FTR04_FTR06</td>
+</tr>
+<tr>
+<td>FTR07-09</td>
+<td>Fluxos não disparam ações ou inscrições quando recurso está apenas representado visualmente</td>
+<td>Teste negativo por estado de indisponibilidade</td>
+<td>NOT_RUN</td>
+</tr>
+<tr>
+<td>FTR07-10</td>
+<td>Foco, teclado, leitores de tela e estados expandidos (quando houver) operam corretamente</td>
+<td>Evidências FTR-05 e execução com tecnologia assistiva</td>
+<td>BLOCKED_BY_FTR05_IMPLEMENTATION</td>
+</tr>
+<tr>
+<td>FTR07-11</td>
+<td><code>full</code> desktop/tablet/mobile preserva todos os módulos, navegação, direitos e legibilidade com reflow</td>
+<td>Matriz de viewports, fotos, zoom, orientação e falhas</td>
+<td>BLOCKED_BY_FTR05_IMPLEMENTATION</td>
+</tr>
+<tr>
+<td>FTR07-12</td>
+<td><code>compact</code> ou <code>minimal</code> só é exibido na rota com exceção contextual previamente aprovada</td>
+<td>Registro da decisão e testes da instância real</td>
+<td>BLOCKED_BY_CONTEXT_APPROVAL</td>
+</tr>
+<tr>
+<td>FTR07-13</td>
+<td>Links e ações não dependem de <code>#</code>, destinos fictícios, QR ilustrativo apresentado como oficial ou link público quebrado</td>
+<td>Inventário de href, QR decodificado quando aplicável e testes negativos</td>
+<td>BLOCKED_BY_FTR02</td>
+</tr>
+<tr>
+<td>FTR07-14</td>
+<td>Regressão entre versões preserva cópias aprovadas, grupos, ordem e contratos sem alterar outras Homes</td>
+<td>Comparativo de builds/capturas e diferenças resolvidas</td>
+<td>NOT_RUN</td>
+</tr>
+<tr>
+<td>FTR07-15</td>
+<td>Mudança de idioma/mercado, quando realmente suportada, mantém destinos e informações legais coerentes</td>
+<td>Cenários por locale/mercado oficialmente existente</td>
+<td>CONDITIONAL_NOT_RUN</td>
+</tr>
+<tr>
+<td>FTR07-16</td>
+<td>Se houver botões de lojas/QR, destinos oficiais e apresentação de disponibilidade são verdadeiros em cada estado</td>
+<td>Links oficiais, titularidade, QR decodificado e teste de loja</td>
+<td>CONDITIONAL_BLOCKED_BY_FTR02</td>
+</tr>
+<tr>
+<td>FTR07-17</td>
+<td>Erros de rede/serviço e links indisponíveis produzem feedback real e recuperável sem prometer sucesso</td>
+<td>Simulação controlada e captura da mensagem real</td>
+<td>BLOCKED_BY_IMPLEMENTATION</td>
+</tr>
+<tr>
+<td>FTR07-18</td>
+<td>Módulo compartilhado preserva integridade visual e funcional após integração em todas as rotas elegíveis</td>
+<td>Evidência de build, execução automatizada quando aplicável e revisão humana</td>
+<td>BLOCKED_BY_FTR06</td>
+</tr>
+</tbody>
+</table>
+<p>Os casos são <strong>candidatos a teste</strong>. O método de execução e os limiares técnicos devem ser aprovados por QA/Produto/Design/Legal/Acessibilidade conforme o risco. Não fixar nomes de bibliotecas, seletores, breakpoints ou endpoints antes do desenho de implementação.</p>
+<h2 id="experience-architecture-global-footer-ftr07-functional-regression-protocol-4-cobertura-minima-e-tipificacao-de-resultado">4. Cobertura mínima e tipificação de resultado<a class="headerlink" href="#experience-architecture-global-footer-ftr07-functional-regression-protocol-4-cobertura-minima-e-tipificacao-de-resultado" title="Permanent link">&para;</a></h2>
+<p>Registrar as <strong>oito Homes individuais</strong>, a variante <code>full</code> em desktop, tablet e mobile, estados de links/formulário disponíveis, casos negativos e rotas excepcionais <code>compact</code> ou <code>minimal</code> <strong>somente se aprovadas</strong>. Não presumir que isso já representa 24 capturas executadas.</p>
+<p>Para cada caso preencher:</p>
+<table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Regra de registro</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Caso e gate relacionado</td>
+<td>ID <code>FTR07-xx</code> e FTR-02/03/04/05/06 pertinente</td>
+</tr>
+<tr>
+<td>Objeto</td>
+<td>Home, rota, ação ou conteúdo exato, sem inventar</td>
+</tr>
+<tr>
+<td>Versão e ambiente</td>
+<td>SHA/build, URL, data, navegador, dispositivo e viewport</td>
+</tr>
+<tr>
+<td>Pré-condições</td>
+<td>Disponibilidade de destino, decisão legal/contextual e dependências</td>
+</tr>
+<tr>
+<td>Passos e resultado esperado</td>
+<td>Reproduzíveis, com rótulo do requisito original</td>
+</tr>
+<tr>
+<td>Resultado observado</td>
+<td><code>PASS</code>, <code>FAIL</code>, <code>BLOCKED</code>, <code>NOT_RUN</code> ou <code>N/A</code> com justificativa</td>
+</tr>
+<tr>
+<td>Evidência primária</td>
+<td>Artefato, screenshot, vídeo, log não sensível ou relatório versionado</td>
+</tr>
+<tr>
+<td>Responsáveis funcionais</td>
+<td>Executor, revisor e decisão de aceitação</td>
+</tr>
+<tr>
+<td>Divergência e correção</td>
+<td>Issue e link do reteste, se existir</td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>BLOCKED</code> não é <code>PASS</code></strong>. <code>N/A</code> exige justificativa vinculada à indisponibilidade legítima de uma variante/recurso.</p>
+<h2 id="experience-architecture-global-footer-ftr07-functional-regression-protocol-5-criterio-de-saida-do-ftr-07">5. Critério de saída do FTR-07<a class="headerlink" href="#experience-architecture-global-footer-ftr07-functional-regression-protocol-5-criterio-de-saida-do-ftr-07" title="Permanent link">&para;</a></h2>
+<p>O gate só poderá ser adjudicado após: (a) matriz preenchida por cenário executável; (b) casos críticos executados e aprovados; (c) falhas tratadas e retestadas ou exceções explicitamente aprovadas; (d) avaliação de regressão nas oito Homes realmente disponibilizadas; (e) concordância funcional de QA/Produto com revisões de Legal/Acessibilidade onde pertinentes; (f) referência exata a código, build e evidências primárias.</p>
+<p>Não concluir FTR-07 com base em CI do próprio GKR: Semantic/Mechanical validam <strong>documentação</strong>, não os recursos de rodapé do produto.</p>
+<h2 id="experience-architecture-global-footer-ftr07-functional-regression-protocol-6-limites-com-publicacao">6. Limites com publicação<a class="headerlink" href="#experience-architecture-global-footer-ftr07-functional-regression-protocol-6-limites-com-publicacao" title="Permanent link">&para;</a></h2>
+<p>Mesmo FTR-07 aprovado <strong>não</strong> comprova FTR-08: release, domínios públicos, implantação e verificação pós-publicação permanecem independentes. As rotas públicas relatadas como indisponíveis em auditoria exploratória não devem ser apresentadas como publicadas.</p>
+<p><strong>Fronteira desta fase:</strong> somente GKR; sem testes automatizados acionados contra Replit, sem edição de aplicativo, criação de QR ou ativação de serviços.</p></section></section>
                     <section class='print-page md-section' id='section-9-4' heading-number='9.4'>
                         <h1>Visualizações e Narrativa<a class='headerlink' href='#section-9-4' title='Permanent link'></a>
                         </h1>
@@ -85158,6 +85400,8 @@ REGISTRO TEMPORÁRIO DA AUDITORIA
 .print-site-enumerate-headings #experience-architecture-global-footer-ftr05-responsive-accessibility-matrix > h1:before { content: '9.3.6 ' }
 
 .print-site-enumerate-headings #experience-architecture-global-footer-ftr06-implementation-integrity > h1:before { content: '9.3.7 ' }
+
+.print-site-enumerate-headings #experience-architecture-global-footer-ftr07-functional-regression-protocol > h1:before { content: '9.3.8 ' }
 
 .print-site-enumerate-headings #section-9-4 > h1:before { content: '9.4 ' }
 .print-site-enumerate-headings #experience-architecture-opportunities-in-motion-live-graph-design-reference > h1:before { content: '9.4.1 ' }
