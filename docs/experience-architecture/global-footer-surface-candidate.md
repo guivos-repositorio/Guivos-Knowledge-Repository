@@ -2,7 +2,7 @@
 id: GKR-UX-GLOBAL-FOOTER-SURFACE-001
 title: Superfície Transversal — Rodapé Global da Guivos
 status: proposed
-version: 0.2.3
+version: 0.2.4
 owner: Experience Architecture
 last_updated: 2026-10-16
 normative: false
@@ -208,6 +208,35 @@ A variação contextual altera **densidade e prioridade**, nunca o conteúdo nor
 4. **FTR-03/D2:** resolver eventual conflito entre a referência aprovada em 14/10 e iterações visuais posteriores (por exemplo, acesso ao app por QR Code), **somente mediante nova evidência visual identificável**, não por lembrança editorial ou inferência de publicação.
 
 **Critério de avanço:** após deliberação documentada de FTR-01, examinar FTR-03 com evidência visual 8/8; FTR-02/04/05/06/07/08 mantêm seus requisitos independentes. Não iniciar implementação, fazer merge de funcionalidades ou declarar publicação por esta análise.
+
+## 6.2. FTR-01 — proposta decisória de localização do Mapa e FTR-03 — protocolo de evidência (16/10/2026)
+
+### Localização do `Mapa do Ecossistema` — solução preferencial para apreciação humana
+
+**Proposta:** acrescentar o item textual **`Mapa do Ecossistema` ao final da coluna `Explore o ecossistema`**, depois dos oito destinos aprovados (Pessoa e Journey; Organizações e Coletivos; Mall; Travel; Business; Media; Intelligence; Ads). O item será separado dos destinos por espaçamento editorial discreto, sem criar uma quinta coluna, nova faixa institucional ou CTA dominante.
+
+**Justificativa:** a intenção é orientar a Pessoa sobre o conjunto do ecossistema; por isso o agrupamento de exploração é semanticamente mais adequado que `Guivos` (institucional), `Ajuda` (suporte) ou `Receba novidades` (captação voluntária). A ordem dos oito produtos e participantes, as assinaturas e a faixa inferior já aprovadas devem permanecer intactas. Tipografia Goldplay, fundo `#FFFFFF`, espaçamentos, paleta e composição da referência visual conservam precedência.
+
+**Estado do link:** a obrigação documental do item não autoriza URL fictícia. Enquanto não existir destino público real, aprovado e testado, o Design pode representar um item **explicitamente inativo em protótipo**, identificado como demonstração, sem href enganoso, `#` ou promessa de navegação; a política de exibição do item em produção depende de FTR-02 e deliberação FTR-01. O requisito de existência na arquitetura não deve ser falsamente relatado como link operacional.
+
+**Decisão humana mínima FTR-01:** aceitar ou ajustar a localização ao final de `Explore o ecossistema`, a separação visual discreta e o tratamento provisório sem URL. Registrar a referência visual resultante e a versão de origem; não reabrir conteúdos já ratificados apenas para inserir o item. **Estado: PROPOSAL_READY_FOR_DECISION / NOT_RATIFIED.**
+
+### FTR-03 — matriz objetiva de evidência por Home
+
+Para cada uma das **oito Homes** (Pessoa; Organizações e Coletivos; Mall; Travel; Business; Media; Intelligence; Ads), a revisão deverá conter uma linha de evidência verificável com:
+
+1. referência ao Master, versão e data de exame;
+2. URL do protótipo ou arquivo com captura real da área final da página, identificável por versão;
+3. estado desktop e mobile, **sem confundir protótipo com produção**;
+4. checklist da presença e literalidade de `Possibility, lived.`, `Conectamos pessoas a possibilidades que podem transformar suas vidas.`, `Descubra. Viva. Evolua.`, quatro agrupamentos editoriais, destinos e faixa jurídica;
+5. colocação e estado funcional/indisponível de `Mapa do Ecossistema`, quando a proposta tiver sido aprovada;
+6. contraste visual com a referência de 14/10/2026, respeitando `#FFFFFF`, tipografia, símbolos e hierarquia;
+7. registro de divergências e decisões contextuais aprovadas, revisor de Brand/Design e desfecho datado;
+8. identificação separada de variações posteriores **somente com evidência identificada**, incluindo eventual botão/QR de aplicativo: QR ilustrativo não é QR oficial, e não demonstra disponibilização nas lojas.
+
+**Critério de conclusão:** `FTR-03` só pode ser declarado concluído com **8/8 evidências individuais verificadas** e análise das divergências; a auditoria documental 8/8 já realizada não substitui essas provas. A revisão responsiva funcional e de acessibilidade pertence também a FTR-05 e permanece pendente.
+
+**Matriz atual de prova:** `8/8_MASTERS_DOCUMENTALLY_RECONCILED`; `0/8_HOME_RENDER_EVIDENCES_VERIFIED_IN_THIS_REVIEW` (a última contagem descreve **evidência efetivamente examinada nesta revisão**, não afirma ausência de protótipos externos); `FTR-01 = NOT_RATIFIED`; `FTR-03 = NOT_ADJUDICATED`; `FTR-02 = URL_NOT_VERIFIED`. Este registro não autoriza implementação, publicação ou alteração normativa de marca.
 
 ## 7. Fronteiras com trabalhos em andamento
 
