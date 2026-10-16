@@ -2,7 +2,7 @@
 id: GKR-UX-GLOBAL-FOOTER-FTR-TRACKER-001
 title: Rodapé Global — Quadro de Controle de Gates FTR-01 a FTR-08
 status: proposed
-version: 0.1.5
+version: 0.1.6
 owner: Experience Architecture
 last_updated: 2026-10-16
 normative: false
@@ -37,7 +37,7 @@ Ler primeiro:
 | **FTR-05** — Responsividade e acessibilidade | [Matriz FTR-05](global-footer-ftr05-responsive-accessibility-matrix.md) documentada: variantes D2, 16 ensaios candidatos, evidências por Home e exceções por rota; referência desktop aprovada | Implementar/prototipar estados reais e testar teclado, leitor de tela, foco, contraste, zoom, mobile e tablet | Design/Acessibilidade e QA | **MATRIX_DOCUMENTED / TESTS_NOT_EXECUTED** |
 | **FTR-06** — Implementação | [Contrato FTR-06](global-footer-ftr06-implementation-integrity.md) documentado: 12 evidências de integridade, cobertura das oito Homes, destinos e prevenção de duplicidades; auditoria Replit secundária | Demonstrar componente coerente com conteúdo validado e cobertura das superfícies elegíveis sem duplicações, com evidência de código/versão | Engenharia/Produto | **CONTRACT_DOCUMENTED / IMPLEMENTATION_NOT_EVIDENCED** |
 | **FTR-07** — Testes funcionais | [Protocolo FTR-07](global-footer-ftr07-functional-regression-protocol.md) documentado: 18 casos de testes e regressão, nenhum executado | Executar testes rastreáveis de links, estados, formulário, responsividade, regressão, acessibilidade e falhas | QA/Engenharia | **PROTOCOL_DOCUMENTED / TESTS_NOT_EXECUTED** |
-| **FTR-08** — Publicação | Nenhuma prova de deploy completo do rodapé; rotas públicas consultadas no Replit não mostraram as duas Homes no relato | Aprovação expressa de publicação, deploy real, URLs e verificação pós-publicação | Responsável pelo release/produto | **NOT_PUBLISHED_EVIDENCED** |
+| **FTR-08** — Publicação | [Protocolo FTR-08](global-footer-ftr08-release-verification.md) documentado: fases R0-R8, 13 provas de release e Go/No-go; sem publicação comprovada | Aprovação expressa de publicação, deploy real, URLs e verificação pós-publicação | Responsável pelo release/produto | **RELEASE_PROTOCOL_DOCUMENTED / PUBLICATION_NOT_EVIDENCED** |
 
 **Não há gate FTR-01..08 integralmente encerrado ou homologado por este quadro.** Os valores são rótulos descritivos de rastreabilidade, não IDs novos em registries globais. A ausência de evidência neste exame não prova inexistência em outras plataformas.
 
