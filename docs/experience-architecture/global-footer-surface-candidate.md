@@ -2,7 +2,7 @@
 id: GKR-UX-GLOBAL-FOOTER-SURFACE-001
 title: Superfície Transversal — Rodapé Global da Guivos
 status: proposed
-version: 0.2.5
+version: 0.2.6
 owner: Experience Architecture
 last_updated: 2026-10-16
 normative: false
@@ -239,6 +239,51 @@ Para cada uma das **oito Homes** (Pessoa; Organizações e Coletivos; Mall; Trav
 **Critério de conclusão:** `FTR-03` só pode ser declarado concluído com **8/8 evidências individuais verificadas** e análise das divergências; a auditoria documental 8/8 já realizada não substitui essas provas. A revisão responsiva funcional e de acessibilidade pertence também a FTR-05 e permanece pendente.
 
 **Matriz atual de prova:** `8/8_MASTERS_DOCUMENTALLY_RECONCILED`; `0/8_HOME_RENDER_EVIDENCES_VERIFIED_IN_THIS_REVIEW` (a última contagem descreve **evidência efetivamente examinada nesta revisão**, não afirma ausência de protótipos externos); `FTR-01/D1 = POSITION_ACCEPTED`, `FTR-01 = PARTIAL_NOT_CLOSED`; `FTR-03 = NOT_ADJUDICATED`; `FTR-02 = URL_NOT_VERIFIED`. Este registro não autoriza implementação, publicação ou alteração normativa de marca.
+
+## 6.3. FTR-01/D2 — contrato candidato de variantes responsivas (16/10/2026)
+
+**Finalidade:** registrar uma opção de arquitetura semântica de variantes para avaliação de Design, Produto, Brand e Acessibilidade. **Não há mockup mobile/tablet homologado nem variante ratificada por esta seção.** A referência oficial de 14/10/2026 continua definindo a composição desktop, seu conteúdo, fundo `#FFFFFF`, paleta, Goldplay e assinaturas.
+
+### Regras comuns invariantes
+
+- **Identidade:** manter logotipo, `Possibility, lived.`, mensagem de posicionamento e assinatura final `Descubra. Viva. Evolua.` sem reescrever ou converter esta última em assinatura institucional.
+- **Quatro grupos editoriais distintos:** `Explore o ecossistema`, `Guivos`, `Ajuda`, `Receba novidades`; preservar também identificação e links jurídicos da faixa inferior. Reorganizar espacialmente não significa excluir função.
+- **Mapa:** no grupo `Explore o ecossistema`, depois dos oito destinos, conforme FTR-01/D1. Ausência de URL validada proíbe link de produção que simule navegação; FTR-02 continua independente.
+- **Integridade funcional:** os mesmos destinos realmente disponíveis e informações públicas verificadas devem permanecer alcançáveis em qualquer viewport. Não criar URLs, canais, captação efetiva, consentimento presumido, botão funcional ou QR oficial por conveniência visual.
+- **Adaptação por conteúdo:** pontos de quebra, largura, altura e disposição dependem de ensaio de texto real, zoom, fonte, tamanho de toque e dispositivos-alvo; nenhum breakpoint ou comprimento de card é token normativo nesta proposta.
+- **Acesso essencial:** políticas legais, contato de suporte efetivamente disponível e identificação institucional não podem desaparecer em versões reduzidas nem depender exclusivamente de hover, gesto ou animação.
+- **Acessibilidade:** ordem de leitura linear compreensível, títulos de agrupamento, foco visível, teclado, leitores de tela, alvos tocáveis e estados explícitos; ícones sociais/QR exigem rótulos acessíveis quando forem legitimamente habilitados.
+
+### Matriz de variantes — hipótese de aplicação por contexto, não por pixel fixo
+
+| Variante | Contexto preferencial | Organização candidata | O que nunca pode ser suprimido |
+|---|---|---|---|
+| `full` | Homes públicas e páginas informacionais extensas; tela larga | Reproduzir hierarquia aprovada: bloco de marca, navegação em três grupos, bloco de novidades, divisor e faixa inferior | Textos da referência, coluna de novidades, grupos, assinatura final, informação jurídica |
+| `full` refluído | Homes e páginas públicas em largura intermediária/tablet | Reorganizar os mesmos blocos em linhas/colunas conforme espaço efetivo; `Receba novidades` pode ocupar linha própria | Todos os blocos e links verificados, sem colunas comprimidas ou campo ilegível |
+| `full` empilhado | Home pública em viewport estreita/mobile | Empilhar marca e texto, grupos, novidades e faixa inferior com ordem semântica explícita; apresentação expansível de grupos só após prova de acessibilidade e descoberta | Nenhum grupo essencial apagado; link jurídico acessível; não esconder conteúdo aprovado sob ícones mudos |
+| `compact` | Páginas internas públicas de fluxo prolongado, mediante justificativa contextual | Reduzir densidade visual e redistribuir blocos, sem alterar identidade e acesso a navegação/ajuda/direitos; tratamento de novidades precisa de decisão específica | Identidade, navegação essencial, suporte e direitos; não fingir aprovação de exclusão do bloco `Receba novidades` |
+| `minimal` | Fluxos sensíveis/autenticados, estados de erro ou indisponibilidade, somente se autorizados em contexto próprio | Mínimo de identificação, ajuda real e informações legais, sem expor estado privado; aplicação excepcional, não padrão das oito Homes | Acesso legal e suporte pertinente; não reaproveitar indiscriminadamente o `full` como superfície de coleta |
+
+**Limite importante:** `compact` e `minimal` são **variantes hipotéticas**, não exceções já autorizadas ao conteúdo visual aprovado. Especialmente `Receba novidades`: nenhuma omissão, recolhimento ou deslocamento que altere seu papel editorial será considerado aprovado antes de decisão humana explícita. Para as **oito Homes públicas**, a base candidata é `full` responsivo (refluído ou empilhado segundo o espaço), não `minimal`.
+
+### Estados e comportamentos que exigem decisão/execução futura
+
+| Objeto | Estado seguro enquanto não houver comprovação | Gate decisivo |
+|---|---|---|
+| `Mapa do Ecossistema` | Rótulo de protótipo demonstrativo, não link operacional; exibição na produção depende de política aprovada e destino | FTR-01 + FTR-02 |
+| Destinos institucionais e sociais | Só habilitar URL oficial verificada; não simular destino indisponível | FTR-02 + FTR-04 |
+| `Receba novidades` | Bloco visual preservado; formulário não pode prometer cadastro sem finalidade, consentimento/aviso e integração real | FTR-04 + FTR-06/07 |
+| `Obter o app` / QR | Tratar eventual iteração posterior como referência visual separada; não gerar QR fictício nem alegar distribuição | Nova evidência Brand/Design + FTR-02/03 |
+| Ícones e controles de expandir | Estado, foco, semântica, leitores de tela e testes reais antes de publicar | FTR-05 + FTR-07 |
+| Implantação comum | Nenhuma rota, responsividade, cobertura das oito Homes ou deploy demonstrado por este texto | FTR-06..08 |
+
+### Deliberação FTR-01/D2 e critério de aceite
+
+**Proposta para ratificação:** (1) oito Homes públicas seguem um rodapé `full` com reflow conforme conteúdo e viewport; (2) `compact` só em página interna pública com motivo e conteúdo essencial preservado; (3) `minimal` apenas em fluxos restritos com contrato próprio; (4) não fixar breakpoints sem testes; (5) nenhuma função aprovada pode ser retirada por adaptação responsiva; (6) estados indisponíveis nunca serão apresentados como ações concluídas.
+
+**Evidência necessária para ratificar:** concordância específica sobre as variantes e seu escopo, revisão de hierarquia por Brand/Design, e registro de quaisquer exceções aprovadas. A homologação de viewport, acessibilidade e interação depende de FTR-05/07 e não deve ser confundida com decisão de arquitetura.
+
+**Estado em 16/10/2026:** `FTR-01/D1 = POSITION_ACCEPTED`; `FTR-01/D2 = CANDIDATE_FOR_DECISION / NOT_RATIFIED`; `FTR-01 = PARTIAL_NOT_CLOSED`; `FTR-03 = NOT_ADJUDICATED`; `FTR-05 = NOT_TESTED`. Nenhum componente de interface foi implementado por esta seção.
 
 ## 7. Fronteiras com trabalhos em andamento
 
