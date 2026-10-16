@@ -2,9 +2,9 @@
 id: GKR-UX-GLOBAL-FOOTER-SURFACE-001
 title: Superfície Transversal — Rodapé Global da Guivos
 status: proposed
-version: 0.1.0
+version: 0.2.0
 owner: Experience Architecture
-last_updated: 2026-10-14
+last_updated: 2026-10-16
 normative: false
 maturity: design_candidate
 depends_on:
@@ -12,11 +12,29 @@ depends_on:
   - GKR-UX-HOMES-DESIGN-DELIVERY-001
   - GKR-UX-HOMES-DESIGN-HANDOFF-001
   - GKR-UX-HOME-MASTER-001
+  - GKR-UX-GLOBAL-FOOTER-001
 ---
 
 # Rodapé Global — superfície transversal da Guivos
 
 > **Superfície de projeto candidata.** Este documento define uma arquitetura editorial e de experiência a ser validada para o rodapé de todas as Homes públicas e páginas elegíveis da Guivos. Não substitui a autoridade de cada produto, não aprova novos destinos, não cria páginas jurídicas e não equivale à implementação.
+
+## 0. Precedência sobre a referência visual validada (reconciliação de 16/10/2026)
+
+**Autoridade corrente já existente na `main`:** [Rodapé Institucional Global — Referência Validada](global-institutional-footer.md), `GKR-UX-GLOBAL-FOOTER-001 v1.0.0`, `status: validated-visual-reference`, `normative: true`, baseada na composição aprovada pelo fundador em 14/10/2026. Esta PR não é autorização para redesenhar a composição, suprimir conteúdo aprovado ou substituir seus textos. Os módulos R01–R06 abaixo são **um mapa lógico de responsabilidades** para implementação transversal, e não um novo copywriting, wireframe de substituição ou revisão do Design validado.
+
+**Elementos já fixados e que deverão ser preservados em qualquer composição conforme a referência:**
+- assinatura de marca: **Possibility, lived.**;
+- posicionamento: **Conectamos pessoas a possibilidades que podem transformar suas vidas.**;
+- seções: **Explore o ecossistema**, **Guivos**, **Ajuda** e **Receba novidades**;
+- descrição do bloco de novidades: **Acompanhe novas oportunidades, experiências e possibilidades que surgem e evoluem no ecossistema Guivos.**;
+- chamada final: **Descubra. Viva. Evolua.**, com destaque cromático em **Evolua.**;
+- fundo `#FFFFFF`, paleta oficial, família Goldplay conforme autoridade tipográfica e respiros da referência visual;
+- navegação institucional e jurídica, campo voluntário de novidades e canais sociais conforme a referência, **sem presumir destinos ou integração ativos**.
+
+**Complementos em exame neste documento:** `Mapa do Ecossistema` como responsabilidade de navegação referida pela autoridade da Home, aplicação em outras Homes, estados responsivos, ajuda e variações por contexto. O item `Mapa do Ecossistema` não substitui os grupos/itens aprovados no rodapé nem vira link clicável sem destino autorizado. Para qualquer diferença entre o wireframe lógico da §4 e a referência validada, **prevalece a referência validada**, sujeita às autoridades legais, de marca e acessibilidade pertinentes.
+
+**Lacunas de implantação:** a referência corrente não comprova ativo vetorial, links, captação de novidades, publicação, mobile ou integração. O botão/QR de obtenção do app, se proposto em iteração visual posterior, exige registro de conteúdo e destino oficiais antes de integrar a superfície de produção; não presumir que já esteja contemplado pela referência normativa de 14/10. Nenhuma implementação é autorizada por esta reconciliação.
 
 ## 1. Papel e princípios
 
