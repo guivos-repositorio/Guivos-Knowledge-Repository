@@ -2,7 +2,7 @@
 id: GKR-UX-GLOBAL-FOOTER-SURFACE-001
 title: Superfície Transversal — Rodapé Global da Guivos
 status: proposed
-version: 0.2.0
+version: 0.2.1
 owner: Experience Architecture
 last_updated: 2026-10-16
 normative: false
@@ -83,6 +83,14 @@ Acesso simples às rotas efetivamente disponibilizadas de suporte, acessibilidad
 
 Os links legais definitivos, jurisdição, entidade editorial, cookies e meios de exercer direitos exigem validação por Legal/Privacidade e disponibilidade real.
 
+### R05A — Receba novidades — função preservada da referência aprovada
+
+O bloco **Receba novidades** é parte do rodapé validado em `GKR-UX-GLOBAL-FOOTER-001`, não uma opção editorial a ser omitida pelo wireframe lógico desta PR. Deve preservar título, descrição oficial, campo de e-mail, botão de envio e canais sociais conforme a referência, com adaptação responsiva sem exclusão de função.
+
+Esse bloco é **distinto** de Ajuda e da faixa institucional inferior. A presença visual aprovada não comprova captação real, consentimento, integração, assinatura concluída, destinos ou contas oficiais das redes. Não ativar o formulário nem links sem validação de finalidade, privacidade e comportamento.
+
+A designação R05A é **submódulo editorial desta proposta**, não ID de superfície nem alteração de `GKR-SURF` ou `GKR-TRN`.
+
 ### R06 — Faixa institucional inferior
 
 Conjunto de informações factuais e revisadas que podem incluir identificação corporativa apropriada, direitos de marca, ano, políticas e controles de idioma/região quando estes existirem e forem operacionais. Não exibir país, moeda, seletor, número de CNPJ, símbolo de certificação ou texto de conformidade como adorno ou suposição.
@@ -105,9 +113,9 @@ A variação contextual altera **densidade e prioridade**, nunca o conteúdo nor
 
 ```text
 ┌────────────────────────────────────────────────────────────────────┐
-│ GUIVOS                  Explore o ecossistema  Sobre    Ajuda       │
-│ Mensagem institucional Destinos ativos        Conteúdo Canais      │
-│                          Mapa do Ecossistema   aprovado verificados │
+│ GUIVOS          Explore o ecossistema  Sobre  Ajuda  Receba novidades│
+│ Posicionamento Destinos ativos        Guivos Apoio  E-mail / canais│
+│                 Mapa do Ecossistema (destino a validar)             │
 ├────────────────────────────────────────────────────────────────────┤
 │ Identificação factual  •  Privacidade/Termos aprovados  •  Controles│
 └────────────────────────────────────────────────────────────────────┘
