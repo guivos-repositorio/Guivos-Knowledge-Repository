@@ -2,7 +2,7 @@
 id: GEM-OPPORTUNITIES-POINTS-REWARDS-CANDIDATE-001
 title: Oportunidades — Retorno em Pontos e Premiações de Eventos — Proposta Transversal
 status: draft
-version: 2.8.2
+version: 2.9.0
 owner: Guivos
 last_updated: 2026-10-17
 normative: false
@@ -2062,11 +2062,11 @@ PR #655 → DRAFT / NON-NORMATIVE
 ```
 
 
-## 18. Correção de base e teto do incentivo — direção do fundador de 17/10/2026
+## 39. Correção de base e teto do incentivo — direção do fundador de 17/10/2026
 
 **Correção explícita:** onde a solicitação recente menciona "mensalidade", ler **preço efetivamente cobrado pela própria oportunidade em cadastro** (curso, encontro, pedalada, evento etc.). **Não** utilizar a assinatura, mensalidade, anuidade ou tier comercial da Organização ou do Coletivo como base ou teto do incentivo.
 
-### 18.1 Experiência do cadastro de oportunidade paga
+### 39.1 Experiência do cadastro de oportunidade paga
 
 O ofertante poderá escolher, opcionalmente:
 
@@ -2076,7 +2076,7 @@ O ofertante poderá escolher, opcionalmente:
 
 Apresentar resumo do **preço da oportunidade**, incentivo escolhido, **custo de financiamento dos pontos** (somente se calculável por paridade/cobertura oficialmente ratificada), demais deduções contratuais legítimas separadas e **valor líquido previsto para o ofertante** (somente se todas as premissas forem conhecidas). O incentivo é financiado integralmente pelo ofertante, não presumido como custeio Guivos.
 
-### 18.2 Limite econômico correto
+### 39.2 Limite econômico correto
 
 Para oportunidade paga, exigir que o **custo econômico do incentivo correspondente à compra elegível não ultrapasse o preço efetivamente cobrado nessa mesma compra**. Formalmente, apenas após definir a taxa de custeio:
 
@@ -2086,7 +2086,7 @@ Para oportunidade paga, exigir que o **custo econômico do incentivo corresponde
 
 Quando o custo não for calculável por ausência de paridade, cobertura ou tabela de percentuais adjudicados, a interface do protótipo pode **capturar a escolha como rascunho candidato**, mas deve marcar custo/líquido como **a definir**, bloquear confirmação de incentivo real e **não apresentar líquido artificial**. A renda líquida não pode ser definida como `preço − número de pontos`. A seleção de cinco percentuais só pode ficar operativa quando os cinco valores forem fornecidos/aprovados.
 
-### 18.3 Critérios para o Replit
+### 39.3 Critérios para o Replit
 
 1. Opção de configuração de incentivo fica na etapa de **Preço** do cadastro de oportunidade, tanto Organização quanto Coletivo, depois da decisão Gratuita/Paga e respeitando o plano Livre.
 2. Percentual predefinido e pontos fixos são modos alternativos com revisão e justificativa; cinco posições não significam cinco percentuais inventados.
@@ -2095,3 +2095,47 @@ Quando o custo não for calculável por ausência de paridade, cobertura ou tabe
 5. Esta seção preserva os gates PAR-02, FUND-01, P4/P5, LIQ-01/02 e a autoridade econômica canônica de Pontos; não cria taxa oficial nem implementação produtiva.
 
 **Estado:** `FOUNDER_CORRECTION_RECORDED / OPPORTUNITY_PRICE_NOT_PLAN_FEE / POINTS_PARITY_UNADJUDICATED / PROTOTYPE_ONLY`.
+
+
+## 40. Catálogo candidato de cinco percentuais para oportunidades pagas — 17/10/2026
+
+**Proposta técnica-comercial para decisão expressa:** o fundador solicitou definir e registrar **cinco opções de percentual** que Organizações e Coletivos possam escolher ao cadastrar uma oportunidade. A estrutura percentual já havia sido estabelecida conceitualmente, mas os valores numéricos não estavam adjudicados. Esta seção propõe a seguinte tabela, **a ser ratificada pelo fundador antes de ser considerada oficial**:
+
+| Código candidato | Percentual da base elegível | Finalidade de posicionamento |
+|---|---:|---|
+| PCT-01 | **1%** | incentivo inicial de baixo custo |
+| PCT-02 | **2%** | incentivo moderado |
+| PCT-03 | **3%** | incentivo intermediário |
+| PCT-04 | **5%** | incentivo ampliado |
+| PCT-05 | **10%** | incentivo máximo do catálogo inicial |
+
+**Regras propostas:**
+1. Catálogo comum às oportunidades **pagas** de Organizações e Coletivos, quando publicador elegível e capacidade contratual permitirem. Não atribuir entitlement automático de pontos a um plano específico.
+2. Adesão **opcional**: `Sem incentivo` ou **um** dos cinco percentuais, selecionado explicitamente pelo responsável autorizado; nenhum percentual pré-selecionado. A modalidade de quantidade fixa de pontos continua alternativa própria com autorização/custeio distintos.
+3. **Base da porcentagem** = preço efetivamente cobrado e elegível **pelaquela oportunidade por compra**, ajustado por descontos, estornos e componentes excluídos conforme contrato a ratificar; **não** mensalidade/anuidade de qualquer plano Guivos.
+4. **Valor econômico do benefício em BRL** = base elegível × percentual escolhido. Esse valor representa referência de obrigação/custeio do ofertante, não automaticamente a **quantidade nominal de pontos**, nem repasse líquido liquidado.
+5. Para cada compra paga, o custo econômico dos incentivos não poderá superar **100% do preço elegível dessa compra**; quaisquer benefícios fixos, percentuais ou cumulativos deverão ser conciliados no mesmo teto econômico conforme contratos específicos. O catálogo máximo de 10% isolado não dispensa conciliar incentivos cumulativos.
+6. **Preço R$ 0,00:** modo percentual sobre compra paga não aplicável. Incentivo de participação em evento gratuito, se permitido, dependerá de orçamento segregado e financiamento específico.
+7. A moeda da oportunidade é BRL na baseline brasileira. A **paridade de emissão Pontos Guivos ↔ BRL, o custo unitário efetivo e a paridade de utilização** continuam **indefinidos**; **não** calcular quantos pontos a Pessoa recebe a partir de 1–10%, nem interpretar `1 ponto = R$ 1`.
+8. O resumo do cadastro pode exibir `Preço`, `Percentual escolhido` e `Benefício econômico estimado (R$)` quando a base elegível estiver conhecida; `Pontos previstos`, `Custo final` e `Valor líquido do ofertante` só podem apresentar números com parâmetros e cobertura oficialmente validados. Caso contrário: `A definir`, com explicação contextual concisa.
+9. Não emitir pontos nem iniciar cobrança, provisionamento financeiro, retenção no repasse ou repasse produtivo por esta decisão candidata. Preservar **ROUND/P1 HALF_EVEN de 0,01 ponto** como regra documental aceita, sem presumir sua implementação.
+
+### 40.1 Exemplo estritamente ilustrativo (sem equivalência em pontos)
+
+Para oportunidade paga de **R$ 200,00**, antes de descontos e exclusões:
+
+| Escolha | Benefício econômico de referência | Pontos a emitir |
+|---|---:|---|
+| 1% | R$ 2,00 | A definir |
+| 2% | R$ 4,00 | A definir |
+| 3% | R$ 6,00 | A definir |
+| 5% | R$ 10,00 | A definir |
+| 10% | R$ 20,00 | A definir |
+
+O valor de referência não permite deduzir líquido, tributos, margem, comissão ou valor de resgate. Para exemplo de **1.000 pontos fixos**, custo em BRL e respeito ao teto permanecem **indeterminados** até taxa/garantia legítimas.
+
+### 40.2 Gate de homologação
+
+**Estado deste registro:** `FIVE_RATES_PROPOSED / FOUNDER_NUMERIC_RATIFICATION_REQUIRED / PARITY_PENDING / P4-P6_PENDING / PRODUCTION_BLOCKED`.
+
+Esta proposta deverá ser vinculada ao guia de Pontos e aos Masters de cadastro somente depois de confirmação expressa dos cinco percentuais, reconciliação comercial, jurídica/contábil, cobertura econômica e atualização de autoridade. Não transformar automaticamente `PCT-01..05` em IDs do Surface Registry/Transition Registry ou em configuração ativa de produto.
