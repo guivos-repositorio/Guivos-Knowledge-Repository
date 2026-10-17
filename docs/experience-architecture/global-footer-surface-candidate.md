@@ -2,7 +2,7 @@
 id: GKR-UX-GLOBAL-FOOTER-SURFACE-001
 title: Superfície Transversal — Rodapé Global da Guivos
 status: proposed
-version: 0.2.10
+version: 0.2.11
 owner: Experience Architecture
 last_updated: 2026-10-16
 normative: false
@@ -394,3 +394,16 @@ O rótulo `Mapa do Ecossistema` ocupa o **último lugar** de `Explore o ecossist
 Aprovar **somente o princípio de hierarquia**: identidade Guivos → três grupos de navegação → bloco de novidades com tratamento distinto → faixa legal e assinatura de jornada; `Mapa do Ecossistema` como último item de `Explore`, sem peso visual superior; nenhuma supressão automática no mobile; tudo sobre fundo branco e dentro de cores/tipografia oficiais. **A aprovação desta direção não aprova uma imagem nova nem conclui FTR-01.**
 
 **Pendências explícitas:** comparação visual por Brand/Design/Produto; decisão D4 para Mapa sem destino; D5 para exceções por rota; D6 para eventual acesso ao app/QR; evidências de FTR-03 e testes FTR-05..08. Até deliberação expressa: `FTR-01/D3 = PROPOSED_NOT_ACCEPTED`; `FTR-01 = PARTIAL_NOT_CLOSED`.
+
+
+## 6.7. FTR-01/D4 — decisão delimitada sobre Mapa sem destino (16/10/2026)
+
+**Origem da decisão:** após a apresentação de uma orientação específica sobre o estado editorial do `Mapa do Ecossistema` (protótipo demonstrativo, produção sem link fictício, ativação apenas com destino homologado), o fundador manifestou concordância: **“de acordo, segue”**. A deliberação cobre a **política de estado da navegação**, não a existência de uma página, sua URL, nem a aprovação da interface final.
+
+| Contexto | Regra aprovada para o Mapa do Ecossistema | Limite |
+|---|---|---|
+| **Documentação e protótipo** | Apresentar o rótulo ao final de `Explore o ecossistema`, após os oito destinos (FTR-01/D1), como item **explicitamente demonstrativo/inativo** enquanto faltar destino real | Sem clique funcional simulado, href `#`, link quebrado ou promessa de funcionamento |
+| **Produção sem destino validado** | **Não disponibilizar link clicável** para o Mapa; qualquer representação editorial deve esclarecer a indisponibilidade e ser revisada para compatibilidade com a referência de 14/10 | A deliberação **não** determina publicar item inativo, nem autoriza suprimir silenciosamente requisito do Master; caso concreto depende de validação de design/navegação |
+| **Produção após destino homologado** | Habilitar o link somente após aprovação de arquitetura da página, URL real, resposta pública, pertinência de conteúdo e testes de navegação | FTR-02, FTR-05 e FTR-07 continuam independentes; nenhum caminho é presumido |
+
+**Estado de decisão:** `FTR-01/D4 = UNAVAILABLE_DESTINATION_POLICY_ACCEPTED_SCOPED`. Mantêm-se `FTR-01/D1 = POSITION_ACCEPTED`, `FTR-01/D2 = ARCHITECTURE_VARIANTS_ACCEPTED_SCOPED`, `FTR-01/D3 = PROPOSED_NOT_ACCEPTED`, `FTR-01/D5..D6 = DECISION_REQUIRED`; **`FTR-01 = PARTIAL_NOT_CLOSED`**. A presente decisão não adjudica a imagem da Home, aprova URL fictícia, encerra gate de publicação ou modifica Replit.
