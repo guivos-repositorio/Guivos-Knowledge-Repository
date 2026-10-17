@@ -2,7 +2,7 @@
 id: GEM-OPPORTUNITIES-POINTS-REWARDS-CANDIDATE-001
 title: Oportunidades — Retorno em Pontos e Premiações de Eventos — Proposta Transversal
 status: draft
-version: 2.9.0
+version: 3.0.0
 owner: Guivos
 last_updated: 2026-10-17
 normative: false
@@ -2084,12 +2084,12 @@ Para oportunidade paga, exigir que o **custo econômico do incentivo corresponde
 
 **1.000 pontos ≤ R$ 200 não é uma comparação matematicamente válida** antes de existir taxa aprovada de custeio `Pontos → BRL`. A comparação é entre **reais e reais**, nunca entre quantidade nominal de pontos e valor monetário como se tivessem unidades equivalentes. O limite não define paridade, remuneração Guivos, taxas, tributos, reembolso ou garantia financeira. Uma oferta gratuita (`R$ 0,00`) não sustenta, por este mecanismo de compra percentual, financiamento positivo; incentivos FIX por participação em atividade gratuita dependerão de orçamento pré-financiado independente e autoridade própria.
 
-Quando o custo não for calculável por ausência de paridade, cobertura ou tabela de percentuais adjudicados, a interface do protótipo pode **capturar a escolha como rascunho candidato**, mas deve marcar custo/líquido como **a definir**, bloquear confirmação de incentivo real e **não apresentar líquido artificial**. A renda líquida não pode ser definida como `preço − número de pontos`. A seleção de cinco percentuais só pode ficar operativa quando os cinco valores forem fornecidos/aprovados.
+Quando o custo não for calculável por ausência de paridade, cobertura ou parâmetros de custeio adjudicados, a interface do protótipo pode **capturar a escolha como rascunho candidato**, mas deve marcar custo/líquido como **a definir**, bloquear confirmação de incentivo real e **não apresentar líquido artificial**. A renda líquida não pode ser definida como `preço − número de pontos`. A seleção e edição livre do percentual podem existir em rascunho; a transformação para pontos nominais só pode ser executada com paridade oficial validada.
 
 ### 39.3 Critérios para o Replit
 
 1. Opção de configuração de incentivo fica na etapa de **Preço** do cadastro de oportunidade, tanto Organização quanto Coletivo, depois da decisão Gratuita/Paga e respeitando o plano Livre.
-2. Percentual predefinido e pontos fixos são modos alternativos com revisão e justificativa; cinco posições não significam cinco percentuais inventados.
+2. Percentual editável, pontos fixos editáveis e régua de ajuste representam o mecanismo flexível governado na seção 40. Sem paridade de emissão, não simular sincronização numérica entre pontos e percentual.
 3. Resumo de líquido distingue `PREÇO`, `CUSTO DOS PONTOS`, `DEMAIS DEDUÇÕES` e `LÍQUIDO ESTIMADO` e suspende cifras sem regra completa.
 4. Gate de publicação/apuração exige paridade, financiamento, fonte e teto verificados; não há emissão de pontos nem desconto operacional real autorizados por esta proposta.
 5. Esta seção preserva os gates PAR-02, FUND-01, P4/P5, LIQ-01/02 e a autoridade econômica canônica de Pontos; não cria taxa oficial nem implementação produtiva.
@@ -2097,45 +2097,51 @@ Quando o custo não for calculável por ausência de paridade, cobertura ou tabe
 **Estado:** `FOUNDER_CORRECTION_RECORDED / OPPORTUNITY_PRICE_NOT_PLAN_FEE / POINTS_PARITY_UNADJUDICATED / PROTOTYPE_ONLY`.
 
 
-## 40. Catálogo candidato de cinco percentuais para oportunidades pagas — 17/10/2026
+## 40. Direção aprovada pelo fundador — configuração flexível de incentivo: pontos, percentual e régua (17/10/2026)
 
-**Proposta técnica-comercial para decisão expressa:** o fundador solicitou definir e registrar **cinco opções de percentual** que Organizações e Coletivos possam escolher ao cadastrar uma oportunidade. A estrutura percentual já havia sido estabelecida conceitualmente, mas os valores numéricos não estavam adjudicados. Esta seção propõe a seguinte tabela, **a ser ratificada pelo fundador antes de ser considerada oficial**:
+**Decisão expressa:** a proposta anterior de catálogo de **cinco percentuais fixos (1%, 2%, 3%, 5%, 10%) foi substituída**, antes de sua ratificação, pela orientação de permitir configuração flexível do incentivo em oportunidades pagas de Organização e Coletivo. **Não existe catálogo percentual de cinco opções vigente nem aprovado.** Esta seção registra decisão de produto/UX, não adjudica paridade econômica ou emissão real.
 
-| Código candidato | Percentual da base elegível | Finalidade de posicionamento |
-|---|---:|---|
-| PCT-01 | **1%** | incentivo inicial de baixo custo |
-| PCT-02 | **2%** | incentivo moderado |
-| PCT-03 | **3%** | incentivo intermediário |
-| PCT-04 | **5%** | incentivo ampliado |
-| PCT-05 | **10%** | incentivo máximo do catálogo inicial |
+### 40.1 Um incentivo, três controles de entrada
 
-**Regras propostas:**
-1. Catálogo comum às oportunidades **pagas** de Organizações e Coletivos, quando publicador elegível e capacidade contratual permitirem. Não atribuir entitlement automático de pontos a um plano específico.
-2. Adesão **opcional**: `Sem incentivo` ou **um** dos cinco percentuais, selecionado explicitamente pelo responsável autorizado; nenhum percentual pré-selecionado. A modalidade de quantidade fixa de pontos continua alternativa própria com autorização/custeio distintos.
-3. **Base da porcentagem** = preço efetivamente cobrado e elegível **pelaquela oportunidade por compra**, ajustado por descontos, estornos e componentes excluídos conforme contrato a ratificar; **não** mensalidade/anuidade de qualquer plano Guivos.
-4. **Valor econômico do benefício em BRL** = base elegível × percentual escolhido. Esse valor representa referência de obrigação/custeio do ofertante, não automaticamente a **quantidade nominal de pontos**, nem repasse líquido liquidado.
-5. Para cada compra paga, o custo econômico dos incentivos não poderá superar **100% do preço elegível dessa compra**; quaisquer benefícios fixos, percentuais ou cumulativos deverão ser conciliados no mesmo teto econômico conforme contratos específicos. O catálogo máximo de 10% isolado não dispensa conciliar incentivos cumulativos.
-6. **Preço R$ 0,00:** modo percentual sobre compra paga não aplicável. Incentivo de participação em evento gratuito, se permitido, dependerá de orçamento segregado e financiamento específico.
-7. A moeda da oportunidade é BRL na baseline brasileira. A **paridade de emissão Pontos Guivos ↔ BRL, o custo unitário efetivo e a paridade de utilização** continuam **indefinidos**; **não** calcular quantos pontos a Pessoa recebe a partir de 1–10%, nem interpretar `1 ponto = R$ 1`.
-8. O resumo do cadastro pode exibir `Preço`, `Percentual escolhido` e `Benefício econômico estimado (R$)` quando a base elegível estiver conhecida; `Pontos previstos`, `Custo final` e `Valor líquido do ofertante` só podem apresentar números com parâmetros e cobertura oficialmente validados. Caso contrário: `A definir`, com explicação contextual concisa.
-9. Não emitir pontos nem iniciar cobrança, provisionamento financeiro, retenção no repasse ou repasse produtivo por esta decisão candidata. Preservar **ROUND/P1 HALF_EVEN de 0,01 ponto** como regra documental aceita, sem presumir sua implementação.
+No formulário de cadastro ou edição de uma **oportunidade paga**, após o preço, mostrar bloco opcional `Incentivo em Pontos Guivos`, com `Sem incentivo` como valor inicial. Quando optado, oferecer:
 
-### 40.1 Exemplo estritamente ilustrativo (sem equivalência em pontos)
+1. **Pontos:** campo de digitação da quantidade nominal de pontos por compra elegível (ex.: `1.000 pontos`), respeitando a precisão nominal aceita `ROUND/P1 — HALF_EVEN, 0,01 ponto` quando o cálculo for autorizado.
+2. **Percentual:** campo livre para digitar percentual sobre a base elegível da **própria oportunidade**, com validações em domínio percentual, não um seletor de percentuais congelados.
+3. **Régua interativa:** controle deslizante operável por mouse, toque e teclado para aumentar/diminuir o **percentual de incentivo**, atualizando seu campo percentual sem perda de precisão e respeitando mínimo/máximo/passo governados.
 
-Para oportunidade paga de **R$ 200,00**, antes de descontos e exclusões:
+A intenção definitiva é que **os três controles sejam mutuamente sincronizados** e representem **um único incentivo**, sem criação de três incentivos cumulativos ou cobrança dupla. A sincronização entre pontos e percentual pressupõe custo unitário/paridade oficialmente definido e versionado. Enquanto essa paridade não estiver definida, **a experiência não pode inventar conversão matemática**. Permitir uma das duas formas de rascunho:
 
-| Escolha | Benefício econômico de referência | Pontos a emitir |
-|---|---:|---|
-| 1% | R$ 2,00 | A definir |
-| 2% | R$ 4,00 | A definir |
-| 3% | R$ 6,00 | A definir |
-| 5% | R$ 10,00 | A definir |
-| 10% | R$ 20,00 | A definir |
+- `Percentual + régua` sincronizados entre si, enquanto `quantidade de pontos` é mostrada como `A definir`; ou
+- `Pontos fixos` informados manualmente, preservados como modalidade alternativa em rascunho, enquanto `percentual equivalente` e posição econômica da régua ficam `A definir` (não projetar posição enganosa).
 
-O valor de referência não permite deduzir líquido, tributos, margem, comissão ou valor de resgate. Para exemplo de **1.000 pontos fixos**, custo em BRL e respeito ao teto permanecem **indeterminados** até taxa/garantia legítimas.
+Alternar entre modos sem confirmação econômica **não** converte nem soma incentivos; informar sucintamente a pendência, preservar o valor salvo e permitir edição/revisão.
 
-### 40.2 Gate de homologação
+### 40.2 Teto, preços e dependências
 
-**Estado deste registro:** `FIVE_RATES_PROPOSED / FOUNDER_NUMERIC_RATIFICATION_REQUIRED / PARITY_PENDING / P4-P6_PENDING / PRODUCTION_BLOCKED`.
+- Base percentual = **valor efetivamente cobrado e elegível na própria compra da oportunidade**, jamais assinatura/mensalidade de plano da Organização ou Coletivo.
+- `0 ≤ percentual ≤ 100%` constitui apenas **limite matemático absoluto do benefício econômico por compra**, e **não uma política aprovada de máximo comercial** da régua. Um máximo inferior, mínimo positivo e passo da régua precisam ser adjudicados; **não definir valores arbitrários no GKR nem sugerir autorização comercial de 100%**.
+- Custo econômico em BRL dos pontos não poderá exceder o valor elegível em BRL da própria oportunidade, após conciliar cumulatividade e descontos; **1.000 pontos não podem ser comparados numericamente a R$ 1.000 sem paridade**.
+- Valor bruto da oportunidade pode ser conhecido; **valor econômico da porcentagem** (`base × taxa`) pode ser exibido como referência condicional quando a base for conhecida; `quantidade emitível de pontos`, `custo efetivo de cobertura`, `demais deduções` e `valor líquido do ofertante` só recebem cifras quando as políticas/condições relevantes estiverem homologadas. Caso contrário, `A definir`, sem inventar taxa, comissão ou líquido.
+- O incentivo é **opcional** e custeado integralmente pelo ofertante no escopo do programa governado, condicionado a elegibilidade, verificação, cobertura, estorno, auditoria e consentimentos pertinentes.
+- O Coletivo **Livre** não tem publicação paga; incentivos FIX em oportunidades gratuitas pertencem a fluxo de participação/campanha orçamentária separada, não à régua percentual de compra.
+- Nenhum controle de UX implica crédito, desconto, liquidação, direito adquirido, reserva financeira, pagamento operacional ou alteração produtiva da Pessoa.
 
-Esta proposta deverá ser vinculada ao guia de Pontos e aos Masters de cadastro somente depois de confirmação expressa dos cinco percentuais, reconciliação comercial, jurídica/contábil, cobertura econômica e atualização de autoridade. Não transformar automaticamente `PCT-01..05` em IDs do Surface Registry/Transition Registry ou em configuração ativa de produto.
+### 40.3 Contrato de comportamento e validação
+
+| Origem da alteração | Com paridade oficialmente homologada | Sem paridade homologada |
+|---|---|---|
+| Digitar percentual | Atualizar régua e pontos pelo contrato de emissão | Atualizar régua; pontos = `A definir` |
+| Mover régua | Atualizar percentual e pontos | Atualizar percentual; pontos = `A definir` |
+| Digitar pontos | Atualizar percentual e régua pela conversão governada | Guardar pontos em rascunho FIX; percentual equivalente/régua = `A definir` |
+| Salvar rascunho | Guardar quantidade, percentual, parâmetros e versão econômica | Guardar intenção e modalidade, sem gerar compromisso |
+| Submeter/efetivar incentivo | Exigir teto, orçamento, cobertura, autorização, validade e regras aceitas | **Bloquear efetivação real do incentivo**; não bloquear indevidamente outros rascunhos ou fluxos legítimos |
+
+Recalcular com aritmética decimal exata, incluindo preço de oportunidade alterado, descontos elegíveis e reversões; preservar fonte de alteração, versão da regra e validação de arredondamento antes de eventual materialização. O range visível da régua poderá ser orientado por configuração interna de prototipação **rotulada como exemplo não normativo**, mas não representar um máximo comercial como oficial.
+
+### 40.4 Aceite e governança
+
+- Documento-base da proposta: `GEM-OPPORTUNITIES-POINTS-REWARDS-CANDIDATE-001`; autoridade econômica canônica atual `GKR-POINTS-ECONOMIC-AUTHORITY-001` permanece intacta.
+- **Decidido:** trocar 5 opções congeladas por entrada flexível, livre e potencialmente sincronizada (`Pontos`, `Percentual`, `Régua`), com preço **da oportunidade** como base.
+- **Não decidido:** emissão/paridade `PAR-02/P2`, custo unitário, range comercial/passo da régua, cobertura `FUND`, base final `P4`, taxas/repasses `P5`, liquidação `LIQ`, implementação e publicação reais.
+- **Implementação permitida no Replit:** prototipar UI e persistência de rascunho, sincronizar apenas dados matematicamente determinados e não inventar equivalência pontos ↔ BRL.
+- **Maturidade:** `FOUNDER_UX_DIRECTION_ACCEPTED / FLEXIBLE_PERCENTAGE_NO_FIVE_PRESETS / PARITY_PENDING / PRODUCTION_NOT_AUTHORIZED`.
