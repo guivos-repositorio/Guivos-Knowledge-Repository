@@ -2,7 +2,7 @@
 id: GKR-UX-GLOBAL-FOOTER-FTR02-001
 title: Rodapé Global — Inventário de Destinos e Links FTR-02
 status: proposed
-version: 0.1.1
+version: 0.1.2
 owner: Experience Architecture
 last_updated: 2026-10-16
 normative: false
@@ -135,3 +135,18 @@ Para o **Mapa do Ecossistema** há condição adicional: ratificação da arquit
 **FTR-02 após nova pesquisa:** `PUBLIC_DOMAIN_CANDIDATES_IDENTIFIED = 2` (e uma rota empresarial indexada); `VERIFIED_FOR_PRODUCTION = 0`. O gate permanece `INVENTORY_DOCUMENTED / DESTINATIONS_NOT_VERIFIED / GATE_OPEN` até confirmação de domínio canônico, titularidade, publicação e mapeamento individual aprovado para os itens do rodapé.
 
 **Próxima evidência exigida:** confirmação institucional dos domínios e da relação entre o site legado/indexado e as oito Homes; prova de URL e resposta atual por destino, com revisão de Produto, Brand e Legal nos pontos competentes. Nenhuma alteração no Replit ou em links de produto ocorreu nesta atualização.
+
+## 10. Deliberação institucional — papel dos domínios (16/10/2026)
+
+**Origem da decisão:** o fundador confirmou expressamente nesta conversa a proposta de estabelecer `guivos.com` como domínio global principal da nova Guivos e conservar `guivos.us` como opção de operação por país. A deliberação estabelece **papel arquitetural pretendido**, não comprovação de propriedade registral, disponibilidade de hospedagem, migração realizada, configuração de DNS, caminhos das oito Homes nem lançamento de operações territoriais.
+
+| Domínio | Papel arquitetural aceito | Estado e limite |
+|---|---|---|
+| `guivos.com` | **Domínio global principal pretendido** para a nova arquitetura Guivos | `PRIMARY_GLOBAL_DOMAIN_ARCHITECTURE_ACCEPTED`; vínculo de titularidade, DNS, HTTPS, ambiente, conteúdo e links por Home ainda `NOT_VERIFIED` |
+| `guivos.us` | **Domínio potencial de operação por país**, sujeito a decisão posterior de lançamento/mercado | `COUNTRY_DOMAIN_OPTION_ACCEPTED`; **não** equivale a operação ativa nos Estados Unidos, URL canônica alternativa já configurada ou redirecionamento autorizado |
+
+**Decisão limitada FTR-02/D1 — DOMAIN_ROLE_ACCEPTED_SCOPED:** aprova a prioridade nominal e a posição arquitetural dos domínios. Não aprova caminhos como `/pessoa`, `/business`, `/mapa`, redirecionamentos, subdomínios, lojas de aplicativos ou qualquer href. A estratégia de domínios nacionais adicionais dependerá de decisão por país e não é instituída automaticamente neste registro.
+
+**Implicações para o rodapé:** nenhum dos destinos editoriais recebe `VERIFIED_FOR_PRODUCTION` com esta deliberação. A implementação futura somente poderá vincular links a URLs reais após prova de titularidade/controle, versão atualizada do site, disponibilidade pública, mapeamento individual de rotas e aprovações funcionais (e jurídicas quando aplicáveis). Separar ambientes indexados legados da nova experiência, sem presumir que conteúdos antigos definem os Masters.
+
+**Estado resultante:** `FTR-02/D1 = DOMAIN_ROLE_ACCEPTED_SCOPED`; `FTR-02 = DOMAIN_ROLE_DECIDED / DESTINATIONS_NOT_VERIFIED / GATE_OPEN`; `VERIFIED_FOR_PRODUCTION = 0` no conjunto inventariado. Nenhuma mudança técnica de domínio ou Replit foi executada.
