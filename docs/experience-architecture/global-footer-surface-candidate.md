@@ -2,7 +2,7 @@
 id: GKR-UX-GLOBAL-FOOTER-SURFACE-001
 title: Superfície Transversal — Rodapé Global da Guivos
 status: proposed
-version: 0.2.15
+version: 0.2.16
 owner: Experience Architecture
 last_updated: 2026-10-16
 normative: false
@@ -477,3 +477,21 @@ Exceção de rodapé não pode converter a Home pública em fluxo restrito, omit
 - **Exceções futuras:** registrar por rota evidência, responsável, escopo, deliberação, riscos e testes; até esse registro, estado individual `EXCEPTION_NOT_AUTHORIZED`.
 
 **Decisão:** `FTR-01/D5 = ROUTE_EXCEPTION_PROCESS_ACCEPTED_SCOPED`; `APPROVED_ROUTE_EXCEPTIONS = 0` nesta deliberação. A validade documental do processo não aprova protótipos nem substitui o padrão visual institucional, FTR-05/07 ou a política de dados. D6 segue proposta sem adjudicação; `FTR-01 = PARTIAL_NOT_CLOSED`. Nenhuma edição no Replit.
+
+
+## 6.12. FTR-01/D6 — direção editorial de acesso ao aplicativo (17/10/2026)
+
+**Origem da direção:** o fundador solicitou nas iterações visuais anteriores um botão de acesso ao aplicativo no rodapé, com ícone QR e rótulo `Obter o app` em estado fechado; ao abrir, apresentação de `Google Play`, `App Store` e área de QR Code, em estilo branco compatível com os demais controles do rodapé. A concordância de continuidade documental de 17/10/2026 permite consolidar **essa intenção de conteúdo e interação**; não comprova o arquivo visual final nem entrega do produto.
+
+**Decisão limitada:** `FTR-01/D6 = APP_ACCESS_EDITORIAL_DIRECTION_ACCEPTED_SCOPED`.
+
+| Elemento | Direção editorial aceita | Condição independente, não satisfeita |
+|---|---|---|
+| Controle fechado | Ícone de QR Code + rótulo `Obter o app`, tom branco coerente com o rodapé aprovado | Arquivo final datado, ativo vetorial, ordem de foco e composição visual |
+| Controle aberto | Opções Google Play e App Store + espaço para QR Code | Evidência de comportamento acessível, responsividade e posição final sem conflito com `Receba novidades` |
+| QR do aplicativo | Área reservada e claramente demonstrativa enquanto o produto não tiver URL oficial | QR oficial com URL correta, verificação de destino, mercado e publicação |
+| Acesso às lojas | Rótulos editoriais identificados, sem vínculo fictício | Links oficiais e disponibilidade verificada nas lojas; FTR-02 e FTR-07 |
+
+**Limites de autoridade:** a referência institucional `GKR-UX-GLOBAL-FOOTER-001 v1.0.0` permanece **inalterada**. Esta decisão não substitui a imagem de 14/10 nem ratifica espaçamentos, medidas ou detalhes visuais de iteração posterior; o arquivo visual primário de referência e decisão de Brand/Design/Produto sobre sua incorporação ainda são exigidos. Não criar botões funcionais, QR, deep links, app-store URLs ou afirmação de disponibilidade a partir de rótulos.
+
+**Estado resultante:** `D6_EDITORIAL_DIRECTION_ACCEPTED = TRUE`; `D6_FINAL_VISUAL_ADJUDICATION = PENDING`; `APP_STORE_DESTINATIONS_VERIFIED = 0`; `OFFICIAL_APP_QR_VERIFIED = FALSE`; `FTR-01 = PARTIAL_NOT_CLOSED`. Os gates FTR-02/03/04/05/06/07/08 permanecem independentes; nenhuma alteração no Replit.

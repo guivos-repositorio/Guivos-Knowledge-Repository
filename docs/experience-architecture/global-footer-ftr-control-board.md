@@ -2,7 +2,7 @@
 id: GKR-UX-GLOBAL-FOOTER-FTR-TRACKER-001
 title: Rodapé Global — Quadro de Controle de Gates FTR-01 a FTR-08
 status: proposed
-version: 0.1.14
+version: 0.1.15
 owner: Experience Architecture
 last_updated: 2026-10-16
 normative: false
@@ -30,7 +30,7 @@ Ler primeiro:
 
 | Gate | Evidência documental atual | Pendência material / comprovação de encerramento | Responsabilidade de validação (função, não pessoa designada) | Estado |
 |---|---|---|---|---|
-| **FTR-01** — Arquitetura e módulos | R01–R06/R05A reconciliados; D1 aceita posição do Mapa após oito destinos; D2 aceito padrão `full` responsivo, com `compact` contextual e `minimal` excepcional | D4: política delimitada do Mapa aprovada; D3: princípio de hierarquia editorial aceito em escopo delimitado; D5: processo de avaliação por rota aceito em escopo delimitado, **0 exceções concretas aprovadas** (PR #693 e decisão subsequente); D6: contrato candidato de app/QR, **sem referência visual posterior ou destinos homologados** (PR #695), conforme [arquitetura candidata v0.2.14](global-footer-surface-candidate.md) | Decisão de produto/experiência com revisão Brand/Design | **PARTIAL_NOT_CLOSED** |
+| **FTR-01** — Arquitetura e módulos | R01–R06/R05A reconciliados; D1 aceita posição do Mapa após oito destinos; D2 aceito padrão `full` responsivo, com `compact` contextual e `minimal` excepcional | D4: política delimitada do Mapa aprovada; D3: princípio de hierarquia editorial aceito em escopo delimitado; D5: processo de avaliação por rota aceito em escopo delimitado, **0 exceções concretas aprovadas** (PR #693 e decisão subsequente); D6: direção editorial app/QR aceita em escopo delimitado, **sem referência visual posterior ou destinos homologados** (PR #695 e decisão de 17/10), conforme [arquitetura candidata v0.2.14](global-footer-surface-candidate.md) | Decisão de produto/experiência com revisão Brand/Design | **PARTIAL_NOT_CLOSED** |
 | **FTR-02** — Destinos reais | [Inventário editorial FTR-02](global-footer-ftr02-destination-inventory.md) registrado: 9 explorações (incluindo Mapa), 4 institucionais, 5 ajudas, 2 jurídicos inferiores e 6 ícones sociais; FTR-02/D1: `guivos.com` como domínio global principal e `guivos.us` como opção por país; FTR-02/D2: fundador confirmou registro dos dois domínios em 16/10/2026 (inventário v0.1.3); DNS, HTTPS, rotas e destinos individuais ainda não verificados | Inventário por link: rótulo, URL, dono, disponibilidade e resultado de teste; política de ausência de destino, sobretudo Mapa | Responsável pelo destino/produto e navegação | **DOMAIN_ROLE_AND_REGISTRATION_CONFIRMED / DESTINATIONS_NOT_VERIFIED / GATE_OPEN** |
 | **FTR-03** — Coerência das oito Homes | 8/8 Masters reconciliados documentalmente; inspeção secundária do Replit relata 2 Homes com rota, divergências visuais/estruturais e seis sem Home própria naquele app | Capturas primárias versionadas da área final em desktop/mobile, por Home; avaliação Brand/Design, divergências e desfecho 8/8; não contar fallback nem relato de agente como homologação | Brand/Design e responsável pela Home | **OPEN_WITH_REPORTED_NONCONFORMITIES** |
 | **FTR-04** — Legal/Privacidade | [Matriz de revisão FTR-04](global-footer-ftr04-legal-privacy-review.md) documentada: identificação, links legais, canais, novidades e eventual app/QR | Validar dados institucionais, URLs, finalidade/base legal, consentimento quando aplicável, política, canais e fluxo de novidades | Legal/Privacidade e donos dos canais | **MATRIX_DOCUMENTED / LEGAL_PRIVACY_REVIEW_NOT_ADJUDICATED** |
@@ -108,3 +108,10 @@ O fundador confirmou o princípio proposto de hierarquia do Rodapé Global: iden
 A regra proposta na [Arquitetura Candidata v0.2.15, §6.11](global-footer-surface-candidate.md) foi acolhida **como processo de avaliação futura por rota**. `FTR-01/D5 = ROUTE_EXCEPTION_PROCESS_ACCEPTED_SCOPED`; `APPROVED_ROUTE_EXCEPTIONS = 0`. O padrão `full` responsivo permanece aplicável às oito Homes. As variantes `compact` e `minimal` continuam condicionadas a caso real, evidência e decisão específica, não aprovadas automaticamente pela aceitação do processo.
 
 **Estados remanescentes:** D1, D2, D3, D4 e D5 possuem aceitações documentais delimitadas; `FTR-01/D6 = PROPOSED_NOT_ACCEPTED`. Revisão visual comparativa e demais gates ainda pendentes; `FTR-01 = PARTIAL_NOT_CLOSED`. Sem alteração de referência institucional, produto ou Replit.
+
+
+## 12. FTR-01/D6 — direção editorial de acesso ao app aceita (17/10/2026)
+
+Conforme [Arquitetura Candidata v0.2.16, §6.12](global-footer-surface-candidate.md), a direção editorial `Obter o app` (ícone QR, estado aberto com Google Play, App Store e espaço de QR, controle branco) é registrada como `FTR-01/D6 = APP_ACCESS_EDITORIAL_DIRECTION_ACCEPTED_SCOPED`. O aceite deriva das solicitações visuais anteriores do fundador, **não** comprova a disponibilidade do aplicativo ou a aprovação da imagem visual final, que permanece pendente de referência primária, análise Brand/Design/Produto e verificação de canais/URLs.
+
+**Consolidado FTR-01:** D1 (posição), D2 (variantes), D3 (hierarquia editorial), D4 (Mapa indisponível), D5 (processo de exceções) e D6 (direção editorial app) possuem **aceites delimitados**, mas nenhum deles por si fecha o gate. **FTR-01 = PARTIAL_NOT_CLOSED** devido à reconciliação visual e exceções reais ainda não homologadas; `APPROVED_ROUTE_EXCEPTIONS = 0`. Não alterar a referência institucional v1.0.0 nem Replit. QR e links de lojas continuam não verificados.
