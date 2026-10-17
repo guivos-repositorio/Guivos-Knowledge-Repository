@@ -2,9 +2,9 @@
 id: GEM-OPPORTUNITIES-POINTS-REWARDS-CANDIDATE-001
 title: Oportunidades — Retorno em Pontos e Premiações de Eventos — Proposta Transversal
 status: draft
-version: 2.8.1
+version: 2.8.2
 owner: Guivos
-last_updated: 2026-10-13
+last_updated: 2026-10-17
 normative: false
 maturity: conceptual_candidate
 related:
@@ -2060,3 +2060,38 @@ PAR-02 / FUND-01 / COVER / P4–P9 → OPEN WITH THEIR OWN GATES
 E2E → 16 SPECIFIED / 0 EXECUTED
 PR #655 → DRAFT / NON-NORMATIVE
 ```
+
+
+## 18. Correção de base e teto do incentivo — direção do fundador de 17/10/2026
+
+**Correção explícita:** onde a solicitação recente menciona "mensalidade", ler **preço efetivamente cobrado pela própria oportunidade em cadastro** (curso, encontro, pedalada, evento etc.). **Não** utilizar a assinatura, mensalidade, anuidade ou tier comercial da Organização ou do Coletivo como base ou teto do incentivo.
+
+### 18.1 Experiência do cadastro de oportunidade paga
+
+O ofertante poderá escolher, opcionalmente:
+
+- **Sem pontos** — nenhum incentivo configurado.
+- **Percentual em pontos** — selecionar **uma de cinco opções predefinidas pela Guivos**; o catálogo exato de cinco percentuais continua **não adjudicado** e não pode ser inventado na interface.
+- **Quantidade fixa de pontos** — informar total de pontos a conceder à Pessoa por fato gerador elegível (ex.: 1.000 pontos), sujeito às regras de elegibilidade, cobertura e limite por participante; não confundir com premiações condicionadas a participação ou classificação.
+
+Apresentar resumo do **preço da oportunidade**, incentivo escolhido, **custo de financiamento dos pontos** (somente se calculável por paridade/cobertura oficialmente ratificada), demais deduções contratuais legítimas separadas e **valor líquido previsto para o ofertante** (somente se todas as premissas forem conhecidas). O incentivo é financiado integralmente pelo ofertante, não presumido como custeio Guivos.
+
+### 18.2 Limite econômico correto
+
+Para oportunidade paga, exigir que o **custo econômico do incentivo correspondente à compra elegível não ultrapasse o preço efetivamente cobrado nessa mesma compra**. Formalmente, apenas após definir a taxa de custeio:
+
+`0 ≤ CUSTO_EM_BRL_DOS_PONTOS_DA_COMPRA ≤ PREÇO_ELEGÍVEL_COBRADO_EM_BRL`.
+
+**1.000 pontos ≤ R$ 200 não é uma comparação matematicamente válida** antes de existir taxa aprovada de custeio `Pontos → BRL`. A comparação é entre **reais e reais**, nunca entre quantidade nominal de pontos e valor monetário como se tivessem unidades equivalentes. O limite não define paridade, remuneração Guivos, taxas, tributos, reembolso ou garantia financeira. Uma oferta gratuita (`R$ 0,00`) não sustenta, por este mecanismo de compra percentual, financiamento positivo; incentivos FIX por participação em atividade gratuita dependerão de orçamento pré-financiado independente e autoridade própria.
+
+Quando o custo não for calculável por ausência de paridade, cobertura ou tabela de percentuais adjudicados, a interface do protótipo pode **capturar a escolha como rascunho candidato**, mas deve marcar custo/líquido como **a definir**, bloquear confirmação de incentivo real e **não apresentar líquido artificial**. A renda líquida não pode ser definida como `preço − número de pontos`. A seleção de cinco percentuais só pode ficar operativa quando os cinco valores forem fornecidos/aprovados.
+
+### 18.3 Critérios para o Replit
+
+1. Opção de configuração de incentivo fica na etapa de **Preço** do cadastro de oportunidade, tanto Organização quanto Coletivo, depois da decisão Gratuita/Paga e respeitando o plano Livre.
+2. Percentual predefinido e pontos fixos são modos alternativos com revisão e justificativa; cinco posições não significam cinco percentuais inventados.
+3. Resumo de líquido distingue `PREÇO`, `CUSTO DOS PONTOS`, `DEMAIS DEDUÇÕES` e `LÍQUIDO ESTIMADO` e suspende cifras sem regra completa.
+4. Gate de publicação/apuração exige paridade, financiamento, fonte e teto verificados; não há emissão de pontos nem desconto operacional real autorizados por esta proposta.
+5. Esta seção preserva os gates PAR-02, FUND-01, P4/P5, LIQ-01/02 e a autoridade econômica canônica de Pontos; não cria taxa oficial nem implementação produtiva.
+
+**Estado:** `FOUNDER_CORRECTION_RECORDED / OPPORTUNITY_PRICE_NOT_PLAN_FEE / POINTS_PARITY_UNADJUDICATED / PROTOTYPE_ONLY`.
