@@ -2,7 +2,7 @@
 id: GKR-UX-GLOBAL-FOOTER-FTR02-001
 title: Rodapé Global — Inventário de Destinos e Links FTR-02
 status: proposed
-version: 0.1.2
+version: 0.1.3
 owner: Experience Architecture
 last_updated: 2026-10-16
 normative: false
@@ -150,3 +150,18 @@ Para o **Mapa do Ecossistema** há condição adicional: ratificação da arquit
 **Implicações para o rodapé:** nenhum dos destinos editoriais recebe `VERIFIED_FOR_PRODUCTION` com esta deliberação. A implementação futura somente poderá vincular links a URLs reais após prova de titularidade/controle, versão atualizada do site, disponibilidade pública, mapeamento individual de rotas e aprovações funcionais (e jurídicas quando aplicáveis). Separar ambientes indexados legados da nova experiência, sem presumir que conteúdos antigos definem os Masters.
 
 **Estado resultante:** `FTR-02/D1 = DOMAIN_ROLE_ACCEPTED_SCOPED`; `FTR-02 = DOMAIN_ROLE_DECIDED / DESTINATIONS_NOT_VERIFIED / GATE_OPEN`; `VERIFIED_FOR_PRODUCTION = 0` no conjunto inventariado. Nenhuma mudança técnica de domínio ou Replit foi executada.
+
+## 11. Confirmação do fundador — registro dos domínios Guivos (16/10/2026)
+
+**Fonte primária declaratória:** nesta conversa, o fundador confirmou expressamente: **“Os registros guivos.com e guivos.us, acima estão registrado conosco. Temos o registro já”.** Esta declaração passa a ser a fonte institucional para reconhecer o **registro dos dois domínios pela Guivos**, sem exigir nova pergunta sobre se os registros existem.
+
+| Domínio | Registro — informação declarada pelo fundador | Papel arquitetural já decidido | Ainda sem comprovação técnica nesta revisão |
+|---|---|---|---|
+| `guivos.com` | `REGISTRATION_CONFIRMED_BY_FOUNDER` | Principal global da nova Guivos | Registrador, titular formal em RDAP, nameservers, DNS, certificado HTTPS, apontamento, ambiente, estado HTTP e rotas das Homes |
+| `guivos.us` | `REGISTRATION_CONFIRMED_BY_FOUNDER` | Potencial domínio para operação por país | Registrador, titular formal em RDAP, nameservers, DNS, certificado HTTPS, apontamento, ambiente e decisão de lançamento por mercado |
+
+**Distinção necessária:** a palavra do fundador constitui confirmação institucional de registro sob controle da Guivos para fins desta governança, **não** é documento registral externo, não prova configuração de DNS, hospedagem ou que os dois sites já exibem a versão nova. O GKR não deve continuar perguntando se os domínios foram registrados; quando necessário para um trabalho técnico específico, o comprovante registral, painel do provedor ou dados de zona DNS serão requisitados apenas para a respectiva finalidade.
+
+**FTR-02/D2 — DOMAIN_REGISTRATION_CONFIRMED_BY_FOUNDER.** Mantém-se `FTR-02/D1 = DOMAIN_ROLE_ACCEPTED_SCOPED`. A confirmação atualiza o requisito de registro, mas **não** promove os destinos individuais do rodapé: `VERIFIED_FOR_PRODUCTION = 0` na matriz de links; `FTR-02 = DOMAIN_ROLE_AND_REGISTRATION_CONFIRMED / DESTINATIONS_NOT_VERIFIED / GATE_OPEN`.
+
+Nenhum DNS, redirecionamento, URL de Home, QR, app, site ou Replit foi alterado por este registro.
