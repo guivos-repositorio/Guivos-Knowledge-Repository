@@ -2,9 +2,9 @@
 id: GKR-UX-COL-ACTIVITIES-DECISIONS-MASTER-001
 title: Jornada de Organizações e Coletivos — Coletivo — Atividades, Consultas e Decisões — Documento Mestre de Superfície
 status: draft
-version: 0.2.0
+version: 0.2.1
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-28
+last_updated: 2026-10-17
 normative: false
 maturity: functional_contract_candidate
 depends_on:
@@ -434,3 +434,8 @@ TECHNICAL DELIVERY
 END-TO-END VALIDATION
 → NOT CLAIMED
 ```
+
+
+## 20. Oportunidades do Coletivo — preço, galeria e vigência (17/10/2026)
+
+Ver [Contrato de Perfis, Oportunidades, Galerias e Vigência](profile-opportunity-media-lifecycle-contract.md). O Coletivo deve dispor de entrada clara para cadastrar atividades/oportunidades (curso, encontro, pedalada, evento) em responsabilidade/fluxo especializado legitimado, sem converter `COL-006` em `ORG-002` nem inventar novo ID. A galeria da oportunidade tem limite candidato de 3 fotos em Livre e 9 em Mobiliza/Impacta/Rede; a galeria do perfil é separada. `Livre` somente oportunidades gratuitas; planos pagos podem criar oportunidades gratuitas ou pagas conforme autoridade. Exigir datas/horas aplicáveis; encerramento temporal retira a oportunidade da descoberta futura da Pessoa, preservando histórico e obrigações. Esta seção não autoriza checkout, operação de pagamentos ou transições novas.
