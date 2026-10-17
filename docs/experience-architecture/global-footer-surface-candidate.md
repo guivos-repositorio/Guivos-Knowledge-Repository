@@ -2,7 +2,7 @@
 id: GKR-UX-GLOBAL-FOOTER-SURFACE-001
 title: Superfície Transversal — Rodapé Global da Guivos
 status: proposed
-version: 0.2.9
+version: 0.2.10
 owner: Experience Architecture
 last_updated: 2026-10-16
 normative: false
@@ -359,3 +359,38 @@ Estas decisões devem ser resolvidas com responsáveis pertinentes e evidências
 **Fora do FTR-01:** executar reflow/zoom/acessibilidade (FTR-05), verificar URLs e titularidade (FTR-02), revisar legal/privacidade (FTR-04), implementar (FTR-06), testar (FTR-07) ou publicar (FTR-08). A inspeção secundária do Replit relatada em FTR-03 não autoriza alterar o aplicativo nesta fase.
 
 **Estado após esta reconciliação:** `FTR-01/D1 = POSITION_ACCEPTED`; `FTR-01/D2 = ARCHITECTURE_VARIANTS_ACCEPTED_SCOPED`; `FTR-01/D3..D6 = DECISION_REQUIRED`; `FTR-01 = PARTIAL_NOT_CLOSED`. A documentação torna o restante decidível, mas **não anuncia decisões que ainda não ocorreram**.
+
+
+## 6.6. FTR-01/D3 — proposta de hierarquia editorial e visual (16/10/2026)
+
+**Estado:** `PROPOSAL_FOR_DECISION / NOT_ADJUDICATED`. Esta seção traduz a composição da referência oficial `GKR-UX-GLOBAL-FOOTER-001 v1.0.0` em critérios de revisão, sem alterar o documento normativo, autorizar redesign ou definir medidas arbitrárias.
+
+### Ordem de leitura proposta
+
+1. **Identidade Guivos:** marca e assinatura global `Possibility, lived.` com descrição institucional aprovada, preservando sua distinção da frase de jornada da faixa inferior.
+2. **Descoberta e orientação:** três grupos editoriais na ordem `Explore o ecossistema`, `Guivos` e `Ajuda`. A leitura deve favorecer identificação dos rótulos e agrupamentos, não parecer um catálogo de produtos nem criar destaque artificial para um destino.
+3. **Continuidade opcional:** `Receba novidades` como bloco próprio, com descrição, campo, envio e ícones sociais da referência; não apresentar formulário como funcional ou inscrição realizada sem integração e consentimento verificados.
+4. **Responsabilidade e encerramento:** divisor e faixa inferior preservando identificação jurídica, links legais e assinatura `Descubra. Viva. Evolua.`, sem confundi-la com o slogan global.
+
+### Tratamento do Mapa do Ecossistema
+
+O rótulo `Mapa do Ecossistema` ocupa o **último lugar** de `Explore o ecossistema`, após os oito destinos, conforme FTR-01/D1. Sua presença acrescenta uma linha ao grupo, **não** uma coluna nova, nem uma categoria de conteúdo ou destaque em nível superior. O visual deverá demonstrar que a adição conserva legibilidade, ritmo vertical e distância entre blocos e faixa inferior. A política de exibição funcional/inativa permanece em FTR-01/D4 e FTR-02; nenhuma URL é inferida.
+
+### Regras de integridade para comparar composições
+
+| Elemento | Preservar da referência aprovada | Prova necessária para aceitar a hierarquia |
+|---|---|---|
+| Base e tipografia | Fundo `#FFFFFF`, Goldplay, escala e paleta oficiais, sem inventar novos tokens | Captura comparativa da proposta com a referência e identificação de diferenças |
+| Bloco de marca | Identidade, assinatura `Possibility, lived.` e texto institucional | Leitura e presença integral no desktop e no reflow responsivo |
+| Navegação | Os três títulos, os oito destinos aprovados, itens institucionais e de ajuda; Mapa ao final por D1 | Sequência editorial legível, sem duplicações ou truncamentos inadvertidos |
+| Novidades | Título, texto, formulário e ícones sociais; separador discreto quando houver espaço | Hierarquia própria, sem competir indevidamente com a marca ou sumir por quebra de layout |
+| Faixa inferior | Identificação jurídica, políticas/termos e `Descubra. Viva. Evolua.` com símbolo e ênfase aprovados | Sequência clara e acesso preservado, inclusive após empilhamento |
+| Relação com a arquitetura D2 | `full` responsivo nas oito Homes; `compact` e `minimal` só por exceção contextual autorizada | Não converter a largura estreita em justificativa automática para omitir blocos |
+
+**Não fixar:** centímetros de respiro, altura, grid numérico, breakpoints, tamanho de botão, métrica de contraste ou hierarquia de tabulação sem arquivos de design e resultados de teste; FTR-05 e FTR-07 exigem sua própria evidência. A comparação deve identificar quais diferenças são apenas reflow e quais mudam decisões de conteúdo/brand.
+
+### Proposta de deliberação FTR-01/D3
+
+Aprovar **somente o princípio de hierarquia**: identidade Guivos → três grupos de navegação → bloco de novidades com tratamento distinto → faixa legal e assinatura de jornada; `Mapa do Ecossistema` como último item de `Explore`, sem peso visual superior; nenhuma supressão automática no mobile; tudo sobre fundo branco e dentro de cores/tipografia oficiais. **A aprovação desta direção não aprova uma imagem nova nem conclui FTR-01.**
+
+**Pendências explícitas:** comparação visual por Brand/Design/Produto; decisão D4 para Mapa sem destino; D5 para exceções por rota; D6 para eventual acesso ao app/QR; evidências de FTR-03 e testes FTR-05..08. Até deliberação expressa: `FTR-01/D3 = PROPOSED_NOT_ACCEPTED`; `FTR-01 = PARTIAL_NOT_CLOSED`.
