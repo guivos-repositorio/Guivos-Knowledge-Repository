@@ -2,7 +2,7 @@
 id: GKR-UX-GLOBAL-FOOTER-FTR-TRACKER-001
 title: Rodapé Global — Quadro de Controle de Gates FTR-01 a FTR-08
 status: proposed
-version: 0.1.13
+version: 0.1.14
 owner: Experience Architecture
 last_updated: 2026-10-16
 normative: false
@@ -30,7 +30,7 @@ Ler primeiro:
 
 | Gate | Evidência documental atual | Pendência material / comprovação de encerramento | Responsabilidade de validação (função, não pessoa designada) | Estado |
 |---|---|---|---|---|
-| **FTR-01** — Arquitetura e módulos | R01–R06/R05A reconciliados; D1 aceita posição do Mapa após oito destinos; D2 aceito padrão `full` responsivo, com `compact` contextual e `minimal` excepcional | D4: política delimitada do Mapa aprovada; D3: princípio de hierarquia editorial aceito em escopo delimitado; D5: contrato candidato de exceções por rota, **sem exceção adjudicada** (PR #693); D6: contrato candidato de app/QR, **sem referência visual posterior ou destinos homologados** (PR #695), conforme [arquitetura candidata v0.2.14](global-footer-surface-candidate.md) | Decisão de produto/experiência com revisão Brand/Design | **PARTIAL_NOT_CLOSED** |
+| **FTR-01** — Arquitetura e módulos | R01–R06/R05A reconciliados; D1 aceita posição do Mapa após oito destinos; D2 aceito padrão `full` responsivo, com `compact` contextual e `minimal` excepcional | D4: política delimitada do Mapa aprovada; D3: princípio de hierarquia editorial aceito em escopo delimitado; D5: processo de avaliação por rota aceito em escopo delimitado, **0 exceções concretas aprovadas** (PR #693 e decisão subsequente); D6: contrato candidato de app/QR, **sem referência visual posterior ou destinos homologados** (PR #695), conforme [arquitetura candidata v0.2.14](global-footer-surface-candidate.md) | Decisão de produto/experiência com revisão Brand/Design | **PARTIAL_NOT_CLOSED** |
 | **FTR-02** — Destinos reais | [Inventário editorial FTR-02](global-footer-ftr02-destination-inventory.md) registrado: 9 explorações (incluindo Mapa), 4 institucionais, 5 ajudas, 2 jurídicos inferiores e 6 ícones sociais; FTR-02/D1: `guivos.com` como domínio global principal e `guivos.us` como opção por país; FTR-02/D2: fundador confirmou registro dos dois domínios em 16/10/2026 (inventário v0.1.3); DNS, HTTPS, rotas e destinos individuais ainda não verificados | Inventário por link: rótulo, URL, dono, disponibilidade e resultado de teste; política de ausência de destino, sobretudo Mapa | Responsável pelo destino/produto e navegação | **DOMAIN_ROLE_AND_REGISTRATION_CONFIRMED / DESTINATIONS_NOT_VERIFIED / GATE_OPEN** |
 | **FTR-03** — Coerência das oito Homes | 8/8 Masters reconciliados documentalmente; inspeção secundária do Replit relata 2 Homes com rota, divergências visuais/estruturais e seis sem Home própria naquele app | Capturas primárias versionadas da área final em desktop/mobile, por Home; avaliação Brand/Design, divergências e desfecho 8/8; não contar fallback nem relato de agente como homologação | Brand/Design e responsável pela Home | **OPEN_WITH_REPORTED_NONCONFORMITIES** |
 | **FTR-04** — Legal/Privacidade | [Matriz de revisão FTR-04](global-footer-ftr04-legal-privacy-review.md) documentada: identificação, links legais, canais, novidades e eventual app/QR | Validar dados institucionais, URLs, finalidade/base legal, consentimento quando aplicável, política, canais e fluxo de novidades | Legal/Privacidade e donos dos canais | **MATRIX_DOCUMENTED / LEGAL_PRIVACY_REVIEW_NOT_ADJUDICATED** |
@@ -101,3 +101,10 @@ O fundador aceitou a política delimitada registrada em [Arquitetura Candidata v
 O fundador confirmou o princípio proposto de hierarquia do Rodapé Global: identidade e assinatura global → `Explore o ecossistema`, `Guivos`, `Ajuda` → `Receba novidades` com tratamento próprio → faixa jurídica e `Descubra. Viva. Evolua.`, sob `#FFFFFF`, Goldplay e paleta oficial. Ver [Arquitetura Candidata v0.2.14, §6.10](global-footer-surface-candidate.md). O Mapa conserva a posição de D1 e o contrato de indisponibilidade de D4.
 
 **Estado atualizado:** `FTR-01/D3 = EDITORIAL_HIERARCHY_ACCEPTED_SCOPED`. D1/D2/D4 permanecem aceitos nos respectivos escopos; D5/D6 continuam `PROPOSED_NOT_ACCEPTED`. A comparação visual, os eventuais ajustes de composição e aprovações Brand/Design/Produto ainda não foram realizados. `FTR-01 = PARTIAL_NOT_CLOSED`. Documentação de decisão não equivale a homologação visual, deploy ou autorização de alterações no Replit.
+
+
+## 11. FTR-01/D5 — processo de exceção por rota aceito em escopo delimitado (16/10/2026)
+
+A regra proposta na [Arquitetura Candidata v0.2.15, §6.11](global-footer-surface-candidate.md) foi acolhida **como processo de avaliação futura por rota**. `FTR-01/D5 = ROUTE_EXCEPTION_PROCESS_ACCEPTED_SCOPED`; `APPROVED_ROUTE_EXCEPTIONS = 0`. O padrão `full` responsivo permanece aplicável às oito Homes. As variantes `compact` e `minimal` continuam condicionadas a caso real, evidência e decisão específica, não aprovadas automaticamente pela aceitação do processo.
+
+**Estados remanescentes:** D1, D2, D3, D4 e D5 possuem aceitações documentais delimitadas; `FTR-01/D6 = PROPOSED_NOT_ACCEPTED`. Revisão visual comparativa e demais gates ainda pendentes; `FTR-01 = PARTIAL_NOT_CLOSED`. Sem alteração de referência institucional, produto ou Replit.
