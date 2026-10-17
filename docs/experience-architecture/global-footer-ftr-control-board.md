@@ -2,7 +2,7 @@
 id: GKR-UX-GLOBAL-FOOTER-FTR-TRACKER-001
 title: Rodapé Global — Quadro de Controle de Gates FTR-01 a FTR-08
 status: proposed
-version: 0.1.11
+version: 0.1.12
 owner: Experience Architecture
 last_updated: 2026-10-16
 normative: false
@@ -30,7 +30,7 @@ Ler primeiro:
 
 | Gate | Evidência documental atual | Pendência material / comprovação de encerramento | Responsabilidade de validação (função, não pessoa designada) | Estado |
 |---|---|---|---|---|
-| **FTR-01** — Arquitetura e módulos | R01–R06/R05A reconciliados; D1 aceita posição do Mapa após oito destinos; D2 aceito padrão `full` responsivo, com `compact` contextual e `minimal` excepcional | D4: política delimitada aprovada para Mapa demonstrativo sem link no protótipo e sem link fictício em produção; D3 (hierarquia), D5 (exceções por rota) e D6 (app/QR) permanecem pendentes, conforme [arquitetura candidata](global-footer-surface-candidate.md) | Decisão de produto/experiência com revisão Brand/Design | **PARTIAL_NOT_CLOSED** |
+| **FTR-01** — Arquitetura e módulos | R01–R06/R05A reconciliados; D1 aceita posição do Mapa após oito destinos; D2 aceito padrão `full` responsivo, com `compact` contextual e `minimal` excepcional | D4: política delimitada do Mapa aprovada; D3: proposta de hierarquia; D5: contrato candidato de exceções por rota, **sem exceção adjudicada** (PR #693); D6: contrato candidato de app/QR, **sem referência visual posterior ou destinos homologados** (PR #695), conforme [arquitetura candidata v0.2.13](global-footer-surface-candidate.md) | Decisão de produto/experiência com revisão Brand/Design | **PARTIAL_NOT_CLOSED** |
 | **FTR-02** — Destinos reais | [Inventário editorial FTR-02](global-footer-ftr02-destination-inventory.md) registrado: 9 explorações (incluindo Mapa), 4 institucionais, 5 ajudas, 2 jurídicos inferiores e 6 ícones sociais; FTR-02/D1: `guivos.com` como domínio global principal e `guivos.us` como opção por país; FTR-02/D2: fundador confirmou registro dos dois domínios em 16/10/2026 (inventário v0.1.3); DNS, HTTPS, rotas e destinos individuais ainda não verificados | Inventário por link: rótulo, URL, dono, disponibilidade e resultado de teste; política de ausência de destino, sobretudo Mapa | Responsável pelo destino/produto e navegação | **DOMAIN_ROLE_AND_REGISTRATION_CONFIRMED / DESTINATIONS_NOT_VERIFIED / GATE_OPEN** |
 | **FTR-03** — Coerência das oito Homes | 8/8 Masters reconciliados documentalmente; inspeção secundária do Replit relata 2 Homes com rota, divergências visuais/estruturais e seis sem Home própria naquele app | Capturas primárias versionadas da área final em desktop/mobile, por Home; avaliação Brand/Design, divergências e desfecho 8/8; não contar fallback nem relato de agente como homologação | Brand/Design e responsável pela Home | **OPEN_WITH_REPORTED_NONCONFORMITIES** |
 | **FTR-04** — Legal/Privacidade | [Matriz de revisão FTR-04](global-footer-ftr04-legal-privacy-review.md) documentada: identificação, links legais, canais, novidades e eventual app/QR | Validar dados institucionais, URLs, finalidade/base legal, consentimento quando aplicável, política, canais e fluxo de novidades | Legal/Privacidade e donos dos canais | **MATRIX_DOCUMENTED / LEGAL_PRIVACY_REVIEW_NOT_ADJUDICATED** |
@@ -83,3 +83,14 @@ O gate FTR-01 permanece `PARTIAL_NOT_CLOSED`, com D3..D6 sob análise documental
 O fundador aceitou a política delimitada registrada em [Arquitetura Candidata v0.2.11 §6.7](global-footer-surface-candidate.md): demonstração inativa em protótipo, **nenhum link clicável fictício em produção** e ativação futura somente após destino real homologado. O aceite não adjudica a apresentação visual final de um item sem destino, nem substitui a validação FTR-02.
 
 **Situação:** `FTR-01/D4 = UNAVAILABLE_DESTINATION_POLICY_ACCEPTED_SCOPED`; `FTR-01/D3 = PROPOSED_NOT_ACCEPTED`; `FTR-01/D5..D6 = DECISION_REQUIRED`; `FTR-01 = PARTIAL_NOT_CLOSED`. Sem mudanças técnicas ou alterações no Replit.
+
+
+## 9. Reconciliação FTR-01/D5 e D6 — propostas documentadas (16/10/2026)
+
+**D5 — exceções por superfície:** a PR #693 foi incorporada à `main`; seu contrato de análise por rota exige justificativa, comparação com `full`, preservação de conteúdo essencial, avaliação jurídica/acessibilidade quando aplicável e autorização específica. Estado: `FTR-01/D5 = PROPOSED_NOT_ACCEPTED`. Não existe, neste ato, relação de exceções concretas aprovadas. Para as oito Homes, prevalece `full` responsivo nos termos de D2.
+
+**D6 — acesso ao aplicativo e QR:** a PR #694 foi encerrada por conflito/superação, e a PR #695 foi incorporada com a seção candidata de app/QR à arquitetura v0.2.13. Estado: `FTR-01/D6 = PROPOSED_NOT_ACCEPTED`. A referência oficial de 14/10/2026 **não foi substituída**; botão `Obter o app`, estados aberto/fechado, QR e links de lojas permanecem análise editorial, pendente de fonte visual posterior identificada, deliberação de Brand/Design/Produto, URLs oficiais e comprovação de disponibilidade.
+
+**Conjunto FTR-01:** `D1 = POSITION_ACCEPTED`, `D2 = ARCHITECTURE_VARIANTS_ACCEPTED_SCOPED`, `D3 = PROPOSED_NOT_ACCEPTED`, `D4 = UNAVAILABLE_DESTINATION_POLICY_ACCEPTED_SCOPED`, `D5 = PROPOSED_NOT_ACCEPTED`, `D6 = PROPOSED_NOT_ACCEPTED`; `FTR-01 = PARTIAL_NOT_CLOSED`.
+
+**Próxima condição documental:** deliberações específicas de D3/D5/D6 sobre os princípios propostos e evidências visuais, sem confundir a aprovação de critério com autorização de implantação. Nenhuma mudança no Replit, na referência normativa, no funcionamento de QR ou nos destinos do rodapé decorre deste registro.
