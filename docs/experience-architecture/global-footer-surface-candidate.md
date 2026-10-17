@@ -2,7 +2,7 @@
 id: GKR-UX-GLOBAL-FOOTER-SURFACE-001
 title: Superfície Transversal — Rodapé Global da Guivos
 status: proposed
-version: 0.2.13
+version: 0.2.14
 owner: Experience Architecture
 last_updated: 2026-10-16
 normative: false
@@ -449,3 +449,18 @@ Exceção de rodapé não pode converter a Home pública em fluxo restrito, omit
 **Pacote mínimo de evidência para futura ratificação:** imagem final/arquivo de design e versão; identificação da diferença frente à referência de 14/10; aprovação de Brand/Design/Produto para incluir o elemento como evolução do rodapé; URLs oficiais das lojas, destino codificado no QR, testes de navegação e acessibilidade, conformidade institucional e definição de estados de indisponibilidade. FTR-02/03/04/05/06/07/08 permanecem independentes.
 
 **Decisão ainda necessária:** aprovar ou rejeitar a incorporação do componente posterior à **referência normativa**, identificando a versão visual e sua hierarquia. O aceite do contrato de avaliação, se houver, **não é** homologação das lojas, do QR, do produto ou da aplicação nas oito Homes. Até deliberação explícita: `FTR-01/D6 = PROPOSED_NOT_ACCEPTED`; `FTR-01 = PARTIAL_NOT_CLOSED`. Nenhuma mudança no Replit.
+
+
+## 6.10. FTR-01/D3 — deliberação sobre hierarquia editorial (16/10/2026)
+
+**Origem da decisão:** após receber a proposta da seção 6.6 e o recorte de decisão apresentado em conversa — preservar a composição oficial do Rodapé Global, com identidade Guivos, três grupos de navegação, bloco próprio de novidades e faixa jurídica inferior — o fundador confirmou **“de acordo, segue”**. O assentimento é interpretado **exclusivamente** como aceite do princípio de hierarquia, não como aprovação de nova representação visual, da sua execução técnica ou de alterações nos textos normativos.
+
+**Contrato de hierarquia aceito em escopo delimitado:**
+
+1. Marca Guivos e assinatura global `Possibility, lived.` claramente reconhecíveis, com descrição institucional aprovada.
+2. Três grupos de navegação na ordem `Explore o ecossistema`, `Guivos` e `Ajuda`, com os itens oficiais preservados; `Mapa do Ecossistema` ao final do primeiro grupo, conforme D1 e D4.
+3. `Receba novidades` com tratamento visual próprio, sem ser incorporado à navegação nem omitido automaticamente em telas menores. Formulário, redes sociais e disponibilidade permanecem sujeitos aos gates correspondentes.
+4. Faixa jurídica inferior separada por divisor e assinatura de jornada `Descubra. Viva. Evolua.` distinta da assinatura global.
+5. Fundo `#FFFFFF`, Goldplay, tokens de cores oficiais, sem inventar medidas, breakpoints, alinhamentos pixel-perfect ou novos ativos de marca.
+
+**Limite decisório:** `FTR-01/D3 = EDITORIAL_HIERARCHY_ACCEPTED_SCOPED`. Continua pendente a comparação por Brand/Design/Produto com a referência institucional v1.0.0 de 14/10/2026, incluindo hierarquia final, escala, espaçamentos e comportamento responsivo. D5/D6 permanecem apenas propostas; `FTR-01 = PARTIAL_NOT_CLOSED`. A deliberação não altera a referência normativa, não autoriza implementação, ativação de app/QR ou alteração do Replit.
