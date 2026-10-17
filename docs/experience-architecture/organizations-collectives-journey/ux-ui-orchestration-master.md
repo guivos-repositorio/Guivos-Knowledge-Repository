@@ -2,9 +2,9 @@
 id: GKR-UX-ORGCOL-JOURNEY-ORCHESTRATION-001
 title: Jornada de Organizações e Coletivos — Documento Mestre de Orquestração UX/UI
 status: draft
-version: 0.3.0
+version: 0.3.1
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-27
+last_updated: 2026-10-17
 normative: true
 maturity: ux_orchestration_authority_candidate
 depends_on:
@@ -904,3 +904,8 @@ AI
 PRODUCT ENGINEERING
 → NOT RELEASED
 ```
+
+
+## 37. Entrada dupla por participante — direção de continuidade para protótipo (17/10/2026)
+
+Consumir o [Contrato de Perfis, Oportunidades, Galerias e Vigência](profile-opportunity-media-lifecycle-contract.md) como contrato candidato subordinado: cada Organização e cada Coletivo precisam distinguir **cadastro/edição do perfil** de **cadastro/gestão das oportunidades** que oferecem. Galerias de perfil e de oportunidade não compartilham cotas; preço gratuito/pago, cronologia e visibilidade são responsabilidades do objeto correspondente. A UI em Replit pode demonstrar essas continuidades sob autorização específica do fundador sem criar IDs estáveis, transições, entitlements econômicos normativos ou efetividade de publicação.
