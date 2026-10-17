@@ -2,7 +2,7 @@
 id: GKR-UX-GLOBAL-FOOTER-SURFACE-001
 title: Superfície Transversal — Rodapé Global da Guivos
 status: proposed
-version: 0.2.14
+version: 0.2.15
 owner: Experience Architecture
 last_updated: 2026-10-16
 normative: false
@@ -464,3 +464,16 @@ Exceção de rodapé não pode converter a Home pública em fluxo restrito, omit
 5. Fundo `#FFFFFF`, Goldplay, tokens de cores oficiais, sem inventar medidas, breakpoints, alinhamentos pixel-perfect ou novos ativos de marca.
 
 **Limite decisório:** `FTR-01/D3 = EDITORIAL_HIERARCHY_ACCEPTED_SCOPED`. Continua pendente a comparação por Brand/Design/Produto com a referência institucional v1.0.0 de 14/10/2026, incluindo hierarquia final, escala, espaçamentos e comportamento responsivo. D5/D6 permanecem apenas propostas; `FTR-01 = PARTIAL_NOT_CLOSED`. A deliberação não altera a referência normativa, não autoriza implementação, ativação de app/QR ou alteração do Replit.
+
+
+## 6.11. FTR-01/D5 — aceite delimitado do processo de exceções (16/10/2026)
+
+**Deliberação:** após a documentação e exposição do contrato candidato da seção 6.8, o fundador autorizou prosseguir com a decisão documental de D5. Fica acolhido **o processo de avaliação e autorização específica por rota**, não a aplicação imediata de variantes a páginas concretas. Nenhuma autorização é atribuída antecipadamente a Brand, Design, Produto, Legal ou QA.
+
+- **Oito Homes públicas:** padrão `full` responsivo preservado, sem exceções concedidas.
+- **Páginas internas públicas:** `compact` somente poderá ser considerada com rota real, justificativa contextual, comparação visual e decisão competente identificada.
+- **Fluxos sensíveis, autenticados ou restritos:** `minimal` somente poderá ser considerada após contrato contextual, requisitos de segurança, acessibilidade, informação essencial e revisão legal quando aplicável.
+- **Responsividade:** mobile, tablet e zoom não constituem justificativa isolada para eliminar conteúdo ou promover variante.
+- **Exceções futuras:** registrar por rota evidência, responsável, escopo, deliberação, riscos e testes; até esse registro, estado individual `EXCEPTION_NOT_AUTHORIZED`.
+
+**Decisão:** `FTR-01/D5 = ROUTE_EXCEPTION_PROCESS_ACCEPTED_SCOPED`; `APPROVED_ROUTE_EXCEPTIONS = 0` nesta deliberação. A validade documental do processo não aprova protótipos nem substitui o padrão visual institucional, FTR-05/07 ou a política de dados. D6 segue proposta sem adjudicação; `FTR-01 = PARTIAL_NOT_CLOSED`. Nenhuma edição no Replit.
