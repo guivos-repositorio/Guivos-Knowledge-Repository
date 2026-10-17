@@ -31398,7 +31398,50 @@ RELEASE AUTHORITY
 </tr>
 </tbody>
 </table>
-<p><strong>Estado de decisão:</strong> <code>FTR-01/D4 = UNAVAILABLE_DESTINATION_POLICY_ACCEPTED_SCOPED</code>. Mantêm-se <code>FTR-01/D1 = POSITION_ACCEPTED</code>, <code>FTR-01/D2 = ARCHITECTURE_VARIANTS_ACCEPTED_SCOPED</code>, <code>FTR-01/D3 = PROPOSED_NOT_ACCEPTED</code>, <code>FTR-01/D5..D6 = DECISION_REQUIRED</code>; <strong><code>FTR-01 = PARTIAL_NOT_CLOSED</code></strong>. A presente decisão não adjudica a imagem da Home, aprova URL fictícia, encerra gate de publicação ou modifica Replit.</p></section><section class="print-page" id="experience-architecture-global-footer-ftr-control-board" heading-number="9.3.3"><h1 id="experience-architecture-global-footer-ftr-control-board-rodape-global-quadro-de-controle-ftr-01-a-ftr-08">Rodapé Global — Quadro de Controle FTR-01 a FTR-08<a class="headerlink" href="#experience-architecture-global-footer-ftr-control-board-rodape-global-quadro-de-controle-ftr-01-a-ftr-08" title="Permanent link">&para;</a></h1>
+<p><strong>Estado de decisão:</strong> <code>FTR-01/D4 = UNAVAILABLE_DESTINATION_POLICY_ACCEPTED_SCOPED</code>. Mantêm-se <code>FTR-01/D1 = POSITION_ACCEPTED</code>, <code>FTR-01/D2 = ARCHITECTURE_VARIANTS_ACCEPTED_SCOPED</code>, <code>FTR-01/D3 = PROPOSED_NOT_ACCEPTED</code>, <code>FTR-01/D5..D6 = DECISION_REQUIRED</code>; <strong><code>FTR-01 = PARTIAL_NOT_CLOSED</code></strong>. A presente decisão não adjudica a imagem da Home, aprova URL fictícia, encerra gate de publicação ou modifica Replit.</p>
+<h2 id="experience-architecture-global-footer-surface-candidate-68-ftr-01d5-proposta-de-excecoes-por-superficie-16102026">6.8. FTR-01/D5 — proposta de exceções por superfície (16/10/2026)<a class="headerlink" href="#experience-architecture-global-footer-surface-candidate-68-ftr-01d5-proposta-de-excecoes-por-superficie-16102026" title="Permanent link">&para;</a></h2>
+<p><strong>Natureza:</strong> contrato de elegibilidade candidato, <code>FTR-01/D5 = PROPOSED_NOT_ACCEPTED</code>, para evitar que a arquitetura de variantes aprovada em D2 seja tratada como permissão indiscriminada para reduzir o rodapé. <strong>Nenhuma rota é declarada exceção autorizada</strong> por este texto.</p>
+<table>
+<thead>
+<tr>
+<th>Contexto de superfície</th>
+<th>Variante-base</th>
+<th>Condição para exceção</th>
+<th>Preservação obrigatória</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Oito Homes públicas (Pessoa, Organização, Coletivo, Travel, Business, Media, Intelligence, Ads)</strong></td>
+<td><code>full</code> responsivo</td>
+<td><strong>Não há exceção automática:</strong> somente ato próprio que revise explicitamente a decisão D2</td>
+<td>Marca, três grupos de navegação, <code>Receba novidades</code>, sociais, informações legais, identidade e assinaturas aprovadas</td>
+</tr>
+<tr>
+<td><strong>Páginas internas públicas informacionais</strong></td>
+<td><code>full</code> responsivo como referência; <code>compact</code> elegível</td>
+<td>Rota real identificada, restrição de contexto demonstrada, comparação visual e justificativa submetidas a Brand/Design/Produto</td>
+<td>Identidade reconhecível, caminhos essenciais, acesso a ajuda e políticas, finalidade transparente dos dados e conteúdo não eliminado por conveniência</td>
+</tr>
+<tr>
+<td><strong>Fluxos sensíveis, autenticados, de indisponibilidade ou transacionais restritos</strong></td>
+<td>Contrato contextual específico; <code>minimal</code> apenas elegível</td>
+<td>Fluxo e risco documentados, fronteiras de navegação/segurança, autorização funcional e revisão jurídica quando aplicável</td>
+<td>Identificação, ajuda apropriada, deveres legais e privacidade, sem atribuir ao usuário consentimento tácito</td>
+</tr>
+<tr>
+<td><strong>Mobile, tablet e zoom em qualquer superfície</strong></td>
+<td>Reflow da variante da superfície, não promoção automática a <code>compact</code> ou <code>minimal</code></td>
+<td>Ensaios de legibilidade, foco, teclado, leitor de tela e orientação do FTR-05/07</td>
+<td>Todos os conteúdos validados que forem aplicáveis à superfície; não esconder a seção <code>Receba novidades</code> automaticamente</td>
+</tr>
+</tbody>
+</table>
+<h3 id="experience-architecture-global-footer-surface-candidate-registro-obrigatorio-de-cada-excecao-futura">Registro obrigatório de cada exceção futura<a class="headerlink" href="#experience-architecture-global-footer-surface-candidate-registro-obrigatorio-de-cada-excecao-futura" title="Permanent link">&para;</a></h3>
+<p>Cada proposta deverá preencher <strong>identificador da rota real</strong>, URL/ambiente de referência, finalidade e público da superfície, variante <code>full</code> de comparação, justificativa de diferença, itens preservados e deslocados, impactos em <code>Receba novidades</code>/consentimento/social, impactos legais/de acessibilidade, evidência visual versionada, responsável pela decisão, deliberação e plano de testes. <strong>Sem esses campos, a variante permanece apenas hipótese.</strong></p>
+<h3 id="experience-architecture-global-footer-surface-candidate-regra-de-nao-desvio">Regra de não desvio<a class="headerlink" href="#experience-architecture-global-footer-surface-candidate-regra-de-nao-desvio" title="Permanent link">&para;</a></h3>
+<p>Exceção de rodapé não pode converter a Home pública em fluxo restrito, omitir avisos legais pertinentes, mascarar formulário sem integração, fabricar link do Mapa ou inserir QR/App como funcionalidade lançada. Diferenças de densidade visual não mudam automaticamente a marca, ordem editorial ou referência aprovada em 14/10. Breakpoints fixos dependem de testes reais. Este contrato não substitui FTR-04/05/06/07/08.</p>
+<p><strong>Proposta para decisão posterior:</strong> reconhecer o <strong>processo de autorização por rota</strong> acima, sem aprovar qualquer exceção concreta no momento. Até assentimento específico, <code>FTR-01/D5 = PROPOSED_NOT_ACCEPTED</code> e <code>FTR-01 = PARTIAL_NOT_CLOSED</code>; D3 e D6 preservam suas pendências próprias. Nenhum trabalho no Replit.</p></section><section class="print-page" id="experience-architecture-global-footer-ftr-control-board" heading-number="9.3.3"><h1 id="experience-architecture-global-footer-ftr-control-board-rodape-global-quadro-de-controle-ftr-01-a-ftr-08">Rodapé Global — Quadro de Controle FTR-01 a FTR-08<a class="headerlink" href="#experience-architecture-global-footer-ftr-control-board-rodape-global-quadro-de-controle-ftr-01-a-ftr-08" title="Permanent link">&para;</a></h1>
 <h2 id="experience-architecture-global-footer-ftr-control-board-1-finalidade-e-ordem-de-autoridade">1. Finalidade e ordem de autoridade<a class="headerlink" href="#experience-architecture-global-footer-ftr-control-board-1-finalidade-e-ordem-de-autoridade" title="Permanent link">&para;</a></h2>
 <p><strong>Painel de consulta e rastreabilidade, não ato de homologação.</strong> Consolida decisões, evidências e impedimentos existentes até 16/10/2026 para impedir que merge de documentação, design aprovado, protótipo e interface em produção sejam confundidos.</p>
 <p>Ler primeiro:
