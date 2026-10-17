@@ -2,7 +2,7 @@
 id: GKR-UX-GLOBAL-FOOTER-SURFACE-001
 title: Superfície Transversal — Rodapé Global da Guivos
 status: proposed
-version: 0.2.12
+version: 0.2.13
 owner: Experience Architecture
 last_updated: 2026-10-16
 normative: false
@@ -429,3 +429,23 @@ Cada proposta deverá preencher **identificador da rota real**, URL/ambiente de 
 Exceção de rodapé não pode converter a Home pública em fluxo restrito, omitir avisos legais pertinentes, mascarar formulário sem integração, fabricar link do Mapa ou inserir QR/App como funcionalidade lançada. Diferenças de densidade visual não mudam automaticamente a marca, ordem editorial ou referência aprovada em 14/10. Breakpoints fixos dependem de testes reais. Este contrato não substitui FTR-04/05/06/07/08.
 
 **Proposta para decisão posterior:** reconhecer o **processo de autorização por rota** acima, sem aprovar qualquer exceção concreta no momento. Até assentimento específico, `FTR-01/D5 = PROPOSED_NOT_ACCEPTED` e `FTR-01 = PARTIAL_NOT_CLOSED`; D3 e D6 preservam suas pendências próprias. Nenhum trabalho no Replit.
+
+## 6.9. FTR-01/D6 — proposta de incorporação documental do acesso ao app e QR (16/10/2026)
+
+**Natureza:** proposta editorial de conciliação da composição de acesso ao aplicativo surgida em iterações visuais posteriores; `FTR-01/D6 = PROPOSED_NOT_ACCEPTED`. A referência institucional oficial `GKR-UX-GLOBAL-FOOTER-001 v1.0.0` de 14/10 **não inclui** botão/QR em seu conteúdo normativo. A manifestação visual posterior mencionada nesta conversa não foi, nesta revisão do repositório, materializada em arquivo visual primário versionado e identificado. Não alegar comparação pixel-perfect nem promoção de autoridade sem essa evidência.
+
+### Composição candidata para análise de Brand e Produto
+
+| Elemento | Contrato editorial candidato | Condição de publicação |
+|---|---|---|
+| Acesso `Obter o app` | Controle **fechado**, branco e visualmente coerente com a composição aprovada, contendo ícone QR e rótulo `Obter o app` | Design versionado e revisão de hierarquia / acessibilidade |
+| Estado **aberto** | Apresentar opções `Baixar no Google Play`, `Baixar na App Store` e espaço reservado ao QR; não substituir `Receba novidades` ou sobrepor acesso a conteúdo institucional | Proposta visual validada, comportamento acessível de expansão/recolhimento e revisão responsiva |
+| QR Code | Na fase documental/protótipo, qualquer representação será **apenas demonstração identificada**; nunca usar QR inventado como endereço real | Gerar QR oficial somente após URL de destino validada, autorização de distribuição e testes de leitura/destino |
+| Links de lojas | Rótulos de loja não provam que o app foi publicado em qualquer país | URL específica de Google Play e App Store, app correto, mercado, titular do publisher, disponibilidade efetiva e verificação por FTR-02/07 |
+| Estados indisponíveis | Sem link, QR oficial ou aplicativo publicado, não apresentar CTA de download funcional nem promessa de instalação | Exibição demonstrativa em protótipo, segregada de produção e sem simular disponibilidade |
+
+**Relação com a referência:** manter `#FFFFFF`, Goldplay, tokens oficiais, estrutura editorial aprovada, assinatura `Possibility, lived.`, `Receba novidades`, redes sociais e a faixa `Descubra. Viva. Evolua.`. A decisão sobre **localização exata**, espaçamento, escala e visibilidade da expansão em cada viewport depende de inspeção da imagem posterior com autoria/data e deliberação Brand/Design, sem inventar centímetros, breakpoints ou posições definitivas.
+
+**Pacote mínimo de evidência para futura ratificação:** imagem final/arquivo de design e versão; identificação da diferença frente à referência de 14/10; aprovação de Brand/Design/Produto para incluir o elemento como evolução do rodapé; URLs oficiais das lojas, destino codificado no QR, testes de navegação e acessibilidade, conformidade institucional e definição de estados de indisponibilidade. FTR-02/03/04/05/06/07/08 permanecem independentes.
+
+**Decisão ainda necessária:** aprovar ou rejeitar a incorporação do componente posterior à **referência normativa**, identificando a versão visual e sua hierarquia. O aceite do contrato de avaliação, se houver, **não é** homologação das lojas, do QR, do produto ou da aplicação nas oito Homes. Até deliberação explícita: `FTR-01/D6 = PROPOSED_NOT_ACCEPTED`; `FTR-01 = PARTIAL_NOT_CLOSED`. Nenhuma mudança no Replit.
