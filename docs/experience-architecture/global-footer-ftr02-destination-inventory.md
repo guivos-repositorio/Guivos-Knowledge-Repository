@@ -2,7 +2,7 @@
 id: GKR-UX-GLOBAL-FOOTER-FTR02-001
 title: Rodapé Global — Inventário de Destinos e Links FTR-02
 status: proposed
-version: 0.1.0
+version: 0.1.1
 owner: Experience Architecture
 last_updated: 2026-10-16
 normative: false
@@ -119,3 +119,19 @@ Para o **Mapa do Ecossistema** há condição adicional: ratificação da arquit
 **O inventário não corresponde a links já implementados.** Nesta revisão, `VERIFIED_FOR_PRODUCTION = 0` no escopo dos destinos acima; isto significa **nenhuma evidência suficiente reunida para aprovação de produção**, e não ausência universal de sites, páginas, perfis ou serviços da Guivos.
 
 `FTR-02 = INVENTORY_DOCUMENTED / DESTINATIONS_NOT_VERIFIED / GATE_OPEN`. FTR-04 continua independente para dados legais, avisos e consentimento. FTR-06..08 não podem ser presumidos a partir deste levantamento.
+
+## 9. Evidências públicas adicionais encontradas em 16/10/2026 — domínios candidatos
+
+**Natureza da evidência:** resultados de indexação web pública, não comprovação de titularidade técnica/registral, ambiente de produção atual, disponibilidade por acesso externo direto ou aderência à arquitetura corrente das oito Homes. A tentativa de acesso direto pelo mecanismo de consulta retornou falha (502), portanto **não ocorreu teste HTTP bem-sucedido dessas páginas nesta revisão**.
+
+| Endereço observado na indexação | Conteúdo público indexado e correlação | O que ainda falta | Estado |
+|---|---|---|---|
+| [https://www.guivos.com/](https://www.guivos.com/) | Uso da marca Guivos, navegação para viagens/compras, bloco de app/comunidade e identificação jurídica reproduzida na referência institucional do rodapé | Confirmar titularidade, domínio canônico pretendido, versão atual do conteúdo, rotas públicas do ecossistema corrente e testes de acesso; não presumir que a experiência indexada representa a HOME Pessoa aprovada | `PUBLIC_DOMAIN_CANDIDATE / NOT_APPROVED_FOR_FOOTER` |
+| [https://guivos.us/](https://guivos.us/) | Uso da marca, serviços e informação institucional semelhantes aos encontrados no domínio anterior | Verificar controle do domínio, mercado/idioma, conteúdo vigente, relação oficial com o domínio principal, URLs individuais e aprovação de navegação | `PUBLIC_DOMAIN_CANDIDATE / NOT_APPROVED_FOR_FOOTER` |
+| [https://guivos.us/dashboard/guivos_empresas](https://guivos.us/dashboard/guivos_empresas) | Página empresarial indexada com discurso de programa de recompensas e plataforma white-label | Validar atualização e autoridade do conteúdo perante os Masters do GKR, domínio e finalidade pública; **não** mapear automaticamente para a Home Guivos Business aprovada | `LEGACY_OR_CURRENT_UNDETERMINED / NOT_APPROVED_FOR_FOOTER` |
+
+**Risco de divergência temporal:** a experiência indexada menciona pontos, catálogo e ofertas que podem não refletir a arquitetura/produtos e decisões documentais atuais. A correspondência da marca e de identificações textuais **não equivale a homologar o conteúdo**, assumir operação real de ofertas, legitimar URL de `Pessoa e Journey`, `Business`, `Mall`, `Travel` ou afirmar aplicativos disponíveis. Não remover nem alterar contratos econômicos, de pontos ou de produtos no GKR a partir dessa indexação.
+
+**FTR-02 após nova pesquisa:** `PUBLIC_DOMAIN_CANDIDATES_IDENTIFIED = 2` (e uma rota empresarial indexada); `VERIFIED_FOR_PRODUCTION = 0`. O gate permanece `INVENTORY_DOCUMENTED / DESTINATIONS_NOT_VERIFIED / GATE_OPEN` até confirmação de domínio canônico, titularidade, publicação e mapeamento individual aprovado para os itens do rodapé.
+
+**Próxima evidência exigida:** confirmação institucional dos domínios e da relação entre o site legado/indexado e as oito Homes; prova de URL e resposta atual por destino, com revisão de Produto, Brand e Legal nos pontos competentes. Nenhuma alteração no Replit ou em links de produto ocorreu nesta atualização.
