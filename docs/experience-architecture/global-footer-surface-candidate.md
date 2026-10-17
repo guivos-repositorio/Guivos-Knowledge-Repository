@@ -2,7 +2,7 @@
 id: GKR-UX-GLOBAL-FOOTER-SURFACE-001
 title: Superfície Transversal — Rodapé Global da Guivos
 status: proposed
-version: 0.2.8
+version: 0.2.9
 owner: Experience Architecture
 last_updated: 2026-10-16
 normative: false
@@ -343,3 +343,19 @@ O fundo branco foi reportado como observado nas capturas disponíveis, **sem hom
 - Conteúdos legais, informação institucional obrigatória e mercados/idiomas ativos.
 
 Estas decisões devem ser resolvidas com responsáveis pertinentes e evidências, sem preencher lacunas com textos ou URLs fictícios.
+
+
+## 6.5. FTR-01 — matriz de decisões de hierarquia pendentes (16/10/2026)
+
+**Natureza:** reconciliação de decisões ainda abertas após FTR-01/D1 (posição do Mapa) e FTR-01/D2 (regra de variantes). O aceite desses dois recortes **não encerra o gate FTR-01** e não substitui autoridade visual `GKR-UX-GLOBAL-FOOTER-001 v1.0.0`. Esta matriz oferece opções verificáveis a Design/Brand/Produto sem adjudicar a decisão por inferência.
+
+| Decisão específica | Base já aceita | Questão ainda aberta | Critério para encerramento |
+|---|---|---|---|
+| **FTR-01/D3 — Hierarquia editorial transversal** | Quatro blocos da referência: marca; `Explore o ecossistema`, `Guivos`, `Ajuda`; `Receba novidades` e faixa jurídica; `#FFFFFF`, Goldplay e tokens oficiais | Como acomodar o item adicional Mapa após os oito destinos sem desfigurar respiro, alinhamento, diferenciação visual e prioridade do bloco de novidades? | Comparativo visual identificado com a referência; deliberação Brand/Design/Produto sobre a variação, sem alterar cópia aprovada por silêncio |
+| **FTR-01/D4 — Indisponibilidade editorial do Mapa** | D1 fixa a posição final de `Explore o ecossistema`; FTR-02 não dispõe de URL oficial verificada | Definir se e como exibir o rótulo informativo enquanto o destino está ausente, distinguindo protótipo de produção | Decisão contextual de navegação e contrato de estado; nunca usar href `#`, link quebrado nem indicar serviço em operação |
+| **FTR-01/D5 — Exceções por superfície** | D2 admite `full` nas oito Homes, `compact` somente em páginas internas públicas justificadas e `minimal` em fluxos sensíveis contratados | Há alguma rota real que justifique exceção? Qual a diferença admitida, sobretudo para `Receba novidades`? | Lista de rotas reais, justificativa, itens preservados/alterados e autorização expressa por contexto; até lá, **nenhuma exceção aprovada** |
+| **FTR-01/D6 — Elementos de iteração visual posterior** | Referência normativa de 14/10 inclui assinatura, conteúdos, formulário, sociais e área jurídica | A composição posterior de botão `Obter o app`/QR dispõe de imagem aprovada identificada e destino oficial? Deverá entrar na referência ou permanecer demonstração? | Fonte visual datada, análise de autoridade da variante, decisão editorial e evidência de URLs oficiais antes de eventual ativação; não alterar referência de 14/10 automaticamente |
+
+**Fora do FTR-01:** executar reflow/zoom/acessibilidade (FTR-05), verificar URLs e titularidade (FTR-02), revisar legal/privacidade (FTR-04), implementar (FTR-06), testar (FTR-07) ou publicar (FTR-08). A inspeção secundária do Replit relatada em FTR-03 não autoriza alterar o aplicativo nesta fase.
+
+**Estado após esta reconciliação:** `FTR-01/D1 = POSITION_ACCEPTED`; `FTR-01/D2 = ARCHITECTURE_VARIANTS_ACCEPTED_SCOPED`; `FTR-01/D3..D6 = DECISION_REQUIRED`; `FTR-01 = PARTIAL_NOT_CLOSED`. A documentação torna o restante decidível, mas **não anuncia decisões que ainda não ocorreram**.

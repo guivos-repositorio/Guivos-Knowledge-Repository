@@ -2,7 +2,7 @@
 id: GKR-UX-GLOBAL-FOOTER-FTR-TRACKER-001
 title: Rodapé Global — Quadro de Controle de Gates FTR-01 a FTR-08
 status: proposed
-version: 0.1.8
+version: 0.1.9
 owner: Experience Architecture
 last_updated: 2026-10-16
 normative: false
@@ -30,7 +30,7 @@ Ler primeiro:
 
 | Gate | Evidência documental atual | Pendência material / comprovação de encerramento | Responsabilidade de validação (função, não pessoa designada) | Estado |
 |---|---|---|---|---|
-| **FTR-01** — Arquitetura e módulos | R01–R06/R05A reconciliados; D1 aceita posição do Mapa após oito destinos; D2 aceito padrão `full` responsivo, com `compact` contextual e `minimal` excepcional | Revisão da hierarquia e registro de exceções por superfície, sem omitir `Receba novidades` nem criar URLs | Decisão de produto/experiência com revisão Brand/Design | **PARTIAL_NOT_CLOSED** |
+| **FTR-01** — Arquitetura e módulos | R01–R06/R05A reconciliados; D1 aceita posição do Mapa após oito destinos; D2 aceito padrão `full` responsivo, com `compact` contextual e `minimal` excepcional | Decisões D3 (hierarquia), D4 (Mapa indisponível), D5 (exceções por rota) e D6 (eventual app/QR) descritas na [arquitetura candidata](global-footer-surface-candidate.md), ainda sem deliberação competente | Decisão de produto/experiência com revisão Brand/Design | **PARTIAL_NOT_CLOSED** |
 | **FTR-02** — Destinos reais | [Inventário editorial FTR-02](global-footer-ftr02-destination-inventory.md) registrado: 9 explorações (incluindo Mapa), 4 institucionais, 5 ajudas, 2 jurídicos inferiores e 6 ícones sociais; FTR-02/D1: `guivos.com` aprovado como domínio global principal pretendido e `guivos.us` como domínio potencial por país (16/10/2026), sem destinos públicos individuais verificados | Inventário por link: rótulo, URL, dono, disponibilidade e resultado de teste; política de ausência de destino, sobretudo Mapa | Responsável pelo destino/produto e navegação | **DOMAIN_ROLE_DECIDED / DESTINATIONS_NOT_VERIFIED** |
 | **FTR-03** — Coerência das oito Homes | 8/8 Masters reconciliados documentalmente; inspeção secundária do Replit relata 2 Homes com rota, divergências visuais/estruturais e seis sem Home própria naquele app | Capturas primárias versionadas da área final em desktop/mobile, por Home; avaliação Brand/Design, divergências e desfecho 8/8; não contar fallback nem relato de agente como homologação | Brand/Design e responsável pela Home | **OPEN_WITH_REPORTED_NONCONFORMITIES** |
 | **FTR-04** — Legal/Privacidade | [Matriz de revisão FTR-04](global-footer-ftr04-legal-privacy-review.md) documentada: identificação, links legais, canais, novidades e eventual app/QR | Validar dados institucionais, URLs, finalidade/base legal, consentimento quando aplicável, política, canais e fluxo de novidades | Legal/Privacidade e donos dos canais | **MATRIX_DOCUMENTED / LEGAL_PRIVACY_REVIEW_NOT_ADJUDICATED** |
