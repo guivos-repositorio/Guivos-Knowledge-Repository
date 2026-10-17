@@ -2,7 +2,7 @@
 id: GKR-UX-GLOBAL-FOOTER-SURFACE-001
 title: Superfície Transversal — Rodapé Global da Guivos
 status: proposed
-version: 0.2.11
+version: 0.2.12
 owner: Experience Architecture
 last_updated: 2026-10-16
 normative: false
@@ -407,3 +407,25 @@ Aprovar **somente o princípio de hierarquia**: identidade Guivos → três grup
 | **Produção após destino homologado** | Habilitar o link somente após aprovação de arquitetura da página, URL real, resposta pública, pertinência de conteúdo e testes de navegação | FTR-02, FTR-05 e FTR-07 continuam independentes; nenhum caminho é presumido |
 
 **Estado de decisão:** `FTR-01/D4 = UNAVAILABLE_DESTINATION_POLICY_ACCEPTED_SCOPED`. Mantêm-se `FTR-01/D1 = POSITION_ACCEPTED`, `FTR-01/D2 = ARCHITECTURE_VARIANTS_ACCEPTED_SCOPED`, `FTR-01/D3 = PROPOSED_NOT_ACCEPTED`, `FTR-01/D5..D6 = DECISION_REQUIRED`; **`FTR-01 = PARTIAL_NOT_CLOSED`**. A presente decisão não adjudica a imagem da Home, aprova URL fictícia, encerra gate de publicação ou modifica Replit.
+
+
+## 6.8. FTR-01/D5 — proposta de exceções por superfície (16/10/2026)
+
+**Natureza:** contrato de elegibilidade candidato, `FTR-01/D5 = PROPOSED_NOT_ACCEPTED`, para evitar que a arquitetura de variantes aprovada em D2 seja tratada como permissão indiscriminada para reduzir o rodapé. **Nenhuma rota é declarada exceção autorizada** por este texto.
+
+| Contexto de superfície | Variante-base | Condição para exceção | Preservação obrigatória |
+|---|---|---|---|
+| **Oito Homes públicas (Pessoa, Organização, Coletivo, Travel, Business, Media, Intelligence, Ads)** | `full` responsivo | **Não há exceção automática:** somente ato próprio que revise explicitamente a decisão D2 | Marca, três grupos de navegação, `Receba novidades`, sociais, informações legais, identidade e assinaturas aprovadas |
+| **Páginas internas públicas informacionais** | `full` responsivo como referência; `compact` elegível | Rota real identificada, restrição de contexto demonstrada, comparação visual e justificativa submetidas a Brand/Design/Produto | Identidade reconhecível, caminhos essenciais, acesso a ajuda e políticas, finalidade transparente dos dados e conteúdo não eliminado por conveniência |
+| **Fluxos sensíveis, autenticados, de indisponibilidade ou transacionais restritos** | Contrato contextual específico; `minimal` apenas elegível | Fluxo e risco documentados, fronteiras de navegação/segurança, autorização funcional e revisão jurídica quando aplicável | Identificação, ajuda apropriada, deveres legais e privacidade, sem atribuir ao usuário consentimento tácito |
+| **Mobile, tablet e zoom em qualquer superfície** | Reflow da variante da superfície, não promoção automática a `compact` ou `minimal` | Ensaios de legibilidade, foco, teclado, leitor de tela e orientação do FTR-05/07 | Todos os conteúdos validados que forem aplicáveis à superfície; não esconder a seção `Receba novidades` automaticamente |
+
+### Registro obrigatório de cada exceção futura
+
+Cada proposta deverá preencher **identificador da rota real**, URL/ambiente de referência, finalidade e público da superfície, variante `full` de comparação, justificativa de diferença, itens preservados e deslocados, impactos em `Receba novidades`/consentimento/social, impactos legais/de acessibilidade, evidência visual versionada, responsável pela decisão, deliberação e plano de testes. **Sem esses campos, a variante permanece apenas hipótese.**
+
+### Regra de não desvio
+
+Exceção de rodapé não pode converter a Home pública em fluxo restrito, omitir avisos legais pertinentes, mascarar formulário sem integração, fabricar link do Mapa ou inserir QR/App como funcionalidade lançada. Diferenças de densidade visual não mudam automaticamente a marca, ordem editorial ou referência aprovada em 14/10. Breakpoints fixos dependem de testes reais. Este contrato não substitui FTR-04/05/06/07/08.
+
+**Proposta para decisão posterior:** reconhecer o **processo de autorização por rota** acima, sem aprovar qualquer exceção concreta no momento. Até assentimento específico, `FTR-01/D5 = PROPOSED_NOT_ACCEPTED` e `FTR-01 = PARTIAL_NOT_CLOSED`; D3 e D6 preservam suas pendências próprias. Nenhum trabalho no Replit.
