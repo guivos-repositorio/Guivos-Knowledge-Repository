@@ -2,9 +2,9 @@
 id: GKR-PLANS-COLLECTIVE-001
 title: Planos — Coletivos
 status: active
-version: 1.2.0
+version: 1.2.1
 owner: Guivos
-last_updated: 2026-10-03
+last_updated: 2026-10-17
 normative: false
 depends_on:
   - GEM-004-A1
@@ -143,3 +143,8 @@ Livre permanece gratuito. Mobiliza, Impacta e Rede admitem seleção **Mensal** 
 ## Estado comercial
 
 Os preços, benefícios e limites integram a baseline comercial de referência vigente. Cobrança e oferta pública permanecem sujeitas aos gates aplicáveis.
+
+
+## Regra candidata de galerias — direção do fundador de 17/10/2026
+
+O [Contrato de Perfis, Oportunidades, Galerias e Vigência](../experience-architecture/organizations-collectives-journey/profile-opportunity-media-lifecycle-contract.md) documenta a direção solicitada: plano **Livre** até **3 fotos na galeria do perfil** e **3 por oportunidade**; planos **Mobiliza, Impacta e Rede** até **9 fotos em cada galeria de perfil** e **9 por oportunidade**. O logo é ativo separado, com política específica pendente. Esta regra **ainda requer ratificação comercial/econômica** para ser baseline normativa, e não libera publicação ou upload em produção. A restrição já vigente de oportunidade paga no plano Livre permanece integral.
