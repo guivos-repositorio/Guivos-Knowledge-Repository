@@ -104,7 +104,7 @@ Segundo `GKR-BRAND-COLOR-PALETTE-001 v1.0.0` (**normative**):
 - Fotografias e vídeos reais mantêm cores naturais segundo exceção própria; ilustrações de UI obedecem à paleta.
 - Não distinguir séries ou estados apenas por cor; usar forma, padrão, texto e legenda.
 
-**Tipografia:** Goldplay conforme `GKR-BRAND-TYPOGRAPHY-001 v1.0.2`: H1 48/60 SemiBold; H2 40/44 SemiBold; H3 32/40 SemiBold; H4 24/30 Medium; Body 20/30 Regular; Body Small 16/25 Regular; Caption 12/18 Regular; Micro 10/15 Medium. Design escolhe hierarquia; não inventar token `Body Medium`. Não distribuir fontes neste handoff.
+**Tipografia:** Goldplay conforme `GKR-BRAND-TYPOGRAPHY-001 v1.0.2`: Display 60/60 SemiBold; H1 48/60 SemiBold; H2 40/44 SemiBold; H3 32/40 SemiBold; H4 24/30 Medium; Body 20/30 Regular; Body Small 16/25 Regular; Caption 12/18 Regular; Micro 10/15 Medium. Design escolhe hierarquia; não inventar token `Body Medium`. Não distribuir fontes neste handoff.
 
 ## 7. Responsividade
 
