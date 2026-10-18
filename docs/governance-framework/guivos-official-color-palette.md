@@ -2,7 +2,7 @@
 id: GKR-BRAND-COLOR-PALETTE-001
 title: Guivos — Paleta Oficial de Cores e Fundo Branco
 status: active
-version: 1.3.2
+version: 1.3.3
 owner: Guivos
 last_updated: 2026-10-18
 normative: true
@@ -40,6 +40,10 @@ Fonte primária: **Paleta de Cores.pdf**, enviada pelo fundador em 11/10/2026, p
 | Atenção leve e destaque editorial/promocional | **Yellow / Pink** | Não substituir laranja nos alertas funcionais nem verde nas confirmações |
 
 ### Aplicação obrigatória — abas de formulários
+
+> **Atualização específica aprovada pelo fundador em 18/10/2026 — prevalece sobre a preferência anterior de colorir somente o rótulo:** cada **aba/cartão de etapa inteiro** deverá indicar o estado com preenchimento semântico claro. **COMPLETA/PRONTA** → fundo **Green 2 `#D7FFEB`**; **PENDÊNCIAS** → fundo **Orange 2 `#FFEBE1`**. Não usar preenchimento rosa ou roxo para indicar conclusão. Títulos e status ficam em **Black 2 `#232323`**, acompanhados de sinal gráfico Green 4 `#18A15D` ou Orange 4 `#E04D02`, respectivamente. A seleção/aba ativa permanece identificável por **contorno/indicador contextual discreto** (Organização Purple 4 `#5D34A9`; Coletivo Pink 4 `#E84CAB`) e **não substitui o fundo semântico da etapa**. Etapas ainda não iniciadas podem permanecer em White/Gray. Essa regra de sinalização aplicada ao cartão inteiro vale para cadastros de perfis e oportunidades, em todos os participantes, desktop e mobile; cor não é o único meio de indicar estado. Validação de campos e navegação livre/résumé de rascunhos permanecem inalteradas. A superfície da página continua White `#FFFFFF`.
+
+
 
 - **Aba ativa**: destaque roxo da Guivos, independentemente de estar concluída ou pendente.
 - **Aba completa**: palavra `COMPLETA` legível em `#232323` associada a pequeno indicador `#18A15D`, ou texto verde somente quando o contraste real atender ao requisito; preenchimento interno verde claro `#D7FFEB` pode existir quando necessário, sem cobrir a seleção roxa.
