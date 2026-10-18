@@ -1,0 +1,204 @@
+---
+id: GKR-INTELLIGENCE-DASHBOARD-ORGANIZATION-DESIGN-CANDIDATE-001
+title: Dashboard Organização — Contrato Candidato de Design Analítico e Rastreabilidade
+status: draft
+version: 0.1.0
+owner: Guivos Intelligence Architecture / UX Design (proposto)
+last_updated: 2026-10-18
+normative: false
+maturity: candidate_pre_implementation_design_contract
+depends_on:
+  - GKR-INTELLIGENCE-DASHBOARD-KPI-001
+  - GKR-INTELLIGENCE-DASHBOARD-ORGANIZATION-001
+  - GKR-UX-ORGCOL-AUTH-JOBS-001
+  - GKR-UX-ORGCOL-AUTH-IA-001
+  - UXA-014
+  - UXA-019
+  - GEM-009-MEASUREMENT-CONTRACT-001
+---
+
+# Dashboard Organização — Contrato Candidato de Design Analítico e Rastreabilidade
+
+> **CANDIDATO / NÃO ADJUDICADO.** O ID e o ownership são provisórios, sujeitos ao registry. Este documento não autoriza Design final, protótipo, Replit, backend, dados reais, publicação, produção, RBAC ou exportação.
+
+## 1. Escopo, precedência e invariantes
+
+Este contrato candidato especifica apresentação, navegação analítica interna, rastreabilidade, acessibilidade e tratamento de estados do Dashboard Organização. Prevalecem o master global `GKR-INTELLIGENCE-DASHBOARD-KPI-001`, o Anexo C `GKR-INTELLIGENCE-DASHBOARD-ORGANIZATION-001` e, em conflito, a autoridade especializada mais restritiva.
+
+- Organização ≠ Coletivo ≠ Guivos Business; o Dashboard Coletivo será tratado em etapa independente posterior.
+- Dashboard Analytics ≠ Home ou Visão Geral autenticada ≠ fonte de verdade operacional.
+- Agrupamento de Analytics não cria `GKR-SURF-*` nem `GKR-TRN-*`.
+- Relação com Pessoa não autoriza divulgação de Journey individual.
+- Atividade ≠ evidência ≠ resultado ≠ impacto; correlação ≠ causalidade.
+- Plano pago ≠ legitimidade, relevância ou autoridade.
+- Os 39 KPIs permanecem `proposed / NOT_READY`. Design não promove estado nem inventa fonte, fórmula, preço, meta, threshold, entitlement ou permissão.
+- `REPLIT BUILD → NOT AUTHORIZED` neste ato.
+
+## 2. Contexto e navegação analítica
+
+Entrada candidata: contexto de Organização autenticada → Analytics → agrupamento visual interno. A troca de Organização, unidade ou papel revalida contexto, autoridade e dados, invalida filtros/caches não transportáveis e não exibe dados do contexto anterior.
+
+| Código visual provisório | Agrupamento interno | Família |
+|---|---|---|
+| ORG-AN-V01 | Visão Executiva | Composição transversal autorizada |
+| ORG-AN-V02 | Oportunidades e Programas | OPP |
+| ORG-AN-V03 | Participação | PAR |
+| ORG-AN-V04 | Relações Institucionais | REL |
+| ORG-AN-V05 | Evidências e Resultados | EVD |
+| ORG-AN-V06 | Economia | ECO |
+| ORG-AN-V07 | Planos e Capacidade | CAP |
+| ORG-AN-V08 | Território e Demografia | GEO |
+| ORG-AN-V09 | Qualidade dos Dados | DQ |
+
+São agrupamentos de consumo; nove itens não significam obrigatoriamente nove rotas ou novas superfícies canônicas. A Visão Executiva compõe leituras selecionadas, não um score geral.
+
+## 3. Envelope de visualização
+
+Cada visualização deverá identificar: `visual_id`, agrupamento, pergunta, `metric_id` ou contrato de composição, classe autorizada, população, unidade e granularidade, período e fuso, numerador e denominador quando aplicáveis, exclusões, fonte e versão, freshness, natureza e proveniência da evidência, política de acesso/supressão, filtros e drill-down, estados, claims permitidos/proibidos, acessibilidade, responsividade, owner, maturidade e aceite. Campo ainda indefinido deve permanecer pendente.
+
+| Representação | Uso candidato | Condição |
+|---|---|---|
+| Card | Contagem/taxa válida | Unidade, período e zero legitimamente medido |
+| Série temporal | Evolução | Comparabilidade e ruptura de série explícitas |
+| Barras | Distribuição por categoria | Denominador e supressão |
+| Funil/coortes | Etapas comparáveis | Mesma coorte, eventos e exclusões contratados |
+| Tabela | Objetos autorizados | Sem Journey privada individual |
+| Mapa | Cobertura/agregado territorial | Geografia legítima e threshold |
+| Grafo | Relações institucionais | Bilateralidade, proveniência e ausência de score implícito |
+
+## 4. Rastreabilidade integral dos 39 KPIs do Anexo C
+
+Cada associação abaixo é uma **proposta de visualização**, não aprovação operacional, semântica ou técnica. V01 pode consumir composições desses IDs quando autorizadas.
+
+| KPI | Agrupamento | Nome | Representação candidata | Gate material | Estado |
+|---|---|---|---|---|---|
+| ORG-KPI-OPP-001 | V02 | Oportunidades válidas | card/série | estado e fonte | proposed / NOT_READY |
+| ORG-KPI-OPP-002 | V02 | Oportunidades ativas | card/linha | estado ativo e janela | proposed / NOT_READY |
+| ORG-KPI-OPP-003 | V02 | Publicadas no período | barra/linha | evento de publicação | proposed / NOT_READY |
+| ORG-KPI-OPP-004 | V02 | Encerradas no período | série/tabela | evento de encerramento | proposed / NOT_READY |
+| ORG-KPI-OPP-005 | V02 | Programas/iniciativas ativos | card/barras | taxonomia e lifecycle | proposed / NOT_READY |
+| ORG-KPI-OPP-006 | V02 | Distribuição por Domínio de Evolução | barras | vínculo JED e denominador | proposed / NOT_READY |
+| ORG-KPI-PAR-001 | V03 | Pessoas elegíveis | card/coorte | elegibilidade e disclosure | proposed / NOT_READY |
+| ORG-KPI-PAR-002 | V03 | Inscrições/participações válidas | linha/barras | taxonomia de eventos | proposed / NOT_READY |
+| ORG-KPI-PAR-003 | V03 | Participantes únicos | card/série | deduplicação e proteção | proposed / NOT_READY |
+| ORG-KPI-PAR-004 | V03 | Taxa de participação | taxa/série | numerador e denominador | proposed / NOT_READY |
+| ORG-KPI-PAR-005 | V03 | Participação por oportunidade/programa | barras/tabela | escopo e disclosure | proposed / NOT_READY |
+| ORG-KPI-PAR-006 | V03 | Cadastros válidos relacionados | card/tabela | semântica de cadastro | proposed / NOT_READY |
+| ORG-KPI-REL-001 | V04 | Relações ativas | card/série | UXA-019 e lifecycle | proposed / NOT_READY |
+| ORG-KPI-REL-002 | V04 | Relações por contraparte/tipo | barras | taxonomia e disclosure | proposed / NOT_READY |
+| ORG-KPI-REL-003 | V04 | Propostas de relação abertas | card/tabela | estado bilateral | proposed / NOT_READY |
+| ORG-KPI-REL-004 | V04 | Relações em revisão | card/tabela | estado de revisão | proposed / NOT_READY |
+| ORG-KPI-REL-005 | V04 | Relações pausadas/encerradas no período | série | eventos e período | proposed / NOT_READY |
+| ORG-KPI-EVD-001 | V05 | Responsabilidades abertas | card/tabela | estado e fonte | proposed / NOT_READY |
+| ORG-KPI-EVD-002 | V05 | Responsabilidades vencendo | faixas/tabela | janela de vencimento | proposed / NOT_READY |
+| ORG-KPI-EVD-003 | V05 | Compromissos concluídos | card/série | conclusão e evidência | proposed / NOT_READY |
+| ORG-KPI-EVD-004 | V05 | Evidências registradas | série/tabela | validade e proveniência | proposed / NOT_READY |
+| ORG-KPI-EVD-005 | V05 | Resultados autorizados | série/tabela | claim/evidence | proposed / NOT_READY |
+| ORG-KPI-EVD-006 | V05 | Itens sem evidência suficiente | card/barras | suficiência de evidência | proposed / NOT_READY |
+| ORG-KPI-ECO-001 | V06 | Transações econômicas autorizadas | card/série | domínio e GEM-009 | proposed / NOT_READY |
+| ORG-KPI-ECO-002 | V06 | Valor econômico autorizado | valor/série | reconhecimento GEM-009 | proposed / NOT_READY |
+| ORG-KPI-ECO-003 | V06 | Vendas elegíveis | card/barras | semântica de venda | proposed / NOT_READY |
+| ORG-KPI-ECO-004 | V06 | Valor de vendas elegíveis | série/barras | ECO-003 e GEM-009 | proposed / NOT_READY |
+| ORG-KPI-CAP-001 | V07 | Plano institucional vigente | cartão | fonte e entitlement | proposed / NOT_READY |
+| ORG-KPI-CAP-002 | V07 | Uso de capacidade | barra | ciclo e contrato | proposed / NOT_READY |
+| ORG-KPI-CAP-003 | V07 | Capacidade disponível | barra/valor | saldo e contrato | proposed / NOT_READY |
+| ORG-KPI-CAP-004 | V07 | Eventos de alteração de plano | eventos | lifecycle confirmado | proposed / NOT_READY |
+| ORG-KPI-GEO-001 | V08 | Distribuição territorial autorizada | mapa/barras | geografia e supressão | proposed / NOT_READY |
+| ORG-KPI-GEO-002 | V08 | Cobertura territorial de oportunidades | mapa/barras | geografia dos objetos | proposed / NOT_READY |
+| ORG-KPI-GEO-003 | V08 | Perfil demográfico agregado autorizado | barras | finalidade e thresholds | proposed / NOT_READY |
+| ORG-KPI-DQ-001 | V09 | Freshness compliance | percentual | SLA e freshness | proposed / NOT_READY |
+| ORG-KPI-DQ-002 | V09 | Indicadores indisponíveis | card/lista | registry de disponibilidade | proposed / NOT_READY |
+| ORG-KPI-DQ-003 | V09 | Supressões de disclosure | contagem protegida | política de disclosure | proposed / NOT_READY |
+| ORG-KPI-DQ-004 | V09 | Eventos rejeitados | barras/série | validação | proposed / NOT_READY |
+| ORG-KPI-DQ-005 | V09 | Completude de proveniência | percentual | proveniência | proposed / NOT_READY |
+
+## 5. Reconciliação das 14 leituras complementares
+
+São marcadores de discussão não canônicos, não novos IDs de produção.
+
+| Referência | Leitura | Destino | Natureza e pendência |
+|---|---|---|---|
+| ORG-OPP-C01 | Crescimento de oportunidades | V02 | Derivação temporal OPP-001 |
+| ORG-OPP-C02 | Continuidade de programas | V02 | Refinamento OPP-005 |
+| ORG-PAR-C01 | Manifestação para inscrição | V03 | Composição por coorte; contrato pendente |
+| ORG-PAR-C02 | Participação efetiva | V03 | Refinamento PAR-002/004 |
+| ORG-PAR-C03 | Conclusão sustentada por evidência | V03/V05 | Composição PAR+EVD |
+| ORG-REL-C01 | Relações ativas | V04 | Duplicidade de REL-001: não criar KPI |
+| ORG-REL-C02 | Colaboração com entrega | V04/V05 | Composição REL+EVD |
+| ORG-EVD-C01 | Cobertura de evidências | V05 | Derivação EVD; denominador pendente |
+| ORG-EVD-C02 | Evolução de resultados | V05 | Comparação EVD-005 |
+| ORG-CAP-C01 | Utilização de capacidade | V07 | Sobreposição CAP-002: não criar KPI |
+| ORG-GEO-C01 | Cobertura territorial | V08 | Refinamento GEO-002 |
+| ORG-GEO-C02 | Lacunas de oferta | V02/V08 | Demanda agregada autorizada; risco de inferência |
+| ORG-ECO-C01 | Sustentabilidade econômica | V06 | GEM-009 e fontes pendentes |
+| ORG-DQ-C01 | Métricas confiáveis | V09 | Composição DQ-001/002/005 |
+
+## 6. Filtros, drill-down e isolamento
+
+Globais candidatos: período, comparação e organização/unidade autorizada. Locais candidatos: objeto, programa, estado, domínio JED aplicável, contraparte, território, plano/ciclo, natureza de evidência e classe de resultado. Todos apenas restringem o access scope.
+
+N0 organização/unidade autorizada → N1 família → N2 objeto/período/segmento autorizado → N3 objeto operacional ou relação autorizada. Pessoa individual não é nível padrão. Composição de filtros e exportação não podem contornar supressão, inclusive reidentificação por diferenças entre recortes. Backend/serving futuro deverá impor a política; esconder informação no cliente não basta.
+
+## 7. Estados obrigatórios
+
+| Estado | Comportamento |
+|---|---|
+| AVAILABLE | Exibir dado autorizado, unidade, período e proveniência |
+| LOADING | Carregamento sem valor fabricado |
+| NO_DATA | Sem registros utilizáveis, diferente de zero |
+| INSUFFICIENT_DATA | Base insuficiente, sem interpretação indevida |
+| SUPPRESSED_BY_POLICY | Valor protegido, sem revelar faixa reidentificável |
+| SOURCE_DELAYED | Atraso, com tratamento conforme contrato de freshness |
+| NOT_ENTITLED | Indisponibilidade por autorização/capacidade, não erro técnico |
+| ERROR | Mensagem segura e recuperação |
+
+Cada card/série em uma composição preserva estado próprio; a seção não simula completude.
+
+## 8. Identidade visual e acessibilidade
+
+Referências visuais preliminares: fundo `#FFFFFF`, borda estrutural `#E3E3E3`, alternativa suave `#F3F3F3` e Purple 4 `#5D34A9` para contexto Organização, subordinadas ao Design System oficial. Tipografia e tokens definitivos devem ser consumidos de sua autoridade vigente. Cores isoladas não podem ser a única distinção entre séries e estados.
+
+Desktop permite comparações lado a lado; tablet reduz colunas; mobile prioriza leitura vertical e alternativa acessível às tabelas/gráficos. As experiências exigem navegação por teclado, foco visível, contraste, textos e explicações acessíveis sem depender exclusivamente de tooltip. Fixtures devem exibir **DADOS FICTÍCIOS / DEMONSTRAÇÃO**.
+
+## 9. Limites de engenharia
+
+Cadeia conceitual: fonte autorizada → agregação/Graph/Intelligence conforme domínio → contrato KPI → serving com políticas → dashboard → usuário autorizado. Este contrato não define tecnologias físicas, endpoints, schemas, ingestão, API ou RBAC. Adaptadores de mock e real devem permanecer separados se autorizados futuramente. Dados reais, backend, exportações e Replit permanecem não autorizados por este contrato.
+
+## 10. Gates herdados, sem promoção
+
+| Gate | Estado | Evidência pendente |
+|---|---|---|
+| G-ORG-01 | UNRESOLVED | Consumidor × KPI × finalidade × disclosure |
+| G-ORG-02 | UNRESOLVED | Estados/eventos/coortes/janelas/deduplicação/denominadores |
+| G-ORG-03 | SOURCE_PENDING | Fonte, proveniência, freshness e qualidade |
+| G-ORG-04 | UNRESOLVED | Bilateralidade UXA-019 e exposição de relações |
+| G-ORG-05 | BLOCKED | GEM-009, economia, plano e entitlements |
+| G-ORG-06 | UNRESOLVED | Reconciliação e contratos dos 39 KPIs |
+| G-ORG-07 | NOT_AUTHORIZED | Serving, RBAC, Design final e build |
+
+### Checklist de revisão antes de merge
+
+- [ ] Validar ID provisório, ownership, versão e local no registry.
+- [ ] Validar os nove agrupamentos perante IA/navegação autenticada/Surface Registry.
+- [ ] Auditar os 39 vínculos KPI → visualização e os 14 refinamentos.
+- [ ] Validar disclosure, filtros, mapas, coortes e grafos.
+- [ ] Conciliar cores, tipografia, focus states e acessibilidade.
+- [ ] Corrigir separadamente divergência histórica Anexo C: cabeçalho v0.1.2 × seção 24 v0.1.1.
+- [ ] Revisar autoridades de UX, inclusive documentos que ainda constam draft.
+- [ ] Validar semantic/mechanical gates e revisão humana antes de eventual merge.
+- [ ] Não converter merge documental em autorização automática de implementação.
+
+## 11. Estado final
+
+```text
+DOCUMENT STATUS → DRAFT / NOT ADJUDICATED
+INTERNAL VISUAL GROUPS → 9 (NOT GKR-SURF)
+EXISTING KPI IDS → 39 / ALL proposed / NOT_READY
+EXTRA ANALYTICAL CANDIDATES → 14 / NON-CANONICAL
+DATA STATES → 8 PRESERVED
+G-ORG-01..07 → UNCHANGED
+REAL DATA / API / RBAC / EXPORT / REPLIT BUILD → NOT AUTHORIZED
+ORGANIZATION FIRST → COLLECTIVE DEFERRED
+```
+
+Fontes: `docs/intelligence-architecture/dashboards-kpis-analytics-master-specification.md`, `docs/intelligence-architecture/dashboard-organization-master-specification.md`, `docs/experience-architecture/organizations-collectives-authenticated-navigation-materialization.md`, `docs/experience-architecture/organizations-collectives-authenticated-actors-authorities-and-jobs.md`, `docs/experience-architecture/organizations-collectives-journey/ux-ui-orchestration-master.md` (draft consultado) e `docs/economic-model/gem-009-measurement-contract.md` (draft consultado).
