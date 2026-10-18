@@ -2,7 +2,7 @@
 id: GKR-BRAND-COLOR-PALETTE-001
 title: Guivos — Paleta Oficial de Cores e Fundo Branco
 status: active
-version: 1.2.1
+version: 1.3.0
 owner: Guivos
 last_updated: 2026-10-18
 normative: true
@@ -32,8 +32,8 @@ Fonte primária: **Paleta de Cores.pdf**, enviada pelo fundador em 11/10/2026, p
 
 | Situação | Família oficial | Tokens indicados / limite |
 |---|---|---|
-| Completa, sucesso, confirmação e disponibilidade | **Green** | `Green 4 #18A15D` para indicação textual quando contraste adequado; `Green 2 #D7FFEB` para superfície interna leve; demais verdes apenas conforme contraste |
-| Pendências, erro de preenchimento, alerta e urgência | **Orange** | `Orange 4 #E04D02` para sinalização textual quando contraste adequado; `Orange 2 #FFEBE1` para superfície interna leve; **vermelho não é cor da paleta** |
+| Completa, sucesso, confirmação e disponibilidade | **Green** | `Green 4 #18A15D` para marca visual/indicador ou texto grande, não para texto pequeno sobre branco; `Green 2 #D7FFEB` para superfície interna leve; demais verdes apenas conforme contraste |
+| Pendências, erro de preenchimento, alerta e urgência | **Orange** | `Orange 4 #E04D02` para marca visual/indicador ou texto grande, não para texto pequeno sobre branco; `Orange 2 #FFEBE1` para superfície interna leve; **vermelho não é cor da paleta** |
 | Orientação e informação não urgente | **Blue** | Azul oficial, com texto legível e contexto explícito |
 | Aba ativa, ação primária, seleção, navegação ativa | **Purple** | Roxo oficial como seleção independente de estado completa/pendente |
 | Superfícies, texto e bordas comuns | **Gray / Black** | Cores neutras oficiais, base de página sempre `#FFFFFF` |
@@ -42,8 +42,8 @@ Fonte primária: **Paleta de Cores.pdf**, enviada pelo fundador em 11/10/2026, p
 ### Aplicação obrigatória — abas de formulários
 
 - **Aba ativa**: destaque roxo da Guivos, independentemente de estar concluída ou pendente.
-- **Aba completa**: palavra `COMPLETA` e/ou pequeno indicador em verde oficial (recomendado `#18A15D` com contraste validado); preenchimento interno verde claro `#D7FFEB` pode existir quando necessário, sem cobrir a seleção roxa.
-- **Aba com pendências**: palavra `PENDÊNCIAS` e/ou pequeno indicador em laranja oficial (recomendado `#E04D02` com contraste validado); `#FFEBE1` pode ser usado como apoio interno discreto.
+- **Aba completa**: palavra `COMPLETA` legível em `#232323` associada a pequeno indicador `#18A15D`, ou texto verde somente quando o contraste real atender ao requisito; preenchimento interno verde claro `#D7FFEB` pode existir quando necessário, sem cobrir a seleção roxa.
+- **Aba com pendências**: palavra `PENDÊNCIAS` legível em `#232323` associada a pequeno indicador `#E04D02`, ou texto laranja somente quando o contraste real atender ao requisito; `#FFEBE1` pode ser usado como apoio interno discreto.
 - **Não iniciada**: neutros oficiais, com rótulo próprio; não presumir erro em aba ainda não preenchida quando o fluxo aceita rascunho.
 - **Bloqueada/indisponível**: neutros e explicação textual contextual; não atribuir automaticamente semântica de alerta.
 - **Critério de equilíbrio**: preferir colorir **somente o rótulo de status** (eventualmente pequeno indicador), sem transformar todas as abas em grandes cartões coloridos. Status legível sem depender exclusivamente da cor; foco e acesso por teclado preservados.
@@ -139,6 +139,58 @@ O **amarelo não deve ser omitido do sistema de identidade visual**. Os três to
 | Accent | Yellow / Pink | Campanhas, badges e momentos de destaque controlado |
 
 Gray 1/2 podem compor superfícies **internas**, nunca o canvas base de página. `White #FFFFFF` continua obrigatório em todas as telas.
+
+## Auditoria completa por família — cores neutras, acentos e feedback (18/10/2026)
+
+**Base documental:** *Paleta de Cores.pdf*, *Foundations / Colors / Cores*, página 1, coleção `guivos.com.br`, 30 variáveis primitivas. Reafirmação do fundador: a UX deve aproveitar **todas as famílias de modo contextual**, sobretudo os neutros `Gray/Black` indispensáveis à estrutura; não basta enfatizar roxo/rosa nem apenas os status. A tabela estabelece orientações de aplicação, **não** cria token fora do PDF.
+
+| Família | Tokens oficiais | Semântica da fonte | Aplicação em componentes |
+|---|---|---|---|
+| **Gray** | `Gray 1 #F9F9F9`; `Gray 2 #F3F3F3`; `Gray 3 #E3E3E3`; `Gray 4 #A1A1A1`; `White #FFFFFF` | Base neutra, superfícies, bordas e texto secundário | Canvas **White**; Gray 1 para cards/superfícies internas leves, Gray 2 para agrupamentos internos, Gray 3 para divisórias e bordas, Gray 4 para elementos secundários/desabilitados **sem depender dele para textos pequenos importantes** |
+| **Black** | `Black 1 #292929`; `Black 2 #232323` | Texto principal e alto contraste | Títulos, textos corridos, rótulos, dados e estados de alto valor informativo; Black 2 como fallback seguro para textos pequenos sobre branco e sobre fundos claros da paleta |
+| **Purple** | `#7D55C6`; `#EDE9FE`; `#B1A1E4`; `#5D34A9` | Marca, seleção e ação primária | Identidade Pessoa (Purple 1–4), identidade Organização (Purple 4), ações/seleção da hierarquia aplicável, foco consistente |
+| **Yellow** | `#FDDC00`; `#FFFCDD`; `#FFF089` | Destaque, atenção leve, energia visual | Acentos, destaque editorial e superfície interna leve; não substitui alerta laranja; textos escuros quando sobre amarelo claro |
+| **Pink** | `#F177C5`; `#FBE8F5`; `#F7AADD`; `#E84CAB` | Acentos promocionais e editoriais; **Pink 4 também identifica Coletivo por decisão específica** | Coletivo reconhecível sem transformar toda a página em rosa; Pink 2 para superfície interna quando apropriado; evitar texto pequeno branco sobre Pink 4 |
+| **Orange** | `#FF5600`; `#FFEBE1`; `#FFB996`; `#E04D02` | Alerta, urgência e comunicação quente | Erro/pendência com marca visual Orange 4 e texto legível; Orange 2 em apoio sutil; nenhuma cor vermelha externa |
+| **Green** | `#26CF7C`; `#D7FFEB`; `#BCF6D8`; `#18A15D` | Sucesso, confirmação, disponibilidade | Completa/sucesso com indicador Green 4 e texto contrastante; Green 2/3 em apoio sutil; não usar como confirmação onde ainda houver pendência |
+| **Blue** | `#21D9EF`; `#DEFDFF`; `#66EDFA`; `#0EB2C6` | Informação, apoio e orientação | Dicas de ajuda, informação contextual e orientação não urgente; Blue 2 em fundo interno e texto contrastante |
+
+### Composição por camadas (não criar uma nova paleta)
+
+1. **Estrutura:** `White #FFFFFF` para página, `Black 1/2` para títulos e corpo, `Gray 1/2` para superfícies internas e `Gray 3` para bordas e separadores. Gray 4 pode indicar detalhes secundários ou indisponibilidade, com leitura acessível; não substituir automaticamente todos os textos auxiliares por Gray 4.
+2. **Participante ativo:** Purple 4 para Organização; Pink 4 para Coletivo; conjunto Purple 1–4 para Pessoa, sempre com identificação escrita do contexto. A cor predominante é **um acento contextual**, não uma autorização para pintar os fundos completos ou substituir texto negro estrutural.
+3. **Semântica funcional:** Green para concluído, Orange para erro/pendências, Blue para informação, Yellow para atenção leve, Pink/Yellow para acento editorial conforme uso; não inverter nem trocar papel funcional apenas para variar visualmente.
+4. **Estados:** ativa/selecionada com cor do contexto e foco; completa/pendência com indicador funcional discreto e texto contrastante; neutra/desabilitada com Gray/Black e explicação quando necessária. Hover/focus/disabled devem usar somente valores oficiais.
+5. **Imagens:** fotografias e vídeos reais mantêm suas cores naturais; as cores desenhadas pela interface ao redor continuam limitadas aos 30 tokens.
+
+### Critério obrigatório de contraste — evitar erro ao usar HEX semanticamente corretos
+
+O documento original exige contraste suficiente. A família semântica **não torna automaticamente qualquer combinação acessível**. Razões de contraste aproximadas calculadas para texto sobre `White #FFFFFF`:
+
+| Token no texto / branco | Contraste | Aplicação |
+|---|---:|---|
+| `Black 2 #232323` | **15,72:1** | Texto normal/pequeno seguro |
+| `Black 1 #292929` | **14,55:1** | Texto normal/pequeno seguro |
+| `Purple 4 #5D34A9` | **8,30:1** | Texto normal acessível |
+| `Purple 1 #7D55C6` | **5,27:1** | Texto normal acessível |
+| `Orange 4 #E04D02` | **4,01:1** | **Insuficiente para texto normal WCAG AA 4,5:1** sobre branco; adequado somente em usos que não dependam desse contraste para texto pequeno |
+| `Green 4 #18A15D` | **3,34:1** | **Insuficiente para texto normal WCAG AA** sobre branco |
+| `Pink 4 #E84CAB` | **3,47:1** | **Insuficiente para texto normal WCAG AA** sobre branco |
+| `Gray 4 #A1A1A1` | **2,58:1** | **Insuficiente para texto normal e como único indicador informacional essencial** sobre branco |
+
+**Padrão de remediação:** rótulos pequenos `COMPLETA` e `PENDÊNCIAS` devem priorizar texto `#232323` sobre fundo muito claro autorizado (`Green 2 #D7FFEB` ou `Orange 2 #FFEBE1`), acrescido de elemento funcional verde/laranja; não exigir texto verde/laranja em branco quando falha o contraste. Para navegação Coletivo em `Pink 4`, evitar texto branco pequeno, usar `Black 2` quando contraste suficiente, ou superfícies claras autorizadas. Manter o roxo da aba ativa sem sacrificar foco, teclado ou a indicação funcional.
+
+**Proibição expressa:** não solucionar contraste inventando um novo verde/laranja/rosa/cinza escuro; selecionar **outra combinação entre os mesmos 30 tokens** ou um recurso redundante de texto/forma. Conferir texto normal, texto grande, ícones informativos, bordas de componentes, hover, foco, erros, modal e gráfico individualmente; razões acima não substituem testes da combinação real de primeiro plano/fundo.
+
+### Critérios de aceite transversal
+
+- Inventário visual/CSS de cada tela e estado contendo **somente os 30 tokens**; zero vermelhos externos, cinzas padrão herdados, preto `#000000`, branco derivado ou tons interpolados não autorizados.
+- Fundo-base `#FFFFFF` em todas as jornadas; `Gray/Black` fazem a maior parte da estrutura da experiência.
+- Todos os **oito grupos cromáticos** usados segundo função (não é obrigatório forçar a presença das oito famílias em cada tela).
+- Organização/Coletivo/Pessoa distinguíveis pelo padrão contextual, **não apenas pela cor**.
+- Textos e controles atendem contraste para seu tamanho/função, sem criar novos HEX para corrigir problemas.
+- Abas e ações mantêm semântica, legibilidade e acessibilidade, sem afetar rascunho, navegação livre ou autorização de produção.
+- Auditar telas, componentes, CSS servido, ícones, estados, temas importados, gráficos e PDF/SVG desenhados para UI, quando aplicáveis.
 
 ## Variáveis primitivas de implementação
 
