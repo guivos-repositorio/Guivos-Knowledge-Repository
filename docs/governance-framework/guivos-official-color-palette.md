@@ -2,7 +2,7 @@
 id: GKR-BRAND-COLOR-PALETTE-001
 title: Guivos — Paleta Oficial de Cores e Fundo Branco
 status: active
-version: 1.1.0
+version: 1.2.0
 owner: Guivos
 last_updated: 2026-10-18
 normative: true
@@ -50,6 +50,37 @@ Fonte primária: **Paleta de Cores.pdf**, enviada pelo fundador em 11/10/2026, p
 - **Regras funcionais inalteradas**: livre navegação entre abas, salvamento de rascunho incompleto e validação de campos obrigatórios somente no envio definitivo. Cor não pode bloquear uma ação por si só.
 
 **Auditoria de implementação:** impedir vermelho inclusive em bibliotecas, CSS compilado, ícones, mensagens de validação, gráficos e efeitos; impedir cores interpoladas ou derivadas não pertencentes aos 30 valores; verificar estados default/hover/focus/disabled, mobile/desktop e contraste em uso. Fotografias reais podem manter suas cores naturais, como já dispõe a seção de regras obrigatórias. **Esta reafirmação não concede autorização financeira, de produção ou de novas funcionalidades.**
+
+## Identidade cromática por tipo de participante — decisão do fundador (17–18/10/2026)
+
+**Regra institucional aprovada de diferenciação visual dentro do ecossistema Guivos:** os participantes **Organização**, **Coletivo** e **Pessoa** têm identidades contextuais reconhecíveis pelos tokens já existentes na paleta, sem criar nova cor ou subidentidade gráfica independente.
+
+| Participante ativo | Cor(es) predominante(s) | Contrato de aplicação |
+|---|---|---|
+| **Organização** | **Purple 4 — `#5D34A9`** | Cor contextual predominante para navegação própria, identidade do ambiente, indicador de contexto e ações institucionais quando coerentes com a hierarquia |
+| **Coletivo** | **Pink 4 — `#E84CAB`** | Cor contextual predominante para navegação própria, identidade do ambiente, indicador de contexto e ações do Coletivo quando coerentes com a hierarquia |
+| **Pessoa** | Família Purple: **Purple 1 `#7D55C6`**, **Purple 2 `#EDE9FE`**, **Purple 3 `#B1A1E4`**, **Purple 4 `#5D34A9`** | Identidade da experiência da Pessoa orientada pelas cores principais da marca; a hierarquia de uso (primária, selecionada, apoio, superfície) deve preservar legibilidade |
+
+### Regras de precedência e consistência
+
+1. **Identidade do participante ≠ estado funcional.** A predominância roxa ou rosa identifica o **contexto de atuação**; não substitui **Green** para conclusão/sucesso, **Orange** para alerta/pendência, **Blue** para informação e neutros para leitura. Nenhuma dessas cores semânticas será recolorida para a cor do participante apenas por personalização.
+2. **Coletivo — exceção contextual explícita ao uso geral de Pink.** Embora a família Pink seja descrita na paleta primitiva como acento promocional/editorial, a decisão do fundador atribui especificamente **Pink 4 `#E84CAB`** também à identidade de contexto do Coletivo e à sua navegação. Isso **não** permite usar os outros tons rosa indiscriminadamente em alertas, sucessos ou informações, nem criar novas tonalidades.
+3. **Organização — Purple 4.** O uso de Purple 4 no contexto institucional não autoriza inferir que toda superfície, texto ou ícone deva ser roxo, nem afastar o fundo-base branco.
+4. **Pessoa — paleta Purple da marca.** Evitar distinguir a Pessoa somente por Purple 4, pois esta é também a cor predominante da Organização; combinar a hierarquia da família Purple, rótulos e elementos de contexto, preservando identidade visual da Pessoa.
+5. **Acesso com múltiplos participantes:** na troca efetiva de contexto, sinalizar de forma visível e acessível qual participante está ativo; não alterar permissões, vínculo ou identidade por mudança de cor. Exibir nome/tipo do participante e indicadores textuais, nunca depender **somente da cor** para distinguir Organização, Coletivo e Pessoa.
+6. **Base visual única:** canvas `#FFFFFF` em todas as páginas; componentes podem usar somente as outras cores primitivas oficiais conforme propósito. Áreas internas de fundo e bordas permanecem neutras onde a cor contextual prejudicaria legibilidade, acessibilidade ou clareza de hierarquia.
+7. **Design system transversal:** aplicar à navegação, cabeçalhos, seleção, botões contextuais, elementos de orientação e padrões reutilizáveis em Home, cadastro, jornadas autenticadas, mobile, web, Replit, produtos e superfícies futuras; preservar liberdade de composição do Design dentro destas regras, sem engessar layout.
+8. **Não criar cores por variação:** hover, foco, gradientes, overlays, transparência e estados devem reutilizar tokens existentes, sem produzir tons derivados. Fotografias/vídeos reais conservam suas cores naturais, conforme regra da paleta.
+
+### Testes mínimos por contexto
+
+- Entrar em **Organização**: identidade visual institucional distinguível usando `#5D34A9`, com sucesso em verde, alerta em laranja, informação em azul e canvas branco.
+- Entrar em **Coletivo**: identidade contextual distinguível usando `#E84CAB`, com as mesmas cores semânticas preservadas e contraste suficiente.
+- Entrar em **Pessoa**: identidade da marca com família Purple 1–4, sem copiar indiscriminadamente o estilo de Organização.
+- Navegar/trocar contexto: mesma semântica, identificação textual acessível, menu e permissões coerentes com o participante real.
+- Auditoria de toda UI: **0 cores de interface fora dos 30 tokens primitivos oficiais**; nenhuma cor fora de contexto, nenhuma dependência exclusiva de cor.
+
+**Estado:** `FOUNDER_PARTICIPANT_COLOR_DIRECTION_ACCEPTED / DESIGN_CONTEXT_AUTHORITY / PALETTE_30_ONLY / NO_PRODUCT_PERMISSION_CHANGE`.
 
 ## Paleta primitiva oficial — 30 tokens
 
