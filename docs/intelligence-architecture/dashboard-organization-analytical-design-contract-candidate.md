@@ -14,6 +14,7 @@ depends_on:
   - GKR-UX-ORGCOL-AUTH-IA-001
   - GKR-UX-ORGCOL-AUTH-NAV-MAT-001
   - GKR-BRAND-TYPOGRAPHY-001
+  - GKR-BRAND-COLOR-PALETTE-001
   - UXA-014
   - UXA-019
   - GEM-009-MEASUREMENT-CONTRACT-001
@@ -151,20 +152,22 @@ N0 organização/unidade autorizada → N1 família → N2 objeto/período/segme
 | INSUFFICIENT_DATA | Base insuficiente, sem interpretação indevida |
 | SUPPRESSED_BY_POLICY | Valor protegido, sem revelar faixa reidentificável |
 | SOURCE_DELAYED | Atraso, com tratamento conforme contrato de freshness |
-| NOT_ENTITLED | Indisponibilidade por autorização/capacidade, não erro técnico |
+| NOT_ENTITLED | Entitlement/capacidade contratual indisponível ou insuficiente, quando aplicável; nunca inferir falta de autoridade ou sugerir upgrade para dado protegido |
 | ERROR | Mensagem segura e recuperação |
+
+**Negativa de autorização** (papel, finalidade, participante, unidade ou disclosure) é resolvida no serving e/ou na navegação antes da renderização, sem exposição da métrica. Não corresponde a `NOT_ENTITLED` e não cria por inferência um nono estado do catálogo analítico do Anexo C. Exibir mensagem segura de acesso não autorizado somente quando a política permitir revelar a existência da funcionalidade, sem convite comercial, valor, metadado sensível ou detalhes do recorte protegido.
 
 Cada card/série em uma composição preserva estado próprio; a seção não simula completude.
 
 ## 8. Identidade visual e acessibilidade
 
-Referências visuais preliminares: fundo `#FFFFFF`, borda estrutural `#E3E3E3`, alternativa suave `#F3F3F3` e Purple 4 `#5D34A9` para contexto Organização, subordinadas ao Design System oficial. Tipografia e tokens definitivos devem ser consumidos de sua autoridade vigente. Cores isoladas não podem ser a única distinção entre séries e estados.
+**Obrigatório conforme `GKR-BRAND-COLOR-PALETTE-001 v1.0.0` (active/normative):** canvas/base de **todas** as páginas e viewports em `White #FFFFFF`; cores de UI (texto, ícones, botões, bordas, estados, séries de gráficos, mapas e nós/arestas de grafos) exclusivamente entre os **30 tokens hexadecimais oficiais**. Não gerar tonalidades derivadas, gradientes intermediários fora dos tokens, variantes automáticas de bibliotecas ou `rgba`/`hsla` que criem novas cores. Gray 3 `#E3E3E3`, Gray 2 `#F3F3F3` e Purple 4 `#5D34A9` são aplicações candidatas **dentro** da paleta obrigatória; apenas o mapeamento semântico, a composição e o layout estão sujeitos a Design. Fotografias/vídeos reais mantêm cores naturais segundo a exceção normativa. Todos os contrastes, estados de foco, legendas e visualizações exigem testes de acessibilidade e sinalização que não dependa apenas da cor.
 
 Desktop permite comparações lado a lado; tablet reduz colunas; mobile prioriza leitura vertical e alternativa acessível às tabelas/gráficos. As experiências exigem navegação por teclado, foco visível, contraste, textos e explicações acessíveis sem depender exclusivamente de tooltip. Fixtures devem exibir **DADOS FICTÍCIOS / DEMONSTRAÇÃO**.
 
 ## 8.1. Autoridade tipográfica e navegação
 
-A tipografia oficial é **Goldplay**, conforme `GKR-BRAND-TYPOGRAPHY-001 v1.0.2` (normative/current). Aplicar escala e regras da autoridade vigente; este documento não cria tokens tipográficos. As cores e bordas especificadas permanecem referências condicionais até conferência do Design System vigente.
+A tipografia oficial é **Goldplay**, conforme `GKR-BRAND-TYPOGRAPHY-001 v1.0.2` (normative/current). Aplicar escala e regras da autoridade vigente; este documento não cria tokens tipográficos. As **restrições cromáticas oficiais já são vinculantes** por `GKR-BRAND-COLOR-PALETTE-001 v1.0.0`; somente aplicação semântica de tokens, hierarquia e layout permanecem decisões de Design.
 
 O modelo `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.2` governa a navegação autenticada. Analytics é tratado aqui como entrada/capacidade candidata especializada, não como reclassificação automática de L2, GKR-SURF ou GKR-TRN. Qualquer vínculo efetivo ao menu existente depende de adjudicação da autoridade de navegação, preservando recontextualização de Organização/unidade/papel.
 
@@ -198,7 +201,7 @@ Cadeia conceitual: fonte autorizada → agregação/Graph/Intelligence conforme 
 - [ ] Validar os nove agrupamentos perante IA/navegação autenticada/Surface Registry.
 - [ ] Auditar os 39 vínculos KPI → visualização e os 14 refinamentos.
 - [ ] Validar disclosure, filtros, mapas, coortes e grafos.
-- [ ] Conciliar cores e focus states com Design System, e escala Goldplay com GKR-BRAND-TYPOGRAPHY-001.
+- [ ] Validar uso exclusivo dos 30 tokens da paleta normativa, fundo-base branco e focus states acessíveis; escala Goldplay conforme GKR-BRAND-TYPOGRAPHY-001.
 - [ ] Corrigir separadamente divergência histórica Anexo C: cabeçalho v0.1.2 × seção 24 v0.1.1.
 - [ ] Revisar autoridades de UX, inclusive documentos que ainda constam draft.
 - [ ] Validar semantic/mechanical gates e revisão humana antes de eventual merge.
