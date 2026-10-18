@@ -12,6 +12,8 @@ depends_on:
   - GKR-INTELLIGENCE-DASHBOARD-ORGANIZATION-001
   - GKR-UX-ORGCOL-AUTH-JOBS-001
   - GKR-UX-ORGCOL-AUTH-IA-001
+  - GKR-UX-ORGCOL-AUTH-NAV-MAT-001
+  - GKR-BRAND-TYPOGRAPHY-001
   - UXA-014
   - UXA-019
   - GEM-009-MEASUREMENT-CONTRACT-001
@@ -74,8 +76,8 @@ Cada associação abaixo é uma **proposta de visualização**, não aprovação
 |---|---|---|---|---|---|
 | ORG-KPI-OPP-001 | V02 | Oportunidades válidas | card/série | estado e fonte | proposed / NOT_READY |
 | ORG-KPI-OPP-002 | V02 | Oportunidades ativas | card/linha | estado ativo e janela | proposed / NOT_READY |
-| ORG-KPI-OPP-003 | V02 | Publicadas no período | barra/linha | evento de publicação | proposed / NOT_READY |
-| ORG-KPI-OPP-004 | V02 | Encerradas no período | série/tabela | evento de encerramento | proposed / NOT_READY |
+| ORG-KPI-OPP-003 | V02 | Oportunidades publicadas no período | barra/linha | evento de publicação | proposed / NOT_READY |
+| ORG-KPI-OPP-004 | V02 | Oportunidades encerradas | série/tabela | evento de encerramento | proposed / NOT_READY |
 | ORG-KPI-OPP-005 | V02 | Programas/iniciativas ativos | card/barras | taxonomia e lifecycle | proposed / NOT_READY |
 | ORG-KPI-OPP-006 | V02 | Distribuição por Domínio de Evolução | barras | vínculo JED e denominador | proposed / NOT_READY |
 | ORG-KPI-PAR-001 | V03 | Pessoas elegíveis | card/coorte | elegibilidade e disclosure | proposed / NOT_READY |
@@ -160,6 +162,20 @@ Referências visuais preliminares: fundo `#FFFFFF`, borda estrutural `#E3E3E3`, 
 
 Desktop permite comparações lado a lado; tablet reduz colunas; mobile prioriza leitura vertical e alternativa acessível às tabelas/gráficos. As experiências exigem navegação por teclado, foco visível, contraste, textos e explicações acessíveis sem depender exclusivamente de tooltip. Fixtures devem exibir **DADOS FICTÍCIOS / DEMONSTRAÇÃO**.
 
+## 8.1. Autoridade tipográfica e navegação
+
+A tipografia oficial é **Goldplay**, conforme `GKR-BRAND-TYPOGRAPHY-001 v1.0.2` (normative/current). Aplicar escala e regras da autoridade vigente; este documento não cria tokens tipográficos. As cores e bordas especificadas permanecem referências condicionais até conferência do Design System vigente.
+
+O modelo `GKR-UX-ORGCOL-AUTH-NAV-MAT-001 v1.0.2` governa a navegação autenticada. Analytics é tratado aqui como entrada/capacidade candidata especializada, não como reclassificação automática de L2, GKR-SURF ou GKR-TRN. Qualquer vínculo efetivo ao menu existente depende de adjudicação da autoridade de navegação, preservando recontextualização de Organização/unidade/papel.
+
+## 8.2. Proteção reforçada para análises e interação
+
+- Segmentação agregada não implica divulgação segura; exigir thresholds de proteção e avaliação de inferência por diferença entre filtros, séries e exportações.
+- Mapas territoriais e grafos institucionais devem oferecer alternativas textuais/tabelares acessíveis e não expor entidades/arestas sem autoridade aplicável.
+- Funis não podem misturar coortes, cadastros, manifestações, inscrições e participações sem definições de eventos e deduplicação.
+- O estado `SUPPRESSED_BY_POLICY` não pode revelar magnitude, faixa ou atributo sensível por tooltip ou rótulo.
+- Mensagens de `SOURCE_DELAYED`, `NO_DATA` e `INSUFFICIENT_DATA` permanecem distintas de zero real.
+
 ## 9. Limites de engenharia
 
 Cadeia conceitual: fonte autorizada → agregação/Graph/Intelligence conforme domínio → contrato KPI → serving com políticas → dashboard → usuário autorizado. Este contrato não define tecnologias físicas, endpoints, schemas, ingestão, API ou RBAC. Adaptadores de mock e real devem permanecer separados se autorizados futuramente. Dados reais, backend, exportações e Replit permanecem não autorizados por este contrato.
@@ -178,11 +194,11 @@ Cadeia conceitual: fonte autorizada → agregação/Graph/Intelligence conforme 
 
 ### Checklist de revisão antes de merge
 
-- [ ] Validar ID provisório, ownership, versão e local no registry.
+- [ ] Adjudicar ID provisório e ownership perante registry e autoridade de Intelligence/UX; até lá permanecem candidatos.
 - [ ] Validar os nove agrupamentos perante IA/navegação autenticada/Surface Registry.
 - [ ] Auditar os 39 vínculos KPI → visualização e os 14 refinamentos.
 - [ ] Validar disclosure, filtros, mapas, coortes e grafos.
-- [ ] Conciliar cores, tipografia, focus states e acessibilidade.
+- [ ] Conciliar cores e focus states com Design System, e escala Goldplay com GKR-BRAND-TYPOGRAPHY-001.
 - [ ] Corrigir separadamente divergência histórica Anexo C: cabeçalho v0.1.2 × seção 24 v0.1.1.
 - [ ] Revisar autoridades de UX, inclusive documentos que ainda constam draft.
 - [ ] Validar semantic/mechanical gates e revisão humana antes de eventual merge.
