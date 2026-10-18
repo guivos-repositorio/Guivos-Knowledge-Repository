@@ -2,7 +2,7 @@
 id: GKR-BRAND-COLOR-PALETTE-001
 title: Guivos — Paleta Oficial de Cores e Fundo Branco
 status: active
-version: 1.2.0
+version: 1.2.1
 owner: Guivos
 last_updated: 2026-10-18
 normative: true
@@ -71,6 +71,18 @@ Fonte primária: **Paleta de Cores.pdf**, enviada pelo fundador em 11/10/2026, p
 6. **Base visual única:** canvas `#FFFFFF` em todas as páginas; componentes podem usar somente as outras cores primitivas oficiais conforme propósito. Áreas internas de fundo e bordas permanecem neutras onde a cor contextual prejudicaria legibilidade, acessibilidade ou clareza de hierarquia.
 7. **Design system transversal:** aplicar à navegação, cabeçalhos, seleção, botões contextuais, elementos de orientação e padrões reutilizáveis em Home, cadastro, jornadas autenticadas, mobile, web, Replit, produtos e superfícies futuras; preservar liberdade de composição do Design dentro destas regras, sem engessar layout.
 8. **Não criar cores por variação:** hover, foco, gradientes, overlays, transparência e estados devem reutilizar tokens existentes, sem produzir tons derivados. Fotografias/vídeos reais conservam suas cores naturais, conforme regra da paleta.
+
+### Amarelo oficial — destaque, atenção leve e energia visual (confirmação do fundador, 18/10/2026)
+
+O **amarelo não deve ser omitido do sistema de identidade visual**. Os três tokens oficiais já constam da paleta primitiva e têm função própria:
+
+| Token | HEX | Aplicação contextual |
+|---|---|---|
+| **Yellow 1** | **`#FDDC00`** | Destaque de maior intensidade, ponto de energia visual e ênfase controlada |
+| **Yellow 2** | **`#FFFCDD`** | Fundo interno sutil de destaque e atenção leve |
+| **Yellow 3** | **`#FFF089`** | Destaque intermediário e apoio visual, com contraste validado |
+
+**Precedência:** amarelo sinaliza destaque ou atenção **leve**, não deve substituir `Orange` nos **alertas, erros e pendências**, `Green` nos **sucessos e confirmações**, `Blue` nas **informações de orientação**, nem as identidades predominantes `Purple 4` da Organização, `Pink 4` do Coletivo e família `Purple 1–4` da Pessoa. Pode ser usado em componentes de qualquer participante quando sua finalidade semântica justificar, sem criar nova identidade cromática por participante. Manter canvas de página `#FFFFFF`, valores exclusivamente da paleta, leitura acessível e uso moderado para preservar hierarquia.
 
 ### Testes mínimos por contexto
 
