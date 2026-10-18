@@ -2,9 +2,9 @@
 id: GKR-BRAND-COLOR-PALETTE-001
 title: Guivos — Paleta Oficial de Cores e Fundo Branco
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Guivos
-last_updated: 2026-10-11
+last_updated: 2026-10-18
 normative: true
 ---
 
@@ -23,6 +23,33 @@ Fonte primária: **Paleta de Cores.pdf**, enviada pelo fundador em 11/10/2026, p
 5. **Gráficos e Graph Analytics:** componentes analíticos, grafos, matrizes e mapas de calor usam apenas tokens oficiais. Nunca distinguir entidades ou relações exclusivamente pela cor; aplicar legenda, texto, padrões ou formatos.
 6. **Universalidade:** cumprir em protótipos atuais e futuros, incluindo Guivos Descoberta de Oportunidades e Guivos Business Dashboard no Replit. A regra cromática não altera definição, autorização, dados, contratos KPI ou liberação produtiva.
 7. **Escopo de imagens:** fotografias e vídeos do mundo real preservam cores naturais; não são variantes inventadas da UI. Ícones, diagramas e ilustrações produzidos como elementos cromáticos da interface devem utilizar os tokens oficiais.
+
+## Reafirmação institucional — exclusividade e semântica (17–18/10/2026)
+
+**Direção expressa do fundador, ratificando e esclarecendo a regra já ativa nesta autoridade:** em **todo o ecossistema Guivos** (Homes, jornadas, produtos, Replit, documentação, dashboards e componentes), **não pode ser introduzida nenhuma cor de interface fora dos 30 tokens oficiais** desta página. A origem é a paleta oficial *Foundations / Colors / Cores* (30 variáveis da coleção `guivos.com.br`), reapresentada pelo fundador em 17/10/2026. É proibido introduzir vermelho `#FF0000`, variantes de vermelho, cores padronizadas de frameworks, misturas derivadas, opacidades cromáticas ou tonalidades não previstas na paleta.
+
+**A exclusividade dos valores não basta:** cada família deve ser empregada **segundo o contexto semântico previsto na fonte**. Não utilizar uma cor pertencente à paleta com sentido contrário à sua finalidade apenas porque o HEX está permitido.
+
+| Situação | Família oficial | Tokens indicados / limite |
+|---|---|---|
+| Completa, sucesso, confirmação e disponibilidade | **Green** | `Green 4 #18A15D` para indicação textual quando contraste adequado; `Green 2 #D7FFEB` para superfície interna leve; demais verdes apenas conforme contraste |
+| Pendências, erro de preenchimento, alerta e urgência | **Orange** | `Orange 4 #E04D02` para sinalização textual quando contraste adequado; `Orange 2 #FFEBE1` para superfície interna leve; **vermelho não é cor da paleta** |
+| Orientação e informação não urgente | **Blue** | Azul oficial, com texto legível e contexto explícito |
+| Aba ativa, ação primária, seleção, navegação ativa | **Purple** | Roxo oficial como seleção independente de estado completa/pendente |
+| Superfícies, texto e bordas comuns | **Gray / Black** | Cores neutras oficiais, base de página sempre `#FFFFFF` |
+| Atenção leve e destaque editorial/promocional | **Yellow / Pink** | Não substituir laranja nos alertas funcionais nem verde nas confirmações |
+
+### Aplicação obrigatória — abas de formulários
+
+- **Aba ativa**: destaque roxo da Guivos, independentemente de estar concluída ou pendente.
+- **Aba completa**: palavra `COMPLETA` e/ou pequeno indicador em verde oficial (recomendado `#18A15D` com contraste validado); preenchimento interno verde claro `#D7FFEB` pode existir quando necessário, sem cobrir a seleção roxa.
+- **Aba com pendências**: palavra `PENDÊNCIAS` e/ou pequeno indicador em laranja oficial (recomendado `#E04D02` com contraste validado); `#FFEBE1` pode ser usado como apoio interno discreto.
+- **Não iniciada**: neutros oficiais, com rótulo próprio; não presumir erro em aba ainda não preenchida quando o fluxo aceita rascunho.
+- **Bloqueada/indisponível**: neutros e explicação textual contextual; não atribuir automaticamente semântica de alerta.
+- **Critério de equilíbrio**: preferir colorir **somente o rótulo de status** (eventualmente pequeno indicador), sem transformar todas as abas em grandes cartões coloridos. Status legível sem depender exclusivamente da cor; foco e acesso por teclado preservados.
+- **Regras funcionais inalteradas**: livre navegação entre abas, salvamento de rascunho incompleto e validação de campos obrigatórios somente no envio definitivo. Cor não pode bloquear uma ação por si só.
+
+**Auditoria de implementação:** impedir vermelho inclusive em bibliotecas, CSS compilado, ícones, mensagens de validação, gráficos e efeitos; impedir cores interpoladas ou derivadas não pertencentes aos 30 valores; verificar estados default/hover/focus/disabled, mobile/desktop e contraste em uso. Fotografias reais podem manter suas cores naturais, como já dispõe a seção de regras obrigatórias. **Esta reafirmação não concede autorização financeira, de produção ou de novas funcionalidades.**
 
 ## Paleta primitiva oficial — 30 tokens
 
