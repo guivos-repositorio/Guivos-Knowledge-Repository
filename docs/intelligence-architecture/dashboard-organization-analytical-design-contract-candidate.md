@@ -218,3 +218,42 @@ ORGANIZATION FIRST → COLLECTIVE DEFERRED
 ```
 
 Fontes: `docs/intelligence-architecture/dashboards-kpis-analytics-master-specification.md`, `docs/intelligence-architecture/dashboard-organization-master-specification.md`, `docs/experience-architecture/organizations-collectives-authenticated-navigation-materialization.md`, `docs/experience-architecture/organizations-collectives-authenticated-actors-authorities-and-jobs.md`, `docs/experience-architecture/organizations-collectives-journey/ux-ui-orchestration-master.md` (draft consultado) e `docs/economic-model/gem-009-measurement-contract.md` (draft consultado).
+
+---
+
+## 12. Registro candidato de adjudicação documental — 18/10/2026
+
+> **PARECER TÉCNICO PARA DECISÃO HUMANA, NÃO ADJUDICAÇÃO.** Esta seção registra proposta, evidências e consequências sem alterar IDs, owners, maturidades, acesso ou autorização técnica.
+
+| Questão | Proposta para adjudicação | Autoridade a validar | Situação |
+|---|---|---|---|
+| Identidade documental | Manter `GKR-INTELLIGENCE-DASHBOARD-ORGANIZATION-DESIGN-CANDIDATE-001` somente como ID provisório até checagem formal de namespace/registry | Governança documental GKR / Intelligence | PROPOSED |
+| Responsabilidade pelo contrato | Intelligence como accountable de semântica analítica; UX/Design como autoridade de apresentação; responsabilidades finais dependem de decisão dos responsáveis | GKR Intelligence + UX/Design | PROPOSED |
+| Vínculo de Analytics | Capacidade contextual da Organização, com nove agrupamentos internos candidatos; não criar nova superfície canônica, transição nem substituir Visão Geral | `GKR-UX-ORGCOL-AUTH-NAV-MAT-001` + Anexo C | PROPOSED |
+| Vinculação do Design System | Consumir `GKR-BRAND-TYPOGRAPHY-001 v1.0.2` (Goldplay) e paleta/tokens oficiais vigentes, sem congelar decisões de layout | Autoridade de marca e Design System | REFERENCED / REVIEW_PENDING |
+| Catálogo analítico | Preservar 39 IDs sem mudança de status e 14 refinamentos não canônicos | Master global + Anexo C + owners de domínio | DOCUMENTARILY RECONCILED / NOT APPROVED |
+| Privacidade e acesso | Exigir população, finalidade, autoridade, thresholds e serving antes de qualquer dado real | G-ORG-01/03/04/07 | BLOCKED FOR REAL DATA |
+| Economia e capacidade | Nenhuma venda, receita ou entitlement presumido | `GEM-009-MEASUREMENT-CONTRACT-001` + contratos especializados | BLOCKED |
+| Prontidão para implementação | Nenhum gate liberado por esta PR | G-ORG-01..07 | NOT_AUTHORIZED |
+
+### Evidências e riscos restantes
+
+1. Conferência de completude por ID: os 39 `ORG-KPI-*` do Anexo C estão representados, sem IDs novos nesta matriz. Isso não valida fórmula, rótulo de interface ou permissão de cada métrica.
+2. Os nove agrupamentos não são `GKR-SURF-*` e não devem se tornar rotas obrigatórias por inferência.
+3. Para navegação, validar o comportamento real do item Analytics no protótipo operacional em ato específico; este documento não afirma que esteja implementado.
+4. Validar tokens visuais e critérios de acessibilidade com responsáveis pelo Design System.
+5. Preservar `status: draft` e `normative: false` até revisão humana, verificações automatizadas finais e eventual promoção separada.
+6. A divergência textual de versão do Anexo C (`v0.1.2` no frontmatter versus `v0.1.1` na seção 24) não é corrigida neste documento nem serve como bloqueio oculto de outras frentes; necessita ato próprio.
+
+### Decisão ainda requerida
+
+```text
+CANDIDATE REVIEW → DOCUMENTED
+HUMAN ADJUDICATION → PENDING
+IDENTITY / OWNER FINAL → PENDING
+ANALYTICS NAVIGATION AUTHORITY → PENDING
+KPI READINESS → 39 proposed / NOT_READY
+G-ORG-01..07 → UNCHANGED
+PR #704 → DRAFT / NO MERGE AUTHORIZED BY THIS SECTION
+REPLIT / REAL DATA / PRODUCT ENGINEERING → NOT AUTHORIZED
+```
