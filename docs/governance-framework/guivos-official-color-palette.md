@@ -2,7 +2,7 @@
 id: GKR-BRAND-COLOR-PALETTE-001
 title: Guivos — Paleta Oficial de Cores e Fundo Branco
 status: active
-version: 1.3.1
+version: 1.3.2
 owner: Guivos
 last_updated: 2026-10-18
 normative: true
@@ -203,6 +203,22 @@ O documento original exige contraste suficiente. A família semântica **não to
 - **Verificação obrigatória:** modal “Registrar evidência” sem contorno escuro; diálogos e cards da jornada revisados em Organização e Coletivo, desktop e mobile; legibilidade, foco, teclado e distinção dos limites mantidos.
 
 **Estado:** `FOUNDER_BORDER_STYLE_ACCEPTED / LIGHT_NEUTRAL_DEFAULT / PALETTE_30_ONLY`.
+
+### Padrão transversal de botões e ações comuns — decisão do fundador (18/10/2026)
+
+**Correção explícita de identidade × funcionalidade:** as cores predominantes de participantes identificam **o contexto** e **não devem determinar automaticamente a cor de botões ou funcionalidades padrão**. Todos os participantes compartilham o mesmo padrão visual de botões do sistema, evitando excesso de cor ou mudanças arbitrárias ao alternar Organização e Coletivo.
+
+- **Botão primário padrão** (incluindo `Continuar`, `Criar oportunidade` e ações gerais equivalentes): fundo **Black 2 `#232323`** e texto **White `#FFFFFF`**, sem cor rosa/roxa por contexto. A aplicação deve verificar contraste e dimensionamento. Black 1 `#292929` pode compor estados dentro do padrão oficial, quando legitimamente especificado.
+- **Botões secundários e terciários:** fundo `#FFFFFF`, texto `#232323`, contorno leve `Gray 3 #E3E3E3` ou `Gray 2 #F3F3F3` quando aplicável, conservando diferenciação hierárquica, foco visível e acessibilidade.
+- **Desabilitado:** neutros oficiais (`Gray`/`Black`) com indicação textual e funcional; não depender apenas de cor.
+- **Identidade contextual:** Purple 4 `#5D34A9` continua identificando Organização, Pink 4 `#E84CAB` continua identificando Coletivo; família Purple identifica Pessoa. Usar nos acentos, ilustrações, marcação do contexto e elementos de seleção. **Botão primário não muda de cor quando outro participante é selecionado.**
+- **Exceções semânticas legítimas:** controles cujo papel seja inequivocamente funcional (estado de alerta, sucesso, informação) podem ter sinalização Orange/Green/Blue **sem converter o padrão geral de botões** ou gerar nova regra de cor por participante. Não pintar botões comuns de rosa ou roxo por serem da jornada Coletivo/Organização.
+- **Alcance:** tela inicial de escolha de participante, criação/edição de perfis, oportunidades, operações de Coletivo/Organização, modais, ações de formulário e componentes reutilizáveis; aplicar em todos os projetos de forma progressiva e governada, sem modificar produto, autorização, dados ou produção.
+- **Verificação:** alternar a seleção Organização ↔ Coletivo: ilustração e cartões indicam participante, mas `Continuar` permanece Black 2; botões `Criar oportunidade` em ambos os ambientes usam o mesmo Black 2; status e bordas continuam semânticos e neutros conforme a paleta.
+
+Esta regra **prevalece** sobre orientações anteriores de colorir todos os botões e ações conforme o participante. Não elimina o papel Purple da paleta na marca e nos estados selecionados; apenas estabelece a **uniformidade dos botões funcionais padrão**.
+
+**Estado:** `FOUNDER_COMMON_BUTTON_STANDARD_ACCEPTED / BLACK_2_PRIMARY / PARTICIPANT_ACCENT_SEPARATE`.
 
 ## Variáveis primitivas de implementação
 
