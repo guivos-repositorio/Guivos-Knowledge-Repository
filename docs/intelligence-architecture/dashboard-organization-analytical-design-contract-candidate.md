@@ -3,7 +3,7 @@ id: GKR-INTELLIGENCE-DASHBOARD-ORGANIZATION-DESIGN-CANDIDATE-001
 title: Dashboard Organização — Contrato Candidato de Design Analítico e Rastreabilidade
 status: draft
 version: 0.1.0
-owner: Guivos Intelligence Architecture / UX Design (proposto)
+owner: Guivos Intelligence Architecture
 last_updated: 2026-10-18
 normative: false
 maturity: candidate_pre_implementation_design_contract
@@ -38,7 +38,7 @@ Este contrato candidato especifica apresentação, navegação analítica intern
 
 ## 2. Contexto e navegação analítica
 
-Entrada candidata: contexto de Organização autenticada → Analytics → agrupamento visual interno. A troca de Organização, unidade ou papel revalida contexto, autoridade e dados, invalida filtros/caches não transportáveis e não exibe dados do contexto anterior.
+Entrada candidata: contexto de Organização autenticada → Analytics → agrupamento visual interno. O owner documental segue o master especializado (`Guivos Intelligence Architecture`); UX/Design permanece autoridade consultada para apresentação, sem transferência automática de ownership ou aprovação de UI. A troca de Organização, unidade ou papel revalida contexto, autoridade e dados, invalida filtros/caches não transportáveis e não exibe dados do contexto anterior.
 
 | Código visual provisório | Agrupamento interno | Família |
 |---|---|---|
@@ -228,8 +228,8 @@ Fontes: `docs/intelligence-architecture/dashboards-kpis-analytics-master-specifi
 | Questão | Proposta para adjudicação | Autoridade a validar | Situação |
 |---|---|---|---|
 | Identidade documental | Manter `GKR-INTELLIGENCE-DASHBOARD-ORGANIZATION-DESIGN-CANDIDATE-001` somente como ID provisório até checagem formal de namespace/registry | Governança documental GKR / Intelligence | PROPOSED |
-| Responsabilidade pelo contrato | Intelligence como accountable de semântica analítica; UX/Design como autoridade de apresentação; responsabilidades finais dependem de decisão dos responsáveis | GKR Intelligence + UX/Design | PROPOSED |
-| Vínculo de Analytics | Capacidade contextual da Organização, com nove agrupamentos internos candidatos; não criar nova superfície canônica, transição nem substituir Visão Geral | `GKR-UX-ORGCOL-AUTH-NAV-MAT-001` + Anexo C | PROPOSED |
+| Responsabilidade pelo contrato | Herdar `Guivos Intelligence Architecture` do Anexo C como owner documental; UX/Design é autoridade de apresentação a consultar, sem substituir o owner | Anexo C + GKR-UX-ORGCOL-AUTH-NAV-MAT-001 | ALIGNED TO EXISTING MASTER / APPROVAL PENDING |
+| Vínculo de Analytics | A autoridade de navegação (§16.2) enquadra Intelligence como apoio contextual, não eixo principal. A entrada visual Analytics observada no protótipo não é promovida por este documento a nó canônico. Nove agrupamentos internos continuam candidatos | `GKR-UX-ORGCOL-AUTH-NAV-MAT-001` §16.2 + Anexo C | BOUNDARY VERIFIED / UI ENTRY PENDING |
 | Vinculação do Design System | Consumir `GKR-BRAND-TYPOGRAPHY-001 v1.0.2` (Goldplay) e paleta/tokens oficiais vigentes, sem congelar decisões de layout | Autoridade de marca e Design System | REFERENCED / REVIEW_PENDING |
 | Catálogo analítico | Preservar 39 IDs sem mudança de status e 14 refinamentos não canônicos | Master global + Anexo C + owners de domínio | DOCUMENTARILY RECONCILED / NOT APPROVED |
 | Privacidade e acesso | Exigir população, finalidade, autoridade, thresholds e serving antes de qualquer dado real | G-ORG-01/03/04/07 | BLOCKED FOR REAL DATA |
@@ -250,8 +250,8 @@ Fontes: `docs/intelligence-architecture/dashboards-kpis-analytics-master-specifi
 ```text
 CANDIDATE REVIEW → DOCUMENTED
 HUMAN ADJUDICATION → PENDING
-IDENTITY / OWNER FINAL → PENDING
-ANALYTICS NAVIGATION AUTHORITY → PENDING
+IDENTITY FINAL → PENDING; OWNER DOCUMENTAL → ALIGNED TO ANNEX C / REVIEW PENDING
+ANALYTICS NAVIGATION BOUNDARY → VERIFIED; UI ENTRY / LINK → PENDING
 KPI READINESS → 39 proposed / NOT_READY
 G-ORG-01..07 → UNCHANGED
 PR #704 → DRAFT / NO MERGE AUTHORIZED BY THIS SECTION
