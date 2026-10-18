@@ -2,7 +2,7 @@
 id: GKR-BRAND-COLOR-PALETTE-001
 title: Guivos — Paleta Oficial de Cores e Fundo Branco
 status: active
-version: 1.3.0
+version: 1.3.1
 owner: Guivos
 last_updated: 2026-10-18
 normative: true
@@ -191,6 +191,18 @@ O documento original exige contraste suficiente. A família semântica **não to
 - Textos e controles atendem contraste para seu tamanho/função, sem criar novos HEX para corrigir problemas.
 - Abas e ações mantêm semântica, legibilidade e acessibilidade, sem afetar rascunho, navegação livre ou autorização de produção.
 - Auditar telas, componentes, CSS servido, ícones, estados, temas importados, gráficos e PDF/SVG desenhados para UI, quando aplicáveis.
+
+### Padrão estrutural de bordas claras — decisão do fundador (18/10/2026)
+
+**Direção expressa, motivada pela inspeção do modal “Registrar evidência”:** contornos externos de **modais, diálogos, formulários, cartões e contêineres estruturais** devem utilizar **neutros claros oficiais**, preferencialmente **Gray 3 `#E3E3E3`**, alternativamente **Gray 2 `#F3F3F3`** quando uma separação ainda mais leve for adequada. A base interna do modal/card é preferencialmente `White #FFFFFF`; a base da página permanece obrigatoriamente `#FFFFFF`.
+
+- **Não usar Black 1 `#292929` ou Black 2 `#232323` como contorno estrutural padrão**, mesmo sendo cores da paleta. Sua função principal continua sendo texto e contraste alto.
+- O padrão deve ser aplicado de modo consistente a bordas de modais, cards, painéis de revisão, formulários e áreas de evidência, sem apagar limites de controle, separadores funcionais, hierarquia, agrupamentos ou acessibilidade.
+- Estados com significado próprio podem usar indicadores ou cores semânticas apropriadas da paleta, **sem converter todas as bordas em alertas ou destaques**. Estado de foco perceptível e indicação de seleção ativa são exceções funcionais justificadas, com tokens oficiais.
+- Evitar contornos pretos, sombras pesadas e novas tonalidades criadas por opacidade ou misturas. Se houver elevação visual, resolver prioritariamente por contraste entre `#FFFFFF`, `#F9F9F9`, `#F3F3F3`, borda `#E3E3E3` e espaçamento; não introduzir preto translúcido.
+- **Verificação obrigatória:** modal “Registrar evidência” sem contorno escuro; diálogos e cards da jornada revisados em Organização e Coletivo, desktop e mobile; legibilidade, foco, teclado e distinção dos limites mantidos.
+
+**Estado:** `FOUNDER_BORDER_STYLE_ACCEPTED / LIGHT_NEUTRAL_DEFAULT / PALETTE_30_ONLY`.
 
 ## Variáveis primitivas de implementação
 
