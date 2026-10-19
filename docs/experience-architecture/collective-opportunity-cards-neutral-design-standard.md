@@ -1,6 +1,6 @@
 ---
 title: Cards de Oportunidades de Coletivos — Padrão Neutro Institucional
-version: 0.2.0
+version: 0.3.0
 status: proposed
 decision_date: 2026-10-19
 area: Experiência, Design System e Oportunidades
@@ -52,57 +52,59 @@ Manter informações secundárias hierarquizadas e evitar excesso de etiquetas o
 
 Card deve ter versão responsiva para desktop/tablet/mobile, com leitura acessível por teclado, leitor de tela e dispositivos de toque.
 
-## 4A. Referências visuais formais: Travel e Mall (arquivos fornecidos)
+## 4A. Referências normativas de layout — anexos originais do usuário
 
-Em 2026-10-19, foram fornecidos os arquivos de referência **Card Vertical.pdf** e **Card horizontal.pdf** (uma página cada). Ambos passam a definir a **estrutura de composição e a família visual** dos cards de oportunidades de Coletivos. Os arquivos são **referências visuais**, não contratos de negócios; seus textos e valores são placeholders e não podem ser copiados como dados de oportunidades reais.
+**Referências exclusivamente dos anexos enviados em 2026-10-19:** `Card Vertical.pdf` (página 1) e `Card horizontal.pdf` (página 1). **Não substituir esses desenhos por fotografias, imagens de busca, exemplificações genéricas de e-commerce nem outro template.** Uma descrição genérica anterior foi considerada incorreta e fica substituída por esta leitura fiel.
 
-### Versão vertical — Card Vertical.pdf, página 1
+### Card Vertical.pdf — página 1 (três cards verticais lado a lado)
 
-- Cartão com imagem ampla na parte superior e corpo de informações imediatamente abaixo, contorno leve e cantos arredondados.
-- A área de imagem ocupa uma proporção relevante do conjunto; quando houver múltiplas imagens, usar o padrão de navegação visual existente, sem recriar um novo carrossel.
-- Faixa de ações/indicadores abaixo da imagem com espaço para etiquetas (no exemplo: `15% off`, `Recomendado`) e ícones de interação (favoritar, compartilhar e outras ações ilustrativas).
-- Em seguida: aviso contextual breve (`Últimas unidades` no exemplo), título, avaliação quando houver avaliação **real e autorizada**, descrição/subdescrição e atributos curtos.
-- Separador sutil entre informações e rodapé; bloco inferior com condição comercial/participação e CTA, cujo estado visual pode variar por disponibilidade, sempre respeitando a regra de botões e acessibilidade da superfície.
-- Os três cartões justapostos na referência representam variantes do mesmo componente, não três modelos distintos de entidade.
+O PDF mostra uma **fileira de três cards** com a mesma estrutura em orientação vertical. Em cada card:
 
-### Versão horizontal — Card horizontal.pdf, página 1
+1. **Grande área de imagem na parte superior**, de cantos arredondados, com placeholder quadriculado no arquivo. Não consta imagem fotográfica nesse PDF.
+2. **Linha de indicadores e ações imediatamente abaixo da imagem:** selo contornado `15% off` verde, selo contornado `Recomendado` violeta; à direita, ícones de coração rosa, cesta cinza e compartilhamento ciano.
+3. **Aviso pequeno `Últimas unidades`**, em verde e sublinhado, na linha seguinte, alinhado à esquerda.
+4. **Título `Descrição do Produto`** à esquerda; no mesmo alinhamento, pequena estrela amarela e avaliação `4,8` à direita.
+5. **`Subdescrição`** cinza abaixo do título.
+6. **Linha de três atributos**: `Item 01`, `Item 02`, `Item 03`, cada um com pequeno ícone circular claro.
+7. **Separador horizontal claro** antes do rodapé.
+8. **Rodapé de valores:** texto `a partir de` acima; indicação do preço anterior `0.000 pts` riscada, preço principal `00.000 pts` e unidade `p/pessoa`.
+9. **Ação circular com seta diagonal no canto inferior direito**, em cinza muito claro em dois exemplos e em roxo no terceiro; o terceiro também tem destaque/sombra visual.
 
-- Cartão retangular alongado com **imagem à esquerda** e **conteúdo à direita**; contorno e raio coerentes com o vertical.
-- No topo do conteúdo: etiquetas de contexto e ações secundárias à direita.
-- Título, avaliação condicional, descrição curta, atributos e aviso contextual dispostos em hierarquia vertical.
-- Rodapé separado por linha leve, contendo eventual valor/condição de participação e CTA alinhado ao extremo direito.
-- As duas exemplificações horizontais representam estados do mesmo card; não impõem a cor do CTA demonstrado.
-- Em telas estreitas, permitir migração da versão horizontal para a composição vertical, preservando conteúdo, sem corte ou scroll horizontal desnecessário.
+Preservar a sequência, os alinhamentos, a hierarquia e a posição dos elementos na tradução para cards de oportunidade. Os três exemplares são exemplos visuais do mesmo componente, **não três tipos de cadastro ou entidades**.
 
-### O que é preservado e o que é adaptado
+### Card horizontal.pdf — página 1 (dois cards horizontais empilhados)
 
-| Elemento dos PDFs | Aplicação nas oportunidades de Coletivos |
+O PDF mostra **dois cards largos, um embaixo do outro**, cada um com:
+
+1. **Grande imagem/placeholder quadriculado à esquerda**, ocupando aproximadamente um terço da largura; conteúdo ocupando os dois terços restantes à direita.
+2. Na primeira linha do conteúdo à direita, **etiquetas `15% off` e `Recomendado` à esquerda** e **ícones coração rosa, cesta cinza e compartilhar ciano no canto superior direito**.
+3. **Título `Descrição do Produto`**, com estrela amarela e nota `4,8` à direita.
+4. **`Subdescrição`** e depois uma **linha com `Item 01`, `Item 02`, `Item 03`**.
+5. **`Últimas unidades`** aparece **depois** da linha dos atributos (diferentemente do card vertical, onde está antes do título).
+6. **Divisória longa** separando o conteúdo principal do rodapé.
+7. Rodapé com **`a partir de`**, antigo `0.000 pts` riscado, `00.000 pts` e `p/pessoa`; **seta circular no extremo inferior direito**.
+8. Na variação inferior o **botão circular é roxo**, enquanto na superior ele é cinza-claro; os dois exemplos representam tratamentos/estados visuais do mesmo card.
+
+**Diferença de orientação é estrutural e inclui mudança de posição de `Últimas unidades`**. Não padronizar arbitrariamente a sequência ignorando os anexos. As proporções exatas devem ser aferidas no original antes de implementação, e não inferidas de imagens externas.
+
+### Transferência para oportunidades de Coletivos — limites explícitos
+
+Aprova-se a **mesma composição de Travel/Mall**, com versão vertical e horizontal, mantendo cards neutros: White `#FFFFFF`, estrutura/borda sutil Gray 3 `#E3E3E3`, sem contorno por marca ou categoria e sem fundo rosa/Gray4 obrigatório. **Neutralidade do card não exige tornar monocromáticos os elementos funcionais ilustrados nos arquivos**; a eventual adoção de selos, estados ou ícones coloridos deve seguir regra e tokens institucionais aplicáveis, após validação, e não representar cores de Coletivos.
+
+| Elemento no arquivo | Interpretação funcional na Guivos |
 |---|---|
-| Estrutura de imagem, título, informações, divisória e rodapé | **Preservar** como referência de composição |
-| Família visual de borda, cantos e espaçamentos | **Preservar** e adequar aos tokens oficiais Guivos |
-| Etiquetas e ações de favoritar/compartilhar | **Condicionais** à funcionalidade efetivamente existente |
-| `15% off`, `Recomendado`, `Últimas unidades` | **Não exibir automaticamente**; usar apenas com regras verificáveis de desconto, recomendação e disponibilidade/capacidade |
-| `Descrição do Produto` e `Subdescrição` | Substituir por título e descrição objetiva da **oportunidade** |
-| `Item 01 / Item 02 / Item 03` | Substituir por informações reais, como modalidade, região/local, data, duração ou público elegível, conforme contrato da oportunidade |
-| Estrelas e nota `4,8` | Exibir somente se a Guivos dispuser de sistema de avaliações legitimamente estabelecido para o objeto avaliado |
-| `0.000 pts`, `00.000 pts p/pessoa`, preço riscado | Adaptar ao preço em R$ quando pago, gratuidade quando gratuito e **pontos apenas segundo as regras específicas de oportunidades**; não converter automaticamente preço em pontos sem base |
-| Ícone de lixeira/cesta e outros ícones do exemplo | **Não transportar literalmente** sem semântica funcional válida para a oportunidade |
-| CTA circular com seta | Pode ser aproveitado como affordance visual se houver ação real, rótulo acessível e contraste validado; não presumir roxo como cor obrigatória para Coletivos |
-| Imagens quadriculadas de placeholder | Substituir por imagem autorizada da oportunidade ou placeholder neutro institucional quando necessário |
+| `Descrição do Produto` / `Subdescrição` | Título e descrição curta da oportunidade |
+| Placeholder quadriculado | Área de imagem da oportunidade, sem pressupor imagem real no PDF |
+| `15% off` | Desconto **somente se aplicável e comprovado**; não atribuir desconto inexistente |
+| `Recomendado` | Recomendação **somente se existir lógica válida e auditável** |
+| Coração, cesta e compartilhamento | Manter posição de referência; implementar só ações pertinentes e existentes, especialmente evitar cesta/carrinho sem fluxo de compra |
+| `Últimas unidades` | Eventual disponibilidade de vagas, apenas com capacidade verificável; adaptar nomenclatura para oportunidade |
+| Estrela e nota `4,8` | Exibir avaliação somente se a Guivos possuir sistema válido de avaliações para essa oportunidade |
+| `Item 01 / 02 / 03` | Atributos verificáveis da oportunidade, conforme modelo funcional |
+| `0.000 pts`, `00.000 pts`, `p/pessoa` | Placeholder do PDF; preço, gratuidade e pontos obedecem a regras próprias, sem obrigatoriedade de operação integral em pontos |
+| Setas circulares cinza-claro/roxo | Tratamentos visuais do PDF, **não estados funcionais definidos**; adaptar funcionalidade/contraste após validação de UX |
 
-### Regra de unidade entre orientações
-
-Vertical e horizontal representam **o mesmo componente semântico** de oportunidade, com os mesmos dados, regras de preço, pontos, inscrições e disponibilidade. Variam apenas layout e disposição responsiva. Não duplicar modelo de negócio, permissões nem indicadores por orientação.
-
-Não reinterpretar os arquivos como aprovação de novos descontos, pontuações, ratings, destaques, rótulos ou carrinhos: os modelos anexos ilustram visual e hierarquia; a funcionalidade continua subordinada ao GKR.
-
-### Critérios adicionais de aceitação
-
-- Comparar uma amostra de **card vertical** e uma de **card horizontal** lado a lado com os PDFs fornecidos, verificando hierarquia, imagem, proporções, bordas, hierarquia tipográfica, ícones, divisória e CTA.
-- Conferir que nenhuma borda use cor da marca do Coletivo ou cor por área de atuação; White/Gray3 seguem como padrão.
-- Verificar cards de oportunidade gratuita, paga, com/sem pontos, com/sem fotos, com/sem vagas remanescentes, além de estado sem avaliação.
-- Não tratar o estilo rosa/verde/roxo/ciano dos **indicadores ilustrativos nos PDFs** como mudança de paleta institucional ou identidade de Coletivos. Status funcionais legítimos podem ter regras próprias, a validar separadamente.
-- Exigir que botões e ícones interativos tenham estados funcionais, acessibilidade por teclado e toque e não sejam elementos decorativos inertes.
+**Critério de aceitação:** qualquer especificação, protótipo ou implementação desses cards deve ser comparada diretamente com ambas as páginas dos anexos originais, incluindo imagem, posição dos ícones, posição distinta de disponibilidade no vertical versus horizontal, título/nota, separadores e área inferior de valores/CTA. Não aceitar imagens genéricas como representação desses modelos.
 
 ## 5. Hierarquia cromática do ecossistema
 
