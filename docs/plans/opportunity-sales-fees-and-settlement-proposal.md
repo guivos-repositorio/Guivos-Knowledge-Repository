@@ -1,6 +1,6 @@
 ---
 title: Taxas Guivos por venda de oportunidades — proposta de política comercial e simulação
-version: 1.0.0
+version: 1.1.0
 status: approved_for_design_and_simulation
 decision_date: 2026-10-19
 scope: Organizações e Coletivos; oportunidades pagas
@@ -39,9 +39,9 @@ Incidência: **cada venda de oportunidade paga aprovada/capturada pela Guivos**,
 ## 4. Cálculo de incentivo e limites
 
 - Incentivo percentual: `custo_pontos = arredondar_para_centavos(valor_cobrado × percentual / 100)`, conforme versão das regras de pontos aplicável à oportunidade.
-- Incentivo fixo em pontos: usar **somente** conversão monetária definida por política oficial em vigor; **não assumir paridade pontos/reais sem respaldo** e não converter por fórmula inventada.
+- Incentivo fixo em pontos: **política específica de custo unitário de concessão aprovada em 2026-10-19**, com custo de R$ 1,00 para o publicador por ponto concedido, conforme `opportunity-points-issuer-unit-cost-policy.md`. Não é paridade monetária universal, resgate, saque ou obrigação de pagar esse valor à Pessoa. Custo = quantidade inteira de pontos × R$1,00; percentual equivalente = 100 × custo / preço cobrado; mostrar esse percentual sem alterar a quantidade fixa originária.
 - Validar `0 ≤ custo_pontos ≤ valor_cobrado`; percentuais, limites de saldo, condições e quantidade de pontos respeitam política de oportunidades.
-- Quantidade de pontos a conceder à Pessoa é exibida **somente quando conversão oficial for conhecida**. Se não for, mostrar valor do custo em R$ e não inventar equivalência.
+- No incentivo fixo, a quantidade de pontos é aquela escolhida e seu custo monetário decorre da nova política específica. No incentivo percentual, calcular custo em BRL; **não prometer quantidade inteira de pontos derivada do custo decimal** até aprovar regra institucional de arredondamento/inteiros.
 
 ## 5. Fórmulas da simulação financeira BRL
 
@@ -75,7 +75,7 @@ Ao selecionar **Paga**, mostrar, junto da régua/campo de incentivo, um painel d
 - `Outras deduções`: se não houver contrato definido, declarar 'não incluídas nesta simulação', sem mostrar taxa fictícia
 - `Repasse líquido estimado à Organização/Coletivo`
 
-Campos dependentes do preço e percentual se atualizam ao alterar valor, opção 'Sem incentivo', 'Percentual do valor cobrado' ou 'Quantidade fixa de pontos', com apresentação honesta em caso de conversão de pontos ausente. No cadastro da oportunidade **gratuita**, evitar apresentar taxa de venda e preços como se houvesse cobrança. Salvar rascunhos mesmo sem plano se a pessoa responsável tiver autorização; requisitos de contratação continuam aplicados ao publicar oportunidades pagas.
+Campos dependentes do preço e percentual se atualizam ao alterar valor, opção 'Sem incentivo', 'Percentual do valor cobrado' ou 'Quantidade fixa de pontos', com cálculo automático dos pontos fixos pela regra específica de custo R$1,00 por ponto concedido, sem declarar esse valor como resgate do ponto; no modo percentual, manter a transparência sobre arredondamento/quantidade de pontos ainda não definida. No cadastro da oportunidade **gratuita**, evitar apresentar taxa de venda e preços como se houvesse cobrança. Salvar rascunhos mesmo sem plano se a pessoa responsável tiver autorização; requisitos de contratação continuam aplicados ao publicar oportunidades pagas.
 
 Texto de transparência: `Simulação sujeita às regras comerciais aprovadas; taxas e valores definitivos serão informados antes da publicação e confirmação da venda.`
 
