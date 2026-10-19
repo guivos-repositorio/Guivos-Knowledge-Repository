@@ -8497,9 +8497,9 @@
 <h2 id="4-calculo-de-incentivo-e-limites">4. Cálculo de incentivo e limites<a class="headerlink" href="#4-calculo-de-incentivo-e-limites" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Incentivo percentual: <code>custo_pontos = arredondar_para_centavos(valor_cobrado × percentual / 100)</code>, conforme versão das regras de pontos aplicável à oportunidade.</li>
-<li>Incentivo fixo em pontos: usar <strong>somente</strong> conversão monetária definida por política oficial em vigor; <strong>não assumir paridade pontos/reais sem respaldo</strong> e não converter por fórmula inventada.</li>
+<li>Incentivo fixo em pontos: <strong>política específica de custo unitário de concessão aprovada em 2026-10-19</strong>, com custo de R$ 1,00 para o publicador por ponto concedido, conforme <code>opportunity-points-issuer-unit-cost-policy.md</code>. Não é paridade monetária universal, resgate, saque ou obrigação de pagar esse valor à Pessoa. Custo = quantidade inteira de pontos × R$1,00; percentual equivalente = 100 × custo / preço cobrado; mostrar esse percentual sem alterar a quantidade fixa originária.</li>
 <li>Validar <code>0 ≤ custo_pontos ≤ valor_cobrado</code>; percentuais, limites de saldo, condições e quantidade de pontos respeitam política de oportunidades.</li>
-<li>Quantidade de pontos a conceder à Pessoa é exibida <strong>somente quando conversão oficial for conhecida</strong>. Se não for, mostrar valor do custo em R$ e não inventar equivalência.</li>
+<li>No incentivo fixo, a quantidade de pontos é aquela escolhida e seu custo monetário decorre da nova política específica. No incentivo percentual, calcular custo em BRL; <strong>não prometer quantidade inteira de pontos derivada do custo decimal</strong> até aprovar regra institucional de arredondamento/inteiros.</li>
 </ul>
 <h2 id="5-formulas-da-simulacao-financeira-brl">5. Fórmulas da simulação financeira BRL<a class="headerlink" href="#5-formulas-da-simulacao-financeira-brl" title="Permanent link">&para;</a></h2>
 <p><code>T = valor_venda_efetivamente_cobrado</code> (em centavos, T &gt; 0).</p>
@@ -8520,7 +8520,7 @@
 - <code>Taxa Guivos estimada: 8,9% + componente fixo quando aplicável</code>
 - <code>Outras deduções</code>: se não houver contrato definido, declarar 'não incluídas nesta simulação', sem mostrar taxa fictícia
 - <code>Repasse líquido estimado à Organização/Coletivo</code></p>
-<p>Campos dependentes do preço e percentual se atualizam ao alterar valor, opção 'Sem incentivo', 'Percentual do valor cobrado' ou 'Quantidade fixa de pontos', com apresentação honesta em caso de conversão de pontos ausente. No cadastro da oportunidade <strong>gratuita</strong>, evitar apresentar taxa de venda e preços como se houvesse cobrança. Salvar rascunhos mesmo sem plano se a pessoa responsável tiver autorização; requisitos de contratação continuam aplicados ao publicar oportunidades pagas.</p>
+<p>Campos dependentes do preço e percentual se atualizam ao alterar valor, opção 'Sem incentivo', 'Percentual do valor cobrado' ou 'Quantidade fixa de pontos', com cálculo automático dos pontos fixos pela regra específica de custo R$1,00 por ponto concedido, sem declarar esse valor como resgate do ponto; no modo percentual, manter a transparência sobre arredondamento/quantidade de pontos ainda não definida. No cadastro da oportunidade <strong>gratuita</strong>, evitar apresentar taxa de venda e preços como se houvesse cobrança. Salvar rascunhos mesmo sem plano se a pessoa responsável tiver autorização; requisitos de contratação continuam aplicados ao publicar oportunidades pagas.</p>
 <p>Texto de transparência: <code>Simulação sujeita às regras comerciais aprovadas; taxas e valores definitivos serão informados antes da publicação e confirmação da venda.</code></p>
 <p>A interface de simulação <strong>NÃO habilita cobrança</strong>, repasse, criação de crédito monetário, emissão de documentos fiscais ou vínculo de contratos.</p>
 <h2 id="7-regras-pendentes-da-operacao-real">7. Regras pendentes da operação real<a class="headerlink" href="#7-regras-pendentes-da-operacao-real" title="Permanent link">&para;</a></h2>
