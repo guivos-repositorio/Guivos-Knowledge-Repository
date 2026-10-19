@@ -1,7 +1,7 @@
 ---
 title: Taxas Guivos por venda de oportunidades — proposta de política comercial e simulação
-version: 0.1.0
-status: proposed
+version: 1.0.0
+status: approved_for_design_and_simulation
 decision_date: 2026-10-19
 scope: Organizações e Coletivos; oportunidades pagas
 ---
@@ -10,13 +10,13 @@ scope: Organizações e Coletivos; oportunidades pagas
 
 ## Estado de governança
 
-**PROPOSTA COMERCIAL, NÃO APROVADA PARA COBRANÇA EFETIVA.** Regra elaborada em 2026-10-19 para análise institucional e implementação inicial somente como **simulação**, sem ativar deduções financeiras reais, contratos ou checkout. Depende de aprovação de Produto/Financeiro/Jurídico e confirmação de viabilidade de adquirência, tributos, chargebacks, custos de pontos e remuneração da plataforma. Deve ser conciliada com `Planos — Business` e políticas de pontos anteriormente validadas; as regras existentes não foram presumidas substituídas.
+**DECISÃO DE PRODUTO APROVADA EM 2026-10-19 PARA DOCUMENTAÇÃO E SIMULAÇÃO NO CADASTRO DE OPORTUNIDADES.** O responsável confirmou a adoção da regra proposta de 8,9% e R$ 1,00 acima de R$ 20,00 como **referência de simulação**, e autorizou seu registro no GKR e aplicação na estação Replit. Esta aprovação **não ativa a cobrança efetiva**, a dedução em pagamentos reais, contratos ou checkout: esses passos permanecem condicionados à validação de Financeiro/Jurídico, viabilidade de adquirência, tributos, chargebacks, custo de pontos e publicação financeira específica. Deve ser conciliada com `Planos — Business` e políticas de pontos anteriormente validadas; as regras existentes não foram presumidas substituídas.
 
 ## 1. Benchmark consultado
 
 Hotmart, política oficial https://hotmart.com/pt-br/legal/politicas-de-pagamento, consultada em 2026-10-19: transações BRL até R$10,00, serviço 20%, sem tarifa fixa; a partir de R$10,01, serviço 9,9% e tarifa fixa BRL R$2,49 por transação. Condições comerciais especiais/por volume podem divergir, conforme https://hotmart.com/pt-br/taxa-hotmart. **Esses números não são tarifas Guivos nem necessariamente representam custos da Guivos.**
 
-## 2. Proposta inicial de tarifa Guivos (BRL)
+## 2. Regra aprovada para simulação — tarifa Guivos (BRL)
 
 Incidência: **cada venda de oportunidade paga aprovada/capturada pela Guivos**, independentemente do tipo do publicador (Organização/Coletivo), com regras de plano/contratação para elegibilidade à publicação determinadas por instrumentos próprios.
 
