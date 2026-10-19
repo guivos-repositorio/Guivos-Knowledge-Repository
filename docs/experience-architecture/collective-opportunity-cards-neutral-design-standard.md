@@ -1,6 +1,6 @@
 ---
 title: Cards de Oportunidades de Coletivos — Padrão Neutro Institucional
-version: 0.1.0
+version: 0.2.0
 status: proposed
 decision_date: 2026-10-19
 area: Experiência, Design System e Oportunidades
@@ -51,6 +51,58 @@ Card deve priorizar, quando disponíveis e aplicáveis, imagem; título objetivo
 Manter informações secundárias hierarquizadas e evitar excesso de etiquetas ou ícones. Selos institucionais **Verificado** e **Contribuição Reconhecida**, quando legitimamente concedidos, são independentes da cor da categoria e devem aparecer de modo contextual, sem se transformarem em decoração obrigatória de todo card.
 
 Card deve ter versão responsiva para desktop/tablet/mobile, com leitura acessível por teclado, leitor de tela e dispositivos de toque.
+
+## 4A. Referências visuais formais: Travel e Mall (arquivos fornecidos)
+
+Em 2026-10-19, foram fornecidos os arquivos de referência **Card Vertical.pdf** e **Card horizontal.pdf** (uma página cada). Ambos passam a definir a **estrutura de composição e a família visual** dos cards de oportunidades de Coletivos. Os arquivos são **referências visuais**, não contratos de negócios; seus textos e valores são placeholders e não podem ser copiados como dados de oportunidades reais.
+
+### Versão vertical — Card Vertical.pdf, página 1
+
+- Cartão com imagem ampla na parte superior e corpo de informações imediatamente abaixo, contorno leve e cantos arredondados.
+- A área de imagem ocupa uma proporção relevante do conjunto; quando houver múltiplas imagens, usar o padrão de navegação visual existente, sem recriar um novo carrossel.
+- Faixa de ações/indicadores abaixo da imagem com espaço para etiquetas (no exemplo: `15% off`, `Recomendado`) e ícones de interação (favoritar, compartilhar e outras ações ilustrativas).
+- Em seguida: aviso contextual breve (`Últimas unidades` no exemplo), título, avaliação quando houver avaliação **real e autorizada**, descrição/subdescrição e atributos curtos.
+- Separador sutil entre informações e rodapé; bloco inferior com condição comercial/participação e CTA, cujo estado visual pode variar por disponibilidade, sempre respeitando a regra de botões e acessibilidade da superfície.
+- Os três cartões justapostos na referência representam variantes do mesmo componente, não três modelos distintos de entidade.
+
+### Versão horizontal — Card horizontal.pdf, página 1
+
+- Cartão retangular alongado com **imagem à esquerda** e **conteúdo à direita**; contorno e raio coerentes com o vertical.
+- No topo do conteúdo: etiquetas de contexto e ações secundárias à direita.
+- Título, avaliação condicional, descrição curta, atributos e aviso contextual dispostos em hierarquia vertical.
+- Rodapé separado por linha leve, contendo eventual valor/condição de participação e CTA alinhado ao extremo direito.
+- As duas exemplificações horizontais representam estados do mesmo card; não impõem a cor do CTA demonstrado.
+- Em telas estreitas, permitir migração da versão horizontal para a composição vertical, preservando conteúdo, sem corte ou scroll horizontal desnecessário.
+
+### O que é preservado e o que é adaptado
+
+| Elemento dos PDFs | Aplicação nas oportunidades de Coletivos |
+|---|---|
+| Estrutura de imagem, título, informações, divisória e rodapé | **Preservar** como referência de composição |
+| Família visual de borda, cantos e espaçamentos | **Preservar** e adequar aos tokens oficiais Guivos |
+| Etiquetas e ações de favoritar/compartilhar | **Condicionais** à funcionalidade efetivamente existente |
+| `15% off`, `Recomendado`, `Últimas unidades` | **Não exibir automaticamente**; usar apenas com regras verificáveis de desconto, recomendação e disponibilidade/capacidade |
+| `Descrição do Produto` e `Subdescrição` | Substituir por título e descrição objetiva da **oportunidade** |
+| `Item 01 / Item 02 / Item 03` | Substituir por informações reais, como modalidade, região/local, data, duração ou público elegível, conforme contrato da oportunidade |
+| Estrelas e nota `4,8` | Exibir somente se a Guivos dispuser de sistema de avaliações legitimamente estabelecido para o objeto avaliado |
+| `0.000 pts`, `00.000 pts p/pessoa`, preço riscado | Adaptar ao preço em R$ quando pago, gratuidade quando gratuito e **pontos apenas segundo as regras específicas de oportunidades**; não converter automaticamente preço em pontos sem base |
+| Ícone de lixeira/cesta e outros ícones do exemplo | **Não transportar literalmente** sem semântica funcional válida para a oportunidade |
+| CTA circular com seta | Pode ser aproveitado como affordance visual se houver ação real, rótulo acessível e contraste validado; não presumir roxo como cor obrigatória para Coletivos |
+| Imagens quadriculadas de placeholder | Substituir por imagem autorizada da oportunidade ou placeholder neutro institucional quando necessário |
+
+### Regra de unidade entre orientações
+
+Vertical e horizontal representam **o mesmo componente semântico** de oportunidade, com os mesmos dados, regras de preço, pontos, inscrições e disponibilidade. Variam apenas layout e disposição responsiva. Não duplicar modelo de negócio, permissões nem indicadores por orientação.
+
+Não reinterpretar os arquivos como aprovação de novos descontos, pontuações, ratings, destaques, rótulos ou carrinhos: os modelos anexos ilustram visual e hierarquia; a funcionalidade continua subordinada ao GKR.
+
+### Critérios adicionais de aceitação
+
+- Comparar uma amostra de **card vertical** e uma de **card horizontal** lado a lado com os PDFs fornecidos, verificando hierarquia, imagem, proporções, bordas, hierarquia tipográfica, ícones, divisória e CTA.
+- Conferir que nenhuma borda use cor da marca do Coletivo ou cor por área de atuação; White/Gray3 seguem como padrão.
+- Verificar cards de oportunidade gratuita, paga, com/sem pontos, com/sem fotos, com/sem vagas remanescentes, além de estado sem avaliação.
+- Não tratar o estilo rosa/verde/roxo/ciano dos **indicadores ilustrativos nos PDFs** como mudança de paleta institucional ou identidade de Coletivos. Status funcionais legítimos podem ter regras próprias, a validar separadamente.
+- Exigir que botões e ícones interativos tenham estados funcionais, acessibilidade por teclado e toque e não sejam elementos decorativos inertes.
 
 ## 5. Hierarquia cromática do ecossistema
 
