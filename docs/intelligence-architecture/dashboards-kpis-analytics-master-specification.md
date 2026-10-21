@@ -2,7 +2,7 @@
 id: GKR-INTELLIGENCE-DASHBOARD-KPI-001
 title: Dashboards, KPIs e Analytics — Documento Mestre de Especificação para Construção
 status: active
-version: 0.2.52
+version: 0.2.53
 owner: Guivos Intelligence Architecture
 last_updated: 2026-10-11
 normative: false
@@ -2985,6 +2985,48 @@ SIX KPIS → proposed / NOT_READY
 G-XD-01 → UNRESOLVED
 G-XD-03..07 → OPEN
 VERIFIED OPERATIONAL SOURCE AUTHORITY → NONE IN THIS EXAM
+HUMAN AUTHORITY FORMALLY CONFIRMED → 0/13
+HUMAN ADJUDICATIONS → 0/77
+CANONICAL KPI PROMOTIONS → 0
+IMPLEMENTATION AUTHORIZATION → 0
+```
+
+
+---
+
+## 58. G-XD-02 × G-XD-01 — Reconciliação de protocolos de recepção de evidências
+
+### 58.1 Objeto e fronteira
+
+Confronto entre o protocolo de competência institucional de `G-XD-01` (seção 46, centrado nos expedientes `XD01-D01-E` e `XD01-D02-C`) e o roteiro P0/P1/P2 de `G-XD-02` (seção 57, abrangendo seis KPIs do Anexo A). São **trilhas distintas e complementares**. Um registro de prova de KPI não constitui prova de mandato humano; prova de mandato não constitui decisão de mérito nem contrato operacional de dados.
+
+### 58.2 Pontes verificadas e lacunas de rastreabilidade
+
+| Aspecto | Seção 46 — G-XD-01 | Seção 57 — G-XD-02 | Encaminhamento de compatibilidade sem aprovação |
+|---|---|---|---|
+| Objeto | Instrumento e competência institucional para dois expedientes específicos | Evidência/atributo/KPI e perguntas por P0/P1/P2 | Registrar IDs separados: `evidence_id`, `kpi_id`, `field_id`, `xd01_case_id` quando aplicável; ligação não é decisão |
+| Instrumento e escopo | Natureza do instrumento, entidade/jurisdição, poderes, reservas e aplicabilidade por expediente | Documento, versão, emissão, escopo, atributo e eventual competência | Toda alegação de competência exige qualificação independente no protocolo de seção 46; não inferir mandato pelo cargo ou ownership técnico |
+| Vigência e validade | Emissão, eficácia, revogações, prazo, emissor/assinatura e autenticidade | Referência versionada e qualificação de evidência | Preservar datas e cadeia de aprovação do instrumento; `EVIDENCE_PRESENT_NOT_ADJUDICATED` não equivale a competência evidenciada |
+| Revisor e custódia | Revisor competente, data, conclusão, referência sanitizada e guarda segura | Restrição de privacidade e registro de análise | Vincular referência pública saneada a custódia protegida, sem carregar instrumento privado ao GKR |
+| Taxonomias de estado | `NOT_RECEIVED`, `RECEIVED_UNVERIFIED`, `NEEDS_COMPLEMENT`, `CONFLICT`, `COMPETENCE_EVIDENCED` | `EVIDENCE_MISSING`, `EVIDENCE_PRESENT_NOT_ADJUDICATED`, `EVIDENCE_CONFLICT`, `NOT_APPLICABLE_WITH_JUSTIFICATION` | Manter duas máquinas de estado; não mapear automaticamente `EVIDENCE_PRESENT_NOT_ADJUDICATED` para `COMPETENCE_EVIDENCED` |
+| Efeito autorizativo | Evidência de competência requer revisão humana rastreável e não adjudica mérito | Prova de definição, source, qualidade ou disclosure não promove KPI por si só | Adjudicação substantiva, readiness e implementação exigem decisões e gates independentes |
+
+### 58.3 Registro mínimo de correlação proposto, não operacionalizado
+
+Para eventual evidência relativa a um dos seis KPIs, preservar `evidence_id`, `kpi_id`, `field_id`, classe `P0/P1/P2`, referência/versionamento, instrumento de competência relacionado **apenas quando existir e for aplicável**, `xd01_case_id` se pertinente, prova de escopo/vigência, revisor competente, restrição de divulgação e estado independente em cada trilha. Em ausência de instrumento de competência, registrar lacuna e não fabricar vínculo ou encaminhamento formal. A mera existência de `XD01-D01-E` e `XD01-D02-C` não autoriza atribuí-los genericamente a todas as questões dos seis KPIs.
+
+Nenhum formulário foi recebido ou enviado por esta seção. Não foi verificada nova autoridade, decisão humana, fonte produtiva, regra de elegibilidade, tratamento jurídico concreto ou serving. Não modificar os protocolos originais, os contratos individuais, o KPI Registry ou o sistema de dados sem decisão separada.
+
+### 58.4 Checkpoint
+
+```text
+G-XD-01 → UNRESOLVED
+G-XD-02 → EVIDENCE_PROTOCOL_CROSSWALK_DOCUMENTED / OPEN
+XD01-D01-E / XD01-D02-C → MANDATE EVIDENCE PENDING
+HUMAN REFERRALS SUBMITTED → 0
+P0/P1/P2 → DOCUMENTARY EXAMINED / NOT ADJUDICATED
+SIX KPIS → proposed / NOT_READY
+G-XD-03..07 → OPEN
 HUMAN AUTHORITY FORMALLY CONFIRMED → 0/13
 HUMAN ADJUDICATIONS → 0/77
 CANONICAL KPI PROMOTIONS → 0
