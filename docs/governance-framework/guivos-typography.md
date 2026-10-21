@@ -1,7 +1,7 @@
 ---
 id: GKR-BRAND-TYPOGRAPHY-001
 title: Tipografia Oficial da Guivos
-version: 1.0.2
+version: 1.0.3
 status: current
 normative: true
 ---
@@ -144,7 +144,23 @@ O documento reafirma **Display + Body 20**, **H1 + Body Small**, **H2 + Body Sma
 
 O arquivo **Goldplay_Font_Family (1) (1)(1).zip** entregue pelo fundador contém 32 fontes OTF (Goldplay e Goldplay Alt, incluindo pesos Thin, Light, Regular, Medium, SemiBold, Bold, Black e itálicos). A escala publicada usa **Goldplay normal, não Goldplay Alt**, especificamente arquivos Regular, Medium e SemiBold. O arquivo README do ZIP remete a um site de distribuição, mas **não comprova licença de incorporação web, redistribuição ou hospedagem pública**. Por isso o repositório de conhecimento não incorpora binários de fonte e não declara liberação de uso em produção a partir desse ZIP.
 
-### 11.2 Contrato de aplicação nos protótipos
+### 11.2 Registro de autorização para incorporação e distribuição do aplicativo (18/10/2026)
+
+**Escopo avaliado:** Goldplay Regular (400), Goldplay Medium (500) e Goldplay SemiBold (600), sem Goldplay Alt ou variantes itálicas.
+
+**Decisão documental:** não há, nas evidências disponíveis ao GKR nesta data, autorização aplicável confirmada para incorporar ou hospedar esses três arquivos na web nem para incluí-los e distribuir o aplicativo que os contém. As duas modalidades permanecem **BLOQUEADAS — AUTORIZAÇÃO NÃO COMPROVADA** para cada peso:
+
+| Arquivo/família | Incorporação e hospedagem web | Inclusão e distribuição do aplicativo |
+| --- | --- | --- |
+| Goldplay Regular (400) | Não comprovada; bloqueada | Não comprovada; bloqueada |
+| Goldplay Medium (500) | Não comprovada; bloqueada | Não comprovada; bloqueada |
+| Goldplay SemiBold (600) | Não comprovada; bloqueada | Não comprovada; bloqueada |
+
+O ZIP recebido contém arquivos de fonte, mas não é, por si só, prova de licença nem autorização escrita para esses usos. A seção 11.1 desta autoridade registra essa limitação; no pacote entregue ao protótipo também não foi localizado um arquivo de licença/termos. Este registro significa **ausência de autorização demonstrada no conjunto de evidências consultado**, não uma conclusão de que o titular jamais concedeu licença. A decisão só poderá ser revista com evidência verificável que cubra expressamente os três pesos, incorporação/hospedagem web e distribuição do aplicativo.
+
+Até essa evidência ser registrada, não copiar, incorporar, hospedar, empacotar ou distribuir os binários Goldplay com o app, incluindo assets compilados. A continuidade do protótipo local sem os binários e com fallback tipográfico não altera este bloqueio.
+
+### 11.3 Contrato de aplicação nos protótipos
 
 - Aplicar a hierarquia oficial por função sem substituir por fontes externas ou alterar os valores canônicos. A composição permanece livre, não a identidade tipográfica.
 - Carregar fontes Goldplay Regular (400), Medium (500) e SemiBold (600) apenas a partir de ativos já legitimamente disponíveis para o aplicativo **quando a autorização de incorporação/hospedagem estiver demonstrada**. Na ausência de prova de licença ou acesso aos arquivos, registrar bloqueio de disponibilização, sem afirmar que Goldplay foi instalado.
@@ -153,4 +169,4 @@ O arquivo **Goldplay_Font_Family (1) (1)(1).zip** entregue pelo fundador contém
 - Aplicar estilos nos dois protótipos — Guivos Descoberta de Oportunidades e Guivos Business Dashboard — e preservar a [Paleta Oficial de Cores e Fundo Branco](https://guivos-repositorio.github.io/Guivos-Knowledge-Repository/governance-framework/guivos-official-color-palette/): somente os 30 tokens permitidos e canvas branco `#FFFFFF` em todas as telas.
 - Após a materialização, realizar auditoria específica de **fontes computadas, pesos, tamanhos, line height, hierarquia, carregamento de assets, telas responsivas e conformidade cromática**. Build/testes não comprovam por si só a renderização tipográfica correta.
 
-**Estado:** autoridade tipográfica reafirmada; nenhuma nova escala, licença, promoção de produto ou autorização de dados reais.
+**Estado:** autoridade tipográfica reafirmada; autorização de incorporação/hospedagem web e distribuição do aplicativo para Goldplay Regular, Medium e SemiBold não comprovada e bloqueada; nenhuma nova escala, promoção de produto ou autorização de dados reais.
