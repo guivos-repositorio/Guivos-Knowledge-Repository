@@ -2,9 +2,9 @@
 id: GKR-UX-OPPORTUNITIES-LIVE-001
 title: Oportunidades em Movimento — Gráfico Vivo no Movimento 11 da Home Pessoa
 status: active
-version: 1.1.1
+version: 1.2.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-10-12
+last_updated: 2026-10-18
 normative: false
 maturity: design_reference_non_operational
 related:
@@ -102,6 +102,39 @@ Arquitetura candidata:
 - Nenhuma personalização ou inferência sobre Journey, saúde, finanças ou interesses privados a partir da curva global.
 - Priorizar estabilidade do layout, desempenho mobile e preservação da liberdade criativa do designer.
 - Contexto territorial/local/global somente com filtros, cobertura e proveniência realmente sustentados.
+
+## 6A. Política de atualização e operação do Gráfico Vivo (diretriz para protótipo; integração real condicionada)
+
+**Modelo:** atualização **orientada por eventos de transição efetiva de disponibilidade**, não animação ou incremento em intervalos artificiais. A fonte de verdade é o backend de oportunidades; a tela não inventa dados nem define o estado por conta própria. **A especificação do comportamento não autoriza por si só integração produtiva ou publicação**; os gates OPM-01 a OPM-08 permanecem abertos conforme seção 7.
+
+### 6A.1 Gatilhos do estoque e indicadores
+
+- **Ativadas:** contar somente a transição verificada de indisponível para disponível, incluindo reativação elegível; somar +1 ao estoque. Cadastro, rascunho e edições que não alteram disponibilidade não geram movimento.
+- **Encerradas:** contar somente a transição verificada de disponível para indisponível, incluindo inativação, cancelamento, encerramento por prazo e indisponibilidade por encerramento de inscrições/esgotamento **quando** a regra aprovada para aquele tipo definir saída; subtrair 1 do estoque.
+- **Sem transição real:** linha e números permanecem estáveis; não gerar atualização aleatória, ruído ou novas amostras fictícias para sugerir movimento.
+- **Idempotência:** aplicar cada transição única somente uma vez, mediante event_id, opportunity_id, ordem/versão de estado e confirmação de elegibilidade; reativação é uma nova transição legítima. Correções retroativas exigem reconciliação sem duplicidade.
+- **Integridade:** estoque final = estoque inicial + ativadas − encerradas + ajustes auditáveis, com período explicitado para os contadores e datas efetivas das transições no histórico.
+
+### 6A.2 Cadência de entrega e sincronização
+
+| Processo | Regra ou meta inicial |
+|---|---|
+| Mudança de status | Atualizar **por evento confirmado**, assim que a projeção válida for disponibilizada; sem periodicidade fixa de variação visual. |
+| Transmissão ao navegador | **SSE** preferencial; snapshot inicial obtido de API e usado também após reconexão ou lacuna de sequência. |
+| Latência técnica | **Meta preliminar de até 5 segundos** entre confirmação no backend e atualização do navegador conectado; medir percentis e validar custo/capacidade em OPM-04 antes de qualquer garantia pública. |
+| Reconciliação independente | **A cada 5 minutos (proposta inicial)**, comparar a projeção com a fonte de verdade e corrigir divergências registradas, sem simular novos eventos. A reconciliação não substitui atualização por evento. |
+| Perda de conexão | Marcar visualmente estado de atualização indisponível/desatualizada, reconectar e recuperar snapshot e versão/seq.; não inventar número corrente. |
+| Abertura da página | Carregar snapshot validado, histórico temporal e carimbo de última atualização; não exibir total fictício como real. |
+| Ausência de eventos | Manter valor e curva estáveis; nenhuma oscilação visual por relógio. |
+
+### 6A.3 Contrato de apresentação e responsabilidade
+
+- O gráfico representa **um estoque de oportunidades disponíveis no tempo**, não a soma de cadastros nem um feed de eventos com movimento obrigatório.
+- Contadores **Ativadas** e **Encerradas** devem corresponder ao período identificado; distinguir número de eventos de saldo disponível.
+- Exibir última atualização verificável, estado de carregamento e indisponibilidade. Dados de laboratório permanecem identificados inequivocamente como ilustrativos, mesmo quando a indicação é visualmente discreta; nunca apresentar o protótipo como operação real.
+- A curva suave (ECharts) é recurso de visualização: preservar valores amostrados, marcação de eventos e tooltip, sem interpolação que implique estoque fracionário ou novos estados inexistentes. Preferir fidelidade semântica sempre que houver conflito com suavização estética.
+- Não integrar a Home Pessoa até a aprovação de OPM-01..08 e da própria Home. A estação Replit independente é laboratório de componentes, não fonte operacional de dados.
+- As metas de latência e reconciliação desta seção são **valores iniciais para validação técnica**, sujeitos à medição e decisão de arquitetura; não equivalem a SLA aprovado.
 
 ## 7. Critérios de avaliação e evidências necessárias
 
