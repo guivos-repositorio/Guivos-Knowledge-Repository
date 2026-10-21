@@ -333,8 +333,8 @@ Este quadro sintetiza, para consulta humana e consumo por sistemas de IA, o sign
 | 06 | Mostrar complementaridade sem fabricar match | Explicar que uma capacidade existente em um contexto pode ajudar outro, desde que finalidade, autoridade e relevância sejam legítimas. | Demonstrar potencial de complementaridade sem transformar correlação em recomendação ou match automático. |
 | 07 | Mostrar os Domínios de Evolução sem transformar a vida em taxonomia visual obrigatória | Apresentar os Domínios como vocabulário para compreender amplitude de contextos e possibilidades. | Mostrar cobertura e diversidade sem criar diagnóstico, score, hierarquia humana ou nove blocos obrigatórios. |
 | 08 | Mapa de Pessoas — diferentes Momentos, diferentes caminhos | Evidenciar, por meio de um mapa conceitual global, que Pessoas em territórios e Momentos distintos podem ter interesses, necessidades e Próximos Passos diferentes. | Tornar perceptível a diversidade de contextos humanos e a contribuição potencial de Organizações e Coletivos distintos, sem simular demanda, perfis reais ou correspondência automática. |
-| 10 | Mostrar circulação de valor, supply e escala responsável | Explicar como Pessoas, Organizações e Coletivos podem contribuir, participar e receber valor dentro do ecossistema. | Demonstrar circulação de valor e possibilidade de escala sem transformar participação em exploração de atenção, dados ou vulnerabilidade. |
-| 09 | Construir confiança por autoridade, evidência e proteção | Mostrar que relações legítimas exigem clareza sobre participante, papel, finalidade, autoridade, evidência, dados e limites. | Sustentar confiança, transparência, proteção e responsabilidade proporcional. |
+| 09 | Mostrar circulação de valor, supply e escala responsável | Explicar como Pessoas, Organizações e Coletivos podem contribuir, participar e receber valor dentro do ecossistema. | Demonstrar circulação de valor e possibilidade de escala sem transformar participação em exploração de atenção, dados ou vulnerabilidade. |
+| 10 | Construir confiança por autoridade, evidência e proteção | Mostrar que relações legítimas exigem clareza sobre participante, papel, finalidade, autoridade, evidência, dados e limites. | Sustentar confiança, transparência, proteção e responsabilidade proporcional. |
 | 11 | Materializar o ecossistema sem virar catálogo | Introduzir os Produtos da Guivos depois que a tese de participantes, relações e valor já está compreendida. | Explicar como diferentes produtos cumprem responsabilidades específicas sem confundir participante com produto. |
 | 12 | Reabrir o horizonte para participação | Apresentar caminhos legítimos para uma Organização ou um Coletivo continuar explorando sua participação. | Encerrar com continuidade e escolha, preservando igual legitimidade entre Organização e Coletivo e sem pressão comercial. |
 
@@ -673,7 +673,34 @@ Regra:
 
 ---
 
-# Movimento 08 — Mostrar circulação de valor, supply e escala responsável
+# Movimento 08 — Mapa de Pessoas: diferentes Momentos, diferentes caminhos
+
+## Em diferentes lugares do mundo, Pessoas vivem Momentos diferentes — e podem buscar caminhos diferentes.
+
+Pessoas em diferentes territórios e contextos podem estar buscando caminhos de aprendizado, formação, bem-estar, trabalho, convivência, cultura, participação ou contribuição. Cada Pessoa vive um Momento próprio e pode reconhecer necessidades, interesses e Próximos Passos diferentes. Outras ainda podem estar descobrindo seus interesses.
+
+Por isso, Organizações e Coletivos distintos podem oferecer conhecimentos, recursos, infraestrutura, iniciativas e Oportunidades relevantes para Pessoas distintas — quando existir pertinência, autoridade legítima e condições reais de acesso. Nenhuma Organização ou Coletivo é solução universal, e nenhuma conexão representa evolução automática.
+
+### Elemento visual — Mapa de Pessoas
+
+A composição visual de referência é um mapa global que torne perceptível a diversidade de territórios, Momentos e interesses humanos. O conceito remete ao protótipo **Gráfico Vivo de Pessoas**, sem depender de acesso ao Replit ou impor seu uso operacional.
+
+Exemplos breves e ilustrativos de contextos: aprender uma profissão; praticar esportes; buscar mentoria; participar de uma iniciativa comunitária; explorar oportunidades culturais. O mapa deve tornar visível a pluralidade sem apresentar tais exemplos como demanda real observada.
+
+### Limites de representação, privacidade e evidência
+
+- Pontos no mapa não comprovam Pessoas cadastradas, localização individual, intenção expressa, demanda validada, cobertura operacional ou oportunidades disponíveis.
+- Conteúdo ilustrativo não pode ser confundido com dados reais, estatísticas, recomendações ou conexões efetivamente realizadas.
+- Não inferir necessidades individuais, perfis, consentimento, correspondências automáticas ou promessa de evolução.
+- Preservar a autonomia e a proteção de Pessoas, Organizações e Coletivos, incluindo as autoridades próprias de cada participante.
+- Distinguir **Possibilidade** de **Oportunidade real**, que requer agente legítimo e condições reais de acesso.
+- A definição narrativa não autoriza integração técnica, acesso ao Replit ou publicação de visualização sem validação específica.
+
+**Transição narrativa:** essa variedade de Momentos, necessidades e contribuições ajuda a compreender por que o valor pode circular entre participantes diferentes, de forma contextual e responsável.
+
+---
+
+# Movimento 09 — Mostrar circulação de valor, supply e escala responsável
 
 ## Valor pode circular sem transformar participação em mercado de atenção.
 
@@ -785,7 +812,7 @@ A diversidade legítima de participantes e supply pode ampliar o campo disponív
 
 ---
 
-# Movimento 09 — Construir confiança por autoridade, evidência e proteção
+# Movimento 10 — Construir confiança por autoridade, evidência e proteção
 
 ## Participar exige saber com quem, para quê, sob quais limites e com que evidência.
 
