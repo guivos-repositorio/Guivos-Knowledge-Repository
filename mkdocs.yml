@@ -239,6 +239,7 @@ nav:
 
       - Orquestração da Jornada:
           - Documento Mestre de Orquestração UX/UI: experience-architecture/organizations-collectives-journey/ux-ui-orchestration-master.md
+          - Acesso Único, Múltiplas Entidades e Planos Independentes: experience-architecture/organizations-collectives-journey/multiple-entities-account-context-and-plans.md
 
       - Fundamentos da Jornada:
           - Jornada Integrada da Organização: journeys/organization.md
