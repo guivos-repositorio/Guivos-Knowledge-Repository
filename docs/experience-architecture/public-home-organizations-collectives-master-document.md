@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-OC-MASTER-001
 title: Home Pública — Organizações e Coletivos — Documento Mestre de Arquitetura Narrativa
 status: active
-version: 1.0.7
+version: 1.0.8
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-25
+last_updated: 2026-10-20
 parent: GKR-UX-HOME-MASTER-001
 depends_on:
   - GKR-STATE-001
@@ -332,10 +332,11 @@ Este quadro sintetiza, para consulta humana e consumo por sistemas de IA, o sign
 | 05 | Explicar quem participa | Diferenciar Pessoa, Organização e Coletivo como participantes estruturais distintos. | Tornar papéis, identidades, responsabilidades e autoridades compreensíveis sem confundi-los com produtos. |
 | 06 | Mostrar complementaridade sem fabricar match | Explicar que uma capacidade existente em um contexto pode ajudar outro, desde que finalidade, autoridade e relevância sejam legítimas. | Demonstrar potencial de complementaridade sem transformar correlação em recomendação ou match automático. |
 | 07 | Mostrar os Domínios de Evolução sem transformar a vida em taxonomia visual obrigatória | Apresentar os Domínios como vocabulário para compreender amplitude de contextos e possibilidades. | Mostrar cobertura e diversidade sem criar diagnóstico, score, hierarquia humana ou nove blocos obrigatórios. |
-| 08 | Mostrar circulação de valor, supply e escala responsável | Explicar como Pessoas, Organizações e Coletivos podem contribuir, participar e receber valor dentro do ecossistema. | Demonstrar circulação de valor e possibilidade de escala sem transformar participação em exploração de atenção, dados ou vulnerabilidade. |
+| 08 | Mapa de Pessoas — diferentes Momentos, diferentes caminhos | Evidenciar, por meio de um mapa conceitual global, que Pessoas em territórios e Momentos distintos podem ter interesses, necessidades e Próximos Passos diferentes. | Tornar perceptível a diversidade de contextos humanos e a contribuição potencial de Organizações e Coletivos distintos, sem simular demanda, perfis reais ou correspondência automática. |
+| 10 | Mostrar circulação de valor, supply e escala responsável | Explicar como Pessoas, Organizações e Coletivos podem contribuir, participar e receber valor dentro do ecossistema. | Demonstrar circulação de valor e possibilidade de escala sem transformar participação em exploração de atenção, dados ou vulnerabilidade. |
 | 09 | Construir confiança por autoridade, evidência e proteção | Mostrar que relações legítimas exigem clareza sobre participante, papel, finalidade, autoridade, evidência, dados e limites. | Sustentar confiança, transparência, proteção e responsabilidade proporcional. |
-| 10 | Materializar o ecossistema sem virar catálogo | Introduzir os Produtos da Guivos depois que a tese de participantes, relações e valor já está compreendida. | Explicar como diferentes produtos cumprem responsabilidades específicas sem confundir participante com produto. |
-| 11 | Reabrir o horizonte para participação | Apresentar caminhos legítimos para uma Organização ou um Coletivo continuar explorando sua participação. | Encerrar com continuidade e escolha, preservando igual legitimidade entre Organização e Coletivo e sem pressão comercial. |
+| 11 | Materializar o ecossistema sem virar catálogo | Introduzir os Produtos da Guivos depois que a tese de participantes, relações e valor já está compreendida. | Explicar como diferentes produtos cumprem responsabilidades específicas sem confundir participante com produto. |
+| 12 | Reabrir o horizonte para participação | Apresentar caminhos legítimos para uma Organização ou um Coletivo continuar explorando sua participação. | Encerrar com continuidade e escolha, preservando igual legitimidade entre Organização e Coletivo e sem pressão comercial. |
 
 Exemplos permanecem nas seções detalhadas correspondentes para não transformar ilustrações em prescrição visual.
 
@@ -846,7 +847,7 @@ Confiança não deve ser declarada pela estética da página.
 
 ---
 
-# Movimento 10 — Materializar o ecossistema sem virar catálogo
+# Movimento 11 — Materializar o ecossistema sem virar catálogo
 
 ## Uma Guivos. Papéis de produto diferentes. Autoridades preservadas.
 
@@ -932,7 +933,7 @@ Uma futura materialização não deve reduzir este movimento a uma grade tradici
 
 ---
 
-# Movimento 11 — Reabrir o horizonte para participação
+# Movimento 12 — Reabrir o horizonte para participação
 
 ## Como podemos continuar daqui?
 
