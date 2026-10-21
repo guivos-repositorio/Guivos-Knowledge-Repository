@@ -2,9 +2,9 @@
 id: GKR-PLANS-ORGANIZATION-001
 title: Planos — Organizações
 status: active
-version: 1.3.0
+version: 1.3.1
 owner: Guivos
-last_updated: 2026-10-03
+last_updated: 2026-10-17
 normative: false
 depends_on:
   - GEM-004-A1
@@ -129,3 +129,8 @@ Os valores iguais entre determinados degraus não criam equivalência funcional 
 ## Estado comercial
 
 Os preços, capacidades e benefícios integram a baseline comercial de referência vigente. A oferta pública e a cobrança permanecem sujeitas aos gates comerciais, jurídicos, fiscais e operacionais aplicáveis.
+
+
+## Regra candidata de galerias — direção do fundador de 17/10/2026
+
+O [Contrato de Perfis, Oportunidades, Galerias e Vigência](../experience-architecture/organizations-collectives-journey/profile-opportunity-media-lifecycle-contract.md) registra até **9 fotos na galeria de perfil da Organização e 9 fotos por oportunidade**, pois Conecta, Eleva e Transforma são planos pagos. Não se infere plano gratuito institucional; eventual plano futuro gratuito exigirá autoridade própria e limite candidato de 3. Logo é ativo próprio e sua contabilização não é presumida. **Ratificação econômica/comercial e implementação real continuam pendentes**; demais capacidades e preço não mudam.

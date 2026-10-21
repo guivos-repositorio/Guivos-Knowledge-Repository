@@ -2,9 +2,9 @@
 id: GKR-UX-ORG-OPPORTUNITY-REGISTRATION-MASTER-001
 title: Jornada de Organizações e Coletivos — Organização — Cadastro de Oportunidade / Programa — Documento Mestre de Superfície
 status: draft
-version: 0.1.0
+version: 0.1.1
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-26
+last_updated: 2026-10-17
 normative: false
 maturity: functional_contract_candidate
 depends_on:
@@ -503,3 +503,8 @@ PROTOTYPE
 PRODUCT ENGINEERING
 → NOT RELEASED
 ```
+
+
+## 20. Fotos, preço e prazo da oportunidade — direção candidata (17/10/2026)
+
+Conferir o [Contrato de Perfis, Oportunidades, Galerias e Vigência](profile-opportunity-media-lifecycle-contract.md): cadastro `ORG-002` deverá permitir galeria própria da oportunidade, condição `Gratuita` ou `Paga` conforme Plano da Organização, data/hora de ocorrência e encerramento, e prazo de inscrições quando distinto. Limite candidato: 9 fotos por oportunidade para Conecta/Eleva/Transforma. Após término, retirar da descoberta futura/ativa da Pessoa, sem apagar obrigações, histórico ou representar despublicação como cancelamento; preservar `ORG-003`, aprovações e Transition Registry. Proposta não homologa os valores comerciais, nem realiza implementação de produção.
