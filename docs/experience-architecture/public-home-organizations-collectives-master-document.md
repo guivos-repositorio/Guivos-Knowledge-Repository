@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-OC-MASTER-001
 title: Home Pública — Organizações e Coletivos — Documento Mestre de Arquitetura Narrativa
 status: active
-version: 1.0.8
+version: 1.0.9
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-10-20
 parent: GKR-UX-HOME-MASTER-001
@@ -980,6 +980,8 @@ Comunidades, movimentos, grupos, redes e outras articulações coletivas compat�
 
 **Descobrir como um Coletivo pode participar →**
 
+O convite principal de Header desta Home é **Participar da Guivos**; ele deve preservar uma escolha clara entre **Organização** e **Coletivo**, sem afirmar implementação operacional ou exigir cadastro/contratação imediatos.
+
 Os dois caminhos possuem **igual legitimidade conceitual**. A futura composição não deve apresentar um como padrão, superior ou meramente comercial e o outro como secundário.
 
 Esses caminhos são conceituais até que destinos operacionais sejam formalmente autorizados e comprovados.
@@ -1076,7 +1078,7 @@ COMPARTILHAR
 IDIOMA / REGIÃO
 LAUNCHER DO ECOSSISTEMA
 LOGIN
-INICIAR JORNADA
+PARTICIPAR DA GUIVOS (NA HOME DE ORGANIZAÇÕES E COLETIVOS)
 ```
 
 Nesta Home, `Organizações e Coletivos` identifica o contexto público atual. A marca Guivos/Home permanece o retorno natural à Home principal.
@@ -1096,7 +1098,7 @@ Journey não integra o launcher.
 
 ```text
 JOURNEY
-→ INICIAR JORNADA
+→ PORTA PRÓPRIA DE INICIAR JORNADA NA HOME PESSOA
 
 TRAVEL / ADS / MEDIA / BUSINESS / INTELLIGENCE / MALL
 → LAUNCHER
@@ -1135,19 +1137,21 @@ O CTA da Hero não deve, por padrão:
 - abrir formulário comercial;
 - abrir a bifurcação final.
 
-### 16.3 `Iniciar Jornada`
+### 16.3 CTA principal de Header — `Participar da Guivos`
 
-`Iniciar Jornada` continua sendo a porta própria e persistente do Guivos Journey.
+Na **Home pública de Organizações e Coletivos**, o CTA principal do Header é **`Participar da Guivos`**, substituindo o rótulo `Iniciar Jornada` nessa superfície específica. A decisão preserva a distinção entre participação institucional/coletiva e Journey individual.
+
+Na **Home Pessoa**, o CTA `Iniciar Jornada` permanece vinculado à porta própria do Guivos Journey. A alteração não renomeia esse acesso globalmente nem altera a arquitetura do produto.
+
+O CTA `Participar da Guivos` tem como direção conceitual uma etapa de **escolha entre Organização e Coletivo**, com igual legitimidade, respeitando identidades, finalidades e governanças próprias. Não deve impor contratação, escolha de plano, uso de Guivos Business ou cadastro antes de compreender o caminho. Seu **destino operacional permanece condicionado à autorização e validação da superfície correspondente**; este registro não declara link implementado.
 
 ```text
-INICIAR JORNADA
-≠ CADASTRAR ORGANIZAÇÃO
-≠ CRIAR COLETIVO
-≠ CONTRATAR BUSINESS
-≠ ONBOARDING INSTITUCIONAL
+HOME PESSOA → INICIAR JORNADA
+HOME ORGANIZAÇÕES E COLETIVOS → PARTICIPAR DA GUIVOS
+                                 → ESCOLHER ORGANIZAÇÃO OU COLETIVO
 ```
 
-Um visitante deve conseguir distinguir `iniciar minha Journey` de `descobrir como uma Organização ou Coletivo pode participar`.
+A regra não altera o CTA exploratório da Hero (seção 16.2), que permanece orientado à descoberta dentro da Home. Tampouco substitui os dois CTAs distintos de continuidade no Movimento 12.
 
 ### 16.4 Header durante scroll e mobile
 
