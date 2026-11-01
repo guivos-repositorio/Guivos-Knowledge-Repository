@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-INTELLIGENCE-MASTER-001
 title: Home Pública — Guivos Intelligence v1 — Documento Mestre
 status: active
-version: 0.2.14
+version: 0.2.15
 owner: Experience Architecture
-last_updated: 2026-09-25
+last_updated: 2026-11-01
 parent: GKR-INTELLIGENCE-PRODUCT-SOURCELOCK-001
 depends_on:
   - GPA-006
@@ -349,6 +349,24 @@ CONHECIMENTO E EVIDÊNCIAS
 ↓
 COMPREENSÃO
 ```
+
+#### Adendo temporal proposto ao Movimento 06 — três perspectivas complementares
+
+A formação de compreensão pode articular **três perspectivas**, sem convertê-las em fases obrigatórias, produtos autônomos ou motores distintos:
+
+| Perspectiva | Pergunta | Compreensão possível | Limite |
+| --- | --- | --- | --- |
+| **Retrospectiva** | O que aconteceu? | Experiências, oportunidades, decisões e padrões registrados | O registro não comprova intenção ou causalidade |
+| **Contextual** | O que acontece? | Momento atual, objetivos, circunstâncias e barreiras | Contexto pode estar incompleto, desatualizado ou contestado |
+| **Prospectiva** | O que pode acontecer? | Caminhos possíveis, oportunidades e condições necessárias | Cenário não é previsão garantida nem compromisso de resultado |
+
+**Expressão editorial candidata:** “Compreender o que passou. Interpretar o presente. Explorar o que pode vir.”
+
+As perspectivas podem coexistir ou ser utilizadas isoladamente, conforme finalidade legítima, disponibilidade de informações, autorização e maturidade real das capacidades. `COMPREENDER ≠ DECIDIR`. A análise prospectiva não autoriza decisões automáticas, uso irrestrito de históricos pessoais ou exposição de informações individuais a terceiros.
+
+**Ajustes de integração nos movimentos vigentes:** no **M05**, exemplos visuais podem ilustrar as três lentes sem alegar indicadores operacionais comprovados; no **M08**, diferenciar observação histórica, interpretação contextual, cenário e incerteza; no **M11**, relacionar possibilidades a condições necessárias e evitar previsão determinística. Em **M03/M04/M07/M10**, referências temporais devem ser pontuais e não duplicar a explicação do M06.
+
+**Limite de autoridade:** esta formulação não converte Guivos AI em Guivos Intelligence; Guivos Intelligence permanece o produto transversal definido em GPA-006. A incorporação visual e editorial depende da revisão correspondente do Home Source Lock/handoff e dos procedimentos vigentes de aprovação.
 
 ### Movimento 07 — Onde essa compreensão gera valor
 
