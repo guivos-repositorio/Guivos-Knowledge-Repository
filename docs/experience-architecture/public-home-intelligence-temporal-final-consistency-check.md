@@ -10,7 +10,7 @@ normative: false
 
 # Checagem estática de consistência — PR #720
 
-**Área de governança das Homes:** Experiência e Journey (`docs/experience-architecture/`).  
+**Área de governança das Homes:** Experiência e Journey (`docs/experience-architecture/`).
 **Escopo:** leitura dos arquivos candidatos na branch `proposal/home-intelligence-temporal-perspectives-20261101`. **Nenhum teste automatizado, build, gate ou publicação Pages verificado nesta etapa.**
 
 ## 1. Resultado por documento
