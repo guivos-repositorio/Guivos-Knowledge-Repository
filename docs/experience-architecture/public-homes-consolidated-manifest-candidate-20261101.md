@@ -1,12 +1,12 @@
 ---
 id: GKR-UX-HOMES-CONSOLIDATED-MANIFEST-CANDIDATE-001
-title: Homes Públicas — Manifesto Canônico de Entrega para Design
+title: Proposta não normativa — Manifesto consolidado Intelligence e Business
 status: proposed_non_normative
 version: 0.1.0
 owner: Experience Architecture
 last_updated: 2026-11-01
-normative: true
-maturity: current_canonical_design_source_manifest
+normative: false
+maturity: candidate_not_for_design_consumption
 depends_on:
   - GKR-STATE-001
   - GKR-UX-HOMES-DESIGN-HANDOFF-001
