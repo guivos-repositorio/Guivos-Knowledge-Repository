@@ -31,4 +31,4 @@ Consolidar as evidências da PR #720 relativas à incorporação da tríade **Re
 5. Não derivar autorização de implantação, operação ou execução da Guivos AI.
 
 ## 5. Estado
-**Elegível para deliberação sobre integração, não aprovado para merge por este documento.** PR #720 permanece sem integração autorizada. 
+**Elegível para deliberação sobre integração, não aprovado para merge por este documento.** PR #720 permanece sem integração autorizada.
