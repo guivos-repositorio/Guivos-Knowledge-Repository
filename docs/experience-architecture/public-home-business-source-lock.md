@@ -87,9 +87,9 @@ Objetivo do lock:
 Para a produção externa de Design da Home Business, o pacote específico de autoridade deve ser restrito a:
 
 1. `GKR-UX-HOME-BUSINESS-SOURCELOCK-001` — este Source Lock;
-2. `GKR-UX-HOME-BUSINESS-MASTER-001` v1.1.10 — `docs/experience-architecture/public-home-business-master-document.md`;
+2. `GKR-UX-HOME-BUSINESS-MASTER-001` v1.1.11 — `docs/experience-architecture/public-home-business-master-document.md`;
 3. `GKR-UX-HOME-BUSINESS-CONVERSION-002` v1.0.3 — `docs/experience-architecture/public-home-business-conversion-authority-v2.md`;
-4. `GKR-UX-HOME-BUSINESS-AUTHORITY-001` v1.0.11 — `docs/experience-architecture/public-home-business-authority-contracts.md`;
+4. `GKR-UX-HOME-BUSINESS-AUTHORITY-001` v1.0.12 — `docs/experience-architecture/public-home-business-authority-contracts.md`;
 5. `GPA-004` v1.7.7 — arquitetura funcional vigente do Guivos Business;
 6. `GKR-PLANS-BUSINESS-001` v2.3.2 — `docs/plans/business.md` — planos, preços de referência e composição Self-service corrente.
 
@@ -845,10 +845,10 @@ O consumo corrente da Home Business é resolvido pelo Manifesto canônico vigent
 Usar:
 
 1. `GKR-UX-HOMES-DESIGN-HANDOFF-001 v1.7.10` como autoridade comum de handoff;
-2. este Source Lock `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.28`;
-3. `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.10`;
+2. este Source Lock `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.29`;
+3. `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.11`;
 4. `GKR-UX-HOME-BUSINESS-CONVERSION-002 v1.0.3`;
-5. `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.11`;
+5. `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.12`;
 6. `GPA-004 v1.7.7`;
 7. `GKR-PLANS-BUSINESS-001 v2.3.2` — planos, preços de referência e composição Business corrente.
 
