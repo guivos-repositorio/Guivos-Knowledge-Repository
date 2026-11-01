@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-BUSINESS-SOURCELOCK-001
 title: Source Lock — Home Pública — Guivos Business
 status: active
-version: 1.1.28
+version: 1.1.29
 owner: Experience Architecture
-last_updated: 2026-09-21
+last_updated: 2026-11-01
 parent: GKR-UX-HOME-BUSINESS-MASTER-001
 depends_on:
   - GKR-UX-HOME-BUSINESS-MASTER-001
@@ -433,6 +433,13 @@ HOME PRÓPRIA DO GUIVOS INTELLIGENCE
 ```
 
 A autoridade documental da Home própria do Guivos Intelligence já existe. O destino deve ser preservado sem inventar URL pública, publicação ou disponibilidade operacional enquanto essas superfícies não forem formalmente liberadas.
+
+
+### Adendo candidato B2 — observação, interpretação e cenário (não vigente)
+
+A distinção entre o que foi observado, o que é interpretado no contexto e o que permanece como cenário possível é um princípio de comunicação responsável. Não constitui declaração de função prospectiva disponível, nem altera o objeto analítico autorizado da Home Business.
+
+A autorização B2 de 01/11/2026 permite apenas preparar este texto. A incorporação normativa, a alteração da copy congelada ou o anúncio de capacidade prospectiva dependem de decisão documental específica posterior. Permanecem vigentes todas as regras de mudança da seção 30.
 
 ## 15. Fronteiras do Intelligence preservadas
 
