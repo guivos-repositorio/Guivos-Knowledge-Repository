@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-INTELLIGENCE-HANDOFF-001
 title: Handoff Canônico para Design — Home Pública — Guivos Intelligence
 status: active
-version: 1.1.17
+version: 1.1.18
 owner: Experience Architecture
-last_updated: 2026-09-25
+last_updated: 2026-11-01
 parent: GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001
 depends_on:
   - GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001
@@ -49,6 +49,12 @@ Este Handoff **não é**:
 - implementação;
 - autorização de publicação.
 
+## 1-A. Orientação candidata à designer — três perspectivas
+
+**Proposta PR #720, pendente de integração.** A representação visual pode explicitar a leitura **Retrospectiva / Contextual / Prospectiva** no contexto do Movimento 06, com suporte eventual no M05. O conteúdo deve respeitar o Source Lock e não converter as lentes em três motores, etapas fixas, produtos independentes ou promessa de previsão. **M08** preserva proveniência, incerteza, contestação e limites; **M11** trata de cenários condicionados e possíveis caminhos. A linguagem deve priorizar possibilidades e compreensão útil, sem prometer resultados comprovados.
+
+A designer mantém liberdade de composição no regime designer-first; esta orientação não ordena wireframe, Figma, protótipo ou publicação.
+
 ## 2. Estado corrente
 
 ```text
@@ -65,7 +71,7 @@ HOME SOURCE LOCK
 → GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.16
 
 HOME MASTER
-→ GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.14
+→ GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.15
 
 DESIGN PRODUCTION RELEASE
 → GRANTED / EXTERNAL DESIGNER
@@ -88,7 +94,7 @@ GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.16
 → governa o que está congelado para materialização
 
 NÍVEL 1
-GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.14
+GKR-UX-HOME-INTELLIGENCE-MASTER-001 v0.2.15
 → governa narrativa pública, copy e fronteiras da Home
 
 NÍVEL 2
