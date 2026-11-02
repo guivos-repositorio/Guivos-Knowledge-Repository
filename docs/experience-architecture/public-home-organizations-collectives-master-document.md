@@ -428,7 +428,7 @@ Regra de prova:
 
 # Movimento 03 — Da fragmentação à continuidade
 
-### Adendo candidato — perspectivas temporais em M03 (não vigente)
+### Perspectivas temporais em M03
 
 Experiências, contribuições e registros anteriores podem ajudar a compreender o momento presente e abrir novos caminhos, sem produzir continuidade ou resultados automáticos.
 
@@ -576,7 +576,7 @@ Essas distinções são princípios públicos. Seus mecanismos autenticados pert
 
 # Movimento 06 — Mostrar complementaridade sem fabricar match
 
-### Adendo candidato — perspectivas temporais em M06 (não vigente)
+### Perspectivas temporais em M06
 
 Uma capacidade disponível hoje pode contribuir para possibilidades futuras em outros contextos, sem garantir correspondência, participação ou resultado.
 
@@ -828,7 +828,7 @@ A diversidade legítima de participantes e supply pode ampliar o campo disponív
 
 # Movimento 10 — Construir confiança por autoridade, evidência e proteção
 
-### Adendo candidato — perspectivas temporais em M10 (não vigente)
+### Perspectivas temporais em M10
 
 O que foi observado, o que é interpretado no contexto e o que permanece como possibilidade deve ser comunicado com seus limites de evidência e incerteza.
 
