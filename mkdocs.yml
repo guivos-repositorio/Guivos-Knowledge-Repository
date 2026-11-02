@@ -266,6 +266,14 @@ nav:
           - Organização — Responsabilidades e Evidências: experience-architecture/organizations-collectives-journey/organization-responsibilities-evidence-master.md
           - Coletivo — Relação Organização–Coletivo: experience-architecture/organizations-collectives-journey/collective-organization-relationship-master.md
 
+  - Guivos ADS:
+      - Comece por aqui:
+          - Leia Primeiro — Sistema Ads: experience-architecture/ads-system/read-first.md
+      - Sistema Autenticado:
+          - Documento Mestre — Superfícies e Fluxos: experience-architecture/ads-system/system-master.md
+          - Produto Guivos Ads — GPA-007: product-architecture/ads.md
+          - Publicidade, Patrocínios e Opportunity Boost: product-architecture/guivos-ads-opportunity-sponsorship-and-boost-concept-2026-11-02.md
+
   - Research e Validação:
       - Research — Visão Geral: research/index.md
       - Validação de Mercado: research/market-validation/README.md
