@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-BUSINESS-READ-FIRST-001
 title: 00 — Leia Primeiro — Home Pública — Guivos Business
 status: active
-version: 1.0.19
+version: 1.0.20
 owner: Experience Architecture
-last_updated: 2026-09-25
+last_updated: 2026-11-01
 normative: false
 maturity: current_design_routing
 depends_on:
@@ -46,10 +46,10 @@ AI
 
 ### Fontes específicas desta Home
 
-1. `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.28` — `docs/experience-architecture/public-home-business-source-lock.md`;
-2. `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.10` — `docs/experience-architecture/public-home-business-master-document.md`;
+1. `GKR-UX-HOME-BUSINESS-SOURCELOCK-001 v1.1.29` — `docs/experience-architecture/public-home-business-source-lock.md`;
+2. `GKR-UX-HOME-BUSINESS-MASTER-001 v1.1.11` — `docs/experience-architecture/public-home-business-master-document.md`;
 3. `GKR-UX-HOME-BUSINESS-CONVERSION-002 v1.0.3` — `docs/experience-architecture/public-home-business-conversion-authority-v2.md`;
-4. `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.11` — `docs/experience-architecture/public-home-business-authority-contracts.md`;
+4. `GKR-UX-HOME-BUSINESS-AUTHORITY-001 v1.0.12` — `docs/experience-architecture/public-home-business-authority-contracts.md`;
 5. `GPA-004 v1.7.7` — `docs/product-architecture/business.md`;
 6. `GKR-PLANS-BUSINESS-001 v2.3.2` — `docs/plans/business.md` — planos, preços de referência e composição Business corrente;
 
