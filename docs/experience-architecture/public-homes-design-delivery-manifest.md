@@ -55,7 +55,7 @@ Quatro autoridades são universais para o fluxo de Design:
 
 Quando a designer optar por usar IA, acrescenta-se a autoridade condicional:
 
-- `GKR-UX-HOMES-GENINPUT-001 v2.3.17` — `docs/experience-architecture/public-homes-generative-source-lock-and-prompt-template.md`.
+- `GKR-UX-HOMES-GENINPUT-001 v2.3.19` — `docs/experience-architecture/public-homes-generative-source-lock-and-prompt-template.md`.
 
 O uso manual não exige Source Lock ou registro de execução de IA.
 
