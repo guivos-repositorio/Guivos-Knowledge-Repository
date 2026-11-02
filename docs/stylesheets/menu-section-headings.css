@@ -47,3 +47,13 @@
 .md-nav--primary .md-nav__item--section:has(.md-nav__link[href*="organizations-collectives-journey/read-first"]) .md-nav__item--nested > .md-nav__link:focus {
   color: #8c00ff;
 }
+
+
+/* Guivos ADS — sessão específica do sistema autenticado no GKR.
+   Laranja institucional de navegação; não altera Home Pública Ads nem superfícies do produto. */
+.md-nav--primary .md-nav__item--section:has(.md-nav__link[href*="ads-system/read-first"]) > .md-nav__link,
+.md-nav--primary .md-nav__item--section:has(.md-nav__link[href*="ads-system/read-first"]) .md-nav__item--nested > .md-nav__link,
+.md-nav--primary .md-nav__item--section:has(.md-nav__link[href*="ads-system/read-first"]) > .md-nav__link:hover,
+.md-nav--primary .md-nav__item--section:has(.md-nav__link[href*="ads-system/read-first"]) > .md-nav__link:focus {
+  color: #cf4a00;
+}
