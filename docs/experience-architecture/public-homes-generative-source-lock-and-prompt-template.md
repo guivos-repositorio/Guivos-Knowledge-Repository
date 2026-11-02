@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-GENINPUT-001
 title: Homes Públicas — Source Lock e Contrato de Consumo para Designer e IA Opcional
 status: active
-version: 2.3.18
+version: 2.3.19
 owner: Experience Architecture
 last_updated: 2026-09-25
 parent: GKR-UX-HOMES-DESIGN-HANDOFF-001
@@ -281,7 +281,7 @@ Essas cinco fontes não substituem as autoridades específicas da Home. Elas gov
 Fontes específicas:
 
 - `GKR-UX-HOME-PERSON-READ-FIRST-001 v1.0.4` — `docs/experience-architecture/read-first/public-home-person-read-first.md`;
-- `GKR-UX-HOME-MASTER-001 v1.0.7` — `docs/experience-architecture/public-home-master-document.md`;
+- `GKR-UX-HOME-MASTER-001 v1.0.9` — `docs/experience-architecture/public-home-master-document.md`;
 - `GKR-UX-HOME-PERSON-MEDIA-SUPPLY-001 v1.0.2` — `docs/experience-architecture/public-home-person-media-editorial-supply-reconciliation.md`.
 
 ### 6.2 Home Pública — Organizações e Coletivos
@@ -289,7 +289,7 @@ Fontes específicas:
 Fontes específicas:
 
 - `GKR-UX-HOME-OC-READ-FIRST-001 v1.0.5` — `docs/experience-architecture/read-first/public-home-organizations-collectives-read-first.md`;
-- `GKR-UX-HOME-OC-MASTER-001 v1.0.7` — `docs/experience-architecture/public-home-organizations-collectives-master-document.md`;
+- `GKR-UX-HOME-OC-MASTER-001 v1.0.10` — `docs/experience-architecture/public-home-organizations-collectives-master-document.md`;
 - `GKR-UX-HOME-OC-MEDIA-SUPPLY-001 v1.0.1` — `docs/experience-architecture/public-home-organizations-collectives-media-editorial-supply-reconciliation.md`.
 
 ### 6.3 Home Pública — Guivos Mall

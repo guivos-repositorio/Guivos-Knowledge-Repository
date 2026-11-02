@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-OC-MASTER-001
 title: Home Pública — Organizações e Coletivos — Documento Mestre de Arquitetura Narrativa
 status: active
-version: 1.0.9
+version: 1.0.10
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-10-20
+last_updated: 2026-11-01
 parent: GKR-UX-HOME-MASTER-001
 depends_on:
   - GKR-STATE-001
@@ -428,6 +428,13 @@ Regra de prova:
 
 # Movimento 03 — Da fragmentação à continuidade
 
+### Perspectivas temporais em M03
+
+Experiências, contribuições e registros anteriores podem ajudar a compreender o momento presente e abrir novos caminhos, sem produzir continuidade ou resultados automáticos.
+
+**Limite:** registros históricos não demonstram causalidade.
+
+
 ## E se aquilo que já existe pudesse ganhar mais contexto e continuidade?
 
 Uma experiência pode revelar um novo Momento.
@@ -568,6 +575,13 @@ Essas distinções são princípios públicos. Seus mecanismos autenticados pert
 ---
 
 # Movimento 06 — Mostrar complementaridade sem fabricar match
+
+### Perspectivas temporais em M06
+
+Uma capacidade disponível hoje pode contribuir para possibilidades futuras em outros contextos, sem garantir correspondência, participação ou resultado.
+
+**Limite:** não fabricar match nem afirmar que exista uma oportunidade concreta sem evidência.
+
 
 ## O que falta em um contexto pode existir como capacidade em outro.
 
@@ -813,6 +827,13 @@ A diversidade legítima de participantes e supply pode ampliar o campo disponív
 ---
 
 # Movimento 10 — Construir confiança por autoridade, evidência e proteção
+
+### Perspectivas temporais em M10
+
+O que foi observado, o que é interpretado no contexto e o que permanece como possibilidade deve ser comunicado com seus limites de evidência e incerteza.
+
+**Limite:** hipótese não é previsão, evidência não implica causalidade, e a proteção de dados permanece inalterada.
+
 
 ## Participar exige saber com quem, para quê, sob quais limites e com que evidência.
 

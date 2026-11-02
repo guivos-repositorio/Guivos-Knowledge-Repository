@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-DELIVERY-001
 title: Homes Públicas — Manifesto Canônico de Entrega para Design
 status: active
-version: 7.0.56
+version: 7.0.57
 owner: Experience Architecture
 last_updated: 2026-11-01
 normative: true
@@ -55,7 +55,7 @@ Quatro autoridades são universais para o fluxo de Design:
 
 Quando a designer optar por usar IA, acrescenta-se a autoridade condicional:
 
-- `GKR-UX-HOMES-GENINPUT-001 v2.3.17` — `docs/experience-architecture/public-homes-generative-source-lock-and-prompt-template.md`.
+- `GKR-UX-HOMES-GENINPUT-001 v2.3.19` — `docs/experience-architecture/public-homes-generative-source-lock-and-prompt-template.md`.
 
 O uso manual não exige Source Lock ou registro de execução de IA.
 
@@ -65,14 +65,14 @@ O uso manual não exige Source Lock ou registro de execução de IA.
 
 - `GKR-UX-HOME-PERSON-READ-FIRST-001 v1.0.5` — `docs/experience-architecture/read-first/public-home-person-read-first.md`;
 
-- `GKR-UX-HOME-MASTER-001 v1.0.8` — `docs/experience-architecture/public-home-master-document.md`;
+- `GKR-UX-HOME-MASTER-001 v1.0.9` — `docs/experience-architecture/public-home-master-document.md`;
 - `GKR-UX-HOME-PERSON-MEDIA-SUPPLY-001 v1.0.2` — `docs/experience-architecture/public-home-person-media-editorial-supply-reconciliation.md`.
 
 ### 3.2 Organizações e Coletivos
 
 - `GKR-UX-HOME-OC-READ-FIRST-001 v1.0.5` — `docs/experience-architecture/read-first/public-home-organizations-collectives-read-first.md`;
 
-- `GKR-UX-HOME-OC-MASTER-001 v1.0.9` — `docs/experience-architecture/public-home-organizations-collectives-master-document.md`;
+- `GKR-UX-HOME-OC-MASTER-001 v1.0.10` — `docs/experience-architecture/public-home-organizations-collectives-master-document.md`;
 - `GKR-UX-HOME-OC-MEDIA-SUPPLY-001 v1.0.1` — `docs/experience-architecture/public-home-organizations-collectives-media-editorial-supply-reconciliation.md`.
 
 ### 3.3 Mall

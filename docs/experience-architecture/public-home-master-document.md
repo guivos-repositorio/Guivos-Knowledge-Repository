@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-MASTER-001
 title: Home Pública — Pessoa — Documento Mestre de Arquitetura Estratégica
 status: active
-version: 1.0.8
+version: 1.0.9
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-09-24
+last_updated: 2026-11-01
 normative: false
 maturity: reconciled_for_external_design
 depends_on:
@@ -651,6 +651,13 @@ AGRUPAR
 
 ## 15. Movimento 06 — Da Possibilidade à Experiência
 
+### Perspectivas temporais em M06
+
+Uma experiência vivida pode trazer novas compreensões sobre o presente e abrir caminhos ainda possíveis. O próximo passo permanece uma escolha da Pessoa.
+
+**Limite:** não pressupõe causalidade, trajetória linear, previsão ou resultado garantido.
+
+
 O rótulo vigente é:
 
 > **Da Possibilidade à Experiência**
@@ -837,6 +844,13 @@ A Home não deve intensificar conversão antes de construir contexto suficiente.
 
 ## 21. Hierarquia de prova
 
+### Perspectivas temporais em M09
+
+O que foi registrado, o que pode ser compreendido agora e o que ainda é apenas uma possibilidade exigem evidências e graus diferentes de certeza.
+
+**Limite:** separar fatos registrados, interpretação de contexto e hipóteses futuras.
+
+
 Ordem de força de referência:
 
 ```text
@@ -933,6 +947,13 @@ EXPERIÊNCIA VIVIDA
 ---
 
 ## 24. Autonomia como comportamento transversal
+
+### Perspectivas temporais em M10
+
+Caminhos futuros não são previsões do destino: a decisão sobre seguir, rever ou não participar permanece com cada Pessoa.
+
+**Limite:** a Home pública não decide, diagnostica nem prediz a trajetória individual.
+
 
 Autonomia não é apenas Movimento 10.
 
