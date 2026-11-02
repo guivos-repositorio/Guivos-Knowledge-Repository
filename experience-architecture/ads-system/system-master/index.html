@@ -66,6 +66,32 @@
     
     
   
+  
+  <style>
+    /* Fallback restrito aos documentos Ads: impede SVGs não dimensionados
+       de dominar a página quando a folha principal demora ou falha. */
+    .md-header__button.md-logo svg,
+    .md-header__button.md-logo img {
+      width: 1.4rem;
+      height: 1.4rem;
+      max-width: 1.4rem;
+      max-height: 1.4rem;
+      display: block;
+    }
+    .md-header__button.md-icon svg,
+    .md-search__icon svg,
+    .md-icon svg,
+    .md-nav__icon svg {
+      width: 1.2rem;
+      height: 1.2rem;
+      max-width: 1.2rem;
+      max-height: 1.2rem;
+    }
+    .md-header__inner { display: flex; align-items: center; }
+    .md-header__button { display: inline-flex; align-items: center; justify-content: center; }
+    .md-content__inner svg:not([width]):not([height]) { max-width: 100%; }
+  </style>
+  
   <style>
     /*
       A navegação pública do GKR é organizada por grandes assuntos.
