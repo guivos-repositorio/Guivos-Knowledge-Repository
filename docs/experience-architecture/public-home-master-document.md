@@ -651,7 +651,7 @@ AGRUPAR
 
 ## 15. Movimento 06 — Da Possibilidade à Experiência
 
-### Adendo candidato — perspectivas temporais em M06 (não vigente)
+### Perspectivas temporais em M06
 
 Uma experiência vivida pode trazer novas compreensões sobre o presente e abrir caminhos ainda possíveis. O próximo passo permanece uma escolha da Pessoa.
 
@@ -844,7 +844,7 @@ A Home não deve intensificar conversão antes de construir contexto suficiente.
 
 ## 21. Hierarquia de prova
 
-### Adendo candidato — perspectivas temporais em M09 (não vigente)
+### Perspectivas temporais em M09
 
 O que foi registrado, o que pode ser compreendido agora e o que ainda é apenas uma possibilidade exigem evidências e graus diferentes de certeza.
 
@@ -948,7 +948,7 @@ EXPERIÊNCIA VIVIDA
 
 ## 24. Autonomia como comportamento transversal
 
-### Adendo candidato — perspectivas temporais em M10 (não vigente)
+### Perspectivas temporais em M10
 
 Caminhos futuros não são previsões do destino: a decisão sobre seguir, rever ou não participar permanece com cada Pessoa.
 
