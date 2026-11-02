@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-ADS-MASTER-001
 title: Home Pública — Guivos Ads — Documento Mestre
 status: active
-version: 1.0.3
+version: 1.0.4
 owner: Experience Architecture
-last_updated: 2026-09-20
+last_updated: 2026-11-02
 normative: false
 maturity: reconciled_for_external_design
 parents:
@@ -611,3 +611,15 @@ OBJETIVO DA MARCA
 Estado:
 
 > **ARQUITETURA CONCEITUAL E FUNCIONAL DA HOME ADS V1 CONVERGIDA — DOCUMENTO PREPARADO PARA HANDOFF; PROTÓTIPO VISUAL E OPERAÇÃO COMERCIAL NÃO INCLUÍDOS NESTE ESCOPO.**
+
+## 15. Expansão conceitual validada — patrocínio de oportunidades e Boost
+
+A arquitetura conceitual aprovada em 2026-11-02 é detalhada em [Guivos Ads — publicidade, patrocínio e Opportunity Boost](../product-architecture/guivos-ads-opportunity-sponsorship-and-boost-concept-2026-11-02.md), `GKR-ADS-OPPORTUNITY-SPONSORSHIP-BOOST-001 v0.1.0`, **candidato de produto, não implementação**.
+
+O Ads possui duas frentes: publicidade em superfícies elegíveis do ecossistema e publicidade/patrocínio associado a oportunidades específicas. `Opportunity Boost` é mecanismo transversal específico de ampliação de visibilidade da oportunidade, disponível opcionalmente no encerramento do cadastro, sem prejudicar a conclusão gratuita nem a relevância orgânica.
+
+A disponibilização administrativa de uma oportunidade para propostas Ads (anúncio, patrocínio ou ambos) é independente da abertura a **relações bilaterais**. A busca de parceiros/patrocinadores não produz selos públicos na Jornada da Pessoa. A marca de patrocinadores efetivamente contratados permanece identificada conforme contrapartidas autorizadas.
+
+Patrocínios podem ter contribuições mínimas, máximas, fixas, pacotes definidos pelo organizador e limites de captação ou quantidade. Patrocínios por Pontos Guivos requerem justificativa plausível, financiamento e reserva, origem rastreável, gestão por saldo vinculado à oportunidade do organizador e crédito em carteira comum do participante; os pontos podem ser resgatados em benefícios elegíveis de Mall e Travel. O patrocinador recebe exposição contratual ao público da oportunidade sem exigir publicidade compulsória dos premiados.
+
+**Não vigente como função implementada:** parâmetros econômicos definitivos, preços de Boost, automações de aprovação, prevenção de fraude e ledger financeiro. A Home Ads não promete essas capacidades como disponíveis até validação operacional independente.
