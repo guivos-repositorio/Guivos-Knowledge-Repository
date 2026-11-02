@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-BUSINESS-MASTER-001
 title: Documento Mestre — Home Pública — Guivos Business
 status: active
-version: 1.1.10
+version: 1.1.11
 owner: Experience Architecture
-last_updated: 2026-09-24
+last_updated: 2026-11-01
 parent: GKR-BUSINESS-HOME-CONTINUITY-002
 depends_on:
   - GKR-UX-HOME-BUSINESS-AUTHORITY-001
@@ -380,6 +380,13 @@ Princípio:
 A Home deve comunicar positivamente aquilo que o Intelligence entrega.
 
 As limitações de causalidade, dados internos empresariais, privacidade e individualidade continuam normativamente preservadas por `GKR-UX-HOME-BUSINESS-AUTHORITY-001`, mas não precisam dominar a copy pública.
+
+
+### Adendo candidato B2 — perspectivas temporais (não vigente)
+
+A compreensão pode distinguir movimentos efetivamente registrados, interpretações do contexto e possibilidades futuras ainda condicionais. Essa distinção não transforma hipóteses em previsões, nem resultados esperados em resultados comprovados.
+
+**Estado:** proposta documental da direção autorizada para elaboração em 01/11/2026; não altera a direção principal, o supporting copy ou o CTA do M07, não declara capacidade prospectiva operacional e depende de aprovação normativa e integração posteriores.
 
 ## 15. Significado e evidências que o Design precisa conseguir expressar
 
