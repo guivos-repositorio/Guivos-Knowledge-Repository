@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-BUSINESS-AUTHORITY-001
 title: Contratos de Autoridade — Home Pública — Guivos Business
 status: active
-version: 1.0.11
+version: 1.0.12
 owner: Experience Architecture
-last_updated: 2026-09-23
+last_updated: 2026-11-01
 parent: GPA-004
 depends_on:
   - GPA-004
@@ -321,6 +321,13 @@ A empresa não recebe Journey individual, score de evolução, vulnerabilidade p
 Contrato público de referência:
 
 > **Compreenda os movimentos que acontecem dentro da Guivos para criar iniciativas cada vez mais relevantes — preservando a individualidade de cada pessoa.**
+
+
+### Adendo candidato B2 — limites das perspectivas temporais (não vigente)
+
+Leituras retrospectivas são limitadas à proveniência e integridade dos eventos conhecidos; interpretações contextuais devem declarar lacunas e incertezas; cenários prospectivos, quando discutidos, são hipóteses condicionais e não prova de impacto, promessa de predição ou novo acesso a dados internos da empresa.
+
+A autorização da direção B2 de 01/11/2026 restringe-se à preparação documental; não amplia autoridade sobre Journey individual, dados empresariais, causalidade ou capacidades de produto.
 
 ## 9. Contrato 8 — autoridade comercial e de escala
 
