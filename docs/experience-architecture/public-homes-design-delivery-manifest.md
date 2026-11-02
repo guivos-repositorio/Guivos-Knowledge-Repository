@@ -116,7 +116,7 @@ O uso manual não exige Source Lock ou registro de execução de IA.
 
 ### 3.8 Intelligence
 
-- `GKR-UX-HOME-INTELLIGENCE-READ-FIRST-001 v1.0.9` — `docs/experience-architecture/read-first/public-home-intelligence-read-first.md`;
+- `GKR-UX-HOME-INTELLIGENCE-READ-FIRST-001 v1.0.10` — `docs/experience-architecture/read-first/public-home-intelligence-read-first.md`;
 
 - `GKR-UX-HOME-INTELLIGENCE-HANDOFF-001 v1.1.18` — `docs/experience-architecture/public-home-intelligence-design-handoff.md`;
 - `GKR-UX-HOME-INTELLIGENCE-SOURCELOCK-001 v1.1.17` — `docs/experience-architecture/public-home-intelligence-source-lock.md`;
