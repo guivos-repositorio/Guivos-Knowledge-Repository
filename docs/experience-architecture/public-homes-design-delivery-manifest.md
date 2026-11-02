@@ -2,7 +2,7 @@
 id: GKR-UX-HOMES-DESIGN-DELIVERY-001
 title: Homes Públicas — Manifesto Canônico de Entrega para Design
 status: active
-version: 7.0.55
+version: 7.0.56
 owner: Experience Architecture
 last_updated: 2026-11-01
 normative: true
@@ -72,7 +72,7 @@ O uso manual não exige Source Lock ou registro de execução de IA.
 
 - `GKR-UX-HOME-OC-READ-FIRST-001 v1.0.5` — `docs/experience-architecture/read-first/public-home-organizations-collectives-read-first.md`;
 
-- `GKR-UX-HOME-OC-MASTER-001 v1.0.7` — `docs/experience-architecture/public-home-organizations-collectives-master-document.md`;
+- `GKR-UX-HOME-OC-MASTER-001 v1.0.9` — `docs/experience-architecture/public-home-organizations-collectives-master-document.md`;
 - `GKR-UX-HOME-OC-MEDIA-SUPPLY-001 v1.0.1` — `docs/experience-architecture/public-home-organizations-collectives-media-editorial-supply-reconciliation.md`.
 
 ### 3.3 Mall
