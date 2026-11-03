@@ -2,7 +2,7 @@
 id: GKR-ADS-SYSTEM-MASTER-001
 title: Guivos ADS — Sistema Autenticado — Documento Mestre de Superfícies e Fluxos
 status: candidate_for_review
-version: 0.1.0
+version: 0.1.1
 owner: Guivos Ads / Experience Architecture
 last_updated: 2026-11-02
 normative: false
@@ -24,14 +24,14 @@ A relação bilateral entre Organizações e Coletivos continua em ferramenta in
 
 ## 2. Entrada e identidade
 
-Entrada de Guivos Ads com seleção de intenção: **Anunciar minha marca**, **Patrocinar oportunidades**, **Anunciar e patrocinar**. O cadastro captura representação e entidade responsável, dados institucionais, marca(s), responsabilidades e autorizações. Contas existentes habilitam um papel Ads; múltiplas marcas/entidades são segregadas por permissões. O sistema deve proporcionar **Cadastrar** e **Acessar**, de forma alinhada à experiência de entrada de Organização/Coletivo; o anexo de referência mostra o padrão de escolha e continuidade, não autoriza sua cópia literal.
+Entrada única **Guivos ADS**, sem obrigar escolha antecipada ou persistente de intenção comercial. Todas as modalidades elegíveis permanecem disponíveis no painel; a escolha ocorre **por ação**, ao criar campanha, explorar oportunidade, propor patrocínio ou solicitar impulsionamento. O cadastro captura representação e entidade responsável, dados institucionais, marca(s), responsabilidades e autorizações. Contas existentes habilitam um papel Ads; múltiplas marcas/entidades são segregadas por permissões. O sistema deve proporcionar **Cadastrar** e **Acessar**, de forma alinhada à experiência de entrada de Organização/Coletivo; o anexo de referência mostra o padrão de escolha e continuidade, não autoriza sua cópia literal.
 
-Fluxo: entrada → escolha de intenção → identificação/cadastro ou acesso → verificação/termos → área de trabalho Ads → configuração de campanha ou exploração. O usuário não tem acesso às capacidades comerciais antes de elegibilidade, permissões e controles correspondentes.
+Fluxo: entrada única Guivos ADS → identificação/cadastro ou acesso → verificação/termos aplicáveis → painel com todas as ferramentas → escolha de modalidade na ação específica. Uma marca poderá executar múltiplas campanhas e patrocinar várias oportunidades, inclusive por modalidades diferentes, sem seleção global exclusiva. O usuário não tem acesso às capacidades comerciais antes de elegibilidade, permissões e controles correspondentes.
 
 ## 3. Navegação autenticada proposta
 
 1. **Visão geral** — compromissos, andamento e indicadores separados por frente.
-2. **Minha marca / entidades** — identidade, marcas, representantes e comprovação.
+2. **Minha marca / entidades** — identidade, marcas, representantes e comprovação; **não** determina nem bloqueia modalidades comerciais do painel.
 3. **Campanhas no ecossistema** — campanhas, criativos, formatos, orçamentos, superfícies e períodos.
 4. **Explorar oportunidades** — apenas oportunidades ativas, aprovadas e habilitadas para anúncios/patrocínios; filtros **Anúncios / Patrocínios / Ambos**, localização, período, categoria, disponibilidade e tipo de contribuição.
 5. **Propostas e contratos** — enviadas, recebidas, em negociação, aceitas, recusadas, em execução, concluídas e contestadas.
@@ -121,3 +121,11 @@ Para um futuro Replit: derivar inventário de telas, mapa de rotas, componentes,
 **Gates em aberto:** direitos de inventário e contrapartidas, política de anúncios, precificação de Boost, captação e remuneração, contratos jurídicos, financiamento/conciliação de pontos, antifraude operacional, integração de pagamentos, proteção de dados, validação humana e liberação de engenharia.
 
 **Estado:** conceito documentado para avaliação e posterior handoff; sem aprovação de implementação, deploy ou funcionamento comercial.
+
+## 12. Decisão posterior — modalidades por ação e cenários de avaliação (2026-11-02)
+
+A direção esclareceu que não há etapa obrigatória de **escolha de modalidades de participação** no cadastro nem bloqueio global por preferência. O anunciante pode combinar publicidade de ecossistema, publicidade de oportunidade, patrocínio e Boost autorizado em quantos contratos independentes for elegível, respeitando cotas, orçamento, riscos, direitos de inventário e termos de cada oportunidade. Cada proposta ou campanha registra sua modalidade própria.
+
+A experiência Replit pode apresentar **cenários locais com dados de ensaio** de oportunidades, pacotes, anúncios, contratos, pontos e indicadores para avaliação de layout e fluxo. A interface não precisa conter rótulos repetitivos de prototipação, mas não poderá representar transações, aprovações, pessoas verificadas ou saldos financeiros simulados como verdadeiros. Operações reais e integrações permanecem bloqueadas até gates específicos. Cenários não autorizados para anúncio/patrocínio não devem surgir no explorador, mesmo na simulação.
+
+**Prevalência:** esta decisão substitui qualquer orientação anterior de seleção de intenção antes do cadastro ou de ativação exclusiva de modalidade no perfil.
