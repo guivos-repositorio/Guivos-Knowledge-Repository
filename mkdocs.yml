@@ -183,6 +183,11 @@ nav:
           - Jornada da Organização: journeys/organization.md
           - Guivos Business — Experiência Integrada: journeys/business.md
 
+  - Perfil Público de Experiências — Pessoa — Documentação Candidata:
+      - Leia Primeiro — Perfil Público da Pessoa: experience-architecture/perfil-publico-experiencias-pessoa/read-first.md
+      - Modelo Funcional — Experiências e URL Pública: experience-architecture/perfil-publico-experiencias-pessoa/modelo-funcional.md
+      - Fronteiras Arquiteturais — Perfil Público: experience-architecture/perfil-publico-experiencias-pessoa/fronteiras-arquiteturais.md
+
   - Círculos de Possibilidades — Documentação Candidata:
       - Leia Primeiro — Círculos: experience-architecture/circulos-de-possibilidades/read-first.md
       - Modelo Funcional — Direcionamentos: experience-architecture/circulos-de-possibilidades/modelo-funcional.md
