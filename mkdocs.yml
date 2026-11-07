@@ -182,6 +182,11 @@ nav:
           - Jornada da Organização: journeys/organization.md
           - Guivos Business — Experiência Integrada: journeys/business.md
 
+  - Círculos de Possibilidades — Documentação Candidata:
+      - Leia Primeiro — Círculos: experience-architecture/circulos-de-possibilidades/read-first.md
+      - Modelo Funcional — Direcionamentos: experience-architecture/circulos-de-possibilidades/modelo-funcional.md
+      - Dossiê — Fronteiras Arquiteturais: experience-architecture/circulos-de-possibilidades/dossie-arquitetural.md
+
   - Interações entre Participantes:
       - Relações, Interações, Conexões e Visibilidade: experience-architecture/participant-relationships-interactions-visibility-contract.md
       - Comunicações e Notificações: experience-architecture/communications-notifications-cross-ecosystem-contract.md
