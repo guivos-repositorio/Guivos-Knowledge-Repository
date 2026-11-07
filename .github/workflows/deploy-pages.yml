@@ -2,6 +2,13 @@ name: Deploy GKR to GitHub Pages
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - 'docs/experience-architecture/circulos-de-possibilidades/**'
+      - 'mkdocs.yml'
+      - '.github/workflows/deploy-pages.yml'
 
 permissions:
   contents: write
