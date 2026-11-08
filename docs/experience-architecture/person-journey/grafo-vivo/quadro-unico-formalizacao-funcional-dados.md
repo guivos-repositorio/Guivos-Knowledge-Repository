@@ -920,6 +920,56 @@ Em paralelo, instruir a ficha da futura unidade I-A sob owner documental da Arqu
 
 **Próxima apreciação recomendada à Direção:** apreciar a **suficiência instrutória** dessas duas peças e, caso aprovada, autorizar confronto documental dirigido com as autoridades e contratos já existentes para identificar **lacunas verificáveis** de procedimento I-A e de compreensão B01. Não solicitar adjudicação fictícia de Dados/Privacidade, não atribuir IDs e não promover normas sem ato separado.
 
+
+### 18.13 Apreciação de suficiência instrutória — aprovação da Direção (08/11/2026)
+
+> **Decisão expressa:** “de acordo, segue” em resposta à proposta de apreciar a suficiência do quadro registral I-A (§18.10) e da matriz de linhagem/versão B01 (§18.11), e autorizar confronto dirigido com autoridades e contratos documentais existentes. **Aprovação limitada à instrução documental**, no Quadro Único e PR #730. Não corresponde a manifestação recebida das autoridades de Dados/Privacidade, decisão de numeração, aplicação normativa ou autorização de execução.
+
+**Resultado da apreciação:** ambas as peças são **suficientes como roteiros de confronto e consulta documental**, mas **insuficientes para formalizar a unidade I-A, homologar fonte ou versão de B01 ou liberar tratamento/integração**. A suficiência aqui atestada diz respeito à **capacidade de especificar lacunas e quesitos**, não à satisfação dessas lacunas.
+
+### 18.14 Confronto dirigido — procedimento registral da unidade I-A
+
+Fontes diretamente confrontadas na branch do PR: `docs/journeys/surface-registry.md` v0.36.22; `docs/journeys/transition-registry.md` v0.29.26; estudos internos `matriz-reconciliacao-registries-ct01-ct02.md` e `confronto-registries-integracoes-fluxos.md`. O detalhamento Pessoa v0.23.8, Master PER-008 v0.1.0 e Orquestração v0.4.0 permanecem referências a reconciliar integralmente antes de proposta normativa, não substituídas por este confronto.
+
+| Quesito | Evidência documental verificada | Diagnóstico de suficiência | Lacuna verificável |
+| --- | --- | --- | --- |
+| Responsabilidade sobre o inventário | Surface Registry v0.36.22 e Transition Registry v0.29.26 declaram owner **Arquitetura da Experiência da Guivos**; C1 já aprovado | **Suficiente para owner documental**, sem transferir poder de adjudicação | Ato específico de inclusão/identificação pela Direção |
+| Identidade atual do destino | Surface Registry reconhece PER-007 (compreensão inicial revisável), PER-008 (Hoje) e superfícies especializadas; estudo de confronto não localizou Grafo Vivo como unidade registrada | **Ausência de identidade registral confirmada no inventário examinado** | Família e nome oficiais, identificador e regra de alocação a decidir |
+| Fronteira funcional | R2/I-A aprovam unidade funcional distinta; Explorar, Escutar e Conversar permanecem modos internos | **Distinção funcional instruída**; não equivale a rota/tela autônoma | Forma de representação registral e maturidade oficial |
+| Entrada/retorno | Transition Registry v0.29.26 contém TRN-007 (PER-007 → PER-008) e TRN-008..013 (Hoje ↔ PER-010/011/012); estudo CT-01/CT-02 exige dois handoffs próprios | **Insuficiente para reaproveitar ou declarar transição validada** | Admissão do destino e contratos específicos sob ato posterior |
+| Numeração | Registros existentes demonstram identificadores controlados, mas não constituem, por si, autorização para selecionar o próximo valor | **Nenhuma regra de atribuição executada neste exame** | Procedimento de emissão, unicidade e competente ato de aprovação |
+| Maturidade e propagação | Estudos indicam estado candidato/não validado e impacto em Surface/Transition Registries, detalhamento Pessoa, Master Hoje e Orquestração | **Impacto conhecido em princípio** | Rótulo oficial, deltas coordenados e autorização de alteração |
+
+**Resultado I-A:** mantêm-se três impedimentos não supríveis por inferência: **(i)** ato de enquadramento/identificação da Direção; **(ii)** procedimento e critérios registrários concretamente aprovados; **(iii)** compatibilização formal de destino e handoffs, sem inventar IDs ou declarar estados validados. A aprovação de C1 não elimina nenhum desses impedimentos.
+
+### 18.15 Confronto dirigido — proveniência e versão da compreensão B01
+
+Fontes diretamente confrontadas na branch: `contrato-conceitual-sincronizacao-versionamento.md`, `matriz-ciclo-vida-informacao-contextual.md`, `matriz-gatilhos-revalidacao-impacto-contextual.md` e `confronto-registries-integracoes-fluxos.md`; as competências de PER-007, GPA-006, GIA-COG-001, PAS-001 e PER-010/011/012 foram preservadas tal como descritas nesses estudos. A verificação desses estudos **não equivale a parecer novo dos owners de dados, privacidade ou domínios**.
+
+| Pergunta de linhagem | Evidência localizada | O que já pode ser afirmado | Decisão que falta |
+| --- | --- | --- | --- |
+| Declaração versus compreensão | Ciclo de vida separa captura, transcrição, interpretação, validação, decisão de uso, consolidação e apresentação | Declaração original não é automaticamente interpretação validada | Referência canônica original, critérios de revisão e seus efeitos |
+| Emissor da compreensão vigente | Contrato conceitual de sincronização identifica explicitamente como questão aberta qual objeto/registro guarda versão e proveniência | A necessidade de referência à versão está documentada | Registro autorizado, emissor/validador, precedência e semântica da versão posterior a PER-007 |
+| Hipóteses e contradições | Matriz de gatilhos distingue ambiguidade, contradição, simulação, correção, fonte conflitante e transcrição incerta | Inferência/hipótese não pode ser promovida silenciosamente a declaração ou comprovação | Critérios competentes para revisão, consolidação e efeitos sobre derivados |
+| Novas falas em Conversar | Ciclo de vida condiciona uso temporário, persistência e personalização a decisões separadas | Conversar não confere autorização geral para memorizar ou atualizar contexto | Regime da informação de sessão, fonte posterior e eventual revalidação |
+| Objetivos/Passos/Evolução | Confronto de integrações preserva PAS-001 e PER-010/011/012 como autoridades especializadas | Grafo pode apenas representar relações autorizadas, sem mutação por inferência | Contratos de consulta, escopo, versões e prova de autoridade |
+| Grafo, narrativas, áudio e terceiros | Sincronização e ciclo de vida tratam essas saídas como projeções/derivados dependentes de versão e permissão | Neo4j, modelos e transcrição não viram fontes canônicas por integração | Projeção, invalidação, minimização, retenção e destinatários autorizados por Dados/Privacidade/Segurança |
+
+**Resultado B01:** é documentalmente demonstrável a **necessidade** de distinguir proveniência e vigência, porém permanece **não demonstrada a identidade do registro canônico da compreensão**, a autoridade emissora de versão, a regra de atualização pós-PER-007 e a relação formal entre correções e projeções. Assim, **B01 está apta a consulta dirigida, mas não adjudicada**. B02 segue pendente de autoridades de Dados/Privacidade; B03–B05 dependem dessas definições; B06–B12 permanecem condicionadas.
+
+### 18.16 Consolidado de impedimentos e próximos quesitos decisórios
+
+| Frente | Suficiência instrutória | Impedimento decisório | Próximo encaminhamento documental proposto |
+| --- | --- | --- | --- |
+| I-A — owner e fronteiras | **Suficiente para consulta** | Falta procedimento/admissão registral e contrato formal de transições | Quadro de evidências exigidas para ato de identificação, confrontando integralmente detalhamento Pessoa, Master Hoje e Orquestração |
+| B01 — proveniência | **Suficiente para consulta** | Falta objeto canônico, emissor e semântica de versão | Matriz de quesitos por autoridade: Jornada/PER-007, GIA, PAS-001, Dados/Privacidade |
+| B02 — categorias e finalidade | **Insuficiente para adjudicação** | Nenhum parecer de Dados/Privacidade recebido | Consulta especializada posterior, sem presumir respostas ou base legal |
+| Registries, implementação e publicação | **Não autorizadas** | Exigem atos específicos distintos | Preservar PR #730 draft, sem merge, IDs, Replit, fornecedores, APIs ou testes |
+
+**Recomendação à Direção para próxima autorização:** preparar, exclusivamente na Seção 18, um **quadro de evidências exigíveis para eventual ato registral I-A** e uma **matriz de consulta dirigida por competência B01**, distinguindo (1) evidência documental disponível, (2) prova ainda ausente e (3) autoridade que efetivamente precisa se manifestar. Isso **não** solicita atribuição de identificadores, parecer simulado, política de dados, implementação ou promoção normativa.
+
+**Estado final deste incremento:** decisão de suficiência instrutória registrada; confronto documental executado em nível de diagnóstico; questões bloqueantes identificadas; nenhum arquivo normativo alterado.
+
 ---
 
 ## 19. Eficácia e limites (histórico e estado atualizado)
