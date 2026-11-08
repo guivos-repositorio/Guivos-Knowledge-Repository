@@ -1084,6 +1084,76 @@ A manifestação da Direção sobre iniciar a implantação deve ser enfrentada 
 
 **Preservação:** PR #730 draft, sem merge/publicação; nenhum Registry ou ID alterado por esta documentação.
 
+
+### 18.24 Especificação candidata de apresentação visual dos nós — ícones, imagens e perfis (08/11/2026)
+
+> **Mandato da Direção:** “de acordo, segue”, após a proposta de estruturar especificação visual e funcional para o Grafo Vivo. A Direção sinalizou interesse em ícones/imagens para áreas de evolução e em logos/fotos de Organizações, Coletivos e Profissionais associados a oportunidades. Este incremento é **proposta documental para apreciação e eventual evolução do protótipo sintético**. Não formaliza taxonomias, entidades, IDs, comprovações de Experiência, fontes de dados, relacionamentos ou autorização de implementar nova fase operacional.
+
+#### 18.24.1 Objetivo e diretriz de experiência
+
+Representar contexto, possibilidades e relações da Jornada de modo intuitivo e progressivo, sem depender de círculos cromáticos indiferenciados. A representação deve permitir reconhecer o **tipo do nó** antes de ler seu detalhe, por ícone, imagem, sigla ou rótulo textual, e manter **Grafo Vivo** como modo de explorar uma compreensão governada, não como autoridade autônoma que declara fatos, oportunidades concluídas ou evolução.
+
+Os exemplos de corrida, academia, estudo, curso, empreendedorismo, vida financeira e espiritualidade são **ilustrações**, não um catálogo novo. Para áreas de evolução, reutilizar a taxonomia já adotada pela Guivos quando for legitimamente consumida, sem nomes oficiais novos por este documento.
+
+#### 18.24.2 Famílias visuais candidatas
+
+| Família visual | Representação preferencial | Exemplo sintético para protótipo | Limite semântico |
+| --- | --- | --- | --- |
+| Área de evolução / tema de contexto | Ícone reconhecível + rótulo breve, cor como apoio | Saúde, aprendizagem, finanças, espiritualidade, trabalho | Tema não equivale a diagnóstico, objetivo assumido ou progresso |
+| Atividade / prática contextual | Ícone específico ou ilustração simples | Corrida, academia, leitura, estudo | Prática declarada ou considerada não equivale a atividade comprovada |
+| Possibilidade / oportunidade | Ícone ou miniatura contextual + título abreviado | Oficina, curso, encontro de corrida | Não afirmar oportunidade ativa, inscrição ou conclusão sem fonte competente |
+| Experiência / participação | Miniatura/ícone e estado somente quando legitimamente disponível | Participação fictícia em oficina | Sem transformar presença presumida ou link externo em Experiência comprovada |
+| Organização | Logotipo autorizado; fallback para símbolo/monograma | Instituição fictícia ofertante | Imagem não confere verificação, endosso ou responsabilidade comprovada |
+| Coletivo | Avatar/logotipo autorizado; fallback para símbolo | Grupo fictício de corrida | Associação/participação não é presumida pela proximidade gráfica |
+| Profissional | Foto de perfil legitimamente disponível; fallback para iniciais | Mentor fictício | Não inferir vínculo profissional, credencial, endosso ou relação pessoal |
+| Pessoa (referência do próprio contexto) | Representação discreta, opcional, não identificável por padrão | Centro de referência genérico | Evitar exposição desnecessária de identidade ou atributos pessoais |
+
+**Escolha visual:** fotos/logos quando acrescentam identificação real e permitida; ícones nos conceitos abstratos; fallback legível quando imagem falta ou falha. Não depender exclusivamente de cor; limitar imagens a superfícies e finalidades autorizadas em etapa posterior.
+
+#### 18.24.3 Interação prevista para prévia sintética
+
+1. **Rede manipulável:** arrastar nós, pan/zoom, recentralizar e reorganizar sem alterar dados de domínio. A posição visual do nó não representa ranking, causalidade, proximidade emocional ou relevância validada.
+2. **Foco e legibilidade:** destaque do nó selecionado e conexões diretas, atenuação de elementos periféricos, rótulos sob demanda e agrupamento progressivo quando a rede aumentar.
+3. **Janela de detalhes:** seleção abre painel contextual sem substituir a aba Grafo Vivo; apresentar nome/tipo, imagem/ícone, breve descrição, relações exibidas e sua natureza. Fechamento acessível e retorno do foco ao nó.
+4. **Navegação acessível:** seleção por teclado, controles de zoom, alternativa textual de nós e relações, descrições acessíveis de imagens e suporte a telas menores.
+5. **Escutar e Conversar:** manter modos internos; na Fase 1, narração textual e diálogo roteirizado sintéticos, sem áudio, IA, memória ou efeitos persistentes.
+6. **Estados:** vazio legítimo sem informações da Pessoa; carregamento/indisponibilidade somente quando necessários; cenário de desenvolvimento sintético isolado e consistente entre Compreensão contextual e Grafo Vivo. A interface pode parecer final sem tornar os dados fictícios acessíveis em produção.
+
+#### 18.24.4 Contrato candidato da janela contextual — não normativo
+
+| Elemento apresentado | Origem permitida no protótipo | Condição para eventual uso real |
+| --- | --- | --- |
+| Nome e tipo | Fixture sintética | Fonte e classificação canônicas identificadas e elegíveis |
+| Avatar, fotografia ou logotipo | Arte/identidade fictícia ou recurso próprio autorizado no protótipo | Direito de uso, proveniência, visibilidade e atualização da fonte |
+| Descrição contextual | Texto demonstrativo | Compreensão legítima, versão e distinção de declaração/inferência |
+| Conexões | Relações fictícias pré-definidas | Contrato de vínculo, temporalidade, autoridade e finalidade |
+| Oportunidade relacionada | Exemplo sintético | Estado e identidade oficiais da oportunidade, sem inventar vínculo |
+| Experiência/conclusão | Exemplo expressamente sintético, sem reconhecimento real | Evidência e validação da autoridade de Experiência/Evolução |
+| Organização, Coletivo ou Profissional | Personagens/entidades fictícios | Identidade da fonte, permissões, elegibilidade e fronteiras de representação |
+
+**Regra de não inferência:** conexão visual ou foto de uma instituição não deve ser interpretada como comprovação de participação da Pessoa, parceria, contribuição reconhecida, resultado ou conclusão. O Grafo não atualiza PAS-001/PER-010/011/012 nem cria provas por exibição.
+
+#### 18.24.5 Critérios de aceite candidatos para evolução da Fase 1
+
+| Critério | Evidência esperada da prévia, se houver autorização específica de implementação |
+| --- | --- |
+| Reconhecimento visual | Categorias distinguíveis por ícone/imagem e texto, sem depender de cor |
+| Interação | Arrastar nó atualiza conexões; clique/touch abre detalhes; arraste não aciona seleção acidental |
+| Organização | Rede com poucos nós clara e aumento gradual de densidade sem sobreposição descontrolada |
+| Janela de detalhes | Painel legível com origem/tipo demonstrativos e relações, fechamento por teclado e foco restaurado |
+| Consistência | Mesmo cenário sintético entre Compreensão contextual, nós e detalhes |
+| Isolamento | Nenhum fixture fictício acessível em ambiente de produção; estado inicial vazio em ambas as abas |
+| Segurança de escopo | Nenhuma alteração nas rotas PER, autenticação, backend, banco, APIs, IA, Neo4j ou fornecedores |
+| Verificação | Evidência de teste visual em desktop/mobile, interação e acessibilidade, sem dados pessoais |
+
+**Tecnologia:** biblioteca React de visualização de grafos pode ser examinada como mecanismo de frontend, mas nenhuma biblioteca ou fornecedor é declarado normativamente escolhido por este documento. Simulação física, arraste, zoom e janelas contextuais **não requerem IA**; a produção de significado e a seleção de relações reais dependem de B01/B02 e autoridades de domínio.
+
+#### 18.24.6 Alcance e próximo gate
+
+A direção visual de ícones/imagens para nós está **instruída como proposta candidata**. Sua aplicação em protótipo sintético exige **autorização específica da Direção para este incremento**, com preservação de isolamento e dos controles registrados na §18.22. O uso real de avatares, logos, vínculos com oportunidades, experiências e evolução permanece sujeito às fontes canônicas, identidade, visibilidade, direitos e governança pertinentes.
+
+**Próxima deliberação sugerida:** autorizar a implementação apenas da apresentação visual candidata e da janela de detalhes no protótipo sintético, preservando Fase 2 bloqueada e PR #730 em draft.
+
 ---
 
 ## 19. Eficácia e limites (histórico e estado atualizado)
