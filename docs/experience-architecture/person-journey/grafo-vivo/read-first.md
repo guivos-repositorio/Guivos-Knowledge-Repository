@@ -16,23 +16,53 @@ maturity: exploratory_non_operational
 
 Preservar e aprofundar a hipótese de uma experiência contextual, interativa, narrada e conversacional para o dashboard da **Jornada da Pessoa**. Sua possível aplicação a outros participantes fica fora do escopo atual e depende de nova decisão.
 
-## Documentos
+## Seção própria do GKR — organização do acervo
+
+**Este é o ponto único de entrada para o Grafo Vivo da Jornada da Pessoa.** Todos os 23 estudos e registros de decisão estão reunidos no diretório `docs/experience-architecture/person-journey/grafo-vivo/`, além deste índice. O menu deve apontar **somente para esta página de entrada**, e não duplicar individualmente os dossiês.
+
+**Natureza da seção:** acervo de concepção e governança em elaboração. A existência desta seção no PR em rascunho **não transforma estudos conceituais em autoridade operacional**, não promove material à Canon e não constitui publicação no GKR principal.
+
+### Visão rápida do estado
+
+| Dimensão | Estado |
+| --- | --- |
+| Conceito e três modalidades (Explorar, Escutar, Conversar) | Aprovados para aprofundamento conceitual |
+| Aprendizado Contextual Contínuo | Modelo candidato, sujeito a regras de dados e validação |
+| Instância final de decisão do Grafo Vivo | **Direção da Guivos**, conforme registro AF-10 |
+| Posicionamento funcional A/B/C | **Não selecionado**; B prioritária para exame |
+| Revisão técnica UX/Journey AF-01/02/03 | Solicitação documentada no PR #730; sem parecer recebido verificado |
+| Replit — Jornada da Pessoa | Futuro destino condicionado, sem auditoria ou execução autorizada |
+| Status editorial | PR #730 draft; sem merge ou publicação |
+
+## Biblioteca organizada por assunto
+
+### Fundamentos e experiência
 
 - [Visão conceitual — Grafo Vivo e Contexto Vivo](visao-conceitual.md): proposta, capacidades, princípios e questões abertas.
-- [Arquitetura Conceitual e Integrações Candidatas](arquitetura-conceitual-integracoes.md): camadas, fluxo de dados, provedores candidatos, dependências, riscos e gates.
-- [Modelo de Nós, Relações e Memória Contextual](modelo-nos-relacoes-memoria.md): famílias e relações candidatas, proveniência, temporalidade, exemplos e limites.
 - [Experiência Conceitual nos Quatro Momentos](experiencia-quatro-momentos.md): primeiro acesso, retorno, atualização por conversa e relatório narrado interativo.
-- [Matriz de Responsabilidades e Fronteiras Funcionais](matriz-responsabilidades-fronteiras.md): confronto com PER-007/008/010/011/012 e Intelligence, eventos, lacunas e limites.
-- [Exame de Compatibilidade com PER-008 — Hoje](exame-compatibilidade-per008.md): matriz de compatibilidade, três alternativas de acomodação, lacunas e parecer condicionado.
+- [Modelo de Nós, Relações e Memória Contextual](modelo-nos-relacoes-memoria.md): famílias e relações candidatas, proveniência, temporalidade, exemplos e limites.
 - [Quadro Focal de Fronteiras Funcionais](quadro-focal-fronteiras-funcionais.md): cinco capacidades, gates entre conversa e memória, decisões pendentes e dependências de integração.
-- [Confronto dos Registries e Fluxos de Integração](confronto-registries-integracoes-fluxos.md): confirmação dos estados de superfícies e transições, fluxos de dados, gates, cenários e lacunas.
+
+### Arquitetura, dados e integrações
+
+- [Arquitetura Conceitual e Integrações Candidatas](arquitetura-conceitual-integracoes.md): camadas, fluxo de dados, provedores candidatos, dependências, riscos e gates.
 - [Matriz do Ciclo de Vida da Informação Contextual](matriz-ciclo-vida-informacao-contextual.md): declaração, transcrição, validação, uso temporário, persistência, projeções, narração, correção e revogação.
 - [Gatilhos de Revalidação e Impacto Contextual](matriz-gatilhos-revalidacao-impacto-contextual.md): casos de atualização, confirmação proporcional, risco, impacto em análises e revogação.
 - [Contrato Conceitual de Sincronização e Versionamento](contrato-conceitual-sincronizacao-versionamento.md): consistência temporal, referências de versão, mudanças concorrentes, falhas e revogações entre contexto, grafo, conversa e narração.
 - [Matriz de Estados de Coerência e Recuperação Multimodal](matriz-estados-coerencia-recuperacao-multimodal.md): interrupções, falhas parciais, mudanças de versões, alternativas acessíveis e retomada governada.
-- [Quadro Consolidado de Prontidão Conceitual e Pendências de Adjudicação](quadro-consolidado-prontidao-pendencias.md): inventário de evidências, maturidades, gates, riscos e fronteiras para futuras decisões.
+
+### Jornada, superfícies e transições
+
+- [Matriz de Responsabilidades e Fronteiras Funcionais](matriz-responsabilidades-fronteiras.md): confronto com PER-007/008/010/011/012 e Intelligence, eventos, lacunas e limites.
+- [Exame de Compatibilidade com PER-008 — Hoje](exame-compatibilidade-per008.md): matriz de compatibilidade, três alternativas de acomodação, lacunas e parecer condicionado.
+- [Confronto dos Registries e Fluxos de Integração](confronto-registries-integracoes-fluxos.md): confirmação dos estados de superfícies e transições, fluxos de dados, gates, cenários e lacunas.
 - [Dossiê de Competências e Adjudicação de Entrada Funcional](dossie-competencias-adjudicacao-entrada-funcional.md): alternativas A/B/C de localização, efeitos sobre PER-008/Registries e quesitos a decidir sem seleção automática.
 - [Exame Focal de Admissibilidade de Competência e Transição](exame-focal-admissibilidade-competencia-transicao.md): admissibilidade das alternativas, testes por comportamento, atos necessários e quesitos para a autoridade competente.
+- [Análise Técnica UX/Journey — AF-01, AF-02 e AF-03](analise-tecnica-ux-journey-af01-af02-af03.md): confronto do Master de Hoje, Orquestração e Registries, com achados e perguntas para parecer especializado, sem resposta presumida.
+
+### Governança, decisões e implantação condicionada
+
+- [Quadro Consolidado de Prontidão Conceitual e Pendências de Adjudicação](quadro-consolidado-prontidao-pendencias.md): inventário de evidências, maturidades, gates, riscos e fronteiras para futuras decisões.
 - [Quadro de Respostas Requeridas e Instrumentos de Competência](quadro-respostas-instrumentos-competencia.md): consulta e evidências dos quesitos AF-01..AF-10, dependências e instrumentos possíveis sem adjudicação.
 - [Consulta Focal de Competência à Arquitetura UX/Journey](consulta-focal-competencia-ux-journey.md): minuta de consulta sobre AF-01, AF-02, AF-03 e AF-10, sem submissão formal ou parecer presumido.
 - [Verificação de Autoridade e Suficiência Documental para Submissão](verificacao-autoridade-suficiencia-submissao.md): confronta ADR-001/006, A2-METHOD-001, GEA-AUDIT-001, registra baseline visual informado pela direção, gates para futura implantação e achado do menu GKR.
@@ -40,9 +70,15 @@ Preservar e aprofundar a hipótese de uma experiência contextual, interativa, n
 - [Minuta de Encaminhamento Institucional do AF-10](minuta-encaminhamento-institucional-af10.md): texto candidato de solicitação, perguntas à autoridade, anexos e condições para eventual envio formal.
 - [Verificação do Destinatário e Canal de Submissão AF-10](validacao-destinatario-canal-af10.md): área temática identificada, sem instância, canal e instrumento decisório comprovados; consulta segue não enviada.
 - [Registro de Decisão da Direção — Competência AF-10](decisao-direcao-competencia-af10.md): Direção designada como instância decisória final, consultas técnicas por domínio e GKR/GitHub como registro; sem adjudicar A/B/C ou liberar execução.
-- [Análise Técnica UX/Journey — AF-01, AF-02 e AF-03](analise-tecnica-ux-journey-af01-af02-af03.md): confronto do Master de Hoje, Orquestração e Registries, com achados e perguntas para parecer especializado, sem resposta presumida.
 
-## Estado das decisões (07/11/2026)
+## Navegação e fontes de autoridade
+
+- **Índice canônico desta seção no ramo de estudo:** este `read-first.md`. Não se duplicam documentos ou conclusões em novas cópias.
+- **Fonte de verdade das autoridades vigentes:** Masters da Jornada, Orquestração, Surface/Transition Registries, PAS-001, GPA-006/GIA-COG-001 e políticas de dados em seus locais originais. Os links e análises desta seção **referenciam**, mas não substituem essas autoridades.
+- **Histórico de alterações e revisão:** [PR #730](https://github.com/guivos-repositorio/Guivos-Knowledge-Repository/pull/730). Documentos anteriores de AF-10 podem preservar estados históricos, com notas de reconciliação para a decisão posterior da Direção.
+- **Regra de publicação:** seção preparada na branch; a exposição de material `conceptual_study` no menu principal e eventual merge deverão respeitar a governança editorial e ter autorização própria.
+
+## Estado das decisões (07–08/11/2026)
 
 **Aprovado para aprofundamento conceitual:**
 - Alternativa C: Grafo Vivo exploratório com contexto, possibilidades, evolução temporal, simulação e conversa.
