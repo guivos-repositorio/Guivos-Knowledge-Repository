@@ -1023,6 +1023,31 @@ A manifestação da Direção sobre iniciar a implantação deve ser enfrentada 
 
 **Marco de continuidade:** peças §18.18–§18.19 preparadas; nenhuma consulta especializada presumida; controles do PR #730 e centralização documental mantidos.
 
+
+### 18.21 Inspeção de leitura do Replit Jornada da Pessoa — evidência técnica preliminar (08/11/2026)
+
+> **Origem da evidência:** resposta do agente do workspace existente `https://replit.com/@guivos/Jornada-da-Pessoa`, obtida exclusivamente por inspeção de código local, após a observação da Direção de que haveria material suficiente para iniciar a implantação. A inspeção **não modificou arquivos**, não executou testes, não consultou banco/Secrets, não chamou fornecedores e não publicou. Este registro de evidência não converte tal observação em autorização irrestrita de implementação.
+
+| Objeto inspecionado | Constatação relatada pelo Replit | Consequência para prontidão |
+| --- | --- | --- |
+| Grafo Vivo | Não existe superfície, modelo funcional, acesso voluntário, retorno neutro ou modos Explorar/Escutar/Conversar implementados como a unidade proposta | **Implantação funcional ainda não iniciada** |
+| Hoje/PER-008 | Componente Per008 existe, mas a rota `/per-008` redireciona para `/journey`, com JourneyPage/JourneyAccess | Não presumir que o componente Hoje esteja operacional como superfície autônoma ou origem navegável |
+| Revisão/PER-007 | Componente Per007 existe; `/per-007` redireciona para `/composition`; avaliação ilustrativa em desenvolvimento | Não presumir compreensão canônica/validada por IA |
+| Autenticação e segurança | JourneyAccess lê estado local; há sessão OIDC e consentimento em código privado não montado no Express público | Não inferir autenticação central e permissões operacionais do Grafo |
+| Dados | Estado da interface em memória React; portas privadas PostgreSQL e journal, sem verificação de banco; módulos de memória e grafo não constituem modelo Grafo Vivo | Fonte canônica, persistência, relações e tratamento B01/B02 não demonstrados |
+| Gráficos | Existe gráfico mensal demonstrativo via Recharts, não visualização relacional de nós/arestas | Ausência de componente de grafo funcional |
+| Voz/IA | Componentes e adapters presentes; voz operacional marcada indisponível em superfície; compreensão por IA não comprovada | Sem pressupor ASR/TTS ou motor cognitivo ativo |
+| Integração e publicação | Nenhuma integração específica do Grafo foi inspecionada em execução; sem testes ou verificação de deploy | Não declarar maturidade de produção |
+
+**Leitura de prontidão:** há **base para planejar uma prévia isolada e sintética** e para examinar a navegação existente, **não para ligar o Grafo Vivo a dados reais, OIDC, memória, Neo4j, IA ou voz**. A inspeção por código não substitui teste, validação de segurança, contrato de dados ou aprovação registral.
+
+**Trilha proposta, não autorizada para execução neste incremento:**
+1. **Preparação verificável:** delimitar uma prévia independente e reversível, dados totalmente sintéticos, sem autenticação simulada como real e sem persistência/fornecedores.
+2. **Prévia funcional isolada (condicionada a autorização expressa):** visualização de relações fictícias, três modos demonstrativos, entrada voluntária ilustrativa e retorno neutro, sem criação de IDs oficiais nem interferência na Jornada vigente.
+3. **Integração real (bloqueada):** identificar fonte e emissor B01, adjudicar B02/Dados/Privacidade, formalizar unidade/handoffs, permissões e contratos; só então autorizar infraestrutura, testes e implantação.
+
+**Gate solicitado à Direção:** decidir separadamente se autoriza **a etapa 2, prévia isolada com dados sintéticos no workspace existente**, sob escopo fechado, sem alterar rotas operacionais, segurança, bancos ou publicação. O diagnóstico de leitura já foi realizado; nenhuma mudança foi aplicada ao Replit.
+
 ---
 
 ## 19. Eficácia e limites (histórico e estado atualizado)
