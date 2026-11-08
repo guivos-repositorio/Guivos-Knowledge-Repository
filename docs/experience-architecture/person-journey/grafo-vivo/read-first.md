@@ -28,6 +28,7 @@ Preservar e aprofundar a hipótese de uma experiência contextual, interativa, n
 - [Confronto dos Registries e Fluxos de Integração](confronto-registries-integracoes-fluxos.md): confirmação dos estados de superfícies e transições, fluxos de dados, gates, cenários e lacunas.
 - [Matriz do Ciclo de Vida da Informação Contextual](matriz-ciclo-vida-informacao-contextual.md): declaração, transcrição, validação, uso temporário, persistência, projeções, narração, correção e revogação.
 - [Gatilhos de Revalidação e Impacto Contextual](matriz-gatilhos-revalidacao-impacto-contextual.md): casos de atualização, confirmação proporcional, risco, impacto em análises e revogação.
+- [Contrato Conceitual de Sincronização e Versionamento](contrato-conceitual-sincronizacao-versionamento.md): consistência temporal, referências de versão, mudanças concorrentes, falhas e revogações entre contexto, grafo, conversa e narração.
 
 ## Estado das decisões (07/11/2026)
 
