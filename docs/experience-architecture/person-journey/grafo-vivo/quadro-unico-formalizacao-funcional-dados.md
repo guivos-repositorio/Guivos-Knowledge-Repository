@@ -1,11 +1,11 @@
 ---
 title: Grafo Vivo — Quadro Único de Formalização Funcional e Dados Mínimos
 status: conceptual_study
-version: 0.2.0
+version: 0.3.0
 owner: Concepção de Produto / Jornada da Pessoa
 last_updated: 2026-11-08
 normative: false
-maturity: approved_documentary_baseline_deepened_pending_normative_authorization
+maturity: approved_baseline_with_unapplied_registry_diff_candidates
 ---
 
 # Grafo Vivo — Quadro Único de Formalização Funcional e Dados Mínimos
@@ -185,7 +185,56 @@ A Direção respondeu **“de acordo, segue”** à solicitação de **adotar es
 
 ---
 
-## 9. Eficácia e limites (histórico e estado atualizado)
+## 9. Propostas de diff normativo **NÃO APLICADAS** — autorização documental da Direção (08/11/2026)
+
+A Direção autorizou expressamente, nesta conversa, **preparar as duas propostas de alteração normativa exclusivamente para revisão, sem modificar os Registries vigentes**. Estes trechos foram elaborados **neste quadro único**, evitando outro documento fragmentado. **São modelos de edição futura, não patches executáveis prontos para aplicação.** O diff ilustrativo utiliza marcadores entre colchetes para indicar campos cuja autoridade e identificação ainda não foram decididas. **Nenhum marcador entre colchetes representa ID oficial nem deve ser copiado literalmente para um Registry.**
+
+### 9.1 Diff candidato A — Surface Registry v0.36.22
+
+**Arquivo-alvo (somente referência):** `docs/journeys/surface-registry.md`. **Seção:** `## 4. Inventário principal`. **Âncora exata verificada:** linha `GKR-SURF-PER-008 | Tela Hoje`. A tabela possui nove colunas: ID, Superfície/estado/responsabilidade, Perspectiva e família, Canal, Maturidade, Autoridade, Materialização, Validação e Detalhamento obrigatório.
+
+**Proposta de adição, não aplicada:**
+
+```diff
+ # Contexto: manter intacta a linha vigente de GKR-SURF-PER-008 — Tela Hoje.
++| [ID DO DESTINO A DEFINIR POR ATO PRÓPRIO] | Grafo Vivo — experiência expandida contextual (responsabilidade distinta) | Pessoa autenticada; Explorar/Escutar/Conversar | protegido | candidato documental; NÃO validado | [OWNER/CONTRATO FUNCIONAL A RATIFICAR]; decisões da Direção B/R2/CT-01 | sem baseline visual corrente; não implementado | sem transições validadas; entrada e retorno dependem de contratos futuros | [DETALHAMENTO PESSOA A RECONCILIAR] |
+```
+
+**Observações para eventual diff efetivo:** (i) não modificar contagem estrutural de **61 IDs** sem ato formal que atribua efetivamente um novo ID; (ii) não copiar a maturidade “validado” de Hoje; (iii) não interpretar “responsabilidade distinta” como imposição de tela visual adicional; (iv) ratificar owner, referência de contrato, detalhamento e proteção antes de qualquer inclusão; (v) revisar simultaneamente arquivos auxiliares referidos pela coluna de detalhamento, somente se houver autorização expressa. **Não foi inserida linha no Registry.**
+
+### 9.2 Diff candidato B — Transition Registry v0.29.26
+
+**Arquivo-alvo (somente referência):** `docs/journeys/transition-registry.md`. **Seção:** `## 4. Jornada pessoal`. **Âncora exata verificada:** `GKR-TRN-007 | PER-007 | PER-008` e linhas vigentes de `GKR-TRN-008..013`. A tabela possui cinco colunas: ID, Origem, Destino, Estado e Evidência/lacuna principal.
+
+**Proposta de adição, não aplicada:**
+
+```diff
+ # Contexto: manter intactos TRN-007 e TRN-008..013, inclusive suas maturidades.
++| [ID DA TRANSIÇÃO DE ENTRADA A DEFINIR] | PER-008 | [DESTINO GRAFO VIVO A DEFINIR] | contrato candidato; NÃO validado | Primeiro Hoje ou recorrente, contexto legitimamente elegível; ação voluntária; finalidade/versão/proveniência mínimas; sem consentimento ou efeito material implícitos; falha, revogação e idempotência pendentes de validação |
++| [ID DA TRANSIÇÃO DE RETORNO A DEFINIR] | [ORIGEM GRAFO VIVO A DEFINIR] | PER-008 | contrato candidato; NÃO validado | Saída explícita e neutra; reconsulta ao estado canônico; interrupção de áudio; nenhuma gravação, persistência ou conclusão automática; recuperação e idempotência pendentes de validação |
+```
+
+**Observações para eventual diff efetivo:** (i) os dois contratos são de **sentidos opostos**, não reversão automática de um só; (ii) não reutilizar `TRN-007..013`; (iii) resolver o identificador do destino pelo processo competente antes de formalizar origem/destino; (iv) não alterar a contagem atual de **76 transições** antes da adjudicação da inclusão; (v) coerência, proteção e maturidade devem ser verificadas com Master PER-008, Orquestração, PER-007, Privacidade, PAS-001/GIA; (vi) nenhum status de validação técnica foi concedido.
+
+### 9.3 Registro de impacto e não alteração
+
+| Alvo | Situação após este trabalho |
+| --- | --- |
+| `surface-registry.md` | **Inalterado** — diff candidato apenas transcrito acima |
+| `transition-registry.md` | **Inalterado** — diff candidato apenas transcrito acima |
+| Master PER-008 / Orquestração | **Inalterados** |
+| IDs, totais e maturidades oficiais | **Inalterados**; placeholders não são IDs |
+| Dados, persistência, voz e fornecedores | **Sem autorização operacional**, contratos por autoridade ainda pendentes |
+| Este quadro único | Atualizado para **v0.3.0** com propostas para revisão |
+| PR #730 | Continua **draft**, sem merge/publicação |
+
+### 9.4 Gate de decisão posterior
+
+As propostas serão aptas para **revisão de possível alteração normativa**, não para aplicação automática, quando a Direção examinar: **(a)** representação e identificação do destino e owner; **(b)** identidade e maturidade dos dois handoffs; **(c)** critérios de contexto/versão/permissão/retorno; **(d)** diferenças colaterais de contagens, detalhamento de Pessoa e orquestração. Qualquer alteração de Registry exigirá **autorização expressa separada** da Direção e a substituição fundamentada dos placeholders. A edição efetiva não está autorizada.
+
+---
+
+## 10. Eficácia e limites (histórico e estado atualizado)
 
 | Objeto | Situação |
 | --- | --- |
