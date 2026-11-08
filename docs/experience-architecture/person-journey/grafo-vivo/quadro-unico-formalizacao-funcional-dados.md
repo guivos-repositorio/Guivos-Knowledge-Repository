@@ -1,11 +1,11 @@
 ---
 title: Grafo Vivo — Quadro Único de Formalização Funcional e Dados Mínimos
 status: conceptual_study
-version: 0.9.0
+version: 0.9.1
 owner: Concepção de Produto / Jornada da Pessoa
 last_updated: 2026-11-08
 normative: false
-maturity: focused_owner_competence_b01_b02_reconciliation_pending_adjudication
+maturity: c1_documentary_owner_approved_b01_b02_consultation_adopted
 ---
 
 # Grafo Vivo — Quadro Único de Formalização Funcional e Dados Mínimos
@@ -681,7 +681,55 @@ A decisão estabelece **ordem de instrução prioritária**, não autorização 
 
 ---
 
-## 17. Eficácia e limites (histórico e estado atualizado)
+## 17. Decisão da Direção — C1 e matrizes B01/B02 como instrumentos de consulta (08/11/2026)
+
+> **Aprovação expressa da Direção:** “de acordo, segue” em resposta à recomendação de **aprovar C1 — Arquitetura da Experiência como responsável documental da futura unidade I-A — e adotar as matrizes B01/B02 como instrumentos de consulta**. Esta decisão **não** aprova uma política de dados, não ratifica fontes canônicas/terceiros e não cria identificadores, transições ou entrada no Registry.
+
+### 17.1 C1 — responsabilidade documental aprovada
+
+A **Arquitetura da Experiência da Guivos** fica **aprovada, no escopo documental conceitual do Grafo Vivo, como owner documental da futura unidade I-A** e referência para preparar a reconciliação de estrutura, campos, maturidade e rastreabilidade entre os documentos de Jornada. Esta confirmação é apoiada na titularidade documental já registrada para Surface Registry, detalhamento da Pessoa e Transition Registry, mas **não atualiza esses arquivos**.
+
+**Competências preservadas:**
+
+| Competência | Titularidade/limite após C1 |
+| --- | --- |
+| Autorizar formalização da unidade I-A e atos normativos | **Direção da Guivos**; ID oficial e sua alocação permanecem pendentes |
+| Owner documental proposto e agora confirmado no estudo | **Arquitetura da Experiência da Guivos**, limitada à manutenção e coerência dos contratos e seus registros quando formalizados |
+| Compreensão, hipóteses, versão cognitiva e explicação | **Guivos Intelligence**, conforme GPA-006/GIA-COG-001, sem transmutar projeções em fontes canônicas de domínio |
+| Objetivos, Próximos Passos e Evolução | **PAS-001 e contratos das superfícies especializadas PER-010/011/012** |
+| Finalidade, dados pessoais, sessão, retenção, privacidade e segurança | **Autoridades próprias**, sem delegação automática para a Arquitetura da Experiência |
+| Engenhos, voz, Neo4j e fornecedores | Sujeitos a autorização técnica/contratual específica, não abrangida por C1 |
+
+**Eficácia delimitada:** esta é uma **designação de owner documental para instrução e manutenção futura**, não uma nomeação operacional, concessão de direitos de processamento, criação de equipe ou atribuição de poder autônomo para emitir novos IDs.
+
+### 17.2 B01/B02 — instrumento de consulta aprovado
+
+A Direção adota as **matrizes B01 (fontes canônicas por família) e B02 (finalidade/minimização por modalidade)** da seção 16 como **instrumentos documentais oficiais de consulta neste estudo**, e **não como decisões sobre quais dados a Guivos já pode usar ou compartilhar**.
+
+**A adoção autoriza:** confrontar cada linha com PER-007, PER-008, PAS-001, GIA/GPA-006, privacidade, dados e segurança; registrar evidências, controvérsias e pareceres efetivamente obtidos; consolidar lacunas e apresentar uma proposta à Direção.
+
+**A adoção não autoriza:** declarar a matriz validada por qualquer autoridade ainda não consultada, atribuir base legal, decidir prazo de retenção, processar áudio, enviar dados a Grok/GPT/Claude/Gemini/Neo4j ou outros, criar APIs, alterar consentimento ou executar implementações.
+
+| Instrumento | Estado aprovado | Evidência ainda necessária |
+| --- | --- | --- |
+| **B01 — matriz de fontes de verdade** | **Adotada para consulta documental** | Autoridade sobre fonte por família de informação, emissor da versão, separação de canônico e derivado |
+| **B02 — matriz de finalidades/minimização** | **Adotada para consulta documental** | Categorias permitidas por finalidade/modalidade/destinatário, avaliação de privacidade e segurança |
+| **B03 — suficiência** | Prioridade documental já aprovada | Critérios sustentados nas fontes e finalidades reconciliadas |
+| **B04 — versão** | Prioridade documental já aprovada | Semântica e atualização da fonte canônica efetiva |
+| **B05 — proveniência** | Prioridade documental já aprovada | Taxonomia e evidência para declaração, inferência, correção e confirmação |
+| **B06–B12** | Requisitos candidatos preservados | Contratos especializados e autorizações posteriores |
+
+### 17.3 Próxima instrução documental recomendada
+
+Preparar **uma matriz de adjudicabilidade B01/B02**, preenchendo para cada família **(a) fonte normativa identificável, (b) autoridade competente, (c) efeito sobre a experiência, (d) lacuna remanescente e (e) próximo gate**; distinguir explicitamente **evidência documental encontrada** de **manifestação/validação de uma autoridade consultada**.
+
+Em paralelo, instruir a ficha da futura unidade I-A sob owner documental da Arquitetura da Experiência, **sem reservar ID e sem alterar Surface Registry, detalhamento Pessoa, Transition Registry ou Masters**.
+
+**Decisão seguinte a solicitar à Direção:** aprovar ou condicionar as conclusões da matriz de adjudicabilidade e apenas então discutir se há base para uma formalização normativa coordenada. A criação de identificadores, a aplicação de mudanças, o merge/publicação e o Replit continuam dependentes de atos expressos próprios.
+
+---
+
+## 18. Eficácia e limites (histórico e estado atualizado)
 
 | Objeto | Situação |
 | --- | --- |
