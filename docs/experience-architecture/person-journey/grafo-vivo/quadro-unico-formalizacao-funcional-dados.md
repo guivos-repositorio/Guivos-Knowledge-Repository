@@ -1,11 +1,11 @@
 ---
 title: Grafo Vivo — Quadro Único de Formalização Funcional e Dados Mínimos
 status: conceptual_study
-version: 0.1.0
+version: 0.2.0
 owner: Concepção de Produto / Jornada da Pessoa
 last_updated: 2026-11-08
 normative: false
-maturity: consolidated_decision_support_pending_authority_contracts
+maturity: approved_documentary_baseline_deepened_pending_normative_authorization
 ---
 
 # Grafo Vivo — Quadro Único de Formalização Funcional e Dados Mínimos
@@ -112,13 +112,86 @@ Este quadro reduz as próximas deliberações a **duas matérias centrais**, sem
 
 **Recomendação de encaminhamento:** aprovar o **quadro único como baseline documental de instrução** e autorizar, em passo posterior e separado, a elaboração de propostas de reconciliação normativa com alterações explicitamente delimitadas; **não aprovar agora** edição de Registry nem integração real.
 
-## 8. Eficácia e limites
+## 8. Decisão posterior da Direção — baseline documental A+B (08/11/2026)
+
+A Direção respondeu **“de acordo, segue”** à solicitação de **adotar este quadro único como baseline documental de instrução e autorizar o aprofundamento conjunto das frentes A (identidade/representação funcional) e B (contexto/dados mínimos)**.
+
+**Alcance da aprovação:** este quadro passa a ser a **referência documental central de trabalho** para preparar propostas de formalização, sem promover suas cláusulas candidatas a norma, política de dados, contrato operacional, autorização de alteração de Registry ou implantação. Decisões anteriores preservam sua própria proveniência e hierarquia.
+
+### 8.1 Frente A — proposta consolidada de representação funcional R2
+
+| Campo de eventual registro | Proposta para confronto, não campo validado | Fundamento ou gate |
+| --- | --- | --- |
+| Unidade registrável | **Responsabilidade funcional de experiência expandida contextual**, distinta da síntese de Hoje | R2 e CT-01 já aprovados como diretriz; forma concreta de registro pendente |
+| Descrição de finalidade | Ajudar a Pessoa a compreender relações e possibilidades por Explorar, Escutar e Conversar, sem ações materiais de domínio | Não absorver PER-010/011/012 nem interpretação soberana da GIA |
+| Sujeito e proteção | Pessoa em contexto de Jornada autenticada, com finalidade, autorização e informação elegíveis | Compatibilizar com PER-007, PER-008 e Privacidade |
+| Origem contextual | PER-008 — Hoje, inclusive primeira entrada legitimamente elegível | Alternativa B e decisão sobre Primeiro Hoje |
+| Destino do retorno | PER-008 — Hoje, com reconsulta do estado canônico | Entrada/retorno aprovados conceitualmente |
+| Competência decisória | Direção da Guivos decide formalização do Grafo Vivo neste escopo | Owner de manutenção e instância de validação técnica **a ratificar**, sem presumir delegação |
+| Domínios relacionados | PER-010/011/012 permanecem autoridades de seus objetos | Relações gráficas não instituem links ou operações automáticas |
+| Estado candidato inicial | **Em definição / não validado** até ato expresso e evidências próprias | Nunca copiar status “validado” da superfície Hoje |
+| Tipo de superfície visual | **Não adjudicado**; identidade funcional não implica necessariamente tela independente | Design e arquitetura visual dependem de autorização posterior |
+| Identificador | **A atribuir somente por ato próprio, se necessário** | Não reservar nem inventar número PER/Surface |
+| Dependências | Master PER-008, Orquestração, Registries, PER-007, GIA, PAS-001 e contratos de dados | Confrontar antes de qualquer edição normativa |
+
+**Condições de aceitação para minuta normativa de Surface Registry:** (a) identificar unidade de responsabilidade sem duplicar Hoje; (b) owner competente confirmado; (c) estado/maturidade não operacional fundamentado; (d) origem/destino rastreáveis; (e) critérios de proteção/ausência; (f) nenhum novo ID por simples pressuposto; (g) diff apresentado separadamente à Direção.
+
+### 8.2 Frente B — contrato mínimo de contexto, aprofundado
+
+| Momento | Conjunto lógico mínimo candidato | Proibição ou exceção |
+| --- | --- | --- |
+| **Antes da entrada** | Comprovação de sessão legítima; finalidade do aprofundamento; escopo do contexto permitido; sinal de suficiência | Não abrir áudio, memória ou transmissão externa por simples navegação |
+| **Na entrada** | Referência da origem Hoje, foco opcional, referência à compreensão/versão elegível e proveniência quando a autoridade as fornecer | Não enviar histórico integral, credenciais, grafo integral ou transcrição inteira |
+| **Ao Explorar** | Nós/relações derivados de contexto permitido, status de declaração/hipótese/confirmado e período de validade | Não converter conexão em fato canônico, objetivo, passo, evolução ou ação de domínio |
+| **Ao Escutar** | Conteúdo narrável compatível com versão e finalidade, com alternativa textual e comando de parada | Não fazer áudio sob demanda virar consentimento de gravação ou retenção; fornecedor pendente |
+| **Ao Conversar** | Foco/versão autorizados, texto recebido e novos dados tratados inicialmente conforme status epistemológico | Não persistir toda fala como fato nem compartilhar com motor externo não autorizado |
+| **Ao mudar de modalidade** | Foco atual e referência temporal/versão minimizados, se legítimos | Não criar nova autorização nem nova fonte de verdade a cada alternância |
+| **Ao corrigir/revogar** | Sinal de invalidade/revisão da fonte e derivados cuja manutenção seja permitida | Não reutilizar cache, grafo, narrativa ou contexto desautorizado |
+| **No retorno a Hoje** | Referência mínima de navegação + **reconsulta ao estado canônico** e permissões | Não carregar conteúdo efêmero de sessão ou declarar persistência por padrão |
+| **Em falha** | Estado de erro identificável e alternativa segura conforme capacidade efetiva | Não afirmar sucesso, retomada, gravação inexistente ou consistência não verificada |
+
+**Suficiência por modalidade (critério candidato e qualitativo):**
+- **Explorar:** existe ao menos uma relação/tema ou evidência contextual legítima que suporte representação compreensível; na ausência, explicar limites sem fabricar nós.
+- **Escutar:** existe conteúdo textual contextual elegível para narração, com versão adequada; falta de voz não pode ocultar a alternativa textual.
+- **Conversar:** existe contexto de finalidade legítima e possibilidade de diálogo sem extrapolar memória ou personalização; informação nova será tratada como declaração até revisão pertinente.
+- Um limiar numérico de clareza **não é criado** nem exigido por esta análise.
+
+**Escolhas independentes:**
+1. **Uso de sessão** só no escopo necessário e autorizado.
+2. **Persistência** exige escolha apropriada e regras de retenção/revogação ainda a formalizar.
+3. **Personalização** exige decisão independente da persistência conforme PER-007.
+4. **Gravação/transcrição/voz e fornecedor externo** exigem avaliação de dados, transferência e autorização por modalidade; não são efeitos da entrada.
+5. **Dados sensíveis e derivados** exigem minimização, finalidade e tratamento autorizados conforme privacidade e segurança.
+
+### 8.3 Compatibilidade de A+B nos dois handoffs
+
+| Verificação comum | Entrada Hoje → Grafo Vivo | Retorno Grafo Vivo → Hoje |
+| --- | --- | --- |
+| Fonte de verdade | Consultar a compreensão governada para contexto elegível | Reconsultar estado canônico autorizado |
+| Responsabilidade | Troca conceitual para destino R2 formalizável | Volta à responsabilidade Hoje sem efeitos materiais |
+| Conteúdo | Minimizado conforme finalidade e versão | Não persistir nem transportar narrativa/transcrição por padrão |
+| Falhas | Sem abertura afirmada se a passagem não puder ocorrer de modo legítimo | Saída segura quando viável; não confirmar estado não reconsultado |
+| Idempotência | Ação repetida não cria autorização nem registro duplicado | Retorno repetido não conclui ou altera objetos |
+| Revogação | Não carregar informação desautorizada | Não reapresentar derivado cujo uso tenha sido revogado |
+| Autoridade a formalizar | Surface Registry + contrato próprio no Transition Registry | Contrato próprio de retorno + Orquestração compatível |
+
+### 8.4 Portas de aprovação remanescentes
+
+**Próximo pacote documental a preparar:** um **diff candidato explicitamente delimitado**, não aplicado, com proposta de representação no Surface Registry e localização dos dois contratos no Transition Registry. Deixar campos de identificação dependentes de decisão competente; não modificar arquivo normativo até nova autorização expressa.
+
+**Gates de dados prévios a uma adoção normativa ou operacional:** origem/semântica de versão, categoria de contexto/finalidade, regra de suficiência, tratamento de revogação, eventual retenção, segurança, acessibilidade e fornecedores precisam de validação própria. Um contrato de transição não concede permissão de tratamento de dados.
+
+**Ato reservado à Direção:** decidir se autoriza produzir apenas diffs normativos candidatos para revisão, depois decidir separadamente se alguma alteração será efetivamente aplicada. O uso deste baseline não autoriza publicação, merge, design, API, teste, acesso ao Replit ou implantação.
+
+---
+
+## 9. Eficácia e limites (histórico e estado atualizado)
 
 | Objeto | Situação |
 | --- | --- |
 | Alternativa B, R2, competência distinta, entrada, retorno, três modos, primeiro Hoje | **Aprovados conceitualmente pela Direção** |
 | Duas minutas de handoff | **Aprovadas como base documental** |
-| Este quadro único de formalização e dados mínimos | **Elaborado para apreciação; não adjudicado como política de dados ou contrato** |
+| Este quadro único de formalização e dados mínimos | **Aprovado pela Direção como baseline documental de instrução**; não é política de dados, contrato normativo nem autorização de execução |
 | Surface/Transition Registries, Master PER-008 e Orquestração | **Não alterados** |
 | Novos PER/TRN/Surface IDs e políticas oficiais de dados | **Não criados** |
 | Auditoria, Design, API, testes, implantação ou publicação no Replit | **Não autorizados** |
