@@ -39,6 +39,7 @@ Preservar e aprofundar a hipótese de uma experiência contextual, interativa, n
 - [Exame Focal AF-10 de Competência Decisória e Instrumento](exame-focal-af10-competencia-instrumento.md): identifica competências por área, instrumentos possíveis, lacunas de delegação e critérios para futura consulta formal.
 - [Minuta de Encaminhamento Institucional do AF-10](minuta-encaminhamento-institucional-af10.md): texto candidato de solicitação, perguntas à autoridade, anexos e condições para eventual envio formal.
 - [Verificação do Destinatário e Canal de Submissão AF-10](validacao-destinatario-canal-af10.md): área temática identificada, sem instância, canal e instrumento decisório comprovados; consulta segue não enviada.
+- [Registro de Decisão da Direção — Competência AF-10](decisao-direcao-competencia-af10.md): Direção designada como instância decisória final, consultas técnicas por domínio e GKR/GitHub como registro; sem adjudicar A/B/C ou liberar execução.
 
 ## Estado das decisões (07/11/2026)
 
