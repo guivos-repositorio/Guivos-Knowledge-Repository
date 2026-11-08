@@ -32,6 +32,7 @@ Preservar e aprofundar a hipótese de uma experiência contextual, interativa, n
 - [Matriz de Estados de Coerência e Recuperação Multimodal](matriz-estados-coerencia-recuperacao-multimodal.md): interrupções, falhas parciais, mudanças de versões, alternativas acessíveis e retomada governada.
 - [Quadro Consolidado de Prontidão Conceitual e Pendências de Adjudicação](quadro-consolidado-prontidao-pendencias.md): inventário de evidências, maturidades, gates, riscos e fronteiras para futuras decisões.
 - [Dossiê de Competências e Adjudicação de Entrada Funcional](dossie-competencias-adjudicacao-entrada-funcional.md): alternativas A/B/C de localização, efeitos sobre PER-008/Registries e quesitos a decidir sem seleção automática.
+- [Exame Focal de Admissibilidade de Competência e Transição](exame-focal-admissibilidade-competencia-transicao.md): admissibilidade das alternativas, testes por comportamento, atos necessários e quesitos para a autoridade competente.
 
 ## Estado das decisões (07/11/2026)
 
