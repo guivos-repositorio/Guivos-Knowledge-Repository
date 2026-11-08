@@ -25,6 +25,7 @@ Preservar e aprofundar a hipótese de uma experiência contextual, interativa, n
 - [Matriz de Responsabilidades e Fronteiras Funcionais](matriz-responsabilidades-fronteiras.md): confronto com PER-007/008/010/011/012 e Intelligence, eventos, lacunas e limites.
 - [Exame de Compatibilidade com PER-008 — Hoje](exame-compatibilidade-per008.md): matriz de compatibilidade, três alternativas de acomodação, lacunas e parecer condicionado.
 - [Quadro Focal de Fronteiras Funcionais](quadro-focal-fronteiras-funcionais.md): cinco capacidades, gates entre conversa e memória, decisões pendentes e dependências de integração.
+- [Confronto dos Registries e Fluxos de Integração](confronto-registries-integracoes-fluxos.md): confirmação dos estados de superfícies e transições, fluxos de dados, gates, cenários e lacunas.
 
 ## Estado das decisões (07/11/2026)
 
