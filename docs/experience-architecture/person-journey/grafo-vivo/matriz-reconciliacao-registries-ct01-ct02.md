@@ -114,3 +114,8 @@ Mesmo com esses critérios cumpridos, **prontidão documental não equivale a ap
 - **R2 permanece recomendação**, não nova decisão da Direção.
 - Sem criação de IDs, alteração de Masters, Orquestração ou Registries, Design operacional, testes, APIs, integração de fornecedores, inspeção/alteração do Replit, merge ou publicação.
 - PR #730 continua rascunho; o índice único da seção preserva a proveniência de cada estudo.
+
+
+## Atualização posterior — Diretriz R2 aprovada pela Direção (08/11/2026)
+
+A Direção aprovou expressamente a **R2 como diretriz de representação da responsabilidade funcional distinta**, sem criar superfície ou ID no Registry. Ver [Decisão R2](decisao-direcao-r2.md). A expressão anterior “R2 permanece recomendação” e a solicitação de sua aprovação registram o **estado histórico anterior** a esta decisão. Foram também preparadas [duas minutas separadas de entrada e retorno](minutas-contratos-transicao-entrada-retorno.md), ainda candidatas, sem validação ou alteração normativa.
