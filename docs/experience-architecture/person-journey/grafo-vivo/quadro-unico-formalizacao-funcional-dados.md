@@ -970,6 +970,59 @@ Fontes diretamente confrontadas na branch: `contrato-conceitual-sincronizacao-ve
 
 **Estado final deste incremento:** decisão de suficiência instrutória registrada; confronto documental executado em nível de diagnóstico; questões bloqueantes identificadas; nenhum arquivo normativo alterado.
 
+
+### 18.17 Aprovação do quadro de evidências e da matriz de consulta por competência (08/11/2026)
+
+> **Decisão da Direção:** “de acordo, segue” aprova a **preparação** de (1) quadro de evidências exigíveis para eventual ato registral I-A e (2) matriz de consulta dirigida por competência B01, como instrução documental condicionada dentro deste Quadro Único e PR #730. A observação subsequente sobre possível início da implantação no Replit **não altera, por si, os gates documentais e de dados**, nem representa homologação de B01/B02 ou liberação irrestrita de desenvolvimento. A avaliação de prontidão para implantação deve distinguir auditoria técnica de implementação funcional.
+
+### 18.18 Quadro de evidências exigíveis para eventual ato registral I-A
+
+| Prova exigível | Evidência já disponível / localizada | Evidência ou decisão ainda ausente | Autoridade a consultar | Efeito impeditivo atual |
+| --- | --- | --- | --- | --- |
+| Existência e fronteira funcional | Alternativa B, R2/I-A, ficha §18.2 e matriz CT-01/CT-02: unidade própria e três modos internos, sem tela necessariamente separada | Delimitação final de regime registral para esta unidade | Direção + Arquitetura da Experiência | Impede registrar identidade como se fosse superfície vigente |
+| Owner documental | C1 confirmado: Arquitetura da Experiência | Nenhuma nova delegação necessária para mera instrução; execução de alteração continua sujeita a ato | Direção / Arquitetura da Experiência | C1 não atribui ID nem valida contrato operacional |
+| Procedimento de identificação | Surface Registry v0.36.22, detalhamento Pessoa v0.23.8 como referências; inventário existente observado | Procedimento de alocação, regra de unicidade, número e nome oficialmente aprovados | Autoridade registral competente + Direção | **Proíbe reservar ou emitir ID** |
+| Maturidade admitida | Ficha candidata/não validada; estados já existentes no Registry | Comprovação do rótulo apropriado e evidências de maturidade | Arquitetura da Experiência + Direção | Proíbe declarar “validada” ou “pronta” |
+| Transições específicas | Duas minutas CT-01/CT-02; TRN-007 e TRN-008..013 com outras origens/destinos | Aprovação formal de dois handoffs e mapeamento de ids somente após destino oficial | Direção + titular do Transition Registry | Proíbe reciclar TRNs existentes |
+| Relação com Hoje | PER-008 primeiro/recorrente; entrada voluntária, retorno neutro | Deltas aprovados de Master PER-008 e Orquestração, caso necessários | Autoridades dos respectivos Masters | Proíbe presumir alteração em Hoje |
+| Dependências B01/B02 | Matrizes de fonte, proveniência, finalidade e minimização adotadas para consulta | Fonte canônica, emissor de versão, categorias e destinatários adjudicados | Jornada/GIA/PAS-001/Dados/Privacidade | Impede integração com dados reais e persistência |
+| Prova de integridade interdocumental | Lista de documentos a confrontar e limitações já registradas | Proposta única de deltas, checagem de links/contagens e ato de aplicação | Arquitetura da Experiência + Direção | Proíbe alterações fragmentadas dos Registries |
+
+**Critério de suficiência:** a prova é considerada **documentalmente identificada** quando a fonte e sua competência estão localizadas; **não comprovada** quando falta ato oficial, contrato ou manifestação especializada. Nenhum campo pendente deve ser convertido em “aprovado” por extrapolação.
+
+**Resultado:** existe **suficiência para preparar uma futura proposta de inclusão**, mas não para **identificar/registrar** I-A. O presente quadro não solicita número nem trata a escolha de identificador como procedimento automático.
+
+### 18.19 Matriz de consulta dirigida por competência — B01
+
+| Competência | Quesito focal a submeter | Elemento documental já localizado | Resposta/prova que falta | Estado |
+| --- | --- | --- | --- | --- |
+| Jornada/PER-004/005/007 | O que é declaração, revisão de compreensão e escolha independente? O que permanece vigente após PER-007? | Ciclo de vida contextual, PER-007 e estudos de confronto | Referência de estado canônico da compreensão e efeitos de uma correção | **Consulta a instruir; nenhuma resposta recebida** |
+| Guivos Intelligence (GIA/GPA-006/GIA-COG-001) | Quem produz a interpretação; como indica hipótese, incerteza, confirmação e versão cognitiva? | Autoridades cognitivas preservadas; matriz de linhagem §18.11 | Emissor/validador efetivo da versão e relação com eventual registro autorizado | **Consulta a instruir; sem atribuição de fonte canônica** |
+| PAS-001 e PER-010/011/012 | Quais referências a Objetivos, Passos e Evolução podem ser exibidas sem alterar autoridade de domínio? | Fronteiras especializadas nos estudos e Registries | Contratos de leitura, estados, versões, evidência e condições de acesso | **Consulta a instruir; nenhum efeito de domínio** |
+| Dados/Privacidade | Quais dados e proveniências são necessários, permitidos e corrigíveis por modalidade e finalidade? | B02 adotada para consulta; separação de sessão, persistência e personalização | Parecer competente de categorias, finalidade, retenção, destinatários, correções e direitos | **Sem parecer recebido; B02 não homologada** |
+| Segurança/Arquitetura/Engenharia | Que garantias devem anteceder projeções, sincronização e invalidação? | Contrato conceitual de sincronização e matriz de gatilhos | Requisitos técnicos somente após autoridade de dados e execução autorizada | **Não autoriza infraestrutura, APIs ou Replit** |
+| Arquitetura da Experiência (C1) | Como rastrear o vínculo da versão elegível entre Hoje, unidade I-A e handoffs futuros? | C1 e ficha candidata | Regra documental coerente com identificações/contratos formalizados | **Owner de instrução, não emissor automático de dados** |
+
+**Hierarquia de perguntas, sem presumir respostas:** (1) origem/declaração; (2) estatuto epistemológico da interpretação; (3) referência da compreensão vigente; (4) emissor e semântica de versão; (5) permissões de leitura e finalidade; (6) impacto de revisão/revogação; (7) eventual projeção derivada. Uma resposta de GIA sobre interpretação não resolve automaticamente a titularidade do registro canônico.
+
+**Resultado B01:** matriz **apta à instrução de consultas específicas**, não comprovação de consultas efetuadas nem de pareceres recebidos.
+
+### 18.20 Prontidão diferenciada para uma futura entrada no Replit
+
+A manifestação da Direção sobre iniciar a implantação deve ser enfrentada sem confundir **possibilidade de auditoria do aplicativo** com **prontidão para executar os fluxos e dados reais**.
+
+| Atividade | Prontidão técnica/documental | Condição de autorização |
+| --- | --- | --- |
+| Inspeção de leitura do workspace existente e relatório de aderência | **Compatível com o estágio documental**, sem alterar código, banco, configurações ou deploy | Autorização delimitada de auditoria e identificação do workspace |
+| Inventário de componentes já existentes e lacunas em relação à experiência aprovada | **Possível após inspeção**, como diagnóstico | Não criar superfícies oficiais nem inferir validação visual/técnica |
+| Protótipo isolado com dados inteiramente sintéticos, sem persistência/terceiros | **Somente candidato para avaliação posterior** | Aprovação expressa de escopo, isolamento, semântica de demonstração e controle de não produção |
+| Implementação funcional com fontes reais, IA, Neo4j, voz, APIs ou memória | **Não pronta**: B01/B02 e demais gates pendentes | Decisões competentes sobre dados, identificadores/contratos e autorização técnica específica |
+| Publicação/merge e atualização de Registries | **Não autorizadas** | Ato próprio da Direção |
+
+**Encaminhamento:** caso a Direção determine início no Replit, privilegiar **primeiro uma auditoria estritamente de leitura**, com lista de evidências técnicas, divergências, riscos e proposta de plano de implantação faseado. Este documento não constitui liberação de implementação, publicação ou tratamento de dados.
+
+**Marco de continuidade:** peças §18.18–§18.19 preparadas; nenhuma consulta especializada presumida; controles do PR #730 e centralização documental mantidos.
+
 ---
 
 ## 19. Eficácia e limites (histórico e estado atualizado)
