@@ -1,11 +1,11 @@
 ---
 title: Grafo Vivo — Quadro Único de Formalização Funcional e Dados Mínimos
 status: conceptual_study
-version: 0.6.0
+version: 0.7.0
 owner: Concepção de Produto / Jornada da Pessoa
 last_updated: 2026-11-08
 normative: false
-maturity: focal_readiness_assessment_conditional_documentary_only
+maturity: p1_competence_identification_and_data_reconciliation_instruction
 ---
 
 # Grafo Vivo — Quadro Único de Formalização Funcional e Dados Mínimos
@@ -479,7 +479,78 @@ A Direção **já autorizou a preparação conjunta A+B**, não a aplicação do
 
 ---
 
-## 14. Eficácia e limites (histórico e estado atualizado)
+## 14. Alternativa P1 — Dossiê focal de competência e identificação + reconciliação B01–B12 (08/11/2026)
+
+> **Decisão expressa:** a Direção respondeu “de acordo, segue” à recomendação **P1**, autorizando aprofundamento documental de competência/identificação do destino R2 e reconciliação dos requisitos B01–B12 com autoridades de dados e privacidade. **P1 não seleciona um ID, owner ou maturidade oficial; não representa anuência de especialista externo nem autoriza atualização normativa, processamento de dados, testes ou desenvolvimento.**
+
+### 14.1 Dossiê focal — autoridade, unidade de registro e identificação
+
+**Quesito I: qual objeto deverá ser identificado?** Uma **responsabilidade funcional de experiência expandida contextual da Pessoa**, com três modalidades internas, distinta da síntese PER-008. **Aprovado conceitualmente:** B e R2; **não adjudicado:** espécie exata de objeto no esquema oficial de superfícies (superfície, responsabilidade com estados, ou outro mecanismo registrável compatível). A unidade não pode ser simplesmente PER-008, sob pena de ocultar a fronteira já aprovada.
+
+| Alternativa de formalização futura | Compatibilidade com R2 | Condições de admissibilidade | Estado |
+| --- | --- | --- | --- |
+| **I-A — Unidade própria no inventário de superfícies** | Forte; espelha responsabilidades especializadas do Registry | Fundamentar tipo de unidade, identificar pelo processo competente, indicar owner e detalhamento de Pessoa, maturidade candidata e dois handoffs | **Recomendada como hipótese de formalização; não aprovada nem numerada** |
+| **I-B — Responsabilidade própria vinculada a uma unidade registral existente, sem absorção por Hoje** | Condicional; somente se o Registry admitir responsabilidade autônoma sem novo identificador próprio | Evidenciar explicitamente competência, rastreabilidade, transições identificáveis, proteção e owner; confrontar a estrutura atual antes de escolher | **Alternativa condicionada; admissibilidade não demonstrada** |
+| **I-C — Reaproveitar GKR-SURF-PER-008 como identificador da responsabilidade expandida** | Incompatível com fronteira funcional já aprovada, se implicar absorção | Exigiria reabrir e adjudicar competência de Hoje com impacto explícito no Master | **Não recomendada; não selecionada** |
+| **I-D — Atribuir imediatamente o próximo número disponível** | Não justificável sem processo de governança de IDs | Necessita competência de numeração, colisões, impacto em contagens e referências | **Não autorizada** |
+
+**Parecer focal:** preferir **I-A apenas como candidata** para estudo de representação futura; **R2 permanece decisão vigente**, porém não impõe por si I-A, um número, uma tela visual autônoma ou uma mudança já aplicada. Nenhum identificador reservado.
+
+**Quesito II: quem detém qual competência?**
+
+| Papel ou autoridade a confirmar | Responsabilidade candidata | Limite |
+| --- | --- | --- |
+| **Direção da Guivos** | Deliberar escopo, conflitos de competência e atos futuros de formalização nesta linha de trabalho | Autorização em chat não substitui evidência de validação técnica ou de privacidade |
+| **Arquitetura da Experiência/Jornada** | Propor unidade registrável, contratos de superfície, transições e owner de manutenção | Não atribuir por inferência poder de criar consentimento nem ações de domínio |
+| **Guivos Intelligence — GIA/GPA-006** | Definir limites da compreensão, hipóteses, proveniência cognitiva e coerência entre modalidades | Não substituir fonte canônica de PER-010/011/012 |
+| **PAS-001 e autoridades de domínio** | Determinar fonte de verdade e mutações legítimas de Objetivos, Passos e Evolução | Grafo não torna representações em registros materiais |
+| **Dados, Privacidade e Segurança** | Deliberar categorias, finalidade, armazenamento, transferências, revogação, segurança e retenção | Não presumir sua aprovação sem manifestação efetiva |
+| **Engenharia e UX acessível** | Especificar mecanismos de interrupção, continuidade, idempotência e fallback após autorização pertinente | Não declarar validação ou compatibilidade operacional sem auditoria/testes |
+
+**Confronto obrigatório anterior ao registro:** Surface Registry v0.36.22 (61 IDs), detalhamento da Pessoa v0.23.8 (13 campos), Transition Registry v0.29.26 (76 transições), Master PER-008 v0.1.0 e Orquestração v0.4.0. **Nenhuma dessas autoridades foi modificada por esta P1.**
+
+**Quesito III: qual maturidade é defensável?** A redação de trabalho **“contrato funcional candidato; não validado; sem materialização comprovada”** expressa os fatos conhecidos, mas o **rótulo final de coluna**, eventual inclusão no inventário e elevação posterior de maturidade devem seguir ato competente. Não usar “validado”, “localmente validado”, “contratado operacionalmente” ou “publicado” sem evidência própria.
+
+### 14.2 Matriz focal B01–B12 — consulta às autoridades **a instruir**, não parecer recebido
+
+| Cláusula | Fronteira documental confirmada/confrontada | Autoridade cuja adjudicação é necessária | Evidência exigível antes de formalização |
+| --- | --- | --- | --- |
+| **B01 — Fonte canônica** | Hoje resume; GIA interpreta; PER-010/011/012 e PAS-001 mantêm objetos de domínio | PAS-001, Arquitetura de Dados e GIA | Inventário por família de informação, fonte autorizada, dono da versão e derivação |
+| **B02 — Finalidade/minimização** | Entrada voluntária não autoriza retenção ou compartilhamento geral | Privacidade, Dados, Segurança | Matriz categoria × finalidade × modalidade × destinatário, com dados sensíveis tratados separadamente |
+| **B03 — Suficiência** | Primeiro Hoje não exige histórico; contexto insuficiente não justifica grafo fictício | PER-007, Master PER-008, GIA e Privacidade | Critérios qualitativos verificáveis por modalidade, estados de vazio e escolha de continuar |
+| **B04 — Versão/temporalidade** | Projeções e narrações devem respeitar a compreensão elegível atual | Dados/Journey, GIA e domínios | Origem real da versão, comparação de atualização, expiração, concorrência e invalidação |
+| **B05 — Proveniência/epistemologia** | Declaração ≠ inferência ≠ confirmação ≠ evidência de evolução | GIA/GPA-006, PER-007, PAS-001 | Taxonomia de afirmações autorizada, revisão, contestação e rastreabilidade de derivados |
+| **B06 — Uso de sessão** | Autenticação, sessão e escolha de persistência são conceitos distintos | Privacidade, Segurança e Journey | Finalidade transitória, duração/descarte, falha de sessão e limites de memória de contexto |
+| **B07 — Persistência** | Entrada/retorno não acionam salvamento automático | PER-007, Dados e Privacidade | Escolha apropriada, objeto armazenável, prazo, retirada, eliminação e propagação |
+| **B08 — Personalização** | Decisão independente de persistência; não é gate universal para continuar | PER-007, Privacidade e GIA | Registro/efeito da escolha, alterações e revalidação, sem coerção de acesso |
+| **B09 — Voz/transcrição** | Escutar/Conversar não equivalem a gravação; fala nova não é fato validado | Privacidade, Segurança, GIA e Engenharia | Modalidade, finalidade, STT/TTS, fluxo de áudio, fornecedor e retenção a aprovar |
+| **B10 — Terceiros/Neo4j** | Banco grafo e modelos não ganham autoridade canônica ou acesso irrestrito | Dados, Arquitetura, Segurança e Privacidade | Minimização por integração, transferências, contratos, segregação, logs e invalidação |
+| **B11 — Correção/revogação** | Corrigir contexto requer reavaliar projeções, narrativas e reutilizações | Dados, Privacidade, GIA e Journey | Cadeia fonte → derivados → caches/provedores, condição de descarte e não reutilização |
+| **B12 — Continuidade** | Dois handoffs são distintos; retorno neutro não produz efeitos materiais | Arquitetura UX, Engenharia e Segurança | Matriz de estados, falhas, acessibilidade, idempotência e verificação futura |
+
+**Resultado da reconciliação documental:** para **B01–B12**, existem princípios ou propostas já rastreados, mas **não foi localizada/recebida nesta instrução uma aprovação expressa específica das autoridades de Dados e Privacidade para transformá-los em contrato vigente**. Assim, **nenhum B01–B12 está aprovado como regra operacional completa**, mesmo quando seu princípio funcional deriva de decisão da Direção. A tabela define **quesitos para consulta**, não substitui a consulta por uma opinião simulada.
+
+### 14.3 Ordem de instrução e dependências sem circularidade
+
+1. **Definir o objeto registrável e owner propostos** (I-A ou eventual I-B) sem reservar identificador. Confrontar Surface Registry e detalhamento de Pessoa.
+2. **Solicitar adjudicação documental de B01–B05**, pois fonte canônica, finalidade, suficiência, versão e proveniência sustentam as demais cláusulas.
+3. **Solicitar adjudicação documental de B06–B11**, especialmente sessão/persistência/personalização, voz e terceiros, correção e revogação.
+4. **Reconciliar B12 e as duas minutas de transição** com elegibilidade, dados, falha, acessibilidade, retorno e limites de domínio.
+5. **Preparar ato específico para a Direção**, com alternativas, impacto e diff final de Surface Registry + detalhamento da Pessoa + Transition Registry, somente quando identificador/owner/maturidade e gates de dados forem suficientes.
+6. **Separar aprovação normativa, auditoria técnica Replit e implantação**; nenhuma autorização posterior é presumida.
+
+### 14.4 Síntese e próxima matéria decisória
+
+- **P1 executada como estudo documental**: unidade funcional, alternativas de identificação, owner/maturidade e matriz focal B01–B12 examinados.
+- **Hipótese I-A recomendada para aprofundamento**, mas **não selecionada pela Direção**; I-B condicionada; I-C incompatível; I-D não autorizado.
+- **Fonte canônica, privacidade, retenção e fornecedores ainda sem adjudicação**; não existe autorização de transmissão de dados reais para integração.
+- **Prontidão final: parcial, não normativa**. O resultado não autoriza inserir linhas nos Registries, criar IDs ou iniciar Replit.
+
+**Recomendação para a próxima decisão da Direção:** delimitar a **instrução da alternativa I-A (unidade própria) versus I-B (responsabilidade distinta vinculada)**, sem escolher número, e priorizar uma **matriz de fonte de verdade/finalidade para B01–B05**, a ser submetida às autoridades pertinentes antes de formalizar os dois contratos.
+
+---
+
+## 15. Eficácia e limites (histórico e estado atualizado)
 
 | Objeto | Situação |
 | --- | --- |
