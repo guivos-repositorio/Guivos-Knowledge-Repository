@@ -82,7 +82,7 @@ Preservar e aprofundar a hipótese de uma experiência contextual, interativa, n
 - [Decisão da Direção — R2](decisao-direcao-r2.md): representação da responsabilidade funcional distinta aprovada como diretriz, sem criação de superfície ou ID oficial.
 - [Duas Minutas Candidatas de Transição — Entrada e Retorno](minutas-contratos-transicao-entrada-retorno.md): contratos separados de passagem Hoje → Grafo Vivo e retorno Grafo Vivo → Hoje, ainda não normativos nem validados.
 - [Decisão da Direção — Minutas como Base Documental](decisao-direcao-minutas-base.md): adoção expressa das duas minutas como base de reconciliação, sem contratos normativos, novos IDs ou implementação.
-- [Quadro Único de Formalização Funcional e Dados Mínimos — v0.8.0, diretriz I-A e B01–B05](quadro-unico-formalizacao-funcional-dados.md): consolida decisões vigentes, dados mínimos e **duas propostas de diff não aplicadas** para Surface Registry e Transition Registry; placeholders não são IDs e nenhum Registry foi alterado.
+- [Quadro Único de Formalização Funcional e Dados Mínimos — v0.9.0, owner I-A e exame B01/B02](quadro-unico-formalizacao-funcional-dados.md): consolida decisões vigentes, dados mínimos e **duas propostas de diff não aplicadas** para Surface Registry e Transition Registry; placeholders não são IDs e nenhum Registry foi alterado.
 
 ## Navegação e fontes de autoridade
 
@@ -127,6 +127,8 @@ Preservar e aprofundar a hipótese de uma experiência contextual, interativa, n
 **Alternativa P1 instruída em 08/11/2026:** [Quadro Único v0.7.0](quadro-unico-formalizacao-funcional-dados.md) confronta alternativas I-A/I-B de identificação funcional, mantém owner/maturidade/IDs sob decisão específica e apresenta matriz de consulta por autoridade para B01–B12. Trata-se de reconciliação documental, não parecer especializado recebido nem autorização normativa.
 
 **I-A aprovada como diretriz e B01–B05 priorizados em 08/11/2026:** o [Quadro Único v0.8.0](quadro-unico-formalizacao-funcional-dados.md) registra a escolha da unidade funcional própria, sem ID/owner oficial, e uma matriz focal de fonte canônica, finalidade, suficiência, versão e proveniência ainda sujeita à autoridade de dados/privacidade.
+
+**Exame focal de competência e B01/B02 concluído em 08/11/2026:** o [Quadro Único v0.9.0](quadro-unico-formalizacao-funcional-dados.md) apresenta Arquitetura da Experiência como owner documental candidato da unidade I-A, preserva a competência decisória da Direção e confronta fontes canônicas e finalidades de dados como matrizes candidatas para consulta. Não há validação externa, atribuição de ID ou edição de Registry.
 
 **Não aprovado/pendente:** formalização da responsabilidade no Registry, contrato oficial de entrada/retorno, critérios operacionais de elegibilidade, materialização em telas existentes, novas superfícies/IDs, taxonomia ou esquema de grafo, regras técnicas de persistência, seleção de bibliotecas e provedores de voz, políticas definitivas de retenção, cronograma, preços/planos, aplicação aos demais participantes, testes, execução e publicação operacional.
 
