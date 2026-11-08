@@ -26,6 +26,7 @@ Preservar e aprofundar a hipótese de uma experiência contextual, interativa, n
 - [Exame de Compatibilidade com PER-008 — Hoje](exame-compatibilidade-per008.md): matriz de compatibilidade, três alternativas de acomodação, lacunas e parecer condicionado.
 - [Quadro Focal de Fronteiras Funcionais](quadro-focal-fronteiras-funcionais.md): cinco capacidades, gates entre conversa e memória, decisões pendentes e dependências de integração.
 - [Confronto dos Registries e Fluxos de Integração](confronto-registries-integracoes-fluxos.md): confirmação dos estados de superfícies e transições, fluxos de dados, gates, cenários e lacunas.
+- [Matriz do Ciclo de Vida da Informação Contextual](matriz-ciclo-vida-informacao-contextual.md): declaração, transcrição, validação, uso temporário, persistência, projeções, narração, correção e revogação.
 
 ## Estado das decisões (07/11/2026)
 
