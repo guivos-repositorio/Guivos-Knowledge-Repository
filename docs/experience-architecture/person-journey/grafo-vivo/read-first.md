@@ -82,7 +82,7 @@ Preservar e aprofundar a hipótese de uma experiência contextual, interativa, n
 - [Decisão da Direção — R2](decisao-direcao-r2.md): representação da responsabilidade funcional distinta aprovada como diretriz, sem criação de superfície ou ID oficial.
 - [Duas Minutas Candidatas de Transição — Entrada e Retorno](minutas-contratos-transicao-entrada-retorno.md): contratos separados de passagem Hoje → Grafo Vivo e retorno Grafo Vivo → Hoje, ainda não normativos nem validados.
 - [Decisão da Direção — Minutas como Base Documental](decisao-direcao-minutas-base.md): adoção expressa das duas minutas como base de reconciliação, sem contratos normativos, novos IDs ou implementação.
-- [Quadro Único de Formalização Funcional e Dados Mínimos — v0.6.0, parecer focal condicionado](quadro-unico-formalizacao-funcional-dados.md): consolida decisões vigentes, dados mínimos e **duas propostas de diff não aplicadas** para Surface Registry e Transition Registry; placeholders não são IDs e nenhum Registry foi alterado.
+- [Quadro Único de Formalização Funcional e Dados Mínimos — v0.7.0, instrução P1](quadro-unico-formalizacao-funcional-dados.md): consolida decisões vigentes, dados mínimos e **duas propostas de diff não aplicadas** para Surface Registry e Transition Registry; placeholders não são IDs e nenhum Registry foi alterado.
 
 ## Navegação e fontes de autoridade
 
@@ -123,6 +123,8 @@ Preservar e aprofundar a hipótese de uma experiência contextual, interativa, n
 **Proposta coordenada A+B preparada em 08/11/2026:** o [quadro único v0.5.0](quadro-unico-formalizacao-funcional-dados.md) apresenta uma futura representação compatível com o inventário de superfícies e o detalhamento obrigatório da Pessoa, além de contrato documental candidato de contexto e dados (B01–B12), sem criação de IDs, alteração normativa ou aprovação de provedores.
 
 **Parecer focal de prontidão elaborado em 08/11/2026:** [Quadro Único v0.6.0](quadro-unico-formalizacao-funcional-dados.md) conclui pela **prontidão apenas documental e parcial**: as minutas podem ser aprofundadas, mas a inclusão nos Registries depende da identificação/owner do destino e da reconciliação de dados e privacidade. Sem parecer externo presumido ou autorização normativa.
+
+**Alternativa P1 instruída em 08/11/2026:** [Quadro Único v0.7.0](quadro-unico-formalizacao-funcional-dados.md) confronta alternativas I-A/I-B de identificação funcional, mantém owner/maturidade/IDs sob decisão específica e apresenta matriz de consulta por autoridade para B01–B12. Trata-se de reconciliação documental, não parecer especializado recebido nem autorização normativa.
 
 **Não aprovado/pendente:** formalização da responsabilidade no Registry, contrato oficial de entrada/retorno, critérios operacionais de elegibilidade, materialização em telas existentes, novas superfícies/IDs, taxonomia ou esquema de grafo, regras técnicas de persistência, seleção de bibliotecas e provedores de voz, políticas definitivas de retenção, cronograma, preços/planos, aplicação aos demais participantes, testes, execução e publicação operacional.
 
