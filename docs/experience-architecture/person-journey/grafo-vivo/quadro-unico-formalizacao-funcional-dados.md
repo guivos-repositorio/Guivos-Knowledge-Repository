@@ -1,11 +1,11 @@
 ---
 title: Grafo Vivo — Quadro Único de Formalização Funcional e Dados Mínimos
 status: conceptual_study
-version: 0.4.0
+version: 0.5.0
 owner: Concepção de Produto / Jornada da Pessoa
 last_updated: 2026-11-08
 normative: false
-maturity: approved_documentary_baseline_with_focal_identity_data_analysis
+maturity: approved_baseline_with_coordinated_registry_and_data_contract_candidates
 ---
 
 # Grafo Vivo — Quadro Único de Formalização Funcional e Dados Mínimos
@@ -324,7 +324,98 @@ As aprovações B, R2, CT-01/02, minutas e diffs **já estão encerradas no nív
 
 ---
 
-## 12. Eficácia e limites (histórico e estado atualizado)
+## 12. Autorização e preparação conjunta A+B — formalização coordenada e contrato candidato de dados (08/11/2026)
+
+A Direção aprovou, nesta conversa, **preparar a proposta coordenada e o contrato candidato de contexto e dados no mesmo quadro único**, sem editar documentos normativos, atribuir identificadores, autorizar processamento externo ou implantar. Os dois blocos seguintes são **instrumentos de revisão**, não cláusulas contratuais vigentes.
+
+### 12.1 Frente A — proposta coordenada de alterações **não aplicadas**
+
+**Dependências documentais verificadas:**
+- `docs/journeys/surface-registry.md` **v0.36.22**: inventário de nove campos e total estrutural de 61 IDs;
+- `docs/journeys/surface-registry-person-details.md` **v0.23.8**: detalhamento obrigatório de treze campos, vinculado ao mesmo identificador da superfície; não é outro inventário;
+- `docs/journeys/transition-registry.md` **v0.29.26**: cinco campos por transição, total de 76 transições; `TRN-007..013` preservadas;
+- Master PER-008 v0.1.0 e Orquestração v0.4.0: competências, variantes de Hoje e continuidade sem absorção.
+
+**Proposta alinhada em três linhas editoriais futuras, sem criar IDs:**
+
+1. **Inventário de superfície (9 colunas)** — adicionar, **somente após decisão de identificação**, uma responsabilidade protegida e própria: “Grafo Vivo — experiência expandida contextual”, Pessoa autenticada, maturidade **contrato funcional candidato / não validado**, autoridade e owner a ratificar, sem baseline visual corrente e sem handoffs validados. Diferenciar expressamente de `GKR-SURF-PER-008`.
+2. **Detalhamento obrigatório da Pessoa (13 colunas)** — registrar o **mesmo identificador futuro**, se autorizado, nos campos ID, autoridade corrente, estado/versão, entrada, decisão principal, saída, dados e conteúdos, gate, reversibilidade, supersessão, continuidade, lacuna e escopo. A redação abaixo indica como preencher cada campo sem criar identificadores.
+3. **Transition Registry (5 colunas)** — acrescentar futuramente **dois contratos distintos**, entrada voluntária `PER-008 → [DESTINO A FORMALIZAR]` e retorno neutro `[DESTINO] → PER-008`, com identificadores próprios a adjudicar, sem reaproveitar TRN atual.
+
+**Proposta de conteúdo dos treze campos para o detalhamento da Pessoa, não aplicada:**
+
+| Campo do detalhamento | Texto candidato / restrição |
+| --- | --- |
+| ID | **[MESMO ID FUTURO APROVADO NO SURFACE REGISTRY]**, placeholder, não identificador oficial |
+| Autoridade corrente | [AUTORIDADE/OWNER A RATIFICAR] + decisões B/R2/CT-01/02 + quadro único candidato; não reivindicar Master oficial inexistente |
+| Estado/versão | Contrato funcional candidato, não validado; versão oficial somente após ato próprio |
+| Entrada | Hoje/PER-008, primeiro ou recorrente, quando houver contexto legitimamente elegível e escolha explícita |
+| Decisão principal | Compreender e explorar contexto, relações, lacunas e possibilidades através de Explorar/Escutar/Conversar; sem efeito material |
+| Saída | Retorno expresso e neutro a Hoje; contrato próprio a formalizar; não pressupor TRN existente |
+| Dados e conteúdos | Contexto mínimo por finalidade e modo, versão, proveniência, estado epistemológico, escolhas de sessão/persistência/personalização |
+| Gate | Pessoa autenticada; contexto apropriado; permissões pertinentes; sem autorização implícita de fornecedor/voz/persistência |
+| Reversibilidade | Retornar, interromper, corrigir, revogar quando aplicável; sem gravação/salvamento automático |
+| Supersessão | Não substitui PER-008, PER-007, PER-010/011/012, PAS-001 ou GIA |
+| Continuidade | Entrada/retorno apenas candidatos; nenhuma validação transferida de TRN-007..013 |
+| Lacuna | ID, owner, classificação de maturidade exata, contrato de dados, versão, privacidade, acessibilidade, fornecedores, implementação |
+| Observação de escopo | Responsabilidade funcional distinta R2, com três modalidades internas; não implica tela visual autônoma |
+
+**Cruzamentos obrigatórios na revisão:** registro do destino e respectivo detalhamento devem usar **a mesma unidade identificadora futura**, a maturidade não pode exceder evidências reais, e os dois contratos de transição exigem destino oficialmente definido. Se a aplicação demandar alterações no Master PER-008 ou Orquestração, instruir **deltas mínimos separados** e submetê-los à Direção; não alterar fontes por consequência automática.
+
+### 12.2 Frente B — contrato documental candidato de contexto e dados
+
+**Objeto lógico:** limitar o que pode ser usado, derivado, apresentado e mantido durante a entrada a partir de Hoje, a alternância entre modalidades e o retorno. **Sem API, esquema de banco, base legal, prazo de retenção, provedor autorizado ou implementação.**
+
+| Cláusula candidata | Requisito para exame | Gate que ainda depende da autoridade |
+| --- | --- | --- |
+| **B01 — Fonte de verdade** | Identificar a fonte canônica do estado atual; grafo e voz são projeções, não autoridades de domínio | GIA/PAS-001 e arquitetura de dados devem confirmar referências e responsabilidades |
+| **B02 — Finalidade e minimização** | Usar apenas contexto relevante à finalidade e modo selecionados | Privacidade deve avaliar categorias, especialmente sensíveis, e fundamento admissível |
+| **B03 — Suficiência** | Entrada elegível depende de contexto pertinente e permitido, não de histórico completo ou score fixo | PER-007/PER-008/GIA devem definir testes qualitativos verificáveis |
+| **B04 — Versão e temporalidade** | Informar referência de compreensão ou vigência quando houver; invalidar derivado desatualizado | Modelo de versionamento e fonte autorizada ainda não decididos |
+| **B05 — Proveniência e epistemologia** | Distinguir declaração, inferência, lacuna, correção e confirmação da Pessoa | Autoridades cognitivas devem definir atualização/contestação da interpretação |
+| **B06 — Uso de sessão** | Permitir somente processamento transitório legítimo necessário ao serviço | Política de sessão, expiração e descarte pendentes; negar memória não equivale automaticamente a negar uso de sessão |
+| **B07 — Persistência** | Nenhum salvamento de conversa, áudio ou relações por simples entrada/retorno | Decisão separada da Pessoa e política de retenção a formalizar |
+| **B08 — Personalização** | Exige escolha própria, independentemente de persistência | PER-007/Privacidade; não inferir opt-in por interação |
+| **B09 — Voz e transcrição** | Escutar e Conversar exigem autorização e fallback textual proporcionais | STT/TTS, retenção/gravação, Grok ou outros fornecedores são candidatos, não aprovados |
+| **B10 — Terceiros e grafo** | Nenhuma transmissão automática do contexto inteiro a motores ou Neo4j | Contratos de minimização, transferência e segregação aguardam autoridade de dados/segurança |
+| **B11 — Revogação e correção** | Reavaliar derivados, sessão, cache, texto e narração vinculados a dado corrigido ou revogado | Regras de invalidação, proveniência e eventual eliminação/propagação a definir |
+| **B12 — Retorno e continuidade** | Reconsultar Hoje, evitar efeitos materiais, falha honesta e operação idempotente | UX/Segurança/Engenharia devem validar recuperação e ausência de ações duplicadas |
+
+**Critérios candidatos de admissibilidade por modalidade, sem tornar histórico obrigatório:**
+
+- **Explorar:** permitir quando houver tema, aspecto ou conexão sustentada por contexto disponível; a ausência de relações suficientes pode ser comunicada honestamente, sem forjar um grafo.
+- **Escutar:** permitir narração de uma compreensão textual efetivamente elegível, com referência temporal e alternativa textual; falta de provedor de voz não equivale à falta de compreensão.
+- **Conversar:** permitir esclarecimento contextual dentro da finalidade, distinguindo nova declaração de fato confirmado; a Pessoa deve poder corrigir e escolher separadamente se algo será guardado ou personalizado.
+- **Alternância:** preservar contexto mínimo autorizado e compatibilidade de versão, sem criar permissões, histórico ou contratos TRN extras.
+
+**Exemplos de aceitação documental futura:**
+
+| Situação | Resultado esperado, ainda candidato |
+| --- | --- |
+| Primeiro Hoje sem histórico prévio | Acesso opcional quando há contexto útil; não exibir progresso ou trajetória inventados |
+| Pessoa recusa personalização | Manter apenas funções que tenham base legítima independente; não personalizar |
+| Pessoa corrige informação durante áudio | Parar/sinalizar conteúdo possivelmente desatualizado antes de afirmar nova versão |
+| Permissão é revogada | Não reutilizar dado desautorizado e tratar seus derivados conforme política competente |
+| Contexto insuficiente para explorar | Explicação de ausência e continuidade segura, em vez de nós fictícios |
+| Falha de provedor de voz | Texto equivalente quando viável; saída disponível e nenhuma gravação presumida |
+| Retorno repetido | Não criar objetivo, passo, evolução, consentimento, evento material ou gravação duplicados |
+| Retorno com reconsulta indisponível | Não afirmar síntese atualizada sem confirmação; disponibilizar recuperação apropriada |
+
+### 12.3 Questões remanescentes e critério para próxima decisão
+
+A Direção **já autorizou a preparação conjunta A+B**, não a aplicação dos conteúdos. As questões que efetivamente exigem nova autorização são:
+
+1. **Forma oficial de identificação e owner** do destino R2, compatível com as regras atuais de alocação de IDs e sem reserva por inferência.
+2. **Maturidade exata** a registrar na futura entrada de Surface Registry e detalhamento Pessoa, sem alegar validação.
+3. **Aprovação por autoridade competente dos contratos de dados**, especialmente fonte de versão, categorias, critérios de suficiência, privacidade, retenção, revogação e fornecedores.
+4. **Aceite específico do pacote coordenado de mudanças normativas**, com diff final rastreável e autorização expressa de edição.
+5. **Gate operacional separado** para auditoria Replit, seguido de Design, APIs, implementação e testes conforme autorização posterior.
+
+**Próxima recomendação:** submeter à Direção um parecer focal com a proposta mais restrita de identificação/maturidade e dependências de dados, decidindo expressamente se existe base suficiente para autorizar a formalização normativa ou se ainda é necessária reconciliação especializada. Não repetir a aprovação conceitual de B, R2, CT-01/02 ou das minutas.
+
+---
+
+## 13. Eficácia e limites (histórico e estado atualizado)
 
 | Objeto | Situação |
 | --- | --- |
