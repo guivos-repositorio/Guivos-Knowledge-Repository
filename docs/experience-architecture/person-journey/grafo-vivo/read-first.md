@@ -82,7 +82,7 @@ Preservar e aprofundar a hipótese de uma experiência contextual, interativa, n
 - [Decisão da Direção — R2](decisao-direcao-r2.md): representação da responsabilidade funcional distinta aprovada como diretriz, sem criação de superfície ou ID oficial.
 - [Duas Minutas Candidatas de Transição — Entrada e Retorno](minutas-contratos-transicao-entrada-retorno.md): contratos separados de passagem Hoje → Grafo Vivo e retorno Grafo Vivo → Hoje, ainda não normativos nem validados.
 - [Decisão da Direção — Minutas como Base Documental](decisao-direcao-minutas-base.md): adoção expressa das duas minutas como base de reconciliação, sem contratos normativos, novos IDs ou implementação.
-- [Quadro Único de Formalização Funcional e Dados Mínimos — v0.4.0, identidade e dados aprofundados](quadro-unico-formalizacao-funcional-dados.md): consolida decisões vigentes, dados mínimos e **duas propostas de diff não aplicadas** para Surface Registry e Transition Registry; placeholders não são IDs e nenhum Registry foi alterado.
+- [Quadro Único de Formalização Funcional e Dados Mínimos — v0.5.0, proposta coordenada A+B](quadro-unico-formalizacao-funcional-dados.md): consolida decisões vigentes, dados mínimos e **duas propostas de diff não aplicadas** para Surface Registry e Transition Registry; placeholders não são IDs e nenhum Registry foi alterado.
 
 ## Navegação e fontes de autoridade
 
@@ -119,6 +119,8 @@ Preservar e aprofundar a hipótese de uma experiência contextual, interativa, n
 **Diferenças normativas A/B aprovadas como referências documentais em 08/11/2026:** diffs do Surface Registry e Transition Registry adotados para revisão futura, **não aplicados** e sem identificação/validação automática. Ver [quadro único v0.3.1](quadro-unico-formalizacao-funcional-dados.md).
 
 **Aprofundamento conjunto de identidade, maturidade e dados preparado em 08/11/2026:** incluído no [quadro único v0.4.0](quadro-unico-formalizacao-funcional-dados.md), com dois pedidos decisórios futuros delimitados. Foi identificada a necessidade de reconciliar também o detalhamento de superfícies da Pessoa. Nenhum ID, política de dados ou Registry foi alterado.
+
+**Proposta coordenada A+B preparada em 08/11/2026:** o [quadro único v0.5.0](quadro-unico-formalizacao-funcional-dados.md) apresenta uma futura representação compatível com o inventário de superfícies e o detalhamento obrigatório da Pessoa, além de contrato documental candidato de contexto e dados (B01–B12), sem criação de IDs, alteração normativa ou aprovação de provedores.
 
 **Não aprovado/pendente:** formalização da responsabilidade no Registry, contrato oficial de entrada/retorno, critérios operacionais de elegibilidade, materialização em telas existentes, novas superfícies/IDs, taxonomia ou esquema de grafo, regras técnicas de persistência, seleção de bibliotecas e provedores de voz, políticas definitivas de retenção, cronograma, preços/planos, aplicação aos demais participantes, testes, execução e publicação operacional.
 
