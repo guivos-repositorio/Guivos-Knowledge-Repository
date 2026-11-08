@@ -96,3 +96,8 @@ Esta orientação **atualiza o procedimento** exposto nos documentos anteriores,
 - **Replit Jornada da Pessoa:** inalterado.
 
 **Próximo passo recomendado (atualizado):** apresentar nesta conversa à Direção as conclusões e alternativas funcionais AF-01/02/03 para deliberação expressa, preservando eventuais consultas especializadas que sejam materialmente necessárias. Registrar no GKR o alcance exato do ato aprovado, sem tratar a ausência de usuário/revisor GitHub como bloqueio.
+
+
+## Atualização posterior — escolha da Alternativa B pela Direção (08/11/2026)
+
+Após o estado histórico descrito acima, a Direção aprovou expressamente a **Alternativa B — Hoje como entrada para uma experiência expandida**. Ver [Registro de Decisão — Alternativa B](decisao-direcao-alternativa-b.md). Assim, quaisquer referências anteriores a “A/B/C não selecionadas” ou “B apenas prioritária para exame” registram a condição **anterior** à decisão e não o estado atual. Permanecem pendentes a responsabilidade formal do destino expandido, os contratos de superfície/transição e toda autorização operacional.
