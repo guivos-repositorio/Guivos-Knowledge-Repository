@@ -18,7 +18,7 @@ Preservar e aprofundar a hipótese de uma experiência contextual, interativa, n
 
 ## Seção própria do GKR — organização do acervo
 
-**Este é o ponto único de entrada para o Grafo Vivo da Jornada da Pessoa.** Todos os 30 estudos e registros de decisão estão reunidos no diretório `docs/experience-architecture/person-journey/grafo-vivo/`, além deste índice. O menu deve apontar **somente para esta página de entrada**, e não duplicar individualmente os dossiês.
+**Este é o ponto único de entrada para o Grafo Vivo da Jornada da Pessoa.** Todos os 31 estudos e registros de decisão estão reunidos no diretório `docs/experience-architecture/person-journey/grafo-vivo/`, além deste índice. O menu deve apontar **somente para esta página de entrada**, e não duplicar individualmente os dossiês.
 
 **Natureza da seção:** acervo de concepção e governança em elaboração. A existência desta seção no PR em rascunho **não transforma estudos conceituais em autoridade operacional**, não promove material à Canon e não constitui publicação no GKR principal.
 
@@ -78,6 +78,7 @@ Preservar e aprofundar a hipótese de uma experiência contextual, interativa, n
 - [Decisão da Direção — Elegibilidade no Primeiro Hoje](decisao-direcao-primeiro-hoje.md): acesso opcional na primeira entrada quando existe contexto legítimo suficiente, sem exigir histórico e sem consentimento implícito.
 - [Contrato Funcional Candidato — Passagem e Retorno Hoje ↔ Grafo Vivo](contrato-funcional-candidato-passagem-retorno.md): pré-condições, envelope lógico mínimo, estados, versões, retorno neutro, recuperação e quesitos CT-01/02 para adjudicação.
 - [Decisão da Direção — CT-01 e CT-02](decisao-direcao-ct01-ct02.md): aprovação conceitual do planejamento de reconhecimento no Surface Registry e da necessidade de contratos formais próprios de entrada e retorno, sem criar IDs ou alterar Registries.
+- [Matriz Focal de Reconciliação dos Registries — CT-01/02](matriz-reconciliacao-registries-ct01-ct02.md): compara R1/R2/R3, recomenda R2 para deliberação, especifica requisitos de suficiência dos dois contratos, gaps e impactos sobre autoridades vigentes.
 
 ## Navegação e fontes de autoridade
 
