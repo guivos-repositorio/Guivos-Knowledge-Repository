@@ -82,7 +82,7 @@ Preservar e aprofundar a hipótese de uma experiência contextual, interativa, n
 - [Decisão da Direção — R2](decisao-direcao-r2.md): representação da responsabilidade funcional distinta aprovada como diretriz, sem criação de superfície ou ID oficial.
 - [Duas Minutas Candidatas de Transição — Entrada e Retorno](minutas-contratos-transicao-entrada-retorno.md): contratos separados de passagem Hoje → Grafo Vivo e retorno Grafo Vivo → Hoje, ainda não normativos nem validados.
 - [Decisão da Direção — Minutas como Base Documental](decisao-direcao-minutas-base.md): adoção expressa das duas minutas como base de reconciliação, sem contratos normativos, novos IDs ou implementação.
-- [Quadro Único de Formalização Funcional e Dados Mínimos](quadro-unico-formalizacao-funcional-dados.md): consolida competência R2, dois handoffs, envelope mínimo, estados, autoridades, gaps e duas próximas matérias decisórias sem duplicar documentos normativos.
+- [Quadro Único de Formalização Funcional e Dados Mínimos — v0.2.0, baseline documental aprovado](quadro-unico-formalizacao-funcional-dados.md): reúne decisões vigentes e aprofunda conjuntamente representação R2, critérios de maturidade, envelope mínimo de entrada/retorno, regras de contexto por modalidade e gates normativos, sem editar Registries.
 
 ## Navegação e fontes de autoridade
 
@@ -111,6 +111,8 @@ Preservar e aprofundar a hipótese de uma experiência contextual, interativa, n
 **Diretriz R2 aprovada em 08/11/2026:** responsabilidade distinta representável na arquitetura de superfícies, sem exigir nova tela visual nem criar ID/registro oficial. Duas minutas próprias de entrada e retorno foram preparadas para exame posterior. Ver [decisão R2](decisao-direcao-r2.md) e [minutas](minutas-contratos-transicao-entrada-retorno.md).
 
 **Minutas de entrada e retorno aprovadas como base documental em 08/11/2026:** a aprovação não valida contratos ou transições oficiais. Ver [decisão](decisao-direcao-minutas-base.md).
+
+**Quadro único v0.2.0 aprovado como baseline documental de instrução em 08/11/2026:** a Direção autorizou o aprofundamento conjunto de R2 (representação funcional) e dados mínimos, sem conversão em política, contrato normativo ou autorização operacional. Ver [quadro único atualizado](quadro-unico-formalizacao-funcional-dados.md).
 
 **Não aprovado/pendente:** formalização da responsabilidade no Registry, contrato oficial de entrada/retorno, critérios operacionais de elegibilidade, materialização em telas existentes, novas superfícies/IDs, taxonomia ou esquema de grafo, regras técnicas de persistência, seleção de bibliotecas e provedores de voz, políticas definitivas de retenção, cronograma, preços/planos, aplicação aos demais participantes, testes, execução e publicação operacional.
 
