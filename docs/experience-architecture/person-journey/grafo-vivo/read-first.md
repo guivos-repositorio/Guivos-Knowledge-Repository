@@ -37,6 +37,7 @@ Preservar e aprofundar a hipótese de uma experiência contextual, interativa, n
 - [Consulta Focal de Competência à Arquitetura UX/Journey](consulta-focal-competencia-ux-journey.md): minuta de consulta sobre AF-01, AF-02, AF-03 e AF-10, sem submissão formal ou parecer presumido.
 - [Verificação de Autoridade e Suficiência Documental para Submissão](verificacao-autoridade-suficiencia-submissao.md): confronta ADR-001/006, A2-METHOD-001, GEA-AUDIT-001, registra baseline visual informado pela direção, gates para futura implantação e achado do menu GKR.
 - [Exame Focal AF-10 de Competência Decisória e Instrumento](exame-focal-af10-competencia-instrumento.md): identifica competências por área, instrumentos possíveis, lacunas de delegação e critérios para futura consulta formal.
+- [Minuta de Encaminhamento Institucional do AF-10](minuta-encaminhamento-institucional-af10.md): texto candidato de solicitação, perguntas à autoridade, anexos e condições para eventual envio formal.
 
 ## Estado das decisões (07/11/2026)
 
