@@ -30,6 +30,7 @@ Preservar e aprofundar a hipótese de uma experiência contextual, interativa, n
 - [Gatilhos de Revalidação e Impacto Contextual](matriz-gatilhos-revalidacao-impacto-contextual.md): casos de atualização, confirmação proporcional, risco, impacto em análises e revogação.
 - [Contrato Conceitual de Sincronização e Versionamento](contrato-conceitual-sincronizacao-versionamento.md): consistência temporal, referências de versão, mudanças concorrentes, falhas e revogações entre contexto, grafo, conversa e narração.
 - [Matriz de Estados de Coerência e Recuperação Multimodal](matriz-estados-coerencia-recuperacao-multimodal.md): interrupções, falhas parciais, mudanças de versões, alternativas acessíveis e retomada governada.
+- [Quadro Consolidado de Prontidão Conceitual e Pendências de Adjudicação](quadro-consolidado-prontidao-pendencias.md): inventário de evidências, maturidades, gates, riscos e fronteiras para futuras decisões.
 
 ## Estado das decisões (07/11/2026)
 
