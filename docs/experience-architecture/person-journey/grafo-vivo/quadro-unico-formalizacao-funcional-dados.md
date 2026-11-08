@@ -1048,6 +1048,19 @@ A manifestação da Direção sobre iniciar a implantação deve ser enfrentada 
 
 **Gate solicitado à Direção:** decidir separadamente se autoriza **a etapa 2, prévia isolada com dados sintéticos no workspace existente**, sob escopo fechado, sem alterar rotas operacionais, segurança, bancos ou publicação. O diagnóstico de leitura já foi realizado; nenhuma mudança foi aplicada ao Replit.
 
+
+### 18.22 Autorização específica da Fase 1 — prévia isolada no Replit (08/11/2026)
+
+> **Ato expresso da Direção:** “Aprovado.”, em resposta à pergunta de autorização da **Fase 1 — prévia funcional isolada no workspace Jornada da Pessoa**, exclusivamente com dados sintéticos, preservando as rotas operacionais, dados, autenticação, integrações e funcionalidades existentes. Não há autorização para Fase 2, integração com fontes reais, validação operacional, merge ou publicação.
+
+**Encaminhamento técnico registrado:** instrução remetida ao agente do Replit `Jornada da Pessoa` (workspace existente) para preparar **demonstração separada e reversível**: nós e relações fictícios; três modos internos (Explorar, Escutar em simulação textual sem áudio, Conversar em roteiro local sem IA); entrada voluntária e retorno neutro **somente no contexto demonstrativo**; sinalização de prévia sintética e relatório de evidências. A solicitação foi recebida pelo conector com estado **`updating`**, o que **não comprova implementação concluída, testes, aderência ou publicação**.
+
+**Restrições transmitidas ao Replit:** não mudar PER-007/PER-008 operacionais, rotas reais, OIDC, permissões, backend, banco, modelos, migrações, Secrets, APIs, memória, Neo4j, IA/voz, provedores, configurações de publicação ou dados reais; não criar IDs oficiais nem contratos de transição; caso o isolamento não seja seguro, relatar impedimento sem realizar a alteração problemática.
+
+**Gate de aceite futuro:** exigir relatório do Replit com modificações efetivas, demonstração de isolamento, preservação da navegação existente, limitações e pontos pendentes; somente depois apreciar conformidade visual/funcional da prévia. **Nenhuma evidência de conclusão foi recebida neste registro.**
+
+**Estado documental:** §18 e PR #730 permanecem como fonte central da instrução; nenhuma mudança normativa nos Registries foi autorizada; PR sem merge.
+
 ---
 
 ## 19. Eficácia e limites (histórico e estado atualizado)
