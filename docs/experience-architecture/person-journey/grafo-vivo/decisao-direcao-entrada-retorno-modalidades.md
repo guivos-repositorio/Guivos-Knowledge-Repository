@@ -91,3 +91,8 @@ Essas pendências não desfazem a escolha da Alternativa B ou da responsabilidad
 - **PR #730:** rascunho; nenhuma publicação ou merge autorizado.
 
 **Próxima deliberação recomendada:** definir **a elegibilidade da entrada no primeiro Hoje**, quando houver contexto legitimamente elegível, confrontando PER-007/PER-008 e ausência legítima de histórico. Após isso, especificar contratos de passagem e retorno para apreciação da Direção, sem criar IDs por inferência.
+
+
+## Atualização posterior — elegibilidade no primeiro Hoje aprovada (08/11/2026)
+
+A Direção decidiu expressamente que **o acesso opcional ao Grafo Vivo também pode ser oferecido no primeiro Hoje quando existir contexto suficiente, legítimo e disponível à finalidade, sem exigir histórico anterior**. Ver [Decisão — Elegibilidade no Primeiro Hoje](decisao-direcao-primeiro-hoje.md). As menções acima à elegibilidade inicial como pendente correspondem à etapa anterior à decisão; permanecem pendentes os critérios operacionais específicos, os contratos de superfície/transição e a autorização de implementação.
