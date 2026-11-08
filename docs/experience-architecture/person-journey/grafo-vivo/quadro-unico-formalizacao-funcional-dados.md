@@ -1,11 +1,11 @@
 ---
 title: Grafo Vivo — Quadro Único de Formalização Funcional e Dados Mínimos
 status: conceptual_study
-version: 0.8.0
+version: 0.9.0
 owner: Concepção de Produto / Jornada da Pessoa
 last_updated: 2026-11-08
 normative: false
-maturity: i_a_guideline_approved_b01_b05_priority_under_reconciliation
+maturity: focused_owner_competence_b01_b02_reconciliation_pending_adjudication
 ---
 
 # Grafo Vivo — Quadro Único de Formalização Funcional e Dados Mínimos
@@ -614,7 +614,74 @@ A decisão estabelece **ordem de instrução prioritária**, não autorização 
 
 ---
 
-## 16. Eficácia e limites (histórico e estado atualizado)
+## 16. Exame focal de competência de identificação/owner e reconciliação B01/B02 — 08/11/2026
+
+> **Mandato da Direção:** “de acordo, segue” em resposta à recomendação de examinar a **competência para identificação e manutenção da unidade I-A** e reconciliar as bases documentais de **B01 (fonte de verdade)** e **B02 (finalidade/minimização)**. Este exame é **instrução documental**; não é ato de atribuição de ID, delegação de owner, política de dados nem parecer de autoridade especializada externa recebido.
+
+### 16.1 Competência para identificação oficial e manutenção — resultado
+
+| Pergunta | Autoridade/evidência examinada | Conclusão condicionada |
+| --- | --- | --- |
+| Quem mantém os Registries? | `surface-registry.md` v0.36.22 e `surface-registry-person-details.md` v0.23.8 declaram **owner: Arquitetura da Experiência da Guivos**; Transition Registry possui a mesma titularidade de arquitetura | **Há fundamento para propor** Arquitetura da Experiência como responsável pela manutenção do registro e coerência da documentação. Isso **não** delega automaticamente poder de criar ID |
+| Quem decide admitir a unidade I-A? | Direção aprovou R2/I-A apenas como diretrizes; decisões de competência preservadas no GKR | **Direção decide** o ato de inclusão/identificação, após parecer documental suficiente e condições de dados |
+| Quem governa a compreensão derivada? | GPA-006 v2.0.2 e GIA-COG-001 são autoridades cognitivas preservadas | GIA governa interpretação, confiança, lacunas e relações; não passa a proprietária de todo dado canônico |
+| Quem governa objetos especializados? | PAS-001, PER-010, PER-011 e PER-012 | Autoridades de domínio preservam objetivos, passos e evolução, sem mutação por projeção do grafo |
+| Quem define tratamento e permissões? | PER-007, escopo da Jornada, privacidade, segurança, dados | Competência de dados/privacidade permanece a **consultar e adjudicar**, não é suprida pela aprovação I-A |
+| Qual nome/ID oficial usar? | I-A selecionada; Surface Registry organiza unidades por família, mas inventário e detalhamento precisam do mesmo identificador | **Nenhum ID oficial definido**; não supor próximo número, reservar prefixo ou atribuir nome normativo |
+| Como registrar a maturidade? | Unidade ainda sem validação, contrato de dados final, identidade registral e execução | Recomendar **candidata/não validada** como expressão de fato; rótulo exato e inclusão exigem ato próprio |
+
+**Recomendação focal C1 (ainda não aprovada como delegação):** a **Arquitetura da Experiência** poderá ser indicada como **owner documental proposto** da unidade I-A, enquanto **a Direção preserva a competência de aprovar a criação/identificação** e GIA/PAS/Privacidade conservam suas autoridades materiais. Essa separação evita confundir owner de Registry com autoridade dos dados.
+
+**Gate de identificação:** elaborar ficha de unidade I-A (nome descritivo, fronteira, proteção, origem/retorno, maturidade não validada, owner documental proposto, autoridades relacionadas, impacto sobre detalhamento e contagens), submeter ato expresso à Direção e só então usar o ID que for legitimamente atribuído por processo competente. A minuta pode existir com campo em aberto; **o registro oficial não pode**.
+
+### 16.2 B01 — fonte canônica por família de informação
+
+| Família | Fonte/custódia a confrontar | Uso candidato no Grafo | Lacuna decisória |
+| --- | --- | --- | --- |
+| Expressões e contexto inicial revisado | PER-004/005/007 e Journey, com separação entre fonte enviada, compreensão e escolhas | Mostrar compreensão, temas e relações, distinguindo declaração de hipótese | Definir objeto canônico de compreensão, referência de versão e revisão posterior a PER-007 |
+| Momento atual, rotina, disponibilidade e desejos | Fontes legítimas da Pessoa e compreensão governada por GIA | Contextualizar a condição atual sem presunção de precisão ou estabilidade | Qual versão prevalece e como retificar dados e derivados |
+| Objetivos | PAS-001/visões de PER-010 | Apenas referência ou projeção descritiva autorizada | Quem emite identidade/estado canônico e o escopo de leitura da projeção |
+| Próximos Passos | PAS-001/visões de PER-011 | Explicar possibilidades sem iniciar ou concluir ação | Autoridade de estado/prontidão e contexto de permissão |
+| Evolução, evidências e trajetória | PAS-001/visões de PER-012 | Representação proporcional de trajetória **apenas quando legitimamente existente** | Proveniência/evidência e limites da interpretação cognitiva |
+| Novas declarações em Conversar | Fluxo de sessão e compreensão GIA, sob controles da Pessoa | Informação transitória, até eventual revisão/validação | Fonte de verdade posterior, estatuto epistemológico, persistência e revalidação |
+| Narrativa de voz e projeção no Neo4j | **Derivados**, não fontes canônicas por si | Explicação e representação multimodal de contexto autorizado | Versionamento/expiração de derivados, terceiros e eliminação sob revogação |
+
+**Parecer B01:** pode-se consolidar como fronteira que **grafo, narração e provedores não substituem as fontes de verdade**. Contudo, **não há decisão suficiente sobre o identificador da compreensão canônica, mecanismo emissor de versão e fonte por família**. B01 é **parcialmente reconciliada como separação de autoridades**, não aprovada como contrato de dados.
+
+### 16.3 B02 — finalidade, minimização e destinatários
+
+| Finalidade candidata | Dados indispensáveis a avaliar | Regra documental candidata de minimização | Gate |
+| --- | --- | --- | --- |
+| Explorar relações | Contexto legitimamente elegível, vínculos relevantes e proveniência necessária | Projeções selecionadas por finalidade, não histórico integral | Privacidade e GIA devem confirmar categorias admitidas e eventual sensibilidade |
+| Escutar explicação | Texto atual e elegível para narração, sem áudio bruto por padrão | Narrar conteúdo permitido; alternativa textual | Aprovação de finalidade específica e, se externo, de fornecedor e transferência |
+| Conversar e esclarecer | Contexto e novas falas limitadas à sessão legítima | Não salvar/transmitir conversas integrais por padrão | Contrato de sessão/retenção, transparência e destinatários |
+| Alternar modos | Foco e referência de versão necessários à coerência | Não duplicar memória, credenciais, histórico ou consentimento | Definir escopo e expiração do estado efêmero |
+| Retornar a Hoje | Referência mínima de navegação e reconsulta de fontes vigentes | Não promover hipóteses, transcrições ou progresso por retorno | Regras de continuidade e revogação |
+| Corrigir/revogar | Identificar derivados efetivamente afetados | Invalidar apenas com mecanismos autorizados, sem expor dados adicionais | Autoridade de dados/privacidade confirma tratamento, retenção e direitos |
+
+**Destinatários ainda não adjudicados:** frontend da Jornada, backend de sessão, Guivos Intelligence, Neo4j e eventuais serviços GPT/Claude/Gemini/Grok. **Não presumir que a escolha de Explorar/Escutar/Conversar implique envio autorizado de dados a qualquer um deles.** O exame documental de finalidade não define base legal, consentimento, região de processamento, retenção ou política de fornecedores.
+
+**Parecer B02:** a distinção entre finalidades e a regra de minimização **são critérios candidatos coerentes**, mas a **matriz categoria × finalidade × modalidade × destinatário** ainda não foi validada pelas autoridades competentes. Portanto **B02 permanece condicionada**.
+
+### 16.4 Encaminhamento integrado e suficiência
+
+| Decisão/objeto | Estado após exame | Ação realmente faltante |
+| --- | --- | --- |
+| I-A — unidade funcional própria | **Diretriz aprovada** | Ato separado de identificação e registro |
+| Owner documental | **Arquitetura da Experiência recomendada**, sustentada pelo owner dos Registries atuais | Confirmação específica para a nova unidade, não mera inferência |
+| Autoridade dos dados | **Fragmentada por domínio/competência**, como deve ser | Contrato de fontes canônicas, finalidades e responsabilidades por categoria |
+| B01 — fonte de verdade | **Parcialmente instruída** | Emissor de versão e fonte canônica detalhada por família |
+| B02 — finalidade/minimização | **Parcialmente instruída** | Categorias permitidas, destinatários, política de proteção e autorizações |
+| B03–B05 | **Prioritárias e ainda pendentes de adjudicação** | Condicionar elegibilidade, versões e proveniência ao resultado B01/B02 |
+| B06–B12 | **Permanecem abertas** | Contratos de sessão, persistência, voz, terceiros, revogação e falhas |
+| Surface/Transition Registries | **Intactos** | Somente editar após ato normativo expresso |
+| Replit | **Sem autorização operacional** | Auditoria técnica específica, posterior |
+
+**Recomendação da próxima deliberação:** aprovar **C1 — Arquitetura da Experiência como owner documental proposto para a futura unidade I-A**, sem transferir competência de dados, e autorizar a **matriz de fonte/finalidade B01–B02 como instrumento de consulta**, sem declarar B01/B02 aprovadas normativamente. **Não** solicitar neste momento números/IDs, novos TRNs, implementação ou fornecedores.
+
+---
+
+## 17. Eficácia e limites (histórico e estado atualizado)
 
 | Objeto | Situação |
 | --- | --- |
