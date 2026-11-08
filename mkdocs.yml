@@ -244,6 +244,10 @@ nav:
           - Downgrade e Cancelamento: experience-architecture/person-journey/per-303-downgrade-cancellation-master.md
           - Resultado e Recuperação de Plano/Cobrança: experience-architecture/person-journey/per-304-plan-billing-result-recovery-master.md
 
+  - Grafo Vivo da Jornada da Pessoa — Estudo Conceitual:
+      - Leia Primeiro: experience-architecture/person-journey/grafo-vivo/read-first.md
+      - Visão Conceitual e Questões Abertas: experience-architecture/person-journey/grafo-vivo/visao-conceitual.md
+
   - Jornada de Organizações e Coletivos — Superfícies e Fluxos:
       - Comece por aqui:
           - Leia Primeiro: experience-architecture/organizations-collectives-journey/read-first.md
