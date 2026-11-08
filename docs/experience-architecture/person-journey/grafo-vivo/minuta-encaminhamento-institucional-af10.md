@@ -128,3 +128,8 @@ Somente declarar `respondido` após retorno verificável da autoridade. **A simp
 - **PR #730:** rascunho; não autoriza merge/publicação.
 
 **Próxima atividade útil:** validar o destinatário e o canal com a governança existente; depois, mediante competência confirmada, efetuar a consulta formal. Se a autoridade ainda não estiver identificável documentalmente, registrar a lacuna sem simular o ato.
+
+
+## Atualização posterior de status — decisão da Direção em 08/11/2026
+
+A Direção **aprovou expressamente** sua atribuição como **instância de decisão final para o Grafo Vivo**, mediante consultas técnicas às autoridades pertinentes, e o **GKR/GitHub como meio de registro**. Ver [Registro de Decisão AF-10](decisao-direcao-competencia-af10.md). As constatações anteriores deste documento retratam o **estado antes dessa decisão** e não devem ser utilizadas para afirmar que a instância decisória final continua indefinida. **Não houve ainda parecer técnico de UX/Journey, seleção A/B/C, consulta formal comprovada ou autorização operacional.** O instrumento para modificações especializadas de Masters/Registries ainda exige ato próprio.
