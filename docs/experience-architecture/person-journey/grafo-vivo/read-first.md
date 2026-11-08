@@ -18,7 +18,7 @@ Preservar e aprofundar a hipótese de uma experiência contextual, interativa, n
 
 ## Seção própria do GKR — organização do acervo
 
-**Este é o ponto único de entrada para o Grafo Vivo da Jornada da Pessoa.** Todos os 25 estudos e registros de decisão estão reunidos no diretório `docs/experience-architecture/person-journey/grafo-vivo/`, além deste índice. O menu deve apontar **somente para esta página de entrada**, e não duplicar individualmente os dossiês.
+**Este é o ponto único de entrada para o Grafo Vivo da Jornada da Pessoa.** Todos os 26 estudos e registros de decisão estão reunidos no diretório `docs/experience-architecture/person-journey/grafo-vivo/`, além deste índice. O menu deve apontar **somente para esta página de entrada**, e não duplicar individualmente os dossiês.
 
 **Natureza da seção:** acervo de concepção e governança em elaboração. A existência desta seção no PR em rascunho **não transforma estudos conceituais em autoridade operacional**, não promove material à Canon e não constitui publicação no GKR principal.
 
@@ -29,7 +29,8 @@ Preservar e aprofundar a hipótese de uma experiência contextual, interativa, n
 | Conceito e três modalidades (Explorar, Escutar, Conversar) | Aprovados para aprofundamento conceitual |
 | Aprendizado Contextual Contínuo | Modelo candidato, sujeito a regras de dados e validação |
 | Instância final de decisão do Grafo Vivo | **Direção da Guivos**, conforme registro AF-10 |
-| Posicionamento funcional A/B/C | **Alternativa B aprovada pela Direção**; destino e contratos ainda pendentes |
+| Posicionamento funcional A/B/C | **Alternativa B aprovada pela Direção** |
+| Competência do destino expandido | **Responsabilidade funcional distinta aprovada**; contrato de superfície ainda pendente |
 | Revisão técnica UX/Journey AF-01/02/03 | Solicitação documentada no PR #730; sem parecer recebido verificado |
 | Replit — Jornada da Pessoa | Futuro destino condicionado, sem auditoria ou execução autorizada |
 | Status editorial | PR #730 draft; sem merge ou publicação |
@@ -72,6 +73,7 @@ Preservar e aprofundar a hipótese de uma experiência contextual, interativa, n
 - [Registro de Decisão da Direção — Competência AF-10](decisao-direcao-competencia-af10.md): Direção designada como instância decisória final, consultas técnicas por domínio e GKR/GitHub como registro; sem adjudicar A/B/C ou liberar execução.
 - [Decisão da Direção — Alternativa B](decisao-direcao-alternativa-b.md): Hoje como entrada para experiência expandida; seleciona B sem criar nova superfície, TRN, integração ou autorização operacional.
 - [Especificação Funcional Candidata da Experiência Expandida — Alternativa B](especificacao-funcional-experiencia-expandida-b.md): entrada voluntária, três modalidades, alternância, retorno, estados, recuperação, limites de dados e decisões de competência pendentes.
+- [Decisão da Direção — Responsabilidade Funcional Distinta](decisao-direcao-responsabilidade-distinta.md): reconhecimento expresso da responsabilidade expandida, separada de Hoje e dos domínios, sem criar IDs ou autorizar implementação.
 
 ## Navegação e fontes de autoridade
 
@@ -89,9 +91,9 @@ Preservar e aprofundar a hipótese de uma experiência contextual, interativa, n
 - Aprendizado Contextual Contínuo: identificar informações novas em conversas, distinguir afirmações de hipóteses e consolidar de modo revisável, com validação proporcional.
 - Mesma compreensão contextual fundamentando visualização, escuta e conversação.
 
-**Posicionamento aprovado em 08/11/2026:** Alternativa B — Hoje como porta de entrada contextual para experiência expandida, sem alteração automática dos Masters ou Registries. Ver [registro de decisão](decisao-direcao-alternativa-b.md).
+**Posicionamento e competência aprovados em 08/11/2026:** Alternativa B — Hoje como porta de entrada contextual para experiência expandida, **com responsabilidade funcional distinta**, sem alteração automática dos Masters ou Registries. Ver [registro de decisão](decisao-direcao-alternativa-b.md).
 
-**Não aprovado/pendente:** materialização em telas existentes, novas superfícies/IDs, taxonomia ou esquema de grafo, regras técnicas de persistência, seleção de bibliotecas e provedores de voz, políticas definitivas de retenção, cronograma, preços/planos, aplicação aos demais participantes, testes, execução e publicação operacional.
+**Não aprovado/pendente:** formalização da responsabilidade no Registry, contrato de entrada/retorno, materialização em telas existentes, novas superfícies/IDs, taxonomia ou esquema de grafo, regras técnicas de persistência, seleção de bibliotecas e provedores de voz, políticas definitivas de retenção, cronograma, preços/planos, aplicação aos demais participantes, testes, execução e publicação operacional.
 
 ## Autoridades preservadas
 
