@@ -18,7 +18,7 @@ Preservar e aprofundar a hipótese de uma experiência contextual, interativa, n
 
 ## Seção própria do GKR — organização do acervo
 
-**Este é o ponto único de entrada para o Grafo Vivo da Jornada da Pessoa.** Todos os 29 estudos e registros de decisão estão reunidos no diretório `docs/experience-architecture/person-journey/grafo-vivo/`, além deste índice. O menu deve apontar **somente para esta página de entrada**, e não duplicar individualmente os dossiês.
+**Este é o ponto único de entrada para o Grafo Vivo da Jornada da Pessoa.** Todos os 30 estudos e registros de decisão estão reunidos no diretório `docs/experience-architecture/person-journey/grafo-vivo/`, além deste índice. O menu deve apontar **somente para esta página de entrada**, e não duplicar individualmente os dossiês.
 
 **Natureza da seção:** acervo de concepção e governança em elaboração. A existência desta seção no PR em rascunho **não transforma estudos conceituais em autoridade operacional**, não promove material à Canon e não constitui publicação no GKR principal.
 
@@ -77,6 +77,7 @@ Preservar e aprofundar a hipótese de uma experiência contextual, interativa, n
 - [Decisão da Direção — Entrada, Retorno e Modalidades](decisao-direcao-entrada-retorno-modalidades.md): entrada voluntária, retorno explícito neutro e três modos internos aprovados conceitualmente, sem criação de IDs ou alteração dos Registries.
 - [Decisão da Direção — Elegibilidade no Primeiro Hoje](decisao-direcao-primeiro-hoje.md): acesso opcional na primeira entrada quando existe contexto legítimo suficiente, sem exigir histórico e sem consentimento implícito.
 - [Contrato Funcional Candidato — Passagem e Retorno Hoje ↔ Grafo Vivo](contrato-funcional-candidato-passagem-retorno.md): pré-condições, envelope lógico mínimo, estados, versões, retorno neutro, recuperação e quesitos CT-01/02 para adjudicação.
+- [Decisão da Direção — CT-01 e CT-02](decisao-direcao-ct01-ct02.md): aprovação conceitual do planejamento de reconhecimento no Surface Registry e da necessidade de contratos formais próprios de entrada e retorno, sem criar IDs ou alterar Registries.
 
 ## Navegação e fontes de autoridade
 
@@ -99,6 +100,8 @@ Preservar e aprofundar a hipótese de uma experiência contextual, interativa, n
 **Entrada/retorno e modos aprovados em 08/11/2026:** entrada explícita e voluntária a partir de Hoje, retorno neutro, alternância interna Explorar/Escutar/Conversar, sem criação de IDs ou alteração de contratos vigentes. Ver [decisão](decisao-direcao-entrada-retorno-modalidades.md).
 
 **Elegibilidade no Primeiro Hoje aprovada em 08/11/2026:** acesso voluntário quando houver contexto suficiente e autorizado, sem exigir histórico prévio ou fabricar evolução; sem tornar o convite obrigatório. Ver [decisão](decisao-direcao-primeiro-hoje.md).
+
+**CT-01 e CT-02 aprovados conceitualmente em 08/11/2026:** planejar registro da competência distinta no Surface Registry e contratos formais próprios de ida/volta no Transition Registry; nenhum ID ou contrato oficial criado. Ver [decisão CT-01/02](decisao-direcao-ct01-ct02.md).
 
 **Não aprovado/pendente:** formalização da responsabilidade no Registry, contrato oficial de entrada/retorno, critérios operacionais de elegibilidade, materialização em telas existentes, novas superfícies/IDs, taxonomia ou esquema de grafo, regras técnicas de persistência, seleção de bibliotecas e provedores de voz, políticas definitivas de retenção, cronograma, preços/planos, aplicação aos demais participantes, testes, execução e publicação operacional.
 
