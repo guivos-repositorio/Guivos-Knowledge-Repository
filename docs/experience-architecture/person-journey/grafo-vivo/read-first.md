@@ -27,6 +27,7 @@ Preservar e aprofundar a hipótese de uma experiência contextual, interativa, n
 - [Quadro Focal de Fronteiras Funcionais](quadro-focal-fronteiras-funcionais.md): cinco capacidades, gates entre conversa e memória, decisões pendentes e dependências de integração.
 - [Confronto dos Registries e Fluxos de Integração](confronto-registries-integracoes-fluxos.md): confirmação dos estados de superfícies e transições, fluxos de dados, gates, cenários e lacunas.
 - [Matriz do Ciclo de Vida da Informação Contextual](matriz-ciclo-vida-informacao-contextual.md): declaração, transcrição, validação, uso temporário, persistência, projeções, narração, correção e revogação.
+- [Gatilhos de Revalidação e Impacto Contextual](matriz-gatilhos-revalidacao-impacto-contextual.md): casos de atualização, confirmação proporcional, risco, impacto em análises e revogação.
 
 ## Estado das decisões (07/11/2026)
 
