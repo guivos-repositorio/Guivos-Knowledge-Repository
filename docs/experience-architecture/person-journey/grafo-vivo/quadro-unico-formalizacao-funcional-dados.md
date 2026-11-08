@@ -1,11 +1,11 @@
 ---
 title: Grafo Vivo — Quadro Único de Formalização Funcional e Dados Mínimos
 status: conceptual_study
-version: 0.3.0
+version: 0.3.1
 owner: Concepção de Produto / Jornada da Pessoa
 last_updated: 2026-11-08
 normative: false
-maturity: approved_baseline_with_unapplied_registry_diff_candidates
+maturity: direction_approved_unapplied_diff_references
 ---
 
 # Grafo Vivo — Quadro Único de Formalização Funcional e Dados Mínimos
@@ -234,7 +234,29 @@ As propostas serão aptas para **revisão de possível alteração normativa**, 
 
 ---
 
-## 10. Eficácia e limites (histórico e estado atualizado)
+## 10. Decisão posterior da Direção — diffs como referência documental (08/11/2026)
+
+A Direção respondeu expressamente **“de acordo, segue”** à recomendação de **aprovar os dois diffs candidatos como referência para futura formalização**, mantendo a atribuição de identificadores e a edição efetiva dos Registries condicionadas a autorizações posteriores.
+
+**Escopo exato do ato:**
+- O **diff candidato A — Surface Registry** é adotado como referência de revisão para representar a responsabilidade funcional distinta R2, sem atribuição de ID, owner final ou maturidade validada.
+- O **diff candidato B — Transition Registry** é adotado como referência de revisão para os **dois contratos próprios** Hoje → Grafo Vivo e Grafo Vivo → Hoje, sem criação de TRNs ou validação de cláusulas operacionais.
+- As propostas continuam **não aplicadas** e não são autoridade normativa. Os placeholders deverão ser resolvidos por ato específico antes de qualquer edição.
+- Nenhuma mudança nos totais, versões, IDs, estados ou maturidades vigentes dos Registries decorre desta aprovação.
+
+### Portas decisórias subsequentes
+
+1. **Identidade e competência:** decidir formalmente a representação, o owner e a maturidade documental do destino, com fundamento na autoridade da Jornada e sem impor uma tela visual por inferência.
+2. **Contratos de transição:** confrontar as cláusulas propostas com a identidade formal do destino e os contratos de dados, privacidade e versão; submeter duas minutas de alteração efetiva, separadamente.
+3. **Autorização normativa:** exigir ato expresso da Direção antes de modificar Surface Registry, Transition Registry, Master PER-008, Orquestração ou seus documentos dependentes.
+4. **Autorização operacional:** auditoria Replit, Design, APIs, integração de provedores, testes e implantação permanecem fora deste ato.
+5. **Publicação GKR:** PR #730 continua rascunho e não deve ser mesclado/publicado sem autorização e reconciliação editorial.
+
+O efeito desta decisão é **estabilizar o material de referência**, evitando reabrir a escolha conceitual da Alternativa B, R2 ou a necessidade dos dois handoffs, e **não elevar os diffs a contratos vigentes**.
+
+---
+
+## 11. Eficácia e limites (histórico e estado atualizado)
 
 | Objeto | Situação |
 | --- | --- |
