@@ -71,7 +71,21 @@ Nenhum acesso, inspeção de código, teste, implementação ou publicação foi
 
 Mantém-se o achado de que a branch contém entradas de navegação para documentos conceituais em `mkdocs.yml`, apesar da regra editorial que condiciona a exposição operacional de candidatos. Antes de merge/publicação, reconciliar essa navegação com a autoridade editorial, sem promover o conjunto de estudos à Canon por inferência.
 
-## 7. Estado após decisão
+## 7. Esclarecimento posterior da Direção — canal de solicitações e autorizações (08/11/2026)
+
+A Direção esclareceu expressamente nesta conversa que **não é necessário identificar usuário ou equipe do GitHub como revisor** para tramitar as solicitações de autorização deste estudo. **As solicitações e autorizações da Direção ocorrerão nesta conversa**, conforme perguntas e aprovações expressas. O **GKR/GitHub serve para consolidar o conteúdo e preservar rastreabilidade**, não como condição para a manifestação da Direção.
+
+Consequências de procedimento:
+
+1. Não bloquear a análise ou a apresentação de alternativas para deliberação por falta de conta ou equipe revisora no GitHub.
+2. Formular aqui os quesitos funcionais necessários, com confronto dos documentos vigentes e ressalva das pendências técnicas; registrar no GKR o que a Direção **efetivamente deliberar**.
+3. Distinguir **análise técnica documental preparada pelo assistente** de **parecer de especialista ou autoridade que efetivamente se manifestou**. Não declarar parecer externo recebido por inferência.
+4. Não transformar o acordo sobre o **canal de aprovação** em autorização para modificar Masters/Registries, implantar no Replit, realizar testes, fazer merge ou publicar; cada ato continua sujeito ao escopo de autorização próprio.
+5. A solicitação de revisão registrada no PR permanece como evidência documental anterior, **não como requisito impeditivo** de nova deliberação da Direção.
+
+Esta orientação **atualiza o procedimento** exposto nos documentos anteriores, sem reescrever retroativamente sua proveniência.
+
+## 8. Estado após decisão
 
 - **Direção como instância decisória final deste escopo:** aprovada expressamente.
 - **GKR/GitHub como registro documental do processo:** aprovado expressamente.
@@ -81,4 +95,4 @@ Mantém-se o achado de que a branch contém entradas de navegação para documen
 - **PR #730:** rascunho, sem merge/publicação.
 - **Replit Jornada da Pessoa:** inalterado.
 
-**Próximo passo recomendado:** preparar ou encaminhar por meio autorizado a consulta técnica UX/Journey sobre AF-01/02/03, registrando em GitHub qualquer manifestação **efetivamente emitida**, antes de submeter uma proposta de adjudicação A/B/C à Direção.
+**Próximo passo recomendado (atualizado):** apresentar nesta conversa à Direção as conclusões e alternativas funcionais AF-01/02/03 para deliberação expressa, preservando eventuais consultas especializadas que sejam materialmente necessárias. Registrar no GKR o alcance exato do ato aprovado, sem tratar a ausência de usuário/revisor GitHub como bloqueio.
