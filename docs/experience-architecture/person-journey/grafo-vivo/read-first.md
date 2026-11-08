@@ -18,7 +18,7 @@ Preservar e aprofundar a hipótese de uma experiência contextual, interativa, n
 
 ## Seção própria do GKR — organização do acervo
 
-**Este é o ponto único de entrada para o Grafo Vivo da Jornada da Pessoa.** Todos os 27 estudos e registros de decisão estão reunidos no diretório `docs/experience-architecture/person-journey/grafo-vivo/`, além deste índice. O menu deve apontar **somente para esta página de entrada**, e não duplicar individualmente os dossiês.
+**Este é o ponto único de entrada para o Grafo Vivo da Jornada da Pessoa.** Todos os 28 estudos e registros de decisão estão reunidos no diretório `docs/experience-architecture/person-journey/grafo-vivo/`, além deste índice. O menu deve apontar **somente para esta página de entrada**, e não duplicar individualmente os dossiês.
 
 **Natureza da seção:** acervo de concepção e governança em elaboração. A existência desta seção no PR em rascunho **não transforma estudos conceituais em autoridade operacional**, não promove material à Canon e não constitui publicação no GKR principal.
 
@@ -75,6 +75,7 @@ Preservar e aprofundar a hipótese de uma experiência contextual, interativa, n
 - [Especificação Funcional Candidata da Experiência Expandida — Alternativa B](especificacao-funcional-experiencia-expandida-b.md): entrada voluntária, três modalidades, alternância, retorno, estados, recuperação, limites de dados e decisões de competência pendentes.
 - [Decisão da Direção — Responsabilidade Funcional Distinta](decisao-direcao-responsabilidade-distinta.md): reconhecimento expresso da responsabilidade expandida, separada de Hoje e dos domínios, sem criar IDs ou autorizar implementação.
 - [Decisão da Direção — Entrada, Retorno e Modalidades](decisao-direcao-entrada-retorno-modalidades.md): entrada voluntária, retorno explícito neutro e três modos internos aprovados conceitualmente, sem criação de IDs ou alteração dos Registries.
+- [Decisão da Direção — Elegibilidade no Primeiro Hoje](decisao-direcao-primeiro-hoje.md): acesso opcional na primeira entrada quando existe contexto legítimo suficiente, sem exigir histórico e sem consentimento implícito.
 
 ## Navegação e fontes de autoridade
 
@@ -96,7 +97,9 @@ Preservar e aprofundar a hipótese de uma experiência contextual, interativa, n
 
 **Entrada/retorno e modos aprovados em 08/11/2026:** entrada explícita e voluntária a partir de Hoje, retorno neutro, alternância interna Explorar/Escutar/Conversar, sem criação de IDs ou alteração de contratos vigentes. Ver [decisão](decisao-direcao-entrada-retorno-modalidades.md).
 
-**Não aprovado/pendente:** formalização da responsabilidade no Registry, contrato oficial de entrada/retorno, elegibilidade no primeiro Hoje, materialização em telas existentes, novas superfícies/IDs, taxonomia ou esquema de grafo, regras técnicas de persistência, seleção de bibliotecas e provedores de voz, políticas definitivas de retenção, cronograma, preços/planos, aplicação aos demais participantes, testes, execução e publicação operacional.
+**Elegibilidade no Primeiro Hoje aprovada em 08/11/2026:** acesso voluntário quando houver contexto suficiente e autorizado, sem exigir histórico prévio ou fabricar evolução; sem tornar o convite obrigatório. Ver [decisão](decisao-direcao-primeiro-hoje.md).
+
+**Não aprovado/pendente:** formalização da responsabilidade no Registry, contrato oficial de entrada/retorno, critérios operacionais de elegibilidade, materialização em telas existentes, novas superfícies/IDs, taxonomia ou esquema de grafo, regras técnicas de persistência, seleção de bibliotecas e provedores de voz, políticas definitivas de retenção, cronograma, preços/planos, aplicação aos demais participantes, testes, execução e publicação operacional.
 
 ## Autoridades preservadas
 
