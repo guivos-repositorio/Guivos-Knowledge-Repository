@@ -1154,6 +1154,28 @@ A direção visual de ícones/imagens para nós está **instruída como proposta
 
 **Próxima deliberação sugerida:** autorizar a implementação apenas da apresentação visual candidata e da janela de detalhes no protótipo sintético, preservando Fase 2 bloqueada e PR #730 em draft.
 
+
+### 18.25 Verificação da evolução visual dos nós — evidências do Replit (08/11/2026)
+
+> **Origem:** auditoria somente de leitura realizada pelo agente do Replit após a implantação autorizada da especificação visual candidata §18.24. O agente informou conclusão da evolução UX em **protótipo sintético**, não integração operacional. Nenhum arquivo foi alterado durante a auditoria, e os testes informados **não foram repetidos** nessa leitura.
+
+| Item | Evidência relatada |
+| --- | --- |
+| Cenário visual | **15 nós, 16 relações** coerentes com o texto demonstrativo de compreensão contextual |
+| Representação de nós | Ícones locais para temas; emblema fictício de Coletivo e avatar fictício de Profissional; sem fotos nem logos reais e sem nó independente de Organização nesta entrega |
+| Detalhamento | Diálogo ao clicar/teclar com ícone, título, tipo, descrição, natureza das relações e conexões próximas; fechamento devolve o foco ao nó |
+| Manipulação | Arraste com arestas acompanhando a posição, pan no fundo, zoom 70–220%, centralização e opção de exibir/ocultar rótulos de relações |
+| Seleção e legibilidade | Nó e conexões destacados; demais elementos atenuados; rótulos móveis abreviados |
+| Acessibilidade | Foco e ativação por teclado, setas para mover e painel adaptado a mobile; **sem validação com leitor de tela real** |
+| Verificações da entrega | **64/64 testes locais**, **15/15 verificações Chromium** desktop/mobile, typecheck frontend e dois builds aprovados, segundo o agente; sem regressão integral |
+| Isolamento | Fixture sob condição de desenvolvimento, estado React local, produção com estado vazio, sem persistência/IA/voz/Neo4j/APIs externas ou dados reais; sem alterações relatadas em rotas PER, autenticação, banco, backend ou publicação |
+
+**Limitações objetivas:** o posicionamento inicial usa **grade fixa**, não algoritmo físico de forças; arrastar não inclui prevenção automática de colisões; desempenho com redes extensas não foi validado. Portanto o comportamento dinâmico avançado observado em referências como MiroFish **ainda não foi atingido plenamente**.
+
+**Parecer:** evolução de apresentação **implementada para avaliação da Direção**, sem declarar aceite funcional de produção ou conclusão da Fase 2. A próxima melhoria candidata é examinar motor de forças/colisões e expansão progressiva da rede, preservando nós semânticos, janela de detalhes, acessibilidade e isolamento. Esta recomendação **não constitui autorização de novo incremento**.
+
+**Governança:** manter PR #730 em draft, sem merge, novos IDs ou alterações nos Registries; B01/B02 e demais gates permanecem pendentes.
+
 ---
 
 ## 19. Eficácia e limites (histórico e estado atualizado)
