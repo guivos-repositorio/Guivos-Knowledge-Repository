@@ -82,7 +82,7 @@ Preservar e aprofundar a hipótese de uma experiência contextual, interativa, n
 - [Decisão da Direção — R2](decisao-direcao-r2.md): representação da responsabilidade funcional distinta aprovada como diretriz, sem criação de superfície ou ID oficial.
 - [Duas Minutas Candidatas de Transição — Entrada e Retorno](minutas-contratos-transicao-entrada-retorno.md): contratos separados de passagem Hoje → Grafo Vivo e retorno Grafo Vivo → Hoje, ainda não normativos nem validados.
 - [Decisão da Direção — Minutas como Base Documental](decisao-direcao-minutas-base.md): adoção expressa das duas minutas como base de reconciliação, sem contratos normativos, novos IDs ou implementação.
-- [Quadro Único de Formalização Funcional e Dados Mínimos — v0.3.0, baseline e diffs candidatos](quadro-unico-formalizacao-funcional-dados.md): consolida decisões vigentes, dados mínimos e **duas propostas de diff não aplicadas** para Surface Registry e Transition Registry; placeholders não são IDs e nenhum Registry foi alterado.
+- [Quadro Único de Formalização Funcional e Dados Mínimos — v0.3.1, diffs aprovados como referência](quadro-unico-formalizacao-funcional-dados.md): consolida decisões vigentes, dados mínimos e **duas propostas de diff não aplicadas** para Surface Registry e Transition Registry; placeholders não são IDs e nenhum Registry foi alterado.
 
 ## Navegação e fontes de autoridade
 
@@ -115,6 +115,8 @@ Preservar e aprofundar a hipótese de uma experiência contextual, interativa, n
 **Quadro único v0.2.0 aprovado como baseline documental de instrução em 08/11/2026:** a Direção autorizou o aprofundamento conjunto de R2 (representação funcional) e dados mínimos, sem conversão em política, contrato normativo ou autorização operacional. Ver [quadro único atualizado](quadro-unico-formalizacao-funcional-dados.md).
 
 **Diffs candidatos preparados em 08/11/2026:** quadros de adição propostos para Surface e Transition Registries, restritos à revisão, sem aplicação, IDs, validação normativa ou alteração das contagens oficiais. Ver [quadro único v0.3.0](quadro-unico-formalizacao-funcional-dados.md).
+
+**Diferenças normativas A/B aprovadas como referências documentais em 08/11/2026:** diffs do Surface Registry e Transition Registry adotados para revisão futura, **não aplicados** e sem identificação/validação automática. Ver [quadro único v0.3.1](quadro-unico-formalizacao-funcional-dados.md).
 
 **Não aprovado/pendente:** formalização da responsabilidade no Registry, contrato oficial de entrada/retorno, critérios operacionais de elegibilidade, materialização em telas existentes, novas superfícies/IDs, taxonomia ou esquema de grafo, regras técnicas de persistência, seleção de bibliotecas e provedores de voz, políticas definitivas de retenção, cronograma, preços/planos, aplicação aos demais participantes, testes, execução e publicação operacional.
 
