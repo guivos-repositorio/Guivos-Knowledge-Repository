@@ -1061,6 +1061,29 @@ A manifestação da Direção sobre iniciar a implantação deve ser enfrentada 
 
 **Estado documental:** §18 e PR #730 permanecem como fonte central da instrução; nenhuma mudança normativa nos Registries foi autorizada; PR sem merge.
 
+
+### 18.23 Resultado da Fase 1 — verificação de leitura do Replit (08/11/2026)
+
+> **Evidência obtida diretamente do agente Replit Jornada da Pessoa após a atualização:** a Fase 1 foi relatada como **concluída enquanto prévia demonstrativa isolada**, e **não** como integração funcional do Grafo Vivo à Jornada operacional. A verificação posterior foi apenas de leitura, sem executar novos testes, editar arquivos ou publicar. Este registro incorpora evidências técnicas reportadas; não confere validação normativa, operacional, de segurança, dados ou aceite visual da Direção.
+
+| Critério da autorização | Resultado relatado | Limite |
+| --- | --- | --- |
+| Entrada voluntária em Hoje demonstrativo | Botão de entrada em prévia de Hoje dentro do painel de desenvolvimento | Nenhuma rota ou transição oficial criada |
+| Retorno neutro | “Voltar à prévia de Hoje”, com restauração de foco ao controle de entrada | Retorno demonstrativo, sem efeitos de domínio |
+| Explorar | Visualização de nós e seleção de relações | Seis nós e seis relações inteiramente fictícios |
+| Escutar | Avanço por trechos de narração textual sintética | Sem áudio, microfone, voz ou provedor externo |
+| Conversar | Respostas locais predefinidas com conteúdo fictício | Sem IA, transferência de dados ou armazenamento |
+| Isolamento | Dados e interações em estado de componente de desenvolvimento, sem chamadas a APIs nem gravação | Não comprova contratos B01/B02 ou integração futura |
+| Preservação de rotas | PER-007/PER-008 mantêm redirecionamentos já existentes, sem inserção operacional do Grafo | Componente de Hoje operacional permanece sem validação de acesso autônomo |
+| Preservação técnica | Agente relata nenhuma mudança em autenticação, backend, banco, memória, IA/voz, Secrets e deploy | Constatação de inspeção local, não auditoria independente em produção |
+| Verificações informadas | Teste focado da prévia **21/21**, typecheck, build do showcase e `git diff --check` reportados como aprovados | Não foram repetidos na verificação; não houve regressão completa nem teste visual Chromium interativo |
+
+**Estado de aceite:** **Fase 1 entregue para apreciação**, com escopo sintético e isolado conforme relato técnico. **Aceite visual/UX pela Direção e validação integrada ainda pendentes.** Não confundir aprovação dos testes focados com prontidão para produção.
+
+**Próximos gates sugeridos:** (1) revisão visual e de acessibilidade da prévia isolada; (2) exame de regressão não invasivo da Jornada, mediante autorização de testes; (3) eventual ajuste demonstrativo de UI, somente em escopo autorizado; (4) manter **Fase 2 bloqueada** até decisões oficiais sobre I-A, B01/B02, transições, dados, segurança e integrações.
+
+**Preservação:** PR #730 draft, sem merge/publicação; nenhum Registry ou ID alterado por esta documentação.
+
 ---
 
 ## 19. Eficácia e limites (histórico e estado atualizado)
