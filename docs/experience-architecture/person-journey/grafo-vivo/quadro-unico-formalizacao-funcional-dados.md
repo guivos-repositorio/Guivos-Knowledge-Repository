@@ -789,6 +789,74 @@ Em paralelo, instruir a ficha da futura unidade I-A sob owner documental da Arqu
 
 **Estado de preservação:** PR #730 continua **draft**; todos os 35 documentos especializados seguem organizados sob um índice único; versões e autoridades vigentes dos Registries não foram alteradas; Replit não foi acessado.
 
+
+### 18.5 Apreciação da Direção — Alternativa A aprovada (08/11/2026)
+
+> **Ato expresso recebido nesta conversa:** a Direção aprova a **Alternativa A**, adotando a matriz de adjudicabilidade B01/B02 (§18.1) e a ficha funcional candidata I-A (§18.2) como **bases documentais condicionadas**, e autoriza o **exame focal do procedimento de identificação/numeração I-A e da proveniência da compreensão contextual B01**. A aprovação conserva a centralização neste Quadro Único, no PR #730. **Não** constitui atribuição de ID, validação de B01/B02, norma de dados, modificação de Registry, integração, teste, implementação, merge ou publicação.
+
+| Peça/decisão | Efeito autorizado | Efeito expressamente não autorizado |
+| --- | --- | --- |
+| Matriz de adjudicabilidade B01/B02 | Referência documental de consulta, controvérsias, autoridades e gates | Homologar fontes canônicas, finalidades, permissões ou destinatários |
+| Ficha funcional I-A | Descrição candidata, limites, competência e dependências para instrução | Criar unidade registrada, nome/ID oficial ou declarar validação |
+| Exame focal I-A | Verificar procedimento competente, enquadramento, consistência e pré-requisitos | Reservar número, antecipar registro, alterar Surface/Transition Registries |
+| Exame focal B01 | Distinguir proveniência da expressão, compreensão, inferência, confirmação e derivados | Criar objeto de persistência, fonte canônica ou mecanismo técnico de versionamento |
+| B02 | Manter matriz em consulta de Dados/Privacidade | Inferir autorização de tratamento ou transferência |
+
+**Decisões anteriores preservadas:** Alternativa B; R2; I-A como diretriz de representação; C1 como owner documental da Arquitetura da Experiência; três modos internos; voluntariedade e retorno neutro por Hoje/PER-008; dois handoffs candidatos, ainda não formalizados.
+
+### 18.6 Exame focal de identificação/numeração da futura unidade I-A
+
+**Questão:** qual é o procedimento legítimo para identificar uma unidade funcional própria no inventário, sem confundir a aprovação conceitual I-A com criação registral?
+
+| Eixo | Evidência documental identificada | Resultado do exame | Pendência / gate |
+| --- | --- | --- | --- |
+| Competência decisória | Direção aprovou R2/I-A como representação e C1 como owner documental; §16–§18 | **Direção retém o ato de formalização**; C1 não delega atribuição de IDs | Aprovação expressa de inclusão/identificação, em ato posterior |
+| Autoridade de manutenção | Surface Registry v0.36.22, detalhamento Pessoa v0.23.8 e Transition Registry v0.29.26 citados como estruturas de referência | **Arquitetura da Experiência** prepara proposta coordenada; não presume permissão de mutação | Confronto de estrutura/campos e confirmação do procedimento vigente no momento do ato |
+| Classificação | I-A selecionada como unidade funcional própria, protegida e opcional, com Explorar/Escutar/Conversar internos | **Unidade funcional distinta não implica tela independente nem novo ID para cada modo** | Enquadramento exato na família vigente e nomenclatura oficial permanecem sem adjudicação |
+| Identificador | Ficha §18.2 declara «não atribuído nem reservado» | **Nenhuma numeração candidata, próxima sequência ou prefixo deve ser fabricado** | Inventário integral, regras de unicidade, disponibilidade e ato competente, somente quando autorizado |
+| Handoffs | Duas minutas de ida/retorno; proibição de reutilizar TRN-007..013 | **Dois contratos candidatos; nenhuma transição oficial nova** | Aprovação específica e coordenação posterior com Transition Registry |
+| Maturidade | Sem materialização validada ou contrato de dados completo | «Candidata/não validada» é **descrição de trabalho**, não estado registral aprovado | Definir rótulo registral permitido e comprovações exigidas no procedimento competente |
+| Impactos coordenados | Surface Registry, detalhamento Pessoa, Transition Registry, Master PER-008 e Orquestração | Exigem **análise de delta comum** antes de eventual aplicação | Nenhum arquivo alterado neste incremento; deltas apenas após ato específico |
+
+**Encadeamento condicionante (não executado):** (1) verificar regras existentes de enquadramento e identificação; (2) preparar proposta de impacto interdocumental e maturidade; (3) submeter nomenclatura e ato de inclusão à Direção; (4) somente mediante autorização ulterior, atribuir identificador pelo procedimento competente e promover alterações coordenadas. A ausência de identificação oficial é **lacuna expressa**, não licença para numeração implícita.
+
+**Parecer focal I-A:** há fundamentação suficiente para **instruir** o processo de identificação, porém **não para concluir qual número, nome registral ou estado oficial será aplicável**, nem para editar os Registries. Não há criação ou reserva de identificador neste exame.
+
+### 18.7 Exame focal de proveniência da compreensão contextual B01
+
+**Questão:** após expressão, interpretação e revisão no percurso PER-004/PER-005/PER-007, qual registro legitimamente autorizado representa a compreensão contextual vigente, com qual emissor de versão e qual relação com fontes especializadas? **O corpus examinado não fornece adjudicação completa dessa fonte, nem autorização técnica para instituí-la.**
+
+| Camada/família | Evidência de autoridade a confrontar | Distinção de proveniência exigida | Lacuna ainda aberta |
+| --- | --- | --- | --- |
+| Expressão da Pessoa | PER-004/005/007; declarações e escolhas efetivamente realizadas | Declaração original, canal, momento, referência de origem e eventual correção, apenas onde legitimamente disponível | Registro canônico concreto, escopo e retenção |
+| Compreensão contextual | GIA/GPA-006; compreensão revisável no percurso da Jornada | Versão interpretativa, contexto elegível, estado de revisão e referência às declarações; **não igualar interpretação à fala literal** | Objeto canônico autorizado, responsável por emitir/validar versão e regra de precedência |
+| Inferência/hipótese cognitiva | GIA-COG-001 e autoridades cognitivas vigentes | Sinalizar hipótese, incerteza, lacuna e relação de derivação | Taxonomia e critérios aprovados de confirmação, descarte e atualização |
+| Confirmação/retificação pela Pessoa | PER-007, revisão e escolhas legítimas | Distinguir confirmação, correção e revogação de hipótese ou declaração | Efeito canônico, propagação a versões derivadas e responsabilidade pelo ato |
+| Objetivos / Próximos Passos / Evolução | PAS-001, PER-010, PER-011, PER-012 | Referências a objetos de domínio, estados e evidências da autoridade competente | Contrato de leitura, versão, permissões e temporalidade; não promover hipótese a progresso |
+| Novas falas em Conversar | Contexto da sessão e GIA, sujeito a controles da Pessoa | Distinguir conteúdo transitório de eventual revisão confirmada | Critério de persistência/revalidação, destinação e expiração |
+| Grafo/voz/transcrição/terceiros | Projeções técnicas candidatas, sem competência canônica própria | Rastrear fonte, versão, transformação, finalidade e invalidação quando autorizadas | Autorização técnica, destinatários, categorias, retenção e cancelamento; **não aprovada** |
+
+**Requisitos documentais candidatos para reconciliação posterior**, sem criar esquema técnico: (a) referência verificável à origem legítima; (b) distinção epistemológica **declaração / interpretação / inferência / confirmação / correção**; (c) vínculo a versões e autoridade emissora, quando existente; (d) indicação de temporalidade e eventual superação/retificação; (e) vinculação autorizada a objetos PAS-001 sem mutação por projeção; (f) propagação de correções/revogação para derivados somente por mecanismo legitimamente definido; (g) limitação por finalidade e permissão.
+
+**Não confundir três perguntas:** quem produz uma interpretação (GIA); qual registro e emissor mantêm a **compreensão contextual vigente** (B01, **a adjudicar**); e quais categorias/destinatários podem processá-la (B02, **a consultar Dados/Privacidade**). A resposta à primeira não resolve automaticamente as demais. Neo4j, motores de IA e narração não se tornam fonte canônica por integração.
+
+**Parecer focal B01:** a cadeia de proveniência pode ser **descrita e confrontada** documentalmente, mas **não está homologada** quanto a objeto canônico, emissor de versão, precedência após PER-007, correção/retificação, armazenamento e invalidação. B03 (suficiência), B04 (versão) e B05 (proveniência) dependem dessa adjudicação; B06–B12 seguem condicionadas.
+
+### 18.8 Resultado integrado, pendências e próxima decisão proposta
+
+| Tema | Estado após a Alternativa A e exame focal | Próxima decisão/consulta necessária |
+| --- | --- | --- |
+| Matriz B01/B02 e ficha I-A | **Adotadas como bases de instrução documental condicionadas** | Preservar como referência, sem força de contrato operacional |
+| I-A | Diretriz de unidade própria + owner documental C1, **sem ID/nome registral** | Procedimento competente de identificação, enquadramento, maturidade e ato expresso da Direção |
+| B01 — compreensão contextual | Proveniência e autoridades **mapeadas, não adjudicadas** | Identificar registro fonte, emissor de versão, correções, precedência e fronteiras PAS-001/GIA |
+| B02 — minimização | Consulta documental, **sem parecer de Dados/Privacidade recebido** | Avaliar categorias × finalidade × modo × destinatário e direitos/retenção |
+| Handoffs / Registries | Contratos candidatos; **Surface/Transition Registries intactos** | Eventual proposta coordenada, exclusivamente após autorização |
+| PR #730 / implantação | Continuidade somente documental, **draft sem merge** | Não autorizar Design, Replit, APIs, testes, fornecedores ou publicação |
+
+**Recomendação de próxima deliberação:** autorizar **quadro focal de procedimento registral e matriz de linhagem/versão da compreensão contextual**, como aprofundamentos internos deste Quadro Único, para formular perguntas específicas às autoridades de identificação, GIA/Jornada/PAS-001 e Dados/Privacidade. Não elevar essas propostas a normas, não reservar identificadores e não presumir respostas externas.
+
+**Marco de continuidade atualizado:** a aprovação da Alternativa A foi incorporada à §18; o exame I-A/B01 foi efetuado em nível de **diagnóstico documental condicionado**. A próxima atividade é instruir os gates ainda sem decisão, preservando todo o histórico, o acervo centralizado e o PR #730.
+
 ---
 
 ## 19. Eficácia e limites (histórico e estado atualizado)
