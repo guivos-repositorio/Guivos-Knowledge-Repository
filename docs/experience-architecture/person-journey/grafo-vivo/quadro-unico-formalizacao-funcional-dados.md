@@ -1,11 +1,11 @@
 ---
 title: Grafo Vivo — Quadro Único de Formalização Funcional e Dados Mínimos
 status: conceptual_study
-version: 0.5.0
+version: 0.6.0
 owner: Concepção de Produto / Jornada da Pessoa
 last_updated: 2026-11-08
 normative: false
-maturity: approved_baseline_with_coordinated_registry_and_data_contract_candidates
+maturity: focal_readiness_assessment_conditional_documentary_only
 ---
 
 # Grafo Vivo — Quadro Único de Formalização Funcional e Dados Mínimos
@@ -415,7 +415,71 @@ A Direção **já autorizou a preparação conjunta A+B**, não a aplicação do
 
 ---
 
-## 13. Eficácia e limites (histórico e estado atualizado)
+## 13. Parecer focal de prontidão para formalização normativa — instrução documental (08/11/2026)
+
+> **Parecer analítico condicionado, não aprovação normativa.** A Direção autorizou elaborar o exame de prontidão sobre **(1) identidade/maturidade funcional** e **(2) suficiência dos contratos de contexto e dados**. Esta análise é preparada pelo trabalho documental do GKR; **não se apresenta como parecer independente de especialista, decisão da autoridade de privacidade ou validação operacional**. A decisão de editar Registries continua reservada a ato expresso posterior.
+
+### 13.1 Quesito 1 — identidade e maturidade estão suficientemente fundamentadas?
+
+**Resposta:** **suficientes para preparar uma minuta formal completa de representação R2, mas insuficientes para inserir de imediato uma nova entrada oficial no Surface Registry.**
+
+| Elemento | Evidência e conclusão |
+| --- | --- |
+| Competência | **Suficiente conceitualmente:** Alternativa B, responsabilidade distinta e R2 foram aprovadas expressamente |
+| Limite com Hoje | **Suficiente conceitualmente:** PER-008 permanece síntese e origem/retorno, não destino funcional absorvente |
+| Tipo de representação | **Suficiente como diretriz:** reconhecer responsabilidade funcional; tela física/visual independente não foi decidida |
+| Identificação oficial | **Insuficiente:** não foi definido o ato competente de atribuição, nem o identificador da unidade registrável |
+| Owner e autoridade de manutenção | **Insuficiente:** responsáveis podem ser mapeados, mas não delegados por inferência |
+| Maturidade | **Suficiente para vedar status “validado”; insuficiente para escolher automaticamente o rótulo normativo final** |
+| Detalhamento obrigatório | **Lacuna delimitada:** inclusão deverá ser reconciliada com `surface-registry-person-details.md` v0.23.8, em seus 13 campos |
+| Impacto de contagem | **Não autorizável agora:** 61 IDs no Surface Registry v0.36.22, sem incremento nesta etapa |
+
+**Parecer:** manter R2 **candidata e não validada** em documentos de instrução. Para promoção a entrada no Registry, exigir identificação formal, owner, maturidade exata e diff coordenado do detalhamento da Pessoa. Não simular novo ID nem escolher número a partir de sequência aparente.
+
+### 13.2 Quesito 2 — o contrato de contexto e dados está apto a sustentar contratos formais?
+
+**Resposta:** **o conjunto B01–B12 é suficiente como checklist de revisão e especificação candidata, mas insuficiente para declarar contratos de dados aprovados ou transições formalmente validadas.**
+
+| Lacuna crítica | Estado | Efeito sobre a formalização |
+| --- | --- | --- |
+| Fonte canônica de versão e proveniência | **Aberta** | Não é possível garantir detecção/propagação consistente de revisões e narrativas obsoletas |
+| Suficiência objetiva por modalidade | **Parcial** | Critérios qualitativos propostos, não aceitos formalmente pelas autoridades de PER-007/PER-008/GIA |
+| Categorias e finalidades permitidas | **Aberta** | Não há decisão de minimização e tratamento por categoria sensível |
+| Sessão, expiração e descarte | **Aberta** | Não há contrato de ciclo de vida efêmero; negar persistência não elimina automaticamente usos legítimos da sessão |
+| Persistência e personalização | **Princípio de separação aprovado; mecanismos abertos** | Não se pode presumir consentimento, retenção ou reaproveitamento posterior |
+| Voz, transcrição, armazenamento e fornecedores | **Aberta** | Não há autorização para processar dados por Grok ou outros provedores por esta via |
+| Neo4j, grafo derivado e caches | **Aberta** | Não há política de projeção, invalidação, retenção ou reversão de derivados |
+| Interrupção, falha, idempotência e acessibilidade | **Especificação candidata** | Não são casos validados em software, nem critérios finais aceitos de UX/segurança |
+| Retorno neutro e proteção dos domínios | **Diretriz conceitual aprovada** | Não permite atribuir a novos TRNs a maturidade das transições existentes |
+
+**Parecer:** o contrato candidato permite **preparação controlada de propostas normativas**, mas **não** sustenta aprovação de tratamento de dados ou implantação. O escopo dos próximos contratos deve ser limitado a referências e condições lógicas; qualquer execução que exija dados reais, provedores ou retenção depende de deliberação competente.
+
+### 13.3 Parecer geral e gradação de prontidão
+
+| Objeto | Prontidão documental | Pode avançar agora? |
+| --- | --- | --- |
+| Alternativa B, R2, três modos, acesso primeiro Hoje | Diretriz conceitual aprovada | Sim, como premissa de documentos candidatos, sem nova votação |
+| Minuta coordenada de Surface Registry + detalhamento Pessoa | Parcial; campos e estrutura conhecidos | **Sim, para redação e revisão sem aplicação** |
+| Identificador e owner oficiais do destino | Não resolvidos | **Não**, sem decisão específica |
+| Inclusão efetiva no Surface Registry | Bloqueada por identificação, autoridade e maturidade final | **Não** |
+| Duas minutas de transição | Base documental aprovada; destino ainda não identificado | **Sim, para revisão não aplicada** |
+| Inclusão e validação no Transition Registry | Bloqueada por destino, dados e gates | **Não** |
+| Contrato de dados B01–B12 | Candidato com lacunas relevantes | **Sim, para análise de suficiência com autoridades; não como política vigente** |
+| Inspeção Replit/Design/implantação | Sem ato operacional | **Não** |
+
+**Conclusão focal:** **prontidão parcial, exclusivamente documental**. Não há fundamento para elevar qualquer uma das três entradas propostas a estado validado nem para formalizar imediatamente os Registries. Os pontos faltantes são específicos e não justificam reabrir B, R2, CT-01/02 ou a aprovação das minutas.
+
+### 13.4 Próxima decisão realmente necessária
+
+**Recomendação de deliberação focal — opção P1:** a Direção poderá **autorizar apenas a preparação de um dossiê de competência e identificação oficial**, com critérios e alternativas fundamentadas de alocação de unidade registrável e owner, preservando os números não atribuídos, e **encaminhar B01–B12 para reconciliação documental especializada de dados/privacidade**. Isso não cria IDs, não modifica fontes normativas e não declara parecer de especialista que não ocorreu.
+
+**Alternativa P2 — aplicação normativa imediata:** **não recomendada**, porque identificação/owner, versão canônica e critérios de dados permanecem abertos. Sua adoção exigiria novo ato expresso da Direção com fundamentação e resolução das dependências, não pode ser inferida desta análise.
+
+**Próximo gate operacional:** somente após regras normativas e de dados suficientes, e mediante autorização independente, examinar a implementação na dashboard da Jornada da Pessoa no Replit.
+
+---
+
+## 14. Eficácia e limites (histórico e estado atualizado)
 
 | Objeto | Situação |
 | --- | --- |
