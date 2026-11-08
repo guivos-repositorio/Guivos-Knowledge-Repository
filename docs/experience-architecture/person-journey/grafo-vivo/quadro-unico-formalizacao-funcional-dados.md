@@ -1,11 +1,11 @@
 ---
 title: Grafo Vivo — Quadro Único de Formalização Funcional e Dados Mínimos
 status: conceptual_study
-version: 0.9.1
+version: 1.0.0
 owner: Concepção de Produto / Jornada da Pessoa
 last_updated: 2026-11-08
 normative: false
-maturity: c1_documentary_owner_approved_b01_b02_consultation_adopted
+maturity: continuation_checkpoint_b01_b02_adjudicability_i_a_candidate_profile
 ---
 
 # Grafo Vivo — Quadro Único de Formalização Funcional e Dados Mínimos
@@ -729,7 +729,69 @@ Em paralelo, instruir a ficha da futura unidade I-A sob owner documental da Arqu
 
 ---
 
-## 18. Eficácia e limites (histórico e estado atualizado)
+
+## 18. Matriz de adjudicabilidade B01/B02 e ficha funcional I-A — continuidade para nova conversa (08/11/2026)
+
+> **Autorização recebida:** a Direção aprovou preparar a matriz de adjudicabilidade B01/B02 e a ficha funcional candidata da futura unidade I-A, solicitando continuidade em **nova conversa**. Esta seção é o **marco de retomada** no próprio Quadro Único: nenhuma nova pasta, documento normativo, identificação, envio de dados a fornecedores ou implementação.
+
+### 18.1 Adjudicabilidade B01/B02 — evidência documental versus decisão ainda ausente
+
+**Leitura da matriz:** “evidência documental” identifica a autoridade ou fronteira **já localizada nos estudos e Registries vigentes**. “Decisão pendente” identifica o que **não foi adjudicado**; nenhuma linha representa parecer novo de Dados/Privacidade. “Fonte canônica candidata” significa **família ou objeto a confirmar**, não uma interface/API de produção.
+
+| Família de informação | B01 — evidência e fonte/custódia a confirmar | B02 — finalidade mínima candidata | Adjudicabilidade e lacuna | Próximo gate |
+| --- | --- | --- | --- | --- |
+| **Expressão e compreensão inicial** | PER-004/005/007 governam expressão, revisão e escolhas; GIA interpreta, mas é necessário identificar **qual registro autorizado mantém a compreensão atual** | Exibir relações contextualizadas e permitir esclarecimento voluntário | **Parcial:** fonte lógica e papéis conhecidos; objeto/versão canônicos e permissões de consulta não definidos | Jornada/PER-007 + Dados + GIA |
+| **Momento atual, rotina, disponibilidade, desejos** | Declarações da Pessoa e compreensão revisável; distinguir original, interpretação, correção e temporalidade | Explorar o momento presente e as possibilidades pertinentes | **Parcial:** não existe fonte universal presumível, nem reutilização irrestrita após a conversa | Jornada/GIA + Privacidade — propósito e escopo |
+| **Objetivos** | PAS-001 e PER-010 preservam a autoridade dos Objetivos, sem criação por derivação gráfica | Explicar relações, não alterar objetivos, estados, prioridades ou marcos | **Parcial:** objeto de domínio reconhecido; referência de leitura, escopo e versão ainda a autorizar | PAS-001/PER-010 + Dados/Privacidade |
+| **Próximos Passos** | PAS-001 e PER-011 preservam autoridade dos Passos, estados e prontidão | Visualizar dependências e opções sem iniciar ou concluir ações | **Parcial:** falta contrato de consulta de estado autorizado por contexto | PAS-001/PER-011 + Jornada/Privacidade |
+| **Evolução/experiências** | PAS-001 e PER-012 protegem evidências, trajetória e interpretação; ausência de histórico é legítima | Exibir apenas evolução apoiada em evidências e finalidade pertinentes | **Parcial/alto cuidado:** não converter inferência em comprovação, nem presumir progresso no primeiro Hoje | PAS-001/PER-012 + GIA/Privacidade |
+| **Novas informações em Conversar** | PER-007, ciclo de vida contextual e GIA oferecem princípios de revisão, mas não definem persistência automática | Esclarecimento durante sessão legítima e eventual sugestão de revisão pela Pessoa | **Insuficiente para persistir:** fonte canônica posterior, autoridade de revalidação e revogação não resolvidas | Jornada/GIA + Dados/Privacidade |
+| **Grafo, narração e transcrição como derivados** | Estudos de sincronização distinguem fonte canônica de projeção/voz; Neo4j ou motor de IA não recebe autoridade canônica por estar integrado | Apresentação ou narração minimizada do contexto permitido, quando serviço específico for autorizado | **Insuficiente para integração:** destino, categoria, retenção, áudio, logs e invalidação permanecem abertos | Dados/Privacidade/Segurança + Arquitetura/Engenharia |
+
+**Conclusão de adjudicabilidade:** o GKR fornece **fundamentação de competência e limites de uso** para todas as famílias examinadas, mas não fornece **decisão específica completa de B01/B02** para fonte canônica, categorias, finalidade autorizada, destinatários e versão. A matriz é **apta à consulta e instrução de decisão**, não suficiente para processamento operacional ou aprovação normativa integral.
+
+### 18.2 Ficha funcional candidata da unidade I-A — sem registro ou ID
+
+| Campo de instrução | Conteúdo fixado ou candidato |
+| --- | --- |
+| Designação de trabalho | **Grafo Vivo — experiência expandida contextual da Pessoa**; nome oficial ainda não adjudicado |
+| Forma de representação | **I-A aprovada como diretriz:** unidade funcional própria no inventário de superfícies |
+| Responsável documental | **Arquitetura da Experiência da Guivos — C1 aprovada no escopo documental** |
+| Autoridade do ato de inclusão/identificação | **Direção da Guivos**, sujeita à governança existente de IDs e aos requisitos de formalização |
+| ID de superfície / PER | **NÃO ATRIBUÍDO NEM RESERVADO** |
+| Maturidade de trabalho | **Candidata; não validada; sem materialização comprovada**; rótulo oficial sujeito a ato posterior |
+| Participante/canal | Pessoa autenticada, experiência protegida e opcional |
+| Entrada | PER-008 — Hoje, primeiro/recorrente quando contexto legitimamente elegível, por ação voluntária |
+| Retorno | PER-008 — Hoje, explícito e neutro, com reconsulta canônica quando aplicável |
+| Modos internos | Explorar, Escutar, Conversar; alternância entre modos não constitui TRN por si |
+| Limites materiais | Não criar/alterar Objetivos, Próximos Passos, Evolução, consentimentos ou comprovações por exibição, voz ou retorno |
+| Conteúdo e controles | Só contexto permitido por finalidade, fontes/versões/proveniência elegíveis, correção/revogação e escolhas independentes |
+| Handoffs | **Dois contratos candidatos não aplicados**, sem IDs oficiais; não reutilizar TRN-007..013 |
+| Arquivos a confrontar para futura norma | Surface Registry v0.36.22, detalhamento Pessoa v0.23.8, Transition Registry v0.29.26, Master PER-008 v0.1.0 e Orquestração v0.4.0 |
+| Impedimentos reais | Identificador, nome oficial, maturidade final, fontes/versões, B01–B12, privacidade, voz/terceiros, estado de validação |
+| Implementação | **Não autorizada**; nenhuma inferência sobre o layout do Replit |
+
+### 18.3 Quesitos concretos para apreciação posterior
+
+**Identificação I-A:** confirmar procedimento competente de alocação de ID, natureza da unidade no inventário, nomenclatura oficial e maturidade inicial sem inventar numeração. **C1 já está aprovada** e não precisa ser votada novamente.
+
+**B01:** qual fonte de verdade mantém a compreensão contextual revisável após PER-007? Como seu estado e versão se relacionam com os objetos de domínio PAS-001/PER-010/011/012? Qual mecanismo governa correção e projeções derivadas? **Nenhuma fonte nova foi criada por este exame.**
+
+**B02:** para cada família e modalidade, quais categorias, finalidades, destinatários e limites são juridicamente/tecnicamente admissíveis? Qual é a diferença entre uso de sessão, persistência, personalização e transferência a fornecedores? **Nenhuma base legal, consentimento ou tratamento por terceiros foi adjudicado.**
+
+**Demais cláusulas:** B03–B05 dependem dessas respostas, e B06–B12 continuam exigindo avaliação especializada. Não elevar a dois contratos de transição “validados” sem gates próprios.
+
+### 18.4 Marco de retomada obrigatório na próxima conversa
+
+**Ponto exato:** **Quadro Único v1.0.0**, seção 18, com C1 e I-A já aprovadas e **matriz B01/B02 + ficha I-A preparadas para apreciação**. A próxima conversa deve partir deste marco, sem repetir estudos ou reapresentar decisões encerradas.
+
+**Próxima decisão recomendada à Direção:** adotar a matriz de adjudicabilidade e ficha I-A como **bases de instrução documental** e autorizar **exame focal dos critérios formais de identificação/numeração e da proveniência da compreensão contextual B01**, preservando B02 para adjudicação por suas autoridades. **Não** aplicar Registries nem atribuir IDs nessa decisão.
+
+**Estado de preservação:** PR #730 continua **draft**; todos os 35 documentos especializados seguem organizados sob um índice único; versões e autoridades vigentes dos Registries não foram alteradas; Replit não foi acessado.
+
+---
+
+## 19. Eficácia e limites (histórico e estado atualizado)
 
 | Objeto | Situação |
 | --- | --- |
