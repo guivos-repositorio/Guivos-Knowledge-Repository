@@ -34,6 +34,7 @@ Preservar e aprofundar a hipótese de uma experiência contextual, interativa, n
 - [Dossiê de Competências e Adjudicação de Entrada Funcional](dossie-competencias-adjudicacao-entrada-funcional.md): alternativas A/B/C de localização, efeitos sobre PER-008/Registries e quesitos a decidir sem seleção automática.
 - [Exame Focal de Admissibilidade de Competência e Transição](exame-focal-admissibilidade-competencia-transicao.md): admissibilidade das alternativas, testes por comportamento, atos necessários e quesitos para a autoridade competente.
 - [Quadro de Respostas Requeridas e Instrumentos de Competência](quadro-respostas-instrumentos-competencia.md): consulta e evidências dos quesitos AF-01..AF-10, dependências e instrumentos possíveis sem adjudicação.
+- [Consulta Focal de Competência à Arquitetura UX/Journey](consulta-focal-competencia-ux-journey.md): minuta de consulta sobre AF-01, AF-02, AF-03 e AF-10, sem submissão formal ou parecer presumido.
 
 ## Estado das decisões (07/11/2026)
 
