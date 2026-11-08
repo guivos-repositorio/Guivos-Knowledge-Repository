@@ -1,11 +1,11 @@
 ---
 title: Grafo Vivo — Quadro Único de Formalização Funcional e Dados Mínimos
 status: conceptual_study
-version: 0.7.0
+version: 0.8.0
 owner: Concepção de Produto / Jornada da Pessoa
 last_updated: 2026-11-08
 normative: false
-maturity: p1_competence_identification_and_data_reconciliation_instruction
+maturity: i_a_guideline_approved_b01_b05_priority_under_reconciliation
 ---
 
 # Grafo Vivo — Quadro Único de Formalização Funcional e Dados Mínimos
@@ -550,7 +550,71 @@ A Direção **já autorizou a preparação conjunta A+B**, não a aplicação do
 
 ---
 
-## 15. Eficácia e limites (histórico e estado atualizado)
+## 15. Decisão da Direção — Diretriz I-A e priorização B01–B05 (08/11/2026)
+
+> **Deliberação expressa:** a Direção respondeu **“de acordo, segue”** à recomendação de **adotar I-A como diretriz de identificação funcional** e **priorizar a reconciliação B01–B05**. Esta aprovação é **conceitual e documental**; não atribui número/ID, nome oficial, owner ou status validado, nem incorpora uma nova linha ao Surface Registry. Os itens B01–B05 são priorizados para instrução e consulta às autoridades competentes, **não adjudicados como política de dados ou privacidade**.
+
+### 15.1 I-A — unidade funcional própria como diretriz escolhida
+
+**Selecionada:** I-A — **unidade própria de responsabilidade no inventário de superfícies**, com finalidade e autoridade distinguíveis de PER-008 — Hoje, preservando a R2 aprovada. A unidade funcional poderá ser materializada no mesmo ambiente visual ou em apresentação própria; essa decisão não escolhe layout.
+
+**Não selecionadas:** I-B (vinculação sem unidade identificável), I-C (absorção por Hoje) e I-D (numeração imediata presumida). A decisão por I-A **não equivale a identificação oficial** e não valida automaticamente os dois handoffs.
+
+| Campo de futura formalização | Diretriz ou restrição após a escolha I-A |
+| --- | --- |
+| Unidade registrável | Responsabilidade funcional própria do Grafo Vivo expandido da Pessoa |
+| Família e proteção | Pessoa autenticada, contexto de Jornada protegido, finalidade limitada |
+| Competência | Explorar, Escutar e Conversar como modos internos; não alterar PER-010/011/012 |
+| Origem e retorno | PER-008 — Hoje, com entrada opcional e retorno explícito neutro |
+| Maturidade candidata | “Contrato funcional candidato / não validado” até evidências e ato normativo |
+| ID / numeração | **Não atribuído nem reservado**; processo competente de identificação pendente |
+| Owner | **A ratificar** por autoridade de Arquitetura da Experiência, sem delegação presumida |
+| Materialização visual | **Não definida**; unidade de competência não determina nova tela |
+| Rastreabilidade | Na futura proposta, mesmo identificador no Surface Registry e detalhamento de superfícies da Pessoa |
+| Transições | Duas próprias, em sentidos opostos, ainda sem TRNs oficiais |
+| Efeitos dos Registries vigentes | **Nenhum** nesta etapa; contagens e contratos atuais preservados |
+
+**Gate formal de I-A:** somente após processo legítimo de identificação e owner poderá ser apresentado diff final aplicável coordenando Surface Registry, `surface-registry-person-details.md` e Transition Registry; a execução exige autorização expressa separada. R2 continua a diretriz de competência e I-A passa a ser sua forma documental de representação preferida, sem criar objeto registrado automaticamente.
+
+### 15.2 B01–B05 — reconciliação prioritária de contexto e governança
+
+A decisão estabelece **ordem de instrução prioritária**, não autorização de uso de dados nem seleção de motores. Para cada cláusula, distinguir decisão funcional existente, contrato candidato, autoridade não consultada formalmente e evidência que falta.
+
+| Cláusula prioritária | Regra funcional/de governança já preservada | Especificação documental candidata para exame | Evidência/decisão ainda necessária |
+| --- | --- | --- | --- |
+| **B01 — Fonte de verdade** | Hoje resume contexto; GIA compreende; PER-010/011/012 e PAS-001 governam seus objetos | Matriz por família de informação: fonte canônica, produtor, status, consumidor, projeção de grafo/narração, versão e revogação | Arquitetura de Dados, GIA e PAS-001 devem confirmar fonte por categoria e fronteira de autoridade |
+| **B02 — Finalidade e minimização** | Entrada voluntária não concede retenção ou transferência geral | Matriz **categoria × finalidade × modalidade × destinatário**; excluir dados não necessários, especialmente sensíveis, do contexto transportado | Privacidade/Dados/Segurança devem definir admissibilidade, fundamento e limites; nenhum provedor é autorizado |
+| **B03 — Suficiência por modo** | Primeiro Hoje elegível sem histórico obrigatório; nenhuma inferência fictícia | Explorar: tema/relação sustentada; Escutar: texto narrável legítimo; Conversar: contexto de finalidade e diálogo esclarecedor; fallback para ausência | PER-007, PER-008, GIA e Privacidade devem adjudicar critérios verificáveis, estados de insuficiência e controles de decisão da Pessoa |
+| **B04 — Versão e temporalidade** | Não afirmar narrativas ou projeções obsoletas como atuais; preservar compreensão governada | Referência de revisão da fonte, temporalidade, projeção derivada e mecanismo de atualização/invalidação; evitar confundir versão do grafo com versão canônica | Dados/Journey/GIA e domínios devem definir registro emissor, semântica de versão, política de concorrência e expiração |
+| **B05 — Proveniência e epistemologia** | Declaração ≠ hipótese ≠ fato confirmado ≠ experiência/progresso reconhecido | Registrar origem, data contextual, grau de confirmação e vínculo entre derivado e informação-fonte, com correção/revisão identificáveis | GIA/GPA-006, PAS-001 e PER-007 devem confirmar taxonomia e procedimentos de contestação e propagação |
+
+**Ordens de dependência relevantes:** B01 (fonte) condiciona B04 (versões) e B05 (proveniência). B02 (finalidade) condiciona quais categorias são admissíveis para B03 (suficiência). B03 não pode exigir histórico prévio por inferência; B05 não pode transformar inteligência interpretativa em autoridade sobre progresso ou objetivos.
+
+### 15.3 Modelo de matriz de consulta a preencher, sem dados reais
+
+| Família candidata de informação | Fonte/autorização a confirmar | Finalidade específica | Uso no Grafo | Uso na voz | Condição de ausência ou revogação |
+| --- | --- | --- | --- | --- | --- |
+| Momento atual e rotina declarada | PER-007/Journey/GIA — delimitar fonte canônica | Compreender condição atual | Relação contextual com rótulo epistemológico | Narrativa textual elegível se autorizada | Não presumir evolução; invalidar derivados corrigidos |
+| Objetivos declarados | PER-010/PAS-001 — confirmar contrato | Explicar relações sem modificar objetivos | Vínculo descritivo somente se autorizado | Síntese explicativa minimizada | Sem objetivo: não criar; revogado: não reutilizar |
+| Próximos Passos | PER-011/PAS-001 — confirmar contrato | Compreender opções e dependências | Representação sem marcar execução | Explicação sem sugerir conclusão ocorrida | Nenhum efeito material de visualização |
+| Evolução/Experiências | PER-012/PAS-001 — confrontar autoridade apropriada | Representar trajetória somente comprovável | Não fabricar marcos temporais | Não narrar progresso não demonstrado | Primeiro Hoje pode legitimamente não possuir histórico |
+| Novas afirmações em Conversar | Jornada/GIA/PER-007 — definir governança recorrente | Esclarecer contexto durante sessão | Hipótese/declaração até validação pertinente | Não afirmar confirmação só pela fala | Não persistir/personalizar por padrão; tratamento da sessão depende de política |
+
+**A matriz acima não classifica definitivamente dados sensíveis, não identifica bases legais, não autoriza armazenamento nem envia informações para Grok, GPT, Claude, Gemini, Neo4j ou outros serviços.** Sua finalidade é formular quesitos verificáveis para a autoridade responsável.
+
+### 15.4 Pacote mínimo para decisão normativa futura
+
+1. **Identificação:** ato da Direção reconhecendo unidade registrável I-A com owner, nomenclatura, identificação oficial e maturidade exata, após conferir colisões e integridade do inventário e do detalhamento da Pessoa.
+2. **B01–B05:** posição formal das autoridades sobre fontes canônicas, finalidade, contexto elegível por modo, versionamento e proveniência.
+3. **B06–B12:** completar política de sessão, retenção, personalização, voz, integrações externas, revogação e continuidade, sem presumir que priorizar B01–B05 resolve os demais contratos.
+4. **Diff final condicionado:** apenas depois de resolver (1)–(3), submeter alterações coordenadas e avaliáveis, incluindo contagens e estado de maturidade.
+5. **Autorização operacional independente:** nenhuma auditoria Replit, integração, Design, testes ou implantação decorre de I-A ou B01–B05.
+
+**Conclusão:** I-A foi **selecionada como diretriz de representação**; B01–B05 foram **priorizados e especificados como questões documentais**. O sistema de autoridades continua incompleto para aplicação normativa. Próximo passo recomendado: examinar a **competência de identificação/owner** e obter **decisão focal das fontes canônicas B01/B02** (sem simular validação externa), antes de solicitar atribuição de IDs.
+
+---
+
+## 16. Eficácia e limites (histórico e estado atualizado)
 
 | Objeto | Situação |
 | --- | --- |
