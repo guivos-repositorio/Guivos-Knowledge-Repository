@@ -88,3 +88,8 @@ Guivos Intelligence detém a interpretação governada; a projeção em grafo, a
 4. **Atos separados** para eventual reconciliação normativa e auditoria técnica do Replit; a aprovação de minutas não autorizará por si testes, implementação ou publicação.
 
 **Parecer de encaminhamento:** submeter à Direção a **adoção destas duas minutas como base documental de reconciliação**, sujeita a contratos de dados e decisão posterior sobre identificação; sem afirmar que são transições já validadas ou operacionais.
+
+
+## Atualização posterior — adoção como base documental pela Direção (08/11/2026)
+
+A Direção aprovou expressamente estas **duas minutas como base documental de reconciliação**, não como contratos normativos ou validados. Ver [Decisão sobre adoção das minutas](decisao-direcao-minutas-base.md). As menções originais à necessidade de aprovação para **usar as minutas como base** correspondem ao estado histórico anterior. Continuam pendentes a autoridade e identificação do destino, a reconciliação dos Registries, os contratos de dados e qualquer ato operacional.
