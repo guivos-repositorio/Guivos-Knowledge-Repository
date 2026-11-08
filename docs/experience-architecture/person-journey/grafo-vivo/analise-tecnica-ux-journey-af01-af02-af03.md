@@ -115,3 +115,8 @@ A Direção pode deliberar após receber pareceres especializados verificáveis 
 - Revisão editorial do MENU GKR antes de merge: **pendente**.
 
 **Próximo ato com valor decisório:** manifestação especializada atribuível sobre AF-01/02/03, registrada por canal aprovado, seguida de deliberação da Direção. Evitar novo ciclo de dossiês para suprir a ausência de um parecer efetivamente emitido.
+
+
+## Atualização posterior — escolha da Alternativa B pela Direção (08/11/2026)
+
+Após o estado histórico descrito acima, a Direção aprovou expressamente a **Alternativa B — Hoje como entrada para uma experiência expandida**. Ver [Registro de Decisão — Alternativa B](decisao-direcao-alternativa-b.md). Assim, quaisquer referências anteriores a “A/B/C não selecionadas” ou “B apenas prioritária para exame” registram a condição **anterior** à decisão e não o estado atual. Permanecem pendentes a responsabilidade formal do destino expandido, os contratos de superfície/transição e toda autorização operacional.
