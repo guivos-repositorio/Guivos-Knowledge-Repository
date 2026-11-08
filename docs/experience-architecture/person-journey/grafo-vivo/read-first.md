@@ -18,7 +18,7 @@ Preservar e aprofundar a hipótese de uma experiência contextual, interativa, n
 
 ## Seção própria do GKR — organização do acervo
 
-**Este é o ponto único de entrada para o Grafo Vivo da Jornada da Pessoa.** Todos os 24 estudos e registros de decisão estão reunidos no diretório `docs/experience-architecture/person-journey/grafo-vivo/`, além deste índice. O menu deve apontar **somente para esta página de entrada**, e não duplicar individualmente os dossiês.
+**Este é o ponto único de entrada para o Grafo Vivo da Jornada da Pessoa.** Todos os 25 estudos e registros de decisão estão reunidos no diretório `docs/experience-architecture/person-journey/grafo-vivo/`, além deste índice. O menu deve apontar **somente para esta página de entrada**, e não duplicar individualmente os dossiês.
 
 **Natureza da seção:** acervo de concepção e governança em elaboração. A existência desta seção no PR em rascunho **não transforma estudos conceituais em autoridade operacional**, não promove material à Canon e não constitui publicação no GKR principal.
 
@@ -71,6 +71,7 @@ Preservar e aprofundar a hipótese de uma experiência contextual, interativa, n
 - [Verificação do Destinatário e Canal de Submissão AF-10](validacao-destinatario-canal-af10.md): área temática identificada, sem instância, canal e instrumento decisório comprovados; consulta segue não enviada.
 - [Registro de Decisão da Direção — Competência AF-10](decisao-direcao-competencia-af10.md): Direção designada como instância decisória final, consultas técnicas por domínio e GKR/GitHub como registro; sem adjudicar A/B/C ou liberar execução.
 - [Decisão da Direção — Alternativa B](decisao-direcao-alternativa-b.md): Hoje como entrada para experiência expandida; seleciona B sem criar nova superfície, TRN, integração ou autorização operacional.
+- [Especificação Funcional Candidata da Experiência Expandida — Alternativa B](especificacao-funcional-experiencia-expandida-b.md): entrada voluntária, três modalidades, alternância, retorno, estados, recuperação, limites de dados e decisões de competência pendentes.
 
 ## Navegação e fontes de autoridade
 
