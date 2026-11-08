@@ -83,3 +83,8 @@ O destino pretendido permanece a dashboard “Composição da Pessoa” do works
 - **Replit:** sem acesso/alteração nesta etapa.
 
 **Próxima deliberação recomendada:** autorizar conceitualmente contratos de entrada e retorno explícitos, com alternância interna das três modalidades, **sem criar IDs nem alterar Registries nesta primeira decisão**.
+
+
+## Atualização posterior — Entrada, retorno e alternância aprovados conceitualmente (08/11/2026)
+
+A Direção aprovou expressamente a **entrada explícita e voluntária de Hoje ao Grafo Vivo expandido**, o **retorno explícito e neutro a Hoje** e a **alternância interna entre Explorar, Escutar e Conversar**, sem criar novos IDs ou alterar os Registries. Ver [Decisão sobre Entrada, Retorno e Modalidades](decisao-direcao-entrada-retorno-modalidades.md). Referências anteriores a contrato “pendente de decisão” correspondem ao estado histórico anterior; **a diretriz conceitual está aprovada, mas o contrato formal e a reconciliação das autoridades continuam pendentes**.
