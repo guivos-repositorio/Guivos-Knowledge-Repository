@@ -76,6 +76,7 @@ Preservar e aprofundar a hipótese de uma experiência contextual, interativa, n
 - **Índice canônico desta seção no ramo de estudo:** este `read-first.md`. Não se duplicam documentos ou conclusões em novas cópias.
 - **Fonte de verdade das autoridades vigentes:** Masters da Jornada, Orquestração, Surface/Transition Registries, PAS-001, GPA-006/GIA-COG-001 e políticas de dados em seus locais originais. Os links e análises desta seção **referenciam**, mas não substituem essas autoridades.
 - **Histórico de alterações e revisão:** [PR #730](https://github.com/guivos-repositorio/Guivos-Knowledge-Repository/pull/730). Documentos anteriores de AF-10 podem preservar estados históricos, com notas de reconciliação para a decisão posterior da Direção.
+- **Canal das autorizações da Direção:** esta conversa, com solicitações e decisões expressas; GKR/GitHub consolida e registra. **Não há exigência de revisor GitHub para a Direção deliberar.** Ver [decisão AF-10 e esclarecimento posterior](decisao-direcao-competencia-af10.md).
 - **Regra de publicação:** seção preparada na branch; a exposição de material `conceptual_study` no menu principal e eventual merge deverão respeitar a governança editorial e ter autorização própria.
 
 ## Estado das decisões (07–08/11/2026)
