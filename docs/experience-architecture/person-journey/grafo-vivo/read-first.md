@@ -31,6 +31,7 @@ Preservar e aprofundar a hipótese de uma experiência contextual, interativa, n
 - [Contrato Conceitual de Sincronização e Versionamento](contrato-conceitual-sincronizacao-versionamento.md): consistência temporal, referências de versão, mudanças concorrentes, falhas e revogações entre contexto, grafo, conversa e narração.
 - [Matriz de Estados de Coerência e Recuperação Multimodal](matriz-estados-coerencia-recuperacao-multimodal.md): interrupções, falhas parciais, mudanças de versões, alternativas acessíveis e retomada governada.
 - [Quadro Consolidado de Prontidão Conceitual e Pendências de Adjudicação](quadro-consolidado-prontidao-pendencias.md): inventário de evidências, maturidades, gates, riscos e fronteiras para futuras decisões.
+- [Dossiê de Competências e Adjudicação de Entrada Funcional](dossie-competencias-adjudicacao-entrada-funcional.md): alternativas A/B/C de localização, efeitos sobre PER-008/Registries e quesitos a decidir sem seleção automática.
 
 ## Estado das decisões (07/11/2026)
 
