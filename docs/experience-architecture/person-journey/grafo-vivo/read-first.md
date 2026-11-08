@@ -21,6 +21,7 @@ Preservar e aprofundar a hipótese de uma experiência contextual, interativa, n
 - [Visão conceitual — Grafo Vivo e Contexto Vivo](visao-conceitual.md): proposta, capacidades, princípios e questões abertas.
 - [Arquitetura Conceitual e Integrações Candidatas](arquitetura-conceitual-integracoes.md): camadas, fluxo de dados, provedores candidatos, dependências, riscos e gates.
 - [Modelo de Nós, Relações e Memória Contextual](modelo-nos-relacoes-memoria.md): famílias e relações candidatas, proveniência, temporalidade, exemplos e limites.
+- [Experiência Conceitual nos Quatro Momentos](experiencia-quatro-momentos.md): primeiro acesso, retorno, atualização por conversa e relatório narrado interativo.
 
 ## Estado das decisões (07/11/2026)
 
