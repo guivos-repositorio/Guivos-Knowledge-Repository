@@ -190,3 +190,8 @@ A decisão B, por si, **não aprova** implementação no workspace [Jornada da P
 5. Autorização específica de Design/desenvolvimento/testes/publicação conforme cada alcance.
 
 **Estado deste documento:** especificação funcional candidata preparada em PR rascunho; nenhuma mudança nos Masters/Registries, no GKR publicado ou no Replit.
+
+
+## Atualização posterior de decisão (08/11/2026)
+
+A Direção selecionou expressamente a **possibilidade 2 — responsabilidade funcional distinta** para o destino expandido. Ver [Registro de Decisão — Responsabilidade Distinta](decisao-direcao-responsabilidade-distinta.md). Assim, a alternativa “estado de responsabilidade existente” mencionada nos quesitos anteriores fica preservada como hipótese histórica **não selecionada**; o próximo exame deverá tratar de **contratos de entrada e retorno**, elegibilidade na primeira entrada e representação documental da responsabilidade, sem criar automaticamente nova superfície, PER-ID, TRN-ID ou autorização operacional.
