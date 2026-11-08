@@ -19,6 +19,7 @@ Preservar e aprofundar a hipótese de uma experiência contextual, interativa, n
 ## Documentos
 
 - [Visão conceitual — Grafo Vivo e Contexto Vivo](visao-conceitual.md): proposta, capacidades, princípios e questões abertas.
+- [Arquitetura Conceitual e Integrações Candidatas](arquitetura-conceitual-integracoes.md): camadas, fluxo de dados, provedores candidatos, dependências, riscos e gates.
 
 ## Estado das decisões (07/11/2026)
 
