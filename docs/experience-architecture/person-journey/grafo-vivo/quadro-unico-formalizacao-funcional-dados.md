@@ -857,6 +857,69 @@ Em paralelo, instruir a ficha da futura unidade I-A sob owner documental da Arqu
 
 **Marco de continuidade atualizado:** a aprovação da Alternativa A foi incorporada à §18; o exame I-A/B01 foi efetuado em nível de **diagnóstico documental condicionado**. A próxima atividade é instruir os gates ainda sem decisão, preservando todo o histórico, o acervo centralizado e o PR #730.
 
+
+### 18.9 Autorização da Direção — aprofundamentos de procedimento registral I-A e linhagem B01
+
+> **Aprovação expressa nesta conversa:** “de acordo” em resposta à recomendação de preparar (1) o quadro focal do procedimento registral I-A e (2) a matriz de linhagem e versão da compreensão contextual B01, exclusivamente como **instrução documental condicionada**, no Quadro Único e PR #730. Não é ato de identificação, numeração, definição de fonte canônica, política de dados ou autorização operacional.
+
+### 18.10 Quadro focal do procedimento registral I-A — instrução condicionada
+
+**Objeto:** estabelecer critérios e provas a obter para futura decisão competente, sem executar esse procedimento nem assumir campos ou faixas numéricas como aprovados.
+
+| Etapa de futura formalização | Referências a confrontar | Evidência indispensável | Competência / decisão pendente | Estado neste exame |
+| --- | --- | --- | --- | --- |
+| Enquadramento da unidade | Diretriz R2/I-A; Surface Registry v0.36.22; detalhamento Pessoa v0.23.8 | Regras de pertencimento à família Pessoa, distinção entre unidade funcional e modo interno, vínculo com Hoje/PER-008 | Arquitetura da Experiência instrui; Direção decide inclusão | **Não adjudicado** |
+| Nomenclatura registral | Designação de trabalho da ficha §18.2; convenções registradas vigentes | Nome compatível, único e sem confusão com Explorar/Escutar/Conversar | Ato próprio da Direção | **Nome oficial não atribuído** |
+| Identificador/numeração | Inventário efetivamente vigente e procedimento de emissão/controle de unicidade, a verificar na ocasião | Integridade das famílias, existência de critérios de alocação, ausência de colisão e registro de autorização | Competência registral a confirmar; nenhuma alocação antecipada | **Nenhum ID criado ou reservado** |
+| Maturidade | Estado candidato/não validado; vocabulário admitido pelo Registry | Correspondência com estados oficialmente permitidos; evidências reais de validação | Ato de formalização posterior | **Descrição de trabalho, não status oficial** |
+| Entrada e retorno | Hoje/PER-008; minutas CT-01/CT-02; Transition Registry v0.29.26 | Condições de voluntariedade, retorno neutro e contratos distintos, sem reutilizar TRN-007..013 | Aprovação de transições separada, se proposta | **Handoffs candidatos, sem TRN** |
+| Impacto e consistência | Surface Registry, detalhamento Pessoa, Transition Registry, Master PER-008 v0.1.0, Orquestração v0.4.0 | Matriz de delta conjunta, contagens, links, dependências e preservação de autoridades | Alterações coordenadas somente após ato expresso | **Nenhum arquivo dessas famílias alterado** |
+| Dependências de dados | B01/B02 e B03–B12; GIA, PAS-001, Dados/Privacidade | Proveniência, leitura elegível, versões e limites por finalidade | Pareceres competentes ainda não recebidos | **Não pronto para aplicação normativa/operacional** |
+
+**Teste de admissibilidade registral (proposto, não executado):** antes de qualquer identificação oficial, comprovar cumulativamente: decisão de inclusão pela Direção; procedimento de identificação reconhecido; classificação/nomenclatura; maturidade admissível; contrato de transições e impacto coordenado; suficiência e permissões de dados compatíveis. O resultado deste quadro é **INSTRUÇÃO / PENDENTE DE ATO**, não aprovação de registro.
+
+**Não conclusões:** não inferir que o próximo número disponível de uma série deva ser usado; não tratar “I-A” como ID registral; não presumir que a existência de uma unidade própria implique rota ou tela independente; não declarar dois contratos CT como transições válidas.
+
+### 18.11 Matriz focal de linhagem e versão da compreensão contextual B01 — instrução condicionada
+
+**Objeto:** explicitar o que deve ser distinguido e rastreado entre a expressão da Pessoa, compreensão revisável, hipóteses cognitivas e objetos especializados, **sem criar esquema, tabela, API, consentimento, mecanismo de persistência ou emissor canônico por esta análise**.
+
+| Origem / transformação | Natureza epistemológica | Referência de proveniência a exigir (candidata) | Versão e atualização a adjudicar | Fronteira de autoridade / efeito no Grafo |
+| --- | --- | --- | --- | --- |
+| Expressão original da Pessoa em PER-004/005 | Declaração; não é confirmação de interpretação | Origem legítima, contexto e momento, apenas se necessários e permitidos | Como revisões preservam ou substituem declaração anterior | Jornada/Pessoa; o Grafo não reescreve fala original |
+| Compreensão apresentada/revisada em PER-007 | Interpretação estruturada e revisável | Relação com as declarações elegíveis, estado de revisão e autoria cognitiva | Qual registro mantém versão vigente e qual autoridade a emite/valida **ainda não decidido** | GIA governa interpretação; **não se presume fonte canônica de armazenamento** |
+| Lacuna/hipótese inferida pela GIA | Inferência incerta, distinta de declaração | Contexto que fundamenta hipótese, marcação de incerteza e relação com compreensão | Critérios de descarte, reavaliação e eventual promoção somente por ato autorizado | Não converter hipótese em fato, objetivo, passo ou evolução |
+| Confirmação ou retificação legítima da Pessoa | Manifestação revisional; alcance precisa ser delimitado | Referência ao trecho/hipótese revisado, sem pressupor guarda ilimitada do histórico | Precedência de estados, efeito retroativo e correção de derivados ainda pendentes | Pessoa/Jornada e GIA conforme competências; não supor revogação técnica automática |
+| Consulta a Objetivos | Objeto especializado | Referência legítima ao objeto, estado e evidência quando autorizados | Versão e permissão de leitura a decidir com PAS-001/PER-010 | Projeção informativa, sem mutação |
+| Consulta a Próximos Passos | Objeto especializado | Relação com estado/prontidão proveniente de autoridade própria | Atualização, temporalidade e acesso a definir com PAS-001/PER-011 | Não iniciar, concluir ou priorizar passos por projeção |
+| Consulta a Evolução/experiências | Evidência de trajetória quando existente | Referência a comprovação admissível, distinguindo interpretação de evidência | Critérios de atualização e ausência legítima de histórico | PAS-001/PER-012; não presumir progresso |
+| Novas falas no modo Conversar | Conteúdo de sessão, não necessariamente revisão canônica | Vínculo com sessão, propósito e eventual escolha de revisão, se autorizado | Condições para validação/persistência ou descarte **a definir** | Não incorporar automaticamente ao contexto vigente |
+| Representação gráfica / narração / transcrição | Derivado potencialmente efêmero | Fonte e versão autorizada, transformação e finalidade, quando elegível | Expiração, atualização, invalidação e destinatários a decidir | Nenhum motor/Neo4j/serviço de voz se torna fonte de verdade |
+
+**Perguntas de adjudicação a autoridades competentes:**
+
+1. **Jornada/PER-007 + GIA:** o que exatamente constitui “compreensão contextual vigente”; quando uma interpretação passa de proposta a versão revisada; que evidência dessa passagem é legitimamente disponível?
+2. **Fonte e versão B01:** qual registro autorizado detém a referência canônica da compreensão; quem emite ou valida seu estado/versão; como distinguir atualização, substituição e histórico sem presumir novo armazenamento?
+3. **PAS-001/PER-010/011/012:** quais referências e estados podem ser consultados para representação, sem alterar titularidade nem produzir comprovações derivadas?
+4. **Dados/Privacidade (B02):** que categorias e referências são estritamente necessárias para cada modo/finalidade; quais condições governam sessão, retenção, correção, revogação e destinatários?
+5. **Arquitetura/Segurança e, se autorizado, Engenharia:** quais pré-condições de invalidação de projeções, limites de fornecedores e separação entre informação canônica e técnica derivada são exigíveis? **Sem inspeção de implementação nesta fase.**
+
+**Dependências explícitas:** B03 (suficiência) exige fonte e escopo lícitos; B04 (versionamento) exige emissor e semântica de atualização; B05 (proveniência) exige distinção entre declaração, interpretação, inferência e confirmação. Nenhuma delas pode ser declarada resolvida pela simples existência desta matriz.
+
+**Resultado do exame:** a matriz oferece uma **estrutura de consulta e rastreabilidade**, não uma decisão sobre arquitetura de persistência, fonte canônica, contrato técnico de versão, políticas de dados ou integração. A cadeia continua **parcialmente instruída e pendente de adjudicação**.
+
+### 18.12 Encaminhamento e condição de avanço
+
+| Peça | Estado | Limite de eficácia |
+| --- | --- | --- |
+| Quadro focal de procedimento I-A | **Preparado como base documental condicionada** | Sem ID, reserva, nome oficial ou inclusão em Registry |
+| Matriz de linhagem/versão B01 | **Preparada como base documental condicionada** | Sem fonte canônica nova, emissor de versão homologado ou persistência |
+| Matriz B02 | **Instrumento de consulta preservado** | Sem parecer formal de Dados/Privacidade ou autorização de tratamento |
+| C1, R2, I-A, Alternativa B | **Decisões anteriores preservadas** | Não estender seu alcance à execução |
+| PR #730 | **Continuidade documental em draft** | Sem merge, publicação, alteração de Registries, Replit, Design, APIs ou testes |
+
+**Próxima apreciação recomendada à Direção:** apreciar a **suficiência instrutória** dessas duas peças e, caso aprovada, autorizar confronto documental dirigido com as autoridades e contratos já existentes para identificar **lacunas verificáveis** de procedimento I-A e de compreensão B01. Não solicitar adjudicação fictícia de Dados/Privacidade, não atribuir IDs e não promover normas sem ato separado.
+
 ---
 
 ## 19. Eficácia e limites (histórico e estado atualizado)
