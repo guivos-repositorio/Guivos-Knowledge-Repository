@@ -18,7 +18,7 @@ Preservar e aprofundar a hipótese de uma experiência contextual, interativa, n
 
 ## Seção própria do GKR — organização do acervo
 
-**Este é o ponto único de entrada para o Grafo Vivo da Jornada da Pessoa.** Todos os 23 estudos e registros de decisão estão reunidos no diretório `docs/experience-architecture/person-journey/grafo-vivo/`, além deste índice. O menu deve apontar **somente para esta página de entrada**, e não duplicar individualmente os dossiês.
+**Este é o ponto único de entrada para o Grafo Vivo da Jornada da Pessoa.** Todos os 24 estudos e registros de decisão estão reunidos no diretório `docs/experience-architecture/person-journey/grafo-vivo/`, além deste índice. O menu deve apontar **somente para esta página de entrada**, e não duplicar individualmente os dossiês.
 
 **Natureza da seção:** acervo de concepção e governança em elaboração. A existência desta seção no PR em rascunho **não transforma estudos conceituais em autoridade operacional**, não promove material à Canon e não constitui publicação no GKR principal.
 
@@ -29,7 +29,7 @@ Preservar e aprofundar a hipótese de uma experiência contextual, interativa, n
 | Conceito e três modalidades (Explorar, Escutar, Conversar) | Aprovados para aprofundamento conceitual |
 | Aprendizado Contextual Contínuo | Modelo candidato, sujeito a regras de dados e validação |
 | Instância final de decisão do Grafo Vivo | **Direção da Guivos**, conforme registro AF-10 |
-| Posicionamento funcional A/B/C | **Não selecionado**; B prioritária para exame |
+| Posicionamento funcional A/B/C | **Alternativa B aprovada pela Direção**; destino e contratos ainda pendentes |
 | Revisão técnica UX/Journey AF-01/02/03 | Solicitação documentada no PR #730; sem parecer recebido verificado |
 | Replit — Jornada da Pessoa | Futuro destino condicionado, sem auditoria ou execução autorizada |
 | Status editorial | PR #730 draft; sem merge ou publicação |
@@ -70,6 +70,7 @@ Preservar e aprofundar a hipótese de uma experiência contextual, interativa, n
 - [Minuta de Encaminhamento Institucional do AF-10](minuta-encaminhamento-institucional-af10.md): texto candidato de solicitação, perguntas à autoridade, anexos e condições para eventual envio formal.
 - [Verificação do Destinatário e Canal de Submissão AF-10](validacao-destinatario-canal-af10.md): área temática identificada, sem instância, canal e instrumento decisório comprovados; consulta segue não enviada.
 - [Registro de Decisão da Direção — Competência AF-10](decisao-direcao-competencia-af10.md): Direção designada como instância decisória final, consultas técnicas por domínio e GKR/GitHub como registro; sem adjudicar A/B/C ou liberar execução.
+- [Decisão da Direção — Alternativa B](decisao-direcao-alternativa-b.md): Hoje como entrada para experiência expandida; seleciona B sem criar nova superfície, TRN, integração ou autorização operacional.
 
 ## Navegação e fontes de autoridade
 
@@ -87,7 +88,9 @@ Preservar e aprofundar a hipótese de uma experiência contextual, interativa, n
 - Aprendizado Contextual Contínuo: identificar informações novas em conversas, distinguir afirmações de hipóteses e consolidar de modo revisável, com validação proporcional.
 - Mesma compreensão contextual fundamentando visualização, escuta e conversação.
 
-**Não aprovado/pendente:** inclusão em telas existentes, novas superfícies/IDs, taxonomia ou esquema de grafo, regras técnicas de persistência, seleção de bibliotecas e provedores de voz, políticas definitivas de retenção, cronograma, preços/planos, aplicação aos demais participantes, testes, execução e publicação operacional.
+**Posicionamento aprovado em 08/11/2026:** Alternativa B — Hoje como porta de entrada contextual para experiência expandida, sem alteração automática dos Masters ou Registries. Ver [registro de decisão](decisao-direcao-alternativa-b.md).
+
+**Não aprovado/pendente:** materialização em telas existentes, novas superfícies/IDs, taxonomia ou esquema de grafo, regras técnicas de persistência, seleção de bibliotecas e provedores de voz, políticas definitivas de retenção, cronograma, preços/planos, aplicação aos demais participantes, testes, execução e publicação operacional.
 
 ## Autoridades preservadas
 
