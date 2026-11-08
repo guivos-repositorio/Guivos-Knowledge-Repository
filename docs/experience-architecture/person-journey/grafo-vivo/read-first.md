@@ -40,6 +40,7 @@ Preservar e aprofundar a hipótese de uma experiência contextual, interativa, n
 - [Minuta de Encaminhamento Institucional do AF-10](minuta-encaminhamento-institucional-af10.md): texto candidato de solicitação, perguntas à autoridade, anexos e condições para eventual envio formal.
 - [Verificação do Destinatário e Canal de Submissão AF-10](validacao-destinatario-canal-af10.md): área temática identificada, sem instância, canal e instrumento decisório comprovados; consulta segue não enviada.
 - [Registro de Decisão da Direção — Competência AF-10](decisao-direcao-competencia-af10.md): Direção designada como instância decisória final, consultas técnicas por domínio e GKR/GitHub como registro; sem adjudicar A/B/C ou liberar execução.
+- [Análise Técnica UX/Journey — AF-01, AF-02 e AF-03](analise-tecnica-ux-journey-af01-af02-af03.md): confronto do Master de Hoje, Orquestração e Registries, com achados e perguntas para parecer especializado, sem resposta presumida.
 
 ## Estado das decisões (07/11/2026)
 
