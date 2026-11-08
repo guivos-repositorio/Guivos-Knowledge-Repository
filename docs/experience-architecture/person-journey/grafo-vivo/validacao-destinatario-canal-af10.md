@@ -79,3 +79,8 @@ O comentário de navegação do `mkdocs.yml` restringe a promoção de documento
 **Próxima ação útil:** obter da direção ou da governança uma indicação **expressa e rastreável** de destinatário, canal e instrumento para AF-10. Não produzir outros dossiês sobre o mesmo vazio como substituto dessa decisão. Com essa indicação, a minuta existente está pronta para a revisão final e o envio permitido.
 
 **Estado:** PR documental em rascunho, consulta não submetida, sem novas decisões normativas ou operacionais.
+
+
+## Atualização posterior de status — decisão da Direção em 08/11/2026
+
+A Direção **aprovou expressamente** sua atribuição como **instância de decisão final para o Grafo Vivo**, mediante consultas técnicas às autoridades pertinentes, e o **GKR/GitHub como meio de registro**. Ver [Registro de Decisão AF-10](decisao-direcao-competencia-af10.md). As constatações anteriores deste documento retratam o **estado antes dessa decisão** e não devem ser utilizadas para afirmar que a instância decisória final continua indefinida. **Não houve ainda parecer técnico de UX/Journey, seleção A/B/C, consulta formal comprovada ou autorização operacional.** O instrumento para modificações especializadas de Masters/Registries ainda exige ato próprio.
