@@ -24,6 +24,7 @@ Preservar e aprofundar a hipótese de uma experiência contextual, interativa, n
 - [Experiência Conceitual nos Quatro Momentos](experiencia-quatro-momentos.md): primeiro acesso, retorno, atualização por conversa e relatório narrado interativo.
 - [Matriz de Responsabilidades e Fronteiras Funcionais](matriz-responsabilidades-fronteiras.md): confronto com PER-007/008/010/011/012 e Intelligence, eventos, lacunas e limites.
 - [Exame de Compatibilidade com PER-008 — Hoje](exame-compatibilidade-per008.md): matriz de compatibilidade, três alternativas de acomodação, lacunas e parecer condicionado.
+- [Quadro Focal de Fronteiras Funcionais](quadro-focal-fronteiras-funcionais.md): cinco capacidades, gates entre conversa e memória, decisões pendentes e dependências de integração.
 
 ## Estado das decisões (07/11/2026)
 
