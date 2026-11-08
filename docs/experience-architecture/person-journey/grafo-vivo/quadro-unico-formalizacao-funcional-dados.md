@@ -1,11 +1,11 @@
 ---
 title: Grafo Vivo — Quadro Único de Formalização Funcional e Dados Mínimos
 status: conceptual_study
-version: 0.3.1
+version: 0.4.0
 owner: Concepção de Produto / Jornada da Pessoa
 last_updated: 2026-11-08
 normative: false
-maturity: direction_approved_unapplied_diff_references
+maturity: approved_documentary_baseline_with_focal_identity_data_analysis
 ---
 
 # Grafo Vivo — Quadro Único de Formalização Funcional e Dados Mínimos
@@ -256,7 +256,75 @@ O efeito desta decisão é **estabilizar o material de referência**, evitando r
 
 ---
 
-## 11. Eficácia e limites (histórico e estado atualizado)
+## 11. Instrução integrada de identificação, maturidade e dados — autorização da Direção (08/11/2026)
+
+A Direção respondeu **“de acordo, segue”** à recomendação de **resolver documentalmente as pendências de identificação e maturidade da responsabilidade do Grafo Vivo e requisitos de contexto/dados**, sem atribuir novos IDs ou aplicar alterações normativas. Este aprofundamento permanece dentro do **quadro único**, não abre acervo paralelo e **não é uma adjudicação de identificadores**.
+
+### 11.1 Identidade — proposta decisória focal
+
+| Questão | Critério de avaliação | Resultado desta instrução |
+| --- | --- | --- |
+| Existe competência própria? | Já demonstrada por B, R2, CT-01 | **Sim, aprovada conceitualmente pela Direção** |
+| O Grafo Vivo é só estado de Hoje? | Contrastar com Master PER-008 e decisão de responsabilidade distinta | **Não**; não voltar à hipótese R1 sem nova decisão |
+| É necessariamente uma tela visual separada? | Competência funcional ≠ materialização visual | **Não definido e não pressuposto** |
+| Pode reutilizar PER-008 como identificação do destino? | PER-008 identifica Hoje, não o destino distinto | **Não recomendado**; criaria ambiguidade de autoridade |
+| Identificação oficial nova pode ser dada agora? | Regime e autoridade de numeração, impacto no detalhamento e contagem ainda não adjudicados | **Não**; atribuir somente após autorização específica |
+| Qual a maturidade a sugerir? | R2 reconhecida documentalmente, sem contrato vigente, testes ou validação | **Candidata/não validada**; nomenclatura exata conforme convenções do Registry a aprovar |
+| Qual fonte auxiliar é necessária? | `surface-registry-person-details.md` v0.23.8 detalha contextos, precondições, retornos e autoridade por superfície | **Reconciliar esse detalhamento** na futura proposta normativa; não basta linha no inventário |
+| Quem mantém contrato e conteúdo? | Competências de Jornada/UX, Intelligence, dados, privacidade, segurança | **Responsáveis por domínio devem ser explicitados**; nenhuma delegação nova por inferência |
+
+**Recomendação para decisão posterior:** autorizar, por ato específico, a **formalização de uma entrada de responsabilidade funcional candidata e ainda não validada**, com identificação oficial **a decidir pelo processo competente**, sem exigir tela visual própria. Nesta etapa, o nome “Grafo Vivo — experiência expandida contextual” continua **designação descritiva**, não título normativo fixado.
+
+### 11.2 Representação e maturidade — efeitos documentais condicionados
+
+Se uma futura entrada for aprovada, deverão ser coordenados, com diff próprio e autorização expressa:
+
+1. `surface-registry.md`: identificação formal, responsabilidade, canal, maturidade, autoridades e referências;
+2. `surface-registry-person-details.md`: estado, job, entrada/retorno, permissão, dados, ações, falhas e contrato de superfície da Pessoa;
+3. `transition-registry.md`: **duas** passagens direcionais, identificadas conforme o destino oficial, sem tocar `TRN-007..013`;
+4. Master PER-008 e Orquestração: **somente o ajuste mínimo efetivamente exigido**, depois de exame de competência e sem absorver o Grafo Vivo;
+5. contagens, rastreabilidade e versão: atualizar **somente se e quando** identificadores e contratos forem formalmente incluídos.
+
+**Estado dos documentos nesta etapa:** todos os itens acima continuam sem edição. O Surface Registry segue v0.36.22, com 61 IDs estruturais; o Transition Registry segue v0.29.26, com 76 transições.
+
+### 11.3 Dados — critérios de elegibilidade por finalidade (propostas, não política)
+
+| Dimensão | Critério candidato verificável | Não se deve inferir |
+| --- | --- | --- |
+| Sessão | Existe acesso legítimo da Pessoa ao contexto da Jornada | Autorização para compartilhar com provedor externo |
+| Finalidade | A informação é necessária à modalidade e ao tema escolhido | Uso ilimitado para treinamento, retenção ou publicidade |
+| Origem/proveniência | A fonte e seu caráter declarado, inferido ou confirmado são distinguíveis | Que inferência seja fato validado |
+| Atualidade | Referência canônica ou indicador de vigência suficiente para explicar o estado | Que versão hipotética seja contrato de versionamento |
+| Suficiência Explorar | Existe ao menos relação/tema sustentado, ou mensagem de ausência legítima | Criação de nós artificiais para preencher a tela |
+| Suficiência Escutar | Existe conteúdo textual contextual lícito e narrável | Que qualquer serviço de áudio esteja autorizado |
+| Suficiência Conversar | Há finalidade legítima para diálogo e esclarecimento contextual | Que toda fala se torne memória persistida |
+| Primeiro Hoje | Informações permitidas e pertinentes estão disponíveis mesmo sem histórico | Histórico, progresso ou evolução presumidos |
+| Retorno | Estado canônico de Hoje reconsultável conforme permissão | Salvamento automático da conversa ou da exploração |
+| Correção/revogação | Há mecanismo a definir para invalidar derivados quando necessário | Direito de reutilizar caches, narrativas e projeções após revogação |
+
+**Sem decisão técnica nesta etapa:** fonte de verdade das versões, categorias de dados efetivamente admitidas, base jurídica, consentimentos por finalidade, prazos de retenção, critérios de dados sensíveis e eventuais envios a GPT/Claude/Gemini/Grok/Neo4j. Esses pontos exigem contratos próprios com autoridades de dados, Intelligence, Privacidade e Segurança.
+
+### 11.4 Envelope lógico mínimo para revisão de contrato — sem payload/API
+
+**Na entrada, candidato:** referência de origem Hoje; sessão autorizada sem credenciais; finalidade; categorias de contexto elegível; referência de versão quando existente; proveniência/status epistemológico necessário; estado das escolhas independentes de persistência/personalização; foco opcional. **Não** transferir áudio bruto, histórico integral ou transcrição completa por padrão.
+
+**Durante a experiência, candidato:** contexto minimizado e versão compatível para Explorar/Escutar/Conversar; qualquer nova declaração permanece distinguível de hipótese, revisão, confirmação e persistência; alternância de modos não autoriza efeitos de domínio.
+
+**No retorno, candidato:** referência mínima da rota de volta, finalização da apresentação não autorizada e reconsulta do estado canônico de Hoje; nenhuma marcação automática de progresso, objetivo, passo, consentimento, gravação ou memória.
+
+### 11.5 Matriz decisória consolidada para a próxima autorização
+
+As aprovações B, R2, CT-01/02, minutas e diffs **já estão encerradas no nível conceitual/documental**. Não reapresentá-las à Direção como escolhas abertas.
+
+**Decisão nova 1 — nível de formalização:** autorizar ou não, em ato distinto, **redigir uma proposta completa de alteração coordenada** de Surface Registry e detalhamento da Pessoa, ainda **sem aplicá-la e sem atribuir IDs**, usando maturidade “candidata/não validada” sujeita a compatibilidade editorial. Se houver pretensão de aplicação, identificar formalmente o destino primeiro.
+
+**Decisão nova 2 — contrato de dados:** autorizar ou não a produção de critérios de elegibilidade e transferência de contexto como **contrato documental candidato de dados**, sujeito a fontes de verdade e política de privacidade antes de qualquer implementação. Isso **não** aprova envio a fornecedores nem retenção.
+
+**Dependência material:** sem destino formalmente identificado e sem governança de dados adequada, os dois contratos de transição não devem ser promovidos a “validados”. Somente após essas decisões cabe um pedido específico de alterações normativas; somente depois um pedido operacional de inspeção Replit.
+
+---
+
+## 12. Eficácia e limites (histórico e estado atualizado)
 
 | Objeto | Situação |
 | --- | --- |
