@@ -109,6 +109,9 @@ nav:
       - Guivos Intelligence: product-architecture/intelligence.md
       - Guivos Ads: product-architecture/ads.md
 
+  - Guivos AI:
+      - Visão Geral: guivos-ai/index.md
+
   - Planos:
       - Visão Geral dos Planos: plans/index.md
       - Pessoa — Free, Plus e Pro: plans/person.md
