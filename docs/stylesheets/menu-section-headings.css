@@ -57,3 +57,13 @@
 .md-nav--primary .md-nav__item--section:has(.md-nav__link[href*="ads-system/read-first"]) > .md-nav__link:focus {
   color: #cf4a00;
 }
+
+
+/* Guivos AI — título exclusivo de primeiro nível no menu, preto e negrito.
+   A âncora identifica apenas a seção com a página guivos-ai/index.md. */
+.md-nav--primary .md-nav__item--section:has(.md-nav__link[href*="guivos-ai/"]) > .md-nav__link,
+.md-nav--primary .md-nav__item--section:has(.md-nav__link[href*="guivos-ai/"]) > .md-nav__link:hover,
+.md-nav--primary .md-nav__item--section:has(.md-nav__link[href*="guivos-ai/"]) > .md-nav__link:focus {
+  color: #000000;
+  font-weight: 700;
+}
