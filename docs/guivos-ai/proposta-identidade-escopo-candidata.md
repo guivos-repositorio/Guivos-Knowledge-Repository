@@ -164,3 +164,24 @@ A redação é **recomendação editorial e arquitetural**, não definição apr
 - **Não adjudicado:** escolha de alternativa, texto institucional final, mudança de autoridade de produto, promoção normativa.
 - **Não autorizado:** merge, publicação do documento candidato como fonte oficial, implantação, testes e produção.
 - **Próxima apreciação:** decisão explícita sobre a alternativa A (ou sua substituição), o contrato de não sobreposição e a formulação candidata acima.
+
+
+## 11. Deliberação da Direção — GAI-P01 e GAI-P02 (13/11/2026)
+
+**Manifestação:** a Direção respondeu **“DE ACORDO”** à recomendação expressa de aprovar a **alternativa A como identidade conceitual da Guivos AI**, preservando a distinção com Guivos Intelligence, antes de avançar aos contratos funcionais e técnicos.
+
+### 11.1 Decisão aprovada — escopo conceitual
+
+- **GAI-P01:** **alternativa A aprovada como identidade conceitual**: Guivos AI designa capacidades governadas de inteligência artificial do ecossistema, e não, por esta decisão, uma nova unidade de negócio ou produto especializado independente.
+- **GAI-P02:** **fronteira conceitual aprovada**: Guivos AI não se confunde com Guivos Intelligence; `GPA-006` conserva sua autoridade de produto. Modelos, mecanismos e capacidades de IA não absorvem responsabilidades, dados ou poderes de decisão de outros domínios.
+- **Redação de referência conceitual aprovada no escopo desta deliberação:** “Guivos AI é a denominação para as capacidades governadas de inteligência artificial do ecossistema Guivos, destinadas a apoiar a compreensão contextual, o processamento cognitivo e a apresentação de conhecimentos e possibilidades, respeitando as autoridades existentes.”
+
+### 11.2 O que a decisão não autoriza
+
+A deliberação não aprova `GAI-P03` a `GAI-P09`, não designa fornecedor, não cria arquitetura física, marca comercial autônoma, novos controles operacionais ou serviços em produção. Também **não autoriza merge da PR #731, promoção automática do documento integral a autoridade normativa, testes, implantação ou publicação funcional**.
+
+### 11.3 Tratamento de proveniência e estado
+
+A aprovação da identidade **conceitual** substitui, somente para `GAI-P01` e `GAI-P02`, os marcadores “pendente” presentes nas seções 7 e 10 anteriores. O restante do documento continua **`proposed_non_normative`**, como proposta técnica e funcional em apreciação. O próximo exame documental pode partir da decisão conceitual sem tratá-la como autorização de implementação.
+
+**Próxima frente de exame:** `GAI-P03` — superfícies e experiências aptas a usar a identidade Guivos AI, preservando finalidade, permissão e autoridade de cada produto.
