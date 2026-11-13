@@ -90,3 +90,16 @@ As enumerações públicas podem apresentar **Pessoas, Profissionais, Organizaç
 **EXAMINADO / ALTERNATIVA A RECOMENDADA / DECISÃO NORMATIVA PENDENTE.**
 
 **Próximo gate:** aprovar ou rejeitar expressamente a alternativa A e a definição candidata antes de editar o Modelo Fundamental da Jornada ou promover a proposta para o Guia Oficial.
+
+
+## Decisão da Direção — PRO-REC-01 (13/11/2026)
+
+**Manifestação:** a Direção respondeu “de acordo” à recomendação expressa de aprovar a **alternativa A — identidade de atuação vinculada à Pessoa**.
+
+**Decisão conceitual aprovada:** Profissional é a identidade funcional de atuação e oferta assumida por uma Pessoa no ecossistema Guivos, distinta de sua Jornada pessoal, com contexto, perfil, competências, responsabilidades, oportunidades e permissões próprias.
+
+A enumeração **Pessoas, Profissionais, Organizações e Coletivos** designa contextos relevantes de participação, não estabelece por si quatro naturezas humanas ou ontológicas independentes.
+
+Esta decisão encerra **PRO-REC-01 quanto ao enquadramento conceitual**. As questões **PRO-REC-02 a PRO-REC-06 permanecem pendentes**. Não há autorização de implementação, publicação funcional, acesso irrestrito a dados ou promoção automática de contratos de oportunidades.
+
+**Handoff documental:** proposta focal de reconciliação do `KU-FM-002` e da redação institucional `GOG-001` preparada nesta mesma branch. A PR continua em rascunho, e sua integração depende de revisão e autorização próprias.
