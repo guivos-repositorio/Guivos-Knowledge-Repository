@@ -1,5 +1,11 @@
 # Relações com o ecossistema
 
+## Relacionamento conceitual apresentado pela Direção
+
+**Ecossistema Guivos ⇄ Guivos Intelligence ⇄ Guivos AI ⇄ parceiros e plataformas externas**, respeitando interfaces controladas e autorizações independentes para o consumo externo por API.
+
+No esquema apresentado, a Intelligence compreende solicitações, coordena processos, integra sistemas e apresenta resultados; a Guivos AI fornece conhecimento especializado e análises de trajetórias, lacunas, compatibilidade e possibilidades futuras. A [matriz e o diagrama completos](inteligencia-de-trajetorias-possibilidades-e-evolucao.md) registram o escopo e as ressalvas. **Integração externa por API é direção estratégica, não disponibilidade operacional comprovada.**
+
 A relação entre IA, produtos e participantes deve respeitar as autoridades já definidas. Esta página **não cria novos contratos de integração**.
 
 ## Jornada da Pessoa
