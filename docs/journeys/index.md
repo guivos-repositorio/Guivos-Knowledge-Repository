@@ -30,6 +30,10 @@ normative: false
 
 # Jornadas Integradas
 
+## Atualização de escopo — Profissional (13/11/2026)
+
+A Direção incluiu **Profissional** como participante com papel de **ofertador de oportunidades**. A [referência do participante Profissional](../participants/professional.md) registra essa identidade conceitual. As listas de Pessoa, Organização e Coletivo nas seções históricas abaixo descrevem o escopo das jornadas e contratos então existentes; **não devem ser interpretadas como exclusão do novo participante**. A formalização de uma Jornada do Profissional e suas transições exige documentação própria, sem presumir ativação de fluxos já especificados para outros participantes.
+
 ## 1. Finalidade
 
 Esta seção descreve a continuidade corrente entre Homes públicas e experiências de **Pessoa, Coletivo, Organização e Guivos Business**.
