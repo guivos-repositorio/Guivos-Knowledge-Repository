@@ -1,5 +1,13 @@
 # Guivos AI
 
+## **Inteligência de Trajetórias, Possibilidades e Evolução**
+
+> **Compreender o presente, aprender com a trajetória e identificar as condições e oportunidades que podem tornar novas possibilidades futuras mais acessíveis.**
+
+**Diretriz conceitual da Direção, 13/11/2026.** A Guivos AI concentra especialização e análise: produz conhecimento analítico fundamentado sobre trajetórias, contextos, lacunas, compatibilidade e possibilidades futuras. Suas entregas propostas incluem análises, evidências, hipóteses e relatórios, consumíveis pela Guivos Intelligence e, mediante contratos e autorizações futuros, por sistemas externos via API.
+
+[**Leia o registro completo do papel, responsabilidades, modelo de relacionamento e direção de API.**](inteligencia-de-trajetorias-possibilidades-e-evolucao.md)
+
 > **Seção documental da Guivos AI no GKR.** Esta página organiza o conhecimento existente, as hipóteses em exame e as lacunas ainda não deliberadas. Sua publicação não significa que a Guivos AI esteja implementada ou que constitua, por si, um produto especializado autônomo.
 
 ## O que já se pode afirmar
@@ -12,6 +20,7 @@ As perspectivas **retrospectiva**, **contextual** e **prospectiva** foram examin
 
 | Assunto | O que encontrará |
 | --- | --- |
+| [Inteligência de Trajetórias, Possibilidades e Evolução](inteligencia-de-trajetorias-possibilidades-e-evolucao.md) | Diretriz central, matriz de responsabilidades, relacionamento e integração por API | 
 | [Identidade e fronteiras](identidade-e-fronteiras.md) | Diferença entre Guivos AI, Intelligence, modelos de linguagem e produtos do ecossistema |
 | [Perspectivas de compreensão](perspectivas.md) | Passado registrado, contexto atual e futuros possíveis — com limitações de evidência |
 | [Arquitetura cognitiva](arquitetura-cognitiva.md) | Fluxo lógico de contexto, evidência, processamento, explicabilidade e decisão humana |
