@@ -1,5 +1,7 @@
 # Guivos AI
 
+**Para conhecer a Guivos AI em linguagem simples:** [leia a Apresentação da Guivos AI](apresentacao-da-guivos-ai.md), com exemplos de viagens, compras, cursos, esportes, carreira, intenções, aprendizados e possibilidades futuras.
+
 ## **Inteligência de Trajetórias, Possibilidades e Evolução**
 
 > **Compreender o presente, aprender com a trajetória e identificar as condições e oportunidades que podem tornar novas possibilidades futuras mais acessíveis.**
@@ -20,6 +22,7 @@ As perspectivas **retrospectiva**, **contextual** e **prospectiva** foram examin
 
 | Assunto | O que encontrará |
 | --- | --- |
+| [Apresentação da Guivos AI](apresentacao-da-guivos-ai.md) | O que é, o que faz e como aprende, explicado com exemplos cotidianos |
 | [Inteligência de Trajetórias, Possibilidades e Evolução](inteligencia-de-trajetorias-possibilidades-e-evolucao.md) | Diretriz central, matriz de responsabilidades, relacionamento e integração por API | 
 | [Identidade e fronteiras](identidade-e-fronteiras.md) | Diferença entre Guivos AI, Intelligence, modelos de linguagem e produtos do ecossistema |
 | [Perspectivas de compreensão](perspectivas.md) | Passado registrado, contexto atual e futuros possíveis — com limitações de evidência |
