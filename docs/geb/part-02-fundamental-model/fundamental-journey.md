@@ -2,12 +2,12 @@
 id: KU-FM-002
 title: Modelo Fundamental da Jornada
 status: consolidated
-version: 1.1.1
+version: 1.1.2
 domain: Fundamental Model
 stability: Core
 owner: Guivos
 created: 2026-06-27
-updated: 2026-07-12
+updated: 2026-11-13
 depends_on:
   - KU-FM-001
 related_adrs:
@@ -49,7 +49,9 @@ flowchart TD
 
 ### Participante
 
-É a entidade que percorre a jornada. Pode ser uma pessoa, organização ou coletivo.
+É a entidade que percorre a jornada. Os contextos de participação incluem **Pessoa, Profissional, Organização e Coletivo**, observadas suas identidades e autoridades próprias. **Profissional** é a identidade funcional de atuação e oferta assumida por uma Pessoa, distinta de sua Jornada pessoal; sua inclusão não cria outra pessoa humana nem transfere automaticamente dados ou permissões entre os contextos.
+
+Esta precisão de escopo decorre de decisão conceitual da Direção sobre **PRO-REC-01**. As condições para o Profissional cadastrar ou publicar oportunidades dependem de contratos próprios, não definidos neste modelo.
 
 ### Momento Atual
 
