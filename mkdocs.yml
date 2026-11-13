@@ -111,6 +111,12 @@ nav:
 
   - Guivos AI:
       - Visão Geral: guivos-ai/index.md
+      - Identidade e Fronteiras: guivos-ai/identidade-e-fronteiras.md
+      - Perspectivas de Compreensão: guivos-ai/perspectivas.md
+      - Arquitetura Cognitiva: guivos-ai/arquitetura-cognitiva.md
+      - Relações com o Ecossistema: guivos-ai/integracoes.md
+      - Governança e Pendências: guivos-ai/governanca-e-pendencias.md
+      - Fontes e Rastreabilidade: guivos-ai/fontes.md
 
   - Planos:
       - Visão Geral dos Planos: plans/index.md
