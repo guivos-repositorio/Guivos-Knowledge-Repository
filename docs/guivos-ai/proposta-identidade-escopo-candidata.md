@@ -114,3 +114,53 @@ A recomendação é analítica e não aprova a definição da seção 4. Após d
 - **Promoção normativa:** não autorizada.
 - **Implantação, teste e produção:** não autorizados.
 - **Próximo gate:** apreciação expressa da Direção quanto a GAI-P01/GAI-P02 e à redação candidata.
+
+
+## 10. Exame focal autorizado em 13/11/2026 — GAI-P01 e GAI-P02
+
+**Alcance da manifestação:** a Direção concordou em avançar com o exame recomendado das questões GAI-P01 e GAI-P02. O acordo **autoriza a análise e o registro da proposta para apreciação**, não equivale a escolha expressa de uma alternativa nem a aprovação normativa da redação candidata. As duas questões continuam pendentes de adjudicação.
+
+### 10.1 GAI-P01 — Enquadramento da Guivos AI
+
+| Alternativa | Descrição | Compatibilidade com o corpus | Tensão ou requisito |
+| --- | --- | --- | --- |
+| A — Identidade de capacidades de IA | Nome que reúne mecanismos cognitivos e de IA, subordinados às autoridades existentes | Mais diretamente compatível com GAI-001, GAI-002, GIA-000 e diagnóstico temporal | Demanda delimitar nome, responsabilidade e uso público sem criar autoridade paralela |
+| B — Serviço técnico transversal com contrato próprio | Capacidade consumida por produtos conforme finalidades, permissões e interfaces definidas | Potencialmente compatível, desde que subordinada à Platform/Engineering e à GIA quando cognitiva | Exige contratos de serviço, owner operacional, autorização de uso, SLAs e fronteiras técnicas ainda não aprovadas |
+| C — Novo produto especializado ou unidade independente | Identidade comercial e funcional própria com autoridade de produto | **Não sustentada pelas autoridades examinadas** | Exigiria nova decisão superior, reconciliação com GPA-006 e arquitetura de produtos |
+
+**Orientação candidata:** adotar **A como hipótese conceitual de trabalho**, sem descartar que um futuro contrato técnico possa incorporar elementos de B. Não representar C como já decidido.
+
+**Justificativa:** o corpus define IA como meio técnico da Inteligência do Ecossistema, a GIA-COG como arquitetura subordinada e a Intelligence como produto com identidade própria. Essa combinação não cria automaticamente um novo produto Guivos AI.
+
+### 10.2 GAI-P02 — Fronteira com Guivos Intelligence
+
+| Pergunta | Guivos Intelligence — autoridade vigente | Guivos AI — hipótese delimitadora |
+| --- | --- | --- |
+| O que governa? | Identidade do produto, proposta de valor e responsabilidades da Intelligence Layer (GPA-006) | Não governa produto; agrupa capacidades e mecanismos de IA elegíveis segundo contratos |
+| Qual valor é entregue? | Compreensão útil e contextualizada para consumidores autorizados | Contribuição instrumental para elaborar, organizar ou apresentar resultados cognitivos, quando permitida |
+| Quem decide? | Pessoa ou domínio responsável, conforme suas próprias autoridades | Não recebe autoridade decisória automática |
+| Quem determina dados acessíveis? | Autoridades de produto, finalidade, governança, Platform e contratos de dados | Não amplia acesso por ser capacidade técnica |
+| Como funciona? | Produto possui responsabilidades e contratos próprios | Tecnologias, modelos, orquestração e serviços só após deliberação técnica competente |
+| Há identidade comercial própria? | Produto especializado reconhecido no GKR | **Não demonstrada nem aprovada** pelo exame |
+
+**Contrato de não sobreposição proposto para apreciação:**
+
+1. A identidade **Guivos AI** não absorve o produto **Guivos Intelligence** nem sua autoridade `GPA-006`.
+2. Resultados gerados com IA não substituem revisão de proveniência, evidência, risco, incerteza e autorização de divulgação.
+3. Nenhuma incorporação da Guivos AI em Journey, Business ou outro produto substitui contratos específicos desses domínios.
+4. GAI-001, GAI-002, GIA-000 e GIA-COG-001 permanecem referências existentes; esta proposta não altera seus owners ou normas.
+5. O termo “Guivos AI” não implica fornecedor único, modelo específico, agente autônomo, treinamento irrestrito, grafo ou produto comercial pronto.
+
+### 10.3 Formulação recomendada para decisão futura
+
+> **Guivos AI é a denominação candidata para as capacidades governadas de inteligência artificial do ecossistema Guivos, que podem apoiar processamento cognitivo, compreensão contextual e apresentação de conhecimento e possibilidades, sempre subordinadas às autoridades existentes, especialmente à Guivos Intelligence quando atuarem em suas responsabilidades de produto.**
+
+A redação é **recomendação editorial e arquitetural**, não definição aprovada. Seu enquadramento institucional definitivo depende da apreciação expressa da Direção.
+
+### 10.4 Quadro de decisão do gate
+
+- **Autorizado:** exame comparativo de GAI-P01 e GAI-P02 e documentação candidata na PR #731.
+- **Resultado do exame:** alternativa A é a mais compatível com as referências examinadas; B depende de contratos futuros; C não é sustentada pelo corpus atual.
+- **Não adjudicado:** escolha de alternativa, texto institucional final, mudança de autoridade de produto, promoção normativa.
+- **Não autorizado:** merge, publicação do documento candidato como fonte oficial, implantação, testes e produção.
+- **Próxima apreciação:** decisão explícita sobre a alternativa A (ou sua substituição), o contrato de não sobreposição e a formulação candidata acima.
