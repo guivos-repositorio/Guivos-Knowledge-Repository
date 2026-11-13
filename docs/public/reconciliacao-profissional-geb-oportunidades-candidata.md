@@ -103,3 +103,76 @@ A enumeração **Pessoas, Profissionais, Organizações e Coletivos** designa co
 Esta decisão encerra **PRO-REC-01 quanto ao enquadramento conceitual**. As questões **PRO-REC-02 a PRO-REC-06 permanecem pendentes**. Não há autorização de implementação, publicação funcional, acesso irrestrito a dados ou promoção automática de contratos de oportunidades.
 
 **Handoff documental:** proposta focal de reconciliação do `KU-FM-002` e da redação institucional `GOG-001` preparada nesta mesma branch. A PR continua em rascunho, e sua integração depende de revisão e autorização próprias.
+
+
+## Exame focal — PRO-REC-02: ofertar, cadastrar e publicar oportunidades (13/11/2026)
+
+**Escopo:** análise documental para fundamentar a futura decisão sobre o direito de oferta do Profissional. Não cria permissão operacional.
+
+### 1. Distinções indispensáveis
+
+- **Ser Profissional**: assumir uma identidade funcional de atuação vinculada à Pessoa (PRO-REC-01).
+- **Poder ofertar conceitualmente**: categoria de participante contemplada como potencial origem de oportunidades.
+- **Poder cadastrar**: possuir autorização para criar e manter rascunhos em superfície governada.
+- **Poder submeter**: possuir autorização para encaminhar proposta de oferta à verificação ou aprovação correspondente.
+- **Poder publicar/ativar**: possuir autorização específica, após regras aplicáveis, para tornar a oportunidade disponível.
+- **Poder realizar a atividade**: cumprir qualificações, legislação, condições materiais, consentimento e responsabilidades próprias.
+
+Uma etapa não autoriza automaticamente a seguinte.
+
+### 2. Compatibilidade com os documentos existentes
+
+| Fonte | O que sustenta | O que não transfere |
+| --- | --- | --- |
+| [Participante Profissional](../participants/professional.md) | Participante potencialmente ofertador, com identidade de atuação própria | Publicação, monetização e escopo regulado automáticos |
+| [PAS-001 — Oportunidades Ativas](../product-architecture/pas-001-oportunidades-ativas-fundamentos-iniciais.md) | O Profissional já consta em atores e exemplos de oportunidade e orientação | Contrato completo de publicação do Profissional |
+| [Master ORG-002](../experience-architecture/organizations-collectives-journey/organization-opportunity-registration-master.md) | Fluxo institucional da Organização, com distinção cadastro/publicação | Direitos, autorizações ou titularidade para Profissional |
+| [PRO-REC-01](#decisão-da-direção--pro-rec-01-13112026) | Identidade funcional profissional vinculada à Pessoa | Habilitação e elegibilidade para tipos específicos de oferta |
+
+### 3. Categorias de oportunidades — hipótese de elegibilidade
+
+| Categoria ilustrativa | Exemplos | Verificação necessária |
+| --- | --- | --- |
+| Educação e conhecimento | Aulas, mentorias, oficinas, capacitações | Competência, conteúdo, autoria, condições e transparência |
+| Atividades e experiências | Workshops, encontros e atividades conduzidas | Escopo, local/formato, segurança, elegibilidade |
+| Projetos e trabalho especializado | Colaborações, projetos e prestação de serviços | Responsabilidade, requisitos e regras comerciais |
+| Esportes e bem-estar | Aulas e atividades, quando permitidas | Habilitação, segurança e limites de profissão regulamentada |
+| Orientações especializadas | Consultorias e atendimentos | Licenças, deveres legais, privacidade e fronteiras profissionais |
+| Oportunidades ao vivo | Aulas ou workshops com transmissão/interação síncrona | Contrato próprio de Oportunidades ao Vivo, modalidade, transmissão, agenda e responsabilidade |
+
+A enumeração **não aprova** a publicação dessas categorias nem substitui exame de elegibilidade setorial. Atuação médica, psicológica, jurídica, financeira, educacional regulamentada ou outras profissões sujeitas a licença exigem limites e validação próprios.
+
+### 4. Modelo de estados candidato (não implantado)
+
+```text
+Identidade Profissional habilitada para o contexto
+  → Rascunho
+  → Cadastro completo para submissão
+  → Submetida à verificação aplicável
+  → Aprovada / Correção solicitada / Rejeitada
+  → Publicada / Ativa
+  → Pausada / Encerrada / Cancelada
+```
+
+Esse mapa serve exclusivamente para estudo. Estados, gatilhos, responsáveis, reversões, automações e notificações **ainda precisam de reconciliação com o ciclo canônico de Oportunidades Ativas**, sem introduzir fluxo paralelo de autoridade.
+
+### 5. Informações mínimas candidatas para estudo
+
+Identidade de oferta do Profissional; especialidade e capacidade declaradas; título e descrição da oportunidade; público e condições de participação; local/online, data e duração; número de participantes ou disponibilidade quando aplicável; valores, pontos ou condições financeiras se autorizados; requisitos de habilitação; política de cancelamento; evidências de segurança/regras; estado de revisão; titularidade; auditabilidade.
+
+**Não exigir ou coletar dados de forma irrestrita**. Os campos reais e suas obrigatoriedades dependem de finalidade, tipo e permissões, e não são instituídos aqui.
+
+### 6. Decisões pendentes para PRO-REC-02
+
+1. **PRO-02A — Direito-base:** Profissional habilitado poderá criar rascunhos de oportunidade por regra geral ou somente após autorização individual/categorial?
+2. **PRO-02B — Publicação:** quem aprova e sob quais gates uma oferta se torna ativa?
+3. **PRO-02C — Catálogo:** quais classes são permitidas, condicionadas ou vedadas para esse ator?
+4. **PRO-02D — Credenciais:** quais especialidades exigem comprovação e revisão periódica?
+5. **PRO-02E — Fluxo:** reutilizar infraestrutura comum sem copiar a autoridade institucional ORG-002; quais eventos e estados governam?
+6. **PRO-02F — Econômico e interação:** que ofertas admitem pontos, preço, pagamentos, inscrições, publicidade ou relações, sob contratos futuros?
+
+### 7. Recomendação para apreciação
+
+**Recomenda-se reconhecer conceitualmente o Profissional como ofertador elegível em princípio, mas condicionar o direito de cadastrar, submeter e publicar oportunidades a um contrato próprio por categorias, habilitações e responsabilidades.** A existência de uma identidade Profissional não concede licença universal de atuação nem publicação automática.
+
+**Estado do gate:** `PRO-REC-02 EXAMINADO / PROPOSTA NÃO NORMATIVA / DECISÕES PRO-02A…F PENDENTES`. A PR permanece rascunho; sem merge, implementação, habilitação operacional ou alteração em `PAS-001`.
