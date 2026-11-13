@@ -8,6 +8,10 @@ No esquema apresentado, a Intelligence compreende solicitações, coordena proce
 
 A relação entre IA, produtos e participantes deve respeitar as autoridades já definidas. Esta página **não cria novos contratos de integração**.
 
+## Profissional — ofertador de oportunidades
+
+O [Profissional](../participants/professional.md) integra o ecossistema como participante que poderá oferecer oportunidades dentro das regras da própria atuação. A Guivos AI poderá apoiar a compreensão de especialidades, requisitos e compatibilidades, sem conferir acesso automático aos dados privados da Pessoa nem autorizar funcionalidades ainda pendentes de contratos.
+
 ## Jornada da Pessoa
 
 Segundo [GPA-006](../product-architecture/intelligence.md), a frente Pessoa/Journey pode ser apoiada por compreensão contextual, identificação de possibilidades, relevância e recomendações explicáveis dentro de finalidade e autorização. A Pessoa conserva autoridade sobre suas escolhas. O uso de contexto individual para personalização não implica sua divulgação a empresas.
@@ -22,7 +26,7 @@ Consulte [Guivos Business](../product-architecture/business.md) e [GPA-006](../p
 
 ## Demais produtos e Homes
 
-O [diagnóstico temporal entre Homes](../experience-architecture/public-homes-guivos-ai-temporal-compatibility-diagnostic.md) examinou compatibilidade conceitual com Pessoa, Organizações e Coletivos, Mall, Travel, Media, Ads e Business. Trata-se de **diagnóstico não normativo**, não de disponibilização de IA em cada produto.
+O [diagnóstico temporal entre Homes](../experience-architecture/public-homes-guivos-ai-temporal-compatibility-diagnostic.md) examinou compatibilidade conceitual com Pessoa, Organizações e Coletivos, Mall, Travel, Media, Ads e Business. O Profissional foi incluído posteriormente como participante ofertador e exige análise própria, não sendo correto afirmar que o diagnóstico histórico já o examinou. Trata-se de **diagnóstico não normativo**, não de disponibilização de IA em cada produto.
 
 ## Fronteira de integração
 
