@@ -47,7 +47,7 @@ EXPERIÊNCIA
 
 **Texto candidato à reconciliação do Public Canon:** o ecossistema contempla Pessoas, **Profissionais**, Organizações e Coletivos. O Profissional representa uma identidade de atuação e oferta, com possibilidade de disponibilizar oportunidades dentro de regras específicas, distinta da Pessoa em sua experiência individual, da Organização institucional e do Coletivo.
 
-Esta inclusão não transforma automaticamente todo participante em publicador, não cria nova Home, nem reescreve os contratos de publicação, representação, monetização e avaliação já aplicáveis aos outros participantes. A atualização de enumerações deve ser acompanhada de reconciliação com o GEB e com a arquitetura de jornadas.
+**Enquadramento conceitual aprovado (PRO-REC-01):** Profissional é uma identidade funcional de atuação e oferta vinculada a uma Pessoa, mas distinta de sua Jornada pessoal. A enumeração Pessoas, Profissionais, Organizações e Coletivos apresenta contextos de participação, não quatro identidades humanas independentes. Esta inclusão não transforma automaticamente todo participante em publicador, não cria nova Home, nem reescreve os contratos de publicação, representação, monetização e avaliação já aplicáveis aos outros participantes. A atualização de enumerações deve ser acompanhada de reconciliação com o GEB e com a arquitetura de jornadas.
 
 **Este conteúdo permanece candidato enquanto a PR não for integrada.**
 
