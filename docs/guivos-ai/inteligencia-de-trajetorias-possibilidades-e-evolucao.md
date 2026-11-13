@@ -46,7 +46,7 @@ O modelo abaixo registra a arquitetura **conceitual proposta pela Direção**, n
 
 ```mermaid
 flowchart TD
-  E["Ecossistema Guivos<br/>Pessoas · Organizações · Coletivos · Produtos e serviços"]
+  E["Ecossistema Guivos<br/>Pessoas · Profissionais · Organizações · Coletivos · Produtos e serviços"]
   I["Guivos Intelligence<br/>Compreende solicitações, coordena processos,<br/>integra sistemas e apresenta resultados"]
   A["Guivos AI<br/>Conhecimento especializado; análise de trajetórias,<br/>lacunas, compatibilidade e possibilidades futuras"]
   X["Parceiros e plataformas externas<br/>Consumo autorizado de serviços Guivos AI por API"]
@@ -58,7 +58,9 @@ flowchart TD
 
 ### 2.1 Ecossistema Guivos
 
-Pessoas, Organizações, Coletivos, produtos e serviços constituem o contexto em que informações, necessidades, experiências e oportunidades podem ser apresentadas e interpretadas segundo suas próprias permissões e autoridades.
+Pessoas, Profissionais, Organizações, Coletivos, produtos e serviços constituem o contexto em que informações, necessidades, experiências e oportunidades podem ser apresentadas e interpretadas segundo suas próprias permissões e autoridades.
+
+**Profissionais** integram os participantes ofertadores de oportunidades, com identidade, atuação e condições próprias. Sua presença não altera automaticamente os contratos de outros participantes. Consulte [Profissional](../participants/professional.md).
 
 ### 2.2 Guivos Intelligence
 
