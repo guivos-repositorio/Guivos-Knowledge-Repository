@@ -6,6 +6,8 @@
 
 > **Compreender o presente, aprender com a trajetória e identificar as condições e oportunidades que podem tornar novas possibilidades futuras mais acessíveis.**
 
+**Participantes do ecossistema:** Pessoas, Profissionais, Organizações e Coletivos. Os Profissionais também podem ofertar oportunidades nos limites de sua atuação e dos contratos aplicáveis. [Conheça o participante Profissional](../participants/professional.md).
+
 **Diretriz conceitual da Direção, 13/11/2026.** A Guivos AI concentra especialização e análise: produz conhecimento analítico fundamentado sobre trajetórias, contextos, lacunas, compatibilidade e possibilidades futuras. Suas entregas propostas incluem análises, evidências, hipóteses e relatórios, consumíveis pela Guivos Intelligence e, mediante contratos e autorizações futuros, por sistemas externos via API.
 
 [**Leia o registro completo do papel, responsabilidades, modelo de relacionamento e direção de API.**](inteligencia-de-trajetorias-possibilidades-e-evolucao.md)
