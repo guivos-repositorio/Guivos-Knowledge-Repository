@@ -2,9 +2,9 @@
 id: GOG-001
 title: Guia Oficial da Guivos
 status: public-canon
-version: 5.3.1
+version: 5.3.2
 owner: Guivos
-last_updated: 2026-09-25
+last_updated: 2026-11-13
 classification: Documento Institucional Público
 source: Derived from GKR Canon
 update_cycle: Continuous
@@ -18,10 +18,10 @@ update_cycle: Continuous
 |---|---|
 | Nome | Guia Oficial da Guivos |
 | Finalidade | Explicar publicamente o que é a Guivos, como o ecossistema é organizado, seus princípios e seus limites de maturidade |
-| Público | Pessoas, Coletivos, Organizações, clientes, parceiros, imprensa, investidores, fornecedores, colaboradores e interessados |
+| Público | Pessoas, Profissionais, Coletivos, Organizações, clientes, parceiros, imprensa, investidores, fornecedores, colaboradores e interessados |
 | Responsável | Guivos |
-| Versão | 5.3.1 |
-| Última atualização | 25/09/2026 |
+| Versão | 5.3.2 (candidata, sujeita a revisão e merge) |
+| Última atualização | 13/11/2026 (proposta) |
 | Status | Public Canon |
 | Fonte | Guivos Knowledge Repository |
 
@@ -43,11 +43,19 @@ EXPERIÊNCIA
 ≠ IMPACTO COMPROVADO
 ```
 
+## Proposta de atualização — Profissional como ofertador
+
+**Texto candidato à reconciliação do Public Canon:** o ecossistema contempla Pessoas, **Profissionais**, Organizações e Coletivos. O Profissional representa uma identidade de atuação e oferta, com possibilidade de disponibilizar oportunidades dentro de regras específicas, distinta da Pessoa em sua experiência individual, da Organização institucional e do Coletivo.
+
+Esta inclusão não transforma automaticamente todo participante em publicador, não cria nova Home, nem reescreve os contratos de publicação, representação, monetização e avaliação já aplicáveis aos outros participantes. A atualização de enumerações deve ser acompanhada de reconciliação com o GEB e com a arquitetura de jornadas.
+
+**Este conteúdo permanece candidato enquanto a PR não for integrada.**
+
 ---
 
 # 1. O problema que a Guivos busca reduzir
 
-Uma pessoa pode querer melhorar a carreira, estudar, cuidar da saúde, fortalecer relacionamentos ou espiritualidade, viajar, empreender, participar de uma comunidade ou apoiar uma causa. Organizações e Coletivos também vivem Momentos, necessidades, responsabilidades e decisões próprias.
+Uma pessoa pode querer melhorar a carreira, estudar, cuidar da saúde, fortalecer relacionamentos ou espiritualidade, viajar, empreender, participar de uma comunidade ou apoiar uma causa. Profissionais, Organizações e Coletivos também possuem contextos de atuação, necessidades, responsabilidades e decisões próprias.
 
 Existem muitas informações, serviços, comunidades, produtos, experiências e oportunidades, mas elas normalmente estão espalhadas entre plataformas e instituições diferentes.
 
@@ -66,7 +74,7 @@ A Guivos nasce para reduzir essas distâncias.
 
 # 2. O que é a Guivos
 
-A Guivos é um ecossistema criado para **ampliar condições, percepção, acesso, conexão e possibilidades** para que Pessoas, Organizações e Coletivos possam compreender melhor seu Momento, reconhecer Próximos Passos e viver experiências capazes de contribuir para sua evolução.
+A Guivos é um ecossistema criado para **ampliar condições, percepção, acesso, conexão e possibilidades** para que Pessoas, Profissionais, Organizações e Coletivos possam compreender melhor seu Momento, reconhecer Próximos Passos e viver experiências capazes de contribuir para sua evolução.
 
 Sua formulação central é:
 
@@ -107,7 +115,7 @@ A Guivos é um ecossistema que amplia condições, percepção, acesso, conexão
 
 ## Visão
 
-> **Tornar a Guivos um ecossistema global de referência para ampliar possibilidades, conexões e experiências capazes de contribuir positivamente para a evolução de Pessoas, Organizações e Coletivos.**
+> **Tornar a Guivos um ecossistema global de referência para ampliar possibilidades, conexões e experiências capazes de contribuir positivamente para a evolução de Pessoas, Profissionais, Organizações e Coletivos.**
 
 A visão expressa direção de longo prazo e não afirma que essa escala ou posição de referência já tenha sido alcançada.
 
@@ -218,7 +226,7 @@ MAIS PONTOS
 
 O **Momento** representa a melhor compreensão disponível e autorizada sobre o contexto relevante do participante naquele período.
 
-Ele não é uma definição permanente da pessoa, da Organização ou do Coletivo.
+Ele não é uma definição permanente da Pessoa, do Profissional, da Organização ou do Coletivo.
 
 O **Próximo Passo** representa um movimento contextual que pode ajudar o participante a avançar ou compreender melhor sua situação, sempre preservando escolha, explicação, correção e alternativas.
 
@@ -606,6 +614,6 @@ O Guia Oficial é atualizado quando mudanças governadas no GKR alteram a compre
 
 A Guivos busca construir um ecossistema que compreenda contextos, amplie Possibilidades e conexões, aproxime Oportunidades reais quando elas fizerem sentido e ajude cada participante a reconhecer Próximos Passos sem substituir sua autonomia.
 
-Sua arquitetura conecta Pessoas, Coletivos e Organizações a uma experiência central e a Produtos Especializados, com Intelligence transversal, monetização subordinada ao propósito e separação explícita entre visão, arquitetura, implementação e realidade operacional.
+Sua arquitetura conecta Pessoas, Profissionais, Coletivos e Organizações a uma experiência central e a Produtos Especializados, com Intelligence transversal, monetização subordinada ao propósito e separação explícita entre visão, arquitetura, implementação e realidade operacional.
 
 > **A Guivos existe para ampliar o que pode se tornar possível e ajudar cada participante a aproximar essas possibilidades da vida real — com contexto, autonomia, transparência e responsabilidade.**
