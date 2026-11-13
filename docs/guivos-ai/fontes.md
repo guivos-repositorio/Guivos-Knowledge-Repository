@@ -4,6 +4,9 @@ A coleção Guivos AI organiza referências e **não modifica sua autoridade**.
 
 | Fonte | Estado na fonte | Uso nesta coleção |
 | --- | --- | --- |
+| [Diretriz conceitual Guivos AI — 13/11/2026](inteligencia-de-trajetorias-possibilidades-e-evolucao.md) | Registro da manifestação da Direção | Título, propósito, matriz de papéis, relacionamento e direção de API |
+| [GAI-001 — Modelo de conhecimento](../intelligence-architecture/knowledge-model.md) | Consolidado | Princípios de IA como meio técnico |
+| [GAI-002 — Manifesto](../intelligence-architecture/manifesto.md) | Consolidado | Inteligência do ecossistema e autonomia |
 | [GPA-006 — Guivos Intelligence](../product-architecture/intelligence.md) | Consolidado; arquivo físico v2.0.3, referência normativa interna v2.0.2 | Fronteira entre produto e tecnologia, autonomia e propósito |
 | [GIA-COG-001](../intelligence-architecture/cognitive-reference-architecture.md) | Ativo, normativo, referência conceitual v0.1.2 | Estrutura cognitiva, assurance e serving |
 | [Reconciliação temporal da Home Intelligence](../experience-architecture/home-intelligence-guivos-ai-temporal-reconciliation-proposed.md) | `proposed_non_normative` | Três perspectivas como conceito candidato |
