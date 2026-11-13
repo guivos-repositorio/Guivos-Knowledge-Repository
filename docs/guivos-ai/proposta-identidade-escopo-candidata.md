@@ -185,3 +185,35 @@ A deliberação não aprova `GAI-P03` a `GAI-P09`, não designa fornecedor, não
 A aprovação da identidade **conceitual** substitui, somente para `GAI-P01` e `GAI-P02`, os marcadores “pendente” presentes nas seções 7 e 10 anteriores. O restante do documento continua **`proposed_non_normative`**, como proposta técnica e funcional em apreciação. O próximo exame documental pode partir da decisão conceitual sem tratá-la como autorização de implementação.
 
 **Próxima frente de exame:** `GAI-P03` — superfícies e experiências aptas a usar a identidade Guivos AI, preservando finalidade, permissão e autoridade de cada produto.
+
+
+## 12. Diretriz superveniente da Direção — especialização em trajetórias, possibilidades e evolução (13/11/2026)
+
+**Fonte de verdade para esta manifestação:** [Guivos AI — Inteligência de Trajetórias, Possibilidades e Evolução](https://github.com/guivos-repositorio/Guivos-Knowledge-Repository/blob/main/docs/guivos-ai/inteligencia-de-trajetorias-possibilidades-e-evolucao.md), incorporada à `main` a pedido expresso da Direção em 13/11/2026.
+
+**Título conceitual:** **Inteligência de Trajetórias, Possibilidades e Evolução**.
+
+**Definição central literal:** “Compreender o presente, aprender com a trajetória e identificar as condições e oportunidades que podem tornar novas possibilidades futuras mais acessíveis.”
+
+A Direção apresentou uma matriz com sete dimensões: papel central = especialização e análise; responsabilidade = produzir conhecimento analítico fundamentado; foco = trajetórias, contextos, possibilidades, lacunas e evolução; entrega = análises, evidências, hipóteses e relatórios; consumidores = Intelligence e sistemas externos autorizados; comercialização = inteligência especializada por API; evolução = métodos e qualidade das análises.
+
+Apresentou igualmente o relacionamento conceitual entre **Ecossistema Guivos**, **Guivos Intelligence**, **Guivos AI** e **parceiros/plataformas externas**, com consumo de capacidades internas por interface controlada e possibilidade de integração externa independente e autorizada por API.
+
+### 12.1 Reconciliação com GAI-P01 / GAI-P02
+
+A definição mais específica **detalha a identidade conceitual da alternativa A** previamente aprovada. O termo “especializada” caracteriza o conhecimento e as análises; **não significa nova autoridade de produto, unidade de negócio separada ou autorização operacional**.
+
+A Guivos Intelligence preserva `GPA-006`. Seus papéis no diagrama são explicação de relacionamento e não substituição das responsabilidades do produto. Uso de API externa é direção estratégica, ainda dependente de contratos e gates.
+
+### 12.2 Impacto em outras pendências
+
+- **GAI-P03:** uso em superfícies internas e externas deverá ser especificado.
+- **GAI-P04:** não houve aprovação de autonomia de execução ou agentes.
+- **GAI-P05:** o canal de APIs torna necessário contrato de consumidores, autenticação, autorização, formato, auditoria, SLA e modelo econômico; isso **não seleciona stack ou provedor**.
+- **GAI-P06 e P07:** manter segregação de dados, proveniência, qualidade, avaliação de hipóteses, incerteza e explicabilidade.
+- **GAI-P08:** passado, presente e possibilidades futuras dão contexto às lentes temporais, sem criar três motores obrigatórios.
+- **GAI-P09:** sem autorização para teste/implantação/produção.
+
+### 12.3 Estado do documento candidato
+
+O registro principal da Direção já consta da `main`. Esta PR permanece um **exame complementar draft**; nenhuma incorporação automática, merge, promoção normativa integral ou implantação decorre desta atualização.
