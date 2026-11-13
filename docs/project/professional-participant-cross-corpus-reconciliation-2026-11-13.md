@@ -70,3 +70,16 @@ Foi inspecionada a árvore de arquivos e confrontados documentos selecionados de
 ## Restrições
 
 A inclusão conceitual do Profissional como ofertador **não autoriza** publicação imediata de novas oportunidades por sistemas operacionais, novos acessos a dados pessoais, rotas de pagamento ou alteração silenciosa dos contratos de O/C.
+
+
+## Exame focal complementar — GEB e Oportunidades Ativas (13/11/2026)
+
+A revisão das autoridades identificou:
+
+- `KU-FM-002` — Modelo Fundamental da Jornada: exemplo de participante contém Pessoa, Organização e Coletivo; exige definição da posição conceitual do Profissional antes de substituição normativa.
+- `PAS-001-OA-FOUNDATION-001` — Oportunidades Ativas: Profissional já aparece em responsabilidades de orientação e exemplos de participantes de oferta, mas a enumeração primária não o contempla consistentemente.
+- `GKR-UX-ORG-OPPORTUNITY-REGISTRATION-MASTER-001`: cadastro é responsabilidade específica da Organização, não autorização de cadastro pela identidade Profissional.
+
+**Exame completo e seis questões candidatas** registrados na [PR #732](https://github.com/guivos-repositorio/Guivos-Knowledge-Repository/pull/732), no arquivo `docs/public/reconciliacao-profissional-geb-oportunidades-candidata.md`.
+
+Permanece pendente decisão sobre natureza da identidade profissional, direito de publicar oportunidades, representação, experiência, integrações e modelo econômico. **Não classificar a reconciliação transversal como concluída.**
