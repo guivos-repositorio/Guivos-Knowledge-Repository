@@ -90,6 +90,7 @@ nav:
 
   - Participantes:
       - Pessoa: participants/person.md
+      - Profissional: participants/professional.md
       - Organização: participants/organization.md
       - Coletivo: participants/collective.md
 
