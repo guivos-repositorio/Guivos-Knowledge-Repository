@@ -176,3 +176,68 @@ Identidade de oferta do Profissional; especialidade e capacidade declaradas; tí
 **Recomenda-se reconhecer conceitualmente o Profissional como ofertador elegível em princípio, mas condicionar o direito de cadastrar, submeter e publicar oportunidades a um contrato próprio por categorias, habilitações e responsabilidades.** A existência de uma identidade Profissional não concede licença universal de atuação nem publicação automática.
 
 **Estado do gate:** `PRO-REC-02 EXAMINADO / PROPOSTA NÃO NORMATIVA / DECISÕES PRO-02A…F PENDENTES`. A PR permanece rascunho; sem merge, implementação, habilitação operacional ou alteração em `PAS-001`.
+
+
+## Deliberação da Direção — PRO-REC-02 (13/11/2026)
+
+A Direção manifestou **“de acordo, segue”** à recomendação expressa de reconhecer o Profissional **como ofertador elegível em princípio**, condicionando cadastro, submissão e publicação de oportunidades a contratos próprios por categoria, habilitação e responsabilidade.
+
+**Diretriz conceitual aprovada:** o Profissional integra as categorias capazes de oferecer oportunidades. A identidade profissional, por si, **não confere direito universal de publicação**, validação automática de credenciais, autorização para exercer atividades regulamentadas ou licença para utilizar dados privados de participantes.
+
+**Limite da aprovação:** as decisões operacionais **PRO-02A a PRO-02F continuam abertas**, inclusive os gatilhos exatos de cadastro, aprovação, categorias admitidas, habilitações, estados e condições econômicas. Esta deliberação não altera o `PAS-001`, não aprova os estados candidatos da seção anterior e não autoriza implantação, testes ou publicação de oportunidades.
+
+## Exame focal — PRO-REC-03: autoridade e responsabilidade da oferta
+
+**Natureza:** proposta analítica subsequente à aprovação conceitual de PRO-REC-01 e PRO-REC-02, sem nova autorização operacional.
+
+### 1. Pergunta central
+
+Quem responde pela oportunidade disponibilizada sob a identidade Profissional, como sua autoridade é demonstrada e quais responsabilidades permanecem com o ofertador, a plataforma e os demais participantes?
+
+### 2. Matriz de fronteiras para apreciação
+
+| Tema | Responsabilidade candidata do Profissional | Limite para a Guivos e terceiros |
+| --- | --- | --- |
+| Identidade e autoria | Ser identificável como ofertador e declarar a própria atuação, sem representar indevidamente outra entidade | A plataforma deve distinguir identidade pessoal, perfil profissional e representação institucional |
+| Escopo profissional | Descrever competências, condições da atividade, limites de formação e eventual habilitação exigida | A presença de perfil não comprova credencial nem habilitação legal |
+| Conteúdo da oferta | Garantir clareza, precisão e atualização das condições materiais informadas | A plataforma pode exigir validações e permitir correções, sem assumir automaticamente a execução |
+| Elegibilidade | Apresentar requisitos legítimos, sem discriminação indevida | Autoridades de política, moderação e segurança podem impor condições setoriais |
+| Disponibilidade e execução | Responder pela capacidade de cumprir a oportunidade que oferecer | Cadastro ou aprovação não equivale a comprovação de resultado |
+| Valores e condições | Informar condições de participação e contrapartidas, quando permitidas | Planos, taxas, pontos, pagamentos e reembolsos dependem de contratos econômicos |
+| Comunicação | Responder por informações dadas aos participantes por canais governados | Contato e dados pessoais não são liberados indiscriminadamente |
+| Segurança e incidentes | Atender deveres próprios da atividade e reportar incidentes relevantes | A plataforma conserva os controles e deveres que sejam seus, não transferíveis por contrato |
+| Alteração, retirada e cancelamento | Corrigir ou encerrar uma oportunidade conforme regras aplicáveis | Alterações materiais devem preservar rastreabilidade, participantes afetados e estados governados |
+| Evidências e avaliação | Permitir contestação, revisão e tratamento adequado de avaliações | Avaliações, reputação e indicadores exigem contratos próprios e não são presumidos como existentes |
+
+### 3. Titularidade e representação
+
+**Recomendação candidata:** a titularidade de uma oferta individual deve apontar para a **identidade Profissional responsável**, vinculada à Pessoa autenticada e autorizada. Se o mesmo indivíduo agir em nome de uma Organização ou de um Coletivo, a titularidade institucional ou coletiva deverá seguir o contexto de representação correspondente, com autoridade e responsabilidade próprias.
+
+Assim, **a mesma Pessoa humana não torna intercambiáveis** os contratos de publicação em nome próprio, de uma Organização ou de um Coletivo.
+
+O vínculo entre identidade pessoal e profissional deve ser suficiente para autorizar e auditar a operação, sem misturar automaticamente perfil, intenções, histórico privado, mensagens ou dados sensíveis.
+
+### 4. Cenários de responsabilidade
+
+1. **Aula oferecida em nome próprio:** o Profissional é o ofertador declarado; comprovação de especialidade e condições depende da categoria, não do simples cadastro.
+2. **Curso oferecido por escola com professor responsável:** a Organização pode ser a titular da oferta, enquanto o Profissional atua como executor, representante ou responsável técnico conforme contrato; não há mudança automática de titularidade.
+3. **Atividade organizada por um Coletivo com instrutor convidado:** a responsabilidade pela oportunidade e a participação técnica do Profissional precisam ser explicitamente diferenciadas.
+4. **Atividade regulamentada:** oferecer e executar exigem validações apropriadas. Uma oportunidade não se torna lícita apenas por ter sido publicada.
+5. **Evento ao Vivo:** titularidade, transmissão, interação síncrona, calendário e condições de acesso devem ser reconciliados com o contrato específico, sem inventar novo fluxo.
+
+### 5. Decisões pendentes — PRO-REC-03
+
+- **PRO-03A:** sujeito titular da oportunidade quando há atuação individual versus representação de Organização/Coletivo.
+- **PRO-03B:** evidências e verificações proporcionais de identidade, credenciais e habilitação.
+- **PRO-03C:** deveres de informação, atualização, entrega, segurança e condições de cancelamento.
+- **PRO-03D:** alçadas de moderação, suspensão, auditoria, contestação e recurso.
+- **PRO-03E:** efeitos de múltiplos contextos de atuação sobre identidade, permissões, dados e reputação.
+- **PRO-03F:** tratamento de responsabilidade por resultados, avaliações, disputas e incidentes sem presumir isenção total da plataforma.
+
+### 6. Recomendação para próxima deliberação
+
+**Recomenda-se que toda oportunidade tenha um titular de oferta inequívoco e um contexto de atuação autorizado.** Quando o titular for Profissional, a responsabilidade declarada deverá corresponder à identidade funcional profissional vinculada à Pessoa; quando o ofertador for Organização ou Coletivo, deverá prevalecer sua autoridade própria, ainda que a execução envolva um Profissional.
+
+Essa recomendação **não adjudica automaticamente** as questões PRO-03A a PRO-03F, não cria dever legal novo por inferência nem determina modelo técnico de identidade.
+
+**Estado:** `PRO-REC-03 EXAMINADO / RECOMENDAÇÃO CANDIDATA / DECISÃO PENDENTE`. Nenhum merge, publicação operacional ou implementação autorizado por este exame.
