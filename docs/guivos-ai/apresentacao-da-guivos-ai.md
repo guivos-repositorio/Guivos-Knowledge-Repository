@@ -144,9 +144,9 @@ Uma análise confiável deve distinguir o que foi informado, o que foi observado
 
 No relacionamento conceitual definido pela Direção:
 
-**Ecossistema Guivos ⇄ Guivos Intelligence ⇄ Guivos AI**
+**Ecossistema Guivos (Pessoas, Profissionais, Organizações e Coletivos) ⇄ Guivos Intelligence ⇄ Guivos AI**
 
-Pessoas, Organizações, Coletivos e produtos fazem parte do ambiente de experiências e oportunidades. A Guivos Intelligence pode consumir capacidades especializadas da Guivos AI por interfaces controladas para apoiar compreensão, coordenação e apresentação de resultados, sempre segundo as autoridades de cada produto.
+Pessoas, Profissionais, Organizações, Coletivos e produtos fazem parte do ambiente de experiências e oportunidades. A Guivos Intelligence pode consumir capacidades especializadas da Guivos AI por interfaces controladas para apoiar compreensão, coordenação e apresentação de resultados, sempre segundo as autoridades de cada produto.
 
 A Guivos AI também tem uma **direção estratégica de oferecer inteligência especializada por API** a parceiros e plataformas externas autorizados. Isso permitiria consumir certos serviços analíticos sem necessariamente utilizar a mesma interface da Guivos Intelligence.
 
@@ -191,6 +191,12 @@ A Guivos AI foi concebida para aproximar essas informações por meio de conheci
 **Seu propósito é compreender o presente, aprender com a trajetória e contribuir para que novas possibilidades futuras se tornem mais acessíveis — sempre com a liberdade de escolha da pessoa.**
 
 ---
+
+## A participação do Profissional como ofertador
+
+Profissionais também fazem parte do ecossistema como **ofertadores de oportunidades**, conforme suas competências, responsabilidades e condições aplicáveis. A Guivos AI poderá examinar, de modo autorizado, conhecimentos, atividades e oportunidades desses Profissionais em conjunto com outros caminhos possíveis, sem acesso automático à trajetória privada de quem procura oportunidades. A inclusão não significa que todos os fluxos e permissões do Profissional já estejam disponíveis.
+
+Consulte o [participante Profissional](../participants/professional.md).
 
 ## Sobre esta apresentação
 
