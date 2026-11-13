@@ -26,6 +26,10 @@ Este domínio contém a tradução institucional pública das autoridades vigent
 
 `GOG-001` é a única superfície deste domínio classificada como `public-canon`.
 
+## Atualização transversal em reconciliação — Profissional
+
+A Direção registrou em 13/11/2026 a inclusão de **Profissional** como participante com identidade de oferta e capacidade conceitual de disponibilizar oportunidades, sujeita a contratos próprios. [Ver o registro do participante Profissional](../participants/professional.md). A lista histórica de três participantes estruturais no `GOG-001 v5.3.1` ainda requer reconciliação formal do **Public Canon** antes de ser substituída; esta nota não altera retroativamente o Guia Oficial.
+
 ## O que o Public Canon vigente consolida
 
 - Pessoa, Coletivo e Organização como três participantes estruturais;
