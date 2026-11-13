@@ -53,3 +53,40 @@ A formulação para enumeração geral permanece **Pessoas, Profissionais, Organ
 Exame focal realizado; **nenhuma das seis questões foi adjudicada por este documento**. Nenhuma nova permissão de acesso, cadastro, publicação, monetização, teste ou implementação foi autorizada.
 
 Este documento é candidato nesta PR e não altera as autoridades mencionadas.
+
+
+## Exame aprofundado — PRO-REC-01 (13/11/2026)
+
+**Alcance do acordo:** a manifestação “de acordo” autorizou prosseguir na formalização e no exame da identidade, sem indicar expressamente qual alternativa de natureza ontológica deve prevalecer. A opção abaixo é **recomendação candidata, não adjudicação**.
+
+### Alternativas examinadas
+
+| Alternativa | Descrição | Vantagens e tensões |
+| --- | --- | --- |
+| **A — identidade de atuação vinculada à Pessoa** | Uma Pessoa humana pode atuar no contexto **Profissional**, com perfil, responsabilidades e oferta separados de sua Jornada pessoal | Preserva a natureza humana definida para Pessoa, evita duplicar identidade pessoal e permite contratos específicos; exige controles de contexto, representação e autorização |
+| **B — quarto participante estrutural independente** | Profissional como nova categoria ontológica paralela e independente de Pessoa, Organização e Coletivo | Facilita enumerações simples, mas traz tensão com a base atual do GEB e a natureza humana da atuação profissional; exigiria revisão explícita do modelo superior |
+| **C — subcategoria de Organização** | Profissional tratado como derivação institucional de Organização | Não se sustenta como regra geral; atuação profissional individual não equivale à identidade institucional |
+
+### Orientação recomendada
+
+**Alternativa A** como melhor hipótese de reconciliação do corpus:
+
+> **Profissional é a identidade funcional de atuação e oferta assumida por uma Pessoa no ecossistema, distinta de sua Jornada pessoal, com contexto, perfil, competências, responsabilidades, oportunidades, permissões e experiências próprias.**
+
+As enumerações públicas podem apresentar **Pessoas, Profissionais, Organizações e Coletivos** porque identificam **contextos de participação e atuação**. Isso não exige concluir, sem decisão, que existem quatro naturezas ontológicas básicas independentes.
+
+### Contratos e limites a preservar
+
+1. A **Pessoa** mantém a identidade humana, autonomia e proteção do contexto pessoal.
+2. O **Profissional** recebe contexto de atuação próprio, cuja autoridade para ofertar depende de contratos específicos.
+3. Mesmo havendo vínculo de identidade, dados íntimos da Jornada da Pessoa não se tornam automaticamente dados acessíveis na Jornada do Profissional.
+4. **Organização** conserva responsabilidade institucional; **Coletivo**, governança coletiva; **Profissional**, atuação individual profissional — sem transferência automática de privilégios.
+5. O GEB (`KU-FM-002`) deverá ser reconciliado mediante decisão específica de terminologia e escopo, preservando seus invariantes.
+6. A definição não ativa automaticamente cadastro, publicação, relações, analytics, pagamentos ou disponibilização de oportunidades.
+7. A implantação poderá adotar identidades, contextos e permissões tecnicamente separados, mas isso exige autorização técnica posterior.
+
+### Estado de PRO-REC-01
+
+**EXAMINADO / ALTERNATIVA A RECOMENDADA / DECISÃO NORMATIVA PENDENTE.**
+
+**Próximo gate:** aprovar ou rejeitar expressamente a alternativa A e a definição candidata antes de editar o Modelo Fundamental da Jornada ou promover a proposta para o Guia Oficial.
