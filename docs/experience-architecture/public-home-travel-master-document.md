@@ -2,9 +2,9 @@
 id: GKR-UX-HOME-TRAVEL-MASTER-001
 title: Home Pública — Guivos Travel — Documento Mestre
 status: active
-version: 1.1.6
+version: 1.1.7
 owner: Experience Architecture
-last_updated: 2026-09-25
+last_updated: 2026-11-16
 normative: false
 maturity: reconciled_for_external_design
 parents:
@@ -196,8 +196,8 @@ para onde ir + como chegar + onde ficar + como se mover + o que viver
 06 — DESCOBRIR DESTINOS
 imagens reais + lugares reais + cenários reais
 
-07 — VIAGEM POSSÍVEL
-conectar diferentes partes da viagem
+07 — HISTÓRIAS DE VIAGEM
+vídeo institucional + histórias reais e autorizadas
 
 08 — PREÇO E PONTOS
 R$ + pontos quando elegível
@@ -225,7 +225,7 @@ Este quadro sintetiza, para consulta humana e consumo por sistemas de IA, o sign
 | 04 | Mostrar a operação real | Apresentar os nove serviços efetivamente existentes. | Demonstrar amplitude operacional e permitir acesso direto a quem já sabe o que procura. |
 | 05 | Organizar a viagem pela necessidade | Relacionar serviços à lógica prática de uma viagem: destino, deslocamento, hospedagem, mobilidade e experiências. | Facilitar compreensão sem transformar serviços em contratação conjunta obrigatória. |
 | 06 | Descobrir destinos | Usar lugares, imagens e experiências reais para tornar destinos perceptíveis e desejáveis. | Produzir inspiração e descoberta com realidade, não cenários fictícios. |
-| 07 | Transformar destino em viagem possível | Mostrar como diferentes serviços podem participar de uma mesma possibilidade de viagem. | Dar continuidade entre inspiração e planejamento sem criar pacote ou bundle automático. |
+| 07 | Histórias que começam com uma viagem | Aproximar a pessoa das experiências que uma viagem pode proporcionar por meio de um vídeo institucional e, quando houver evidências, histórias reais de viajantes. | Criar identificação e inspiração entre a descoberta de destinos e a apresentação comercial, sem simular viagens realizadas pela Guivos. |
 | 08 | Ofertas, preço e pontos | Mostrar valores e pontos quando efetivamente disponíveis e elegíveis. | Dar transparência comercial sem inventar taxa, conversão ou condição inexistente. |
 | 09 | Experiências | Mostrar que viajar inclui o que se vive no destino, não apenas chegar até ele. | Dar protagonismo a passeios, cultura, gastronomia, atrações e outras experiências reais. |
 | 10 | Prova e Confiança | Demonstrar que destinos, serviços, ofertas, imagens, parceiros e condições possuem base real. | Sustentar credibilidade operacional e transparência. |
@@ -414,45 +414,39 @@ POSSIBILIDADE REAL DE VIAGEM
 
 A presença de uma imagem não implica necessariamente promoção comercial ativa, mas a Home não deve simular destinos fictícios, experiências inexistentes ou disponibilidade que não possa ser sustentada.
 
-## 18. Movimento 07 — Transformar destino em viagem possível
+## 18. Movimento 07 — Histórias que começam com uma viagem
 
 Direção de título:
 
-# Encontrar o lugar é só o começo.
+# Encontrar o lugar é só o começo de uma nova experiência.
 
-A Home pode mostrar como diferentes serviços participam de uma mesma possibilidade de viagem.
+Viajar é mais do que chegar a um destino. Pode ser descobrir lugares, conhecer pessoas, viver momentos e construir histórias que merecem ser lembradas, sem pressupor que toda viagem deva representar transformação ou evolução pessoal.
 
-Exemplo conceitual:
+**Papel na Home:** criar identificação humana entre a descoberta de destinos (Movimento 06) e as informações comerciais sobre ofertas, preço e pontos (Movimento 08). A seção não deve repetir a sequência operacional de contratação dos serviços apresentada no Movimento 05.
 
-```text
-RIO DE JANEIRO
-↓
-Aéreo
-↓
-Hotel
-↓
-Locação de veículo
-↓
-Experiências
-```
+A apresentação prioritária é um **vídeo institucional em destaque**, de caráter inspirador, com pessoas, deslocamentos, encontros, destinos e experiências de viagem. O vídeo pode ser uma produção narrativa, desde que não faça alegações falsas sobre clientes, fornecedores, disponibilidade, viagens efetivamente realizadas ou resultados proporcionados pela Guivos.
 
-Outro exemplo:
+Quando existirem registros verificáveis e autorização de uso, a Home poderá complementar o vídeo com **histórias reais de pessoas que viajaram utilizando o Guivos Travel**, em depoimentos, vídeos ou relatos curtos. A exibição é opcional e condicionada à existência de conteúdo autêntico.
 
-```text
-DESTINO INTERNACIONAL
-↓
-Aéreo
-↓
-Hospedagem
-↓
-Experiências
-↓
-Câmbio
-```
+Direção de composição:
 
-A relação entre serviços não cria contratação obrigatoriamente conjunta.
+- vídeo institucional como elemento protagonista, com leitura limpa, responsiva e acessível;
+- histórias reais em carrossel discreto ou seleção editorial, somente quando houver material autorizado;
+- conexão contextual com destinos e experiências disponíveis no Travel, quando sustentada por operação efetiva;
+- possibilidade de assistir com controles de reprodução, legendas e alternativa textual pertinente;
+- textos breves, foco nas pessoas e ausência de promessas de transformação obrigatória.
 
-> **As partes de uma viagem podem fazer sentido juntas sem retirar da pessoa a liberdade de contratar apenas aquilo que desejar.**
+**Guardrails de verdade e governança:**
+
+- vídeo institucional dramatizado ou ilustrativo não deve ser apresentado como depoimento ou evidência de viagem efetivamente realizada pela Guivos;
+- não inventar clientes, falas, avaliações, depoimentos, viagens ou resultados;
+- obter autorização apropriada para imagem, voz, relatos e demais direitos de uso;
+- não declarar viagens feitas por meio do Travel antes de existirem registros operacionais que sustentem a alegação;
+- não criar oferta comercial, parceria formal, disponibilidade ou integração não verificadas;
+- manter a relação funcional entre serviços no Movimento 05 e na seção 19, sem transformá-la no assunto principal deste movimento;
+- a definição narrativa não autoriza automaticamente implementação, contratação de produção audiovisual ou publicação.
+
+> **A inspiração pode nascer de uma história; a escolha sobre viver uma nova experiência continua sendo da pessoa.**
 
 ## 19. Serviços não devem parecer nove produtos desconectados
 
@@ -813,8 +807,8 @@ cenários reais
 destinos reais
 experiências reais
 
-07 — VIAGEM POSSÍVEL
-conectar diferentes partes sem obrigar contratação conjunta
+07 — HISTÓRIAS DE VIAGEM
+vídeo institucional + histórias reais quando verificadas e autorizadas
 
 08 — PREÇO E PONTOS
 R$ + pontos quando elegível
