@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-PRO-MASTER-001
 title: Home Pública — Profissional — Documento Mestre Candidato de Arquitetura Narrativa
 status: proposed
-version: 0.1.6
+version: 0.1.7
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-11-18
 normative: false
@@ -100,6 +100,26 @@ Os seis movimentos abaixo são uma **primeira proposta sujeita a revisão**, nã
 **Transição:** demonstrado o benefício comercial, explicar como diferentes tipos de ofertas profissionais podem se tornar oportunidades acessíveis, sem voltar ao discurso de contribuição altruísta.
 
 **Situação:** **título e texto de apoio aprovados pela Direção em 18/11/2026**. Permanecem em revisão a composição visual e os demais detalhes de Design; a aprovação da redação não autoriza implementação nem publicação da Home.
+
+### Estudo complementar do Movimento 02 — Cinco dimensões da oferta profissional
+
+**Estado:** diretriz conceitual proposta pela Direção para aprofundamento do Movimento 02; não altera o texto público aprovado do Movimento 01 nem aprova automaticamente novas funcionalidades, categorias ou alegações de impacto.
+
+A compreensão das oportunidades disponibilizadas pelo Profissional deverá contemplar cinco dimensões distintas:
+
+1. **Quem você é profissionalmente:** especialidade, experiência, qualificações e atuação já existentes.
+2. **O que você oferece:** atendimentos, aulas, projetos, serviços, orientações, experiências ou outras ofertas.
+3. **Como suas ofertas podem ser descobertas:** conexão com interesses, necessidades, objetivos e contextos pertinentes das Pessoas, mediante autorizações e condições aplicáveis.
+4. **O que sua oportunidade pode proporcionar:** benefícios e possibilidades de aprendizagem, desenvolvimento, experiência ou outras mudanças, descritos como potenciais — nunca resultados automaticamente garantidos.
+5. **Em quais áreas da vida a oportunidade pode contribuir:** vínculo possível com uma ou mais áreas de evolução da Pessoa, conforme a classificação oficial vigente no GKR; não impor relação exclusiva com uma única área.
+
+**Exemplo de interpretação:** aulas de idiomas podem ter pertinência com educação, carreira ou viagens, conforme a intenção da Pessoa. A mesma oferta pode conectar-se a múltiplas áreas da vida, sem inferir que todas se aplicam a todos.
+
+**Fronteira obrigatória:** distinguir (a) contribuição declarada ou pretendida pelo Profissional; (b) contribuição potencial avaliada com contexto e informações autorizadas; e (c) contribuição efetivamente observada, quando houver evidência. Nenhuma dessas categorias comprova automaticamente outra.
+
+**Implicação para a Home:** o Movimento 02 deverá mostrar a diversidade das especialidades, dos formatos de oferta e do valor potencial de cada oportunidade, sem se transformar em catálogo exaustivo de profissões, sem alegar resultados comprovados e sem repetir a promessa de ampliação de presença do Movimento 01.
+
+**Implicação arquitetural candidata, ainda não autorizada:** associar oportunidades a várias áreas de evolução e oferecer múltiplas especialidades e ofertas sob uma única identidade Profissional, respeitando qualificações, governança e contratos futuros. Este documento não implanta o modelo nem altera permissões.
 
 ### Movimento 02 — Diferentes formas de contribuir
 
