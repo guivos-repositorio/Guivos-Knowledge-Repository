@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-PRO-MASTER-001
 title: Home Pública — Profissional — Documento Mestre Candidato de Arquitetura Narrativa
 status: proposed
-version: 0.1.3
+version: 0.1.4
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-11-18
 normative: false
@@ -68,11 +68,11 @@ Os seis movimentos abaixo são uma **primeira proposta sujeita a revisão**, nã
 
 **Título principal:**
 
-> **Seu próximo cliente pode estar na Guivos.**
+> **Sua atuação profissional. Novas conexões. Novas oportunidades.**
 
 **Texto de apoio:**
 
-> Amplie o alcance da sua atuação profissional, conecte-se com pessoas interessadas no que você oferece e descubra novas oportunidades de negócio.
+> Amplie sua presença, alcance novos públicos e conecte suas especialidades a pessoas que procuram o que você oferece.
 
 **Tese comercial e diferencial de ecossistema (referência editorial):**
 
@@ -217,6 +217,8 @@ O registro de participante Profissional no GKR é conceitual e aponta contratos 
 ### Registro de decisão editorial
 
 **2026-11-18 — Direção:** criar a Home Pública — Profissional imediatamente abaixo da Home de Organizações e Coletivos, em Experiência e Journey. **Não estabelecer quantidade padrão de movimentos**; desenvolver somente movimentos necessários e eliminar redundâncias.
+
+**2026-11-18 — Refinamento verbal do Movimento 01:** manter a finalidade comercial do Profissional, mas evitar a palavra **cliente** na chamada principal e evitar linguagem de classificados ou captação direta. Título e apoio substituídos por novas redações **candidatas**, sujeitos à aprovação.
 
 **2026-11-18 — Correção de posicionamento:** o Profissional **já atua no mercado e busca clientes**. Sua motivação comercial não deve ser substituída por discurso de ajuda, colaboração altruísta ou início de uma atividade. O benefício de evolução para a Pessoa é complementar ao objetivo de captação e desenvolvimento de negócios do Profissional. O Movimento 01 foi reescrito; **movimentos seguintes permanecem sujeitos a revisão sob essa premissa**.
 
