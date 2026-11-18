@@ -23,7 +23,7 @@ related:
 > **Movimento 01 — redação pública aprovada:** **Sua atuação profissional. Novas conexões. Novas oportunidades.**  
 > Amplie sua presença, alcance novos públicos e conecte suas especialidades a pessoas que procuram o que você oferece.
 >
-> **Controle de versão:** este texto substitui definitivamente os títulos candidatos anteriores do Movimento 01, inclusive “O que você sabe pode abrir novas possibilidades.”. Frases descartadas não devem ser exibidas como títulos públicos vigentes.
+> **Controle de versão:** este texto substitui definitivamente os títulos candidatos anteriores do Movimento 01, sem reproduzi-los. Frases descartadas não devem ser exibidas como títulos públicos vigentes.
 
 ## 1. Finalidade da Home
 
