@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-PRO-MASTER-001
 title: Home Pública — Profissional — Documento Mestre Candidato de Arquitetura Narrativa
 status: proposed
-version: 0.1.5
+version: 0.1.6
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-11-18
 normative: false
@@ -19,6 +19,11 @@ related:
 # Home Pública — Profissional
 
 > **Estado:** proposta de arquitetura narrativa para análise e aprovação. O número de movimentos é emergente do conteúdo e **não é um requisito**, um teto ou uma meta de preenchimento.
+
+> **Movimento 01 — redação pública aprovada:** **Sua atuação profissional. Novas conexões. Novas oportunidades.**  
+> Amplie sua presença, alcance novos públicos e conecte suas especialidades a pessoas que procuram o que você oferece.
+>
+> **Controle de versão:** este texto substitui definitivamente os títulos candidatos anteriores do Movimento 01, inclusive “O que você sabe pode abrir novas possibilidades.”. Frases descartadas não devem ser exibidas como títulos públicos vigentes.
 
 ## 1. Finalidade da Home
 
