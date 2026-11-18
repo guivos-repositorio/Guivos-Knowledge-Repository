@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-PRO-MASTER-001
 title: Home Pública — Profissional — Documento Mestre Candidato de Arquitetura Narrativa
 status: proposed
-version: 0.1.7
+version: 0.1.8
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-11-18
 normative: false
@@ -103,7 +103,7 @@ Os seis movimentos abaixo são uma **primeira proposta sujeita a revisão**, nã
 
 ### Estudo complementar do Movimento 02 — Cinco dimensões da oferta profissional
 
-**Estado:** diretriz conceitual proposta pela Direção para aprofundamento do Movimento 02; não altera o texto público aprovado do Movimento 01 nem aprova automaticamente novas funcionalidades, categorias ou alegações de impacto.
+**Estado:** diretriz conceitual aprovada pela Direção em 18/11/2026. A associação entre uma oportunidade e as áreas da vida às quais ela pode contribuir é parte fundamental da arquitetura conceitual de oportunidades da Guivos, não apenas um elemento visual da Home. Esta aprovação não altera o texto público aprovado do Movimento 01 nem autoriza automaticamente funcionalidades, categorias, inferências de impacto ou implementação.
 
 A compreensão das oportunidades disponibilizadas pelo Profissional deverá contemplar cinco dimensões distintas:
 
@@ -119,7 +119,9 @@ A compreensão das oportunidades disponibilizadas pelo Profissional deverá cont
 
 **Implicação para a Home:** o Movimento 02 deverá mostrar a diversidade das especialidades, dos formatos de oferta e do valor potencial de cada oportunidade, sem se transformar em catálogo exaustivo de profissões, sem alegar resultados comprovados e sem repetir a promessa de ampliação de presença do Movimento 01.
 
-**Implicação arquitetural candidata, ainda não autorizada:** associar oportunidades a várias áreas de evolução e oferecer múltiplas especialidades e ofertas sob uma única identidade Profissional, respeitando qualificações, governança e contratos futuros. Este documento não implanta o modelo nem altera permissões.
+**Diretriz arquitetural conceitual aprovada:** oportunidades poderão estar relacionadas a **uma ou mais áreas de evolução** da Pessoa, de modo contextual, fundamentado e não exclusivo. A avaliação de relevância deve considerar o Momento e a intenção da Pessoa, sob os limites de privacidade, consentimento e governança vigentes.
+
+**Questões de implementação ainda pendentes:** estrutura de dados, taxonomia oficial das áreas, mecanismos de classificação, campos de cadastro e multiplicidade de especialidades e ofertas sob uma única identidade Profissional exigem contratos próprios. A presente aprovação conceitual não implanta o modelo nem altera permissões.
 
 ### Movimento 02 — Diferentes formas de contribuir
 
@@ -251,3 +253,6 @@ O registro de participante Profissional no GKR é conceitual e aponta contratos 
 **2026-11-18 — Correção de posicionamento:** o Profissional **já atua no mercado e busca clientes**. Sua motivação comercial não deve ser substituída por discurso de ajuda, colaboração altruísta ou início de uma atividade. O benefício de evolução para a Pessoa é complementar ao objetivo de captação e desenvolvimento de negócios do Profissional. O Movimento 01 foi reescrito; **movimentos seguintes permanecem sujeitos a revisão sob essa premissa**.
 
 **Estado do presente documento:** candidato para revisão, sem aprovação de publicação.
+
+
+**2026-11-18 — Confirmação de diretriz:** aprovada a compreensão das possíveis contribuições da oportunidade e de sua associação com múltiplas áreas da vida como parte da arquitetura conceitual de oportunidades, além do Movimento 02. Preservar a diferença entre intenção, potencial e resultado comprovado.
