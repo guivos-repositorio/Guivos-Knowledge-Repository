@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-PRO-MASTER-001
 title: Home Pública — Profissional — Documento Mestre Candidato de Arquitetura Narrativa
 status: proposed
-version: 0.1.4
+version: 0.1.5
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-11-18
 normative: false
@@ -64,7 +64,7 @@ Os seis movimentos abaixo são uma **primeira proposta sujeita a revisão**, nã
 
 **Objetivo narrativo:** iniciar pela realidade de quem **já possui atuação profissional e oferta no mercado** e procura expandir sua clientela. A Guivos propõe um novo ambiente de descoberta relevante entre ofertas e pessoas; não apresenta a entrada do Profissional como início de carreira, voluntariado ou uma obrigação de ajudar.
 
-#### Comunicação pública — proposta em revisão
+#### Comunicação pública — texto aprovado pela Direção
 
 **Título principal:**
 
@@ -94,7 +94,7 @@ Os seis movimentos abaixo são uma **primeira proposta sujeita a revisão**, nã
 
 **Transição:** demonstrado o benefício comercial, explicar como diferentes tipos de ofertas profissionais podem se tornar oportunidades acessíveis, sem voltar ao discurso de contribuição altruísta.
 
-**Situação:** reformulação da proposta pública após orientação de Direção; **ainda sujeita à apreciação**.
+**Situação:** **título e texto de apoio aprovados pela Direção em 18/11/2026**. Permanecem em revisão a composição visual e os demais detalhes de Design; a aprovação da redação não autoriza implementação nem publicação da Home.
 
 ### Movimento 02 — Diferentes formas de contribuir
 
@@ -215,6 +215,9 @@ O registro de participante Profissional no GKR é conceitual e aponta contratos 
 - submeter títulos, movimentos, visualizações e CTA à apreciação antes de consolidar status `active`.
 
 ### Registro de decisão editorial
+
+**2026-11-18 — Aprovação da comunicação do Movimento 01:** a Direção aprovou o título **“Sua atuação profissional. Novas conexões. Novas oportunidades.”** e o texto **“Amplie sua presença, alcance novos públicos e conecte suas especialidades a pessoas que procuram o que você oferece.”**. Esta aprovação é restrita ao texto público do Movimento 01; os demais movimentos continuam em revisão.
+
 
 **2026-11-18 — Direção:** criar a Home Pública — Profissional imediatamente abaixo da Home de Organizações e Coletivos, em Experiência e Journey. **Não estabelecer quantidade padrão de movimentos**; desenvolver somente movimentos necessários e eliminar redundâncias.
 
