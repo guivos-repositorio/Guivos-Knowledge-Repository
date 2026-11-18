@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-PRO-MASTER-001
 title: Home Pública — Profissional — Documento Mestre Candidato de Arquitetura Narrativa
 status: proposed
-version: 0.1.2
+version: 0.1.3
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-11-18
 normative: false
@@ -24,13 +24,13 @@ related:
 
 Esta é a proposta de porta pública para o participante **Profissional** no ecossistema Guivos, localizada em **Experiência e Journey → Documentos Mestres das Homes**, imediatamente abaixo de **Home de Organizações e Coletivos**.
 
-A Home existe para tornar compreensível **o que um profissional pode tornar possível a partir daquilo que sabe, faz, compartilha e oferece**, conectando sua atuação a contextos, pessoas e oportunidades relevantes.
+A Home existe para apresentar a profissionais **já atuantes no mercado** como a Guivos pode ampliar a descoberta de sua oferta, aproximá-los de potenciais clientes e abrir caminhos para novas relações comerciais e oportunidades de negócio, considerando a relevância da oferta para os contextos e interesses das Pessoas. O valor que uma oportunidade pode gerar para a evolução de alguém é parte da proposta do ecossistema, **não a motivação comercial principal atribuída ao Profissional**.
 
-Não é uma página de emprego, currículo, contratação instantânea, anúncios de prestadores, portfólio genérico, catálogo de serviços, plataforma de freelancers ou dashboard autenticado.
+Não é uma página de emprego, currículo ou dashboard autenticado. Reconhece o **objetivo legítimo de captar clientes e gerar negócios** sem se reduzir a classificados, anúncios indiscriminados, catálogo de prestadores, promessa de contratação instantânea ou plataforma genérica de freelancers.
 
 ### 1.1 Pergunta orientadora
 
-> **Até onde aquilo que você sabe e faz pode chegar?**
+> **Como ampliar sua presença e alcançar novos clientes com a Guivos?**
 
 Essa pergunta é uma **direção narrativa candidata**, não uma assinatura de marca aprovada.
 
@@ -40,15 +40,15 @@ Essa pergunta é uma **direção narrativa candidata**, não uma assinatura de m
 | --- | --- | --- |
 | Pessoa | Seus contextos, intenções, trajetórias e possibilidades | O que pode se tornar possível para mim? |
 | Organização e Coletivo | Capacidades, iniciativas e contribuições mobilizadas por estruturas institucionais e coletivas | O que podemos tornar possível juntos? |
-| **Profissional** | Conhecimento, experiência, especialidade, atuação e contribuição profissional própria | **O que posso tornar possível com aquilo que sei e faço?** |
+| **Profissional** | Atuação profissional existente, oferta, clientes e expansão de negócios | **Como ampliar minha presença e alcançar novos clientes?** |
 
 O Profissional **continua sendo uma pessoa humana**, mas participa aqui com uma identidade funcional própria de oferta. Não se confunde com a Pessoa em sua jornada privada, nem representa automaticamente uma Organização ou Coletivo.
 
 ## 2. Princípios de composição
 
-1. **Possibilidade antes de funcionalidade:** começar pelo alcance potencial da atuação profissional, não por cadastro, painel ou vitrine.
-2. **Identidade profissional sem redução a currículo:** mostrar conhecimentos, competências, experiências, formas de contribuição e condições de atuação.
-3. **Oferta como oportunidade concreta:** diferenciar uma possibilidade abstrata de uma atividade, orientação, aula, projeto ou experiência com condições reais.
+1. **Valor comercial concreto antes de funcionalidade:** começar pela possibilidade de alcançar novos clientes, ampliar presença e gerar negócios, não por cadastro ou painel.
+2. **Profissional já atuante, não iniciante presumido:** reconhecer especialidade, histórico de mercado, competências e ofertas existentes, sem reduzir a identidade a currículo.
+3. **Oferta como oportunidade concreta:** distinguir uma possibilidade de uma atividade, orientação, consulta, aula, projeto ou serviço com condições reais; a oferta pode atender demandas e também gerar receitas para o Profissional.
 4. **Relevância contextual, não exposição indiscriminada:** a conexão é valiosa quando faz sentido para os participantes e para suas circunstâncias.
 5. **Autonomia, responsabilidade e confiança:** o Profissional define o que se dispõe a oferecer, respeitando requisitos de elegibilidade, habilitação, privacidade e governança.
 6. **Continuidade, não promessa de resultado:** uma oportunidade pode iniciar relações, experiências e novas possibilidades, sem garantir evolução, contratação, renda ou impacto.
@@ -60,41 +60,41 @@ O Profissional **continua sendo uma pessoa humana**, mas participa aqui com uma 
 
 Os seis movimentos abaixo são uma **primeira proposta sujeita a revisão**, não uma padronização em seis, onze ou qualquer outra quantidade. Cada um precisa produzir uma mudança de entendimento diferente.
 
-### Movimento 01 — O potencial da sua atuação
+### Movimento 01 — Novos clientes e possibilidades de negócio
 
-**Objetivo narrativo:** abrir a Home pela percepção de valor do próprio Profissional. Aquilo que ele sabe, já viveu e é capaz de realizar pode encontrar novos contextos, pessoas e oportunidades de contribuição. O movimento apresenta uma possibilidade de alcance, não um serviço já habilitado nem uma promessa de resultado.
+**Objetivo narrativo:** iniciar pela realidade de quem **já possui atuação profissional e oferta no mercado** e procura expandir sua clientela. A Guivos propõe um novo ambiente de descoberta relevante entre ofertas e pessoas; não apresenta a entrada do Profissional como início de carreira, voluntariado ou uma obrigação de ajudar.
 
 #### Comunicação pública — proposta em revisão
 
 **Título principal:**
 
-> **Sua atuação profissional pode abrir novas possibilidades.**
+> **Seu próximo cliente pode estar na Guivos.**
 
 **Texto de apoio:**
 
-> Sua experiência, seus conhecimentos e suas competências podem encontrar novos contextos, conectar pessoas e ampliar as oportunidades de contribuir.
+> Amplie o alcance da sua atuação profissional, conecte-se com pessoas interessadas no que você oferece e descubra novas oportunidades de negócio.
 
-**Conceito do movimento (referência editorial, não texto adicional obrigatório na Home):**
+**Tese comercial e diferencial de ecossistema (referência editorial):**
 
-> Seu conhecimento pode encontrar novas possibilidades na Guivos.
+> O objetivo não é apenas expor profissionais a mais pessoas: é criar condições para que ofertas profissionais possam ser descobertas por potenciais clientes para os quais sejam relevantes.
 
 #### Experiência visual e composição
 
-- Abertura expressiva, limpa e humana, com o título como elemento principal e texto de apoio curto, sem acúmulo de chamadas.
-- Representar profissionais de diferentes especialidades e realidades em contextos autênticos de atuação. Evitar limitar a narrativa a escritórios, recrutamento ou profissões corporativas.
-- Sugerir alcance e conexão entre contextos por meio da composição, **sem** insinuar correspondência automática, acesso a informações privadas ou resultados garantidos.
-- Preservar o sistema visual institucional da Guivos (tipografia, cores, componentes e responsividade). Não estabelecer um novo padrão visual exclusivo para Profissional.
-- Não exibir neste movimento catálogo, tabela de serviços, planos, precificação, lista de funcionalidades, indicadores artificiais ou controles de área autenticada.
+- Mostrar profissionais **já atuando**, em contextos diversos, com identidade, experiência e serviços ou oportunidades reais; evitar estética de primeiro emprego, capacitação inicial ou trabalho meramente manual.
+- Comunicar expansão comercial, descoberta e conexão com potenciais clientes sem simular vendas realizadas, receita, agendamentos ou correspondência automática já operante.
+- Não criar caricaturas de profissões: contemplar especialidades intelectuais, técnicas, criativas, consultivas, educacionais e de serviços, entre outras.
+- Usar o sistema visual institucional, com texto de abertura enxuto e sem lista extensa de funcionalidades.
+- Não tratar pessoas como leads acessíveis irrestritamente; privacidade e autonomia permanecem obrigatórias.
 
 #### Papel na sequência
 
-**O que o visitante deve compreender:** minha experiência profissional pode ser relevante em contextos além daqueles em que já atuo, e a Guivos propõe ampliar a descoberta dessas possibilidades.
+**O que o visitante deve compreender:** minha atuação já existe; a Guivos pode ser outro caminho para alcançar potenciais clientes e desenvolver negócios, valorizando a pertinência das oportunidades oferecidas.
 
-**O que este movimento ainda não precisa explicar:** como cadastrar uma oferta, quais oportunidades estão efetivamente disponíveis, como ocorre uma conexão, ou quais produtos do ecossistema serão utilizados. Esses assuntos exigem contexto próprio e contratos competentes.
+**O que não se promete:** captação garantida de clientes, volume de leads, contratação, faturamento, conversão, acesso aos dados privados das Pessoas ou funcionalidades operacionais ainda não autorizadas.
 
-**Transição para o próximo movimento:** depois de reconhecer o potencial da própria atuação, o visitante poderá compreender **de quais formas pode contribuir**, sem que essa transição repita a mensagem de abertura.
+**Transição:** demonstrado o benefício comercial, explicar como diferentes tipos de ofertas profissionais podem se tornar oportunidades acessíveis, sem voltar ao discurso de contribuição altruísta.
 
-**Situação:** título e apoio revisados como **nova proposta para apreciação**, em resposta à observação de que «o que você sabe fazer» restringia indevidamente a percepção a tarefas manuais e execução de serviços. A redação ainda não está aprovada como versão final de Design ou implementação.
+**Situação:** reformulação da proposta pública após orientação de Direção; **ainda sujeita à apreciação**.
 
 ### Movimento 02 — Diferentes formas de contribuir
 
@@ -217,5 +217,7 @@ O registro de participante Profissional no GKR é conceitual e aponta contratos 
 ### Registro de decisão editorial
 
 **2026-11-18 — Direção:** criar a Home Pública — Profissional imediatamente abaixo da Home de Organizações e Coletivos, em Experiência e Journey. **Não estabelecer quantidade padrão de movimentos**; desenvolver somente movimentos necessários e eliminar redundâncias.
+
+**2026-11-18 — Correção de posicionamento:** o Profissional **já atua no mercado e busca clientes**. Sua motivação comercial não deve ser substituída por discurso de ajuda, colaboração altruísta ou início de uma atividade. O benefício de evolução para a Pessoa é complementar ao objetivo de captação e desenvolvimento de negócios do Profissional. O Movimento 01 foi reescrito; **movimentos seguintes permanecem sujeitos a revisão sob essa premissa**.
 
 **Estado do presente documento:** candidato para revisão, sem aprovação de publicação.
