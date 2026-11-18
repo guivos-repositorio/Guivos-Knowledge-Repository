@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-PRO-MASTER-001
 title: Home Pública — Profissional — Documento Mestre Candidato de Arquitetura Narrativa
 status: proposed
-version: 0.1.1
+version: 0.1.2
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-11-18
 normative: false
@@ -68,11 +68,11 @@ Os seis movimentos abaixo são uma **primeira proposta sujeita a revisão**, nã
 
 **Título principal:**
 
-> **O que você sabe fazer pode ir muito mais longe.**
+> **Sua atuação profissional pode abrir novas possibilidades.**
 
 **Texto de apoio:**
 
-> Seus conhecimentos, experiências e habilidades podem encontrar novas pessoas, novos contextos e novas oportunidades para transformar sua atuação em possibilidades reais.
+> Sua experiência, seus conhecimentos e suas competências podem encontrar novos contextos, conectar pessoas e ampliar as oportunidades de contribuir.
 
 **Conceito do movimento (referência editorial, não texto adicional obrigatório na Home):**
 
@@ -94,7 +94,7 @@ Os seis movimentos abaixo são uma **primeira proposta sujeita a revisão**, nã
 
 **Transição para o próximo movimento:** depois de reconhecer o potencial da própria atuação, o visitante poderá compreender **de quais formas pode contribuir**, sem que essa transição repita a mensagem de abertura.
 
-**Situação:** redação e direcionamento visual registrados para leitura pública e apreciação; ainda não aprovados como versão final de Design ou implementação.
+**Situação:** título e apoio revisados como **nova proposta para apreciação**, em resposta à observação de que «o que você sabe fazer» restringia indevidamente a percepção a tarefas manuais e execução de serviços. A redação ainda não está aprovada como versão final de Design ou implementação.
 
 ### Movimento 02 — Diferentes formas de contribuir
 
