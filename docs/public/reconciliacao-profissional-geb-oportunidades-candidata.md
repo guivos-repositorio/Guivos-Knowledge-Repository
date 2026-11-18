@@ -241,3 +241,99 @@ O vínculo entre identidade pessoal e profissional deve ser suficiente para auto
 Essa recomendação **não adjudica automaticamente** as questões PRO-03A a PRO-03F, não cria dever legal novo por inferência nem determina modelo técnico de identidade.
 
 **Estado:** `PRO-REC-03 EXAMINADO / RECOMENDAÇÃO CANDIDATA / DECISÃO PENDENTE`. Nenhum merge, publicação operacional ou implementação autorizado por este exame.
+
+
+## Deliberação da Direção — princípio PRO-REC-03 (18/11/2026)
+
+A Direção manifestou **“de acordo”** à recomendação expressa de aprovar o princípio de **titularidade inequívoca e contexto autorizado** para cada oportunidade.
+
+**Princípio conceitual aprovado:** toda oportunidade deverá ter um titular de oferta claramente identificado e um contexto de atuação autorizado. Quando a oferta for individual sob a identidade Profissional, a titularidade corresponde a esse contexto profissional vinculado à Pessoa. Quando a oferta for institucional ou coletiva, a titularidade respeita a autoridade própria de Organização ou Coletivo, ainda que um Profissional participe da execução.
+
+**Não deliberado:** PRO-03A a PRO-03F em suas especificações detalhadas, alçadas de moderação, comprovação de credenciais, distribuição contratual/legal de responsabilidades ou regras de disputas. A aprovação não cria permissão de publicação ou execução.
+
+## Exame focal — PRO-REC-04: Jornada, experiência, dados e permissões
+
+**Natureza:** proposta não normativa para apreciação. A elaboração considera [Profissional](../participants/professional.md), [Modelo Fundamental da Jornada](../geb/part-02-fundamental-model/fundamental-journey.md), [cadastro institucional de oportunidades](../experience-architecture/organizations-collectives-journey/organization-opportunity-registration-master.md) e [contrato transversal de relações](../experience-architecture/participant-relationships-interactions-visibility-contract.md).
+
+### 1. Pergunta central
+
+Como disponibilizar ao Profissional um contexto claro e autônomo de atuação, oportunidades e relacionamento, sem misturar sua Jornada com o contexto privado da Pessoa e sem herdar automaticamente as competências da Organização ou do Coletivo?
+
+### 2. Princípios de experiência e identidade
+
+1. **Uma Pessoa pode atuar como Profissional** por uma identidade funcional vinculada, com finalidade e responsabilidades próprias, conforme PRO-REC-01.
+2. **Jornada profissional e Jornada pessoal são contextos distintos**: navegação, informações, público e ações não se confundem.
+3. A existência de perfil Profissional **não implica** que o profissional já possa publicar oferta, receber pagamento ou visualizar informações de candidatos/participantes.
+4. A titularidade de cada oportunidade deve ser inequívoca e expressa no seu contexto, conforme PRO-REC-03.
+5. O Profissional deve poder identificar qual contexto está ativo antes de realizar ações materiais, sem troca silenciosa de identidade.
+6. A descrição de experiência não equivale a autorização técnica, implantação ou ativação dos módulos.
+
+### 3. Macroáreas candidatas da Jornada do Profissional
+
+| Área de experiência | Finalidade candidata | Fronteira / lacuna |
+| --- | --- | --- |
+| Entrada e identidade | Reconhecer a Pessoa autenticada e o contexto Profissional | Login, representação e unicidade dependem de contratos próprios |
+| Perfil profissional | Declarar especialidades, atuação, formação, referências e apresentação pública elegível | Informações declaradas não equivalem a credenciais verificadas |
+| Portfólio e apresentação | Demonstrar serviços, conhecimentos, experiências e atividades permitidas | Autoria, direitos de imagem, privacidade e verificação |
+| Oportunidades | Consultar rascunhos, cadastros, revisões e estados legítimos de ofertas próprias | PRO-REC-02 determina os direitos; não copiar ORG-002 |
+| Relações | Acompanhar vínculos e interações autorizadas em objetos concretos | Contrato transversal corrente não concede interações bilaterais novas ao Profissional |
+| Analytics | Oferecer visões proporcionais das próprias oportunidades, quando governadas | Não atribuir acesso a contexto pessoal da Pessoa, indicadores ou faturamento não aprovados |
+| Conta, notificações e suporte | Gerir preferências, estados, pendências e comunicações dentro do escopo | Canais, retenção, acionamentos e entregas exigem contratos |
+
+Essas macroáreas são **candidatas** e não definem menus, telas, campos, steps, endpoints ou estados de implementação.
+
+### 4. Fronteiras de dados por finalidade
+
+| Informação | Contexto primário | Uso possível no Profissional | Limite |
+| --- | --- | --- | --- |
+| Identidade da Pessoa / vínculo de acesso | Identidade/autenticação | Verificar titular ou operador autorizado do contexto Profissional | Não transportar histórico íntimo da Jornada para oferta |
+| Dados profissionais declarados | Profissional | Apresentação, elegibilidade e cadastro, conforme contrato | Não presumir verificação de competências |
+| Credenciais e habilitação | Profissional / autoridade verificadora | Verificação proporcional à modalidade de oferta | Exibir somente o resultado permitido; documento integral pode ser restrito |
+| Rascunhos e oportunidades | Contexto de oferta | Editar ou acompanhar estados governados, conforme direito | Não inferir acesso à oferta de Organização ou Coletivo |
+| Inscrições e manifestações | Oportunidade e titularidade autorizada | Recortes necessários à continuidade da relação específica | Sem acesso amplo ao Grafo Vivo, contexto íntimo ou histórico pessoal |
+| Mensagens / relações | Relação ou objeto governado | Interagir somente com papel, finalidade e audiência autorizados | Encontrabilidade não implica contato ou acesso irrestrito |
+| Métricas, reputação e pagamentos | Contratos próprios | Visão própria e proporcional quando aprovada | Analytics não equivale a autorização de coleta, divulgação ou monetização |
+
+### 5. Experiência candidata de oportunidade
+
+```text
+Pessoa autenticada
+  → contexto Profissional explicitamente selecionado
+  → verificação das permissões de atuação
+  → visão das próprias oportunidades e pendências permitidas
+  → elaboração de rascunho (se autorizada)
+  → revisão de informações e titularidade
+  → envio (se autorizado)
+  → estados de verificação e eventual publicação
+  → continuidade, comunicação e encerramento dentro do objeto
+```
+
+O diagrama é apenas uma **sequência de responsabilidades possíveis**. Não define superfície implementável, contrato de transição ou ciclo canônico paralelo. Nenhuma ação de publicar ou se comunicar é automaticamente concedida.
+
+### 6. Critérios de experiência para discussão
+
+- Deixar **identidade e contexto Profissional** visíveis antes de ações materiais.
+- Distinguir **declaração, credencial verificada, elegibilidade e autorização**.
+- Diferenciar rascunho, envio, aprovação, publicação e execução, quando admitidos pelos contratos.
+- Tornar condições materiais, titularidade e efeitos de cancelamento compreensíveis.
+- Preservar recusa, erro, correção, contestação, recuperação e histórico de decisões relevantes.
+- Controlar o público e a finalidade de cada dado apresentado.
+- Evitar que métricas, relevância comercial ou publicidade substituam avaliação legítima de compatibilidade.
+- Manter interfaces acessíveis, responsivas e consistentes com padrões aprovados, sem congelar soluções visuais antes de contrato.
+
+### 7. Questões de decisão — PRO-REC-04
+
+- **PRO-04A — Acesso e identidade:** vínculo entre Pessoa autenticada, contexto Profissional, unicidade e possível troca de contextos.
+- **PRO-04B — Cadastro e apresentação:** quais etapas, campos, estados, obrigatoriedades e evidências do perfil têm autoridade.
+- **PRO-04C — Oportunidades:** quais surfaces/actions são próprias do Profissional e como se relacionam ao ciclo canônico.
+- **PRO-04D — Relações e privacidade:** recortes de dados, mensagens, interações, convites e acesso a manifestações.
+- **PRO-04E — Analytics e reputação:** quais indicadores e avaliações possuem fonte, finalidade e audiência admissíveis.
+- **PRO-04F — Continuidade:** notificações, erros, reversibilidade, cancelamentos e tratamento de pendências.
+
+### 8. Recomendação para deliberação
+
+**Recomenda-se reconhecer a Jornada do Profissional como experiência funcional própria vinculada à Pessoa autenticada, com contexto de atuação, perfil, oportunidades, relações e Analytics governados por contratos específicos.** A jornada deve proteger o contexto pessoal da Pessoa e manter responsabilidades de oferta distintas daquelas de Organização e Coletivo.
+
+**Estado:** `PRO-REC-04 EXAMINADO / RECOMENDAÇÃO CANDIDATA / PRO-04A…F PENDENTES`.
+
+**Restrições:** não editar contratos normativos ou Masters de escopo específico por analogia; não presumir direitos de publicação, interações, KPIs, credenciais aprovadas, mudanças de banco, API, tecnologia, teste, deploy ou produção. A PR #732 permanece rascunho.
