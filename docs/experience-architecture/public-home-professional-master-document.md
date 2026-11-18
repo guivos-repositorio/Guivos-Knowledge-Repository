@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-PRO-MASTER-001
 title: Home Pública — Profissional — Documento Mestre Candidato de Arquitetura Narrativa
 status: proposed
-version: 0.1.8
+version: 0.1.9
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-11-18
 normative: false
@@ -123,19 +123,42 @@ A compreensão das oportunidades disponibilizadas pelo Profissional deverá cont
 
 **Questões de implementação ainda pendentes:** estrutura de dados, taxonomia oficial das áreas, mecanismos de classificação, campos de cadastro e multiplicidade de especialidades e ofertas sob uma única identidade Profissional exigem contratos próprios. A presente aprovação conceitual não implanta o modelo nem altera permissões.
 
-### Movimento 02 — Diferentes formas de contribuir
+### Movimento 02 — Especialidades, ofertas e possibilidades
 
-**Função:** mostrar amplitude de atuação sem converter a Home em catálogo.
+**Função:** evidenciar que diferentes especialidades profissionais podem se materializar em atendimentos, aulas, orientações, projetos, serviços e experiências que respondem a necessidades e interesses das Pessoas, potencialmente relacionadas a múltiplas áreas da vida. Diferentemente do Movimento 01, este movimento não repete a promessa de ampliar presença e conexões.
+
+#### Comunicação pública — proposta candidata para apreciação
 
 **Título público candidato:**
-> **Há muitas formas de compartilhar o que você faz.**
 
-**Apoio público:**
-> Uma orientação, uma aula, uma atividade, um projeto ou uma experiência podem ganhar significado quando encontram quem deseja ou precisa participar.
+> **Sua especialidade pode fazer a diferença em diferentes momentos da vida.**
 
-**Direção visual:** poucos exemplos humanos contextualizados, diversos e compreensíveis; exemplos não equivalem a categorias aprovadas ou ofertas disponíveis.
+**Texto de apoio candidato:**
 
-**Transição:** da capacidade profissional à oportunidade real.
+> Consultas, aulas, orientações, projetos, serviços e experiências podem atender diferentes necessidades e abrir novas possibilidades para as pessoas.
+
+**Status:** proposta em revisão, ainda não aprovada como texto público final.
+
+#### Direção visual candidata
+
+Representar poucas situações reconhecíveis, com diversidade de especialidades, tipos de oferta e áreas da vida. Exemplos ilustrativos, sem indicar categorias oficialmente habilitadas:
+
+| Contexto ilustrativo | Possíveis formatos | Relações possíveis com áreas da vida |
+| --- | --- | --- |
+| Psicologia e bem-estar | Atendimentos e acompanhamentos especializados | Saúde, bem-estar |
+| Idiomas e educação | Aulas, treinamentos e orientações | Educação, carreira, viagens |
+| Consultoria e negócios | Consultorias, mentorias e projetos | Carreira, finanças e negócios, conforme o caso |
+| Esporte e movimento | Treinamentos, atividades e experiências | Saúde, bem-estar e lazer |
+
+A oportunidade não deve ser representada como pertencente obrigatoriamente a uma única área. Não prometer efeitos clínicos, financeiros, profissionais ou outros resultados garantidos. Especialidades regulamentadas exigem qualificação, autorização e condições próprias.
+
+#### Papel narrativo
+
+**O que deve ficar claro:** profissionais de diferentes áreas podem apresentar ofertas de formatos distintos; essas ofertas podem responder a objetivos e necessidades variadas das Pessoas e estar relacionadas à sua evolução.
+
+**O que não deve aparecer:** lista exaustiva de profissões, produtos internos, descrição técnica das cinco dimensões, classificação automática como fato já operacional ou discurso assistencialista que substitua o interesse legítimo do Profissional em desenvolver sua atuação comercial.
+
+**Transição:** explicar, no movimento seguinte, como contexto e pertinência influenciam a descoberta de uma oportunidade, sem confundir contribuição potencial com resultado comprovado.
 
 ### Movimento 03 — Quando uma capacidade encontra uma possibilidade
 
