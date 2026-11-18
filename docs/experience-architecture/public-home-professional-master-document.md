@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-PRO-MASTER-001
 title: Home Pública — Profissional — Documento Mestre Candidato de Arquitetura Narrativa
 status: proposed
-version: 0.1.0
+version: 0.1.1
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-11-18
 normative: false
@@ -62,17 +62,39 @@ Os seis movimentos abaixo são uma **primeira proposta sujeita a revisão**, nã
 
 ### Movimento 01 — O potencial da sua atuação
 
-**Função:** reconhecer que conhecimentos e experiências podem ir além da atividade já realizada, abrindo caminhos de participação e contribuição.
+**Objetivo narrativo:** abrir a Home pela percepção de valor do próprio Profissional. Aquilo que ele sabe, já viveu e é capaz de realizar pode encontrar novos contextos, pessoas e oportunidades de contribuição. O movimento apresenta uma possibilidade de alcance, não um serviço já habilitado nem uma promessa de resultado.
 
-**Título público candidato:**
-> **O que você sabe pode abrir novas possibilidades.**
+#### Comunicação pública — proposta em revisão
 
-**Apoio público:**
-> Sua experiência, seus conhecimentos e sua forma de atuar podem encontrar novos contextos e contribuir com a trajetória de outras pessoas.
+**Título principal:**
 
-**Direção visual:** profissionais de diferentes campos e realidades em situações autênticas de atuação; não restringir a profissões corporativas nem exibir uma grade de categorias.
+> **O que você sabe fazer pode ir muito mais longe.**
 
-**Transição:** da existência de competências para as maneiras concretas de expressá-las.
+**Texto de apoio:**
+
+> Seus conhecimentos, experiências e habilidades podem encontrar novas pessoas, novos contextos e novas oportunidades para transformar sua atuação em possibilidades reais.
+
+**Conceito do movimento (referência editorial, não texto adicional obrigatório na Home):**
+
+> Seu conhecimento pode encontrar novas possibilidades na Guivos.
+
+#### Experiência visual e composição
+
+- Abertura expressiva, limpa e humana, com o título como elemento principal e texto de apoio curto, sem acúmulo de chamadas.
+- Representar profissionais de diferentes especialidades e realidades em contextos autênticos de atuação. Evitar limitar a narrativa a escritórios, recrutamento ou profissões corporativas.
+- Sugerir alcance e conexão entre contextos por meio da composição, **sem** insinuar correspondência automática, acesso a informações privadas ou resultados garantidos.
+- Preservar o sistema visual institucional da Guivos (tipografia, cores, componentes e responsividade). Não estabelecer um novo padrão visual exclusivo para Profissional.
+- Não exibir neste movimento catálogo, tabela de serviços, planos, precificação, lista de funcionalidades, indicadores artificiais ou controles de área autenticada.
+
+#### Papel na sequência
+
+**O que o visitante deve compreender:** minha experiência profissional pode ser relevante em contextos além daqueles em que já atuo, e a Guivos propõe ampliar a descoberta dessas possibilidades.
+
+**O que este movimento ainda não precisa explicar:** como cadastrar uma oferta, quais oportunidades estão efetivamente disponíveis, como ocorre uma conexão, ou quais produtos do ecossistema serão utilizados. Esses assuntos exigem contexto próprio e contratos competentes.
+
+**Transição para o próximo movimento:** depois de reconhecer o potencial da própria atuação, o visitante poderá compreender **de quais formas pode contribuir**, sem que essa transição repita a mensagem de abertura.
+
+**Situação:** redação e direcionamento visual registrados para leitura pública e apreciação; ainda não aprovados como versão final de Design ou implementação.
 
 ### Movimento 02 — Diferentes formas de contribuir
 
