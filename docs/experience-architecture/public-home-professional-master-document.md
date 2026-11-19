@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-PRO-MASTER-001
 title: Home Pública — Profissional — Documento Mestre Candidato de Arquitetura Narrativa
 status: proposed
-version: 0.1.21
+version: 0.1.22
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-11-18
 normative: false
@@ -284,44 +284,46 @@ A **Home Profissional mostra oportunidades existentes e o valor de participar da
 
 **Transição para Movimento 05:** da visualização das oportunidades à compreensão de que experiências externas podem permanecer nos ambientes onde os Profissionais já operam.
 
-### Movimento 05 — Oportunidades que permanecem nos ambientes do Profissional
+### Movimento 05 — Oportunidades que permanecem onde o Profissional atua
 
-**Estado:** proposta de novo movimento solicitada pela Direção em 18/11/2026, com redação pública **candidata à aprovação**. Sua inclusão no documento não constitui integração técnica ativa, contrato de plataforma ou autorização de operação.
+**Estado:** direção conceitual ampliada pela Direção em 18/11/2026 para incluir experiências **online, presenciais e domiciliares**. Título e texto públicos permanecem candidatos à aprovação editorial; esta atualização não comprova integrações ou execução operacional.
 
-**Função:** demonstrar que oportunidades disponibilizadas pelo Profissional em canais externos podem ser descobertas na Guivos **sem que seus conteúdos, cursos, atendimentos ou experiências precisem ser transferidos** para o ecossistema. O papel da Guivos, nesse caso, é ampliar descoberta e conexão e conduzir a Pessoa ao destino da oportunidade.
+**Função:** demonstrar que o Profissional pode manter seus cursos, conteúdos, atendimentos e serviços nas plataformas e nos espaços onde já atua. A Guivos pode apoiar a descoberta e a conexão, sem exigir a transferência da experiência para o ecossistema.
 
 #### Comunicação pública candidata
 
 **Título:**
 
-> **Sua oportunidade continua onde está. Seu alcance pode ir além.**
+> **Sua oportunidade continua onde acontece. Seu alcance pode ir além.**
 
 **Texto de apoio:**
 
-> Seus conteúdos, cursos, mentorias e serviços podem permanecer nas plataformas onde você já atua. A Guivos amplia as possibilidades de descoberta e conecta as Pessoas ao ambiente onde sua oportunidade acontece.
+> Seus cursos, conteúdos, atendimentos e serviços podem continuar nas plataformas e nos espaços onde você já atua. A Guivos conecta novas pessoas às suas oportunidades, sejam elas online ou presenciais.
 
-#### Demonstração visual proposta
+#### Composição visual candidata — diferentes ambientes
 
-**Pessoas descobrem oportunidades na Guivos → acessam a oportunidade → seguem para o ambiente de destino.**
+Representar **quatro modalidades de contexto**, sem hierarquia entre elas nem limitação das profissões elegíveis:
 
-Usar três exemplos visuais, sem sugerir integração, autorização comercial ou parceria existente:
+1. **Plataformas digitais:** vídeos no YouTube, cursos na Hotmart, conteúdos e experiências online em plataformas próprias ou outros ambientes.
+2. **Consultórios e escritórios:** atendimentos de saúde, orientações e serviços profissionais prestados em locais apropriados.
+3. **Salas de aula e outros espaços:** aulas presenciais, oficinas, mentorias, atividades e experiências realizadas em espaços físicos.
+4. **Atendimentos domiciliares:** serviços profissionais realizados no endereço combinado, quando legítimos, apropriados e autorizados.
 
-- **YouTube:** conteúdos e vídeos publicados pelo Profissional, assistidos na plataforma de origem.
-- **Hotmart:** cursos ou produtos digitais disponibilizados pelo Profissional, com acesso, aquisição e experiência no ambiente de destino.
-- **Plataforma própria:** serviços, mentorias, atendimentos ou experiências realizados no site ou sistema do Profissional.
+**Fluxo público exemplificativo:** descobrir uma oportunidade na Guivos → compreender suas informações e condições → acessar a plataforma digital ou as orientações de contato/local para participar presencialmente → viver a experiência no ambiente do Profissional.
 
-**Mensagem de síntese:** a Guivos amplia as conexões; o Profissional continua oferecendo sua experiência onde já opera.
+**Mensagem de síntese:** a Guivos amplia a descoberta e as conexões; o Profissional mantém sua experiência onde já opera.
 
 #### Responsabilidades e fronteiras
 
-- Para oportunidades externas, a **Guivos facilita descoberta, apresentação contextual e encaminhamento**, sem assumir automaticamente hospedagem, matrícula, pagamento, atendimento, execução, entrega ou suporte próprios da plataforma de destino.
-- O **Profissional mantém sua operação**, sua oferta e os vínculos que estabelecer com as plataformas externas, respeitando condições, direitos, responsabilidades e regras de cada ambiente.
-- A **Pessoa deve compreender antes de sair** que será direcionada a um ambiente externo, com condições e políticas próprias. Não apresentar um redirecionamento como serviço prestado pela Guivos.
-- Não presumir integrações com YouTube, Hotmart ou plataformas próprias, nem sincronização automática, compra intermediada, importação de conteúdo, monitoramento externo ou confirmação de participação concluída. Qualquer mecanismo dessa natureza exige contrato específico e autorização.
-- O Movimento 05 trata de **oportunidades externas**; não estabelece que *todas* as oportunidades da Guivos precisem ocorrer fora do ecossistema.
-- Não usar o Movimento para ensinar como cadastrar links ou publicar oportunidades. Essa atividade pertence à Jornada do Profissional.
+- **Descoberta não equivale a execução:** para oportunidades externas, a Guivos pode facilitar apresentação e conexão, mas não assume automaticamente hospedagem, venda, matrícula, agendamento, prestação do serviço, entrega, suporte ou responsabilidades próprias do Profissional e do ambiente de destino.
+- **Encaminhamento digital ou presencial:** a Pessoa pode seguir um link externo, acessar instruções de participação ou estabelecer contato legítimo para uma experiência presencial; não tratar todas as oportunidades como redirecionamentos online.
+- **Localização e privacidade:** divulgar apenas locais e informações de contato apropriados e autorizados. Não expor domicílios, endereços particulares, rotinas ou localização em tempo real sem base e permissão adequadas.
+- **Responsabilidade profissional:** experiências reguladas, atendimentos de saúde e serviços em domicílio continuam sujeitos às credenciais, autorizações, requisitos de segurança, condições e legislação aplicáveis. A Guivos não garante qualificação ou adequação clínica sem verificação autorizada.
+- **Plataformas citadas:** YouTube e Hotmart são exemplos de destinos, não indicação de parceria, integração técnica ou sincronização já existente.
+- **Amplitude do ecossistema:** este movimento comunica a possibilidade de experiências realizadas fora da Guivos, sem estabelecer que todas as oportunidades devam ser externas.
+- **Jornada do Profissional:** cadastro, configuração, gestão, divulgação e indicação de destino são tratados na experiência posterior do Profissional, não ensinados na Home pública.
 
-**Transição para Movimento 06:** a experiência ocorre no ambiente correspondente e poderá integrar a compreensão da trajetória somente conforme registros, permissões e evidências legitimamente disponíveis, sem presumir que a Guivos acompanhe automaticamente sua realização.
+**Transição para Movimento 06:** a experiência efetivamente realizada pode contribuir para novos caminhos, sem pressupor rastreamento automático da atividade ou resultados ocorridos fora da Guivos.
 
 ### Movimento 06 — A continuidade de cada experiência
 
