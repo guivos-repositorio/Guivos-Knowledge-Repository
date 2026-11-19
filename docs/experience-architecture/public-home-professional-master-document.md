@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-PRO-MASTER-001
 title: Home Pública — Profissional — Documento Mestre Candidato de Arquitetura Narrativa
 status: proposed
-version: 0.1.15
+version: 0.1.16
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-11-18
 normative: false
@@ -193,11 +193,13 @@ Essa abertura não representa aprovação automática de cadastro, elegibilidade
 
 ### Movimento 03 — Descoberta e relevância
 
-**Função:** explicar como oportunidades profissionais podem ser descobertas a partir dos interesses, objetivos, condições e Momento das Pessoas, inclusive quando elas ainda não haviam procurado uma oportunidade específica. A narrativa preserva o benefício comercial legítimo do Profissional, a autonomia da Pessoa e a distinção entre descoberta possível e funcionamento comprovadamente disponível.
+**Estado da comunicação pública:** **título, texto de apoio, mensagem complementar e três situações aprovados pela Direção em 18/11/2026**. A composição visual final continua sujeita a Design. A aprovação da narrativa não comprova funcionalidades em operação nem autoriza implementação.
 
-#### Comunicação pública — proposta alinhada à Direção, em revisão editorial
+**Função:** apresentar o valor da descoberta contextual das oportunidades profissionais para públicos potencialmente relevantes, inclusive quando a Pessoa ainda não buscou determinada oferta. Preservar o interesse comercial do Profissional e a autonomia da Pessoa.
 
-**Título público:**
+#### Abertura pública aprovada
+
+**Título:**
 
 > **Sua oportunidade pode chegar a quem ainda nem imaginou encontrá-la.**
 
@@ -205,34 +207,52 @@ Essa abertura não representa aprovação automática de cadastro, elegibilidade
 
 > Na Guivos, interesses, objetivos e momentos da vida podem revelar conexões entre o que você oferece e aquilo que as pessoas procuram — ou ainda não descobriram que pode fazer sentido para elas.
 
-**Complemento público opcional, em segundo plano:**
+#### Três formas de descobrir novas possibilidades — exemplos públicos aprovados
+
+**01 — Descoberta ampliada: uma oportunidade que a Pessoa ainda não procurava.**
+
+Uma pessoa está planejando uma viagem internacional. Mesmo sem ter procurado aulas de idiomas, pode descobrir um professor que oferece inglês para viagens.
+
+**Oportunidade ilustrativa:** aulas de inglês voltadas a situações de viagem.
+
+**02 — Relevância contextual: uma oportunidade compatível com o momento da Pessoa.**
+
+Uma pessoa deseja empreender e encontra uma mentoria online compatível com seus objetivos, estágio de desenvolvimento e disponibilidade de tempo.
+
+**Oportunidade ilustrativa:** mentoria online de empreendedorismo.
+
+**03 — Diferentes caminhos: diferentes oportunidades para um mesmo objetivo.**
+
+Uma pessoa deseja melhorar sua saúde e descobre profissionais e atividades que podem contribuir para diferentes aspectos desse objetivo.
+
+**Oportunidades ilustrativas:** acompanhamento nutricional, atividade física orientada e outros atendimentos pertinentes.
+
+**Distinção entre os casos:** o primeiro revela uma oferta não procurada expressamente; o segundo considera intenção e condições de participação; o terceiro demonstra a variedade de caminhos para um objetivo. Os três exemplos são suficientes para este movimento, sem obrigação de ampliar a quantidade.
+
+#### Mensagem pública complementar aprovada
+
+**Uma nova forma de descobrir oportunidades.**
 
 > A inteligência da Guivos pode ajudar a identificar possibilidades relevantes, respeitando a privacidade e a liberdade de escolha de cada pessoa.
 
-#### Três situações para comunicar a descoberta
+#### Hierarquia de comunicação e composição
 
-| Situação | Contexto da Pessoa | Oportunidade profissional possível | O que demonstra |
-| --- | --- | --- | --- |
-| **01 — Descobrir algo que ainda não procurava** | A Pessoa pretende viajar ao exterior, mas não buscou aulas de idiomas | Aulas de inglês voltadas a situações de viagem | Descoberta ampliada de uma possibilidade ainda não procurada |
-| **02 — Encontrar algo compatível com seu momento** | A Pessoa deseja empreender, considera seu estágio, objetivos e disponibilidade de tempo | Mentoria online de empreendedorismo com condições compatíveis | Relevância contextual e condições de participação |
-| **03 — Conhecer diferentes caminhos para um objetivo** | A Pessoa deseja melhorar sua saúde | Acompanhamento nutricional, atividade física orientada e outros serviços pertinentes | Diversidade de profissionais e caminhos potenciais para o mesmo objetivo |
+1. **Abertura** — título e texto de apoio.
+2. **Três situações humanas** — apresentar em cards, cenas ou composição interativa, com exemplos facilmente compreensíveis e textos curtos.
+3. **Mensagem complementar** — inteligência como apoio à descoberta, em segundo plano, não protagonista técnico.
+4. **Continuidade** — conduzir à clareza das condições e à autonomia de escolha no Movimento 04.
 
-**Orientação de composição:** representar os três exemplos como situações humanas simples, com diferenciação nítida entre contexto da Pessoa, oportunidade ofertada pelo Profissional e possível relação de pertinência. Evitar gráficos de scores, dados pessoais identificáveis, ofertas supostamente ativas, informações clínicas, métricas de conversão ou promessas de resultados.
+**Para o Profissional:** oportunidades podem alcançar públicos relevantes, em diferentes momentos e trajetórias. **Para a Pessoa:** pode encontrar possibilidades não procuradas, alternativas pertinentes e caminhos para seus objetivos, mantendo a própria escolha.
 
-**Não confundir os casos:** o primeiro mostra descoberta sem busca expressa por aquele tipo de oferta; o segundo mostra adequação a uma intenção já expressa e às condições concretas; o terceiro mostra diversidade de oportunidades pertinentes a um objetivo amplo. As três situações podem coexistir e não esgotam as formas de descoberta.
+#### Fronteiras de interpretação e tecnologia
 
-#### Papel da inteligência e fronteiras
+- A Home **não explica algoritmos, geolocalização operacional, disponibilidade em tempo real, proatividade adaptativa nem a arquitetura interna** de Guivos AI e Guivos Intelligence. As páginas especializadas são as superfícies adequadas para isso.
+- A Guivos Intelligence pode apoiar compreensão contextual com dados autorizados; a Guivos AI pode contribuir com análises especializadas, quando aplicável e permitido.
+- A Jornada privada da Pessoa não se torna acessível ao Profissional por sua oferta ser descoberta.
+- Os exemplos são ilustrativos de capacidades pretendidas, não casos comprovadamente operacionais. Descoberta ou relevância não significam garantia de contratação, receita, adequação clínica ou impacto positivo.
+- O exemplo de saúde não constitui diagnóstico, recomendação clínica individual ou indicação automática de tratamento.
 
-- **Guivos Intelligence:** produto transversal que pode contextualizar dados e conhecimentos autorizados para apoiar compreensão e descoberta.
-- **Guivos AI:** capacidades analíticas especializadas que podem contribuir para reconhecer relações, lacunas e possibilidades ainda não evidentes, quando permitidas.
-- **Pessoa:** tem autonomia para avaliar, corrigir interpretações, explorar ou rejeitar cada oportunidade; a Guivos não decide por ela.
-- **Profissional:** pode disponibilizar oportunidades e alcançar públicos pertinentes, **sem acesso à jornada privada da Pessoa** apenas por oferecer uma oportunidade.
-
-**Limites:** o exemplo de saúde não representa diagnóstico ou orientação médica individual. Relevância não equivale a adequação assegurada, contratação, receita, evolução ou impacto comprovado. A descrição ilustra a direção pretendida, não uma funcionalidade operacional validada.
-
-**Decisão editorial aprovada — separação de responsabilidades da narrativa:** o Movimento 03 deve comunicar ao público os benefícios de descoberta ampliada, relevância contextual e novas possibilidades conforme o momento da Pessoa, **sem explicar tecnologias, algoritmos, geolocalização operacional, proatividade adaptativa ou a arquitetura interna da Guivos AI e da Guivos Intelligence**. As páginas próprias de Guivos AI e Guivos Intelligence são os destinos adequados para detalhar essas capacidades e suas fronteiras. A Home não deve prometer funcionalidades já ativas nem confundir as responsabilidades desses componentes.
-
-**Transição para Movimento 04:** uma descoberta relevante só se torna uma escolha informada quando a oferta apresenta com clareza seu responsável, conteúdo e condições de participação.
+**Transição para Movimento 04:** uma descoberta relevante exige informações claras sobre a oferta, o responsável e as condições de participação para permitir uma decisão consciente.
 
 ### Movimento 04 — Clareza para oferecer e escolher
 
