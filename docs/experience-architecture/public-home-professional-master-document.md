@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-PRO-MASTER-001
 title: Home Pública — Profissional — Documento Mestre Candidato de Arquitetura Narrativa
 status: proposed
-version: 0.1.20
+version: 0.1.21
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-11-18
 normative: false
@@ -282,9 +282,48 @@ A **Home Profissional mostra oportunidades existentes e o valor de participar da
 
 **Confiança e privacidade:** informações claras e condições de participação são importantes para a escolha, mas a Home não deve simular certificações, verificações, agendamentos, pagamentos, avaliações, credenciais comprovadas nem disponibilidades não confirmadas. Não disponibilizar contexto privado da Pessoa ao Profissional.
 
-**Transição para Movimento 05:** da visualização de oportunidades à continuidade das experiências e das possibilidades de evolução.
+**Transição para Movimento 05:** da visualização das oportunidades à compreensão de que experiências externas podem permanecer nos ambientes onde os Profissionais já operam.
 
-### Movimento 05 — A continuidade de cada experiência
+### Movimento 05 — Oportunidades que permanecem nos ambientes do Profissional
+
+**Estado:** proposta de novo movimento solicitada pela Direção em 18/11/2026, com redação pública **candidata à aprovação**. Sua inclusão no documento não constitui integração técnica ativa, contrato de plataforma ou autorização de operação.
+
+**Função:** demonstrar que oportunidades disponibilizadas pelo Profissional em canais externos podem ser descobertas na Guivos **sem que seus conteúdos, cursos, atendimentos ou experiências precisem ser transferidos** para o ecossistema. O papel da Guivos, nesse caso, é ampliar descoberta e conexão e conduzir a Pessoa ao destino da oportunidade.
+
+#### Comunicação pública candidata
+
+**Título:**
+
+> **Sua oportunidade continua onde está. Seu alcance pode ir além.**
+
+**Texto de apoio:**
+
+> Seus conteúdos, cursos, mentorias e serviços podem permanecer nas plataformas onde você já atua. A Guivos amplia as possibilidades de descoberta e conecta as Pessoas ao ambiente onde sua oportunidade acontece.
+
+#### Demonstração visual proposta
+
+**Pessoas descobrem oportunidades na Guivos → acessam a oportunidade → seguem para o ambiente de destino.**
+
+Usar três exemplos visuais, sem sugerir integração, autorização comercial ou parceria existente:
+
+- **YouTube:** conteúdos e vídeos publicados pelo Profissional, assistidos na plataforma de origem.
+- **Hotmart:** cursos ou produtos digitais disponibilizados pelo Profissional, com acesso, aquisição e experiência no ambiente de destino.
+- **Plataforma própria:** serviços, mentorias, atendimentos ou experiências realizados no site ou sistema do Profissional.
+
+**Mensagem de síntese:** a Guivos amplia as conexões; o Profissional continua oferecendo sua experiência onde já opera.
+
+#### Responsabilidades e fronteiras
+
+- Para oportunidades externas, a **Guivos facilita descoberta, apresentação contextual e encaminhamento**, sem assumir automaticamente hospedagem, matrícula, pagamento, atendimento, execução, entrega ou suporte próprios da plataforma de destino.
+- O **Profissional mantém sua operação**, sua oferta e os vínculos que estabelecer com as plataformas externas, respeitando condições, direitos, responsabilidades e regras de cada ambiente.
+- A **Pessoa deve compreender antes de sair** que será direcionada a um ambiente externo, com condições e políticas próprias. Não apresentar um redirecionamento como serviço prestado pela Guivos.
+- Não presumir integrações com YouTube, Hotmart ou plataformas próprias, nem sincronização automática, compra intermediada, importação de conteúdo, monitoramento externo ou confirmação de participação concluída. Qualquer mecanismo dessa natureza exige contrato específico e autorização.
+- O Movimento 05 trata de **oportunidades externas**; não estabelece que *todas* as oportunidades da Guivos precisem ocorrer fora do ecossistema.
+- Não usar o Movimento para ensinar como cadastrar links ou publicar oportunidades. Essa atividade pertence à Jornada do Profissional.
+
+**Transição para Movimento 06:** a experiência ocorre no ambiente correspondente e poderá integrar a compreensão da trajetória somente conforme registros, permissões e evidências legitimamente disponíveis, sem presumir que a Guivos acompanhe automaticamente sua realização.
+
+### Movimento 06 — A continuidade de cada experiência
 
 **Função:** conectar participação, experiência e novos caminhos, sem prometer resultados.
 
@@ -298,7 +337,7 @@ A **Home Profissional mostra oportunidades existentes e o valor de participar da
 
 **Transição:** do valor potencial da participação ao convite público.
 
-### Movimento 06 — Convite para participar
+### Movimento 07 — Convite para participar
 
 **Função:** encerrar o percurso com um convite coerente com a identidade do Profissional, sem antecipar fluxos internos.
 
