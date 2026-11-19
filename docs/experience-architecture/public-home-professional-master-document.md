@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-PRO-MASTER-001
 title: Home Pública — Profissional — Documento Mestre Candidato de Arquitetura Narrativa
 status: proposed
-version: 0.1.22
+version: 0.1.23
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-11-18
 normative: false
@@ -286,11 +286,11 @@ A **Home Profissional mostra oportunidades existentes e o valor de participar da
 
 ### Movimento 05 — Oportunidades que permanecem onde o Profissional atua
 
-**Estado:** direção conceitual ampliada pela Direção em 18/11/2026 para incluir experiências **online, presenciais e domiciliares**. Título e texto públicos permanecem candidatos à aprovação editorial; esta atualização não comprova integrações ou execução operacional.
+**Estado:** direção conceitual, título e texto públicos **aprovados pela Direção em 18/11/2026**, incluindo experiências **online, presenciais e domiciliares**. A composição visual final permanece sujeita a Design; esta aprovação não comprova integrações nem execução operacional.
 
 **Função:** demonstrar que o Profissional pode manter seus cursos, conteúdos, atendimentos e serviços nas plataformas e nos espaços onde já atua. A Guivos pode apoiar a descoberta e a conexão, sem exigir a transferência da experiência para o ecossistema.
 
-#### Comunicação pública candidata
+#### Comunicação pública aprovada
 
 **Título:**
 
