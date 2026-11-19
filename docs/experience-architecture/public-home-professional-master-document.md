@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-PRO-MASTER-001
 title: Home Pública — Profissional — Documento Mestre Candidato de Arquitetura Narrativa
 status: proposed
-version: 0.1.30
+version: 0.1.31
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-11-18
 normative: false
@@ -61,9 +61,26 @@ O Profissional **continua sendo uma pessoa humana**, mas participa aqui com uma 
 
 **Regra estrutural permanente:** não fixar quantidade de movimentos. Acrescentar, reunir, dividir ou retirar movimentos somente quando houver função narrativa distinta e justificável. A ausência de um movimento não é lacuna a ser preenchida por repetição. Numeração é apenas localização editorial e pode mudar.
 
-## 3. Arquitetura narrativa candidata
+## 3. Arquitetura narrativa — consolidação editorial
 
-Os seis movimentos abaixo são uma **primeira proposta sujeita a revisão**, não uma padronização em seis, onze ou qualquer outra quantidade. Cada um precisa produzir uma mudança de entendimento diferente.
+A sequência atual contém **dez movimentos com funções narrativas distintas**, definidos pela necessidade de comunicação e **não por quantidade obrigatória**. A análise de continuidade e redundância preservou os dez, sem impor paridade com outras Homes.
+
+| Movimento | Função narrativa | Situação da comunicação |
+| --- | --- | --- |
+| **01 — Presença e novos públicos** | Convidar Profissionais já atuantes a ampliar sua presença comercial | Título e apoio aprovados |
+| **02 — Áreas de evolução** | Relacionar ofertas às nove áreas de evolução da Pessoa, sem lista fechada de especialidades | Direção aprovada; título e apoio candidatos |
+| **03 — Descoberta e relevância** | Demonstrar descoberta ampliada e contextual com três situações breves | Redação aprovada |
+| **04 — Oportunidades em destaque** | Mostrar cinco cards de ofertas profissionais reais, se disponíveis e autorizadas | Comunicação e diretrizes aprovadas; integração pendente |
+| **05 — Onde a experiência acontece** | Mostrar que ofertas online, presenciais e domiciliares podem permanecer nos ambientes do Profissional | Comunicação aprovada |
+| **06 — Oportunidades ao Vivo** | Destacar experiências síncronas em data e horário definidos, com transmissão online | Comunicação aprovada |
+| **07 — Continuidade** | Mostrar possíveis desdobramentos de uma experiência na trajetória da Pessoa | Comunicação aprovada |
+| **08 — Voz dos Profissionais** | Reforçar confiança com vídeos autênticos e autorizados de participantes reais | Formato de carrossel definido; título e apoio candidatos; acervo pendente |
+| **09 — Perguntas frequentes** | Esclarecer elegibilidade, modalidades, alcance e responsabilidades antes do convite | Sete respostas e formato aprovados |
+| **10 — Convite final** | Convidar o Profissional a participar sem antecipar o cadastro | Título, apoio e CTA aprovados; destino operacional pendente |
+
+**Verificação editorial de sequência:** 01 apresenta o benefício comercial; 02 a amplitude; 03 a pertinência; 04 a visualização concreta; 05 o ambiente de execução; 06 a singularidade do encontro ao vivo; 07 a continuidade possível; 08 a credibilidade de relatos reais; 09 esclarece dúvidas; 10 encerra com a ação.
+
+**Pontos abertos antes de um release para Design ou implementação:** aprovar a redação pública dos Movimentos 02 e 08; obter/autorizar depoimentos reais para o Movimento 08; definir origem, elegibilidade e comportamento para o carrossel do Movimento 04; validar o destino do CTA; e observar as integrações e fronteiras ainda dependentes de contratos próprios. A aprovação de narrativa **não** é autorização para publicação da Home ou ativação de funcionalidades.
 
 ### Movimento 01 — Novos clientes e possibilidades de negócio
 
@@ -403,7 +420,7 @@ Evitar exibir essas etapas como resultados comprovados ou automáticos. A sequê
 - Evitar promessas de transformação, resultado mensurável, contratação ou receita.
 - Manter o movimento **breve, inspiracional e visual**, com a experiência como conexão entre a atuação profissional e novas possibilidades; explicações sobre inteligência e captura de dados pertencem às páginas especializadas.
 
-**Transição para Movimento 08:** do valor possível de cada experiência ao convite público para participar da Guivos como Profissional.
+**Transição para Movimento 08:** do valor possível de cada experiência aos relatos autênticos de Profissionais, antes do esclarecimento de dúvidas e do convite final.
 
 ### Movimento 08 — A voz dos Profissionais
 
@@ -573,7 +590,7 @@ O registro de participante Profissional no GKR é conceitual e aponta contratos 
 
 ### Registro de decisão editorial
 
-**2026-11-18 — Aprovação da comunicação do Movimento 01:** a Direção aprovou o título **“Sua atuação profissional. Novas conexões. Novas oportunidades.”** e o texto **“Amplie sua presença, alcance novos públicos e conecte suas especialidades a pessoas que procuram o que você oferece.”**. Esta aprovação é restrita ao texto público do Movimento 01; os demais movimentos continuam em revisão.
+**2026-11-18 — Aprovação da comunicação do Movimento 01:** a Direção aprovou o título **“Sua atuação profissional. Novas conexões. Novas oportunidades.”** e o texto **“Amplie sua presença, alcance novos públicos e conecte suas especialidades a pessoas que procuram o que você oferece.”**. A decisão histórica é restrita ao Movimento 01; as aprovações posteriores estão consolidadas no quadro da Seção 3.
 
 
 **2026-11-18 — Direção:** criar a Home Pública — Profissional imediatamente abaixo da Home de Organizações e Coletivos, em Experiência e Journey. **Não estabelecer quantidade padrão de movimentos**; desenvolver somente movimentos necessários e eliminar redundâncias.
@@ -582,7 +599,7 @@ O registro de participante Profissional no GKR é conceitual e aponta contratos 
 
 **2026-11-18 — Correção de posicionamento:** o Profissional **já atua no mercado e busca clientes**. Sua motivação comercial não deve ser substituída por discurso de ajuda, colaboração altruísta ou início de uma atividade. O benefício de evolução para a Pessoa é complementar ao objetivo de captação e desenvolvimento de negócios do Profissional. O Movimento 01 foi reescrito; **movimentos seguintes permanecem sujeitos a revisão sob essa premissa**.
 
-**Estado do presente documento:** candidato para revisão, sem aprovação de publicação.
+**Estado do presente documento:** narrativa consolidada para apreciação dos pontos abertos, sem autorização automática de Design, implementação ou publicação.
 
 
 **2026-11-18 — Confirmação de diretriz:** aprovada a compreensão das possíveis contribuições da oportunidade e de sua associação com múltiplas áreas da vida como parte da arquitetura conceitual de oportunidades, além do Movimento 02. Preservar a diferença entre intenção, potencial e resultado comprovado.
