@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-PRO-MASTER-001
 title: Home Pública — Profissional — Documento Mestre Candidato de Arquitetura Narrativa
 status: proposed
-version: 0.1.26
+version: 0.1.27
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-11-18
 normative: false
@@ -405,19 +405,56 @@ Evitar exibir essas etapas como resultados comprovados ou automáticos. A sequê
 
 **Transição para Movimento 08:** do valor possível de cada experiência ao convite público para participar da Guivos como Profissional.
 
-### Movimento 08 — Convite para participar
+### Movimento 08 — A voz dos Profissionais
 
-**Função:** encerrar o percurso com um convite coerente com a identidade do Profissional, sem antecipar fluxos internos.
+**Estado:** inserção e função narrativa solicitadas pela Direção em 18/11/2026. Título, texto de apoio e apresentação visual são **candidatos à aprovação editorial**. A criação do movimento não implica existência de depoimentos já gravados, autorização de imagem ou implantação de carrossel de vídeos.
 
-**Título público candidato:**
-> **Sua atuação pode fazer parte de algo maior.**
+**Função:** reforçar confiança e autoridade por meio de **relatos autênticos de Profissionais que efetivamente participam da Guivos**, antes do convite final. Diferenciar-se dos movimentos anteriores pela perspectiva em primeira pessoa de participantes reais, e não por afirmações institucionais ou métricas de resultado.
 
-**Apoio público:**
-> Participe da Guivos como Profissional e descubra novas maneiras de apresentar suas capacidades e contribuir com oportunidades, respeitando as condições de participação.
+#### Comunicação pública candidata
 
-**CTA público candidato:** **Participar da Guivos**.
+**Título:**
 
-**Nota de produto:** a existência e o destino efetivo do CTA dependem da disponibilidade autorizada do fluxo de acesso e cadastro. Não simular ativação.
+> **Conheça a experiência de quem faz parte da Guivos.**
+
+**Texto de apoio:**
+
+> Profissionais de diferentes áreas compartilham suas experiências, perspectivas e descobertas ao participar do ecossistema.
+
+#### Composição visual candidata — carrossel de depoimentos em vídeo
+
+- Carrossel horizontal responsivo de **vídeos reais de depoimentos de Profissionais**, preferencialmente contemplando diferentes áreas de atuação e formatos de experiência; a quantidade final depende do acervo legítimo disponível.
+- Cada card pode apresentar **capa de vídeo, nome público do Profissional, especialidade e reprodução sob ação explícita**, sem reproduzir vídeos automaticamente ou ativar som sem solicitação.
+- Relatos curtos, objetivos e centrados na experiência verídica de participação, nas oportunidades oferecidas e nas conexões efetivamente vivenciadas.
+- **Somente publicar relatos verificáveis, com autorização de imagem, voz, edição e exibição pública**, considerando finalidade, prazo de uso e eventual retirada de consentimento.
+- Disponibilizar **legendas**, identificação adequada e controles acessíveis; preservar direitos autorais de imagens e materiais.
+- **Não criar depoimentos, falas, nomes, fotos ou resultados inventados** para ocupar cards. Na ausência de vídeos autorizados, não simular prova social: definir tratamento editorial de omissão ou adiamento da seção até existir acervo adequado.
+- Não apresentar ganhos, faturamento, alcance, contratações ou transformações como resultados típicos ou garantidos; quando houver indicadores reais, exigir contexto e evidência.
+- A Home não substitui o ambiente posterior de gestão de conta ou envio de depoimentos.
+
+**Transição para Movimento 09:** dos relatos autênticos de Profissionais ao convite público para participar da Guivos.
+
+### Movimento 09 — Convite para participar
+
+**Estado:** título, texto de apoio e CTA público aprovados conceitualmente pela Direção em 18/11/2026; implementação e destino do CTA dependem do fluxo autenticado autorizado.
+
+**Função:** encerrar a narrativa pública com um convite direto a Profissionais já atuantes que desejam ampliar presença, público e oportunidades comerciais, sem explicar o cadastro nesta seção.
+
+#### Comunicação pública aprovada
+
+**Título:**
+
+> **Sua atuação profissional pode ir ainda mais longe.**
+
+**Texto de apoio:**
+
+> Amplie sua presença, conecte-se a novos públicos e descubra outras possibilidades para seus serviços e oportunidades na Guivos.
+
+**CTA:** **Participar da Guivos**.
+
+**Direção visual:** encerramento limpo, título, apoio e CTA em posição central, com profissionais de diferentes especialidades em ambientes reais de atuação quando houver imagens legítimas e autorizadas. Não repetir o carrossel do Movimento 04 nem o carrossel de depoimentos do Movimento 08.
+
+**Nota de produto:** não simular CTA funcional, acesso ativo ou fluxo de cadastro implementado sem integração e autorização comprovadas.
 
 ## 4. Relações com o ecossistema
 
