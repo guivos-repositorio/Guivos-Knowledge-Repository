@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-PRO-MASTER-001
 title: Home Pública — Profissional — Documento Mestre Candidato de Arquitetura Narrativa
 status: proposed
-version: 0.1.33
+version: 0.1.34
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-11-18
 normative: false
@@ -65,18 +65,24 @@ O Profissional **continua sendo uma pessoa humana**, mas participa aqui com uma 
 
 A sequência atual contém **dez movimentos com funções narrativas distintas**, definidos pela necessidade de comunicação e **não por quantidade obrigatória**. A análise de continuidade e redundância preservou os dez, sem impor paridade com outras Homes.
 
-| Movimento | Função narrativa | Situação da comunicação |
-| --- | --- | --- |
-| **01 — Presença e novos públicos** | Convidar Profissionais já atuantes a ampliar sua presença comercial | Título e apoio aprovados |
-| **02 — Áreas de evolução** | Relacionar ofertas às nove áreas de evolução da Pessoa, sem lista fechada de especialidades | Título e apoio aprovados; composição visual pendente |
-| **03 — Descoberta e relevância** | Demonstrar descoberta ampliada e contextual com três situações breves | Redação aprovada |
-| **04 — Oportunidades em destaque** | Mostrar cinco cards de ofertas profissionais reais, se disponíveis e autorizadas | Comunicação e diretrizes aprovadas; integração pendente |
-| **05 — Onde a experiência acontece** | Mostrar que ofertas online, presenciais e domiciliares podem permanecer nos ambientes do Profissional | Comunicação aprovada |
-| **06 — Oportunidades ao Vivo** | Destacar experiências síncronas em data e horário definidos, com transmissão online | Comunicação aprovada |
-| **07 — Continuidade** | Mostrar possíveis desdobramentos de uma experiência na trajetória da Pessoa | Comunicação aprovada |
-| **08 — Voz dos Profissionais** | Reforçar confiança com vídeos autênticos e autorizados de participantes reais | Título e apoio aprovados; carrossel definido; acervo real autorizado pendente |
-| **09 — Perguntas frequentes** | Esclarecer elegibilidade, modalidades, alcance e responsabilidades antes do convite | Sete respostas e formato aprovados |
-| **10 — Convite final** | Convidar o Profissional a participar sem antecipar o cadastro | Título, apoio e CTA aprovados; destino operacional pendente |
+### Quadro de consulta rápida dos movimentos vigentes
+
+Este quadro reúne os **dez movimentos da arquitetura narrativa vigente para referência editorial**, com a numeração, o nome interno, o **título público efetivamente aprovado**, a finalidade e as dependências de cada um. Vigência editorial **não equivale a página implementada ou publicada**.
+
+| Nº | Movimento | Título público aprovado | Função / estado |
+| --- | --- | --- | --- |
+| **01** | Novos clientes e possibilidades de negócio | **Sua atuação profissional. Novas conexões. Novas oportunidades.** | Ampliar presença, públicos e conexões comerciais. **Texto aprovado.** |
+| **02** | Áreas de evolução da Pessoa e oportunidades profissionais | **Diferentes áreas da vida. Mais possibilidades para sua atuação.** | Relacionar ofertas às áreas de evolução, sem restringir especialidades. **Texto aprovado; visual pendente.** |
+| **03** | Descoberta e relevância | **Sua oportunidade pode chegar a quem ainda nem imaginou encontrá-la.** | Apresentar descoberta contextual e novas possibilidades. **Texto e exemplos aprovados.** |
+| **04** | Oportunidades profissionais em destaque | **Suas oportunidades ganham espaço para serem descobertas.** | Mostrar oportunidades reais de diferentes Profissionais. **Texto aprovado; integração pendente.** |
+| **05** | Oportunidades que permanecem onde o Profissional atua | **Sua oportunidade continua onde acontece. Seu alcance pode ir além.** | Manter serviços nos ambientes digitais e físicos do Profissional. **Texto aprovado.** |
+| **06** | Oportunidades ao Vivo | **Sua próxima transmissão pode alcançar muito mais pessoas.** | Destacar eventos síncronos com transmissão online. **Texto aprovado.** |
+| **07** | A continuidade de cada experiência | **O que você oferece hoje pode abrir possibilidades para amanhã.** | Mostrar possíveis desdobramentos após uma experiência. **Texto aprovado.** |
+| **08** | A voz dos Profissionais | **Conheça a experiência de quem faz parte da Guivos.** | Depoimentos em vídeo de Profissionais reais. **Texto aprovado; vídeos autorizados pendentes.** |
+| **09** | Perguntas frequentes | **Ainda tem dúvidas? A gente responde.** | Esclarecer dúvidas de participação, operação e alcance. **Texto e sete respostas aprovados.** |
+| **10** | Convite para participar | **Sua atuação profissional pode ir ainda mais longe.** | Encerrar com CTA Participar da Guivos. **Texto e CTA aprovados; destino pendente.** |
+
+**Consulta e governança:** manter este quadro sincronizado com a redação de cada movimento abaixo. As condições de Design, autorização de depoimentos, origem de ofertas reais, integrações e destino do CTA permanecem específicas e não são aprovadas por este quadro.
 
 **Verificação editorial de sequência:** 01 apresenta o benefício comercial; 02 a amplitude; 03 a pertinência; 04 a visualização concreta; 05 o ambiente de execução; 06 a singularidade do encontro ao vivo; 07 a continuidade possível; 08 a credibilidade de relatos reais; 09 esclarece dúvidas; 10 encerra com a ação.
 
