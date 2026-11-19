@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-PRO-MASTER-001
 title: Home Pública — Profissional — Documento Mestre Candidato de Arquitetura Narrativa
 status: proposed
-version: 0.1.27
+version: 0.1.28
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-11-18
 normative: false
@@ -421,7 +421,13 @@ Evitar exibir essas etapas como resultados comprovados ou automáticos. A sequê
 
 > Profissionais de diferentes áreas compartilham suas experiências, perspectivas e descobertas ao participar do ecossistema.
 
-#### Composição visual candidata — carrossel de depoimentos em vídeo
+#### Composição visual — referência estrutural confirmada pela Direção
+
+**Referência fornecida:** captura de carrossel horizontal de retratos verticais de profissionais, com muitos cards em sequência, nomes e descrições curtas sob cada retrato, fotografias em destaque e corte/fade inferior. A referência estabelece **composição e dinâmica visual**, não autorização para reproduzir imagens, identidades, declarações, marcas, fundo escuro ou números de faturamento do exemplo.
+
+**Adaptação para a Guivos:** aplicar fundo branco, tipografia institucional Goldplay e controles do GKR; exibir retratos verticais de Profissionais de **diferentes áreas**, com identificação pública, especialidade e uma linha curta, além de affordance clara para abrir o **depoimento real em vídeo** correspondente. Manter carrossel horizontal contínuo e responsivo, com múltiplos cards aparentes em desktop e navegação acessível no mobile. O vídeo é acionado pelo usuário e não inicia automaticamente com som.
+
+**Ponto de controle:** apresentar autoridade profissional de maneira verdadeira, mas **não confundir notoriedade em sua área com testemunho sobre participação na Guivos**. Somente Profissionais com depoimentos e direitos de exibição comprovados integram a versão pública. Até então, a referência pode orientar Design, mas não é prova social publicada.
 
 - Carrossel horizontal responsivo de **vídeos reais de depoimentos de Profissionais**, preferencialmente contemplando diferentes áreas de atuação e formatos de experiência; a quantidade final depende do acervo legítimo disponível.
 - Cada card pode apresentar **capa de vídeo, nome público do Profissional, especialidade e reprodução sob ação explícita**, sem reproduzir vídeos automaticamente ou ativar som sem solicitação.
