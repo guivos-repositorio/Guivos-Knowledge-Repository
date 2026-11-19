@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-PRO-MASTER-001
 title: Home Pública — Profissional — Documento Mestre Candidato de Arquitetura Narrativa
 status: proposed
-version: 0.1.25
+version: 0.1.26
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-11-18
 normative: false
@@ -369,17 +369,41 @@ As possibilidades incluem:
 
 ### Movimento 07 — A continuidade de cada experiência
 
-**Função:** conectar participação, experiência e novos caminhos, sem prometer resultados.
+**Estado:** título, texto público e direção conceitual aprovados pela Direção em 18/11/2026. A composição visual definitiva depende de Design e a aprovação não representa implantação de monitoramento de experiências ou integrações externas.
 
-**Título público candidato:**
-> **Uma experiência pode ser o começo de outras.**
+**Função:** comunicar que o valor de uma oportunidade profissional não precisa terminar com a atividade realizada: uma experiência pode contribuir para aprendizados, novos interesses, relações e outros caminhos de evolução das Pessoas. Preservar a perspectiva de expansão de conexões e continuidade legítima da atuação comercial do Profissional, sem prometer efeitos ou resultados.
 
-**Apoio público:**
-> Uma atividade realizada pode gerar aprendizados, novas relações e possibilidades futuras — para quem participa e para quem compartilha seu conhecimento.
+#### Comunicação pública aprovada
 
-**Direção visual:** continuidade temporal entre encontros, atividades e projetos, sem impor resultados mensuráveis ou efeitos causais automáticos.
+**Título:**
 
-**Transição:** do valor potencial da participação ao convite público.
+> **O que você oferece hoje pode abrir possibilidades para amanhã.**
+
+**Texto de apoio:**
+
+> Uma aula, atendimento, mentoria ou experiência pode contribuir para novas conquistas, interesses e caminhos na vida das pessoas. Na Guivos, sua atuação profissional pode fazer parte dessa evolução.
+
+#### Direção visual aprovada conceitualmente
+
+Representar uma sequência simples, com **continuidade possível e não determinística**:
+
+1. **Contexto da Pessoa:** deseja empreender e procura orientação para sua ideia de negócio.
+2. **Experiência com Profissional:** participa de mentoria online ou presencial, onde o Profissional já opera.
+3. **Novas possibilidades:** aprofundar conhecimentos, planejar o negócio, conhecer outros profissionais ou explorar oportunidades futuras.
+
+Evitar exibir essas etapas como resultados comprovados ou automáticos. A sequência é **ilustrativa**, não um registro de participação real e não deve repetir o detalhamento tecnológico do Movimento 03.
+
+**Perspectivas complementares:** para a Pessoa, uma experiência pode integrar sua trajetória e ampliar escolhas. Para o Profissional, sua atuação pode construir relações, gerar novas conexões e abrir possibilidades legítimas de continuidade de negócios, sem garantia comercial.
+
+#### Fronteiras e responsabilidades
+
+- A Guivos **não presume** que experiências realizadas fora do ecossistema aconteceram, foram concluídas ou produziram impactos. A compreensão de continuidade depende de evidências, registros e autorizações legitimamente disponíveis.
+- O Profissional não recebe acesso automático à Jornada privada da Pessoa por ter oferecido uma oportunidade.
+- A Pessoa mantém autoridade sobre as próprias decisões e pode explorar ou não os caminhos apresentados.
+- Evitar promessas de transformação, resultado mensurável, contratação ou receita.
+- Manter o movimento **breve, inspiracional e visual**, com a experiência como conexão entre a atuação profissional e novas possibilidades; explicações sobre inteligência e captura de dados pertencem às páginas especializadas.
+
+**Transição para Movimento 08:** do valor possível de cada experiência ao convite público para participar da Guivos como Profissional.
 
 ### Movimento 08 — Convite para participar
 
