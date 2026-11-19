@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-PRO-MASTER-001
 title: Home Pública — Profissional — Documento Mestre Candidato de Arquitetura Narrativa
 status: proposed
-version: 0.1.37
+version: 0.1.38
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-11-18
 normative: false
@@ -18,7 +18,7 @@ related:
 
 # Home Pública — Profissional
 
-> **Estado:** proposta de arquitetura narrativa para análise e aprovação. O número de movimentos é emergente do conteúdo e **não é um requisito**, um teto ou uma meta de preenchimento.
+> **Estado editorial vigente:** onze movimentos e suas comunicações principais **aprovados pela Direção**; artefato documental ainda `proposed` e `conceptual_narrative_candidate` quanto à liberação para Design/implementação e aos contratos operacionais. O número de movimentos decorre do conteúdo e não é requisito fixo.
 
 > **Movimento 01 — redação pública aprovada:** **Sua atuação profissional. Novas conexões. Novas oportunidades.**  
 > Amplie sua presença, alcance novos públicos e conecte suas especialidades a pessoas que procuram o que você oferece.
@@ -37,7 +37,7 @@ Não é uma página de emprego, currículo ou dashboard autenticado. Reconhece o
 
 > **Como ampliar sua presença e alcançar novos clientes com a Guivos?**
 
-Essa pergunta é uma **direção narrativa candidata**, não uma assinatura de marca aprovada.
+Essa pergunta é uma **pergunta orientadora interna do posicionamento**, não a assinatura de marca nem um novo título público. Os títulos públicos aprovados constam do quadro da Seção 3.
 
 ### 1.2 Diferença entre as portas públicas
 
@@ -199,7 +199,7 @@ De acordo com [Home Pública Principal — Documento Mestre](public-home-master-
 | Causas, Voluntariado e Contribuição | Oficinas, projetos e atividades de participação | Instrutores, facilitadores e especialistas em projetos sociais |
 | Organização e Equilíbrio da Vida | Orientações e serviços de organização | Consultores e profissionais especializados em organização |
 
-**Abertura a outras áreas e especialidades — comunicação pública candidata:**
+**Abertura conceitual a outras áreas e especialidades — referência editorial não aprovada como copy pública autônoma:**
 
 > Outras áreas de atuação e especialidades profissionais também podem fazer parte da Guivos, desde que suas ofertas apresentem possibilidades legítimas de contribuir para a evolução das Pessoas.
 
@@ -257,7 +257,7 @@ Uma organização promove uma programação cultural e conta com um fotógrafo p
 
 **Oportunidade para a Pessoa:** desenvolver habilidades fotográficas, explorar a criatividade e descobrir novas formas de expressão.
 
-**Qualificação:** todos os exemplos são ilustrativos. A corrida, a feira e o evento cultural são contextos que viabilizam oportunidades específicas; a mera realização de um evento **não comprova**, por si só, uma oportunidade profissional acrescentada pela relação. Não pressupor iniciativas, participantes, parcerias, agenda ou ofertas realmente cadastradas na Guivos. Os nomes das áreas são descrições editoriais e devem ser reconciliados com os nove Domínios oficiais antes da composição visual definitiva.
+**Qualificação:** todos os exemplos são ilustrativos. A corrida, a feira e o evento cultural são contextos que viabilizam oportunidades específicas; a mera realização de um evento **não comprova**, por si só, uma oportunidade profissional acrescentada pela relação. Não pressupor iniciativas, participantes, parcerias, agenda ou ofertas realmente cadastradas na Guivos. As áreas dos exemplos correspondem ao vocabulário dos Domínios oficiais do Master da Home Pessoa: Saúde e Bem-estar, Vida Financeira, Empreendedorismo e Projetos e Viagens, Lazer, Cultura e Novas Experiências. A expressão resumida 'Empreendedorismo' no cabeçalho do exemplo 02 é apenas abreviação editorial, não novo Domínio.
 
 #### Composição e fronteiras
 
@@ -641,6 +641,23 @@ A decisão editorial da Direção em 18/11/2026 preserva três planos que **não
 
 **Sem inferência operacional:** a descrição de gratuidade ou preço de uma Oportunidade não autoriza transações, plano comercial, integração de pagamentos ou publicação. Os registros legados da Home O/C ainda descrevem três participantes estruturais; sua reconciliação com o Profissional como identidade funcional ofertadora exige decisão própria, sem modificação silenciosa de contratos vigentes.
 
+### Matriz de reconciliação documental — participantes e relações (P01/P02)
+
+**Exame realizado em 18/11/2026:** confrontados `GKR-UX-HOME-OC-MASTER-001 v1.0.10`, `UXA-014 v0.1.1`, `UXA-019 v0.2.0`, `GKR-UX-ORGCOL-AUTH-JOBS-001 v1.4.2` e `GKR-PARTICIPANT-PROFESSIONAL-ENTRY-001 v0.1.1`.
+
+| Questão | Autoridade documental existente | Interpretação segura para a Home Profissional | Estado |
+| --- | --- | --- | --- |
+| **P01 — Tipo de participante** | Home O/C e UXA-014 definem Organização/Coletivo em sua autoridade corrente; registro Profissional define identidade funcional própria de oferta, distinta da Journey privada da Pessoa. | A Home pode apresentar Profissional como **identidade funcional ofertadora**, sem decretá-lo uma quarta categoria estrutural equivalente nem reclassificar retroativamente a Home O/C. | **Convivência editorial registrada; reconciliação canônica estrutural pendente.** |
+| **P02 — Relação bilateral** | UXA-019 define o contrato **Organização ↔ Coletivo**, não um contrato universal para qualquer par de participantes. Jobs O/C preservam contexto, autoridade e representação. | O Movimento 03 descreve apenas a finalidade pública de relações **Profissional ↔ Organização/Coletivo**: gerar, viabilizar ou ampliar oportunidades para Pessoas, conforme capacidades legítimas de cada participante. | **Contrato específico Profissional ↔ O/C não definido nem autorizado.** |
+| **Papéis na oportunidade** | As autoridades vigentes distinguem identidade, pertencimento e representação; a operação profissional tem registro conceitual. | Ofertador, organizador, responsável pela execução, espaço, financiamento e comunicação não devem ser fundidos na interface ou nos dados. | **Modelo de papéis, autorização, atribuição e proveniência pendente.** |
+| **Oportunidade gratuita/paga** | Master O/C separa custo e relevância; Home Profissional Movimento 05 aprova as duas modalidades de comunicação. | Publicar a modalidade e condições **somente mediante informação oficial autorizada**, sem presumir cobrança interna. | **Diretriz editorial aprovada; condições financeiras operacionais pendentes.** |
+
+**Gate antes de materialização operacional:** requer decisão de arquitetura para classificação e interoperabilidade dos participantes, contrato de ciclo de vida da relação Profissional ↔ Organização/Coletivo (proposta, autorização bilateral quando aplicável, escopo, responsabilidades, revisão, contestação e saída), papéis em cada oportunidade, elegibilidade, proveniência e proteção de dados. **UXA-019 não deve ser reutilizado como autorização automática para relação com Profissional.**
+
+**P03 — distinção de estados:** os **onze movimentos e textos públicos estão editorialmente aprovados**, mas o artefato conserva `status: proposed` e `maturity: conceptual_narrative_candidate` até release próprio; esses metadados não negam a aprovação de conteúdo e não devem ser promovidos por inferência.
+
+**P04 — higiene editorial:** nomes dos nove Domínios confrontados com o Master Pessoa; a frase de abertura geral para outras especialidades permanece **referência conceitual**, não copy autônoma aprovada. Decisões históricas registradas abaixo não devem ser tratadas como estados atuais.
+
 ## 5. Sistema visual, verbal e componentes
 
 - Usar a tipografia institucional **Goldplay**, com fallback aprovado, fundo branco e paleta vigente do GKR.
@@ -705,3 +722,5 @@ O registro de participante Profissional no GKR é conceitual e aponta contratos 
 **2026-11-18 — Aprovação editorial do novo Movimento 03:** aprovado o título **“Juntos, podemos tornar novas oportunidades possíveis.”**, o apoio sobre a união de conhecimentos, recursos e iniciativas entre Profissionais, Organizações e Coletivos para gerar oportunidades às Pessoas, e três exemplos ilustrativos (corrida com nutricionista, feira de empreendedorismo com educador financeiro e evento cultural com fotógrafo). O movimento não descreve contratação B2B genérica. Os movimentos posteriores foram renumerados de 04 a 11, preservando integralmente seus títulos e textos públicos já aprovados. Relações e permissões operacionais dependem de contratos próprios.
 
 **2026-11-18 — Consolidação documental transversal:** ratificadas as onze comunicações da Home Profissional e a distinção entre finalidade da relação bilateral (gerar oportunidades para Pessoas) e condição de oferta (gratuita ou paga). Atualizada a referência conceitual do participante Profissional, com preservação de autonomias, não representação automática e dependências de governança. A atualização editorial não altera contratos normativos O/C nem habilita serviços de pagamento, cadastro ou recomendação.
+
+**2026-11-18 — Auditoria cruzada P01–P04:** formalizada a convivência editorial entre a identidade funcional Profissional e as três categorias estruturais herdadas da autoridade O/C, sem alteração canônica; explicitada a exclusividade do contrato UXA-019 ao par Organização ↔ Coletivo; aberto gate de contrato específico Profissional ↔ O/C. Estados editoriais diferenciados de releases técnicos; marcações candidatas corrigidas e Domínios conferidos com Master Pessoa. P01/P02 não foram declarados operacionalmente encerrados.
