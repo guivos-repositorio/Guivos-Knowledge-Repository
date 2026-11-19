@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-PRO-MASTER-001
 title: Home Pública — Profissional — Documento Mestre Candidato de Arquitetura Narrativa
 status: proposed
-version: 0.1.36
+version: 0.1.37
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-11-18
 normative: false
@@ -619,13 +619,27 @@ Usar a captura de referência fornecida pela Direção como **padrão funcional 
 
 ## 4. Relações com o ecossistema
 
-A narrativa começa no Profissional, mas a Home deve tornar inteligível sua relação com a Guivos sem transformá-la em menu de produtos:
+A narrativa começa no Profissional, mas a Home deve tornar inteligível sua relação com a Guivos sem transformá-la em menu de produtos. **As decisões editoriais dos onze movimentos, incluindo relações para geração de oportunidades destinadas às Pessoas e modalidades gratuitas ou pagas, estão consolidadas neste documento:**
 
 - **Pessoas:** escolhem se e como participar de oportunidades; suas jornadas privadas não se tornam acessíveis ao Profissional.
-- **Organizações e Coletivos:** podem existir relações legítimas de colaboração, sem que o Profissional assuma automaticamente representação institucional.
+- **Organizações e Coletivos:** podem combinar recursos, iniciativas, capacidade de organização e mobilização com especialidades profissionais para **criar, viabilizar ou ampliar oportunidades concretas destinadas às Pessoas**. Não se trata de mera contratação B2B ou representação institucional automática; quando aplicável, a relação bilateral exige finalidade, autoridade e condições próprias.
 - **Guivos Journey:** o contexto da Pessoa e a atuação profissional são experiências distintas; a conexão entre elas exige fronteiras próprias.
 - **Guivos Intelligence e Guivos AI:** podem apoiar compreensão de contexto, pertinência, condições e lacunas quando autorizadas, sem prometer matching, acesso a informações privadas ou decisões automatizadas infalíveis.
 - **Demais produtos:** qualquer relação com Mall, Travel, Business, Media, Ads, pontos, pagamentos ou monetização depende de contratos e implementações específicos; a Home não presume sua habilitação.
+
+### Consolidação transversal — condições das Oportunidades e finalidade das relações
+
+A decisão editorial da Direção em 18/11/2026 preserva três planos que **não podem ser confundidos**:
+
+| Plano | Regra consolidada | Onde a Home explica |
+| --- | --- | --- |
+| **Finalidade** | Oportunidades devem representar possibilidades concretas de contribuição para a evolução de Pessoas, não negócios entre ofertadores como fim público do ecossistema. | Movimento 03 |
+| **Relação entre ofertadores** | Profissional e Organização/Coletivo podem unir capacidades para viabilizar Oportunidades às Pessoas, sem atribuição automática de representação ou autoridade. | Movimento 03 |
+| **Condição de participação da Pessoa** | A oportunidade pode ser **gratuita ou paga**, conforme condições reais e transparentes; preço não substitui pertinência. | Movimento 05 |
+
+**Exemplos editoriais de M03 aprovados:** corrida com nutricionista; feira de empreendedorismo com educador financeiro; evento cultural com fotógrafo. Cada exemplo identifica a contribuição adicional do Profissional e o que ela torna possível para as Pessoas. Os exemplos não comprovam ofertas existentes.
+
+**Sem inferência operacional:** a descrição de gratuidade ou preço de uma Oportunidade não autoriza transações, plano comercial, integração de pagamentos ou publicação. Os registros legados da Home O/C ainda descrevem três participantes estruturais; sua reconciliação com o Profissional como identidade funcional ofertadora exige decisão própria, sem modificação silenciosa de contratos vigentes.
 
 ## 5. Sistema visual, verbal e componentes
 
@@ -650,7 +664,7 @@ Antes de aprovar cada movimento, verificar:
 | Está faltando uma transição indispensável? | Acrescentar somente por necessidade real |
 | Respeita a autonomia? | Não presumir intenção, consentimento, credencial ou resultado |
 
-A quantidade final será a consequência dessa avaliação. **Não buscar paridade com as onze seções de outra Home.**
+A quantidade final será a consequência dessa avaliação. **Os onze movimentos presentes foram definidos por sua função narrativa, não para igualar o número de movimentos de outra Home.**
 
 ## 7. Fronteiras e estado de governança
 
@@ -663,7 +677,8 @@ O registro de participante Profissional no GKR é conceitual e aponta contratos 
 - não transformar uma Pessoa em Profissional sem consentimento e fluxo próprio;
 - não reutilizar permissões de Organização/Coletivo;
 - não atribuir à Guivos AI ou Intelligence acesso ou decisões não autorizados;
-- submeter títulos, movimentos, visualizações e CTA à apreciação antes de consolidar status `active`.
+- preservar os onze títulos e textos aprovados; alterações posteriores requerem decisão editorial específica;
+- manter o status do documento conceitual enquanto contratos de operação e releases específicos estiverem pendentes; não promover a `active` por aprovação editorial isolada.
 
 ### Registro de decisão editorial
 
@@ -676,11 +691,11 @@ O registro de participante Profissional no GKR é conceitual e aponta contratos 
 
 **2026-11-18 — Correção de posicionamento:** o Profissional **já atua no mercado e busca clientes**. Sua motivação comercial não deve ser substituída por discurso de ajuda, colaboração altruísta ou início de uma atividade. O benefício de evolução para a Pessoa é complementar ao objetivo de captação e desenvolvimento de negócios do Profissional. O Movimento 01 foi reescrito; **movimentos seguintes permanecem sujeitos a revisão sob essa premissa**.
 
-**Estado do presente documento:** narrativa consolidada para apreciação dos pontos abertos, sem autorização automática de Design, implementação ou publicação.
+**Estado do presente documento:** **onze movimentos consolidados e aprovados editorialmente**, com quadro de consulta rápida sincronizado; pendentes Design, evidências e contratos operacionais próprios. Esta formalização não autoriza implementação ou publicação da Home.
 
 **2026-11-18 — Aprovação editorial do Movimento 09:** aprovados o título **“Conheça a experiência de quem faz parte da Guivos.”** e o apoio **“Profissionais de diferentes áreas compartilham suas experiências, perspectivas e descobertas ao participar do ecossistema.”** O carrossel permanece condicionado a depoimentos reais autorizados e à composição final de Design.
 
-**2026-11-18 — Aprovação editorial do Movimento 02:** aprovados o título **“Diferentes áreas da vida. Mais possibilidades para sua atuação.”** e o apoio **“Da saúde à carreira, dos estudos às finanças, suas especialidades podem contribuir para diferentes objetivos e momentos da vida das pessoas.”** Mantida a primazia dos nove Domínios de Evolução da Pessoa, sem restringir especialidades. Movimento 09 segue com título e apoio pendentes.
+**2026-11-18 — Aprovação editorial do Movimento 02:** aprovados o título **“Diferentes áreas da vida. Mais possibilidades para sua atuação.”** e o apoio **“Da saúde à carreira, dos estudos às finanças, suas especialidades podem contribuir para diferentes objetivos e momentos da vida das pessoas.”** Mantida a primazia dos nove Domínios de Evolução da Pessoa, sem restringir especialidades. O Movimento 09 — A voz dos Profissionais — teve título e apoio aprovados em decisão editorial posterior, registrada neste documento.
 
 
 **2026-11-18 — Confirmação de diretriz:** aprovada a compreensão das possíveis contribuições da oportunidade e de sua associação com múltiplas áreas da vida como parte da arquitetura conceitual de oportunidades, além do Movimento 02. Preservar a diferença entre intenção, potencial e resultado comprovado.
@@ -688,3 +703,5 @@ O registro de participante Profissional no GKR é conceitual e aponta contratos 
 **2026-11-18 — Aprovação editorial complementar do Movimento 05:** aprovada a comunicação de que oportunidades disponíveis às Pessoas podem ser **gratuitas ou pagas**, com a chamada **“Oportunidades gratuitas ou pagas. Você escolhe como oferecer.”** e texto de apoio correspondente. A informação integra o Movimento 05, sem criação de novo movimento ou alteração do seu título principal. A exibição dos cards depende de condições reais e verificadas e não aprova meios de pagamento, taxas ou planos da Guivos.
 
 **2026-11-18 — Aprovação editorial do novo Movimento 03:** aprovado o título **“Juntos, podemos tornar novas oportunidades possíveis.”**, o apoio sobre a união de conhecimentos, recursos e iniciativas entre Profissionais, Organizações e Coletivos para gerar oportunidades às Pessoas, e três exemplos ilustrativos (corrida com nutricionista, feira de empreendedorismo com educador financeiro e evento cultural com fotógrafo). O movimento não descreve contratação B2B genérica. Os movimentos posteriores foram renumerados de 04 a 11, preservando integralmente seus títulos e textos públicos já aprovados. Relações e permissões operacionais dependem de contratos próprios.
+
+**2026-11-18 — Consolidação documental transversal:** ratificadas as onze comunicações da Home Profissional e a distinção entre finalidade da relação bilateral (gerar oportunidades para Pessoas) e condição de oferta (gratuita ou paga). Atualizada a referência conceitual do participante Profissional, com preservação de autonomias, não representação automática e dependências de governança. A atualização editorial não altera contratos normativos O/C nem habilita serviços de pagamento, cadastro ou recomendação.
