@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-PRO-MASTER-001
 title: Home Pública — Profissional — Documento Mestre Candidato de Arquitetura Narrativa
 status: proposed
-version: 0.1.12
+version: 0.1.13
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-11-18
 normative: false
@@ -191,19 +191,39 @@ Essa abertura não representa aprovação automática de cadastro, elegibilidade
 
 **Transição para Movimento 03:** depois de compreender a amplitude dos domínios da vida com os quais uma oferta pode se relacionar, explicar como a relevância depende de contexto e necessidades particulares, sem expor dados privados.
 
-### Movimento 03 — Quando uma capacidade encontra uma possibilidade
+### Movimento 03 — Descoberta e relevância
 
-**Função:** explicar por que a Guivos conecta participantes e contextos, sem tratar exposição como correspondência garantida.
+**Função:** explicar o valor da descoberta contextual para a relação entre oportunidades profissionais e Pessoas, sem repetir a abrangência das áreas de evolução do Movimento 02 nem prometer captação comercial garantida. O Profissional procura oportunidades de negócio; a Pessoa mantém autonomia para descobrir e avaliar ofertas relevantes para seu Momento.
+
+#### Comunicação pública — proposta candidata
 
 **Título público candidato:**
-> **A oportunidade certa depende de mais do que estar disponível.**
 
-**Apoio público:**
-> Interesses, objetivos, lugares, momentos e condições de participação podem ajudar a aproximar uma oferta de quem poderá considerá-la relevante.
+> **Não basta estar disponível. É preciso fazer sentido.**
 
-**Direção visual:** relações entre profissional, oportunidade e participantes com contexto explícito; não representar acesso a dados privados nem prometer matchmaking automático.
+**Texto de apoio candidato:**
 
-**Transição:** da descoberta para condições concretas e confiáveis de participação.
+> Na Guivos, interesses, objetivos, localização e disponibilidade podem ajudar pessoas a descobrir oportunidades profissionais relevantes para seu momento.
+
+**Situação:** proposta em revisão, não aprovada como redação final nem como promessa de funcionalidade disponível.
+
+#### Diferencial narrativo
+
+- **Exposição:** uma oferta simplesmente estar visível não a torna relevante para todas as Pessoas.
+- **Descoberta contextual:** interesses, intenções, condições de acesso, localização quando autorizada, disponibilidade e Momento podem orientar quais oportunidades merecem consideração.
+- **Descoberta ampliada:** uma Pessoa também poderá conhecer possibilidades que ainda não procurou explicitamente, desde que essa descoberta seja fundamentada e respeite suas permissões e autonomia.
+- **Valor para o Profissional:** uma oportunidade pode alcançar pessoas para quem seu conteúdo e suas condições fazem sentido, sem acesso irrestrito aos dados individuais da Journey.
+- **Valor para a Pessoa:** compreender por que uma oportunidade pode ser pertinente e decidir se deseja explorá-la.
+
+#### Direção visual candidata
+
+Representar relações entre uma oferta profissional e diferentes contextos de vida, incluindo objetivos, localização pertinente, horários e interesses, com a Pessoa mantendo possibilidade de escolha. Evitar mapas que revelem localização pessoal precisa, perfis íntimos, pontuações inventadas, indicadores de conversão, correspondências automáticas como fatos ou leitura determinista de necessidades.
+
+**Guivos Intelligence e Guivos AI:** a Intelligence é o produto transversal responsável por compreensão contextual; a Guivos AI pode contribuir com análises especializadas quando autorizadas. Não confundir suas identidades ou sugerir que toda descoberta dependa de uma integração já implementada.
+
+**Fronteiras:** relevância não é garantia de atendimento, contratação, receita, evolução ou impacto comprovado. Condições, autorizações e critérios aplicáveis devem ser respeitados.
+
+**Transição para Movimento 04:** após explicar como uma oportunidade pode ser descoberta, apresentar a importância de informações claras para que cada participante avalie as condições e decida.
 
 ### Movimento 04 — Clareza para oferecer e escolher
 
