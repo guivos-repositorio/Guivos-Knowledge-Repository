@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-PRO-MASTER-001
 title: Home Pública — Profissional — Documento Mestre Candidato de Arquitetura Narrativa
 status: proposed
-version: 0.1.35
+version: 0.1.36
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-11-18
 normative: false
@@ -75,7 +75,7 @@ Este quadro reúne os **onze movimentos da arquitetura narrativa vigente para re
 | **02** | Áreas de evolução da Pessoa e oportunidades profissionais | **Diferentes áreas da vida. Mais possibilidades para sua atuação.** | Relacionar ofertas às áreas de evolução, sem restringir especialidades. **Texto aprovado; visual pendente.** |
 | **03** | Relações que geram Oportunidades | **Juntos, podemos tornar novas oportunidades possíveis.** | Colaboração entre Profissionais, Organizações e Coletivos para criar oportunidades concretas destinadas às Pessoas. **Texto e três exemplos aprovados; contratos operacionais pendentes.** |
 | **04** | Descoberta e relevância | **Sua oportunidade pode chegar a quem ainda nem imaginou encontrá-la.** | Apresentar descoberta contextual e novas possibilidades. **Texto e exemplos aprovados.** |
-| **05** | Oportunidades profissionais em destaque | **Suas oportunidades ganham espaço para serem descobertas.** | Mostrar oportunidades reais de diferentes Profissionais. **Texto aprovado; integração pendente.** |
+| **05** | Oportunidades profissionais em destaque | **Suas oportunidades ganham espaço para serem descobertas.** | Mostrar oportunidades reais de diferentes Profissionais, **gratuitas ou pagas**. **Comunicação complementar aprovada; integração pendente.** |
 | **06** | Oportunidades que permanecem onde o Profissional atua | **Sua oportunidade continua onde acontece. Seu alcance pode ir além.** | Manter serviços nos ambientes digitais e físicos do Profissional. **Texto aprovado.** |
 | **07** | Oportunidades ao Vivo | **Sua próxima transmissão pode alcançar muito mais pessoas.** | Destacar eventos síncronos com transmissão online. **Texto aprovado.** |
 | **08** | A continuidade de cada experiência | **O que você oferece hoje pode abrir possibilidades para amanhã.** | Mostrar possíveis desdobramentos após uma experiência. **Texto aprovado.** |
@@ -345,6 +345,20 @@ Uma pessoa busca melhorar sua saúde e descobre profissionais e atividades que p
 **Texto de apoio:**
 
 > Conheça diferentes oportunidades oferecidas por Profissionais na Guivos e descubra como sua atuação também pode alcançar novos públicos.
+
+#### Comunicação complementar aprovada — oportunidades gratuitas ou pagas
+
+**Chamada pública complementar:**
+
+> **Oportunidades gratuitas ou pagas. Você escolhe como oferecer.**
+
+**Apoio complementar:**
+
+> Disponibilize cursos, atendimentos, atividades e experiências gratuitas ou pagas, conforme a natureza da sua atuação e as condições de cada oportunidade.
+
+A **Pessoa pode encontrar oportunidades gratuitas e pagas**, conforme condições transparentes da oferta. A gratuidade não comprova maior relevância ou viabilidade, assim como o pagamento não comprova qualidade superior. A comunicação não presume meios de pagamento, taxas, planos, cobrança integrada, condições comerciais da participação do Profissional na Guivos ou publicação operacional já autorizados.
+
+**Diretriz para os cards:** quando os dados reais e autorizados estiverem disponíveis, identificar de forma explícita a condição **Gratuita** ou informar **preço e condições reais** da oportunidade paga, distinguindo claramente custos, requisitos e eventuais condições de acesso. Não atribuir preços a registros sem fonte oficial, nem exibir gratuidades presumidas.
 
 #### Composição central — carrossel compartilhado de oportunidades reais
 
@@ -670,5 +684,7 @@ O registro de participante Profissional no GKR é conceitual e aponta contratos 
 
 
 **2026-11-18 — Confirmação de diretriz:** aprovada a compreensão das possíveis contribuições da oportunidade e de sua associação com múltiplas áreas da vida como parte da arquitetura conceitual de oportunidades, além do Movimento 02. Preservar a diferença entre intenção, potencial e resultado comprovado.
+
+**2026-11-18 — Aprovação editorial complementar do Movimento 05:** aprovada a comunicação de que oportunidades disponíveis às Pessoas podem ser **gratuitas ou pagas**, com a chamada **“Oportunidades gratuitas ou pagas. Você escolhe como oferecer.”** e texto de apoio correspondente. A informação integra o Movimento 05, sem criação de novo movimento ou alteração do seu título principal. A exibição dos cards depende de condições reais e verificadas e não aprova meios de pagamento, taxas ou planos da Guivos.
 
 **2026-11-18 — Aprovação editorial do novo Movimento 03:** aprovado o título **“Juntos, podemos tornar novas oportunidades possíveis.”**, o apoio sobre a união de conhecimentos, recursos e iniciativas entre Profissionais, Organizações e Coletivos para gerar oportunidades às Pessoas, e três exemplos ilustrativos (corrida com nutricionista, feira de empreendedorismo com educador financeiro e evento cultural com fotógrafo). O movimento não descreve contratação B2B genérica. Os movimentos posteriores foram renumerados de 04 a 11, preservando integralmente seus títulos e textos públicos já aprovados. Relações e permissões operacionais dependem de contratos próprios.
