@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-PRO-MASTER-001
 title: Home Pública — Profissional — Documento Mestre Candidato de Arquitetura Narrativa
 status: proposed
-version: 0.1.32
+version: 0.1.33
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-11-18
 normative: false
@@ -74,13 +74,13 @@ A sequência atual contém **dez movimentos com funções narrativas distintas**
 | **05 — Onde a experiência acontece** | Mostrar que ofertas online, presenciais e domiciliares podem permanecer nos ambientes do Profissional | Comunicação aprovada |
 | **06 — Oportunidades ao Vivo** | Destacar experiências síncronas em data e horário definidos, com transmissão online | Comunicação aprovada |
 | **07 — Continuidade** | Mostrar possíveis desdobramentos de uma experiência na trajetória da Pessoa | Comunicação aprovada |
-| **08 — Voz dos Profissionais** | Reforçar confiança com vídeos autênticos e autorizados de participantes reais | Formato de carrossel definido; título e apoio candidatos; acervo pendente |
+| **08 — Voz dos Profissionais** | Reforçar confiança com vídeos autênticos e autorizados de participantes reais | Título e apoio aprovados; carrossel definido; acervo real autorizado pendente |
 | **09 — Perguntas frequentes** | Esclarecer elegibilidade, modalidades, alcance e responsabilidades antes do convite | Sete respostas e formato aprovados |
 | **10 — Convite final** | Convidar o Profissional a participar sem antecipar o cadastro | Título, apoio e CTA aprovados; destino operacional pendente |
 
 **Verificação editorial de sequência:** 01 apresenta o benefício comercial; 02 a amplitude; 03 a pertinência; 04 a visualização concreta; 05 o ambiente de execução; 06 a singularidade do encontro ao vivo; 07 a continuidade possível; 08 a credibilidade de relatos reais; 09 esclarece dúvidas; 10 encerra com a ação.
 
-**Pontos abertos antes de um release para Design ou implementação:** aprovar a redação pública do Movimento 08; obter/autorizar depoimentos reais para o Movimento 08; definir origem, elegibilidade e comportamento para o carrossel do Movimento 04; validar o destino do CTA; e observar as integrações e fronteiras ainda dependentes de contratos próprios. A aprovação de narrativa **não** é autorização para publicação da Home ou ativação de funcionalidades.
+**Pontos abertos antes de um release para Design ou implementação:** obter/autorizar depoimentos reais para o Movimento 08; definir origem, elegibilidade e comportamento para o carrossel do Movimento 04; validar o destino do CTA; e observar as integrações e fronteiras ainda dependentes de contratos próprios. A aprovação de narrativa **não** é autorização para publicação da Home ou ativação de funcionalidades.
 
 ### Movimento 01 — Novos clientes e possibilidades de negócio
 
@@ -424,11 +424,11 @@ Evitar exibir essas etapas como resultados comprovados ou automáticos. A sequê
 
 ### Movimento 08 — A voz dos Profissionais
 
-**Estado:** inserção e função narrativa solicitadas pela Direção em 18/11/2026. Título, texto de apoio e apresentação visual são **candidatos à aprovação editorial**. A criação do movimento não implica existência de depoimentos já gravados, autorização de imagem ou implantação de carrossel de vídeos.
+**Estado:** **título e texto de apoio aprovados pela Direção em 18/11/2026**, com referência visual do carrossel já definida. A composição final e o acervo de depoimentos reais autorizados continuam pendentes; esta aprovação não comprova vídeos gravados nem implantação do componente.
 
 **Função:** reforçar confiança e autoridade por meio de **relatos autênticos de Profissionais que efetivamente participam da Guivos**, antes do convite final. Diferenciar-se dos movimentos anteriores pela perspectiva em primeira pessoa de participantes reais, e não por afirmações institucionais ou métricas de resultado.
 
-#### Comunicação pública candidata
+#### Comunicação pública aprovada
 
 **Título:**
 
@@ -600,6 +600,8 @@ O registro de participante Profissional no GKR é conceitual e aponta contratos 
 **2026-11-18 — Correção de posicionamento:** o Profissional **já atua no mercado e busca clientes**. Sua motivação comercial não deve ser substituída por discurso de ajuda, colaboração altruísta ou início de uma atividade. O benefício de evolução para a Pessoa é complementar ao objetivo de captação e desenvolvimento de negócios do Profissional. O Movimento 01 foi reescrito; **movimentos seguintes permanecem sujeitos a revisão sob essa premissa**.
 
 **Estado do presente documento:** narrativa consolidada para apreciação dos pontos abertos, sem autorização automática de Design, implementação ou publicação.
+
+**2026-11-18 — Aprovação editorial do Movimento 08:** aprovados o título **“Conheça a experiência de quem faz parte da Guivos.”** e o apoio **“Profissionais de diferentes áreas compartilham suas experiências, perspectivas e descobertas ao participar do ecossistema.”** O carrossel permanece condicionado a depoimentos reais autorizados e à composição final de Design.
 
 **2026-11-18 — Aprovação editorial do Movimento 02:** aprovados o título **“Diferentes áreas da vida. Mais possibilidades para sua atuação.”** e o apoio **“Da saúde à carreira, dos estudos às finanças, suas especialidades podem contribuir para diferentes objetivos e momentos da vida das pessoas.”** Mantida a primazia dos nove Domínios de Evolução da Pessoa, sem restringir especialidades. Movimento 08 segue com título e apoio pendentes.
 
