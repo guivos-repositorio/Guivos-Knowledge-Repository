@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-PRO-MASTER-001
 title: Home Pública — Profissional — Documento Mestre Candidato de Arquitetura Narrativa
 status: proposed
-version: 0.1.24
+version: 0.1.25
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-11-18
 normative: false
@@ -327,11 +327,11 @@ Representar **quatro modalidades de contexto**, sem hierarquia entre elas nem li
 
 ### Movimento 06 — Oportunidades ao Vivo
 
-**Estado:** proposta de movimento solicitada pela Direção em 18/11/2026. O conceito de divulgação e conexão com oportunidades síncronas em plataformas externas orienta a proposta, enquanto **título, texto público e composição visual são candidatos à revisão editorial**. A inserção no documento não autoriza implementação, integração de vídeo ou publicação de eventos não confirmados.
+**Estado:** **Movimento 06, título, texto público e direção visual aprovados pela Direção em 18/11/2026.** A composição visual definitiva permanece sujeita a Design. Esta aprovação não autoriza implementação, integração de vídeo ou publicação de eventos não confirmados.
 
 **Função:** comunicar que uma live, palestra, workshop, treinamento, reunião ou encontro online com data e horário definidos poderá ganhar descoberta e conexões entre as Pessoas da Guivos, **mesmo quando a transmissão e a experiência ocorrerem fora da plataforma**. Diferenciar-se do Movimento 05, que mostra a permanência de ofertas e serviços em ambientes externos sem enfoque na natureza síncrona do evento.
 
-#### Comunicação pública candidata
+#### Comunicação pública aprovada
 
 **Título:**
 
@@ -341,7 +341,7 @@ Representar **quatro modalidades de contexto**, sem hierarquia entre elas nem li
 
 > Vai realizar uma live, palestra, workshop ou treinamento online? A Guivos pode ampliar a descoberta do seu evento e conectar pessoas interessadas à plataforma onde ele acontecerá.
 
-#### Direção visual candidata
+#### Direção visual aprovada conceitualmente
 
 Apresentar **um card de Oportunidade ao Vivo** associado a um fluxo de três etapas:
 
