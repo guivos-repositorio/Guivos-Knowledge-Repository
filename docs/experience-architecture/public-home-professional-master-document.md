@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-PRO-MASTER-001
 title: Home Pública — Profissional — Documento Mestre Candidato de Arquitetura Narrativa
 status: proposed
-version: 0.1.28
+version: 0.1.29
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-11-18
 normative: false
@@ -438,9 +438,70 @@ Evitar exibir essas etapas como resultados comprovados ou automáticos. A sequê
 - Não apresentar ganhos, faturamento, alcance, contratações ou transformações como resultados típicos ou garantidos; quando houver indicadores reais, exigir contexto e evidência.
 - A Home não substitui o ambiente posterior de gestão de conta ou envio de depoimentos.
 
-**Transição para Movimento 09:** dos relatos autênticos de Profissionais ao convite público para participar da Guivos.
+**Transição para Movimento 09:** dos relatos autênticos às respostas para as dúvidas mais comuns antes da decisão de participar.
 
-### Movimento 09 — Convite para participar
+### Movimento 09 — Perguntas frequentes
+
+**Estado:** movimento solicitado pela Direção em 18/11/2026, com referência visual de FAQ expansível. Título, apoio, seleção e respostas estão **propostos para apreciação editorial**. Não estabelecer custos, elegibilidade automática, limites de alcance ou funcionalidades comerciais não aprovadas.
+
+**Função:** responder, em linguagem pública simples, às dúvidas pertinentes de Profissionais já atuantes antes do convite para participar; distinguir o que a Guivos pode conectar, o que permanece sob responsabilidade do Profissional e de que condições dependem alcance e operação.
+
+#### Comunicação pública candidata
+
+**Título:**
+
+> **Ainda tem dúvidas? A gente responde.**
+
+**Texto de apoio:**
+
+> Conheça melhor as possibilidades de participar da Guivos como Profissional.
+
+#### Perguntas e respostas candidatas
+
+**01. Quais profissionais podem participar da Guivos?**
+
+Profissionais de diferentes especialidades podem participar, desde que suas oportunidades sejam compatíveis com as finalidades da Guivos e atendam aos requisitos aplicáveis à sua atuação.
+
+**02. Preciso trabalhar exclusivamente online?**
+
+Não. Você pode oferecer atividades online, presenciais ou domiciliares, conforme sua especialidade e as condições de cada serviço.
+
+**03. Preciso transferir meus serviços para a Guivos?**
+
+Não. Suas oportunidades podem continuar em plataformas digitais, consultórios, salas de aula ou outros ambientes onde você já atua. A Guivos pode facilitar a descoberta e a conexão.
+
+**04. Minhas oportunidades poderão alcançar quantas pessoas?**
+
+O alcance dependerá do modelo de negócio, das condições de operação e divulgação, da relevância da oportunidade e do público disponível. A Guivos não garante visualizações, contatos ou contratações.
+
+**05. Posso divulgar lives, palestras e workshops?**
+
+A proposta contempla eventos online ao vivo com data e horário definidos, inclusive em plataformas externas. Atividades presenciais poderão integrar Oportunidades ao Vivo quando tiverem transmissão online.
+
+**06. A Guivos realiza os atendimentos e as experiências?**
+
+Nas oportunidades externas, a Guivos apoia a descoberta e a conexão. O atendimento, a transmissão ou a experiência acontece no ambiente do Profissional, conforme as condições informadas.
+
+**07. Como cadastro e gerencio minhas oportunidades?**
+
+O cadastro e a gestão serão tratados no ambiente do Profissional, de acordo com as funcionalidades e condições disponíveis na Jornada do Profissional.
+
+#### Direção visual e interação
+
+Usar a captura de referência fornecida pela Direção como **padrão funcional de FAQ em acordeão**: perguntas numeradas, botão de expandir/recolher, respostas curtas e leitura por seleção. Aplicar o padrão da Guivos — **fundo branco, Goldplay, destaque roxo discreto**, controles responsivos e acessíveis. Preferir uma resposta aberta por vez, com suporte a teclado, foco visível e estado expandido compreensível.
+
+#### Fronteiras editoriais
+
+- **Alcance não garantido:** pode depender do modelo de negócio e operação, da relevância, do público, das regras de exposição e de condições comerciais efetivamente autorizadas. Não inventar números, planos, precificação, políticas ou garantias.
+- **Elegibilidade não é automática:** modalidades e especialidades devem respeitar requisitos, limitações e exigências profissionais.
+- **Experiência externa:** não confundir descoberta pela Guivos com prestação, controle ou responsabilidade automática pelos serviços e plataformas externas.
+- **Oportunidades ao Vivo:** preservar a distinção aprovada entre transmissão online síncrona e oportunidades apenas presenciais.
+- **Disponibilidade funcional:** respostas não devem sugerir que mecanismos em estudo já foram implantados.
+- A seleção de sete perguntas **não é limite fixo**; revisar antes da publicação para garantir precisão e evitar extensão excessiva da Home.
+
+**Transição para Movimento 10:** após esclarecer as dúvidas, apresentar o convite direto para participação.
+
+### Movimento 10 — Convite para participar
 
 **Estado:** título, texto de apoio e CTA público aprovados conceitualmente pela Direção em 18/11/2026; implementação e destino do CTA dependem do fluxo autenticado autorizado.
 
