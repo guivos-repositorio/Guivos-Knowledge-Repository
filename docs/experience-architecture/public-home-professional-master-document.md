@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-PRO-MASTER-001
 title: Home Pública — Profissional — Documento Mestre Candidato de Arquitetura Narrativa
 status: proposed
-version: 0.1.19
+version: 0.1.20
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-11-18
 normative: false
@@ -250,19 +250,39 @@ Uma pessoa busca melhorar sua saúde e descobre profissionais e atividades que p
 
 **Transição para Movimento 04:** uma descoberta relevante exige informações claras sobre a oferta, o responsável e as condições de participação para permitir uma decisão consciente.
 
-### Movimento 04 — Clareza para oferecer e escolher
+### Movimento 04 — Oportunidades profissionais em destaque
 
-**Função:** apresentar confiança como consequência de informações claras e responsabilidade, não de selos ou validações inexistentes.
+**Estado:** direção de comunicação e composição aprovada pela Direção em 18/11/2026. Trata-se de uma especificação narrativa e visual; a integração e o componente na Home não foram implementados nem validados por esta aprovação.
 
-**Título público candidato:**
-> **Boas oportunidades começam com informações claras.**
+**Função:** demonstrar visualmente oportunidades concretas disponibilizadas por diferentes Profissionais, sem repetir o Movimento 03 nem ensinar o cadastro de ofertas. Comunicar amplitude, clareza e possibilidades de descoberta, preservando o interesse comercial do Profissional e a decisão autônoma da Pessoa.
 
-**Apoio público:**
-> O que será oferecido, para quem, em quais condições e por quem: compreender esses elementos ajuda o Profissional a apresentar sua atuação e cada pessoa a escolher com autonomia.
+#### Comunicação pública aprovada
 
-**Direção visual:** uma situação de oportunidade acompanhada de informações essenciais, sem simular credenciais verificadas, pagamentos, avaliação ou disponibilidade operacional.
+**Título:**
 
-**Transição:** da escolha pontual à experiência e ao aprendizado.
+> **Suas oportunidades ganham espaço para serem descobertas.**
+
+**Texto de apoio:**
+
+> Conheça diferentes oportunidades oferecidas por Profissionais na Guivos e descubra como sua atuação também pode alcançar novos públicos.
+
+#### Composição central — carrossel compartilhado de oportunidades reais
+
+- Exibir **cinco cards** de oportunidades profissionais de diferentes áreas, como uma seleção da oferta disponível no ecossistema. Cinco é a quantidade de apresentação do movimento, **não** um limite à diversidade de oportunidades.
+- Utilizar **somente oportunidades reais, cadastradas, ativas e autorizadas para exibição pública**. As categorias usadas durante o Design — empreendedorismo, saúde e bem-estar, estudos, vida financeira e carreira — são referências ilustrativas de variedade, **não registros existentes confirmados** nem lista fechada de áreas.
+- Buscar os dados da **fonte oficial de oportunidades** por integração governada e compartilhada, evitando duplicação estática e refletindo atualizações conforme as condições técnicas e o ciclo de publicação acordados. Não afirmar sincronização imediata sem contrato técnico e validação.
+- Em cada card, apresentar, **quando disponível e autorizado**: imagem, título da oportunidade, nome/identificação pública do Profissional, área de evolução relacionada, modalidade (online/presencial/híbrida) e condições essenciais apropriadas. Não inventar preço, disponibilidade, avaliações ou credenciais.
+- Navegação horizontal responsiva em desktop, tablet e mobile, com acessibilidade, foco visível, leitura adequada e controle de navegação. Não exigir a visualização simultânea dos cinco cards em telas estreitas.
+- Para a versão pública, definir tratamento honesto para quando houver menos de cinco oportunidades elegíveis: **não completar com dados demonstrativos** nem afirmar que ofertas inexistentes estão cadastradas.
+- A seleção poderá contemplar outros Profissionais e outras áreas quando suas ofertas forem legítimas e relacionadas à evolução das Pessoas, conforme os requisitos aplicáveis.
+
+#### Fronteira entre Home e experiência de cadastro
+
+A **Home Profissional mostra oportunidades existentes e o valor de participar da Guivos**. Instruções, formulários e fluxos de cadastramento, configuração, gestão e publicação de oportunidades pertencem à **Jornada do Profissional após o acesso**, e não a este movimento público.
+
+**Confiança e privacidade:** informações claras e condições de participação são importantes para a escolha, mas a Home não deve simular certificações, verificações, agendamentos, pagamentos, avaliações, credenciais comprovadas nem disponibilidades não confirmadas. Não disponibilizar contexto privado da Pessoa ao Profissional.
+
+**Transição para Movimento 05:** da visualização de oportunidades à continuidade das experiências e das possibilidades de evolução.
 
 ### Movimento 05 — A continuidade de cada experiência
 
