@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-PRO-MASTER-001
 title: Home Pública — Profissional — Documento Mestre Candidato de Arquitetura Narrativa
 status: proposed
-version: 0.1.34
+version: 0.1.35
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-11-18
 normative: false
@@ -63,30 +63,31 @@ O Profissional **continua sendo uma pessoa humana**, mas participa aqui com uma 
 
 ## 3. Arquitetura narrativa — consolidação editorial
 
-A sequência atual contém **dez movimentos com funções narrativas distintas**, definidos pela necessidade de comunicação e **não por quantidade obrigatória**. A análise de continuidade e redundância preservou os dez, sem impor paridade com outras Homes.
+A sequência atual contém **onze movimentos com funções narrativas distintas**, definidos pela necessidade de comunicação e **não por quantidade obrigatória**. O Movimento 03 foi acrescentado por uma função própria: relações entre Profissionais, Organizações e Coletivos para gerar Oportunidades voltadas às Pessoas, sem impor paridade com outras Homes.
 
 ### Quadro de consulta rápida dos movimentos vigentes
 
-Este quadro reúne os **dez movimentos da arquitetura narrativa vigente para referência editorial**, com a numeração, o nome interno, o **título público efetivamente aprovado**, a finalidade e as dependências de cada um. Vigência editorial **não equivale a página implementada ou publicada**.
+Este quadro reúne os **onze movimentos da arquitetura narrativa vigente para referência editorial**, com a numeração, o nome interno, o **título público efetivamente aprovado**, a finalidade e as dependências de cada um. Vigência editorial **não equivale a página implementada ou publicada**.
 
 | Nº | Movimento | Título público aprovado | Função / estado |
 | --- | --- | --- | --- |
 | **01** | Novos clientes e possibilidades de negócio | **Sua atuação profissional. Novas conexões. Novas oportunidades.** | Ampliar presença, públicos e conexões comerciais. **Texto aprovado.** |
 | **02** | Áreas de evolução da Pessoa e oportunidades profissionais | **Diferentes áreas da vida. Mais possibilidades para sua atuação.** | Relacionar ofertas às áreas de evolução, sem restringir especialidades. **Texto aprovado; visual pendente.** |
-| **03** | Descoberta e relevância | **Sua oportunidade pode chegar a quem ainda nem imaginou encontrá-la.** | Apresentar descoberta contextual e novas possibilidades. **Texto e exemplos aprovados.** |
-| **04** | Oportunidades profissionais em destaque | **Suas oportunidades ganham espaço para serem descobertas.** | Mostrar oportunidades reais de diferentes Profissionais. **Texto aprovado; integração pendente.** |
-| **05** | Oportunidades que permanecem onde o Profissional atua | **Sua oportunidade continua onde acontece. Seu alcance pode ir além.** | Manter serviços nos ambientes digitais e físicos do Profissional. **Texto aprovado.** |
-| **06** | Oportunidades ao Vivo | **Sua próxima transmissão pode alcançar muito mais pessoas.** | Destacar eventos síncronos com transmissão online. **Texto aprovado.** |
-| **07** | A continuidade de cada experiência | **O que você oferece hoje pode abrir possibilidades para amanhã.** | Mostrar possíveis desdobramentos após uma experiência. **Texto aprovado.** |
-| **08** | A voz dos Profissionais | **Conheça a experiência de quem faz parte da Guivos.** | Depoimentos em vídeo de Profissionais reais. **Texto aprovado; vídeos autorizados pendentes.** |
-| **09** | Perguntas frequentes | **Ainda tem dúvidas? A gente responde.** | Esclarecer dúvidas de participação, operação e alcance. **Texto e sete respostas aprovados.** |
-| **10** | Convite para participar | **Sua atuação profissional pode ir ainda mais longe.** | Encerrar com CTA Participar da Guivos. **Texto e CTA aprovados; destino pendente.** |
+| **03** | Relações que geram Oportunidades | **Juntos, podemos tornar novas oportunidades possíveis.** | Colaboração entre Profissionais, Organizações e Coletivos para criar oportunidades concretas destinadas às Pessoas. **Texto e três exemplos aprovados; contratos operacionais pendentes.** |
+| **04** | Descoberta e relevância | **Sua oportunidade pode chegar a quem ainda nem imaginou encontrá-la.** | Apresentar descoberta contextual e novas possibilidades. **Texto e exemplos aprovados.** |
+| **05** | Oportunidades profissionais em destaque | **Suas oportunidades ganham espaço para serem descobertas.** | Mostrar oportunidades reais de diferentes Profissionais. **Texto aprovado; integração pendente.** |
+| **06** | Oportunidades que permanecem onde o Profissional atua | **Sua oportunidade continua onde acontece. Seu alcance pode ir além.** | Manter serviços nos ambientes digitais e físicos do Profissional. **Texto aprovado.** |
+| **07** | Oportunidades ao Vivo | **Sua próxima transmissão pode alcançar muito mais pessoas.** | Destacar eventos síncronos com transmissão online. **Texto aprovado.** |
+| **08** | A continuidade de cada experiência | **O que você oferece hoje pode abrir possibilidades para amanhã.** | Mostrar possíveis desdobramentos após uma experiência. **Texto aprovado.** |
+| **09** | A voz dos Profissionais | **Conheça a experiência de quem faz parte da Guivos.** | Depoimentos em vídeo de Profissionais reais. **Texto aprovado; vídeos autorizados pendentes.** |
+| **10** | Perguntas frequentes | **Ainda tem dúvidas? A gente responde.** | Esclarecer dúvidas de participação, operação e alcance. **Texto e sete respostas aprovados.** |
+| **11** | Convite para participar | **Sua atuação profissional pode ir ainda mais longe.** | Encerrar com CTA Participar da Guivos. **Texto e CTA aprovados; destino pendente.** |
 
 **Consulta e governança:** manter este quadro sincronizado com a redação de cada movimento abaixo. As condições de Design, autorização de depoimentos, origem de ofertas reais, integrações e destino do CTA permanecem específicas e não são aprovadas por este quadro.
 
-**Verificação editorial de sequência:** 01 apresenta o benefício comercial; 02 a amplitude; 03 a pertinência; 04 a visualização concreta; 05 o ambiente de execução; 06 a singularidade do encontro ao vivo; 07 a continuidade possível; 08 a credibilidade de relatos reais; 09 esclarece dúvidas; 10 encerra com a ação.
+**Verificação editorial de sequência:** 01 apresenta o benefício comercial; 02 a amplitude das áreas de evolução; 03 a geração de oportunidades para Pessoas por relações entre participantes; 04 a pertinência da descoberta; 05 a visualização concreta; 06 o ambiente de execução; 07 a singularidade do encontro ao vivo; 08 a continuidade possível; 09 a credibilidade de relatos reais; 10 esclarece dúvidas; 11 encerra com a ação.
 
-**Pontos abertos antes de um release para Design ou implementação:** obter/autorizar depoimentos reais para o Movimento 08; definir origem, elegibilidade e comportamento para o carrossel do Movimento 04; validar o destino do CTA; e observar as integrações e fronteiras ainda dependentes de contratos próprios. A aprovação de narrativa **não** é autorização para publicação da Home ou ativação de funcionalidades.
+**Pontos abertos antes de um release para Design ou implementação:** especificar contratos de relações bilaterais e de atribuição de papéis ao novo Movimento 03; obter/autorizar depoimentos reais para o Movimento 09; definir origem, elegibilidade e comportamento para o carrossel do Movimento 05; validar o destino do CTA; e observar as integrações e fronteiras ainda dependentes de contratos próprios. A aprovação de narrativa **não** é autorização para publicação da Home ou ativação de funcionalidades.
 
 ### Movimento 01 — Novos clientes e possibilidades de negócio
 
@@ -212,9 +213,65 @@ Essa abertura não representa aprovação automática de cadastro, elegibilidade
 - A lista serve à **exploração narrativa**, não cria categorias operacionais, elegibilidade, permissão profissional ou correspondência automática.
 - Não sugerir que toda área da vida precisa de oferta profissional ou contratação.
 
-**Transição para Movimento 03:** depois de compreender a amplitude dos domínios da vida com os quais uma oferta pode se relacionar, explicar como a relevância depende de contexto e necessidades particulares, sem expor dados privados.
+**Transição para Movimento 03:** depois de compreender a amplitude das áreas da vida com as quais uma oferta pode se relacionar, demonstrar que Profissionais, Organizações e Coletivos podem combinar capacidades para tornar oportunidades concretas possíveis para as Pessoas.
 
-### Movimento 03 — Descoberta e relevância
+### Movimento 03 — Relações que geram Oportunidades
+
+**Estado:** novo movimento, comunicação pública, fundamento e três exemplos conceituais aprovados pela Direção em 18/11/2026. A composição visual definitiva permanece sujeita a Design. A aprovação editorial não comprova relações vigentes, oferta ativa ou mecanismo bilateral implementado.
+
+**Função narrativa:** demonstrar que a atuação de um Profissional não precisa alcançar somente Pessoas de forma individual: ela pode se relacionar com Organizações e Coletivos para **criar, viabilizar ou ampliar Oportunidades concretas destinadas às Pessoas**, contribuindo potencialmente para diferentes áreas de evolução da vida. Este movimento **não apresenta a Guivos como plataforma genérica de contratação B2B ou de prestação de serviços entre participantes**.
+
+#### Comunicação pública aprovada
+
+**Título:**
+
+> **Juntos, podemos tornar novas oportunidades possíveis.**
+
+**Texto de apoio:**
+
+> Profissionais, Organizações e Coletivos podem unir conhecimentos, recursos e iniciativas para criar experiências e oportunidades que contribuam para diferentes momentos e objetivos da vida das pessoas.
+
+#### Finalidade da relação bilateral
+
+A relação entre Profissional e Organização ou Coletivo existe, neste movimento, para combinar capacidades e produzir ou viabilizar uma oportunidade **identificável e voltada à Pessoa**. A Organização ou Coletivo pode organizar a iniciativa, disponibilizar estrutura ou mobilizar participantes; o Profissional pode acrescentar uma especialidade ou experiência; a Pessoa mantém autonomia sobre participar.
+
+**Relação bilateral** significa acordo ou concordância entre os participantes envolvidos, quando a relação assim exigir, com finalidade, escopo, responsabilidades e condições claras. Não implica igualdade obrigatória de atribuições, representação institucional, compartilhamento irrestrito de dados ou garantia de resultados. **Pertencimento ≠ representação; colaboração ≠ autoridade irrestrita.**
+
+#### Três exemplos públicos aprovados — situações ilustrativas
+
+**01 — Corrida + Nutricionista — Saúde e Bem-estar**
+
+Um coletivo organiza uma corrida e conta com uma nutricionista para orientar os participantes sobre alimentação e hábitos saudáveis.
+
+**Oportunidade para a Pessoa:** ampliar conhecimentos sobre saúde e bem-estar.
+
+**02 — Feira de empreendedorismo + Educador financeiro — Vida Financeira e Empreendedorismo**
+
+Uma organização promove uma feira de empreendedorismo e conta com um educador financeiro para orientar pessoas interessadas em abrir ou organizar seus pequenos negócios.
+
+**Oportunidade para a Pessoa:** aprender a planejar despesas, organizar o orçamento e compreender melhor a gestão financeira de um negócio.
+
+**03 — Evento cultural + Fotógrafo — Viagens, Lazer, Cultura e Novas Experiências**
+
+Uma organização promove uma programação cultural e conta com um fotógrafo para realizar uma oficina de fotografia aberta aos participantes.
+
+**Oportunidade para a Pessoa:** desenvolver habilidades fotográficas, explorar a criatividade e descobrir novas formas de expressão.
+
+**Qualificação:** todos os exemplos são ilustrativos. A corrida, a feira e o evento cultural são contextos que viabilizam oportunidades específicas; a mera realização de um evento **não comprova**, por si só, uma oportunidade profissional acrescentada pela relação. Não pressupor iniciativas, participantes, parcerias, agenda ou ofertas realmente cadastradas na Guivos. Os nomes das áreas são descrições editoriais e devem ser reconciliados com os nove Domínios oficiais antes da composição visual definitiva.
+
+#### Composição e fronteiras
+
+- Apresentar três situações curtas com a relação **Organização/Coletivo + Profissional → contribuição específica → Oportunidade para a Pessoa**.
+- Usar diversidade de áreas de evolução; não repetir o mesmo resultado em todos os exemplos.
+- Destacar a finalidade voltada à Pessoa, sem ocultar a legitimidade da atuação e do benefício comercial para o Profissional.
+- Não tratar colaboração como contratação corporativa genérica, vínculo empregatício, representação automática ou compra de relevância.
+- Identificar o ofertador e os demais papéis da oportunidade, conforme as regras e permissões que vierem a ser aprovadas em contratos próprios.
+- O cadastro, a bilateralidade operacional, a aceitação, as permissões, a proveniência das oportunidades e a visibilidade das relações permanecem dependentes de contratos específicos.
+- Não prometer evolução ou impacto comprovado: a oportunidade representa **possibilidade de contribuição**, não causalidade ou transformação garantida.
+
+**Transição para Movimento 04:** uma vez compreendido que diferentes participantes podem combinar capacidades para gerar oportunidades voltadas às Pessoas, apresentar como essas oportunidades podem ser descobertas por quem ainda não as procurava.
+
+### Movimento 04 — Descoberta e relevância
 
 **Estado da comunicação pública:** **título, texto de apoio, mensagem complementar e três situações aprovados pela Direção em 18/11/2026**. A composição visual final continua sujeita a Design. A aprovação da narrativa não comprova funcionalidades em operação nem autoriza implementação.
 
@@ -259,7 +316,7 @@ Uma pessoa busca melhorar sua saúde e descobre profissionais e atividades que p
 1. **Abertura** — título e texto de apoio.
 2. **Três situações humanas** — apresentar em cards, cenas ou composição interativa, com exemplos facilmente compreensíveis e textos curtos.
 3. **Mensagem complementar** — inteligência como apoio à descoberta, em segundo plano, não protagonista técnico.
-4. **Continuidade** — conduzir à clareza das condições e à autonomia de escolha no Movimento 04.
+4. **Continuidade** — conduzir à clareza das condições e à autonomia de escolha no Movimento 05.
 
 **Para o Profissional:** oportunidades podem alcançar públicos relevantes, em diferentes momentos e trajetórias. **Para a Pessoa:** pode encontrar possibilidades não procuradas, alternativas pertinentes e caminhos para seus objetivos, mantendo a própria escolha.
 
@@ -271,13 +328,13 @@ Uma pessoa busca melhorar sua saúde e descobre profissionais e atividades que p
 - Os exemplos são ilustrativos de capacidades pretendidas, não casos comprovadamente operacionais. Descoberta ou relevância não significam garantia de contratação, receita, adequação clínica ou impacto positivo.
 - O exemplo de saúde não constitui diagnóstico, recomendação clínica individual ou indicação automática de tratamento.
 
-**Transição para Movimento 04:** uma descoberta relevante exige informações claras sobre a oferta, o responsável e as condições de participação para permitir uma decisão consciente.
+**Transição para Movimento 05:** uma descoberta relevante exige informações claras sobre a oferta, o responsável e as condições de participação para permitir uma decisão consciente.
 
-### Movimento 04 — Oportunidades profissionais em destaque
+### Movimento 05 — Oportunidades profissionais em destaque
 
 **Estado:** direção de comunicação e composição aprovada pela Direção em 18/11/2026. Trata-se de uma especificação narrativa e visual; a integração e o componente na Home não foram implementados nem validados por esta aprovação.
 
-**Função:** demonstrar visualmente oportunidades concretas disponibilizadas por diferentes Profissionais, sem repetir o Movimento 03 nem ensinar o cadastro de ofertas. Comunicar amplitude, clareza e possibilidades de descoberta, preservando o interesse comercial do Profissional e a decisão autônoma da Pessoa.
+**Função:** demonstrar visualmente oportunidades concretas disponibilizadas por diferentes Profissionais, sem repetir o Movimento 04 nem ensinar o cadastro de ofertas. Comunicar amplitude, clareza e possibilidades de descoberta, preservando o interesse comercial do Profissional e a decisão autônoma da Pessoa.
 
 #### Comunicação pública aprovada
 
@@ -305,9 +362,9 @@ A **Home Profissional mostra oportunidades existentes e o valor de participar da
 
 **Confiança e privacidade:** informações claras e condições de participação são importantes para a escolha, mas a Home não deve simular certificações, verificações, agendamentos, pagamentos, avaliações, credenciais comprovadas nem disponibilidades não confirmadas. Não disponibilizar contexto privado da Pessoa ao Profissional.
 
-**Transição para Movimento 05:** da visualização das oportunidades à compreensão de que experiências externas podem permanecer nos ambientes onde os Profissionais já operam.
+**Transição para Movimento 06:** da visualização das oportunidades à compreensão de que experiências externas podem permanecer nos ambientes onde os Profissionais já operam.
 
-### Movimento 05 — Oportunidades que permanecem onde o Profissional atua
+### Movimento 06 — Oportunidades que permanecem onde o Profissional atua
 
 **Estado:** direção conceitual, título e texto públicos **aprovados pela Direção em 18/11/2026**, incluindo experiências **online, presenciais e domiciliares**. A composição visual final permanece sujeita a Design; esta aprovação não comprova integrações nem execução operacional.
 
@@ -346,13 +403,13 @@ Representar **quatro modalidades de contexto**, sem hierarquia entre elas nem li
 - **Amplitude do ecossistema:** este movimento comunica a possibilidade de experiências realizadas fora da Guivos, sem estabelecer que todas as oportunidades devam ser externas.
 - **Jornada do Profissional:** cadastro, configuração, gestão, divulgação e indicação de destino são tratados na experiência posterior do Profissional, não ensinados na Home pública.
 
-**Transição para Movimento 06:** além das ofertas contínuas em ambientes externos, o Profissional também poderá ampliar a descoberta de experiências síncronas com data e horário definidos.
+**Transição para Movimento 07:** além das ofertas contínuas em ambientes externos, o Profissional também poderá ampliar a descoberta de experiências síncronas com data e horário definidos.
 
-### Movimento 06 — Oportunidades ao Vivo
+### Movimento 07 — Oportunidades ao Vivo
 
-**Estado:** **Movimento 06, título, texto público e direção visual aprovados pela Direção em 18/11/2026.** A composição visual definitiva permanece sujeita a Design. Esta aprovação não autoriza implementação, integração de vídeo ou publicação de eventos não confirmados.
+**Estado:** **Movimento 07, título, texto público e direção visual aprovados pela Direção em 18/11/2026.** A composição visual definitiva permanece sujeita a Design. Esta aprovação não autoriza implementação, integração de vídeo ou publicação de eventos não confirmados.
 
-**Função:** comunicar que uma live, palestra, workshop, treinamento, reunião ou encontro online com data e horário definidos poderá ganhar descoberta e conexões entre as Pessoas da Guivos, **mesmo quando a transmissão e a experiência ocorrerem fora da plataforma**. Diferenciar-se do Movimento 05, que mostra a permanência de ofertas e serviços em ambientes externos sem enfoque na natureza síncrona do evento.
+**Função:** comunicar que uma live, palestra, workshop, treinamento, reunião ou encontro online com data e horário definidos poderá ganhar descoberta e conexões entre as Pessoas da Guivos, **mesmo quando a transmissão e a experiência ocorrerem fora da plataforma**. Diferenciar-se do Movimento 06, que mostra a permanência de ofertas e serviços em ambientes externos sem enfoque na natureza síncrona do evento.
 
 #### Comunicação pública aprovada
 
@@ -385,12 +442,12 @@ As possibilidades incluem:
 - **Profissional e plataforma de destino:** mantêm responsabilidade pela programação, realização, transmissão, acesso, inscrições ou pagamentos eventualmente aplicáveis e condições do evento.
 - **Pessoa:** recebe informações suficientes sobre horário, modalidade, condições e ambiente externo e decide se deseja participar. Não expor sua Journey privada nem compartilhar dados individuais com o Profissional sem autorização.
 - Não transformar a Home em formulário de divulgação ou cadastro: funcionalidades de criação e gerenciamento pertencem à Jornada do Profissional e às autoridades específicas de Oportunidades ao Vivo.
-- **Relação com Movimento 05:** ambos admitem realização fora da Guivos; este movimento tem função narrativa própria devido à natureza temporal, simultânea e ao potencial de encontro ao vivo.
+- **Relação com Movimento 06:** ambos admitem realização fora da Guivos; este movimento tem função narrativa própria devido à natureza temporal, simultânea e ao potencial de encontro ao vivo.
 - A direção visual não constitui evidência de parceria com YouTube, Hotmart ou quaisquer provedores de streaming.
 
-**Transição para Movimento 07:** a participação em uma experiência ao vivo pode abrir possibilidades posteriores, sem inferir automaticamente que ocorreu ou produziu determinado resultado.
+**Transição para Movimento 08:** a participação em uma experiência ao vivo pode abrir possibilidades posteriores, sem inferir automaticamente que ocorreu ou produziu determinado resultado.
 
-### Movimento 07 — A continuidade de cada experiência
+### Movimento 08 — A continuidade de cada experiência
 
 **Estado:** título, texto público e direção conceitual aprovados pela Direção em 18/11/2026. A composição visual definitiva depende de Design e a aprovação não representa implantação de monitoramento de experiências ou integrações externas.
 
@@ -414,7 +471,7 @@ Representar uma sequência simples, com **continuidade possível e não determin
 2. **Experiência com Profissional:** participa de mentoria online ou presencial, onde o Profissional já opera.
 3. **Novas possibilidades:** aprofundar conhecimentos, planejar o negócio, conhecer outros profissionais ou explorar oportunidades futuras.
 
-Evitar exibir essas etapas como resultados comprovados ou automáticos. A sequência é **ilustrativa**, não um registro de participação real e não deve repetir o detalhamento tecnológico do Movimento 03.
+Evitar exibir essas etapas como resultados comprovados ou automáticos. A sequência é **ilustrativa**, não um registro de participação real e não deve repetir o detalhamento tecnológico do Movimento 04.
 
 **Perspectivas complementares:** para a Pessoa, uma experiência pode integrar sua trajetória e ampliar escolhas. Para o Profissional, sua atuação pode construir relações, gerar novas conexões e abrir possibilidades legítimas de continuidade de negócios, sem garantia comercial.
 
@@ -426,9 +483,9 @@ Evitar exibir essas etapas como resultados comprovados ou automáticos. A sequê
 - Evitar promessas de transformação, resultado mensurável, contratação ou receita.
 - Manter o movimento **breve, inspiracional e visual**, com a experiência como conexão entre a atuação profissional e novas possibilidades; explicações sobre inteligência e captura de dados pertencem às páginas especializadas.
 
-**Transição para Movimento 08:** do valor possível de cada experiência aos relatos autênticos de Profissionais, antes do esclarecimento de dúvidas e do convite final.
+**Transição para Movimento 09:** do valor possível de cada experiência aos relatos autênticos de Profissionais, antes do esclarecimento de dúvidas e do convite final.
 
-### Movimento 08 — A voz dos Profissionais
+### Movimento 09 — A voz dos Profissionais
 
 **Estado:** **título e texto de apoio aprovados pela Direção em 18/11/2026**, com referência visual do carrossel já definida. A composição final e o acervo de depoimentos reais autorizados continuam pendentes; esta aprovação não comprova vídeos gravados nem implantação do componente.
 
@@ -461,9 +518,9 @@ Evitar exibir essas etapas como resultados comprovados ou automáticos. A sequê
 - Não apresentar ganhos, faturamento, alcance, contratações ou transformações como resultados típicos ou garantidos; quando houver indicadores reais, exigir contexto e evidência.
 - A Home não substitui o ambiente posterior de gestão de conta ou envio de depoimentos.
 
-**Transição para Movimento 09:** dos relatos autênticos às respostas para as dúvidas mais comuns antes da decisão de participar.
+**Transição para Movimento 10:** dos relatos autênticos às respostas para as dúvidas mais comuns antes da decisão de participar.
 
-### Movimento 09 — Perguntas frequentes
+### Movimento 10 — Perguntas frequentes
 
 **Estado:** **título, texto de apoio, sete perguntas e respectivas respostas aprovados pela Direção em 18/11/2026**, com apresentação em FAQ expansível baseada na referência fornecida. A composição visual final depende de Design; esta aprovação não estabelece custos, elegibilidade automática, limites de alcance nem funcionalidades comerciais não autorizadas.
 
@@ -522,9 +579,9 @@ Usar a captura de referência fornecida pela Direção como **padrão funcional 
 - **Disponibilidade funcional:** respostas não devem sugerir que mecanismos em estudo já foram implantados.
 - A seleção de sete perguntas **não é limite fixo**; revisar antes da publicação para garantir precisão e evitar extensão excessiva da Home.
 
-**Transição para Movimento 10:** após esclarecer as dúvidas, apresentar o convite direto para participação.
+**Transição para Movimento 11:** após esclarecer as dúvidas, apresentar o convite direto para participação.
 
-### Movimento 10 — Convite para participar
+### Movimento 11 — Convite para participar
 
 **Estado:** título, texto de apoio e CTA público aprovados conceitualmente pela Direção em 18/11/2026; implementação e destino do CTA dependem do fluxo autenticado autorizado.
 
@@ -542,7 +599,7 @@ Usar a captura de referência fornecida pela Direção como **padrão funcional 
 
 **CTA:** **Participar da Guivos**.
 
-**Direção visual:** encerramento limpo, título, apoio e CTA em posição central, com profissionais de diferentes especialidades em ambientes reais de atuação quando houver imagens legítimas e autorizadas. Não repetir o carrossel do Movimento 04 nem o carrossel de depoimentos do Movimento 08.
+**Direção visual:** encerramento limpo, título, apoio e CTA em posição central, com profissionais de diferentes especialidades em ambientes reais de atuação quando houver imagens legítimas e autorizadas. Não repetir o carrossel do Movimento 05 nem o carrossel de depoimentos do Movimento 09.
 
 **Nota de produto:** não simular CTA funcional, acesso ativo ou fluxo de cadastro implementado sem integração e autorização comprovadas.
 
@@ -607,9 +664,11 @@ O registro de participante Profissional no GKR é conceitual e aponta contratos 
 
 **Estado do presente documento:** narrativa consolidada para apreciação dos pontos abertos, sem autorização automática de Design, implementação ou publicação.
 
-**2026-11-18 — Aprovação editorial do Movimento 08:** aprovados o título **“Conheça a experiência de quem faz parte da Guivos.”** e o apoio **“Profissionais de diferentes áreas compartilham suas experiências, perspectivas e descobertas ao participar do ecossistema.”** O carrossel permanece condicionado a depoimentos reais autorizados e à composição final de Design.
+**2026-11-18 — Aprovação editorial do Movimento 09:** aprovados o título **“Conheça a experiência de quem faz parte da Guivos.”** e o apoio **“Profissionais de diferentes áreas compartilham suas experiências, perspectivas e descobertas ao participar do ecossistema.”** O carrossel permanece condicionado a depoimentos reais autorizados e à composição final de Design.
 
-**2026-11-18 — Aprovação editorial do Movimento 02:** aprovados o título **“Diferentes áreas da vida. Mais possibilidades para sua atuação.”** e o apoio **“Da saúde à carreira, dos estudos às finanças, suas especialidades podem contribuir para diferentes objetivos e momentos da vida das pessoas.”** Mantida a primazia dos nove Domínios de Evolução da Pessoa, sem restringir especialidades. Movimento 08 segue com título e apoio pendentes.
+**2026-11-18 — Aprovação editorial do Movimento 02:** aprovados o título **“Diferentes áreas da vida. Mais possibilidades para sua atuação.”** e o apoio **“Da saúde à carreira, dos estudos às finanças, suas especialidades podem contribuir para diferentes objetivos e momentos da vida das pessoas.”** Mantida a primazia dos nove Domínios de Evolução da Pessoa, sem restringir especialidades. Movimento 09 segue com título e apoio pendentes.
 
 
 **2026-11-18 — Confirmação de diretriz:** aprovada a compreensão das possíveis contribuições da oportunidade e de sua associação com múltiplas áreas da vida como parte da arquitetura conceitual de oportunidades, além do Movimento 02. Preservar a diferença entre intenção, potencial e resultado comprovado.
+
+**2026-11-18 — Aprovação editorial do novo Movimento 03:** aprovado o título **“Juntos, podemos tornar novas oportunidades possíveis.”**, o apoio sobre a união de conhecimentos, recursos e iniciativas entre Profissionais, Organizações e Coletivos para gerar oportunidades às Pessoas, e três exemplos ilustrativos (corrida com nutricionista, feira de empreendedorismo com educador financeiro e evento cultural com fotógrafo). O movimento não descreve contratação B2B genérica. Os movimentos posteriores foram renumerados de 04 a 11, preservando integralmente seus títulos e textos públicos já aprovados. Relações e permissões operacionais dependem de contratos próprios.
