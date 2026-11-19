@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-PRO-MASTER-001
 title: Home Pública — Profissional — Documento Mestre Candidato de Arquitetura Narrativa
 status: proposed
-version: 0.1.18
+version: 0.1.19
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-11-18
 normative: false
@@ -207,7 +207,7 @@ Essa abertura não representa aprovação automática de cadastro, elegibilidade
 
 > Na Guivos, interesses, objetivos e momentos da vida podem revelar conexões entre o que você oferece e aquilo que as pessoas procuram — ou ainda não descobriram que pode fazer sentido para elas.
 
-#### Três formas de descobrir novas possibilidades — exemplos públicos resumidos para revisão
+#### Três formas de descobrir novas possibilidades — redação pública resumida aprovada
 
 **01 — Descoberta ampliada**
 
@@ -221,7 +221,7 @@ Uma pessoa deseja empreender e encontra uma mentoria online compatível com seus
 
 Uma pessoa busca melhorar sua saúde e descobre profissionais e atividades que podem contribuir para seu objetivo.
 
-**Estado dos exemplos:** as três situações e suas funções narrativas foram aprovadas; a redação resumida atende à solicitação editorial e permanece disponível para apreciação. São exemplos ilustrativos, não ofertas reais confirmadas nem garantias de resultados.
+**Estado dos exemplos:** as três situações, suas funções narrativas e a redação resumida foram **aprovadas pela Direção em 18/11/2026**. São exemplos ilustrativos, não ofertas reais confirmadas nem garantias de resultados.
 
 **Distinção entre os casos:** o primeiro revela uma oferta não procurada expressamente; o segundo considera intenção e condições de participação; o terceiro demonstra a variedade de caminhos para um objetivo. Os três exemplos são suficientes para este movimento, sem obrigação de ampliar a quantidade.
 
