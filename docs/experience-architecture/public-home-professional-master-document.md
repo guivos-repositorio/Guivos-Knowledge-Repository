@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-PRO-MASTER-001
 title: Home Pública — Profissional — Documento Mestre Candidato de Arquitetura Narrativa
 status: proposed
-version: 0.1.23
+version: 0.1.24
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-11-18
 normative: false
@@ -323,9 +323,51 @@ Representar **quatro modalidades de contexto**, sem hierarquia entre elas nem li
 - **Amplitude do ecossistema:** este movimento comunica a possibilidade de experiências realizadas fora da Guivos, sem estabelecer que todas as oportunidades devam ser externas.
 - **Jornada do Profissional:** cadastro, configuração, gestão, divulgação e indicação de destino são tratados na experiência posterior do Profissional, não ensinados na Home pública.
 
-**Transição para Movimento 06:** a experiência efetivamente realizada pode contribuir para novos caminhos, sem pressupor rastreamento automático da atividade ou resultados ocorridos fora da Guivos.
+**Transição para Movimento 06:** além das ofertas contínuas em ambientes externos, o Profissional também poderá ampliar a descoberta de experiências síncronas com data e horário definidos.
 
-### Movimento 06 — A continuidade de cada experiência
+### Movimento 06 — Oportunidades ao Vivo
+
+**Estado:** proposta de movimento solicitada pela Direção em 18/11/2026. O conceito de divulgação e conexão com oportunidades síncronas em plataformas externas orienta a proposta, enquanto **título, texto público e composição visual são candidatos à revisão editorial**. A inserção no documento não autoriza implementação, integração de vídeo ou publicação de eventos não confirmados.
+
+**Função:** comunicar que uma live, palestra, workshop, treinamento, reunião ou encontro online com data e horário definidos poderá ganhar descoberta e conexões entre as Pessoas da Guivos, **mesmo quando a transmissão e a experiência ocorrerem fora da plataforma**. Diferenciar-se do Movimento 05, que mostra a permanência de ofertas e serviços em ambientes externos sem enfoque na natureza síncrona do evento.
+
+#### Comunicação pública candidata
+
+**Título:**
+
+> **Sua próxima transmissão pode alcançar muito mais pessoas.**
+
+**Texto de apoio:**
+
+> Vai realizar uma live, palestra, workshop ou treinamento online? A Guivos pode ampliar a descoberta do seu evento e conectar pessoas interessadas à plataforma onde ele acontecerá.
+
+#### Direção visual candidata
+
+Apresentar **um card de Oportunidade ao Vivo** associado a um fluxo de três etapas:
+
+**Divulgação e descoberta na Guivos → conhecimento das condições e do horário → acesso à transmissão ou sala no ambiente do Profissional.**
+
+Exemplo estritamente ilustrativo: **Workshop ao vivo — Como começar seu próprio negócio**. Exibir informações de formato, data/horário e destino apenas quando correspondam a um registro real e autorizado; não inventar evento cadastrado ou vagas.
+
+As possibilidades incluem:
+
+- Lives e transmissões ao vivo em plataformas externas, como YouTube, quando as condições de uso e o link forem legítimos.
+- Workshops, palestras, aulas, treinamentos, reuniões e encontros virtuais realizados em serviços de terceiros ou plataformas próprias.
+- Atividades presenciais ou híbridas **somente na classificação de Oportunidades ao Vivo quando houver transmissão online síncrona**; encontros apenas presenciais continuam sendo oportunidades convencionais, não Oportunidades ao Vivo.
+
+#### Fronteiras e responsabilidades
+
+- O requisito diferencial é **sincronia e ocorrência em data e horário definidos**, com acesso online; vídeos gravados sob demanda não são Oportunidades ao Vivo por si sós.
+- **Guivos:** poderá apoiar apresentação, descoberta contextual, conexão e encaminhamento de pessoas interessadas, respeitando permissões e autorizações. Não afirmar distribuição instantânea, audiência garantida, venda, inscrição, convite automático, integração ativa ou alcance mensurado.
+- **Profissional e plataforma de destino:** mantêm responsabilidade pela programação, realização, transmissão, acesso, inscrições ou pagamentos eventualmente aplicáveis e condições do evento.
+- **Pessoa:** recebe informações suficientes sobre horário, modalidade, condições e ambiente externo e decide se deseja participar. Não expor sua Journey privada nem compartilhar dados individuais com o Profissional sem autorização.
+- Não transformar a Home em formulário de divulgação ou cadastro: funcionalidades de criação e gerenciamento pertencem à Jornada do Profissional e às autoridades específicas de Oportunidades ao Vivo.
+- **Relação com Movimento 05:** ambos admitem realização fora da Guivos; este movimento tem função narrativa própria devido à natureza temporal, simultânea e ao potencial de encontro ao vivo.
+- A direção visual não constitui evidência de parceria com YouTube, Hotmart ou quaisquer provedores de streaming.
+
+**Transição para Movimento 07:** a participação em uma experiência ao vivo pode abrir possibilidades posteriores, sem inferir automaticamente que ocorreu ou produziu determinado resultado.
+
+### Movimento 07 — A continuidade de cada experiência
 
 **Função:** conectar participação, experiência e novos caminhos, sem prometer resultados.
 
@@ -339,7 +381,7 @@ Representar **quatro modalidades de contexto**, sem hierarquia entre elas nem li
 
 **Transição:** do valor potencial da participação ao convite público.
 
-### Movimento 07 — Convite para participar
+### Movimento 08 — Convite para participar
 
 **Função:** encerrar o percurso com um convite coerente com a identidade do Profissional, sem antecipar fluxos internos.
 
