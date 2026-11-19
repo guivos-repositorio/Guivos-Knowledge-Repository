@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-PRO-MASTER-001
 title: Home Pública — Profissional — Documento Mestre Candidato de Arquitetura Narrativa
 status: proposed
-version: 0.1.10
+version: 0.1.11
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-11-18
 normative: false
@@ -123,50 +123,67 @@ A compreensão das oportunidades disponibilizadas pelo Profissional deverá cont
 
 **Questões de implementação ainda pendentes:** estrutura de dados, taxonomia oficial das áreas, mecanismos de classificação, campos de cadastro e multiplicidade de especialidades e ofertas sob uma única identidade Profissional exigem contratos próprios. A presente aprovação conceitual não implanta o modelo nem altera permissões.
 
-### Movimento 02 — Áreas de atuação e possibilidades
+### Movimento 02 — Áreas de evolução da Pessoa e oportunidades profissionais
 
-**Função:** mostrar a amplitude das **áreas de atuação profissional** como protagonistas, com profissionais e especialidades apenas como exemplos secundários. Evitar nichar a Home em quatro profissões ou transformá-la em catálogo de prestadores.
+**Função corrigida:** a apresentação parte das **áreas de evolução da Jornada da Pessoa**, não de setores da economia nem de áreas de atuação dos profissionais. A especialidade do Profissional e o formato da oferta são exemplos **secundários** das oportunidades que podem relacionar-se à vida de alguém.
 
-#### Comunicação pública — nova proposta candidata
+#### Comunicação pública — proposta candidata
 
 **Título público candidato:**
 
-> **Diferentes especialidades. Inúmeras possibilidades.**
+> **Diferentes áreas da vida. Inúmeras possibilidades.**
 
 **Texto de apoio candidato:**
 
-> Da saúde à tecnologia, da educação aos negócios, diferentes áreas profissionais encontram espaço para apresentar suas ofertas e conectar-se a novas oportunidades.
+> Das questões de saúde aos objetivos profissionais, dos estudos às finanças, suas especialidades podem estar relacionadas a diferentes momentos, necessidades e interesses das pessoas.
 
-**Situação:** redação e composição candidatas, ainda em apreciação.
+**Status:** proposta em revisão, sem aprovação definitiva de redação ou Design.
 
-#### Hierarquia visual proposta
+#### Referência de autoridade: nove Domínios de Evolução da Home da Pessoa
 
-1. **Primeiro plano:** grandes áreas de atuação profissional, com títulos e linguagem visual ampla.
-2. **Segundo plano:** exemplos discretos de profissionais e especialistas, sem listas extensas nem categorias fechadas.
-3. **Terceiro plano contextual:** conexão possível entre oportunidades oferecidas e áreas de evolução da Pessoa, sem alegação de impacto garantido.
+De acordo com [Home Pública Principal — Documento Mestre](public-home-master-document.md), os referenciais são:
 
-**Agrupamentos ilustrativos, não taxonomia aprovada:**
+1. Saúde e Bem-estar;
+2. Trabalho, Carreira e Estudos;
+3. Vida Financeira;
+4. Empreendedorismo e Projetos;
+5. Relacionamentos e Vida Social;
+6. Espiritualidade, Propósito e Valores;
+7. Viagens, Lazer, Cultura e Novas Experiências;
+8. Causas, Voluntariado e Contribuição;
+9. Organização e Equilíbrio da Vida.
 
-| Área profissional em destaque | Exemplos secundários |
-| --- | --- |
-| Saúde e Bem-estar | Psicólogos, nutricionistas, fisioterapeutas e profissionais de educação física |
-| Educação e Desenvolvimento | Professores, instrutores, especialistas em idiomas e mentores |
-| Negócios e Finanças | Consultores, especialistas financeiros, estrategistas e profissionais de gestão |
-| Tecnologia e Inovação | Desenvolvedores, analistas, especialistas em dados e IA |
-| Engenharia, Arquitetura e Projetos | Engenheiros, arquitetos, projetistas e especialistas técnicos |
-| Arte, Cultura e Comunicação | Designers, artistas, produtores, fotógrafos e comunicadores |
-| Esportes, Lazer e Experiências | Treinadores, instrutores, guias e profissionais de experiências |
+**Não transformar automaticamente os nove domínios em nove cards.** A autoridade da Home da Pessoa permite utilizá-los como vocabulário de amplitude e cobertura, mas não impõe grades, categorias rígidas ou diagnóstico. O estado transversal `Ainda estou descobrindo` não constitui um décimo domínio.
 
-**Fronteiras:** a listagem é exemplificativa e não constitui elegibilidade, taxonomia oficial, promessa de oferta ativa ou autorização de exercício profissional regulado.
+#### Hierarquia visual correta
 
-#### Distinção arquitetural necessária
+1. **Primeiro plano:** áreas de evolução e contextos da vida das Pessoas.
+2. **Segundo plano:** oportunidades possíveis relacionadas a cada área (consultas, aulas, orientações, projetos, treinamentos, experiências e outras).
+3. **Terceiro plano:** exemplos discretos de Profissionais/especialistas que podem ofertá-las, conforme habilitação e contratos específicos.
 
-- **Área de atuação profissional:** campo em que o Profissional atua.
-- **Área de evolução da Pessoa:** domínio da vida ao qual uma oportunidade poderá se relacionar, conforme seu contexto e seus objetivos.
+**Exemplos ilustrativos, não classificação definitiva nem promessa de oferta ativa:**
 
-As classificações **não são equivalentes nem devem ser fundidas**. Uma oportunidade ligada a educação, por exemplo, poderá ser relevante para carreira ou viagens, sem que essas relações sejam presumidas para todos.
+| Área de evolução em destaque | Oportunidade possível | Exemplos secundários de Profissionais |
+| --- | --- | --- |
+| Saúde e Bem-estar | Atendimento, orientação ou treinamento pertinente | Psicólogos, nutricionistas, profissionais de educação física |
+| Trabalho, Carreira e Estudos | Aula, capacitação ou mentoria | Professores, mentores, especialistas em tecnologia |
+| Vida Financeira | Educação e organização financeira | Educadores e consultores financeiros, conforme habilitação |
+| Empreendedorismo e Projetos | Consultoria ou apoio técnico a projetos | Consultores, engenheiros, especialistas em gestão |
+| Relacionamentos e Vida Social | Atividades e orientações pertinentes | Educadores, especialistas em comunicação e convivência |
+| Espiritualidade, Propósito e Valores | Encontros, estudos e experiências pertinentes | Educadores, orientadores e facilitadores conforme contexto legítimo |
+| Viagens, Lazer, Cultura e Novas Experiências | Aulas, atividades ou experiências | Guias, instrutores, artistas e especialistas culturais |
+| Causas, Voluntariado e Contribuição | Oficinas, projetos e atividades de participação | Instrutores, facilitadores e especialistas em projetos sociais |
+| Organização e Equilíbrio da Vida | Orientações e serviços de organização | Consultores e profissionais especializados em organização |
 
-**Transição para Movimento 03:** aprofundar o papel da pertinência contextual na descoberta, sem repetir a enumeração de áreas nem o benefício comercial do Movimento 01.
+#### Fronteiras interpretativas
+
+- **Área de evolução da Pessoa ≠ setor de mercado ou especialidade profissional.** Por exemplo, Tecnologia e Inovação não é um dos nove Domínios de Evolução; um curso de tecnologia pode estar ligado a Estudos, Carreira ou Empreendedorismo.
+- A mesma oportunidade pode ter relações fundamentadas com **múltiplos domínios**, dependendo de seu conteúdo, das intenções e do contexto autorizado da Pessoa.
+- As relações apresentadas são **potenciais**, não promessas de evolução ou resultados comprovados.
+- A lista serve à **exploração narrativa**, não cria categorias operacionais, elegibilidade, permissão profissional ou correspondência automática.
+- Não sugerir que toda área da vida precisa de oferta profissional ou contratação.
+
+**Transição para Movimento 03:** depois de compreender a amplitude dos domínios da vida com os quais uma oferta pode se relacionar, explicar como a relevância depende de contexto e necessidades particulares, sem expor dados privados.
 
 ### Movimento 03 — Quando uma capacidade encontra uma possibilidade
 
