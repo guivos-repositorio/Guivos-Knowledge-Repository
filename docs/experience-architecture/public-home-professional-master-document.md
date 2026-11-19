@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-PRO-MASTER-001
 title: Home Pública — Profissional — Documento Mestre Candidato de Arquitetura Narrativa
 status: proposed
-version: 0.1.31
+version: 0.1.32
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-11-18
 normative: false
@@ -68,7 +68,7 @@ A sequência atual contém **dez movimentos com funções narrativas distintas**
 | Movimento | Função narrativa | Situação da comunicação |
 | --- | --- | --- |
 | **01 — Presença e novos públicos** | Convidar Profissionais já atuantes a ampliar sua presença comercial | Título e apoio aprovados |
-| **02 — Áreas de evolução** | Relacionar ofertas às nove áreas de evolução da Pessoa, sem lista fechada de especialidades | Direção aprovada; título e apoio candidatos |
+| **02 — Áreas de evolução** | Relacionar ofertas às nove áreas de evolução da Pessoa, sem lista fechada de especialidades | Título e apoio aprovados; composição visual pendente |
 | **03 — Descoberta e relevância** | Demonstrar descoberta ampliada e contextual com três situações breves | Redação aprovada |
 | **04 — Oportunidades em destaque** | Mostrar cinco cards de ofertas profissionais reais, se disponíveis e autorizadas | Comunicação e diretrizes aprovadas; integração pendente |
 | **05 — Onde a experiência acontece** | Mostrar que ofertas online, presenciais e domiciliares podem permanecer nos ambientes do Profissional | Comunicação aprovada |
@@ -80,7 +80,7 @@ A sequência atual contém **dez movimentos com funções narrativas distintas**
 
 **Verificação editorial de sequência:** 01 apresenta o benefício comercial; 02 a amplitude; 03 a pertinência; 04 a visualização concreta; 05 o ambiente de execução; 06 a singularidade do encontro ao vivo; 07 a continuidade possível; 08 a credibilidade de relatos reais; 09 esclarece dúvidas; 10 encerra com a ação.
 
-**Pontos abertos antes de um release para Design ou implementação:** aprovar a redação pública dos Movimentos 02 e 08; obter/autorizar depoimentos reais para o Movimento 08; definir origem, elegibilidade e comportamento para o carrossel do Movimento 04; validar o destino do CTA; e observar as integrações e fronteiras ainda dependentes de contratos próprios. A aprovação de narrativa **não** é autorização para publicação da Home ou ativação de funcionalidades.
+**Pontos abertos antes de um release para Design ou implementação:** aprovar a redação pública do Movimento 08; obter/autorizar depoimentos reais para o Movimento 08; definir origem, elegibilidade e comportamento para o carrossel do Movimento 04; validar o destino do CTA; e observar as integrações e fronteiras ainda dependentes de contratos próprios. A aprovação de narrativa **não** é autorização para publicação da Home ou ativação de funcionalidades.
 
 ### Movimento 01 — Novos clientes e possibilidades de negócio
 
@@ -144,17 +144,17 @@ A compreensão das oportunidades disponibilizadas pelo Profissional deverá cont
 
 **Função corrigida:** a apresentação parte das **áreas de evolução da Jornada da Pessoa**, não de setores da economia nem de áreas de atuação dos profissionais. A especialidade do Profissional e o formato da oferta são exemplos **secundários** das oportunidades que podem relacionar-se à vida de alguém.
 
-#### Comunicação pública — proposta candidata
+#### Comunicação pública — redação aprovada
 
-**Título público candidato:**
+**Título público aprovado:**
 
-> **Diferentes áreas da vida. Inúmeras possibilidades.**
+> **Diferentes áreas da vida. Mais possibilidades para sua atuação.**
 
-**Texto de apoio candidato:**
+**Texto de apoio aprovado:**
 
-> Das questões de saúde aos objetivos profissionais, dos estudos às finanças, suas especialidades podem estar relacionadas a diferentes momentos, necessidades e interesses das pessoas.
+> Da saúde à carreira, dos estudos às finanças, suas especialidades podem contribuir para diferentes objetivos e momentos da vida das pessoas.
 
-**Status:** proposta em revisão, sem aprovação definitiva de redação ou Design.
+**Estado:** título e apoio aprovados pela Direção em 18/11/2026. A composição visual final permanece sujeita a Design; a mensagem não garante contratações, adequação ou resultados.
 
 #### Referência de autoridade: nove Domínios de Evolução da Home da Pessoa
 
@@ -600,6 +600,8 @@ O registro de participante Profissional no GKR é conceitual e aponta contratos 
 **2026-11-18 — Correção de posicionamento:** o Profissional **já atua no mercado e busca clientes**. Sua motivação comercial não deve ser substituída por discurso de ajuda, colaboração altruísta ou início de uma atividade. O benefício de evolução para a Pessoa é complementar ao objetivo de captação e desenvolvimento de negócios do Profissional. O Movimento 01 foi reescrito; **movimentos seguintes permanecem sujeitos a revisão sob essa premissa**.
 
 **Estado do presente documento:** narrativa consolidada para apreciação dos pontos abertos, sem autorização automática de Design, implementação ou publicação.
+
+**2026-11-18 — Aprovação editorial do Movimento 02:** aprovados o título **“Diferentes áreas da vida. Mais possibilidades para sua atuação.”** e o apoio **“Da saúde à carreira, dos estudos às finanças, suas especialidades podem contribuir para diferentes objetivos e momentos da vida das pessoas.”** Mantida a primazia dos nove Domínios de Evolução da Pessoa, sem restringir especialidades. Movimento 08 segue com título e apoio pendentes.
 
 
 **2026-11-18 — Confirmação de diretriz:** aprovada a compreensão das possíveis contribuições da oportunidade e de sua associação com múltiplas áreas da vida como parte da arquitetura conceitual de oportunidades, além do Movimento 02. Preservar a diferença entre intenção, potencial e resultado comprovado.
