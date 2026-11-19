@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-PRO-MASTER-001
 title: Home Pública — Profissional — Documento Mestre Candidato de Arquitetura Narrativa
 status: proposed
-version: 0.1.11
+version: 0.1.12
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-11-18
 normative: false
@@ -174,6 +174,12 @@ De acordo com [Home Pública Principal — Documento Mestre](public-home-master-
 | Viagens, Lazer, Cultura e Novas Experiências | Aulas, atividades ou experiências | Guias, instrutores, artistas e especialistas culturais |
 | Causas, Voluntariado e Contribuição | Oficinas, projetos e atividades de participação | Instrutores, facilitadores e especialistas em projetos sociais |
 | Organização e Equilíbrio da Vida | Orientações e serviços de organização | Consultores e profissionais especializados em organização |
+
+**Abertura a outras áreas e especialidades — comunicação pública candidata:**
+
+> Outras áreas de atuação e especialidades profissionais também podem fazer parte da Guivos, desde que suas ofertas apresentem possibilidades legítimas de contribuir para a evolução das Pessoas.
+
+Essa abertura não representa aprovação automática de cadastro, elegibilidade, publicação ou atividade regulada; aplicam-se os requisitos e as condições de cada oportunidade. **Contribuição potencial não equivale a resultado garantido.** Os nove Domínios de Evolução organizam a leitura contextual da Jornada, **não limitam as profissões ou especialidades que podem participar**.
 
 #### Fronteiras interpretativas
 
