@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-PRO-MASTER-001
 title: Home Pública — Profissional — Documento Mestre Candidato de Arquitetura Narrativa
 status: proposed
-version: 0.1.29
+version: 0.1.30
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-11-18
 normative: false
@@ -442,11 +442,11 @@ Evitar exibir essas etapas como resultados comprovados ou automáticos. A sequê
 
 ### Movimento 09 — Perguntas frequentes
 
-**Estado:** movimento solicitado pela Direção em 18/11/2026, com referência visual de FAQ expansível. Título, apoio, seleção e respostas estão **propostos para apreciação editorial**. Não estabelecer custos, elegibilidade automática, limites de alcance ou funcionalidades comerciais não aprovadas.
+**Estado:** **título, texto de apoio, sete perguntas e respectivas respostas aprovados pela Direção em 18/11/2026**, com apresentação em FAQ expansível baseada na referência fornecida. A composição visual final depende de Design; esta aprovação não estabelece custos, elegibilidade automática, limites de alcance nem funcionalidades comerciais não autorizadas.
 
 **Função:** responder, em linguagem pública simples, às dúvidas pertinentes de Profissionais já atuantes antes do convite para participar; distinguir o que a Guivos pode conectar, o que permanece sob responsabilidade do Profissional e de que condições dependem alcance e operação.
 
-#### Comunicação pública candidata
+#### Comunicação pública aprovada
 
 **Título:**
 
@@ -456,7 +456,7 @@ Evitar exibir essas etapas como resultados comprovados ou automáticos. A sequê
 
 > Conheça melhor as possibilidades de participar da Guivos como Profissional.
 
-#### Perguntas e respostas candidatas
+#### Perguntas e respostas aprovadas
 
 **01. Quais profissionais podem participar da Guivos?**
 
