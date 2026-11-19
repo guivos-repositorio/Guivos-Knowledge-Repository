@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-PRO-MASTER-001
 title: Home Pública — Profissional — Documento Mestre Candidato de Arquitetura Narrativa
 status: proposed
-version: 0.1.9
+version: 0.1.10
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-11-18
 normative: false
@@ -123,42 +123,50 @@ A compreensão das oportunidades disponibilizadas pelo Profissional deverá cont
 
 **Questões de implementação ainda pendentes:** estrutura de dados, taxonomia oficial das áreas, mecanismos de classificação, campos de cadastro e multiplicidade de especialidades e ofertas sob uma única identidade Profissional exigem contratos próprios. A presente aprovação conceitual não implanta o modelo nem altera permissões.
 
-### Movimento 02 — Especialidades, ofertas e possibilidades
+### Movimento 02 — Áreas de atuação e possibilidades
 
-**Função:** evidenciar que diferentes especialidades profissionais podem se materializar em atendimentos, aulas, orientações, projetos, serviços e experiências que respondem a necessidades e interesses das Pessoas, potencialmente relacionadas a múltiplas áreas da vida. Diferentemente do Movimento 01, este movimento não repete a promessa de ampliar presença e conexões.
+**Função:** mostrar a amplitude das **áreas de atuação profissional** como protagonistas, com profissionais e especialidades apenas como exemplos secundários. Evitar nichar a Home em quatro profissões ou transformá-la em catálogo de prestadores.
 
-#### Comunicação pública — proposta candidata para apreciação
+#### Comunicação pública — nova proposta candidata
 
 **Título público candidato:**
 
-> **Sua especialidade pode fazer a diferença em diferentes momentos da vida.**
+> **Diferentes especialidades. Inúmeras possibilidades.**
 
 **Texto de apoio candidato:**
 
-> Consultas, aulas, orientações, projetos, serviços e experiências podem atender diferentes necessidades e abrir novas possibilidades para as pessoas.
+> Da saúde à tecnologia, da educação aos negócios, diferentes áreas profissionais encontram espaço para apresentar suas ofertas e conectar-se a novas oportunidades.
 
-**Status:** proposta em revisão, ainda não aprovada como texto público final.
+**Situação:** redação e composição candidatas, ainda em apreciação.
 
-#### Direção visual candidata
+#### Hierarquia visual proposta
 
-Representar poucas situações reconhecíveis, com diversidade de especialidades, tipos de oferta e áreas da vida. Exemplos ilustrativos, sem indicar categorias oficialmente habilitadas:
+1. **Primeiro plano:** grandes áreas de atuação profissional, com títulos e linguagem visual ampla.
+2. **Segundo plano:** exemplos discretos de profissionais e especialistas, sem listas extensas nem categorias fechadas.
+3. **Terceiro plano contextual:** conexão possível entre oportunidades oferecidas e áreas de evolução da Pessoa, sem alegação de impacto garantido.
 
-| Contexto ilustrativo | Possíveis formatos | Relações possíveis com áreas da vida |
-| --- | --- | --- |
-| Psicologia e bem-estar | Atendimentos e acompanhamentos especializados | Saúde, bem-estar |
-| Idiomas e educação | Aulas, treinamentos e orientações | Educação, carreira, viagens |
-| Consultoria e negócios | Consultorias, mentorias e projetos | Carreira, finanças e negócios, conforme o caso |
-| Esporte e movimento | Treinamentos, atividades e experiências | Saúde, bem-estar e lazer |
+**Agrupamentos ilustrativos, não taxonomia aprovada:**
 
-A oportunidade não deve ser representada como pertencente obrigatoriamente a uma única área. Não prometer efeitos clínicos, financeiros, profissionais ou outros resultados garantidos. Especialidades regulamentadas exigem qualificação, autorização e condições próprias.
+| Área profissional em destaque | Exemplos secundários |
+| --- | --- |
+| Saúde e Bem-estar | Psicólogos, nutricionistas, fisioterapeutas e profissionais de educação física |
+| Educação e Desenvolvimento | Professores, instrutores, especialistas em idiomas e mentores |
+| Negócios e Finanças | Consultores, especialistas financeiros, estrategistas e profissionais de gestão |
+| Tecnologia e Inovação | Desenvolvedores, analistas, especialistas em dados e IA |
+| Engenharia, Arquitetura e Projetos | Engenheiros, arquitetos, projetistas e especialistas técnicos |
+| Arte, Cultura e Comunicação | Designers, artistas, produtores, fotógrafos e comunicadores |
+| Esportes, Lazer e Experiências | Treinadores, instrutores, guias e profissionais de experiências |
 
-#### Papel narrativo
+**Fronteiras:** a listagem é exemplificativa e não constitui elegibilidade, taxonomia oficial, promessa de oferta ativa ou autorização de exercício profissional regulado.
 
-**O que deve ficar claro:** profissionais de diferentes áreas podem apresentar ofertas de formatos distintos; essas ofertas podem responder a objetivos e necessidades variadas das Pessoas e estar relacionadas à sua evolução.
+#### Distinção arquitetural necessária
 
-**O que não deve aparecer:** lista exaustiva de profissões, produtos internos, descrição técnica das cinco dimensões, classificação automática como fato já operacional ou discurso assistencialista que substitua o interesse legítimo do Profissional em desenvolver sua atuação comercial.
+- **Área de atuação profissional:** campo em que o Profissional atua.
+- **Área de evolução da Pessoa:** domínio da vida ao qual uma oportunidade poderá se relacionar, conforme seu contexto e seus objetivos.
 
-**Transição:** explicar, no movimento seguinte, como contexto e pertinência influenciam a descoberta de uma oportunidade, sem confundir contribuição potencial com resultado comprovado.
+As classificações **não são equivalentes nem devem ser fundidas**. Uma oportunidade ligada a educação, por exemplo, poderá ser relevante para carreira ou viagens, sem que essas relações sejam presumidas para todos.
+
+**Transição para Movimento 03:** aprofundar o papel da pertinência contextual na descoberta, sem repetir a enumeração de áreas nem o benefício comercial do Movimento 01.
 
 ### Movimento 03 — Quando uma capacidade encontra uma possibilidade
 
