@@ -2,7 +2,7 @@
 id: GKR-UX-HOME-PRO-MASTER-001
 title: Home Pública — Profissional — Documento Mestre Candidato de Arquitetura Narrativa
 status: proposed
-version: 0.1.14
+version: 0.1.15
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-11-18
 normative: false
@@ -229,6 +229,8 @@ Essa abertura não representa aprovação automática de cadastro, elegibilidade
 - **Profissional:** pode disponibilizar oportunidades e alcançar públicos pertinentes, **sem acesso à jornada privada da Pessoa** apenas por oferecer uma oportunidade.
 
 **Limites:** o exemplo de saúde não representa diagnóstico ou orientação médica individual. Relevância não equivale a adequação assegurada, contratação, receita, evolução ou impacto comprovado. A descrição ilustra a direção pretendida, não uma funcionalidade operacional validada.
+
+**Decisão editorial aprovada — separação de responsabilidades da narrativa:** o Movimento 03 deve comunicar ao público os benefícios de descoberta ampliada, relevância contextual e novas possibilidades conforme o momento da Pessoa, **sem explicar tecnologias, algoritmos, geolocalização operacional, proatividade adaptativa ou a arquitetura interna da Guivos AI e da Guivos Intelligence**. As páginas próprias de Guivos AI e Guivos Intelligence são os destinos adequados para detalhar essas capacidades e suas fronteiras. A Home não deve prometer funcionalidades já ativas nem confundir as responsabilidades desses componentes.
 
 **Transição para Movimento 04:** uma descoberta relevante só se torna uma escolha informada quando a oferta apresenta com clareza seu responsável, conteúdo e condições de participação.
 
