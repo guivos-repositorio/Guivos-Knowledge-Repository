@@ -2,7 +2,7 @@
 id: GKR-LIVED-POSSIBILITIES-MASTER-CANDIDATE-001
 title: Possibilidades Vividas — Documento Mestre de Fundamentos e Propósito
 status: proposed
-version: 0.2.0
+version: 0.3.0
 owner: Guivos
 last_updated: 2026-11-22
 normative: false
@@ -148,6 +148,14 @@ São três perspectivas distintas: Grafo Vivo da Pessoa (trajetória individual)
 
 Detalhamento candidato: [Modelo conceitual, representação pública e compreensão do ofertador](conceptual-model-and-impact-views.md).
 
+## 10.3 Captura, vocabulário e ciclo de avaliação — direção acordada
+
+A avaliação emprega modelo híbrido de expressões estruturadas e livres, múltiplas escolhas e aprofundamento adaptativo opcional. A evolução do vocabulário pela Guivos AI depende de governança e preserva base universal comparável, sem indução por respostas de outros participantes.
+
+A descoberta/adesão pode exibir o grafo público; a captura ocorre após encerramento e reconhecimento de elegibilidade, em formulário independente, enviado por canais autorizados. Ao acessar oportunidade encerrada com avaliação pendente, o participante elegível recebe solicitação antes da exibição da oportunidade, podendo adiar ou prosseguir sem avaliar. A separação reduz influência direta sem garantir ausência absoluta de influência. Preservar registro único, contexto, continuidade e autoridades UXA-057.
+
+Detalhamento: [Captura, vocabulário e ciclo de avaliação](evaluation-capture-and-lifecycle.md).
+
 ## 11. Estrutura candidata da seção
 
 Este documento funciona como entrada inicial. O [modelo conceitual complementar](conceptual-model-and-impact-views.md) detalha as deliberações desta rodada; os demais desdobramentos abaixo permanecem backlog documental:
@@ -183,6 +191,9 @@ A localização de uma rota no menu principal vinculada à Experiência e Journe
 | Relevância e natureza do impacto independentes | Acordado conceitualmente |
 | Compreensão contextual e acompanhamento longitudinal do ofertador | Acordados conceitualmente; permissões e contratos pendentes |
 | Representação pública coletiva por gráfico/grafo e aprofundamento individual | Acordada conceitualmente; publicação e agregação pendentes |
+| Modelo híbrido, múltiplas escolhas e aprofundamento adaptativo | Acordado conceitualmente |
+| Evolução governada do vocabulário com base universal | Acordada conceitualmente |
+| Formulário independente pós-vivência e solicitação anterior ao acesso encerrado | Acordado conceitualmente; contratos pendentes |
 | Nomenclatura internacional e identidade visual | Em investigação |
 | Captura, política de dados, publicidade, agregação e integração | Contratos pendentes |
 | Design e implementação | Não autorizados |
