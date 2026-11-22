@@ -2,7 +2,7 @@
 id: GKR-LIVED-POSSIBILITIES-PUBLIC-GRAPH-CANDIDATE-001
 title: Possibilidades Vividas — Grafo Público, Pertencimento e Continuidade da Jornada
 status: proposed
-version: 0.2.0
+version: 0.2.1
 owner: Guivos
 last_updated: 2026-11-22
 normative: false
@@ -67,11 +67,11 @@ A proposta de janela contextual intermediária, com nome/foto permitidos, partic
 
 ### 6.1 Delimitação posterior — descoberta, não vínculo social
 
-A descoberta de uma pessoa e de suas vivências pode inspirar novas possibilidades, sem criar relação social entre visitante e participante. Não introduzir mecanismos de seguidores, amizades, contato ou reprodução de trajetórias como finalidade deste grafo. Conhecer objetivos semelhantes pode motivar, mas a adequação das oportunidades depende do contexto próprio. Ver [Descoberta através de Trajetórias e Construção de Possibilidades](trajectory-discovery-and-possibility-construction.md). Esta direção substitui a hipótese de Conexões de Evolução neste domínio, sem revogar outras autoridades existentes.
+A descoberta de uma pessoa e de suas vivências pode inspirar novas possibilidades, sem criar relação social entre visitante e participante. Não introduzir mecanismos de seguidores, amizades, contato ou reprodução de trajetórias como finalidade deste grafo. Conhecer objetivos semelhantes pode motivar, mas a adequação das oportunidades depende do contexto próprio. Ver [Descoberta através de Trajetórias](trajectory-discovery-and-possibility-construction.md). Esta direção substitui a hipótese de Conexões de Evolução neste domínio, sem revogar outras autoridades existentes.
 
 ## 7. Continuidade e novas construções
 
-Exemplo ilustrativo: uma pessoa conhece um grupo de corrida, participa de sua primeira atividade, registra inspiração e confiança, reconhece sua própria contribuição no grafo e, por escolha, descobre vivências publicamente compartilhadas e outras possibilidades de atividade. A inteligência pode compreender relações com sua rotina, objetivos e condições autorizadas, sem impor continuidade, conexão ou compromisso.
+Exemplo ilustrativo: uma pessoa conhece um grupo de corrida, participa de sua primeira atividade, registra inspiração e confiança, reconhece sua própria contribuição no grafo e, por escolha, descobre vivências publicamente compartilhadas e outras possibilidades de atividade. A interpretação de compatibilidade com rotina, objetivos e condições pertence à Guivos AI, conforme [documento candidato próprio](../intelligence-architecture/ai-trajectory-and-possibility-construction-candidate.md), sem impor continuidade, conexão ou compromisso.
 
 O grafo público pode tornar visível o pertencimento construído por experiências reais e apoiar o ciclo descoberta → vivência → reconhecimento → novas possibilidades → continuidade voluntária. O reconhecimento não se limita a quem publica avaliação identificada; alternativas privadas devem preservar agência e inclusão.
 
