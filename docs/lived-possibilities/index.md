@@ -2,7 +2,7 @@
 id: GKR-LIVED-POSSIBILITIES-MASTER-CANDIDATE-001
 title: Possibilidades Vividas — Documento Mestre de Fundamentos e Propósito
 status: proposed
-version: 0.5.0
+version: 0.6.0
 owner: Guivos
 last_updated: 2026-11-22
 normative: false
@@ -92,20 +92,7 @@ A Guivos deve investigar não somente a evolução reconhecida, mas o potencial 
 
 Interesses, desejos, intenções, confiança e aspirações não são automaticamente objetivos, compromissos ou consentimento para direcionamento. Um potencial pode mudar, permanecer em aberto, ser recusado ou deixar de fazer sentido.
 
-A inteligência pode, quando autorizada e pertinente, identificar condições que faltam para tornar uma possibilidade acessível: tempo, recursos, localização, habilidades, requisitos, apoio e oportunidades intermediárias. Evitar inferir impossibilidade absoluta ou garantir resultados.
-
-### 6.1 Estados em aprofundamento
-
-- Latente: caminho ainda não reconhecido pela pessoa; hipótese da inteligência, não declaração sobre a sua vontade.
-- Descoberta: a pessoa tomou conhecimento da possibilidade.
-- Despertada: interesse declarado pela pessoa.
-- Em construção: desejo declarado de desenvolver condições para realizá-la.
-- Realizável: condições suficientes identificadas no contexto e período considerados, sem garantia de realização.
-- Vivida: experiência efetivamente ocorrida, com proveniência adequada.
-
-Os cinco estados anteriores à vivência são dimensões conceituais não necessariamente sequenciais ou mutuamente exclusivas. Viabilidade não equivale a interesse; descoberta não equivale a intenção.
-
-Estados podem coexistir, regredir ou permanecer indeterminados. A proposta não estabelece máquina de estados, transições obrigatórias ou contrato técnico. Sua adjudicação permanece aberta.
+A avaliação registra o potencial reconhecido pela pessoa como consequência percebida da vivência. A interpretação de compatibilidade, condições, estados de possibilidades futuras e construção de trajetórias pertence à documentação própria da Guivos AI: [candidato cognitivo](../intelligence-architecture/ai-trajectory-and-possibility-construction-candidate.md), sob GAI-001 e GIA-COG-001. O registro de potencial não constitui objetivo ou comprovação de viabilidade.
 
 ## 7. Relação com Avaliação e Reputação
 
@@ -177,13 +164,11 @@ Preservar visibilidade contextual, separação de identidade, relato, foto e ace
 
 Detalhamento: [Grafo público, pertencimento e continuidade da jornada](public-graph-belonging-and-continuity.md).
 
-## 10.5 Descoberta através de trajetórias e construção de possibilidades — direção acordada
+## 10.5 Descoberta através de trajetórias — direção acordada
 
 A descoberta de pessoas no grafo e em perfis públicos autorizados tem como finalidade conhecer vivências e ampliar possibilidades, não criar seguidores, amizades, contatos ou vínculos automáticos. Conhecer outras pessoas com objetivos semelhantes pode motivar e fortalecer pertencimento; não deve induzir comparação nem substituir o contexto próprio. A trajetória de outra pessoa é fonte de possibilidades, não modelo a reproduzir.
 
-Quando houver interesse, a Guivos AI poderá compreender o que falta para tornar uma possibilidade acessível, sugerir condições e oportunidades intermediárias e reconhecer caminhos alternativos. Uma vivência pode favorecer várias possibilidades e uma possibilidade pode depender de múltiplas condições. Contribuição convergente, reaproveitamento contextual de condições e Descoberta por Evolução permitem compreender novas possibilidades decorrentes de mudanças legítimas no contexto, inclusive não procuradas anteriormente. Não presumir intenção, mérito, causalidade ou viabilidade; não impor objetivos nem garantir resultados.
-
-Detalhamento: [Descoberta através de Trajetórias e Construção de Possibilidades](trajectory-discovery-and-possibility-construction.md). Compatibilidade com GIA-COG-001 e GPA-006 é objeto de reconciliação; não modifica autoridades vigentes.
+Detalhamento: [Descoberta através de trajetórias](trajectory-discovery-and-possibility-construction.md). A análise de compatibilidade, construção de possibilidades, interdependência, contribuição convergente, reaproveitamento e descoberta por evolução foi transferida para o [candidato de Guivos AI](../intelligence-architecture/ai-trajectory-and-possibility-construction-candidate.md). Possibilidades Vividas conserva a captura e representação da experiência e o contrato de integração, sem governar a interpretação cognitiva geral.
 
 ## 11. Estrutura candidata da seção
 
@@ -193,7 +178,7 @@ Este documento funciona como entrada inicial. O [modelo conceitual complementar]
 2. Sentimentos e percepções.
 3. Contribuição para a evolução.
 4. Impacto temporal e acumulado.
-5. Potencial de evolução e estados das possibilidades.
+5. Potencial despertado pela vivência.
 6. Relação com Guivos AI, Intelligence e Grafo Vivo.
 7. Privacidade, autonomia e autoridade.
 8. Identidade visual, experiência pública e internacionalização.
@@ -202,7 +187,7 @@ Este documento funciona como entrada inicial. O [modelo conceitual complementar]
 11. Compreensão contextual, Analytics e acompanhamento longitudinal dos participantes.
 12. Representação pública coletiva e grafos de impacto.
 13. Pertencimento, reconhecimento contextual, descoberta de pessoas e continuidade da jornada.
-14. Descoberta através de trajetórias, construção, interdependência e descoberta por evolução.
+14. Descoberta através de vivências e perfis públicos autorizados.
 
 A localização de uma rota no menu principal vinculada à Experiência e Journey é proposta para revisão. Não introduz novo produto, participante, domínio normativo ou status de maturidade.
 
@@ -216,7 +201,7 @@ A localização de uma rota no menu principal vinculada à Experiência e Journe
 | Evolução temporal da percepção | Acordada conceitualmente |
 | Impacto combinado e acumulado | Acordado conceitualmente |
 | Potencial de evolução | Acordado conceitualmente |
-| Naturezas de contribuição e delimitação funcional dos estados ampliados | Propostas em aprofundamento |
+| Naturezas de contribuição | Propostas em aprofundamento |
 | Áreas como contexto secundário, não critério obrigatório | Acordado conceitualmente |
 | Significado individual como indicador central | Acordado conceitualmente |
 | Relevância e natureza do impacto independentes | Acordado conceitualmente |
@@ -230,9 +215,7 @@ A localização de uma rota no menu principal vinculada à Experiência e Journe
 | Participantes como nós, fotos e acesso autorizado ao perfil público | Acordado conceitualmente; contratos e proteção pendentes |
 | Pertencimento, descoberta de pessoas e continuidade voluntária da jornada | Acordado conceitualmente |
 | Descoberta através de trajetórias sem vínculo social necessário | Acordado conceitualmente |
-| Construção contextual de possibilidades e estados ampliados | Acordado como direção; delimitação funcional pendente |
-| Interdependência, contribuição convergente e reaproveitamento de condições | Acordados conceitualmente |
-| Descoberta por Evolução | Acordada conceitualmente; gatilhos e contratos pendentes |
+| Integração com interpretação cognitiva da Guivos AI | Referência externa ao domínio; contratos pendentes |
 | Nomenclatura internacional e identidade visual | Em investigação |
 | Captura, política de dados, publicidade, agregação e integração | Contratos pendentes |
 | Design e implementação | Não autorizados |
@@ -240,6 +223,8 @@ A localização de uma rota no menu principal vinculada à Experiência e Journe
 Proveniência: deliberação humana no projeto Guivos Knowledge Repository em 22/11/2026. Esta tabela distingue concordância conceitual de adjudicação normativa formal. O identificador, a versão, a rota e a organização desta proposta são candidatos.
 
 ## 13. Exames posteriores e limites
+
+Delimitação de escopo acordada em 22/11/2026: priorizar perguntas, base de expressões, aprofundamentos adaptativos, anatomia e dinâmica do grafo público, representação dos participantes, Analytics e grafo administrativo, acompanhamento longitudinal e governança da avaliação. A interpretação cognitiva geral e construção de possibilidades futuras pertencem ao domínio Intelligence/AI; não reproduzir conteúdo normativo ou candidato em duas seções.
 
 - Confrontar o corpus vigente, especialmente UXA-057, modelos da pessoa, oportunidades, inteligência, grafo, marca e privacidade.
 - Delimitar entidades, finalidade, autoridades e eventual relação entre registros de trajetória e R1/P1.
