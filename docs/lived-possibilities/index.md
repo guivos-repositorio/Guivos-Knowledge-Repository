@@ -2,7 +2,7 @@
 id: GKR-LIVED-POSSIBILITIES-MASTER-CANDIDATE-001
 title: Possibilidades Vividas — Documento Mestre de Fundamentos e Propósito
 status: proposed
-version: 0.1.0
+version: 0.2.0
 owner: Guivos
 last_updated: 2026-11-22
 normative: false
@@ -55,6 +55,16 @@ São definições de trabalho para exame de compatibilidade, não redefinições
 | Potencial | O que passou a ser possível para mim? | Nova intenção, interesse, aspiração, caminho considerado ou nenhuma possibilidade percebida. |
 
 As dimensões são complementares e independentes. Não constituem estágios obrigatórios, hierarquia, notas, pesos, escala de mérito ou classificação universal de pessoas. A experiência pode ser agradável sem contribuição evolutiva; desconforto pode coexistir com aprendizado, mas não implica benefício. Danos não devem ser romantizados. Nenhuma evolução é presumida.
+
+### 3.1 Centralidade do impacto e papel secundário das áreas
+
+A área da oportunidade não determina nem delimita o impacto. A pessoa não precisa escolher uma área para registrar o que sentiu, recebeu, reconheceu como mudança ou passou a considerar possível. Contribuições podem atravessar áreas e surgir fora das intenções iniciais. A área contextualiza; o impacto revela o significado da experiência.
+
+### 3.2 Indicador central — significado individual
+
+Decisão conceitual de 22/11/2026: o significado atribuído pela pessoa à vivência é o indicador central da avaliação, não a satisfação, a nota do ofertador ou a qualidade operacional. Deve preservar dois eixos independentes: relevância (quanto a experiência representou para a pessoa) e natureza do impacto (favorável, desfavorável, misto, ausência de impacto percebido ou incerteza). Alta relevância não implica impacto favorável nem evolução. A linguagem, escala, opções de resposta e visualização permanecem experimentais.
+
+O significado central não substitui as quatro dimensões explicativas. Não se presume resposta a todas as dimensões; ausência de resposta não equivale a ausência de impacto.
 
 ## 4. Temporalidade e continuidade
 
@@ -124,9 +134,23 @@ Premissas acordadas para a investigação: apresentação legível e compacta em
 
 Nenhum protótipo anteriormente explorado foi aprovado como solução final. Referências discutidas (Apple State of Mind, Spotify, NAVER, Airbnb e outras) são insumos de pesquisa, não comprovação de originalidade, usabilidade ou eficácia.
 
+## 10.1 Representação pública coletiva — direção acordada
+
+A experiência pública deve priorizar uma representação coletiva, dinâmica e navegável da oportunidade, por gráfico ou grafo. Cada ponto ou nó de análise representa um agrupamento de percepções, contribuições, mudanças, potenciais ou outros aspectos autorizados, fundamentado em registros reais e delimitados. A consulta individual é secundária, acessível por aprofundamento no ponto selecionado, para conhecer registros e relatos cuja exposição foi autorizada. Não equivale à publicação compulsória de identidades nem garante veracidade objetiva de sentimentos; participação verificada e conteúdo autorrelatado são distintos.
+
+A representação deve contemplar manifestações favoráveis, desfavoráveis, mistas, ausência de impacto e incerteza sem ocultação seletiva. A mesma pessoa pode contribuir a vários agrupamentos; não duplicar pessoas dentro do mesmo indicador ou confundir total de registros com total de participantes. A representação poderá mudar com registros posteriores, respeitando versão, contexto, edição, período, retirada e proveniência.
+
+## 10.2 Compreensão contextual e acompanhamento do ofertador — direção acordada
+
+Primeira camada: compreensão da vivência independente das áreas. Segunda camada: cruzamento contextual com as áreas em que a pessoa busca evoluir, interesses e objetivos, quando legitimamente disponíveis, sem atribuir causalidade. A gestão da oportunidade deve poder compreender o impacto coletivo por Analytics e grafo no painel administrativo, inclusive acompanhar contribuições reconhecidas ao longo do tempo após a vivência. A finalidade é melhorar compreensão e oportunidades futuras, não vigiar trajetórias.
+
+São três perspectivas distintas: Grafo Vivo da Pessoa (trajetória individual), grafo público da oportunidade (representação coletiva pública) e grafo administrativo do ofertador (impacto e contexto autorizados, inclusive longitudinal). Nenhuma é acesso irrestrito às outras. Por padrão, a informação institucional é agregada e protegida; acesso individualizado exige autoridade específica, finalidade e controles aplicáveis. Áreas sensíveis, grupos pequenos, cruzamentos e filtros demandam proteção contra reidentificação. Nenhuma permissão, superfície, indicador estatístico ou periodicidade é adjudicada por este documento.
+
+Detalhamento candidato: [Modelo conceitual, representação pública e compreensão do ofertador](conceptual-model-and-impact-views.md).
+
 ## 11. Estrutura candidata da seção
 
-Este documento funciona como entrada inicial. Os temas abaixo são backlog documental, não documentos existentes:
+Este documento funciona como entrada inicial. O [modelo conceitual complementar](conceptual-model-and-impact-views.md) detalha as deliberações desta rodada; os demais desdobramentos abaixo permanecem backlog documental:
 
 1. Modelo conceitual e dimensões.
 2. Sentimentos e percepções.
@@ -138,6 +162,8 @@ Este documento funciona como entrada inicial. Os temas abaixo são backlog docum
 8. Identidade visual, experiência pública e internacionalização.
 9. Pesquisa, evidência e validação.
 10. Registro de decisões e reconciliação com o corpus.
+11. Compreensão contextual, Analytics e acompanhamento longitudinal dos participantes.
+12. Representação pública coletiva e grafos de impacto.
 
 A localização de uma rota no menu principal vinculada à Experiência e Journey é proposta para revisão. Não introduz novo produto, participante, domínio normativo ou status de maturidade.
 
@@ -152,6 +178,11 @@ A localização de uma rota no menu principal vinculada à Experiência e Journe
 | Impacto combinado e acumulado | Acordado conceitualmente |
 | Potencial de evolução | Acordado conceitualmente |
 | Naturezas de contribuição e estados latente/despertada/realizável | Propostas em aprofundamento |
+| Áreas como contexto secundário, não critério obrigatório | Acordado conceitualmente |
+| Significado individual como indicador central | Acordado conceitualmente |
+| Relevância e natureza do impacto independentes | Acordado conceitualmente |
+| Compreensão contextual e acompanhamento longitudinal do ofertador | Acordados conceitualmente; permissões e contratos pendentes |
+| Representação pública coletiva por gráfico/grafo e aprofundamento individual | Acordada conceitualmente; publicação e agregação pendentes |
 | Nomenclatura internacional e identidade visual | Em investigação |
 | Captura, política de dados, publicidade, agregação e integração | Contratos pendentes |
 | Design e implementação | Não autorizados |
