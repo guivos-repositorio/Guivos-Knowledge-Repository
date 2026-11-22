@@ -2,7 +2,7 @@
 id: GKR-LIVED-POSSIBILITIES-MASTER-CANDIDATE-001
 title: Possibilidades Vividas — Documento Mestre de Fundamentos e Propósito
 status: proposed
-version: 0.3.0
+version: 0.4.0
 owner: Guivos
 last_updated: 2026-11-22
 normative: false
@@ -32,6 +32,12 @@ O propósito da Guivos é contribuir para a evolução das pessoas através da v
 Uma oportunidade pode ser desorganizada ou atrasada e ainda assim contribuir significativamente para a evolução de alguém. Uma oportunidade impecavelmente realizada pode não produzir contribuição percebida. Isso não dispensa segurança, acessibilidade, cumprimento de obrigações, proteção, mecanismos de denúncia ou responsabilidade do ofertador.
 
 Possibilidades Vividas é o território conceitual acordado. Possibilities Lived é uma expressão internacional de trabalho, não uma marca ou nomenclatura final.
+
+### 1.1 Pertencimento e continuidade da jornada
+
+A Guivos não deve limitar seu valor à descoberta e realização de uma oportunidade isolada. Seu propósito é apoiar trajetórias de evolução alinhadas às intenções, objetivos, condições e possibilidades da pessoa, criando condições para que ela permaneça pertencente, reconhecida, possa ser encontrada nos contextos que autorizar, participar de outras construções coletivas e estabelecer novas conexões. A vivência é parte da jornada, não necessariamente seu encerramento.
+
+Essa continuidade é voluntária: não equivale a obrigação de permanência, frequência mínima, exposição pública, retenção a qualquer custo ou garantia de evolução. A pessoa controla seu ritmo e sua visibilidade. A descoberta mais pertinente frente a oportunidades dispersas é hipótese de valor, não resultado comprovado.
 
 ## 2. Distinções fundamentais
 
@@ -156,6 +162,16 @@ A descoberta/adesão pode exibir o grafo público; a captura ocorre após encerr
 
 Detalhamento: [Captura, vocabulário e ciclo de avaliação](evaluation-capture-and-lifecycle.md).
 
+## 10.4 Grafo público, participantes e pertencimento — direção acordada
+
+Preservar expressões específicas e agrupamentos semânticos superiores com expansão progressiva. A cor representa natureza semântica, não mérito ou favorabilidade. O grafo é vivo, orgânico, interativo e estável durante a análise, preservando memória espacial e destacando relações sem eliminar os demais elementos.
+
+A pessoa é participante da construção coletiva, não apenas autora de avaliação. Ao aprofundar uma manifestação poderão surgir nós dos participantes com fotografias de perfil e, mediante autorização prévia específica, navegação ao perfil público. A presença identificada não é condição de contribuição agregada. Conhecer pessoas que viveram uma oportunidade pode apoiar descoberta da comunidade, identificação e decisão voluntária de fazer parte de vivências futuras.
+
+Preservar visibilidade contextual, separação de identidade, relato, foto e acesso ao perfil, revogação e proteção de dados; não presumir contato, exposição da trajetória privada, ranking ou reconhecimento de mérito. O mesmo participante pode sustentar múltiplas manifestações autorizadas sem duplicidade lógica. As métricas, arestas, contornos, janela contextual e Minha presença no grafo são candidatos sujeitos a exame.
+
+Detalhamento: [Grafo público, pertencimento e continuidade da jornada](public-graph-belonging-and-continuity.md).
+
 ## 11. Estrutura candidata da seção
 
 Este documento funciona como entrada inicial. O [modelo conceitual complementar](conceptual-model-and-impact-views.md) detalha as deliberações desta rodada; os demais desdobramentos abaixo permanecem backlog documental:
@@ -172,6 +188,7 @@ Este documento funciona como entrada inicial. O [modelo conceitual complementar]
 10. Registro de decisões e reconciliação com o corpus.
 11. Compreensão contextual, Analytics e acompanhamento longitudinal dos participantes.
 12. Representação pública coletiva e grafos de impacto.
+13. Pertencimento, reconhecimento contextual, descoberta de pessoas e continuidade da jornada.
 
 A localização de uma rota no menu principal vinculada à Experiência e Journey é proposta para revisão. Não introduz novo produto, participante, domínio normativo ou status de maturidade.
 
@@ -194,6 +211,10 @@ A localização de uma rota no menu principal vinculada à Experiência e Journe
 | Modelo híbrido, múltiplas escolhas e aprofundamento adaptativo | Acordado conceitualmente |
 | Evolução governada do vocabulário com base universal | Acordada conceitualmente |
 | Formulário independente pós-vivência e solicitação anterior ao acesso encerrado | Acordado conceitualmente; contratos pendentes |
+| Expressões específicas e agrupamentos semânticos | Acordado conceitualmente |
+| Cor semântica e comportamento orgânico estável | Acordado conceitualmente; design pendente |
+| Participantes como nós, fotos e acesso autorizado ao perfil público | Acordado conceitualmente; contratos e proteção pendentes |
+| Pertencimento, descoberta de pessoas e continuidade voluntária da jornada | Acordado conceitualmente |
 | Nomenclatura internacional e identidade visual | Em investigação |
 | Captura, política de dados, publicidade, agregação e integração | Contratos pendentes |
 | Design e implementação | Não autorizados |
