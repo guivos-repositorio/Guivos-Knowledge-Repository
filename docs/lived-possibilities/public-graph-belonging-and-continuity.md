@@ -2,7 +2,7 @@
 id: GKR-LIVED-POSSIBILITIES-PUBLIC-GRAPH-CANDIDATE-001
 title: Possibilidades Vividas — Grafo Público, Pertencimento e Continuidade da Jornada
 status: proposed
-version: 0.1.0
+version: 0.2.0
 owner: Guivos
 last_updated: 2026-11-22
 normative: false
@@ -25,7 +25,7 @@ A Guivos não se limita a conectar uma pessoa a uma oportunidade isolada. A pess
 
 A Guivos busca tornar essa trajetória mais alinhada aos objetivos e ao contexto da pessoa do que uma descoberta fragmentada em um universo de oportunidades dispersas, invisíveis, desconectadas ou desencontradas. Trata-se de propósito e hipótese de valor a validar, não promessa de resultado, superioridade comprovada ou garantia de evolução.
 
-Continuidade significa poder permanecer pertencente e reconhecido, descobrir e ser descoberto voluntariamente, participar de novas construções coletivas, estabelecer conexões e viver oportunidades pertinentes. Estar ativo não significa obrigação de uso contínuo, retenção a qualquer custo, exposição pública compulsória, frequência mínima de participação ou penalidade por ausência. A pessoa controla seu ritmo, seus vínculos, sua visibilidade e sua possibilidade de interromper ou retomar a jornada.
+Continuidade significa poder permanecer pertencente e reconhecido, descobrir e ser descoberto voluntariamente, participar de novas construções coletivas, descobrir possibilidades através de trajetórias e viver oportunidades pertinentes. Estar ativo não significa obrigação de uso contínuo, retenção a qualquer custo, exposição pública compulsória, frequência mínima de participação ou penalidade por ausência. A pessoa controla seu ritmo, sua participação, sua visibilidade e sua possibilidade de interromper ou retomar a jornada.
 
 ## 2. A pessoa como participante da construção coletiva
 
@@ -65,9 +65,13 @@ A possibilidade de conhecer quem já viveu uma oportunidade permite ao visitante
 
 A proposta de janela contextual intermediária, com nome/foto permitidos, participação verificada, expressões, significado e relato autorizados, seguida de ação de acesso ao perfil público, é candidata. Autorizar foto, identificação, relato, vínculo com manifestação, navegação ao perfil e eventual contato são finalidades distintas; nenhum vínculo presume consentimento para outro. A pessoa pode ser encontrada apenas nos contextos autorizados. Não inferir atributos privados, classificar público por valor pessoal, excluir por afinidade presumida ou induzir exposição para pertencer.
 
+### 6.1 Delimitação posterior — descoberta, não vínculo social
+
+A descoberta de uma pessoa e de suas vivências pode inspirar novas possibilidades, sem criar relação social entre visitante e participante. Não introduzir mecanismos de seguidores, amizades, contato ou reprodução de trajetórias como finalidade deste grafo. Conhecer objetivos semelhantes pode motivar, mas a adequação das oportunidades depende do contexto próprio. Ver [Descoberta através de Trajetórias e Construção de Possibilidades](trajectory-discovery-and-possibility-construction.md). Esta direção substitui a hipótese de Conexões de Evolução neste domínio, sem revogar outras autoridades existentes.
+
 ## 7. Continuidade e novas construções
 
-Exemplo ilustrativo: uma pessoa conhece um grupo de corrida, participa de sua primeira atividade, registra inspiração e confiança, reconhece sua própria contribuição no grafo e, por escolha, conhece outras pessoas ou possibilidades de atividade. A inteligência pode compreender relações com sua rotina, objetivos e condições autorizadas, sem impor continuidade, conexão ou compromisso.
+Exemplo ilustrativo: uma pessoa conhece um grupo de corrida, participa de sua primeira atividade, registra inspiração e confiança, reconhece sua própria contribuição no grafo e, por escolha, descobre vivências publicamente compartilhadas e outras possibilidades de atividade. A inteligência pode compreender relações com sua rotina, objetivos e condições autorizadas, sem impor continuidade, conexão ou compromisso.
 
 O grafo público pode tornar visível o pertencimento construído por experiências reais e apoiar o ciclo descoberta → vivência → reconhecimento → novas possibilidades → continuidade voluntária. O reconhecimento não se limita a quem publica avaliação identificada; alternativas privadas devem preservar agência e inclusão.
 
