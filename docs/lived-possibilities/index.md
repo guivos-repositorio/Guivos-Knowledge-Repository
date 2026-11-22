@@ -2,7 +2,7 @@
 id: GKR-LIVED-POSSIBILITIES-MASTER-CANDIDATE-001
 title: Possibilidades Vividas — Documento Mestre de Fundamentos e Propósito
 status: proposed
-version: 0.4.0
+version: 0.5.0
 owner: Guivos
 last_updated: 2026-11-22
 normative: false
@@ -35,7 +35,7 @@ Possibilidades Vividas é o território conceitual acordado. Possibilities Lived
 
 ### 1.1 Pertencimento e continuidade da jornada
 
-A Guivos não deve limitar seu valor à descoberta e realização de uma oportunidade isolada. Seu propósito é apoiar trajetórias de evolução alinhadas às intenções, objetivos, condições e possibilidades da pessoa, criando condições para que ela permaneça pertencente, reconhecida, possa ser encontrada nos contextos que autorizar, participar de outras construções coletivas e estabelecer novas conexões. A vivência é parte da jornada, não necessariamente seu encerramento.
+A Guivos não deve limitar seu valor à descoberta e realização de uma oportunidade isolada. Seu propósito é apoiar trajetórias de evolução alinhadas às intenções, objetivos, condições e possibilidades da pessoa, criando condições para que ela permaneça pertencente, reconhecida, possa ser encontrada nos contextos que autorizar, participar de outras construções coletivas e descobrir novas possibilidades através de trajetórias publicamente compartilhadas, sem pressupor vínculos sociais. A vivência é parte da jornada, não necessariamente seu encerramento.
 
 Essa continuidade é voluntária: não equivale a obrigação de permanência, frequência mínima, exposição pública, retenção a qualquer custo ou garantia de evolução. A pessoa controla seu ritmo e sua visibilidade. A descoberta mais pertinente frente a oportunidades dispersas é hipótese de valor, não resultado comprovado.
 
@@ -97,8 +97,13 @@ A inteligência pode, quando autorizada e pertinente, identificar condições qu
 ### 6.1 Estados em aprofundamento
 
 - Latente: caminho ainda não reconhecido pela pessoa; hipótese da inteligência, não declaração sobre a sua vontade.
-- Despertada: caminho reconhecido ou interesse declarado pela pessoa.
+- Descoberta: a pessoa tomou conhecimento da possibilidade.
+- Despertada: interesse declarado pela pessoa.
+- Em construção: desejo declarado de desenvolver condições para realizá-la.
 - Realizável: condições suficientes identificadas no contexto e período considerados, sem garantia de realização.
+- Vivida: experiência efetivamente ocorrida, com proveniência adequada.
+
+Os cinco estados anteriores à vivência são dimensões conceituais não necessariamente sequenciais ou mutuamente exclusivas. Viabilidade não equivale a interesse; descoberta não equivale a intenção.
 
 Estados podem coexistir, regredir ou permanecer indeterminados. A proposta não estabelece máquina de estados, transições obrigatórias ou contrato técnico. Sua adjudicação permanece aberta.
 
@@ -172,6 +177,14 @@ Preservar visibilidade contextual, separação de identidade, relato, foto e ace
 
 Detalhamento: [Grafo público, pertencimento e continuidade da jornada](public-graph-belonging-and-continuity.md).
 
+## 10.5 Descoberta através de trajetórias e construção de possibilidades — direção acordada
+
+A descoberta de pessoas no grafo e em perfis públicos autorizados tem como finalidade conhecer vivências e ampliar possibilidades, não criar seguidores, amizades, contatos ou vínculos automáticos. Conhecer outras pessoas com objetivos semelhantes pode motivar e fortalecer pertencimento; não deve induzir comparação nem substituir o contexto próprio. A trajetória de outra pessoa é fonte de possibilidades, não modelo a reproduzir.
+
+Quando houver interesse, a Guivos AI poderá compreender o que falta para tornar uma possibilidade acessível, sugerir condições e oportunidades intermediárias e reconhecer caminhos alternativos. Uma vivência pode favorecer várias possibilidades e uma possibilidade pode depender de múltiplas condições. Contribuição convergente, reaproveitamento contextual de condições e Descoberta por Evolução permitem compreender novas possibilidades decorrentes de mudanças legítimas no contexto, inclusive não procuradas anteriormente. Não presumir intenção, mérito, causalidade ou viabilidade; não impor objetivos nem garantir resultados.
+
+Detalhamento: [Descoberta através de Trajetórias e Construção de Possibilidades](trajectory-discovery-and-possibility-construction.md). Compatibilidade com GIA-COG-001 e GPA-006 é objeto de reconciliação; não modifica autoridades vigentes.
+
 ## 11. Estrutura candidata da seção
 
 Este documento funciona como entrada inicial. O [modelo conceitual complementar](conceptual-model-and-impact-views.md) detalha as deliberações desta rodada; os demais desdobramentos abaixo permanecem backlog documental:
@@ -189,6 +202,7 @@ Este documento funciona como entrada inicial. O [modelo conceitual complementar]
 11. Compreensão contextual, Analytics e acompanhamento longitudinal dos participantes.
 12. Representação pública coletiva e grafos de impacto.
 13. Pertencimento, reconhecimento contextual, descoberta de pessoas e continuidade da jornada.
+14. Descoberta através de trajetórias, construção, interdependência e descoberta por evolução.
 
 A localização de uma rota no menu principal vinculada à Experiência e Journey é proposta para revisão. Não introduz novo produto, participante, domínio normativo ou status de maturidade.
 
@@ -202,7 +216,7 @@ A localização de uma rota no menu principal vinculada à Experiência e Journe
 | Evolução temporal da percepção | Acordada conceitualmente |
 | Impacto combinado e acumulado | Acordado conceitualmente |
 | Potencial de evolução | Acordado conceitualmente |
-| Naturezas de contribuição e estados latente/despertada/realizável | Propostas em aprofundamento |
+| Naturezas de contribuição e delimitação funcional dos estados ampliados | Propostas em aprofundamento |
 | Áreas como contexto secundário, não critério obrigatório | Acordado conceitualmente |
 | Significado individual como indicador central | Acordado conceitualmente |
 | Relevância e natureza do impacto independentes | Acordado conceitualmente |
@@ -215,6 +229,10 @@ A localização de uma rota no menu principal vinculada à Experiência e Journe
 | Cor semântica e comportamento orgânico estável | Acordado conceitualmente; design pendente |
 | Participantes como nós, fotos e acesso autorizado ao perfil público | Acordado conceitualmente; contratos e proteção pendentes |
 | Pertencimento, descoberta de pessoas e continuidade voluntária da jornada | Acordado conceitualmente |
+| Descoberta através de trajetórias sem vínculo social necessário | Acordado conceitualmente |
+| Construção contextual de possibilidades e estados ampliados | Acordado como direção; delimitação funcional pendente |
+| Interdependência, contribuição convergente e reaproveitamento de condições | Acordados conceitualmente |
+| Descoberta por Evolução | Acordada conceitualmente; gatilhos e contratos pendentes |
 | Nomenclatura internacional e identidade visual | Em investigação |
 | Captura, política de dados, publicidade, agregação e integração | Contratos pendentes |
 | Design e implementação | Não autorizados |
