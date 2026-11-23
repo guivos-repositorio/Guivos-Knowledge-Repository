@@ -2,9 +2,9 @@
 id: GKR-LIVED-POSSIBILITIES-MASTER-CANDIDATE-001
 title: Possibilidades Vividas — Documento Mestre de Fundamentos e Propósito
 status: proposed
-version: 0.8.9
+version: 0.8.10
 owner: Guivos
-last_updated: 2026-11-22
+last_updated: 2026-11-23
 normative: false
 maturity: conceptual_deliberation
 related:
@@ -185,6 +185,10 @@ Detalhamento: [Grafo público, pertencimento e continuidade da jornada](public-g
 ### 10.4.1 Contagens e representatividade — deliberação 09.6
 
 Contabilizar pessoas distintas no escopo autorizado, contar cada pessoa uma vez por manifestação e usar união de participantes nas famílias. Uma pessoa pode contribuir para várias expressões, cuja soma de percentuais pode superar 100%. Explicitar denominadores pertinentes e distinguir pessoas que vivenciaram, responderam, autorizaram contribuição e identificação. Atualização não multiplica participantes; retirada exige recálculo conforme autoridade. Base insuficiente requer proteção e não representa ausência de impacto. Tamanho de nó semântico representa quantidade, não intensidade ou importância. Ver [detalhamento do grafo](public-graph-belonging-and-continuity.md). Validação dos contratos, limiares e escalas permanece pendente.
+
+### 10.4.2 Primeira camada de manifestações específicas — decisão aprovada em 23/11/2026
+
+A Direção aprovou apresentar **as expressões concretas de impacto**, na linguagem compreensível da Pessoa, como primeira camada pública após o nó da oportunidade. As doze famílias semânticas permanecem estruturas de classificação, contagem e aprofundamento secundário, **não** uma coroa pública obrigatória com nomes abstratos como “Continuidade” ou “Pertencimento”. Áreas de vida continuam metadados contextuais; quatro dimensões explicativas e dois eixos independentes não se tornam anéis. Pessoas e relatos entram transversalmente quando publicáveis; não inferir dados quando faltarem, nem contornar proteção. Ver [deliberação aprovada](impact-first-public-graph-presentation-decision.md). Esta decisão visual não altera taxonomia candidata, autoridade R1/P1 ou privacidade.
 
 ## 10.5 Descoberta através de trajetórias — direção acordada
 
