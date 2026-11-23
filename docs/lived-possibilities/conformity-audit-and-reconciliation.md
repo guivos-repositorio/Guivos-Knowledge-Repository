@@ -2,7 +2,7 @@
 id: GKR-LIVED-POSSIBILITIES-CONFORMITY-AUDIT-CANDIDATE-001
 title: Possibilidades Vividas — Auditoria de Conformidade e Matriz de Reconciliação
 status: proposed
-version: 0.1.0
+version: 0.2.0
 owner: Guivos
 last_updated: 2026-11-22
 normative: false
@@ -66,8 +66,18 @@ Também consultados índice Journey, visão geral de avaliação/reputação e m
 | PV-A16 | Cobertura inicial não selecionada em UXA-057 | Bloqueador de materialização | Escolher objeto real, edição, etapa, período, titularidade, evidência, governança e proteção mediante decisão humana, não por inferência. |
 | PV-A17 | Navegação GKR | Ajuste editorial candidato | Localizar o conteúdo como complemento da seção Avaliação e Reputação, cuja entrada já existe; não criar domínio/rota concorrente por analogia. Menu main inalterado. |
 
-## 3. Decisão recomendada e limites
+## 3. Deliberação humana de 22/11/2026 — etapa 09.1
 
-Recomendar aprofundamento como extensão conceitual candidata de UXA-057, não como autoridade paralela. PV-A02, A03 e A04 devem receber deliberação focal conjunta primeiro: unidade, objeto, evidência e instrumento. Depois reconciliar publicação, continuidade, moderação, perfil/CAPA, acesso e cobertura. Validações empíricas e gates jurídicos/operacionais permanecem separados. Não declarar 100% de conformidade ou ausência de pendências.
+| ID | Direção aprovada | Estado residual |
+|---|---|---|
+| PV-A02 | Utilizar R1/P1 sob UXA-057, associado ao Registro de Experiência PAS-001; sem autoridade concorrente | Direção resolvida; contrato e materialização pendentes |
+| PV-A03 | Vivência efetiva delimitada; evidência suficiente e autoridade própria para contribuição pública; registro pessoal não implica inclusão pública | Direção resolvida; critérios por objeto/edição/etapa e categoria de evidência pendentes |
+| PV-A04 | Instrumentos de impacto e qualidade operacional independentes; grafo exclusivamente de impacto na pessoa | Direção resolvida; validação dos instrumentos e extensão de contratos pendentes |
+
+A aprovação não modifica a autoridade canônica, não encerra automaticamente as dependências nem libera Design. Preservar feedback operacional, resposta, denúncia, moderação e recurso. A matriz anterior conserva a proveniência do achado inicial; estes estados posteriores prevalecem na leitura da proposta.
+
+## 4. Encaminhamento e limites
+
+Recomendar aprofundamento como extensão conceitual candidata de UXA-057, não como autoridade paralela. PV-A02, A03 e A04 receberam deliberação focal conjunta. Próximo exame proposto: PV-A05, publicação contextual, entrada de captura e continuidade independente R-B; depois moderação, perfil/CAPA, acesso e cobertura. Validações empíricas e gates jurídicos/operacionais permanecem separados. Não declarar 100% de conformidade ou ausência de pendências.
 
 A auditoria confirma convergência de princípios, não aprovação final. Nenhuma promoção, merge, design, implementação, publicação operacional ou tratamento de dados reais autorizado. As correções editoriais de referência feitas nesta rodada não adjudicam lacunas.
