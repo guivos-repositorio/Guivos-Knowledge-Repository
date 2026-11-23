@@ -2,7 +2,7 @@
 id: GKR-LIVED-POSSIBILITIES-PROTOTYPE-READINESS-CANDIDATE-001
 title: Possibilidades Vividas — Prontidão Documental e Transição ao Replit
 status: proposed
-version: 0.7.0
+version: 0.8.0
 owner: Guivos
 last_updated: 2026-11-22
 normative: false
@@ -22,8 +22,8 @@ Cada gate deverá ter evidência verificável, estado, dependências e decisão 
 | G02 — Autoridade e fluxo | Contrato candidato de Registro de Experiência, R1/P1, R-A/R-B, limites R-C/R-D; três pontos de acesso; estados e idempotência; não criar SURF/TRN por analogia | Aceite documental humano registrado; contratos de produção pendentes |
 | G03 — Instrumento | Perguntas, famílias, aprofundamento, validação, não resposta, complementação temporal e critérios de aceite reproduzíveis | Aceite documental humano registrado; validação empírica pendente |
 | G04 — Projeção e contagens | Nós/arestas, pessoas únicas, união, denominadores, ausência, dados insuficientes, atualização e retirada demonstráveis com cenários de teste | Aceite documental humano registrado; proteção e parâmetros de produção pendentes |
-| G05 — Identidade e mídia | Fonte única de CAPA/nome, identidade/foto, fallback, alterações e permissões; simuladas sem acesso a fontes reais | Contrato candidato e 22 cenários documentados; aceite humano pendente |
-| G06 — Privacidade | Modalidades, autorização afirmativa, não publicação automática, revogação, proteção contra reidentificação e restrição a dados sintéticos. Pré-seleção solicitada permanece condicionada; não produzir regra operacional incompatível | Pendente de reconciliação |
+| G05 — Identidade e mídia | Fonte única de CAPA/nome, identidade/foto, fallback, alterações e permissões; simuladas sem acesso a fontes reais | Aceite documental humano registrado; integração real pendente |
+| G06 — Privacidade | Modalidades, autorização afirmativa, não publicação automática, revogação, proteção contra reidentificação e restrição a dados sintéticos. Pré-seleção solicitada permanece condicionada; não produzir regra operacional incompatível | Contrato candidato e 24 cenários documentados; aceite condicionado e decisão humana pendentes |
 | G07 — Interações e acessibilidade | Fit-to-view, grid pontilhado, destaque, estabilidade, janela contextual e navegação bidirecional, alternativa textual, teclado, touch e movimento reduzido | Direção acordada; critérios de aceite pendentes |
 | G08 — Escopo, isolamento e aprovação | Plano de protótipo isolado com dados sintéticos, sem integrações reais, publicação pública, dados pessoais reais, nem alterações em outros projetos; autorização humana específica após revisão | Proposta a adjudicar |
 
@@ -55,7 +55,11 @@ Resultado: coerência interna focal suficiente; aceite humano registrado na deli
 
 ### Evidência de G05
 
-[Contrato candidato de identidade, CAPA e mídia](identity-media-and-cover-acceptance-candidate.md) v0.1.0: fonte autoritativa da oportunidade e da Pessoa, foto e perfil oficial, designação inicial e alteração da CAPA, versionamento histórico, fallback neutro, escopos de autorização independentes, revogação e não ressurreição. Vinte e dois cenários sintéticos descritos, não executados. G05 submetido a aceite documental; contratos de cadastro, mídia e perfil e o gate G06 continuam abertos. Aceite documental G04 registrado, sem autorização Replit.
+[Contrato candidato de identidade, CAPA e mídia](identity-media-and-cover-acceptance-candidate.md) v0.1.0: fonte autoritativa da oportunidade e da Pessoa, foto e perfil oficial, designação inicial e alteração da CAPA, versionamento histórico, fallback neutro, escopos de autorização independentes, revogação e não ressurreição. Vinte e dois cenários sintéticos descritos, não executados. G05 com aceite documental humano registrado; contratos de cadastro, mídia e perfil e o gate G06 continuam abertos. Aceites documentais G01–G05 registrados, sem autorização Replit.
+
+### Evidência de G06 — reconciliação de privacidade
+
+[Contrato candidato de privacidade, compartilhamento e prova de autorização](privacy-sharing-and-authorization-acceptance-candidate.md) v0.1.0: três modalidades, matriz de permissões, ação afirmativa quando exigida, privacidade R1/P1, controles de reidentificação/retirada e 24 cenários sintéticos não executados. Ordem de “Compartilhar minha participação” em primeiro lugar preservada. Pré-seleção solicitada **não** produz autorização de publicação por silêncio; efeitos operacionais aguardam adjudicação de base jurídica e privacidade. Aguardando aceite documental humano condicionado quanto à solução, sem pretender conformidade jurídica ou liberar dados reais. G07–G08 continuam abertos; Replit bloqueado.
 
 ## 1.1 Aplicação independente e integração compartilhada — decisão humana
 
