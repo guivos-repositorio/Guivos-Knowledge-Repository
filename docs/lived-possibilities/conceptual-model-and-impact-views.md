@@ -2,7 +2,7 @@
 id: GKR-LIVED-POSSIBILITIES-MODEL-CANDIDATE-001
 title: Possibilidades Vividas — Modelo Conceitual, Representação Pública e Fronteiras de Integração
 status: proposed
-version: 0.3.1
+version: 0.3.2
 owner: Guivos
 last_updated: 2026-11-22
 normative: false
@@ -52,7 +52,7 @@ O cruzamento contextual constitui consumo pela Guivos AI/Intelligence e não res
 
 ## 4. Representação pública coletiva
 
-Direção acordada: a interface principal da oportunidade deverá ser uma representação dinâmica coletiva por gráfico ou grafo. A lista individual tradicional é secundária. Cada ponto/nó de análise agrega manifestações autorizadas contextualizadas; a seleção revela detalhamento e, quando permitido, os registros individuais publicados correspondentes.
+Direção acordada: a representação pública de Possibilidades Vividas na oportunidade deverá utilizar o grafo dinâmico coletivo. A lista individual tradicional é secundária. Os nós semânticos agregam manifestações autorizadas contextualizadas; o nó central, os aprofundamentos e os participantes têm funções distintas. A seleção revela detalhamento autorizado. Gráficos auxiliares não substituem o grafo nem convertem o detalhe da oportunidade em dashboard.
 
 Fluxo conceitual:
 ```text
@@ -66,13 +66,13 @@ EXPERIÊNCIA REAL E DELIMITADA
 
 Exemplo sintético: nó Inspiração com 84 participantes únicos; ao abrir, exibir quantidade, base, período e relatos públicos autorizados, sem assumir que os 84 nomes ou relatos estejam disponíveis. Registro individual acessível fundamenta rastreabilidade e permite conhecer a fonte autorizada, mas não transforma sentimento subjetivo em fato objetivo. Um participante pode integrar vários nós; dimensões e contagens não são mutuamente exclusivas por padrão.
 
-Possíveis perspectivas: geral, sentimentos, contribuição, evolução, potencial, significado (relevância e natureza) e temporal. Os filtros, interações, níveis de detalhamento, layout, semântica de tamanhos e ligações, acessibilidade por alternativa textual e comportamento responsivo são propostas para design e validação, não contrato final. Ligações não implicam causalidade nem coocorrência sem dados que as sustentem.
+Conteúdos passíveis de exploração: sentimentos, contribuição, evolução, potencial, significado e contexto temporal da avaliação. Não instituir modos ou filtros analíticos por esta enumeração. Interações e semântica de tamanhos e ligações seguem decisões do [grafo público](public-graph-belonging-and-continuity.md); parâmetros visuais, acessibilidade e comportamento responsivo requerem validação. Ligações não implicam causalidade nem coocorrência sem dados que as sustentem.
 
 ## 5. Representação viva e longitudinal
 
 Uma oportunidade pode receber novos reconhecimentos de contribuição antes ou depois de meses ou anos, quando a pessoa voluntariamente os registra. Preservar distinção entre data da vivência, data de reconhecimento, data de registro e versão publicada. Atualizar uma experiência não cria avaliações adicionais artificiais. O grafo pode crescer, mudar ou reduzir após retificações e retiradas; não presumir crescimento monotônico.
 
-O acompanhamento administrativo permite compreender contribuições posteriores reconhecidas pelo conjunto de participantes. Não pressupõe acesso aos demais eventos da trajetória nem recolhimento compulsório. Atualizações espontâneas ou por convite opcional, contextualizado e não repetitivo foram acordadas conceitualmente; periodicidades, consentimentos, retenção e cancelamento permanecem pendentes. Regras de coorte pertencem ao Analytics. Relatar alcance de acompanhamento, denominadores, perda de seguimento e limites de seleção, sem atribuir mudança automaticamente à oportunidade.
+O acompanhamento administrativo permite compreender contribuições posteriores reconhecidas pelo conjunto de participantes. Não pressupõe acesso aos demais eventos da trajetória nem recolhimento compulsório. Atualizações espontâneas ou por convite opcional, contextualizado e não repetitivo foram acordadas conceitualmente; periodicidades, consentimentos, retenção e cancelamento permanecem pendentes. Regras de coorte pertencem ao Analytics. Questões de alcance do acompanhamento administrativo, perda de seguimento e limites de seleção pertencem ao Analytics; a avaliação preserva os dados pertinentes e não atribui mudança automaticamente à oportunidade.
 
 ## 6. Fronteiras de integração — etapa 07
 
