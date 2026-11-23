@@ -2,7 +2,7 @@
 id: GKR-LIVED-POSSIBILITIES-PROTOTYPE-READINESS-CANDIDATE-001
 title: Possibilidades Vividas — Prontidão Documental e Transição ao Replit
 status: proposed
-version: 0.14.0
+version: 0.15.0
 owner: Guivos
 last_updated: 2026-11-23
 normative: false
@@ -84,6 +84,10 @@ Resultado: coerência interna focal suficiente; aceite humano registrado na deli
 ### Aceite do relatório final e fronteira de execução — 23/11/2026
 
 A Direção respondeu **“de acordo, aprovado”** ao relatório final de suficiência documental v0.1.0, aprovando exclusivamente o resultado de completude do checklist documental restrito ao protótipo isolado. Este aceite não aprova nem inicia Replit, não executa testes, não autoriza integração, publicação, APIs, dados pessoais reais, merge ou promoção ao canon. A autorização **D3**, por determinação anterior expressa, exige ato humano **novo, separado e específico** após este marco. Nenhum projeto Replit foi criado, acessado ou alterado por esta deliberação.
+
+### Autorização D3 e impedimento de criação — 23/11/2026
+
+A Direção concedeu autorização expressa e específica para **iniciar uma aplicação independente Possibilidades Vividas no Replit**, com escopo isolado e dados exclusivamente sintéticos, sem integração a páginas existentes e sem publicação pública. A tentativa de criação por integração Replit em 23/11/2026 **falhou antes da criação**, com retorno `failed_authorization` / `credit_depleted`. Nenhum ID, URL ou workspace foi disponibilizado; **não declarar aplicação criada, pronta ou publicada**. D3 encontra-se concedida quanto ao escopo, mas a implantação está **impedida por créditos da conta Replit**; retomar criação somente após o impedimento ser resolvido, respeitando os mesmos limites autorizados. Não houve implementação, integração ou publicação e nenhuma alteração aos projetos Replit existentes.
 
 ## 1.1 Aplicação independente e integração compartilhada — decisão humana
 
