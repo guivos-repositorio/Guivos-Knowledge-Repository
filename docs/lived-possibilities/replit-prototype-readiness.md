@@ -2,7 +2,7 @@
 id: GKR-LIVED-POSSIBILITIES-PROTOTYPE-READINESS-CANDIDATE-001
 title: Possibilidades Vividas — Prontidão Documental e Transição ao Replit
 status: proposed
-version: 0.3.0
+version: 0.4.0
 owner: Guivos
 last_updated: 2026-11-22
 normative: false
@@ -18,8 +18,8 @@ Cada gate deverá ter evidência verificável, estado, dependências e decisão 
 
 | Gate | Evidência esperada | Estado inicial |
 |---|---|---|
-| G01 — Coerência conceitual e escopo | Documento Mestre e complementos alinhados; grafo exclusivamente de impacto; distinção operacional, Jornada, AI e Analytics | Exame focal concluído com ajustes; apto para aceite documental humano, sem promoção canônica |
-| G02 — Autoridade e fluxo | Contrato candidato de Registro de Experiência, R1/P1, R-A/R-B, limites R-C/R-D; três pontos de acesso; estados e idempotência; não criar SURF/TRN por analogia | Pendente |
+| G01 — Coerência conceitual e escopo | Documento Mestre e complementos alinhados; grafo exclusivamente de impacto; distinção operacional, Jornada, AI e Analytics | Aceite documental humano registrado; sem promoção canônica |
+| G02 — Autoridade e fluxo | Contrato candidato de Registro de Experiência, R1/P1, R-A/R-B, limites R-C/R-D; três pontos de acesso; estados e idempotência; não criar SURF/TRN por analogia | Contrato candidato e 15 cenários documentados; aceite humano pendente |
 | G03 — Instrumento | Perguntas, famílias, aprofundamento, validação, não resposta, complementação temporal e critérios de aceite reproduzíveis | Direção acordada; especificação de teste pendente |
 | G04 — Projeção e contagens | Nós/arestas, pessoas únicas, união, denominadores, ausência, dados insuficientes, atualização e retirada demonstráveis com cenários de teste | Direção acordada; contrato e testes candidatos pendentes |
 | G05 — Identidade e mídia | Fonte única de CAPA/nome, identidade/foto, fallback, alterações e permissões; simuladas sem acesso a fontes reais | Direção acordada; contratos de integração pendentes |
@@ -39,7 +39,11 @@ Releitura do Documento Mestre, Modelo Conceitual, Captura, Grafo Público, Desco
 | public-graph-belonging-and-continuity.md | 0.4.5 | `22bb08e2236b32ae281aa8ec2b906c57977933ef` |
 | evaluation-capture-and-lifecycle.md | 0.3.3 | `2cceb7cf7779fe3d53699934142fa5c7b7181b31` |
 
-Resultado: coerência interna focal suficiente para submeter G01 a aceite. Não constitui auditoria exaustiva de todo o GKR, aprovação empírica, resolução de contratos ou validação jurídica. G02–G08 permanecem abertos; o conflito potencial de pré-seleção permanece em G06. Não iniciar Replit.
+Resultado: coerência interna focal suficiente; aceite humano registrado na deliberação posterior. Não constitui auditoria exaustiva de todo o GKR, aprovação empírica, resolução de contratos ou validação jurídica. G02–G08 permanecem abertos; o conflito potencial de pré-seleção permanece em G06. Não iniciar Replit.
+
+### Evidência de G02
+
+[Contrato funcional candidato de autoridade e fluxos](authority-and-flow-contract-candidate.md) v0.1.0: objetos, elegibilidade e categorias de evidência, handoffs, estados privados/públicos/de governança, idempotência, revalidação, falhas e 15 cenários sintéticos. Confrontado com UXA-057 e PAS-001, sem adjudicação de superfícies, cobertura real ou esquema físico. Apto a deliberação documental quanto ao protótipo; testes não executados, contratos de produção continuam abertos. G01 aceito, G02 aguarda aceite; G03–G08 seguem abertos. Nenhuma ação Replit.
 
 ## 1.1 Aplicação independente e integração compartilhada — decisão humana
 
