@@ -2,9 +2,9 @@
 id: GKR-LIVED-POSSIBILITIES-GRAPH-CONTRACT-CANDIDATE-001
 title: Possibilidades Vividas — G04 Contrato Candidato de Grafo e Contabilização
 status: proposed
-version: 0.1.0
+version: 0.1.1
 owner: Guivos
-last_updated: 2026-11-22
+last_updated: 2026-11-23
 normative: false
 ---
 
@@ -31,6 +31,10 @@ O escopo de cada cálculo contém, quando pertinentes: oportunidade e edição/u
 | Participante | Pessoa vinculada a manifestação autorizada, conforme identificação, foto e perfil permitidos | Não codificar mérito, reputação, intensidade ou relevância pessoal |
 
 Quatro relações: (1) família ↔ expressão, de agrupamento semântico; (2) expressão ↔ expressão, de coocorrência realmente declarada por mesmas Pessoas no mesmo escopo; (3) expressão ↔ aprofundamento, de detalhamento; (4) Pessoa ↔ manifestação, de participação pública individual autorizada. Uma relação de agrupamento pode ter contagem de suporte, mas não declarar coocorrência causal. Um aprofundamento pode existir sem identificação da Pessoa; sua exposição requer autorização de conteúdo específica. Continuidade temporal é proveniência e versão, não quinta aresta pública automática. Não criar arestas meramente decorativas.
+
+### Complemento de apresentação após deliberação — 23/11/2026
+
+A [decisão de primeira camada por manifestações concretas](impact-first-public-graph-presentation-decision.md) orienta a **visão inicial** das projeções: as expressões vigentes, elegíveis e publicáveis aparecem em primeiro plano; a família semântica é agrupamento navegável secundário. Isso **não remove** o tipo de nó Família nem altera a união de pessoas por família, os conjuntos das expressões, a interseção de coocorrência, os cinco tipos de nó ou as quatro relações. A ligação visual CAPA–expressão é recurso de navegação e não nova relação causal/estatística. Famílias sem expressões exibíveis não devem compor uma coroa que possa ser confundida com manifestações comprovadas; proteger bases insuficientes, sem falsos zeros. A auditoria de regressão dessa apresentação é [IF-01 a IF-12](impact-first-public-graph-presentation-decision.md).
 
 ## 3. Contagens e denominadores
 
