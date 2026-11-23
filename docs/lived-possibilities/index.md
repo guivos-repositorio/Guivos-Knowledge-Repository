@@ -2,7 +2,7 @@
 id: GKR-LIVED-POSSIBILITIES-MASTER-CANDIDATE-001
 title: Possibilidades Vividas — Documento Mestre de Fundamentos e Propósito
 status: proposed
-version: 0.8.5
+version: 0.8.6
 owner: Guivos
 last_updated: 2026-11-22
 normative: false
@@ -192,6 +192,14 @@ A descoberta de pessoas no grafo e em perfis públicos autorizados tem como fina
 
 Detalhamento: [Descoberta através de trajetórias](trajectory-discovery-and-possibility-construction.md). A análise de compatibilidade, construção de possibilidades, interdependência, contribuição convergente, reaproveitamento e descoberta por evolução foi transferida para o [candidato de Guivos AI](../intelligence-architecture/ai-trajectory-and-possibility-construction-candidate.md). Possibilidades Vividas conserva a captura e representação da experiência e o contrato de integração, sem governar a interpretação cognitiva geral.
 
+## 10.6 Abrangência conceitual e cobertura inicial — deliberação 09.7
+
+Aprovado em 22/11/2026: Possibilidades Vividas é concebida como capacidade transversal ao ecossistema Guivos. Toda oportunidade efetivamente vivenciada poderá ser elegível à avaliação de impacto na Pessoa, independentemente da área de evolução, gratuidade ou cobrança, modalidade presencial, online ou híbrida, e oferta por Organização, Coletivo ou Profissional, conforme autoridades e contratos aplicáveis. Incluir Profissional como ofertador conceitual não adjudica sua ontologia, competências ou permissões.
+
+Preservar estrutura universal de avaliação e pergunta de expressão “O que essa experiência representou para você?”, além dos dois eixos centrais independentes; adaptar apenas aprofundamentos pertinentes à experiência, sem inferir contribuição ou tornar área de evolução obrigatória. A capacidade não se estende automaticamente a compra, inscrição ou consumo sem vivência comprovável, nem a avaliações de qualidade operacional ou de relações institucionais.
+
+Abrangência pretendida não equivale à cobertura operacional inicial. UXA-057 mantém a cobertura inicial não selecionada. Uma futura deliberação deverá identificar oportunidade real, objeto/edição/etapa/período, titularidade, população elegível, fonte e categoria de evidência, representação, proteção, governança, não duplicidade, publicação e condições de validação. Não selecionar piloto, criar SURF/TRN ou liberar Design, implementação, dados reais ou publicação por esta decisão.
+
 ## 11. Estrutura candidata da seção
 
 Este documento consolida as etapas 01 a 08; a etapa 09 é revisão focal e posterior reconciliação canônica. Funciona como entrada da seção. O [modelo conceitual complementar](conceptual-model-and-impact-views.md) detalha as deliberações desta rodada; os demais desdobramentos abaixo permanecem backlog documental:
@@ -259,7 +267,7 @@ Proveniência: deliberação humana no projeto Guivos Knowledge Repository em 22
 
 ## 13. Exames posteriores e limites
 
-[Auditoria de conformidade e matriz de reconciliação — etapa 09](conformity-audit-and-reconciliation.md): exame focal ampliado registrado em 22/11/2026. Convergência conceitual com UXA-057, com PV-A02 a PV-A04 resolvidos em nível de direção conceitual pela aprovação de 22/11/2026; contratos, critérios e validações remanescentes seguem abertos. Publicação, superfícies, CAPA, perfil, privacidade e cobertura permanecem pendentes. Não equivale a conformidade integral nem promoção canônica. PV-A05 resolvida em direção conceitual na etapa 09.2; materialização pendente. PV-A06 resolvida em direção conceitual na etapa 09.3; contrato de cadastro e integração pendentes. PV-A07 resolvida em direção conceitual na etapa 09.4; contratos de identidade, perfil e publicação pendentes. PV-A08 recebeu deliberação conceitual na etapa 09.5; a preferência de pré-seleção permanece condicionada à autoridade de privacidade, e os contratos de proteção e publicação continuam abertos. PV-A09 recebeu deliberação conceitual na etapa 09.6: pessoas distintas, união de conjuntos, suporte de relações, denominadores explícitos, recálculo e proteção de base insuficiente. Contratos de cálculo e limiares permanecem pendentes. Próxima deliberação proposta: PV-A16, delimitação da cobertura inicial e evidência real, sem presumir liberação de superfícies.
+[Auditoria de conformidade e matriz de reconciliação — etapa 09](conformity-audit-and-reconciliation.md): exame focal ampliado registrado em 22/11/2026. Convergência conceitual com UXA-057, com PV-A02 a PV-A04 resolvidos em nível de direção conceitual pela aprovação de 22/11/2026; contratos, critérios e validações remanescentes seguem abertos. Publicação, superfícies, CAPA, perfil, privacidade e cobertura permanecem pendentes. Não equivale a conformidade integral nem promoção canônica. PV-A05 resolvida em direção conceitual na etapa 09.2; materialização pendente. PV-A06 resolvida em direção conceitual na etapa 09.3; contrato de cadastro e integração pendentes. PV-A07 resolvida em direção conceitual na etapa 09.4; contratos de identidade, perfil e publicação pendentes. PV-A08 recebeu deliberação conceitual na etapa 09.5; a preferência de pré-seleção permanece condicionada à autoridade de privacidade, e os contratos de proteção e publicação continuam abertos. PV-A09 recebeu deliberação conceitual na etapa 09.6: pessoas distintas, união de conjuntos, suporte de relações, denominadores explícitos, recálculo e proteção de base insuficiente. Contratos de cálculo e limiares permanecem pendentes. PV-A16 recebeu deliberação na etapa 09.7 quanto à abrangência transversal pretendida; seleção de cobertura inicial real permanece aberta, sem autorização de piloto. Próximo exame: consolidação das dependências remanescentes e revisão de prontidão documental, preservando o gate de privacidade relativo à pré-seleção.
 
 Delimitação de escopo acordada em 22/11/2026: priorizar perguntas, base de expressões, aprofundamentos adaptativos, anatomia e dinâmica do grafo público, representação dos participantes, fronteiras de integração com Analytics, continuidade temporal e governança da avaliação. Aprofundamento de dashboards e grafo administrativo pertence ao domínio Analytics. A interpretação cognitiva geral e construção de possibilidades futuras pertencem ao domínio Intelligence/AI; não reproduzir conteúdo normativo ou candidato em duas seções.
 
