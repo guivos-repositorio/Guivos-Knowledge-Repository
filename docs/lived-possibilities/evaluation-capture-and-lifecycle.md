@@ -2,7 +2,7 @@
 id: GKR-LIVED-POSSIBILITIES-EVALUATION-CANDIDATE-001
 title: Possibilidades Vividas — Captura, Vocabulário e Ciclo de Avaliação
 status: proposed
-version: 0.3.0
+version: 0.3.1
 owner: Guivos
 last_updated: 2026-11-22
 normative: false
@@ -77,6 +77,12 @@ A captura de Possibilidades Vividas é um instrumento de impacto sob R1/P1, rela
 ## 5. Solicitação e acesso pós-encerramento
 
 Ao acessar oportunidade encerrada ainda não avaliada por participante elegível, apresentar solicitação de avaliação antes de exibir a antiga oportunidade e seu grafo. A pessoa pode avaliar, adiar ou prosseguir sem avaliar; não bloquear acesso nem obrigar contribuição. Envio externo e acesso interno convergem para o mesmo registro autoritativo, preservando idempotência, identidade, contexto e autorização. Canais específicos (e-mail, WhatsApp, aplicativo, Minha Conta), intervalos, reenvio, desistência, preferências, segurança de links e estados técnicos são candidatos, não contratos aprovados. Respeitar recusa e ausência de elegibilidade. Não expor conteúdo de avaliação nas notificações.
+
+### 5.1 Pontos de acesso — deliberação 09.2
+
+Detalhe da oportunidade: consulta ao grafo público de impacto, sem função autoritativa de registro. Formulário independente: criação, revisão consciente e submissão protegidas sob R-A. Minhas Avaliações: continuidade R-B, consulta, complementação, correção, histórico e gestão de visibilidade conforme política aplicável. Os acessos convergem para a mesma identidade lógica de avaliação R1 e, quando autorizado, sua publicação distinta P1; não presumir acesso a R1 por visitante público.
+
+A pessoa conserva acesso legítimo às próprias avaliações mesmo quando a oportunidade deixa de estar publicamente disponível, respeitando retenção, exclusão e direitos aplicáveis. Não republicar conteúdo retirado nem inventar rota histórica pública. Distinguir alterações de visibilidade, retirada e exclusão. PER-203 demanda extensão expressa; Minhas Avaliações não atribui R-B a PER-009 por analogia. Contratar superfícies e handoffs, confirmação de envio, falha, retorno, interrupção, revalidação e idempotência em etapa própria. Nenhuma nova tela ou execução é autorizada.
 
 ## 6. Continuidade e representação — etapa 08
 
