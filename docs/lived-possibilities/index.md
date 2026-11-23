@@ -2,7 +2,7 @@
 id: GKR-LIVED-POSSIBILITIES-MASTER-CANDIDATE-001
 title: Possibilidades Vividas — Documento Mestre de Fundamentos e Propósito
 status: proposed
-version: 0.6.0
+version: 0.7.0
 owner: Guivos
 last_updated: 2026-11-22
 normative: false
@@ -68,7 +68,7 @@ A área da oportunidade não determina nem delimita o impacto. A pessoa não pre
 
 ### 3.2 Indicador central — significado individual
 
-Decisão conceitual de 22/11/2026: o significado atribuído pela pessoa à vivência é o indicador central da avaliação, não a satisfação, a nota do ofertador ou a qualidade operacional. Deve preservar dois eixos independentes: relevância (quanto a experiência representou para a pessoa) e natureza do impacto (favorável, desfavorável, misto, ausência de impacto percebido ou incerteza). Alta relevância não implica impacto favorável nem evolução. A linguagem, escala, opções de resposta e visualização permanecem experimentais.
+Decisão conceitual de 22/11/2026: o significado atribuído pela pessoa à vivência é o indicador central da avaliação, não a satisfação, a nota do ofertador ou a qualidade operacional. Deve preservar dois eixos independentes: relevância (quanto a experiência representou para a pessoa) e natureza do impacto (favorável, desfavorável, misto, ausência de impacto percebido ou incerteza). Alta relevância não implica impacto favorável nem evolução. Perguntas acordadas conceitualmente: Quanto essa experiência representou para você? e Como essa experiência impactou você? Cinco intensidades verbais mais incerteza e cinco naturezas de impacto; ver [instrumento](evaluation-capture-and-lifecycle.md). Linguagem e visualização sujeitas a validação.
 
 O significado central não substitui as quatro dimensões explicativas. Não se presume resposta a todas as dimensões; ausência de resposta não equivale a ausência de impacto.
 
@@ -76,7 +76,7 @@ O significado central não substitui as quatro dimensões explicativas. Não se 
 
 Distinguir o momento da vivência, o momento do registro e o momento em que a contribuição ou mudança veio a ser reconhecida. A pessoa deve poder retornar voluntariamente à experiência para complementar, retificar ou reconhecer novos significados, inclusive muito tempo depois, dentro da finalidade e política aplicáveis.
 
-Atualização da mesma experiência não cria avaliações artificiais adicionais. Preservar versão, contexto, autoria, proveniência, histórico material, controles de visibilidade e retirada conforme a autoridade vigente. Continuidade não significa retenção indefinida.
+Atualização da mesma experiência não cria avaliações artificiais adicionais. Preservar versão, contexto, autoria, proveniência, histórico material, controles de visibilidade e retirada conforme a autoridade vigente. Continuidade não significa retenção indefinida. A pessoa pode atualizar espontaneamente ou mediante convite opcional, contextualizado e não repetitivo; não exigir novo formulário integral, não fixar cadência ou canal.
 
 ## 5. Impacto combinado e acumulado
 
@@ -138,17 +138,17 @@ A experiência pública deve priorizar uma representação coletiva, dinâmica e
 
 A representação deve contemplar manifestações favoráveis, desfavoráveis, mistas, ausência de impacto e incerteza sem ocultação seletiva. A mesma pessoa pode contribuir a vários agrupamentos; não duplicar pessoas dentro do mesmo indicador ou confundir total de registros com total de participantes. A representação poderá mudar com registros posteriores, respeitando versão, contexto, edição, período, retirada e proveniência.
 
-## 10.2 Compreensão contextual e acompanhamento do ofertador — direção acordada
+## 10.2 Fronteiras de integração com Guivos AI, Jornada e Analytics — direção acordada
 
-Primeira camada: compreensão da vivência independente das áreas. Segunda camada: cruzamento contextual com as áreas em que a pessoa busca evoluir, interesses e objetivos, quando legitimamente disponíveis, sem atribuir causalidade. A gestão da oportunidade deve poder compreender o impacto coletivo por Analytics e grafo no painel administrativo, inclusive acompanhar contribuições reconhecidas ao longo do tempo após a vivência. A finalidade é melhorar compreensão e oportunidades futuras, não vigiar trajetórias.
+Possibilidades Vividas governa a avaliação e o impacto reconhecido da oportunidade. A segunda camada contextual, quando legitimamente disponível, é consumo sob autoridades da Guivos AI/Intelligence. O Grafo Vivo da Pessoa representa trajetória, condições, objetivos, possibilidades e direcionamentos; o grafo administrativo representa análise institucional autorizada. Nenhuma projeção é acesso irrestrito às outras.
 
-São três perspectivas distintas: Grafo Vivo da Pessoa (trajetória individual), grafo público da oportunidade (representação coletiva pública) e grafo administrativo do ofertador (impacto e contexto autorizados, inclusive longitudinal). Nenhuma é acesso irrestrito às outras. Por padrão, a informação institucional é agregada e protegida; acesso individualizado exige autoridade específica, finalidade e controles aplicáveis. Áreas sensíveis, grupos pequenos, cruzamentos e filtros demandam proteção contra reidentificação. Nenhuma permissão, superfície, indicador estatístico ou periodicidade é adjudicada por este documento.
+A origem, conteúdo, autoria, proveniência, temporalidade e restrições das avaliações permanecem aqui. Dashboards, KPIs, filtros, análises longitudinais administrativas, grafo analítico e estratégias de direcionamento pertencem às documentações competentes. Analytics e Guivos Business podem consumir inteligência coletiva protegida dentro de sua competência, sem acesso automático a dados individuais. Preservar agregação, minimização, finalidade e controles contra reidentificação.
 
-Detalhamento candidato: [Modelo conceitual, representação pública e compreensão do ofertador](conceptual-model-and-impact-views.md).
+Detalhamento: [Modelo conceitual e fronteiras](conceptual-model-and-impact-views.md); [Documento Mestre Global de Dashboards, KPIs e Analytics](../intelligence-architecture/dashboards-kpis-analytics-master-specification.md); [Guivos AI — candidato](../intelligence-architecture/ai-trajectory-and-possibility-construction-candidate.md).
 
 ## 10.3 Captura, vocabulário e ciclo de avaliação — direção acordada
 
-A avaliação emprega modelo híbrido de expressões estruturadas e livres, múltiplas escolhas e aprofundamento adaptativo opcional. A evolução do vocabulário pela Guivos AI depende de governança e preserva base universal comparável, sem indução por respostas de outros participantes.
+A avaliação emprega dois eixos centrais, modelo híbrido de expressões estruturadas e livres, múltiplas escolhas, aprofundamento adaptativo opcional de até três perguntas iniciais, validação pela pessoa e compartilhamento independente da conclusão. A base inicial de doze famílias semânticas e quatro níveis de organização é candidata, não taxonomia definitiva. A evolução do vocabulário pela Guivos AI depende de governança e preserva base universal comparável, sem indução por respostas de outros participantes.
 
 A descoberta/adesão pode exibir o grafo público; a captura ocorre após encerramento e reconhecimento de elegibilidade, em formulário independente, enviado por canais autorizados. Ao acessar oportunidade encerrada com avaliação pendente, o participante elegível recebe solicitação antes da exibição da oportunidade, podendo adiar ou prosseguir sem avaliar. A separação reduz influência direta sem garantir ausência absoluta de influência. Preservar registro único, contexto, continuidade e autoridades UXA-057.
 
@@ -158,9 +158,9 @@ Detalhamento: [Captura, vocabulário e ciclo de avaliação](evaluation-capture-
 
 Preservar expressões específicas e agrupamentos semânticos superiores com expansão progressiva. A cor representa natureza semântica, não mérito ou favorabilidade. O grafo é vivo, orgânico, interativo e estável durante a análise, preservando memória espacial e destacando relações sem eliminar os demais elementos.
 
-A pessoa é participante da construção coletiva, não apenas autora de avaliação. Ao aprofundar uma manifestação poderão surgir nós dos participantes com fotografias de perfil e, mediante autorização prévia específica, navegação ao perfil público. A presença identificada não é condição de contribuição agregada. Conhecer pessoas que viveram uma oportunidade pode apoiar descoberta da comunidade, identificação e decisão voluntária de fazer parte de vivências futuras.
+A pessoa é participante da construção coletiva, não apenas autora de avaliação. Algumas fotografias de participantes elegíveis aparecem já na visão inicial, distribuídas entre manifestações, com foto de perfil e identificação autorizadas, rotatividade entre visitas e neutralidade. Ausência de foto não impede avaliação ou aprofundamento autorizado. O nó central utiliza a CAPA oficial da oportunidade (primeira imagem da galeria atribuída no cadastro), não foto de perfil do ofertador. A janela contextual única permite navegação bidirecional e prioriza a vivência da pessoa antes do acesso específico ao perfil público. A presença identificada não é condição de contribuição agregada. Conhecer pessoas que viveram uma oportunidade pode apoiar descoberta da comunidade, identificação e decisão voluntária de fazer parte de vivências futuras.
 
-Preservar visibilidade contextual, separação de identidade, relato, foto e acesso ao perfil, revogação e proteção de dados; não presumir contato, exposição da trajetória privada, ranking ou reconhecimento de mérito. O mesmo participante pode sustentar múltiplas manifestações autorizadas sem duplicidade lógica. As métricas, arestas, contornos, janela contextual e Minha presença no grafo são candidatos sujeitos a exame.
+Preservar visibilidade contextual, separação de identidade, relato, foto e acesso ao perfil, revogação e proteção de dados; não presumir contato, exposição da trajetória privada, ranking ou reconhecimento de mérito. O mesmo participante pode sustentar múltiplas manifestações autorizadas sem duplicidade lógica. Cinco tipos de nós e quatro relações acordados conceitualmente; quantidade de participantes únicos orienta tamanho e espessura quando aplicável. Minha presença no grafo permite localização privada da própria contribuição, com distinção da projeção pública, sem exigir exposição; fortalece pertencimento e confiança, sem comprovar autenticidade de todos os registros. O grafo público é humano e claro, não dashboard administrativo. Escalas, contornos, parâmetros, permissões e contratos sujeitos a validação.
 
 Detalhamento: [Grafo público, pertencimento e continuidade da jornada](public-graph-belonging-and-continuity.md).
 
@@ -172,7 +172,7 @@ Detalhamento: [Descoberta através de trajetórias](trajectory-discovery-and-pos
 
 ## 11. Estrutura candidata da seção
 
-Este documento funciona como entrada inicial. O [modelo conceitual complementar](conceptual-model-and-impact-views.md) detalha as deliberações desta rodada; os demais desdobramentos abaixo permanecem backlog documental:
+Este documento consolida as etapas 01 a 08; a etapa 09 é revisão focal e posterior reconciliação canônica. Funciona como entrada da seção. O [modelo conceitual complementar](conceptual-model-and-impact-views.md) detalha as deliberações desta rodada; os demais desdobramentos abaixo permanecem backlog documental:
 
 1. Modelo conceitual e dimensões.
 2. Sentimentos e percepções.
@@ -184,7 +184,7 @@ Este documento funciona como entrada inicial. O [modelo conceitual complementar]
 8. Identidade visual, experiência pública e internacionalização.
 9. Pesquisa, evidência e validação.
 10. Registro de decisões e reconciliação com o corpus.
-11. Compreensão contextual, Analytics e acompanhamento longitudinal dos participantes.
+11. Fronteiras de integração com consumidores autorizados e continuidade temporal da avaliação.
 12. Representação pública coletiva e grafos de impacto.
 13. Pertencimento, reconhecimento contextual, descoberta de pessoas e continuidade da jornada.
 14. Descoberta através de vivências e perfis públicos autorizados.
@@ -205,7 +205,7 @@ A localização de uma rota no menu principal vinculada à Experiência e Journe
 | Áreas como contexto secundário, não critério obrigatório | Acordado conceitualmente |
 | Significado individual como indicador central | Acordado conceitualmente |
 | Relevância e natureza do impacto independentes | Acordado conceitualmente |
-| Compreensão contextual e acompanhamento longitudinal do ofertador | Acordados conceitualmente; permissões e contratos pendentes |
+| Integração com Analytics e consumidores autorizados | Fronteira acordada; análise administrativa fora do escopo |
 | Representação pública coletiva por gráfico/grafo e aprofundamento individual | Acordada conceitualmente; publicação e agregação pendentes |
 | Modelo híbrido, múltiplas escolhas e aprofundamento adaptativo | Acordado conceitualmente |
 | Evolução governada do vocabulário com base universal | Acordada conceitualmente |
@@ -216,6 +216,14 @@ A localização de uma rota no menu principal vinculada à Experiência e Journe
 | Pertencimento, descoberta de pessoas e continuidade voluntária da jornada | Acordado conceitualmente |
 | Descoberta através de trajetórias sem vínculo social necessário | Acordado conceitualmente |
 | Integração com interpretação cognitiva da Guivos AI | Referência externa ao domínio; contratos pendentes |
+| Perguntas centrais, escala verbal e natureza do impacto | Acordadas conceitualmente; instrumento a validar |
+| Vocabulário em quatro níveis e doze famílias iniciais | Base candidata acordada; taxonomia definitiva pendente |
+| Aprofundamento até três perguntas iniciais, validação e compartilhamento separado | Acordados conceitualmente |
+| Cinco tipos de nós, quatro relações e expansão progressiva | Acordados conceitualmente; parâmetros pendentes |
+| CAPA oficial da oportunidade e fotos de pessoas na abertura | Acordados; autoridade de cadastro e elegibilidade a reconciliar |
+| Janela contextual bidirecional e prioridade da vivência | Acordadas conceitualmente |
+| Minha presença no grafo e autenticidade rastreável | Acordadas conceitualmente; contratos pendentes |
+| Atualização espontânea ou convite contextual opcional | Acordada; canais e cadência pendentes |
 | Nomenclatura internacional e identidade visual | Em investigação |
 | Captura, política de dados, publicidade, agregação e integração | Contratos pendentes |
 | Design e implementação | Não autorizados |
@@ -224,7 +232,7 @@ Proveniência: deliberação humana no projeto Guivos Knowledge Repository em 22
 
 ## 13. Exames posteriores e limites
 
-Delimitação de escopo acordada em 22/11/2026: priorizar perguntas, base de expressões, aprofundamentos adaptativos, anatomia e dinâmica do grafo público, representação dos participantes, Analytics e grafo administrativo, acompanhamento longitudinal e governança da avaliação. A interpretação cognitiva geral e construção de possibilidades futuras pertencem ao domínio Intelligence/AI; não reproduzir conteúdo normativo ou candidato em duas seções.
+Delimitação de escopo acordada em 22/11/2026: priorizar perguntas, base de expressões, aprofundamentos adaptativos, anatomia e dinâmica do grafo público, representação dos participantes, fronteiras de integração com Analytics, continuidade temporal e governança da avaliação. Aprofundamento de dashboards e grafo administrativo pertence ao domínio Analytics. A interpretação cognitiva geral e construção de possibilidades futuras pertencem ao domínio Intelligence/AI; não reproduzir conteúdo normativo ou candidato em duas seções.
 
 - Confrontar o corpus vigente, especialmente UXA-057, modelos da pessoa, oportunidades, inteligência, grafo, marca e privacidade.
 - Delimitar entidades, finalidade, autoridades e eventual relação entre registros de trajetória e R1/P1.
