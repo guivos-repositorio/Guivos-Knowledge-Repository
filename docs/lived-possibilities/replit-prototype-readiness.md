@@ -2,7 +2,7 @@
 id: GKR-LIVED-POSSIBILITIES-PROTOTYPE-READINESS-CANDIDATE-001
 title: Possibilidades Vividas — Prontidão Documental e Transição ao Replit
 status: proposed
-version: 0.2.0
+version: 0.3.0
 owner: Guivos
 last_updated: 2026-11-22
 normative: false
@@ -18,7 +18,7 @@ Cada gate deverá ter evidência verificável, estado, dependências e decisão 
 
 | Gate | Evidência esperada | Estado inicial |
 |---|---|---|
-| G01 — Coerência conceitual e escopo | Documento Mestre e complementos alinhados; grafo exclusivamente de impacto; distinção operacional, Jornada, AI e Analytics | Direção acordada; revisão final pendente |
+| G01 — Coerência conceitual e escopo | Documento Mestre e complementos alinhados; grafo exclusivamente de impacto; distinção operacional, Jornada, AI e Analytics | Exame focal concluído com ajustes; apto para aceite documental humano, sem promoção canônica |
 | G02 — Autoridade e fluxo | Contrato candidato de Registro de Experiência, R1/P1, R-A/R-B, limites R-C/R-D; três pontos de acesso; estados e idempotência; não criar SURF/TRN por analogia | Pendente |
 | G03 — Instrumento | Perguntas, famílias, aprofundamento, validação, não resposta, complementação temporal e critérios de aceite reproduzíveis | Direção acordada; especificação de teste pendente |
 | G04 — Projeção e contagens | Nós/arestas, pessoas únicas, união, denominadores, ausência, dados insuficientes, atualização e retirada demonstráveis com cenários de teste | Direção acordada; contrato e testes candidatos pendentes |
@@ -26,6 +26,20 @@ Cada gate deverá ter evidência verificável, estado, dependências e decisão 
 | G06 — Privacidade | Modalidades, autorização afirmativa, não publicação automática, revogação, proteção contra reidentificação e restrição a dados sintéticos. Pré-seleção solicitada permanece condicionada; não produzir regra operacional incompatível | Pendente de reconciliação |
 | G07 — Interações e acessibilidade | Fit-to-view, grid pontilhado, destaque, estabilidade, janela contextual e navegação bidirecional, alternativa textual, teclado, touch e movimento reduzido | Direção acordada; critérios de aceite pendentes |
 | G08 — Escopo, isolamento e aprovação | Plano de protótipo isolado com dados sintéticos, sem integrações reais, publicação pública, dados pessoais reais, nem alterações em outros projetos; autorização humana específica após revisão | Proposta a adjudicar |
+
+### Evidência de G01 — revisão focal de 22/11/2026
+
+Releitura do Documento Mestre, Modelo Conceitual, Captura, Grafo Público, Descoberta e prontidão; confrontadas deliberações 09.1–09.8 e matriz de auditoria anterior. Convergência em significado individual, quatro dimensões, dois eixos, instrumentos independentes, continuidade voluntária, governança existente, contagem de pessoas únicas, CAPA e perfil sem duplicação, separação entre os três grafos e integração compartilhada futura. Corrigidos vestígios de alternativa “gráfico ou grafo”, formulação de filtros e relatórios administrativos, hipótese de totais de objetivos fora do domínio, linguagem que poderia equiparar evidência suficiente à etiqueta “participação verificada” e descrição de fallback como pendência conceitual. Ajustes de redação preservam decisões anteriores e não adjudicam novas permissões.
+
+| Documento verificado | Versão | SHA do conteúdo |
+|---|---|---|
+| index.md | 0.8.9 | `4081fe62179ceac5b8a76890c0bd98400727fde6` |
+| conceptual-model-and-impact-views.md | 0.3.2 | `b27a916e2de5befc110dcbc53e207bfb945ccaf4` |
+| trajectory-discovery-and-possibility-construction.md | 0.2.1 | `e611ca908b17f16be60b3d30f9c3219adc03f624` |
+| public-graph-belonging-and-continuity.md | 0.4.5 | `22bb08e2236b32ae281aa8ec2b906c57977933ef` |
+| evaluation-capture-and-lifecycle.md | 0.3.3 | `2cceb7cf7779fe3d53699934142fa5c7b7181b31` |
+
+Resultado: coerência interna focal suficiente para submeter G01 a aceite. Não constitui auditoria exaustiva de todo o GKR, aprovação empírica, resolução de contratos ou validação jurídica. G02–G08 permanecem abertos; o conflito potencial de pré-seleção permanece em G06. Não iniciar Replit.
 
 ## 1.1 Aplicação independente e integração compartilhada — decisão humana
 
