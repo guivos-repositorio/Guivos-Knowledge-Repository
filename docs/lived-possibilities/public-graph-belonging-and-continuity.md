@@ -2,7 +2,7 @@
 id: GKR-LIVED-POSSIBILITIES-PUBLIC-GRAPH-CANDIDATE-001
 title: Possibilidades Vividas — Grafo Público, Pertencimento e Continuidade da Jornada
 status: proposed
-version: 0.4.4
+version: 0.4.5
 owner: Guivos
 last_updated: 2026-11-22
 normative: false
@@ -109,7 +109,7 @@ Minha presença no grafo — conceito aprovado: localizar e destacar as própria
 
 ## 8. Governança e proteção
 
-Autenticidade: somente experiências reais e participação elegível verificada, manifestações rastreáveis a registros legítimos, sem avaliações artificiais ou relatos inventados pela IA; impedir duplicidade e manipulação ou exclusão seletiva pelo ofertador. Preservar moderação independente, contestação e proteção conforme autoridade. Verificar participação não comprova objetivamente sentimentos ou causalidade. Preservar R1/P1 e R-A..R-D conforme UXA-057. Não confundir projeção do grafo com fonte autoritativa. Aplicar elegibilidade, evidência, edição e período; separar participação verificada de percepção autodeclarada. A retirada ou alteração de permissões deverá refletir nos derivados e vínculos públicos, conforme política aplicável, sem ressurgimento indevido.
+Autenticidade: somente experiências reais e participação elegível sustentada por evidência suficiente para a contribuição pública no escopo correspondente, manifestações rastreáveis a registros legítimos, sem avaliações artificiais ou relatos inventados pela IA; impedir duplicidade e manipulação ou exclusão seletiva pelo ofertador. Preservar moderação independente, contestação e proteção conforme autoridade. Verificar participação não comprova objetivamente sentimentos ou causalidade. Preservar R1/P1 e R-A..R-D conforme UXA-057. Não confundir projeção do grafo com fonte autoritativa. Aplicar elegibilidade, evidência, edição e período; separar evidência da participação de percepção autodeclarada; reservar a indicação de participação verificada aos registros com evidência que autorize especificamente essa afirmação. Categorias e critérios por objeto/etapa permanecem pendentes conforme UXA-057. A retirada ou alteração de permissões deverá refletir nos derivados e vínculos públicos, conforme política aplicável, sem ressurgimento indevido.
 
 A exposição de uma identidade poderá revelar participação sensível ou permitir inferências por cruzamentos, inclusive entre oportunidades. Exigir exame específico de finalidade, proteção de menores e contextos sensíveis, minimização, supressão de grupos pequenos, proteção contra extração massiva, abuso, reidentificação e contato indesejado. A existência de perfil público não elimina esses riscos. Não expor Grafo Vivo privado, objetivos ou dados administrativos. A pessoa poderá contribuir sem identificação pública e sem prejuízo da jornada.
 
@@ -143,4 +143,4 @@ O tamanho dos nós semânticos representa quantidade de pessoas distintas, não 
 
 Etapas 04–06 acordadas conceitualmente: cinco tipos de nós, quatro naturezas de relação, tamanho/espessura por participantes únicos quando aplicável, cor por família, expansão progressiva, grafo humano em contraste com análise administrativa, composição orgânica, CAPA oficial da oportunidade, fotografias já na abertura com elegibilidade e rotatividade, janela contextual única e navegação bidirecional, prioridade da vivência na seleção da pessoa, acesso autorizado ao perfil e Minha presença no grafo. Separação entre impacto público, trajetória individual e análise institucional.
 
-Pendentes validação de paleta, contornos, geometria, quantidades, limiares, denominadores, seleção, fallback de CAPA, contratos de cadastro, proteção, acessibilidade, escalabilidade e controle de abuso. Reconciliar identidade, perfil, jornada, governança de dados, avaliação/reputação e arquitetura cognitiva. Nenhuma autorização de nova superfície, vínculo, contato, engenharia ou design.
+Pendentes validação de paleta, contornos, geometria, quantidades, limiares, denominadores, seleção, implementação do fallback neutro de CAPA já acordado, contratos de cadastro, proteção, acessibilidade, escalabilidade e controle de abuso. Reconciliar identidade, perfil, jornada, governança de dados, avaliação/reputação e arquitetura cognitiva. Nenhuma autorização de nova superfície, vínculo, contato, engenharia ou design.
