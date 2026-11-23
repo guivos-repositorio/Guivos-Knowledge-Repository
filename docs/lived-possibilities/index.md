@@ -2,7 +2,7 @@
 id: GKR-LIVED-POSSIBILITIES-MASTER-CANDIDATE-001
 title: Possibilidades Vividas — Documento Mestre de Fundamentos e Propósito
 status: proposed
-version: 0.8.4
+version: 0.8.5
 owner: Guivos
 last_updated: 2026-11-22
 normative: false
@@ -182,6 +182,10 @@ Preservar visibilidade contextual, separação de identidade, relato, foto e ace
 
 Detalhamento: [Grafo público, pertencimento e continuidade da jornada](public-graph-belonging-and-continuity.md).
 
+### 10.4.1 Contagens e representatividade — deliberação 09.6
+
+Contabilizar pessoas distintas no escopo autorizado, contar cada pessoa uma vez por manifestação e usar união de participantes nas famílias. Uma pessoa pode contribuir para várias expressões, cuja soma de percentuais pode superar 100%. Explicitar denominadores pertinentes e distinguir pessoas que vivenciaram, responderam, autorizaram contribuição e identificação. Atualização não multiplica participantes; retirada exige recálculo conforme autoridade. Base insuficiente requer proteção e não representa ausência de impacto. Tamanho de nó semântico representa quantidade, não intensidade ou importância. Ver [detalhamento do grafo](public-graph-belonging-and-continuity.md). Validação dos contratos, limiares e escalas permanece pendente.
+
 ## 10.5 Descoberta através de trajetórias — direção acordada
 
 A descoberta de pessoas no grafo e em perfis públicos autorizados tem como finalidade conhecer vivências e ampliar possibilidades, não criar seguidores, amizades, contatos ou vínculos automáticos. Conhecer outras pessoas com objetivos semelhantes pode motivar e fortalecer pertencimento; não deve induzir comparação nem substituir o contexto próprio. A trajetória de outra pessoa é fonte de possibilidades, não modelo a reproduzir.
@@ -255,7 +259,7 @@ Proveniência: deliberação humana no projeto Guivos Knowledge Repository em 22
 
 ## 13. Exames posteriores e limites
 
-[Auditoria de conformidade e matriz de reconciliação — etapa 09](conformity-audit-and-reconciliation.md): exame focal ampliado registrado em 22/11/2026. Convergência conceitual com UXA-057, com PV-A02 a PV-A04 resolvidos em nível de direção conceitual pela aprovação de 22/11/2026; contratos, critérios e validações remanescentes seguem abertos. Publicação, superfícies, CAPA, perfil, privacidade e cobertura permanecem pendentes. Não equivale a conformidade integral nem promoção canônica. PV-A05 resolvida em direção conceitual na etapa 09.2; materialização pendente. PV-A06 resolvida em direção conceitual na etapa 09.3; contrato de cadastro e integração pendentes. PV-A07 resolvida em direção conceitual na etapa 09.4; contratos de identidade, perfil e publicação pendentes. PV-A08 recebeu deliberação conceitual na etapa 09.5; a preferência de pré-seleção permanece condicionada à autoridade de privacidade, e os contratos de proteção e publicação continuam abertos. Próxima deliberação proposta: PV-A09, contagens, denominadores e agregação.
+[Auditoria de conformidade e matriz de reconciliação — etapa 09](conformity-audit-and-reconciliation.md): exame focal ampliado registrado em 22/11/2026. Convergência conceitual com UXA-057, com PV-A02 a PV-A04 resolvidos em nível de direção conceitual pela aprovação de 22/11/2026; contratos, critérios e validações remanescentes seguem abertos. Publicação, superfícies, CAPA, perfil, privacidade e cobertura permanecem pendentes. Não equivale a conformidade integral nem promoção canônica. PV-A05 resolvida em direção conceitual na etapa 09.2; materialização pendente. PV-A06 resolvida em direção conceitual na etapa 09.3; contrato de cadastro e integração pendentes. PV-A07 resolvida em direção conceitual na etapa 09.4; contratos de identidade, perfil e publicação pendentes. PV-A08 recebeu deliberação conceitual na etapa 09.5; a preferência de pré-seleção permanece condicionada à autoridade de privacidade, e os contratos de proteção e publicação continuam abertos. PV-A09 recebeu deliberação conceitual na etapa 09.6: pessoas distintas, união de conjuntos, suporte de relações, denominadores explícitos, recálculo e proteção de base insuficiente. Contratos de cálculo e limiares permanecem pendentes. Próxima deliberação proposta: PV-A16, delimitação da cobertura inicial e evidência real, sem presumir liberação de superfícies.
 
 Delimitação de escopo acordada em 22/11/2026: priorizar perguntas, base de expressões, aprofundamentos adaptativos, anatomia e dinâmica do grafo público, representação dos participantes, fronteiras de integração com Analytics, continuidade temporal e governança da avaliação. Aprofundamento de dashboards e grafo administrativo pertence ao domínio Analytics. A interpretação cognitiva geral e construção de possibilidades futuras pertencem ao domínio Intelligence/AI; não reproduzir conteúdo normativo ou candidato em duas seções.
 
