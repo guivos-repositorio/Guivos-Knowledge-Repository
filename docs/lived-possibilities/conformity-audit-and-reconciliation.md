@@ -2,7 +2,7 @@
 id: GKR-LIVED-POSSIBILITIES-CONFORMITY-AUDIT-CANDIDATE-001
 title: Possibilidades Vividas — Auditoria de Conformidade e Matriz de Reconciliação
 status: proposed
-version: 0.9.0
+version: 0.9.1
 owner: Guivos
 last_updated: 2026-11-22
 normative: false
@@ -107,6 +107,10 @@ Direção aprovada: abrangência conceitual transversal a oportunidades efetivam
 Aprovada a localização da seção Possibilidades Vividas sob Jornada da Pessoa / Avaliação e Reputação; menu candidato atualizado na branch de proposta, preservando a seção existente e sem alterar main. PV-A17 resolvida editorialmente na proposta. PV-A10 e A11 preservam Intervenções Contextuais e R-C/R-D; A12 referência reconciliada; A13 fronteira preservada; A14 dependência externa; A15 validação de experiência visual. Não declarar todos os contratos resolvidos.
 
 A Direção determinou avanço ao Replit somente após validação documental suficientemente completa. A materialização permitirá identificar mudanças/adaptações visuais. Ver [prontidão](replit-prototype-readiness.md): critérios candidatos de aceite e escopo recomendado de protótipo isolado, dados sintéticos e autorização específica após verificação. Esta recomendação não é autorização de execução. Não atribuir percentual sem evidência.
+
+### Deliberação 10 — aplicação independente e integração compartilhada
+
+A Direção aprovou aplicação distinta no Replit, posteriormente integrada de forma compartilhada às páginas pertinentes. Preservar implementação centralizada e fontes de verdade existentes; nenhuma tecnologia de integração, superfície, acesso ou fonte de dados adicional foi adjudicada. Proibição expressa de avançar ao Replit sem autorização humana posterior. Registrar esta condição em G08 e no [documento de prontidão](replit-prototype-readiness.md). Nenhuma execução Replit realizada.
 
 ## 4. Encaminhamento e limites
 
