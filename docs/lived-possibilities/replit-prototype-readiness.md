@@ -2,7 +2,7 @@
 id: GKR-LIVED-POSSIBILITIES-PROTOTYPE-READINESS-CANDIDATE-001
 title: Possibilidades Vividas — Prontidão Documental e Transição ao Replit
 status: proposed
-version: 0.11.0
+version: 0.12.0
 owner: Guivos
 last_updated: 2026-11-23
 normative: false
@@ -71,7 +71,11 @@ Resultado: coerência interna focal suficiente; aceite humano registrado na deli
 
 ### Resultado de D2 — auditoria consolidada
 
-[Auditoria consolidada dos gates e achados](consolidated-readiness-audit-candidate.md) v0.1.0: oito contratos documentais e aceitos, com ressalva G06; 149 cenários de G02–G08 especificados, não executados. PV-A01–PV-A17 classificados. **Não declarar 100% ainda**: RD-01 (fixtures sintéticas rastreáveis), RD-02 (roteiro de observação), RD-03 (checklist de isolamento pré-Replit), RD-04 (privacidade restritiva) e RD-05 (aceite do relatório). Dependências de dados reais, integração e produção classificadas separadamente. D3 não concedida e Replit bloqueado.
+[Auditoria consolidada dos gates e achados](consolidated-readiness-audit-candidate.md) v0.1.0: oito contratos documentais e aceitos, com ressalva G06; 149 cenários de G02–G08 especificados, não executados. PV-A01–PV-A17 classificados. RD-01 a RD-03 concluídos como especificação documental no [plano pré-Replit](synthetic-demonstration-and-isolation-plan-candidate.md) v0.1.0; RD-05 teve aceite documental humano; RD-04 permanece condição obrigatória. **Não declarar 100% antes da conferência final da suficiência documental e da decisão humana subsequente.** A elaboração dos checklists não prova isolamento executado. Dependências de dados reais, integração e produção classificadas separadamente. D3 não concedida e Replit bloqueado.
+
+### Evidência documental RD-01, RD-02, RD-03 e RD-05
+
+[Plano sintético e checklist pré-Replit](synthetic-demonstration-and-isolation-plan-candidate.md) v0.1.0 documenta três oportunidades fictícias, dez pessoas artificiais, doze transições de teste, doze etapas de avaliação visual e doze verificações de isolamento **a executar somente após D3**. A auditoria consolidada recebeu aceite documental humano em 23/11/2026 (RD-05). RD-04 continua como restrição a qualquer simulação ou publicação. Auditoria final de suficiência documental permanece necessária; sem autorização para Replit.
 
 ## 1.1 Aplicação independente e integração compartilhada — decisão humana
 
