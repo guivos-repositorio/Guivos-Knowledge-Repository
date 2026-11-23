@@ -226,6 +226,14 @@ nav:
           - Minhas Avaliações: experience-architecture/person-journey/evaluation-reputation/my-evaluations.md
           - Reputação Contextual: experience-architecture/person-journey/evaluation-reputation/contextual-reputation.md
           - Proteção e Governança: experience-architecture/person-journey/evaluation-reputation/protection-governance.md
+          - Possibilidades Vividas — Documentação Candidata:
+              - Documento Mestre: lived-possibilities/index.md
+              - Modelo Conceitual: lived-possibilities/conceptual-model-and-impact-views.md
+              - Captura e Avaliação: lived-possibilities/evaluation-capture-and-lifecycle.md
+              - Grafo Público: lived-possibilities/public-graph-belonging-and-continuity.md
+              - Descoberta através de Trajetórias: lived-possibilities/trajectory-discovery-and-possibility-construction.md
+              - Auditoria de Conformidade: lived-possibilities/conformity-audit-and-reconciliation.md
+              - Prontidão para protótipo Replit: lived-possibilities/replit-prototype-readiness.md
 
       - Documentos Mestres por Superfície:
           - Entrada Protegida: experience-architecture/person-journey/per-002-protected-entry-master.md
