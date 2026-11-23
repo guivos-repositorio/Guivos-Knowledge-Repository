@@ -2,7 +2,7 @@
 id: GKR-GAI-TRAJECTORY-POSSIBILITY-CONSTRUCTION-CANDIDATE-001
 title: Guivos AI — Compreensão de Trajetórias e Construção de Possibilidades
 status: proposed
-version: 0.1.0
+version: 0.1.1
 owner: Guivos
 last_updated: 2026-11-22
 normative: false
@@ -18,6 +18,8 @@ related:
 # Guivos AI — Compreensão de Trajetórias e Construção de Possibilidades
 
 Candidato subordinado às autoridades [GAI-001 — Knowledge Model](knowledge-model.md), [GIA-COG-001 — Cognitive Reference Architecture](cognitive-reference-architecture.md) e GPA-006. Não constitui autoridade de produto concorrente. Transferência de conteúdo cognitivo anteriormente registrado em Possibilidades Vividas, por decisão humana de delimitação de escopo em 22/11/2026. Não altera a identidade canônica do Guivos Intelligence nem o estado de Guivos.ai como possível interface conversacional.
+
+Referência de identidade e leitura pública localizada na auditoria: [Apresentação da Guivos AI — v1.1.0](../guivos-ai/apresentacao-da-guivos-ai.md). Guivos AI é o conjunto governado de capacidades analíticas especializadas; Guivos Intelligence é o produto transversal responsável pela compreensão útil; Guivos.ai (possível superfície conversacional) não é sinônimo de Guivos AI. Este candidato complementa a apresentação sem alterá-la nem substituir GAI-001, GIA-COG-001 ou GPA-006.
 
 ## 1. Finalidade
 
