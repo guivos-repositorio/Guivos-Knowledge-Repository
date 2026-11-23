@@ -2,7 +2,7 @@
 id: GKR-LIVED-POSSIBILITIES-EVALUATION-CANDIDATE-001
 title: Possibilidades Vividas — Captura, Vocabulário e Ciclo de Avaliação
 status: proposed
-version: 0.3.2
+version: 0.3.3
 owner: Guivos
 last_updated: 2026-11-22
 normative: false
@@ -73,6 +73,12 @@ A compra ou adesão isolada não comprova vivência. Identificar edição, unida
 Deliberação 09.1: apenas vivência efetiva é elegível à avaliação de impacto da oportunidade; contribuição pública requer evidência suficiente e autorização própria. Participação parcial restringe-se à etapa efetivamente vivida. Inscrição pode sustentar avaliação da própria etapa de inscrição nos contratos operacionais, não automaticamente impacto de uma vivência posterior. A Jornada pode preservar registro pessoal de experiência ainda não suficientemente comprovada, sem inclusão automática no agregado público. Não abolir categorias de evidência UXA-057; os critérios suficientes por objeto/edição/etapa ainda precisam ser definidos.
 
 A captura de Possibilidades Vividas é um instrumento de impacto sob R1/P1, relacionado ao Registro de Experiência PAS-001 sem duplicar a autoridade. O instrumento de qualidade operacional permanece independente; não substituir escalas vigentes nem misturar seus resultados no grafo de impacto. Distinguir não aplicável, informação insuficiente, ausência de resposta e ausência de impacto conforme pertinência e contrato. Não fixar a disposição ou obrigatoriedade do formulário operacional por esta deliberação.
+
+### 4.1 Abrangência — deliberação 09.7 (PV-A16)
+
+A capacidade de avaliação de impacto é concebida para toda oportunidade efetivamente vivenciada e elegível, independentemente da área de evolução, gratuidade ou cobrança, modalidade presencial, online ou híbrida e ofertador Organização, Coletivo ou Profissional (sujeito às autoridades próprias). Manter núcleo comum, inclusive perguntas de significado e natureza do impacto e a pergunta de expressão “O que essa experiência representou para você?”. Adaptar aprofundamentos à experiência, sem transformar características da oportunidade em critérios obrigatórios de impacto. Não confundir transação ou presença não comprovada com vivência, nem avaliação operacional com impacto.
+
+A abrangência conceitual não seleciona cobertura inicial real, que continua pendente sob UXA-057: objeto, edição, etapa, período, pessoas elegíveis, evidência, titularidade, representação, não duplicidade, autoridade de publicação, resposta/contestação, governança, recurso e proteção. Não presumir lançamento, autorização do Profissional, nova superfície, novo tratamento de dados ou piloto.
 
 ## 5. Solicitação e acesso pós-encerramento
 
