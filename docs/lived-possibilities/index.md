@@ -2,7 +2,7 @@
 id: GKR-LIVED-POSSIBILITIES-MASTER-CANDIDATE-001
 title: Possibilidades Vividas — Documento Mestre de Fundamentos e Propósito
 status: proposed
-version: 0.7.0
+version: 0.7.1
 owner: Guivos
 last_updated: 2026-11-22
 normative: false
@@ -231,6 +231,8 @@ A localização de uma rota no menu principal vinculada à Experiência e Journe
 Proveniência: deliberação humana no projeto Guivos Knowledge Repository em 22/11/2026. Esta tabela distingue concordância conceitual de adjudicação normativa formal. O identificador, a versão, a rota e a organização desta proposta são candidatos.
 
 ## 13. Exames posteriores e limites
+
+[Auditoria de conformidade e matriz de reconciliação — etapa 09](conformity-audit-and-reconciliation.md): exame focal ampliado registrado em 22/11/2026. Convergência conceitual com UXA-057, com pendências abertas de identidade autoritativa, elegibilidade/evidência, instrumento, publicação, superfícies, CAPA, perfil, privacidade, cobertura e validação. Não equivale a conformidade integral nem promoção canônica. A próxima deliberação proposta é PV-A02 a PV-A04.
 
 Delimitação de escopo acordada em 22/11/2026: priorizar perguntas, base de expressões, aprofundamentos adaptativos, anatomia e dinâmica do grafo público, representação dos participantes, fronteiras de integração com Analytics, continuidade temporal e governança da avaliação. Aprofundamento de dashboards e grafo administrativo pertence ao domínio Analytics. A interpretação cognitiva geral e construção de possibilidades futuras pertencem ao domínio Intelligence/AI; não reproduzir conteúdo normativo ou candidato em duas seções.
 
