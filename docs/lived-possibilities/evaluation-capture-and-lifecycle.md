@@ -2,7 +2,7 @@
 id: GKR-LIVED-POSSIBILITIES-EVALUATION-CANDIDATE-001
 title: Possibilidades Vividas — Captura, Vocabulário e Ciclo de Avaliação
 status: proposed
-version: 0.3.1
+version: 0.3.2
 owner: Guivos
 last_updated: 2026-11-22
 normative: false
@@ -37,7 +37,7 @@ Aprofundamento: inicialmente até três perguntas complementares pertinentes, to
 
 Validação: apresentar relevância, impacto, expressões e aprofundamentos para revisão e correção antes de concluir. Preservar declaração original, distinguir interpretação de autoria e não fabricar relato em nome do participante. Não condicionar conclusão à publicação.
 
-Compartilhamento: decisões distintas para contribuição agregada, identificação, fotografia, vínculo com manifestação, acesso ao perfil público e relatos complementares. Revalidar autorização em cada projeção. A simulação de interface não adjudica valores predefinidos ou dependências entre controles; manter registro protegido por padrão e não presumir adesão pública. Revisão/retirada conforme autoridade vigente.
+Compartilhamento: decisões distintas para contribuição agregada, identificação, fotografia, vínculo com manifestação, acesso ao perfil público e relatos complementares. Revalidar autorização em cada projeção. Deliberação 09.5: apresentar a opção de compartilhar a participação em primeiro lugar; a Direção solicitou seleção inicial marcada e alteração contrária manual. Esta é preferência candidata de interface, condicionada à adjudicação de privacidade, não autorização de publicação. Manter R1 protegido por padrão; exigir autorização própria, específica e comprovável antes de publicar/agregar quando aplicável. Não interpretar ausência de desmarcação como consentimento; onde consentimento for exigido, a opção deve depender de manifestação afirmativa válida, sem depender de pré-marcação. A identidade e as permissões de divulgação individual não podem ser ativadas por inferência ou pela mera submissão. Não substituir uma escolha de privacidade já manifestada por configuração inicial. Distinguir contribuição coletiva não identificada de compartilhamento identificado. A ordem candidata é compartilhar participação, contribuir sem identificação e preservar privacidade; a modalidade exata da seleção inicial e os mecanismos de interface dependem de reconciliação. A regra de não pré-selecionar respostas de avaliação permanece inalterada. Revisão/retirada conforme autoridade vigente.
 
 ## 3. Evolução governada do vocabulário — etapa 02
 
