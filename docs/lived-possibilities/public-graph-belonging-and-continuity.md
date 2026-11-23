@@ -2,9 +2,9 @@
 id: GKR-LIVED-POSSIBILITIES-PUBLIC-GRAPH-CANDIDATE-001
 title: Possibilidades Vividas — Grafo Público, Pertencimento e Continuidade da Jornada
 status: proposed
-version: 0.4.5
+version: 0.4.6
 owner: Guivos
-last_updated: 2026-11-22
+last_updated: 2026-11-23
 normative: false
 maturity: conceptual_deliberation
 related:
@@ -52,6 +52,10 @@ Níveis candidatos de exploração:
 Tipos acordados conceitualmente: oportunidade, família semântica, expressão, aprofundamento e participante. Manifestação emergente pode ser examinada como expressão candidata, não nova taxonomia aprovada. Conexões: agrupamento semântico (família e expressão), coocorrência (mesmas pessoas expressaram ambas), aprofundamento (manifestação e particularidade), participação (vínculo autorizado entre pessoa e manifestação). Continuidade temporal permanece relação de proveniência da avaliação, não quinta aresta pública automaticamente liberada. Não criar arestas estéticas ou sem evidência; coocorrência não implica causalidade.
 
 Tamanho de nó semântico representa quantidade de participantes únicos; cor identifica família semântica; espessura de aresta representa quantidade de participantes que sustentam a relação, quando a métrica for aplicável; destaque indica seleção. Distância é disposição visual, não estatística obrigatória. A CAPA central tem proeminência identitária e não usa a escala de quantidade dos nós semânticos. Nó de pessoa representa identidade, não mérito. Contagem de grupo é união de participantes, não soma de expressões. Escalas, limiares, tratamento de arestas sem contagem e denominadores pendem de validação. Percentuais por eixo usam base válida explicitada, não presumem respostas completas; bases podem diferir.
+
+### Deliberação posterior — prioridade da primeira camada pública (23/11/2026)
+
+A Direção aprovou [manifestações concretas como a primeira camada pública](impact-first-public-graph-presentation-decision.md): após CAPA da oportunidade, mostrar **expressões específicas de impacto** publicáveis com linguagem natural, em vez de obrigar a coroa inicial de doze famílias. “Pertencimento”, “Continuidade” e outras famílias são categorias internas/agrupamentos secundários, não falas literais (“me senti continuidade”). Os cinco tipos de nós e as quatro relações permanecem; **famílias não são removidas do modelo**, apenas deixam de ser primeiro anel fixo. Expressões sem base pública exibível não são fabricadas, e famílias protegidas não devem aparecer como prova de impacto. Pessoas e aprofundamentos ficam ligados transversalmente às manifestações autorizadas; dois eixos e quatro dimensões explicativas não viram anéis. Esta deliberação prevalece sobre uma leitura obrigatória dos níveis candidatos da seção 3 como ordem visual. Não muda G04, R1/P1, proteção, contagens ou fonte da CAPA.
 
 ## 4. Identidade e dinâmica visual — etapas 05.1 a 05.6
 
