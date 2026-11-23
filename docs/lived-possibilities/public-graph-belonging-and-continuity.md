@@ -2,7 +2,7 @@
 id: GKR-LIVED-POSSIBILITIES-PUBLIC-GRAPH-CANDIDATE-001
 title: Possibilidades Vividas — Grafo Público, Pertencimento e Continuidade da Jornada
 status: proposed
-version: 0.4.2
+version: 0.4.3
 owner: Guivos
 last_updated: 2026-11-22
 normative: false
@@ -112,6 +112,14 @@ Minha presença no grafo — conceito aprovado: localizar e destacar as própria
 Autenticidade: somente experiências reais e participação elegível verificada, manifestações rastreáveis a registros legítimos, sem avaliações artificiais ou relatos inventados pela IA; impedir duplicidade e manipulação ou exclusão seletiva pelo ofertador. Preservar moderação independente, contestação e proteção conforme autoridade. Verificar participação não comprova objetivamente sentimentos ou causalidade. Preservar R1/P1 e R-A..R-D conforme UXA-057. Não confundir projeção do grafo com fonte autoritativa. Aplicar elegibilidade, evidência, edição e período; separar participação verificada de percepção autodeclarada. A retirada ou alteração de permissões deverá refletir nos derivados e vínculos públicos, conforme política aplicável, sem ressurgimento indevido.
 
 A exposição de uma identidade poderá revelar participação sensível ou permitir inferências por cruzamentos, inclusive entre oportunidades. Exigir exame específico de finalidade, proteção de menores e contextos sensíveis, minimização, supressão de grupos pequenos, proteção contra extração massiva, abuso, reidentificação e contato indesejado. A existência de perfil público não elimina esses riscos. Não expor Grafo Vivo privado, objetivos ou dados administrativos. A pessoa poderá contribuir sem identificação pública e sem prejuízo da jornada.
+
+### 8.1 Modalidades e proteção — deliberação 09.5 (PV-A08)
+
+Registro privado: sem inclusão no grafo público; acesso protegido pela titular e autoridades legitimamente competentes. Contribuição coletiva sem identificação pública: agrupamentos autorizados e protegidos, sem exposição de identidade. Contribuição coletiva identificada: associação autorizada às manifestações, com permissões distintas para fotografia, vínculo ao perfil, relatos e relevância/impacto individuais. A ausência de foto não exclui contribuição legítima.
+
+A Direção solicitou prioridade de apresentação e seleção inicial da opção de compartilhar a participação, com alteração manual quando a Pessoa preferir não compartilhar. A preferência permanece candidata e subordinada a R1 privado por padrão, P1/publicação autorizada, governança jurídica e proteção da titular. Não criar publicação automática, presumir consentimento por ausência de oposição, ativar identidade por padrão ou substituir escolhas anteriores. Preservar a primeira posição ainda que a pré-seleção não seja admitida no contrato final.
+
+Agregados sem identificação pública não são automaticamente anônimos em sentido técnico ou jurídico. Proteger grupos pequenos, experiências sensíveis, manifestações raras, cruzamentos e consultas sucessivas; ampliar agrupamento ou suprimir a exibição quando necessário. Retirada ou revisão de permissões revalida projeções e derivados conforme autoridade; impedir ressurreição. Não fixar limiar, prazo ou base jurídica nesta decisão.
 
 ## 9. Registro de decisões e pendências
 
