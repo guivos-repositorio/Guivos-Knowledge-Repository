@@ -2,7 +2,7 @@
 id: GKR-LIVED-POSSIBILITIES-PROTOTYPE-READINESS-CANDIDATE-001
 title: Possibilidades Vividas — Prontidão Documental e Transição ao Replit
 status: proposed
-version: 0.8.0
+version: 0.9.0
 owner: Guivos
 last_updated: 2026-11-22
 normative: false
@@ -23,8 +23,8 @@ Cada gate deverá ter evidência verificável, estado, dependências e decisão 
 | G03 — Instrumento | Perguntas, famílias, aprofundamento, validação, não resposta, complementação temporal e critérios de aceite reproduzíveis | Aceite documental humano registrado; validação empírica pendente |
 | G04 — Projeção e contagens | Nós/arestas, pessoas únicas, união, denominadores, ausência, dados insuficientes, atualização e retirada demonstráveis com cenários de teste | Aceite documental humano registrado; proteção e parâmetros de produção pendentes |
 | G05 — Identidade e mídia | Fonte única de CAPA/nome, identidade/foto, fallback, alterações e permissões; simuladas sem acesso a fontes reais | Aceite documental humano registrado; integração real pendente |
-| G06 — Privacidade | Modalidades, autorização afirmativa, não publicação automática, revogação, proteção contra reidentificação e restrição a dados sintéticos. Pré-seleção solicitada permanece condicionada; não produzir regra operacional incompatível | Contrato candidato e 24 cenários documentados; aceite condicionado e decisão humana pendentes |
-| G07 — Interações e acessibilidade | Fit-to-view, grid pontilhado, destaque, estabilidade, janela contextual e navegação bidirecional, alternativa textual, teclado, touch e movimento reduzido | Direção acordada; critérios de aceite pendentes |
+| G06 — Privacidade | Modalidades, autorização afirmativa, não publicação automática, revogação, proteção contra reidentificação e restrição a dados sintéticos. Pré-seleção solicitada permanece condicionada; não produzir regra operacional incompatível | Aceite documental humano condicionado; publicação e base jurídica real pendentes |
+| G07 — Interações e acessibilidade | Fit-to-view, grid pontilhado, destaque, estabilidade, janela contextual e navegação bidirecional, alternativa textual, teclado, touch e movimento reduzido | Contrato candidato e 26 cenários documentados; aceite humano pendente |
 | G08 — Escopo, isolamento e aprovação | Plano de protótipo isolado com dados sintéticos, sem integrações reais, publicação pública, dados pessoais reais, nem alterações em outros projetos; autorização humana específica após revisão | Proposta a adjudicar |
 
 ### Evidência de G01 — revisão focal de 22/11/2026
@@ -59,7 +59,11 @@ Resultado: coerência interna focal suficiente; aceite humano registrado na deli
 
 ### Evidência de G06 — reconciliação de privacidade
 
-[Contrato candidato de privacidade, compartilhamento e prova de autorização](privacy-sharing-and-authorization-acceptance-candidate.md) v0.1.0: três modalidades, matriz de permissões, ação afirmativa quando exigida, privacidade R1/P1, controles de reidentificação/retirada e 24 cenários sintéticos não executados. Ordem de “Compartilhar minha participação” em primeiro lugar preservada. Pré-seleção solicitada **não** produz autorização de publicação por silêncio; efeitos operacionais aguardam adjudicação de base jurídica e privacidade. Aguardando aceite documental humano condicionado quanto à solução, sem pretender conformidade jurídica ou liberar dados reais. G07–G08 continuam abertos; Replit bloqueado.
+[Contrato candidato de privacidade, compartilhamento e prova de autorização](privacy-sharing-and-authorization-acceptance-candidate.md) v0.1.0: três modalidades, matriz de permissões, ação afirmativa quando exigida, privacidade R1/P1, controles de reidentificação/retirada e 24 cenários sintéticos não executados. Ordem de “Compartilhar minha participação” em primeiro lugar preservada. Pré-seleção solicitada **não** produz autorização de publicação por silêncio; efeitos operacionais aguardam adjudicação de base jurídica e privacidade. Aceite documental humano condicionado registrado em 23/11/2026, sem pretender conformidade jurídica ou liberar dados reais. A priorização da opção de compartilhar é mantida; marcação/inação não autoriza divulgação. G07–G08 continuam abertos; Replit bloqueado.
+
+### Evidência de G07
+
+[Contrato candidato de interações e acessibilidade](interaction-accessibility-acceptance-candidate.md) v0.1.0: fit-to-view, grid pontilhado, nó central com CAPA, destaque sem apagar elementos, expansão, estabilidade espacial, painel único no canto superior direito, clique fora e Escape, navegação bidirecional, alternativas textuais, teclado, mobile, movimento reduzido e 26 cenários sintéticos não executados. Aceite humano G07 pendente; Design, parâmetros visuais e testes de usabilidade/acessibilidade reais permanecem abertos. G06 aceito documentalmente com ressalvas, sem autorização de exposição ou de Replit.
 
 ## 1.1 Aplicação independente e integração compartilhada — decisão humana
 
