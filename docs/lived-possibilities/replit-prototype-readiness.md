@@ -2,7 +2,7 @@
 id: GKR-LIVED-POSSIBILITIES-PROTOTYPE-READINESS-CANDIDATE-001
 title: Possibilidades Vividas — Prontidão Documental e Transição ao Replit
 status: proposed
-version: 0.12.0
+version: 0.13.0
 owner: Guivos
 last_updated: 2026-11-23
 normative: false
@@ -72,6 +72,10 @@ Resultado: coerência interna focal suficiente; aceite humano registrado na deli
 ### Resultado de D2 — auditoria consolidada
 
 [Auditoria consolidada dos gates e achados](consolidated-readiness-audit-candidate.md) v0.1.0: oito contratos documentais e aceitos, com ressalva G06; 149 cenários de G02–G08 especificados, não executados. PV-A01–PV-A17 classificados. RD-01 a RD-03 concluídos como especificação documental no [plano pré-Replit](synthetic-demonstration-and-isolation-plan-candidate.md) v0.1.0; RD-05 teve aceite documental humano; RD-04 permanece condição obrigatória. **Não declarar 100% antes da conferência final da suficiência documental e da decisão humana subsequente.** A elaboração dos checklists não prova isolamento executado. Dependências de dados reais, integração e produção classificadas separadamente. D3 não concedida e Replit bloqueado.
+
+### Verificação final de suficiência documental — 23/11/2026
+
+[Relatório final de suficiência documental](final-documentary-sufficiency-verification-candidate.md) v0.1.0: verificadas as 8 especificações de gate, os 149 cenários G02–G08, os 17 achados PV-A01–PV-A17, as 3 oportunidades, 10 pessoas, 12 transições, 12 etapas visuais e 12 verificações de isolamento. **100% do checklist documental restrito ao preparo de pedido de autorização está atendido.** Isso não significa 100% de execução, confiabilidade, conformidade legal, segurança, acessibilidade, integração ou produção: nenhuma fixture executável foi criada e nenhuma verificação ISO foi realizada. G06 preserva ressalva, todas as pendências reais continuam abertas. Resultado final aguarda aceite humano; **D3 não concedida — Replit bloqueado**.
 
 ### Evidência documental RD-01, RD-02, RD-03 e RD-05
 
