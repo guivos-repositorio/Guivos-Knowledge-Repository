@@ -1,8 +1,8 @@
 ---
 id: GKR-LIVED-POSSIBILITIES-MODEL-CANDIDATE-001
-title: Possibilidades Vividas — Modelo Conceitual, Representação Pública e Compreensão do Ofertador
+title: Possibilidades Vividas — Modelo Conceitual, Representação Pública e Fronteiras de Integração
 status: proposed
-version: 0.1.0
+version: 0.2.0
 owner: Guivos
 last_updated: 2026-11-22
 normative: false
@@ -15,7 +15,7 @@ related:
   - GPA-006
 ---
 
-# Modelo conceitual, representação pública e compreensão do ofertador
+# Modelo conceitual, representação pública e fronteiras de integração
 
 Complemento candidato ao [Documento Mestre](index.md). Proveniência: deliberações humanas de 22/11/2026. Acordo conceitual não equivale a adjudicação normativa, validação empírica ou autorização de execução.
 
@@ -30,7 +30,7 @@ Objeto: o impacto da oportunidade aos olhos e sentimentos de quem a viveu, não 
 | Evolução | O que mudou em você? |
 | Potencial | Que novas possibilidades essa experiência despertou? |
 
-As dimensões são independentes, não requisitos sequenciais. Sentimentos podem coexistir, inclusive negativos. Evolução reconhecida não precisa ser imediata; ausência de resposta, ausência de contribuição, neutralidade e incerteza são semanticamente distintas. As frases acima são instrumentação candidata, não questionário final.
+As dimensões são independentes, não requisitos sequenciais. Sentimentos podem coexistir, inclusive negativos. Evolução reconhecida não precisa ser imediata; ausência de resposta, ausência de contribuição, neutralidade e incerteza são semanticamente distintas. As frases acima são perguntas explicativas internas, não quatro questões obrigatórias. O instrumento acordado conceitualmente está em [Captura, vocabulário e ciclo de avaliação](evaluation-capture-and-lifecycle.md).
 
 ## 2. Significado como indicador central
 
@@ -39,7 +39,7 @@ O significado individual representa quanto a vivência foi relevante para a pess
 - Relevância: intensidade do significado atribuído, e não intensidade da emoção ou grau de mérito.
 - Natureza do impacto: favorável, desfavorável, misto, sem impacto percebido ou ainda indeterminado, conforme autodeclaração. Neutralidade e ausência de impacto precisam ser diferenciadas no exame de linguagem.
 
-Exemplo: experiência marcante e desfavorável não pode ser convertida em reputação positiva pela alta relevância. Experiência agradável não comprova contribuição. Não derivar nota única, média universal, ranking ou causalidade a partir dos eixos. Escalas numéricas, cinco níveis verbais, vocabulário, ícones, cores, formas e escolha de exposição pública ainda serão validados.
+Exemplo: experiência marcante e desfavorável não pode ser convertida em reputação positiva pela alta relevância. Experiência agradável não comprova contribuição. Não derivar nota única, média universal, ranking ou causalidade a partir dos eixos. Cinco níveis verbais mais incerteza e as duas perguntas centrais foram acordados conceitualmente; linguagem, ícones, cores, formas e exposição pública permanecem sujeitos a validação.
 
 ## 3. Duas camadas de compreensão
 
@@ -48,7 +48,7 @@ Exemplo: experiência marcante e desfavorável não pode ser convertida em reput
 
 Exemplo sintético: Marina se sentiu inspirada e busca evolução espiritual; Pedro se sentiu indiferente e busca evolução financeira. Isso descreve dois contextos, não prova que a área determinou o sentimento nem que a oportunidade promoveu evolução espiritual ou deixou de promover evolução financeira. O interesse vigente durante a experiência deve ser distinguido de mudanças posteriores; dados ausentes não são inferidos como certezas.
 
-A Guivos AI/Intelligence poderá investigar relações transversais, contribuições inesperadas e potenciais, respeitando autoridades de produto, dados e grafo. Declaração humana, inferência, evidência de participação e mudança observada permanecem distintos.
+O cruzamento contextual constitui consumo pela Guivos AI/Intelligence e não responsabilidade analítica própria da avaliação; respeitar autoridades de produto, dados e grafo. Declaração humana, inferência, evidência de participação e mudança observada permanecem distintos.
 
 ## 4. Representação pública coletiva
 
@@ -72,22 +72,22 @@ Possíveis perspectivas: geral, sentimentos, contribuição, evolução, potenci
 
 Uma oportunidade pode receber novos reconhecimentos de contribuição antes ou depois de meses ou anos, quando a pessoa voluntariamente os registra. Preservar distinção entre data da vivência, data de reconhecimento, data de registro e versão publicada. Atualizar uma experiência não cria avaliações adicionais artificiais. O grafo pode crescer, mudar ou reduzir após retificações e retiradas; não presumir crescimento monotônico.
 
-O acompanhamento administrativo permite compreender contribuições posteriores reconhecidas pelo conjunto de participantes. Não pressupõe acesso aos demais eventos da trajetória nem recolhimento compulsório. Periodicidades, eventuais convites de acompanhamento, consentimentos, retenção, cancelamento e regras de coorte são pendentes. Relatar alcance de acompanhamento, denominadores, perda de seguimento e limites de seleção, sem atribuir mudança automaticamente à oportunidade.
+O acompanhamento administrativo permite compreender contribuições posteriores reconhecidas pelo conjunto de participantes. Não pressupõe acesso aos demais eventos da trajetória nem recolhimento compulsório. Atualizações espontâneas ou por convite opcional, contextualizado e não repetitivo foram acordadas conceitualmente; periodicidades, consentimentos, retenção e cancelamento permanecem pendentes. Regras de coorte pertencem ao Analytics. Relatar alcance de acompanhamento, denominadores, perda de seguimento e limites de seleção, sem atribuir mudança automaticamente à oportunidade.
 
-## 6. Analytics e grafo administrativo
+## 6. Fronteiras de integração — etapa 07
 
-Finalidade: informar o gestor da oportunidade sobre o que as suas oportunidades despertam, proporcionam ou contribuem para modificar, inclusive em relação a contextos autorizados e ao longo do tempo. Aplicabilidade conceitual a Organização, Coletivo e Profissional, sujeita à competência e reconciliação canônica de cada ofertador.
+Escopo acordado: Possibilidades Vividas descreve origem, conteúdo, autoria, proveniência, temporalidade, elegibilidade e restrições de uso da avaliação. Não define dashboards, indicadores gerenciais, filtros, comparações, regras de coorte, grafo administrativo, algoritmos de recomendação ou construção de trajetórias futuras.
 
-Exemplos de análises candidatas: distribuição de sentimentos, relevância e natureza do impacto; contribuição percebida; mudanças reconhecidas posteriormente; potencial despertado; cruzamentos contextuais agregados. Nenhum KPI, fórmula, limiar, segmentação, benchmark ou acesso individual está aprovado. A leitura do gestor não substitui a interpretação da pessoa.
+Informações potencialmente disponibilizáveis sob autorização própria: relevância, natureza do impacto, percepções, contribuições, evolução reconhecida, potencial despertado, aprofundamentos e temporalidade. Disponibilidade de registro não concede processamento ou disclosure automático.
 
-Três perspectivas:
-| Grafo | Centro | Limite |
-|---|---|---|
-| Vivo da Pessoa | Trajetória individual | Controle da pessoa; não é painel de terceiros |
-| Público da oportunidade | Vivências coletivas | Exposição autorizada, contextual e minimizada |
-| Administrativo do ofertador | Impacto das oportunidades sob sua competência | Agregação protegida; acesso individual somente mediante autoridade específica |
+| Consumidor | Responsabilidade sob autoridade própria |
+|---|---|
+| Jornada da Pessoa / Grafo Vivo | Relacionar vivências à trajetória individual, objetivos, condições, possibilidades e direcionamentos |
+| Guivos AI / Intelligence | Interpretação contextual governada, sem inventar declarações nem presumir causalidade |
+| Analytics / ofertadores autorizados | Compreensão coletiva e institucional do impacto, dentro de competência e minimização |
+| Guivos Business | Consumo de inteligência coletiva dentro da autoridade própria, não acesso automático a avaliações individuais |
 
-A reutilização dos modos Graph, Dividido e Workbench no painel administrativo é candidata. Não há definição de motores, schema, tecnologia, layout ou interfaces nesta etapa.
+O grafo público permanece uma experiência humana de compreensão do impacto da oportunidade; o Grafo Vivo da Pessoa representa sua trajetória privada; o grafo administrativo é superfície analítica distinta. Nenhum é acesso irrestrito ao outro. A análise administrativa deve ser desenvolvida no [Documento Mestre Global de Dashboards, KPIs e Analytics](../intelligence-architecture/dashboards-kpis-analytics-master-specification.md), sob suas autoridades; a construção de possibilidades na [proposta de Guivos AI](../intelligence-architecture/ai-trajectory-and-possibility-construction-candidate.md). Aplicabilidade a Organização, Coletivo e Profissional permanece sujeita à competência e reconciliação canônica. Não adjudicar KPI, fórmula, filtro, modo Graph/Dividido/Workbench, permissão, layout ou contrato de serving aqui.
 
 ## 7. Privacidade, agregação e integridade
 
@@ -97,8 +97,6 @@ Antes da liberação: estabelecer limiares de proteção, supressão/agrupamento
 
 ## 8. Registro de decisões e próximos exames
 
-Acordado conceitualmente em 22/11/2026: centralidade do impacto sobre a área; segunda camada contextual; painel administrativo e acompanhamento longitudinal; visualização por grafo; significado como indicador central; independência relevância/natureza; representação pública coletiva com aprofundamento individual autorizado.
+Acordado conceitualmente: centralidade do impacto sobre a área; segunda camada contextual sob autoridade do consumidor; significado central e independência relevância/natureza; representação pública coletiva com aprofundamento individual autorizado; separação dos três grafos; integração com Analytics limitada à fronteira de disponibilização e consumo. Acompanhamento temporal da avaliação pertence a Possibilidades Vividas; análise longitudinal administrativa pertence ao Analytics.
 
-Pendentes: nomenclatura internacional, instrumentos de avaliação, validação semântica e intercultural, modelo de agregação, autoridade dos objetos, privacidade e governança, desenho visual, critérios de publicação, requisitos de cobertura, contratos funcionais e arquitetura técnica. Examinar corpus, inclusive UXA-057 e GKR-STATE-001, antes de solicitar promoção.
-
-Não cria superfície, transição, KPI, permissão, nova autoridade normativa nem autorização de implementação.
+Pendentes instrumentos e taxonomia definitivos, validação semântica e intercultural, agregação, autoridade dos objetos, privacidade, governança, design, publicação, contratos e arquitetura. Examinar corpus, inclusive UXA-057 e GKR-STATE-001, antes de solicitar promoção. Não cria superfície, transição, KPI, permissão, autoridade normativa ou autorização de implementação.
