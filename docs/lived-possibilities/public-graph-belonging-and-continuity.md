@@ -2,7 +2,7 @@
 id: GKR-LIVED-POSSIBILITIES-PUBLIC-GRAPH-CANDIDATE-001
 title: Possibilidades Vividas — Grafo Público, Pertencimento e Continuidade da Jornada
 status: proposed
-version: 0.4.1
+version: 0.4.2
 owner: Guivos
 last_updated: 2026-11-22
 normative: false
@@ -78,6 +78,22 @@ O mesmo participante pode conectar-se a várias manifestações autorizadas dess
 A possibilidade de conhecer quem já viveu uma oportunidade permite ao visitante compreender melhor a comunidade que se formou ao redor dela, descobrir pessoas e considerar fazer parte de futuras vivências. O visitante pode selecionar o nó individual e, quando houver autorização específica, seguir para o perfil público correspondente. A autorização deve ser revalidada; perfil público existente não equivale à autorização de vínculo público com uma experiência.
 
 A janela contextual do participante prioriza a vivência naquela oportunidade: nome/foto permitidos, participação verificada, relevância e impacto individual autorizados, expressões e relatos complementares autorizados; acesso ao perfil público é secundário e requer permissão específica. Selecionar pessoa destaca todas as manifestações autorizadas que sustentou naquela oportunidade, sem revelar vínculos privados nem apagar o restante do grafo. Autorizar foto, identificação, relato, vínculo com manifestação, navegação ao perfil e eventual contato são finalidades distintas; nenhum vínculo presume consentimento para outro. A pessoa pode ser encontrada apenas nos contextos autorizados. Não inferir atributos privados, classificar público por valor pessoal, excluir por afinidade presumida ou induzir exposição para pertencer.
+
+### 6.0 Integração com o Perfil Público da Pessoa — deliberação 09.4 (PV-A07)
+
+Direção aprovada em 22/11/2026: uma única identidade oficial da Pessoa e diferentes contextos de exposição, controlados pela titular. Nome, fotografia e identidade pública devem provir da fonte competente do perfil oficial da Guivos; não criar perfil de avaliações nem cadastro independente de identidade. Reutilizar o [Perfil Público de Experiências da Pessoa](../experience-architecture/perfil-publico-experiencias-pessoa/modelo-funcional.md), ainda candidato, quando autorizado e contratualmente materializado.
+
+| Evento | Comportamento acordado |
+|---|---|
+| Alteração autorizada da foto ou nome | Atualizar as projeções identificadas autorizadas, sem alterar autoria ou experiência histórica. |
+| Retirada de fotografia | Retirar representação fotográfica; eventual identificação textual depende de autorização própria. |
+| Perfil tornado privado | Desabilitar acesso público ao perfil e revalidar visibilidades dependentes; não presumir revogação de permissões independentes. |
+| Retirada da identificação no grafo | Retirar identificação, fotos e vínculos que revelem a identidade; preservar somente agregação ainda legitimamente autorizada e protegida. |
+| Retirada da autorização de agregação | Atualizar agrupamentos e derivados afetados conforme autoridade, retenção e política aplicáveis. |
+
+Perfil público existente não concede vínculo público com uma oportunidade. Identificação em uma vivência não permite acesso à trajetória privada. Autorizações de foto, identidade, relato, vínculo com manifestação, agregação e navegação ao perfil são distintas; revalidar o escopo na apresentação e em alterações, sem ressurreição por cache, replay ou restore. Nenhuma permissão de contato, seguidores, amizade ou outra relação social é criada. Preservar a experiência como objeto do grafo, não a pessoa como objeto de reputação universal.
+
+A decisão é conceitual. Contratos de identidade, perfil público, direitos, dependências entre permissões, sincronização, eventual identificação alternativa, privacidade e segurança precisam de adjudicação própria. Não alterar a documentação normativa de identidade ou liberar publicação identificada.
 
 ### 6.1 Delimitação posterior — descoberta, não vínculo social
 
