@@ -2,7 +2,7 @@
 id: GKR-LIVED-POSSIBILITIES-MASTER-CANDIDATE-001
 title: Possibilidades Vividas — Documento Mestre de Fundamentos e Propósito
 status: proposed
-version: 0.7.1
+version: 0.8.0
 owner: Guivos
 last_updated: 2026-11-22
 normative: false
@@ -102,7 +102,11 @@ O princípio vigente “Satisfação não comprova impacto” é convergente com
 
 Distinguir duas finalidades: feedback sobre a entrega do ofertador e compreensão da vivência na trajetória da pessoa. A primeira pode ser tratada em camada independente, conforme futura adjudicação. A segunda é o foco deste documento. Não há supressão de mecanismos existentes, mudança de critérios normativos, alteração de reputação ou autorização de novas superfícies.
 
-R1 (registro privado autoritativo) e P1 (objeto público distinto, quando autorizado) não se confundem. R-A, R-B, R-C e R-D permanecem sob competência vigente. A escolha da relação física entre Possibilidades Vividas e esses objetos exige exame específico: não presumir que o registro de trajetória seja necessariamente R1, nem multiplicar autoridades.
+Deliberação humana da etapa 09.1 (22/11/2026): Possibilidades Vividas é extensão especializada candidata da autoridade UXA-057, não um sistema paralelo. Utiliza R1 como registro privado autoritativo da avaliação e P1 como objeto público distinto, quando autorizado; o Registro de Experiência PAS-001 permanece responsável pelo vivido e se relaciona à avaliação sem se confundir com ela. O grafo público é projeção autorizada, não fonte autoritativa. R-A, R-B, R-C e R-D permanecem sob competência vigente. A relação física, esquema de dados, cardinalidade e contratos de publicação ainda exigem exame; não criar segundo registro autoritativo.
+
+A elegibilidade para avaliar o impacto de uma oportunidade exige vivência efetiva no escopo correspondente; a contribuição pública exige evidência suficiente e autoridade de agregação/publicação. Inscrição, compra e interesse não comprovam vivência posterior. Participação parcial limita-se à etapa vivida, e outra edição permanece distinta. O registro pessoal de experiência ainda não suficientemente comprovada não implica inclusão automática no grafo. Preservar categorias de evidência UXA-057 e definir critérios por natureza da oportunidade.
+
+Impacto na pessoa e qualidade operacional são finalidades independentes sob a autoridade comum. O grafo público de Possibilidades Vividas trata exclusivamente do impacto percebido na pessoa: relevância, natureza do impacto, percepções, contribuições, evolução reconhecida e potencial despertado, inclusive manifestações adversas, mistas, ausência de impacto e incerteza. Organização, pontualidade, comunicação, acessibilidade, cumprimento da proposta e outros critérios de qualidade operacional não integram suas métricas ou nós. Um relato de impacto pode contextualizar uma circunstância operacional, sem convertê-la em indicador operacional do grafo. Preservar instrumentos operacionais, segurança e mecanismos de governança em seus contextos próprios.
 
 Nenhum identificador de superfície ou transição é criado. Preservar experiência real delimitada, elegibilidade, evidência, versão de critérios, não duplicidade, escopo de visibilidade, moderação independente e recurso. Eventual exibição pública ou acesso administrativo depende de extensão explícita dos contratos correspondentes.
 
@@ -136,7 +140,7 @@ Nenhum protótipo anteriormente explorado foi aprovado como solução final. Ref
 
 A experiência pública deve priorizar uma representação coletiva, dinâmica e navegável da oportunidade, por gráfico ou grafo. Cada ponto ou nó de análise representa um agrupamento de percepções, contribuições, mudanças, potenciais ou outros aspectos autorizados, fundamentado em registros reais e delimitados. A consulta individual é secundária, acessível por aprofundamento no ponto selecionado, para conhecer registros e relatos cuja exposição foi autorizada. Não equivale à publicação compulsória de identidades nem garante veracidade objetiva de sentimentos; participação verificada e conteúdo autorrelatado são distintos.
 
-A representação deve contemplar manifestações favoráveis, desfavoráveis, mistas, ausência de impacto e incerteza sem ocultação seletiva. A mesma pessoa pode contribuir a vários agrupamentos; não duplicar pessoas dentro do mesmo indicador ou confundir total de registros com total de participantes. A representação poderá mudar com registros posteriores, respeitando versão, contexto, edição, período, retirada e proveniência.
+A representação trata exclusivamente do impacto na pessoa, nunca de indicadores de qualidade operacional do ofertador. A representação deve contemplar manifestações favoráveis, desfavoráveis, mistas, ausência de impacto e incerteza sem ocultação seletiva. A mesma pessoa pode contribuir a vários agrupamentos; não duplicar pessoas dentro do mesmo indicador ou confundir total de registros com total de participantes. A representação poderá mudar com registros posteriores, respeitando versão, contexto, edição, período, retirada e proveniência.
 
 ## 10.2 Fronteiras de integração com Guivos AI, Jornada e Analytics — direção acordada
 
@@ -196,7 +200,9 @@ A localização de uma rota no menu principal vinculada à Experiência e Journe
 | Elemento | Estado de trabalho em 22/11/2026 |
 |---|---|
 | Propósito centrado no significado pessoal da vivência | Acordado conceitualmente |
-| Distinção entre qualidade operacional e impacto pessoal | Acordada conceitualmente |
+| Distinção entre qualidade operacional e impacto pessoal | Acordada; grafo exclusivamente de impacto na pessoa |
+| R1/P1 e Registro de Experiência PAS-001 | Autoridade conceitual acordada; materialização e contratos pendentes |
+| Vivência efetiva e evidência suficiente para agregação pública | Acordadas; critérios por objeto e etapa pendentes |
 | Percepção, contribuição, evolução e potencial | Base acordada; contrato funcional pendente |
 | Evolução temporal da percepção | Acordada conceitualmente |
 | Impacto combinado e acumulado | Acordado conceitualmente |
@@ -232,12 +238,12 @@ Proveniência: deliberação humana no projeto Guivos Knowledge Repository em 22
 
 ## 13. Exames posteriores e limites
 
-[Auditoria de conformidade e matriz de reconciliação — etapa 09](conformity-audit-and-reconciliation.md): exame focal ampliado registrado em 22/11/2026. Convergência conceitual com UXA-057, com pendências abertas de identidade autoritativa, elegibilidade/evidência, instrumento, publicação, superfícies, CAPA, perfil, privacidade, cobertura e validação. Não equivale a conformidade integral nem promoção canônica. A próxima deliberação proposta é PV-A02 a PV-A04.
+[Auditoria de conformidade e matriz de reconciliação — etapa 09](conformity-audit-and-reconciliation.md): exame focal ampliado registrado em 22/11/2026. Convergência conceitual com UXA-057, com PV-A02 a PV-A04 resolvidos em nível de direção conceitual pela aprovação de 22/11/2026; contratos, critérios e validações remanescentes seguem abertos. Publicação, superfícies, CAPA, perfil, privacidade e cobertura permanecem pendentes. Não equivale a conformidade integral nem promoção canônica. Próxima deliberação proposta: PV-A05, integração com superfícies e continuidade R-B.
 
 Delimitação de escopo acordada em 22/11/2026: priorizar perguntas, base de expressões, aprofundamentos adaptativos, anatomia e dinâmica do grafo público, representação dos participantes, fronteiras de integração com Analytics, continuidade temporal e governança da avaliação. Aprofundamento de dashboards e grafo administrativo pertence ao domínio Analytics. A interpretação cognitiva geral e construção de possibilidades futuras pertencem ao domínio Intelligence/AI; não reproduzir conteúdo normativo ou candidato em duas seções.
 
 - Confrontar o corpus vigente, especialmente UXA-057, modelos da pessoa, oportunidades, inteligência, grafo, marca e privacidade.
-- Delimitar entidades, finalidade, autoridades e eventual relação entre registros de trajetória e R1/P1.
+- Materializar contratualmente a relação conceitual já acordada entre Registro de Experiência, R1 e P1, preservando suas autoridades.
 - Validar dimensões, linguagem e ausência de indução com evidências de usuários e diferentes culturas.
 - Definir condições de reavaliação, proveniência, evidência, não duplicidade, privacidade e eventuais agregações.
 - Submeter divergências e decisões ao titular antes de promoção formal.
