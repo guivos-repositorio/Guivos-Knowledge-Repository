@@ -2,7 +2,7 @@
 id: GKR-LIVED-POSSIBILITIES-PROTOTYPE-READINESS-CANDIDATE-001
 title: Possibilidades Vividas — Prontidão Documental e Transição ao Replit
 status: proposed
-version: 0.4.0
+version: 0.5.0
 owner: Guivos
 last_updated: 2026-11-22
 normative: false
@@ -19,8 +19,8 @@ Cada gate deverá ter evidência verificável, estado, dependências e decisão 
 | Gate | Evidência esperada | Estado inicial |
 |---|---|---|
 | G01 — Coerência conceitual e escopo | Documento Mestre e complementos alinhados; grafo exclusivamente de impacto; distinção operacional, Jornada, AI e Analytics | Aceite documental humano registrado; sem promoção canônica |
-| G02 — Autoridade e fluxo | Contrato candidato de Registro de Experiência, R1/P1, R-A/R-B, limites R-C/R-D; três pontos de acesso; estados e idempotência; não criar SURF/TRN por analogia | Contrato candidato e 15 cenários documentados; aceite humano pendente |
-| G03 — Instrumento | Perguntas, famílias, aprofundamento, validação, não resposta, complementação temporal e critérios de aceite reproduzíveis | Direção acordada; especificação de teste pendente |
+| G02 — Autoridade e fluxo | Contrato candidato de Registro de Experiência, R1/P1, R-A/R-B, limites R-C/R-D; três pontos de acesso; estados e idempotência; não criar SURF/TRN por analogia | Aceite documental humano registrado; contratos de produção pendentes |
+| G03 — Instrumento | Perguntas, famílias, aprofundamento, validação, não resposta, complementação temporal e critérios de aceite reproduzíveis | Contrato candidato e 20 cenários documentados; aceite humano pendente |
 | G04 — Projeção e contagens | Nós/arestas, pessoas únicas, união, denominadores, ausência, dados insuficientes, atualização e retirada demonstráveis com cenários de teste | Direção acordada; contrato e testes candidatos pendentes |
 | G05 — Identidade e mídia | Fonte única de CAPA/nome, identidade/foto, fallback, alterações e permissões; simuladas sem acesso a fontes reais | Direção acordada; contratos de integração pendentes |
 | G06 — Privacidade | Modalidades, autorização afirmativa, não publicação automática, revogação, proteção contra reidentificação e restrição a dados sintéticos. Pré-seleção solicitada permanece condicionada; não produzir regra operacional incompatível | Pendente de reconciliação |
@@ -43,7 +43,11 @@ Resultado: coerência interna focal suficiente; aceite humano registrado na deli
 
 ### Evidência de G02
 
-[Contrato funcional candidato de autoridade e fluxos](authority-and-flow-contract-candidate.md) v0.1.0: objetos, elegibilidade e categorias de evidência, handoffs, estados privados/públicos/de governança, idempotência, revalidação, falhas e 15 cenários sintéticos. Confrontado com UXA-057 e PAS-001, sem adjudicação de superfícies, cobertura real ou esquema físico. Apto a deliberação documental quanto ao protótipo; testes não executados, contratos de produção continuam abertos. G01 aceito, G02 aguarda aceite; G03–G08 seguem abertos. Nenhuma ação Replit.
+[Contrato funcional candidato de autoridade e fluxos](authority-and-flow-contract-candidate.md) v0.1.0: objetos, elegibilidade e categorias de evidência, handoffs, estados privados/públicos/de governança, idempotência, revalidação, falhas e 15 cenários sintéticos. Confrontado com UXA-057 e PAS-001, sem adjudicação de superfícies, cobertura real ou esquema físico. Apto a deliberação documental quanto ao protótipo; testes não executados, contratos de produção continuam abertos. G01 e G02 aceitos documentalmente; G03 aguarda aceite; G04–G08 seguem abertos. Nenhuma ação Replit.
+
+### Evidência de G03
+
+[Contrato candidato do instrumento e critérios de aceite](evaluation-instrument-acceptance-candidate.md) v0.1.0: dois eixos, seis opções de relevância contando incerteza, cinco naturezas, expressão híbrida, doze famílias candidatas, aprofundamento opcional, revisão, continuação temporal, distinções semânticas e 20 cenários sintéticos não executados. G03 submetido a aceite documental; linguagem definitiva, privacidade de compartilhamento G06, testes empíricos e contratos operacionais seguem abertos. O aceite humano de G02 foi registrado nesta rodada e não autoriza Replit.
 
 ## 1.1 Aplicação independente e integração compartilhada — decisão humana
 
