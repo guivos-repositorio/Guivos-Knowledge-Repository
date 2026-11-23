@@ -2,7 +2,7 @@
 id: GKR-LIVED-POSSIBILITIES-MODEL-CANDIDATE-001
 title: Possibilidades Vividas — Modelo Conceitual, Representação Pública e Fronteiras de Integração
 status: proposed
-version: 0.2.0
+version: 0.3.0
 owner: Guivos
 last_updated: 2026-11-22
 normative: false
@@ -21,7 +21,7 @@ Complemento candidato ao [Documento Mestre](index.md). Proveniência: deliberaç
 
 ## 1. Avaliação da vivência
 
-Objeto: o impacto da oportunidade aos olhos e sentimentos de quem a viveu, não uma nota sobre organização, pontualidade, entrega ou pessoa. Preservar canais próprios de qualidade, segurança, denúncia e responsabilidade. Não pressupor que houve contribuição.
+Objeto exclusivo do grafo público: impacto percebido da oportunidade na pessoa que efetivamente a viveu. Impacto e avaliação operacional são finalidades independentes sob UXA-057; organização, pontualidade, comunicação, acessibilidade e cumprimento da proposta não constituem dimensões, nós ou indicadores operacionais deste grafo. Circunstâncias operacionais podem contextualizar relatos de impacto sem conversão em métricas de qualidade. Preservar canais próprios de qualidade, segurança, denúncia e responsabilidade. Não pressupor que houve contribuição.
 
 | Dimensão explicativa | Pergunta candidata |
 |---|---|
@@ -91,7 +91,7 @@ O grafo público permanece uma experiência humana de compreensão do impacto da
 
 ## 7. Privacidade, agregação e integridade
 
-Preservar R1 privado e P1 público distinto conforme UXA-057. A relação do registro de trajetória com R1/P1 exige exame próprio. Publicar parte de um relato não autoriza divulgação da trajetória, cruzamento com objetivos pessoais ou contato administrativo. Participação em experiências sensíveis, áreas espirituais ou outros atributos pessoais não devem ser expostas por inferência, filtros ou grupos pequenos.
+Deliberação 09.1: usar R1 privado autoritativo e P1 público distinto conforme UXA-057, sem sistema de avaliação paralelo. Associar ao Registro de Experiência PAS-001, que governa o vivido, sem confundir objetos ou transferir autoridade. O grafo é projeção autorizada, não registro autoritativo. Materialização e contratos permanecem pendentes. Publicar parte de um relato não autoriza divulgação da trajetória, cruzamento com objetivos pessoais ou contato administrativo. Participação em experiências sensíveis, áreas espirituais ou outros atributos pessoais não devem ser expostas por inferência, filtros ou grupos pequenos.
 
 Antes da liberação: estabelecer limiares de proteção, supressão/agrupamento e prevenção de reidentificação por cruzamentos sucessivos; distinguir base elegível, respondentes, participantes únicos, registros publicados e contribuições agregadas; versionar critérios e método; tratar amostra insuficiente e não resposta; prevenir duplicidade, manipulação e seleção de relatos apenas positivos; aplicar retirada, moderação, recurso e atualização de projeções. Nenhum limiar numérico é fixado.
 
@@ -99,4 +99,4 @@ Antes da liberação: estabelecer limiares de proteção, supressão/agrupamento
 
 Acordado conceitualmente: centralidade do impacto sobre a área; segunda camada contextual sob autoridade do consumidor; significado central e independência relevância/natureza; representação pública coletiva com aprofundamento individual autorizado; separação dos três grafos; integração com Analytics limitada à fronteira de disponibilização e consumo. Acompanhamento temporal da avaliação pertence a Possibilidades Vividas; análise longitudinal administrativa pertence ao Analytics.
 
-Pendentes instrumentos e taxonomia definitivos, validação semântica e intercultural, agregação, autoridade dos objetos, privacidade, governança, design, publicação, contratos e arquitetura. Examinar corpus, inclusive UXA-057 e GKR-STATE-001, antes de solicitar promoção. Não cria superfície, transição, KPI, permissão, autoridade normativa ou autorização de implementação.
+Acordados na etapa 09.1: autoridade R1/P1, associação ao Registro de Experiência PAS-001, vivência efetiva e evidência suficiente para contribuição pública, independência do instrumento de impacto e operacional. Pendentes instrumentos e taxonomia definitivos, validação semântica e intercultural, agregação, materialização dos contratos dos objetos, privacidade, governança, design, publicação, contratos e arquitetura. Examinar corpus, inclusive UXA-057 e GKR-STATE-001, antes de solicitar promoção. Não cria superfície, transição, KPI, permissão, autoridade normativa ou autorização de implementação.
