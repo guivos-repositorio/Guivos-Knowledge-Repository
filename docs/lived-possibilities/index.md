@@ -2,7 +2,7 @@
 id: GKR-LIVED-POSSIBILITIES-MASTER-CANDIDATE-001
 title: Possibilidades Vividas — Documento Mestre de Fundamentos e Propósito
 status: proposed
-version: 0.8.1
+version: 0.8.2
 owner: Guivos
 last_updated: 2026-11-22
 normative: false
@@ -168,7 +168,7 @@ PER-203 é candidato à extensão expressa para exibição contextual; Minhas Av
 
 Preservar expressões específicas e agrupamentos semânticos superiores com expansão progressiva. A cor representa natureza semântica, não mérito ou favorabilidade. O grafo é vivo, orgânico, interativo e estável durante a análise, preservando memória espacial e destacando relações sem eliminar os demais elementos.
 
-A pessoa é participante da construção coletiva, não apenas autora de avaliação. Algumas fotografias de participantes elegíveis aparecem já na visão inicial, distribuídas entre manifestações, com foto de perfil e identificação autorizadas, rotatividade entre visitas e neutralidade. Ausência de foto não impede avaliação ou aprofundamento autorizado. O nó central utiliza a CAPA oficial da oportunidade (primeira imagem da galeria atribuída no cadastro), não foto de perfil do ofertador. A janela contextual única permite navegação bidirecional e prioriza a vivência da pessoa antes do acesso específico ao perfil público. A presença identificada não é condição de contribuição agregada. Conhecer pessoas que viveram uma oportunidade pode apoiar descoberta da comunidade, identificação e decisão voluntária de fazer parte de vivências futuras.
+A pessoa é participante da construção coletiva, não apenas autora de avaliação. Algumas fotografias de participantes elegíveis aparecem já na visão inicial, distribuídas entre manifestações, com foto de perfil e identificação autorizadas, rotatividade entre visitas e neutralidade. Ausência de foto não impede avaliação ou aprofundamento autorizado. O nó central utiliza a CAPA oficial da oportunidade (primeira imagem da galeria atribuída no cadastro), não foto de perfil do ofertador. Conforme deliberação 09.3, nome e CAPA provêm exclusivamente da fonte autoritativa da oportunidade e acompanham automaticamente suas alterações autorizadas; imagem indisponível recebe representação neutra temporária. Preservar identidade de cada edição, avaliações e contexto histórico, sem cadastro visual paralelo. A janela contextual única permite navegação bidirecional e prioriza a vivência da pessoa antes do acesso específico ao perfil público. A presença identificada não é condição de contribuição agregada. Conhecer pessoas que viveram uma oportunidade pode apoiar descoberta da comunidade, identificação e decisão voluntária de fazer parte de vivências futuras.
 
 Preservar visibilidade contextual, separação de identidade, relato, foto e acesso ao perfil, revogação e proteção de dados; não presumir contato, exposição da trajetória privada, ranking ou reconhecimento de mérito. O mesmo participante pode sustentar múltiplas manifestações autorizadas sem duplicidade lógica. Cinco tipos de nós e quatro relações acordados conceitualmente; quantidade de participantes únicos orienta tamanho e espessura quando aplicável. Minha presença no grafo permite localização privada da própria contribuição, com distinção da projeção pública, sem exigir exposição; fortalece pertencimento e confiança, sem comprovar autenticidade de todos os registros. O grafo público é humano e claro, não dashboard administrativo. Escalas, contornos, parâmetros, permissões e contratos sujeitos a validação.
 
@@ -233,7 +233,8 @@ A localização de uma rota no menu principal vinculada à Experiência e Journe
 | Vocabulário em quatro níveis e doze famílias iniciais | Base candidata acordada; taxonomia definitiva pendente |
 | Aprofundamento até três perguntas iniciais, validação e compartilhamento separado | Acordados conceitualmente |
 | Cinco tipos de nós, quatro relações e expansão progressiva | Acordados conceitualmente; parâmetros pendentes |
-| CAPA oficial da oportunidade e fotos de pessoas na abertura | Acordados; autoridade de cadastro e elegibilidade a reconciliar |
+| CAPA e nome da oportunidade — fonte única, atualização automática e fallback neutro | Acordados; contrato de cadastro, mídia e integração pendentes |
+| Fotos de pessoas na abertura | Acordadas; elegibilidade e autorização a reconciliar |
 | Janela contextual bidirecional e prioridade da vivência | Acordadas conceitualmente |
 | Minha presença no grafo e autenticidade rastreável | Acordadas conceitualmente; contratos pendentes |
 | Atualização espontânea ou convite contextual opcional | Acordada; canais e cadência pendentes |
@@ -245,7 +246,7 @@ Proveniência: deliberação humana no projeto Guivos Knowledge Repository em 22
 
 ## 13. Exames posteriores e limites
 
-[Auditoria de conformidade e matriz de reconciliação — etapa 09](conformity-audit-and-reconciliation.md): exame focal ampliado registrado em 22/11/2026. Convergência conceitual com UXA-057, com PV-A02 a PV-A04 resolvidos em nível de direção conceitual pela aprovação de 22/11/2026; contratos, critérios e validações remanescentes seguem abertos. Publicação, superfícies, CAPA, perfil, privacidade e cobertura permanecem pendentes. Não equivale a conformidade integral nem promoção canônica. PV-A05 resolvida em direção conceitual na etapa 09.2; materialização pendente. Próxima deliberação proposta: PV-A06, CAPA e identidade da oportunidade.
+[Auditoria de conformidade e matriz de reconciliação — etapa 09](conformity-audit-and-reconciliation.md): exame focal ampliado registrado em 22/11/2026. Convergência conceitual com UXA-057, com PV-A02 a PV-A04 resolvidos em nível de direção conceitual pela aprovação de 22/11/2026; contratos, critérios e validações remanescentes seguem abertos. Publicação, superfícies, CAPA, perfil, privacidade e cobertura permanecem pendentes. Não equivale a conformidade integral nem promoção canônica. PV-A05 resolvida em direção conceitual na etapa 09.2; materialização pendente. PV-A06 resolvida em direção conceitual na etapa 09.3; contrato de cadastro e integração pendentes. Próxima deliberação proposta: PV-A07, integração com o Perfil Público de Experiências da Pessoa.
 
 Delimitação de escopo acordada em 22/11/2026: priorizar perguntas, base de expressões, aprofundamentos adaptativos, anatomia e dinâmica do grafo público, representação dos participantes, fronteiras de integração com Analytics, continuidade temporal e governança da avaliação. Aprofundamento de dashboards e grafo administrativo pertence ao domínio Analytics. A interpretação cognitiva geral e construção de possibilidades futuras pertencem ao domínio Intelligence/AI; não reproduzir conteúdo normativo ou candidato em duas seções.
 
