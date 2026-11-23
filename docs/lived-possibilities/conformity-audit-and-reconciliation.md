@@ -2,7 +2,7 @@
 id: GKR-LIVED-POSSIBILITIES-CONFORMITY-AUDIT-CANDIDATE-001
 title: Possibilidades Vividas — Auditoria de Conformidade e Matriz de Reconciliação
 status: proposed
-version: 0.3.0
+version: 0.4.0
 owner: Guivos
 last_updated: 2026-11-22
 normative: false
@@ -80,8 +80,12 @@ A aprovação não modifica a autoridade canônica, não encerra automaticamente
 
 Direção aprovada: detalhe da oportunidade (grafo público de impacto), formulário independente (R-A) e Minhas Avaliações (R-B). Mesma autoridade R1/P1 e identidade lógica; nenhuma duplicidade. Continuidade privada não depende da existência pública da oportunidade; preservar retenção, retirada, direitos e não ressurreição. PER-203 requer extensão explícita para exibição contextual; R-B não é atribuído a PER-009 por analogia. A solicitação após vivência não impede recusa ou acesso. Estado: direção conceitual resolvida; extensão de superfícies, materialização e handoffs permanecem bloqueados até adjudicação própria. Nenhum SURF/TRN criado.
 
+### Deliberação 09.3 — PV-A06
+
+Direção aprovada: primeira imagem da galeria atribuída como CAPA no cadastro; identidade, nome e CAPA provenientes da mesma fonte autoritativa da oportunidade; alterações autorizadas de nome e CAPA refletidas automaticamente no nó central e na página, sem cadastro paralelo. Fallback neutro temporário, nunca foto do ofertador. Preservar identidade da edição, avaliações, manifestações, pessoas, evidências e contexto histórico diante de alterações visuais ou materiais. Estado: direção conceitual resolvida; contrato de cadastro, mídia, versionamento, reordenação/substituição e integração pendentes. Não alterar autoridade do cadastro nem autorizar execução.
+
 ## 4. Encaminhamento e limites
 
-Recomendar aprofundamento como extensão conceitual candidata de UXA-057, não como autoridade paralela. PV-A02, A03 e A04 receberam deliberação focal conjunta. PV-A05 recebeu deliberação na etapa 09.2. Próximo exame proposto: PV-A06, identidade e CAPA da oportunidade, seguido de perfil, privacidade, agregação e cobertura. Validações empíricas e gates jurídicos/operacionais permanecem separados. Não declarar 100% de conformidade ou ausência de pendências.
+Recomendar aprofundamento como extensão conceitual candidata de UXA-057, não como autoridade paralela. PV-A02, A03 e A04 receberam deliberação focal conjunta. PV-A05 recebeu deliberação na etapa 09.2. PV-A06 recebeu deliberação na etapa 09.3. Próximo exame proposto: PV-A07, integração com o Perfil Público de Experiências da Pessoa; seguido de privacidade, agregação e cobertura. Validações empíricas e gates jurídicos/operacionais permanecem separados. Não declarar 100% de conformidade ou ausência de pendências.
 
 A auditoria confirma convergência de princípios, não aprovação final. Nenhuma promoção, merge, design, implementação, publicação operacional ou tratamento de dados reais autorizado. As correções editoriais de referência feitas nesta rodada não adjudicam lacunas.
