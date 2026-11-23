@@ -2,7 +2,7 @@
 id: GKR-LIVED-POSSIBILITIES-MODEL-CANDIDATE-001
 title: Possibilidades Vividas — Modelo Conceitual, Representação Pública e Fronteiras de Integração
 status: proposed
-version: 0.3.0
+version: 0.3.1
 owner: Guivos
 last_updated: 2026-11-22
 normative: false
@@ -94,6 +94,10 @@ O grafo público permanece uma experiência humana de compreensão do impacto da
 Deliberação 09.1: usar R1 privado autoritativo e P1 público distinto conforme UXA-057, sem sistema de avaliação paralelo. Associar ao Registro de Experiência PAS-001, que governa o vivido, sem confundir objetos ou transferir autoridade. O grafo é projeção autorizada, não registro autoritativo. Materialização e contratos permanecem pendentes. Publicar parte de um relato não autoriza divulgação da trajetória, cruzamento com objetivos pessoais ou contato administrativo. Participação em experiências sensíveis, áreas espirituais ou outros atributos pessoais não devem ser expostas por inferência, filtros ou grupos pequenos.
 
 Antes da liberação: estabelecer limiares de proteção, supressão/agrupamento e prevenção de reidentificação por cruzamentos sucessivos; distinguir base elegível, respondentes, participantes únicos, registros publicados e contribuições agregadas; versionar critérios e método; tratar amostra insuficiente e não resposta; prevenir duplicidade, manipulação e seleção de relatos apenas positivos; aplicar retirada, moderação, recurso e atualização de projeções. Nenhum limiar numérico é fixado.
+
+### 7.1 Contagens públicas — deliberação 09.6
+
+Acordados contagem de pessoas únicas no escopo autorizado, deduplicação por expressão, união de participantes nas famílias semânticas, suporte das relações quando mensurável, atualização sem nova avaliação artificial e recálculo após retirada. O tamanho do nó semântico representa quantidade, não intensidade ou importância do impacto. Manifestações múltiplas podem gerar soma de percentuais superior a 100%; relevância e natureza do impacto exigem bases válidas próprias. Distinguir população elegível, pessoas que responderam, pessoas autorizadas para agregação e pessoas identificadas. Base insuficiente exige proteção e não equivale a ausência de impacto. Ver [regras do grafo](public-graph-belonging-and-continuity.md). Contratos de cálculo, limiares, privacidade e validação permanecem pendentes; não adjudicar indicadores administrativos.
 
 ## 8. Registro de decisões e próximos exames
 
