@@ -2,7 +2,7 @@
 id: GKR-LIVED-POSSIBILITIES-PUBLIC-GRAPH-CANDIDATE-001
 title: Possibilidades Vividas — Grafo Público, Pertencimento e Continuidade da Jornada
 status: proposed
-version: 0.4.0
+version: 0.4.1
 owner: Guivos
 last_updated: 2026-11-22
 normative: false
@@ -58,6 +58,8 @@ Tamanho de nó semântico representa quantidade de participantes únicos; cor id
 A experiência pública é humana, clara, viva, orgânica e voltada ao pertencimento e descoberta do impacto da oportunidade; complexidade analítica pertence às superfícies administrativas autorizadas, não ao público. Cores vivas e diversas por família semântica, formas circulares, fundo em grid pontilhado e distribuição orgânica, sem aparência de organograma. A cor não indica favorabilidade; paleta, contrastes, tamanhos, geometria e animação não estão fixados. Usar rótulos e alternativas acessíveis.
 
 Nó central: imagem da CAPA oficial da oportunidade, não foto de perfil do ofertador/responsável. A primeira imagem da galeria é atribuída como CAPA no cadastro, conforme deliberação humana; reconciliar esta regra com a autoridade de cadastro de oportunidades, sem alterá-la aqui. A imagem deve acompanhar a CAPA oficial vigente. Formato circular, nome abaixo, proeminência institucional são direções conceituais; fallback sem capa e eventual alteração/reordenação da galeria dependem de contrato da oportunidade.
+
+Deliberação 09.3 (PV-A06): cadastro da oportunidade é a fonte autoritativa de identidade, nome e CAPA. A primeira imagem da galeria recebe a atribuição inicial de CAPA no cadastro; alterações autorizadas da CAPA oficial e do nome devem refletir automaticamente na página da oportunidade e no nó central, sem cadastro independente de imagem ou nome no grafo. Na indisponibilidade da imagem, usar representação neutra temporária, nunca a fotografia do ofertador ou responsável. Nova edição preserva sua identidade e o escopo das avaliações correspondentes; mudança material não reescreve a vivência anterior. A atualização visual não modifica avaliações, manifestações, participantes ou evidências. A CAPA atual não constitui prova da condição histórica: preservar contexto, versão e proveniência da experiência conforme autoridade e retenção aplicáveis. O contrato de cadastro deverá disciplinar substituição, reordenação, direitos de mídia, versionamento, atualização e recuperação; não fixar mecanismo, SLA ou autoridade de edição por esta decisão.
 
 Enquadramento automático na abertura; movimento sutil em repouso, estabilização na seleção, expansão progressiva, atualização suave sem interromper análise, preservar posição/zoom/enquadramento e memória espacial. Destaque não oculta os demais elementos. Disponibilizar zoom, movimentação e reenquadramento; respeitar movimento reduzido, teclado, touch e alternativas textuais. Nenhum motor ou parâmetro fixado.
 
