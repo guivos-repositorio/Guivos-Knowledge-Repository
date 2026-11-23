@@ -2,7 +2,7 @@
 id: GKR-LIVED-POSSIBILITIES-EVALUATION-CANDIDATE-001
 title: Possibilidades Vividas — Captura, Vocabulário e Ciclo de Avaliação
 status: proposed
-version: 0.2.0
+version: 0.3.0
 owner: Guivos
 last_updated: 2026-11-22
 normative: false
@@ -70,6 +70,10 @@ Fluxo conceitual: descoberta → adesão/compra → vivência → encerramento �
 
 A compra ou adesão isolada não comprova vivência. Identificar edição, unidade, etapa, período e participação efetiva conforme UXA-057. Não atribuir avaliações de edições anteriores à edição futura sem delimitação explícita.
 
+Deliberação 09.1: apenas vivência efetiva é elegível à avaliação de impacto da oportunidade; contribuição pública requer evidência suficiente e autorização própria. Participação parcial restringe-se à etapa efetivamente vivida. Inscrição pode sustentar avaliação da própria etapa de inscrição nos contratos operacionais, não automaticamente impacto de uma vivência posterior. A Jornada pode preservar registro pessoal de experiência ainda não suficientemente comprovada, sem inclusão automática no agregado público. Não abolir categorias de evidência UXA-057; os critérios suficientes por objeto/edição/etapa ainda precisam ser definidos.
+
+A captura de Possibilidades Vividas é um instrumento de impacto sob R1/P1, relacionado ao Registro de Experiência PAS-001 sem duplicar a autoridade. O instrumento de qualidade operacional permanece independente; não substituir escalas vigentes nem misturar seus resultados no grafo de impacto. Distinguir não aplicável, informação insuficiente, ausência de resposta e ausência de impacto conforme pertinência e contrato. Não fixar a disposição ou obrigatoriedade do formulário operacional por esta deliberação.
+
 ## 5. Solicitação e acesso pós-encerramento
 
 Ao acessar oportunidade encerrada ainda não avaliada por participante elegível, apresentar solicitação de avaliação antes de exibir a antiga oportunidade e seu grafo. A pessoa pode avaliar, adiar ou prosseguir sem avaliar; não bloquear acesso nem obrigar contribuição. Envio externo e acesso interno convergem para o mesmo registro autoritativo, preservando idempotência, identidade, contexto e autorização. Canais específicos (e-mail, WhatsApp, aplicativo, Minha Conta), intervalos, reenvio, desistência, preferências, segurança de links e estados técnicos são candidatos, não contratos aprovados. Respeitar recusa e ausência de elegibilidade. Não expor conteúdo de avaliação nas notificações.
@@ -88,4 +92,4 @@ Ver [grafo público](public-graph-belonging-and-continuity.md) para semântica d
 
 Etapas 01–03 e 08 acordadas conceitualmente em 22/11/2026: perguntas centrais, expressão híbrida e múltipla, famílias semânticas como base candidata, aprofundamento adaptativo opcional até três perguntas iniciais, validação pela pessoa, compartilhamento independente e continuidade voluntária espontânea ou por convite. Preservar separação de descoberta e formulário pós-vivência, envio autorizado e solicitação anterior ao acesso encerrado sem obrigatoriedade.
 
-Pendentes validação de instrumentos, taxonomia definitiva, contratos de autoridade R1/P1, R-A..R-D, elegibilidade, permissões granulares, retenção, revogação, canais, acessibilidade, segurança, proteção e critérios funcionais. Nenhum objeto, rota, transição, permissão, KPI, design ou implementação é autorizado.
+Pendentes validação de instrumentos, taxonomia definitiva, materialização de R1/P1 e R-A..R-D, critérios específicos de elegibilidade/evidência, permissões granulares, retenção, revogação, canais, acessibilidade, segurança, proteção e critérios funcionais. Nenhum objeto, rota, transição, permissão, KPI, design ou implementação é autorizado.
