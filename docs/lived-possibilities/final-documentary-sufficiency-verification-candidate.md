@@ -2,7 +2,7 @@
 id: GKR-LIVED-POSSIBILITIES-FINAL-DOCUMENTARY-SUFFICIENCY-CANDIDATE-001
 title: Possibilidades Vividas — Verificação Final de Suficiência Documental do Protótipo Isolado
 status: proposed
-version: 0.1.0
+version: 0.2.0
 owner: Guivos
 last_updated: 2026-11-23
 normative: false
@@ -14,7 +14,7 @@ normative: false
 
 Conferência documental final da preparação de um **futuro protótipo isolado, sem dados reais, sem integrações e sem publicação pública**, na branch candidata `docs/possibilidades-vividas-master-proposal`. **Resultado: 100% dos itens documentais definidos para preparar a solicitação de autorização específica estão presentes e rastreáveis**. Isso **não** significa 100% de conformidade de produto/engenharia, privacidade jurídica, acessibilidade validada, segurança do ambiente ou prontidão operacional.
 
-A conclusão é **técnico-documental e candidata ao aceite humano**; não promove canon, não cria SURF/TRN, não altera a main, não abre nem autoriza Replit, não converte o G06 em consentimento real e não encerra dependências de produção. D3 (autorização separada para Replit) **não foi dada** e permanece requisito incondicional.
+A conclusão **técnico-documental recebeu aceite humano expresso em 23/11/2026**; não promove canon, não cria SURF/TRN, não altera a main, não abre nem autoriza Replit, não converte o G06 em consentimento real e não encerra dependências de produção. D3 (autorização separada para Replit) **não foi dada** e permanece requisito incondicional.
 
 ## 2. Conferências efetuadas
 
@@ -55,8 +55,8 @@ Total verificado: **149 cenários documentais G02–G08**, todos apenas especifi
 
 ## 4. Próximo ato de governança
 
-1. Submeter este **resultado documental restrito** ao aceite humano.
+1. **Aceite humano do resultado documental restrito registrado em 23/11/2026.**
 2. Em ato separado e **somente se solicitado/aprovado pela Direção**, apresentar proposta delimitada de abertura da aplicação independente e solicitar **autorização D3 expressa e inequívoca**. Aceitar este relatório **não** é conceder D3.
 3. Sem D3, permanecer no GKR. Não criar/abrir/editar workspace, não enviar prompts/agentes, não conectar, não publicar, não executar testes Replit.
 
-**Estado da conferência:** conteúdo documental suficiente para decisão humana sobre possível solicitação de autorização, mas **Replit bloqueado**. 
+**Estado da conferência:** relatório final documental aprovado expressamente pela Direção em 23/11/2026. A aprovação é exclusiva do relatório de suficiência documental, não constitui autorização D3 para acessar, criar, editar, executar, publicar ou integrar aplicações no Replit. **Replit bloqueado**. 
