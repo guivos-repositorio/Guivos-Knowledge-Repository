@@ -2,7 +2,7 @@
 id: GKR-LIVED-POSSIBILITIES-MASTER-CANDIDATE-001
 title: Possibilidades Vividas — Documento Mestre de Fundamentos e Propósito
 status: proposed
-version: 0.8.0
+version: 0.8.1
 owner: Guivos
 last_updated: 2026-11-22
 normative: false
@@ -158,6 +158,12 @@ A descoberta/adesão pode exibir o grafo público; a captura ocorre após encerr
 
 Detalhamento: [Captura, vocabulário e ciclo de avaliação](evaluation-capture-and-lifecycle.md).
 
+### 10.3.1 Pontos de acesso e continuidade — deliberação 09.2
+
+Aprovados conceitualmente três pontos de acesso complementares: detalhe da oportunidade para o grafo público de impacto (projeção autorizada); formulário independente para registro e revisão protegidos (R-A); Minhas Avaliações para consulta, atualização da mesma avaliação e gestão de visibilidade (R-B). Todos preservam a autoridade comum R1/P1 e a identidade lógica da avaliação, sem duplicidade. A continuidade privada da autora independe da disponibilidade pública ou comercial da oportunidade, conforme retenção, direitos e governança aplicáveis; não pressupõe republicação do objeto ou de conteúdo retirado. A solicitação pós-vivência é voluntária e não bloqueia acesso.
+
+PER-203 é candidato à extensão expressa para exibição contextual; Minhas Avaliações designa responsabilidade R-B, não novo ID ou tela automaticamente autorizada, nem atribuição por analogia a PER-009. Entrada, destino, retorno, autoridade, falha, interrupção, revalidação e idempotência deverão ser contratados antes de materialização. Preservar R-C/R-D. Nenhum SURF-ID, TRN-ID, design ou implementação é liberado.
+
 ## 10.4 Grafo público, participantes e pertencimento — direção acordada
 
 Preservar expressões específicas e agrupamentos semânticos superiores com expansão progressiva. A cor representa natureza semântica, não mérito ou favorabilidade. O grafo é vivo, orgânico, interativo e estável durante a análise, preservando memória espacial e destacando relações sem eliminar os demais elementos.
@@ -201,6 +207,7 @@ A localização de uma rota no menu principal vinculada à Experiência e Journe
 |---|---|
 | Propósito centrado no significado pessoal da vivência | Acordado conceitualmente |
 | Distinção entre qualidade operacional e impacto pessoal | Acordada; grafo exclusivamente de impacto na pessoa |
+| Três pontos de acesso e continuidade R-B independente do objeto público | Acordados conceitualmente; extensões e handoffs pendentes |
 | R1/P1 e Registro de Experiência PAS-001 | Autoridade conceitual acordada; materialização e contratos pendentes |
 | Vivência efetiva e evidência suficiente para agregação pública | Acordadas; critérios por objeto e etapa pendentes |
 | Percepção, contribuição, evolução e potencial | Base acordada; contrato funcional pendente |
@@ -238,7 +245,7 @@ Proveniência: deliberação humana no projeto Guivos Knowledge Repository em 22
 
 ## 13. Exames posteriores e limites
 
-[Auditoria de conformidade e matriz de reconciliação — etapa 09](conformity-audit-and-reconciliation.md): exame focal ampliado registrado em 22/11/2026. Convergência conceitual com UXA-057, com PV-A02 a PV-A04 resolvidos em nível de direção conceitual pela aprovação de 22/11/2026; contratos, critérios e validações remanescentes seguem abertos. Publicação, superfícies, CAPA, perfil, privacidade e cobertura permanecem pendentes. Não equivale a conformidade integral nem promoção canônica. Próxima deliberação proposta: PV-A05, integração com superfícies e continuidade R-B.
+[Auditoria de conformidade e matriz de reconciliação — etapa 09](conformity-audit-and-reconciliation.md): exame focal ampliado registrado em 22/11/2026. Convergência conceitual com UXA-057, com PV-A02 a PV-A04 resolvidos em nível de direção conceitual pela aprovação de 22/11/2026; contratos, critérios e validações remanescentes seguem abertos. Publicação, superfícies, CAPA, perfil, privacidade e cobertura permanecem pendentes. Não equivale a conformidade integral nem promoção canônica. PV-A05 resolvida em direção conceitual na etapa 09.2; materialização pendente. Próxima deliberação proposta: PV-A06, CAPA e identidade da oportunidade.
 
 Delimitação de escopo acordada em 22/11/2026: priorizar perguntas, base de expressões, aprofundamentos adaptativos, anatomia e dinâmica do grafo público, representação dos participantes, fronteiras de integração com Analytics, continuidade temporal e governança da avaliação. Aprofundamento de dashboards e grafo administrativo pertence ao domínio Analytics. A interpretação cognitiva geral e construção de possibilidades futuras pertencem ao domínio Intelligence/AI; não reproduzir conteúdo normativo ou candidato em duas seções.
 
