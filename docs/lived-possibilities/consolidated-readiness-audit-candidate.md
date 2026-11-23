@@ -2,7 +2,7 @@
 id: GKR-LIVED-POSSIBILITIES-CONSOLIDATED-READINESS-AUDIT-CANDIDATE-001
 title: Possibilidades Vividas — Auditoria Consolidada de Prontidão Documental
 status: proposed
-version: 0.1.0
+version: 0.2.0
 owner: Guivos
 last_updated: 2026-11-23
 normative: false
@@ -59,16 +59,22 @@ Esta matriz **não** declara encerramento de achados de produção. Direção co
 
 | ID local | Pendência concreta | Classificação | Condição de resolução |
 |---|---|---|---|
-| RD-01 | Inventário rastreável de dados sintéticos: oportunidade/edição, perfis fictícios, avaliações positivas, negativas, mistas, neutras, incertas, atualizações e retiradas | **Pendente antes de afirmar 100% documental do protótipo** | Consolidar fixtures e cenários sem fotos/identidades reais |
-| RD-02 | Plano de observação e aceitação da experiência visual por módulo, inclusive acessibilidade e falhas, sem impor design final | **Pendente antes de afirmar 100% documental do protótipo** | Roteiro auditável de revisão e captura de evidências |
-| RD-03 | Verificação final de fronteiras do ambiente isolado, proteção contra publicação automática e decisões de infraestrutura sem acesso ao Replit | **Pendente antes de afirmar 100% documental do protótipo** | Checklist pré-execução, sem criar workspace ou verificar ambiente real nesta etapa |
+| RD-01 | Inventário rastreável de dados sintéticos: oportunidade/edição, perfis fictícios, avaliações positivas, negativas, mistas, neutras, incertas, atualizações e retiradas | **Documentado; fixtures executáveis não criadas** | [Plano de demonstração](synthetic-demonstration-and-isolation-plan-candidate.md), seção RD-01 |
+| RD-02 | Plano de observação e aceitação da experiência visual por módulo, inclusive acessibilidade e falhas, sem impor design final | **Documentado; testes não executados** | [Plano de demonstração](synthetic-demonstration-and-isolation-plan-candidate.md), seção RD-02 |
+| RD-03 | Verificação final de fronteiras do ambiente isolado, proteção contra publicação automática e decisões de infraestrutura sem acesso ao Replit | **Checklist documentado; ambiente não verificado** | [Plano de demonstração](synthetic-demonstration-and-isolation-plan-candidate.md), seção RD-03 |
 | RD-04 | Reconciliação final de G06: primeira opção destacada sem autorização operacional por silêncio | **Condição não negociável do protótipo** | Representar escolha afirmativa sintética válida, com estado privado inicial; não inferir base jurídica universal |
-| RD-05 | Revisão humana do relatório e classificação das restrições | **Aceite documental desta auditoria pendente** | Aprovar ou solicitar ajustes; não equivale a D3 |
+| RD-05 | Revisão humana do relatório e classificação das restrições | **Aceite documental humano registrado em 23/11/2026** | Não equivale à autorização D3 |
 | EX-01 | R1/P1, registros de experiência, SURF/TRN, convites e elegibilidade real | **Bloqueia integração/produção**, não a simulação | Adjudicação em UXA-057/PAS-001 e autoridades competentes |
 | EX-02 | Cadastro/CAPA, perfil público e identificação de pessoas reais | **Bloqueia integração/produção** | Contratos de fontes, direitos, sincronização, permissões |
 | EX-03 | Política real de privacidade, bases jurídicas, menores, dados sensíveis, limites de agregação e direitos | **Bloqueia publicação/produção** | Autoridade de proteção, prova, minimização, avaliação de risco |
 | EX-04 | Técnica de reuso compartilhado, autenticação, API, performance e publicação | **Bloqueia integração/produção** | Arquitetura técnica, segurança, testes e aprovação independente |
 | EX-05 | Cobertura inicial real e autoridade do Profissional | **Bloqueia piloto real** | Escolha expressa de objeto/edição/etapa e governança competente |
+
+## 4.1 Atualização documental pós-aceite — 23/11/2026
+
+A Direção aprovou documentalmente a auditoria consolidada (RD-05) e autorizou somente a preparação de RD-01 a RD-03 no GKR. O [plano sintético e de isolamento](synthetic-demonstration-and-isolation-plan-candidate.md) v0.1.0 fornece inventário de cenários, roteiro de avaliação visual e checklist de isolamento. RD-01 a RD-03 foram **atendidos como especificações documentais**, não como fixtures implementadas, testes de acessibilidade executados ou ambiente Replit verificado. RD-04 permanece condição restritiva já aprovada, sem adjudicação jurídica operacional. D3 continua ausente.
+
+O próximo exame é de suficiência documental do escopo estritamente sintético para decidir se o pacote pode ser declarado completo para **solicitação futura de autorização**, jamais para implantação automática. Esse exame deve conferir referências, cenários e bloqueios; não afirmar prontidão de execução real ou conformidade global.
 
 ## 5. O que permanece proibido
 
@@ -76,4 +82,4 @@ Nenhuma execução no Replit foi autorizada ou realizada: não criar projeto, ab
 
 ## 6. Próximo passo documental
 
-Concluir RD-01…RD-03 em **plano de demonstração pré-Replit**, preservando RD-04 como regra restritiva, submeter este relatório (RD-05) a aceite humano e verificar novamente se os requisitos **documentais aplicáveis ao experimento isolado** estão completos. Se completos, reportar a conclusão restrita desse escopo, **sem confundir com conformidade global do GKR**. Só depois cabe solicitar **separadamente** a autorização D3. Não converter aprovação deste relatório em autorização de implantação.
+RD-01…RD-03 estão especificados documentalmente e RD-05 recebeu aceite humano; preservar RD-04 como regra restritiva e verificar novamente se os requisitos **documentais aplicáveis ao experimento isolado** estão completos. Se completos, reportar a conclusão restrita desse escopo, **sem confundir com conformidade global do GKR**. Só depois cabe solicitar **separadamente** a autorização D3. Não converter aprovação deste relatório em autorização de implantação.
