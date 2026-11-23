@@ -2,7 +2,7 @@
 id: GKR-LIVED-POSSIBILITIES-CONFORMITY-AUDIT-CANDIDATE-001
 title: Possibilidades Vividas — Auditoria de Conformidade e Matriz de Reconciliação
 status: proposed
-version: 0.8.0
+version: 0.9.0
 owner: Guivos
 last_updated: 2026-11-22
 normative: false
@@ -102,8 +102,14 @@ Direção aprovada: total de pessoas distintas com contribuição pública autor
 
 Direção aprovada: abrangência conceitual transversal a oportunidades efetivamente vivenciadas e elegíveis, gratuitas/pagas, presenciais/online/híbridas, de qualquer área de evolução, oferecidas por Organização, Coletivo ou Profissional sob autoridade aplicável. Preservar núcleo universal de avaliação de impacto e aprofundamento adaptativo, sem misturar qualidade operacional. Estado: abrangência pretendida resolvida conceitualmente; cobertura inicial de implantação permanece não selecionada, conforme UXA-057. Seleção futura exige objeto real delimitado, edição, etapa, período, evidência, população elegível, titularidade, representação, proteção, não duplicidade, publicação, resposta/contestação, governança e recurso. Não autorizar piloto, Design, dados reais ou implementação. Dependência canônica do Profissional preservada.
 
+### Deliberação 09.8 — encaminhamentos remanescentes e PV-A17
+
+Aprovada a localização da seção Possibilidades Vividas sob Jornada da Pessoa / Avaliação e Reputação; menu candidato atualizado na branch de proposta, preservando a seção existente e sem alterar main. PV-A17 resolvida editorialmente na proposta. PV-A10 e A11 preservam Intervenções Contextuais e R-C/R-D; A12 referência reconciliada; A13 fronteira preservada; A14 dependência externa; A15 validação de experiência visual. Não declarar todos os contratos resolvidos.
+
+A Direção determinou avanço ao Replit somente após validação documental suficientemente completa. A materialização permitirá identificar mudanças/adaptações visuais. Ver [prontidão](replit-prototype-readiness.md): critérios candidatos de aceite e escopo recomendado de protótipo isolado, dados sintéticos e autorização específica após verificação. Esta recomendação não é autorização de execução. Não atribuir percentual sem evidência.
+
 ## 4. Encaminhamento e limites
 
-Recomendar aprofundamento como extensão conceitual candidata de UXA-057, não como autoridade paralela. PV-A02, A03 e A04 receberam deliberação focal conjunta. PV-A05 recebeu deliberação na etapa 09.2. PV-A06 recebeu deliberação na etapa 09.3. PV-A07 recebeu deliberação na etapa 09.4. PV-A08 recebeu deliberação na etapa 09.5, com gate de reconciliação da pré-seleção solicitada. PV-A09 recebeu deliberação na etapa 09.6. PV-A16 recebeu deliberação conceitual na etapa 09.7; nenhuma cobertura inicial real foi selecionada. Próximo exame: revisão de prontidão documental e dependências remanescentes PV-A01 a PV-A17; preservar gate de privacidade da pré-seleção, validações e requisitos de adjudicação. Validações empíricas e gates jurídicos/operacionais permanecem separados. Não declarar 100% de conformidade ou ausência de pendências.
+Recomendar aprofundamento como extensão conceitual candidata de UXA-057, não como autoridade paralela. PV-A02, A03 e A04 receberam deliberação focal conjunta. PV-A05 recebeu deliberação na etapa 09.2. PV-A06 recebeu deliberação na etapa 09.3. PV-A07 recebeu deliberação na etapa 09.4. PV-A08 recebeu deliberação na etapa 09.5, com gate de reconciliação da pré-seleção solicitada. PV-A09 recebeu deliberação na etapa 09.6. PV-A16 recebeu deliberação conceitual na etapa 09.7; nenhuma cobertura inicial real foi selecionada. Próximo exame: materializar contratos funcionais mínimos e critérios verificáveis de prontidão documental, preservar gate de privacidade da pré-seleção, validações e requisitos de adjudicação. Validações empíricas e gates jurídicos/operacionais permanecem separados. Não declarar 100% de conformidade ou ausência de pendências.
 
 A auditoria confirma convergência de princípios, não aprovação final. Nenhuma promoção, merge, design, implementação, publicação operacional ou tratamento de dados reais autorizado. As correções editoriais de referência feitas nesta rodada não adjudicam lacunas.
