@@ -2,7 +2,7 @@
 id: GKR-LIVED-POSSIBILITIES-MASTER-CANDIDATE-001
 title: Possibilidades Vividas — Documento Mestre de Fundamentos e Propósito
 status: proposed
-version: 0.8.3
+version: 0.8.4
 owner: Guivos
 last_updated: 2026-11-22
 normative: false
@@ -128,6 +128,14 @@ Possibilidade de não responder, desconhecer, registrar neutralidade, ausência 
 
 Acesso, correção, retirada, minimização, retenção por finalidade, proveniência, proteção, versionamento e não ressurreição deverão ser tratados em contratos posteriores, reconciliados com a governança existente.
 
+### 9.1 Compartilhamento e prioridade de apresentação — etapa 09.5
+
+Modalidades aprovadas conceitualmente: registro privado, contribuição coletiva sem identificação pública e contribuição coletiva identificada com permissões próprias. A Direção solicitou que a opção de compartilhar a participação seja sempre apresentada primeiro e marcada inicialmente, deixando a alteração contrária à escolha manual da Pessoa. Registrar essa preferência de apresentação como direção candidata, não como autorização automática de tratamento ou publicação. R1 permanece privado por padrão. A submissão da avaliação não cria P1 automaticamente; silêncio, inação ou ausência de desmarcação não constituem prova de autorização.
+
+A pré-seleção solicitada permanece condicionada à reconciliação com UXA-057 e governança de dados/consentimentos, à base jurídica e à efetiva liberdade de escolha. Quando consentimento for a base aplicável, exigir manifestação afirmativa específica e comprovável, sem depender de opção pré-marcada; não ativar identificação, fotografia, vínculo identificável, acesso ao perfil, relatos ou relevância/impacto individuais por padrão. A primeira posição da opção pode ser preservada sem pré-seleção quando necessária à proteção ou validade da autorização. Não aplicar a preferência de interface para induzir respostas de impacto, converter recusa em obstáculo ou reativar escolhas anteriormente retiradas. O mecanismo final e a distinção entre compartilhamento agregado e identificado requerem adjudicação explícita.
+
+Permissões revisáveis e granulares; proteção contra identificação indireta por grupos pequenos, contextos sensíveis e cruzamentos; agregação e exposição dependem de autorização e base aplicáveis. Nenhum limiar numérico, base jurídica ou controle operacional é adjudicado nesta etapa.
+
 ## 10. Identidade e apresentação pública
 
 O território principal é Possibilidades Vividas. A assinatura institucional permanece em plano secundário. Não fixar tradução, nome comercial, marca, forma gráfica ou escala definitiva.
@@ -247,7 +255,7 @@ Proveniência: deliberação humana no projeto Guivos Knowledge Repository em 22
 
 ## 13. Exames posteriores e limites
 
-[Auditoria de conformidade e matriz de reconciliação — etapa 09](conformity-audit-and-reconciliation.md): exame focal ampliado registrado em 22/11/2026. Convergência conceitual com UXA-057, com PV-A02 a PV-A04 resolvidos em nível de direção conceitual pela aprovação de 22/11/2026; contratos, critérios e validações remanescentes seguem abertos. Publicação, superfícies, CAPA, perfil, privacidade e cobertura permanecem pendentes. Não equivale a conformidade integral nem promoção canônica. PV-A05 resolvida em direção conceitual na etapa 09.2; materialização pendente. PV-A06 resolvida em direção conceitual na etapa 09.3; contrato de cadastro e integração pendentes. PV-A07 resolvida em direção conceitual na etapa 09.4; contratos de identidade, perfil e publicação pendentes. Próxima deliberação proposta: PV-A08, privacidade e permissões.
+[Auditoria de conformidade e matriz de reconciliação — etapa 09](conformity-audit-and-reconciliation.md): exame focal ampliado registrado em 22/11/2026. Convergência conceitual com UXA-057, com PV-A02 a PV-A04 resolvidos em nível de direção conceitual pela aprovação de 22/11/2026; contratos, critérios e validações remanescentes seguem abertos. Publicação, superfícies, CAPA, perfil, privacidade e cobertura permanecem pendentes. Não equivale a conformidade integral nem promoção canônica. PV-A05 resolvida em direção conceitual na etapa 09.2; materialização pendente. PV-A06 resolvida em direção conceitual na etapa 09.3; contrato de cadastro e integração pendentes. PV-A07 resolvida em direção conceitual na etapa 09.4; contratos de identidade, perfil e publicação pendentes. PV-A08 recebeu deliberação conceitual na etapa 09.5; a preferência de pré-seleção permanece condicionada à autoridade de privacidade, e os contratos de proteção e publicação continuam abertos. Próxima deliberação proposta: PV-A09, contagens, denominadores e agregação.
 
 Delimitação de escopo acordada em 22/11/2026: priorizar perguntas, base de expressões, aprofundamentos adaptativos, anatomia e dinâmica do grafo público, representação dos participantes, fronteiras de integração com Analytics, continuidade temporal e governança da avaliação. Aprofundamento de dashboards e grafo administrativo pertence ao domínio Analytics. A interpretação cognitiva geral e construção de possibilidades futuras pertencem ao domínio Intelligence/AI; não reproduzir conteúdo normativo ou candidato em duas seções.
 
