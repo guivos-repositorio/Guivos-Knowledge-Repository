@@ -2,7 +2,7 @@
 id: GKR-LIVED-POSSIBILITIES-PROTOTYPE-READINESS-CANDIDATE-001
 title: Possibilidades Vividas — Prontidão Documental e Transição ao Replit
 status: proposed
-version: 0.1.0
+version: 0.2.0
 owner: Guivos
 last_updated: 2026-11-22
 normative: false
@@ -27,14 +27,24 @@ Cada gate deverá ter evidência verificável, estado, dependências e decisão 
 | G07 — Interações e acessibilidade | Fit-to-view, grid pontilhado, destaque, estabilidade, janela contextual e navegação bidirecional, alternativa textual, teclado, touch e movimento reduzido | Direção acordada; critérios de aceite pendentes |
 | G08 — Escopo, isolamento e aprovação | Plano de protótipo isolado com dados sintéticos, sem integrações reais, publicação pública, dados pessoais reais, nem alterações em outros projetos; autorização humana específica após revisão | Proposta a adjudicar |
 
+## 1.1 Aplicação independente e integração compartilhada — decisão humana
+
+Possibilidades Vividas deverá ter aplicação própria e distinta no Replit, destinada inicialmente ao desenvolvimento e validação isolados. Posteriormente, suas capacidades e componentes deverão ser integrados de forma compartilhada às páginas pertinentes do ecossistema, sem duplicar código, lógica de avaliação, grafo, cadastros ou autoridade de dados em cada aplicação consumidora.
+
+A aplicação própria sustenta a evolução centralizada dos componentes; as páginas consumidoras utilizam integrações governadas, de modo que atualizações autorizadas sejam refletidas nas integrações compatíveis sem manutenção de cópias divergentes. Fonte única de implementação não significa nova autoridade de negócio, novo banco autoritativo ou acesso irrestrito: preservar R1/P1, Registro de Experiência, identidade oficial, CAPA e responsabilidades dos domínios competentes. Contratos de interface, versionamento, distribuição, sincronização, compatibilidade e segurança permanecem pendentes; não escolher API, pacote, iframe, microfrontend ou outra tecnologia por inferência.
+
+O Detalhe da Oportunidade é consumidor candidato do grafo de impacto; formulário independente e Minhas Avaliações são pontos complementares sujeitos a contratos R-A/R-B. Demais páginas somente mediante autoridade e finalidade próprias. Não confundir integração compartilhada com exposição universal de dados.
+
+**Bloqueio explícito:** não criar workspace, iniciar agente, enviar prompt, editar, integrar ou publicar no Replit sem autorização humana expressa posterior à apresentação e aprovação da prontidão documental. A aprovação desta arquitetura não constitui autorização de execução. G08 deve verificar a aplicação distinta, isolamento inicial, plano de integração compartilhada e autorização específica. Nenhuma ação Replit nesta rodada.
+
 ## 2. Sequência
 
 1. Revisão final dos 17 achados de conformidade, com rastreabilidade e distinção de direção aprovada, contrato pendente e validação posterior.
 2. Formalizar critérios de aceite e contratos funcionais mínimos do protótipo, incluindo cenários alternativos e falhas.
 3. Verificar todos os gates e apresentar resultado para deliberação humana. Não alegar 100% antes da verificação.
-4. Somente após autorização específica, criar ou selecionar workspace Replit isolado, usando dados sintéticos e identidades não reais, sem publicar nem integrar sistemas de produção.
+4. Somente após autorização específica, criar aplicação própria em workspace Replit isolado, usando dados sintéticos e identidades não reais, sem publicar nem integrar sistemas de produção.
 5. Avaliar a experiência materializada, registrar evidências e ajustes visuais/funcionais; mudanças semânticas ou de autoridade retornam à deliberação e ao GKR.
-6. Reavaliar prontidão para etapas posteriores; não confundir aprovação de protótipo com liberação operacional.
+6. Reavaliar prontidão para integração compartilhada nas páginas pertinentes mediante autorização própria; não confundir aprovação de protótipo com liberação operacional.
 
 ## 3. Limites
 
