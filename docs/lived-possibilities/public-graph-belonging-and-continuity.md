@@ -2,7 +2,7 @@
 id: GKR-LIVED-POSSIBILITIES-PUBLIC-GRAPH-CANDIDATE-001
 title: Possibilidades Vividas — Grafo Público, Pertencimento e Continuidade da Jornada
 status: proposed
-version: 0.3.0
+version: 0.4.0
 owner: Guivos
 last_updated: 2026-11-22
 normative: false
@@ -26,6 +26,12 @@ A Guivos não se limita a conectar uma pessoa a uma oportunidade isolada. A pess
 A Guivos busca tornar essa trajetória mais alinhada aos objetivos e ao contexto da pessoa do que uma descoberta fragmentada em um universo de oportunidades dispersas, invisíveis, desconectadas ou desencontradas. Trata-se de propósito e hipótese de valor a validar, não promessa de resultado, superioridade comprovada ou garantia de evolução.
 
 Continuidade significa poder permanecer pertencente e reconhecido, descobrir e ser descoberto voluntariamente, participar de novas construções coletivas, descobrir possibilidades através de trajetórias e viver oportunidades pertinentes. Estar ativo não significa obrigação de uso contínuo, retenção a qualquer custo, exposição pública compulsória, frequência mínima de participação ou penalidade por ausência. A pessoa controla seu ritmo, sua participação, sua visibilidade e sua possibilidade de interromper ou retomar a jornada.
+
+## 1.1 Limite exclusivo do grafo — etapa 09.1
+
+Decisão humana: o grafo público de Possibilidades Vividas representa apenas o impacto da oportunidade na pessoa, não a qualidade operacional da entrega. Não incluir nós, métricas ou rankings de pontualidade, organização, comunicação, acessibilidade, cumprimento da proposta ou satisfação operacional. Relatos de impacto podem mencionar circunstâncias da experiência, inclusive negativas, quando autorizados; isso não transforma circunstância operacional em dimensão de qualidade do grafo. Preservar avaliações operacionais, denúncia, contestação e moderação em seus contextos próprios. Relevância e natureza do impacto são independentes; ausência de impacto e incerteza permanecem legítimas.
+
+O grafo é projeção autorizada das avaliações sob R1/P1, associado ao objeto/edição/etapa e fundamentado em vivências efetivas com evidência suficiente. Não é registro autoritativo, nem representa a trajetória privada, direcionamentos ou análise administrativa.
 
 ## 2. A pessoa como participante da construção coletiva
 
