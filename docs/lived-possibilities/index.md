@@ -2,7 +2,7 @@
 id: GKR-LIVED-POSSIBILITIES-MASTER-CANDIDATE-001
 title: Possibilidades Vividas — Documento Mestre de Fundamentos e Propósito
 status: proposed
-version: 0.8.7
+version: 0.8.8
 owner: Guivos
 last_updated: 2026-11-22
 normative: false
@@ -267,7 +267,7 @@ Proveniência: deliberação humana no projeto Guivos Knowledge Repository em 22
 
 ## 13. Exames posteriores e limites
 
-Deliberação humana de 22/11/2026: alcançar validação documental suficientemente completa antes da implantação no Replit, para observar adaptações visuais na materialização. Ver [Prontidão Documental e Transição ao Replit](replit-prototype-readiness.md), com critérios candidatos de aceite e gates verificáveis. A implantação experimental requer autorização específica após revisão; não constitui liberação atual, piloto real, produção ou publicação. Não declarar 100% sem evidência.
+Deliberação humana de 22/11/2026: alcançar validação documental suficientemente completa antes da implantação no Replit, para observar adaptações visuais na materialização. Ver [Prontidão Documental e Transição ao Replit](replit-prototype-readiness.md), com critérios candidatos de aceite e gates verificáveis. Decisão adicional da Direção: aplicação própria e distinta no Replit, posteriormente integrada de forma compartilhada às páginas pertinentes, sem duplicar implementação ou autoridade de dados. A implantação experimental requer autorização específica após revisão; é expressamente vedado avançar ao Replit antes dessa autorização; não constitui liberação atual, piloto real, produção ou publicação. Não declarar 100% sem evidência.
 
 [Auditoria de conformidade e matriz de reconciliação — etapa 09](conformity-audit-and-reconciliation.md): exame focal ampliado registrado em 22/11/2026. Convergência conceitual com UXA-057, com PV-A02 a PV-A04 resolvidos em nível de direção conceitual pela aprovação de 22/11/2026; contratos, critérios e validações remanescentes seguem abertos. Publicação, superfícies, CAPA, perfil, privacidade e cobertura permanecem pendentes. Não equivale a conformidade integral nem promoção canônica. PV-A05 resolvida em direção conceitual na etapa 09.2; materialização pendente. PV-A06 resolvida em direção conceitual na etapa 09.3; contrato de cadastro e integração pendentes. PV-A07 resolvida em direção conceitual na etapa 09.4; contratos de identidade, perfil e publicação pendentes. PV-A08 recebeu deliberação conceitual na etapa 09.5; a preferência de pré-seleção permanece condicionada à autoridade de privacidade, e os contratos de proteção e publicação continuam abertos. PV-A09 recebeu deliberação conceitual na etapa 09.6: pessoas distintas, união de conjuntos, suporte de relações, denominadores explícitos, recálculo e proteção de base insuficiente. Contratos de cálculo e limiares permanecem pendentes. PV-A16 recebeu deliberação na etapa 09.7 quanto à abrangência transversal pretendida; seleção de cobertura inicial real permanece aberta, sem autorização de piloto. PV-A17 recebeu aprovação de navegação na etapa 09.8 e foi materializado editorialmente na branch candidata. Próximo exame: contratos mínimos e critérios de prontidão para protótipo, preservando o gate de privacidade relativo à pré-seleção.
 
