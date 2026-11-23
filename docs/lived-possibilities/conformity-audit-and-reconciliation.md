@@ -2,7 +2,7 @@
 id: GKR-LIVED-POSSIBILITIES-CONFORMITY-AUDIT-CANDIDATE-001
 title: Possibilidades Vividas — Auditoria de Conformidade e Matriz de Reconciliação
 status: proposed
-version: 0.5.0
+version: 0.6.0
 owner: Guivos
 last_updated: 2026-11-22
 normative: false
@@ -88,8 +88,14 @@ Direção aprovada: primeira imagem da galeria atribuída como CAPA no cadastro;
 
 Direção aprovada: uma única identidade oficial da Pessoa; nome/foto/identidade provenientes do perfil competente; sem perfil paralelo. Integração com Perfil Público de Experiências condicionada à sua autoridade. Atualizar projeções autorizadas após alteração; retirar foto quando retirada na origem; desabilitar navegação quando perfil privado; revalidar dependências sem presumir que permissões independentes sejam idênticas. Retirada da identificação preserva somente agregação ainda autorizada e protegida; retirada da autorização de agregação atualiza os agrupamentos afetados. Identidade pública não autoriza vínculo com a experiência nem acesso à Jornada privada. Não criar relações sociais. Estado: direção conceitual resolvida; contrato de identidade/perfil, permissões, sincronização e proteção pendentes. Não liberar publicação identificada.
 
+### Deliberação 09.5 — PV-A08
+
+Aprovadas conceitualmente as modalidades privada, contribuição coletiva sem identificação pública e contribuição coletiva identificada, permissões granulares, revisão posterior e proteção contra identificação indireta. A Direção solicitou que compartilhar a participação seja a primeira opção, inicialmente marcada, com oposição manual. Registrar a solicitação sem convertê-la em autorização automática. Há tensão potencial entre pré-seleção/opt-out e R1 privado por padrão, P1 autorizado e consentimento livre, informado e inequívoco quando aplicável. Ordem de apresentação é distinta de efeito jurídico ou autorização de divulgação; não pré-autorizar identidade, fotos, perfil, relatos ou impacto individual. Não presumir consentimento por inação. Preservar escolhas anteriores e ausência de sanção por recusa.
+
+Estado: direção conceitual de modalidades e proteção acordada; pré-seleção condicionada a exame específico e adjudicação de privacidade (incluindo distinção agregado/identificado), base jurídica, ação afirmativa, prova de autorização, retenção, derivados, revogação, reidentificação, proteção de menores e contextos sensíveis. Não afirmar conformidade jurídica nem liberar publicação. Nenhuma configuração operacional alterada.
+
 ## 4. Encaminhamento e limites
 
-Recomendar aprofundamento como extensão conceitual candidata de UXA-057, não como autoridade paralela. PV-A02, A03 e A04 receberam deliberação focal conjunta. PV-A05 recebeu deliberação na etapa 09.2. PV-A06 recebeu deliberação na etapa 09.3. PV-A07 recebeu deliberação na etapa 09.4. Próximo exame proposto: PV-A08, privacidade, permissões e proteção contra reidentificação; seguido de agregação e cobertura. Validações empíricas e gates jurídicos/operacionais permanecem separados. Não declarar 100% de conformidade ou ausência de pendências.
+Recomendar aprofundamento como extensão conceitual candidata de UXA-057, não como autoridade paralela. PV-A02, A03 e A04 receberam deliberação focal conjunta. PV-A05 recebeu deliberação na etapa 09.2. PV-A06 recebeu deliberação na etapa 09.3. PV-A07 recebeu deliberação na etapa 09.4. PV-A08 recebeu deliberação na etapa 09.5, com gate de reconciliação da pré-seleção solicitada. Próximo exame proposto: PV-A09, contagens, denominadores e agregação; seguido de cobertura e demais dependências. Validações empíricas e gates jurídicos/operacionais permanecem separados. Não declarar 100% de conformidade ou ausência de pendências.
 
 A auditoria confirma convergência de princípios, não aprovação final. Nenhuma promoção, merge, design, implementação, publicação operacional ou tratamento de dados reais autorizado. As correções editoriais de referência feitas nesta rodada não adjudicam lacunas.
