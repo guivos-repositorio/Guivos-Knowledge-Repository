@@ -2,7 +2,7 @@
 id: GKR-LIVED-POSSIBILITIES-PUBLIC-GRAPH-CANDIDATE-001
 title: Possibilidades Vividas — Grafo Público, Pertencimento e Continuidade da Jornada
 status: proposed
-version: 0.4.3
+version: 0.4.4
 owner: Guivos
 last_updated: 2026-11-22
 normative: false
@@ -120,6 +120,24 @@ Registro privado: sem inclusão no grafo público; acesso protegido pela titular
 A Direção solicitou prioridade de apresentação e seleção inicial da opção de compartilhar a participação, com alteração manual quando a Pessoa preferir não compartilhar. A preferência permanece candidata e subordinada a R1 privado por padrão, P1/publicação autorizada, governança jurídica e proteção da titular. Não criar publicação automática, presumir consentimento por ausência de oposição, ativar identidade por padrão ou substituir escolhas anteriores. Preservar a primeira posição ainda que a pré-seleção não seja admitida no contrato final.
 
 Agregados sem identificação pública não são automaticamente anônimos em sentido técnico ou jurídico. Proteger grupos pequenos, experiências sensíveis, manifestações raras, cruzamentos e consultas sucessivas; ampliar agrupamento ou suprimir a exibição quando necessário. Retirada ou revisão de permissões revalida projeções e derivados conforme autoridade; impedir ressurreição. Não fixar limiar, prazo ou base jurídica nesta decisão.
+
+### 8.2 Contagens e representatividade — deliberação 09.6 (PV-A09)
+
+Direção aprovada em 22/11/2026: o grafo representa pessoas distintas e manifestações realmente registradas, no escopo autorizado da oportunidade, edição, etapa, período e critérios aplicáveis. Não confundir quantidade de avaliações, manifestações, pessoas que vivenciaram a oportunidade e pessoas que autorizaram contribuição coletiva.
+
+| Elemento | Regra conceitual |
+|---|---|
+| Total de participantes representados | União de pessoas distintas com contribuição pública elegível e autorizada no escopo apresentado. |
+| Nó de expressão | Pessoas distintas com manifestação vigente autorizada correspondente; admitir expressão livre legitimamente vinculada ao agrupamento, preservando proveniência. |
+| Nó de família | União dos participantes das expressões vinculadas à família, nunca soma simples de contagens. |
+| Aresta | Pessoas distintas que sustentam a relação específica, quando a métrica de pessoas for aplicável; não inferir coocorrência de mera proximidade ou relação semântica. |
+| Atualização | Atualizar a avaliação vigente sem adicionar artificialmente uma pessoa ou duplicar expressão no mesmo indicador. |
+| Retirada | Revalidar autorização e recalcular projeções e agrupamentos afetados, conforme política aplicável. |
+| Base insuficiente | Restringir, suprimir ou agrupar a exibição conforme critérios de proteção e suficiência, sem interpretar ausência de exibição como ausência de impacto. |
+
+Percentual de expressão: quantidade de pessoas distintas que sustentam a expressão dividida pela base pertinente explicitada. Exemplo sintético: de 100 pessoas com contribuição autorizada e base comparável, 70 reconheceram motivação, 55 aprendizado, 40 confiança e 35 novas possibilidades. As expressões podem coexistir e a soma de percentuais pode superar 100%. Não transformar esse conjunto em distribuição mutuamente exclusiva. Para relevância e natureza do impacto, distinguir as respectivas bases válidas, incerteza, ausência de resposta e supressão. Não pressupor que todos os participantes responderam a todas as perguntas; apresentar base, período, edição e limitações quando necessários. A seleção visual de fotos não equivale a amostra estatística.
+
+O tamanho dos nós semânticos representa quantidade de pessoas distintas, não relevância individual, mérito, favorabilidade ou intensidade. A CAPA e os nós de identidade mantêm suas funções próprias. A espessura das arestas pode representar quantidade de pessoas quando a relação e a escala forem comparáveis; não aplicar contagem fictícia a relações sem medida pertinente. Preservar autenticidade, não duplicidade, neutralidade e proteção contra reidentificação. Denominadores operacionais, limiares, regras de arredondamento/supressão, escalas visuais, contratos de cálculo, desempenho e evidência de suficiência permanecem pendentes de validação. Não criar KPI administrativo nem liberar divulgação.
 
 ## 9. Registro de decisões e pendências
 
