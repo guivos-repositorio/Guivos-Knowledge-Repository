@@ -2,7 +2,7 @@
 id: GKR-LIVED-POSSIBILITIES-PROTOTYPE-READINESS-CANDIDATE-001
 title: Possibilidades Vividas — Prontidão Documental e Transição ao Replit
 status: proposed
-version: 0.13.0
+version: 0.14.0
 owner: Guivos
 last_updated: 2026-11-23
 normative: false
@@ -75,11 +75,15 @@ Resultado: coerência interna focal suficiente; aceite humano registrado na deli
 
 ### Verificação final de suficiência documental — 23/11/2026
 
-[Relatório final de suficiência documental](final-documentary-sufficiency-verification-candidate.md) v0.1.0: verificadas as 8 especificações de gate, os 149 cenários G02–G08, os 17 achados PV-A01–PV-A17, as 3 oportunidades, 10 pessoas, 12 transições, 12 etapas visuais e 12 verificações de isolamento. **100% do checklist documental restrito ao preparo de pedido de autorização está atendido.** Isso não significa 100% de execução, confiabilidade, conformidade legal, segurança, acessibilidade, integração ou produção: nenhuma fixture executável foi criada e nenhuma verificação ISO foi realizada. G06 preserva ressalva, todas as pendências reais continuam abertas. Resultado final aguarda aceite humano; **D3 não concedida — Replit bloqueado**.
+[Relatório final de suficiência documental](final-documentary-sufficiency-verification-candidate.md) v0.1.0: verificadas as 8 especificações de gate, os 149 cenários G02–G08, os 17 achados PV-A01–PV-A17, as 3 oportunidades, 10 pessoas, 12 transições, 12 etapas visuais e 12 verificações de isolamento. **100% do checklist documental restrito ao preparo de pedido de autorização está atendido.** Isso não significa 100% de execução, confiabilidade, conformidade legal, segurança, acessibilidade, integração ou produção: nenhuma fixture executável foi criada e nenhuma verificação ISO foi realizada. G06 preserva ressalva, todas as pendências reais continuam abertas. Resultado final **aprovado documentalmente pela Direção em 23/11/2026**; **D3 não concedida — Replit bloqueado**.
 
 ### Evidência documental RD-01, RD-02, RD-03 e RD-05
 
 [Plano sintético e checklist pré-Replit](synthetic-demonstration-and-isolation-plan-candidate.md) v0.1.0 documenta três oportunidades fictícias, dez pessoas artificiais, doze transições de teste, doze etapas de avaliação visual e doze verificações de isolamento **a executar somente após D3**. A auditoria consolidada recebeu aceite documental humano em 23/11/2026 (RD-05). RD-04 continua como restrição a qualquer simulação ou publicação. Auditoria final de suficiência documental permanece necessária; sem autorização para Replit.
+
+### Aceite do relatório final e fronteira de execução — 23/11/2026
+
+A Direção respondeu **“de acordo, aprovado”** ao relatório final de suficiência documental v0.1.0, aprovando exclusivamente o resultado de completude do checklist documental restrito ao protótipo isolado. Este aceite não aprova nem inicia Replit, não executa testes, não autoriza integração, publicação, APIs, dados pessoais reais, merge ou promoção ao canon. A autorização **D3**, por determinação anterior expressa, exige ato humano **novo, separado e específico** após este marco. Nenhum projeto Replit foi criado, acessado ou alterado por esta deliberação.
 
 ## 1.1 Aplicação independente e integração compartilhada — decisão humana
 
