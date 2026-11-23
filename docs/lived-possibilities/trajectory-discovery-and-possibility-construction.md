@@ -2,7 +2,7 @@
 id: GKR-LIVED-POSSIBILITIES-TRAJECTORY-DISCOVERY-CANDIDATE-001
 title: Possibilidades Vividas — Descoberta através de Trajetórias
 status: proposed
-version: 0.2.0
+version: 0.2.1
 owner: Guivos
 last_updated: 2026-11-22
 normative: false
@@ -33,7 +33,7 @@ Conhecer outras pessoas que buscam evoluir, possuem interesses semelhantes ou pe
 
 Não ocultar possibilidades apenas por serem atualmente incompatíveis, nem incentivar comparação de renda, conquistas, volume de experiências ou progresso pessoal. Não presumir que identificação gere interesse. A pessoa pode explorar sem compromisso, recusar ou interromper.
 
-A eventual apresentação de totais coletivos sobre interesses e objetivos é candidata, exige base real, autorização aplicável, representatividade, minimização e proteção contra reidentificação, particularmente em contextos sensíveis. Não fixar indicadores ou divulgar atributos privados. Grandeza do ecossistema não equivale a quantidade de conexões pessoais.
+A hipótese de apresentar totais coletivos sobre interesses e objetivos permanece externa ao escopo de Possibilidades Vividas; requer deliberação no domínio competente, base real, autorização, representatividade, minimização e proteção contra reidentificação. Não incluir tais totais ou nós de objetivos privados no grafo público de impacto da oportunidade. Não fixar indicadores ou divulgar atributos privados. Grandeza do ecossistema não equivale a quantidade de conexões pessoais.
 
 ## 3. Fronteira de integração com Guivos AI
 
