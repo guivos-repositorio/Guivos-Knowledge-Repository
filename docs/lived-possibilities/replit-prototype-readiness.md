@@ -2,7 +2,7 @@
 id: GKR-LIVED-POSSIBILITIES-PROTOTYPE-READINESS-CANDIDATE-001
 title: Possibilidades Vividas — Prontidão Documental e Transição ao Replit
 status: proposed
-version: 0.10.0
+version: 0.11.0
 owner: Guivos
 last_updated: 2026-11-23
 normative: false
@@ -25,7 +25,7 @@ Cada gate deverá ter evidência verificável, estado, dependências e decisão 
 | G05 — Identidade e mídia | Fonte única de CAPA/nome, identidade/foto, fallback, alterações e permissões; simuladas sem acesso a fontes reais | Aceite documental humano registrado; integração real pendente |
 | G06 — Privacidade | Modalidades, autorização afirmativa, não publicação automática, revogação, proteção contra reidentificação e restrição a dados sintéticos. Pré-seleção solicitada permanece condicionada; não produzir regra operacional incompatível | Aceite documental humano condicionado; publicação e base jurídica real pendentes |
 | G07 — Interações e acessibilidade | Fit-to-view, grid pontilhado, destaque, estabilidade, janela contextual e navegação bidirecional, alternativa textual, teclado, touch e movimento reduzido | Aceite documental humano registrado; testes reais pendentes |
-| G08 — Escopo, isolamento e aprovação | Plano de protótipo isolado com dados sintéticos, sem integrações reais, publicação pública, dados pessoais reais, nem alterações em outros projetos; autorização humana específica após revisão | Contrato candidato e 18 cenários documentados; aceite humano pendente; Replit bloqueado |
+| G08 — Escopo, isolamento e aprovação | Plano de protótipo isolado com dados sintéticos, sem integrações reais, publicação pública, dados pessoais reais, nem alterações em outros projetos; autorização humana específica após revisão | Aceite documental humano registrado; D3 não concedida; Replit bloqueado |
 
 ### Evidência de G01 — revisão focal de 22/11/2026
 
@@ -67,7 +67,11 @@ Resultado: coerência interna focal suficiente; aceite humano registrado na deli
 
 ### Evidência de G08 — contrato e autorização separados
 
-[Contrato candidato de escopo isolado e autorização expressa](isolated-prototype-and-explicit-authorization-candidate.md) v0.1.0: aplicação própria, componentes compartilháveis no futuro, dados sintéticos, ausência de integrações reais, decisões D1–D5 separadas, critérios de plano e 18 cenários não executados. D1: aceite documental de G08; D2: auditoria consolidada; D3: **autorização expressa, nova e específica para avançar ao Replit**; D4: experimento isolado; D5: integração/produção com deliberação própria. G08 aguarda aceite e D2/D3 não ocorreram. O aceite do G07 foi registrado; não autoriza execução.
+[Contrato candidato de escopo isolado e autorização expressa](isolated-prototype-and-explicit-authorization-candidate.md) v0.1.0: aplicação própria, componentes compartilháveis no futuro, dados sintéticos, ausência de integrações reais, decisões D1–D5 separadas, critérios de plano e 18 cenários não executados. D1: aceite documental de G08; D2: auditoria consolidada; D3: **autorização expressa, nova e específica para avançar ao Replit**; D4: experimento isolado; D5: integração/produção com deliberação própria. G08 recebeu aceite documental humano em 23/11/2026. Auditoria D2 focal registrada no relatório consolidado, com pendências locais RD-01–RD-05; D3 não ocorreu. O aceite não autoriza execução.
+
+### Resultado de D2 — auditoria consolidada
+
+[Auditoria consolidada dos gates e achados](consolidated-readiness-audit-candidate.md) v0.1.0: oito contratos documentais e aceitos, com ressalva G06; 149 cenários de G02–G08 especificados, não executados. PV-A01–PV-A17 classificados. **Não declarar 100% ainda**: RD-01 (fixtures sintéticas rastreáveis), RD-02 (roteiro de observação), RD-03 (checklist de isolamento pré-Replit), RD-04 (privacidade restritiva) e RD-05 (aceite do relatório). Dependências de dados reais, integração e produção classificadas separadamente. D3 não concedida e Replit bloqueado.
 
 ## 1.1 Aplicação independente e integração compartilhada — decisão humana
 
