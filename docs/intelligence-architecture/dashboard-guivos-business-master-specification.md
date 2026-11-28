@@ -106,7 +106,7 @@ O dashboard é organizado em **nove áreas analíticas**:
 2. Programas de Incentivo;
 3. Participação e Eventos Elegíveis;
 4. Benefícios, Concessões e Orçamento;
-5. Utilização de Pontos Guivos — leitura agregada;
+5. Utilização de Pontos — leitura agregada;
 6. Journey custeado pela empresa — acesso e uso agregado protegido;
 7. Intelligence e Movimentos Agregados Autorizados;
 8. Contrato, Plano, Funil Comercial e Continuidade;
@@ -168,7 +168,7 @@ Famílias iniciais:
 - `PRG` — programas e campanhas;
 - `PAR` — participação e eventos;
 - `BUD` — orçamento, concessões e benefícios;
-- `PTS` — utilização agregada de Pontos Guivos;
+- `PTS` — utilização agregada de Pontos;
 - `JNY` — Journey custeado;
 - `INT` — Intelligence agregado;
 - `COM` — contrato, plano, funil e continuidade;
@@ -241,18 +241,18 @@ DISPONÍVEL
 
 `VALOR DE IMPACTO LIBERADO` não deve ser apresentado como impacto realizado, impacto comprovado, evolução ou resultado causal.
 
-Nenhuma equivalência Pontos Guivos ↔ moeda pode ser inferida deste dashboard.
+Nenhuma equivalência Pontos ↔ moeda pode ser inferida deste dashboard.
 
 ---
 
-## 10. Família PTS — utilização agregada de Pontos Guivos
+## 10. Família PTS — utilização agregada de Pontos
 
 A autoridade vigente permite leitura administrativa agregada de utilização efetiva, preservando a separação entre orçamento empresarial e saldo pessoal.
 
 | ID | Indicador candidato | Definição candidata | Unidade | Status | Gate principal |
 |---|---|---|---|---|---|
-| BUS-KPI-PTS-001 | Pontos concedidos | quantidade de Pontos Guivos validamente concedidos pelo programa | pontos | proposed | points grant contract + source |
-| BUS-KPI-PTS-002 | Pontos efetivamente utilizados | quantidade de Pontos Guivos do recorte aplicável efetivamente utilizados em possibilidades elegíveis | pontos | proposed | usage attribution + source |
+| BUS-KPI-PTS-001 | Pontos concedidos | quantidade de Pontos validamente concedidos pelo programa | pontos | proposed | points grant contract + source |
+| BUS-KPI-PTS-002 | Pontos efetivamente utilizados | quantidade de Pontos do recorte aplicável efetivamente utilizados em possibilidades elegíveis | pontos | proposed | usage attribution + source |
 | BUS-KPI-PTS-003 | Distribuição de utilização | participação dos pontos efetivamente utilizados entre Mall, Travel e Journey | % | proposed | usage source + attribution + disclosure |
 | BUS-KPI-PTS-004 | Utilização por período | pontos efetivamente utilizados por janela temporal autorizada | pontos/período | proposed | temporal + attribution contract |
 

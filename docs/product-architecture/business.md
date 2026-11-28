@@ -79,7 +79,7 @@ Capacidades relacionadas apoiam essas ofertas sem constituírem, por si só, nov
 
 ```text
 CAPACIDADES RELACIONADAS
-├── Pontos Guivos
+├── Pontos
 ├── Guivos Intelligence
 ├── integrações e eventos
 ├── transações e liquidação
@@ -149,7 +149,7 @@ A empresa define o critério empresarial legítimo. A Guivos executa a regra con
 
 Resultados elegíveis podem incluir:
 
-- Pontos Guivos;
+- Pontos;
 - benefício direto elegível;
 - `VALOR DE IMPACTO LIBERADO`, quando houver finalidade social legítima.
 
@@ -191,9 +191,9 @@ EMPRESA CRIA, POSSUI OU CONTROLA A JOURNEY
 
 O financiamento não concede à empresa acesso ao conteúdo individual da Journey, temas pessoais, intenções, vulnerabilidades ou explicações individuais de pertinência.
 
-## 6. Pontos Guivos no Business
+## 6. Pontos no Business
 
-Pontos Guivos são uma **capacidade de benefício transacional** que pode ser utilizada pelos Programas de Incentivo. Eles não constituem a identidade integral do Guivos Business e não representam mérito ou evolução humana.
+Pontos são uma **capacidade de benefício transacional** que pode ser utilizada pelos Programas de Incentivo. Eles não constituem a identidade integral do Guivos Business e não representam mérito ou evolução humana.
 
 ```text
 mais pontos
@@ -201,17 +201,17 @@ mais pontos
 mais evolução
 ```
 
-**Não existe valor monetário canônico ou taxa de conversão aprovada entre Pontos Guivos e BRL.** `GKR-POINTS-ECONOMIC-AUTHORITY-001` adjudica os defaults econômicos correntes: Pontos não são dinheiro, são não transferíveis e não conversíveis em dinheiro por padrão, e sua compra não está autorizada. Qualquer futura exceção exige autoridade econômica específica.
+**Não existe valor monetário canônico ou taxa de conversão aprovada entre Pontos e BRL.** `GKR-POINTS-ECONOMIC-AUTHORITY-001` adjudica os defaults econômicos correntes: Pontos não são dinheiro, são não transferíveis e não conversíveis em dinheiro por padrão, e sua compra não está autorizada. Qualquer futura exceção exige autoridade econômica específica.
 
 ### 6.1 Saldo da pessoa
 
-A direção funcional é de **um saldo unificado de Pontos Guivos por pessoa**, enquanto origens e lotes permanecem rastreáveis internamente para auditoria, validade, reversão e liquidação.
+A direção funcional é de **um saldo unificado de Pontos por pessoa**, enquanto origens e lotes permanecem rastreáveis internamente para auditoria, validade, reversão e liquidação.
 
 ```text
 Empresa X → +500
 Empresa Y → +300
 
-SALDO DA PESSOA → 800 Pontos Guivos
+SALDO DA PESSOA → 800 Pontos
 ```
 
 A origem empresarial não fragmenta a experiência em múltiplas carteiras corporativas visíveis.
@@ -232,7 +232,7 @@ DISPONÍVEL
 
 ### 6.3 Utilização no ecossistema
 
-Pontos Guivos podem ser utilizados em possibilidades pagas elegíveis do:
+Pontos podem ser utilizados em possibilidades pagas elegíveis do:
 
 - Guivos Mall;
 - Guivos Travel;
@@ -250,13 +250,13 @@ INTENÇÃO
 
 Pontos não alteram descoberta, pertinência, recomendação, prioridade ou `Next Step`.
 
-**Pontos Guivos não pagam o plano do Journey.** Eles podem atuar somente como forma de pagamento ou acesso em possibilidades pagas elegíveis, quando a autoridade do produto anfitrião permitir.
+**Pontos não pagam o plano do Journey.** Eles podem atuar somente como forma de pagamento ou acesso em possibilidades pagas elegíveis, quando a autoridade do produto anfitrião permitir.
 
 Pagamento misto `Pontos + dinheiro` é uma direção funcional validada para possibilidades elegíveis, embora checkout, estorno, liquidação e tributação ainda dependam de regras próprias.
 
 ### 6.4 Liquidação para fornecedores, Organizações e Coletivos
 
-Um fornecedor, Organização ou Coletivo não precisa operar carteira própria de Pontos Guivos nem escolher manualmente “aceitar pontos”.
+Um fornecedor, Organização ou Coletivo não precisa operar carteira própria de Pontos nem escolher manualmente “aceitar pontos”.
 
 ```text
 PESSOA
@@ -284,7 +284,7 @@ Pontos ainda guardados ou expirados não entram nesse denominador. A empresa nã
 
 ## 7. Expiração e orçamento não concedido
 
-A arquitetura admite validade para os Pontos Guivos da pessoa, mas o prazo exato ainda não está congelado. O exemplo de 24 meses discutido anteriormente **não constitui regra vigente por esta autoridade**.
+A arquitetura admite validade para os Pontos da pessoa, mas o prazo exato ainda não está congelado. O exemplo de 24 meses discutido anteriormente **não constitui regra vigente por esta autoridade**.
 
 ```text
 PONTOS JÁ CONCEDIDOS À PESSOA
@@ -305,7 +305,7 @@ Impacto não constitui uma terceira família independente do Business.
 
 ```text
 VALOR DE IMPACTO LIBERADO
-≠ Pontos Guivos
+≠ Pontos
 ≠ dinheiro livre da pessoa
 ≠ impacto realizado
 ≠ impacto comprovado
@@ -586,7 +586,7 @@ Journey governa trajetória, contexto, pertinência, escolhas, próximos passos 
 
 ### 14.2 Guivos Mall e Guivos Travel
 
-Mall e Travel podem oferecer possibilidades pagas elegíveis nas quais Pontos Guivos atuem como forma de pagamento ou acesso, preservando suas próprias autoridades, ofertas, receitas e relações comerciais.
+Mall e Travel podem oferecer possibilidades pagas elegíveis nas quais Pontos atuem como forma de pagamento ou acesso, preservando suas próprias autoridades, ofertas, receitas e relações comerciais.
 
 ### 14.3 Guivos Intelligence
 
@@ -661,11 +661,11 @@ Permanecem dependentes de autoridade específica antes de implementação ou pub
 - preço/faixa por escala, participante ou acesso;
 - preço dos acessos Journey custeados pela empresa;
 - critérios contratuais e operacionais exatos de roteamento entre Self-service, Com apoio do suporte e Gerenciado;
-- prazo final de validade dos Pontos Guivos;
+- prazo final de validade dos Pontos;
 - destino econômico e percentuais de pontos expirados;
 - política completa de estorno, reversão e fraude;
 - regra detalhada de consumo de múltiplos lotes;
-- outras origens autorizadas de Pontos Guivos;
+- outras origens autorizadas de Pontos;
 - internacionalização e multi-moeda;
 - detalhes operacionais do pagamento misto;
 - comissão, taxa ou margem específica por transação;

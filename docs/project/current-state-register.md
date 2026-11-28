@@ -823,7 +823,7 @@ A empresa financia orçamento; concessão e uso pela Pessoa são eventos distint
 As autoridades econômicas temáticas correntes **não definem nem aprovam equivalência Pontos ↔ BRL, valor monetário ou taxa de conversão**.
 
 ```text
-PONTOS GUIVOS
+PONTOS
 → BENEFÍCIO TRANSACIONAL DO ECOSSISTEMA
 
 EQUIVALÊNCIA PONTOS ↔ BRL
@@ -1421,7 +1421,7 @@ Permanecem abertos quando dependentes de realidade, materialização, Design, im
 - materialização de `PER-009` somente se necessária;
 - materialização física das responsabilidades adjudicadas de Avaliação e Reputação (`R-A..R-D`), seleção de cobertura inicial real, integrações públicas específicas e eventuais `SURF/TRN`; responsabilidades funcionais já adjudicadas por `GKR-UX-EVALUATION-REPUTATION-SURFACE-RESPONSIBILITY-ADJUDICATION-001`;
 - arquitetura técnica final de analytics/Intelligence Business;
-- Pontos Guivos: defaults econômicos adjudicados por `GKR-POINTS-ECONOMIC-AUTHORITY-001`; permanecem abertos prazo numérico de validade, destino econômico de expirados, percentuais, política operacional de fraude/chargeback/estorno/reversão, outras origens de emissão, taxas/margens, regras fiscais/contábeis/jurídicas/liquidação, eventual Pontos↔BRL, catálogo final, ledger, checkout e conciliação;
+- Pontos: defaults econômicos adjudicados por `GKR-POINTS-ECONOMIC-AUTHORITY-001`; permanecem abertos prazo numérico de validade, destino econômico de expirados, percentuais, política operacional de fraude/chargeback/estorno/reversão, outras origens de emissão, taxas/margens, regras fiscais/contábeis/jurídicas/liquidação, eventual Pontos↔BRL, catálogo final, ledger, checkout e conciliação;
 - operação Ads real, pricing, inventário e mensuração; o entitlement de Opportunity Boost para planos atuais de Organização já está reconciliado sem benefício automático por plano;
 - emissão das GRUs das aplicações das assinaturas;
 - evidência de atividade efetiva para AIaaS se incluído;

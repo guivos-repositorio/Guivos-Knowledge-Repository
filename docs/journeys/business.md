@@ -87,7 +87,7 @@ A empresa pode contratar:
 
 Capacidades transversais relacionadas podem apoiar a configuração:
 
-- Pontos Guivos;
+- Pontos;
 - Guivos Intelligence;
 - integrações e eventos;
 - transações e liquidação;
