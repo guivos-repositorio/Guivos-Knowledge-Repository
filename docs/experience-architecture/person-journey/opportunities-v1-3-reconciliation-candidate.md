@@ -97,6 +97,29 @@ INT-01 regularizar deployment; INT-02 contrato Card; INT-03 origens exatas; INT-
 - Estado Atual, README, Roadmap e referências: sincronizar somente após adjudicação; não alterar menu para candidato sem autorização.
 - Auditar integralmente v1.2.0, dependências de PR #735 e demais frentes, decidir acesso a coletivos, cobertura de avaliações, critérios de ordenação e gates de implementação. Validar Figma, licença tipográfica e integração ponta a ponta. Nenhum merge automático.
 
-## 10. Estado
+## 10. Auditoria cruzada com a PR #735 — interfaces de responsabilidade
+
+Exame documental focal dos quatro arquivos candidatos da [PR #735](https://github.com/guivos-repositorio/Guivos-Knowledge-Repository/pull/735), não adjudicação ou homologação. A #735 mantém o detalhamento de ciclo de vida, perfis e conteúdo; a #736 delimita descoberta, consumo e continuidade. As seguintes condições de consumo referenciam aquelas propostas, sem criar autoridade concorrente.
+
+| Achado | Condição de consumo / encaminhamento |
+|---|---|
+| CR-01 | Identidade estável da oportunidade principal e unidade/edição/período/etapa efetivamente ofertada; preservar versão, responsável, condições e proveniência. Recorrência não inferida por título. |
+| CR-02 | Realizações encerradas ou sem disponibilidade de participação saem da descoberta ativa, recomendação, mapa e inscrição conforme estado; histórico autorizado permanece consultável. Não confundir encerramento de edição com encerramento da oportunidade principal; futuro condicionado não é disponibilidade presente. Cancelamento não comprova realização. |
+| CR-03 | Preservar card oficial de descoberta; card histórico distinto, resumido, sem mapa, preço atual, checkout ou inscrição; ação Consultar experiência. Consumo compartilhado a validar, não duplicar componente. |
+| CR-04 | Inédita sem avaliações/relatos próprios: omitir seções vazias, não gerar nota zero. Recorrente: histórico de edições comparáveis identificado como anterior, separado da edição futura. Histórico: apenas dados próprios da realização; base insuficiente explicitada quando pertinente. |
+| CR-05 | Perfis públicos de ofertador e anfitrião distintos, retorno contextual, competência e identidade verificadas. Anfitrião é papel da Pessoa, não nova conta nem necessariamente Profissional. PER-103 não estendido por analogia. |
+| CR-06 | Link do anfitrião ao próprio Perfil Público de Experiências facultativo, desativado por padrão na proposta, titular ativa/revoga conscientemente, destino público revalidado, sem link inverso ou exposição da Journey. |
+| CR-07 | Referenciar quatro dimensões candidatas da #735 (correspondência com proposta, qualidade, contribuição percebida, continuidade/novas possibilidades) e dois momentos voluntários (logo após e posteriormente se pertinente). As dimensões PAS-001 §3425 são referência, não instrumento concorrente; escalas e metodologia pendentes. |
+| CR-08 | Avaliações, perguntas públicas e experiências compartilhadas passam por exame Guivos antes da exibição, sem aprovação obrigatória de ofertador/anfitrião; AI auxiliar sob política ratificada. Pré-moderação de respostas/FAQ ainda proposta complementar; dúvida privada não vira pública. |
+| CR-09 | Moderação global, autorização de publicação e visibilidade por superfície são distintas. Ocultação editorial de experiência compartilhada no próprio perfil não altera fonte, outra superfície, indicadores ou reputação; não permite ocultar avaliações/perguntas por interesse comercial. Revogação prevalece. |
+| CR-10 | Fonte única de relatos por autoria/papel/edição; referências autorizadas por superfície, inclusive Media. Retirar seção redundante Outros relatos, preservando conteúdo e finalidade sem publicação automática por migração. |
+| CR-11 | FAQ e dúvidas anteriores à participação; respostas de responsável competente, revalidadas na recorrência. Encerradas não recebem novas dúvidas de inscrição; histórico autorizado opcional. |
+| CR-12 | Reputação não controla recomendação; não ativar ordenação por avaliações ou pontos sem adjudicação, base comparável e controles. Não alterar card oficial para indicadores de reputação por inferência. |
+| CR-13 | Preservar Goldplay legítima, escala, paleta oficial de 30 tokens, componentes e responsividade; fallback apenas degradação declarada, não conformidade visual. Demonstração sintética isolada, identificação no shell de teste quando necessária, nunca rótulos/dados provisórios em superfície pública de produção. |
+| CR-14 | Preservar gates G1–G6 da #735, R1/P1 e R-A..R-D, IDs/maturidade, proibição de publicação e engenharia operacional. Nenhum gate encerrado. |
+
+Fontes específicas da #735: [ciclo de vida e perfis](https://github.com/guivos-repositorio/Guivos-Knowledge-Repository/blob/refs/pull/735/head/docs/experience-architecture/opportunity-lifecycle-public-profiles-candidate.md), [moderação e visibilidade](https://github.com/guivos-repositorio/Guivos-Knowledge-Repository/blob/refs/pull/735/head/docs/experience-architecture/opportunity-content-moderation-visibility-candidate.md), [conexão facultativa de perfis](https://github.com/guivos-repositorio/Guivos-Knowledge-Repository/blob/refs/pull/735/head/docs/experience-architecture/opportunity-host-person-public-profile-link-candidate.md), [exame de protótipo](https://github.com/guivos-repositorio/Guivos-Knowledge-Repository/blob/refs/pull/735/head/docs/experience-architecture/opportunity-lifecycle-prototype-reconciliation.md). Em caso de alteração futura dessas propostas, reexaminar dependências. Nenhuma ratificação de metodologia, esquema de dados, permissão, rota ou cobertura inicial por esta auditoria.
+
+## 11. Estado
 
 CANDIDATE / NON-NORMATIVE. Nenhum novo SURF-ID/TRN-ID, nenhuma promoção de maturidade, nenhuma alteração nas autoridades vigentes, nenhuma autorização de execução ou publicação. O dossiê permite revisão rastreável, não representa fechamento integral da reconciliação.
