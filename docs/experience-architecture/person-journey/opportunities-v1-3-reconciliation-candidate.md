@@ -166,6 +166,21 @@ Fontes: [política consolidada de Selos](https://github.com/guivos-repositorio/G
 
 A referência histórica a percentuais predefinidos no guia de consulta não deve ser usada para reintroduzir os cinco presets no protótipo: a decisão posterior da #655 prevalece no recorte candidato de UX, sem alterar a autoridade econômica normativa. Registrar eventual atualização editorial do guia em frente própria. Não criar nova política, conceder selos, emitir pontos, autorizar superfícies ou mudar #654/#655. RC-08/RC-09 continuam condicionados aos gates de cada frente.
 
-## 13. Estado
+## 13. Nomenclatura e parecer de prontidão documental — 28/11/2026
+
+**Decisão expressa da Direção:** denominar o benefício exclusivamente **Pontos**, sem complemento de marca, nas interfaces, comunicações, filtros, cards, documentos e produtos. Exemplos: Saldo de Pontos, Incentivo em Pontos, Ganhar Pontos, Utilizar Pontos. Preservar identificadores técnicos, URLs e referências históricas rastreáveis; eventual atualização de títulos e textos normativos vigentes exige reconciliação própria, sem modificar a natureza econômica, autoridade, permissões ou gates. A decisão não autoriza implementação ou publicação. Este documento candidato usa Pontos; demais frentes devem ser inventariadas antes de alteração transversal.
+
+### Parecer focal
+
+- Consistência: 38 achados CR/GV/SI registrados, sem promoção normativa. Os 37 grupos de filtros somam 10+5+6+6+10. Os nove domínios permanecem referência canônica; Tipo/ordenação/cobertura de avaliações precisam de adjudicação. A ordenação contextual não pode ser determinada por incentivos ou reputação.
+- Referências: PAS-001 v1.0.0, mapa de capacidades v1.0.1, Surface Registry v0.36.22 e entrada Profissional v0.1.1 confirmados na main. A verificação exaustiva automatizada de links não foi concluída; referências das auditorias focais consultadas, sem declarar validação integral de todos os links.
+- Profissional: GKR-PARTICIPANT-PROFESSIONAL-ENTRY-001 v0.1.1, conceptual_direction_record, normative:false. Reconhece categoria funcional de oferta e identidade própria; não autoriza publicação, venda, pagamentos ou mudança estrutural por inferência. GKR-STATE-001 v3.51.17 ainda enumera Pessoa, Organização e Coletivo como participantes estruturais. RC-04 permanece aberto.
+- Cobertura v1.2.0: tentativa de recuperar o texto integral dos 80 RF, 18 RNF e oito movimentos não obteve a matriz original. Não fabricar IDs, conteúdo ou percentual de cobertura. Gate documental aberto; obter a fonte e confrontar cada item antes de declarar substituição da v1.2.0.
+- CI no commit anterior 3aa86276ea43acc93e1ea62b07317f06c997b643: Semantic State Validation success; Mechanical Validation in_progress na consulta. Novo commit exige verificação própria. Mergeabilidade técnica observada não equivale a autorização.
+- Bloqueios: RC-04/05/07/08/09/10/11 e demais adjudicações específicas, B01/B02, cobertura real, contratos econômicos, fonte e versão dos componentes, origem autorizada, regularização do deployment reportado, catálogo, sessão, mapa, homologação visual e E2E. Engenharia permanece pausada/não liberada; não iniciar execução operacional por esta revisão.
+
+**Parecer: HOLD para promoção canônica e engenharia; apto somente a revisão documental candidata.** Nenhuma alteração em main, PRs de dependência ou projetos Replit. Não declarar auditoria integral concluída.
+
+## 14. Estado
 
 CANDIDATE / NON-NORMATIVE. Nenhum novo SURF-ID/TRN-ID, nenhuma promoção de maturidade, nenhuma alteração nas autoridades vigentes, nenhuma autorização de execução ou publicação. O dossiê permite revisão rastreável, não representa fechamento integral da reconciliação.
