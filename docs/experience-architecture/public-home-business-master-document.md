@@ -59,7 +59,7 @@ Este Documento Mestre é a referência corrente para a Home Business v1, subordi
 
 Refinamentos de precedência:
 
-1. **Pontos Guivos não aparecem na Home Business.** Permanecem mecanismo interno/funcional governado pelas autoridades próprias, sem necessidade de menção pública nesta Home.
+1. **Pontos não aparecem na Home Business.** Permanecem mecanismo interno/funcional governado pelas autoridades próprias, sem necessidade de menção pública nesta Home.
 2. Incentivos e benefícios não são movimentos públicos separados. O incentivo pode reconhecer, estimular, viabilizar e abrir novas possibilidades.
 3. Guivos Intelligence deve ser apresentado de forma positiva e visual; limites internos permanecem nos contratos de autoridade e não precisam dominar a copy pública.
 4. Toda contratação do Guivos Business é concebida como online; o que varia é o modelo de implementação/operação após a contratação.
@@ -315,7 +315,7 @@ Evitar transformar esta seção em catálogo de campanhas corporativas, lista de
 
 ### Regra de Pontos na Home
 
-> **Pontos Guivos não devem ser mencionados na Home Pública do Guivos Business.**
+> **Pontos não devem ser mencionados na Home Pública do Guivos Business.**
 
 Sua existência funcional/econômica permanece governada fora da narrativa pública.
 
