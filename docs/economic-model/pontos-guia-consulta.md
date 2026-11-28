@@ -12,9 +12,9 @@ normative: false
 
 > **Guia completo de consulta.** A autoridade econômica canônica de Pontos é [GKR-POINTS-ECONOMIC-AUTHORITY-001](points-economic-authority.md) (ativa e normativa). As configurações detalhadas de oportunidades e eventos são **propostas da PR #655 (DRAFT)**. Emissão, utilização no Mall/Travel, paridade e parâmetros comerciais **não estão autorizados** por este guia.
 
-## 1. O que são Pontos Guivos?
+## 1. O que são Pontos?
 
-Pontos Guivos são uma **unidade interna de benefício transacional**. O programa proposto permite que a Pessoa receba pontos em oportunidades elegíveis — principalmente quando **compra uma oportunidade paga de um ofertante que optou por participar do programa** — e futuramente os utilize em possibilidades pagas elegíveis, como **Guivos Mall e Guivos Travel**, após a aprovação dos contratos pertinentes.
+Pontos são uma **unidade interna de benefício transacional**. O programa proposto permite que a Pessoa receba pontos em oportunidades elegíveis — principalmente quando **compra uma oportunidade paga de um ofertante que optou por participar do programa** — e futuramente os utilize em possibilidades pagas elegíveis, como **Guivos Mall e Guivos Travel**, após a aprovação dos contratos pertinentes.
 
 **Pontos não são dinheiro**, saldo bancário, investimento, reputação, avaliação, mérito ou prova de evolução. Não podem, como regra atual, ser comprados pela Pessoa, transferidos ou convertidos em dinheiro. Não existe taxa oficial Pontos↔BRL.
 
@@ -67,7 +67,7 @@ Um evento pode oferecer um incentivo às **primeiras N inscrições elegíveis**
 
 ## 5. O que a Pessoa encontra no saldo de pontos?
 
-A direção funcional aprovada prevê **um saldo unificado de Pontos Guivos por Pessoa**, com rastreabilidade interna por origem/lote, finalidade, evento gerador, financiador, validade, elegibilidade e regras de reversão.
+A direção funcional aprovada prevê **um saldo unificado de Pontos por Pessoa**, com rastreabilidade interna por origem/lote, finalidade, evento gerador, financiador, validade, elegibilidade e regras de reversão.
 
 Quando existir interface autorizada, devem ser distinguíveis:
 
@@ -179,7 +179,7 @@ Esses exemplos são explicações de produto proposto, **não funcionalidades la
 
 ## 13. Fontes e aprofundamento
 
-1. **Autoridade vigente:** [Pontos Guivos — Autoridade Econômica Canônica](points-economic-authority.md).
+1. **Autoridade vigente:** [Pontos — Autoridade Econômica Canônica](points-economic-authority.md).
 2. **Modelo econômico:** [Índice GEM e políticas relacionadas](index.md).
 3. **Proposta completa de oportunidades, incentivos e premiações:** [PR #655 (DRAFT)](https://github.com/guivos-repositorio/Guivos-Knowledge-Repository/pull/655).
 4. **Decisões, pendências e evidências econômicas:** [Issue #661](https://github.com/guivos-repositorio/Guivos-Knowledge-Repository/issues/661).
