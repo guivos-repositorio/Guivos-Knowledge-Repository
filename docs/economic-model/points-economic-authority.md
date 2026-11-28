@@ -1,6 +1,6 @@
 ---
 id: GKR-POINTS-ECONOMIC-AUTHORITY-001
-title: Pontos Guivos — Autoridade Econômica Canônica
+title: Pontos — Autoridade Econômica Canônica
 status: active
 version: 1.0.0
 owner: Guivos Economic Model
@@ -15,15 +15,15 @@ related:
   - GKR-STATE-001
 ---
 
-# Pontos Guivos — Autoridade Econômica Canônica
+# Pontos — Autoridade Econômica Canônica
 
 ## 1. Finalidade
 
-Adjudicar os defaults econômicos e guardrails de Pontos Guivos já sustentados pelo corpus, sem inventar valor monetário, taxa de conversão, prazo numérico de validade, comissão, margem, liquidação ou implementação técnica.
+Adjudicar os defaults econômicos e guardrails de Pontos já sustentados pelo corpus, sem inventar valor monetário, taxa de conversão, prazo numérico de validade, comissão, margem, liquidação ou implementação técnica.
 
 ## 2. Natureza
 
-Pontos Guivos constituem unidade interna de benefício transacional vinculada a programa, finalidade, regras, evidência, cobertura e catálogo elegível.
+Pontos constituem unidade interna de benefício transacional vinculada a programa, finalidade, regras, evidência, cobertura e catálogo elegível.
 
 Não são, por padrão:
 
@@ -82,7 +82,7 @@ A eventual compra futura exigirá autoridade específica e não poderá comprar 
 
 ## 5. Saldo da Pessoa
 
-A direção funcional vigente é de um **saldo unificado de Pontos Guivos por Pessoa**, com origem e lotes rastreáveis internamente.
+A direção funcional vigente é de um **saldo unificado de Pontos por Pessoa**, com origem e lotes rastreáveis internamente.
 
 O saldo deverá distinguir, quando materializado:
 
@@ -228,7 +228,7 @@ Pontos são capacidade transacional de Programas de Incentivo no Guivos Business
 
 A empresa pode financiar concessões dentro de programa governado. O uso posterior pela Pessoa é evento distinto e não reabre automaticamente o orçamento empresarial já concedido.
 
-O fornecedor, Organização ou Coletivo não precisa operar carteira própria de Pontos Guivos para que uma possibilidade elegível aceite Pontos, desde que o produto anfitrião e a operação econômica estejam legitimamente habilitados.
+O fornecedor, Organização ou Coletivo não precisa operar carteira própria de Pontos para que uma possibilidade elegível aceite Pontos, desde que o produto anfitrião e a operação econômica estejam legitimamente habilitados.
 
 ## 15. Itens ainda não congelados
 
