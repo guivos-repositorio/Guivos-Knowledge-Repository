@@ -181,6 +181,14 @@ A referência histórica a percentuais predefinidos no guia de consulta não dev
 
 **Parecer: HOLD para promoção canônica e engenharia; apto somente a revisão documental candidata.** Nenhuma alteração em main, PRs de dependência ou projetos Replit. Não declarar auditoria integral concluída.
 
-## 14. Estado
+## 14. Inventário focal de nomenclatura Pontos — aplicação transversal
+
+Decisão da seção 13 preservada. Busca exata sem distinção de caixa pela expressão anterior: a pesquisa indexada retornou vazia, mas leitura direta de 21 documentos da main encontrou 36 ocorrências em sete documentos: product-architecture/business.md (15), economic-model/points-economic-authority.md (6), intelligence-architecture/dashboard-guivos-business-master-specification.md (6), economic-model/pontos-guia-consulta.md (4), project/current-state-register.md (2), experience-architecture/public-home-business-master-document.md (2), journeys/business.md (1). MENU já usa Pontos — Incentivos em Oportunidades. Outros 14 documentos consultados sem ocorrência exata, não equivalendo a auditoria integral do corpus. Preservar proibição vigente de mencionar o benefício na Home Business, inclusive após renomeação. Alterar títulos/textos em pacote editorial coordenado, com referências e checks; não alterar regras econômicas, IDs, URLs ou registros históricos por substituição indiscriminada.
+
+Auditorias somente leitura relatadas pelos agentes Replit: Oportunidades 2 labels (filtro e ordenação), ambos confirmados em preview e bundle público; Card-Oportunidades 2 labels (detalhe e acessibilidade), 2 ocorrências documentais, 4 em metadados/memória, 2 cópias em build local e 2 no bundle público; Jornada O/C 1 legenda compartilhada de cadastro, cópia no build local, publicação não verificada; Jornada Pessoa 0, publicação não verificada; Home Pessoa 0, publicação não verificada; Home O/C 0 no artefato e recursos públicos consultados. Profissional e Dashboard Business retornaram resposta vazia, não auditados conclusivamente. Mall/Travel não localizados na lista de workspaces retornada; outras superfícies e PRs abertas a inventariar. Contagem de fonte não soma duplicatas compiladas. Nenhuma alteração Replit, publicação ou autorização de incentivo.
+
+Correções candidatas: filtro Pontos, ordenação Maior quantidade de Pontos (não ativar sem gate próprio), detalhes Pontos, aria-label Incentivo em Pontos, cadastro Incentivo em Pontos (opcional). Preservar contratos, lógica, estilos e identificadores. Textos históricos devem manter proveniência; atualizar documentação de consumo sem alterar significado. A correção de preview não regulariza o deployment público já reportado; publicação exige autorização própria. Inventário parcial, não declarar padronização concluída.
+
+## 15. Estado
 
 CANDIDATE / NON-NORMATIVE. Nenhum novo SURF-ID/TRN-ID, nenhuma promoção de maturidade, nenhuma alteração nas autoridades vigentes, nenhuma autorização de execução ou publicação. O dossiê permite revisão rastreável, não representa fechamento integral da reconciliação.
